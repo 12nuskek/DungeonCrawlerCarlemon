@@ -196,3 +196,7 @@ PR37 awaiting integration. N01 next after the external native environment kit.
 
 N00 merged PR37 a9491f1. N00b issue38 /PR39 verified8e9d0d0:23 sessions/416
 assertions, both patrol orders and cold remaining-objective pages. N01 next.
+
+N00b merged d36f3af via PR39. N01 native candidate kit ready externally; integration
+pending asset-only staging handoff. Invariants and before-room route committed;
+source staging must finish/relinquish writes before implementation resumes.

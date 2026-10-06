@@ -1,0 +1,83 @@
+[
+  {
+    "name": "scuttler",
+    "view": "battle",
+    "frame": "trial/carl-menu.ppm",
+    "canvas_x": 168,
+    "canvas_y": 0,
+    "opaque_pixels": 1040,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "grub",
+    "view": "battle",
+    "frame": "trial/carl-menu.ppm",
+    "canvas_x": 120,
+    "canvas_y": -8,
+    "opaque_pixels": 988,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "guard",
+    "view": "battle",
+    "frame": "guard/carl-menu.ppm",
+    "canvas_x": 168,
+    "canvas_y": 0,
+    "opaque_pixels": 1381,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "howler",
+    "view": "battle",
+    "frame": "howler/carl-menu.ppm",
+    "canvas_x": 168,
+    "canvas_y": 0,
+    "opaque_pixels": 1413,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "warden",
+    "view": "battle",
+    "frame": "boss-unprepared/carl-menu.ppm",
+    "canvas_x": 168,
+    "canvas_y": 0,
+    "opaque_pixels": 1808,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "scuttler",
+    "view": "field",
+    "frame": "setup/landing.ppm",
+    "canvas_x": 56,
+    "canvas_y": 88,
+    "opaque_pixels": 289,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "guard",
+    "view": "field",
+    "frame": "gates/gauntlet.ppm",
+    "canvas_x": 152,
+    "canvas_y": 88,
+    "opaque_pixels": 369,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "howler",
+    "view": "field",
+    "frame": "gates/gauntlet-return.ppm",
+    "canvas_x": 72,
+    "canvas_y": 88,
+    "opaque_pixels": 377,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "warden",
+    "view": "field",
+    "frame": "gates/boss-locked.ppm",
+    "canvas_x": 104,
+    "canvas_y": 72,
+    "opaque_pixels": 469,
+    "exact_rgb555_pixels": true
+  }
+]

@@ -1,3 +1,10 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccRubble;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccWarningSign;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccWorkbench;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccQuestTag;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccCacheSealed;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccStorageRack;
+
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccLev;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccMara;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccGuide;
@@ -330,12 +337,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SPENSER] =                  &gObjectEventGraphicsInfo_Spenser,
     [OBJ_EVENT_GFX_NOLAND] =                   &gObjectEventGraphicsInfo_Noland,
     [OBJ_EVENT_GFX_LUCY] =                     &gObjectEventGraphicsInfo_Lucy,
-    [OBJ_EVENT_GFX_UNUSED_NATU_DOLL] =         &gObjectEventGraphicsInfo_UnusedNatuDoll,
-    [OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL] =    &gObjectEventGraphicsInfo_UnusedMagnemiteDoll,
-    [OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL] =     &gObjectEventGraphicsInfo_UnusedSquirtleDoll,
-    [OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL] =       &gObjectEventGraphicsInfo_UnusedWooperDoll,
-    [OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL] =      &gObjectEventGraphicsInfo_UnusedPikachuDoll,
-    [OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL] =     &gObjectEventGraphicsInfo_UnusedPorygon2Doll,
+    [OBJ_EVENT_GFX_UNUSED_NATU_DOLL] =         &gObjectEventGraphicsInfo_DccRubble,
+    [OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL] =    &gObjectEventGraphicsInfo_DccWarningSign,
+    [OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL] =     &gObjectEventGraphicsInfo_DccWorkbench,
+    [OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL] =       &gObjectEventGraphicsInfo_DccQuestTag,
+    [OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL] =      &gObjectEventGraphicsInfo_DccCacheSealed,
+    [OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL] =     &gObjectEventGraphicsInfo_DccStorageRack,
     [OBJ_EVENT_GFX_CUTTABLE_TREE] =            &gObjectEventGraphicsInfo_CuttableTree,
     [OBJ_EVENT_GFX_MART_EMPLOYEE] =            &gObjectEventGraphicsInfo_MartEmployee,
     [OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN] =       &gObjectEventGraphicsInfo_RooftopSaleWoman,

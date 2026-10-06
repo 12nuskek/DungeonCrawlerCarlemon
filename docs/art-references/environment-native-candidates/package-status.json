@@ -1,0 +1,25 @@
+{
+  "status": "PARTIAL_PUBLICATION_NATIVE_PNG_KIT_COMPLETE",
+  "base_commit": "24eef764e51d7bd6f70ba99e21744161dd92e302",
+  "omitted_pending_publication": [
+    {
+      "path": "native/background-tiles.4bpp",
+      "bytes": 7360,
+      "sha256": "c0f3b04f6de6a11dd734ef78d555198e1c2f595b5672a2382814011fecc405dc",
+      "role": "Optional packed diagnostic output. Absent from this Git tree."
+    },
+    {
+      "path": "source/environment-props-reference.png",
+      "bytes": 1424228,
+      "sha256": "7665aa418f4e82060ff88ce750595a0eb13a101b7b6fa575cf996f76f2afa3a4",
+      "role": "Original full prop reference source. Absent from this Git tree; complete source-sheet reproduction is unavailable until it is supplied."
+    }
+  ],
+  "native_pngs_complete": 91,
+  "architecture_tiles": 56,
+  "recommended_world_props": 12,
+  "recommended_bg_variants": 18,
+  "full_clean_source_reproduction_available_from_this_tree": false,
+  "static_native_validation_available": true,
+  "runtime_verified": false
+}

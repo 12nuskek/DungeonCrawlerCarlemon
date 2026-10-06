@@ -1,0 +1,6501 @@
+{
+  "source": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+  "maps": {
+    "DCC_Boss": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 13312,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 545
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "5da01f00179abd93b2cecc3d121569ab38dee2f064acda21ea1d72c2e3efe375",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_BOSS",
+        "name": "DCC_Boss",
+        "layout": "LAYOUT_DCC_BOSS",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_BOSS",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Boss_Encounter",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_CORRIDOR",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 4,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "DCC_Boss_Stairs"
+          }
+        ]
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    },
+    "DCC_Corridor": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "9d7c587bacf4d2cf26038c52e687a6a6c86ad2cf2a2cd540fc87ccc2bb31f877",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_CORRIDOR",
+        "name": "DCC_Corridor",
+        "layout": "LAYOUT_DCC_CORRIDOR",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_CORRIDOR",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 5,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Guard",
+            "flag": "0"
+          },
+          {
+            "x": 10,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Howler",
+            "flag": "0"
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Rules",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_SERVICE",
+            "dest_warp_id": "1"
+          },
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_BOSS",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    },
+    "DCC_Entrance": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "3e643bcabaa4afb7ad53320275fe504cdf0a7dac4a9cddf968d04c71d6c533cf",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_ENTRANCE",
+        "name": "DCC_Entrance",
+        "layout": "LAYOUT_DCC_ENTRANCE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_ENTRANCE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 4,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Crate",
+            "flag": "0"
+          },
+          {
+            "x": 7,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Rock",
+            "flag": "0"
+          },
+          {
+            "x": 7,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Rock",
+            "flag": "0"
+          },
+          {
+            "x": 10,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_SupplyBox",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_VESTIBULE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    },
+    "DCC_Exit": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "cc314db51d2581cefcad07bc110a849358a340b3bb2aae26c5b02f4aba588f07",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_EXIT",
+        "name": "DCC_Exit",
+        "layout": "LAYOUT_DCC_EXIT",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_EXIT",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Exit_Review",
+            "flag": "0"
+          },
+          {
+            "x": 6,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Exit_Donut_Talk",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_BOSS",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    },
+    "DCC_Service": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 926
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "e251a0b50bc57181ff226d716aacaec91d8fac06f7a8ece091ab77ab91c7c635",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_SERVICE",
+        "name": "DCC_Service",
+        "layout": "LAYOUT_DCC_SERVICE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_SERVICE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 4,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Mara",
+            "flag": "0"
+          },
+          {
+            "x": 11,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Lev",
+            "flag": "0"
+          },
+          {
+            "x": 7,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Warning",
+            "flag": "0"
+          },
+          {
+            "x": 11,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Tag",
+            "flag": "0"
+          },
+          {
+            "x": 6,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Workbench",
+            "flag": "0"
+          },
+          {
+            "x": 13,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_BlastCache",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_VESTIBULE",
+            "dest_warp_id": "1"
+          },
+          {
+            "x": 2,
+            "y": 9,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_CORRIDOR",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [
+          {
+            "type": "trigger",
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "var": "VAR_TEMP_0",
+            "var_value": "0",
+            "script": "DCC_Service_Trap"
+          }
+        ],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 2,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "DCC_Service_Secret"
+          }
+        ]
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    },
+    "DCC_Vestibule": {
+      "width": 16,
+      "height": 12,
+      "cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 537
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 547
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 97,
+          "metatile": 517
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 544
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 530
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 546
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 12288,
+          "attribute": 8,
+          "metatile": 513
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 0,
+          "metatile": 528
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ],
+      "map_json_sha256": "16f2b519f4a7e1b4e91cf227b554b05d528133d04c0dedd82743384f141d475a",
+      "border_words": [
+        1553,
+        1553,
+        1553,
+        1553
+      ],
+      "event_contract": {
+        "id": "MAP_DCC_VESTIBULE",
+        "name": "DCC_Vestibule",
+        "layout": "LAYOUT_DCC_VESTIBULE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_VESTIBULE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "x": 4,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Crate",
+            "flag": "0"
+          },
+          {
+            "x": 9,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Trial",
+            "flag": "0"
+          },
+          {
+            "x": 4,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Guide",
+            "flag": "0"
+          },
+          {
+            "x": 11,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_WorkshopBox",
+            "flag": "0"
+          },
+          {
+            "x": 7,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Donut_Talk",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_ENTRANCE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_SERVICE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "border_cells": [
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        },
+        {
+          "upper_bits": 1024,
+          "attribute": 8,
+          "metatile": 529
+        }
+      ]
+    }
+  },
+  "unchanged_obj_art": {
+    "graphics/dcc/shared.pal": "3065419c96acf56d4c8facff9bbd018a9615c5a36ad3c3ec77eeb96b347e107c",
+    "graphics/dcc/scuttler/normal.pal": "9d9148ff87d7a11c946ad645429bec7bf37f868942b6d716b163d2dad76fe0fc",
+    "graphics/dcc/scuttler/shiny.pal": "9d9148ff87d7a11c946ad645429bec7bf37f868942b6d716b163d2dad76fe0fc",
+    "graphics/dcc/scuttler/anim_front.png": "e4c5dbf44f11dabe484a4a36cb15015cc1aa39b01da7b0a0cbf311a5d9305b36",
+    "graphics/dcc/scuttler/icon.png": "4e9433efdf3bf8c0054df93763ce5c223cb085c2b4ee438636e6d74cb4c99242",
+    "graphics/dcc/scuttler/back.png": "8b62baed7b1672759f2f951781a9c0128ab42f4cb1dd7553eb8950e7bca1d7d8",
+    "graphics/dcc/scuttler/overworld.png": "d7fe0d72395e6b49c1f39dd0f51af57f38b5a2dfac2c80c33b0a9b2034ed5beb",
+    "graphics/dcc/scuttler/front.png": "8b62baed7b1672759f2f951781a9c0128ab42f4cb1dd7553eb8950e7bca1d7d8",
+    "graphics/dcc/donut/normal.pal": "5e5827de36d660a71ad7dc74b834543f0f2d0ddaeb4c658d20fd0c564bbe2128",
+    "graphics/dcc/donut/shiny.pal": "5e5827de36d660a71ad7dc74b834543f0f2d0ddaeb4c658d20fd0c564bbe2128",
+    "graphics/dcc/donut/anim_front.png": "d53075a5ea8d60c2ec4f2e92dedf10ca1cc0c224a42f8e0f86ded426529d11f4",
+    "graphics/dcc/donut/icon.png": "1aa941c663ec52695142ba965585f8da56ccb35ea7d42bd0781bc650670345e6",
+    "graphics/dcc/donut/back.png": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+    "graphics/dcc/donut/overworld.png": "e5db3808f808fa0bf834b523c7f517b8a9c3ee0f2f7d0e01b89e65d26e933d97",
+    "graphics/dcc/donut/front.png": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+    "graphics/dcc/warden/normal.pal": "aabe5bcde8ff234762d04a0921fe2f63c6c409a28fb71b22756035d1f73c9f73",
+    "graphics/dcc/warden/shiny.pal": "aabe5bcde8ff234762d04a0921fe2f63c6c409a28fb71b22756035d1f73c9f73",
+    "graphics/dcc/warden/anim_front.png": "85dc7940044bc116768fa3dc269cab8ac5d2eed04f15af6e2451496bee5f35a8",
+    "graphics/dcc/warden/icon.png": "06e5fe2e86b15e9aacf650ff836c4b44db6572d6221755bd3dd47f9b8992f39e",
+    "graphics/dcc/warden/back.png": "53966b7affa6c424fbb2bc7779f0fad2898c73a676ec50fb3c3db2287743c7b1",
+    "graphics/dcc/warden/overworld.png": "7f0178ef0bcab4acac1632a9e72870224c682a855264cc2633775294138b5916",
+    "graphics/dcc/warden/front.png": "53966b7affa6c424fbb2bc7779f0fad2898c73a676ec50fb3c3db2287743c7b1",
+    "graphics/dcc/grub/normal.pal": "145f06e40d9b1e9642a9180063f366b69dd19ab463bfdef5a375efc13de911f3",
+    "graphics/dcc/grub/shiny.pal": "145f06e40d9b1e9642a9180063f366b69dd19ab463bfdef5a375efc13de911f3",
+    "graphics/dcc/grub/anim_front.png": "abaf02d4741ba15138ac00db81799869c39d47f85d9523edaf556fd560d19dc2",
+    "graphics/dcc/grub/icon.png": "c31dde564cf0424d6d1b3af72a1d9414bb47ffde1237e5e474ca2951cabb289b",
+    "graphics/dcc/grub/back.png": "8869e0af20eb42f5b3f2a3d4c235c037bea545b62b11504f976ed267d95f2520",
+    "graphics/dcc/grub/front.png": "8869e0af20eb42f5b3f2a3d4c235c037bea545b62b11504f976ed267d95f2520",
+    "graphics/dcc/howler/normal.pal": "5c5f6d21e00d5bbb09d5a069dfee44c6edcb95fac54fa36b580a66f2921133ba",
+    "graphics/dcc/howler/shiny.pal": "5c5f6d21e00d5bbb09d5a069dfee44c6edcb95fac54fa36b580a66f2921133ba",
+    "graphics/dcc/howler/anim_front.png": "8166df531fa1872ed284e22a6761b53c5afcf96b02d7ab8cf6962066ffe060c1",
+    "graphics/dcc/howler/icon.png": "adaf619533263739a5ff240aef48440dffc54a63d996ce99e643016f88ae8b31",
+    "graphics/dcc/howler/back.png": "71384c7fc002d31ab2e974ce1ed39e9b56096b664998b02dd683ffe981d4e5be",
+    "graphics/dcc/howler/overworld.png": "8f1d37f553c59f20969936c9b4c07510816c065d135eae114c437b4b4860e317",
+    "graphics/dcc/howler/front.png": "71384c7fc002d31ab2e974ce1ed39e9b56096b664998b02dd683ffe981d4e5be",
+    "graphics/dcc/carl/trainer_back.png": "a95f7947a7973fcf0daf2112664272a1614f047858d85519ccf508fdad1d4077",
+    "graphics/dcc/carl/normal.pal": "bd69650bd945b40286eb9c97c75acfc6dea377b83438218e8ced23fbfb763af2",
+    "graphics/dcc/carl/shiny.pal": "bd69650bd945b40286eb9c97c75acfc6dea377b83438218e8ced23fbfb763af2",
+    "graphics/dcc/carl/anim_front.png": "7da07e7604a298479d449bc2449103bf169e826461d508bdf2a97a582757dda6",
+    "graphics/dcc/carl/icon.png": "2e0d2d61e810a383b5c6e3ed3b20889e4482b06aed6356f9326be421beff558a",
+    "graphics/dcc/carl/back.png": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1",
+    "graphics/dcc/carl/front.png": "6c62b19145fe4a061a3080ec3ca2fae30a80452f3ea5d5aad8aaa878b29bd5aa",
+    "graphics/dcc/guard/normal.pal": "aabe5bcde8ff234762d04a0921fe2f63c6c409a28fb71b22756035d1f73c9f73",
+    "graphics/dcc/guard/shiny.pal": "aabe5bcde8ff234762d04a0921fe2f63c6c409a28fb71b22756035d1f73c9f73",
+    "graphics/dcc/guard/anim_front.png": "be785fc6a27a3e57b6f7667319ecb1bf134302f324d5c1ed102d53a0ff05eef4",
+    "graphics/dcc/guard/icon.png": "0213d48848542c157b34c32ccc2937fd251c5864928081b29ea01087d6f26c16",
+    "graphics/dcc/guard/back.png": "d3b90d33efee6996febf3d735af9a14938d90c357224d7f90bd717479e58989f",
+    "graphics/dcc/guard/overworld.png": "8941d432e8bbea15e4efb40ce524eb2ddfda4fe1b5d192dbda34febe32aa73f7",
+    "graphics/dcc/guard/front.png": "d3b90d33efee6996febf3d735af9a14938d90c357224d7f90bd717479e58989f"
+  }
+}

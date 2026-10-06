@@ -1,0 +1,456 @@
+{
+  "status": "UNINTEGRATED_NATIVE_CANDIDATES",
+  "authorship": "Original deterministic pixel geometry authored for this task; no third-party source; follows existing slice_art.py native asset method.",
+  "palette": "Existing environment palette bank6; optional BG-only palette variants separate.",
+  "count": 56,
+  "tiles": {
+    "floor_slab_00": {
+      "role": "optional broken joint quadrant; place sparsely, never alternate across entire room",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_slab_10": {
+      "role": "optional broken joint quadrant; place sparsely, never alternate across entire room",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_slab_01": {
+      "role": "optional broken joint quadrant; place sparsely, never alternate across entire room",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_slab_11": {
+      "role": "optional broken joint quadrant; place sparsely, never alternate across entire room",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_plain": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_scuff": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_crack": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_dust": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_repair": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_drain": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_warm_pool": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "floor_cold_pool": {
+      "role": "walkable quiet floor/detail",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "void": {
+      "role": "opaque dark cutaway; collision remains blocked",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_top_plain": {
+      "role": "north cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_bottom_plain": {
+      "role": "south cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_top_join": {
+      "role": "north cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_bottom_join": {
+      "role": "south cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_top_chip": {
+      "role": "north cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_bottom_chip": {
+      "role": "south cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_top_damp": {
+      "role": "north cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_bottom_damp": {
+      "role": "south cutaway cap with opaque void outside",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_a": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_b": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_damp": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_chip": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_repair": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_face_foot": {
+      "role": "north wall frontal face, full blocking tile",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_side_left": {
+      "role": "vertical cutaway return with thickness",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_side_right": {
+      "role": "vertical cutaway return with thickness",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_outer_nw": {
+      "role": "outer cutaway corner; choose collision by architectural position",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_outer_ne": {
+      "role": "outer cutaway corner; choose collision by architectural position",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_outer_sw": {
+      "role": "outer cutaway corner; choose collision by architectural position",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_outer_se": {
+      "role": "outer cutaway corner; choose collision by architectural position",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_inner_nw": {
+      "role": "walkable floor contact shadow for reentrant corner",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_inner_ne": {
+      "role": "walkable floor contact shadow for reentrant corner",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_inner_sw": {
+      "role": "walkable floor contact shadow for reentrant corner",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "corner_inner_se": {
+      "role": "walkable floor contact shadow for reentrant corner",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "door_jamb_left": {
+      "role": "framing overlay flattened on floor; review collision separately",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "door_jamb_right": {
+      "role": "framing overlay flattened on floor; review collision separately",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "door_lintel": {
+      "role": "door head/threshold framing",
+      "suggested_existing_behavior": "0x211",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "threshold_h": {
+      "role": "walkable threshold; does not itself warp",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "threshold_v": {
+      "role": "walkable threshold; does not itself warp",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_lamp_lit": {
+      "role": "fixed wall lamp; restrained, no glow tile spam",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "wall_lamp_unlit": {
+      "role": "fixed wall lamp; restrained, no glow tile spam",
+      "suggested_existing_behavior": "0x219",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "conduit_horizontal": {
+      "role": "walkable service cable, visual causal connection only",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "conduit_vertical": {
+      "role": "walkable service cable, visual causal connection only",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "conduit_broken": {
+      "role": "walkable service cable, visual causal connection only",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_middle": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_top": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_bottom": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_left": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_right": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_corner_nw": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_corner_ne": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_corner_sw": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    },
+    "mat_corner_se": {
+      "role": "walkable worn mat; use only for the small recovery nook",
+      "suggested_existing_behavior": "0x201",
+      "size": [
+        16,
+        16
+      ]
+    }
+  }
+}

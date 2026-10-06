@@ -1,0 +1,122 @@
+[
+  {
+    "route": "boss-pending",
+    "assertions": 8,
+    "fixture": false
+  },
+  {
+    "route": "boss-rest",
+    "assertions": 14,
+    "fixture": false
+  },
+  {
+    "route": "boss-unprepared",
+    "assertions": 19,
+    "fixture": false
+  },
+  {
+    "route": "both-pending",
+    "assertions": 8,
+    "fixture": false
+  },
+  {
+    "route": "ending-reload",
+    "assertions": 25,
+    "fixture": false
+  },
+  {
+    "route": "gates",
+    "assertions": 23,
+    "fixture": false
+  },
+  {
+    "route": "guard",
+    "assertions": 13,
+    "fixture": false
+  },
+  {
+    "route": "guard-pending",
+    "assertions": 8,
+    "fixture": false
+  },
+  {
+    "route": "guard-rest",
+    "assertions": 12,
+    "fixture": false
+  },
+  {
+    "route": "howler",
+    "assertions": 13,
+    "fixture": false
+  },
+  {
+    "route": "howler-first",
+    "assertions": 11,
+    "fixture": false
+  },
+  {
+    "route": "howler-pending",
+    "assertions": 8,
+    "fixture": false
+  },
+  {
+    "route": "movement",
+    "assertions": 9,
+    "fixture": false
+  },
+  {
+    "route": "quest-accept-trap",
+    "assertions": 16,
+    "fixture": false
+  },
+  {
+    "route": "quest-complete-recover",
+    "assertions": 22,
+    "fixture": false
+  },
+  {
+    "route": "quest-decline",
+    "assertions": 13,
+    "fixture": false
+  },
+  {
+    "route": "quest-reload-final",
+    "assertions": 18,
+    "fixture": false
+  },
+  {
+    "route": "quest-tag-secret",
+    "assertions": 15,
+    "fixture": false
+  },
+  {
+    "route": "rest",
+    "assertions": 36,
+    "fixture": false
+  },
+  {
+    "route": "rooms",
+    "assertions": 18,
+    "fixture": false
+  },
+  {
+    "route": "setup",
+    "assertions": 34,
+    "fixture": false
+  },
+  {
+    "route": "stairs",
+    "assertions": 14,
+    "fixture": false
+  },
+  {
+    "route": "trial",
+    "assertions": 61,
+    "fixture": false
+  },
+  {
+    "route": "ui",
+    "assertions": 16,
+    "fixture": false
+  }
+]

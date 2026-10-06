@@ -1217,3 +1217,64 @@ howler-first state normally. Failed trace preserved, no balance edits; blocker
 resolved on second strategy. Full evidence docs/evidence/n00b. Next merge then
 N01 visual integration, using prepared 1176-cell/event/49-asset invariants and
 six matched unobstructed room views. Native kit external; no overlapping writer.
+
+### Safe N01 native-kit handoff — 2026-10-06
+
+N00b PR39 merged d36f3af20c9b690a6249141fad5e4d3e82f54e98. N01 branch
+advanced without rewriting history to that verified main. Added read-only design
+audit, reusable visual-only invariant checker and exact baseline contracts:
+1176 map/border cells, six event/warp/script contracts,49 approved art hashes,
+native tile/palette bounds. Checker passes against existing engine. Semantic OBJ
+graphics IDs may change; event positions/scripts and all other fields may not.
+
+Unobstructed before captures: docs/evidence/n01/before. N00 testedf3514ca,
+ROM1a9d4b24…999573, normal completed manual save, six rooms/18 runtime assertions,
+empty emulator errors. First capture-route attempt held Down too long from an
+already south-facing avatar; fixed input duration, no game defect. Failed trace
+kept locally; successful exact route archived. No new dungeon art integrated yet.
+
+Parent reports native candidate kit ready:56 architecture tiles,12 recommended
+shared-palette props,18 BG variants,230 unique BG tiles,721 static checks and109
+reproducible outputs. These are parent-reported candidate checks, NOT integration
+or runtime acceptance. Exact next: parent stages source kit via asset-only GitHub
+handoff against this pushed branch; implementation writer explicitly pauses repo
+writes until staging relinquishes them. Then inspect candidate manifest/provenance,
+select useful assets, establish exporter ownership and integrate bounded N01 visuals.
+Run invariants, clean build, actual matched six-room views and relevant gameplay
+routes before review/merge. Do not treat candidate verification as game acceptance.
+
+Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000 remains sole implementation
+writer. No active build/emulator task; parent retains the same hourly continuation.
+No scheduler added. Overnight scope ends approximately21:19UTC; no Stage6. Existing
+I01 private package and all baseline/failed evidence preserved. N01 implemented NO,
+compiled/runtime/merged NO; preparation/audit and baseline evidence complete.
+
+### N01 resumed: static prop readability — 2026-10-06
+
+Parent relinquished all staging writes. Audited PR40 head3a1a9c6:124 additions
+only; local verifier passed123 checksums,91 PNG identities and721 static checks.
+Merged reference-only PR40 into N01 atf8fc81750386032c940e82aaabf40e1c82e4e073.
+Original main source sheet and optional packed output remain absent; neither will
+be fetched/reuploaded. Complete source-sheet reproduction remains unavailable.
+Authoritative game export uses accepted native PNG masters independently.
+
+First visual increment selects six props: rubble, warning sign, bench, tag, cache,
+shaft/tool storage rack. Uses six upstream explicitly unused graphic slots76–81;
+16x16 static footprints and existing MovingBox shared palette. No dynamic-graphics
+range, Donut palette, scripts, state, collision or coordinates changed. Nine
+existing objects rebound; ordinary supply/wrap boxes remain for now. Native
+export owns these six PNGs; old generators delegate rather than overwrite.
+Static1176-cell/six-event/49-art invariants and55-image asset checks pass.
+Next clean committed build;24 production sessions including matched six-room
+route, all existing behavior assertions, nine opponent and six prop pixel checks.
+N01 props implemented YES; compiled/runtime/merged pending. Then separate room
+materials/composition and later state/layout increments. Sole implementation writer.
+
+N01 prop increment verified c51012486790bf344883deae73d9e4df783091a0:
+`bash scripts/test-n01-props.sh`,24 sessions/434 assertions,24 empty errors,
+9 opponent+6 prop exact pixel checks;1176-cell/six-event/49-art invariants pass.
+Actual six-room and changed-prop images inspected. Two deterministic six-PNG
+exports match. ROMec3cdf914b55d36da913db570ab83ad1cffbcd59869ab71c9e47c4fe075c55f9.
+PR41 pending merge; evidence docs/evidence/n01/props. Implemented/compiled/runtime
+YES; merged pending. No blocker attempts. Next separate room materials/composition
+increment, then collision/layout and state feedback with their own acceptance.

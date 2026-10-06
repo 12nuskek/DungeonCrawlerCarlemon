@@ -1,0 +1,68 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 5 4 6 7
+flag 47 1
+flag 48 1
+flag 46 0
+flag 40 0
+flag 42 0
+flag 43 0
+growth 12 974 0 10 1284 0
+roster 14 15 2 0 0 0
+uses 2 37 0 33
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 36 16 -
+step 40 0 -
+expect 34 5 6 6 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 donut-ending.ppm
+step 1 1 -
+step 400 0 carl-ending-reply.ppm
+step 1 1 -
+step 120 0 -
+flag 48 1
+uses 2 37 0 33
+color 2 1 4196
+color 2 8 21375
+step 36 32 -
+step 40 0 -
+expect 34 5 4 6 7
+step 36 64 -
+step 40 0 -
+step 36 32 -
+step 40 0 -
+step 180 0 ending-return.ppm
+expect 34 4 2 4 7
+flag 48 1
+step 100 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+step 1 1 -
+step 400 0 boss-cold-repeat.ppm
+growth 12 974 0 10 1284 0
+flag 47 1
+flag 41 1
+flag 42 0
+flag 43 0
+flag 40 0
+quit

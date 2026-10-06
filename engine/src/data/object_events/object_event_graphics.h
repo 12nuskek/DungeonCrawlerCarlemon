@@ -376,3 +376,10 @@ const u32 gObjectEventPic_DccMara[] = INCGFX_U32("graphics/dcc/mara/overworld.pn
 const u32 gObjectEventPic_DccLev[] = INCGFX_U32("graphics/dcc/lev/overworld.png", ".4bpp");
 
 const u16 gObjectEventPal_DccDonut[] = INCGFX_U16("graphics/object_events/palettes/donut.pal", ".gbapal");
+
+const u32 gObjectEventPic_DccRubble[] = INCGFX_U32("graphics/dcc/environment/rubble.png", ".4bpp");
+const u32 gObjectEventPic_DccWarningSign[] = INCGFX_U32("graphics/dcc/environment/warning_sign.png", ".4bpp");
+const u32 gObjectEventPic_DccWorkbench[] = INCGFX_U32("graphics/dcc/environment/workbench.png", ".4bpp");
+const u32 gObjectEventPic_DccQuestTag[] = INCGFX_U32("graphics/dcc/environment/quest_tag.png", ".4bpp");
+const u32 gObjectEventPic_DccCacheSealed[] = INCGFX_U32("graphics/dcc/environment/cache_sealed.png", ".4bpp");
+const u32 gObjectEventPic_DccStorageRack[] = INCGFX_U32("graphics/dcc/environment/storage_rack.png", ".4bpp");

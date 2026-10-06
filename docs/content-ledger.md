@@ -196,3 +196,28 @@ its description directs players to the cache. Super Potion is immediately usable
 recovery, so crafting already has a practical benefit. New dialogue original;
 MovingBox/MetalCoat icon/explosion sound are upstream placeholders for S02.
 Runtime verified: [D02 111-check evidence](evidence/d02/README.md); integration pending. No new save layout or battle item framework.
+
+## S01 connected route and authored encounters (2026-10-06, verification pending)
+
+Entrance→Quiet Landing↔Service Room→Supply Gauntlet→Gate Chamber→First Staircase.
+All routes allow backtracking. Southwest service ladder leads onward; northwest
+returns to the guide. Northeast gauntlet ladder reaches the gate. Inspect the
+northeast gate stairs after winning; confirm or cancel; review-room ladder returns.
+No live timer. Floor rule: cleared encounters stay cleared across saves.
+
+| Encounter | Prerequisite / role | Persistence and adaptation |
+| --- | --- | --- |
+| Trial855 | Existing simple melee lesson | Existing trainer flag2135 |
+| Guard856 | Durable SPINDA base record; BRACE first turn, then TACKLE; melee partner | Trainer flag2136; original patrol, stock art placeholder |
+| Howler857 | WHISMUR uses WEAKEN turn0 and every3 turns, otherwise TACKLE; melee partner | Trainer flag2137; original patrol |
+| Warden858 | Trial + both patrols clear; LOUDRED12 alternates WIND UP/SLAM with helper9 | Boss clear0x2F after actual win |
+| Prepared warden859 | Same gates plus cache blasted0x2E; levels10/helper8 | Same boss flag, optional advantage; no required item spend |
+| Staircase | Boss flag; confirmation; review room | Slice complete0x30, save/reload required |
+
+This is original compressed tutorial fiction, not a claimed Book1 canonical boss
+or place. Boss alternates attack-up and physical65-power hit, aiming at Carl while
+able, then Donut. BRACE/WEAKEN or faster prepared offense are intended responses,
+subject to real playtesting. Existing AI is fallback when the pattern move is
+unavailable. No second combat model. Both-defeated recovery remains local/free
+for all authored encounter IDs. New trainer portraits/species art, cave maps,
+move animations and review NPC remain S02 placeholders, explicitly not final art.

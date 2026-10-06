@@ -362,7 +362,10 @@
 #define MOVE_DCC_SPARK 357
 #define MOVE_DCC_WEAKEN 358
 
-#define MOVES_COUNT 359
+#define MOVE_DCC_WINDUP 359
+#define MOVE_DCC_SLAM 360
+
+#define MOVES_COUNT 361
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

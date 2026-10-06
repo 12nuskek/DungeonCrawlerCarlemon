@@ -1,3 +1,31 @@
+static const struct TrainerMonNoItemCustomMoves sParty_DccGuard[] = {
+    {.iv = 0, .lvl = 9, .species = SPECIES_SPINDA,
+     .moves = {MOVE_TACKLE, MOVE_DCC_BRACE, MOVE_NONE, MOVE_NONE}},
+    {.iv = 0, .lvl = 8, .species = SPECIES_ZIGZAGOON,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_DccHowler[] = {
+    {.iv = 0, .lvl = 9, .species = SPECIES_WHISMUR,
+     .moves = {MOVE_TACKLE, MOVE_DCC_WEAKEN, MOVE_NONE, MOVE_NONE}},
+    {.iv = 0, .lvl = 9, .species = SPECIES_ZIGZAGOON,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_DccBoss[] = {
+    {.iv = 0, .lvl = 12, .species = SPECIES_LOUDRED,
+     .moves = {MOVE_DCC_WINDUP, MOVE_DCC_SLAM, MOVE_NONE, MOVE_NONE}},
+    {.iv = 0, .lvl = 9, .species = SPECIES_WHISMUR,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_DccBossPrepared[] = {
+    {.iv = 0, .lvl = 10, .species = SPECIES_LOUDRED,
+     .moves = {MOVE_DCC_WINDUP, MOVE_DCC_SLAM, MOVE_NONE, MOVE_NONE}},
+    {.iv = 0, .lvl = 8, .species = SPECIES_WHISMUR,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+};
+
 // Authored deterministic tutorial opponents; sprites/species are placeholders.
 static const struct TrainerMonNoItemCustomMoves sParty_DccTrial[] = {
     {.iv = 0, .lvl = 8, .species = SPECIES_ZIGZAGOON,

@@ -557,3 +557,35 @@ R02 Scrap-box full-capacity edge now exercised. S02 must replace inherited DAD
 menu-refusal wording and stock icons/props/audio as scheduled. Next push evidence,
 draft/review/merge, then S01 connected encounters/boss/staircase. Cloud task remains
 `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no overlapping writer/scheduler.
+
+## D02 integration / S01 start — 2026-10-06
+
+PR #23 merged `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`; issue #22 closed.
+Evidence `824a6ff1a7f36a008fc340715e42967f38d63a8e`, tested `b53b8e6`. Main clean
+and reconciled, no open PR. An initial PR-create response produced no PR; a read
+confirmed none before retry successfully created #23. No duplicate execution.
+Parent independently reviewed D01 with no blocker (114 checks,19 actual PNGs).
+Current evidence READMEs now include actual integration updates. Parent retains
+S03 declined-quest/avoided-trap completion route plus low-HP/existing-status trap
+edges; D01 fixture covers HP1 and production covers ordinary paralysis/cure.
+
+S01 branch `task/s01-connected-slice`, base this merge. Connect second encounter
+zone/boss/stairs, distinct durable/disruptive enemies, readable boss cadence and
+optional preparation advantage, local defeat recovery, persistent progression.
+No Stage6 expansion or save-layout change. Implemented/compiled/runtime/merge
+pending. No blocker. Next author narrow connected content/encounter changes.
+User asked about earlier visuals; parent offered reordering, but none approved yet.
+Safe sequential visual candidate: Carl/Donut battle/icons/overworld and existing
+room tiles/palettes with unchanged collisions/events. Preserve S01 if that steering
+arrives. Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`, sole writer.
+
+User confirmed “continue like normal”; keep S01→S02→S03, no visual reorder.
+S01 source authoring now connects Service→Gauntlet→Gate→Review staircase. Four
+trainer IDs add guard/howler and prepared/unprepared warden; authored cadence
+uses existing turn/move machinery. Local defeat callback extended only over these
+authored IDs. Boss/stair flags use existing save bits. Compilation/runtime pending.
+
+S01 incremental build PASS after source inspection and move-availability guard.
+New host `pattern` diagnostic reads trainer/turn, enemy PP/attack/defense/level and
+Carl attack from real RAM; no writes. Fresh existing setup replay is starting before
+new gate/encounter routes. No S01 runtime acceptance or integration claim yet.

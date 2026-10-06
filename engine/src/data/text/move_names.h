@@ -359,4 +359,6 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_DCC_BRACE] = _("BRACE"),
     [MOVE_DCC_SPARK] = _("SPARK"),
     [MOVE_DCC_WEAKEN] = _("WEAKEN"),
+    [MOVE_DCC_WINDUP] = _("WIND UP"),
+    [MOVE_DCC_SLAM] = _("SLAM"),
 };

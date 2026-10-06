@@ -9,6 +9,7 @@
 #include "battle_setup.h"
 #include "battle_tower.h"
 #include "battle_tv.h"
+#include "battle_util.h"
 #include "bg.h"
 #include "data.h"
 #include "frontier_util.h"
@@ -32,6 +33,8 @@
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/opponents.h"
+#include "constants/species.h"
 #include "trainer_hill.h"
 
 static void OpponentHandleGetMonData(void);
@@ -1565,6 +1568,30 @@ static void OpponentHandleChooseMove(void)
 
             BattleAI_SetupAIData(ALL_MOVES_MASK);
             chosenMoveId = BattleAI_ChooseMoveOrAction();
+            // Small authored patterns, not a second combat model. Existing AI remains
+            // the fallback when the patterned action is unavailable/exhausted.
+            {
+                u8 pattern = MAX_MON_MOVES;
+                u8 turn = gBattleResults.battleTurnCounter;
+                if (gTrainerBattleOpponent_A == TRAINER_DCC_GUARD
+                    && gBattleMons[gActiveBattler].species == SPECIES_SPINDA)
+                    pattern = turn == 0 ? 1 : 0;
+                else if (gTrainerBattleOpponent_A == TRAINER_DCC_HOWLER
+                    && gBattleMons[gActiveBattler].species == SPECIES_WHISMUR)
+                    pattern = turn % 3 == 0 ? 1 : 0;
+                else if ((gTrainerBattleOpponent_A == TRAINER_DCC_BOSS
+                    || gTrainerBattleOpponent_A == TRAINER_DCC_BOSS_PREPARED)
+                    && gBattleMons[gActiveBattler].species == SPECIES_LOUDRED)
+                    pattern = turn % 2;
+                if (pattern < MAX_MON_MOVES
+                    && !(CheckMoveLimitations(gActiveBattler, 0, MOVE_LIMITATIONS_ALL) & gBitTable[pattern]))
+                {
+                    chosenMoveId = pattern;
+                    gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+                    if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                }
+            }
 
             switch (chosenMoveId)
             {

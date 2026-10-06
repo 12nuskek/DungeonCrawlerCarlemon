@@ -1,4 +1,49 @@
 const struct Trainer gTrainers[] = {
+    [TRAINER_DCC_GUARD] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("GUARD"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = 0,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_DccGuard),
+    },
+    [TRAINER_DCC_HOWLER] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("HOWLER"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = 0,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_DccHowler),
+    },
+    [TRAINER_DCC_BOSS] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("WARDEN"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = 0,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_DccBoss),
+    },
+    [TRAINER_DCC_BOSS_PREPARED] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("WARDEN"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = 0,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_DccBossPrepared),
+    },
+
     [TRAINER_DCC_TRIAL] =
     {
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,

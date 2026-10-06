@@ -1,5 +1,6 @@
 # R02 achievements and deterministic loot
 
+Integration update: merged PR #19 as `ae4679e2e19a94fd60ac879c9dd18e89f7de2c41`. Earlier pending labels below describe the verification-time checkpoint.
 Handoff/test date: 2026-10-06. Issue #18; integration pending scoped PR.
 Base `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`.
 Tested source `fbfb9e9cad1854b5b03e2a006d1ed1745348f365`.

@@ -1,5 +1,6 @@
 # D02 explosive crafting and optional cache
 
+Integration update: merged PR #23 as `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`. Earlier pending labels below describe the verification-time checkpoint.
 Date: 2026-10-06. Issue #22; scoped integration pending.
 Base `c42d444b8c2ae1b665105baad133094859bf8fa5`.
 Tested `b53b8e6a2c64fe3e9e22d37bca5277c97ac46b02`.

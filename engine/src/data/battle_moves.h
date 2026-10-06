@@ -4667,4 +4667,16 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
+    [MOVE_DCC_WINDUP] =
+    {
+        .effect = EFFECT_ATTACK_UP, .power = 0, .type = TYPE_NORMAL,
+        .accuracy = 0, .pp = 40, .target = MOVE_TARGET_USER,
+        .flags = FLAG_SNATCH_AFFECTED,
+    },
+    [MOVE_DCC_SLAM] =
+    {
+        .effect = EFFECT_HIT, .power = 65, .type = TYPE_NORMAL,
+        .accuracy = 100, .pp = 40, .target = MOVE_TARGET_SELECTED,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED,
+    },
 };

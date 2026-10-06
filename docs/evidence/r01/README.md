@@ -1,5 +1,6 @@
 # R01 XP and equipment verification — 2026-10-06
 
+Integration update: merged PR #17 as `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`. Earlier pending labels below describe the verification-time checkpoint.
 Implemented YES / compiled PASS / runtime PASS. Integration is recorded in
 [progress](../../progress.md) and [issue #16](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/16).
 Base `4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363` (B03 PR #15).

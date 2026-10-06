@@ -58,6 +58,8 @@
 #define FLAG_DCC_TAG_FOUND        0x2C
 #define FLAG_DCC_SECRET_TAKEN     0x2D
 #define FLAG_DCC_CACHE_BLASTED    0x2E // Optional preparation; S01 will use this
+#define FLAG_DCC_BOSS_CLEARED     0x2F
+#define FLAG_DCC_SLICE_COMPLETE   0x30
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag

@@ -242,7 +242,17 @@ Dungeon metatile art is original; behavior attributes derive from pinned upstrea
 Cave to preserve movement. Rugs mark rest/review spaces; amber stripes mark boss
 lanes; wall lamps and debris add occupancy. No changed warp/collision semantics.
 
-Still pending audit/replacement: title/boot branding, generic human NPC overworld
-art, battle arena/ball send-out effects, inherited sound/music/attack animations,
-some summary lore and labels. These are placeholders, not original assets.
+Additional original assets: guide, Mara and Lev stationary overworld sprites;
+visible scuttler/guard/howler/warden tokens; title lettering/portal and battle
+arena. Existing fixed graphics IDs are reused in the authored maps, without
+expanding save/object structures. Human NPCs and enemy tokens are intentionally
+stationary; only Carl needs directional walking. All share the original prop
+palette to stay within existing palette slots.
+
+Remaining placeholders: upstream copyright/boot sequence, press-start glyphs,
+ball send-out effects and summary ball marker, music/sound/attack animations,
+menu frame/bag/summary backgrounds and baked labels (e.g. trainer memo/ribbon).
+These are inherited assets, not original work. Summary lore still uses engine
+nature/ability/type terminology; no class/race story claim. No contest page or
+collection action is reachable. Title copyright credit is retained as provenance.
 S02 is not accepted until real captures and relevant runtime checks are archived.

@@ -2172,3 +2172,17 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 7),
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 8),
 };
+
+static const struct SpriteFrameImage sPicTable_DccScuttler[] = {obj_frame_tiles(gObjectEventPic_DccScuttler)};
+
+static const struct SpriteFrameImage sPicTable_DccGuard[] = {obj_frame_tiles(gObjectEventPic_DccGuard)};
+
+static const struct SpriteFrameImage sPicTable_DccHowler[] = {obj_frame_tiles(gObjectEventPic_DccHowler)};
+
+static const struct SpriteFrameImage sPicTable_DccWarden[] = {obj_frame_tiles(gObjectEventPic_DccWarden)};
+
+static const struct SpriteFrameImage sPicTable_DccGuide[] = {obj_frame_tiles(gObjectEventPic_DccGuide)};
+
+static const struct SpriteFrameImage sPicTable_DccMara[] = {obj_frame_tiles(gObjectEventPic_DccMara)};
+
+static const struct SpriteFrameImage sPicTable_DccLev[] = {obj_frame_tiles(gObjectEventPic_DccLev)};

@@ -1,0 +1,105 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+expect 34 1 11 4 3
+duo healthy
+uses 8 40 2 40
+step 68 32 -
+step 40 0 -
+expect 34 1 7 4 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 donut-scene.ppm
+step 1 1 -
+step 400 0 donut-reply.ppm
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 start-menu.ppm
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 journal-objective.ppm
+step 1 1 -
+step 400 0 journal-rule.ppm
+step 1 1 -
+step 400 0 journal-recovery.ppm
+step 1 1 -
+step 400 0 journal-optional.ppm
+step 1 1 -
+step 120 0 -
+flag 37 0
+flag 43 0
+expect 34 1 7 4 3
+step 20 16 -
+step 40 0 -
+expect 34 1 8 4 3
+step 20 32 -
+step 40 0 -
+expect 34 1 7 4 3
+step 1 8 -
+step 120 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 1 -
+step 180 0 crawler-roster.ppm
+step 1 1 -
+step 120 0 crawler-actions.ppm
+step 1 1 -
+step 300 0 carl-summary.ppm
+step 1 16 -
+step 240 0 carl-stats.ppm
+step 1 16 -
+step 240 0 carl-skills.ppm
+step 1 16 -
+step 240 0 summary-boundary.ppm
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+duo healthy
+uses 8 40 2 40
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 240 0 inventory.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 240 0 medicine-crawlers.ppm
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+item 13 2
+expect 34 1 7 4 3
+quit

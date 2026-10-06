@@ -671,3 +671,28 @@ actual input outcomes, inspect Journal/Donut/menus/palettes, finish remaining
 presentation audit, then isolated committed build/runtime and scoped PR.
 S02 implemented partial, compiled PASS, runtime partial, merged NO. S03 pending.
 Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no new scheduler/writer.
+
+## S02 presentation/runtime checkpoint — 2026-10-06
+
+Checkpoint source `5963c8fdd3f719fb207760230e913e286e79aafb` pushed; continued
+original NPCs/visible enemy tokens, title/portal, battle arena and medicine UI
+corrections. New object art reuses fixed8-bit IDs without increasing the table or
+save format; shared16-color prop/NPC palette. Asset validation checks49 indexed
+PNGs, seven sprite dimension contracts, battle/title tile budgets and all used
+metatile behavior matches. Collision/elevation bits match S01 on all12 binaries.
+
+Exploratory updated trial31, cold/re-entry/recovery34 and gates17 PASS; earlier
+fresh setup32 and UI13 PASS. UI proves Journal objective/rules/recovery/optional
+text and return to movement, summary page boundary, inventory/crawler selection.
+Actual screenshot review found and corrected title clipping/tiled blank background,
+medicine labels, and missing wall lamps. Original NPCs/encounter sprites render
+with the intended shared palette. New damage golden after timing changes: trial
+CarlHP22 after victory, resource4/40; Donut0/38, healed28. No combat-rule change.
+Prepared S01 strategy was offense-focused with WEAKEN after SPARK exhaustion,
+not attacks-only. Parent independently audited S01 without blocker. S03 retains
+decline-to-ending, all-actions-exhausted and individual encounter loss coverage.
+
+Next exact action: commit final S02 source/routes, run isolated test-s02.sh, review
+and archive final actual captures and original asset provenance; draft PR26 issue
+link (actual PR number TBD), integrate only on relevant PASS. S03 fresh full route
+regression remains separate. No new writer/scheduler; no unresolved blocker.

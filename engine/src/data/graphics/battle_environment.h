@@ -26,9 +26,9 @@ const u32 gBattleEnvironmentTiles_Rock[] = INCGFX_U32("graphics/battle_environme
 const u32 gBattleEnvironmentPalette_Rock[] = INCGFX_U32("graphics/battle_environment/rock/palette.pal", ".gbapal.lz");
 const u32 gBattleEnvironmentTilemap_Rock[] = INCGFX_U32("graphics/battle_environment/rock/map.bin", ".lz");
 
-const u32 gBattleEnvironmentTiles_Cave[] = INCGFX_U32("graphics/battle_environment/cave/tiles.png", ".4bpp.lz");
-const u32 gBattleEnvironmentPalette_Cave[] = INCGFX_U32("graphics/battle_environment/cave/palette.pal", ".gbapal.lz");
-const u32 gBattleEnvironmentTilemap_Cave[] = INCGFX_U32("graphics/battle_environment/cave/map.bin", ".lz");
+const u32 gBattleEnvironmentTiles_Cave[] = INCGFX_U32("graphics/dcc/battle/arena.png", ".4bpp.lz");
+const u32 gBattleEnvironmentPalette_Cave[] = INCGFX_U32("graphics/dcc/battle/palette.pal", ".gbapal.lz");
+const u32 gBattleEnvironmentTilemap_Cave[] = INCGFX_U32("graphics/dcc/battle/map.bin", ".lz");
 
 const u32 gBattleEnvironmentPalette_Plain[] = INCGFX_U32("graphics/battle_environment/plain/palette.pal", ".gbapal.lz");
 

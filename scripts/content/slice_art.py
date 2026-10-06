@@ -150,7 +150,7 @@ for mid,k in ids.items():
  entries=[(512+1+k*4+q)|(6<<12) for q in range(4)]+[512|(6<<12)]*4
  struct.pack_into('<8H',metatiles,(mid-512)*16,*entries)
  if mid in (0x220,0x221,0x222):attrs[(mid-512)*2:(mid-512+1)*2]=old[2:4]
- if mid==0x223:attrs[(mid-512)*2:(mid-512+1)*2]=old[(0x11)*2:(0x12)*2]
+ if mid==0x223:attrs[(mid-512)*2:(mid-512+1)*2]=old[(0x19)*2:(0x1A)*2]
 base=Path('data/tilesets/secondary/dcc');save(atlas,base/'tiles.png')
 (R/base/'metatiles.bin').write_bytes(metatiles);(R/base/'metatile_attributes.bin').write_bytes(attrs)
 for i in range(16):pal(base/'palettes'/f'{i:02}.pal',colors)
@@ -187,3 +187,83 @@ mini=mini.point(lookup+[0]*240);mini.putpalette(sum((list(c) for c in cp),[])+[0
 world=Image.new('P',(48,16));world.putpalette(mini.getpalette())
 for x in (0,16,32):world.paste(mini,(x,0))
 save(world,Path('graphics/dcc/donut/overworld.png'))
+# Visible encounter tokens and original stationary crawler NPCs.
+for name in ['scuttler','guard','howler','warden']:
+ front=next(im for _,(n,im) in names.items() if n==name)
+ save(front.resize((32,32),Image.Resampling.NEAREST),Path('graphics/dcc')/name/'overworld.png')
+for name,skin,shirt,hair in [('guide',5,13,14),('mara',4,9,1),('lev',5,12,2)]:
+ im=canvas(16,32);d=ImageDraw.Draw(im)
+ d.rectangle((4,21,11,29),fill=1);d.rectangle((5,22,7,27),fill=13);d.rectangle((9,22,11,27),fill=13)
+ d.rectangle((3,28,7,30),fill=2);d.rectangle((9,28,13,30),fill=2)
+ d.rectangle((2,13,13,23),fill=1);d.rectangle((3,14,12,22),fill=shirt);d.rectangle((2,17,3,23),fill=skin);d.rectangle((12,17,13,23),fill=skin)
+ d.rectangle((4,12,11,16),fill=skin);d.rectangle((4,4,11,12),fill=1);d.rectangle((5,5,10,12),fill=skin)
+ d.rectangle((4,3,11,6),fill=hair);d.point((5,8),1);d.point((10,8),1);d.line((7,11,9,11),fill=2)
+ if name=='guide':d.rectangle((5,10,10,13),fill=14);d.rectangle((8,16,9,21),fill=11)
+ if name=='mara':d.rectangle((3,6,4,13),fill=hair);d.line((5,18,10,18),fill=11)
+ if name=='lev':d.rectangle((3,2,12,4),fill=11);d.rectangle((5,1,10,3),fill=11);d.rectangle((7,16,9,23),fill=13)
+ save(im,Path('graphics/dcc')/name/'overworld.png')
+# Authored5x7 lettering; title uses the existing timing/input flow.
+FONT={
+'A':['01110','10001','10001','11111','10001','10001','10001'],
+'B':['11110','10001','10001','11110','10001','10001','11110'],
+'C':['01111','10000','10000','10000','10000','10000','01111'],
+'D':['11110','10001','10001','10001','10001','10001','11110'],
+'E':['11111','10000','10000','11110','10000','10000','11111'],
+'G':['01111','10000','10000','10111','10001','10001','01111'],
+'I':['11111','00100','00100','00100','00100','00100','11111'],
+'K':['10001','10010','10100','11000','10100','10010','10001'],
+'L':['10000','10000','10000','10000','10000','10000','11111'],
+'M':['10001','11011','10101','10101','10001','10001','10001'],
+'N':['10001','11001','10101','10011','10001','10001','10001'],
+'O':['01110','10001','10001','10001','10001','10001','01110'],
+'P':['11110','10001','10001','11110','10000','10000','10000'],
+'R':['11110','10001','10001','11110','10100','10010','10001'],
+'U':['10001','10001','10001','10001','10001','10001','01110'],
+'W':['10001','10001','10001','10101','10101','11011','10001'],
+'1':['00100','01100','00100','00100','00100','00100','01110']}
+def letters(im,text,y,size,color,shift=0):
+ d=ImageDraw.Draw(im);x=(im.width-(len(text)*6-1)*size)//2+shift
+ for ch in text:
+  for yy,row in enumerate(FONT.get(ch,['00000']*7)):
+   for xx,b in enumerate(row):
+    if b=='1':d.rectangle((x+xx*size,y+yy*size,x+(xx+1)*size-1,y+(yy+1)*size-1),fill=color)
+  x+=6*size
+logo=canvas(256,64);letters(logo,'DUNGEON CRAWLER',7,2,7,-37);letters(logo,'CARLEMON',29,3,11,-37)
+save(logo,Path('graphics/dcc/title/logo.png'))
+# Affine background uses byte tile IDs and the same256-tile budget as upstream.
+(R/'graphics/dcc/title/logo.bin').write_bytes(bytes(range(256))+bytes(768))
+version=canvas(128,32);letters(version,'BOOK 1 OPENING',10,1,7);save(version,Path('graphics/dcc/title/version.png'))
+portal=canvas(128,128);d=ImageDraw.Draw(portal)
+d.rectangle((0,0,127,127),fill=1)
+d.rounded_rectangle((34,10,94,116),radius=25,fill=14);d.rounded_rectangle((39,15,89,119),radius=23,fill=2)
+d.rectangle((39,45,89,119),fill=2)
+for y in range(75,121,9):d.rectangle((40,y,88,y+2),fill=8)
+d.rectangle((21,46,26,65),fill=11);d.rectangle((102,46,107,65),fill=11)
+save(portal,Path('graphics/dcc/title/portal.png'))
+# Standard text tilemap, centered architectural background; unused tiles blank0.
+bg=bytearray(2048)
+for y in range(16):
+ for x in range(16):struct.pack_into('<H',bg,((y+8)*32+x+7)*2,y*16+x)
+(R/'graphics/dcc/title/portal.bin').write_bytes(bg)
+save(canvas(128,56),Path('graphics/dcc/title/mist.png'));save(canvas(64,64),Path('graphics/dcc/title/shine.png'))
+# Palette16 repeated to fill the title loader's fixed240-color read safely.
+p=R/'graphics/dcc/title/background.pal';p.write_text('JASC-PAL\n0100\n256\n'+'\n'.join(' '.join(map(str,c)) for c in P*16)+'\n')
+# Original dungeon battle arena,512 tiles within the existing character block.
+arena=canvas(256,128);d=ImageDraw.Draw(arena);d.rectangle((0,0,255,127),fill=3)
+for y in range(0,48,12):
+ d.line((0,y,255,y),fill=5)
+ for x in range((y//12%2)*16,256,32):d.line((x,y,x,y+11),fill=1)
+d.rectangle((0,47,255,50),fill=1);d.line((0,51,255,51),fill=8)
+for y in range(58,128,14):
+ d.line((0,y,255,y),fill=2)
+ for x in range((y//14%2)*20,256,40):d.line((x,y,x+10,y+13),fill=2)
+for x in (20,218):d.rectangle((x,16,x+7,33),fill=1);d.rectangle((x+2,18,x+5,28),fill=12)
+d.ellipse((120,45,231,78),fill=8);d.ellipse((126,48,225,74),fill=3)
+d.ellipse((10,83,132,116),fill=8);d.ellipse((16,86,126,112),fill=3)
+save(arena,Path('graphics/dcc/battle/arena.png'))
+bm=bytearray(4096)
+for block in range(2):
+ for y in range(32):
+  for x in range(32):struct.pack_into('<H',bm,block*2048+(y*32+x)*2,((y%16)*32+x)|(2<<12))
+(R/'graphics/dcc/battle/map.bin').write_bytes(bm)
+(R/'graphics/dcc/battle/palette.pal').write_text('JASC-PAL\n0100\n48\n'+'\n'.join(' '.join(map(str,c)) for c in colors*3)+'\n')

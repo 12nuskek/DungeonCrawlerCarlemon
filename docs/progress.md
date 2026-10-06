@@ -301,3 +301,13 @@ flag and repeat dialogue. A preliminary pre-trial test using an old B01 save
 correctly failed: the saved map object list lacked the newly added guide. Treat
 E02 as fresh-save-required (documented); final tests start a new E02 game. This is
 not a claim of save migration. No new engine workaround or forced save rewrite.
+
+## E02 final validation — 2026-10-06
+
+Tested source `520aebaf04503be97218966bfb36c35f1958cdb6`, isolated pinned build and
+55 real mGBA assertions passed. Five empty emulator error logs. Actual party HP/PP
+restoration and cold reload proved; nonzero status curing remains explicitly
+unverified. Screenshots visually reviewed. [Full evidence](evidence/e02/README.md).
+Implemented YES / compiled PASS / runtime PASS / merge pending scoped PR.
+No E02 acceptance blocker. After integration continue B02 without routine pause.
+Issues #8/#9 backfilled and closed; #10 tracks this task and receives final captures.

@@ -7,7 +7,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
-| E02 | E01 | Active: guide/recovery, issue #10 |
+| E02 | E01 | Verified: 55 assertions; issue #10; integration pending |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Pending: actions and defeat recovery |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |

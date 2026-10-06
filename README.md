@@ -4,7 +4,7 @@ An in-development GBA adaptation using stock Pokémon Emerald's decompilation.
 The approved target is an authored Book 1 opening slice with Carl and Donut duo
 battles, original dialogue, no catching and accessible defeat recovery.
 
-**Current state: verified tutorial and duo combat prototype; the full slice is incomplete.**
+**Current state: verified tutorial, duo combat and guide recovery prototype; the full slice is incomplete.**
 See [progress](docs/progress.md), [backlog](docs/backlog.md),
 [build and testing](docs/testing.md), and [content ledger](docs/content-ledger.md).
 

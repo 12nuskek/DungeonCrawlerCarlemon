@@ -23,7 +23,7 @@ status. A compressed duo tutorial is permitted only with a labelled departure.
 | --- | --- | --- | --- |
 | E01-INTRO | Fresh New Game spawns at entrance (4,8) | Carl reacts to the dungeon; Donut described on his shoulder; AI teaches movement | No reward; persistent `FLAG_DCC_INTRO_SEEN` (existing bit 0x20). New-game route, then map re-entry/cold reload must not repeat |
 | E01-CRATE | Face crate at (4,5), press A | Empty crate, original note explains START → SAVE and northeast ladder | No item/reward; `FLAG_DCC_CRATE_READ` (existing bit 0x21) selects repeat text. Test before/after real save reload |
-| E01-ROCK | Interact with either visible rock at (7,6)/(7,7) | Original observation suggests walking around | No reward/flag. Test collision from two directions and path around |
+| E01-ROCK | Interact with either visible rock at (7,6)/(7,7) | Original observation suggests walking around | No reward/flag. Test two eastward approaches and path around; optional rock dialogue not yet replayed |
 | E01-LANDING | Ladder at (12,4) in either room | Original quiet-room crate observation | No recovery service yet (E02); reciprocal warp IDs 0; test out/back/reload |
 
 Intentional departures: the opening is compressed into a small authored tutorial;

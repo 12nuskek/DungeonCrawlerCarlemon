@@ -110,7 +110,9 @@ them as CFLAGS/LDFLAGS to the GBA compiler. Saves/executables/ROMs stay ignored.
 ## B01 duo replay
 
 Run `bash scripts/test-b01.sh` with the same compiler and mGBA dependency flags.
-It creates a fresh game and real flash save via the E01 route, then separately
+It exports the committed source into an isolated directory, hydrates the exact
+upstream inputs and rebuilds the pinned compiler via setup-foundation.sh. It then
+creates a fresh game and real flash save via the E01 route, then separately
 boots loss/retry, victory/save and cold-reload routes. Inputs are ordinary GBA
 buttons; RAM diagnostics only read protagonist HP/names/count, battle membership,
 both offensive PP counters, outcome and the saved trial flag. Read offsets are

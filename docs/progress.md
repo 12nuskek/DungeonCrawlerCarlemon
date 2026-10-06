@@ -212,3 +212,12 @@ verified evidence. Parent handles the current chat preview; no duplicate deliver
 Repository issue search returns only an item titled Deleted (#1), no known live
 E01/B01 gameplay issue; verify before any issue-body mutation. No new issue or
 implementation writer is needed merely to duplicate the PR evidence.
+
+Parent's E01 review follow-up: corrected ledger wording to two eastward rock
+approaches; optional rock dialogue and landing crate remain unexercised. Archived
+E01 compiler log is abbreviated; do not rebrand it as raw complete output. B01
+retains raw complete logs and rejects nonempty emulator error logs. Its runner now
+exports the committed source with git archive, regenerates all game assets and
+uses pinned setup inputs, excluding workspace generated/untracked contamination.
+E01 PR #5 screenshot backfill succeeded. Issue #1 is confirmed closed/not_planned
+with title Deleted and no body, so it was preserved unchanged.

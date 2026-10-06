@@ -8,10 +8,15 @@ mkdir -p artifacts/b01
 evidence=$(mktemp -d "$repo/artifacts/b01/run-XXXXXX")
 echo "Evidence: $evidence"
 printf '%s\n' "$revision" > "$evidence/tested-commit.txt"
+# Build only the captured commit: no ignored products or untracked source can leak in.
+mkdir "$evidence/source"
+git archive "$revision" | tar -x -C "$evidence/source"
+repo="$evidence/source"
+bash "$repo/scripts/setup-foundation.sh" > "$evidence/setup-toolchain.log" 2>&1
 make -C engine -j"${JOBS:-2}" > "$evidence/build.log" 2>&1
 sha256sum engine/pokeemerald.gba > "$evidence/rom.sha256"
 arm-none-eabi-nm -g --defined-only engine/pokeemerald.elf > "$evidence/game.sym"
-cc -std=gnu11 -Wall -Wextra -Werror ${DCC_TEST_CFLAGS:-} scripts/playtest.c ${DCC_TEST_LDFLAGS:-} -lmgba -o "$evidence/playtest"
+cc -std=gnu11 -Wall -Wextra -Werror ${DCC_TEST_CFLAGS:-} "$repo/scripts/playtest.c" ${DCC_TEST_LDFLAGS:-} -lmgba -o "$evidence/playtest"
 run_route() {
     local name=$1 route=$2 assertions=$3
     mkdir "$evidence/$name"

@@ -191,3 +191,11 @@ variables. Four production routes (132 assertions) and two explicit capacity
 fixture routes (37 assertions) prove locked states, one-time flags/quantities,
 consumption, no-effect preservation, map re-entry, cold reload, atomic failure
 and retry. Six empty error logs; [full evidence](evidence/r02/README.md).
+
+## D01 trap/quest replay
+
+At tested revision `060864c`, run `bash scripts/test-d01.sh` with the documented
+toolchain variables. Five production routes84 checks and two explicit fixture
+routes30 checks cover optional decline/accept/complete, tag/reward atomicity,
+secret/repeat, backtracking, cold saves and actual paralysis/guide cure.
+[Evidence and fixed coordinate-trigger defect](evidence/d01/README.md).

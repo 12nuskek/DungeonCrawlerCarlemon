@@ -176,4 +176,4 @@ All dialogue authored for this adaptation. Cave tiles/NPC/box/item graphics rema
 upstream placeholders for S02. New metatile0x39E copies upstream cracked-floor
 visuals with ordinary floor behavior; it never invokes stock falling-floor logic.
 Route tag uses the Metal Coat icon temporarily. Source map data are authored assets,
-not generated ROM binaries. Runtime verification pending D01 replay.
+not generated ROM binaries. Runtime verified: [D01 114-check evidence](evidence/d01/README.md); integration pending.

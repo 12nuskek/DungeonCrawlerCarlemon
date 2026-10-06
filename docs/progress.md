@@ -503,3 +503,17 @@ spent tile. One production defect fixed on first hypothesis; no unresolved block
 Actual paralysis64 persists, then guide cures to0; HP26→30. Full bag/Scrap98
 refuses reward2 while retaining ROUTE TAG and incomplete state; toss1, retry grants
 2→99, removes tag and marks completion once. Final isolated committed run next.
+
+## D01 final verification — 2026-10-06
+
+Executor connection confirmed by successful tools after parent's07:07 disconnect
+notice. Existing verification session continued; no duplicate run/reset. Tested
+`060864caa9aecfa48c38c810fe2a7f87895b308e` passed isolated `test-d01.sh`:114
+assertions (84 production/30 fixture), seven empty errors,19 reviewed actual PNGs.
+Production SHA256 `427c16b312869f2dd575bac6f0b736953c524bf96753273a88d2429444b0cfec`.
+[Evidence](evidence/d01/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO, pending scoped PR for issue #20. One coordinate-input defect fixed on
+first hypothesis; no unresolved blocker. Actual status curing now proven; total
+action exhaustion remains S03. Next push evidence/draft/review/merge, then D02.
+Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`; sole writer/scheduler
+ownership unchanged.

@@ -326,3 +326,20 @@ no engine rebuild is claimed for this test-only task. Test-sourceee340e1 passes
 12 production sessions/216 checks and12 empty errors. Same-ROM combined coverage
 is88 sessions/1519 checks. See evidence/n04 for exact inputs, outcomes and snapshots.
 This supersedes the earlier re-entry-only qualification for compiledb530fa6.
+
+### N05 final overnight acceptance
+
+Use the pinned environment above and both required legacy inputs with
+`scripts/test-n05.sh`, then set `DCC_RECOVERY_BASE_RUN` to its accepted run and
+execute `python3 scripts/test-n04.py`. The latter now accepts the exact N03
+76/1303 or N05 78/1315 baseline, validates the two six-check guide routes for N05,
+and still rejects engine/harness mismatch or missing fixture coverage.
+
+Tested eaf073d434a9347dfc2ed921f5f44d163563964b: clean production build,
+78 sessions/1315 checks plus12 recovered-victory/cold sessions/216 checks on the
+same ROM. Combined90/1531, with1338 production and193 labeled fixture assertions;
+90 empty emulator error logs;38 exact rendered comparisons. Production checksum
+and complete raw logs: [N05 evidence](evidence/n05/final/README.md). First-use
+instruction preserved; before/after-trial repeat control return visually verified.
+Prepared continuous completion and segmented unprepared wins remain distinct.
+Human playtime is not inferred from scripted waits.

@@ -366,3 +366,13 @@ and protagonists retain their approved bytes. Source-kit omissions unchanged.
 Mara/Lev now identify the tag bag; cache dialogue explains the warden preparation
 benefit before CHARGE consumption. These are original adaptation lines with the
 same page counts. Testedb530fa6, actual state-pair evidence in evidence/n03/final.
+
+### N05 repeat guide recovery
+
+Original adaptation text compresses repeat recovery to one page. Before the trial,
+it retains the BRACE/WEAKEN hint; after victory, it identifies the west Service Room
+ladder. Full first-use dialogue remains unchanged. Existing GUIDE_MET/trial flags
+select text; HealPlayerParty remains free with unchanged effects. No new chronology,
+art, reward or save field. Actual first-use and both repeat-state captures and normal
+control-return checks: tested eaf073d, evidence/n05/final. All prior placeholders
+and source-kit omissions remain disclosed.

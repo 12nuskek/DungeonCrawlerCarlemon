@@ -1,0 +1,9 @@
+{
+  "source_test_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "unchanged_engine_compiled_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "base_run": "/workspace/DungeonCrawlerCarlemon/artifacts/n05/run-t11UPm",
+  "production_sha256": "8e7e8c20c8dde66488d9374ec90e80391a02c255ad4a0a422e7392f04f1ccfb6",
+  "harness_sha256": "fff0f6226dd05d68029e97ea7d4de8555622ac0b000ad65cef2c9290ab54d790",
+  "symbols_sha256": "443546d26ccbdadaff062e7b23e5ff28191bf0832eca187e536673d962908d82",
+  "method": "Verified unchanged engine/harness source; reuse accepted clean production build. No engine rebuild claimed. Normal save copies and read-only RAM assertions."
+}

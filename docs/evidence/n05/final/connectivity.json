@@ -1,0 +1,50 @@
+[
+  {
+    "map": "DCC_Boss",
+    "reachable_without_trap": 78,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 26
+  },
+  {
+    "map": "DCC_Corridor",
+    "reachable_without_trap": 78,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 31
+  },
+  {
+    "map": "DCC_Entrance",
+    "reachable_without_trap": 77,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 23
+  },
+  {
+    "map": "DCC_Exit",
+    "reachable_without_trap": 85,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 13
+  },
+  {
+    "map": "DCC_Service",
+    "reachable_without_trap": 80,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 67
+  },
+  {
+    "map": "DCC_Vestibule",
+    "reachable_without_trap": 85,
+    "all_object_approaches": true,
+    "all_warps": true,
+    "old_save_escape": true,
+    "preserved_route_cells": 48
+  }
+]

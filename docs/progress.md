@@ -1,8 +1,11 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0, E01, E02 and B01 complete; B02 active.**
-This is a restartable checkpoint, not completion of the authorized Stages 0–5.
-Single implementation writer: this Cloud task. Parent explicitly resumed E01.
+Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 verified, PR50 pending integration.**
+Latest tested source `eaf073d434a9347dfc2ed921f5f44d163563964b`: 90 emulator
+sessions / 1,531 assertions, including 193 labeled fixture checks. Runtime evidence:
+[evidence/n05/final](evidence/n05/final/README.md). Updated private package pending.
+The dated entries below are historical; this heading is the current checkpoint.
+Single implementation writer: this Cloud task. No Stage6 authorisation.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -1543,3 +1546,22 @@ required legacy inputs and exact coverage enforced. Then rerun all six recovered
 save victories/cold checks (12/216) on this new production build; N04 driver now
 explicitly accepts either full N03 or full N05 coverage and still rejects engine
 mismatch. Source candidate implemented; compile/runtime/PR/merge pending.
+
+### N05 verified — 2026-10-06
+
+Tested eaf073d434a9347dfc2ed921f5f44d163563964b; base413523a0ecb85458f2392620d15456c2bfb845bb.
+Clean isolated build ROM8e7e8c20c8dde66488d9374ec90e80391a02c255ad4a0a422e7392f04f1ccfb6.
+Full78/1315 passes with both mandatory legacy inputs;38 rendered comparisons pass.
+Then all six same-recovered-save victory/cold routes pass12/216 on this exact ROM.
+Combined90 sessions/1531 assertions:1338 production,193 labeled fixtures;90 empty
+emulator error logs. First runtime candidate passes. Full first-use instructions,
+repeat pages/control return, six rooms and resolved states visually reviewed.
+Complete logs, source routes, input hashes, state snapshots and actual captures:
+docs/evidence/n05/final and recovery. Before reproductions remain separately labeled.
+
+Implemented/compiled/runtime verified YES; PR50 awaiting integration. No engine
+asset changes from N03, no save-layout/balance changes. Next: merge verified N05,
+prepare actual before/after visual review and replace the existing private Library
+review package with this immutable production ROM. Preserve its previous version.
+Human pacing/uninterrupted unprepared route qualification and source-kit omissions
+remain explicit. No Stage6, public playable release or new scheduler.

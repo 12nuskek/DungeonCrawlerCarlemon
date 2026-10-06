@@ -1297,3 +1297,19 @@ and behavioral invariants. Candidate source omissions remain untouched. Next
 clean committed build, real240x160 arrival/center and motion review,434 behavior
 assertions and15 character/prop pixel checks. Implemented YES, compiled/runtime/
 merged pending. No build blocker attempts. Issue35 remains open for N01 completion.
+
+N01 rooms candidate8e0690b passes clean build +24 sessions/434 assertions,
+24 empty errors and15 exact prop/opponent checks. Actual12 room views inspected;
+ROM6830b878763a27ca2b39f112ffe9010964f9484f4515439221176a5d78667bb5.
+A separate old-save preview failed after4 checks: upstream restores cached map
+metatile IDs from the prior atlas, garbling rooms and blocking an exit. Preserved
+artifacts/n01-rooms/early-views. Do NOT merge/deliver with this known regression.
+
+Focused compatibility fix now part of this visual PR as a separate engine commit:
+DCC loads reconstruct current authored maps before existing flag-driven scripts;
+refresh matching static object graphic IDs from headers, retaining positions and
+all gameplay state. No save-layout/version-field change; stock map paths unchanged.
+Add three ordinary I01-save reload routes: completed slice, leveled landing and
+completed crafting/quest states. Check progression/resources/palettes/warps and
+native refreshed prop pixels. No edited saves/fixtures. Exact next clean build,
+434 current-build assertions +41 older-save assertions, actual side-by-side proof.

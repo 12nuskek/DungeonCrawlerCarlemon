@@ -58,6 +58,16 @@ run_route quest-reload-final "$repo/docs/evidence/d01/reload-final.route" 18 que
 run_route howler-first "$repo/scripts/routes/n00b/howler-first.route" 11 alternate.sav game.sym
 run_route guard-pending "$repo/scripts/routes/n00b/guard-pending.route" 8 alternate.sav game.sym
 run_route rooms "$repo/docs/evidence/n01/before/input.route" 18 playtest.sav game.sym
+# Optional ordinary older-build saves: see docs/testing.md; never edit their RAM/data.
+if [[ -n "${DCC_LEGACY_RUN:-}" ]]; then
+    cp "$DCC_LEGACY_RUN/motion.sav" "$evidence/legacy-landing.sav"
+    cp "$DCC_LEGACY_RUN/craft.sav" "$evidence/legacy-workshop.sav"
+    cp "$DCC_LEGACY_RUN/playtest.sav" "$evidence/legacy-ending.sav"
+    sha256sum "$evidence"/legacy-*.sav > "$evidence/legacy-inputs.sha256"
+    run_route legacy-landing "$repo/scripts/routes/n01/legacy-landing.route" 10 legacy-landing.sav game.sym
+    run_route legacy-workshop "$repo/scripts/routes/n01/legacy-workshop.route" 11 legacy-workshop.sav game.sym
+    run_route legacy-ending "$repo/scripts/routes/n01/legacy-ending.route" 20 legacy-ending.sav game.sym
+fi
 python3 "$repo/scripts/render-walk.py" "$evidence/movement" "$evidence/walking.gif" > "$evidence/walking-render.log"
 python3 - "$evidence" <<'PYIMG'
 from pathlib import Path

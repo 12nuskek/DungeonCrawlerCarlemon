@@ -8,7 +8,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
 | E02 | E01 | Pending: safe room, guide and recovery |
-| B01 | F01 | Active: Carl/Donut duo prototype |
+| B01 | F01 | Implemented, compiled and runtime verified; integration pending |
 | B02 | B01 | Pending: actions and defeat recovery |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |
 | R01 | B02, E02 | Pending: XP and equipment |

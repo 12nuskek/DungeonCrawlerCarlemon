@@ -183,3 +183,22 @@ placeholder Meowth Pickup ability could silently award random items. Disabled it
 using the existing unused ability slot (ABILITY_NONE), without a species-table or
 save-layout change. Battle assertions now also require Donut's ability to be NONE.
 Rerunning the committed revised build before declaring final runtime verification.
+
+## B01 final validation — 2026-10-06
+
+Tested `9fc11212c465008e3571d9f77e98b41454ce919d`, base `91afb3deb6f856b4565e00bb65e81f0f1497a05f`.
+Implemented YES; compiled PASS; runtime verified PASS (38 assertions, empty
+emulator error logs, visually inspected screenshots); merge pending PR integration.
+Commands, input routes, ROM identity and evidence: [B01 report](evidence/b01/README.md).
+Single writer; no running implementation duplicates or open PRs found before
+integration; origin/main still equals the recorded base. Diff reviewed; no
+save-layout change or committed ROM/save/build executable. No B01 acceptance blocker.
+
+Exact next task after integration: E02 safe-room guide and recovery service, with
+original spoiler-limited dialogue and a meaningful damaged/depleted-roster recovery
+route. B02 actions/resource/incapacitation coverage and B03 capture/storage audit
+remain pending. E02 must not be marked done from the trial's healing callback.
+The nonblocking baseline-harness unsigned-overflow defect remains in the backlog
+for its own validation-only change. Full Stages 0–5 slice is incomplete.
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns the sole continuation
+mechanism. No new workflow, schedule, public playable release or binary artifact.

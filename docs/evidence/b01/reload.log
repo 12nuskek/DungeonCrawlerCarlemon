@@ -1,0 +1,55 @@
+mGBA 0.10.5; 240x160; save=../playtest.sav; read-only RAM diagnostics
+frame=720 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=721 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1081 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1082 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1262 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1263 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1443 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=1444 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2044 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2044 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+PASS duo healthy
+frame=2044 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+PASS expect 34 1 8 5 3
+frame=2044 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+PASS battle 0 0 0 0 0 1 0
+frame=2064 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2104 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2105 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2145 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2146 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2546 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2546 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+PASS battle 0 0 0 0 0 1 0
+frame=2547 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2667 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2687 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2727 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+frame=2727 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+PASS expect 34 1 8 5 3
+result=0 assertions=5

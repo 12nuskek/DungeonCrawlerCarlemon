@@ -1554,3 +1554,8 @@ static const u8 sDccWristWrapDesc[] = _(
     "A sturdy wrap.\n"
     "Equip to strengthen\n"
     "normal attacks.");
+
+static const u8 sDccScrapDesc[] = _(
+    "Useful scrap.\n"
+    "Keep for crafting.\n"
+    "Not usable alone.");

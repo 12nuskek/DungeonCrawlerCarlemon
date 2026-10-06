@@ -79,7 +79,7 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"gBagPosition")) bag=addr;
         if (!strcmp(symbol,"gSaveBlock2Ptr")) save2ptr=addr;
         if (!strcmp(symbol,"gBagPockets")) pockets=addr;
-        if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe")) probe=addr;
+        if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe") || !strcmp(symbol,"gDccRewardProbe")) probe=addr;
     }
     fclose(symbols);
     if (!saveptr || !objects || !avatar || !party || !count || !mons || !battlers || !outcome || !mainstate) return 4;

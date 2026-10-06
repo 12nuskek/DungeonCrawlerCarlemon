@@ -1,0 +1,122 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+expect 34 0 4 8 1
+policy 1
+flag 36 0
+flag 37 0
+flag 38 0
+flag 39 0
+item 13 98
+item 378 0
+step 100 16 -
+step 40 0 supply-approach.ppm
+expect 34 0 10 8 1
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply-locked.ppm
+flag 36 0
+flag 38 0
+item 13 98
+step 1 1 -
+step 120 0 -
+step 100 32 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+expect 34 0 4 6 1
+step 1 1 -
+step 400 0 crate.ppm
+step 1 1 -
+step 400 0 note.ppm
+step 1 1 -
+step 400 0 ladder.ppm
+step 1 1 -
+step 400 0 reader-achievement.ppm
+flag 36 1
+flag 38 0
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 reader-repeat.ppm
+flag 36 1
+step 1 1 -
+step 120 0 -
+step 36 128 -
+step 40 0 -
+step 100 16 -
+step 40 0 -
+expect 34 0 10 8 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply-full.ppm
+flag 36 1
+flag 38 0
+item 13 98
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 nearly-full-stack.ppm
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 tossed-one.ppm
+item 13 97
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 capacity-retry.ppm
+flag 38 1
+item 13 99
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 capacity-repeat.ppm
+flag 38 1
+item 13 99
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 600 0 capacity-saved.ppm
+flag 38 1
+item 13 99
+expect 34 0 10 8 3
+quit

@@ -427,3 +427,23 @@ Production ROM `aece986da533253d66fa77151d2972d81160002e5fbd17bd8374d50c400355d0
 PASS / integration pending scoped PR. No blocker. R02 persistent achievements and
 loot is next after merge. Depleted/immediate-defeat saves now covered, while actual
 status curing and total action exhaustion remain explicit S03 edges. No scheduler.
+
+## R01 integration / R02 start — 2026-10-06
+
+PR #17 merged `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`; issue #16 closed and
+body updated to merged. B03 PR #15 merge remains `4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363`.
+Parent independently confirmed B03 110 and R01 174 (144 production/30 fixture)
+checks without material blocker. Main reconciled, no open PR. R02 issue #18 and
+task/r02-achievements-loot start here: two authored achievements, two deterministic
+boxes, unique persistent IDs, capacity/repeat/reload correctness. No new maps,
+save layout, random loot model or scheduler. Compile/runtime/merge pending. Fresh
+save required for new map objects. Next: compile and build input-driven reward
+routes, including full-stack/full-bag atomic failure and successful retry.
+
+R02 source compiles. Fresh setup-rewards route passes32 checks: both locked states,
+reader achievement/repeat, exact Potion grant/repeat and save. Trial route reaches
+both level9 and sets the duo achievement,31 checks before adding workshop/use
+steps. Extra dialogue required a replay close-state adjustment; no source game
+failure or blocker established. Capacity fixture prepares all slots occupied with
+Potion98 to prove an attempted grant of2 neither partially grants nor consumes its
+flag; after tossing1, retry should grant2 to99. Final acceptance still pending.

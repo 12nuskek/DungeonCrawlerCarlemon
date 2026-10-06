@@ -11,8 +11,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
 | B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
-| R01 | B02, E02 | Verified: 174 assertions; issue #16; integration pending |
-| R02 | R01 | Pending: persistent achievements/loot |
+| R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
+| R02 | R01 | Active: issue #18; two achievements and two deterministic boxes |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |
 | D02 | R01, D01 | Pending: explosive recipe |
 | S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |
@@ -97,3 +97,11 @@ and one held-item effect; unique optional equipment grant. Demonstrate normal
 acquisition, equip/take, combat effect, earned level growth, save/cold reload and
 repeat interaction without duplicate gear. Win without equipment; preserve defeat
 recovery. No new save schema, combat model, maps, achievements/loot or expansion.
+
+## R02 contract
+
+Base `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`. Two one-time achievement flags
+(note reading/trial win), two boxes (Potions/Scrap), exact contents, locked/opened/
+full states. Existing flag and atomic inventory APIs only. Test repeated triggers,
+map re-entry/cold saves, item use/persistence, no partial capacity grant and retry.
+No new maps/save schema/randomizer; original notices, explicit placeholder props.

@@ -371,7 +371,11 @@ gBattleAnims_Moves::
 	.4byte Move_WATER_PULSE
 	.4byte Move_DOOM_DESIRE
 	.4byte Move_PSYCHO_BOOST
-	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
+	.4byte Move_TACKLE @ DCC_STRIKE: placeholder animation
+	.4byte Move_HARDEN @ DCC_BRACE
+	.4byte Move_SWIFT @ DCC_SPARK
+	.4byte Move_GROWL @ DCC_WEAKEN
+	.4byte Move_COUNT @ unreachable sentinel after final move
 
 	.align 2
 gBattleAnims_StatusConditions::

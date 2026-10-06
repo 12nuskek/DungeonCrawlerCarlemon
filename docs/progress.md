@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0, E01 and B01 complete; E02 active.**
+Handoff date: 2026-10-06. **Stage 0, E01, E02 and B01 complete; B02 active.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
 Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -311,3 +311,20 @@ unverified. Screenshots visually reviewed. [Full evidence](evidence/e02/README.m
 Implemented YES / compiled PASS / runtime PASS / merge pending scoped PR.
 No E02 acceptance blocker. After integration continue B02 without routine pause.
 Issues #8/#9 backfilled and closed; #10 tracks this task and receives final captures.
+
+## E02 integration / B02 start — 2026-10-06
+
+PR #11 merged at `471a9c183752ed27f8bfa51b5a451f6722d1e69b`; issue #10 closed with
+actual final captures and PR backlink. E02 implemented/compiled/runtime/merged YES,
+55 checks. Current main fetched/fast-forwarded, clean tree, no open PR. Continue
+without routine pause: B02 branch task/b02-crawler-actions, base equals that merge.
+Task issue #12: four dedicated crawler moves using existing effects/animations,
+resource depletion/alternative action, both support effects, one/both incapacitated,
+local recovery, guide restoration and cold reload. No new framework/save layout.
+Fresh B02 save required; original skill names are adaptation choices, not canon.
+
+B02 source compiles successfully. Real mGBA fresh game reached both new action
+menus; first offensive turn spent STRIKE 8→7 and SPARK 2→1. Runtime acceptance is
+still in progress (depletion/support/incapacitation/reload), not claimed complete.
+No command/environment stall or active blocker. Parent requested checkpoint and
+was given E02 PR #11/merge/test details plus B02 issue #12 status. Sole writer.

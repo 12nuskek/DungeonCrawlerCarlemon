@@ -7,9 +7,9 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
-| E02 | E01 | Verified: 55 assertions; issue #10; integration pending |
+| E02 | E01 | Complete: 55 assertions, merged PR #11; issue #10 closed |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
-| B02 | B01 | Pending: actions and defeat recovery |
+| B02 | B01 | Active: dedicated actions/depletion/incapacitation; issue #12 |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |
 | R01 | B02, E02 | Pending: XP and equipment |
 | R02 | R01 | Pending: persistent achievements/loot |
@@ -64,3 +64,13 @@ trial defeat recovery. Do not claim the historical B01 route applies unchanged t
 new recovery behavior. No quest/reward/crafting, capture audit, final battle art or
 new floor work in this focused task. Record placeholders and adaptation departures.
 Embed actual tested emulator screenshots on its gameplay PR/issue with logs.
+
+## B02 contract
+
+Base `471a9c183752ed27f8bfa51b5a451f6722d1e69b`. Use stock effects to author STRIKE,
+BRACE, SPARK and WEAKEN as distinct move records; preserve enemy move definitions.
+Provisional use budgets 8/40/2/40. Validate both offensive/support roles, actual stat
+changes, zero-use rejection with alternate action, one actor incapacitated then
+both defeated and recovered, guide HP/PP recovery and cold reload. Original action
+names and stock animation placeholders go in ledger. No capture/storage/evolution
+UI audit (B03), reward systems, new battle framework or save-layout changes.

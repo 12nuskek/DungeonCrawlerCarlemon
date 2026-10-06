@@ -1418,6 +1418,15 @@ static const u8 sPsychoBoostDescription[] = _(
     "but sharply lowers SP. ATK.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
+static const u8 sDccStrikeDescription[] = _("Strike one foe with\n"
+    "a direct physical hit.");
+static const u8 sDccBraceDescription[] = _("Brace to raise your\n"
+    "DEFENSE one stage.");
+static const u8 sDccSparkDescription[] = _("A magic burst that\n"
+    "hits both foes.");
+static const u8 sDccWeakenDescription[] = _("Lower both foes'\n"
+    "ATTACK by one stage.");
+
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
@@ -1774,4 +1783,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_DCC_STRIKE - 1] = sDccStrikeDescription,
+    [MOVE_DCC_BRACE - 1] = sDccBraceDescription,
+    [MOVE_DCC_SPARK - 1] = sDccSparkDescription,
+    [MOVE_DCC_WEAKEN - 1] = sDccWeakenDescription,
 };

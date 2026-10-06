@@ -94,3 +94,16 @@ B01's victory auto-heal behavior; historical B01 evidence remains attributed to 
 own tested revision. Actual party HP and encrypted party PP are asserted before/
 after healing, with normal status values checked. Curing a nonzero persistent
 status is not runtime-proven yet: this encounter's enemies only use Tackle.
+
+## B02 action records (implementation under validation)
+
+Dedicated moves 355–358 are STRIKE (40-power physical normal hit, 8 uses), BRACE
+(self defense +1, 40 uses), SPARK (50-power magic/stock psychic type, both foes,
+2 uses), and WEAKEN (both foes' attack -1, 40 uses). These are provisional authored
+adaptation names and tuning, not claimed Book 1 skill names or unlock chronology.
+They use existing effects and placeholder Tackle/Harden/Swift/Growl animations;
+upstream enemy move records are unchanged. Original descriptions are in the move
+text table. Both protagonists initialize with these two role-specific actions on
+New Game; fresh B02 saves required. No save-layout change, and IDs remain below
+the existing 9-bit learnset encoding limit. Original battle art/type-label cleanup
+remains scheduled within S02; capture/evolution/storage audit remains B03.

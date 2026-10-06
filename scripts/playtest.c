@@ -2,6 +2,7 @@
  * Commands: step FRAMES KEYS CAPTURE.ppm (or -), expect GROUP MAP X Y FLAGS,
  * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON DONUT_ABILITY, duo healthy,
  * roster CARL_HP DONUT_HP CARL_PP DONUT_PP CARL_STATUS DONUT_STATUS,
+ * support CARL_PP2 DONUT_PP2 CARL_DEF FOE1_ATK FOE2_ATK,
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -110,7 +111,7 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strcmp(line,"duo healthy\n")) {result=13;break;}
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);
@@ -135,6 +136,19 @@ int main(int argc, char **argv)
             if (sscanf(line,"roster %31s %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],values[5],&extra)!=6) result=19;
             for (unsigned i=0;i<6 && !result;i++)
                 if (!number(values[i],UINT_MAX,&wanted) || wanted!=roster[i]) result=19;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
+        unsigned support[]={core->busRead8(core,mons+0x25),core->busRead8(core,mons+2*0x58+0x25),
+            core->busRead8(core,mons+0x1A),core->busRead8(core,mons+0x58+0x19),
+            core->busRead8(core,mons+3*0x58+0x19)};
+        printf("support PP=%u,%u Carl-defense=%u enemy-attack=%u,%u\n",
+            support[0],support[1],support[2],support[3],support[4]);
+        if (!strncmp(line,"support ",8)) {
+            char values[5][32]; unsigned wanted;
+            if (sscanf(line,"support %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],&extra)!=5) result=20;
+            for (unsigned i=0;i<5 && !result;i++)
+                if (!number(values[i],255,&wanted) || wanted!=support[i]) result=20;
             if (result) {fprintf(stderr,"FAILED: %s",line);break;}
             checks++; printf("PASS %s",line);
         }

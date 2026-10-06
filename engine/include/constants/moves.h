@@ -357,7 +357,12 @@
 #define MOVE_DOOM_DESIRE 353
 #define MOVE_PSYCHO_BOOST 354
 
-#define MOVES_COUNT 355
+#define MOVE_DCC_STRIKE 355
+#define MOVE_DCC_BRACE 356
+#define MOVE_DCC_SPARK 357
+#define MOVE_DCC_WEAKEN 358
+
+#define MOVES_COUNT 359
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

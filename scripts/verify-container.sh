@@ -15,10 +15,15 @@ git rev-parse HEAD > "$evidence/tested-commit.txt"
 # Build environment definition must also be the committed version.
 git archive HEAD docker | tar -x -C "$evidence"
 cp "${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" "$evidence/docker/host-ca.crt"
-docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg NO_PROXY \
+network_args=()
+if [[ -n "${DCC_PROXY_HOST_MAPPING:-}" ]]; then
+    network_args+=(--add-host "$DCC_PROXY_HOST_MAPPING")
+fi
+docker build "${network_args[@]}" --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg NO_PROXY \
+    --build-arg http_proxy --build-arg https_proxy --build-arg no_proxy \
     -t dungeoncarlemon-foundation "$evidence/docker" > "$evidence/image-build.log" 2>&1
 docker image inspect dungeoncarlemon-foundation > "$evidence/image-inspect.json"
-container=$(docker create -i -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY \
+container=$(docker create -i "${network_args[@]}" -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY \
     -e http_proxy -e https_proxy -e no_proxy dungeoncarlemon-foundation bash -c '
     set -euo pipefail
     tar -x -C /build

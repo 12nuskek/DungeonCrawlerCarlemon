@@ -12,7 +12,7 @@ make -C engine -j"${JOBS:-2}" > "$evidence/build.log" 2>&1
 sha256sum engine/pokeemerald.gba > "$evidence/rom.sha256"
 arm-none-eabi-nm -g --defined-only engine/pokeemerald.elf > "$evidence/game.sym"
 # Optional include/library flags support workspace-local dependency installs.
-cc -std=gnu11 -Wall -Wextra -Werror ${CFLAGS:-} scripts/playtest.c ${LDFLAGS:-} -lmgba -o "$evidence/playtest"
+cc -std=gnu11 -Wall -Wextra -Werror ${DCC_TEST_CFLAGS:-} scripts/playtest.c ${DCC_TEST_LDFLAGS:-} -lmgba -o "$evidence/playtest"
 cd "$evidence"
 ./playtest "$repo/engine/pokeemerald.gba" playtest.sav game.sym < "$repo/docs/evidence/e01/new-game.route" > new-game.log 2> new-game-errors.log
 grep -q 'result=0 assertions=16' new-game.log

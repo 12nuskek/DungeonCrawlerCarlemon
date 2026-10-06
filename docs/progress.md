@@ -221,3 +221,8 @@ exports the committed source with git archive, regenerates all game assets and
 uses pinned setup inputs, excluding workspace generated/untracked contamination.
 E01 PR #5 screenshot backfill succeeded. Issue #1 is confirmed closed/not_planned
 with title Deleted and no body, so it was preserved unchanged.
+
+Isolated runner review caught three build/hash/symbol paths still relative to the
+workspace. Corrected them to the snapshot, then stopped the exploratory run and
+committed the correction before starting final verification. The interrupted
+run-ufeHbo is not accepted evidence; no game-state or source data was discarded.

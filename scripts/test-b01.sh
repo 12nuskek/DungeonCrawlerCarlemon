@@ -13,16 +13,16 @@ mkdir "$evidence/source"
 git archive "$revision" | tar -x -C "$evidence/source"
 repo="$evidence/source"
 bash "$repo/scripts/setup-foundation.sh" > "$evidence/setup-toolchain.log" 2>&1
-make -C engine -j"${JOBS:-2}" > "$evidence/build.log" 2>&1
-sha256sum engine/pokeemerald.gba > "$evidence/rom.sha256"
-arm-none-eabi-nm -g --defined-only engine/pokeemerald.elf > "$evidence/game.sym"
+make -C "$repo/engine" -j"${JOBS:-2}" > "$evidence/build.log" 2>&1
+sha256sum "$repo/engine/pokeemerald.gba" > "$evidence/rom.sha256"
+arm-none-eabi-nm -g --defined-only "$repo/engine/pokeemerald.elf" > "$evidence/game.sym"
 cc -std=gnu11 -Wall -Wextra -Werror ${DCC_TEST_CFLAGS:-} "$repo/scripts/playtest.c" ${DCC_TEST_LDFLAGS:-} -lmgba -o "$evidence/playtest"
 run_route() {
     local name=$1 route=$2 assertions=$3
     mkdir "$evidence/$name"
     (cd "$evidence/$name"
      ../playtest "$repo/engine/pokeemerald.gba" ../playtest.sav ../game.sym < "$route" > replay.log 2> errors.log
-     grep -q "result=0 assertions=$assertions" replay.log
+     grep -q "result=0 assertions=$assertions$" replay.log
      test ! -s errors.log)
 }
 run_route setup "$repo/docs/evidence/e01/new-game.route" 16

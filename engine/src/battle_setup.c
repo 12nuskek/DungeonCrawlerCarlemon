@@ -1329,9 +1329,10 @@ static void CB2_EndTrainerBattle(void)
     // Trial-only safe return; never send a defeated crawler to the old hometown.
     if (gTrainerBattleOpponent_A == TRAINER_DCC_TRIAL)
     {
-        HealPlayerParty();
         if (gBattleOutcome == B_OUTCOME_WON)
             SetBattledTrainersFlags();
+        else
+            HealPlayerParty();
         SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
     }
     else if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)

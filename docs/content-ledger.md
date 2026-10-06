@@ -75,3 +75,22 @@ art in S02 before Stage 5 review; do not defer all artwork until Stage 6. Follow
 gameplay dependencies first, then implement the visual pass in the real engine.
 Include actual before/after emulator screenshots and list every remaining
 placeholder explicitly. This clarifies accepted scope, not a platform expansion.
+
+## E02 guide and recovery
+
+E02-GUIDE is an original unnamed guide at landing (4,8), motivated by keeping
+crawlers alive rather than carrying them. This is an invented compressed tutorial
+scene, not a claim about a named Book 1 character or chapter. First meeting uses
+existing unused flag 0x22 (`FLAG_DCC_GUIDE_MET`); repeat conversations skip the
+introduction. The guide freely restores both protagonists using the existing
+party-healing function, then explains the trial before victory or return/save
+instructions afterward. No reward or inventory cost; save structures unchanged.
+
+The guide's EXPERT_M overworld sprite is an upstream placeholder scheduled for S02.
+B01 trial victory now preserves actual injuries/action depletion so visiting the
+guide is meaningful; its text directs the player to the south wall. Defeat still
+restores both at the same landing and permits retry. This intentionally supersedes
+B01's victory auto-heal behavior; historical B01 evidence remains attributed to its
+own tested revision. Actual party HP and encrypted party PP are asserted before/
+after healing, with normal status values checked. Curing a nonzero persistent
+status is not runtime-proven yet: this encounter's enemies only use Tackle.

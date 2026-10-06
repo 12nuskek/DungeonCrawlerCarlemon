@@ -41,3 +41,7 @@ route/assertion. Include before/after captures for visual fixes where useful.
 Keep logs/assertions beside images; screenshots alone never prove acceptance.
 For nonvisual build/docs issues explicitly say screenshots N/A or link relevant
 actual evidence. Never fabricate game captures. Preserve this in continuation.
+Use a task issue as well as the scoped PR: cross-link both, attach representative
+actual screenshots to both, and close the issue only after verified integration.
+Build gameplay evidence from an isolated committed snapshot with regenerated game
+products. Preserve complete raw build/emulator logs and reject emulator errors.

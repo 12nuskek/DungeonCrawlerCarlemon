@@ -1,0 +1,143 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+duo healthy
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 3
+step 1 1 -
+step 400 0 trial-intro.ppm
+step 1 1 -
+step 400 0 duo-note.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 35 20 0 0
+step 1 1 -
+step 120 0 carl-actions.ppm
+step 1 1 -
+step 60 0 target.ppm
+step 1 1 -
+step 120 0 donut-menu.ppm
+step 1 1 -
+step 120 0 donut-actions.ppm
+step 1 1 -
+step 1000 0 turn-one.ppm
+battle 1 4 0 34 19 0 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1000 0 turn-2.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1000 0 turn-3.ppm
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 400 0 victory-0.ppm
+step 1 1 -
+step 400 0 victory-1.ppm
+step 1 1 -
+step 400 0 victory-2.ppm
+step 1 1 -
+step 400 0 victory-3.ppm
+step 1 1 -
+step 400 0 victory-4.ppm
+step 1 1 -
+step 400 0 victory-5.ppm
+step 1 1 -
+step 400 0 victory-6.ppm
+step 1 1 -
+step 400 0 victory-7.ppm
+step 400 0 restored.ppm
+battle 0 4 1 32 17 1 0
+roster 22 16 32 17 0 0
+step 1 1 -
+step 120 0 -
+step 68 32 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 before-guide.ppm
+expect 34 1 4 7 3
+roster 22 16 32 17 0 0
+step 1 1 -
+step 400 0 guide-intro.ppm
+step 1 1 -
+step 400 0 guide-motive.ppm
+step 1 1 -
+step 400 0 rested.ppm
+roster 30 26 35 20 0 0
+step 1 1 -
+step 400 0 return-advice.ppm
+step 1 1 -
+step 400 0 save-advice.ppm
+step 1 1 -
+step 120 0 guide-done.ppm
+expect 34 1 4 7 7
+duo healthy
+step 1 1 -
+step 400 0 rest-repeat.ppm
+roster 30 26 35 20 0 0
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+step 132 16 -
+step 40 0 -
+step 52 64 -
+step 180 0 returned.ppm
+expect 34 0 12 4 7
+step 20 32 -
+step 40 0 -
+step 20 16 -
+step 180 0 hub-return.ppm
+expect 34 1 12 4 7
+step 20 32 -
+step 40 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 overwrite.ppm
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 1 11 4 7
+roster 30 26 35 20 0 0
+quit

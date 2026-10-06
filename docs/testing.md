@@ -129,3 +129,20 @@ past result. Retain input routes and logs: images alone are not test proof.
 Nonvisual build/docs issues say screenshots N/A or link relevant actual runtime
 evidence. Do not fabricate screenshots or present mockups as running game output.
 This requirement was explicitly added by Kurt on 2026-10-06.
+
+## E02 guide/recovery replay
+
+Use `bash scripts/test-e02.sh` for the current E02 milestone. It builds an isolated
+committed snapshot with pinned setup, retains complete logs and fails on emulator
+errors. Routes cover pre-trial guide dialogue, inherited defeat/retry, a win with
+real injured/depleted protagonists followed by guide recovery, repeat use, map
+return and actual cold save reload. `roster` assertions read party HP, decrypt the
+saved attack substructure locally to inspect actual party PP, and read persistent
+status. The harness never writes game RAM. Battle PP is not used to prove healing.
+Nonzero status curing awaits a reachable status-inflicting encounter and is not
+claimed from a zero-status check. Historical B01 victory routes expect auto-heal;
+run those at their recorded revision, not against E02's intentional guide flow.
+
+Use a fresh E02 save. Old B01 saves can retain a cached map object list without
+the newly authored guide until map re-entry; no cross-milestone migration is
+claimed. Final E02 verification always begins with a new game under the E02 ROM.

@@ -1455,3 +1455,15 @@ optional wrap, so its landing box correctly remains closed. Verify the opened
 wrap box at equipment-give/wrap-found instead, where flag35/item377 assertions
 prove acquisition. All18 expanded OBJ/frame comparisons pass against first-run
 actual frames. No game defect or gameplay assertion was weakened.
+
+N03 source review found a sprite allocation mismatch: ObjectEventSetGraphicsId
+switches image pointers without reallocating, while DestroySprite frees the current
+image size. A live32x32 opponent changing to a16x16 marker could retain12 tiles until
+map reset. No runtime crash observed. Stopped unfinished a8e6ee4 run-BHwZkd (exit143)
+before acceptance, preserving local logs; this was a source-review correction, not
+a runtime assertion failure. Pack the exact unchanged native16x16 marker at(8,16)
+in a transparent32x32 canvas and keep512-byte graphics info/allocation. Its visible
+field pixels/position stay identical. Static checks enforce exact native pixels,
+palette and no extra opaque pixels. No stock sprite allocator changes needed.
+Next clean committed rerun76/1303 and38 rendered-art comparisons; prior first-run
+proof remains explicitly tied to210e734, never relabelled as this candidate.

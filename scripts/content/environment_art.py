@@ -15,6 +15,13 @@ def export_props():
     target.mkdir(parents=True, exist_ok=True)
     for name in PROPS:
         shutil.copyfile(SOURCE / 'world_shared' / (name+'.png'), target / (name+'.png'))
+    # ObjectEventSetGraphicsId does not reallocate sprite tiles. Keep the same
+    # 32x32 allocation as living opponents; native 16x16 remains sit at their feet.
+    from PIL import Image
+    native=Image.open(SOURCE/'world_shared/encounter_remains.png')
+    packed=Image.new('P',(32,32));packed.putpalette(native.getpalette())
+    packed.paste(native,(8,16))
+    packed.save(target/'encounter_remains_32.png',bits=4,transparency=0)
 
 
 def export_rooms():

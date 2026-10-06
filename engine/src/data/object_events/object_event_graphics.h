@@ -386,4 +386,4 @@ const u32 gObjectEventPic_DccStorageRack[] = INCGFX_U32("graphics/dcc/environmen
 
 const u32 gObjectEventPic_DccCacheOpen[] = INCGFX_U32("graphics/dcc/environment/cache_open.png", ".4bpp");
 
-const u32 gObjectEventPic_DccEncounterRemains[] = INCGFX_U32("graphics/dcc/environment/encounter_remains.png", ".4bpp");
+const u32 gObjectEventPic_DccEncounterRemains[] = INCGFX_U32("graphics/dcc/environment/encounter_remains_32.png", ".4bpp");

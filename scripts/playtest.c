@@ -8,6 +8,7 @@
  * foes HP1 HP2; item ID QUANTITY; flag ID SET.
  * pattern TRAINER TURN FOE_PP0 FOE_PP1 FOE_ATTACK FOE_DEFENSE CARL_ATTACK FOE_LEVEL.
  * color OBJ_PALETTE_SLOT COLOR_INDEX BGR555_VALUE (read actual hardware palette).
+ * pilot POLICY MAX_FRAMES: bounded normal-button battle routing; no state writes.
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -61,10 +62,24 @@ static void log_emulator(struct mLogger *logger, int category, enum mLogLevel le
     fputc('\n', stderr);
 }
 
+static int capture(const char *name, const color_t *pixels, unsigned width, unsigned height)
+{
+    FILE *out=fopen(name,"wb");
+    if (!out) return 11;
+    int result=0;
+    fprintf(out,"P6\n%u %u\n255\n",width,height);
+    for (unsigned i=0;i<width*height;i++) {
+        unsigned char rgb[]={pixels[i]&255,(pixels[i]>>8)&255,(pixels[i]>>16)&255};
+        if (fwrite(rgb,1,3,out)!=3) {result=12;break;}
+    }
+    if (fclose(out)) result=12;
+    return result;
+}
+
 int main(int argc, char **argv)
 {
     if (argc != 4) return 2;
-    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, trainer=0, results=0, addr;
+    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, trainer=0, results=0, controls=0, actionCursor=0, moveCursor=0, targetCursor=0, inputAction=0, inputMove=0, inputTarget=0, addr;
     char type, symbol[128];
     FILE *symbols=fopen(argv[3], "r");
     if (!symbols) return 3;
@@ -83,6 +98,13 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"gBagPockets")) pockets=addr;
         if (!strcmp(symbol,"gTrainerBattleOpponent_A")) trainer=addr;
         if (!strcmp(symbol,"gBattleResults")) results=addr;
+        if (!strcmp(symbol,"gBattlerControllerFuncs")) controls=addr;
+        if (!strcmp(symbol,"gActionSelectionCursor")) actionCursor=addr;
+        if (!strcmp(symbol,"gMoveSelectionCursor")) moveCursor=addr;
+        if (!strcmp(symbol,"gMultiUsePlayerCursor")) targetCursor=addr;
+        if (!strcmp(symbol,"DccTestInputAction")) inputAction=addr;
+        if (!strcmp(symbol,"DccTestInputMove")) inputMove=addr;
+        if (!strcmp(symbol,"DccTestInputTarget")) inputTarget=addr;
         if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe") || !strcmp(symbol,"gDccRewardProbe")) probe=addr;
     }
     fclose(symbols);
@@ -108,10 +130,83 @@ int main(int argc, char **argv)
     printf("mGBA %s; %ux%u; save=%s; read-only RAM diagnostics\n",projectVersion,width,height,argv[2]);
     fflush(stdout);
     char line[256],name[128],extra,ft[32],kt[32];
-    unsigned frames,keys,total=0,checks=0;
+    unsigned frames,keys,total=0,checks=0,lastPilotIncap=0;
     int result=0;
     while (fgets(line,sizeof(line),stdin)) {
         if (!strcmp(line,"quit\n")) break;
+        if (!strncmp(line,"pilot ",6)) {
+            char policy[32], limitText[32]; unsigned limit;
+            if (sscanf(line,"pilot %31s %31s %c",policy,limitText,&extra)!=2
+                || !number(limitText,36000,&limit) || !limit || total>UINT_MAX-limit
+                || !controls || !actionCursor || !moveCursor || !targetCursor
+                || !inputAction || !inputMove || !inputTarget || !results
+                || (strcmp(policy,"defensive") && strcmp(policy,"fortify") && strcmp(policy,"offensive") && strcmp(policy,"loss"))
+                || !(core->busRead8(core,mainstate+0x439)&2)) {result=31;break;}
+            unsigned elapsed=0, lastTurn=UINT_MAX, capturedIncap=0;
+            lastPilotIncap=0;
+            while (elapsed<limit && (core->busRead8(core,mainstate+0x439)&2)) {
+                unsigned chp=core->busRead16(core,party+0x56), dhp=core->busRead16(core,party+100+0x56);
+                if (!chp && dhp) lastPilotIncap|=1;
+                if (chp && !dhp) lastPilotIncap|=2;
+                if (!chp && !dhp) lastPilotIncap|=4;
+                unsigned turn=core->busRead8(core,results+0x13);
+                unsigned key=0, actor=UINT_MAX, menu=0, selection=0;
+                if (elapsed%12==0) {
+                    key=1; // Advance ordinary battle text when no input menu owns control.
+                    for (unsigned b=0;b<=2;b+=2) {
+                        unsigned callback=core->busRead32(core,controls+b*4)&~1u;
+                        if (callback==inputAction) {
+                            unsigned cursor=core->busRead8(core,actionCursor+b);
+                            key=(cursor&1)?32:(cursor&2)?64:1;
+                            actor=b; menu=1; selection=0; break;
+                        }
+                        if (callback==inputMove) {
+                            unsigned mask=(!chp && dhp)?1:(chp && !dhp)?2:0;
+                            if (mask && !(capturedIncap&mask)) {
+                                result=capture(mask==1?"pilot-carl-down.ppm":"pilot-donut-down.ppm",pixels,width,height);
+                                if (result) break;
+                                capturedIncap|=mask;
+                            }
+                            unsigned desired=0;
+                            if (!strcmp(policy,"loss")) desired=(b==2 || !core->busRead16(core,party+100+0x56));
+                            else if ((!strcmp(policy,"defensive") && turn<(b==0?2:3))
+                                     || (!strcmp(policy,"fortify") && turn<3)) desired=1;
+                            else if (b==2 && !core->busRead8(core,mons+b*0x58+0x24)) desired=1;
+                            unsigned cursor=core->busRead8(core,moveCursor+b);
+                            // Fixed duo has exactly two actions; exhausted pairs use engine STRUGGLE.
+                            key=cursor==desired?1:desired?16:32;
+                            actor=b; menu=2; selection=desired; break;
+                        }
+                        if (callback==inputTarget) {
+                            unsigned target=core->busRead8(core,targetCursor);
+                            key=(!strcmp(policy,"loss") && b==0
+                                 && core->busRead16(core,party+100+0x56) && target!=2)?16:1;
+                            actor=b; menu=3; selection=target; break;
+                        }
+                    }
+                    if (actor!=UINT_MAX)
+                        printf("pilot frame=%u turn=%u actor=%u menu=%u selection=%u key=%u\n",total,turn,actor,menu,selection,key);
+                }
+                if (result) break;
+                core->setKeys(core,key);
+                core->runFrame(core);
+                elapsed++;total++;
+                if (turn!=lastTurn) {
+                    printf("pilot turn=%u HP=%u,%u foeHP=%u,%u foeAtk=%u foeDef=%u CarlAtk=%u\n",turn,
+                        core->busRead16(core,party+0x56),core->busRead16(core,party+100+0x56),
+                        core->busRead16(core,mons+0x58+0x28),core->busRead16(core,mons+3*0x58+0x28),
+                        core->busRead8(core,mons+0x58+0x19),core->busRead8(core,mons+0x58+0x1A),
+                        core->busRead8(core,mons+0x19));
+                    lastTurn=turn;
+                }
+            }
+            if (result) break;
+            core->setKeys(core,0);
+            if (core->busRead8(core,mainstate+0x439)&2) {fprintf(stderr,"pilot exceeded frame budget\n");result=32;break;}
+            printf("pilot completed policy=%s frames=%u outcome=%u incapacitation=%u\n",policy,elapsed,core->busRead8(core,outcome),lastPilotIncap);
+            checks++;
+            continue;
+        }
         if (sscanf(line,"step %31s %31s %127s %c",ft,kt,name,&extra)==3) {
             if (!number(ft,36000,&frames) || !number(kt,1023,&keys) || !frames ||
                 total>UINT_MAX-frames) {result=9;break;}
@@ -120,17 +215,16 @@ int main(int argc, char **argv)
             total+=frames;
             if (strcmp(name,"-")) {
                 if (strspn(name,"abcdefghijklmnopqrstuvwxyz0123456789-.")!=strlen(name)) {result=10;break;}
-                FILE *out=fopen(name,"wb");
-                if (!out) {result=11;break;}
-                fprintf(out,"P6\n%u %u\n255\n",width,height);
-                for (unsigned i=0;i<width*height;i++) {
-                    unsigned char rgb[]={pixels[i]&255,(pixels[i]>>8)&255,(pixels[i]>>16)&255};
-                    if (fwrite(rgb,1,3,out)!=3) {result=12;break;}
-                }
-                if (fclose(out)) result=12;
+                result=capture(name,pixels,width,height);
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strncmp(line,"color ",6) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strncmp(line,"incap ",6) && strncmp(line,"color ",6) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        if (!strncmp(line,"incap ",6)) {
+            char value[32]; unsigned wanted;
+            if (sscanf(line,"incap %31s %c",value,&extra)!=1 || !number(value,7,&wanted)
+                || wanted!=lastPilotIncap) {fprintf(stderr,"FAILED incapacitation=%u: %s",lastPilotIncap,line);result=33;break;}
+            checks++;printf("PASS %s",line);
+        }
         if (!strncmp(line,"color ",6)) {
             char values[3][32]; unsigned slot, index, wanted;
             if (sscanf(line,"color %31s %31s %31s %c",values[0],values[1],values[2],&extra)!=3

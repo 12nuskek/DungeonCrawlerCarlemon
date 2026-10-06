@@ -885,3 +885,30 @@ outcome assertions and use explicit input-state-aware actions to exercise intend
 strategies rather than weakening checks to fit obsolete timing. Next: add a
 read-only, normal-button battle route helper and complete current progression
 routes, including declined quest/avoided trap. No S03 completion claim yet.
+
+### S03 interim diagnostics and reviewer follow-up — 2026-10-06
+
+Production engine remains exactly S02 c9062da / merge d8f8ae6; no gameplay edits.
+Current host helper drives actual input menus with normal keys, bounded frames,
+read-only diagnostics and explicit win/flag/XP checks. Guard defensive route and
+howler offensive route pass; unprepared boss wins with three BRACE/WEAKEN opening
+turns (two BRACE failed, correctly triggering local defeat), prepared offensive
+boss also wins. These are diagnostic current-ROM runs, not final S03 acceptance.
+
+Restored trial behavior now61 assertions PASS, including four battlers, turn
+damage/PP, rejected empty SPARK with unchanged turn/HP/PP, WEAKEN reduction,
+level stats, no optional equipment and pre-workshop flag39/Scrap0. Explicit quest
+decline/avoided-trap navigation passes23; normal completion still needs final run.
+Donut actual summary/action-selector captured; consecutive-frame four-direction
+motion records380frames /6.362seconds, exact46color GIF duration6.360s. Preview
+under docs/evidence/s03-preview, clearly separate from final acceptance.
+
+Independent review supports S02 and confirmed two new stationary Donut objects;
+never claim unchanged object layout (only collision/elevation bits unchanged).
+Retained S03 gates: full final fresh route/both bosses; every encounter defeat/
+retry; both incapacitation orders; empty actions; quest/reward/crafting capacity;
+collection guards; cold saves; second Donut interaction; actual pacing measurement
+separate from automated waits/reboots.20–30minute fresh-player target remains
+unproven. Preserve inherited assets/terminology and static animations in limitations.
+Next: finish and run all S03 routes from a committed isolated snapshot, archive
+review evidence, then up to five substantive improvements; user playtest before6.

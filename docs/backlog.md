@@ -9,7 +9,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
 | E02 | E01 | Complete: 55 assertions, merged PR #11; issue #10 closed |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
-| B02 | B01 | Active: dedicated actions/depletion/incapacitation; issue #12 |
+| B02 | B01 | Verified: 83 assertions; issue #12; integration pending |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |
 | R01 | B02, E02 | Pending: XP and equipment |
 | R02 | R01 | Pending: persistent achievements/loot |

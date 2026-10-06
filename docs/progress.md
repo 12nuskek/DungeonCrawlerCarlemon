@@ -337,3 +337,13 @@ uses 30→29 while Carl's BRACE stayed 30), then both fainted. Local recovery/re
 passed. New `uses` assertions cover all four real party resource slots; cold reload
 passes 10 checks with 8/40/2/40 restored. Final 83-check isolated replay pending.
 Source branch remains the only writer; environment available after 05:15 notice.
+
+## B02 final verification — 2026-10-06
+
+Tested `3bd031cb00439fdb4433930e5972fcce2bf01b84`: isolated pinned compiler/game
+build and 83 real mGBA checks passed, five empty error logs, screenshots reviewed.
+Both support effects, empty action rejection/alternate choice, surviving actor
+acting, both defeated/local retry, all four party resources restored and saved.
+[Complete evidence](evidence/b02/README.md). Implemented YES, compiled PASS,
+runtime PASS, integration pending. No blocker. B03 is next after scoped merge.
+Inflicted-status healing remains explicitly pending, not inferred from zero status.

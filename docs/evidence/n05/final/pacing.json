@@ -1,0 +1,16 @@
+{
+  "normal_gba_hz": 59.7275,
+  "total_frames": 90586,
+  "total_seconds": 1516.6548072495918,
+  "startup_frames": 2044,
+  "fixed_zero_input_frames_including_startup": 53700,
+  "scripted_button_frames": 4951,
+  "battle_pilot_frames": [
+    6664,
+    12208,
+    6736,
+    6327
+  ],
+  "mid_route_reboots": 0,
+  "interpretation": "Automated continuous prepared route with fixed waits; not fresh-player reading or decision time."
+}

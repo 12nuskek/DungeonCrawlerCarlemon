@@ -1,5 +1,8 @@
 # Live backlog
 
+Current: N05 verified (90 sessions / 1,531 checks); PR50 integration and updated
+private visual/playable package next. Historical entries below retain earlier states.
+
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 
 | Task | Depends on | State |
@@ -223,3 +226,8 @@ recovered saves win and cold-reload correctly,12 production sessions/216 asserti
 PR48 pending merge. Same-save re-entry-only evidence gap closed for this ROM.
 Next bounded improvement: repeat-guide recovery verbosity/control return; preserve
 first-use teaching and free HP/status/action restoration. Final private package next.
+
+N05 verified at eaf073d: one contextual repeat recovery page; first-use preserved.
+Full78/1315 plus same-ROM recovered victories12/216,90 empty error logs and38 exact
+rendered comparisons. PR50 pending merge. Updated private review package is next;
+Stage6 and human pacing acceptance remain awaiting the user's playtest.

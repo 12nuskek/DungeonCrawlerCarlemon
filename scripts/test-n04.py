@@ -9,7 +9,10 @@ assert not git('status','--porcelain'), 'Commit changes first'
 revision=git('rev-parse','HEAD');base=Path(os.environ['DCC_RECOVERY_BASE_RUN']).resolve()
 tested=(base/'tested-commit.txt').read_text().strip()
 subprocess.run(['git','diff','--quiet',tested,revision,'--','engine','scripts/playtest.c','scripts/battle-input-symbols.py'],cwd=root,check=True)
-summary=json.loads((base/'validation-summary.json').read_text());assert len(summary)==76 and sum(x['assertions'] for x in summary)==1303
+summary=json.loads((base/'validation-summary.json').read_text());assert (len(summary),sum(x['assertions'] for x in summary)) in [(76,1303),(78,1315)], 'Require full N03 or N05 acceptance coverage'
+assert sum(x['assertions'] for x in summary if x['fixture'])==193
+if len(summary)==78:
+ assert {x['route']:x['assertions'] for x in summary if x['route'].startswith('guide-')}=={'guide-after-trial':6,'guide-before-trial':6}
 assert all(not x.stat().st_size for x in base.glob('*/errors.log'))
 rom=base/'production.gba';digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert digest(rom)==(base/'rom.sha256').read_text().split()[0]

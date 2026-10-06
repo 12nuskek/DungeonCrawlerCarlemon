@@ -1,0 +1,18 @@
+{
+  "tested_engine": "b530fa661254c2c4b5ef1d75ce4010c2d5d741ec",
+  "rom_sha256": "dc321def80b7b3d60d0dd5103c73a77d8104135b0ff055a02456656bb76a0891",
+  "results": [
+    {
+      "case": "after-trial",
+      "expected_baseline_failure": true,
+      "exit": 14,
+      "input_sha256": "50cb7836b0a8954d5e77aca5c5472cd99ff2beea14415c8b50371a87d841559a"
+    },
+    {
+      "case": "before-trial",
+      "expected_baseline_failure": true,
+      "exit": 14,
+      "input_sha256": "b6aaee10503d7106b60dfaa8925567988e09ce5116bbc428d859306c5541c34a"
+    }
+  ]
+}

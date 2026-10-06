@@ -1,0 +1,18 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold-victory.ppm
+expect 34 4 8 5 7
+flag 2138 1
+flag 37 1
+flag 47 1
+flag 48 0
+growth 12 1136 0 11 1446 0
+roster 14 17 2 0 0 0
+uses 2 37 0 33
+quit

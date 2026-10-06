@@ -797,3 +797,20 @@ verify expected hash before any pixel-dependent conversion. Then author coherent
 native battle/overworld masters, preserve generator ownership/palettes, run current
 182-check isolated suite and requested actual character-art review. S03 and
 improvement cycles have not started; Stage6 remains excluded. No scheduler added.
+
+### S02 replacement battle integration — 2026-10-06
+
+Asset transport is resolved: PR #28 merged into the S02 task branch at
+63678ec4cd127b14e863940f8125040c6aaaa15b; main remains abf9875.
+Approved reference/native candidate checksums and deterministic conversion passed.
+The battle masters now replace rejected prototype art, including trainer intro,
+front/back, two static animation frames and derived menu icons. Carl/Donut use
+separate battle/icon palettes (icon slots 1/2; enemies retain 0). Unreachable
+upstream species sharing those icon slots are outside the fixed-roster slice.
+Generator ownership prevents the slice generator overwriting battle replacements.
+Implemented; asset contracts passed; compilation/runtime pending for this commit.
+Exploration replacement is still in progress and remains S02 acceptance work.
+Next: compile committed snapshot and publish a real battle capture promptly, then
+finish native exploration frames and complete the 182-check S02 run plus movement
+checks. PR #27 remains draft; issue #26 open; no new scheduler/writer.
+Cloud task: 01a10f4b-596b-700b-b8ba-241e3ca2c000.

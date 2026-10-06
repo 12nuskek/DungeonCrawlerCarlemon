@@ -120,18 +120,14 @@ def enemy(kind):
   for x,y in [(17,30),(43,27),(27,41),(39,41)]:d.rectangle((x,y,x+2,y+2),fill=7)
  return im
 
-names={'machop':('carl',carl()),'meowth':('donut',donut()),'zigzagoon':('scuttler',enemy('scuttler')),'wurmple':('grub',enemy('grub')),'spinda':('guard',enemy('guard')),'whismur':('howler',enemy('howler')),'loudred':('warden',enemy('warden'))}
+names={'zigzagoon':('scuttler',enemy('scuttler')),'wurmple':('grub',enemy('grub')),'spinda':('guard',enemy('guard')),'whismur':('howler',enemy('howler')),'loudred':('warden',enemy('warden'))}
 for species,(name,front) in names.items():
  path=Path('graphics/dcc')/name
- back=carl(True) if name=='carl' else donut(True) if name=='donut' else front
+ back=front
  save(front,path/'front.png');save(back,path/'back.png')
  anim=canvas(64,128);anim.paste(front,(0,0));anim.paste(front,(0,64));save(anim,path/'anim_front.png')
  icon=canvas(32,64);small=front.resize((32,32),Image.Resampling.NEAREST);icon.paste(small,(0,0));icon.paste(small,(0,32));save(icon,path/'icon.png')
  pal(path/'normal.pal');pal(path/'shiny.pal')
-# Player battle-intro four-frame pose strip, original pixels, same engine contract.
-trainer=canvas(64,256)
-for y in range(0,256,64):trainer.paste(carl(True),(0,y))
-save(trainer,Path('graphics/dcc/carl/trainer_back.png'))
 pal(Path('graphics/dcc/shared.pal'))
 
 # Independent dungeon secondary tileset. Preserve each used cave behavior exactly.
@@ -288,3 +284,7 @@ for block in range(2):
   for x in range(32):struct.pack_into('<H',bm,block*2048+(y*32+x)*2,((y%16)*32+x)|(2<<12))
 (R/'graphics/dcc/battle/map.bin').write_bytes(bm)
 (R/'graphics/dcc/battle/palette.pal').write_text('JASC-PAL\n0100\n48\n'+'\n'.join(' '.join(map(str,c)) for c in colors*3)+'\n')
+
+# Approved protagonist battle masters own their independent palettes.
+from protagonist_art import export
+export()

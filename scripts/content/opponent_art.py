@@ -18,7 +18,7 @@ def export():
         digest, path = line.split(None, 1)
         expected[path.lstrip('*')] = digest
     shared = ROOT / 'engine/graphics/dcc/shared.pal'
-    assert shared.read_bytes() == (SOURCE / 'source/existing-shared.pal').read_bytes()
+    assert shared.read_text() == (SOURCE / 'source/existing-shared.pal').read_text()
     for name in NAMES:
         files = ['front.png', 'back.png', 'anim_front.png', 'icon.png', 'normal.pal', 'shiny.pal']
         if name != 'grub':

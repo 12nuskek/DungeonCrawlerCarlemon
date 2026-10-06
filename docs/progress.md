@@ -1061,3 +1061,8 @@ in that exact saved retry; separate routes prove wins. Only prepared play has a
 successful uninterrupted fresh route. Segmented unprepared victory passes; two
 continuous unprepared attempts lost.90,586frames includes53,700 fixed idle frames
 (about15minutes);25m17s is not a human completion time or proof of20–30minute target.
+
+I01 first isolated preflight e2c8d60 stopped before build: upstream engine
+.gitattributes exports .pal asCRLF, while source references areLF. Palette
+entries/order were identical. Verification now normalizes only text line endings;
+PNG byte checks stay exact. No engine/art bytes changed by this correction.

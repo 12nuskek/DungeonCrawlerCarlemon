@@ -4,14 +4,15 @@ from pathlib import Path
 from PIL import Image
 import hashlib,json,subprocess,sys
 root=Path(sys.argv[1]);source=root/'docs/art-references/opponent-native-candidates'
-assert (root/'engine/graphics/dcc/shared.pal').read_bytes()==(source/'source/existing-shared.pal').read_bytes()
+assert (root/'engine/graphics/dcc/shared.pal').read_text()==(source/'source/existing-shared.pal').read_text()
 checked=[]
 for src in sorted((source/'assets').glob('*/*')):
  dst=root/'engine/graphics/dcc'/src.relative_to(source/'assets')
- assert dst.read_bytes()==src.read_bytes(),str(dst)
+ # Upstream engine/.gitattributes exports .pal with CRLF; colors/order stay exact.
+ assert (dst.read_text()==src.read_text() if src.suffix=='.pal' else dst.read_bytes()==src.read_bytes()),str(dst)
  if src.suffix=='.png':
   im=Image.open(dst);assert im.mode=='P' and im.info.get('transparency')==0
-  assert dst.read_bytes()[24]==4 and max(im.getdata())<16
+  assert dst.read_bytes()[24]==4 and im.getextrema()[1]<16
  checked.append({'file':str(dst.relative_to(root)),'sha256':hashlib.sha256(dst.read_bytes()).hexdigest()})
 assert len(checked)==34
 assert not (root/'engine/graphics/dcc/grub/overworld.png').exists()

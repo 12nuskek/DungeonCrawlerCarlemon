@@ -27,6 +27,8 @@ a playable deliverable. No ROM/save/executable is committed.
   lost turn/resources, WEAKEN effects, XP/stats and pre-workshop reward state.
 - Guard/Howler and prepared/unprepared boss victories; locked stair progression;
   each encounter's local defeat/free recovery and cold saved retry.
+  Six retry routes end after battle re-entry; separate routes prove victory,
+  not a win in that exact recovered-save attempt.
 - Both incapacitation orders: surviving partner still acts, then both defeat.
 - Declined and completed quest paths, avoided and triggered trap, secret,
   repeat rewards/crafting/cache, medicine, atomic capacity failures and reload.

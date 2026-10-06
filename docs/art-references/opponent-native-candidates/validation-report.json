@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "assets/scuttler/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "1006e7b13063720bd615b1adc8b7f1494e49c498b8677464beadf81518f72881"
+    },
+    {
+      "path": "assets/scuttler/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "1006e7b13063720bd615b1adc8b7f1494e49c498b8677464beadf81518f72881"
+    },
+    {
+      "path": "assets/scuttler/anim_front.png",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "d27e5cd969454cf8a43d2e8a6318e0ccad840cfd5cb68f57d92c98e6a6cfd118"
+    },
+    {
+      "path": "assets/scuttler/icon.png",
+      "size": [
+        32,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "4e9433efdf3bf8c0054df93763ce5c223cb085c2b4ee438636e6d74cb4c99242"
+    },
+    {
+      "path": "assets/scuttler/overworld.png",
+      "size": [
+        32,
+        32
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "d7fe0d72395e6b49c1f39dd0f51af57f38b5a2dfac2c80c33b0a9b2034ed5beb"
+    },
+    {
+      "path": "assets/grub/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "f69bcefc800d0fc755c38df867ccd80fe2996c01af25da9d3a96b2b6aaf94129"
+    },
+    {
+      "path": "assets/grub/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "f69bcefc800d0fc755c38df867ccd80fe2996c01af25da9d3a96b2b6aaf94129"
+    },
+    {
+      "path": "assets/grub/anim_front.png",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 14,
+      "sha256": "a765b30cbb9f8d0a68f48a47f5866b5768f2a3d40f352ef091cd8a460032fc03"
+    },
+    {
+      "path": "assets/grub/icon.png",
+      "size": [
+        32,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 11,
+      "sha256": "c31dde564cf0424d6d1b3af72a1d9414bb47ffde1237e5e474ca2951cabb289b"
+    },
+    {
+      "path": "assets/guard/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "a218cbb451d6f79d2102b2edb3908a81ef77f94d267c762011b0bc532914c54f"
+    },
+    {
+      "path": "assets/guard/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "a218cbb451d6f79d2102b2edb3908a81ef77f94d267c762011b0bc532914c54f"
+    },
+    {
+      "path": "assets/guard/anim_front.png",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "22463ec15f4903e55ad715dbd78ff015d815be87bfe3efcc58f01fa28a60c22d"
+    },
+    {
+      "path": "assets/guard/icon.png",
+      "size": [
+        32,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "0213d48848542c157b34c32ccc2937fd251c5864928081b29ea01087d6f26c16"
+    },
+    {
+      "path": "assets/guard/overworld.png",
+      "size": [
+        32,
+        32
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "8941d432e8bbea15e4efb40ce524eb2ddfda4fe1b5d192dbda34febe32aa73f7"
+    },
+    {
+      "path": "assets/howler/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "b2950def9e90d97205b1e6b6a14d67bf31e0ccac4ca69cb5c23bcfce76db4ec2"
+    },
+    {
+      "path": "assets/howler/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "b2950def9e90d97205b1e6b6a14d67bf31e0ccac4ca69cb5c23bcfce76db4ec2"
+    },
+    {
+      "path": "assets/howler/anim_front.png",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "1ebc9309ffb9a6082e6965cb86a273aa6ec2a729fe7059acae622886cd020111"
+    },
+    {
+      "path": "assets/howler/icon.png",
+      "size": [
+        32,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 9,
+      "sha256": "adaf619533263739a5ff240aef48440dffc54a63d996ce99e643016f88ae8b31"
+    },
+    {
+      "path": "assets/howler/overworld.png",
+      "size": [
+        32,
+        32
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 9,
+      "sha256": "8f1d37f553c59f20969936c9b4c07510816c065d135eae114c437b4b4860e317"
+    },
+    {
+      "path": "assets/warden/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "8f19db3558eb68b6bcb0f685d279aad90e03e75eb0abf4bbe1267c11e26a6a8b"
+    },
+    {
+      "path": "assets/warden/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "8f19db3558eb68b6bcb0f685d279aad90e03e75eb0abf4bbe1267c11e26a6a8b"
+    },
+    {
+      "path": "assets/warden/anim_front.png",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 13,
+      "sha256": "494cb6d3e31eba1c1a811a60f314e425f4ed374316d2208536946732147d3524"
+    },
+    {
+      "path": "assets/warden/icon.png",
+      "size": [
+        32,
+        64
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "06e5fe2e86b15e9aacf650ff836c4b44db6572d6221755bd3dd47f9b8992f39e"
+    },
+    {
+      "path": "assets/warden/overworld.png",
+      "size": [
+        32,
+        32
+      ],
+      "mode": "P",
+      "png_bit_depth": 4,
+      "opaque_colors": 12,
+      "sha256": "7f0178ef0bcab4acac1632a9e72870224c682a855264cc2633775294138b5916"
+    }
+  ],
+  "runtime": "NOT RUN",
+  "source_sha256": "000068d6bdae0a60e93836438920f4f3b847cee6aca8335733d3f05c7ac4a279",
+  "summary": "24 indexed PNGs pass: dimensions, packed frames, 4bpp, binary index0 transparency, battle RGB555 palettes, unchanged shared small-asset palette, native margins and exact 6x previews."
+}

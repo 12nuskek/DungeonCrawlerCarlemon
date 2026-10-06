@@ -1,0 +1,114 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+expect 34 0 4 8 1
+step 132 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 landing.ppm
+expect 34 1 12 4 1
+step 164 32 -
+step 180 0 service.ppm
+expect 34 2 2 4 1
+step 20 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 52 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 2 6 7 1
+step 1 1 -
+step 400 0 recipe.ppm
+step 1 1 -
+step 400 0 missing-materials.ppm
+item 378 0
+item 380 0
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 400 0 empty-cancel.ppm
+item 378 0
+item 380 0
+step 1 2 -
+step 120 0 -
+step 116 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 needs-charge.ppm
+flag 46 0
+item 22 0
+step 1 2 -
+step 120 0 -
+step 132 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 2 4 6 1
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 quest-accepted.ppm
+step 1 2 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+step 116 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 tag.ppm
+item 379 1
+step 1 2 -
+step 120 0 -
+step 116 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 materials.ppm
+item 378 2
+item 379 0
+flag 43 1
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 2 4 6 1
+quit

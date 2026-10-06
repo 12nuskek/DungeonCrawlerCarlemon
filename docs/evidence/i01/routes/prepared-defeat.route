@@ -1,0 +1,51 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+flag 46 1
+flag 47 0
+duo healthy
+step 1 1 -
+step 400 0 prepared-intro.ppm
+step 1 1 -
+step 400 0 prepared-pattern.ppm
+step 1 1 -
+step 900 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 carl-menu.ppm
+pilot loss 36000
+step 600 0 recovered.ppm
+incap 6
+duo healthy
+uses 8 40 2 40
+growth 11 748 0 10 1058 0
+flag 2139 0
+flag 47 0
+flag 48 0
+expect 34 4 8 5 7
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 defeat-saved.ppm
+expect 34 4 8 5 7
+quit

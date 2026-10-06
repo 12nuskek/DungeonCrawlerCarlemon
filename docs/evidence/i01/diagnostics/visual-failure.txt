@@ -1,0 +1,1 @@
+Stopped I01 run after verified Scuttler HUD overlap: 43 opaque pixels in native rows55..61 covered at battle canvas168,8. Game routes passed so far; this run is not full acceptance. Preserve artifacts. S03 baseline remains accepted.

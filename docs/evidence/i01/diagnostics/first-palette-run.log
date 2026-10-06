@@ -1,0 +1,6 @@
+Evidence: /workspace/DungeonCrawlerCarlemon/artifacts/i01/run-DTTnoP
+Traceback (most recent call last):
+  File "/workspace/DungeonCrawlerCarlemon/artifacts/i01/run-DTTnoP/source/scripts/verify-opponent-art.py", line 7, in <module>
+    assert (root/'engine/graphics/dcc/shared.pal').read_bytes()==(source/'source/existing-shared.pal').read_bytes()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

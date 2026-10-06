@@ -1,0 +1,23 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 0 10 8 3
+flag 36 1
+flag 37 0
+flag 38 1
+flag 39 0
+item 13 99
+item 378 0
+step 1 1 -
+step 400 0 capacity-cold-repeat.ppm
+flag 38 1
+item 13 99
+step 1 2 -
+step 120 0 -
+quit

@@ -1025,3 +1025,80 @@ Parent coordinates asset-only candidate PR handoff; no parallel implementation.
 Exact next: merge verified S03, pause writes for asset-PR staging, then integrate
 its native assets with provenance/generator protection and real battle/map checks.
 Guard's SPINDA procedural spots must not alter approved native art. No Stage6.
+
+### S03 merged; I01 asset handoff pause — 2026-10-06
+
+PR30 merged eb73f725d0c5c1488386e56f28f8080eb3a6f884, evidence head
+7807a9c286a7fa11fd35cce2065d02e280f78b2a, tested50435d1. S03 implemented,
+compiled, runtime verified and merged. Issue29 complete. Original runner ended;
+no build/emulator implementation process is active.
+
+I01 issue31, branch task/i01-opponent-art, base eb73f725. Only this task integrates
+code/assets. Parent has reviewed an external native candidate package for the
+five existing opponents and will stage it through an asset-only GitHub PR.
+Repository writes pause after this checkpoint for that handoff; no Library
+materialization retry. I01 art implemented NO/compiled NO/runtime verified NO/
+merged NO. Resume only after package delivery and remote branch reconciliation.
+Next: fetch delivered asset PR, verify hashes/provenance/native palette contracts,
+then integrate and run scoped evidence checks. Preserve approved Carl/Donut art,
+all gameplay and saves. Stage6 and public release remain unauthorised.
+
+### I01 native integration — 2026-10-06
+
+Asset-only PR33 merged into task/i01-opponent-art at94122b57bd90532f7c8934d8141db8eba8f7d9be.
+Exact candidate head2c9a1b8;54 additions only, SHA manifest/24 PNG format checks
+and two41-output reproduction runs pass. Native battle/world pixels inspected.
+Exporter now owns all34 native files; slice_art.py delegates rather than replacing
+them with geometric art. Two complete content regenerations change only the
+five intended opponent sets; shared palette, Carl/Donut and maps unchanged.
+Guard's inherited Spinda spot renderer is now a documented no-op; no stats/AI/
+encounters/save changes. I01 implemented YES; compiled/runtime/integration pending.
+Next: isolated test-i01.sh full1053-check regression, all opponent battle/map
+captures and palette/pixel review. No Grub world object is added.
+
+Final S03 audit limits retained: six cold-retry routes prove re-entry, not victory
+in that exact saved retry; separate routes prove wins. Only prepared play has a
+successful uninterrupted fresh route. Segmented unprepared victory passes; two
+continuous unprepared attempts lost.90,586frames includes53,700 fixed idle frames
+(about15minutes);25m17s is not a human completion time or proof of20–30minute target.
+
+I01 first isolated preflight e2c8d60 stopped before build: upstream engine
+.gitattributes exports .pal asCRLF, while source references areLF. Palette
+entries/order were identical. Verification now normalizes only text line endings;
+PNG byte checks stay exact. No engine/art bytes changed by this correction.
+
+I01 b82dff4 builds ROM70387da9…ec94619 and initial gameplay routes pass,
+but actual trial capture revealed43 Scuttler opaque pixels in native rows55..61
+covered by Carl's HP panel (canvas168,8). Run8IQ6UV stopped deliberately after
+this visual failure; raw evidence retained, no full-acceptance claim. Export now
+lifts only battle pixels8px within each64×64 canvas, using existing transparent
+top margin. No rescale, recolor, source-master, icon or field-token change. All
+opaque source pixels remain intact. New runtime pixel check requires exact
+RGB555 colors for every native opaque pixel of five battle fronts/four tokens.
+
+### I01 acceptance PASS — 2026-10-06
+
+Base eb73f725d0c5c1488386e56f28f8080eb3a6f884; branch task/i01-opponent-art;
+issue31/PR32. Tested81b232ae41647b5e456e45ed73d51a170f17fb58. Cloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation, no new scheduler.
+
+`bash scripts/test-i01.sh` in documented toolchain: isolated run-Yw6WfM clean
+compile and1053 runtime assertions/62 sessions PASS,860 production+193 labeled
+fixture;62 empty error logs;9 exact native pixel matches; unchanged-source guard.
+ROM SHA256 f46643a4a2eb0065e75ed33ea2baafe533d5508a8ee45922282108e778e43948.
+Two separate full content exports preserve all7385 checked graphic/tileset files.
+Actual captures reviewed: allfive foes/four map tokens, duo HUD clear after8px
+placement fix, no Guard spot artifacts, correct Donut summary/field palettes,
+menu/return and ending.25 actual PNGs and full logs/routes archived in evidence/i01.
+
+Source package first passed24 PNG/41-output reproduction checks. Palette newline
+preflight and HUD-overlap failures are retained, not acceptance results. No stats,
+AI, moves, event/collision or save schema changed. Enemy icons/backs have no
+reachable roster/collection UI; contract validation does not invent such a path.
+
+State: implemented YES; compiled YES; runtime verified YES; merged pending PR32.
+Only comments/docs/evidence change after tested81b232a. No further substantive
+defect observed, so improvement cycles stop after1. Precise S03 retry/pacing
+limits remain in the review package. Next: merge reviewed I01, attempt supported
+private Library build delivery, record result, then await user's playtest.
+No public ROM/playable release and no Stage6 work. Original runner finished.

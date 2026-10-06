@@ -259,3 +259,19 @@ a novice's20–30minute playtime remains a human-playtest question. No midroute
 reboots/savestates in that timing. Other sessions intentionally cold-load saves.
 The runner creates separate fixture ROMs for capacity/status/exhaustion checks;
 never distribute those as playable builds. No save layout changes in this task.
+
+## I01 final review regression
+
+Install Python3/Pillow/NumPy in addition to the existing build/mGBA dependencies.
+At81b232ae41647b5e456e45ed73d51a170f17fb58, `bash scripts/test-i01.sh`
+passes1053 runtime assertions/62 sessions (860 production,193 labeled fixture),
+62 empty error logs,9 exact native rendered-image checks and clean-source guard.
+ROM SHA256:f46643a4a2eb0065e75ed33ea2baafe533d5508a8ee45922282108e778e43948.
+[Complete evidence and precise limits](evidence/i01/README.md). Two full content
+regenerations preserve7385 art files; palette text line endings are normalized
+according to upstream attributes. PNG comparisons are exact.
+
+Six saved retry routes prove re-entry only; wins are checked separately. Prepared
+play has the successful uninterrupted fresh route; unprepared victory is segmented.
+90,586 emulated frames include53,700 fixed idle frames; this does not prove human
+pacing. User playtest remains the next gate, before any Stage6 expansion.

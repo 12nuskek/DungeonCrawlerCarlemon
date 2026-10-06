@@ -19,52 +19,6 @@ def save(im,path):
 def pal(path,colors=P):
  path=R/path;path.parent.mkdir(parents=True,exist_ok=True)
  path.write_text('JASC-PAL\n0100\n16\n'+'\n'.join(' '.join(map(str,c)) for c in colors)+'\n')
-def enemy(kind):
- im=canvas(64,64);d=ImageDraw.Draw(im)
- if kind=='scuttler':
-  for x in (17,26,36,45):d.line([(x,38),(x-8,46),(x-9,54)],fill=1,width=3)
-  d.ellipse((15,27,51,49),fill=1);d.ellipse((17,29,49,46),fill=3)
-  for x in (23,31,39):d.line((x,30,x-2,45),fill=4,width=2)
-  d.polygon([(42,30),(54,34),(52,44),(43,45)],fill=5)
-  d.rectangle((49,34,51,36),fill=9);d.line((52,39,59,42),fill=7,width=2)
- elif kind=='grub':
-  for x,y in [(13,43),(22,40),(31,38),(40,36)]:
-   d.ellipse((x,y,x+16,y+17),fill=1);d.ellipse((x+2,y+2,x+14,y+14),fill=12)
-  d.ellipse((39,27,56,46),fill=1);d.ellipse((41,29,54,43),fill=13)
-  d.rectangle((45,32,48,34),fill=11);d.line((46,39,53,39),fill=7)
- elif kind=='guard':
-  for x in (12,45):d.polygon([(x,35),(x-5,52),(x+3,58),(x+7,42)],fill=1)
-  d.ellipse((16,15,50,56),fill=1);d.ellipse((19,18,47,53),fill=14)
-  d.polygon([(20,27),(32,18),(45,28),(42,43),(32,51),(22,43)],fill=13)
-  d.polygon([(24,29),(32,23),(41,29),(38,41),(32,46),(26,40)],fill=12)
-  d.rectangle((25,33,39,35),fill=11);d.rectangle((22,12,43,22),fill=1)
-  d.rectangle((25,15,40,19),fill=14);d.rectangle((27,17,37,18),fill=9)
- elif kind=='howler':
-  d.polygon([(22,31),(8,24),(3,44),(18,40),(25,47),(22,58),(31,55),(42,58),(40,43),(58,42),(55,23),(42,29)],fill=1)
-  d.polygon([(20,32),(10,29),(7,40),(20,37),(26,42),(30,53),(37,53),(39,35),(52,28),(54,38),(41,37)],fill=10)
-  d.ellipse((21,13,45,43),fill=1);d.ellipse((23,15,43,41),fill=9)
-  d.ellipse((26,24,40,39),fill=1);d.ellipse((29,27,37,36),fill=10)
-  d.rectangle((26,19,29,21),fill=11);d.rectangle((37,19,40,21),fill=11)
- else:
-  d.polygon([(18,23),(10,27),(5,48),(13,52),(20,42),(22,53),(18,61),(30,61),(33,52),(36,61),(50,61),(45,51),(47,40),(54,48),(61,43),(54,23),(44,19)],fill=1)
-  d.polygon([(19,25),(13,29),(8,44),(13,47),(21,35),(23,49),(43,49),(44,29),(40,23)],fill=14)
-  d.polygon([(45,24),(52,27),(57,41),(54,43),(45,34)],fill=8)
-  d.rectangle((23,52,29,59),fill=13);d.rectangle((37,52,45,59),fill=13)
-  d.polygon([(23,27),(41,27),(39,44),(26,44)],fill=13)
-  d.rectangle((27,30,37,38),fill=1);d.rectangle((29,32,35,36),fill=9)
-  d.rectangle((24,10,43,24),fill=1);d.rectangle((27,12,40,21),fill=14)
-  d.rectangle((28,16,39,18),fill=11);d.rectangle((24,7,29,11),fill=13)
-  for x,y in [(17,30),(43,27),(27,41),(39,41)]:d.rectangle((x,y,x+2,y+2),fill=7)
- return im
-
-names={'zigzagoon':('scuttler',enemy('scuttler')),'wurmple':('grub',enemy('grub')),'spinda':('guard',enemy('guard')),'whismur':('howler',enemy('howler')),'loudred':('warden',enemy('warden'))}
-for species,(name,front) in names.items():
- path=Path('graphics/dcc')/name
- back=front
- save(front,path/'front.png');save(back,path/'back.png')
- anim=canvas(64,128);anim.paste(front,(0,0));anim.paste(front,(0,64));save(anim,path/'anim_front.png')
- icon=canvas(32,64);small=front.resize((32,32),Image.Resampling.NEAREST);icon.paste(small,(0,0));icon.paste(small,(0,32));save(icon,path/'icon.png')
- pal(path/'normal.pal');pal(path/'shiny.pal')
 pal(Path('graphics/dcc/shared.pal'))
 
 # Independent dungeon secondary tileset. Preserve each used cave behavior exactly.
@@ -108,7 +62,7 @@ for mid,k in ids.items():
 base=Path('data/tilesets/secondary/dcc');save(atlas,base/'tiles.png')
 (R/base/'metatiles.bin').write_bytes(metatiles);(R/base/'metatile_attributes.bin').write_bytes(attrs)
 for i in range(16):pal(base/'palettes'/f'{i:02}.pal',colors)
-print('Generated original seven crawler/enemy sprite sets and dungeon tiles.')
+print('Generated dungeon tiles; native protagonists/opponents use reviewed masters.')
 # Original inventory silhouettes, same24x24 engine icon bounds.
 for name in ['wrap','scrap','tag','charge','medicine']:
  im=canvas(24,24);d=ImageDraw.Draw(im)
@@ -134,9 +88,6 @@ im=canvas(16,16);d=ImageDraw.Draw(im);d.rectangle((0,3,15,15),fill=1);d.rectangl
 d.rectangle((1,2,14,5),fill=8);d.line((2,7,13,7),fill=4);d.rectangle((6,5,9,15),fill=14);d.rectangle((7,8,8,10),fill=11)
 save(im,Path('graphics/dcc/crate.png'))
 # Visible encounter tokens and original stationary crawler NPCs.
-for name in ['scuttler','guard','howler','warden']:
- front=next(im for _,(n,im) in names.items() if n==name)
- save(front.resize((32,32),Image.Resampling.NEAREST),Path('graphics/dcc')/name/'overworld.png')
 for name,skin,shirt,hair in [('guide',5,13,14),('mara',4,9,1),('lev',5,12,2)]:
  im=canvas(16,32);d=ImageDraw.Draw(im)
  d.rectangle((4,21,11,29),fill=1);d.rectangle((5,22,7,27),fill=13);d.rectangle((9,22,11,27),fill=13)
@@ -218,3 +169,7 @@ for block in range(2):
 from protagonist_art import export, export_world
 export()
 export_world()
+
+# I01 opponents own complete native sets; preserve shared icon/prop palette.
+from opponent_art import export as export_opponents
+export_opponents()

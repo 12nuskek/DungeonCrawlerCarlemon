@@ -5818,8 +5818,12 @@ static void UNUSED DrawSpindaSpotsUnused(u16 species, u32 personality, u8 *dest)
 
 void DrawSpindaSpots(u16 species, u32 personality, u8 *dest, bool8 isFrontPic)
 {
-    if (species == SPECIES_SPINDA && isFrontPic)
-        DRAW_SPINDA_SPOTS(personality, dest);
+    // The SPINDA record is the authored GUARD. Its native palette must not
+    // acquire personality-dependent spots; all other species were already no-op.
+    (void)species;
+    (void)personality;
+    (void)dest;
+    (void)isFrontPic;
 }
 
 void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies)

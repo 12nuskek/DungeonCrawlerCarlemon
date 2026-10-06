@@ -1,0 +1,75 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+growth 8 399 0 8 709 0
+stats 30 20 26 13
+item 377 0
+flag 35 0
+step 100 32 -
+step 40 0 crate-approach.ppm
+expect 34 1 4 4 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 wrap-found.ppm
+item 377 1
+flag 35 1
+step 1 1 -
+step 400 0 wrap-equip-help.ppm
+step 1 1 -
+step 400 0 wrap-optional.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 wrap-repeat.ppm
+item 377 1
+flag 35 1
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 wrap-bag.ppm
+step 1 1 -
+step 120 0 wrap-bag-actions.ppm
+step 1 16 -
+step 40 0 -
+step 1 1 -
+step 180 0 choose-wearer.ppm
+step 1 1 -
+step 180 0 equipped.ppm
+growth 8 399 377 8 709 0
+item 377 0
+step 1 1 -
+step 180 0 -
+step 1 2 -
+step 180 0 after-bag.ppm
+step 1 2 -
+step 120 0 after-menu.ppm
+step 116 16 -
+step 40 0 ready-for-trial.ppm
+expect 34 1 11 4 3
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 save-equipped.ppm
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 equipped-saved.ppm
+growth 8 399 377 8 709 0
+item 377 0
+flag 35 1
+quit

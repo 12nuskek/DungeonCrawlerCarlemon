@@ -1,0 +1,16 @@
+{
+  "tested": "81b232ae41647b5e456e45ed73d51a170f17fb58",
+  "palette_line_endings_normalized": true,
+  "runs": [
+    {
+      "run": 1,
+      "files": 7385,
+      "unchanged": true
+    },
+    {
+      "run": 2,
+      "files": 7385,
+      "unchanged": true
+    }
+  ]
+}

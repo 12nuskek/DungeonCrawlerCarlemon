@@ -1,0 +1,31 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+roster 38 30 8 2 0 0
+uses 8 40 2 40
+growth 11 748 0 10 1058 0
+flag 47 0
+flag 48 0
+flag 2136 1
+flag 2137 1
+flag 2138 0
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 900 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 cold-retry.ppm
+battle 1 4 0 8 2 1 0
+pattern 858 0 40 40 6 6 6 12
+quit

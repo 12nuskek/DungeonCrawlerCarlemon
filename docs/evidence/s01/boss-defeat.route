@@ -1,0 +1,115 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 10 5 7
+roster 30 19 3 0 0 0
+step 20 64 -
+step 40 0 -
+step 36 16 -
+step 40 0 -
+step 180 0 -
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 900 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+pattern 858 0 40 40 6 6 6 12
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 defeat-turn-1.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 defeat-turn-2.ppm
+step 1000 0 carl-alone.ppm
+roster 17 0 1 0 0 0
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 defeat-turn-3.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 defeat-turn-4.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 defeat-turn-5.ppm
+roster 11 0 0 0 0 0
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 carl-last-brace.ppm
+roster 0 0 0 0 0 0
+battle 1 4 0 0 0 1 0
+step 1 1 -
+step 400 0 defeat-result.ppm
+battle 0 4 2 0 0 1 0
+duo healthy
+roster 38 30 8 2 0 0
+uses 8 40 2 40
+growth 11 748 0 10 1058 0
+flag 2136 1
+flag 2137 1
+flag 2138 0
+flag 47 0
+flag 48 0
+flag 46 0
+expect 34 4 8 5 7
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 defeat-saved.ppm
+expect 34 4 8 5 7
+quit

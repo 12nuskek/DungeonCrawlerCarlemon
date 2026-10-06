@@ -606,3 +606,29 @@ before-guard.sav and before-howler.sav are normal saved checkpoints. Host binary
 Next exact action: finish howler route, local defeat/retry, prepared/unprepared boss,
 stairs/cold reload; isolated committed suite and scoped PR still pending. User kept
 normal S01→S02→S03 order. No parallel writer/scheduler.
+
+## S01 complete exploratory routes — 2026-10-06
+
+Shell/executor healthy at07:53:31UTC after07:51:52 disconnect callback; existing
+process continued, no duplicate writer/run. Parent independently reviewed D02
+without blocker. PR17/19/21/23 metadata now explicitly records actual merged SHAs.
+
+All S01 exploratory routes pass357 assertions across18 production-ROM processes.
+No game-state fixture: prepared and defeat routes branch ordinary manual flash
+saves from the same fresh-play progression. Unprepared warden12 defeated with
+BRACE/WEAKEN then attacks, no gear/explosive/healing use; Carl12 XP974/Donut10 XP1284,
+HP8/10 survive. Prepared warden10 defeated by faster offense with no BRACE or
+healing item; Carl11 XP940/Donut10 XP1250, HP21/24. Both staircase/end saves survive
+cold reload; unprepared ending returns to gate and cannot repeat boss XP.
+
+Controlled loss deliberately uses ordinary STRIKE ally-targeting to incapacitate
+Donut, then the warden defeats Carl. Both HP0 observed, local outcome2 restores
+HP38/30 and all four resources, leaves boss/stair flags unset, retains prior patrol
+progress. Immediate loss save/cold retry opens a new full-health battle. This is
+an intentional defeat test, not a recommended tactic or RAM-injected state.
+
+No S01 production defect/fix or unresolved blocker. Input timing/navigation
+adjustments only. All implementations compiled; final isolated committed357-check
+suite still pending. Next commit these routes, run test-s01.sh, review/archive
+actual evidence, scoped issue24 draft PR and integration. S02 original visuals/UI
+then S03 complete regression remain pending; no Stage6 expansion.

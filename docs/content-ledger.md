@@ -225,3 +225,24 @@ move animations and review NPC remain S02 placeholders, explicitly not final art
 S01 isolated357-assertion acceptance PASS across18 production sessions; both boss
 strategies, local defeat/cold retry, stairs/cold completion pass. [Evidence](evidence/s01/README.md).
 S01 integration pending; S02 visual replacement remains next.
+
+## S02 original asset provenance (in progress)
+
+Author: Codex, hand-authored indexed geometry in scripts/content/slice_art.py,
+2026-10-06. No source images traced or recoloured. New files under graphics/dcc
+and data/tilesets/secondary/dcc. Original Carl overworld remains the E01 generator.
+Carl has bare torso/feet and heart shorts; Donut is a long-haired cat with a small
+collar, no later-book costume/class implied. Enemy silhouettes are original
+tutorial adaptations, not claims about canonical Book1 enemies. All seven use
+16-color64x64 front/back and two-frame32x32 icons; static duplicate animation
+frames retain engine timing. Carl battle-intro has four authored pose frames.
+Donut stands in the landing/review scenes; following movement remains deferred.
+New item icons cover wrap/scrap/tag/charge and shared medicine silhouette.
+Dungeon metatile art is original; behavior attributes derive from pinned upstream
+Cave to preserve movement. Rugs mark rest/review spaces; amber stripes mark boss
+lanes; wall lamps and debris add occupancy. No changed warp/collision semantics.
+
+Still pending audit/replacement: title/boot branding, generic human NPC overworld
+art, battle arena/ball send-out effects, inherited sound/music/attack animations,
+some summary lore and labels. These are placeholders, not original assets.
+S02 is not accepted until real captures and relevant runtime checks are archived.

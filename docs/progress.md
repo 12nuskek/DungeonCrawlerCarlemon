@@ -644,3 +644,30 @@ Implemented/compiled/runtime verified PASS; issue24 PR/integration pending.
 Shell healthy after context resume; source/evidence preserved, no duplicate run.
 Next push evidence, draft/merge verified S01; continue S02 original art/UI, thenS03.
 Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.
+
+## S01 integrated / S02 active — 2026-10-06
+
+PR25 merged `abf9875af2ffead2a342b8a5835c1e3dff157ec0`; issue24 closed.
+Evidence `8e34180de438a291067fdb2ec8d8bb08d3ec316d`; issue/PR include actual images
+and actual merge metadata. Main reconciled. S02 issue26 branch
+`task/s02-original-presentation` uses that merge as base. Sole writer healthy.
+
+Original geometry generator scripts/content/slice_art.py produces seven indexed
+battle/icon sets (Carl, Donut, scuttler, grub, guard, howler, warden), Carl trainer
+back pose, item silhouettes, crate and Donut exploration sprite. Dedicated Dcc
+secondary tileset preserves used behavior/collision bits, adds stone walls, lamps,
+rugs/route stripes/debris to distinguish rooms. Original assets use16 colors.
+Crawler summary labels and planned flag-derived Journal implemented; contest
+summary page inaccessible. Shared internal species names retained in code.
+
+Incremental compilation PASS. Authoring errors fixed: overly broad text substitution
+changed BERRIES_POCKET (restricted to intended text); new icon extern declarations
+added; Pillow lookup extended to256 slots. No repeated unresolved blocker.
+Exploratory fresh setup32 PASS; actual room/first battle captures show original
+art. Old R02 trial replay stops at its exact foe HP14 expectation (now7 after
+a critical hit); no combat rules changed. New object/presentation timing can shift
+RNG. Do not claim old damage golden routes pass. Next update S02 replay against
+actual input outcomes, inspect Journal/Donut/menus/palettes, finish remaining
+presentation audit, then isolated committed build/runtime and scoped PR.
+S02 implemented partial, compiled PASS, runtime partial, merged NO. S03 pending.
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no new scheduler/writer.

@@ -15,8 +15,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | R02 | R01 | Complete: 169 assertions; merged PR #19 (`ae4679e`); issue #18 closed |
 | D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
 | D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
-| S01 | B03, R02, D02 | 357 production assertions PASS; reviewed; integration pending |
-| S02 | S01 | Pending: original assets, dialogue/UI and placeholder review |
+| S01 | B03, R02, D02 | Complete:357 assertions; merged PR #25 (`abf9875`); issue #24 closed |
+| S02 | S01 | Active: original assets, dialogue/UI and placeholder review (issue #26) |
 | S03 | S02 | Pending: full regression and review package |
 
 F01 objective: exact source pin, matching baseline ROM, real boot evidence.
@@ -133,3 +133,12 @@ prepared/unprepared strategies, cleared fights no duplicate XP, cold saves and
 return routes. Keep optional quest/trap/rewards independent of main progression.
 No Stage6 expansion, save schema, parallel writer or scheduler. User explicitly
 kept original S01→S02→S03 order after asking about visuals.
+
+## S02 contract
+
+Base `abf9875af2ffead2a342b8a5835c1e3dff157ec0`, issue26, branch
+`task/s02-original-presentation`. Original Carl/Donut battle/icons/exploration,
+reachable enemies, dungeon tiles/palettes/props and room treatment; crawler-facing
+UI/dialogue review and planned flag-based Journal. Preserve combat rules, collisions
+and save schema. Build, real same-route before/after screenshots, menu/field/battle
+checks and provenance ledger. S03 final regression follows; no Stage6 expansion.

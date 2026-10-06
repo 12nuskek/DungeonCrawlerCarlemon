@@ -736,3 +736,14 @@ const u32 gItemIconPalette_MagmaEmblem[] = INCGFX_U32("graphics/items/icon_palet
 
 const u32 gItemIcon_OldSeaMap[] = INCGFX_U32("graphics/items/icons/old_sea_map.png", ".4bpp.lz");
 const u32 gItemIconPalette_OldSeaMap[] = INCGFX_U32("graphics/items/icon_palettes/old_sea_map.pal", ".gbapal.lz");
+
+const u32 gItemIcon_DccWrap[] = INCGFX_U32("graphics/dcc/items/wrap.png", ".4bpp.lz");
+
+const u32 gItemIcon_DccScrap[] = INCGFX_U32("graphics/dcc/items/scrap.png", ".4bpp.lz");
+
+const u32 gItemIcon_DccTag[] = INCGFX_U32("graphics/dcc/items/tag.png", ".4bpp.lz");
+
+const u32 gItemIcon_DccCharge[] = INCGFX_U32("graphics/dcc/items/charge.png", ".4bpp.lz");
+
+const u32 gItemIcon_DccMedicine[] = INCGFX_U32("graphics/dcc/items/medicine.png", ".4bpp.lz");
+const u32 gItemIconPalette_Dcc[] = INCGFX_U32("graphics/dcc/shared.pal", ".gbapal.lz");

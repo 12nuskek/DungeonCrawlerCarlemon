@@ -50,6 +50,7 @@
 // Menu actions
 enum
 {
+    MENU_ACTION_JOURNAL,
     MENU_ACTION_POKEDEX,
     MENU_ACTION_POKEMON,
     MENU_ACTION_BAG,
@@ -95,6 +96,9 @@ static bool8 StartMenuPokedexCallback(void);
 static bool8 StartMenuPokemonCallback(void);
 static bool8 StartMenuBagCallback(void);
 static bool8 StartMenuPokeNavCallback(void);
+static bool8 StartMenuJournalCallback(void);
+extern const u8 DCC_Journal[];
+static const u8 sText_Journal[] = _("JOURNAL");
 static bool8 StartMenuPlayerNameCallback(void);
 static bool8 StartMenuSaveCallback(void);
 static bool8 StartMenuOptionCallback(void);
@@ -181,6 +185,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
 
 static const struct MenuAction sStartMenuItems[] =
 {
+    [MENU_ACTION_JOURNAL] = {sText_Journal, {.u8_void = StartMenuJournalCallback}},
     [MENU_ACTION_POKEDEX]         = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},
     [MENU_ACTION_POKEMON]         = {gText_MenuPokemon, {.u8_void = StartMenuPokemonCallback}},
     [MENU_ACTION_BAG]             = {gText_MenuBag,     {.u8_void = StartMenuBagCallback}},
@@ -318,6 +323,7 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_BAG);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
+    AddStartMenuAction(MENU_ACTION_JOURNAL);
     AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
@@ -601,6 +607,7 @@ static bool8 HandleStartMenuInput(void)
         gMenuCallback = sStartMenuItems[sCurrentStartMenuActions[sStartMenuCursorPos]].func.u8_void;
 
         if (gMenuCallback != StartMenuSaveCallback
+            && gMenuCallback != StartMenuJournalCallback
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
             && gMenuCallback != StartMenuBattlePyramidRetireCallback)
@@ -1421,4 +1428,12 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 {
     list[*pos] = newEntry;
     (*pos)++;
+}
+
+static bool8 StartMenuJournalCallback(void)
+{
+    RemoveExtraStartMenuWindows();
+    HideStartMenu();
+    ScriptContext_SetupScript(DCC_Journal);
+    return TRUE;
 }

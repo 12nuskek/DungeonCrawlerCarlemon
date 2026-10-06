@@ -1,5 +1,5 @@
-const u32 gTrainerFrontPic_Hiker[] = INCGFX_U32("graphics/trainers/front_pics/hiker.png", ".4bpp.lz");
-const u32 gTrainerPalette_Hiker[] = INCGFX_U32("graphics/trainers/front_pics/hiker.png", ".gbapal.lz");
+const u32 gTrainerFrontPic_Hiker[] = INCGFX_U32("graphics/dcc/warden/front.png", ".4bpp.lz");
+const u32 gTrainerPalette_Hiker[] = INCGFX_U32("graphics/dcc/warden/front.png", ".gbapal.lz");
 
 const u32 gTrainerFrontPic_AquaGruntM[] = INCGFX_U32("graphics/trainers/front_pics/aqua_grunt_m.png", ".4bpp.lz");
 const u32 gTrainerPalette_AquaGruntM[] = INCGFX_U32("graphics/trainers/front_pics/aqua_grunt_m.png", ".gbapal.lz");
@@ -73,8 +73,8 @@ const u32 gTrainerPalette_RichBoy[] = INCGFX_U32("graphics/trainers/front_pics/r
 const u32 gTrainerFrontPic_ExpertF[] = INCGFX_U32("graphics/trainers/front_pics/expert_f.png", ".4bpp.lz");
 const u32 gTrainerPalette_ExpertF[] = INCGFX_U32("graphics/trainers/front_pics/expert_f.png", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_Pokemaniac[] = INCGFX_U32("graphics/trainers/front_pics/pokemaniac.png", ".4bpp.lz");
-const u32 gTrainerPalette_Pokemaniac[] = INCGFX_U32("graphics/trainers/front_pics/pokemaniac.png", ".gbapal.lz");
+const u32 gTrainerFrontPic_Pokemaniac[] = INCGFX_U32("graphics/dcc/warden/front.png", ".4bpp.lz");
+const u32 gTrainerPalette_Pokemaniac[] = INCGFX_U32("graphics/dcc/warden/front.png", ".gbapal.lz");
 
 const u32 gTrainerFrontPic_MagmaGruntF[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_f.png", ".4bpp.lz");
 const u32 gTrainerPalette_MagmaGruntF[] = INCGFX_U32("graphics/trainers/front_pics/magma_grunt_f.png", ".gbapal.lz");
@@ -211,8 +211,8 @@ const u32 gTrainerPalette_MagmaAdmin[] = INCGFX_U32("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_Wally[] = INCGFX_U32("graphics/trainers/front_pics/wally.png", ".4bpp.lz");
 const u32 gTrainerPalette_Wally[] = INCGFX_U32("graphics/trainers/palettes/wally.pal", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_Brendan[] = INCGFX_U32("graphics/trainers/front_pics/brendan.png", ".4bpp.lz");
-const u32 gTrainerPalette_Brendan[] = INCGFX_U32("graphics/trainers/palettes/brendan.pal", ".gbapal.lz");
+const u32 gTrainerFrontPic_Brendan[] = INCGFX_U32("graphics/dcc/carl/front.png", ".4bpp.lz");
+const u32 gTrainerPalette_Brendan[] = INCGFX_U32("graphics/dcc/shared.pal", ".gbapal.lz");
 
 const u32 gTrainerFrontPic_May[] = INCGFX_U32("graphics/trainers/front_pics/may.png", ".4bpp.lz");
 const u32 gTrainerPalette_May[] = INCGFX_U32("graphics/trainers/palettes/may.pal", ".gbapal.lz");
@@ -277,7 +277,7 @@ const u32 gTrainerPalette_RubySapphireBrendan[] = INCGFX_U32("graphics/trainers/
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCGFX_U32("graphics/trainers/front_pics/may_rs.png", ".4bpp.lz");
 const u32 gTrainerPalette_RubySapphireMay[] = INCGFX_U32("graphics/trainers/palettes/may_rs.pal", ".gbapal.lz");
 
-const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
+const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/dcc/carl/trainer_back.png", ".4bpp");
 const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/may.png", ".4bpp");
 const u8 gTrainerBackPic_Red[] = INCGFX_U8("graphics/trainers/back_pics/red.png", ".4bpp");
 const u8 gTrainerBackPic_Leaf[] = INCGFX_U8("graphics/trainers/back_pics/leaf.png", ".4bpp");

@@ -5070,4 +5070,11 @@ extern const u32 gMailTilemap_Retro[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+extern const u32 gItemIcon_DccWrap[];
+extern const u32 gItemIcon_DccScrap[];
+extern const u32 gItemIcon_DccTag[];
+extern const u32 gItemIcon_DccCharge[];
+extern const u32 gItemIcon_DccMedicine[];
+extern const u32 gItemIconPalette_Dcc[];
+
 #endif //GUARD_GRAPHICS_H

@@ -34,8 +34,26 @@ its text as provenance but do not activate it in this repository.
 
 ## State
 
-Implemented: handoff documentation bootstrap. Compiled: pending. Runtime verified:
-pending. Merged: no. Base: empty repository; minimal docs main bootstrap needed
-for ordinary scoped task PRs. Next: import exact stock engine on F01 branch,
-finish matching toolchain, compile/compare and run emulator boot. No gameplay
-work before the foundation gate. Stages 1–5 and improvement cycles not started.
+Implemented: F01 pinned engine, setup/build scripts, emulator harness and evidence.
+Compiled: PASS, matching upstream ROM. Runtime verified: PASS, real mGBA title →
+New Game menu → Birch introduction from fresh state. Merged: pending PR #2.
+No gameplay changes. Stages 1–5 and improvement cycles not started.
+
+## F01 checkpoint — 2026-10-06
+
+Branch: `task/f01-foundation`. PR: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/2
+Base: `8ac45a70f39bddf5fd50de7b3a40f436784ee3b8`, docs-only initial main commit.
+Engine/build tested: `ef471fc90335bacce3e23aa6349fd7eea80e958e`.
+Final runtime harness and route: `e9c8df785c4ed438a8d8938118c69c65349f4ec9`.
+All commands, checksums, limits and observed frames: [F01 evidence](evidence/f01/README.md).
+Clean separate checkout + fresh agbcc cache also builds the identical ROM; fresh
+OS provisioning remains F02. Source import audit found all retained files match
+upstream exactly. No generated ROM/build binary tracked. No workflow activated.
+
+Resolved setup issues: initially absent apt lists; PNG development package missing
+matching shared runtime; strict C mode incompatible with mGBA headers (use gnu11).
+No current build/runtime blocker. GitHub CLI reads remain Forbidden; Git push and
+connected GitHub PR creation work. Classic branch protections unreadable; honour
+server merge result. Next action: finish reviewed F01 integration, record merge
+commit, then F02 provision a fresh environment and reproduce matching build/boot.
+Only then select E01 tutorial room. Never claim the adaptation is playable yet.

@@ -4,8 +4,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 
 | Task | Depends on | State |
 | --- | --- | --- |
-| F01 | None | Active: pin/import, matching build, real emulator boot |
-| F02 | F01 | Pending: repeatable setup and fresh checkout reproduction |
+| F01 | None | Implemented, compiled, runtime verified; PR #2 integration pending |
+| F02 | F01 | Pending: fresh-environment provisioning; clean-checkout reproduction already passed in F01 |
 | E01 | F01 | Pending: Carl avatar, tutorial map and exploration runtime |
 | E02 | E01 | Pending: safe room, guide and recovery |
 | B01 | F01 | Pending: Carl/Donut duo prototype |

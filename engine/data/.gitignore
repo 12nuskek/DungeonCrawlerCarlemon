@@ -1,0 +1,4 @@
+# Upstream multiboot build inputs are hydrated from the pinned source by setup.
+/mb_berry_fix.gba
+/mb_colosseum.gba
+/mb_ereader.gba

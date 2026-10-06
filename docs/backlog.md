@@ -4,8 +4,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 
 | Task | Depends on | State |
 | --- | --- | --- |
-| F01 | None | Implemented, compiled, runtime verified; PR #2 integration pending |
-| F02 | F01 | Pending: fresh-environment provisioning; clean-checkout reproduction already passed in F01 |
+| F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
+| F02 | F01 | Implemented, compiled and runtime verified; PR #3 integration pending |
 | E01 | F01 | Pending: Carl avatar, tutorial map and exploration runtime |
 | E02 | E01 | Pending: safe room, guide and recovery |
 | B01 | F01 | Pending: Carl/Donut duo prototype |
@@ -24,3 +24,11 @@ Allowed: source import, setup/build/runtime harness, provenance and handoff docs
 Excluded: gameplay changes, scheduler, binary distribution, platform changes.
 Exit: clean build matches upstream identity and observed emulator boot; record
 integration separately. Next task only after reconciling this gate and PR state.
+
+F02 objective: provision a fresh isolated build/emulator environment and prove
+the documented setup/build/boot from committed source. Base:
+`1af617261881fcc26c6bb0fbd924d4c8a3c56d9a` (F01 merged). Allowed: reproducible
+environment definition, scripts, docs and validation evidence. Excluded: engine
+or gameplay changes, new scheduler, binary publication. Acceptance: fresh image
+installs recorded dependencies, exact-pin setup/build passes comparison, real
+mGBA boot route passes, image/tool versions and tested commit recorded.

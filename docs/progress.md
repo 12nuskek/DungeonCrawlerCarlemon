@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. Active task: F01 foundation, single implementation writer.
+Handoff date: 2026-10-06. Active task: F02 reproducible environment, single implementation writer.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -36,7 +36,8 @@ its text as provenance but do not activate it in this repository.
 
 Implemented: F01 pinned engine, setup/build scripts, emulator harness and evidence.
 Compiled: PASS, matching upstream ROM. Runtime verified: PASS, real mGBA title →
-New Game menu → Birch introduction from fresh state. Merged: pending PR #2.
+New Game menu → Birch introduction from fresh state. Merged: PR #2 at
+`1af617261881fcc26c6bb0fbd924d4c8a3c56d9a` (server-confirmed merge).
 No gameplay changes. Stages 1–5 and improvement cycles not started.
 
 ## F01 checkpoint — 2026-10-06
@@ -54,6 +55,38 @@ Resolved setup issues: initially absent apt lists; PNG development package missi
 matching shared runtime; strict C mode incompatible with mGBA headers (use gnu11).
 No current build/runtime blocker. GitHub CLI reads remain Forbidden; Git push and
 connected GitHub PR creation work. Classic branch protections unreadable; honour
-server merge result. Next action: finish reviewed F01 integration, record merge
-commit, then F02 provision a fresh environment and reproduce matching build/boot.
+server merge result. F01 merged successfully without bypassing protections.
+Next action: F02 provision a fresh environment and reproduce matching build/boot.
 Only then select E01 tutorial room. Never claim the adaptation is playable yet.
+
+## F02 start — 2026-10-06
+
+Branch: `task/f02-reproducible-environment`; base/merged F01:
+`1af617261881fcc26c6bb0fbd924d4c8a3c56d9a`. Docker daemon 28.4.0 is available.
+Objective/scope/acceptance in backlog. No gameplay changes. Initial Cloud Git
+refspec fetches only HEAD; explicitly fetch `refs/heads/main:refs/remotes/origin/main`
+before reconciling main. Do not assume a plain `git fetch` updates origin/main.
+
+## F02 validation — 2026-10-06
+
+Implemented: digest-pinned Debian environment, captured-commit validation launcher,
+dirty compiler-cache rejection and strict mGBA runtime checkpoints.
+Compiled: PASS in fresh OS/container with empty compiler/source cache.
+Runtime verified: PASS, all three frame fingerprints and visual screenshot review.
+Ten positive/negative tests PASS. Merged: pending PR #3.
+PR: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/3
+Tested commit: `fcf3bd049e5369b8fcc3015244fe53c2f557e744`; base:
+`1af617261881fcc26c6bb0fbd924d4c8a3c56d9a`.
+Commands/results, package/image identity and screenshots:
+[F02 evidence](evidence/f02/README.md). Build/ROM identity remains F01's exact hash.
+
+No current build/runtime blocker. Managed Docker proxy/DNS/CA and writable client
+cache issues are resolved and documented; do not retry old failed approaches.
+No engine changes in F02, no ROM artifacts in Git, no running test container.
+Next: merge reviewed PR #3, record the merge, then E01 on a new branch from main.
+E01 objective: Carl overworld presentation, one authored tutorial room, readable
+interaction and an exit; test four directions, collision, transition and save/reload
+in the emulator. Audit actual map/start/save paths before editing. Record any
+placeholder assets and deliberate Book 1 chronology compression in content-ledger.
+No battle engine or save-layout changes in E01; B01 follows its own narrow task.
+Use custom-build identity/runtime checks, not a false stock `make compare` pass.

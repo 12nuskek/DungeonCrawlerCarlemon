@@ -1,0 +1,347 @@
+{
+  "status": "PASS",
+  "contract_inspection_commit": "d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530",
+  "original_delivery_archive_sha256": "46a6b529bf71267b8fb7a0e8d3e7e5e2a05c76cd90f1e2c64b69932c99d38a06",
+  "original_delivery_checksum_entries": 51,
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.3.0",
+    "numpy": "2.3.5"
+  },
+  "independent_png_checks": [
+    {
+      "path": "assets/grub/anim_front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        128
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/grub/back.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/grub/front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/grub/icon.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/guard/anim_front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        128
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/guard/back.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/guard/front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/guard/icon.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/guard/overworld.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        32
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/howler/anim_front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        128
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/howler/back.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/howler/front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/howler/icon.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/howler/overworld.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        32
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/scuttler/anim_front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        128
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/scuttler/back.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/scuttler/front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/scuttler/icon.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/scuttler/overworld.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        32
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/warden/anim_front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        128
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/warden/back.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/warden/front.png",
+      "indexed": true,
+      "dimensions": [
+        64,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 14,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/warden/icon.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        64
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    },
+    {
+      "path": "assets/warden/overworld.png",
+      "indexed": true,
+      "dimensions": [
+        32,
+        32
+      ],
+      "png_bit_depth": 4,
+      "palette_entries": 16,
+      "binary_alpha": true,
+      "max_index": 15,
+      "metadata_chunks_absent": true
+    }
+  ],
+  "all_pngs_metadata_chunks_absent": true,
+  "shared_palette_git_blob": "a53187e0f6ff720864149e69d6855dbce4db2c91",
+  "shared_palette_bytes": 185,
+  "shared_palette_correction": "Removed one extra trailing blank line from delivered source copy; colors, indices and all generated outputs unchanged.",
+  "reproduction_runs": 2,
+  "files_compared_per_run": 41,
+  "all_generated_outputs_identical": true,
+  "reproduction_output": [
+    "Converted 5 battle sets, 5 shared-palette icons and 4 stationary tokens. NOT runtime-verified.",
+    "24 indexed PNGs pass: dimensions, packed frames, 4bpp, binary index0 transparency, battle RGB555 palettes, unchanged shared small-asset palette, native margins and exact 6x previews.",
+    "Converted 5 battle sets, 5 shared-palette icons and 4 stationary tokens. NOT runtime-verified.",
+    "24 indexed PNGs pass: dimensions, packed frames, 4bpp, binary index0 transparency, battle RGB555 palettes, unchanged shared small-asset palette, native margins and exact 6x previews.",
+    "Run 1: all 41 generated outputs are byte-identical.",
+    "Run 2: all 41 generated outputs are byte-identical.",
+    "Shared palette source matches the recorded repository Git blob.",
+    "PASS: source reproducibility only; runtime remains NOT RUN."
+  ],
+  "runtime": "NOT RUN",
+  "build": "NOT RUN",
+  "emulator_screenshots": "N/A: source-reference documentation only",
+  "staging_base_commit": "c9669a132b03161392ee23ec347541042beb68d1",
+  "staging_base_branch": "task/i01-opponent-art"
+}

@@ -12,7 +12,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
 | B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
 | R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
-| R02 | R01 | Active: issue #18; two achievements and two deterministic boxes |
+| R02 | R01 | Verified: 169 assertions; issue #18; scoped integration pending |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |
 | D02 | R01, D01 | Pending: explosive recipe |
 | S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |

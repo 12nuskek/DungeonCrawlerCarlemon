@@ -456,3 +456,17 @@ Repeat boxes leave Potion1/Scrap2 unchanged. Failed two-Potion reward at stack98
 and full bag leaves98 and flag unset; tossing1 then retry grants exactly2 to99,
 repeat and cold reload retain99. Menu timing for toss confirmation was adjusted;
 no production source fix was necessary. Final isolated169-check replay is next.
+
+## R02 final verification — 2026-10-06
+
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`, single writer on
+`task/r02-achievements-loot`; base `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`.
+Tested `fbfb9e9cad1854b5b03e2a006d1ed1745348f365` with isolated
+`bash scripts/test-r02.sh`:169 PASS (132 production/37 fixture), six empty errors,
+17 visually reviewed actual screenshots. Production SHA256
+`dec6f1db138ed1a622da477cf14495086fe5ea7c20ca9caaa6b5016a3f42ab32`.
+[Evidence](evidence/r02/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO, pending scoped PR and issue #18 integration. No blocker or unsuccessful
+production fix; exploratory replay timing adjustments resolved dialogue/toss states.
+Next: push evidence, draft/review/merge R02, reconcile main, then D01 trap/secret/
+optional quest. Parent owns sole continuation; no new workflow/schedule created.

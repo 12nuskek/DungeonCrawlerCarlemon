@@ -183,3 +183,11 @@ defeat saves, cold reload/retry, and capacity refusal followed by freeing a slot
 `growth` decodes saved encrypted XP/held-item fields; `item` reads real bag quantities
 with the save encryption key. `stats`, `foes` and `flag` read actual game state.
 No host RAM writes. [174-assertion evidence](evidence/r01/README.md).
+
+## R02 achievement/loot replay
+
+Run `bash scripts/test-r02.sh` at tested revision `fbfb9e9` with the same toolchain
+variables. Four production routes (132 assertions) and two explicit capacity
+fixture routes (37 assertions) prove locked states, one-time flags/quantities,
+consumption, no-effect preservation, map re-entry, cold reload, atomic failure
+and retry. Six empty error logs; [full evidence](evidence/r02/README.md).

@@ -1,0 +1,9 @@
+{
+  "source_test_commit": "ee340e181ce830412f9b2ebbd9ae9a1c1a73f655",
+  "unchanged_engine_compiled_commit": "b530fa661254c2c4b5ef1d75ce4010c2d5d741ec",
+  "base_run": "/workspace/DungeonCrawlerCarlemon/artifacts/n03/run-Wk4EcS",
+  "production_sha256": "dc321def80b7b3d60d0dd5103c73a77d8104135b0ff055a02456656bb76a0891",
+  "harness_sha256": "fff0f6226dd05d68029e97ea7d4de8555622ac0b000ad65cef2c9290ab54d790",
+  "symbols_sha256": "95b818cd3168adafbc12beb8bc0f5d07a8d8b998222137197858d019422292c2",
+  "method": "Verified unchanged engine/harness source; reuse accepted clean production build. No engine rebuild claimed. Normal save copies and read-only RAM assertions."
+}

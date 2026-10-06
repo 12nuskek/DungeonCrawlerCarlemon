@@ -316,3 +316,13 @@ fixture) and38 actual rendered comparisons. The full-success message enforces
 those totals. N02 enforces73/1210. Exact inputs, complete logs, current state views,
 source export checks and the runner-only validation are in evidence/n03/final.
 The production ROM copy remains separate from the diagnostic fixture rebuilds.
+
+### N04 exact recovered-save victories
+
+`DCC_RECOVERY_BASE_RUN=/path/to/accepted/N03/run python3 scripts/test-n04.py`
+extends all six accepted retry inputs to victory, manual save and cold reload.
+It requires the76/1303 baseline, checksum and identical engine/harness source;
+no engine rebuild is claimed for this test-only task. Test-sourceee340e1 passes
+12 production sessions/216 checks and12 empty errors. Same-ROM combined coverage
+is88 sessions/1519 checks. See evidence/n04 for exact inputs, outcomes and snapshots.
+This supersedes the earlier re-entry-only qualification for compiledb530fa6.

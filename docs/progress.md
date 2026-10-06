@@ -1508,3 +1508,19 @@ before reusing its production ROM; no new engine compilation claim. Acceptance i
 six victories plus cold persistence,12 new sessions and exact totals; preserve all
 failure traces and attempt counts. Scripts implemented; runtime/PR/merge pending.
 Next commit and execute against artifacts/n03/run-Wk4EcS, then review actual screens.
+
+### N04 verified — 2026-10-06
+
+Test-source ee340e181ce830412f9b2ebbd9ae9a1c1a73f655; base3eba7ad. No engine or
+harness source difference from compiled/testedb530fa6; same production ROMdc321def…a0891.
+All six exact ordinary recovered saves win, pass resolved-repeat XP checks, manual
+save and cold persistence.12 production sessions/216 assertions,12 empty errors.
+First runtime attempt passed all six existing strategies. Actual victory/cold views
+reviewed; source routes, input hashes and HP/status/action/XP/equipment snapshots in
+docs/evidence/n04. Combined same-ROM evidence:88 sessions/1519 assertions including
+193 earlier labeled fixture checks. Earlier re-entry-only qualification now closed
+for this ROM; no new engine compilation or balance claim. PR48 merge pending.
+
+Next: integrate this scoped evidence, then assess repeated guide recovery messages
+with a concrete control-return probe while retaining first-use instructions.
+Updated private review package and human pacing/playtest remain pending. No Stage6.

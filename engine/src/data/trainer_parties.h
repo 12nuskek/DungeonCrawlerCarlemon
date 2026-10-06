@@ -1,3 +1,11 @@
+// Authored deterministic tutorial opponents; sprites/species are placeholders.
+static const struct TrainerMonNoItemCustomMoves sParty_DccTrial[] = {
+    {.iv = 0, .lvl = 8, .species = SPECIES_ZIGZAGOON,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+    {.iv = 0, .lvl = 8, .species = SPECIES_WURMPLE,
+     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}},
+};
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     {
     .iv = 0,

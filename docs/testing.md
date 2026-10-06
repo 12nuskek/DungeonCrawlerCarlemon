@@ -106,3 +106,14 @@ separate emulator process loading that save. Nineteen map/position/persistent-fl
 assertions supplement visual inspection. See the [tested E01 report](evidence/e01/README.md).
 Workspace-local mGBA flags use DCC_TEST_CFLAGS and DCC_TEST_LDFLAGS; do not pass
 them as CFLAGS/LDFLAGS to the GBA compiler. Saves/executables/ROMs stay ignored.
+
+## B01 duo replay
+
+Run `bash scripts/test-b01.sh` with the same compiler and mGBA dependency flags.
+It creates a fresh game and real flash save via the E01 route, then separately
+boots loss/retry, victory/save and cold-reload routes. Inputs are ordinary GBA
+buttons; RAM diagnostics only read protagonist HP/names/count, battle membership,
+both offensive PP counters, outcome and the saved trial flag. Read offsets are
+bound to the pinned source structures. Review the captured images as well.
+B01 requires a fresh save: earlier E01 saves have no protagonists. The binary save
+layout is unchanged; no migration is claimed. Battle art/labels are placeholders.

@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0 complete; E01 in progress.**
+Handoff date: 2026-10-06. **Stage 0 and E01 complete; B01 in progress.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
 Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -147,7 +147,8 @@ routes, read-only RAM assertions and screenshots. It never writes game RAM.
 
 Tested commit `b28143b56f9413ff211473a70ca8429414335412`. Implemented: YES.
 Compiled: PASS. Runtime verified: PASS, 16 fresh-game plus 3 separate-process
-cold-reload assertions; final screenshots visually inspected. Merged: pending.
+cold-reload assertions; final screenshots visually inspected. Merged: PR #5 at
+`91afb3deb6f856b4565e00bb65e81f0f1497a05f` (server-confirmed).
 Full commands, checksums, inputs, logs, screenshots and limits:
 [E01 evidence](evidence/e01/README.md). No current blocker. Follow-up commits for
 this task are documentation/evidence only. Review found no save-layout or battle
@@ -158,3 +159,21 @@ Next after E01 integration: B01 (dependency F01 already passed), a narrow Carl/D
 duo encounter prototype with both actors and victory return. This ready task
 enables meaningful protagonist recovery validation in E02; no change to the
 authorized scope. E02 safe-room guide/recovery is still pending, not silently done.
+
+## B01 start — 2026-10-06
+
+Branch `task/b01-duo-prototype`, base `91afb3deb6f856b4565e00bb65e81f0f1497a05f`.
+E01 PR #5 merged; main explicitly fetched and fast-forwarded. Single writer.
+Contract in backlog. Two fixed protagonist records and one optional double-battle
+trial; trial-specific callback restores both and returns to the current map on
+loss, never the old hometown. Both victory and ordinary-input defeat/retry require
+runtime checks. No save-layout changes; fresh B01 save required. Battle species,
+sprites and trainer labels are technical placeholders, not final character art.
+
+B01 exploratory runtime: both actors spent offensive PP; victory restored both
+and returned movement; deliberate support-only defeat restored both with trial
+flag unset, and re-entry started a new four-battler encounter. Corrected the
+explicit post-battle script continuation and suppressed trial-only stock whiteout
+text. First cold-save check correctly failed because the input route had not
+confirmed the fully displayed overwrite prompt; adjusted the route, not save code.
+Final committed replay and evidence still pending. No scheduler/workflow added.

@@ -1,5 +1,6 @@
 #include "global.h"
 #include "new_game.h"
+#include "crawler.h"
 #include "random.h"
 #include "pokemon.h"
 #include "roamer.h"
@@ -204,6 +205,7 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
+    InitCrawlerParty();
 }
 
 static void ResetMiniGamesRecords(void)

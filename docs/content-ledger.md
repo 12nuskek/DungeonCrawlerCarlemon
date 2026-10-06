@@ -34,5 +34,31 @@ chapter/visual canon has not been independently checked. No later-book spoilers.
 
 Remaining E01 placeholders: stock Emerald title/logo/music, cave tiles, crate/rock
 sprites, Bag/Options/Save/Badge labels and trainer-card/battle/running art inherited
-from upstream. Running/cycling and battles are not enabled in these rooms. These
+from upstream. Running/cycling remain disabled; B01 adds the optional landing trial. These
 are scheduled for later scoped tasks/S02, not claimed as finished crawler UI/art.
+
+## B01 duo trial and placeholders
+
+B01-TRIAL: interact with the rehearsal attendant at landing (9,6), with both
+protagonists conscious. Original AI text explicitly calls this a rehearsal and
+promises restoration. The invented trial compresses duo combat into the tutorial;
+it makes no claim about Book 1 chronology or a canonical encounter. Only victory
+sets persistent trainer flag `TRAINER_FLAGS_START + TRAINER_DCC_TRIAL` (0x857).
+Loss restores both locally without the stock whiteout narrative; retry remains
+available. Victory also restores both and repeat interaction gives resolved text.
+See `docs/evidence/b01/*.route` for ordinary-input victory/loss/save/reload routes.
+
+Fixed protagonist records: Carl uses temporary Machop stats/art at level 8, Tackle
+and Focus Energy; Donut uses temporary Meowth stats/art at level 8, Swift and Growl.
+These are implementation proxies, not authored character art or canon skill names.
+Two level-8 trial targets use upstream Zigzagoon/Wurmple records and Tackle.
+The attendant MAN_1 sprite, Pokémaniac battle portrait, Pokémon/trainer/battle menu
+labels, send-out animation, skill names and enemy artwork are upstream placeholders
+requiring B03/S02 replacement. No new downloaded assets. Original code and AI lines
+were authored in this task. Final presentation and two useful tuned actions per
+character are not claimed complete; B02 and S02 remain required.
+
+Existing XP and trainer prize behavior is provisional, not the R01 reward design.
+No achievement, loot or inventory reward is added. Trainer index 855 uses existing
+reserved flag capacity; 8 reserved trainer IDs remain. Both protagonists are
+initialized only on New Game; E01 saves lack that roster and are unsupported here.

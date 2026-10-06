@@ -1,4 +1,15 @@
 const struct Trainer gTrainers[] = {
+    [TRAINER_DCC_TRIAL] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerName = _("TRIAL"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = 0,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_DccTrial),
+    },
     [TRAINER_NONE] =
     {
         .partyFlags = 0,

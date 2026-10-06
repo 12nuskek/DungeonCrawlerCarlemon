@@ -1,6 +1,8 @@
 /* Real mGBA input-driven gameplay testing; RAM reads only, never RAM patches.
  * Commands: step FRAMES KEYS CAPTURE.ppm (or -), expect GROUP MAP X Y FLAGS,
+ * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON, duo healthy,
  * quit. Flags are the low two bits at the existing save flag byte for E01.
+ * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
  */
 #include <mgba/core/core.h>
@@ -38,7 +40,7 @@ static void log_emulator(struct mLogger *logger, int category, enum mLogLevel le
 int main(int argc, char **argv)
 {
     if (argc != 4) return 2;
-    unsigned saveptr=0, objects=0, avatar=0, addr;
+    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, addr;
     char type, symbol[128];
     FILE *symbols=fopen(argv[3], "r");
     if (!symbols) return 3;
@@ -46,9 +48,15 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"gSaveBlock1Ptr")) saveptr=addr;
         if (!strcmp(symbol,"gObjectEvents")) objects=addr;
         if (!strcmp(symbol,"gPlayerAvatar")) avatar=addr;
+        if (!strcmp(symbol,"gPlayerParty")) party=addr;
+        if (!strcmp(symbol,"gPlayerPartyCount")) count=addr;
+        if (!strcmp(symbol,"gBattleMons")) mons=addr;
+        if (!strcmp(symbol,"gBattlersCount")) battlers=addr;
+        if (!strcmp(symbol,"gBattleOutcome")) outcome=addr;
+        if (!strcmp(symbol,"gMain")) mainstate=addr;
     }
     fclose(symbols);
-    if (!saveptr || !objects || !avatar) return 4;
+    if (!saveptr || !objects || !avatar || !party || !count || !mons || !battlers || !outcome || !mainstate) return 4;
     FILE *save=fopen(argv[2], "ab+");
     if (!save) return 5;
     fseek(save,0,SEEK_END);
@@ -92,7 +100,7 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7)) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strcmp(line,"duo healthy\n")) {result=13;break;}
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);
@@ -100,6 +108,30 @@ int main(int argc, char **argv)
         int y=(short)core->busRead16(core,object+0x12)-7;
         int flags=core->busRead8(core,sb+0x1274)&3;
         printf("frame=%u map=%d.%d pos=%d,%d flags=%d\n",total,group,map,x,y,flags);
+        unsigned hp0=core->busRead16(core,party+0x56), max0=core->busRead16(core,party+0x58);
+        unsigned hp1=core->busRead16(core,party+100+0x56), max1=core->busRead16(core,party+100+0x58);
+        unsigned state[]={(core->busRead8(core,mainstate+0x439)>>1)&1,
+            core->busRead8(core,battlers),core->busRead8(core,outcome),
+            core->busRead8(core,mons+0x24),core->busRead8(core,mons+2*0x58+0x24),
+            (core->busRead8(core,sb+0x1270+0x857/8)>>(0x857%8))&1};
+        printf("party=%u HP=%u/%u,%u/%u battle=%u battlers=%u outcome=%u PP=%u,%u trial=%u\n",
+            core->busRead8(core,count),hp0,max0,hp1,max1,state[0],state[1],state[2],state[3],state[4],state[5]);
+        if (!strcmp(line,"duo healthy\n")) {
+            const unsigned char names[2][6]={{0xBD,0xBB,0xCC,0xC6,0xFF,0},{0xBE,0xC9,0xC8,0xCF,0xCE,0xFF}};
+            if (core->busRead8(core,count)!=2 || !hp0 || hp0!=max0 || !hp1 || hp1!=max1) result=17;
+            for (unsigned n=0;n<2;n++) for (unsigned i=0;i<(n?6:5);i++)
+                if (core->busRead8(core,party+n*100+8+i)!=names[n][i]) result=17;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
+        if (!strncmp(line,"battle ",7)) {
+            char values[6][32]; unsigned wanted;
+            if (sscanf(line,"battle %31s %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],values[5],&extra)!=6) result=18;
+            for (unsigned i=0;i<6 && !result;i++)
+                if (!number(values[i],255,&wanted) || wanted!=state[i]) result=18;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
         if (!strncmp(line,"expect ",7)) {
             char values[5][32];
             unsigned eg,em,ex,ey,ef;

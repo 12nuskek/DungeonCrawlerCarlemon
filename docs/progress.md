@@ -1217,3 +1217,34 @@ howler-first state normally. Failed trace preserved, no balance edits; blocker
 resolved on second strategy. Full evidence docs/evidence/n00b. Next merge then
 N01 visual integration, using prepared 1176-cell/event/49-asset invariants and
 six matched unobstructed room views. Native kit external; no overlapping writer.
+
+### Safe N01 native-kit handoff — 2026-10-06
+
+N00b PR39 merged d36f3af20c9b690a6249141fad5e4d3e82f54e98. N01 branch
+advanced without rewriting history to that verified main. Added read-only design
+audit, reusable visual-only invariant checker and exact baseline contracts:
+1176 map/border cells, six event/warp/script contracts,49 approved art hashes,
+native tile/palette bounds. Checker passes against existing engine. Semantic OBJ
+graphics IDs may change; event positions/scripts and all other fields may not.
+
+Unobstructed before captures: docs/evidence/n01/before. N00 testedf3514ca,
+ROM1a9d4b24…999573, normal completed manual save, six rooms/18 runtime assertions,
+empty emulator errors. First capture-route attempt held Down too long from an
+already south-facing avatar; fixed input duration, no game defect. Failed trace
+kept locally; successful exact route archived. No new dungeon art integrated yet.
+
+Parent reports native candidate kit ready:56 architecture tiles,12 recommended
+shared-palette props,18 BG variants,230 unique BG tiles,721 static checks and109
+reproducible outputs. These are parent-reported candidate checks, NOT integration
+or runtime acceptance. Exact next: parent stages source kit via asset-only GitHub
+handoff against this pushed branch; implementation writer explicitly pauses repo
+writes until staging relinquishes them. Then inspect candidate manifest/provenance,
+select useful assets, establish exporter ownership and integrate bounded N01 visuals.
+Run invariants, clean build, actual matched six-room views and relevant gameplay
+routes before review/merge. Do not treat candidate verification as game acceptance.
+
+Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000 remains sole implementation
+writer. No active build/emulator task; parent retains the same hourly continuation.
+No scheduler added. Overnight scope ends approximately21:19UTC; no Stage6. Existing
+I01 private package and all baseline/failed evidence preserved. N01 implemented NO,
+compiled/runtime/merged NO; preparation/audit and baseline evidence complete.

@@ -1194,3 +1194,12 @@ both pending, each individually pending, and both cleared; alternate-order
 normal battle creates the otherwise untested guard-only state. No fixture state
 injection. N01 waits on external art; no overlapping writers. Next isolated
 commit/build/runtime. Implemented YES; compiled/runtime/merged pending.
+
+N00b first run d4887a7: production build862302c8…193e0a8; all18 core routes
+and3 new Journal routes passed. Alternate howler-first fortify policy lost
+(outcome2, normal free recovery, no clear flag): preserved run-buUae3. This is a
+strategy loss, not a successful branch proof. Second hypothesis: attack promptly
+with existing offensive policy, same ordinary prebattle save/ROM. Passed11
+assertions and saved the howler-only state; no gameplay/balance edits. Correct
+runner's alternate-route expected count to11 (pilot itself adds an assertion).
+Next committed clean rerun, cold guard-only Journal and actual image review.

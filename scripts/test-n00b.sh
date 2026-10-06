@@ -54,7 +54,7 @@ run_route quest-accept-trap "$repo/docs/evidence/d01/accept-trap.route" 16 quest
 run_route quest-tag-secret "$repo/docs/evidence/d01/tag-secret.route" 15 quest.sav game.sym
 run_route quest-complete-recover "$repo/docs/evidence/s03/quest-complete-recover.route" 22 quest.sav game.sym
 run_route quest-reload-final "$repo/docs/evidence/d01/reload-final.route" 18 quest.sav game.sym
-run_route howler-first "$repo/scripts/routes/n00b/howler-first.route" 10 alternate.sav game.sym
+run_route howler-first "$repo/scripts/routes/n00b/howler-first.route" 11 alternate.sav game.sym
 run_route guard-pending "$repo/scripts/routes/n00b/guard-pending.route" 8 alternate.sav game.sym
 python3 "$repo/scripts/render-walk.py" "$evidence/movement" "$evidence/walking.gif" > "$evidence/walking-render.log"
 python3 - "$evidence" <<'PYIMG'

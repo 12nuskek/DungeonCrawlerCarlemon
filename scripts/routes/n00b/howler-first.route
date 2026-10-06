@@ -27,7 +27,7 @@ step 600 0 opponents.ppm
 step 1 1 -
 step 600 0 carl-menu.ppm
 pattern 857 0 35 40 6 6 6 9
-pilot fortify 30000
+pilot offensive 30000
 step 240 0 battle-ended.ppm
 step 1 1 -
 step 400 0 end-0.ppm

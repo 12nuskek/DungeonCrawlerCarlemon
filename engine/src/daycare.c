@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "pokemon.h"
 #include "battle.h"
 #include "daycare.h"
@@ -189,7 +190,10 @@ static void StorePokemonInEmptyDaycareSlot(struct Pokemon *mon, struct DayCare *
 
 void StoreSelectedPokemonInDaycare(void)
 {
-    u8 monId = GetCursorSelectionMonId();
+    u8 monId;
+    if (!DCC_ALLOW_COLLECTION)
+        return;
+    monId = GetCursorSelectionMonId();
     StorePokemonInEmptyDaycareSlot(&gPlayerParty[monId], &gSaveBlock1Ptr->daycare);
 }
 
@@ -873,6 +877,8 @@ static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *
 
 void GiveEggFromDaycare(void)
 {
+    if (!DCC_ALLOW_COLLECTION)
+        return;
     _GiveEggFromDaycare(&gSaveBlock1Ptr->daycare);
 }
 

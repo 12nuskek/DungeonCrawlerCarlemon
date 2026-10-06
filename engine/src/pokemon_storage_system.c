@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "malloc.h"
 #include "bg.h"
 #include "data.h"
@@ -1649,7 +1650,14 @@ static void Task_PCMainMenu(u8 taskId)
 
 void ShowPokemonStorageSystemPC(void)
 {
-    u8 taskId = CreateTask(Task_PCMainMenu, 80);
+    u8 taskId;
+    if (!DCC_ALLOW_COLLECTION)
+    {
+        UnlockPlayerFieldControls();
+        ScriptContext_Enable();
+        return;
+    }
+    taskId = CreateTask(Task_PCMainMenu, 80);
     gTasks[taskId].tState = 0;
     gTasks[taskId].tSelectedOption = 0;
     LockPlayerFieldControls();

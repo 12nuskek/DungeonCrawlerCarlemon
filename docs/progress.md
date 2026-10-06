@@ -347,3 +347,19 @@ acting, both defeated/local retry, all four party resources restored and saved.
 [Complete evidence](evidence/b02/README.md). Implemented YES, compiled PASS,
 runtime PASS, integration pending. No blocker. B03 is next after scoped merge.
 Inflicted-status healing remains explicitly pending, not inferred from zero status.
+
+## B02 integration / B03 start — 2026-10-06
+
+B02 PR #13 merged `4c76d692b37a2fa934e89e4b057e0b83568e64f0`; issue #12 closed.
+Implemented YES / compiled PASS / runtime PASS / merged YES. Main reconciled,
+no open PR, one writer. B03 issue #14 and task/b03-no-collection based on that merge.
+Initial guards/UI compile; emulator validation in progress, no runtime acceptance
+claim yet. Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`, parent owns continuation.
+No new workflow/scheduler. Next: verify roster/pockets, defensive collection fixture
+and B02 regression, then scoped review/PR. Fresh saves required, layout unchanged.
+
+B03 exploratory menus pass 14 assertions: roster/actions/summary return, all four
+non-capture pockets in both directions and wrap, unchanged duo/resources. Initial
+label clipping fixed; navigation test corrected after tracing actual screens.
+No game softlock found. Separate GBA-side API fixture and isolated complete replay
+pending; production gate remains unverified until those finish.

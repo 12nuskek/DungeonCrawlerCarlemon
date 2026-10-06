@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "item.h"
 #include "berry.h"
 #include "string_util.h"
@@ -238,6 +239,9 @@ bool8 CheckBagHasSpace(u16 itemId, u16 count)
 bool8 AddBagItem(u16 itemId, u16 count)
 {
     u8 i;
+
+    if (!DCC_ALLOW_COLLECTION && GetItemPocket(itemId) == POCKET_POKE_BALLS)
+        return FALSE;
 
     if (GetItemPocket(itemId) == POCKET_NONE)
         return FALSE;

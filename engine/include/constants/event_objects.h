@@ -244,6 +244,14 @@
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
 
+// Dungeon props reuse six upstream slots explicitly marked unused.
+#define OBJ_EVENT_GFX_DCC_RUBBLE OBJ_EVENT_GFX_UNUSED_NATU_DOLL
+#define OBJ_EVENT_GFX_DCC_WARNING_SIGN OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL
+#define OBJ_EVENT_GFX_DCC_WORKBENCH OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL
+#define OBJ_EVENT_GFX_DCC_QUEST_TAG OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL
+#define OBJ_EVENT_GFX_DCC_CACHE_SEALED OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL
+#define OBJ_EVENT_GFX_DCC_STORAGE_RACK OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL
+
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic

@@ -173,3 +173,7 @@ export_world()
 # I01 opponents own complete native sets; preserve shared icon/prop palette.
 from opponent_art import export as export_opponents
 export_opponents()
+
+# Native prop masters have a single owner; no source-sheet regeneration needed.
+from environment_art import export_props
+export_props()

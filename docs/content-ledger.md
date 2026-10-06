@@ -321,3 +321,19 @@ in actual RGB555 emulator output; all1053 gameplay assertions pass. Existing
 Carl/Donut art, NPCs, map layout/collision and UI palettes are unchanged.
 Remaining inherited audio, UI frames/labels, ball effects and static animation
 limitations stay listed above. Await human playtest before broader work.
+
+### N01 native environment candidates / first prop selection
+
+PR40 is a partial source handoff:124 added reference files including all91 native
+PNG candidates. Its omitted original main reference PNG prevents full source-sheet
+reproduction; optional packed diagnostic output is also absent. Do not recreate
+or publish either omission. Historical full-kit reproduction is not current-tree
+reproduction. Prompts, hashes, accepted native masters and current-tree checks are
+preserved in art-references/environment-native-candidates.
+
+The first game export selects rubble, sign, workbench, quest tag, sealed cache and
+storage rack. Original generated-reference-derived candidates, static16x16;
+shared palette unchanged. No claim of hand-drawn animation or canon object design.
+Remaining crates, inactive-state feedback and room architecture await later
+increments. Native PNG masters are authoritative for deterministic game export;
+compilation/runtime acceptance recorded separately in progress/evidence.

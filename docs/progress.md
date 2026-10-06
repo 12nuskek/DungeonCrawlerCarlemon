@@ -1248,3 +1248,24 @@ writer. No active build/emulator task; parent retains the same hourly continuati
 No scheduler added. Overnight scope ends approximately21:19UTC; no Stage6. Existing
 I01 private package and all baseline/failed evidence preserved. N01 implemented NO,
 compiled/runtime/merged NO; preparation/audit and baseline evidence complete.
+
+### N01 resumed: static prop readability — 2026-10-06
+
+Parent relinquished all staging writes. Audited PR40 head3a1a9c6:124 additions
+only; local verifier passed123 checksums,91 PNG identities and721 static checks.
+Merged reference-only PR40 into N01 atf8fc81750386032c940e82aaabf40e1c82e4e073.
+Original main source sheet and optional packed output remain absent; neither will
+be fetched/reuploaded. Complete source-sheet reproduction remains unavailable.
+Authoritative game export uses accepted native PNG masters independently.
+
+First visual increment selects six props: rubble, warning sign, bench, tag, cache,
+shaft/tool storage rack. Uses six upstream explicitly unused graphic slots76–81;
+16x16 static footprints and existing MovingBox shared palette. No dynamic-graphics
+range, Donut palette, scripts, state, collision or coordinates changed. Nine
+existing objects rebound; ordinary supply/wrap boxes remain for now. Native
+export owns these six PNGs; old generators delegate rather than overwrite.
+Static1176-cell/six-event/49-art invariants and55-image asset checks pass.
+Next clean committed build;24 production sessions including matched six-room
+route, all existing behavior assertions, nine opponent and six prop pixel checks.
+N01 props implemented YES; compiled/runtime/merged pending. Then separate room
+materials/composition and later state/layout increments. Sole implementation writer.

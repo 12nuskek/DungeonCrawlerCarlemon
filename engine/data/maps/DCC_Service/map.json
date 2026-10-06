@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
       "x": 7,
       "y": 5,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_DCC_QUEST_TAG",
       "x": 11,
       "y": 4,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_DCC_WORKBENCH",
       "x": 6,
       "y": 8,
       "elevation": 3,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_DCC_CACHE_SEALED",
       "x": 13,
       "y": 8,
       "elevation": 3,

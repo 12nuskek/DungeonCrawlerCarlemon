@@ -2186,3 +2186,22 @@ static const struct SpriteFrameImage sPicTable_DccGuide[] = {obj_frame_tiles(gOb
 static const struct SpriteFrameImage sPicTable_DccMara[] = {obj_frame_tiles(gObjectEventPic_DccMara)};
 
 static const struct SpriteFrameImage sPicTable_DccLev[] = {obj_frame_tiles(gObjectEventPic_DccLev)};
+
+static const struct SpriteFrameImage sPicTable_DccRubble[] = {
+    obj_frame_tiles(gObjectEventPic_DccRubble),
+};
+static const struct SpriteFrameImage sPicTable_DccWarningSign[] = {
+    obj_frame_tiles(gObjectEventPic_DccWarningSign),
+};
+static const struct SpriteFrameImage sPicTable_DccWorkbench[] = {
+    obj_frame_tiles(gObjectEventPic_DccWorkbench),
+};
+static const struct SpriteFrameImage sPicTable_DccQuestTag[] = {
+    obj_frame_tiles(gObjectEventPic_DccQuestTag),
+};
+static const struct SpriteFrameImage sPicTable_DccCacheSealed[] = {
+    obj_frame_tiles(gObjectEventPic_DccCacheSealed),
+};
+static const struct SpriteFrameImage sPicTable_DccStorageRack[] = {
+    obj_frame_tiles(gObjectEventPic_DccStorageRack),
+};

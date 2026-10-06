@@ -1278,3 +1278,22 @@ exports match. ROMec3cdf914b55d36da913db570ab83ad1cffbcd59869ab71c9e47c4fe075c55
 PR41 pending merge; evidence docs/evidence/n01/props. Implemented/compiled/runtime
 YES; merged pending. No blocker attempts. Next separate room materials/composition
 increment, then collision/layout and state feedback with their own acceptance.
+
+### N01 room materials/composition selected — 2026-10-06
+
+Prop PR41 merged eee114c07792a37e2c281d8807f774be85b5845a. Sole active
+branch task/n01-room-composition from that base. Selected native architecture,
+quiet floors, opaque void borders, depth/corner bands, floor-specific warm/cold
+palettes, sparse functional wear, guide rest mat/bedroll, workshop conduits/wire,
+two patrol bays, framed gate and distinct exit rest patch. Native stairs centered
+on existing one-cell warp anchors. This increment preserves all collision and
+behavior bits, coordinates/scripts/save state; room-outline changes and persistent
+visual states follow separately. No pressure-plate substitute for the wire.
+
+Authoritative exporter packs only selected pixels:158 used8x8 tiles (160allocated),
+157 metatiles, banks6–9; all1176 cell/border behavior and49 approved art checks
+pass. Old grid generator delegates; expanded explicit checks retain native bounds
+and behavioral invariants. Candidate source omissions remain untouched. Next
+clean committed build, real240x160 arrival/center and motion review,434 behavior
+assertions and15 character/prop pixel checks. Implemented YES, compiled/runtime/
+merged pending. No build blocker attempts. Issue35 remains open for N01 completion.

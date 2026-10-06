@@ -300,3 +300,24 @@ requested improvement. They are original tutorial adaptation identities, not
 claims about canon monsters. No later-book spoilers or new roles are authorised.
 See the I01 contract in backlog and issue29 native palette/asset handoff. Current
 stock interface/audio/ball-effect/static-animation limitations remain as listed.
+
+### I01 opponent replacement — runtime verified
+
+The five existing original adaptation enemies now use the native package in
+art-references/opponent-native-candidates (asset-only PR33). Generated references,
+original prompts, deterministic conversion and limited source-detail corrections
+are preserved; no third-party image was supplied. This is source-derived art,
+not hand-drawn native animation or a claim of book-canon monster identity.
+
+Runtime battle export lifts the unchanged opaque pixels8 rows inside each64×64
+canvas to avoid duo HP-panel overlap. Source masters are untouched; no scaling or
+recoloring. Guard's former Spinda procedural spots are disabled. Battle palettes
+remain independent; five icons/four stationary tokens retain the existing shared
+palette. No Grub map token exists. Front/back and animation-pair duplicates remain
+explicit; no new rear view, movement, attack animation or mechanics were authored.
+
+Tested81b232a: all5 battle fronts and4 map tokens match every source opaque pixel
+in actual RGB555 emulator output; all1053 gameplay assertions pass. Existing
+Carl/Donut art, NPCs, map layout/collision and UI palettes are unchanged.
+Remaining inherited audio, UI frames/labels, ball effects and static animation
+limitations stay listed above. Await human playtest before broader work.

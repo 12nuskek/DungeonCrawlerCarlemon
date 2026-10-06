@@ -1,0 +1,107 @@
+[
+  {
+    "image": "battle-scuttler.png",
+    "source": "artifacts/i01/run-Yw6WfM/trial/carl-menu.ppm",
+    "raw_frame_sha256": "e3600c2bca6b3484bbe26d4d62d0329f9a1f86e80ed1b77c020ac923b9f9e2c1"
+  },
+  {
+    "image": "battle-grub.png",
+    "source": "artifacts/i01/run-Yw6WfM/trial/carl-menu.ppm",
+    "raw_frame_sha256": "e3600c2bca6b3484bbe26d4d62d0329f9a1f86e80ed1b77c020ac923b9f9e2c1"
+  },
+  {
+    "image": "battle-guard.png",
+    "source": "artifacts/i01/run-Yw6WfM/guard/carl-menu.ppm",
+    "raw_frame_sha256": "f98c72a5c0b729d69a49a00e816448cb2a91b93f426a29c4974b639b8f4c3f7e"
+  },
+  {
+    "image": "battle-howler.png",
+    "source": "artifacts/i01/run-Yw6WfM/howler/carl-menu.ppm",
+    "raw_frame_sha256": "de0963657cdb11051a9cb006cd2cf158d724f3022e961ef4a67fa4636a0a68cc"
+  },
+  {
+    "image": "battle-warden.png",
+    "source": "artifacts/i01/run-Yw6WfM/boss-unprepared/carl-menu.ppm",
+    "raw_frame_sha256": "ad06098a951a44f1eb2d00ae21f06c096fde5ed71c9e3bf1f4a90563143d1c85"
+  },
+  {
+    "image": "field-scuttler.png",
+    "source": "artifacts/i01/run-Yw6WfM/setup/landing.ppm",
+    "raw_frame_sha256": "ab6c0ab7d27e20c88ba4aad065fd124882e7db0cf7f8f08f5fca71aba0ad152b"
+  },
+  {
+    "image": "field-guard.png",
+    "source": "artifacts/i01/run-Yw6WfM/gates/gauntlet.ppm",
+    "raw_frame_sha256": "e1e26c9754ebaaa08f6a31146cba886e99b08483eb57f9e51e9b8cc2f43038b7"
+  },
+  {
+    "image": "field-howler.png",
+    "source": "artifacts/i01/run-Yw6WfM/gates/gauntlet-return.ppm",
+    "raw_frame_sha256": "685aa384c24bbac4eee8b00e56c74767c60591fd0d455363156173654756c42b"
+  },
+  {
+    "image": "field-warden.png",
+    "source": "artifacts/i01/run-Yw6WfM/gates/boss-locked.ppm",
+    "raw_frame_sha256": "b5feaa93b2b904e11b8fd8e08e6ec8cea1c95efc1a7538ba626564381a114064"
+  },
+  {
+    "image": "ui-donut-summary.png",
+    "source": "artifacts/i01/run-Yw6WfM/ui/donut-summary.ppm",
+    "raw_frame_sha256": "a924794f429bb0c42fb42d26638c6307fc4803cdd9681982fe6b7cfecf79eae1"
+  },
+  {
+    "image": "ui-donut-scene.png",
+    "source": "artifacts/i01/run-Yw6WfM/ui/donut-scene.ppm",
+    "raw_frame_sha256": "78046e0f603361f4b702febea1a506c7f335e487528654762a2b1ab40fe46650"
+  },
+  {
+    "image": "ui-inventory.png",
+    "source": "artifacts/i01/run-Yw6WfM/ui/inventory.ppm",
+    "raw_frame_sha256": "466aedfb579112668c447753f3078100c05ee263eb8e66c4ea0cfadde061922f"
+  },
+  {
+    "image": "ui-journal-objective.png",
+    "source": "artifacts/i01/run-Yw6WfM/ui/journal-objective.ppm",
+    "raw_frame_sha256": "39debbb01798af5ba0a921d0a7b8e503602836a61639f8821eb742fb363df32e"
+  },
+  {
+    "image": "ending-reload-donut-ending.png",
+    "source": "artifacts/i01/run-Yw6WfM/ending-reload/donut-ending.ppm",
+    "raw_frame_sha256": "48b33b2e2560641523da8a433304ebe8c8aa79c6230326ecf1282df4b5c7efe2"
+  },
+  {
+    "image": "continuous-prepared-prepared-ending-prepared-complete.png",
+    "source": "artifacts/i01/run-Yw6WfM/continuous-prepared/prepared-ending-prepared-complete.ppm",
+    "raw_frame_sha256": "076a757b4185cb9dec2d549ac43151062a68db63b40f3bfb78b80535aafa9379"
+  },
+  {
+    "image": "continuous-prepared-continuous-complete.png",
+    "source": "artifacts/i01/run-Yw6WfM/continuous-prepared/continuous-complete.ppm",
+    "raw_frame_sha256": "4d09def3e0059c15126056f83537d000f29da126867c3970e6bb987ce43a3dcf"
+  },
+  {
+    "image": "collection-battle-battle-items.png",
+    "source": "artifacts/i01/run-Yw6WfM/collection-battle/battle-items.ppm",
+    "raw_frame_sha256": "8ff926baaff2935b1fb44dcb3c8b46bc968d92fbc331a36ab25d481f524a8927"
+  },
+  {
+    "image": "trial-donut-menu.png",
+    "source": "artifacts/i01/run-Yw6WfM/trial/donut-menu.ppm",
+    "raw_frame_sha256": "7ff363110ca8751d1c59b67b7e8d09a93d8bddee836816793d84ea03377b9eb6"
+  },
+  {
+    "image": "boss-prepared-carl-menu.png",
+    "source": "artifacts/i01/run-Yw6WfM/boss-prepared/carl-menu.ppm",
+    "raw_frame_sha256": "1d380faa604a6213b40949b8700aa44db719ebc8c46458ff4d7ea985050a9228"
+  },
+  {
+    "image": "carl-down-pilot-carl-down.png",
+    "source": "artifacts/i01/run-Yw6WfM/carl-down/pilot-carl-down.ppm",
+    "raw_frame_sha256": "2a2457e67e25c6058d5761272b2c3f287b05ef3a31443acb8730083a31558482"
+  },
+  {
+    "image": "before-clipped-trial-b82dff4.png",
+    "source": "artifacts/i01/run-8IQ6UV/trial-defeat/carl-menu.ppm",
+    "raw_frame_sha256": "74bc370b32f60836c9e9a983ddb197c4d04a0e471b0443273196c3a9bc78febd"
+  }
+]

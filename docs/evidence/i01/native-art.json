@@ -1,0 +1,141 @@
+{
+  "verified_native_files": [
+    {
+      "file": "engine/graphics/dcc/grub/anim_front.png",
+      "sha256": "abaf02d4741ba15138ac00db81799869c39d47f85d9523edaf556fd560d19dc2"
+    },
+    {
+      "file": "engine/graphics/dcc/grub/back.png",
+      "sha256": "8869e0af20eb42f5b3f2a3d4c235c037bea545b62b11504f976ed267d95f2520"
+    },
+    {
+      "file": "engine/graphics/dcc/grub/front.png",
+      "sha256": "8869e0af20eb42f5b3f2a3d4c235c037bea545b62b11504f976ed267d95f2520"
+    },
+    {
+      "file": "engine/graphics/dcc/grub/icon.png",
+      "sha256": "c31dde564cf0424d6d1b3af72a1d9414bb47ffde1237e5e474ca2951cabb289b"
+    },
+    {
+      "file": "engine/graphics/dcc/grub/normal.pal",
+      "sha256": "5c1b60f42731d96211cda63fea2b57e90d0ae6d209b81a1dea15fff90f702894"
+    },
+    {
+      "file": "engine/graphics/dcc/grub/shiny.pal",
+      "sha256": "5c1b60f42731d96211cda63fea2b57e90d0ae6d209b81a1dea15fff90f702894"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/anim_front.png",
+      "sha256": "be785fc6a27a3e57b6f7667319ecb1bf134302f324d5c1ed102d53a0ff05eef4"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/back.png",
+      "sha256": "d3b90d33efee6996febf3d735af9a14938d90c357224d7f90bd717479e58989f"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/front.png",
+      "sha256": "d3b90d33efee6996febf3d735af9a14938d90c357224d7f90bd717479e58989f"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/icon.png",
+      "sha256": "0213d48848542c157b34c32ccc2937fd251c5864928081b29ea01087d6f26c16"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/normal.pal",
+      "sha256": "aee80578c1f12fdc4de98a725e449d56a1e3e338c51d04815461673b4d357b8b"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/overworld.png",
+      "sha256": "8941d432e8bbea15e4efb40ce524eb2ddfda4fe1b5d192dbda34febe32aa73f7"
+    },
+    {
+      "file": "engine/graphics/dcc/guard/shiny.pal",
+      "sha256": "aee80578c1f12fdc4de98a725e449d56a1e3e338c51d04815461673b4d357b8b"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/anim_front.png",
+      "sha256": "8166df531fa1872ed284e22a6761b53c5afcf96b02d7ab8cf6962066ffe060c1"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/back.png",
+      "sha256": "71384c7fc002d31ab2e974ce1ed39e9b56096b664998b02dd683ffe981d4e5be"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/front.png",
+      "sha256": "71384c7fc002d31ab2e974ce1ed39e9b56096b664998b02dd683ffe981d4e5be"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/icon.png",
+      "sha256": "adaf619533263739a5ff240aef48440dffc54a63d996ce99e643016f88ae8b31"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/normal.pal",
+      "sha256": "0818b0d7ce1c1532fd880c0895661cbb5806a61f2bb3f879ad334b4eaad2bfc0"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/overworld.png",
+      "sha256": "8f1d37f553c59f20969936c9b4c07510816c065d135eae114c437b4b4860e317"
+    },
+    {
+      "file": "engine/graphics/dcc/howler/shiny.pal",
+      "sha256": "0818b0d7ce1c1532fd880c0895661cbb5806a61f2bb3f879ad334b4eaad2bfc0"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/anim_front.png",
+      "sha256": "e4c5dbf44f11dabe484a4a36cb15015cc1aa39b01da7b0a0cbf311a5d9305b36"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/back.png",
+      "sha256": "8b62baed7b1672759f2f951781a9c0128ab42f4cb1dd7553eb8950e7bca1d7d8"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/front.png",
+      "sha256": "8b62baed7b1672759f2f951781a9c0128ab42f4cb1dd7553eb8950e7bca1d7d8"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/icon.png",
+      "sha256": "4e9433efdf3bf8c0054df93763ce5c223cb085c2b4ee438636e6d74cb4c99242"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/normal.pal",
+      "sha256": "f3bfcdba2c2b441b9f58cba24a291fef0afbf91d6cec6719e1f9d8f245af12f4"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/overworld.png",
+      "sha256": "d7fe0d72395e6b49c1f39dd0f51af57f38b5a2dfac2c80c33b0a9b2034ed5beb"
+    },
+    {
+      "file": "engine/graphics/dcc/scuttler/shiny.pal",
+      "sha256": "f3bfcdba2c2b441b9f58cba24a291fef0afbf91d6cec6719e1f9d8f245af12f4"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/anim_front.png",
+      "sha256": "85dc7940044bc116768fa3dc269cab8ac5d2eed04f15af6e2451496bee5f35a8"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/back.png",
+      "sha256": "53966b7affa6c424fbb2bc7779f0fad2898c73a676ec50fb3c3db2287743c7b1"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/front.png",
+      "sha256": "53966b7affa6c424fbb2bc7779f0fad2898c73a676ec50fb3c3db2287743c7b1"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/icon.png",
+      "sha256": "06e5fe2e86b15e9aacf650ff836c4b44db6572d6221755bd3dd47f9b8992f39e"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/normal.pal",
+      "sha256": "aee80578c1f12fdc4de98a725e449d56a1e3e338c51d04815461673b4d357b8b"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/overworld.png",
+      "sha256": "7f0178ef0bcab4acac1632a9e72870224c682a855264cc2633775294138b5916"
+    },
+    {
+      "file": "engine/graphics/dcc/warden/shiny.pal",
+      "sha256": "aee80578c1f12fdc4de98a725e449d56a1e3e338c51d04815461673b4d357b8b"
+    }
+  ],
+  "shared_palette_unchanged": true
+}

@@ -1075,3 +1075,30 @@ lifts only battle pixels8px within each64×64 canvas, using existing transparent
 top margin. No rescale, recolor, source-master, icon or field-token change. All
 opaque source pixels remain intact. New runtime pixel check requires exact
 RGB555 colors for every native opaque pixel of five battle fronts/four tokens.
+
+### I01 acceptance PASS — 2026-10-06
+
+Base eb73f725d0c5c1488386e56f28f8080eb3a6f884; branch task/i01-opponent-art;
+issue31/PR32. Tested81b232ae41647b5e456e45ed73d51a170f17fb58. Cloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation, no new scheduler.
+
+`bash scripts/test-i01.sh` in documented toolchain: isolated run-Yw6WfM clean
+compile and1053 runtime assertions/62 sessions PASS,860 production+193 labeled
+fixture;62 empty error logs;9 exact native pixel matches; unchanged-source guard.
+ROM SHA256 f46643a4a2eb0065e75ed33ea2baafe533d5508a8ee45922282108e778e43948.
+Two separate full content exports preserve all7385 checked graphic/tileset files.
+Actual captures reviewed: allfive foes/four map tokens, duo HUD clear after8px
+placement fix, no Guard spot artifacts, correct Donut summary/field palettes,
+menu/return and ending.25 actual PNGs and full logs/routes archived in evidence/i01.
+
+Source package first passed24 PNG/41-output reproduction checks. Palette newline
+preflight and HUD-overlap failures are retained, not acceptance results. No stats,
+AI, moves, event/collision or save schema changed. Enemy icons/backs have no
+reachable roster/collection UI; contract validation does not invent such a path.
+
+State: implemented YES; compiled YES; runtime verified YES; merged pending PR32.
+Only comments/docs/evidence change after tested81b232a. No further substantive
+defect observed, so improvement cycles stop after1. Precise S03 retry/pacing
+limits remain in the review package. Next: merge reviewed I01, attempt supported
+private Library build delivery, record result, then await user's playtest.
+No public ROM/playable release and no Stage6 work. Original runner finished.

@@ -164,3 +164,9 @@ Battle palettes may differ; icons and map tokens must respect shared palettes.
 Prevent slice_art.py from overwriting masters; address inherited Spinda spots for
 Guard. Prove reproducibility/build, actual before/after five battle appearances,
 four map tokens and affected runtime regression. No new enemies/features/Stage6.
+
+I01 acceptance: tested81b232ae41647b5e456e45ed73d51a170f17fb58. Clean build,
+1053 runtime assertions/62 sessions and9 exact rendered-pixel checks PASS.
+All62 emulator error logs empty. Evidence docs/evidence/i01; PR32 merge pending.
+No further substantive defect identified; stop after cycle1 and await user playtest.
+Do not start Stage6 or manufacture improvement cycles to keep automation active.

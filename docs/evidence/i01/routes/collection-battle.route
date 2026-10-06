@@ -1,0 +1,46 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+duo healthy
+uses 8 40 2 40
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 3
+step 1 1 -
+step 400 0 trial-intro.ppm
+step 1 1 -
+step 400 0 duo-note.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 8 2 0 0
+support 40 40 6 6 6
+step 1 2 -
+step 120 0 carl-actions.ppm
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 180 0 battle-items.ppm
+pocket 0
+step 1 16 -
+step 100 0 battle-skills.ppm
+pocket 2
+step 1 32 -
+step 100 0 battle-items-return.ppm
+pocket 0
+step 1 2 -
+step 180 0 battle-menu-return.ppm
+battle 1 4 0 8 2 0 0
+uses 8 40 2 40
+quit

@@ -1,7 +1,8 @@
 """Export the reviewed I01 native masters without recoloring shared consumers.
 
 Source/provenance and deterministic conversion live in docs/art-references.
-The runtime exporter copies validated native bytes, never re-quantizes images.
+The runtime exporter preserves native pixels, lifting battle art within its
+transparent canvas to clear the HUD; it never re-quantizes images.
 """
 from pathlib import Path
 import hashlib

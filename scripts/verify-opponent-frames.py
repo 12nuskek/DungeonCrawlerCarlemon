@@ -7,7 +7,7 @@ run=Path(sys.argv[1]);root=run/'source';assets=root/'docs/art-references/opponen
 def match(frame, native):
  im=Image.open(native);box=im.getbbox();im=im.crop(box);idx=np.asarray(im);pal=np.asarray(im.getpalette(),dtype=np.uint8).reshape(-1,3);v=pal>>3;pal=(v<<3)|(v>>2);rgb=pal[idx];mask=idx!=0
  ys,xs=np.nonzero(mask);h,w=idx.shape;f=np.asarray(Image.open(frame).convert('RGB'));fh,fw=f.shape[:2]
- # Filter candidate translations by three far-apart opaque pixels first.
+ # Filter candidate translations by one opaque anchor, then compare every pixel.
  ay,ax=ys[len(ys)//2],xs[len(xs)//2];poss=np.argwhere(np.all(f==rgb[ay,ax],axis=2));best=None
  for fy,fx in poss:
   y=int(fy)-int(ay);x=int(fx)-int(ax)

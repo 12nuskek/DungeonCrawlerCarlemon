@@ -447,3 +447,12 @@ steps. Extra dialogue required a replay close-state adjustment; no source game
 failure or blocker established. Capacity fixture prepares all slots occupied with
 Potion98 to prove an attempted grant of2 neither partially grants nor consumes its
 flag; after tossing1, retry should grant2 to99. Final acceptance still pending.
+
+R02 exploratory routes complete: setup32, victory/loot/use53, cold reload/map
+re-entry34, final cold13; explicit full-stack fixture28 and cold fixture repeat9.
+Both achievements and both box states survive reload/re-entry. Potion2→1 after
+healing Donut12→28; use at full health does not consume the remaining Potion.
+Repeat boxes leave Potion1/Scrap2 unchanged. Failed two-Potion reward at stack98
+and full bag leaves98 and flag unset; tossing1 then retry grants exactly2 to99,
+repeat and cold reload retain99. Menu timing for toss confirmation was adjusted;
+no production source fix was necessary. Final isolated169-check replay is next.

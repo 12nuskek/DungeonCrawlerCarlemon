@@ -184,8 +184,46 @@ step 1 128 -
 step 40 0 -
 step 1 1 -
 step 400 0 potion-used.ppm
+roster 24 28 3 0 0 0
+uses 3 40 0 37
 item 13 1
 item 378 2
 step 1 1 -
 step 180 0 after-potion.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 300 0 no-effect.ppm
+item 13 1
+roster 24 28 3 0 0 0
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+expect 34 1 11 7 3
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 loot-saved.ppm
+flag 36 1
+flag 37 1
+flag 38 1
+flag 39 1
+item 13 1
+item 378 2
+growth 9 495 0 9 805 0
 quit

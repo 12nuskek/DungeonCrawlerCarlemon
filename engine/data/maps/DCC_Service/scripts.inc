@@ -173,3 +173,100 @@ DCC_Service_Text_SecretEmpty:
 DCC_Service_Text_SecretFull:
 	.string "No room for the medicine.\n"
 	.string "The hidden panel will keep it safe.$"
+
+DCC_Service_Workbench::
+	lock
+	faceplayer
+	msgbox DCC_Service_Text_Recipe, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DCC_Service_CraftCancel
+	checkitem ITEM_DCC_SCRAP, 2
+	goto_if_eq VAR_RESULT, FALSE, DCC_Service_CraftMissing
+	additem ITEM_DCC_CHARGE, 1
+	goto_if_eq VAR_RESULT, FALSE, DCC_Service_CraftFull
+	removeitem ITEM_DCC_SCRAP, 2
+	msgbox DCC_Service_Text_Crafted, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CraftCancel:
+	msgbox DCC_Service_Text_Cancel, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CraftMissing:
+	msgbox DCC_Service_Text_Missing, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CraftFull:
+	msgbox DCC_Service_Text_CraftFull, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_Text_Recipe:
+	.string "RECIPE: Two SCRAP make one CHARGE.\n"
+	.string "Craft a small explosive?$"
+DCC_Service_Text_Cancel:
+	.string "No materials used. The workbench\n"
+	.string "will be here when you need it.$"
+DCC_Service_Text_Missing:
+	.string "You need two SCRAP in INVENTORY.\n"
+	.string "The trial box or MARA can supply them.$"
+DCC_Service_Text_CraftFull:
+	.string "Make room for a CHARGE first.\n"
+	.string "No SCRAP was used.$"
+DCC_Service_Text_Crafted:
+	.string "Two SCRAP became one CHARGE.\n"
+	.string "Try it at the sealed east cache.\p"
+	.string "It is optional. The charge works\n"
+	.string "at that cache, not from the menu.$"
+
+DCC_Service_BlastCache::
+	lock
+	faceplayer
+	goto_if_set FLAG_DCC_CACHE_BLASTED, DCC_Service_CacheOpened
+	checkitem ITEM_DCC_CHARGE, 1
+	goto_if_eq VAR_RESULT, FALSE, DCC_Service_CacheNeedsCharge
+	msgbox DCC_Service_Text_BlastOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DCC_Service_CacheCancel
+	additem ITEM_SUPER_POTION, 1
+	goto_if_eq VAR_RESULT, FALSE, DCC_Service_CacheFull
+	removeitem ITEM_DCC_CHARGE, 1
+	setflag FLAG_DCC_CACHE_BLASTED
+	playse SE_M_EXPLOSION
+	waitse
+	msgbox DCC_Service_Text_Blasted, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CacheOpened:
+	msgbox DCC_Service_Text_CacheOpened, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CacheNeedsCharge:
+	msgbox DCC_Service_Text_NeedsCharge, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_CacheFull:
+	msgbox DCC_Service_Text_CacheFull, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_Text_BlastOffer:
+	.string "SEALED CACHE: A charge will open it.\n"
+	.string "Spend one CHARGE?$"
+DCC_Service_Text_NeedsCharge:
+	.string "SEALED CACHE: You need one CHARGE.\n"
+	.string "Use the workbench to craft one.$"
+DCC_Service_Text_CacheFull:
+	.string "Make room for one SUPER POTION.\n"
+	.string "Your CHARGE was not used.$"
+DCC_Service_Text_Blasted:
+	.string "CARL sets the charge. The lid pops!\n"
+	.string "Inside: one SUPER POTION.\p"
+	.string "DONUT: Very subtle. Next time,\n"
+	.string "try knocking with your forehead.$"
+DCC_Service_Text_CacheOpened:
+	.string "The blasted cache is empty.\n"
+	.string "Its supplies were already taken.$"
+
+DCC_Service_CacheCancel:
+	msgbox DCC_Service_Text_CacheCancel, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_Text_CacheCancel:
+	.string "No CHARGE used. The cache stays sealed.$"

@@ -4570,4 +4570,14 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+    [ITEM_DCC_CHARGE] =
+    {
+        .name = _("CHARGE"),
+        .itemId = ITEM_DCC_CHARGE,
+        .price = 0,
+        .description = sDccChargeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 };

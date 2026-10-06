@@ -1564,3 +1564,8 @@ static const u8 sDccRouteTagDesc[] = _(
     "A numbered tag.\n"
     "MARA needs it for\n"
     "her route notes.");
+
+static const u8 sDccChargeDesc[] = _(
+    "A small explosive.\n"
+    "Use at the service\n"
+    "room sealed cache.");

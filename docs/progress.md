@@ -517,3 +517,43 @@ first hypothesis; no unresolved blocker. Actual status curing now proven; total
 action exhaustion remains S03. Next push evidence/draft/review/merge, then D02.
 Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`; sole writer/scheduler
 ownership unchanged.
+
+## D01 integration / D02 start — 2026-10-06
+
+PR #21 merged `c42d444b8c2ae1b665105baad133094859bf8fa5`; issue #20 closed.
+Evidence `15703bb7d6d83bde5abf5b7fb3d6a35533179261`, tested `060864c`. Main
+reconciled, no open PR. Parent independently reviewed R02 with no material defect;
+its remaining Scrap-box capacity branch joins D02 inventory-limit coverage.
+D02 issue #22, branch `task/d02-explosive-crafting`, base this merge. Recipe
+Scrap2→Charge1; optional sealed cache consumes one charge for SuperPotion1 and
+persistent preparation flag, reserved for S01 boss advantage. No boss effect yet.
+Inputs/output capacity checked before consumption; no save-layout/battle/schedule
+change. Implemented/compile/runtime/merge pending. Next author bench/cache and test.
+
+D02 source compiles; fresh materials route passes16 assertions: recipe missing/
+cancel, cache needs-charge, quest obtains exactly Scrap2 and saves. Workbench and
+cache both add outputs successfully before consuming checked inputs, with no yield
+between transaction operations. Craft/use/capacity/cold routes still in progress.
+No blocker or failed production fix. S02 retains new icon/prop/audio placeholders.
+
+D02 exploratory input routes complete: materials16, craft13, blast/use17,
+cold recovery13, final cold8; explicit inventory fixture33 plus cold11.
+Crafting spends exactly Scrap2; cancellation/missing/output-full preserve inputs.
+Charge menu use is inert; cache cancel/full/repeat preserve charge. Successful
+blast gives SuperPotion1, used for Carl26→30 without curing paralysis; guide then
+cures it and saves. Capacity tests cover R02 workshop98→failure, toss1→grant2→99;
+two successful crafts each spend2 after freeing output space; cache output failure
+retains charge, retry spends1. No failed production fix/blocker. Route navigation
+was adjusted to avoid a known sign object. Final isolated111-check run next.
+
+## D02 final verification — 2026-10-06
+
+Tested `b53b8e6a2c64fe3e9e22d37bca5277c97ac46b02`, isolated `test-d02.sh`:111
+PASS (67 production/44 fixture), seven empty errors,19 reviewed actual screenshots.
+Production SHA256 `a4c542bae88f85f8e537c4590bdafb2830b386844bc4806a783b5825b2793972`.
+[Evidence](evidence/d02/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO pending scoped issue #22 PR. No blocker or failed production fix.
+R02 Scrap-box full-capacity edge now exercised. S02 must replace inherited DAD
+menu-refusal wording and stock icons/props/audio as scheduled. Next push evidence,
+draft/review/merge, then S01 connected encounters/boss/staircase. Cloud task remains
+`01a10f4b-596b-700b-b8ba-241e3ca2c000`; no overlapping writer/scheduler.

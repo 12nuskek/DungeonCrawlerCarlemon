@@ -1,0 +1,11 @@
+mGBA 0.10.5; 240x160; fresh save; built-in BIOS
+frame=120 keys=0 capture=boot.ppm
+frame=720 keys=0 capture=intro.ppm
+frame=721 keys=8 capture=-
+frame=1081 keys=0 capture=title-transition.ppm
+frame=1082 keys=8 capture=-
+frame=1262 keys=0 capture=title.ppm
+frame=1263 keys=1 capture=-
+frame=1443 keys=0 capture=menu.ppm
+frame=1444 keys=1 capture=-
+frame=2044 keys=0 capture=new-game.ppm

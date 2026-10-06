@@ -5,13 +5,25 @@
 #include <mgba/core/core.h>
 #include <mgba/core/config.h>
 #include <mgba/core/version.h>
+#include <mgba/core/log.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+static void emulator_log(struct mLogger *logger, int category, enum mLogLevel level,
+                         const char *format, va_list args)
+{
+    (void)logger;
+    fprintf(stderr, "%s [%d]: ", mLogCategoryName(category), level);
+    vfprintf(stderr, format, args);
+    fputc('\n', stderr);
+}
+
 int main(int argc, char **argv)
 {
     if (argc != 2) { fprintf(stderr, "usage: boot-baseline ROM < route.txt\n"); return 2; }
+    struct mLogger logger = { .log = emulator_log, .filter = NULL };
+    mLogSetDefaultLogger(&logger);
     struct mCore *core = mCoreFind(argv[1]);
     if (!core || !core->init(core)) return 3;
     mCoreConfigInit(&core->config, NULL);
@@ -45,6 +57,7 @@ int main(int argc, char **argv)
     }
     mCoreConfigDeinit(&core->config);
     core->deinit(core);
+    mLogSetDefaultLogger(NULL);
     free(pixels);
     return 0;
 }

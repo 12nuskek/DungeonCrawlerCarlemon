@@ -1467,3 +1467,28 @@ field pixels/position stay identical. Static checks enforce exact native pixels,
 palette and no extra opaque pixels. No stock sprite allocator changes needed.
 Next clean committed rerun76/1303 and38 rendered-art comparisons; prior first-run
 proof remains explicitly tied to210e734, never relabelled as this candidate.
+
+### N03 verified — 2026-10-06
+
+Tested b530fa661254c2c4b5ef1d75ce4010c2d5d741ec on base96f651d.
+Production SHA256 dc321def80b7b3d60d0dd5103c73a77d8104135b0ff055a02456656bb76a0891.
+76 sessions /1303 assertions PASS:63 production sessions/1110 checks,13 diagnostic
+fixture sessions/193 checks.76 empty error logs.38 exact rendered comparisons
+(9 opponents,18 object/frame,11 BG state/camera cases; one object case is fixture).
+Two full exports preserve8818 assets; all49 approved art files/six event contracts/
+N02 geometry retained. Same-position live/spent/cold wire, opened cache, breached
+panel, barred/open gate, intact/broken supply line and four cleared markers reviewed.
+Full raw logs and65 curated actual stills: docs/evidence/n03/final.
+
+Parent review caught optional legacy inputs allowing a misleading future full-pass
+message. Both N02/N03 runners now require legacy directory and corner save, reject
+missing/empty files before building, and assert exact executed route/check totals
+plus193 fixture checks before success. Missing-input/file rejection, shell syntax
+and both accepted summaries validated; no engine/assets changed after testedb530fa6.
+Runtime evidence is not rerun/relabelled for this runner-only correction.
+
+Implemented/compiled/runtime verified YES; PR46 merge pending. Next merge N03,
+then focused N04: actual wins and cold persistence from six exact recovered saves;
+assess repeat-guide verbosity without removing first-use instruction. Private
+updated playable review package still pending. No Stage6/new systems. Same Cloud
+task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent-owned continuation only.

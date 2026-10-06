@@ -210,3 +210,10 @@ N02 verified atdec2c5e: final26-cell contract,73 processes/1210 assertions,
 17 exact rendered-art checks; all original/newer/legacy routes retained. PR44
 awaits merge. N03 next: existing-state environment feedback and accurate matching
 dialogue, with N02 geometry invariant. Final private review package still pending.
+
+N03 verified at b530fa6:76 processes/1303 assertions,38 exact rendered comparisons,
+all current/legacy routes retained. PR46 pending merge. Both full N02/N03 runners
+now require legacy inputs and exact coverage totals; no silent partial success.
+Next N04: close six same-recovered-save victory/persistence evidence gaps, then
+repeat-guide usability if a bounded improvement preserves first-use instruction.
+Final updated private review build and human playtest remain pending.

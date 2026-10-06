@@ -351,3 +351,18 @@ alcoves and small supports use the same accepted native masters. Existing tested
 routes preserved; older clipped-corner saves can step out normally. Source kit
 remains partial. State feedback remains N03; static live wire/open gate/occupied
 encounter tokens still do not communicate their resolved state in this increment.
+
+### N03 resolved environment states
+
+Existing flags now select live/spent wire, closed/breached wall stash, intact/broken
+supply line, barred/open gate, opened boxes and four cleared encounter markers.
+Native state masters come from the accepted partial environment kit. Live wire
+uses code-authored amber/pale highlights; pressure-plate candidates remain unused.
+The16x16 remains master is padded transparently into32x32 to retain the original
+opponent allocation; opaque pixels/palette are unchanged. No new flag/geometry,
+reward or canon assertion. Static art remains static; original living opponents
+and protagonists retain their approved bytes. Source-kit omissions unchanged.
+
+Mara/Lev now identify the tag bag; cache dialogue explains the warden preparation
+benefit before CHARGE consumption. These are original adaptation lines with the
+same page counts. Testedb530fa6, actual state-pair evidence in evidence/n03/final.

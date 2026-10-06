@@ -2,6 +2,11 @@
 set -euo pipefail
 repo=$(cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$repo"
+: "${DCC_LEGACY_RUN:?Full acceptance requires the ordinary I01 save directory; see docs/testing.md}"
+: "${DCC_CORNER_SAVE:?Full acceptance requires the ordinary N01 corner save; see docs/testing.md}"
+for input in "$DCC_LEGACY_RUN/motion.sav" "$DCC_LEGACY_RUN/craft.sav" "$DCC_LEGACY_RUN/playtest.sav" "$DCC_CORNER_SAVE"; do
+    test -s "$input" || { echo "Required legacy input missing or empty: $input" >&2; exit 2; }
+done
 git diff --quiet && git diff --cached --quiet || { echo 'Commit tracked changes first.' >&2; exit 2; }
 revision=$(git rev-parse HEAD)
 mkdir -p artifacts/n03
@@ -162,6 +167,9 @@ for log in sorted(root.glob('*/replay.log')):
     assert match and not (log.parent/'errors.log').stat().st_size
     results.append({'route':log.parent.name,'assertions':int(match[1]),'fixture':'fixture' in log.parent.name})
 (root/'validation-summary.json').write_text(json.dumps(results,indent=2)+'\n')
+assert len(results)==76, ('incomplete route coverage',len(results),76)
+assert sum(x['assertions'] for x in results)==1303, ('incomplete assertion coverage',sum(x['assertions'] for x in results),1303)
+assert sum(x['assertions'] for x in results if x['fixture'])==193, 'fixture/production coverage changed'
 # Continuous normal-input route: no mid-run boot/load or save-state injection.
 route=(root/'source/scripts/routes/n02/continuous-prepared.route').read_text()
 log=(root/'continuous-prepared/replay.log').read_text()

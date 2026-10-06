@@ -1,0 +1,18 @@
+make: Entering directory '/workspace/DungeonCrawlerCarlemon/artifacts/n03/run-Wk4EcS/source/engine'
+tools/scaninc/scaninc -M build/emerald/src/battle_script_commands.d -g build/assets -I include -I tools/agbcc/include src/battle_script_commands.c
+tools/scaninc/scaninc -M build/emerald/src/crawler.d -g build/assets -I include -I tools/agbcc/include src/crawler.c
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_script_commands.o src/battle_script_commands.c
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/crawler.o src/crawler.c
+tools/ramscrgen/ramscrgen COMMON sym_common.txt ENGLISH -c build/emerald/src,common_syms > build/emerald/sym_common.ld
+Memory region         Used Size  Region Size  %age Used
+           EWRAM:      249704 B       256 KB     95.25%
+           IWRAM:       30892 B        32 KB     94.27%
+             ROM:    14932040 B        32 MB     44.50%
+      SaveBlock1:       15752 B      15872 B     99.24%
+      SaveBlock2:        3884 B       3968 B     97.88%
+  PokemonStorage:       33744 B      35712 B     94.49%
+cd build/emerald && arm-none-eabi-ld -Map ../../pokeemerald.map -T ../../ld_script.ld --print-memory-usage -o ../../pokeemerald.elf <objs> <libs>
+tools/gbafix/gbafix pokeemerald.elf -t"POKEMON EMER" -cBPEE -m01 -r0 --silent
+arm-none-eabi-objcopy -O binary pokeemerald.elf pokeemerald.gba
+tools/gbafix/gbafix pokeemerald.gba -p --silent
+make: Leaving directory '/workspace/DungeonCrawlerCarlemon/artifacts/n03/run-Wk4EcS/source/engine'

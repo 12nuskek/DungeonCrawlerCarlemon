@@ -1,0 +1,58 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+flag 47 1
+flag 48 0
+growth 12 974 0 10 1284 0
+roster 14 15 2 0 0 0
+step 68 16 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 stairs-offer.ppm
+step 1 2 -
+step 400 0 stairs-cancel.ppm
+flag 48 0
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 600 0 slice-complete.ppm
+expect 34 5 4 6 7
+flag 48 1
+step 1 1 -
+step 400 0 slice-save-advice.ppm
+step 1 1 -
+step 400 0 slice-review.ppm
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 slice-saved.ppm
+expect 34 5 4 6 7
+flag 48 1
+flag 41 1
+flag 42 0
+flag 43 0
+flag 40 0
+quit

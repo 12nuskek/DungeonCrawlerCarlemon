@@ -4,7 +4,7 @@ An in-development GBA adaptation using stock Pokémon Emerald's decompilation.
 The approved target is an authored Book 1 opening slice with Carl and Donut duo
 battles, original dialogue, no catching and accessible defeat recovery.
 
-**Current state: connected prototype through boss and staircase, runtime verified. Approved protagonist art and the original visual/UI pass are merged; final slice regression is active.**
+**Current state: connected prototype through boss and staircase, runtime verified. Approved protagonist art and the original visual/UI pass are merged; full slice regression passes 1,053 assertions. Requested opponent-art refinement is next.**
 See [progress](docs/progress.md), [backlog](docs/backlog.md),
 [build and testing](docs/testing.md), and [content ledger](docs/content-ledger.md).
 
@@ -30,4 +30,4 @@ note, reach the Quiet Landing guide/trial, then explore the Service Room. Its
 southwest ladder leads to two gauntlet patrols and the gate warden. Win the trial
 and patrols, beat the warden, then examine the northeast stairs. The guide restores
 health/actions freely; defeat recovers locally. The quest, trap, equipment and
-cache preparation are optional. See [S01 evidence](docs/evidence/s01/README.md).
+cache preparation are optional. See [S03 evidence](docs/evidence/s03/README.md) and the [playtest guide](docs/playtest.md).

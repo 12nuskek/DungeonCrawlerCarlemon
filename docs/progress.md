@@ -990,3 +990,38 @@ cycle1 after the S03 baseline, restricted to the five existing enemies' native
 battle/map artwork. Parent coordinates asset-only preparation outside this repo;
 this remains the sole implementation writer. Names, roles, paths, dimensions and
 palette constraints are posted to issue29. Preserve baseline and await candidates.
+
+### S03 acceptance PASS — 2026-10-06
+
+Tested50435d1c7db1e6778ad71e639e7a1a8ff4175653; base
+d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530; branch task/s03-slice-validation;
+PR30/issue29. Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000.
+
+`bash scripts/test-s03.sh` in the documented Linux toolchain produced the same
+ROM7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Isolated artifacts/s03/run-pcrKHh:1053 assertions/62 mGBA0.10.5 processes PASS,
+860 production +193 explicitly labeled fixture checks;62 empty error logs;
+unchanged-head/clean-source guard PASS. No production gameplay/save-layout edits.
+
+At12:03UTC the executor transport failed on new command, retry and existing
+session poll. At12:05 it recovered; session35025 was gone but originalPID733292
+was alive and continued the same run. No duplicate runner or replacement writer.
+That original process completed successfully and is no longer active.
+
+Evidence in docs/evidence/s03 includes complete raw logs,62 routes,42 reviewed
+actual screenshots, all source frame hashes and6.36s walking GIF. Its380 frames
+are byte-identical to the already reviewed preview. Both Donut scenes/summary/
+action selector, all encounter outcomes, both incap orders, reward/quest/crafting
+branches, capture guards, empty actions/STRUGGLE/recovery and cold saves passed.
+Continuous prepared route127 checks + cold reload10:90,586frames/25m16.655s at
+59.7275Hz. Fixed zero-input53,700frames, scripted buttons4,951, battle pilot31,935;
+startup2,044 included. No novice pacing claim. Failed diagnostic traces preserved.
+
+State: implemented YES; clean compiled YES; runtime verified YES; integration
+pending PR30 merge. Review found no gameplay/progression regression; inherited
+UI/audio/static-pose limitations remain documented. User-requested enemy visual
+upgrade is next focused improvement1/5, for the existing five enemies only.
+Parent coordinates asset-only candidate PR handoff; no parallel implementation.
+Exact next: merge verified S03, pause writes for asset-PR staging, then integrate
+its native assets with provenance/generator protection and real battle/map checks.
+Guard's SPINDA procedural spots must not alter approved native art. No Stage6.

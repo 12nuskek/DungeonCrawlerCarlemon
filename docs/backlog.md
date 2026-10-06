@@ -17,7 +17,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
 | S01 | B03, R02, D02 | Complete:357 assertions; merged PR #25 (`abf9875`); issue #24 closed |
 | S02 | S01 | Complete:199 checks/11 sessions; merged PR #27 (`d8f8ae6`); issue #26 closed |
-| S03 | S02 | Active: full regression and review package; issue #29 |
+| S03 | S02 | Verified:1053 checks/62 sessions; PR #30 integration pending; issue #29 |
 
 F01 objective: exact source pin, matching baseline ROM, real boot evidence.
 Allowed: source import, setup/build/runtime harness, provenance and handoff docs.
@@ -152,3 +152,15 @@ art/UI, optional branches, both boss approaches, defeat/incapacitation, empty
 resources, rewards/crafting/capacity and reload. Separate production and explicit
 GBA diagnostic fixtures; record actual captures, commands and tested commit.
 Fix verified defects, avoid unrelated features. No Stage6, save schema or release.
+
+## I01 requested opponent presentation improvement
+
+Depends on verified S03. User requested enemy quality matching protagonist upgrade.
+Five existing original adaptation enemies only: Scuttler, Grub, Guard, Howler,
+Warden. Integrate parent-staged asset-only package; preserve roles, maps/collisions,
+combat and save state. Native64×64 fronts/backs,64×128 animation atlases,32×64
+icons and existing four32×32 map tokens; index0 transparent/max15 opaque colors.
+Battle palettes may differ; icons and map tokens must respect shared palettes.
+Prevent slice_art.py from overwriting masters; address inherited Spinda spots for
+Guard. Prove reproducibility/build, actual before/after five battle appearances,
+four map tokens and affected runtime regression. No new enemies/features/Stage6.

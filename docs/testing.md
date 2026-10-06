@@ -246,3 +246,16 @@ The rejected initial sprites are replaced with the approved native battle look
 and matching exploration art. Current captures were visually reviewed; source
 provenance and inherited placeholders remain explicit in the content ledger.
 S03 full completion/alternate strategy/defeat regression remains the next gate.
+
+## S03 full-slice acceptance
+
+At50435d1c7db1e6778ad71e639e7a1a8ff4175653, `bash scripts/test-s03.sh`
+passes1053 assertions across62 mGBA0.10.5 sessions:860 production/193 explicitly
+labeled diagnostic fixtures,62 empty error logs. Production checksum remains
+7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+[Complete routes, logs,42 actual captures and motion](evidence/s03/README.md).
+Continuous route25m16.655s includes scripted waits and automated battle input;
+a novice's20–30minute playtime remains a human-playtest question. No midroute
+reboots/savestates in that timing. Other sessions intentionally cold-load saves.
+The runner creates separate fixture ROMs for capacity/status/exhaustion checks;
+never distribute those as playable builds. No save layout changes in this task.

@@ -374,3 +374,5 @@ const u32 gObjectEventPic_DccGuide[] = INCGFX_U32("graphics/dcc/guide/overworld.
 const u32 gObjectEventPic_DccMara[] = INCGFX_U32("graphics/dcc/mara/overworld.png", ".4bpp");
 
 const u32 gObjectEventPic_DccLev[] = INCGFX_U32("graphics/dcc/lev/overworld.png", ".4bpp");
+
+const u16 gObjectEventPal_DccDonut[] = INCGFX_U16("graphics/object_events/palettes/donut.pal", ".gbapal");

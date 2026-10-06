@@ -1,4 +1,4 @@
-"""Export the approved S02 native battle masters; exploration integration pending.
+"""Export approved native battle masters and cleaned native exploration pixels.
 
 Source, conversion recipe and approvals: docs/art-references/README.md.
 Battle poses are static; duplicated frames satisfy upstream animation contracts.
@@ -25,5 +25,28 @@ def export():
         icon.paste(small, (0, 32))
         icon.save(destination / 'icon.png', bits=4, transparency=0)
 
+def export_world():
+    masters = ROOT / 'scripts/content/masters'
+    for name, frames, height, target in (
+        ('carl', ['down', 'up', 'left', 'down-1', 'down-2', 'up-1', 'up-2', 'left-1', 'left-2'], 32,
+         ROOT / 'engine/graphics/object_events/pics/people/carl/walking.png'),
+        ('donut', ['down', 'up', 'left'], 16, TARGET / 'donut/overworld.png'),
+    ):
+        palette = Image.open(SOURCE / name / 'front.png').getpalette()
+        atlas = Image.new('P', (16 * len(frames), height), 0)
+        atlas.putpalette(palette)
+        for index, frame in enumerate(frames):
+            rows = (masters / f'{name}-{frame}.txt').read_text().splitlines()
+            assert len(rows) == height and all(len(row) == 16 for row in rows)
+            pixels = [0 if c == '.' else int(c, 16) for row in rows for c in row]
+            tile = Image.new('P', (16, height), 0)
+            tile.putpalette(palette)
+            tile.putdata(pixels)
+            atlas.paste(tile, (index * 16, 0))
+        atlas.save(target, bits=4, transparency=0)
+        shutil.copyfile(SOURCE / name / 'normal.pal',
+                        ROOT / f'engine/graphics/object_events/palettes/{name}.pal')
+
 if __name__ == '__main__':
     export()
+    export_world()

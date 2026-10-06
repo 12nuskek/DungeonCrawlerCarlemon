@@ -3914,12 +3914,12 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skitty = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DCC_DONUT,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 128,
     .width = 16,
     .height = 16,
-    .paletteSlot = PALSLOT_PLAYER,
+    .paletteSlot = PALSLOT_NPC_1 + 16,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .disableReflectionPaletteLoad = FALSE,

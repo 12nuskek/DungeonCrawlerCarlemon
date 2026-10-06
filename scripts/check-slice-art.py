@@ -36,3 +36,21 @@ for p in (root/'data/layouts').glob('DCC_*/*.bin'):
             assert tile >> 12 == 6, (mid,'unexpected palette bank')
         used.add(mid)
 print(f'PASS {count} indexed asset images; seven sprite contracts; tile/palette budgets; {len(used)} used metatile behaviors')
+# Independent protagonist palettes must agree across packed sprite consumers.
+for name, size, path in [
+    ('carl', (144,32), root/'graphics/object_events/pics/people/carl/walking.png'),
+    ('donut', (48,16), root/'graphics/dcc/donut/overworld.png'),
+]:
+    atlas = Image.open(path)
+    palette = Image.open(root/'graphics/dcc'/name/'front.png').getpalette()[:48]
+    assert atlas.mode == 'P' and atlas.size == size
+    assert atlas.getpalette()[:48] == palette
+    assert atlas.info.get('transparency') == 0
+    assert atlas.getextrema()[1] < 16
+    for x in range(0, atlas.width, 16):
+        frame = atlas.crop((x,0,x+16,atlas.height))
+        box = frame.getbbox()
+        assert box and box[1] > 0 and box[3] < atlas.height, (name,x,'clipped frame')
+    for file in ['front.png','back.png','anim_front.png','icon.png']:
+        assert Image.open(root/'graphics/dcc'/name/file).getpalette()[:48] == palette
+print('PASS protagonist overworld packing, margins and independent palette coherence')

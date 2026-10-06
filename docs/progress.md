@@ -814,3 +814,17 @@ Next: compile committed snapshot and publish a real battle capture promptly, the
 finish native exploration frames and complete the 182-check S02 run plus movement
 checks. PR #27 remains draft; issue #26 open; no new scheduler/writer.
 Cloud task: 01a10f4b-596b-700b-b8ba-241e3ca2c000.
+
+### S02 matching exploration integration — 2026-10-06
+
+Battle preview ae32d3ff5497a117e1411195dc678192ab134a1f built clean and passed
+182 assertions / ten production mGBA sessions / ten empty error logs in
+artifacts/s02/run-5uuRHD. Actual battle PNG/log pushed in fe35ec5 and embedded in
+issue26/PR27. User approved improved native battle candidate appearance separately.
+
+Matching exploration masters now implemented: nine Carl frames; three stationary
+Donut directions; independent existing-slot palette. Native margin/packing/palette
+checks pass and all asset generators reproduce replacements without other diffs.
+Added four-direction actual walking captures to S02 runner (now189 assertions in
+11 processes). Compilation/runtime for this exploration commit pending. Next run
+this committed snapshot; inspect captures before claiming visual acceptance.

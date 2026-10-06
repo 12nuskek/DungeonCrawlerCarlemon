@@ -228,14 +228,15 @@ S01 integration pending; S02 visual replacement remains next.
 
 ## S02 original asset provenance (in progress)
 
-Author: Codex, hand-authored indexed geometry in scripts/content/slice_art.py,
-2026-10-06. No source images traced or recoloured. New files under graphics/dcc
-and data/tilesets/secondary/dcc. Original Carl overworld remains the E01 generator.
+Non-protagonist assets: Codex-authored indexed geometry in scripts/content/slice_art.py,
+2026-10-06; no external illustrations traced. Protagonist assets now use the
+user-approved generated references and native conversion/cleanup documented below.
+Files live under graphics/dcc and data/tilesets/secondary/dcc.
 Carl has bare torso/feet and heart shorts; Donut is a long-haired cat with a small
 collar, no later-book costume/class implied. Enemy silhouettes are original
 tutorial adaptations, not claims about canonical Book1 enemies. All seven use
 16-color64x64 front/back and two-frame32x32 icons; static duplicate animation
-frames retain engine timing. Carl battle-intro has four authored pose frames.
+frames retain engine timing. Carl battle-intro repeats one approved back pose in four engine frames.
 Donut stands in the landing/review scenes; following movement remains deferred.
 New item icons cover wrap/scrap/tag/charge and shared medicine silhouette.
 Dungeon metatile art is original; behavior attributes derive from pinned upstream
@@ -262,3 +263,24 @@ redundant summary heading; light Carl anatomy/shading and layered Donut fur;
 arena floor now uses stone seams rather than elliptical pads. This remains
 simple original prototype art with stationary NPCs and duplicate animation
 frames. Do not call it finished/polished merely because provenance is original.
+
+
+### Approved replacement protagonist art (2026-10-06)
+
+The user rejected the first geometric prototype and approved the improved native
+battle appearance, with matching exploration required. Source images, prompts,
+hashes and conversion provenance are in docs/art-references (asset-only PR28).
+Battle masters are the validated 64×64 candidates; front animation and trainer
+intro frames intentionally duplicate static poses. Menu icons derive from native
+fronts at 32×32. Each protagonist has its own 15-color opaque palette plus index0
+transparency. Enemies keep shared icon slot0; Carl/Donut use slots1/2.
+
+Exploration uses scripts/content/masters indexed text, manually cleaned after
+reference normalization. Carl has nine 16×32 frames with consistent head/torso
+anchors and alternating contacts; right mirrors left. Donut has three 16×16
+standing directions, with back-paw margin restored. No follower is introduced.
+Donut's palette tag0x1124 explicitly patches the existing NPC1 slot via +16;
+authored map NPCs use the special slot, so no new hardware palette bank is added.
+The palette change and all four movement directions require real runtime review.
+Old generators delegate to protagonist_art.py and cannot overwrite replacements.
+Battle-only ae32d3f passed182 checks; exploration integration pending its own run.

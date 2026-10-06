@@ -1,6 +1,7 @@
 """Original S02 indexed pixel art. Run with Python3 + Pillow.
 
-All geometry is authored here; no upstream images are traced or recoloured.
+Non-protagonist geometry is authored here; approved protagonist masters are
+exported by protagonist_art.py with separate documented source provenance.
 Internal species slots remain engine implementation details. Palette0 transparent.
 """
 from pathlib import Path
@@ -18,70 +19,6 @@ def save(im,path):
 def pal(path,colors=P):
  path=R/path;path.parent.mkdir(parents=True,exist_ok=True)
  path.write_text('JASC-PAL\n0100\n16\n'+'\n'.join(' '.join(map(str,c)) for c in colors)+'\n')
-def carl(back=False):
- im=canvas(64,64);d=ImageDraw.Draw(im)
- # Bare-footed, shorts and squared stance; asymmetric raised fighting arm.
- d.polygon([(20,33),(14,35),(10,48),(12,51),(18,49),(22,42),(23,50),(20,57),(28,59),(33,54),(37,59),(46,58),(43,50),(45,37),(40,31)],fill=1)
- d.polygon([(21,34),(15,37),(12,47),(15,49),(21,40),(24,48),(40,48),(43,36),(38,32)],fill=5)
- d.polygon([(24,34),(26,44),(38,45),(40,35),(34,31)],fill=6)
- d.line([(23,36),(24,43),(29,44)],fill=4,width=2);d.line([(38,36),(37,44)],fill=4)
- d.rectangle((23,47,41,53),fill=7);d.rectangle((30,51,34,55),fill=1)
- for x,y in [(25,48),(35,49),(39,51)]: d.polygon([(x,y),(x+1,y+1),(x+2,y),(x+2,y+2),(x+1,y+3),(x,y+2)],fill=9)
- d.rectangle((22,54,28,59),fill=5);d.rectangle((36,54,43,59),fill=5)
- d.rectangle((20,59,29,61),fill=4);d.rectangle((36,59,46,61),fill=4)
- d.polygon([(40,35),(45,34),(48,24),(53,24),(53,37),(47,44),(42,43)],fill=1)
- d.polygon([(42,36),(47,36),(49,26),(52,26),(51,36),(46,41),(43,41)],fill=5)
- d.rectangle((48,21,54,27),fill=1);d.rectangle((49,22,53,26),fill=6)
- d.ellipse((22,11,42,34),fill=1);d.ellipse((24,13,40,32),fill=5)
- d.polygon([(23,20),(23,12),(28,8),(37,9),(42,13),(41,22),(38,17),(28,16)],fill=2)
- d.line([(26,13),(32,11),(37,13)],fill=3,width=2)
- if back: d.polygon([(24,18),(39,17),(39,26),(35,30),(28,28),(24,24)],fill=2);d.line((27,20,37,21),fill=3,width=2)
- else:
-  d.line((26,21,29,21),fill=1);d.line((34,21,37,21),fill=1)
-  d.rectangle((30,23,32,25),fill=4);d.line((28,29,36,29),fill=2)
- # Pixel-scale anatomy/shading: shoulder, bent arm, waist and shorts folds.
- d.line([(17,37),(16,42),(14,46)],fill=4,width=2)
- d.line([(43,36),(46,38),(48,34)],fill=4)
- d.line((26,45,37,45),fill=4);d.point((31,43),4)
- d.line((24,51,28,52),fill=8);d.line((36,52,40,51),fill=8)
- d.line((23,55,23,58),fill=4);d.line((39,55,42,57),fill=4)
- if back:
-  d.line([(28,34),(31,37),(35,34)],fill=5)
-  d.line((32,37,32,41),fill=5)
- else:
-  d.line((26,20,29,19),fill=2);d.line((35,19,38,20),fill=2)
-  d.line((27,27,28,29),fill=4);d.point((35,27),4)
- return im
-
-def donut(back=False):
- im=canvas(64,64);d=ImageDraw.Draw(im)
- d.arc((36,33,61,60),270,110,fill=1,width=8);d.arc((36,33,61,60),270,110,fill=8,width=5)
- d.polygon([(18,30),(13,35),(16,38),(11,43),(16,46),(13,50),(20,56),(18,59),(29,60),(33,57),(39,60),(48,58),(44,53),(48,47),(45,41),(48,36),(42,31)],fill=1)
- d.ellipse((16,29,46,57),fill=8);d.ellipse((21,31,41,56),fill=7)
- d.ellipse((17,54,29,60),fill=7);d.ellipse((34,54,46,60),fill=7)
- d.polygon([(16,23),(16,11),(26,17),(37,16),(47,10),(47,25),(51,29),(46,34),(40,39),(23,38),(14,30)],fill=1)
- d.polygon([(18,24),(18,15),(27,20),(37,19),(45,14),(45,25),(48,29),(42,34),(24,35),(17,29)],fill=8)
- d.polygon([(20,18),(20,23),(25,21)],fill=4);d.polygon([(42,18),(39,22),(43,23)],fill=4)
- if not back:
-  d.ellipse((21,23,29,29),fill=7);d.ellipse((35,23,43,29),fill=7)
-  d.rectangle((25,24,27,28),fill=12);d.rectangle((37,24,39,28),fill=12)
-  d.point((26,25),1);d.point((38,25),1)
-  d.polygon([(29,30),(34,30),(32,33)],fill=10)
-  d.line((23,32,17,31),fill=7);d.line((40,32,47,31),fill=7)
- else: d.line((24,24,40,25),fill=3,width=2);d.line((27,28,38,29),fill=3)
- # Small gold collar, no later-book costume or class assumed.
- d.line((24,37,40,37),fill=11,width=2);d.rectangle((31,38,33,40),fill=12)
- # Long-haired ruff and layered flank tufts, distinct from a short-coated cat.
- for x,y in [(18,38),(16,43),(18,49),(22,53),(40,38),(43,43),(41,49)]:
-  d.line([(x,y),(x-2,y+3),(x+2,y+1)],fill=7)
- d.line([(25,40),(28,43),(26,46)],fill=8)
- d.line([(38,41),(36,45),(39,48)],fill=8)
- d.line((23,56,26,57),fill=8);d.line((37,56,40,57),fill=8)
- if back:
-  d.line([(22,22),(24,26),(22,29)],fill=7)
-  d.line([(41,23),(39,27),(42,29)],fill=7)
- return im
-
 def enemy(kind):
  im=canvas(64,64);d=ImageDraw.Draw(im)
  if kind=='scuttler':
@@ -196,14 +133,6 @@ for name in ['wrap','scrap','tag','charge','medicine']:
 im=canvas(16,16);d=ImageDraw.Draw(im);d.rectangle((0,3,15,15),fill=1);d.rectangle((1,4,14,14),fill=3)
 d.rectangle((1,2,14,5),fill=8);d.line((2,7,13,7),fill=4);d.rectangle((6,5,9,15),fill=14);d.rectangle((7,8,8,10),fill=11)
 save(im,Path('graphics/dcc/crate.png'))
-# Donut's standing exploration frames share Carl's already loaded palette.
-cp=[tuple(map(int,l.split())) for l in (R/'graphics/object_events/palettes/carl.pal').read_text().splitlines()[3:]]
-mini=donut().resize((16,16),Image.Resampling.NEAREST)
-lookup=[0]+[min(range(1,16),key=lambda j:sum((P[i][k]-cp[j][k])**2 for k in range(3))) for i in range(1,16)]
-mini=mini.point(lookup+[0]*240);mini.putpalette(sum((list(c) for c in cp),[])+[0]*(768-48))
-world=Image.new('P',(48,16));world.putpalette(mini.getpalette())
-for x in (0,16,32):world.paste(mini,(x,0))
-save(world,Path('graphics/dcc/donut/overworld.png'))
 # Visible encounter tokens and original stationary crawler NPCs.
 for name in ['scuttler','guard','howler','warden']:
  front=next(im for _,(n,im) in names.items() if n==name)
@@ -286,5 +215,6 @@ for block in range(2):
 (R/'graphics/dcc/battle/palette.pal').write_text('JASC-PAL\n0100\n48\n'+'\n'.join(' '.join(map(str,c)) for c in colors*3)+'\n')
 
 # Approved protagonist battle masters own their independent palettes.
-from protagonist_art import export
+from protagonist_art import export, export_world
 export()
+export_world()

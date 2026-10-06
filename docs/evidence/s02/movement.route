@@ -1,0 +1,44 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 4 7 7
+step 8 32 walk-left-0.ppm
+step 8 32 walk-left-1.ppm
+step 8 32 walk-left-2.ppm
+step 12 32 walk-left-3.ppm
+step 40 0 idle-left.ppm
+expect 34 1 2 7 7
+step 8 64 walk-up-0.ppm
+step 8 64 walk-up-1.ppm
+step 4 64 walk-up-2.ppm
+step 40 0 idle-up.ppm
+expect 34 1 2 6 7
+step 8 16 walk-right-0.ppm
+step 8 16 walk-right-1.ppm
+step 8 16 walk-right-2.ppm
+step 8 16 walk-right-3.ppm
+step 8 16 walk-right-4.ppm
+step 8 16 walk-right-5.ppm
+step 8 16 walk-right-6.ppm
+step 12 16 walk-right-7.ppm
+step 40 0 idle-right.ppm
+expect 34 1 6 6 7
+step 8 128 walk-down-0.ppm
+step 8 128 walk-down-1.ppm
+step 4 128 walk-down-2.ppm
+step 40 0 idle-down.ppm
+expect 34 1 6 7 7
+step 8 32 walk-return-0.ppm
+step 8 32 walk-return-1.ppm
+step 8 32 walk-return-2.ppm
+step 12 32 walk-return-3.ppm
+step 40 0 idle-return.ppm
+expect 34 1 4 7 7
+duo healthy
+quit

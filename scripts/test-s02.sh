@@ -32,6 +32,7 @@ run_route setup "$repo/docs/evidence/s02/setup.route" 32
 run_route ui "$repo/docs/evidence/s02/ui.route" 13
 run_route trial "$repo/docs/evidence/s02/trial.route" 31
 run_route rest "$repo/docs/evidence/s02/rest.route" 34
+run_route movement "$repo/docs/evidence/s02/movement.route" 7
 run_route gates "$repo/docs/evidence/s01/gates.route" 17
 run_route menu-materials "$repo/docs/evidence/d02/materials.route" 16 menu.sav
 run_route menu-craft "$repo/docs/evidence/d02/craft.route" 13 menu.sav

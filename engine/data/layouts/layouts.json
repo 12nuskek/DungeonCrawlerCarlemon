@@ -4410,6 +4410,26 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_ENTRANCE",
+      "name": "DCC_Entrance_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Entrance/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_VESTIBULE",
+      "name": "DCC_Vestibule_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Vestibule/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Vestibule/map.bin"
     }
   ]
 }

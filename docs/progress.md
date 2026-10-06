@@ -1,8 +1,8 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0 complete; next task E01, not yet started.**
+Handoff date: 2026-10-06. **Stage 0 complete; E01 in progress.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
-No active engine writer or running build/container at this checkpoint.
+Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -116,3 +116,45 @@ Stages 1–5, full fresh-save slice completion, defeat/reward/save regression,
 original scheduled assets and post-slice improvement cycles remain outstanding.
 Stage 6 is still gated on the user's eventual playable-slice review. No playable
 DungeonCrawlerCarlemon adaptation or public release has been delivered yet.
+
+## E01 active — 2026-10-06
+
+Branch `task/e01-tutorial`; base `fbc28d44529347e5f4f24108c1f9b7a518729b6a`.
+Reconciliation: main clean/current, no open PRs or concurrent implementation work
+observed. The parent reported an environment-disconnected notification at 04:10;
+actual shell and live emulator calls succeeded at 04:10:52 UTC, so execution was
+available and no duplicate writer was started.
+
+Implemented: fixed Carl new-game identity, authored entrance/returnable landing,
+original walking sprite/palette, original intro/crate/rock text and existing save
+flag bits 0x20/0x21. No battle/party or save-structure changes. Stock title/UI and
+tile/object art placeholders are explicit in content-ledger.
+Compiled: PASS (custom ROM; stock comparison deliberately not used).
+Runtime: exploratory real mGBA route passed 16 map/position/flag assertions,
+normal manual save and a separate-process cold reload. Final committed replay
+with recorded routes is next, including repeat crate interaction after reload.
+Merged: no PR yet. No current blocker. One C compile error from inline use of
+Emerald's text macro was fixed with a named static string; dialogue timing was
+calibrated to allow pages to finish. Neither required engine/save changes.
+
+Save policy E01: format/layout unchanged, existing unused flag bits allocated and
+new maps appended. Start a fresh E01 save; stock baseline saves are not supported
+as crawler campaign starts. Cold reload of an E01 in-game save is required before
+merge. Test runner `scripts/test-e01.sh` records commit, custom checksum, button
+routes, read-only RAM assertions and screenshots. It never writes game RAM.
+
+## E01 final validation — 2026-10-06
+
+Tested commit `b28143b56f9413ff211473a70ca8429414335412`. Implemented: YES.
+Compiled: PASS. Runtime verified: PASS, 16 fresh-game plus 3 separate-process
+cold-reload assertions; final screenshots visually inspected. Merged: pending.
+Full commands, checksums, inputs, logs, screenshots and limits:
+[E01 evidence](evidence/e01/README.md). No current blocker. Follow-up commits for
+this task are documentation/evidence only. Review found no save-layout or battle
+changes. Title/menu/tile/music placeholders and missing Donut presentation remain
+explicit; this is a tutorial increment, not the completed slice.
+
+Next after E01 integration: B01 (dependency F01 already passed), a narrow Carl/Donut
+duo encounter prototype with both actors and victory return. This ready task
+enables meaningful protagonist recovery validation in E02; no change to the
+authorized scope. E02 safe-room guide/recovery is still pending, not silently done.

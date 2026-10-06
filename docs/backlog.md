@@ -6,7 +6,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | --- | --- | --- |
 | F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
-| E01 | F01 | Pending: Carl avatar, tutorial map and exploration runtime |
+| E01 | F01 | Implemented, compiled and runtime verified; integration pending |
 | E02 | E01 | Pending: safe room, guide and recovery |
 | B01 | F01 | Pending: Carl/Donut duo prototype |
 | B02 | B01 | Pending: actions and defeat recovery |
@@ -32,3 +32,13 @@ environment definition, scripts, docs and validation evidence. Excluded: engine
 or gameplay changes, new scheduler, binary publication. Acceptance: fresh image
 installs recorded dependencies, exact-pin setup/build passes comparison, real
 mGBA boot route passes, image/tool versions and tested commit recorded.
+
+E01 base: `fbc28d44529347e5f4f24108c1f9b7a518729b6a`. Scope: fixed Carl identity,
+original walking sprite, authored entrance and returnable landing, original text,
+existing persistent flag bits and normal saves. Excludes battle/party changes and
+save-layout changes. Acceptance: fresh-game entry, four directions, collisions,
+crate first/repeat dialogue, both ladder transitions, actual save and cold reload.
+
+Validation follow-up (nonblocking): replace F01 harness scanf unsigned parsing
+with checked conversion and add overflow tests (4294967416 frames, 4294967296 keys).
+Parent independently confirmed valid F01/F02 evidence; this does not invalidate it.

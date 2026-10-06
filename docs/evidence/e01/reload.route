@@ -1,0 +1,23 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 continue.ppm
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 11 4 3
+step 20 16 -
+step 180 0 reloaded-exit.ppm
+expect 34 0 12 4 3
+step 132 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 reloaded-crate.ppm
+step 1 1 -
+step 120 0 -
+expect 34 0 4 4 3
+quit

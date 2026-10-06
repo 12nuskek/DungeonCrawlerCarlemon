@@ -96,3 +96,13 @@ After gameplay changes, use `make -C engine -j2` and record a new custom ROM has
 and gameplay runtime route; the stock-ROM `compare` and stock screenshot checks
 must not be represented as passing for a modified game. Keep this baseline
 evidence as the foundation reference.
+
+## E01 custom gameplay replay
+
+With the same build tools plus mGBA development library and Python Pillow, run
+`bash scripts/test-e01.sh` from a clean committed tree. It builds the custom ROM
+and runs the input routes in `docs/evidence/e01` against a new flash save, then a
+separate emulator process loading that save. Nineteen map/position/persistent-flag
+assertions supplement visual inspection. See the [tested E01 report](evidence/e01/README.md).
+Workspace-local mGBA flags use DCC_TEST_CFLAGS and DCC_TEST_LDFLAGS; do not pass
+them as CFLAGS/LDFLAGS to the GBA compiler. Saves/executables/ROMs stay ignored.

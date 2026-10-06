@@ -195,4 +195,4 @@ and spent materials leave the main route available. Charge menu use is inert and
 its description directs players to the cache. Super Potion is immediately usable
 recovery, so crafting already has a practical benefit. New dialogue original;
 MovingBox/MetalCoat icon/explosion sound are upstream placeholders for S02.
-Runtime verification pending D02. No new save layout or battle item framework.
+Runtime verified: [D02 111-check evidence](evidence/d02/README.md); integration pending. No new save layout or battle item framework.

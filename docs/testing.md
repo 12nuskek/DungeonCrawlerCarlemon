@@ -199,3 +199,11 @@ toolchain variables. Five production routes84 checks and two explicit fixture
 routes30 checks cover optional decline/accept/complete, tag/reward atomicity,
 secret/repeat, backtracking, cold saves and actual paralysis/guide cure.
 [Evidence and fixed coordinate-trigger defect](evidence/d01/README.md).
+
+## D02 crafting replay
+
+At tested revision `b53b8e6`, run `bash scripts/test-d02.sh` with the same toolchain
+variables. Five production routes67 checks and two explicit fixture routes44
+checks cover missing/cancel/craft/use, output capacity before consumption, repeated
+crafting, cache/medicine effects, cold saves and R02 workshop capacity/repeat.
+[Full 111-check evidence](evidence/d02/README.md).

@@ -545,3 +545,15 @@ cures it and saves. Capacity tests cover R02 workshop98→failure, toss1→grant
 two successful crafts each spend2 after freeing output space; cache output failure
 retains charge, retry spends1. No failed production fix/blocker. Route navigation
 was adjusted to avoid a known sign object. Final isolated111-check run next.
+
+## D02 final verification — 2026-10-06
+
+Tested `b53b8e6a2c64fe3e9e22d37bca5277c97ac46b02`, isolated `test-d02.sh`:111
+PASS (67 production/44 fixture), seven empty errors,19 reviewed actual screenshots.
+Production SHA256 `a4c542bae88f85f8e537c4590bdafb2830b386844bc4806a783b5825b2793972`.
+[Evidence](evidence/d02/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO pending scoped issue #22 PR. No blocker or failed production fix.
+R02 Scrap-box full-capacity edge now exercised. S02 must replace inherited DAD
+menu-refusal wording and stock icons/props/audio as scheduled. Next push evidence,
+draft/review/merge, then S01 connected encounters/boss/staircase. Cloud task remains
+`01a10f4b-596b-700b-b8ba-241e3ca2c000`; no overlapping writer/scheduler.

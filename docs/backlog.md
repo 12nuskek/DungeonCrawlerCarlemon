@@ -14,7 +14,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
 | R02 | R01 | Complete: 169 assertions; merged PR #19 (`ae4679e`); issue #18 closed |
 | D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
-| D02 | R01, D01 | Active: issue #22; atomic explosive recipe/cache |
+| D02 | R01, D01 | Verified: 111 assertions; issue #22; scoped integration pending |
 | S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |
 | S02 | S01 | Pending: original assets, dialogue/UI and placeholder review |
 | S03 | S02 | Pending: full regression and review package |

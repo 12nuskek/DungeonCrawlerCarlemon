@@ -1,0 +1,79 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 10 5 7
+flag 2136 1
+flag 2137 1
+growth 11 748 0 10 1058 0
+roster 35 14 3 0 0 0
+step 20 64 -
+step 40 0 -
+step 132 32 -
+step 40 0 -
+step 180 0 -
+expect 34 2 2 9 7
+step 84 64 -
+step 40 0 -
+step 180 0 -
+expect 34 1 2 4 7
+step 20 16 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 patrol-rest.ppm
+roster 38 30 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 -
+step 84 128 -
+step 40 0 -
+step 180 0 -
+step 164 16 -
+step 40 0 -
+step 180 0 -
+expect 34 4 2 4 7
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+flag 46 0
+flag 47 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 boss-ready.ppm
+duo healthy
+quit

@@ -17,7 +17,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
 | S01 | B03, R02, D02 | Complete:357 assertions; merged PR #25 (`abf9875`); issue #24 closed |
 | S02 | S01 | Complete:199 checks/11 sessions; merged PR #27 (`d8f8ae6`); issue #26 closed |
-| S03 | S02 | Verified:1053 checks/62 sessions; PR #30 integration pending; issue #29 |
+| S03 | S02 | Complete:1053 checks/62 sessions; merged PR #30 (`eb73f72`); issue #29 closed |
 
 F01 objective: exact source pin, matching baseline ROM, real boot evidence.
 Allowed: source import, setup/build/runtime harness, provenance and handoff docs.
@@ -153,7 +153,7 @@ resources, rewards/crafting/capacity and reload. Separate production and explici
 GBA diagnostic fixtures; record actual captures, commands and tested commit.
 Fix verified defects, avoid unrelated features. No Stage6, save schema or release.
 
-## I01 requested opponent presentation improvement
+## I01 requested opponent presentation improvement — issue31
 
 Depends on verified S03. User requested enemy quality matching protagonist upgrade.
 Five existing original adaptation enemies only: Scuttler, Grub, Guard, Howler,

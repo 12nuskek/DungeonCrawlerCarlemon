@@ -1025,3 +1025,20 @@ Parent coordinates asset-only candidate PR handoff; no parallel implementation.
 Exact next: merge verified S03, pause writes for asset-PR staging, then integrate
 its native assets with provenance/generator protection and real battle/map checks.
 Guard's SPINDA procedural spots must not alter approved native art. No Stage6.
+
+### S03 merged; I01 asset handoff pause — 2026-10-06
+
+PR30 merged eb73f725d0c5c1488386e56f28f8080eb3a6f884, evidence head
+7807a9c286a7fa11fd35cce2065d02e280f78b2a, tested50435d1. S03 implemented,
+compiled, runtime verified and merged. Issue29 complete. Original runner ended;
+no build/emulator implementation process is active.
+
+I01 issue31, branch task/i01-opponent-art, base eb73f725. Only this task integrates
+code/assets. Parent has reviewed an external native candidate package for the
+five existing opponents and will stage it through an asset-only GitHub PR.
+Repository writes pause after this checkpoint for that handoff; no Library
+materialization retry. I01 art implemented NO/compiled NO/runtime verified NO/
+merged NO. Resume only after package delivery and remote branch reconciliation.
+Next: fetch delivered asset PR, verify hashes/provenance/native palette contracts,
+then integrate and run scoped evidence checks. Preserve approved Carl/Donut art,
+all gameplay and saves. Stage6 and public release remain unauthorised.

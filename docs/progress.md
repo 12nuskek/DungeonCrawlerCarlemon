@@ -1154,3 +1154,16 @@ Prioritised overnight-plan.md added; pending read-only reviewer recommendations.
 Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000 remains sole writer.
 Implemented NO; compiled/runtime/merged NO. Next: native dungeon tile exporter
 and static behavior invariants, then real six-room visual/interaction checks.
+
+### N00 guidance defects selected before N01 art — 2026-10-06
+
+Read-only reviewer confirmed stale Journal objective, contradictory post-stairs
+Donut line and ambiguous two-ladder directions. N00 issue36 on task/n00-dungeon-
+guidance is the sole active implementation; N01 kit remains outside-repo prep.
+Text/event-script routing only: landing trial objective, east/west guide advice,
+northwest/southwest Mara/Lev guidance, original two-page ending exchange. Same
+page counts and state/interaction semantics, no map/collision/art changes.
+Selected18 existing production routes retain every assertion for fresh Journal,
+guide/trial/recovery, quest states and full completion/cold ending. No timing or
+retry-victory claim is added. Next: committed isolated build/runtime and actual
+text inspection, then merge N00 and resume environment work.

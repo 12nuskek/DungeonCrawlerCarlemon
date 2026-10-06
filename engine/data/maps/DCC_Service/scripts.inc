@@ -99,8 +99,8 @@ DCC_Service_Text_Complete:
 	.string "MARA: A route home beats a shortcut\n"
 	.string "with teeth. I will mark the safe way.$"
 DCC_Service_Text_Done:
-	.string "MARA: Your tag helped. The ladder\n"
-	.string "leads straight back to the guide.$"
+	.string "MARA: Take the northwest ladder\n"
+	.string "for the guide. Southwest goes on.$"
 
 DCC_Service_Tag::
 	lock
@@ -147,8 +147,8 @@ DCC_Service_Text_Lev:
 	.string "for exits. We disagree efficiently.\p"
 	.string "Try the north wall, right of the\n"
 	.string "crate. One panel sounds hollow.\p"
-	.string "The southwest ladder reaches the\n"
-	.string "gauntlet. The guide is northwest.$"
+	.string "Southwest leads to the gauntlet.\n"
+	.string "Northwest returns to the guide.$"
 
 DCC_Service_Secret::
 	lockall

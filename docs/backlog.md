@@ -186,3 +186,7 @@ User request2026-10-06 13:19:10UTC authorises existing-slice refinement through
 approximately21:19UTC. Previous playtest pause superseded for this window.
 N01 issue35 active; see overnight-plan.md for audited priorities and boundaries.
 No new scheduler, Stage6, platform or major system. Preserve approved art.
+
+N00 issue36 is active ahead of N01 while the environment kit is prepared: fix
+contradictory ending text, stale Journal objective and ambiguous ladder guidance.
+N01 remains the next visual foundation task. One implementation writer.

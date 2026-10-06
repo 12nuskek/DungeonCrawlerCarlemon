@@ -1,0 +1,1 @@
+PASS: two native-master prop exports preserve all six game PNGs byte-for-byte.

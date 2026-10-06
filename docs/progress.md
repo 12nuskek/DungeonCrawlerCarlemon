@@ -1269,3 +1269,12 @@ Next clean committed build;24 production sessions including matched six-room
 route, all existing behavior assertions, nine opponent and six prop pixel checks.
 N01 props implemented YES; compiled/runtime/merged pending. Then separate room
 materials/composition and later state/layout increments. Sole implementation writer.
+
+N01 prop increment verified c51012486790bf344883deae73d9e4df783091a0:
+`bash scripts/test-n01-props.sh`,24 sessions/434 assertions,24 empty errors,
+9 opponent+6 prop exact pixel checks;1176-cell/six-event/49-art invariants pass.
+Actual six-room and changed-prop images inspected. Two deterministic six-PNG
+exports match. ROMec3cdf914b55d36da913db570ab83ad1cffbcd59869ab71c9e47c4fe075c55f9.
+PR41 pending merge; evidence docs/evidence/n01/props. Implemented/compiled/runtime
+YES; merged pending. No blocker attempts. Next separate room materials/composition
+increment, then collision/layout and state feedback with their own acceptance.

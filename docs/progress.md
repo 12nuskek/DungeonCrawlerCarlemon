@@ -1449,3 +1449,9 @@ cold state and opened initial reward boxes. All earlier1210 assertions retained.
 Next final committed clean rerun76 processes/1303 assertions and actual contrast
 review; preserve first evidence separately. Compiled/runtime pass applies to first
 candidate only; final contrast source remains pending verification.
+
+Pre-rerun pixel verifier correction: the main unprepared route never takes the
+optional wrap, so its landing box correctly remains closed. Verify the opened
+wrap box at equipment-give/wrap-found instead, where flag35/item377 assertions
+prove acquisition. All18 expanded OBJ/frame comparisons pass against first-run
+actual frames. No game defect or gameplay assertion was weakened.

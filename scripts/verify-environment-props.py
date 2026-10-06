@@ -45,7 +45,7 @@ if (run/'source/scripts/contracts/n03-presentation.json').exists():
   ('cache_open','craft-blast-use/blasted.ppm',(112,88)),
   ('cache_open','craft-reload-recover/reloaded.ppm',(192,104)),
   ('cache_open','rooms/entrance-center.ppm',(144,88)),
-  ('cache_open','rooms/landing-center.ppm',(48,24)),
+  ('cache_open','equipment-give/wrap-found.ppm',(112,88)),
  ]
  for name,path,origin in cases:
   frame=run/path;found=match(frame,assets/(name+'.png'),origin)

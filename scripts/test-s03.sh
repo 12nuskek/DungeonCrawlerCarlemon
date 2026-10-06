@@ -19,7 +19,7 @@ arm-none-eabi-nm -g --defined-only "$repo/engine/pokeemerald.elf" > "$evidence/g
 python3 "$repo/scripts/battle-input-symbols.py" "$repo/engine" >> "$evidence/game.sym"
 cc -std=gnu11 -Wall -Wextra -Werror ${DCC_TEST_CFLAGS:-} "$repo/scripts/playtest.c" ${DCC_TEST_LDFLAGS:-} -lmgba -o "$evidence/playtest"
 run_route() {
-    local name=$1 route=$2 assertions=$3 savefile=${4:-playtest.sav} symbols=${5:-game.sym} rom=${6:-"$evidence/production.gba"} rom=${6:-"$evidence/production.gba"} rom=${6:-"$evidence/production.gba"}
+    local name=$1 route=$2 assertions=$3 savefile=${4:-playtest.sav} symbols=${5:-game.sym} rom=${6:-"$evidence/production.gba"}
     mkdir "$evidence/$name"
     (cd "$evidence/$name"
      ../playtest "$rom" "../$savefile" "../$symbols" < "$route" > replay.log 2> errors.log
@@ -113,7 +113,7 @@ run_route craft-fixture-reload "$repo/docs/evidence/d02/capacity-reload.route" 1
 fixture exhaust-fixture exhaustion-fixture.py
 run_route exhaust-fixture-setup "$repo/docs/evidence/s03/exhaust-setup.route" 20 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
 run_route exhaust-fixture-battle "$repo/docs/evidence/s03/exhaust-battle.route" 10 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
-run_route exhaust-fixture-recover "$repo/docs/evidence/s03/exhaust-recover.route" 11 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
+run_route exhaust-fixture-recover "$repo/docs/evidence/s03/exhaust-recover.route" 13 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
 run_route exhaust-fixture-reload "$repo/docs/evidence/s03/exhaust-reload.route" 6 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
 python3 "$repo/scripts/render-walk.py" "$evidence/movement" "$evidence/walking.gif" > "$evidence/walking-render.log"
 python3 - "$evidence" <<'PYIMG'

@@ -937,3 +937,9 @@ respect that occupancy. Main tile collision/elevation compatibility never meant
 unchanged object layout. Pacing measurement remains separate, with no20–30minute
 fresh-player timing claim. Continue until S03 and warranted improvement cycles
 finish, then await user playtest before Stage6.
+
+Exhaustion recovery route now goes around both the trial NPC and stationary Donut;
+its original direct path hit the trial object, an input-route error rather than
+changed map collision. Corrected depleted save/recovery diagnostic passes13 checks.
+Final suite plans916 checks (723 production,193 fixture),60 sessions. All counts
+remain provisional until the isolated run completes.

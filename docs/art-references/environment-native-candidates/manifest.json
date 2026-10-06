@@ -1,0 +1,812 @@
+{
+  "status": "UNINTEGRATED_CANDIDATES",
+  "source_sha256": "7665aa418f4e82060ff88ce750595a0eb13a101b7b6fa575cf996f76f2afa3a4",
+  "source_size": [
+    1449,
+    1086
+  ],
+  "base_commit": "bf27e2692025eb4291ffbf992a3b6412340d32cd",
+  "alpha_policy": "crop alpha >=128; BOX coverage downsample; keep output alpha >=128; output binary alpha at palette index0",
+  "resampling": "BOX; fixed-palette weighted RGB nearest match, no dither",
+  "assets": [
+    {
+      "name": "gate_closed",
+      "category": "background_env6",
+      "path": "native/background_env6/gate_closed.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "source_crop_bounds": [
+        75,
+        46,
+        357,
+        269
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        31,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "11317704f9c07c16af8b19ef7767394f255c4236ac34c768db5c35503dc46b9b"
+    },
+    {
+      "name": "gate_open",
+      "category": "background_env6",
+      "path": "native/background_env6/gate_open.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "source_crop_bounds": [
+        419,
+        38,
+        721,
+        269
+      ],
+      "opaque_bounds": [
+        1,
+        8,
+        31,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "60cfc16ad1823e82bff10f0b254df49f79c58e35517f46efa96d2df1ffc83e3b"
+    },
+    {
+      "name": "stairs_up",
+      "category": "background_env6",
+      "path": "native/background_env6/stairs_up.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "source_crop_bounds": [
+        772,
+        26,
+        1058,
+        275
+      ],
+      "opaque_bounds": [
+        1,
+        5,
+        31,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "c557df4793501599723a36108deb4ad5e2dd4270d9265e29c913b48802b95591"
+    },
+    {
+      "name": "stairs_down",
+      "category": "background_env6",
+      "path": "native/background_env6/stairs_down.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "source_crop_bounds": [
+        1098,
+        42,
+        1397,
+        275
+      ],
+      "opaque_bounds": [
+        1,
+        8,
+        31,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "50f5d66515a4162d8eac7c9cd8b247cdb9bfb676bec53ee6994025796d47eae8"
+    },
+    {
+      "name": "workbench",
+      "category": "background_env6",
+      "path": "native/background_env6/workbench.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "source_crop_bounds": [
+        52,
+        365,
+        377,
+        518
+      ],
+      "opaque_bounds": [
+        1,
+        1,
+        31,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "e346891017e232ea07419f04fa490e0925b19c0cd38e0c6a45f532caec9777e2"
+    },
+    {
+      "name": "workbench",
+      "category": "world_shared",
+      "path": "native/world_shared/workbench.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        52,
+        365,
+        377,
+        518
+      ],
+      "opaque_bounds": [
+        1,
+        8,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "95bc81b803e0ae8672690c22dd926ba92c91445a80e166e820c40c537e0cc214"
+    },
+    {
+      "name": "warning_sign",
+      "category": "background_env6",
+      "path": "native/background_env6/warning_sign.png",
+      "dimensions": [
+        16,
+        32
+      ],
+      "source_crop_bounds": [
+        485,
+        292,
+        651,
+        536
+      ],
+      "opaque_bounds": [
+        1,
+        10,
+        15,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "6e4a87c3a133b1af2583be345c497dc0f66c94e8889188084c07a2510c285e68"
+    },
+    {
+      "name": "warning_sign",
+      "category": "world_shared",
+      "path": "native/world_shared/warning_sign.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        485,
+        292,
+        651,
+        536
+      ],
+      "opaque_bounds": [
+        3,
+        1,
+        13,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "4d65512435c3d2361dda92d1043cd1eae9c61d21b964e5d0fc72bcdd130dcac1"
+    },
+    {
+      "name": "cache_sealed",
+      "category": "background_env6",
+      "path": "native/background_env6/cache_sealed.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        776,
+        334,
+        1047,
+        525
+      ],
+      "opaque_bounds": [
+        1,
+        5,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "a941d009bd43b0b0ca0a0f31aff5d2bfb09e5a4b19744b64495921d688ecc7d3"
+    },
+    {
+      "name": "cache_sealed",
+      "category": "world_shared",
+      "path": "native/world_shared/cache_sealed.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        776,
+        334,
+        1047,
+        525
+      ],
+      "opaque_bounds": [
+        1,
+        5,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "be8c4f039a3c853a4a04a216b420f823d87d0deea6c5133613abec117386cb2a"
+    },
+    {
+      "name": "cache_open",
+      "category": "background_env6",
+      "path": "native/background_env6/cache_open.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        1143,
+        308,
+        1390,
+        533
+      ],
+      "opaque_bounds": [
+        1,
+        2,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "256d257a05467285132edf3ed2ff9057b4f1e28d45f09a46e5a139b2ea6e55e4"
+    },
+    {
+      "name": "cache_open",
+      "category": "world_shared",
+      "path": "native/world_shared/cache_open.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        1143,
+        308,
+        1390,
+        533
+      ],
+      "opaque_bounds": [
+        1,
+        2,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "f0c4b99ff900a0d281599487c7c95fbfcdb95064534fc887cd5c3a79163c384e"
+    },
+    {
+      "name": "trap_armed",
+      "category": "background_env6",
+      "path": "native/background_env6/trap_armed.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        51,
+        592,
+        369,
+        761
+      ],
+      "opaque_bounds": [
+        1,
+        8,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "d37579eff046526690666c607eeff8e2ac7f26f114e0a0a836285ef33728ff0a"
+    },
+    {
+      "name": "trap_armed",
+      "category": "world_shared",
+      "path": "native/world_shared/trap_armed.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        51,
+        592,
+        369,
+        761
+      ],
+      "opaque_bounds": [
+        1,
+        8,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "1219c50cff4d0aabd9adf86900467ba7ddaea494759bd3e56834be78e0f4509e"
+    },
+    {
+      "name": "trap_spent",
+      "category": "background_env6",
+      "path": "native/background_env6/trap_spent.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        420,
+        581,
+        735,
+        761
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "fcee208e2ae6c32513a8b843390d38fb0e6e791a732661c5133923561fb3f96c"
+    },
+    {
+      "name": "trap_spent",
+      "category": "world_shared",
+      "path": "native/world_shared/trap_spent.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        420,
+        581,
+        735,
+        761
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "c2debb4dc61a5c92c9823fa3ac8c345b028274846d2768ecfc12aede7ee05ca1"
+    },
+    {
+      "name": "secret_cracked",
+      "category": "background_env6",
+      "path": "native/background_env6/secret_cracked.png",
+      "dimensions": [
+        16,
+        32
+      ],
+      "source_crop_bounds": [
+        779,
+        554,
+        1047,
+        785
+      ],
+      "opaque_bounds": [
+        1,
+        19,
+        15,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "01f84a0a6cf792aa0e958035264447538fb52081b173576add287b1b248ea0ae"
+    },
+    {
+      "name": "secret_breached",
+      "category": "background_env6",
+      "path": "native/background_env6/secret_breached.png",
+      "dimensions": [
+        16,
+        32
+      ],
+      "source_crop_bounds": [
+        1131,
+        561,
+        1398,
+        793
+      ],
+      "opaque_bounds": [
+        1,
+        19,
+        15,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "04949befd3314edaecdc303a5e9b2e178cc82ccdc7927a5f53b824bfa8cf5374"
+    },
+    {
+      "name": "bedroll",
+      "category": "background_env6",
+      "path": "native/background_env6/bedroll.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "source_crop_bounds": [
+        41,
+        858,
+        369,
+        1035
+      ],
+      "opaque_bounds": [
+        3,
+        1,
+        29,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "4cd71ded25bf61446517ea7e2c032d03b609c6097fce7426f7487df919761b10"
+    },
+    {
+      "name": "bedroll",
+      "category": "world_shared",
+      "path": "native/world_shared/bedroll.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        41,
+        858,
+        369,
+        1035
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "6006a036000d0d5c9cdef1dadd80c9338101584bdfbc3ee9f12c417c91db2cce"
+    },
+    {
+      "name": "storage_rack",
+      "category": "background_env6",
+      "path": "native/background_env6/storage_rack.png",
+      "dimensions": [
+        16,
+        32
+      ],
+      "source_crop_bounds": [
+        432,
+        809,
+        729,
+        1036
+      ],
+      "opaque_bounds": [
+        1,
+        20,
+        15,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "0694437f8f73d8aa2a493fb68c5f40d9409c061f32a3601da390f5f3a026b8a0"
+    },
+    {
+      "name": "storage_rack",
+      "category": "world_shared",
+      "path": "native/world_shared/storage_rack.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        432,
+        809,
+        729,
+        1036
+      ],
+      "opaque_bounds": [
+        1,
+        4,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "3a4e0d72120b22ad0fabb77df677ffe9d8101e347333e8aace87720fdbe0cf00"
+    },
+    {
+      "name": "wall_lantern",
+      "category": "background_env6",
+      "path": "native/background_env6/wall_lantern.png",
+      "dimensions": [
+        16,
+        32
+      ],
+      "source_crop_bounds": [
+        821,
+        813,
+        998,
+        1029
+      ],
+      "opaque_bounds": [
+        1,
+        14,
+        15,
+        31
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "c5d3651419f0019c2c4d8a62956fac2fba2ed2de7a0eabeb7901c42b94f91339"
+    },
+    {
+      "name": "wall_lantern",
+      "category": "world_shared",
+      "path": "native/world_shared/wall_lantern.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        821,
+        813,
+        998,
+        1029
+      ],
+      "opaque_bounds": [
+        2,
+        1,
+        13,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "c727a358de53929fd6eab9d804c28a2690a8d133d63e72b507545d97fa2f8643"
+    },
+    {
+      "name": "rubble",
+      "category": "background_env6",
+      "path": "native/background_env6/rubble.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        1111,
+        857,
+        1402,
+        1029
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "e92272605eddb960f96e0fa619a88e8ef473e42f65967a0861334fa60022a879"
+    },
+    {
+      "name": "rubble",
+      "category": "world_shared",
+      "path": "native/world_shared/rubble.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "source_crop_bounds": [
+        1111,
+        857,
+        1402,
+        1029
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "dc924e23cd5fab9483af016227d74b203b0d290953ee3145e08d7fda3f1690ce"
+    },
+    {
+      "name": "quest_tag",
+      "category": "world_shared",
+      "path": "native/world_shared/quest_tag.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        347,
+        173,
+        539,
+        363
+      ],
+      "opaque_bounds": [
+        1,
+        1,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "a2f6075f49faa96fbb441d2580a28ad47c5d3bbf85594b39294ec55eb9944516"
+    },
+    {
+      "name": "quest_tag",
+      "category": "background_env6",
+      "path": "native/background_env6/quest_tag.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        347,
+        173,
+        539,
+        363
+      ],
+      "opaque_bounds": [
+        1,
+        1,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "77d7283f754bb513829ab4a6bfbcf0605e0d87d00cd8dc121ca49a1b0e3ee066"
+    },
+    {
+      "name": "wire_live",
+      "category": "world_shared",
+      "path": "native/world_shared/wire_live.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        954,
+        156,
+        1678,
+        368
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "58026c6152b31c89220048e636ca57a4d7aea6e536e2c7e2dd33e5a7aa1e5116"
+    },
+    {
+      "name": "wire_live",
+      "category": "background_env6",
+      "path": "native/background_env6/wire_live.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        954,
+        156,
+        1678,
+        368
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "c1b22c6929036e4f99836ccdeca606b748d8b84c4ffb2b4b5d3cc38c006da4f0"
+    },
+    {
+      "name": "wire_spent",
+      "category": "world_shared",
+      "path": "native/world_shared/wire_spent.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        109,
+        549,
+        779,
+        766
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "11ba4bc826e573e97a11d15a17bc4b1bcd677b57ecb99123c3dd7cbf53a5f8f3"
+    },
+    {
+      "name": "wire_spent",
+      "category": "background_env6",
+      "path": "native/background_env6/wire_spent.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        109,
+        549,
+        779,
+        766
+      ],
+      "opaque_bounds": [
+        1,
+        7,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "08a86371952d979ac5126aa81505990f4b96eb72cb986c1f1bef078505b56f1e"
+    },
+    {
+      "name": "encounter_remains",
+      "category": "world_shared",
+      "path": "native/world_shared/encounter_remains.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        999,
+        541,
+        1650,
+        814
+      ],
+      "opaque_bounds": [
+        1,
+        9,
+        15,
+        15
+      ],
+      "palette": "existing shared.pal",
+      "sha256": "d86fb3afa176a72b14aab19f05cc53c2cbc6bc80cd204d1a53f0bbd48580111a"
+    },
+    {
+      "name": "encounter_remains",
+      "category": "background_env6",
+      "path": "native/background_env6/encounter_remains.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "native_adaptation": "Wire pair uses consistent 14x8 content bounds and alpha coverage threshold48 to retain thin cable; remaining assets preserve aspect ratio and threshold128.",
+      "source_file": "source/state-props-reference.png",
+      "source_crop_bounds": [
+        999,
+        541,
+        1650,
+        814
+      ],
+      "opaque_bounds": [
+        1,
+        9,
+        15,
+        15
+      ],
+      "palette": "existing dungeon palette bank6",
+      "sha256": "dc33ed5594a9eb851a7bce9aa1a3b8d1327514c1be2ede3b0cff7a5aca3cc963"
+    }
+  ],
+  "state_source_sha256": "c09706cb48befc091ec22ef164625a3cce27d5b98417ef68cb9d768edcdd8f70"
+}

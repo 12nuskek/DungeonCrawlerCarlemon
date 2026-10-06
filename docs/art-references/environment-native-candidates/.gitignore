@@ -1,0 +1,7 @@
+# Recreated from the original source sheets; not source masters.
+source/crops/
+__pycache__/
+
+# Intentionally absent from this partial publication.
+native/background-tiles.4bpp
+source/environment-props-reference.png

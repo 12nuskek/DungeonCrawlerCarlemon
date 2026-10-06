@@ -190,3 +190,6 @@ No new scheduler, Stage6, platform or major system. Preserve approved art.
 N00 issue36 is active ahead of N01 while the environment kit is prepared: fix
 contradictory ending text, stale Journal objective and ambiguous ladder guidance.
 N01 remains the next visual foundation task. One implementation writer.
+
+N00 verified at f3514ca: 373 core +7 supplementary assertions, actual text reviewed;
+PR37 awaiting integration. N01 next after the external native environment kit.

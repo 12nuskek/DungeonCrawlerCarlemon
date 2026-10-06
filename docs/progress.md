@@ -1167,3 +1167,21 @@ Selected18 existing production routes retain every assertion for fresh Journal,
 guide/trial/recovery, quest states and full completion/cold ending. No timing or
 retry-victory claim is added. Next: committed isolated build/runtime and actual
 text inspection, then merge N00 and resume environment work.
+
+### N00 verified — 2026-10-06
+
+Issue36 / PR37; branch task/n00-dungeon-guidance; base
+bf27e2692025eb4291ffbf992a3b6412340d32cd; tested
+f3514caa05d99ff60c0c666d017fced8274e11e9. Implemented YES, compiled YES,
+runtime verified YES, merged pending. `bash scripts/test-n00.sh`: clean isolated
+build, 18 unchanged routes / 373 assertions. Supplemental normal-input guide
+route adds7; final collected total19 /380 with19 empty errors. Nine exact opponent
+pixel checks pass. Actual revised pages inspected with no text overflow. Full
+logs/routes and before/after screenshots: docs/evidence/n00. Source remained
+unchanged throughout execution. ROM SHA256
+1a9d4b248b86880d74769e4b66a2f8e1d2319be8cff2579c4587132dbf999573.
+No state/save/collision changes. Next: merge verified N00, resume N01 native
+materials/prop integration when the outside-repo asset kit is ready. Existing
+rubber-stamp geometry, wrong-colored entrance rubble, ambiguous box props and
+unresolved visual reward states remain identified overnight priorities. No blocker
+attempts consumed on N00; no new automation.

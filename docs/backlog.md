@@ -1,7 +1,7 @@
 # Live backlog
 
 Current: N05 merged in PR50 (90 sessions / 1,531 checks). Updated private
-visual/playable package delivered; N06 docs integration, then user playtest. Historical entries below retain earlier states.
+visual/playable package delivered; N06 PR52 ready for integration, then user playtest. Historical entries below retain earlier states.
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 

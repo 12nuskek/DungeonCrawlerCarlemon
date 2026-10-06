@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 merged; updated private review delivered, N06 docs integration pending.**
+Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 merged; updated private review delivered, N06 PR52 ready for integration.**
 Latest tested source `eaf073d434a9347dfc2ed921f5f44d163563964b`: 90 emulator
 sessions / 1,531 assertions, including 193 labeled fixture checks. Runtime evidence:
 [evidence/n05/final](evidence/n05/final/README.md). Updated private package delivered under issue51; await user playtest after docs integration.
@@ -1602,3 +1602,21 @@ above remains; actual game capture review and90/1531 runtime acceptance unaffect
 Next: merge N06 docs, checkpoint exact merge, then await the user's playtest.
 No substantive remaining implementation blocker identified; do not invent features
 or pad playtime to occupy the authorisation window. Stage6 remains unapproved.
+
+### Final implementation boundary — 2026-10-06
+
+N06 PR52: package/documentation only, basef2edec341fe1a1900f82740cbef25563b08f7532.
+Second independent packaging produces the identical ZIP hash; substituting a
+labeled diagnostic ROM is rejected before creating output. Engine/assets remain
+identical to testedeaf073d. Review/checksum evidence in docs/review/validation.json.
+Ready for verified PR52 merge; its server-side merge status is authoritative.
+No implementation task follows: await Kurt's playtest before Stage6. Parent should
+stop/disable the sole continuation at this boundary, or leave it skipping completed
+work. Never launch filler tasks. No workflow/schedule added in this repository.
+
+Durable inputs: artifacts/n05/run-t11UPm (full run), artifacts/n04/run-5byf3z3n
+(recovery extension), artifacts/review/DungeonCrawlerCarlemon-N05-eaf073d.zip.
+Private delivery succeeded; older Library version retained. Runtime blockers:none.
+Human pacing/playtest pending; host HTML-preview limitation and partial source-kit
+omissions remain documented. Historical failed traces/retry counts remain intact.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.

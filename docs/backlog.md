@@ -10,7 +10,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | E02 | E01 | Complete: 55 assertions, merged PR #11; issue #10 closed |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
-| B03 | B02 | Active: issue #14; capture/storage/breeding guards and runtime audit |
+| B03 | B02 | Verified: 110 assertions; issue #14; integration pending |
 | R01 | B02, E02 | Pending: XP and equipment |
 | R02 | R01 | Pending: persistent achievements/loot |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |

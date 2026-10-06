@@ -378,3 +378,12 @@ Parent B02 review independently confirmed 83 assertions, 33 evidence hashes and
 14 PNGs. S03 still needs total action exhaustion, depleted/immediate-defeat saves,
 and actual nonzero-status cure once status encounters exist. B03's new route covers
 the complementary Donut-down/Carl-acting case; preserve both milestone records.
+
+## B03 final verification — 2026-10-06
+
+Tested `769196afc57635b98aa2de8b9ddc43ed1847a4ef`, isolated pinned build and 110
+mGBA assertions PASS. Eight empty error logs, 17 actual PNGs visually reviewed.
+Production ROM `8ffe93dde477e54c9d23a52532e73b1ca7087595250afc3b8b0ed16384256f2d`.
+[Full evidence](evidence/b03/README.md), [audit](collection-audit.md). Implemented YES,
+compiled PASS, runtime PASS, integration pending scoped PR. No current blocker.
+Next after merge: R01 XP/equipment, one writer, no new scheduler or expansion.

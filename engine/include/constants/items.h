@@ -409,6 +409,9 @@ enum {
     ITEM_MAGMA_EMBLEM,
     ITEM_OLD_SEA_MAP,
 
+    // Authored crawler equipment; retain all upstream item IDs.
+    ITEM_DCC_WRIST_WRAP,
+
     ITEMS_COUNT
 };
 

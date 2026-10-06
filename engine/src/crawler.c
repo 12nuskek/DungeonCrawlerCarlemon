@@ -12,6 +12,7 @@ void InitCrawlerParty(void)
     static const u8 sCarlName[POKEMON_NAME_LENGTH + 1] = _("CARL");
     static const u8 sDonutName[POKEMON_NAME_LENGTH + 1] = _("DONUT");
     u8 noAbilitySlot = 1;
+    u32 experience;
     CreateMon(&gPlayerParty[0], SPECIES_MACHOP, 8, 20, TRUE, 128, OT_ID_PLAYER_ID, 0);
     SetMonData(&gPlayerParty[0], MON_DATA_NICKNAME, sCarlName);
     SetMonMoveSlot(&gPlayerParty[0], MOVE_DCC_STRIKE, 0);
@@ -26,6 +27,12 @@ void InitCrawlerParty(void)
     SetMonMoveSlot(&gPlayerParty[1], MOVE_DCC_WEAKEN, 1);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_NONE, 2);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_NONE, 3);
+    // Compressed tutorial: earned trial XP demonstrates the next level.
+    // Keep the existing species growth curves and stat calculation.
+    experience = gExperienceTables[gSpeciesInfo[SPECIES_MACHOP].growthRate][9] - 20;
+    SetMonData(&gPlayerParty[0], MON_DATA_EXP, &experience);
+    experience = gExperienceTables[gSpeciesInfo[SPECIES_MEOWTH].growthRate][9] - 20;
+    SetMonData(&gPlayerParty[1], MON_DATA_EXP, &experience);
     gPlayerPartyCount = 2;
     FlagSet(FLAG_SYS_POKEMON_GET);
 }

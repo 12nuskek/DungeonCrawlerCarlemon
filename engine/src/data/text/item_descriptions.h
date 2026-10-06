@@ -1549,3 +1549,8 @@ static const u8 sOldSeaMapDesc[] = _(
     "A faded sea chart\n"
     "that shows the way\n"
     "to a certain island.");
+
+static const u8 sDccWristWrapDesc[] = _(
+    "A sturdy wrap.\n"
+    "Equip to strengthen\n"
+    "normal attacks.");

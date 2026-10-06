@@ -113,3 +113,23 @@ Inventory width enlarged after actual clipping observed. Roster exposes Summary
 and Item; permanent protagonist order. Stock species summary, TM/HM/berry pocket
 labels, pocket indicator spacing and battle art remain explicit S02 placeholders.
 No new canon claims or adaptation chronology. [Collection audit](collection-audit.md).
+
+## R01 equipment and progression (2026-10-06)
+
+- `EQUIP_WRAP_01`: optional safe-room crate, no prerequisite; grant one WRIST WRAP
+  (`ITEM_DCC_WRIST_WRAP`,377), persistent `FLAG_DCC_WRAP_TAKEN`0x23 only after a
+  successful inventory add. Repeat shows resolved text. Full inventory leaves the
+  item available. Original teeth joke/equip instructions/optional-route dialogue.
+- Equipment reuses the held-item slot and stock normal-type attack modifier at20.
+  This scales the attack input by20% with integer rounding; it is not a promise of
+  exactly20% final damage. Useful for STRIKE, not psychic SPARK. No multiple slots.
+- WRIST WRAP icon/palette currently reuses pret Silk Scarf artwork (upstream pin
+  in provenance); explicitly replace/review in S02. Item name/description/dialogue
+  are original adaptation content, not a quoted book item or canon unlock claim.
+- Tutorial Carl/Donut begin level8,20 XP before level9 on existing growth curves.
+  This deliberate compression makes earned XP/stat growth visible in the trial.
+  Species/stat curves and battle presentation remain technical placeholders;
+  creature evolution/automatic species learning remain blocked by B03.
+- Test route: new game→landing crate→repeat→Inventory/Give to Carl→save/cold reload→
+  trial→level growth→guide→save/reload→take/re-equip. Also win without the optional
+  item and exercise full-inventory refusal in a separately labelled test fixture.

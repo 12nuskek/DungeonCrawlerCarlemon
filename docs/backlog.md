@@ -217,3 +217,9 @@ now require legacy inputs and exact coverage totals; no silent partial success.
 Next N04: close six same-recovered-save victory/persistence evidence gaps, then
 repeat-guide usability if a bounded improvement preserves first-use instruction.
 Final updated private review build and human playtest remain pending.
+
+N04 verified at test-sourceee340e1 on unchanged compiled engineb530fa6: all six exact
+recovered saves win and cold-reload correctly,12 production sessions/216 assertions.
+PR48 pending merge. Same-save re-entry-only evidence gap closed for this ROM.
+Next bounded improvement: repeat-guide recovery verbosity/control return; preserve
+first-use teaching and free HP/status/action restoration. Final private package next.

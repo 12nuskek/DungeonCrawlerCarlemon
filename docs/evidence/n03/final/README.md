@@ -79,3 +79,7 @@ N03: 76/1,303; 193 fixture assertions each). Missing variables/files fail before
 any build. Syntax checks and both accepted summaries pass the new contract;
 runner-contract-validation.json records it. Engine/assets are identical to tested
 b530fa6. This does not claim an unnecessary second runtime build.
+
+Follow-up: [N04 recovery evidence](../../n04/README.md) now verifies all six exact
+recovered saves through victory and cold reload on this unchanged ROM, closing the
+re-entry-only qualification above without a balance or engine change.

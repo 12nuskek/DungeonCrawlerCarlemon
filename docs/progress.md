@@ -1492,3 +1492,35 @@ then focused N04: actual wins and cold persistence from six exact recovered save
 assess repeat-guide verbosity without removing first-use instruction. Private
 updated playable review package still pending. No Stage6/new systems. Same Cloud
 task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent-owned continuation only.
+
+### N04 recovered-save victory evidence — 2026-10-06
+
+N03 PR46 merged3eba7aded3402bb2c48bcef7dd2311ad313210f9; issue45 complete.
+N04 issue47 task/n04-recovery-wins; base that merge. No engine/art/dialogue/balance
+changes. Extend all six original retry routes through legitimate victory, repeated
+resolved interaction, manual save and cold reload. Retain all original retry checks;
+use accepted policies (trial/howler/prepared offensive,guard defensive,boss/Carl-down
+fortify). Record ordinary input hashes and exact source/build identity. Cold checks
+compare pre-reset HP/status/uses/XP/equipment snapshots using read-only assertions.
+
+The driver requires accepted76/1303 N03 evidence and an identical engine/harness tree
+before reusing its production ROM; no new engine compilation claim. Acceptance is
+six victories plus cold persistence,12 new sessions and exact totals; preserve all
+failure traces and attempt counts. Scripts implemented; runtime/PR/merge pending.
+Next commit and execute against artifacts/n03/run-Wk4EcS, then review actual screens.
+
+### N04 verified — 2026-10-06
+
+Test-source ee340e181ce830412f9b2ebbd9ae9a1c1a73f655; base3eba7ad. No engine or
+harness source difference from compiled/testedb530fa6; same production ROMdc321def…a0891.
+All six exact ordinary recovered saves win, pass resolved-repeat XP checks, manual
+save and cold persistence.12 production sessions/216 assertions,12 empty errors.
+First runtime attempt passed all six existing strategies. Actual victory/cold views
+reviewed; source routes, input hashes and HP/status/action/XP/equipment snapshots in
+docs/evidence/n04. Combined same-ROM evidence:88 sessions/1519 assertions including
+193 earlier labeled fixture checks. Earlier re-entry-only qualification now closed
+for this ROM; no new engine compilation or balance claim. PR48 merge pending.
+
+Next: integrate this scoped evidence, then assess repeated guide recovery messages
+with a concrete control-return probe while retaining first-use instructions.
+Updated private review package and human pacing/playtest remain pending. No Stage6.

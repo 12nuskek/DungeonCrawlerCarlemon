@@ -269,3 +269,9 @@ E01 optional rock/landing-crate dialogue routes; B02 skills/resources/incapacita
 B03 no-catching/storage audit; R/D/S tasks and original final battle assets. No
 current access/build/emulator blocker. Cloud task ID remains
 `01a10f4b-596b-700b-b8ba-241e3ca2c000`. Parent continuation only; no new workflows.
+
+User visual-quality clarification relayed by parent: functional cave placeholders
+are not final. Scheduled custom dungeon/protagonist art, environmental detail,
+palettes and layout polish remain S02 acceptance within the slice. Recorded in the
+content ledger; actual before/after engine captures and remaining-placeholder list
+required. Gameplay dependency order remains unchanged; no scope/platform expansion.

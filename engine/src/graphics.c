@@ -1500,20 +1500,19 @@ const u32 gPokenavRibbonsSummaryBg_Tilemap[] = INCGFX_U32("graphics/pokenav/ribb
 
 const u16 gMonIconPalettes[][16] =
 {
-    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_0.pal", ".gbapal"),
-    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_1.pal", ".gbapal"),
-    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_2.pal", ".gbapal"),
+    INCGFX_U16("graphics/dcc/shared.pal", ".gbapal"),
+    INCGFX_U16("graphics/dcc/carl/normal.pal", ".gbapal"),
+    INCGFX_U16("graphics/dcc/donut/normal.pal", ".gbapal"),
 };
 
-const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/pokemon_logo.gbapal",
-                                                        "graphics/title_screen/rayquaza_and_clouds.gbapal");
-const u16 gTitleScreenEmeraldVersionPal[]  = INCGFX_U16("graphics/title_screen/emerald_version.png", ".gbapal");
+const u16 gTitleScreenBgPalettes[]         = INCGFX_U16("graphics/dcc/title/background.pal", ".gbapal");
+const u16 gTitleScreenEmeraldVersionPal[]  = INCGFX_U16("graphics/dcc/title/version.png", ".gbapal");
 const u32 gTitleScreenCloudsTilemap[]      = INCGFX_U32("graphics/title_screen/clouds.bin", ".lz");
-const u32 gTitleScreenPokemonLogoGfx[]     = INCGFX_U32("graphics/title_screen/pokemon_logo.png", ".8bpp.lz");
-const u32 gTitleScreenEmeraldVersionGfx[]  = INCGFX_U32("graphics/title_screen/emerald_version.png", ".8bpp.lz", "-mwidth 8 -mheight 4");
+const u32 gTitleScreenPokemonLogoGfx[]     = INCGFX_U32("graphics/dcc/title/logo.png", ".8bpp.lz");
+const u32 gTitleScreenEmeraldVersionGfx[]  = INCGFX_U32("graphics/dcc/title/version.png", ".8bpp.lz", "-mwidth 8 -mheight 4");
 const u16 gTitleScreenPressStartPal[]      = INCGFX_U16("graphics/title_screen/press_start.png", ".gbapal");
 const u32 gTitleScreenPressStartGfx[]      = INCGFX_U32("graphics/title_screen/press_start.png", ".4bpp.lz", "-mwidth 4 -mheight 1 -num_tiles 48 -Wnum_tiles");
-const u32 gTitleScreenPokemonLogoTilemap[] = INCGFX_U32("graphics/title_screen/pokemon_logo.bin", ".lz");
+const u32 gTitleScreenPokemonLogoTilemap[] = INCGFX_U32("graphics/dcc/title/logo.bin", ".lz");
 
 const u16 gFrontierPassBg_Pal[][16]                      = INCGFX_U16("graphics/frontier_pass/bg.png", ".gbapal"); // 8 x 16
 const u32 gFrontierPassBg_Gfx[]                          = INCGFX_U32("graphics/frontier_pass/bg.png", ".4bpp.lz");

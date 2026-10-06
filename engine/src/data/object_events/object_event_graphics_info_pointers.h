@@ -1,3 +1,10 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccLev;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccMara;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccGuide;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccWarden;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccHowler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccGuard;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DccScuttler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanSurfing;
@@ -252,7 +259,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRENDAN_SURFING] =          &gObjectEventGraphicsInfo_BrendanSurfing,
     [OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_BrendanFieldMove,
     [OBJ_EVENT_GFX_QUINTY_PLUMP] =             &gObjectEventGraphicsInfo_QuintyPlump,
-    [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
+    [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_DccGuard,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
     [OBJ_EVENT_GFX_GIRL_1] =                   &gObjectEventGraphicsInfo_Girl1,
@@ -263,14 +270,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BOY_3] =                    &gObjectEventGraphicsInfo_Boy3,
     [OBJ_EVENT_GFX_GIRL_3] =                   &gObjectEventGraphicsInfo_Girl3,
     [OBJ_EVENT_GFX_RICH_BOY] =                 &gObjectEventGraphicsInfo_RichBoy,
-    [OBJ_EVENT_GFX_WOMAN_1] =                  &gObjectEventGraphicsInfo_Woman1,
+    [OBJ_EVENT_GFX_WOMAN_1] =                  &gObjectEventGraphicsInfo_DccMara,
     [OBJ_EVENT_GFX_FAT_MAN] =                  &gObjectEventGraphicsInfo_FatMan,
     [OBJ_EVENT_GFX_POKEFAN_F] =                &gObjectEventGraphicsInfo_PokefanF,
-    [OBJ_EVENT_GFX_MAN_1] =                    &gObjectEventGraphicsInfo_Man1,
+    [OBJ_EVENT_GFX_MAN_1] =                    &gObjectEventGraphicsInfo_DccScuttler,
     [OBJ_EVENT_GFX_WOMAN_2] =                  &gObjectEventGraphicsInfo_Woman2,
-    [OBJ_EVENT_GFX_EXPERT_M] =                 &gObjectEventGraphicsInfo_ExpertM,
+    [OBJ_EVENT_GFX_EXPERT_M] =                 &gObjectEventGraphicsInfo_DccGuide,
     [OBJ_EVENT_GFX_EXPERT_F] =                 &gObjectEventGraphicsInfo_ExpertF,
-    [OBJ_EVENT_GFX_MAN_2] =                    &gObjectEventGraphicsInfo_Man2,
+    [OBJ_EVENT_GFX_MAN_2] =                    &gObjectEventGraphicsInfo_DccLev,
     [OBJ_EVENT_GFX_WOMAN_3] =                  &gObjectEventGraphicsInfo_Woman3,
     [OBJ_EVENT_GFX_POKEFAN_M] =                &gObjectEventGraphicsInfo_PokefanM,
     [OBJ_EVENT_GFX_WOMAN_4] =                  &gObjectEventGraphicsInfo_Woman4,
@@ -280,7 +287,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OLD_WOMAN] =                &gObjectEventGraphicsInfo_OldWoman,
     [OBJ_EVENT_GFX_CAMPER] =                   &gObjectEventGraphicsInfo_Camper,
     [OBJ_EVENT_GFX_PICNICKER] =                &gObjectEventGraphicsInfo_Picnicker,
-    [OBJ_EVENT_GFX_MAN_3] =                    &gObjectEventGraphicsInfo_Man3,
+    [OBJ_EVENT_GFX_MAN_3] =                    &gObjectEventGraphicsInfo_DccHowler,
     [OBJ_EVENT_GFX_WOMAN_5] =                  &gObjectEventGraphicsInfo_Woman5,
     [OBJ_EVENT_GFX_YOUNGSTER] =                &gObjectEventGraphicsInfo_Youngster,
     [OBJ_EVENT_GFX_BUG_CATCHER] =              &gObjectEventGraphicsInfo_BugCatcher,
@@ -302,7 +309,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F] =     &gObjectEventGraphicsInfo_RunningTriathleteF,
     [OBJ_EVENT_GFX_TUBER_F] =                  &gObjectEventGraphicsInfo_TuberF,
     [OBJ_EVENT_GFX_TUBER_M] =                  &gObjectEventGraphicsInfo_TuberM,
-    [OBJ_EVENT_GFX_HIKER] =                    &gObjectEventGraphicsInfo_Hiker,
+    [OBJ_EVENT_GFX_HIKER] =                    &gObjectEventGraphicsInfo_DccWarden,
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M] =     &gObjectEventGraphicsInfo_CyclingTriathleteM,
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F] =     &gObjectEventGraphicsInfo_CyclingTriathleteF,
     [OBJ_EVENT_GFX_NURSE] =                    &gObjectEventGraphicsInfo_Nurse,

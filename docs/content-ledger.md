@@ -225,3 +225,67 @@ move animations and review NPC remain S02 placeholders, explicitly not final art
 S01 isolated357-assertion acceptance PASS across18 production sessions; both boss
 strategies, local defeat/cold retry, stairs/cold completion pass. [Evidence](evidence/s01/README.md).
 S01 integration pending; S02 visual replacement remains next.
+
+## S02 original asset provenance (in progress)
+
+Non-protagonist assets: Codex-authored indexed geometry in scripts/content/slice_art.py,
+2026-10-06; no external illustrations traced. Protagonist assets now use the
+user-approved generated references and native conversion/cleanup documented below.
+Files live under graphics/dcc and data/tilesets/secondary/dcc.
+Carl has bare torso/feet and heart shorts; Donut is a long-haired cat with a small
+collar, no later-book costume/class implied. Enemy silhouettes are original
+tutorial adaptations, not claims about canonical Book1 enemies. All seven use
+16-color64x64 front/back and two-frame32x32 icons; static duplicate animation
+frames retain engine timing. Carl battle-intro repeats one approved back pose in four engine frames.
+Donut stands in the landing/review scenes; following movement remains deferred.
+New item icons cover wrap/scrap/tag/charge and shared medicine silhouette.
+Dungeon metatile art is original; behavior attributes derive from pinned upstream
+Cave to preserve movement. Rugs mark rest/review spaces; amber stripes mark boss
+lanes; wall lamps and debris add occupancy. No changed warp/collision semantics.
+
+Additional original assets: guide, Mara and Lev stationary overworld sprites;
+visible scuttler/guard/howler/warden tokens; title lettering/portal and battle
+arena. Existing fixed graphics IDs are reused in the authored maps, without
+expanding save/object structures. Human NPCs and enemy tokens are intentionally
+stationary; only Carl needs directional walking. All share the original prop
+palette to stay within existing palette slots.
+
+Remaining placeholders: upstream copyright/boot sequence, press-start glyphs,
+ball send-out effects and summary ball marker, music/sound/attack animations,
+menu frame/bag/summary backgrounds and baked labels (e.g. trainer memo/ribbon).
+These are inherited assets, not original work. Summary lore still uses engine
+nature/ability/type terminology; no class/race story claim. No contest page or
+collection action is reachable. Title copyright credit is retained as provenance.
+S02 is not accepted until real captures and relevant runtime checks are archived.
+
+S02 visual review fixes: title tile0 transparency regression; removed clipped
+redundant summary heading; light Carl anatomy/shading and layered Donut fur;
+arena floor now uses stone seams rather than elliptical pads. This remains
+simple original prototype art with stationary NPCs and duplicate animation
+frames. Do not call it finished/polished merely because provenance is original.
+
+
+### Approved replacement protagonist art (2026-10-06)
+
+The user rejected the first geometric prototype and approved the improved native
+battle appearance, with matching exploration required. Source images, prompts,
+hashes and conversion provenance are in docs/art-references (asset-only PR28).
+Battle masters are the validated 64×64 candidates; front animation and trainer
+intro frames intentionally duplicate static poses. Menu icons derive from native
+fronts at 32×32. Each protagonist has its own 15-color opaque palette plus index0
+transparency. Enemies keep shared icon slot0; Carl/Donut use slots1/2.
+
+Exploration uses scripts/content/masters indexed text, manually cleaned after
+reference normalization. Carl has nine 16×32 frames with consistent head/torso
+anchors and alternating contacts; right mirrors left. Donut has three 16×16
+standing directions, with back-paw margin restored. No follower is introduced.
+Donut's palette tag0x1124 loads into the existing NPC1 slot on dungeon map init;
+authored map NPCs use the special slot, so no new hardware palette bank is added.
+The palette change and all four movement directions require real runtime review.
+Old generators delegate to protagonist_art.py and cannot overwrite replacements.
+Battle-only ae32d3f passed182 checks; exploration integration pending its own run.
+
+Runtime caught paletteSlot truncation: the upstream field is four bits, so +16
+never selected its legacy patch branch. The fix loads Donut on dungeon palette
+initialization and resolves the tag consistently for reloads. Hardware-palette
+assertions now cover field, menu return, battle return and cold reload.

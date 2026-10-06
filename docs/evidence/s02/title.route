@@ -1,0 +1,5 @@
+step 720 0 -
+step 1 8 -
+step 1500 0 title-final.ppm
+flag 32 0
+quit

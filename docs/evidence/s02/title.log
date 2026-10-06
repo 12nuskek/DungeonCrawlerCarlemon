@@ -1,0 +1,31 @@
+mGBA 0.10.5; 240x160; save=../title.sav; read-only RAM diagnostics
+frame=720 map=0.0 pos=-7,-7 flags=0
+party=0 HP=0/0,0/0 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=0,0 status=0,0
+growth level/xp/item=0/0/0,0/0/0 stats maxHP/attack,maxHP/magic=0/0,0/0 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=0,0 / 0,0
+frame=721 map=0.0 pos=-7,-7 flags=0
+party=0 HP=0/0,0/0 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=0,0 status=0,0
+growth level/xp/item=0/0/0,0/0/0 stats maxHP/attack,maxHP/magic=0/0,0/0 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=0,0 / 0,0
+frame=2221 map=0.0 pos=-7,-7 flags=0
+party=0 HP=0/0,0/0 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=0,0 status=0,0
+growth level/xp/item=0/0/0,0/0/0 stats maxHP/attack,maxHP/magic=0/0,0/0 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=0,0 / 0,0
+frame=2221 map=0.0 pos=-7,-7 flags=0
+party=0 HP=0/0,0/0 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=0,0 status=0,0
+growth level/xp/item=0/0/0,0/0/0 stats maxHP/attack,maxHP/magic=0/0,0/0 foesHP=0,0
+PASS flag 32 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=0,0 / 0,0
+result=0 assertions=1

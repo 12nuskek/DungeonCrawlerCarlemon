@@ -644,3 +644,225 @@ Implemented/compiled/runtime verified PASS; issue24 PR/integration pending.
 Shell healthy after context resume; source/evidence preserved, no duplicate run.
 Next push evidence, draft/merge verified S01; continue S02 original art/UI, thenS03.
 Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.
+
+## S01 integrated / S02 active — 2026-10-06
+
+PR25 merged `abf9875af2ffead2a342b8a5835c1e3dff157ec0`; issue24 closed.
+Evidence `8e34180de438a291067fdb2ec8d8bb08d3ec316d`; issue/PR include actual images
+and actual merge metadata. Main reconciled. S02 issue26 branch
+`task/s02-original-presentation` uses that merge as base. Sole writer healthy.
+
+Original geometry generator scripts/content/slice_art.py produces seven indexed
+battle/icon sets (Carl, Donut, scuttler, grub, guard, howler, warden), Carl trainer
+back pose, item silhouettes, crate and Donut exploration sprite. Dedicated Dcc
+secondary tileset preserves used behavior/collision bits, adds stone walls, lamps,
+rugs/route stripes/debris to distinguish rooms. Original assets use16 colors.
+Crawler summary labels and planned flag-derived Journal implemented; contest
+summary page inaccessible. Shared internal species names retained in code.
+
+Incremental compilation PASS. Authoring errors fixed: overly broad text substitution
+changed BERRIES_POCKET (restricted to intended text); new icon extern declarations
+added; Pillow lookup extended to256 slots. No repeated unresolved blocker.
+Exploratory fresh setup32 PASS; actual room/first battle captures show original
+art. Old R02 trial replay stops at its exact foe HP14 expectation (now7 after
+a critical hit); no combat rules changed. New object/presentation timing can shift
+RNG. Do not claim old damage golden routes pass. Next update S02 replay against
+actual input outcomes, inspect Journal/Donut/menus/palettes, finish remaining
+presentation audit, then isolated committed build/runtime and scoped PR.
+S02 implemented partial, compiled PASS, runtime partial, merged NO. S03 pending.
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no new scheduler/writer.
+
+## S02 presentation/runtime checkpoint — 2026-10-06
+
+Checkpoint source `5963c8fdd3f719fb207760230e913e286e79aafb` pushed; continued
+original NPCs/visible enemy tokens, title/portal, battle arena and medicine UI
+corrections. New object art reuses fixed8-bit IDs without increasing the table or
+save format; shared16-color prop/NPC palette. Asset validation checks49 indexed
+PNGs, seven sprite dimension contracts, battle/title tile budgets and all used
+metatile behavior matches. Collision/elevation bits match S01 on all12 binaries.
+
+Exploratory updated trial31, cold/re-entry/recovery34 and gates17 PASS; earlier
+fresh setup32 and UI13 PASS. UI proves Journal objective/rules/recovery/optional
+text and return to movement, summary page boundary, inventory/crawler selection.
+Actual screenshot review found and corrected title clipping/tiled blank background,
+medicine labels, and missing wall lamps. Original NPCs/encounter sprites render
+with the intended shared palette. New damage golden after timing changes: trial
+CarlHP22 after victory, resource4/40; Donut0/38, healed28. No combat-rule change.
+Prepared S01 strategy was offense-focused with WEAKEN after SPARK exhaustion,
+not attacks-only. Parent independently audited S01 without blocker. S03 retains
+decline-to-ending, all-actions-exhausted and individual encounter loss coverage.
+
+Next exact action: commit final S02 source/routes, run isolated test-s02.sh, review
+and archive final actual captures and original asset provenance; draft PR26 issue
+link (actual PR number TBD), integrate only on relevant PASS. S03 fresh full route
+regression remains separate. No new writer/scheduler; no unresolved blocker.
+
+## S02 first isolated pass and visual fixes — 2026-10-06
+
+Source `5fd9217c639afcc306246dded0e77aeda55f3de4` isolated build/runtime PASS128
+assertions/6 production sessions in artifacts/s02/run-a7awMe;6 empty errors.
+ROM `bc365b37a91326792fea400a4297a68cc5197f5a936e89970d577ca0b5f90e67`.
+Reviewed29 selected captures. Do NOT treat this as final S02 acceptance: rendered
+review found title horizontal repeats (affine blank tile0 contained the first
+letter's bottom row) and clipped summary heading. Moved lettering clear of tile0,
+added a regression assertion, removed the redundant heading; actual title retest
+is clean. Also added small Carl shading/Donut fur detail, removed oval arena pads,
+and corrected remaining give-item/technique labels. These are presentation fixes,
+not combat balance changes. Final isolated rerun required.
+
+Current actual preview pushed `72fc11a1523f4e6dfb5425c83b461179a961d062` under
+docs/evidence/s02-preview-current (5 PNGs from5fd9217, clear WIP limitations).
+Earlier preview evidence-only branch evidence/s02-wip-5963c8f points to
+`d33e73f1aeec30fb55056b1efb3eb7c271cafdc9`; no implementation writer there.
+Issue26 prominently links current screenshots for parent's Pics delivery.
+Parent rough-art feedback retained: original geometry is still simple prototype
+art; readability is verified separately from polish. Remaining inherited menus,
+animations/audio/boot credits explicitly listed. No claim of finished visuals.
+
+Trial replay retains actual action-resource, win/XP/reward/item/save assertions;
+it does not reuse outdated frame/damage goldens blindly. In the new input route
+the first foe falls earlier, so XP/menu advance differs; we recorded actual new
+turn/resource phases and retained precise final HP/PP checks. Presentation/object
+changes can shift replay RNG timing; no battle stats/move rules changed in S02.
+Full branch coverage belongs to S03. Next final source commit/run, archive andPR.
+
+## S02 visual acceptance blocked by user — 2026-10-06
+
+User reaction through parent: “Omg these sprites are not good haha”. Treat current
+protagonist quality as FAILED visual acceptance; do not merge S02 or begin dependent
+S03. Parent is preparing an asset-only replacement package outside this repo; this
+remains the sole repository writer/integrator. Exact dimensions, frames, palette
+wiring and destinations: docs/s02-art-handoff.md. Stronger silhouettes, natural
+poses and deliberate pixel shading required; original geometry was insufficient.
+
+Latest source `a242983b6f6d061dd2c5bd4916c34f8b1fd10266`, isolated128 assertions/6
+processes PASS in artifacts/s02/run-0dHXqs,6 empty errors. ROM SHA256
+`26ef6bff3466499592b994de02293efe338362b79fb9da69a55039206ad0b921`.
+31 actual final captures reviewed; title tile0 fix and summary heading fix verified.
+Implemented/compiled/runtime PASS for current scope; visual acceptance FAIL;
+merged NO. Existing preview72fc11a source5fd9217 was delivered by parent09:03.
+
+Exact next action: receive external art package/reference, inspect dimensions and
+palettes, integrate as sole writer, prevent generators overwriting replacements,
+compile and capture actual updated duo/summary/overworld, seek requested visual
+review before treating S02 art accepted. Independent title/menu verification may
+continue. No new scheduler, no duplicate Cloud task. Task ID remains
+01a10f4b-596b-700b-b8ba-241e3ca2c000. S03 and Stage6 stay gated.
+
+## Reference delivery blocked / independent menu correction — 2026-10-06
+
+Parent supplied exact generated reference LibraryID
+libfile_bdf91f97ea7c8191a3d196d5fc3890cd, file_00000000fcac82308d3f54afcdedaa6d,
+expected SHA2564c713bb73c041af17a4daf9568087fc911f63daba617c184b68e0744b51619aa.
+Read current Library skill/materialization instructions and fetched current helper.
+prepare_materialize resolved it, but initial supported transfer and one fresh-
+preparation retry both returned “library file transfer failed: download failed”,
+exit1. Destination artifacts/s02/art-reference/...png does not exist. No pixel
+inspection/conversion performed, no parent path assumption, no private credential
+access/guessed URLs. Issue26 reports exact consumer-local blocker. Await working
+authorized asset transfer; no further blind retry.
+
+On isolated productiona242983, independent D02 materials16/craft13/blast17 pass
+46 assertions/3 empty errors. Completed-quest Journal line visibly overflowed;
+shortened it to “Two scrap make one charge.” Incremental8 checks then pass with
+read-only flags/status/resources and control return. Input movement corrected
+from20 to12 frames because the player was already facing left (not a control bug).
+Current test-s02.sh includes182 checks/10 processes; expanded isolated rerun is
+pending replacement art. Archived128-check evidence is explicit VISUAL FAIL.
+
+Next: obtain readable asset bytes through parent, inspect actual1254x1254 reference
+(SHA above), preserve generated-reference provenance and author native indexed
+masters rather than blindly downscaling; integrate/wire palettes as sole writer,
+run182 suite and actual visual review. S02 draft/review state remains blocked,
+no merge and no dependent S03. Current Cloud task ID unchanged.
+
+User approved replacement reference style and explicitly requires it outside combat
+as well. S02 acceptance includes new9-frame16x32 Carl walking and3-frame16x16
+Donut standing, four-direction/walk/interaction/overlap/palette checks and actual
+overworld+battle captures. This is not optional later polish. Existing reference
+transfer blocker remains: no readable bytes in this consumer environment.
+
+## S02 reviewable blocked checkpoint — 2026-10-06
+
+Draft PR27 opened: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/27
+Do not ready/merge until replacement protagonist art passes actual visual review.
+Issue26 remains open with exact Library transfer failure, art contract, previews
+and active task reference. Source39e9749 committed Journal retest8 PASS, empty
+errors, fixed text capture reviewed; archived in docs/evidence/s02-menu.
+No running build/test remains. Repository writer is paused on unavailable asset
+bytes; parent has approved reference direction and both combat/exploration scope.
+
+Resume this Cloud task after working asset delivery. Inspect downloaded file and
+verify expected hash before any pixel-dependent conversion. Then author coherent
+native battle/overworld masters, preserve generator ownership/palettes, run current
+182-check isolated suite and requested actual character-art review. S03 and
+improvement cycles have not started; Stage6 remains excluded. No scheduler added.
+
+### S02 replacement battle integration — 2026-10-06
+
+Asset transport is resolved: PR #28 merged into the S02 task branch at
+63678ec4cd127b14e863940f8125040c6aaaa15b; main remains abf9875.
+Approved reference/native candidate checksums and deterministic conversion passed.
+The battle masters now replace rejected prototype art, including trainer intro,
+front/back, two static animation frames and derived menu icons. Carl/Donut use
+separate battle/icon palettes (icon slots 1/2; enemies retain 0). Unreachable
+upstream species sharing those icon slots are outside the fixed-roster slice.
+Generator ownership prevents the slice generator overwriting battle replacements.
+Implemented; asset contracts passed; compilation/runtime pending for this commit.
+Exploration replacement is still in progress and remains S02 acceptance work.
+Next: compile committed snapshot and publish a real battle capture promptly, then
+finish native exploration frames and complete the 182-check S02 run plus movement
+checks. PR #27 remains draft; issue #26 open; no new scheduler/writer.
+Cloud task: 01a10f4b-596b-700b-b8ba-241e3ca2c000.
+
+### S02 matching exploration integration — 2026-10-06
+
+Battle preview ae32d3ff5497a117e1411195dc678192ab134a1f built clean and passed
+182 assertions / ten production mGBA sessions / ten empty error logs in
+artifacts/s02/run-5uuRHD. Actual battle PNG/log pushed in fe35ec5 and embedded in
+issue26/PR27. User approved improved native battle candidate appearance separately.
+
+Matching exploration masters now implemented: nine Carl frames; three stationary
+Donut directions; independent existing-slot palette. Native margin/packing/palette
+checks pass and all asset generators reproduce replacements without other diffs.
+Added four-direction actual walking captures to S02 runner (now189 assertions in
+11 processes). Compilation/runtime for this exploration commit pending. Next run
+this committed snapshot; inspect captures before claiming visual acceptance.
+
+### S02 runtime defect — Donut field palette
+
+Tested a2de128 (artifacts/s02/run-BAptkr): clean build,189 assertions/11 sessions
+passed with empty errors, but actual landing capture showed incorrect pink/blue
+Donut colors. Visual acceptance FAILED despite passing behavioral checks.
+Root cause: ObjectEventGraphicsInfo.paletteSlot is a four-bit field; +16 is
+truncated and cannot reach the legacy >=16 palette-load path. First corrective
+approach now reserves existing NPC1 palette during dungeon map initialization
+and returns the same tag for palette reload consumers. No save-layout change.
+Added ten hardware-palette assertions across map load, UI/battle return, cold
+reload and movement (199 total in11 sessions). Full corrected runtime pending.
+
+
+### S02 verified replacement presentation — 2026-10-06
+
+Base abf9875af2ffead2a342b8a5835c1e3dff157ec0; tested source
+c9062dabb81341bf0525eead8d89ea7ba62043f5; branch task/s02-original-presentation.
+`scripts/test-s02.sh` isolated run artifacts/s02/run-3cmBS6 completed199 assertions
+across11 production mGBA0.10.5 sessions,11 empty errors. ROM SHA256
+7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Full logs, routes, corrected world/battle/UI images and hardware-palette failure
+comparison archived in docs/evidence/s02 (106-file manifest). Reviewed35 selected
+scene images plus all four-direction contact/idle captures. Palette defect fixed
+on first corrective approach; old ROM reproduced the new color assertion failure.
+All12 map collision/elevation fields match S01; no combat/save-layout changes.
+
+Implemented YES; clean compiled YES; scoped runtime/visual verified YES; merged
+pending PR27. Diff reviewed for generator ownership, palette scope, Journal
+read-only behavior, capture/storage exposure, save changes and generated artifacts.
+Python cache accidentally added in ad4cc41 was removed in a2de128 and is now ignored;
+no ROM/save/executable exists in the tracked tree. Static animation/remaining
+inherited UI/audio assets are listed in content-ledger, not called finished art.
+
+Next: integrate scoped PR27 when protections permit, close issue26, record merge;
+then S03 full fresh-save/alternate-boss/defeat/reward/quest/capacity regression with
+review package. No Stage6 work or new scheduler. Cloud task remains
+01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.

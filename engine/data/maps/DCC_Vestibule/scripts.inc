@@ -144,3 +144,78 @@ DCC_Vestibule_Text_WorkshopLocked:
 DCC_Vestibule_Text_WorkshopFull:
 	.string "Two pieces of SCRAP will not fit.\n"
 	.string "Make room and try this box again.$"
+
+DCC_Donut_Talk::
+	lock
+	faceplayer
+	msgbox DCC_Donut_Text, MSGBOX_DEFAULT
+	release
+	end
+DCC_Donut_Text:
+	.string "DONUT: This room has no cushions.\n"
+	.string "I intend to mention that in my review.\p"
+	.string "CARL: Let's survive the stairs first.$"
+
+DCC_Journal::
+	lockall
+	goto_if_set FLAG_DCC_SLICE_COMPLETE, DCC_Journal_Done
+	goto_if_set FLAG_DCC_BOSS_CLEARED, DCC_Journal_Stairs
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_TRIAL, DCC_Journal_Trial
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_GUARD, DCC_Journal_Patrols
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_HOWLER, DCC_Journal_Patrols
+	msgbox DCC_Journal_Text_Boss, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_Trial:
+	msgbox DCC_Journal_Text_Trial, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_Patrols:
+	msgbox DCC_Journal_Text_Patrols, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_Stairs:
+	msgbox DCC_Journal_Text_Stairs, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_Done:
+	msgbox DCC_Journal_Text_Done, MSGBOX_DEFAULT
+DCC_Journal_Rules:
+	msgbox DCC_Journal_Text_Rules, MSGBOX_DEFAULT
+	goto_if_set FLAG_DCC_QUEST_COMPLETE, DCC_Journal_QuestDone
+	goto_if_set FLAG_DCC_QUEST_ACCEPTED, DCC_Journal_QuestActive
+	msgbox DCC_Journal_Text_Optional, MSGBOX_DEFAULT
+	goto DCC_Journal_Close
+DCC_Journal_QuestDone:
+	msgbox DCC_Journal_Text_QuestDone, MSGBOX_DEFAULT
+	goto DCC_Journal_Close
+DCC_Journal_QuestActive:
+	msgbox DCC_Journal_Text_QuestActive, MSGBOX_DEFAULT
+DCC_Journal_Close:
+	releaseall
+	end
+DCC_Journal_Text_Trial:
+	.string "OBJECTIVE: Reach the quiet landing.\n"
+	.string "Rest with the guide, then try the trial.$"
+DCC_Journal_Text_Patrols:
+	.string "OBJECTIVE: Clear both gauntlet patrols.\n"
+	.string "Go through the service room's south exit.$"
+DCC_Journal_Text_Boss:
+	.string "OBJECTIVE: Defeat the gate warden.\n"
+	.string "BRACE or WEAKEN answers its windup.$"
+DCC_Journal_Text_Stairs:
+	.string "OBJECTIVE: Examine the gate's northeast\n"
+	.string "stairs. You can return after finishing.$"
+DCC_Journal_Text_Done:
+	.string "SLICE COMPLETE: The next floor waits.\n"
+	.string "Explore, save, or return for a review.$"
+DCC_Journal_Text_Rules:
+	.string "RULE: Cleared encounters stay cleared.\n"
+	.string "The guide restores health and actions.\p"
+	.string "Defeat recovers you nearby for free.\n"
+	.string "Save outside battle with START, SAVE.$"
+DCC_Journal_Text_Optional:
+	.string "OPTIONAL: Mara has a job in the service\n"
+	.string "room. Neither it nor the trap is required.$"
+DCC_Journal_Text_QuestActive:
+	.string "MARA: Find her route tag in the northeast\n"
+	.string "service crate. Return it for spare scrap.$"
+DCC_Journal_Text_QuestDone:
+	.string "MARA: Route tag returned. Job complete.\n"
+	.string "Two scrap make one charge.$"

@@ -1,0 +1,116 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 11 7 3
+flag 36 1
+flag 37 1
+flag 38 1
+flag 39 1
+item 13 1
+item 378 2
+roster 22 28 4 0 0 0
+uses 4 40 0 38
+growth 9 495 0 9 805 0
+step 1 1 -
+step 400 0 workshop-cold-repeat.ppm
+item 378 2
+flag 39 1
+step 1 2 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+step 20 16 -
+step 180 0 entrance-reentry.ppm
+expect 34 0 12 4 3
+step 68 128 -
+step 40 0 -
+step 36 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 0 10 8 3
+step 1 1 -
+step 400 0 supply-cold-repeat.ppm
+item 13 1
+flag 38 1
+step 1 2 -
+step 120 0 -
+step 100 32 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+expect 34 0 4 6 3
+step 1 1 -
+step 400 0 reader-cold-repeat.ppm
+flag 36 1
+item 13 1
+step 1 2 -
+step 120 0 -
+step 36 128 -
+step 40 0 -
+step 132 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 landing-reentry.ppm
+expect 34 1 12 4 3
+step 20 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+expect 34 1 11 7 3
+step 1 1 -
+step 400 0 workshop-reentry-repeat.ppm
+flag 39 1
+item 378 2
+step 1 2 -
+step 120 0 -
+step 116 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 1 4 7 3
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 reward-safe-rest.ppm
+roster 33 28 8 2 0 0
+uses 8 40 2 40
+item 13 1
+item 378 2
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 reentry-saved.ppm
+flag 36 1
+flag 37 1
+flag 38 1
+flag 39 1
+item 13 1
+item 378 2
+color 2 1 4196
+color 2 8 21375
+quit

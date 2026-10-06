@@ -1,0 +1,40 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+expect 34 2 8 6 1
+flag 43 1
+flag 46 1
+roster 30 26 8 2 64 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 quest-objective.ppm
+step 1 1 -
+step 400 0 quest-rule.ppm
+step 1 1 -
+step 400 0 quest-recovery.ppm
+step 1 1 -
+step 400 0 quest-complete.ppm
+step 1 1 -
+step 120 0 -
+flag 43 1
+flag 46 1
+roster 30 26 8 2 64 0
+step 12 32 -
+step 40 0 moved.ppm
+expect 34 2 7 6 1
+quit

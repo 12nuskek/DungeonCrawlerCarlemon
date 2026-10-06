@@ -1,0 +1,1477 @@
+mGBA 0.10.5; 240x160; save=../playtest.sav; read-only RAM diagnostics
+frame=720 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=721 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1081 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1082 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1262 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1263 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1443 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1444 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2072 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2112 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2132 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2172 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2173 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=855 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2573 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=855 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2574 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=855 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2974 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=855 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2975 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,0
+pattern trainer=855 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=3875 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=3876 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4476 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4477 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5078 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5198 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5199 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5259 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5260 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5380 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5381 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5501 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,1 trial=0 donut-ability=0
+persistent PP=8,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 1,40
+frame=5502 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,1 trial=0 donut-ability=0
+persistent PP=8,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=24,25
+pattern trainer=855 turn=0 foePP=35,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 1,40
+frame=6502 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6503 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6563 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6564 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6624 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6625 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6685 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6686 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6746 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6747 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,17/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=7,21
+pattern trainer=855 turn=1 foePP=34,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=7747 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7748 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7808 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7809 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7869 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7870 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7930 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7931 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=8/399/0,8/709/0 stats maxHP/attack,maxHP/magic=30/20,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8051 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8052 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8232 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8233 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8293 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8294 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8354 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8355 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/419/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=9355 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=9356 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,17/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,8/709/0 stats maxHP/attack,maxHP/magic=33/23,26/13 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=9756 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=9757 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10157 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10158 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10558 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10559 map=34.1 pos=9,5 flags=3
+party=2 HP=28/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/729/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=1 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10959 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=10960 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=11360 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=11361 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=11761 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=11762 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12162 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12163 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12563 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12564 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12964 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=12965 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=13365 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=13365 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+PASS growth 9 450 0 9 760 0
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=13365 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+PASS uses 6 40 0 40
+frame=13366 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=13426 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=13427 map=34.1 pos=9,5 flags=3
+party=2 HP=25/33,19/28 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,17
+pattern trainer=855 turn=2 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=15227 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15227 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+PASS battle 1 4 0 5 0 0 0
+frame=15227 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+PASS uses 5 40 0 39
+frame=15228 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15348 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15349 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15469 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15470 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15590 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15591 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15711 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=15712 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,5
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=17512 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=17513 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=17913 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=17914 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/450/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=18314 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=18315 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/760/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=18715 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=18716 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19116 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19117 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19517 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19518 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=1 battlers=4 outcome=1 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19918 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=19919 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=20319 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=20320 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=20720 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=20721 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21121 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21122 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS battle 0 4 1 4 0 1 0
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS growth 9 495 0 9 805 0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS uses 4 40 0 38
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 37 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21522 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS expect 34 1 9 5 3
+frame=21523 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21643 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=21644 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22044 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22044 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 37 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22044 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS growth 9 495 0 9 805 0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22045 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22165 map=34.1 pos=9,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22201 map=34.1 pos=11,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22241 map=34.1 pos=11,5 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22277 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22317 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22317 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS expect 34 1 11 7 3
+frame=22318 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22718 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22718 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 39 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22718 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 378 2
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22718 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 13 2
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22719 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22839 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=22840 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23240 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23240 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 39 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23240 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 378 2
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23241 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23361 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23362 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23482 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23483 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23503 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23504 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23684 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23685 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23805 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23806 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23986 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=23987 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24027 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,19/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24028 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24428 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24428 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+PASS roster 22 28 4 0 0 0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24428 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS uses 4 40 0 38
+frame=24428 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 13 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24428 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 378 2
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24429 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24609 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24610 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24730 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24731 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24911 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=24912 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25212 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25212 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 13 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25212 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+PASS roster 22 28 4 0 0 0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25213 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25393 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25394 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25574 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25575 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25755 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25756 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25936 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=25936 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS expect 34 1 11 7 3
+frame=25937 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26057 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26058 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26078 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26079 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26239 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26240 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26420 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=26421 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27021 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27022 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 36 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 37 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 38 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS flag 39 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 13 1
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS item 378 2
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+PASS growth 9 495 0 9 805 0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS color 2 1 4196
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS color 2 8 21375
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+result=0 assertions=33

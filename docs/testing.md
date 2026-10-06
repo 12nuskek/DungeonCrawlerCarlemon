@@ -215,3 +215,18 @@ At tested revision `2e8de08292a8a4fe380fda06accdb2b97c798401`, run
 across18 processes use the production ROM. Prepared/unprepared strategy and
 defeat branches copy normal manual flash saves, never injected game state.
 [Full logs,30 actual screenshots and route details](evidence/s01/README.md).
+
+## S02 presentation checks
+
+`bash scripts/test-s02.sh` at c9062dabb81341bf0525eead8d89ea7ba62043f5 passes
+199 assertions across11 production mGBA processes, with11 empty error logs.
+[Evidence](evidence/s02/README.md) records the ROM identity, full logs, route inputs,
+actual captures and before/after palette regression. Includes fresh UI/reward
+checks, battle/medicine/recovery, four-direction walking and menu crafting/Journal.
+Ten hardware-palette assertions detect Donut color loss after map/menu/battle/
+reload transitions. Python3/Pillow validates native palettes, packing and budgets.
+
+The rejected initial sprites are replaced with the approved native battle look
+and matching exploration art. Current captures were visually reviewed; source
+provenance and inherited placeholders remain explicit in the content ledger.
+S03 full completion/alternate strategy/defeat regression remains the next gate.

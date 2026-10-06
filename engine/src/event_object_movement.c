@@ -468,6 +468,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+#define OBJ_EVENT_PAL_TAG_DCC_DONUT               0x1124
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -514,6 +515,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
+    {gObjectEventPal_DccDonut,              OBJ_EVENT_PAL_TAG_DCC_DONUT},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
@@ -2539,12 +2541,19 @@ void InitObjectEventPalettes(u8 reflectionType)
     {
         PatchObjectPaletteRange(sObjectPaletteTagSets[sCurrentReflectionType], PALSLOT_PLAYER, PALSLOT_NPC_4_REFLECTION + 1);
     }
+    // Dungeon NPCs use the special slot; reserve the existing NPC1 slot for Donut.
+    // paletteSlot is four bits, so the legacy >=16 patch path cannot select it.
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+        PatchObjectPalette(OBJ_EVENT_PAL_TAG_DCC_DONUT, PALSLOT_NPC_1);
 }
 
 u16 GetObjectPaletteTag(u8 palSlot)
 {
     u8 i;
 
+    if (palSlot == PALSLOT_NPC_1
+        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+        return OBJ_EVENT_PAL_TAG_DCC_DONUT;
     if (palSlot < PALSLOT_NPC_SPECIAL)
         return sObjectPaletteTagSets[sCurrentReflectionType][palSlot];
 

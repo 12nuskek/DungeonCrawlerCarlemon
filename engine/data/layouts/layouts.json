@@ -4417,7 +4417,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Entrance/map.bin"
     },
@@ -4427,7 +4427,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Vestibule/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Vestibule/map.bin"
     },
@@ -4437,7 +4437,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Service/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Service/map.bin"
     },
@@ -4447,7 +4447,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Corridor/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Corridor/map.bin"
     },
@@ -4457,7 +4457,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Boss/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Boss/map.bin"
     },
@@ -4467,7 +4467,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Exit/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Exit/map.bin"
     }

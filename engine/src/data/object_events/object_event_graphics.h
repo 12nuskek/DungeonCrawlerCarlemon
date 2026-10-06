@@ -166,7 +166,7 @@ const u32 gObjectEventPic_Maxie[] = INCGFX_U32("graphics/object_events/pics/peop
 const u32 gObjectEventPic_Kyogre[] = INCGFX_U32("graphics/object_events/pics/pokemon/kyogre.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u32 gObjectEventPic_Groudon[] = INCGFX_U32("graphics/object_events/pics/pokemon/groudon.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u32 gObjectEventPic_Regi[] = INCGFX_U32("graphics/object_events/pics/pokemon/regi.png", ".4bpp");
-const u32 gObjectEventPic_Skitty[] = INCGFX_U32("graphics/object_events/pics/pokemon/skitty.png", ".4bpp", "-mwidth 2 -mheight 2");
+const u32 gObjectEventPic_Skitty[] = INCGFX_U32("graphics/dcc/donut/overworld.png", ".4bpp", "-mwidth 2 -mheight 2");
 const u32 gObjectEventPic_Kecleon[] = INCGFX_U32("graphics/object_events/pics/pokemon/kecleon.png", ".4bpp", "-mwidth 2 -mheight 2");
 const u32 gObjectEventPic_Rayquaza[] = INCGFX_U32("graphics/object_events/pics/pokemon/rayquaza.png", ".4bpp", "-mwidth 8 -mheight 8");
 const u32 gObjectEventPic_RayquazaStill[] = INCGFX_U32("graphics/object_events/pics/pokemon/rayquaza_still.png", ".4bpp");
@@ -338,8 +338,8 @@ const u32 gObjectEventPic_Kirlia[] = INCGFX_U32("graphics/object_events/pics/pok
 const u32 gObjectEventPic_Dusclops[] = INCGFX_U32("graphics/object_events/pics/pokemon/dusclops.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_MysteryEventDeliveryman[] = INCGFX_U32("graphics/object_events/pics/people/mystery_event_deliveryman.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_UnionRoomAttendant[] = INCGFX_U32("graphics/object_events/pics/people/union_room_attendant.png", ".4bpp", "-mwidth 2 -mheight 4");
-const u32 gObjectEventPic_MovingBox[] = INCGFX_U32("graphics/object_events/pics/misc/moving_box.png", ".4bpp");
-const u16 gObjectEventPal_MovingBox[] = INCGFX_U16("graphics/object_events/palettes/moving_box.pal", ".gbapal");
+const u32 gObjectEventPic_MovingBox[] = INCGFX_U32("graphics/dcc/crate.png", ".4bpp");
+const u16 gObjectEventPal_MovingBox[] = INCGFX_U16("graphics/dcc/shared.pal", ".gbapal");
 const u32 gObjectEventPic_Sudowoodo[] = INCGFX_U32("graphics/object_events/pics/pokemon/sudowoodo.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Mew[] = INCGFX_U32("graphics/object_events/pics/pokemon/mew.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_RedLeaf[] = INCGFX_U16("graphics/object_events/palettes/red_leaf.pal", ".gbapal");
@@ -360,3 +360,19 @@ const u32 gObjectEventPic_Lugia[] = INCGFX_U32("graphics/object_events/pics/poke
 const u16 gObjectEventPal_Lugia[] = INCGFX_U16("graphics/object_events/palettes/lugia.pal", ".gbapal");
 const u32 gObjectEventPic_HoOh[] = INCGFX_U32("graphics/object_events/pics/pokemon/ho_oh.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u16 gObjectEventPal_HoOh[] = INCGFX_U16("graphics/object_events/palettes/ho_oh.pal", ".gbapal");
+
+const u32 gObjectEventPic_DccScuttler[] = INCGFX_U32("graphics/dcc/scuttler/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccGuard[] = INCGFX_U32("graphics/dcc/guard/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccHowler[] = INCGFX_U32("graphics/dcc/howler/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccWarden[] = INCGFX_U32("graphics/dcc/warden/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccGuide[] = INCGFX_U32("graphics/dcc/guide/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccMara[] = INCGFX_U32("graphics/dcc/mara/overworld.png", ".4bpp");
+
+const u32 gObjectEventPic_DccLev[] = INCGFX_U32("graphics/dcc/lev/overworld.png", ".4bpp");
+
+const u16 gObjectEventPal_DccDonut[] = INCGFX_U16("graphics/object_events/palettes/donut.pal", ".gbapal");

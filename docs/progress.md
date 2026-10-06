@@ -866,3 +866,22 @@ Next: integrate scoped PR27 when protections permit, close issue26, record merge
 then S03 full fresh-save/alternate-boss/defeat/reward/quest/capacity regression with
 review package. No Stage6 work or new scheduler. Cloud task remains
 01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.
+
+
+### S02 merged; S03 active — 2026-10-06
+
+PR27 merged d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530; issue26 closed. Tested
+c9062da, evidence68d7a570cce1d2bb6fa6476db8fc211c9ebcef72; implemented/compiled/
+scoped-runtime/merged all YES. Actual improved battle and exploration screenshots
+are embedded in issue26/PR27 and source archive. User approved the native battle
+look; final full-slice playtest remains pending.
+
+S03 issue29, branch task/s03-slice-validation, same sole Cloud writer. Initial
+current-ROM guard replay proves old S01 critical-hit/XP timing is not a reliable
+current replay: assertions pass through turn2, then guard survives where old route
+expected a knockout. Diagnostic captures show different damage, not a progression
+lock; additional fixed A presses were still resolving attacks. Preserve stronger
+outcome assertions and use explicit input-state-aware actions to exercise intended
+strategies rather than weakening checks to fit obsolete timing. Next: add a
+read-only, normal-button battle route helper and complete current progression
+routes, including declined quest/avoided trap. No S03 completion claim yet.

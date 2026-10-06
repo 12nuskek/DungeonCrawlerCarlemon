@@ -4,7 +4,7 @@ An in-development GBA adaptation using stock Pokémon Emerald's decompilation.
 The approved target is an authored Book 1 opening slice with Carl and Donut duo
 battles, original dialogue, no catching and accessible defeat recovery.
 
-**Current state: Stages 0–5 implemented and automatically validated. Improved protagonist and opponent art is complete; user playtest is next.**
+**Current state: Stages 0–5 implemented and runtime verified. Overnight refinement has added distinct dungeon rooms and persistent visual feedback; recovery evidence and an updated private review build are next.**
 See [progress](docs/progress.md), [backlog](docs/backlog.md),
 [build and testing](docs/testing.md), and [content ledger](docs/content-ledger.md).
 
@@ -14,8 +14,8 @@ Accepted plans copied in full at handoff **2026-10-06**:
 - [Roadmap](docs/roadmap.md)
 - [Development loop](docs/development-loop.md)
 
-Stages 0–5 and one requested improvement are complete. Stage 6 awaits the user's
-slice playtest. A private review ZIP has been saved to the user's Library; there
+Stages 0–5 are complete. The authorised overnight refinement stays within this
+slice; Stage 6 awaits the user's playtest. A private review ZIP has been saved to the user's Library; there
 is no public ROM release.
 No ROMs or generated build products are distributed in this repository.
 
@@ -32,4 +32,4 @@ note, reach the Quiet Landing guide/trial, then explore the Service Room. Its
 southwest ladder leads to two gauntlet patrols and the gate warden. Win the trial
 and patrols, beat the warden, then examine the northeast stairs. The guide restores
 health/actions freely; defeat recovers locally. The quest, trap, equipment and
-cache preparation are optional. See [I01 evidence](docs/evidence/i01/README.md) and the [playtest guide](docs/playtest.md).
+cache preparation are optional. See [latest environment evidence](docs/evidence/n03/final/README.md) and the [playtest guide](docs/playtest.md).

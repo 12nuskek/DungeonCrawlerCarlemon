@@ -1,0 +1,36 @@
+[
+  {
+    "runner": "n02",
+    "missing_inputs_rejected": true,
+    "exit": 1,
+    "message": "scripts/test-n02.sh: line 5: DCC_LEGACY_RUN: Full acceptance requires the ordinary I01 save directory; see docs/testing.md"
+  },
+  {
+    "runner": "n02",
+    "missing_file_rejected": true,
+    "exit": 2
+  },
+  {
+    "runner": "n03",
+    "missing_inputs_rejected": true,
+    "exit": 1,
+    "message": "scripts/test-n03.sh: line 5: DCC_LEGACY_RUN: Full acceptance requires the ordinary I01 save directory; see docs/testing.md"
+  },
+  {
+    "runner": "n03",
+    "missing_file_rejected": true,
+    "exit": 2
+  },
+  {
+    "accepted_run": "artifacts/n02/run-5sGmnH",
+    "exact_routes": 73,
+    "exact_assertions": 1210,
+    "fixture_assertions": 193
+  },
+  {
+    "accepted_run": "artifacts/n03/run-Wk4EcS",
+    "exact_routes": 76,
+    "exact_assertions": 1303,
+    "fixture_assertions": 193
+  }
+]

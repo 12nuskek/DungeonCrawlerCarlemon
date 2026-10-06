@@ -81,6 +81,7 @@ DCC_Entrance_SupplyBox::
 	additem ITEM_POTION, 2
 	goto_if_eq VAR_RESULT, FALSE, DCC_Entrance_SupplyFull
 	setflag FLAG_DCC_LOOT_SUPPLY
+	special DccRefreshMapPresentation
 	msgbox DCC_Entrance_Text_Supply, MSGBOX_DEFAULT
 	release
 	end

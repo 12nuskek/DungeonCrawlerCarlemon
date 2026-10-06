@@ -5,6 +5,7 @@ DCC_Corridor_Guard::
 	trainerbattle_double TRAINER_DCC_GUARD, DCC_Corridor_Text_Guard, DCC_Corridor_Text_Defeat, DCC_Corridor_Text_Duo, DCC_Corridor_GuardResult
 DCC_Corridor_GuardResult:
 	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_GUARD, DCC_Corridor_Retry
+	special DccRefreshMapPresentation
 	msgbox DCC_Corridor_Text_GuardClear, MSGBOX_DEFAULT
 	release
 	end
@@ -12,6 +13,7 @@ DCC_Corridor_Howler::
 	trainerbattle_double TRAINER_DCC_HOWLER, DCC_Corridor_Text_Howler, DCC_Corridor_Text_Defeat, DCC_Corridor_Text_Duo, DCC_Corridor_HowlerResult
 DCC_Corridor_HowlerResult:
 	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_HOWLER, DCC_Corridor_Retry
+	special DccRefreshMapPresentation
 	msgbox DCC_Corridor_Text_HowlerClear, MSGBOX_DEFAULT
 	release
 	end

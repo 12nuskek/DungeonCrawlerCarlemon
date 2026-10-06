@@ -383,3 +383,7 @@ const u32 gObjectEventPic_DccWorkbench[] = INCGFX_U32("graphics/dcc/environment/
 const u32 gObjectEventPic_DccQuestTag[] = INCGFX_U32("graphics/dcc/environment/quest_tag.png", ".4bpp");
 const u32 gObjectEventPic_DccCacheSealed[] = INCGFX_U32("graphics/dcc/environment/cache_sealed.png", ".4bpp");
 const u32 gObjectEventPic_DccStorageRack[] = INCGFX_U32("graphics/dcc/environment/storage_rack.png", ".4bpp");
+
+const u32 gObjectEventPic_DccCacheOpen[] = INCGFX_U32("graphics/dcc/environment/cache_open.png", ".4bpp");
+
+const u32 gObjectEventPic_DccEncounterRemains[] = INCGFX_U32("graphics/dcc/environment/encounter_remains_32.png", ".4bpp");

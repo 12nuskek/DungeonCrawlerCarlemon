@@ -1,0 +1,52 @@
+[
+  {
+    "name": "gates",
+    "original": 23,
+    "added_tile_checks": 7
+  },
+  {
+    "name": "boss-defeat",
+    "original": 13,
+    "added_tile_checks": 7
+  },
+  {
+    "name": "boss-retry",
+    "original": 8,
+    "added_tile_checks": 6
+  },
+  {
+    "name": "boss-unprepared",
+    "original": 19,
+    "added_tile_checks": 8
+  },
+  {
+    "name": "stairs",
+    "original": 14,
+    "added_tile_checks": 6
+  },
+  {
+    "name": "boss-prepared",
+    "original": 20,
+    "added_tile_checks": 13
+  },
+  {
+    "name": "prepared-reload",
+    "original": 12,
+    "added_tile_checks": 0
+  },
+  {
+    "name": "quest-accept-trap",
+    "original": 16,
+    "added_tile_checks": 1
+  },
+  {
+    "name": "quest-tag-secret",
+    "original": 15,
+    "added_tile_checks": 3
+  },
+  {
+    "name": "quest-reload-final",
+    "original": 18,
+    "added_tile_checks": 2
+  }
+]

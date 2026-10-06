@@ -1,5 +1,10 @@
 DCC_Boss_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, DCC_Boss_Load
 	.byte 0
+
+DCC_Boss_Load:
+	special DccRestoreMapPresentation
+	end
 
 DCC_Boss_Encounter::
 	goto_if_set FLAG_DCC_BOSS_CLEARED, DCC_Boss_Already
@@ -20,6 +25,7 @@ DCC_Boss_Result:
 	end
 DCC_Boss_Won:
 	setflag FLAG_DCC_BOSS_CLEARED
+	special DccRefreshMapPresentation
 	msgbox DCC_Boss_Text_Won, MSGBOX_DEFAULT
 	release
 	end

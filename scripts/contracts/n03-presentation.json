@@ -1,0 +1,120 @@
+[
+  {
+    "label": "supply-line",
+    "map": "DCC_Boss",
+    "flag": "FLAG_DCC_CACHE_BLASTED",
+    "palette_bank": 9,
+    "x": 13,
+    "y": 6,
+    "width": 1,
+    "height": 1,
+    "entries": [
+      {
+        "x": 13,
+        "y": 6,
+        "off": 12829,
+        "on": 12837,
+        "attribute": 8
+      }
+    ]
+  },
+  {
+    "label": "gate",
+    "map": "DCC_Boss",
+    "flag": "FLAG_DCC_BOSS_CLEARED",
+    "palette_bank": 9,
+    "x": 11,
+    "y": 3,
+    "width": 3,
+    "height": 2,
+    "entries": [
+      {
+        "x": 11,
+        "y": 3,
+        "off": 12816,
+        "on": 12838,
+        "attribute": 8
+      },
+      {
+        "x": 12,
+        "y": 3,
+        "off": 12817,
+        "on": 12839,
+        "attribute": 8
+      },
+      {
+        "x": 13,
+        "y": 3,
+        "off": 12818,
+        "on": 12840,
+        "attribute": 8
+      },
+      {
+        "x": 11,
+        "y": 4,
+        "off": 12823,
+        "on": 12841,
+        "attribute": 8
+      },
+      {
+        "x": 12,
+        "y": 4,
+        "off": 13848,
+        "on": 13866,
+        "attribute": 97
+      },
+      {
+        "x": 13,
+        "y": 4,
+        "off": 12825,
+        "on": 12843,
+        "attribute": 8
+      }
+    ]
+  },
+  {
+    "label": "wire",
+    "map": "DCC_Service",
+    "flag": "FLAG_DCC_TRAP_SPENT",
+    "palette_bank": 8,
+    "x": 8,
+    "y": 6,
+    "width": 1,
+    "height": 1,
+    "entries": [
+      {
+        "x": 8,
+        "y": 6,
+        "off": 12943,
+        "on": 12956,
+        "attribute": 8
+      }
+    ]
+  },
+  {
+    "label": "secret",
+    "map": "DCC_Service",
+    "flag": "FLAG_DCC_SECRET_TAKEN",
+    "palette_bank": 8,
+    "x": 12,
+    "y": 1,
+    "width": 1,
+    "height": 2,
+    "entries": [
+      {
+        "x": 12,
+        "y": 1,
+        "off": 1657,
+        "on": 1657,
+        "attribute": 8
+      },
+      {
+        "x": 12,
+        "y": 2,
+        "off": 1666,
+        "on": 1693,
+        "attribute": 0
+      }
+    ]
+  }
+]

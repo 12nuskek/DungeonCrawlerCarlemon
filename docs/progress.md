@@ -1417,3 +1417,78 @@ Implemented/compiled/runtime verified YES; PR44 integration pending. Next merge
 verified geometry, then N03 existing-state feedback: conspicuous live/spent wire,
 opened cache/secret, sealed/open gate and defeated encounter markers. No new
 flags/rewards/geometry; preserve approved art and full newer regression coverage.
+
+### N03 state feedback candidate — 2026-10-06
+
+N02 PR44 merged96f651d828dd380eb836c49493417913f390d15e; issue43 complete.
+N03 issue45 task/n03-state-feedback, base that merge. Existing flags drive live/
+spent wire, closed/breached secret panel, intact/broken gate supply line, sealed/
+open gate and opened caches/cleared encounter markers. No new save variables,
+rewards, collision changes or battle rules. Immediate successful interactions
+refresh presentation; map load reconstructs it from persistent outcomes. Original
+spark pixels clarify live cable; no pressure-plate art. Secret art aligns to the
+wall above its unchanged interaction point. Dialogue identifies tag bag and
+preparation benefit before spending charge, with existing page counts retained.
+
+Acceptance: all1210 prior assertions retained plus read-only full tile-word checks
+for immediate/return/cold states. Full state variants must preserve upper bits and
+behavior;49 approved assets/six event contracts/N02 geometry unchanged. Real frames
+must prove native alternate OBJ/BG art, visual readability, no capacity/cancel
+side effects and save restoration. Source kit omissions unchanged. Implemented
+candidate only; compile/runtime/PR/merge pending. Sole writer; parent owns scheduler.
+
+N03 first candidate210e734 clean run-YxvaNH passed73 processes/1263 assertions,
+plus separate ordinary-input wire setup/pair/cold3 processes40 assertions. Eight
+BG state pairs match actual fixed camera/world pixels. Review found cable itself
+still low contrast despite bright sparks. Refine only live cable palette mapping
+(amber core, pale highlight; spent unchanged), preserving native silhouette and
+unmodified source master. No gameplay failure/blocker. Fold the40 supplementary
+checks and11 BG fixed-position checks into the repeatable suite; strengthen OBJ
+checks to each of four cleared encounters, cache cancellation/capacity/immediate/
+cold state and opened initial reward boxes. All earlier1210 assertions retained.
+Next final committed clean rerun76 processes/1303 assertions and actual contrast
+review; preserve first evidence separately. Compiled/runtime pass applies to first
+candidate only; final contrast source remains pending verification.
+
+Pre-rerun pixel verifier correction: the main unprepared route never takes the
+optional wrap, so its landing box correctly remains closed. Verify the opened
+wrap box at equipment-give/wrap-found instead, where flag35/item377 assertions
+prove acquisition. All18 expanded OBJ/frame comparisons pass against first-run
+actual frames. No game defect or gameplay assertion was weakened.
+
+N03 source review found a sprite allocation mismatch: ObjectEventSetGraphicsId
+switches image pointers without reallocating, while DestroySprite frees the current
+image size. A live32x32 opponent changing to a16x16 marker could retain12 tiles until
+map reset. No runtime crash observed. Stopped unfinished a8e6ee4 run-BHwZkd (exit143)
+before acceptance, preserving local logs; this was a source-review correction, not
+a runtime assertion failure. Pack the exact unchanged native16x16 marker at(8,16)
+in a transparent32x32 canvas and keep512-byte graphics info/allocation. Its visible
+field pixels/position stay identical. Static checks enforce exact native pixels,
+palette and no extra opaque pixels. No stock sprite allocator changes needed.
+Next clean committed rerun76/1303 and38 rendered-art comparisons; prior first-run
+proof remains explicitly tied to210e734, never relabelled as this candidate.
+
+### N03 verified — 2026-10-06
+
+Tested b530fa661254c2c4b5ef1d75ce4010c2d5d741ec on base96f651d.
+Production SHA256 dc321def80b7b3d60d0dd5103c73a77d8104135b0ff055a02456656bb76a0891.
+76 sessions /1303 assertions PASS:63 production sessions/1110 checks,13 diagnostic
+fixture sessions/193 checks.76 empty error logs.38 exact rendered comparisons
+(9 opponents,18 object/frame,11 BG state/camera cases; one object case is fixture).
+Two full exports preserve8818 assets; all49 approved art files/six event contracts/
+N02 geometry retained. Same-position live/spent/cold wire, opened cache, breached
+panel, barred/open gate, intact/broken supply line and four cleared markers reviewed.
+Full raw logs and65 curated actual stills: docs/evidence/n03/final.
+
+Parent review caught optional legacy inputs allowing a misleading future full-pass
+message. Both N02/N03 runners now require legacy directory and corner save, reject
+missing/empty files before building, and assert exact executed route/check totals
+plus193 fixture checks before success. Missing-input/file rejection, shell syntax
+and both accepted summaries validated; no engine/assets changed after testedb530fa6.
+Runtime evidence is not rerun/relabelled for this runner-only correction.
+
+Implemented/compiled/runtime verified YES; PR46 merge pending. Next merge N03,
+then focused N04: actual wins and cold persistence from six exact recovered saves;
+assess repeat-guide verbosity without removing first-use instruction. Private
+updated playable review package still pending. No Stage6/new systems. Same Cloud
+task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent-owned continuation only.

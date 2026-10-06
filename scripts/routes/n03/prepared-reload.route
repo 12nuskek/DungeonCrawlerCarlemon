@@ -1,0 +1,22 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 5 4 6 7
+flag 46 1
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+growth 11 940 0 10 1250 0
+roster 10 25 4 0 0 0
+uses 4 40 0 38
+item 13 1
+item 22 1
+item 380 0
+quit

@@ -299,3 +299,20 @@ on one shell command). Accepteddec2c5e,73 processes/1210 checks:1017 production,
 193 diagnostic fixture. Includes all newer Journal/alternate-order/legacy checks.
 See evidence/n02/final for exact inputs, clean build, raw runtime, actual forward
 and center views,26-cell geometry contract and two corrected route obstructions.
+
+### N03 full acceptance
+
+Both N02 and N03 full runners now require the ordinary legacy inputs; missing
+variables/files stop before a build. There is no implicit partial full-pass mode.
+Use the same pinned environment documented above, then:
+
+```sh
+DCC_LEGACY_RUN=/path/to/completed/I01/run \
+DCC_CORNER_SAVE=/path/to/ordinary/N01-corner.sav bash scripts/test-n03.sh
+```
+
+N03 testedb530fa6 passes76 sessions/1303 assertions (1110 production,193 labeled
+fixture) and38 actual rendered comparisons. The full-success message enforces
+those totals. N02 enforces73/1210. Exact inputs, complete logs, current state views,
+source export checks and the runner-only validation are in evidence/n03/final.
+The production ROM copy remains separate from the diagnostic fixture rebuilds.

@@ -2205,3 +2205,11 @@ static const struct SpriteFrameImage sPicTable_DccCacheSealed[] = {
 static const struct SpriteFrameImage sPicTable_DccStorageRack[] = {
     obj_frame_tiles(gObjectEventPic_DccStorageRack),
 };
+
+static const struct SpriteFrameImage sPicTable_DccCacheOpen[] = {
+    obj_frame_tiles(gObjectEventPic_DccCacheOpen),
+};
+
+static const struct SpriteFrameImage sPicTable_DccEncounterRemains[] = {
+    obj_frame_tiles(gObjectEventPic_DccEncounterRemains),
+};

@@ -8,6 +8,7 @@ DCC_Vestibule_Crate::
 	additem ITEM_DCC_WRIST_WRAP, 1
 	goto_if_eq VAR_RESULT, FALSE, DCC_Vestibule_WrapNoRoom
 	setflag FLAG_DCC_WRAP_TAKEN
+	special DccRefreshMapPresentation
 	msgbox DCC_Vestibule_Text_Wrap, MSGBOX_DEFAULT
 	release
 	end
@@ -42,6 +43,7 @@ DCC_Vestibule_TrialResolved:
 	release
 	end
 DCC_Vestibule_TrialWon:
+	special DccRefreshMapPresentation
 	goto_if_set FLAG_DCC_ACH_DUO, DCC_Vestibule_TrialWonAgain
 	setflag FLAG_DCC_ACH_DUO
 	msgbox DCC_Vestibule_Text_DuoAchievement, MSGBOX_DEFAULT

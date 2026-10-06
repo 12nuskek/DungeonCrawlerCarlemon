@@ -36,6 +36,14 @@ for name,old in baseline['maps'].items():
    assert word&~1023==entry['upper_bits'],(name,filename,i,'collision/elevation changed')
    assert struct.unpack_from('<H',attrs,off*2)[0]==entry['attribute'],(name,filename,i,'behavior/layer changed')
    used.add(mid);cells+=1
+# Runtime-selectable pairs preserve exactly the same upper bits and behavior.
+states=json.loads((root/'scripts/contracts/n03-presentation.json').read_text())
+for state in states:
+ for entry in state['entries']:
+  assert entry['off']&~1023==entry['on']&~1023,(state['label'],'state changes collision')
+  for key in ['off','on']:
+   mid=entry[key]&1023;used.add(mid)
+   assert struct.unpack_from('<H',attrs,(mid-512)*2)[0]==entry['attribute'],(state['label'],'state changes behavior')
 for mid in used:
  for (tile,) in struct.iter_unpack('<H',metatiles[(mid-512)*16:(mid-511)*16]):
   assert 512<=tile&1023<512+num_tiles,(mid,'tile outside atlas')
@@ -43,4 +51,11 @@ for mid in used:
 for name,digest in baseline['unchanged_obj_art'].items():
  p=engine/name;data=p.read_text().encode() if p.suffix=='.pal' else p.read_bytes()
  assert hashlib.sha256(data).hexdigest()==digest,(name,'approved art changed')
+# Resolved opponents keep the existing 512-byte allocation; only transparent
+# padding is added around the unchanged native marker at the same field position.
+native=Image.open(root/'docs/art-references/environment-native-candidates/native/world_shared/encounter_remains.png')
+packed=Image.open(engine/'graphics/dcc/environment/encounter_remains_32.png')
+assert packed.size==(32,32) and packed.crop((8,16,24,32)).tobytes()==native.tobytes()
+assert packed.getpalette()[:48]==native.getpalette()[:48]
+assert sum(v!=0 for v in packed.tobytes())==sum(v!=0 for v in native.tobytes())
 print(json.dumps({'checked_cells_and_border':cells,'metatiles':len(used),'secondary_tiles':num_tiles,'approved_art_files':len(baseline['unchanged_obj_art']),'event_contracts':len(baseline['maps']),'explicit_geometry_cells':changed_cells},indent=2))

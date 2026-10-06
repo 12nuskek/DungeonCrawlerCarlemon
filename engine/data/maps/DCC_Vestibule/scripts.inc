@@ -99,8 +99,8 @@ DCC_Vestibule_Text_TrialAdvice:
 	.string "WEAKEN lowers both enemies' attack.\n"
 	.string "I restore all your action uses.$"
 DCC_Vestibule_Text_ReturnAdvice:
-	.string "GUIDE: You made it back together. Good.\n"
-	.string "The ladder returns to the entrance.\p"
+	.string "GUIDE: East returns to the entrance.\n"
+	.string "West leads to the service room.\p"
 	.string "Press START, then SAVE outside battle.\n"
 	.string "A saved rest is one less worry.$"
 
@@ -191,11 +191,11 @@ DCC_Journal_Close:
 	releaseall
 	end
 DCC_Journal_Text_Trial:
-	.string "OBJECTIVE: Reach the quiet landing.\n"
-	.string "Rest with the guide, then try the trial.$"
+	.string "OBJECTIVE: Clear the landing trial.\n"
+	.string "The guide restores health and actions.$"
 DCC_Journal_Text_Patrols:
 	.string "OBJECTIVE: Clear both gauntlet patrols.\n"
-	.string "Go through the service room's south exit.$"
+	.string "Use the service room's southwest exit.$"
 DCC_Journal_Text_Boss:
 	.string "OBJECTIVE: Defeat the gate warden.\n"
 	.string "BRACE or WEAKEN answers its windup.$"

@@ -1,0 +1,27 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 4 7 7
+growth 9 495 0 9 805 0
+uses 8 40 2 40
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 recovery.ppm
+roster 33 28 8 2 0 0
+step 1 1 -
+step 400 0 guide-directions.ppm
+step 1 1 -
+step 400 0 guide-save-advice.ppm
+step 1 1 -
+step 120 0 -
+expect 34 1 4 7 7
+growth 9 495 0 9 805 0
+uses 8 40 2 40
+quit

@@ -23,3 +23,14 @@ DCC_Exit_Text_Complete:
 	.string "The west ladder returns to the gate.\p"
 	.string "More floors await after playtest\n"
 	.string "review. Thanks for crawling with us.$"
+
+DCC_Exit_Donut_Talk::
+	lock
+	faceplayer
+	msgbox DCC_Exit_Text_Donut, MSGBOX_DEFAULT
+	release
+	end
+DCC_Exit_Text_Donut:
+	.string "DONUT: We reached the stairs, Carl.\n"
+	.string "My review still mentions cushions.\p"
+	.string "CARL: Put 'still alive' at the top.$"

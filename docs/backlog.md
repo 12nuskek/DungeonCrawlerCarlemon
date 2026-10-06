@@ -179,3 +179,17 @@ and merged. Private production review ZIP saved to the user's Library.
 remaining acceptance blocker, no Stage6 authorisation. Human pacing and feedback
 are pending, not established by automated tests. Parent owns the sole continuation
 mechanism and should stop/disable automatic implementation at this boundary.
+
+## Overnight work reopened
+
+User request2026-10-06 13:19:10UTC authorises existing-slice refinement through
+approximately21:19UTC. Previous playtest pause superseded for this window.
+N01 issue35 active; see overnight-plan.md for audited priorities and boundaries.
+No new scheduler, Stage6, platform or major system. Preserve approved art.
+
+N00 issue36 is active ahead of N01 while the environment kit is prepared: fix
+contradictory ending text, stale Journal objective and ambiguous ladder guidance.
+N01 remains the next visual foundation task. One implementation writer.
+
+N00 verified at f3514ca: 373 core +7 supplementary assertions, actual text reviewed;
+PR37 awaiting integration. N01 next after the external native environment kit.

@@ -47,3 +47,13 @@ Keep code that changes native assets separate from subsequent layout edits.
 
 No open blocker attempts. Deadline is a review boundary, not permission to merge
 unverified changes. Preserve baseline ROM/private ZIP and all failed traces.
+
+## Reconciled outcomes
+
+The initial priority labels above were planning hypotheses. Actual focused tasks:
+N00/N00b guidance and Journal; N01 native rooms/props and legacy save-cache recovery;
+N02 bounded26-cell geometry; N03 persistent environment states and matching text;
+N04 exact recovered-save wins; N05 one-page repeat recovery and final full regression;
+N06 private visual/playable package. N05 merged PR50 at f2edec3, tested eaf073d with
+90 sessions/1531 assertions across full and recovery runs. No Stage6/new systems.
+The visual review and exact qualification of pacing remain the final deliverable.

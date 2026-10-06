@@ -1,0 +1,14 @@
+{
+  "package": "DungeonCrawlerCarlemon-N05-eaf073d.zip",
+  "bytes": 8135250,
+  "sha256": "34b4e0694a1f78236fa3c7a74d3f0001591d4c845455159dae2b493a69e92826",
+  "production_sha256": "8e7e8c20c8dde66488d9374ec90e80391a02c255ad4a0a422e7392f04f1ccfb6",
+  "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "entries": 375,
+  "actual_capture_count": 22,
+  "zip_crc": "PASS",
+  "entry_sha256": "PASS",
+  "no_saves_or_diagnostic_roms": true,
+  "html_structure": "22 labeled exact embedded images; all local anchors resolve; no external runtime assets",
+  "browser_screenshot": "Unavailable after three attempts; host profile/cache failures then timeout. Actual emulator captures inspected independently."
+}

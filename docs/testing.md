@@ -11,9 +11,9 @@ sha256sum engine/pokeemerald.gba
 
 Install Linux build-essential, binutils-arm-none-eabi, git, libpng-dev and
 pkg-config first. Runtime regression additionally needs libmgba-dev (verified
-0.10.5), Python3 and Pillow. `bash scripts/test-s03.sh` builds an isolated committed
-snapshot and runs the complete current regression; see its evidence README for
-actual acceptance state. Never run baseline `make compare` on the custom game.
+0.10.5), Python3, Pillow and NumPy. The latest full run is N05 plus the N04
+recovered-save extension; see the final sections below for mandatory legacy inputs,
+commands and actual acceptance state. Historical S03 runs cover their recorded subset. Never run baseline `make compare` on the custom game.
 
 
 ## Matching baseline build

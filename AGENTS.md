@@ -45,3 +45,18 @@ Use a task issue as well as the scoped PR: cross-link both, attach representativ
 actual screenshots to both, and close the issue only after verified integration.
 Build gameplay evidence from an isolated committed snapshot with regenerated game
 products. Preserve complete raw build/emulator logs and reject emulator errors.
+
+## Overnight authorisation — 2026-10-06
+
+The user's13:19:10UTC request supersedes the earlier playtest pause and initial
+improvement-cycle stop. Improve the existing slice through approximately21:19UTC
+(07:19 Brisbane October7), then finish a verified increment or checkpoint honestly.
+Prioritise dungeon composition/art/lighting/inhabited spaces, readable interactions
+and demonstrated defects. No Stage6/new floors/platform/major systems. Preserve
+approved protagonist/opponent art and existing accepted gameplay. One writer;
+parent owns the same continuation mechanism. Do not create another scheduler.
+Separate visual-only work from collision/layout/engine changes where practical.
+Retimed routes must preserve behavior assertions. Keep before/after real captures,
+precise retry/pacing limits, durable blockers/attempt counts and exact next action.
+Avoid routine overnight notifications; report significant findings/blockers to
+parent for the morning review. No padding or artificial waits to claim playtime.

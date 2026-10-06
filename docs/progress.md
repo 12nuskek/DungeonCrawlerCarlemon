@@ -1138,3 +1138,19 @@ build/emulator/writer beyond this documentation checkpoint. Exact next action:
 **await user's fresh-save playtest and feedback**. Do not restart implementation,
 create speculative tasks, or expand to Stage6. Parent owns the single continuation
 mechanism and must reconcile/stop it at this boundary. No remaining tool blocker.
+
+### Overnight dungeon refinement authorised — 2026-10-06
+
+User request13:19:10UTC reopens existing-slice work until approximately21:19UTC.
+Reconciled clean mainbf27e2692025eb4291ffbf992a3b6412340d32cd; no open PRs or
+running implementation (one old exited zombie is not active work). Prior I01
+ROM/private ZIP remain preserved. Parent reuses the same hourly continuation.
+
+Actual six-room/map audit: repeated rectangle, identical palette/lamp placement,
+flat grid floor, weak stair/entrance framing and sparse environmental meaning.
+N01 issue35, task/n01-dungeon-materials: visual materials/palette composition
+first, exact walkability/event preservation. Geometry/interaction tasks separate.
+Prioritised overnight-plan.md added; pending read-only reviewer recommendations.
+Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000 remains sole writer.
+Implemented NO; compiled/runtime/merged NO. Next: native dungeon tile exporter
+and static behavior invariants, then real six-room visual/interaction checks.

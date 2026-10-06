@@ -1,6 +1,6 @@
 /* Real mGBA input-driven gameplay testing; RAM reads only, never RAM patches.
  * Commands: step FRAMES KEYS CAPTURE.ppm (or -), expect GROUP MAP X Y FLAGS,
- * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON, duo healthy,
+ * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON DONUT_ABILITY, duo healthy,
  * quit. Flags are the low two bits at the existing save flag byte for E01.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -113,9 +113,10 @@ int main(int argc, char **argv)
         unsigned state[]={(core->busRead8(core,mainstate+0x439)>>1)&1,
             core->busRead8(core,battlers),core->busRead8(core,outcome),
             core->busRead8(core,mons+0x24),core->busRead8(core,mons+2*0x58+0x24),
-            (core->busRead8(core,sb+0x1270+0x857/8)>>(0x857%8))&1};
-        printf("party=%u HP=%u/%u,%u/%u battle=%u battlers=%u outcome=%u PP=%u,%u trial=%u\n",
-            core->busRead8(core,count),hp0,max0,hp1,max1,state[0],state[1],state[2],state[3],state[4],state[5]);
+            (core->busRead8(core,sb+0x1270+0x857/8)>>(0x857%8))&1,
+            core->busRead8(core,mons+2*0x58+0x20)};
+        printf("party=%u HP=%u/%u,%u/%u battle=%u battlers=%u outcome=%u PP=%u,%u trial=%u donut-ability=%u\n",
+            core->busRead8(core,count),hp0,max0,hp1,max1,state[0],state[1],state[2],state[3],state[4],state[5],state[6]);
         if (!strcmp(line,"duo healthy\n")) {
             const unsigned char names[2][6]={{0xBD,0xBB,0xCC,0xC6,0xFF,0},{0xBE,0xC9,0xC8,0xCF,0xCE,0xFF}};
             if (core->busRead8(core,count)!=2 || !hp0 || hp0!=max0 || !hp1 || hp1!=max1) result=17;
@@ -125,9 +126,9 @@ int main(int argc, char **argv)
             checks++; printf("PASS %s",line);
         }
         if (!strncmp(line,"battle ",7)) {
-            char values[6][32]; unsigned wanted;
-            if (sscanf(line,"battle %31s %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],values[5],&extra)!=6) result=18;
-            for (unsigned i=0;i<6 && !result;i++)
+            char values[7][32]; unsigned wanted;
+            if (sscanf(line,"battle %31s %31s %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],values[5],values[6],&extra)!=7) result=18;
+            for (unsigned i=0;i<7 && !result;i++)
                 if (!number(values[i],255,&wanted) || wanted!=state[i]) result=18;
             if (result) {fprintf(stderr,"FAILED: %s",line);break;}
             checks++; printf("PASS %s",line);

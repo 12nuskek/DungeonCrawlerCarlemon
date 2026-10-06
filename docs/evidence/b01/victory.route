@@ -23,7 +23,7 @@ step 1 1 -
 step 600 0 opponents.ppm
 step 1 1 -
 step 600 0 carl-menu.ppm
-battle 1 4 0 35 20 0
+battle 1 4 0 35 20 0 0
 step 1 1 -
 step 120 0 carl-actions.ppm
 step 1 1 -
@@ -34,7 +34,7 @@ step 1 1 -
 step 120 0 donut-actions.ppm
 step 1 1 -
 step 1000 0 turn-one.ppm
-battle 1 4 0 34 19 0
+battle 1 4 0 34 19 0 0
 step 1 1 -
 step 60 0 -
 step 1 1 -
@@ -74,14 +74,14 @@ step 400 0 victory-6.ppm
 step 1 1 -
 step 400 0 victory-7.ppm
 step 400 0 restored.ppm
-battle 0 4 1 32 17 1
+battle 0 4 1 32 17 1 0
 duo healthy
 expect 34 1 9 5 3
 step 1 1 -
 step 120 0 -
 step 1 1 -
 step 400 0 completed-repeat.ppm
-battle 0 4 1 32 17 1
+battle 0 4 1 32 17 1 0
 step 1 1 -
 step 120 0 -
 step 20 32 -

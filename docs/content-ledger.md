@@ -59,6 +59,7 @@ were authored in this task. Final presentation and two useful tuned actions per
 character are not claimed complete; B02 and S02 remain required.
 
 Existing XP and trainer prize behavior is provisional, not the R01 reward design.
-No achievement, loot or inventory reward is added. Trainer index 855 uses existing
+No achievement, loot or inventory reward is added. Donut explicitly uses the
+placeholder species' unused ABILITY_NONE slot to prevent random Pickup loot. Trainer index 855 uses existing
 reserved flag capacity; 8 reserved trainer IDs remain. Both protagonists are
 initialized only on New Game; E01 saves lack that roster and are unsupported here.

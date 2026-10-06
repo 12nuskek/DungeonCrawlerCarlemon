@@ -177,3 +177,9 @@ explicit post-battle script continuation and suppressed trial-only stock whiteou
 text. First cold-save check correctly failed because the input route had not
 confirmed the fully displayed overwrite prompt; adjusted the route, not save code.
 Final committed replay and evidence still pending. No scheduler/workflow added.
+
+B01 first committed replay passed 38 assertions at f90d227. Review then found the
+placeholder Meowth Pickup ability could silently award random items. Disabled it
+using the existing unused ability slot (ABILITY_NONE), without a species-table or
+save-layout change. Battle assertions now also require Donut's ability to be NONE.
+Rerunning the committed revised build before declaring final runtime verification.

@@ -63,3 +63,15 @@ No achievement, loot or inventory reward is added. Donut explicitly uses the
 placeholder species' unused ABILITY_NONE slot to prevent random Pickup loot. Trainer index 855 uses existing
 reserved flag capacity; 8 reserved trainer IDs remain. Both protagonists are
 initialized only on New Game; E01 saves lack that roster and are unsupported here.
+
+## Visual quality acceptance clarification — 2026-10-06
+
+Kurt asked whether the levels will eventually look substantially better than the
+E01 cave screenshots. Parent confirmed the existing in-slice commitment: custom
+dungeon tiles and protagonist sprites, props/signage/damage, distinct palettes and
+more deliberate room composition within Emerald's readable GBA style. Current
+stock cave rooms are functional placeholders, not final quality. Deliver scheduled
+art in S02 before Stage 5 review; do not defer all artwork until Stage 6. Follow the
+gameplay dependencies first, then implement the visual pass in the real engine.
+Include actual before/after emulator screenshots and list every remaining
+placeholder explicitly. This clarifies accepted scope, not a platform expansion.

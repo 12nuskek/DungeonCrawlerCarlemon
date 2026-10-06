@@ -8,7 +8,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
 | E02 | E01 | Pending: safe room, guide and recovery |
-| B01 | F01 | Implemented, compiled and runtime verified; integration pending |
+| B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Pending: actions and defeat recovery |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |
 | R01 | B02, E02 | Pending: XP and equipment |
@@ -50,3 +50,17 @@ four battlers, both actions/PP, victory/map return and saved roster; deliberatel
 lose through ordinary inputs and retry. No broader combat rewrite, capture/storage
 audit (B03), full recovery hub (E02) or reward systems. Fresh B01 save required;
 E01 zero-party saves are not migrated.
+
+## Next task contract: E02
+
+Dependency E01 is merged. Start from reconciled main after B01 PR #6 and the
+integration checkpoint. Add an original guide interaction and safe-room recovery
+service; explain objective, saving and retry clearly. Keep the existing save
+layout and authored rooms. Validate injured/depleted duo restoration through
+ordinary inputs, dialogue bounds, repeat use, return route and cold save reload.
+If trial victory recovery is adjusted to make the guide meaningful, update its
+promised behavior and new regression routes together; preserve accessible local
+trial defeat recovery. Do not claim the historical B01 route applies unchanged to
+new recovery behavior. No quest/reward/crafting, capture audit, final battle art or
+new floor work in this focused task. Record placeholders and adaptation departures.
+Embed actual tested emulator screenshots on its gameplay PR/issue with logs.

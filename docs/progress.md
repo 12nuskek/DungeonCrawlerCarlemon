@@ -696,3 +696,32 @@ Next exact action: commit final S02 source/routes, run isolated test-s02.sh, rev
 and archive final actual captures and original asset provenance; draft PR26 issue
 link (actual PR number TBD), integrate only on relevant PASS. S03 fresh full route
 regression remains separate. No new writer/scheduler; no unresolved blocker.
+
+## S02 first isolated pass and visual fixes — 2026-10-06
+
+Source `5fd9217c639afcc306246dded0e77aeda55f3de4` isolated build/runtime PASS128
+assertions/6 production sessions in artifacts/s02/run-a7awMe;6 empty errors.
+ROM `bc365b37a91326792fea400a4297a68cc5197f5a936e89970d577ca0b5f90e67`.
+Reviewed29 selected captures. Do NOT treat this as final S02 acceptance: rendered
+review found title horizontal repeats (affine blank tile0 contained the first
+letter's bottom row) and clipped summary heading. Moved lettering clear of tile0,
+added a regression assertion, removed the redundant heading; actual title retest
+is clean. Also added small Carl shading/Donut fur detail, removed oval arena pads,
+and corrected remaining give-item/technique labels. These are presentation fixes,
+not combat balance changes. Final isolated rerun required.
+
+Current actual preview pushed `72fc11a1523f4e6dfb5425c83b461179a961d062` under
+docs/evidence/s02-preview-current (5 PNGs from5fd9217, clear WIP limitations).
+Earlier preview evidence-only branch evidence/s02-wip-5963c8f points to
+`d33e73f1aeec30fb55056b1efb3eb7c271cafdc9`; no implementation writer there.
+Issue26 prominently links current screenshots for parent's Pics delivery.
+Parent rough-art feedback retained: original geometry is still simple prototype
+art; readability is verified separately from polish. Remaining inherited menus,
+animations/audio/boot credits explicitly listed. No claim of finished visuals.
+
+Trial replay retains actual action-resource, win/XP/reward/item/save assertions;
+it does not reuse outdated frame/damage goldens blindly. In the new input route
+the first foe falls earlier, so XP/menu advance differs; we recorded actual new
+turn/resource phases and retained precise final HP/PP checks. Presentation/object
+changes can shift replay RNG timing; no battle stats/move rules changed in S02.
+Full branch coverage belongs to S03. Next final source commit/run, archive andPR.

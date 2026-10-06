@@ -281,7 +281,7 @@ const u8 *const gPyramidBagMenu_ReturnToStrings[] =
 const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 const u8 gText_ItemsPocket[] = _("ITEMS");
 const u8 gText_PokeBallsPocket[] = _("POKé BALLS");
-const u8 gText_TMHMPocket[] = _("TMs & HMs");
+const u8 gText_TMHMPocket[] = _("TECHNIQUES");
 const u8 gText_BerriesPocket[] = _("SUPPLIES");
 const u8 gText_KeyItemsPocket[] = _("KEY ITEMS");
 
@@ -430,7 +430,7 @@ const u8 gText_ChoosePokemon[] = _("Choose a crawler.");
 const u8 gText_MoveToWhere[] = _("Move to where?");
 const u8 gText_TeachWhichPokemon[] = _("Teach which POKéMON?");
 const u8 gText_UseOnWhichPokemon[] = _("Use on which crawler?");
-const u8 gText_GiveToWhichPokemon[] = _("Give to which POKéMON?");
+const u8 gText_GiveToWhichPokemon[] = _("Give to which crawler?");
 const u8 gText_DoWhatWithPokemon[] = _("Choose an action.");
 const u8 gText_NothingToCut[] = _("There's nothing to CUT.");
 const u8 gText_CantSurfHere[] = _("You can't SURF here.");

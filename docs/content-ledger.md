@@ -256,3 +256,9 @@ These are inherited assets, not original work. Summary lore still uses engine
 nature/ability/type terminology; no class/race story claim. No contest page or
 collection action is reachable. Title copyright credit is retained as provenance.
 S02 is not accepted until real captures and relevant runtime checks are archived.
+
+S02 visual review fixes: title tile0 transparency regression; removed clipped
+redundant summary heading; light Carl anatomy/shading and layered Donut fur;
+arena floor now uses stone seams rather than elliptical pads. This remains
+simple original prototype art with stationary NPCs and duplicate animation
+frames. Do not call it finished/polished merely because provenance is original.

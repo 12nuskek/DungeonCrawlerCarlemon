@@ -39,6 +39,18 @@ def carl(back=False):
  else:
   d.line((26,21,29,21),fill=1);d.line((34,21,37,21),fill=1)
   d.rectangle((30,23,32,25),fill=4);d.line((28,29,36,29),fill=2)
+ # Pixel-scale anatomy/shading: shoulder, bent arm, waist and shorts folds.
+ d.line([(17,37),(16,42),(14,46)],fill=4,width=2)
+ d.line([(43,36),(46,38),(48,34)],fill=4)
+ d.line((26,45,37,45),fill=4);d.point((31,43),4)
+ d.line((24,51,28,52),fill=8);d.line((36,52,40,51),fill=8)
+ d.line((23,55,23,58),fill=4);d.line((39,55,42,57),fill=4)
+ if back:
+  d.line([(28,34),(31,37),(35,34)],fill=5)
+  d.line((32,37,32,41),fill=5)
+ else:
+  d.line((26,20,29,19),fill=2);d.line((35,19,38,20),fill=2)
+  d.line((27,27,28,29),fill=4);d.point((35,27),4)
  return im
 
 def donut(back=False):
@@ -59,6 +71,15 @@ def donut(back=False):
  else: d.line((24,24,40,25),fill=3,width=2);d.line((27,28,38,29),fill=3)
  # Small gold collar, no later-book costume or class assumed.
  d.line((24,37,40,37),fill=11,width=2);d.rectangle((31,38,33,40),fill=12)
+ # Long-haired ruff and layered flank tufts, distinct from a short-coated cat.
+ for x,y in [(18,38),(16,43),(18,49),(22,53),(40,38),(43,43),(41,49)]:
+  d.line([(x,y),(x-2,y+3),(x+2,y+1)],fill=7)
+ d.line([(25,40),(28,43),(26,46)],fill=8)
+ d.line([(38,41),(36,45),(39,48)],fill=8)
+ d.line((23,56,26,57),fill=8);d.line((37,56,40,57),fill=8)
+ if back:
+  d.line([(22,22),(24,26),(22,29)],fill=7)
+  d.line([(41,23),(39,27),(42,29)],fill=7)
  return im
 
 def enemy(kind):
@@ -228,7 +249,7 @@ def letters(im,text,y,size,color,shift=0):
    for xx,b in enumerate(row):
     if b=='1':d.rectangle((x+xx*size,y+yy*size,x+(xx+1)*size-1,y+(yy+1)*size-1),fill=color)
   x+=6*size
-logo=canvas(256,64);letters(logo,'DUNGEON CRAWLER',7,2,7,-37);letters(logo,'CARLEMON',29,3,11,-37)
+logo=canvas(256,64);letters(logo,'DUNGEON CRAWLER',10,2,7,-37);letters(logo,'CARLEMON',29,3,11,-37)
 save(logo,Path('graphics/dcc/title/logo.png'))
 # Affine background uses byte tile IDs and the same256-tile budget as upstream.
 (R/'graphics/dcc/title/logo.bin').write_bytes(bytes(range(256))+bytes(768))
@@ -258,8 +279,8 @@ for y in range(58,128,14):
  d.line((0,y,255,y),fill=2)
  for x in range((y//14%2)*20,256,40):d.line((x,y,x+10,y+13),fill=2)
 for x in (20,218):d.rectangle((x,16,x+7,33),fill=1);d.rectangle((x+2,18,x+5,28),fill=12)
-d.ellipse((120,45,231,78),fill=8);d.ellipse((126,48,225,74),fill=3)
-d.ellipse((10,83,132,116),fill=8);d.ellipse((16,86,126,112),fill=3)
+d.line((112,78,235,78),fill=4);d.line((116,79,235,79),fill=2)
+d.line((4,117,135,117),fill=4);d.line((4,118,131,118),fill=2)
 save(arena,Path('graphics/dcc/battle/arena.png'))
 bm=bytearray(4096)
 for block in range(2):

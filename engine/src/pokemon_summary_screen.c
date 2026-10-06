@@ -2756,7 +2756,7 @@ static void PrintNotEggInfo(void)
 
     if (dexNum != 0xFFFF)
     {
-        StringCopy(gStringVar1, gText_Pokemon);
+        StringCopy(gStringVar1, gText_EmptyString5);
         if (!IsMonShiny(mon))
         {
             PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 1);

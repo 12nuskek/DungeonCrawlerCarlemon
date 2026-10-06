@@ -18,6 +18,7 @@ arena = Image.open(root/'graphics/dcc/battle/arena.png')
 assert arena.width * arena.height // 2 <= 0x4000, 'battle character-block budget'
 logo = Image.open(root/'graphics/dcc/title/logo.png')
 assert logo.width * logo.height // 64 <= 256, 'affine byte tile-index budget'
+assert logo.crop((0,0,8,8)).getbbox() is None, 'blank affine map tile0 must stay transparent'
 assert len((root/'graphics/dcc/title/logo.bin').read_bytes()) == 1024
 cave = (root/'data/tilesets/secondary/cave/metatile_attributes.bin').read_bytes()
 dcc = (root/'data/tilesets/secondary/dcc/metatile_attributes.bin').read_bytes()

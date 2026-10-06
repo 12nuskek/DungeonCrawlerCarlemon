@@ -1,0 +1,9 @@
+{
+  "status": "HISTORICAL_LOCAL_PASS",
+  "fresh_directory": true,
+  "files_compared": 109,
+  "byte_differences": [],
+  "inputs": "two source PNGs plus three scripts; no repository or preexisting native assets needed",
+  "scope": "Complete original local delivery only, before partial publication. The staged tree omits the main source PNG and packed diagnostic output. Full clean-source reproduction from this tree is unavailable.",
+  "current_tree_full_reproduction_available": false
+}

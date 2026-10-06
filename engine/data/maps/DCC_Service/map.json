@@ -1,9 +1,9 @@
 {
-  "id": "MAP_DCC_VESTIBULE",
-  "name": "DCC_Vestibule",
-  "layout": "LAYOUT_DCC_VESTIBULE",
+  "id": "MAP_DCC_SERVICE",
+  "name": "DCC_Service",
+  "layout": "LAYOUT_DCC_SERVICE",
   "music": "MUS_PETALBURG_WOODS",
-  "region_map_section": "MAPSEC_DCC_VESTIBULE",
+  "region_map_section": "MAPSEC_DCC_SERVICE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -15,46 +15,20 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
       "x": 4,
-      "y": 5,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "DCC_Vestibule_Crate",
+      "script": "DCC_Service_Mara",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 9,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "DCC_Vestibule_Trial",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 4,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "DCC_Vestibule_Guide",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
       "x": 11,
       "y": 8,
       "elevation": 3,
@@ -63,26 +37,64 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "DCC_Vestibule_WorkshopBox",
+      "script": "DCC_Service_Lev",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DCC_Service_Warning",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 11,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DCC_Service_Tag",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 4,
-      "elevation": 3,
-      "dest_map": "MAP_DCC_ENTRANCE",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 2,
       "y": 4,
       "elevation": 3,
-      "dest_map": "MAP_DCC_SERVICE",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DCC_VESTIBULE",
+      "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "DCC_Service_Trap"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DCC_Service_Secret"
+    }
+  ]
 }

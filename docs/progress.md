@@ -470,3 +470,21 @@ merged NO, pending scoped PR and issue #18 integration. No blocker or unsuccessf
 production fix; exploratory replay timing adjustments resolved dialogue/toss states.
 Next: push evidence, draft/review/merge R02, reconcile main, then D01 trap/secret/
 optional quest. Parent owns sole continuation; no new workflow/schedule created.
+
+## R02 integration / D01 start — 2026-10-06
+
+PR #19 merged `ae4679e2e19a94fd60ac879c9dd18e89f7de2c41`; issue #18 closed
+with actual screenshots and merged state. Evidence commit `de8af8914a030bbfb41769de8a74f339f0144e74`,
+tested implementation `fbfb9e9cad1854b5b03e2a006d1ed1745348f365`. Main clean;
+no open PR. D01 branch `task/d01-trap-secret-quest` starts at this merge.
+Objective: service room, marked avoidable nonlethal trap, optional secret and
+retrieval quest with persistent decline/accept/complete states and repeat safety.
+Two original neutral crawlers; no canon claims. Existing guide must cure actual
+inflicted paralysis. No save-layout/battle/crafting expansion or scheduler.
+Implemented/compiled/runtime/merge pending. No blocker; next author room/events.
+
+D01 issue #20 source implementation compiles. New Service Room links via the west
+landing ladder; authored optional Mara/Lev dialogue, retrieval key item, atomic
+Scrap reward, hidden medicine and marked single-use trap. Trap bounds HP at1 and
+uses paralysis (no step damage). No save-layout changes. First runtime route now
+checks fresh access and decline/save; final acceptance not yet established.

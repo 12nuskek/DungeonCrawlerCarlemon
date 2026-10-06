@@ -12,8 +12,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
 | B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
 | R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
-| R02 | R01 | Verified: 169 assertions; issue #18; scoped integration pending |
-| D01 | E02, R02 | Pending: trap, secret and optional quest |
+| R02 | R01 | Complete: 169 assertions; merged PR #19 (`ae4679e`); issue #18 closed |
+| D01 | E02, R02 | Active: authored trap, secret and optional quest |
 | D02 | R01, D01 | Pending: explosive recipe |
 | S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |
 | S02 | S01 | Pending: original assets, dialogue/UI and placeholder review |
@@ -105,3 +105,12 @@ Base `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`. Two one-time achievement flags
 full states. Existing flag and atomic inventory APIs only. Test repeated triggers,
 map re-entry/cold saves, item use/persistence, no partial capacity grant and retry.
 No new maps/save schema/randomizer; original notices, explicit placeholder props.
+
+## D01 contract
+
+Base `ae4679e2e19a94fd60ac879c9dd18e89f7de2c41`, issue #20. One authored service
+room, marked avoidable nonlethal trap, optional secret and two original crawler
+NPCs with a retrieval quest. Preserve decline/accept/complete, tag/reward quantities,
+trap state and recovery across cold saves and backtracking. Prove actual paralysis
+and guide cure. No new battle model/save schema/crafting/boss/scheduler. Fresh save
+required for new map objects. Exact input routes/logs/screenshots required before merge.

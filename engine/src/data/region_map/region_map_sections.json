@@ -1246,6 +1246,10 @@
     {
       "id": "MAPSEC_DCC_VESTIBULE",
       "name": "QUIET LANDING"
+    },
+    {
+      "id": "MAPSEC_DCC_SERVICE",
+      "name": "SERVICE ROOM"
     }
   ]
 }

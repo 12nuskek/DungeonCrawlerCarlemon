@@ -691,6 +691,7 @@
   ],
   "gMapGroup_DungeonCrawler": [
     "DCC_Entrance",
-    "DCC_Vestibule"
+    "DCC_Vestibule",
+    "DCC_Service"
   ]
 }

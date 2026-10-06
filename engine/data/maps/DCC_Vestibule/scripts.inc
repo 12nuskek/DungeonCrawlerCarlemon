@@ -72,7 +72,7 @@ DCC_Vestibule_Text_Won:
 DCC_Vestibule_Guide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DCC_GUIDE_MET, DCC_Vestibule_GuideRest
+	goto_if_set FLAG_DCC_GUIDE_MET, DCC_Vestibule_GuideRepeat
 	msgbox DCC_Vestibule_Text_GuideIntro, MSGBOX_DEFAULT
 	setflag FLAG_DCC_GUIDE_MET
 DCC_Vestibule_GuideRest:
@@ -86,6 +86,25 @@ DCC_Vestibule_GuideAfterTrial:
 	msgbox DCC_Vestibule_Text_ReturnAdvice, MSGBOX_DEFAULT
 	release
 	end
+
+@ First visit retains the full introduction and tactical/navigation advice.
+@ Repeat visits restore exactly the same resources, with one contextual page.
+DCC_Vestibule_GuideRepeat:
+	special HealPlayerParty
+	goto_if_set TRAINER_FLAGS_START + TRAINER_DCC_TRIAL, DCC_Vestibule_GuideRepeatAfterTrial
+	msgbox DCC_Vestibule_Text_RepeatTrial, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_GuideRepeatAfterTrial:
+	msgbox DCC_Vestibule_Text_RepeatService, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_Text_RepeatTrial:
+	.string "CARL and DONUT are fully restored.\n"
+	.string "Try the trial. BRACE and WEAKEN help.$"
+DCC_Vestibule_Text_RepeatService:
+	.string "CARL and DONUT are fully restored.\n"
+	.string "West ladder: Service Room.$"
 
 DCC_Vestibule_Text_GuideIntro:
 	.string "GUIDE: Take a breath. This room is safe.\n"

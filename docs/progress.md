@@ -1524,3 +1524,22 @@ for this ROM; no new engine compilation or balance claim. PR48 merge pending.
 Next: integrate this scoped evidence, then assess repeated guide recovery messages
 with a concrete control-return probe while retaining first-use instructions.
 Updated private review package and human pacing/playtest remain pending. No Stage6.
+
+### N05 repeat-guide recovery — 2026-10-06
+
+N04 PR48 merged413523a0ecb85458f2392620d15456c2bfb845bb; issue47 complete.
+N05 issue49 task/n05-guide-recovery, base that merge. Two ordinary cold inputs
+reproduce the paging issue: after the interaction press plus one confirm, movement
+is still blocked by extra advice (expected position5,7; actual4,7, exit14). Both
+before-trial and after-trial guide states demonstrated on compiledb530fa6; raw
+baseline routes/logs/images/input hashes in docs/evidence/n05/before. Expected
+reproduction failures, not successful acceptance or failed fixes.
+
+Keep the complete first visit unchanged. Repeat visits heal once and show one
+contextual page: trial BRACE/WEAKEN hint before victory, west-ladder Service hint
+after. No new flags/resources/rules; same HealPlayerParty behavior. Two control-
+return probes add12 assertions to the full1303 baseline:78 sessions/1315, with
+required legacy inputs and exact coverage enforced. Then rerun all six recovered-
+save victories/cold checks (12/216) on this new production build; N04 driver now
+explicitly accepts either full N03 or full N05 coverage and still rejects engine
+mismatch. Source candidate implemented; compile/runtime/PR/merge pending.

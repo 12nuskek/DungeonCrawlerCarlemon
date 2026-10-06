@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "date": "2026-10-06",
+  "scope": "Candidate artifact format and deterministic reproduction only; no engine integration, compilation or runtime validation",
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "numpy": "2.3.5",
+  "clean_reproduction": {
+    "method": "Fresh temporary directory containing only the packaged conversion script and unchanged source reference; run python convert_native.py; compare every exported asset and manifest byte-for-byte",
+    "matched_files": 12,
+    "mismatches": []
+  },
+  "format_checks": [
+    "Expected PNG dimensions",
+    "P mode with 4-bit PNG depth",
+    "All indices in 0..15",
+    "Index 0 transparent; binary alpha only",
+    "All palette channels multiples of 8 (RGB555 precision)",
+    "JASC-PAL 16 entries match PNG palette per character",
+    "Normal/shiny palettes identical within each character",
+    "Animated front and trainer pack frames exactly equal the documented static source frame"
+  ],
+  "files": [
+    {
+      "path": "assets/carl/anim_front.png",
+      "sha256": "7da07e7604a298479d449bc2449103bf169e826461d508bdf2a97a582757dda6",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/carl/back.png",
+      "sha256": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/carl/front.png",
+      "sha256": "6c62b19145fe4a061a3080ec3ca2fae30a80452f3ea5d5aad8aaa878b29bd5aa",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/carl/normal.pal",
+      "sha256": "bd69650bd945b40286eb9c97c75acfc6dea377b83438218e8ced23fbfb763af2"
+    },
+    {
+      "path": "assets/carl/shiny.pal",
+      "sha256": "bd69650bd945b40286eb9c97c75acfc6dea377b83438218e8ced23fbfb763af2"
+    },
+    {
+      "path": "assets/carl/trainer_back.png",
+      "sha256": "a95f7947a7973fcf0daf2112664272a1614f047858d85519ccf508fdad1d4077",
+      "size": [
+        64,
+        256
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/donut/anim_front.png",
+      "sha256": "d53075a5ea8d60c2ec4f2e92dedf10ca1cc0c224a42f8e0f86ded426529d11f4",
+      "size": [
+        64,
+        128
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/donut/back.png",
+      "sha256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/donut/front.png",
+      "sha256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "P",
+      "bit_depth": 4,
+      "max_index": 15
+    },
+    {
+      "path": "assets/donut/normal.pal",
+      "sha256": "5e5827de36d660a71ad7dc74b834543f0f2d0ddaeb4c658d20fd0c564bbe2128"
+    },
+    {
+      "path": "assets/donut/shiny.pal",
+      "sha256": "5e5827de36d660a71ad7dc74b834543f0f2d0ddaeb4c658d20fd0c564bbe2128"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "869d44174924a48987fae326eed62f61eaf2541c6d276faa79b3b007c3a3a1c3"
+    }
+  ],
+  "compile": "NOT RUN",
+  "runtime": "NOT RUN",
+  "visual_acceptance": "Pending actual in-game review"
+}

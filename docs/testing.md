@@ -32,7 +32,7 @@ For repeatable headless execution install `libmgba-dev` and compile:
 mkdir -p artifacts/boot
 cc -std=gnu11 -Wall -Wextra -Werror scripts/boot-baseline.c -lmgba -o artifacts/boot-baseline
 cd artifacts/boot
-../boot-baseline ../../engine/pokeemerald.gba < ../../docs/evidence/f01/route.txt > boot.log
+../boot-baseline ../../engine/pokeemerald.gba < ../../docs/evidence/f01/route.txt > boot.log 2> mgba.log
 ```
 
 The harness runs the actual mGBA core with built-in BIOS and no loaded save, steps

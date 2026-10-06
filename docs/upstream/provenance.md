@@ -11,7 +11,8 @@ Exceptions to the snapshot: `.github/` omitted so upstream automation is not
 enabled here (workflow text retained as `build.yml.txt`). The three upstream
 `data/mb_*.gba` multiboot binary inputs are omitted from source commits and hydrated
 by `scripts/setup-foundation.sh`, verified against exact upstream blob IDs.
-No other engine source modifications are intended in F01.
+An added `engine/data/.gitignore` keeps these inputs ignored despite upstream's
+parent ignore exception. No gameplay or other engine source modifications in F01.
 
 Matching C compiler: https://github.com/pret/agbcc at
 `da598c1d918402c42c0c0d7128ba14567f3175e9`.

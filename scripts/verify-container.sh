@@ -9,11 +9,13 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
     echo 'Commit tracked changes before verifying the exact HEAD.' >&2
     exit 2
 fi
-evidence="$repo/artifacts/container"
-mkdir -p "$evidence"
-git rev-parse HEAD > "$evidence/tested-commit.txt"
+mkdir -p "$repo/artifacts/container"
+evidence=$(mktemp -d "$repo/artifacts/container/run-XXXXXX")
+echo "Evidence directory: $evidence"
+revision=$(git rev-parse HEAD)
+printf '%s\n' "$revision" > "$evidence/tested-commit.txt"
 # Build environment definition must also be the committed version.
-git archive HEAD docker | tar -x -C "$evidence"
+git archive "$revision" docker | tar -x -C "$evidence"
 cp "${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" "$evidence/docker/host-ca.crt"
 network_args=()
 if [[ -n "${DCC_PROXY_HOST_MAPPING:-}" ]]; then
@@ -33,11 +35,11 @@ container=$(docker create -i "${network_args[@]}" -e HTTP_PROXY -e HTTPS_PROXY -
 cleanup() { docker rm "$container" >/dev/null; }
 trap cleanup EXIT
 status=0
-git archive HEAD | docker start -ai "$container" > "$evidence/run.log" 2>&1 || status=$?
+git archive "$revision" | docker start -ai "$container" > "$evidence/run.log" 2>&1 || status=$?
 container_status=$(docker inspect --format '{{.State.ExitCode}}' "$container")
 if [[ $container_status -ne 0 ]]; then status=$container_status; fi
 # Copy scoped review evidence only, never the ROM or compiled harness.
-for name in packages.tsv setup.log build.log compare.log rom.sha256 build-driver.log; do
+for name in packages.tsv setup.log build.log compare.log rom.sha256 build-driver.log negative-tests.log; do
     docker cp "$container:/build/artifacts/$name" "$evidence/$name" 2>> "$evidence/run.log" || true
 done
 docker cp "$container:/build/artifacts/boot/." "$evidence/" 2>> "$evidence/run.log" || true

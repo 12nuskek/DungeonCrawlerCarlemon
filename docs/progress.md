@@ -1185,3 +1185,12 @@ materials/prop integration when the outside-repo asset kit is ready. Existing
 rubber-stamp geometry, wrong-colored entrance rubble, ambiguous box props and
 unresolved visual reward states remain identified overnight priorities. No blocker
 attempts consumed on N00; no new automation.
+
+N00 merged a9491f17c82a9da99fdca9acde21be612aac0260 via PR37. N00b issue38
+now sole active task on task/n00b-remaining-objective, base that merge. Select the
+remaining patrol using existing trainer flags; no new state or changed page
+counts. Acceptance: unchanged core routes plus cold-reloaded Journal checks for
+both pending, each individually pending, and both cleared; alternate-order
+normal battle creates the otherwise untested guard-only state. No fixture state
+injection. N01 waits on external art; no overlapping writers. Next isolated
+commit/build/runtime. Implemented YES; compiled/runtime/merged pending.

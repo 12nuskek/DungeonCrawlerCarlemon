@@ -161,12 +161,19 @@ DCC_Journal::
 	goto_if_set FLAG_DCC_SLICE_COMPLETE, DCC_Journal_Done
 	goto_if_set FLAG_DCC_BOSS_CLEARED, DCC_Journal_Stairs
 	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_TRIAL, DCC_Journal_Trial
-	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_GUARD, DCC_Journal_Patrols
-	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_HOWLER, DCC_Journal_Patrols
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_GUARD, DCC_Journal_CheckGuard
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_HOWLER, DCC_Journal_Howler
 	msgbox DCC_Journal_Text_Boss, MSGBOX_DEFAULT
 	goto DCC_Journal_Rules
 DCC_Journal_Trial:
 	msgbox DCC_Journal_Text_Trial, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_CheckGuard:
+	goto_if_unset TRAINER_FLAGS_START + TRAINER_DCC_HOWLER, DCC_Journal_Patrols
+	msgbox DCC_Journal_Text_Guard, MSGBOX_DEFAULT
+	goto DCC_Journal_Rules
+DCC_Journal_Howler:
+	msgbox DCC_Journal_Text_Howler, MSGBOX_DEFAULT
 	goto DCC_Journal_Rules
 DCC_Journal_Patrols:
 	msgbox DCC_Journal_Text_Patrols, MSGBOX_DEFAULT
@@ -196,6 +203,12 @@ DCC_Journal_Text_Trial:
 DCC_Journal_Text_Patrols:
 	.string "OBJECTIVE: Clear both gauntlet patrols.\n"
 	.string "Use the service room's southwest exit.$"
+DCC_Journal_Text_Guard:
+	.string "OBJECTIVE: Clear the guard patrol.\n"
+	.string "Find it on the gauntlet's west side.$"
+DCC_Journal_Text_Howler:
+	.string "OBJECTIVE: Clear the howler patrol.\n"
+	.string "Find it on the gauntlet's east side.$"
 DCC_Journal_Text_Boss:
 	.string "OBJECTIVE: Defeat the gate warden.\n"
 	.string "BRACE or WEAKEN answers its windup.$"

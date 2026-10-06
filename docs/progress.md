@@ -1,6 +1,8 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. Active task: F02 reproducible environment, single implementation writer.
+Handoff date: 2026-10-06. **Stage 0 complete; next task E01, not yet started.**
+This is a restartable checkpoint, not completion of the authorized Stages 0–5.
+No active engine writer or running build/container at this checkpoint.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -73,7 +75,8 @@ Implemented: digest-pinned Debian environment, captured-commit validation launch
 dirty compiler-cache rejection and strict mGBA runtime checkpoints.
 Compiled: PASS in fresh OS/container with empty compiler/source cache.
 Runtime verified: PASS, all three frame fingerprints and visual screenshot review.
-Ten positive/negative tests PASS. Merged: pending PR #3.
+Ten positive/negative tests PASS. Merged: PR #3 at
+`03353fb3f1287074102a5bc98df4f19b0d4c189f` (server-confirmed).
 PR: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/3
 Tested commit: `fcf3bd049e5369b8fcc3015244fe53c2f557e744`; base:
 `1af617261881fcc26c6bb0fbd924d4c8a3c56d9a`.
@@ -83,10 +86,33 @@ Commands/results, package/image identity and screenshots:
 No current build/runtime blocker. Managed Docker proxy/DNS/CA and writable client
 cache issues are resolved and documented; do not retry old failed approaches.
 No engine changes in F02, no ROM artifacts in Git, no running test container.
-Next: merge reviewed PR #3, record the merge, then E01 on a new branch from main.
+Next: E01 on a new branch from current main after reconciling remote PR/task state.
 E01 objective: Carl overworld presentation, one authored tutorial room, readable
 interaction and an exit; test four directions, collision, transition and save/reload
 in the emulator. Audit actual map/start/save paths before editing. Record any
 placeholder assets and deliberate Book 1 chronology compression in content-ledger.
 No battle engine or save-layout changes in E01; B01 follows its own narrow task.
 Use custom-build identity/runtime checks, not a false stock `make compare` pass.
+
+## Continuation checkpoint — 2026-10-06
+
+F01 merged in PR #2 at `1af617261881fcc26c6bb0fbd924d4c8a3c56d9a`.
+F02 merged in PR #3 at `03353fb3f1287074102a5bc98df4f19b0d4c189f`.
+Checkpoint documentation branch: `docs/stage0-checkpoint`, based on that F02 merge.
+Working source and validation scripts are committed; no pending implementation
+edits or unresolved build/runtime failures. No CI workflows or schedules added;
+validation evidence is local execution committed to `docs/evidence/f01` and `f02`,
+not GitHub Actions checks. Parent's sole hourly continuation remains responsible
+for resuming this Cloud task after its current turn ends.
+
+Exact next action: explicitly fetch main (`git fetch origin
+refs/heads/main:refs/remotes/origin/main`), read this checkpoint and live PR/task
+state, create a single E01 task branch, audit `engine/src/new_game.c`, map/layout
+data and starting-field flow, then implement and runtime-test the narrowly scoped
+tutorial room described above. Preserve baseline history and evidence. Do not
+repeat upstream import, create another writer or create another scheduler.
+
+Stages 1–5, full fresh-save slice completion, defeat/reward/save regression,
+original scheduled assets and post-slice improvement cycles remain outstanding.
+Stage 6 is still gated on the user's eventual playable-slice review. No playable
+DungeonCrawlerCarlemon adaptation or public release has been delivered yet.

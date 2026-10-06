@@ -4,6 +4,13 @@ from pathlib import Path
 from PIL import Image
 import hashlib,json,struct,sys
 root=Path(sys.argv[1]); baseline=json.loads(Path(sys.argv[2]).read_text()); engine=root/'engine'
+geometry=json.loads((root/'scripts/contracts/n02-geometry.json').read_text())
+changed_cells=0
+for name,spec in geometry['rooms'].items():
+ for change in spec['changes']:
+  cell=baseline['maps'][name]['cells'][change['y']*16+change['x']]
+  assert (cell['upper_bits'],cell['attribute'])==(change['before_upper'],change['before_attribute'])
+  cell['upper_bits']=change['after_upper'];cell['attribute']=change['after_attribute'];changed_cells+=1
 base=engine/'data/tilesets/secondary/dcc';im=Image.open(base/'tiles.png')
 assert im.mode=='P' and im.getextrema()[1]<16 and im.width%8==im.height%8==0
 assert (base/'tiles.png').read_bytes()[24]==4, 'atlas must be 4bpp'
@@ -36,4 +43,4 @@ for mid in used:
 for name,digest in baseline['unchanged_obj_art'].items():
  p=engine/name;data=p.read_text().encode() if p.suffix=='.pal' else p.read_bytes()
  assert hashlib.sha256(data).hexdigest()==digest,(name,'approved art changed')
-print(json.dumps({'checked_cells_and_border':cells,'metatiles':len(used),'secondary_tiles':num_tiles,'approved_art_files':len(baseline['unchanged_obj_art']),'event_contracts':len(baseline['maps'])},indent=2))
+print(json.dumps({'checked_cells_and_border':cells,'metatiles':len(used),'secondary_tiles':num_tiles,'approved_art_files':len(baseline['unchanged_obj_art']),'event_contracts':len(baseline['maps']),'explicit_geometry_cells':changed_cells},indent=2))

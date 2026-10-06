@@ -23,6 +23,12 @@ def export_rooms():
     import json, struct
     engine = ROOT/'engine'
     contract=json.loads((ROOT/'scripts/contracts/n01-baseline.json').read_text())
+    geometry=json.loads((ROOT/'scripts/contracts/n02-geometry.json').read_text())
+    for name,spec in geometry['rooms'].items():
+        for change in spec['changes']:
+            cell=contract['maps'][name]['cells'][change['y']*16+change['x']]
+            assert (cell['upper_bits'],cell['attribute'])==(change['before_upper'],change['before_attribute'])
+            cell['upper_bits']=change['after_upper'];cell['attribute']=change['after_attribute']
     architecture=SOURCE/'architecture'; backgrounds=SOURCE/'background_env6'
     native_palette=Image.open(architecture/'floor_plain.png').getpalette()
     def load(name):return Image.open(architecture/(name+'.png')).copy()
@@ -41,21 +47,39 @@ def export_rooms():
     banks={'DCC_Entrance':6,'DCC_Vestibule':7,'DCC_Service':8,'DCC_Corridor':6,'DCC_Boss':9,'DCC_Exit':7}
     for name,old in contract['maps'].items():
         room=Image.new('P',(256,192));room.putpalette(native_palette)
-        def put(x,y,kind):room.paste(load(kind),(x*16,y*16))
+        floor={(i%16,i//16) for i,c in enumerate(old['cells']) if c['upper_bits']==0x3000 or c['attribute']==0x61}
+        def put(x,y,kind):
+            if not (0<=x<16 and 0<=y<12):return
+            if kind.startswith(('floor_','mat_','conduit_','threshold_')) and (x,y) not in floor:return
+            if kind.startswith(('wall_','corner_outer')) and (x,y) in floor:return
+            room.paste(load(kind),(x*16,y*16))
         def prop(kind,px,py):
             im=Image.open(backgrounds/(kind+'.png'))
             # Use index mask, not palette luminance, to preserve every nonzero source pixel.
             mask=Image.frombytes('L',im.size,bytes(255 if v else 0 for v in im.tobytes()))
             room.paste(im,(px,py),mask)
         for y in range(12):
-            for x in range(16):put(x,y,'floor_plain' if 2<=x<=13 and 3<=y<=9 else 'void')
-        for x in range(2,14):
-            put(x,1,'wall_top_join' if x in (5,10) else 'wall_top_plain')
-            put(x,2,'wall_face_a' if x%2 else 'wall_face_b')
-            put(x,10,'wall_bottom_plain')
-        for y in range(2,10):
-            put(1,y,'wall_side_left');put(14,y,'wall_side_right')
-        for x,y,d in [(1,1,'nw'),(14,1,'ne'),(1,10,'sw'),(14,10,'se')]:put(x,y,'corner_outer_'+d)
+            for x in range(16):put(x,y,'floor_plain' if (x,y) in floor else 'void')
+        # Follow actual floor contours; two rows of north wall and thin side/rear cutaways.
+        for x,y in sorted(floor):
+            if (x-1,y) not in floor:put(x-1,y,'wall_side_left')
+            if (x+1,y) not in floor:put(x+1,y,'wall_side_right')
+            if (x,y+1) not in floor:put(x,y+1,'wall_bottom_plain')
+        for x,y in sorted(floor):
+            if (x,y-1) not in floor:
+                put(x,y-1,'wall_face_a' if x%2 else 'wall_face_b')
+                if (x,y-2) not in floor:put(x,y-2,'wall_top_join' if x%5==0 else 'wall_top_plain')
+                if (x-1,y) not in floor:
+                    put(x-1,y-1,'wall_side_left');put(x-1,y-2,'corner_outer_nw')
+                if (x+1,y) not in floor:
+                    put(x+1,y-1,'wall_side_right');put(x+1,y-2,'corner_outer_ne')
+            if (x,y+1) not in floor:
+                if (x-1,y) not in floor:put(x-1,y+1,'corner_outer_sw')
+                if (x+1,y) not in floor:put(x+1,y+1,'corner_outer_se')
+        for change in geometry['rooms'][name]['changes']:
+            x,y=change['x'],change['y']
+            if change['kind']=='block' and all((x+dx,y+dy) in floor for dx,dy in [(1,0),(-1,0),(0,1),(0,-1)]):
+                put(x,y,'wall_top_join')
         # Room-specific arrangements use sparse details rather than a global tile grid.
         if name=='DCC_Entrance':
             for x,y in [(6,6),(8,7),(7,8)]:put(x,y,'floor_crack')
@@ -105,7 +129,7 @@ def export_rooms():
             put(13,7,'conduit_vertical');put(13,6,'conduit_broken')
             put(8,6,'floor_repair')
         elif name=='DCC_Exit':
-            put(8,2,'wall_lamp_lit')
+            put(8,1,'wall_lamp_lit')
             for x in (6,7,8,9,10):put(x,3,'floor_warm_pool')
             for x,y in [(5,7),(6,7),(5,8),(6,8)]:put(x,y,'floor_scuff')
             prop('bedroll',4*16,8*16)
@@ -137,7 +161,7 @@ def export_rooms():
         # Engine secondary palette filename is the global bank number.
         shutil.copyfile(SOURCE/'optional_bg_palettes'/(name+'.pal'),base/'palettes'/f'{bank:02}.pal')
     (ROOT/'scripts/contracts/n01-composition.json').write_text(json.dumps({'tiles':len(tiles),'metatiles':len(metatiles),'rooms':manifest},indent=2)+'\n')
-    print('Native room composition:',len(tiles),'tiles;',len(metatiles),'metatiles; six unchanged behavioral maps')
+    print('Native room composition:',len(tiles),'tiles;',len(metatiles),'metatiles; six authored maps with declared geometry')
 
 if __name__ == '__main__':
     export_props()

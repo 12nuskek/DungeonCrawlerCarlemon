@@ -1333,3 +1333,87 @@ validation, not a new runtime claim. Partial source kit limitations retained.
 Next: merge this verified increment, then N02 room outlines/collision separately;
 follow with existing-flag visual state feedback and final full regression. Sole
 writer and parent-owned continuation unchanged. Deadline approximately21:19UTC.
+
+### N02 room outlines — 2026-10-06
+
+N01 PR42 merged c71636ac213147181eb28ab968ffd15e718501fc; issue35 closed.
+N02 issue43, task/n02-room-outlines, base that merge. Explicit30-cell geometry
+contract:14 new alcove cells and16 small blocked corner/support cells. All other
+1146 map/border collision/elevation/behavior cells, six event contracts and49
+approved assets remain unchanged. Dimensions/warps/interaction anchors unchanged.
+The renderer follows real contours rather than painting fake walls on walkable
+floor. No added travel requirement, enemies, floors or systems.
+
+Static connectivity passes all six maps, all warp/object approaches, both wire
+bypasses, secret/craft/cache/stair approaches, every new alcove, and an adjacent
+unchanged free escape for every newly blocked old floor cell. Normal-input old
+save setup at Exit13,9 passes5 assertions on pre-geometry ROM17e97672…cec637;
+copy remains private. New runtime probe will load it on the clipped corner and
+prove a normal step out with progression/resources unchanged.
+
+Acceptance queued: original full1053 assertions unchanged, six-room18, focused
+boundary/alcove47, old-save escape8 =1126 across65 processes (including existing
+explicit fixtures). Preserve all behavioral assertions. Source-native158 used
+subtiles/174 metatiles. Implemented YES; compiled/runtime/merged pending. Next
+isolated committed build/full runtime, actual shapes/camera/motion review, diff,
+PR and merge only if verified. Sole writer; no scheduler added.
+
+N02 first full run111fd5c stopped in quest-decline: expected Service11,3 but
+north utility protrusion stopped the original direct route at5,3. Static reachability
+was insufficient to prove the existing direct path remained useful. Preserve
+trace/input/initial contract and actual blocked-lane image in evidence/n02/
+diagnostics/north-lane. Boundary47 and old-save escape8 supplementary probes had
+passed, but they do not excuse this regression. No acceptance/merge claim.
+
+First correction removes three north-spine blocked cells instead of padding or
+rerouting the existing quest path. Contract now27 cells:14 alcove floors/13 small
+blocks;1149 others unchanged. All original1053 assertion routes untouched. New
+boundary route retains47 assertions, now proves the clear north spine and actual
+north wall. Connectivity still passes all targets. Next clean committed full
+rerun1126/65; this blocker has one design correction, no repeated speculative fixes.
+
+N02 second full run0fc144f stopped at crafting fixture reload after57 completed
+processes: Service13,3 corner blocked its original northward return to the guide.
+Preserved failing route/logs in evidence/n02/diagnostics/east-return. Executor
+responded normally; reported transport callbacks did not cause this assertion.
+No duplicate build was launched. Previous running process exited14 and was reaped.
+
+Second geometry correction removes that corner. Final candidate26 cells:14 added
+alcoves/12 small blocks;1150 others unchanged. Added evidence-derived route-cell
+envelope from all successful I01, N00b and N01 replay endpoints/straight segments.
+Every previously tested floor cell must remain open; it identifies13,3 as the only
+remaining conflict. All original routes/assertions stay intact. Original global
+reachability alone was insufficient; the direct-route contract now supplements it.
+
+Parent review also caught coverage omission: add all five N00b routes/43 checks
+and all three N01 legacy routes/41 checks to full N02 acceptance. Both actual
+DCC_LEGACY_RUN and DCC_CORNER_SAVE are supplied. Target1210 assertions/73 processes
+(including193 existing fixture assertions). Normal corner save was produced by
+five ordinary-input assertions on N01 ROM17e97672…cec637; no save/RAM edits.
+Fresh forward camera proof comes from the existing continuous prepared route:
+only previously unnamed capture filenames changed, identical controls/timings and
+all assertions. Parent's wire-contrast/live-spent feedback remains N03, not hidden
+inside geometry work. Next one clean committed rerun; two design corrections so
+far for the route-obstruction blocker. Stop dependent work if still unresolved
+under the three-attempt rule; preserve the scoped branch and accepted N01 baseline.
+
+### N02 verified — 2026-10-06
+
+Testeddec2c5e479cdceedf8b358d00448358640561b91, basec71636a; ROM
+421d812a9a18ac1b1432dc5b831a5ba281c6e034249215364f3a99fd598d33b1.
+Full73 processes/1210 assertions PASS:1017 production and193 labeled fixture.
+All73 error logs empty. Original1053 +newer43+legacy41+rooms18+boundary47+
+ordinary old-corner escape8 retained. Nine opponent/eight prop pixel checks pass.
+All26 declared geometry changes/1150 unchanged cells/six event contracts/49 art
+files verified. Two isolated complete exports preserve8807 tracked assets.
+
+Actual six forward arrival views (Exit after closing its automatic message/save),
+six center views, alcove/boundary and old-corner escape captures reviewed. Exit13,9
+ordinary older save steps safely to12,9 with state/resources unchanged. Both earlier
+route blockers resolved by removing obstructions; no retimed gameplay detours.
+Evidence docs/evidence/n02/final includes raw logs, images, input identities and
+precise production/fixture/retry/pacing limits. No ROM/save/executable committed.
+Implemented/compiled/runtime verified YES; PR44 integration pending. Next merge
+verified geometry, then N03 existing-state feedback: conspicuous live/spent wire,
+opened cache/secret, sealed/open gate and defeated encounter markers. No new
+flags/rewards/geometry; preserve approved art and full newer regression coverage.

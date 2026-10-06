@@ -344,3 +344,10 @@ palettes affect backgrounds only. No pressure-plate candidate is used. Props and
 room mats are static; wire/cache/secret/defeated-marker visual persistence still
 awaits its separate state increment. Existing outlines remain rectangular pending
 bounded collision/layout work. Current testedcd6946e evidence in evidence/n01/rooms.
+
+N02 room outlines (testeddec2c5e):26 explicitly recorded floor/support changes,
+no event/warp/NPC movement or chronology change. Recovery/practice/cache/overlook
+alcoves and small supports use the same accepted native masters. Existing tested
+routes preserved; older clipped-corner saves can step out normally. Source kit
+remains partial. State feedback remains N03; static live wire/open gate/occupied
+encounter tokens still do not communicate their resolved state in this increment.

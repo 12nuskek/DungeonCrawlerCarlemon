@@ -1,0 +1,270 @@
+{
+  "base": "c71636ac213147181eb28ab968ffd15e718501fc",
+  "revision": "N02",
+  "rooms": {
+    "DCC_Entrance": {
+      "purpose": "collapsed threshold with clipped northwestern ledge and rubble-side cutaway",
+      "changes": [
+        {
+          "x": 2,
+          "y": 3,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        }
+      ]
+    },
+    "DCC_Vestibule": {
+      "purpose": "recessed recovery nook and wider practice bay",
+      "changes": [
+        {
+          "x": 1,
+          "y": 7,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 1,
+          "y": 8,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 1,
+          "y": 9,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 14,
+          "y": 5,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 14,
+          "y": 6,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 14,
+          "y": 7,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        }
+      ]
+    },
+    "DCC_Service": {
+      "purpose": "recessed eastern cache bay while preserving the direct northern route",
+      "changes": [
+        {
+          "x": 14,
+          "y": 7,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 14,
+          "y": 8,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        }
+      ]
+    },
+    "DCC_Corridor": {
+      "purpose": "central compact support separates patrol bays while both lanes stay open",
+      "changes": [
+        {
+          "x": 8,
+          "y": 6,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 2,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        }
+      ]
+    },
+    "DCC_Boss": {
+      "purpose": "two short gate supports flank the warden and preserve direct stair approach",
+      "changes": [
+        {
+          "x": 6,
+          "y": 6,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 2,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        }
+      ]
+    },
+    "DCC_Exit": {
+      "purpose": "north overlook alcove and clipped rear corners",
+      "changes": [
+        {
+          "x": 2,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "before_upper": 1024,
+          "before_attribute": 0,
+          "after_upper": 12288,
+          "after_attribute": 8,
+          "kind": "open"
+        }
+      ]
+    }
+  }
+}

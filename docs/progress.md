@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0 and E01 complete; B01 in progress.**
+Handoff date: 2026-10-06. **Stage 0 and E01 complete; B01 verified, PR #6 awaiting integration.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
 Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -226,3 +226,15 @@ Isolated runner review caught three build/hash/symbol paths still relative to th
 workspace. Corrected them to the snapshot, then stopped the exploratory run and
 committed the correction before starting final verification. The interrupted
 run-ufeHbo is not accepted evidence; no game-state or source data was discarded.
+
+## B01 isolated verification — 2026-10-06
+
+Final tested source `0e5e6a46e02252ed76dd06a1025dca2c92649ec9`; clean git archive,
+pinned compiler rebuilt, all game products generated from scratch. ROM SHA256
+`e6692036e3804d20d585ab6d0086fcf276d4d71561c105f6135f858152f4f8fd`, identical to
+prior workspace build. Implemented YES; compiled PASS; real mGBA runtime PASS:
+38 assertions, four empty error logs, fresh captures reviewed. Complete raw build
+and setup logs and checksums replace earlier incremental B01 evidence. See report.
+PR #6 opened as draft with actual screenshots; final evidence update and authorized
+integration are next. No source/runtime acceptance blockers remain. No other
+active writer/task/scheduler was created. E01 PR #5 screenshot backfill confirmed.

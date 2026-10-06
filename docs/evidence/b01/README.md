@@ -4,10 +4,10 @@ Implemented: YES. Compiled: PASS. Runtime verified: PASS. Merge state is recorde
 in [progress](../../progress.md); this report describes the tested source commit.
 
 - Base: `91afb3deb6f856b4565e00bb65e81f0f1497a05f` (E01 merged).
-- Tested: `9fc11212c465008e3571d9f77e98b41454ce919d`.
+- Tested: `0e5e6a46e02252ed76dd06a1025dca2c92649ec9`.
 - ROM SHA256: `e6692036e3804d20d585ab6d0086fcf276d4d71561c105f6135f858152f4f8fd`.
 - Real emulator: mGBA 0.10.5, headless software framebuffer, ordinary GBA inputs.
-- Local run: `artifacts/b01/run-jQnN25`; no ROM/save/executable is committed.
+- Local run: `artifacts/b01/run-Js6Ugm`; no ROM/save/executable is committed.
 - Toolchain/source provenance: [testing](../../testing.md), [foundation](../f01/README.md).
 
 Reproduction with installed build tools and mGBA headers/library:
@@ -23,12 +23,19 @@ PATH=/workspace/toolchain/root/usr/bin:$PATH \
 PKG_CONFIG_SYSROOT_DIR=/workspace/toolchain/root \
 PKG_CONFIG_PATH=/workspace/toolchain/root/usr/lib/x86_64-linux-gnu/pkgconfig \
 LIBRARY_PATH=/workspace/toolchain/root/usr/lib/x86_64-linux-gnu \
+DCC_CACHE=/workspace/dcc-toolchain-cache \
 DCC_TEST_CFLAGS=-I/workspace/toolchain/root/usr/include \
 DCC_TEST_LDFLAGS='-L/workspace/toolchain/root/usr/lib/x86_64-linux-gnu -Wl,-rpath,/workspace/toolchain/root/usr/lib/x86_64-linux-gnu' \
 bash scripts/test-b01.sh
 ```
 
-The script builds with `make -C engine -j2`, compiles the host harness with
+The script exports the exact commit into a new directory with `git archive`,
+rebuilds the pinned compiler and hydrates verified upstream multiboot inputs via
+setup-foundation.sh, then builds the isolated engine with `make -C <snapshot>/engine -j2`.
+No workspace ignored/generated/untracked game files are copied. This run reused
+clean pinned upstream/compiler source caches, not compiled game products; the
+compiler was rebuilt. Complete unabridged toolchain and game build output is
+archived in setup-toolchain.log and build.log. It compiles the host harness with
 `-Wall -Wextra -Werror`, and boots four separate emulator processes against actual
 flash saves. It rejects dirty tracked source at entry and changes during execution.
 These are custom gameplay builds, not claims of the stock Emerald hash matching.
@@ -72,3 +79,9 @@ confirmation; the corrected final route saves and reloads successfully. Final
 diff review covered trainer flag capacity, source-only assets, callback scope,
 save compatibility and all documented placeholders. No repository workflow or
 scheduler was added. No known B01 acceptance blocker remains.
+
+The isolated build reproduced the earlier ROM checksum exactly. All nine archived
+captures are byte-identical to the earlier visually reviewed run, and the fresh
+recovery/reload frames were re-inspected. SHA256SUMS covers the evidence files.
+E01 PR #5 was backfilled with actual captures; B01 PR #6 embeds the final frames.
+The screenshot requirement is now durable in AGENTS.md and testing.md.

@@ -6,7 +6,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | --- | --- | --- |
 | F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
-| E01 | F01 | Active: Carl avatar, tutorial map and exploration runtime |
+| E01 | F01 | Implemented, compiled and runtime verified; integration pending |
 | E02 | E01 | Pending: safe room, guide and recovery |
 | B01 | F01 | Pending: Carl/Donut duo prototype |
 | B02 | B01 | Pending: actions and defeat recovery |

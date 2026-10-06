@@ -7,10 +7,10 @@ Do not treat proposed design counts or roles as book canon.
 | Asset/content | Source/author | Status | Replacement/verification |
 | --- | --- | --- | --- |
 | Baseline engine, maps, sprites, music and text | pret/pokeemerald pinned source; original game's material retained upstream | Technical baseline only | Not claimed as original adaptation art; replace scheduled slice assets in S02 |
-| Carl walking sprite and palette | Original indexed pixels by Codex, source `scripts/content/carl_sprite.py`; no tracing or upstream sprite edit | E01 implemented, runtime review in progress | Simple prototype, S02 refinement; walking only |
+| Carl walking sprite and palette | Original indexed pixels by Codex, source `scripts/content/carl_sprite.py`; no tracing or upstream sprite edit | E01 implemented and runtime reviewed | Simple prototype, S02 refinement; walking only |
 | Donut overworld and both battle presentations | To be authored | Missing | B01/S02; E01 describes Donut on Carl's shoulder but does not draw her |
 | Entrance and quiet landing maps | Authored map geometry/events in `engine/data/maps/DCC_*` and `data/layouts/DCC_*` | E01 implemented | Upstream cave tiles, crate and rock graphics remain placeholders |
-| E01 dialogue and AI announcements | Original Codex adaptation text in `DCC_Entrance/scripts.inc` and `DCC_Vestibule/scripts.inc` | Implemented, runtime review in progress | No book text copied; source is the accepted design brief, not a verified chapter quotation |
+| E01 dialogue and AI announcements | Original Codex adaptation text in `DCC_Entrance/scripts.inc` and `DCC_Vestibule/scripts.inc` | Implemented and runtime reviewed | No book text copied; source is the accepted design brief, not a verified chapter quotation |
 
 For each scene record ID, purpose, prerequisites, characters, book reference,
 intentional adaptation, map, dialogue, reward IDs and deterministic test route.

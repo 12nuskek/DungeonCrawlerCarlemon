@@ -142,3 +142,19 @@ new maps appended. Start a fresh E01 save; stock baseline saves are not supporte
 as crawler campaign starts. Cold reload of an E01 in-game save is required before
 merge. Test runner `scripts/test-e01.sh` records commit, custom checksum, button
 routes, read-only RAM assertions and screenshots. It never writes game RAM.
+
+## E01 final validation — 2026-10-06
+
+Tested commit `b28143b56f9413ff211473a70ca8429414335412`. Implemented: YES.
+Compiled: PASS. Runtime verified: PASS, 16 fresh-game plus 3 separate-process
+cold-reload assertions; final screenshots visually inspected. Merged: pending.
+Full commands, checksums, inputs, logs, screenshots and limits:
+[E01 evidence](evidence/e01/README.md). No current blocker. Follow-up commits for
+this task are documentation/evidence only. Review found no save-layout or battle
+changes. Title/menu/tile/music placeholders and missing Donut presentation remain
+explicit; this is a tutorial increment, not the completed slice.
+
+Next after E01 integration: B01 (dependency F01 already passed), a narrow Carl/Donut
+duo encounter prototype with both actors and victory return. This ready task
+enables meaningful protagonist recovery validation in E02; no change to the
+authorized scope. E02 safe-room guide/recovery is still pending, not silently done.

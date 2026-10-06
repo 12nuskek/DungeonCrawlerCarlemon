@@ -1,73 +1,70 @@
-# S02 runtime evidence — VISUAL ACCEPTANCE FAILED / UNMERGED
+# S02 presentation and interface evidence
 
-The user rejected current protagonist sprite quality. **Do not treat this package
-as S02 completion or merge approval.** Parent is preparing replacement art outside
-the repository; the sole implementation writer will integrate it. See the
-[replacement contract](../../s02-art-handoff.md). S03 remains dependent.
+Base: `abf9875af2ffead2a342b8a5835c1e3dff157ec0` (S01).
+Tested source: `c9062dabb81341bf0525eead8d89ea7ba62043f5`.
+Production SHA256: `7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72`.
+Implemented and clean compiled; **199 runtime assertions in11 production emulator
+processes PASS**,11 empty error logs. Visual review passed for this scoped change.
+Integration state is recorded in docs/progress.md / PR27 / issue26. S03 full slice
+regression and user playtest are still separate gates; this is not slice completion.
 
-Base `abf9875af2ffead2a342b8a5835c1e3dff157ec0` (S01 merge).
-Tested source `a242983b6f6d061dd2c5bd4916c34f8b1fd10266`.
-Production SHA256 `26ef6bff3466499592b994de02293efe338362b79fb9da69a55039206ad0b921`.
-Implemented prototype; isolated compilation PASS;128 runtime assertions PASS;
-visual acceptance FAIL; merged NO. Issue26; draft PR reference in progress log.
+Run `bash scripts/test-s02.sh` using [the documented toolchain](../../testing.md).
+The runner archives the exact source commit, regenerates compiler/game products,
+builds the host with `-Wall -Wextra -Werror`, and drives mGBA0.10.5 with normal
+buttons. No fixture ROM, RAM writes or injected savestates. Hardware palette reads
+verify rendering state; screenshots below are actual240×160 framebuffers.
 
-`bash scripts/test-s02.sh` uses the toolchain environment in [testing](../../testing.md),
-archives the exact commit, regenerates game/compiler products, builds the host
-with `-Wall -Wextra -Werror`, and drives real mGBA0.10.5 through normal buttons.
-No fixture ROM, RAM writes or savestate injection. Six processes have empty error
-logs.31 final actual PNGs were visually reviewed;3 earlier actual captures provide
-before comparisons. SHA256SUMS covers56 files:5 routes,12 runtime logs,5 build/
-metadata files and34 PNGs. The gates route is the unchanged S01 route, linked below.
-
-| Route | Assertions | Verified scope |
+| Route | Checks | Purpose |
 | --- | ---: | --- |
-| title |1| Real title renders with fixed affine blank tile; fresh flag unchanged |
-| setup |32| Fresh intro/exploration, one-time supply reward, normal manual save |
-| ui |13| Donut scene, Journal objective/rules/optional text, return to movement, roster/summary boundary, medicine UI |
-| trial |31| Both act; normal win/XP/resources, workshop reward, medicine use, repeat states and manual save |
-| rest |34| Cold depletion/reward persistence, re-entry/repeats, guide restoration/save |
-| [gates](../s01/gates.route) |17| Service/gauntlet/gate navigation, locked boss/stairs, return/save |
+| title |1| Corrected title and transparent tile0 |
+| setup |34| Fresh tutorial, interaction, transitions and deterministic rewards |
+| ui |15| Protagonist scene, Journal, roster/summary and medicine menus |
+| trial |33| Both actions, win/XP, rewards, medicine use, save and palette return |
+| rest |36| Cold reward/resource state, repeated interactions and free recovery |
+| movement |9| Four directions, contact frames, matching coordinates and palettes |
+| gates |17| Connected zones, locked boss/stairs and backtracking |
+| menu-materials |16| Optional quest/material route and manual save |
+| menu-craft |13| Recipe/output/consumption and reload |
+| menu-blast |17| Trap, cache charge use and persistence |
+| menu-journal |8| Completed objective text fits; Journal leaves state/movement intact |
 
-Asset check (Python3/Pillow12.3.0) verifies49 indexed images, seven sprite dimension
-contracts,4bpp and tile budgets, transparent title tile0, and11 used metatile
-behavior matches. Collision/elevation bits also compared against S01 across all12
-map/border binaries and match. Replacement art will need these checks rerun.
+Routes and raw build/emulator logs are archived alongside captures. The three
+menu routes and gates are unchanged copies of previously authored routes. PNGs
+prefixed `before-` name their older tested source; all other PNGs use c9062da.
+`SHA256SUMS` covers this directory except itself. No ROM/save/executable is stored.
 
-Presentation/object changes shifted the deterministic input replay's damage/XP
-phases. The updated trial route records actual outcomes instead of retaining old
-frame assumptions: after win Carl9 XP495 HP22 resources4/40; Donut9 XP805 HP19,
-resources0/38; medicine restores Donut28, consumes exactly1. Cold reload preserves
-state and guide restores33/28,8/40,2/40. Battle rules/stats were not changed by S02.
-The original R02 exact damage golden does not pass unchanged; full fresh/branch
-combat regression remains S03. The scoped31 assertions do not substitute for that.
+The user rejected the initial geometric sprites and approved the improved native
+battle candidates, also requiring matching exploration. [Art provenance](../../art-references/README.md)
+distinguishes generated references, native conversion and authored pixel cleanup.
+Both protagonists now use approved battle masters and matching exploration art.
+Carl's right movement mirrors left; Donut is stationary in existing scenes.
+Battle animation/intro frames remain static duplicates. Other remaining inherited
+assets are explicitly listed in [the content ledger](../../content-ledger.md).
 
-Visual defects fixed before this run: title letter pixels leaked into repeated
-blank affine tile0; a redundant summary heading clipped. Actual before/after title
-captures verify the fix. Small shading/fur refinements and stone seams replaced
-oval pads, but the user still rejected the character-art direction. Do not equate
-original provenance with acceptable visual quality.
+![Actual replacement duo battle](trial-carl-menu.png)
+![Matching exploration scene](ui-donut-scene.png)
+![Carl summary](ui-carl-summary.png)
+![Crawler roster](ui-crawler-roster.png)
 
-Before title (tested5fd9217):
-![Title bug](before-title-5fd9217.png)
-After (testeda242983):
-![Title corrected](title-title-final.png)
+Visual regression caught before acceptance: Donut incorrectly used pink/blue
+NPC colors on a2de128. Its four-bit paletteSlot discarded +16. The corrected
+implementation reserves the existing NPC1 slot during dungeon map initialization
+and returns the correct tag for reload consumers; no hardware bank or save fields
+added. A hardware-color regression failed on the old ROM (23391 versus4196) and
+passes at field/menu/battle/reload checkpoints on the corrected ROM.
 
-Same gauntlet entry before (tested2e8de08):
-![Original cave](before-gauntlet-2e8de08.png)
-After (testeda242983):
-![Stone gauntlet](gates-gauntlet.png)
+![Wrong Donut palette, a2de128](before-donut-palette-a2de128.png)
+![Corrected palette, c9062da](ui-donut-scene.png)
 
-Same trial first-turn view before (tested2e8de08):
-![Stock duo](before-battle-2e8de08.png)
-Current rejected prototype (testeda242983):
-![Current duo — rejected art](trial-turn-one.png)
+Carl's head/torso stay anchored across walk contacts. Actual left/up/right/down
+captures were reviewed for direction, clipping, palette stability and foot motion.
+Art checks cover49 indexed images, seven battle/icon contracts, protagonist frame
+packing/margins/palettes, title/arena budgets and11 dungeon metatile behaviors.
+All12 map/border collision/elevation fields match S01. No combat rules or save
+layout changed. The trial route's recorded outcome remains Carl9 XP495/Donut9
+XP805; medicine and recovery preserve their expected resource states.
 
-![Donut scene](ui-donut-scene.png)
-![Journal objective](ui-journal-objective.png)
-![Medicine crawler wording](ui-medicine-crawlers.png)
-
-Still inherited: menu frames/bag/summary backgrounds and some baked labels,
-boot/copyright credits, ball send-out/summary marker, music/sounds/move animations.
-Original NPCs remain stationary; rooms are sparse/repetitive. These limits need
-honest review and focused polish after progression blockers. No public playable
-release, no20–30-minute human pacing claim, no S03 or Stage6 completion claim.
+Title tile0 repetition and clipped Journal text were also corrected during S02;
+old title evidence is retained. New dungeon/NPC art, Journal and summary changes
+still need S03 full completion/alternate strategy/defeat regressions. This scoped
+suite never substitutes for those checks.

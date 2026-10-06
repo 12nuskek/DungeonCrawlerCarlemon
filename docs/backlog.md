@@ -16,7 +16,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
 | D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
 | S01 | B03, R02, D02 | Complete:357 assertions; merged PR #25 (`abf9875`); issue #24 closed |
-| S02 | S01 | Blocked on replacement protagonist art: user rejected current sprites;128 runtime checks PASS; unmerged (issue #26) |
+| S02 | S01 | Implemented/compiled/runtime verified: replacement art,199 checks/11 sessions; integration pending PR #27 (issue #26) |
 | S03 | S02 | Pending: full regression and review package |
 
 F01 objective: exact source pin, matching baseline ROM, real boot evidence.

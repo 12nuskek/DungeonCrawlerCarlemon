@@ -1,4 +1,4 @@
-make: Entering directory '/workspace/DungeonCrawlerCarlemon/artifacts/s02/run-0dHXqs/source/engine'
+make: Entering directory '/workspace/DungeonCrawlerCarlemon/artifacts/s02/run-3cmBS6/source/engine'
 cc -Wall -Wextra -Werror -std=c11 -O2 bin2c.c -o bin2c 
 cc gbafix.c -o gbafix 
 cc -Wall -Wextra -Werror -Wno-sign-compare -std=c11 -O2 -DPNG_SKIP_SETJMP_CHECK -I/workspace/toolchain/root/usr/include/libpng16 -I/workspace/toolchain/root/usr/include  main.c convert_png.c gfx.c jasc_pal.c lz.c rl.c util.c font.c huff.c -o gbagfx  -lpng -lz
@@ -349,12 +349,12 @@ tools/scaninc/scaninc -M build/emerald/data/multiboot_pokemon_colosseum.d -g bui
 tools/scaninc/scaninc -M build/emerald/data/mystery_event_script_cmd_table.d -g build/assets -I include -I "" data/mystery_event_script_cmd_table.s
 tools/scaninc/scaninc -M build/emerald/data/mystery_gift.d -g build/assets -I include -I "" data/mystery_gift.s
 tools/scaninc/scaninc -M build/emerald/data/sound_data.d -g build/assets -I include -I "" data/sound_data.s
-tools/ramscrgen/ramscrgen .bss sym_bss.txt ENGLISH > build/emerald/sym_bss.ld
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_IntrWait=1 -o IntrWait.o libagbsyscall.s
+tools/ramscrgen/ramscrgen .bss sym_bss.txt ENGLISH > build/emerald/sym_bss.ld
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_RegisterRamReset=1 -o RegisterRamReset.o libagbsyscall.s
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_Sqrt=1 -o Sqrt.o libagbsyscall.s
-arm-none-eabi-as -mcpu=arm7tdmi --defsym L_MusicPlayerOpen=1 -o MusicPlayerOpen.o libagbsyscall.s
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/AgbRfu_LinkManager.o src/AgbRfu_LinkManager.c
+arm-none-eabi-as -mcpu=arm7tdmi --defsym L_MusicPlayerOpen=1 -o MusicPlayerOpen.o libagbsyscall.s
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_SoundBiasReset=1 -o SoundBiasReset.o libagbsyscall.s
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_SoundDriverVSyncOn=1 -o SoundDriverVSyncOn.o libagbsyscall.s
 arm-none-eabi-as -mcpu=arm7tdmi --defsym L_Mod=1 -o Mod.o libagbsyscall.s
@@ -486,8 +486,8 @@ tools/gbagfx/gbagfx graphics/pokemon/dragonite/anim_front.png build/assets/graph
 tools/gbagfx/gbagfx graphics/pokemon/dratini/anim_front.png build/assets/graphics/pokemon/dratini/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/drowzee/anim_front.png build/assets/graphics/pokemon/drowzee/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/dugtrio/anim_front.png build/assets/graphics/pokemon/dugtrio/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/dunsparce/anim_front.png build/assets/graphics/pokemon/dunsparce/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/dusclops/anim_front.png build/assets/graphics/pokemon/dusclops/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/dunsparce/anim_front.png build/assets/graphics/pokemon/dunsparce/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/duskull/anim_front.png build/assets/graphics/pokemon/duskull/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/dustox/anim_front.png build/assets/graphics/pokemon/dustox/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/eevee/anim_front.png build/assets/graphics/pokemon/eevee/anim_front.png.4bpp 
@@ -495,8 +495,8 @@ tools/gbagfx/gbagfx graphics/pokemon/egg/anim_front.png build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/ekans/anim_front.png build/assets/graphics/pokemon/ekans/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/electabuzz/anim_front.png build/assets/graphics/pokemon/electabuzz/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/electrike/anim_front.png build/assets/graphics/pokemon/electrike/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/elekid/anim_front.png build/assets/graphics/pokemon/elekid/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/electrode/anim_front.png build/assets/graphics/pokemon/electrode/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/elekid/anim_front.png build/assets/graphics/pokemon/elekid/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/entei/anim_front.png build/assets/graphics/pokemon/entei/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/espeon/anim_front.png build/assets/graphics/pokemon/espeon/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/exeggcute/anim_front.png build/assets/graphics/pokemon/exeggcute/anim_front.png.4bpp 
@@ -524,8 +524,8 @@ tools/gbagfx/gbagfx graphics/pokemon/goldeen/anim_front.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/pokemon/golduck/anim_front.png build/assets/graphics/pokemon/golduck/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/golem/anim_front.png build/assets/graphics/pokemon/golem/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/gorebyss/anim_front.png build/assets/graphics/pokemon/gorebyss/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/granbull/anim_front.png build/assets/graphics/pokemon/granbull/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/graveler/anim_front.png build/assets/graphics/pokemon/graveler/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/granbull/anim_front.png build/assets/graphics/pokemon/granbull/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/grimer/anim_front.png build/assets/graphics/pokemon/grimer/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/groudon/anim_front.png build/assets/graphics/pokemon/groudon/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/grovyle/anim_front.png build/assets/graphics/pokemon/grovyle/anim_front.png.4bpp 
@@ -576,8 +576,8 @@ tools/gbagfx/gbagfx graphics/pokemon/latios/anim_front.png build/assets/graphics
 tools/gbagfx/gbagfx graphics/pokemon/ledian/anim_front.png build/assets/graphics/pokemon/ledian/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/ledyba/anim_front.png build/assets/graphics/pokemon/ledyba/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lickitung/anim_front.png build/assets/graphics/pokemon/lickitung/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/lileep/anim_front.png build/assets/graphics/pokemon/lileep/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/linoone/anim_front.png build/assets/graphics/pokemon/linoone/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/lileep/anim_front.png build/assets/graphics/pokemon/lileep/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lombre/anim_front.png build/assets/graphics/pokemon/lombre/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lotad/anim_front.png build/assets/graphics/pokemon/lotad/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/ludicolo/anim_front.png build/assets/graphics/pokemon/ludicolo/anim_front.png.4bpp 
@@ -687,8 +687,8 @@ tools/gbagfx/gbagfx graphics/pokemon/roselia/anim_front.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/pokemon/sableye/anim_front.png build/assets/graphics/pokemon/sableye/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/salamence/anim_front.png build/assets/graphics/pokemon/salamence/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/sandshrew/anim_front.png build/assets/graphics/pokemon/sandshrew/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/sandslash/anim_front.png build/assets/graphics/pokemon/sandslash/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/sceptile/anim_front.png build/assets/graphics/pokemon/sceptile/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/sandslash/anim_front.png build/assets/graphics/pokemon/sandslash/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/scizor/anim_front.png build/assets/graphics/pokemon/scizor/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/anim_front.png build/assets/graphics/pokemon/scyther/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/seadra/anim_front.png build/assets/graphics/pokemon/seadra/anim_front.png.4bpp 
@@ -725,8 +725,8 @@ tools/gbagfx/gbagfx graphics/pokemon/snubbull/anim_front.png build/assets/graphi
 tools/gbagfx/gbagfx graphics/pokemon/solrock/anim_front.png build/assets/graphics/pokemon/solrock/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/spearow/anim_front.png build/assets/graphics/pokemon/spearow/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/spheal/anim_front.png build/assets/graphics/pokemon/spheal/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/spinarak/anim_front.png build/assets/graphics/pokemon/spinarak/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/spoink/anim_front.png build/assets/graphics/pokemon/spoink/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/spinarak/anim_front.png build/assets/graphics/pokemon/spinarak/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/squirtle/anim_front.png build/assets/graphics/pokemon/squirtle/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/stantler/anim_front.png build/assets/graphics/pokemon/stantler/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/starmie/anim_front.png build/assets/graphics/pokemon/starmie/anim_front.png.4bpp 
@@ -759,8 +759,8 @@ tools/gbagfx/gbagfx graphics/pokemon/tropius/anim_front.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/pokemon/typhlosion/anim_front.png build/assets/graphics/pokemon/typhlosion/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/tyranitar/anim_front.png build/assets/graphics/pokemon/tyranitar/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/tyrogue/anim_front.png build/assets/graphics/pokemon/tyrogue/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/umbreon/anim_front.png build/assets/graphics/pokemon/umbreon/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/a/anim_front.png build/assets/graphics/pokemon/unown/a/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/umbreon/anim_front.png build/assets/graphics/pokemon/umbreon/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/b/anim_front.png build/assets/graphics/pokemon/unown/b/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/c/anim_front.png build/assets/graphics/pokemon/unown/c/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/d/anim_front.png build/assets/graphics/pokemon/unown/d/anim_front.png.4bpp 
@@ -775,8 +775,8 @@ tools/gbagfx/gbagfx graphics/pokemon/unown/k/anim_front.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/pokemon/unown/l/anim_front.png build/assets/graphics/pokemon/unown/l/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/m/anim_front.png build/assets/graphics/pokemon/unown/m/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/n/anim_front.png build/assets/graphics/pokemon/unown/n/anim_front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/unown/o/anim_front.png build/assets/graphics/pokemon/unown/o/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/p/anim_front.png build/assets/graphics/pokemon/unown/p/anim_front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/unown/o/anim_front.png build/assets/graphics/pokemon/unown/o/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/q/anim_front.png build/assets/graphics/pokemon/unown/q/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/question_mark/anim_front.png build/assets/graphics/pokemon/unown/question_mark/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/unown/r/anim_front.png build/assets/graphics/pokemon/unown/r/anim_front.png.4bpp 
@@ -817,8 +817,8 @@ tools/gbagfx/gbagfx graphics/pokemon/xatu/anim_front.png build/assets/graphics/p
 tools/gbagfx/gbagfx graphics/pokemon/yanma/anim_front.png build/assets/graphics/pokemon/yanma/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zangoose/anim_front.png build/assets/graphics/pokemon/zangoose/anim_front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zapdos/anim_front.png build/assets/graphics/pokemon/zapdos/anim_front.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/apprentice.o src/apprentice.c
 tools/gbagfx/gbagfx graphics/pokemon/zubat/anim_front.png build/assets/graphics/pokemon/zubat/anim_front.png.4bpp 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/apprentice.o src/apprentice.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/bard_music.o src/bard_music.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_ai_script_commands.o src/battle_ai_script_commands.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_ai_switch_items.o src/battle_ai_switch_items.c
@@ -890,8 +890,8 @@ tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_pyramid_bag.o src/batt
 tools/gbagfx/gbagfx graphics/trainer_hill/records_window.png build/assets/graphics/trainer_hill/records_window.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainer_hill/records_window.png build/assets/graphics/trainer_hill/records_window.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_interface/level_up_banner.png build/assets/graphics/battle_interface/level_up_banner.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_setup.o src/battle_setup.c
 tools/gbagfx/gbagfx graphics/battle_interface/level_up_banner.png build/assets/graphics/battle_interface/level_up_banner.png.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_setup.o src/battle_setup.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_tent.o src/battle_tent.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_tower.o src/battle_tower.c
 tools/gbagfx/gbagfx graphics/battle_transitions/big_pokeball.png build/assets/graphics/battle_transitions/big_pokeball.png.4bpp 
@@ -940,10 +940,10 @@ tools/gbagfx/gbagfx graphics/battle_transitions/unused_trainer.pal build/assets/
 tools/gbagfx/gbagfx graphics/battle_transitions/wallace_bg.pal build/assets/graphics/battle_transitions/wallace_bg.pal.gbapal 
 tools/gbagfx/gbagfx graphics/field_effects/palettes/pokeball.pal build/assets/graphics/field_effects/palettes/pokeball.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_transitions/frontier_logo_center.bin build/assets/graphics/battle_transitions/frontier_logo_center.bin.lz 
-tools/gbagfx/gbagfx graphics/battle_transitions/frontier_logo_circles.png build/assets/graphics/battle_transitions/frontier_logo_circles.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_transitions/frontier_logo_center.png build/assets/graphics/battle_transitions/frontier_logo_center.png_num_tiles_43__Wnum_tiles.4bpp -num_tiles 43 -Wnum_tiles
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_tv.o src/battle_tv.c
+tools/gbagfx/gbagfx graphics/battle_transitions/frontier_logo_circles.png build/assets/graphics/battle_transitions/frontier_logo_circles.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_transitions/frontier_logo_circles.png build/assets/graphics/battle_transitions/frontier_logo_circles.png.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_tv.o src/battle_tv.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_util.o src/battle_util.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/battle_util2.o src/battle_util2.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/berry.o src/berry.c
@@ -973,8 +973,8 @@ tools/agbcc/bin/agbcc <flags> -o build/emerald/src/braille_puzzles.o src/braille
 tools/gbagfx/gbagfx graphics/cable_car/bg_mountains.bin build/assets/graphics/cable_car/bg_mountains.bin.lz 
 tools/gbagfx/gbagfx graphics/cable_car/ground.bin build/assets/graphics/cable_car/ground.bin.lz 
 tools/gbagfx/gbagfx graphics/cable_car/pylon_pole.bin build/assets/graphics/cable_car/pylon_pole.bin.lz 
-tools/gbagfx/gbagfx graphics/cable_car/trees.bin build/assets/graphics/cable_car/trees.bin.lz 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/cable_club.o src/cable_club.c
+tools/gbagfx/gbagfx graphics/cable_car/trees.bin build/assets/graphics/cable_car/trees.bin.lz 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/clear_save_data_screen.o src/clear_save_data_screen.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/clock.o src/clock.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/coins.o src/coins.c
@@ -999,8 +999,8 @@ tools/gbagfx/gbagfx graphics/picture_frame/tough.png build/assets/graphics/pictu
 tools/gbagfx/gbagfx graphics/picture_frame/tough_map.bin build/assets/graphics/picture_frame/tough_map.bin.rl 
 tools/gbagfx/gbagfx graphics/contest/results_screen/text_window.pal build/assets/graphics/contest/results_screen/text_window.pal.gbapal 
 tools/gbagfx/gbagfx graphics/contest/results_screen/text_window.png build/assets/graphics/contest/results_screen/text_window.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/coord_event_weather.o src/coord_event_weather.c
 tools/gbagfx/gbagfx graphics/interface/blank.pal build/assets/graphics/interface/blank.pal.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/coord_event_weather.o src/coord_event_weather.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/crawler.o src/crawler.c
 tools/gbagfx/gbagfx graphics/credits/credits.pal build/assets/graphics/credits/credits.pal.gbapal 
 tools/gbagfx/gbagfx graphics/credits/the_end_copyright.png build/assets/graphics/credits/the_end_copyright.png.4bpp 
@@ -1103,8 +1103,8 @@ tools/gbagfx/gbagfx graphics/field_effects/pics/jump_tall_grass.png build/assets
 tools/gbagfx/gbagfx graphics/field_effects/pics/long_grass.png build/assets/graphics/field_effects/pics/long_grass.png_mwidth_2__mheight_2.4bpp -mwidth 2 -mheight 2
 tools/gbagfx/gbagfx graphics/field_effects/pics/mountain_disguise.png build/assets/graphics/field_effects/pics/mountain_disguise.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/field_effects/pics/ripple.png build/assets/graphics/field_effects/pics/ripple.png_mwidth_2__mheight_2.4bpp -mwidth 2 -mheight 2
-tools/gbagfx/gbagfx graphics/field_effects/pics/sand_footprints.png build/assets/graphics/field_effects/pics/sand_footprints.png_mwidth_2__mheight_2.4bpp -mwidth 2 -mheight 2
 tools/gbagfx/gbagfx graphics/field_effects/pics/sand_disguise_placeholder.png build/assets/graphics/field_effects/pics/sand_disguise_placeholder.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
+tools/gbagfx/gbagfx graphics/field_effects/pics/sand_footprints.png build/assets/graphics/field_effects/pics/sand_footprints.png_mwidth_2__mheight_2.4bpp -mwidth 2 -mheight 2
 tools/gbagfx/gbagfx graphics/field_effects/pics/sand_pile.png build/assets/graphics/field_effects/pics/sand_pile.png_mwidth_2__mheight_1.4bpp -mwidth 2 -mheight 1
 tools/gbagfx/gbagfx graphics/field_effects/pics/shadow_extra_large.png build/assets/graphics/field_effects/pics/shadow_extra_large.png.4bpp 
 tools/gbagfx/gbagfx graphics/field_effects/pics/shadow_large.png build/assets/graphics/field_effects/pics/shadow_large.png.4bpp 
@@ -1128,6 +1128,7 @@ tools/gbagfx/gbagfx graphics/object_events/palettes/bridge_reflection.pal build/
 tools/gbagfx/gbagfx graphics/object_events/palettes/cable_car.pal build/assets/graphics/object_events/palettes/cable_car.pal.gbapal 
 tools/gbagfx/gbagfx graphics/object_events/palettes/carl.pal build/assets/graphics/object_events/palettes/carl.pal.gbapal 
 tools/gbagfx/gbagfx graphics/object_events/palettes/deoxys.pal build/assets/graphics/object_events/palettes/deoxys.pal.gbapal 
+tools/gbagfx/gbagfx graphics/object_events/palettes/donut.pal build/assets/graphics/object_events/palettes/donut.pal.gbapal 
 tools/gbagfx/gbagfx graphics/object_events/palettes/enemy_zigzagoon.pal build/assets/graphics/object_events/palettes/enemy_zigzagoon.pal.gbapal 
 tools/gbagfx/gbagfx graphics/object_events/palettes/groudon.pal build/assets/graphics/object_events/palettes/groudon.pal.gbapal 
 tools/gbagfx/gbagfx graphics/object_events/palettes/groudon_reflection.pal build/assets/graphics/object_events/palettes/groudon_reflection.pal.gbapal 
@@ -1255,8 +1256,8 @@ tools/gbagfx/gbagfx graphics/object_events/pics/misc/submarine_shadow.png build/
 tools/gbagfx/gbagfx graphics/object_events/pics/misc/truck.png build/assets/graphics/object_events/pics/misc/truck.png.4bpp 
 tools/gbagfx/gbagfx graphics/object_events/pics/people/artist.png build/assets/graphics/object_events/pics/people/artist.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/object_events/pics/people/beauty.png build/assets/graphics/object_events/pics/people/beauty.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
-tools/gbagfx/gbagfx graphics/object_events/pics/people/black_belt.png build/assets/graphics/object_events/pics/people/black_belt.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/object_events/pics/people/boy_1.png build/assets/graphics/object_events/pics/people/boy_1.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
+tools/gbagfx/gbagfx graphics/object_events/pics/people/black_belt.png build/assets/graphics/object_events/pics/people/black_belt.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/object_events/pics/people/boy_2.png build/assets/graphics/object_events/pics/people/boy_2.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/object_events/pics/people/boy_3.png build/assets/graphics/object_events/pics/people/boy_3.png_mwidth_2__mheight_4.4bpp -mwidth 2 -mheight 4
 tools/gbagfx/gbagfx graphics/object_events/pics/people/brendan/acro_bike.png build/assets/graphics/object_events/pics/people/brendan/acro_bike.png_mwidth_4__mheight_4.4bpp -mwidth 4 -mheight 4
@@ -1494,8 +1495,8 @@ tools/gbagfx/gbagfx graphics/field_effects/pics/pokeball_glow.png build/assets/g
 tools/gbagfx/gbagfx graphics/field_effects/pics/pokecenter_monitor/0.png build/assets/graphics/field_effects/pics/pokecenter_monitor/0.png.4bpp 
 tools/gbagfx/gbagfx graphics/field_effects/pics/pokecenter_monitor/1.png build/assets/graphics/field_effects/pics/pokecenter_monitor/1.png.4bpp 
 tools/gbagfx/gbagfx graphics/field_effects/pics/spotlight.png build/assets/graphics/field_effects/pics/spotlight.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_effect_helpers.o src/field_effect_helpers.c
 tools/gbagfx/gbagfx graphics/field_effects/pics/spotlight.png build/assets/graphics/field_effects/pics/spotlight.png.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_effect_helpers.o src/field_effect_helpers.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_message_box.o src/field_message_box.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_player_avatar.o src/field_player_avatar.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_poison.o src/field_poison.c
@@ -1512,8 +1513,8 @@ tools/gbagfx/gbagfx graphics/field_effects/palettes/deoxys_rock_5.pal build/asse
 tools/gbagfx/gbagfx graphics/field_effects/palettes/deoxys_rock_6.pal build/assets/graphics/field_effects/palettes/deoxys_rock_6.pal.gbapal 
 tools/gbagfx/gbagfx graphics/field_effects/palettes/deoxys_rock_7.pal build/assets/graphics/field_effects/palettes/deoxys_rock_7.pal.gbapal 
 tools/gbagfx/gbagfx graphics/field_effects/palettes/deoxys_rock_8.pal build/assets/graphics/field_effects/palettes/deoxys_rock_8.pal.gbapal 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_tasks.o src/field_tasks.c
 tools/gbagfx/gbagfx graphics/field_effects/palettes/deoxys_rock_9.pal build/assets/graphics/field_effects/palettes/deoxys_rock_9.pal.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/field_tasks.o src/field_tasks.c
 tools/gbagfx/gbagfx graphics/weather/fog.pal build/assets/graphics/weather/fog.pal.gbapal 
 tools/gbagfx/gbagfx graphics/weather/ash.png build/assets/graphics/weather/ash.png.4bpp 
 tools/gbagfx/gbagfx graphics/weather/bubble.png build/assets/graphics/weather/bubble.png.4bpp 
@@ -1667,8 +1668,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/highspeed_opponent.bin bui
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/highspeed_player.bin build/assets/graphics/battle_anims/backgrounds/highspeed_player.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/ice.bin build/assets/graphics/battle_anims/backgrounds/ice.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/ice.png build/assets/graphics/battle_anims/backgrounds/ice.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/ice.png build/assets/graphics/battle_anims/backgrounds/ice.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/impact.png build/assets/graphics/battle_anims/backgrounds/impact.png.4bpp 
+tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/ice.png build/assets/graphics/battle_anims/backgrounds/ice.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/impact.png build/assets/graphics/battle_anims/backgrounds/impact.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/impact_contests.bin build/assets/graphics/battle_anims/backgrounds/impact_contests.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/backgrounds/impact_opponent.bin build/assets/graphics/battle_anims/backgrounds/impact_opponent.bin.lz 
@@ -1768,8 +1769,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/brown_orb.pal build/assets/gra
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/brown_triangle.png build/assets/graphics/battle_anims/sprites/brown_triangle.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/brown_triangle.png build/assets/graphics/battle_anims/sprites/brown_triangle.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble.png build/assets/graphics/battle_anims/sprites/bubble.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble_burst.png build/assets/graphics/battle_anims/sprites/bubble_burst.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble_burst.png build/assets/graphics/battle_anims/sprites/bubble_burst.png.4bpp 
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble_burst.png build/assets/graphics/battle_anims/sprites/bubble_burst.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble_burst_2.png build/assets/graphics/battle_anims/sprites/bubble_burst_2.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/bubble_burst_2.png build/assets/graphics/battle_anims/sprites/bubble_burst_2.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/circle_impact.png build/assets/graphics/battle_anims/sprites/circle_impact.png.4bpp 
@@ -1949,8 +1950,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/magnifying_glass.png build/ass
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/metal_ball.png build/assets/graphics/battle_anims/sprites/metal_ball.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/metal_ball.png build/assets/graphics/battle_anims/sprites/metal_ball.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/metal_sound_waves.png build/assets/graphics/battle_anims/sprites/metal_sound_waves.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/metal_sound_waves.png build/assets/graphics/battle_anims/sprites/metal_sound_waves.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/meteor.png build/assets/graphics/battle_anims/sprites/meteor.png.4bpp 
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/metal_sound_waves.png build/assets/graphics/battle_anims/sprites/metal_sound_waves.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/meteor.png build/assets/graphics/battle_anims/sprites/meteor.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/milk_bottle.png build/assets/graphics/battle_anims/sprites/milk_bottle.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/milk_bottle.png build/assets/graphics/battle_anims/sprites/milk_bottle.png.gbapal 
@@ -1979,8 +1980,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/needle.png build/assets/graphi
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/noise_line.png build/assets/graphics/battle_anims/sprites/noise_line.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/opening_eye.png build/assets/graphics/battle_anims/sprites/opening_eye.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/opening_eye.png build/assets/graphics/battle_anims/sprites/opening_eye.png.gbapal 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/orange.png build/assets/graphics/battle_anims/sprites/orange.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/orange.png build/assets/graphics/battle_anims/sprites/orange.png.4bpp 
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/orange.png build/assets/graphics/battle_anims/sprites/orange.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/orange_light_wall.pal build/assets/graphics/battle_anims/sprites/orange_light_wall.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/orb.png build/assets/graphics/battle_anims/sprites/orb.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/orb.png build/assets/graphics/battle_anims/sprites/orb.png.gbapal 
@@ -2026,8 +2027,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_droplet.png build/asset
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_flame.png build/assets/graphics/battle_anims/sprites/purple_flame.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_flame.png build/assets/graphics/battle_anims/sprites/purple_flame.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_gas_cloud.pal build/assets/graphics/battle_anims/sprites/purple_gas_cloud.pal.gbapal 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_green_unk.png build/assets/graphics/battle_anims/sprites/purple_green_unk.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_green_unk.png build/assets/graphics/battle_anims/sprites/purple_green_unk.png.gbapal 
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_green_unk.png build/assets/graphics/battle_anims/sprites/purple_green_unk.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_hand_outline.png build/assets/graphics/battle_anims/sprites/purple_hand_outline.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_hand_outline.png build/assets/graphics/battle_anims/sprites/purple_hand_outline.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/purple_ring.pal build/assets/graphics/battle_anims/sprites/purple_ring.pal.gbapal 
@@ -2115,8 +2116,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/smokescreen_impact.png build/a
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/snore_z.png build/assets/graphics/battle_anims/sprites/snore_z.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/snore_z.png build/assets/graphics/battle_anims/sprites/snore_z.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/snowball.png build/assets/graphics/battle_anims/sprites/snowball.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/snowball.png build/assets/graphics/battle_anims/sprites/snowball.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/spark_0.png graphics/battle_anims/sprites/spark_0.4bpp
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/snowball.png build/assets/graphics/battle_anims/sprites/snowball.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/spark_1.png graphics/battle_anims/sprites/spark_1.4bpp
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/spark.pal build/assets/graphics/battle_anims/sprites/spark.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/spark_2.png build/assets/graphics/battle_anims/sprites/spark_2.png.4bpp 
@@ -2183,8 +2184,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/sprites/tied_bag.png build/assets/grap
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/tongue.png build/assets/graphics/battle_anims/sprites/tongue.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/tongue.png build/assets/graphics/battle_anims/sprites/tongue.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/torn_metal.png build/assets/graphics/battle_anims/sprites/torn_metal.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/sprites/tri_attack_triangle.png build/assets/graphics/battle_anims/sprites/tri_attack_triangle.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/toxic_bubble.png build/assets/graphics/battle_anims/sprites/toxic_bubble.png.4bpp 
+tools/gbagfx/gbagfx graphics/battle_anims/sprites/tri_attack_triangle.png build/assets/graphics/battle_anims/sprites/tri_attack_triangle.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/tri_attack_triangle.png build/assets/graphics/battle_anims/sprites/tri_attack_triangle.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/unknown.png build/assets/graphics/battle_anims/sprites/unknown.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/sprites/unknown.png build/assets/graphics/battle_anims/sprites/unknown.png.gbapal 
@@ -2245,8 +2246,8 @@ tools/gbagfx/gbagfx graphics/battle_anims/stat_change/evasion.pal build/assets/g
 tools/gbagfx/gbagfx graphics/battle_anims/stat_change/increase.bin build/assets/graphics/battle_anims/stat_change/increase.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/stat_change/multiple.pal build/assets/graphics/battle_anims/stat_change/multiple.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/stat_change/sp_attack.pal build/assets/graphics/battle_anims/stat_change/sp_attack.pal.gbapal 
-tools/gbagfx/gbagfx graphics/battle_anims/stat_change/sp_defense.pal build/assets/graphics/battle_anims/stat_change/sp_defense.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/stat_change/speed.pal build/assets/graphics/battle_anims/stat_change/speed.pal.gbapal 
+tools/gbagfx/gbagfx graphics/battle_anims/stat_change/sp_defense.pal build/assets/graphics/battle_anims/stat_change/sp_defense.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/stat_change/tiles.png build/assets/graphics/battle_anims/stat_change/tiles.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/goosuto.bin build/assets/graphics/battle_anims/unused/goosuto.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/goosuto.png build/assets/graphics/battle_anims/unused/goosuto.png.4bpp 
@@ -2265,14 +2266,14 @@ tools/gbagfx/gbagfx graphics/battle_anims/unused/music_notes.png build/assets/gr
 tools/gbagfx/gbagfx graphics/battle_anims/unused/old_beatup.png build/assets/graphics/battle_anims/unused/old_beatup.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/old_beatup.png build/assets/graphics/battle_anims/unused/old_beatup.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/spinning_ball.png build/assets/graphics/battle_anims/unused/spinning_ball.png.4bpp 
-tools/gbagfx/gbagfx graphics/battle_anims/unused/spinning_ball_2.pal build/assets/graphics/battle_anims/unused/spinning_ball_2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/spinning_ball.png build/assets/graphics/battle_anims/unused/spinning_ball.png.gbapal 
+tools/gbagfx/gbagfx graphics/battle_anims/unused/spinning_ball_2.pal build/assets/graphics/battle_anims/unused/spinning_ball_2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/unknown_2.pal build/assets/graphics/battle_anims/unused/unknown_2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/unknown_4.bin build/assets/graphics/battle_anims/unused/unknown_4.bin.lz 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/water_splash.bin build/assets/graphics/battle_anims/unused/water_splash.bin.lz 
-tools/gbagfx/gbagfx graphics/battle_anims/unused/water_splash.png build/assets/graphics/battle_anims/unused/water_splash.png.8bpp 
 tools/gbagfx/gbagfx graphics/battle_anims/unused/water_splash.png build/assets/graphics/battle_anims/unused/water_splash.png.gbapal 
 tools/gbagfx/gbagfx graphics/battle_environment/building/anim_map.bin build/assets/graphics/battle_environment/building/anim_map.bin.lz 
+tools/gbagfx/gbagfx graphics/battle_anims/unused/water_splash.png build/assets/graphics/battle_anims/unused/water_splash.png.8bpp 
 tools/gbagfx/gbagfx graphics/battle_environment/building/anim_tiles.png build/assets/graphics/battle_environment/building/anim_tiles.png.4bpp 
 tools/gbagfx/gbagfx graphics/battle_environment/building/gym.pal build/assets/graphics/battle_environment/building/gym.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_environment/building/leader.pal build/assets/graphics/battle_environment/building/leader.pal.gbapal 
@@ -2398,8 +2399,8 @@ tools/gbagfx/gbagfx graphics/berries/bluk.png build/assets/graphics/berries/bluk
 tools/gbagfx/gbagfx graphics/berries/bluk.png build/assets/graphics/berries/bluk.png.gbapal 
 tools/gbagfx/gbagfx graphics/berries/cheri.png build/assets/graphics/berries/cheri.png.4bpp 
 tools/gbagfx/gbagfx graphics/berries/cheri.png build/assets/graphics/berries/cheri.png.gbapal 
-tools/gbagfx/gbagfx graphics/berries/chesto.png build/assets/graphics/berries/chesto.png.gbapal 
 tools/gbagfx/gbagfx graphics/berries/chesto.png build/assets/graphics/berries/chesto.png.4bpp 
+tools/gbagfx/gbagfx graphics/berries/chesto.png build/assets/graphics/berries/chesto.png.gbapal 
 tools/gbagfx/gbagfx graphics/berries/cornn.png build/assets/graphics/berries/cornn.png.4bpp 
 tools/gbagfx/gbagfx graphics/berries/cornn.png build/assets/graphics/berries/cornn.png.gbapal 
 tools/gbagfx/gbagfx graphics/berries/durin.png build/assets/graphics/berries/durin.png.4bpp 
@@ -2587,8 +2588,8 @@ tools/gbagfx/gbagfx graphics/dcc/scuttler/back.png build/assets/graphics/dcc/scu
 tools/gbagfx/gbagfx graphics/dcc/scuttler/front.png build/assets/graphics/dcc/scuttler/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/dcc/scuttler/icon.png build/assets/graphics/dcc/scuttler/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/dcc/scuttler/normal.pal build/assets/graphics/dcc/scuttler/normal.pal.gbapal 
-tools/gbagfx/gbagfx build/assets/graphics/dcc/shared.pal.gbapal build/assets/graphics/dcc/shared.pal.gbapal.lz
 tools/gbagfx/gbagfx graphics/dcc/scuttler/shiny.pal build/assets/graphics/dcc/scuttler/shiny.pal.gbapal 
+tools/gbagfx/gbagfx build/assets/graphics/dcc/shared.pal.gbapal build/assets/graphics/dcc/shared.pal.gbapal.lz
 tools/gbagfx/gbagfx graphics/dcc/title/background.pal build/assets/graphics/dcc/title/background.pal.gbapal 
 tools/gbagfx/gbagfx graphics/dcc/title/logo.bin build/assets/graphics/dcc/title/logo.bin.lz 
 tools/gbagfx/gbagfx graphics/dcc/title/logo.png build/assets/graphics/dcc/title/logo.png.8bpp 
@@ -2688,8 +2689,8 @@ tools/gbagfx/gbagfx graphics/easy_chat/button_window.png build/assets/graphics/e
 tools/gbagfx/gbagfx graphics/easy_chat/button_window.png build/assets/graphics/easy_chat/button_window.png.gbapal 
 tools/gbagfx/gbagfx graphics/easy_chat/mode.png build/assets/graphics/easy_chat/mode.png.4bpp 
 tools/gbagfx/gbagfx graphics/easy_chat/mode.png build/assets/graphics/easy_chat/mode.png.gbapal 
-tools/gbagfx/gbagfx graphics/easy_chat/rectangle_cursor.png build/assets/graphics/easy_chat/rectangle_cursor.png.gbapal 
 tools/gbagfx/gbagfx graphics/easy_chat/rectangle_cursor.png build/assets/graphics/easy_chat/rectangle_cursor.png.4bpp 
+tools/gbagfx/gbagfx graphics/easy_chat/rectangle_cursor.png build/assets/graphics/easy_chat/rectangle_cursor.png.gbapal 
 tools/gbagfx/gbagfx graphics/easy_chat/window.bin build/assets/graphics/easy_chat/window.bin.lz 
 tools/gbagfx/gbagfx graphics/easy_chat/window.png build/assets/graphics/easy_chat/window.png.4bpp 
 tools/gbagfx/gbagfx graphics/frontier_pass/bg.bin build/assets/graphics/frontier_pass/bg.bin.lz 
@@ -2718,9 +2719,9 @@ tools/gbagfx/gbagfx graphics/intro/copyright.png build/assets/graphics/intro/cop
 tools/gbagfx/gbagfx graphics/intro/scene_1/flygon.png build/assets/graphics/intro/scene_1/flygon.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_1/sparkle.png build/assets/graphics/intro/scene_1/sparkle.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_1/text.pal build/assets/graphics/intro/scene_1/text.pal.gbapal 
+tools/gbagfx/gbagfx graphics/intro/scene_2/brendan.png build/assets/graphics/intro/scene_2/brendan.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/flygon.png build/assets/graphics/intro/scene_2/flygon.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/flygon.png build/assets/graphics/intro/scene_2/flygon.png.gbapal 
-tools/gbagfx/gbagfx graphics/intro/scene_2/brendan.png build/assets/graphics/intro/scene_2/brendan.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/manectric.png build/assets/graphics/intro/scene_2/manectric.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/manectric.png build/assets/graphics/intro/scene_2/manectric.png.gbapal 
 tools/gbagfx/gbagfx graphics/intro/scene_2/may.png build/assets/graphics/intro/scene_2/may.png.4bpp 
@@ -2867,8 +2868,8 @@ tools/gbagfx/gbagfx graphics/items/icon_palettes/macho_brace.pal build/assets/gr
 tools/gbagfx/gbagfx graphics/items/icon_palettes/magma_emblem.pal build/assets/graphics/items/icon_palettes/magma_emblem.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/magnet.pal build/assets/graphics/items/icon_palettes/magnet.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/mago_berry.pal build/assets/graphics/items/icon_palettes/mago_berry.pal.gbapal 
-tools/gbagfx/gbagfx graphics/items/icon_palettes/master_ball.pal build/assets/graphics/items/icon_palettes/master_ball.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/magost_berry.pal build/assets/graphics/items/icon_palettes/magost_berry.pal.gbapal 
+tools/gbagfx/gbagfx graphics/items/icon_palettes/master_ball.pal build/assets/graphics/items/icon_palettes/master_ball.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/max_elixir.pal build/assets/graphics/items/icon_palettes/max_elixir.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/max_ether.pal build/assets/graphics/items/icon_palettes/max_ether.pal.gbapal 
 tools/gbagfx/gbagfx graphics/items/icon_palettes/max_potion.pal build/assets/graphics/items/icon_palettes/max_potion.pal.gbapal 
@@ -3238,8 +3239,8 @@ tools/gbagfx/gbagfx graphics/mail/harbor/map.bin build/assets/graphics/mail/harb
 tools/gbagfx/gbagfx graphics/mail/harbor/palette.pal build/assets/graphics/mail/harbor/palette.pal.gbapal 
 tools/gbagfx/gbagfx graphics/mail/harbor/tiles.png build/assets/graphics/mail/harbor/tiles.png.4bpp 
 tools/gbagfx/gbagfx graphics/mail/mech/map.bin build/assets/graphics/mail/mech/map.bin.lz 
-tools/gbagfx/gbagfx graphics/mail/mech/palette.pal build/assets/graphics/mail/mech/palette.pal.gbapal 
 tools/gbagfx/gbagfx graphics/mail/mech/tiles.png build/assets/graphics/mail/mech/tiles.png.4bpp 
+tools/gbagfx/gbagfx graphics/mail/mech/palette.pal build/assets/graphics/mail/mech/palette.pal.gbapal 
 tools/gbagfx/gbagfx graphics/mail/orange/map.bin build/assets/graphics/mail/orange/map.bin.lz 
 tools/gbagfx/gbagfx graphics/mail/orange/palette.pal build/assets/graphics/mail/orange/palette.pal.gbapal 
 tools/gbagfx/gbagfx graphics/mail/orange/tiles.png build/assets/graphics/mail/orange/tiles.png.4bpp 
@@ -3345,8 +3346,8 @@ tools/gbagfx/gbagfx graphics/pokemon/abra/front.png build/assets/graphics/pokemo
 tools/gbagfx/gbagfx graphics/pokemon/abra/icon.png build/assets/graphics/pokemon/abra/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/abra/normal.pal build/assets/graphics/pokemon/abra/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/abra/shiny.pal build/assets/graphics/pokemon/abra/shiny.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/absol/footprint.png build/assets/graphics/pokemon/absol/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/absol/back.png build/assets/graphics/pokemon/absol/back.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/absol/footprint.png build/assets/graphics/pokemon/absol/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/absol/front.png build/assets/graphics/pokemon/absol/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/absol/icon.png build/assets/graphics/pokemon/absol/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/absol/normal.pal build/assets/graphics/pokemon/absol/normal.pal.gbapal 
@@ -3515,8 +3516,8 @@ tools/gbagfx/gbagfx graphics/pokemon/blaziken/normal.pal build/assets/graphics/p
 tools/gbagfx/gbagfx graphics/pokemon/blaziken/shiny.pal build/assets/graphics/pokemon/blaziken/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/blissey/back.png build/assets/graphics/pokemon/blissey/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/blissey/footprint.png build/assets/graphics/pokemon/blissey/footprint.png.1bpp 
-tools/gbagfx/gbagfx graphics/pokemon/blissey/icon.png build/assets/graphics/pokemon/blissey/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/blissey/front.png build/assets/graphics/pokemon/blissey/front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/blissey/icon.png build/assets/graphics/pokemon/blissey/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/blissey/normal.pal build/assets/graphics/pokemon/blissey/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/blissey/shiny.pal build/assets/graphics/pokemon/blissey/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/breloom/back.png build/assets/graphics/pokemon/breloom/back.png.4bpp 
@@ -3564,10 +3565,10 @@ tools/gbagfx/gbagfx graphics/pokemon/carvanha/shiny.pal build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/cascoon/back.png build/assets/graphics/pokemon/cascoon/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/cascoon/footprint.png build/assets/graphics/pokemon/cascoon/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/cascoon/front.png build/assets/graphics/pokemon/cascoon/front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/cascoon/icon.png build/assets/graphics/pokemon/cascoon/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/cascoon/normal.pal build/assets/graphics/pokemon/cascoon/normal.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/cascoon/shiny.pal build/assets/graphics/pokemon/cascoon/shiny.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/cascoon/icon.png build/assets/graphics/pokemon/cascoon/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/castform/normal/back.png graphics/pokemon/castform/normal/back.4bpp
+tools/gbagfx/gbagfx graphics/pokemon/cascoon/shiny.pal build/assets/graphics/pokemon/cascoon/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/castform/sunny/back.png graphics/pokemon/castform/sunny/back.4bpp
 tools/gbagfx/gbagfx graphics/pokemon/castform/rainy/back.png graphics/pokemon/castform/rainy/back.4bpp
 tools/gbagfx/gbagfx graphics/pokemon/castform/snowy/back.png graphics/pokemon/castform/snowy/back.4bpp
@@ -3846,8 +3847,8 @@ tools/gbagfx/gbagfx graphics/pokemon/eevee/icon.png build/assets/graphics/pokemo
 tools/gbagfx/gbagfx graphics/pokemon/eevee/normal.pal build/assets/graphics/pokemon/eevee/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/eevee/shiny.pal build/assets/graphics/pokemon/eevee/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/egg/front.png build/assets/graphics/pokemon/egg/front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/egg/icon.png build/assets/graphics/pokemon/egg/icon.png.4bpp 
 tools/gbagfx/gbagfx build/assets/graphics/pokemon/egg/normal.pal.gbapal build/assets/graphics/pokemon/egg/normal.pal.gbapal.lz
+tools/gbagfx/gbagfx graphics/pokemon/egg/icon.png build/assets/graphics/pokemon/egg/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/ekans/back.png build/assets/graphics/pokemon/ekans/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/ekans/footprint.png build/assets/graphics/pokemon/ekans/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/ekans/front.png build/assets/graphics/pokemon/ekans/front.png.4bpp 
@@ -3884,8 +3885,8 @@ tools/gbagfx/gbagfx graphics/pokemon/entei/front.png build/assets/graphics/pokem
 tools/gbagfx/gbagfx graphics/pokemon/entei/icon.png build/assets/graphics/pokemon/entei/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/entei/normal.pal build/assets/graphics/pokemon/entei/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/entei/shiny.pal build/assets/graphics/pokemon/entei/shiny.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/espeon/footprint.png build/assets/graphics/pokemon/espeon/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/espeon/back.png build/assets/graphics/pokemon/espeon/back.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/espeon/footprint.png build/assets/graphics/pokemon/espeon/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/espeon/front.png build/assets/graphics/pokemon/espeon/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/espeon/icon.png build/assets/graphics/pokemon/espeon/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/espeon/normal.pal build/assets/graphics/pokemon/espeon/normal.pal.gbapal 
@@ -3910,10 +3911,10 @@ tools/gbagfx/gbagfx graphics/pokemon/exploud/normal.pal build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/exploud/shiny.pal build/assets/graphics/pokemon/exploud/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/farfetchd/back.png build/assets/graphics/pokemon/farfetchd/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/farfetchd/footprint.png build/assets/graphics/pokemon/farfetchd/footprint.png.1bpp 
-tools/gbagfx/gbagfx graphics/pokemon/farfetchd/front.png build/assets/graphics/pokemon/farfetchd/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/farfetchd/icon.png build/assets/graphics/pokemon/farfetchd/icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/farfetchd/normal.pal build/assets/graphics/pokemon/farfetchd/normal.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/farfetchd/front.png build/assets/graphics/pokemon/farfetchd/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/farfetchd/shiny.pal build/assets/graphics/pokemon/farfetchd/shiny.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/farfetchd/normal.pal build/assets/graphics/pokemon/farfetchd/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/fearow/back.png build/assets/graphics/pokemon/fearow/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/fearow/footprint.png build/assets/graphics/pokemon/fearow/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/fearow/front.png build/assets/graphics/pokemon/fearow/front.png.4bpp 
@@ -3953,10 +3954,10 @@ tools/gbagfx/gbagfx graphics/pokemon/flygon/shiny.pal build/assets/graphics/poke
 tools/gbagfx/gbagfx graphics/pokemon/forretress/back.png build/assets/graphics/pokemon/forretress/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/forretress/footprint.png build/assets/graphics/pokemon/forretress/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/forretress/front.png build/assets/graphics/pokemon/forretress/front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/forretress/icon.png build/assets/graphics/pokemon/forretress/icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/forretress/shiny.pal build/assets/graphics/pokemon/forretress/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/forretress/normal.pal build/assets/graphics/pokemon/forretress/normal.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/forretress/icon.png build/assets/graphics/pokemon/forretress/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/furret/back.png build/assets/graphics/pokemon/furret/back.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/forretress/shiny.pal build/assets/graphics/pokemon/forretress/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/furret/footprint.png build/assets/graphics/pokemon/furret/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/furret/front.png build/assets/graphics/pokemon/furret/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/furret/icon.png build/assets/graphics/pokemon/furret/icon.png.4bpp 
@@ -3998,8 +3999,8 @@ tools/gbagfx/gbagfx graphics/pokemon/glalie/front.png build/assets/graphics/poke
 tools/gbagfx/gbagfx graphics/pokemon/glalie/icon.png build/assets/graphics/pokemon/glalie/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/glalie/normal.pal build/assets/graphics/pokemon/glalie/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/glalie/shiny.pal build/assets/graphics/pokemon/glalie/shiny.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/gligar/footprint.png build/assets/graphics/pokemon/gligar/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/gligar/back.png build/assets/graphics/pokemon/gligar/back.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/gligar/footprint.png build/assets/graphics/pokemon/gligar/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/gligar/front.png build/assets/graphics/pokemon/gligar/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/gligar/icon.png build/assets/graphics/pokemon/gligar/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/gligar/normal.pal build/assets/graphics/pokemon/gligar/normal.pal.gbapal 
@@ -4110,8 +4111,8 @@ tools/gbagfx/gbagfx graphics/pokemon/heracross/back.png build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/heracross/footprint.png build/assets/graphics/pokemon/heracross/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/heracross/front.png build/assets/graphics/pokemon/heracross/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/heracross/icon.png build/assets/graphics/pokemon/heracross/icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/heracross/normal.pal build/assets/graphics/pokemon/heracross/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/heracross/shiny.pal build/assets/graphics/pokemon/heracross/shiny.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/heracross/normal.pal build/assets/graphics/pokemon/heracross/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/hitmonchan/back.png build/assets/graphics/pokemon/hitmonchan/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/hitmonchan/footprint.png build/assets/graphics/pokemon/hitmonchan/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/hitmonchan/front.png build/assets/graphics/pokemon/hitmonchan/front.png.4bpp 
@@ -4178,8 +4179,6 @@ tools/gbagfx/gbagfx graphics/pokemon/hypno/front.png build/assets/graphics/pokem
 tools/gbagfx/gbagfx graphics/pokemon/hypno/icon.png build/assets/graphics/pokemon/hypno/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/hypno/normal.pal build/assets/graphics/pokemon/hypno/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/hypno/shiny.pal build/assets/graphics/pokemon/hypno/shiny.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/icon_palettes/icon_palette_1.pal build/assets/graphics/pokemon/icon_palettes/icon_palette_1.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/icon_palettes/icon_palette_2.pal build/assets/graphics/pokemon/icon_palettes/icon_palette_2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/igglybuff/back.png build/assets/graphics/pokemon/igglybuff/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/igglybuff/footprint.png build/assets/graphics/pokemon/igglybuff/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/igglybuff/front.png build/assets/graphics/pokemon/igglybuff/front.png.4bpp 
@@ -4300,8 +4299,8 @@ tools/gbagfx/gbagfx graphics/pokemon/kyogre/front.png build/assets/graphics/poke
 tools/gbagfx/gbagfx graphics/pokemon/kyogre/icon.png build/assets/graphics/pokemon/kyogre/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/kyogre/normal.pal build/assets/graphics/pokemon/kyogre/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/kyogre/shiny.pal build/assets/graphics/pokemon/kyogre/shiny.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon/lairon/back.png build/assets/graphics/pokemon/lairon/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lairon/footprint.png build/assets/graphics/pokemon/lairon/footprint.png.1bpp 
+tools/gbagfx/gbagfx graphics/pokemon/lairon/back.png build/assets/graphics/pokemon/lairon/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lairon/front.png build/assets/graphics/pokemon/lairon/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lairon/icon.png build/assets/graphics/pokemon/lairon/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/lairon/normal.pal build/assets/graphics/pokemon/lairon/normal.pal.gbapal 
@@ -4685,8 +4684,8 @@ tools/gbagfx/gbagfx graphics/pokemon/noctowl/back.png build/assets/graphics/poke
 tools/gbagfx/gbagfx graphics/pokemon/noctowl/footprint.png build/assets/graphics/pokemon/noctowl/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/noctowl/front.png build/assets/graphics/pokemon/noctowl/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/noctowl/icon.png build/assets/graphics/pokemon/noctowl/icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/noctowl/shiny.pal build/assets/graphics/pokemon/noctowl/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/noctowl/normal.pal build/assets/graphics/pokemon/noctowl/normal.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/noctowl/shiny.pal build/assets/graphics/pokemon/noctowl/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/nosepass/back.png build/assets/graphics/pokemon/nosepass/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/nosepass/footprint.png build/assets/graphics/pokemon/nosepass/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/nosepass/front.png build/assets/graphics/pokemon/nosepass/front.png.4bpp 
@@ -4791,8 +4790,8 @@ tools/gbagfx/gbagfx graphics/pokemon/pidgey/normal.pal build/assets/graphics/pok
 tools/gbagfx/gbagfx graphics/pokemon/pidgey/shiny.pal build/assets/graphics/pokemon/pidgey/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/pikachu/back.png build/assets/graphics/pokemon/pikachu/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/pikachu/footprint.png build/assets/graphics/pokemon/pikachu/footprint.png.1bpp 
-tools/gbagfx/gbagfx graphics/pokemon/pikachu/front.png build/assets/graphics/pokemon/pikachu/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/pikachu/icon.png build/assets/graphics/pokemon/pikachu/icon.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/pikachu/front.png build/assets/graphics/pokemon/pikachu/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/pikachu/normal.pal build/assets/graphics/pokemon/pikachu/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/pikachu/shiny.pal build/assets/graphics/pokemon/pikachu/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/piloswine/back.png build/assets/graphics/pokemon/piloswine/back.png.4bpp 
@@ -5041,8 +5040,8 @@ tools/gbagfx/gbagfx graphics/pokemon/scizor/normal.pal build/assets/graphics/pok
 tools/gbagfx/gbagfx graphics/pokemon/scizor/shiny.pal build/assets/graphics/pokemon/scizor/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/back.png build/assets/graphics/pokemon/scyther/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/footprint.png build/assets/graphics/pokemon/scyther/footprint.png.1bpp 
-tools/gbagfx/gbagfx graphics/pokemon/scyther/front.png build/assets/graphics/pokemon/scyther/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/icon.png build/assets/graphics/pokemon/scyther/icon.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/scyther/front.png build/assets/graphics/pokemon/scyther/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/normal.pal build/assets/graphics/pokemon/scyther/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/scyther/shiny.pal build/assets/graphics/pokemon/scyther/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/seadra/back.png build/assets/graphics/pokemon/seadra/back.png.4bpp 
@@ -5112,8 +5111,8 @@ tools/gbagfx/gbagfx graphics/pokemon/shellder/icon.png build/assets/graphics/pok
 tools/gbagfx/gbagfx graphics/pokemon/shellder/normal.pal build/assets/graphics/pokemon/shellder/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/shellder/shiny.pal build/assets/graphics/pokemon/shellder/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/shiftry/back.png build/assets/graphics/pokemon/shiftry/back.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/shiftry/footprint.png build/assets/graphics/pokemon/shiftry/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/shiftry/front.png build/assets/graphics/pokemon/shiftry/front.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/shiftry/footprint.png build/assets/graphics/pokemon/shiftry/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/shiftry/icon.png build/assets/graphics/pokemon/shiftry/icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/shiftry/normal.pal build/assets/graphics/pokemon/shiftry/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/shiftry/shiny.pal build/assets/graphics/pokemon/shiftry/shiny.pal.gbapal 
@@ -5421,8 +5420,8 @@ tools/gbagfx/gbagfx graphics/pokemon/totodile/shiny.pal build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/trapinch/back.png build/assets/graphics/pokemon/trapinch/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/trapinch/footprint.png build/assets/graphics/pokemon/trapinch/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/trapinch/front.png build/assets/graphics/pokemon/trapinch/front.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/trapinch/normal.pal build/assets/graphics/pokemon/trapinch/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/trapinch/icon.png build/assets/graphics/pokemon/trapinch/icon.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/trapinch/normal.pal build/assets/graphics/pokemon/trapinch/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/trapinch/shiny.pal build/assets/graphics/pokemon/trapinch/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/treecko/back.png build/assets/graphics/pokemon/treecko/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/treecko/footprint.png build/assets/graphics/pokemon/treecko/footprint.png.1bpp 
@@ -5684,8 +5683,8 @@ tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/back.png build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/footprint.png build/assets/graphics/pokemon/wobbuffet/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/front.png build/assets/graphics/pokemon/wobbuffet/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/icon.png build/assets/graphics/pokemon/wobbuffet/icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/shiny.pal build/assets/graphics/pokemon/wobbuffet/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/normal.pal build/assets/graphics/pokemon/wobbuffet/normal.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokemon/wobbuffet/shiny.pal build/assets/graphics/pokemon/wobbuffet/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/wooper/back.png build/assets/graphics/pokemon/wooper/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/wooper/footprint.png build/assets/graphics/pokemon/wooper/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/wooper/front.png build/assets/graphics/pokemon/wooper/front.png.4bpp 
@@ -5726,8 +5725,8 @@ tools/gbagfx/gbagfx graphics/pokemon/zapdos/shiny.pal build/assets/graphics/poke
 tools/gbagfx/gbagfx graphics/pokemon/zigzagoon/footprint.png build/assets/graphics/pokemon/zigzagoon/footprint.png.1bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zubat/back.png build/assets/graphics/pokemon/zubat/back.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zubat/footprint.png build/assets/graphics/pokemon/zubat/footprint.png.1bpp 
-tools/gbagfx/gbagfx graphics/pokemon/zubat/front.png build/assets/graphics/pokemon/zubat/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zubat/icon.png build/assets/graphics/pokemon/zubat/icon.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon/zubat/front.png build/assets/graphics/pokemon/zubat/front.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon/zubat/normal.pal build/assets/graphics/pokemon/zubat/normal.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon/zubat/shiny.pal build/assets/graphics/pokemon/zubat/shiny.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/menu.png build/assets/graphics/pokemon_storage/menu.png.4bpp 
@@ -5752,8 +5751,8 @@ tools/gbagfx/gbagfx graphics/pokenav/condition/graph.png build/assets/graphics/p
 tools/gbagfx/gbagfx graphics/pokenav/condition/graph.png build/assets/graphics/pokenav/condition/graph.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/header.bin build/assets/graphics/pokenav/header.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/header.png build/assets/graphics/pokenav/header.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokenav/header.png build/assets/graphics/pokenav/header.png_num_tiles_53__Wnum_tiles.4bpp -num_tiles 53 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokenav/left_headers/beauty.png build/assets/graphics/pokenav/left_headers/beauty.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokenav/header.png build/assets/graphics/pokenav/header.png_num_tiles_53__Wnum_tiles.4bpp -num_tiles 53 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokenav/left_headers/condition.png build/assets/graphics/pokenav/left_headers/condition.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/left_headers/cool.png build/assets/graphics/pokenav/left_headers/cool.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/left_headers/cute.png build/assets/graphics/pokenav/left_headers/cute.png.4bpp 
@@ -5768,8 +5767,8 @@ tools/gbagfx/gbagfx graphics/pokenav/left_headers/smart.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/pokenav/left_headers/tough.png build/assets/graphics/pokenav/left_headers/tough.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/message.bin build/assets/graphics/pokenav/message.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/message.png build/assets/graphics/pokenav/message.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokenav/message.png build/assets/graphics/pokenav/message.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/options/hoenn_map.png graphics/pokenav/options/hoenn_map.4bpp
+tools/gbagfx/gbagfx graphics/pokenav/message.png build/assets/graphics/pokenav/message.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/options/condition.png graphics/pokenav/options/condition.4bpp
 tools/gbagfx/gbagfx graphics/pokenav/options/match_call.png graphics/pokenav/options/match_call.4bpp
 tools/gbagfx/gbagfx graphics/pokenav/options/ribbons.png graphics/pokenav/options/ribbons.4bpp
@@ -5798,8 +5797,8 @@ tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/groudon.png build/assets/gra
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/groudon_claw.png build/assets/graphics/rayquaza_scene/scene_1/groudon_claw.png.4bpp 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/groudon_shoulder.png build/assets/graphics/rayquaza_scene/scene_1/groudon_shoulder.png.4bpp 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/kyogre.png build/assets/graphics/rayquaza_scene/scene_1/kyogre.png.4bpp 
-tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/kyogre.png build/assets/graphics/rayquaza_scene/scene_1/kyogre.png.gbapal 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/kyogre_dorsal_fin.png build/assets/graphics/rayquaza_scene/scene_1/kyogre_dorsal_fin.png.4bpp 
+tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/kyogre.png build/assets/graphics/rayquaza_scene/scene_1/kyogre.png.gbapal 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_1/kyogre_pectoral_fin.png build/assets/graphics/rayquaza_scene/scene_1/kyogre_pectoral_fin.png.4bpp 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_2/bg.bin build/assets/graphics/rayquaza_scene/scene_2/bg.bin.lz 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_2/bg.png build/assets/graphics/rayquaza_scene/scene_2/bg.png_num_tiles_313__Wnum_tiles.4bpp -num_tiles 313 -Wnum_tiles
@@ -5813,8 +5812,8 @@ tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/bg.pal build/assets/graphics
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/bg.png build/assets/graphics/rayquaza_scene/scene_3/bg.png.4bpp 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/light.bin build/assets/graphics/rayquaza_scene/scene_3/light.bin.lz 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/light.png build/assets/graphics/rayquaza_scene/scene_3/light.png.4bpp 
-tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/rayquaza.png build/assets/graphics/rayquaza_scene/scene_3/rayquaza.png_num_tiles_124__Wnum_tiles.4bpp -num_tiles 124 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/rayquaza_tail.png graphics/rayquaza_scene/scene_3/rayquaza_tail.4bpp
+tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_3/rayquaza.png build/assets/graphics/rayquaza_scene/scene_3/rayquaza.png_num_tiles_124__Wnum_tiles.4bpp -num_tiles 124 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_4/bg.bin build/assets/graphics/rayquaza_scene/scene_4/bg.bin.lz 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_4/bg.pal build/assets/graphics/rayquaza_scene/scene_4/bg.pal.gbapal 
 tools/gbagfx/gbagfx graphics/rayquaza_scene/scene_4/bg.png build/assets/graphics/rayquaza_scene/scene_4/bg.png.4bpp 
@@ -5843,10 +5842,10 @@ tools/gbagfx/gbagfx graphics/roulette/center.png build/assets/graphics/roulette/
 tools/gbagfx/gbagfx graphics/roulette/credit.png build/assets/graphics/roulette/credit.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/headers.png build/assets/graphics/roulette/headers.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/multiplier.png build/assets/graphics/roulette/multiplier.png.4bpp 
-tools/gbagfx/gbagfx graphics/roulette/wheel.png build/assets/graphics/roulette/wheel.png.8bpp 
 tools/gbagfx/gbagfx graphics/roulette/numbers.png build/assets/graphics/roulette/numbers.png.4bpp 
-tools/gbagfx/gbagfx graphics/shop/menu.bin build/assets/graphics/shop/menu.bin.lz 
+tools/gbagfx/gbagfx graphics/roulette/wheel.png build/assets/graphics/roulette/wheel.png.8bpp 
 tools/gbagfx/gbagfx graphics/roulette/window.png build/assets/graphics/roulette/window.png.4bpp 
+tools/gbagfx/gbagfx graphics/shop/menu.bin build/assets/graphics/shop/menu.bin.lz 
 tools/gbagfx/gbagfx graphics/shop/menu.png build/assets/graphics/shop/menu.png.4bpp 
 tools/gbagfx/gbagfx graphics/shop/menu.png build/assets/graphics/shop/menu.png.gbapal 
 tools/gbagfx/gbagfx graphics/shop/money.png build/assets/graphics/shop/money.png.4bpp 
@@ -5909,8 +5908,8 @@ tools/gbagfx/gbagfx graphics/title_screen/press_start.png build/assets/graphics/
 tools/gbagfx/gbagfx graphics/title_screen/press_start.png build/assets/graphics/title_screen/press_start.png_mwidth_4__mheight_1__num_tiles_48__Wnum_tiles.4bpp -mwidth 4 -mheight 1 -num_tiles 48 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/trade/cursor.pal build/assets/graphics/trade/cursor.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/cursor.png build/assets/graphics/trade/cursor.png.4bpp 
-tools/gbagfx/gbagfx graphics/trade/gba.pal build/assets/graphics/trade/gba.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/gba.png build/assets/graphics/trade/gba.png.4bpp 
+tools/gbagfx/gbagfx graphics/trade/gba.pal build/assets/graphics/trade/gba.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/gba_pal2.pal build/assets/graphics/trade/gba_pal2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/menu.pal build/assets/graphics/trade/menu.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/menu.png build/assets/graphics/trade/menu.png.4bpp 
@@ -6000,10 +5999,10 @@ tools/gbagfx/gbagfx graphics/trainers/front_pics/gentleman.png build/assets/grap
 tools/gbagfx/gbagfx graphics/trainers/front_pics/gentleman.png build/assets/graphics/trainers/front_pics/gentleman.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/guitarist.png build/assets/graphics/trainers/front_pics/guitarist.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/guitarist.png build/assets/graphics/trainers/front_pics/guitarist.png.gbapal 
-tools/gbagfx/gbagfx graphics/trainers/front_pics/hex_maniac.png build/assets/graphics/trainers/front_pics/hex_maniac.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/hex_maniac.png build/assets/graphics/trainers/front_pics/hex_maniac.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/interviewer.png build/assets/graphics/trainers/front_pics/interviewer.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/interviewer.png build/assets/graphics/trainers/front_pics/interviewer.png.gbapal 
+tools/gbagfx/gbagfx graphics/trainers/front_pics/hex_maniac.png build/assets/graphics/trainers/front_pics/hex_maniac.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/kindler.png build/assets/graphics/trainers/front_pics/kindler.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/kindler.png build/assets/graphics/trainers/front_pics/kindler.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/lady.png build/assets/graphics/trainers/front_pics/lady.png.4bpp 
@@ -6042,8 +6041,8 @@ tools/gbagfx/gbagfx graphics/trainers/front_pics/ninja_boy.png build/assets/grap
 tools/gbagfx/gbagfx graphics/trainers/front_pics/ninja_boy.png build/assets/graphics/trainers/front_pics/ninja_boy.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/old_couple.png build/assets/graphics/trainers/front_pics/old_couple.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/old_couple.png build/assets/graphics/trainers/front_pics/old_couple.png.gbapal 
-tools/gbagfx/gbagfx graphics/trainers/front_pics/palace_maven_spenser.png build/assets/graphics/trainers/front_pics/palace_maven_spenser.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/palace_maven_spenser.png build/assets/graphics/trainers/front_pics/palace_maven_spenser.png.4bpp 
+tools/gbagfx/gbagfx graphics/trainers/front_pics/palace_maven_spenser.png build/assets/graphics/trainers/front_pics/palace_maven_spenser.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/parasol_lady.png build/assets/graphics/trainers/front_pics/parasol_lady.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/parasol_lady.png build/assets/graphics/trainers/front_pics/parasol_lady.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/picnicker.png build/assets/graphics/trainers/front_pics/picnicker.png.4bpp 
@@ -6058,8 +6057,8 @@ tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_breeder_f.png build/ass
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_breeder_f.png build/assets/graphics/trainers/front_pics/pokemon_breeder_f.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_breeder_m.png build/assets/graphics/trainers/front_pics/pokemon_breeder_m.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_breeder_m.png build/assets/graphics/trainers/front_pics/pokemon_breeder_m.png.gbapal 
-tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_ranger_f.png build/assets/graphics/trainers/front_pics/pokemon_ranger_f.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_ranger_f.png build/assets/graphics/trainers/front_pics/pokemon_ranger_f.png.gbapal 
+tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_ranger_f.png build/assets/graphics/trainers/front_pics/pokemon_ranger_f.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_ranger_m.png build/assets/graphics/trainers/front_pics/pokemon_ranger_m.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/pokemon_ranger_m.png build/assets/graphics/trainers/front_pics/pokemon_ranger_m.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/psychic_f.png build/assets/graphics/trainers/front_pics/psychic_f.png.4bpp 
@@ -6082,8 +6081,8 @@ tools/gbagfx/gbagfx graphics/trainers/front_pics/sailor.png build/assets/graphic
 tools/gbagfx/gbagfx graphics/trainers/front_pics/sailor.png build/assets/graphics/trainers/front_pics/sailor.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/salon_maiden_anabel.png build/assets/graphics/trainers/front_pics/salon_maiden_anabel.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/salon_maiden_anabel.png build/assets/graphics/trainers/front_pics/salon_maiden_anabel.png.gbapal 
-tools/gbagfx/gbagfx graphics/trainers/front_pics/school_kid_f.png build/assets/graphics/trainers/front_pics/school_kid_f.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/school_kid_f.png build/assets/graphics/trainers/front_pics/school_kid_f.png.gbapal 
+tools/gbagfx/gbagfx graphics/trainers/front_pics/school_kid_f.png build/assets/graphics/trainers/front_pics/school_kid_f.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/school_kid_m.png build/assets/graphics/trainers/front_pics/school_kid_m.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/school_kid_m.png build/assets/graphics/trainers/front_pics/school_kid_m.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainers/front_pics/sis_and_bro.png build/assets/graphics/trainers/front_pics/sis_and_bro.png.4bpp 
@@ -6176,8 +6175,8 @@ tools/gbagfx/gbagfx graphics/unused/shadow.png build/assets/graphics/unused/shad
 tools/gbagfx/gbagfx graphics/unused/shadow.png build/assets/graphics/unused/shadow.png.gbapal 
 tools/gbagfx/gbagfx graphics/wallclock/clock.png build/assets/graphics/wallclock/clock.png.4bpp 
 tools/gbagfx/gbagfx graphics/wallclock/clock_start.bin build/assets/graphics/wallclock/clock_start.bin.lz 
-tools/gbagfx/gbagfx graphics/wallclock/female.pal build/assets/graphics/wallclock/female.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wallclock/clock_view.bin build/assets/graphics/wallclock/clock_view.bin.lz 
+tools/gbagfx/gbagfx graphics/wallclock/female.pal build/assets/graphics/wallclock/female.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_interface/ball_caught_indicator.png graphics/battle_interface/ball_caught_indicator.4bpp
 tools/gbagfx/gbagfx graphics/wallclock/male.pal build/assets/graphics/wallclock/male.pal.gbapal 
 tools/gbagfx/gbagfx graphics/battle_interface/ball_display.png graphics/battle_interface/ball_display.4bpp
@@ -6248,18 +6247,18 @@ tools/gbagfx/gbagfx graphics/intro/scene_2/may_credits.png build/assets/graphics
 tools/gbagfx/gbagfx graphics/intro/scene_2/trees.png build/assets/graphics/intro/scene_2/trees.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/trees.png build/assets/graphics/intro/scene_2/trees.png.gbapal 
 tools/gbagfx/gbagfx graphics/intro/scene_2/trees_map.bin build/assets/graphics/intro/scene_2/trees_map.bin.lz 
-tools/gbagfx/gbagfx graphics/intro/scene_2/trees_small.png build/assets/graphics/intro/scene_2/trees_small.png.4bpp 
 tools/gbagfx/gbagfx graphics/intro/scene_2/trees_small.png build/assets/graphics/intro/scene_2/trees_small.png.gbapal 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/io_reg.o src/io_reg.c
 tools/gbagfx/gbagfx graphics/intro/scene_2/trees_sunset.pal build/assets/graphics/intro/scene_2/trees_sunset.pal.gbapal 
+tools/gbagfx/gbagfx graphics/intro/scene_2/trees_small.png build/assets/graphics/intro/scene_2/trees_small.png.4bpp 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/io_reg.o src/io_reg.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/item.o src/item.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/item_icon.o src/item_icon.c
 tools/gbagfx/gbagfx graphics/bag/select_button.png build/assets/graphics/bag/select_button.png.4bpp 
 tools/gbagfx/gbagfx graphics/bag/rotating_ball.png build/assets/graphics/bag/rotating_ball.png.4bpp 
 tools/gbagfx/gbagfx graphics/bag/rotating_ball.png build/assets/graphics/bag/rotating_ball.png.gbapal 
 tools/gbagfx/gbagfx graphics/unused/cherry.png build/assets/graphics/unused/cherry.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/item_use.o src/item_use.c
 tools/gbagfx/gbagfx graphics/unused/cherry.png build/assets/graphics/unused/cherry.png.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/item_use.o src/item_use.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/landmark.o src/landmark.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/libisagbprn.o src/libisagbprn.c
 tools/agbcc/bin/agbcc_arm <flags> -o build/emerald/src/librfu_intr.o src/librfu_intr.c
@@ -6293,8 +6292,8 @@ tools/gbagfx/gbagfx graphics/birch_speech/bg2.pal build/assets/graphics/birch_sp
 tools/gbagfx/gbagfx graphics/birch_speech/map.bin build/assets/graphics/birch_speech/map.bin.lz 
 tools/gbagfx/gbagfx graphics/birch_speech/shadow.png build/assets/graphics/birch_speech/shadow.png.4bpp 
 tools/gbagfx/gbagfx graphics/interface/main_menu_bg.pal build/assets/graphics/interface/main_menu_bg.pal.gbapal 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/malloc.o src/malloc.c
 tools/gbagfx/gbagfx graphics/interface/main_menu_text.pal build/assets/graphics/interface/main_menu_text.pal.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/malloc.o src/malloc.c
 tools/gbagfx/gbagfx graphics/map_popup/brick.png build/assets/graphics/map_popup/brick.png.4bpp 
 tools/gbagfx/gbagfx graphics/map_popup/brick_outline.png build/assets/graphics/map_popup/brick_outline.png.4bpp 
 tools/gbagfx/gbagfx graphics/map_popup/brick_outline.png build/assets/graphics/map_popup/brick_outline.png.gbapal 
@@ -6317,8 +6316,8 @@ tools/gbagfx/gbagfx graphics/map_popup/wood_outline.png build/assets/graphics/ma
 tools/gbagfx/gbagfx graphics/pokenav/match_call/nav_icon.png build/assets/graphics/pokenav/match_call/nav_icon.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/match_call/nav_icon.png build/assets/graphics/pokenav/match_call/nav_icon.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/match_call/window.png build/assets/graphics/pokenav/match_call/window.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokenav/match_call/window.png build/assets/graphics/pokenav/match_call/window.png.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/math_util.o src/math_util.c
+tools/gbagfx/gbagfx graphics/pokenav/match_call/window.png build/assets/graphics/pokenav/match_call/window.png.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/mauville_old_man.o src/mauville_old_man.c
 tools/gbagfx/gbagfx graphics/interface/hof_pc_topbar.pal build/assets/graphics/interface/hof_pc_topbar.pal.gbapal 
 tools/gbagfx/gbagfx graphics/interface/std_menu.pal build/assets/graphics/interface/std_menu.pal.gbapal 
@@ -6485,8 +6484,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/block/tilemap.bin build/
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/block/bg.png graphics/pokemon_storage/wallpapers/block/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/bg.png build/assets/graphics/pokemon_storage/wallpapers/cave/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/frame.png build/assets/graphics/pokemon_storage/wallpapers/cave/frame.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/cave/tilemap.bin.lz 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/frame.png graphics/pokemon_storage/wallpapers/cave/frame.4bpp -num_tiles 55 -Wnum_tiles
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/cave/tilemap.bin.lz 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/cave/bg.png graphics/pokemon_storage/wallpapers/cave/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/circles/bg.png build/assets/graphics/pokemon_storage/wallpapers/circles/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/circles/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/circles/tilemap.bin.lz 
@@ -6510,8 +6509,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/diagonal/bg.png build/as
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/diagonal/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/diagonal/tilemap.bin.lz 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/diagonal/bg.png graphics/pokemon_storage/wallpapers/diagonal/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/dusclops/bg.png build/assets/graphics/pokemon_storage/wallpapers/dusclops/bg.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/dusclops/bg.png graphics/pokemon_storage/wallpapers/dusclops/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/dusclops/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/dusclops/tilemap.bin.lz 
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/dusclops/bg.png graphics/pokemon_storage/wallpapers/dusclops/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/forest/bg.png build/assets/graphics/pokemon_storage/wallpapers/forest/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/forest/frame.png build/assets/graphics/pokemon_storage/wallpapers/forest/frame.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/forest/frame.png graphics/pokemon_storage/wallpapers/forest/frame.4bpp -num_tiles 55 -Wnum_tiles
@@ -6536,8 +6535,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/four_star.png buil
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/heart.png build/assets/graphics/pokemon_storage/wallpapers/icons/heart.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/koffing.png build/assets/graphics/pokemon_storage/wallpapers/icons/koffing.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/latis.png build/assets/graphics/pokemon_storage/wallpapers/icons/latis.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/line_circle.png build/assets/graphics/pokemon_storage/wallpapers/icons/line_circle.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/lotad.png build/assets/graphics/pokemon_storage/wallpapers/icons/lotad.png.4bpp 
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/line_circle.png build/assets/graphics/pokemon_storage/wallpapers/icons/line_circle.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/luvdisc.png build/assets/graphics/pokemon_storage/wallpapers/icons/luvdisc.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/magma.png build/assets/graphics/pokemon_storage/wallpapers/icons/magma.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/icons/maze.png build/assets/graphics/pokemon_storage/wallpapers/icons/maze.png.4bpp 
@@ -6573,8 +6572,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter/frame.png gra
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/pokecenter/tilemap.bin.lz 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter/bg.png graphics/pokemon_storage/wallpapers/pokecenter/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter2/bg.png build/assets/graphics/pokemon_storage/wallpapers/pokecenter2/bg.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter2/bg.png graphics/pokemon_storage/wallpapers/pokecenter2/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter2/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/pokecenter2/tilemap.bin.lz 
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pokecenter2/bg.png graphics/pokemon_storage/wallpapers/pokecenter2/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/polkadot/bg.png build/assets/graphics/pokemon_storage/wallpapers/polkadot/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/polkadot/frame.png build/assets/graphics/pokemon_storage/wallpapers/polkadot/frame.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/polkadot/frame.png graphics/pokemon_storage/wallpapers/polkadot/frame.4bpp -num_tiles 54 -Wnum_tiles
@@ -6582,8 +6581,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/polkadot/tilemap.bin bui
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/polkadot/bg.png graphics/pokemon_storage/wallpapers/polkadot/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/bg.png build/assets/graphics/pokemon_storage/wallpapers/river/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/frame.png build/assets/graphics/pokemon_storage/wallpapers/river/frame.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/frame.png graphics/pokemon_storage/wallpapers/river/frame.4bpp -num_tiles 51 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/river/tilemap.bin.lz 
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/frame.png graphics/pokemon_storage/wallpapers/river/frame.4bpp -num_tiles 51 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/river/bg.png graphics/pokemon_storage/wallpapers/river/bg.4bpp -num_tiles 11 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/savanna/bg.png build/assets/graphics/pokemon_storage/wallpapers/savanna/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/savanna/frame.png build/assets/graphics/pokemon_storage/wallpapers/savanna/frame.png.gbapal 
@@ -6595,8 +6594,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/screen/tilemap.bin build
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/screen/bg.png graphics/pokemon_storage/wallpapers/screen/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/bg.png build/assets/graphics/pokemon_storage/wallpapers/seafloor/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/frame.png build/assets/graphics/pokemon_storage/wallpapers/seafloor/frame.png.gbapal 
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/frame.png graphics/pokemon_storage/wallpapers/seafloor/frame.4bpp -num_tiles 54 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/tilemap.bin build/assets/graphics/pokemon_storage/wallpapers/seafloor/tilemap.bin.lz 
+tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/frame.png graphics/pokemon_storage/wallpapers/seafloor/frame.4bpp -num_tiles 54 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/seafloor/bg.png graphics/pokemon_storage/wallpapers/seafloor/bg.4bpp
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/sky/bg.png build/assets/graphics/pokemon_storage/wallpapers/sky/bg.png.gbapal 
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/sky/frame.png build/assets/graphics/pokemon_storage/wallpapers/sky/frame.png.gbapal 
@@ -6623,8 +6622,8 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/waveform.png build/assets/graphics/
 tools/gbagfx/gbagfx graphics/pokemon_storage/waveform.png build/assets/graphics/pokemon_storage/waveform.png.gbapal 
 tools/gbagfx/gbagfx graphics/summary_screen/a_button.png build/assets/graphics/summary_screen/a_button.png.4bpp 
 tools/gbagfx/gbagfx graphics/summary_screen/b_button.png build/assets/graphics/summary_screen/b_button.png.4bpp 
-tools/gbagfx/gbagfx graphics/summary_screen/markings.pal build/assets/graphics/summary_screen/markings.pal.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/pokenav.o src/pokenav.c
+tools/gbagfx/gbagfx graphics/summary_screen/markings.pal build/assets/graphics/summary_screen/markings.pal.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/pokenav_conditions.o src/pokenav_conditions.c
 tools/gbagfx/gbagfx graphics/pokenav/condition/graph_data.bin build/assets/graphics/pokenav/condition/graph_data.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/condition/graph_data.pal build/assets/graphics/pokenav/condition/graph_data.pal.gbapal 
@@ -6668,8 +6667,8 @@ tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/fortree_0.bin build/as
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/lavaridge_0.bin build/assets/graphics/pokenav/region_map/city_maps/lavaridge_0.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/lilycove_0.bin build/assets/graphics/pokenav/region_map/city_maps/lilycove_0.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/lilycove_1.bin build/assets/graphics/pokenav/region_map/city_maps/lilycove_1.bin.lz 
-tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/littleroot_0.bin build/assets/graphics/pokenav/region_map/city_maps/littleroot_0.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/mauville_0.bin build/assets/graphics/pokenav/region_map/city_maps/mauville_0.bin.lz 
+tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/littleroot_0.bin build/assets/graphics/pokenav/region_map/city_maps/littleroot_0.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/mauville_1.bin build/assets/graphics/pokenav/region_map/city_maps/mauville_1.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/mossdeep_0.bin build/assets/graphics/pokenav/region_map/city_maps/mossdeep_0.bin.lz 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/city_maps/mossdeep_1.bin build/assets/graphics/pokenav/region_map/city_maps/mossdeep_1.bin.lz 
@@ -6690,9 +6689,9 @@ tools/gbagfx/gbagfx graphics/pokenav/ribbons/list_bg.png build/assets/graphics/p
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/list_ui.pal build/assets/graphics/pokenav/ribbons/list_ui.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons.png build/assets/graphics/pokenav/ribbons/icons.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons1.pal build/assets/graphics/pokenav/ribbons/icons1.pal.gbapal 
-tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons2.pal build/assets/graphics/pokenav/ribbons/icons2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons3.pal build/assets/graphics/pokenav/ribbons/icons3.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons4.pal build/assets/graphics/pokenav/ribbons/icons4.pal.gbapal 
+tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons2.pal build/assets/graphics/pokenav/ribbons/icons2.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons5.pal build/assets/graphics/pokenav/ribbons/icons5.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/icons_big.png build/assets/graphics/pokenav/ribbons/icons_big.png.4bpp 
 tools/gbagfx/gbagfx graphics/pokenav/ribbons/mon_info.pal build/assets/graphics/pokenav/ribbons/mon_info.pal.gbapal 
@@ -6715,8 +6714,8 @@ tools/gbagfx/gbagfx graphics/pokenav/region_map/map.bin build/assets/graphics/po
 tools/gbagfx/gbagfx graphics/pokenav/region_map/map.pal build/assets/graphics/pokenav/region_map/map.pal.gbapal 
 tools/gbagfx/gbagfx graphics/pokenav/region_map/map.png build/assets/graphics/pokenav/region_map/map.png_num_tiles_233__Wnum_tiles.8bpp -num_tiles 233 -Wnum_tiles
 tools/gbagfx/gbagfx graphics/pokenav/region_map/may_icon.png build/assets/graphics/pokenav/region_map/may_icon.png.4bpp 
-tools/gbagfx/gbagfx graphics/pokenav/region_map/may_icon.png build/assets/graphics/pokenav/region_map/may_icon.png.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/reload_save.o src/reload_save.c
+tools/gbagfx/gbagfx graphics/pokenav/region_map/may_icon.png build/assets/graphics/pokenav/region_map/may_icon.png.gbapal 
 tools/gbagfx/gbagfx graphics/reset_rtc_screen/arrow.pal build/assets/graphics/reset_rtc_screen/arrow.pal.gbapal 
 tools/gbagfx/gbagfx graphics/reset_rtc_screen/arrow_down.png build/assets/graphics/reset_rtc_screen/arrow_down.png.4bpp 
 tools/gbagfx/gbagfx graphics/reset_rtc_screen/arrow_right.png build/assets/graphics/reset_rtc_screen/arrow_right.png.4bpp 
@@ -6730,8 +6729,8 @@ tools/gbagfx/gbagfx graphics/rotating_gates/l4.png build/assets/graphics/rotatin
 tools/gbagfx/gbagfx graphics/rotating_gates/t1.png build/assets/graphics/rotating_gates/t1.png.4bpp 
 tools/gbagfx/gbagfx graphics/rotating_gates/t2.png build/assets/graphics/rotating_gates/t2.png.4bpp 
 tools/gbagfx/gbagfx graphics/rotating_gates/t3.png build/assets/graphics/rotating_gates/t3.png.4bpp 
-tools/gbagfx/gbagfx graphics/rotating_gates/t4.png build/assets/graphics/rotating_gates/t4.png.4bpp 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/rotating_tile_puzzle.o src/rotating_tile_puzzle.c
+tools/gbagfx/gbagfx graphics/rotating_gates/t4.png build/assets/graphics/rotating_gates/t4.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/azurill.png build/assets/graphics/roulette/azurill.png.gbapal 
 tools/gbagfx/gbagfx graphics/roulette/ball.png build/assets/graphics/roulette/ball.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/ball.png build/assets/graphics/roulette/ball.png.gbapal 
@@ -6743,8 +6742,8 @@ tools/gbagfx/gbagfx graphics/roulette/cursor.png build/assets/graphics/roulette/
 tools/gbagfx/gbagfx graphics/roulette/grid.bin build/assets/graphics/roulette/grid.bin.lz 
 tools/gbagfx/gbagfx graphics/roulette/grid_icons.png build/assets/graphics/roulette/grid_icons.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/grid_icons.png build/assets/graphics/roulette/grid_icons.png.gbapal 
-tools/gbagfx/gbagfx graphics/roulette/makuhita.png build/assets/graphics/roulette/makuhita.png.gbapal 
 tools/gbagfx/gbagfx graphics/roulette/shroomish.png graphics/roulette/shroomish.4bpp
+tools/gbagfx/gbagfx graphics/roulette/makuhita.png build/assets/graphics/roulette/makuhita.png.gbapal 
 tools/gbagfx/gbagfx graphics/roulette/tailow.png graphics/roulette/tailow.4bpp
 tools/gbagfx/gbagfx graphics/roulette/shadow.png build/assets/graphics/roulette/shadow.png.4bpp 
 tools/gbagfx/gbagfx graphics/roulette/shadow.png build/assets/graphics/roulette/shadow.png.gbapal 
@@ -6756,13 +6755,13 @@ tools/gbagfx/gbagfx graphics/roulette/unused_2.pal build/assets/graphics/roulett
 tools/gbagfx/gbagfx graphics/roulette/unused_3.pal build/assets/graphics/roulette/unused_3.pal.gbapal 
 tools/gbagfx/gbagfx graphics/roulette/unused_4.pal build/assets/graphics/roulette/unused_4.pal.gbapal 
 tools/gbagfx/gbagfx graphics/roulette/wheel.bin build/assets/graphics/roulette/wheel.bin.lz 
-tools/gbagfx/gbagfx graphics/roulette/wynaut.png graphics/roulette/wynaut.4bpp
 tools/gbagfx/gbagfx graphics/roulette/wheel.png build/assets/graphics/roulette/wheel.png.gbapal 
+tools/gbagfx/gbagfx graphics/roulette/wynaut.png graphics/roulette/wynaut.4bpp
 tools/gbagfx/gbagfx graphics/roulette/azurill.png graphics/roulette/azurill.4bpp
 tools/gbagfx/gbagfx graphics/roulette/skitty.png graphics/roulette/skitty.4bpp
 tools/gbagfx/gbagfx graphics/roulette/makuhita.png graphics/roulette/makuhita.4bpp
-tools/gbagfx/gbagfx graphics/roulette/wynaut.png build/assets/graphics/roulette/wynaut.png.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/rtc.o src/rtc.c
+tools/gbagfx/gbagfx graphics/roulette/wynaut.png build/assets/graphics/roulette/wynaut.png.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/safari_zone.o src/safari_zone.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/save.o src/save.c
 tools/gbagfx/gbagfx graphics/misc/clock_small.png build/assets/graphics/misc/clock_small.png.4bpp 
@@ -6782,8 +6781,8 @@ tools/gbagfx/gbagfx graphics/slot_machine/flashing_lights_middle.pal build/asset
 tools/gbagfx/gbagfx graphics/slot_machine/flashing_lights_outside.pal build/assets/graphics/slot_machine/flashing_lights_outside.pal.gbapal 
 tools/gbagfx/gbagfx graphics/slot_machine/pokeball_shining_0.pal build/assets/graphics/slot_machine/pokeball_shining_0.pal.gbapal 
 tools/gbagfx/gbagfx graphics/slot_machine/pokeball_shining_1.pal build/assets/graphics/slot_machine/pokeball_shining_1.pal.gbapal 
-tools/gbagfx/gbagfx graphics/slot_machine/reel_time_pikachu.png graphics/slot_machine/reel_time_pikachu.4bpp
 tools/gbagfx/gbagfx graphics/slot_machine/pokeball_shining_2.pal build/assets/graphics/slot_machine/pokeball_shining_2.pal.gbapal 
+tools/gbagfx/gbagfx graphics/slot_machine/reel_time_pikachu.png graphics/slot_machine/reel_time_pikachu.4bpp
 tools/gbagfx/gbagfx graphics/slot_machine/reel_time_machine.png graphics/slot_machine/reel_time_machine.4bpp
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/sound.o src/sound.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/sprite.o src/sprite.c
@@ -6840,8 +6839,8 @@ tools/gbagfx/gbagfx graphics/text_window/5.png build/assets/graphics/text_window
 tools/gbagfx/gbagfx graphics/text_window/5.png build/assets/graphics/text_window/5.png.gbapal 
 tools/gbagfx/gbagfx graphics/text_window/6.png build/assets/graphics/text_window/6.png.4bpp 
 tools/gbagfx/gbagfx graphics/text_window/6.png build/assets/graphics/text_window/6.png.gbapal 
-tools/gbagfx/gbagfx graphics/text_window/7.png build/assets/graphics/text_window/7.png.gbapal 
 tools/gbagfx/gbagfx graphics/text_window/7.png build/assets/graphics/text_window/7.png.4bpp 
+tools/gbagfx/gbagfx graphics/text_window/7.png build/assets/graphics/text_window/7.png.gbapal 
 tools/gbagfx/gbagfx graphics/text_window/8.png build/assets/graphics/text_window/8.png.4bpp 
 tools/gbagfx/gbagfx graphics/text_window/8.png build/assets/graphics/text_window/8.png.gbapal 
 tools/gbagfx/gbagfx graphics/text_window/9.png build/assets/graphics/text_window/9.png.4bpp 
@@ -6866,8 +6865,8 @@ tools/gbagfx/gbagfx data/tilesets/primary/general/anim/sand_water_edge/3.png bui
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/sand_water_edge/4.png build/assets/data/tilesets/primary/general/anim/sand_water_edge/4.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/sand_water_edge/5.png build/assets/data/tilesets/primary/general/anim/sand_water_edge/5.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/sand_water_edge/6.png build/assets/data/tilesets/primary/general/anim/sand_water_edge/6.png.4bpp 
-tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/1.png build/assets/data/tilesets/primary/general/anim/water/1.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/0.png build/assets/data/tilesets/primary/general/anim/water/0.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/1.png build/assets/data/tilesets/primary/general/anim/water/1.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/2.png build/assets/data/tilesets/primary/general/anim/water/2.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/3.png build/assets/data/tilesets/primary/general/anim/water/3.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/primary/general/anim/water/4.png build/assets/data/tilesets/primary/general/anim/water/4.png.4bpp 
@@ -6946,8 +6945,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/pacifidlog/anim/water_currents/3.png
 tools/gbagfx/gbagfx data/tilesets/secondary/pacifidlog/anim/water_currents/4.png build/assets/data/tilesets/secondary/pacifidlog/anim/water_currents/4.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/pacifidlog/anim/water_currents/5.png build/assets/data/tilesets/secondary/pacifidlog/anim/water_currents/5.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/pacifidlog/anim/water_currents/6.png build/assets/data/tilesets/secondary/pacifidlog/anim/water_currents/6.png.4bpp 
-tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/anim/fountain/0.png build/assets/data/tilesets/secondary/rustboro/anim/fountain/0.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/pacifidlog/anim/water_currents/7.png build/assets/data/tilesets/secondary/pacifidlog/anim/water_currents/7.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/anim/fountain/0.png build/assets/data/tilesets/secondary/rustboro/anim/fountain/0.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/anim/fountain/1.png build/assets/data/tilesets/secondary/rustboro/anim/fountain/1.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/anim/windy_water/0.png build/assets/data/tilesets/secondary/rustboro/anim/windy_water/0.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/anim/windy_water/1.png build/assets/data/tilesets/secondary/rustboro/anim/windy_water/1.png.4bpp 
@@ -6976,10 +6975,10 @@ tools/gbagfx/gbagfx data/tilesets/secondary/unused_1/1.png build/assets/data/til
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_1/2.png build/assets/data/tilesets/secondary/unused_1/2.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_1/3.png build/assets/data/tilesets/secondary/unused_1/3.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/0.png build/assets/data/tilesets/secondary/unused_2/0.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/1.png build/assets/data/tilesets/secondary/unused_2/1.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/0_groudon.png data/tilesets/secondary/sootopolis/anim/stormy_water/0_groudon.4bpp
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/0_kyogre.png data/tilesets/secondary/sootopolis/anim/stormy_water/0_kyogre.4bpp
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/1_groudon.png data/tilesets/secondary/sootopolis/anim/stormy_water/1_groudon.4bpp
-tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/1.png build/assets/data/tilesets/secondary/unused_2/1.png.4bpp 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/1_kyogre.png data/tilesets/secondary/sootopolis/anim/stormy_water/1_kyogre.4bpp
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/2_groudon.png data/tilesets/secondary/sootopolis/anim/stormy_water/2_groudon.4bpp
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/anim/stormy_water/2_kyogre.png data/tilesets/secondary/sootopolis/anim/stormy_water/2_kyogre.4bpp
@@ -7001,8 +7000,8 @@ tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/04.pal build/assets/
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/05.pal build/assets/data/tilesets/primary/building/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/06.pal build/assets/data/tilesets/primary/building/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/07.pal build/assets/data/tilesets/primary/building/palettes/07.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/08.pal build/assets/data/tilesets/primary/building/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/09.pal build/assets/data/tilesets/primary/building/palettes/09.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/08.pal build/assets/data/tilesets/primary/building/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/10.pal build/assets/data/tilesets/primary/building/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/11.pal build/assets/data/tilesets/primary/building/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/primary/building/palettes/12.pal build/assets/data/tilesets/primary/building/palettes/12.pal.gbapal 
@@ -7178,8 +7177,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/10.pal build/as
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/11.pal build/assets/data/tilesets/secondary/battle_pike/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/12.pal build/assets/data/tilesets/secondary/battle_pike/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/13.pal build/assets/data/tilesets/secondary/battle_pike/palettes/13.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/15.pal build/assets/data/tilesets/secondary/battle_pike/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/14.pal build/assets/data/tilesets/secondary/battle_pike/palettes/14.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/palettes/15.pal build/assets/data/tilesets/secondary/battle_pike/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pike/tiles.png build/assets/data/tilesets/secondary/battle_pike/tiles.png_num_tiles_382__Wnum_tiles.4bpp -num_tiles 382 -Wnum_tiles
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/00.pal build/assets/data/tilesets/secondary/battle_pyramid/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/01.pal build/assets/data/tilesets/secondary/battle_pyramid/palettes/01.pal.gbapal 
@@ -7197,8 +7196,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/12.pal build
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/13.pal build/assets/data/tilesets/secondary/battle_pyramid/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/14.pal build/assets/data/tilesets/secondary/battle_pyramid/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/palettes/15.pal build/assets/data/tilesets/secondary/battle_pyramid/palettes/15.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/battle_tent/palettes/00.pal build/assets/data/tilesets/secondary/battle_tent/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_pyramid/tiles.png build/assets/data/tilesets/secondary/battle_pyramid/tiles.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/secondary/battle_tent/palettes/00.pal build/assets/data/tilesets/secondary/battle_tent/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_tent/palettes/01.pal build/assets/data/tilesets/secondary/battle_tent/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_tent/palettes/02.pal build/assets/data/tilesets/secondary/battle_tent/palettes/02.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/battle_tent/palettes/03.pal build/assets/data/tilesets/secondary/battle_tent/palettes/03.pal.gbapal 
@@ -7230,12 +7229,12 @@ tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/11.pal build/asse
 tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/12.pal build/assets/data/tilesets/secondary/bike_shop/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/13.pal build/assets/data/tilesets/secondary/bike_shop/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/14.pal build/assets/data/tilesets/secondary/bike_shop/palettes/14.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/15.pal build/assets/data/tilesets/secondary/bike_shop/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/tiles.png build/assets/data/tilesets/secondary/bike_shop/tiles.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/secondary/bike_shop/palettes/15.pal build/assets/data/tilesets/secondary/bike_shop/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/00.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/01.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/01.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/02.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/02.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/03.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/03.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/02.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/02.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/04.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/05.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/brendans_mays_house/palettes/06.pal build/assets/data/tilesets/secondary/brendans_mays_house/palettes/06.pal.gbapal 
@@ -7257,20 +7256,20 @@ tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/04.pal build/ass
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/05.pal build/assets/data/tilesets/secondary/cable_club/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/06.pal build/assets/data/tilesets/secondary/cable_club/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/07.pal build/assets/data/tilesets/secondary/cable_club/palettes/07.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/08.pal build/assets/data/tilesets/secondary/cable_club/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/09.pal build/assets/data/tilesets/secondary/cable_club/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/10.pal build/assets/data/tilesets/secondary/cable_club/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/11.pal build/assets/data/tilesets/secondary/cable_club/palettes/11.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/08.pal build/assets/data/tilesets/secondary/cable_club/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/12.pal build/assets/data/tilesets/secondary/cable_club/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/13.pal build/assets/data/tilesets/secondary/cable_club/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/14.pal build/assets/data/tilesets/secondary/cable_club/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/palettes/15.pal build/assets/data/tilesets/secondary/cable_club/palettes/15.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/unknown_tiles.png build/assets/data/tilesets/secondary/cable_club/unknown_tiles.png_num_tiles_120__Wnum_tiles.4bpp -num_tiles 120 -Wnum_tiles
 tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/tiles.png build/assets/data/tilesets/secondary/cable_club/tiles.png.4bpp 
+tools/gbagfx/gbagfx data/tilesets/secondary/cable_club/unknown_tiles.png build/assets/data/tilesets/secondary/cable_club/unknown_tiles.png_num_tiles_120__Wnum_tiles.4bpp -num_tiles 120 -Wnum_tiles
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/00.pal build/assets/data/tilesets/secondary/cave/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/01.pal build/assets/data/tilesets/secondary/cave/palettes/01.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/03.pal build/assets/data/tilesets/secondary/cave/palettes/03.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/02.pal build/assets/data/tilesets/secondary/cave/palettes/02.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/03.pal build/assets/data/tilesets/secondary/cave/palettes/03.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/04.pal build/assets/data/tilesets/secondary/cave/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/05.pal build/assets/data/tilesets/secondary/cave/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/cave/palettes/06.pal build/assets/data/tilesets/secondary/cave/palettes/06.pal.gbapal 
@@ -7328,8 +7327,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/06.pal build/assets
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/07.pal build/assets/data/tilesets/secondary/dewford/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/08.pal build/assets/data/tilesets/secondary/dewford/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/09.pal build/assets/data/tilesets/secondary/dewford/palettes/09.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/11.pal build/assets/data/tilesets/secondary/dewford/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/10.pal build/assets/data/tilesets/secondary/dewford/palettes/10.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/11.pal build/assets/data/tilesets/secondary/dewford/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/12.pal build/assets/data/tilesets/secondary/dewford/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/13.pal build/assets/data/tilesets/secondary/dewford/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford/palettes/14.pal build/assets/data/tilesets/secondary/dewford/palettes/14.pal.gbapal 
@@ -7352,8 +7351,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/dewford_gym/palettes/13.pal build/as
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford_gym/palettes/14.pal build/assets/data/tilesets/secondary/dewford_gym/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford_gym/palettes/15.pal build/assets/data/tilesets/secondary/dewford_gym/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/dewford_gym/tiles.png build/assets/data/tilesets/secondary/dewford_gym/tiles.png_num_tiles_61__Wnum_tiles.4bpp -num_tiles 61 -Wnum_tiles
-tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/01.pal build/assets/data/tilesets/secondary/elite_four/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/00.pal build/assets/data/tilesets/secondary/elite_four/palettes/00.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/01.pal build/assets/data/tilesets/secondary/elite_four/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/02.pal build/assets/data/tilesets/secondary/elite_four/palettes/02.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/03.pal build/assets/data/tilesets/secondary/elite_four/palettes/03.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/elite_four/palettes/04.pal build/assets/data/tilesets/secondary/elite_four/palettes/04.pal.gbapal 
@@ -7376,8 +7375,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/03.pal build/as
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/04.pal build/assets/data/tilesets/secondary/ever_grande/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/05.pal build/assets/data/tilesets/secondary/ever_grande/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/06.pal build/assets/data/tilesets/secondary/ever_grande/palettes/06.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/08.pal build/assets/data/tilesets/secondary/ever_grande/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/07.pal build/assets/data/tilesets/secondary/ever_grande/palettes/07.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/08.pal build/assets/data/tilesets/secondary/ever_grande/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/09.pal build/assets/data/tilesets/secondary/ever_grande/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/10.pal build/assets/data/tilesets/secondary/ever_grande/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/ever_grande/palettes/11.pal build/assets/data/tilesets/secondary/ever_grande/palettes/11.pal.gbapal 
@@ -7467,8 +7466,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/09.pal bui
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/10.pal build/assets/data/tilesets/secondary/generic_building/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/11.pal build/assets/data/tilesets/secondary/generic_building/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/12.pal build/assets/data/tilesets/secondary/generic_building/palettes/12.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/14.pal build/assets/data/tilesets/secondary/generic_building/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/13.pal build/assets/data/tilesets/secondary/generic_building/palettes/13.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/14.pal build/assets/data/tilesets/secondary/generic_building/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/palettes/15.pal build/assets/data/tilesets/secondary/generic_building/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/generic_building/tiles.png build/assets/data/tilesets/secondary/generic_building/tiles.png_num_tiles_509__Wnum_tiles.4bpp -num_tiles 509 -Wnum_tiles
 tools/gbagfx/gbagfx data/tilesets/secondary/inside_of_truck/palettes/00.pal build/assets/data/tilesets/secondary/inside_of_truck/palettes/00.pal.gbapal 
@@ -7520,8 +7519,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/11.pal build/
 tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/12.pal build/assets/data/tilesets/secondary/island_harbor/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/13.pal build/assets/data/tilesets/secondary/island_harbor/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/14.pal build/assets/data/tilesets/secondary/island_harbor/palettes/14.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/15.pal build/assets/data/tilesets/secondary/island_harbor/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/tiles.png build/assets/data/tilesets/secondary/island_harbor/tiles.png_num_tiles_503__Wnum_tiles.4bpp -num_tiles 503 -Wnum_tiles
+tools/gbagfx/gbagfx data/tilesets/secondary/island_harbor/palettes/15.pal build/assets/data/tilesets/secondary/island_harbor/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lab/palettes/00.pal build/assets/data/tilesets/secondary/lab/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lab/palettes/01.pal build/assets/data/tilesets/secondary/lab/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lab/palettes/02.pal build/assets/data/tilesets/secondary/lab/palettes/02.pal.gbapal 
@@ -7557,8 +7556,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge/palettes/14.pal build/asse
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge/palettes/15.pal build/assets/data/tilesets/secondary/lavaridge/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge/tiles.png build/assets/data/tilesets/secondary/lavaridge/tiles.png_num_tiles_450__Wnum_tiles.4bpp -num_tiles 450 -Wnum_tiles
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/00.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/00.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/01.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/02.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/02.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/01.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/03.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/03.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/04.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lavaridge_gym/palettes/05.pal build/assets/data/tilesets/secondary/lavaridge_gym/palettes/05.pal.gbapal 
@@ -7599,8 +7598,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/05.pal buil
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/06.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/07.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/08.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/08.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/09.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/10.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/10.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/09.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/11.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/12.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/lilycove_museum/palettes/13.pal build/assets/data/tilesets/secondary/lilycove_museum/palettes/13.pal.gbapal 
@@ -7648,8 +7647,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/03.pal build/a
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/04.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/05.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/06.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/06.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/07.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/08.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/08.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/07.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/09.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/10.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mauville_gym/palettes/11.pal build/assets/data/tilesets/secondary/mauville_gym/palettes/11.pal.gbapal 
@@ -7715,8 +7714,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/02.pal
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/03.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/03.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/04.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/04.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/05.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/05.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/07.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/06.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/06.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/07.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/08.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/09.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/mossdeep_game_corner/palettes/10.pal build/assets/data/tilesets/secondary/mossdeep_game_corner/palettes/10.pal.gbapal 
@@ -7786,8 +7785,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/05.pal build
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/06.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/07.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/08.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/08.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/09.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/10.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/10.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/09.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/11.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/12.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/oceanic_museum/palettes/13.pal build/assets/data/tilesets/secondary/oceanic_museum/palettes/13.pal.gbapal 
@@ -7870,9 +7869,9 @@ tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/04.pal bui
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/05.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/05.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/06.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/07.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/07.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/08.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/09.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/10.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/10.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/08.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/11.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/12.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_day_care/palettes/13.pal build/assets/data/tilesets/secondary/pokemon_day_care/palettes/13.pal.gbapal 
@@ -7889,8 +7888,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/06.pal bui
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/07.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/08.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/09.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/09.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/11.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/10.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/10.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/11.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/12.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/13.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pokemon_fan_club/palettes/14.pal build/assets/data/tilesets/secondary/pokemon_fan_club/palettes/14.pal.gbapal 
@@ -7924,12 +7923,12 @@ tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/07
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/08.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/09.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/10.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/10.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/11.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/12.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/12.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/11.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/13.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/14.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/14.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/15.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/tiles.png build/assets/data/tilesets/secondary/pretty_petal_flower_shop/tiles.png_num_tiles_345__Wnum_tiles.4bpp -num_tiles 345 -Wnum_tiles
+tools/gbagfx/gbagfx data/tilesets/secondary/pretty_petal_flower_shop/palettes/15.pal build/assets/data/tilesets/secondary/pretty_petal_flower_shop/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/palettes/00.pal build/assets/data/tilesets/secondary/rustboro/palettes/00.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/palettes/01.pal build/assets/data/tilesets/secondary/rustboro/palettes/01.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/rustboro/palettes/02.pal build/assets/data/tilesets/secondary/rustboro/palettes/02.pal.gbapal 
@@ -8133,8 +8132,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/06.pal build/asse
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/07.pal build/assets/data/tilesets/secondary/slateport/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/08.pal build/assets/data/tilesets/secondary/slateport/palettes/08.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/09.pal build/assets/data/tilesets/secondary/slateport/palettes/09.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/10.pal build/assets/data/tilesets/secondary/slateport/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/11.pal build/assets/data/tilesets/secondary/slateport/palettes/11.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/10.pal build/assets/data/tilesets/secondary/slateport/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/12.pal build/assets/data/tilesets/secondary/slateport/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/13.pal build/assets/data/tilesets/secondary/slateport/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/slateport/palettes/14.pal build/assets/data/tilesets/secondary/slateport/palettes/14.pal.gbapal 
@@ -8149,8 +8148,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/05.pal build/ass
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/06.pal build/assets/data/tilesets/secondary/sootopolis/palettes/06.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/07.pal build/assets/data/tilesets/secondary/sootopolis/palettes/07.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/08.pal build/assets/data/tilesets/secondary/sootopolis/palettes/08.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/10.pal build/assets/data/tilesets/secondary/sootopolis/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/09.pal build/assets/data/tilesets/secondary/sootopolis/palettes/09.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/10.pal build/assets/data/tilesets/secondary/sootopolis/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/11.pal build/assets/data/tilesets/secondary/sootopolis/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/12.pal build/assets/data/tilesets/secondary/sootopolis/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/sootopolis/palettes/13.pal build/assets/data/tilesets/secondary/sootopolis/palettes/13.pal.gbapal 
@@ -8203,8 +8202,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/08.pal b
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/09.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/09.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/10.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/11.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/11.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/12.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/13.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/13.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/12.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/12.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/14.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/14.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/palettes/15.pal build/assets/data/tilesets/secondary/trick_house_puzzle/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/trick_house_puzzle/tiles.png build/assets/data/tilesets/secondary/trick_house_puzzle/tiles.png_num_tiles_294__Wnum_tiles.4bpp -num_tiles 294 -Wnum_tiles
@@ -8272,8 +8271,8 @@ tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/09.pal build/asset
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/10.pal build/assets/data/tilesets/secondary/unused_2/palettes/10.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/11.pal build/assets/data/tilesets/secondary/unused_2/palettes/11.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/12.pal build/assets/data/tilesets/secondary/unused_2/palettes/12.pal.gbapal 
-tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/13.pal build/assets/data/tilesets/secondary/unused_2/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/14.pal build/assets/data/tilesets/secondary/unused_2/palettes/14.pal.gbapal 
+tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/13.pal build/assets/data/tilesets/secondary/unused_2/palettes/13.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/palettes/15.pal build/assets/data/tilesets/secondary/unused_2/palettes/15.pal.gbapal 
 tools/gbagfx/gbagfx data/tilesets/secondary/unused_2/tiles.png build/assets/data/tilesets/secondary/unused_2/tiles.png_num_tiles_150__Wnum_tiles.4bpp -num_tiles 150 -Wnum_tiles
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/time_events.o src/time_events.c
@@ -8300,8 +8299,8 @@ tools/gbagfx/gbagfx graphics/trade/wireless_signal.bin build/assets/graphics/tra
 tools/gbagfx/gbagfx graphics/trade/wireless_signal.png build/assets/graphics/trade/wireless_signal.png.4bpp 
 tools/gbagfx/gbagfx graphics/trade/wireless_signal_none.pal build/assets/graphics/trade/wireless_signal_none.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trade/wireless_signal_receive.pal build/assets/graphics/trade/wireless_signal_receive.pal.gbapal 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/trader.o src/trader.c
 tools/gbagfx/gbagfx graphics/trade/wireless_signal_send.pal build/assets/graphics/trade/wireless_signal_send.pal.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/trader.o src/trader.c
 tools/gbagfx/gbagfx graphics/trainer_card/badges.png build/assets/graphics/trainer_card/badges.png.4bpp 
 tools/gbagfx/gbagfx graphics/trainer_card/badges.png build/assets/graphics/trainer_card/badges.png.gbapal 
 tools/gbagfx/gbagfx graphics/trainer_card/bronze.pal build/assets/graphics/trainer_card/bronze.pal.gbapal 
@@ -8324,8 +8323,8 @@ tools/gbagfx/gbagfx graphics/trainer_card/silver.pal build/assets/graphics/train
 tools/gbagfx/gbagfx graphics/trainer_card/star.pal build/assets/graphics/trainer_card/star.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trainer_card/unused.pal build/assets/graphics/trainer_card/unused.pal.gbapal 
 tools/gbagfx/gbagfx graphics/trainer_hill/ereader.pal build/assets/graphics/trainer_hill/ereader.pal.gbapal 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/trainer_pokemon_sprites.o src/trainer_pokemon_sprites.c
 tools/gbagfx/gbagfx graphics/field_effects/pics/emotion_exclamation.png build/assets/graphics/field_effects/pics/emotion_exclamation.png.4bpp 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/trainer_pokemon_sprites.o src/trainer_pokemon_sprites.c
 tools/gbagfx/gbagfx graphics/field_effects/pics/emotion_heart.png build/assets/graphics/field_effects/pics/emotion_heart.png.4bpp 
 tools/gbagfx/gbagfx graphics/field_effects/pics/emotion_question.png build/assets/graphics/field_effects/pics/emotion_question.png.4bpp 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/trig.o src/trig.c
@@ -8338,8 +8337,8 @@ tools/gbagfx/gbagfx graphics/union_room_chat/keyboard_cursor.png build/assets/gr
 tools/gbagfx/gbagfx graphics/union_room_chat/r_button.png build/assets/graphics/union_room_chat/r_button.png.4bpp 
 tools/gbagfx/gbagfx graphics/union_room_chat/text_entry_arrow.png build/assets/graphics/union_room_chat/text_entry_arrow.png.4bpp 
 tools/gbagfx/gbagfx graphics/union_room_chat/text_entry_cursor.png build/assets/graphics/union_room_chat/text_entry_cursor.png.4bpp 
-tools/agbcc/bin/agbcc <flags> -o build/emerald/src/union_room_player_avatar.o src/union_room_player_avatar.c
 tools/gbagfx/gbagfx graphics/union_room_chat/unused.pal build/assets/graphics/union_room_chat/unused.pal.gbapal 
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/union_room_player_avatar.o src/union_room_player_avatar.c
 tools/gbagfx/gbagfx graphics/pokeblock/use_screen/graph_data.bin build/assets/graphics/pokeblock/use_screen/graph_data.bin.lz 
 tools/gbagfx/gbagfx graphics/pokeblock/use_screen/mon_frame.bin build/assets/graphics/pokeblock/use_screen/mon_frame.bin.lz 
 tools/gbagfx/gbagfx graphics/pokeblock/use_screen/mon_frame.png build/assets/graphics/pokeblock/use_screen/mon_frame.png.4bpp 
@@ -8355,8 +8354,8 @@ tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_02.pal build/assets/gra
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_03.pal build/assets/graphics/wireless_status_screen/anim_03.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_04.pal build/assets/graphics/wireless_status_screen/anim_04.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_05.pal build/assets/graphics/wireless_status_screen/anim_05.pal.gbapal 
-tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_06.pal build/assets/graphics/wireless_status_screen/anim_06.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_07.pal build/assets/graphics/wireless_status_screen/anim_07.pal.gbapal 
+tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_06.pal build/assets/graphics/wireless_status_screen/anim_06.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_08.pal build/assets/graphics/wireless_status_screen/anim_08.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_09.pal build/assets/graphics/wireless_status_screen/anim_09.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_10.pal build/assets/graphics/wireless_status_screen/anim_10.pal.gbapal 
@@ -8365,8 +8364,8 @@ tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_12.pal build/assets/gra
 tools/gbagfx/gbagfx graphics/wireless_status_screen/anim_13.pal build/assets/graphics/wireless_status_screen/anim_13.pal.gbapal 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/bg.bin build/assets/graphics/wireless_status_screen/bg.bin.lz 
 tools/gbagfx/gbagfx graphics/wireless_status_screen/bg.png build/assets/graphics/wireless_status_screen/bg.png.4bpp 
-tools/gbagfx/gbagfx graphics/wireless_status_screen/default.pal build/assets/graphics/wireless_status_screen/default.pal.gbapal 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/wonder_news.o src/wonder_news.c
+tools/gbagfx/gbagfx graphics/wireless_status_screen/default.pal build/assets/graphics/wireless_status_screen/default.pal.gbapal 
 tools/ramscrgen/ramscrgen ewram_data sym_ewram.txt ENGLISH > build/emerald/sym_ewram.ld
 cc -E -iquote include -Wno-trigraphs -DMODERN=0 -I tools/agbcc/include -I tools/agbcc -nostdinc -undef -std=gnu89 -C -MMD -MP -MQ build/emerald/memory.ld -MF build/emerald/memory.d -x c-header memory.txt | awk -f tools/cpp-toplevel-only.awk > build/emerald/memory.ld
 tools/gbagfx/gbagfx build/assets/graphics/dcc/carl/anim_front.png.4bpp build/assets/graphics/dcc/carl/anim_front.png.4bpp.lz
@@ -11939,12 +11938,12 @@ tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_3/bg.png.4bpp bui
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_3/light.png.4bpp build/assets/graphics/rayquaza_scene/scene_3/light.png.4bpp.lz
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_3/rayquaza.png_num_tiles_124__Wnum_tiles.4bpp build/assets/graphics/rayquaza_scene/scene_3/rayquaza.png_num_tiles_124__Wnum_tiles.4bpp.lz
 cp graphics/rayquaza_scene/scene_3/rayquaza_tail.4bpp graphics/rayquaza_scene/scene_3/rayquaza_tail_fix.4bpp
-dd if=/dev/zero bs=1 count=12 >> graphics/rayquaza_scene/scene_3/rayquaza_tail_fix.4bpp
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_4/bg.pal.gbapal build/assets/graphics/rayquaza_scene/scene_4/bg.pal.gbapal.lz
+dd if=/dev/zero bs=1 count=12 >> graphics/rayquaza_scene/scene_3/rayquaza_tail_fix.4bpp
+tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_4/bg.png.4bpp build/assets/graphics/rayquaza_scene/scene_4/bg.png.4bpp.lz
 12+0 records in
 12+0 records out
-12 bytes copied, 9.6305e-05 s, 125 kB/s
-tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_4/bg.png.4bpp build/assets/graphics/rayquaza_scene/scene_4/bg.png.4bpp.lz
+12 bytes copied, 2.1793e-05 s, 551 kB/s
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_4/rayquaza.png_num_tiles_155__Wnum_tiles.4bpp build/assets/graphics/rayquaza_scene/scene_4/rayquaza.png_num_tiles_155__Wnum_tiles.4bpp.lz
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_4/streaks.png_num_tiles_19__Wnum_tiles.4bpp build/assets/graphics/rayquaza_scene/scene_4/streaks.png_num_tiles_19__Wnum_tiles.4bpp.lz
 tools/gbagfx/gbagfx build/assets/graphics/rayquaza_scene/scene_5/bg.pal.gbapal build/assets/graphics/rayquaza_scene/scene_5/bg.pal.gbapal.lz
@@ -14047,8 +14046,8 @@ tools/gbagfx/gbagfx graphics/types/move_types.gbapal build/assets/graphics/types
 tools/gbagfx/gbagfx graphics/unused/obi1.4bpp build/assets/graphics/unused/obi1.4bpp.lz 
 tools/gbagfx/gbagfx graphics/unused/obi2.4bpp build/assets/graphics/unused/obi2.4bpp.lz 
 tools/gbagfx/gbagfx graphics/unused/obi_palpak1.gbapal build/assets/graphics/unused/obi_palpak1.gbapal.lz 
-tools/gbagfx/gbagfx graphics/unused/obi_palpak3.gbapal build/assets/graphics/unused/obi_palpak3.gbapal.lz 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/hall_of_fame.o src/hall_of_fame.c
+tools/gbagfx/gbagfx graphics/unused/obi_palpak3.gbapal build/assets/graphics/unused/obi_palpak3.gbapal.lz 
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/intro.o src/intro.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/intro_credits_graphics.o src/intro_credits_graphics.c
 tools/agbcc/bin/agbcc <flags> -o build/emerald/src/link.o src/link.c
@@ -14658,7 +14657,7 @@ tools/ramscrgen/ramscrgen COMMON sym_common.txt ENGLISH -c build/emerald/src,com
 Memory region         Used Size  Region Size  %age Used
            EWRAM:      249700 B       256 KB     95.25%
            IWRAM:       30892 B        32 KB     94.27%
-             ROM:    14923398 B        32 MB     44.48%
+             ROM:    14924294 B        32 MB     44.48%
       SaveBlock1:       15752 B      15872 B     99.24%
       SaveBlock2:        3884 B       3968 B     97.88%
   PokemonStorage:       33744 B      35712 B     94.49%
@@ -14666,4 +14665,4 @@ cd build/emerald && arm-none-eabi-ld -Map ../../pokeemerald.map -T ../../ld_scri
 tools/gbafix/gbafix pokeemerald.elf -t"POKEMON EMER" -cBPEE -m01 -r0 --silent
 arm-none-eabi-objcopy -O binary pokeemerald.elf pokeemerald.gba
 tools/gbafix/gbafix pokeemerald.gba -p --silent
-make: Leaving directory '/workspace/DungeonCrawlerCarlemon/artifacts/s02/run-0dHXqs/source/engine'
+make: Leaving directory '/workspace/DungeonCrawlerCarlemon/artifacts/s02/run-3cmBS6/source/engine'

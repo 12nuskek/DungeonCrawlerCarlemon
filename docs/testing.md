@@ -216,14 +216,17 @@ across18 processes use the production ROM. Prepared/unprepared strategy and
 defeat branches copy normal manual flash saves, never injected game state.
 [Full logs,30 actual screenshots and route details](evidence/s01/README.md).
 
-## S02 presentation checks (visual acceptance blocked)
+## S02 presentation checks
 
-Tested sourcea242983 passes the isolated128-check suite in
-[evidence/s02](evidence/s02/README.md);46 additional independent menu checks pass
-on that same production ROM. A completed-quest Journal line overflow was found
-and corrected with an incremental8-check retest. Current test-s02.sh expands to
-182 checks/10 sessions; its new complete isolated run remains pending replacement
-art. Python3/Pillow12.3.0 validates indexed image/tile/palette budgets.
+`bash scripts/test-s02.sh` at c9062dabb81341bf0525eead8d89ea7ba62043f5 passes
+199 assertions across11 production mGBA processes, with11 empty error logs.
+[Evidence](evidence/s02/README.md) records the ROM identity, full logs, route inputs,
+actual captures and before/after palette regression. Includes fresh UI/reward
+checks, battle/medicine/recovery, four-direction walking and menu crafting/Journal.
+Ten hardware-palette assertions detect Donut color loss after map/menu/battle/
+reload transitions. Python3/Pillow validates native palettes, packing and budgets.
 
-The user rejected current character art. Runtime PASS does not mean visual
-acceptance: S02 remains unmerged, S03 dependent. [Art handoff](s02-art-handoff.md).
+The rejected initial sprites are replaced with the approved native battle look
+and matching exploration art. Current captures were visually reviewed; source
+provenance and inherited placeholders remain explicit in the content ledger.
+S03 full completion/alternate strategy/defeat regression remains the next gate.

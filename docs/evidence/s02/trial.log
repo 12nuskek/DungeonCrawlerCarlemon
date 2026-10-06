@@ -1458,4 +1458,20 @@ PASS growth 9 495 0 9 805 0
 pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
 support PP=40,38 Carl-defense=6 enemy-attack=6,6
 party action uses=4,40 / 0,38
-result=0 assertions=31
+PASS color 2 1 4196
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+PASS color 2 8 21375
+frame=27622 map=34.1 pos=11,7 flags=3
+party=2 HP=22/33,28/28 battle=0 battlers=4 outcome=1 PP=4,0 trial=1 donut-ability=0
+persistent PP=4,0 status=0,0
+growth level/xp/item=9/495/0,9/805/0 stats maxHP/attack,maxHP/magic=33/23,28/14 foesHP=0,0
+pattern trainer=855 turn=3 foePP=33,0 foeAtkDef=6,6 CarlAtk=6 foeLevel=8
+support PP=40,38 Carl-defense=6 enemy-attack=6,6
+party action uses=4,40 / 0,38
+result=0 assertions=33

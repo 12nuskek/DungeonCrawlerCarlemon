@@ -840,3 +840,29 @@ approach now reserves existing NPC1 palette during dungeon map initialization
 and returns the same tag for palette reload consumers. No save-layout change.
 Added ten hardware-palette assertions across map load, UI/battle return, cold
 reload and movement (199 total in11 sessions). Full corrected runtime pending.
+
+
+### S02 verified replacement presentation — 2026-10-06
+
+Base abf9875af2ffead2a342b8a5835c1e3dff157ec0; tested source
+c9062dabb81341bf0525eead8d89ea7ba62043f5; branch task/s02-original-presentation.
+`scripts/test-s02.sh` isolated run artifacts/s02/run-3cmBS6 completed199 assertions
+across11 production mGBA0.10.5 sessions,11 empty errors. ROM SHA256
+7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Full logs, routes, corrected world/battle/UI images and hardware-palette failure
+comparison archived in docs/evidence/s02 (106-file manifest). Reviewed35 selected
+scene images plus all four-direction contact/idle captures. Palette defect fixed
+on first corrective approach; old ROM reproduced the new color assertion failure.
+All12 map collision/elevation fields match S01; no combat/save-layout changes.
+
+Implemented YES; clean compiled YES; scoped runtime/visual verified YES; merged
+pending PR27. Diff reviewed for generator ownership, palette scope, Journal
+read-only behavior, capture/storage exposure, save changes and generated artifacts.
+Python cache accidentally added in ad4cc41 was removed in a2de128 and is now ignored;
+no ROM/save/executable exists in the tracked tree. Static animation/remaining
+inherited UI/audio assets are listed in content-ledger, not called finished art.
+
+Next: integrate scoped PR27 when protections permit, close issue26, record merge;
+then S03 full fresh-save/alternate-boss/defeat/reward/quest/capacity regression with
+review package. No Stage6 work or new scheduler. Cloud task remains
+01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.

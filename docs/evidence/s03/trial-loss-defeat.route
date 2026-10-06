@@ -22,7 +22,7 @@ step 600 0 opponents.ppm
 step 1 1 -
 step 600 0 carl-menu.ppm
 pilot loss 36000
-step 240 0 recovered.ppm
+step 600 0 recovered.ppm
 incap 6
 duo healthy
 uses 8 40 2 40

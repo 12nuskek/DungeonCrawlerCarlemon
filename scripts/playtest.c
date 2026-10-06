@@ -8,6 +8,7 @@
  * foes HP1 HP2; item ID QUANTITY; flag ID SET.
  * pattern TRAINER TURN FOE_PP0 FOE_PP1 FOE_ATTACK FOE_DEFENSE CARL_ATTACK FOE_LEVEL.
  * color OBJ_PALETTE_SLOT COLOR_INDEX BGR555_VALUE (read actual hardware palette).
+ * engage MAX_FRAMES: advance nearby encounter dialogue with normal A inputs.
  * pilot POLICY MAX_FRAMES: bounded normal-button battle routing; no state writes.
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
@@ -134,6 +135,18 @@ int main(int argc, char **argv)
     int result=0;
     while (fgets(line,sizeof(line),stdin)) {
         if (!strcmp(line,"quit\n")) break;
+        if (!strncmp(line,"engage ",7)) {
+            char limitText[32]; unsigned limit, elapsed=0;
+            if (sscanf(line,"engage %31s %c",limitText,&extra)!=1
+                || !number(limitText,36000,&limit) || !limit || total>UINT_MAX-limit) {result=34;break;}
+            while (elapsed<limit && !(core->busRead8(core,mainstate+0x439)&2)) {
+                core->setKeys(core,elapsed%12==0?1:0);
+                core->runFrame(core);elapsed++;total++;
+            }
+            core->setKeys(core,0);
+            if (!(core->busRead8(core,mainstate+0x439)&2)) {fprintf(stderr,"engage exceeded frame budget\n");result=35;break;}
+            printf("engage completed frames=%u\n",elapsed);checks++;continue;
+        }
         if (!strncmp(line,"pilot ",6)) {
             char policy[32], limitText[32]; unsigned limit;
             if (sscanf(line,"pilot %31s %31s %c",policy,limitText,&extra)!=2

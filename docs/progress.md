@@ -943,3 +943,20 @@ its original direct path hit the trial object, an input-route error rather than
 changed map collision. Corrected depleted save/recovery diagnostic passes13 checks.
 Final suite plans916 checks (723 production,193 fixture),60 sessions. All counts
 remain provisional until the isolated run completes.
+
+### S03 isolated run iteration — 2026-10-06
+
+Tested fdab148 snapshot in artifacts/s03/run-p3Caxf builds the unchanged production
+ROM7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Setup/UI/trial defeat passed, but cold trial retry detected the preceding save
+never occurred: replay pressed B before recovery text finished, then pressed its
+save sequence into the encounter dialogue. Actual captures distinguish this from
+a game save bug. Increasing post-defeat text wait240→600 frames fixes the route;
+current-ROM corrected trial defeat11 and cold retry8 both pass. Apply that wait
+consistently to all six defeat routes; restart isolated suite. No engine change.
+
+Added bounded normal-A `engage` routing for a continuous pacing benchmark. The
+first uninterrupted attempt lost to the unprepared boss; it is not a successful
+completion timing. A new uninterrupted route explicitly exercises ordinary local
+recovery and retry, preserving all real XP/rewards; no injected save/state. Report
+its actual result and fixed waits separately, never extrapolate novice pacing.

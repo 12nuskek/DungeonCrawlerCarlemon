@@ -1,9 +1,9 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 verified, PR50 pending integration.**
+Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 merged; updated private review delivered, N06 PR52 ready for integration.**
 Latest tested source `eaf073d434a9347dfc2ed921f5f44d163563964b`: 90 emulator
 sessions / 1,531 assertions, including 193 labeled fixture checks. Runtime evidence:
-[evidence/n05/final](evidence/n05/final/README.md). Updated private package pending.
+[evidence/n05/final](evidence/n05/final/README.md). Updated private package delivered under issue51; await user playtest after docs integration.
 The dated entries below are historical; this heading is the current checkpoint.
 Single implementation writer: this Cloud task. No Stage6 authorisation.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -1565,3 +1565,58 @@ prepare actual before/after visual review and replace the existing private Libra
 review package with this immutable production ROM. Preserve its previous version.
 Human pacing/uninterrupted unprepared route qualification and source-kit omissions
 remain explicit. No Stage6, public playable release or new scheduler.
+
+### N06 visual/private review — 2026-10-06
+
+N05 PR50 merged f2edec341fe1a1900f82740cbef25563b08f7532; issue49 complete.
+N06 issue51 on task/n06-review-package; base that merge. Docs/packaging only:
+11 actual comparison cards (22 exact captures), all six rooms plus game state and
+recovery, precise build/play instructions and limits. No engine/assets changes.
+Package only accepted production8e7e8c20…ccfb6; preserve prior private Library
+version and keep its identifiers out of public docs. Verify ZIP entries/CRC/SHA256,
+embedded image hashes and source identity before delivery. No public ROM upload.
+
+Offline HTML screenshot validation unavailable after three attempts: default
+headless profile directory creation failed; explicit profile hung with unwritable
+font caches; explicit writable XDG cache/config and direct Chromium timed out40s
+(system DBus/OOM-adjust warnings). No further browser retries. Actual emulator
+captures were separately viewed; document structure/embedded-byte validation is
+independent and remains available. This affects host HTML preview, not game runtime.
+Next finish package, private replacement, review/docs PR and durable final checkpoint.
+
+### Private review delivered — 2026-10-06
+
+Verified package DungeonCrawlerCarlemon-N05-eaf073d.zip:8,135,250 bytes,
+SHA25634b4e0694a1f78236fa3c7a74d3f0001591d4c845455159dae2b493a69e92826.
+375 entries; CRC and every entry SHA256 pass; exactly one ROM with accepted
+production8e7e8c20…ccfb6 identity. No saves/diagnostic ROMs/executables.22 embedded
+actual captures match their source bytes; all local HTML anchors resolve and no
+external runtime assets. Library replacement succeeded, preserving the previous
+review version; authoritative private receipt stays in ignored artifacts/review.
+Public docs contain no private Library identifiers. No public playable release.
+
+Game implemented/compiled/runtime verified/merged YES (tested eaf073d, PR50 merge
+f2edec341fe1a1900f82740cbef25563b08f7532). N06 docs/package source review pending.
+No new gameplay runtime claim for this packaging task. Browser-preview limitation
+above remains; actual game capture review and90/1531 runtime acceptance unaffected.
+Next: merge N06 docs, checkpoint exact merge, then await the user's playtest.
+No substantive remaining implementation blocker identified; do not invent features
+or pad playtime to occupy the authorisation window. Stage6 remains unapproved.
+
+### Final implementation boundary — 2026-10-06
+
+N06 PR52: package/documentation only, basef2edec341fe1a1900f82740cbef25563b08f7532.
+Second independent packaging produces the identical ZIP hash; substituting a
+labeled diagnostic ROM is rejected before creating output. Engine/assets remain
+identical to testedeaf073d. Review/checksum evidence in docs/review/validation.json.
+Ready for verified PR52 merge; its server-side merge status is authoritative.
+No implementation task follows: await Kurt's playtest before Stage6. Parent should
+stop/disable the sole continuation at this boundary, or leave it skipping completed
+work. Never launch filler tasks. No workflow/schedule added in this repository.
+
+Durable inputs: artifacts/n05/run-t11UPm (full run), artifacts/n04/run-5byf3z3n
+(recovery extension), artifacts/review/DungeonCrawlerCarlemon-N05-eaf073d.zip.
+Private delivery succeeded; older Library version retained. Runtime blockers:none.
+Human pacing/playtest pending; host HTML-preview limitation and partial source-kit
+omissions remain documented. Historical failed traces/retry counts remain intact.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.

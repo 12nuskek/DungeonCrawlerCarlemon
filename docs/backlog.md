@@ -1,7 +1,7 @@
 # Live backlog
 
-Current: N05 verified (90 sessions / 1,531 checks); PR50 integration and updated
-private visual/playable package next. Historical entries below retain earlier states.
+Current: N05 merged in PR50 (90 sessions / 1,531 checks). Updated private
+visual/playable package delivered; N06 PR52 ready for integration, then user playtest. Historical entries below retain earlier states.
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 
@@ -231,3 +231,10 @@ N05 verified at eaf073d: one contextual repeat recovery page; first-use preserve
 Full78/1315 plus same-ROM recovered victories12/216,90 empty error logs and38 exact
 rendered comparisons. PR50 pending merge. Updated private review package is next;
 Stage6 and human pacing acceptance remain awaiting the user's playtest.
+
+N05 PR50 merged f2edec3. N06 issue51 private package delivered with exact accepted
+ROM,11 actual comparison cards, play/build guidance and full N05 raw evidence.
+CRC/375 entry hashes/22 capture bytes pass. Previous private review version retained.
+Docs/package source PR pending; then await user playtest. No Stage6 or artificial
+work to fill the remaining overnight window. Host HTML preview remains unavailable
+following three attempts; this is separate from verified game/emulator evidence.

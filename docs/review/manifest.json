@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-06",
+  "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "merged_commit": "f2edec341fe1a1900f82740cbef25563b08f7532",
+  "production_sha256": "8e7e8c20c8dde66488d9374ec90e80391a02c255ad4a0a422e7392f04f1ccfb6",
+  "capture_method": "Actual unedited 240x160 mGBA output. CSS scales with nearest-neighbor; no painted or generated game captures. Source paths and exact byte hashes below.",
+  "cards": [
+    {
+      "title": "The entrance",
+      "description": "Worn stone, rubble and framed stairs replace the repeated tile grid. The note and supply box remain in their tested positions.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/entrance-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "633a99e28b41735d249ae7f217ebf819ad9a791121da8822486625882e760b9e"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/entrance-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "ba296a0221321a79b61a26d7e216e4f03187023988ab17fadc82c6bf1b2ac9fe"
+        }
+      ]
+    },
+    {
+      "title": "The Quiet Landing",
+      "description": "A warm recovery area and practice alcove give the guide and trial distinct places. The cleared trial now leaves a small remains marker.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/landing-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "d99efba866fdbde119d0fd8f58b856e6fd83cef8e689a59d74be89d85aea8f6e"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/landing-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "46126af7cff2132917c61c33fc2d4a310fcda9b25290d12ad7e06439d7642a54"
+        }
+      ]
+    },
+    {
+      "title": "The Service Room",
+      "description": "Cool service tiles, conduits, a workbench, tag bag and cache give the quest and preparation route visible landmarks.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/service-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "48dd1cd355fb13d6ceb0cc3be6057c59bd5f01af0ab43d2a1539f45cc64906a6"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/service-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "60b6ef27038da304409961011626e18b892fd0f569ba6df19474648ba4271fc5"
+        }
+      ]
+    },
+    {
+      "title": "The gauntlet",
+      "description": "Supports and floor wear frame the patrol route. Cleared encounters remain visibly resolved when revisiting.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/gauntlet-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "5684e1a08c5a1e6ede5a74c185ed245d05d03fbf94bb0fbbae997131e7edbb27"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/gauntlet-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "8c39852a0b9c02f33e5d0ebb3c47ba7ecfd8fcb3f08135f5236be552812c1c7d"
+        }
+      ]
+    },
+    {
+      "title": "The gate chamber",
+      "description": "Warm masonry and supports stage the warden. The northeast gate and supply line reflect victory and preparation.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/boss-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "63dd5a8cb1b827f6d7af09757f0f9990cfa0be630c939cede7554a2b9e3f3b7d"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/boss-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "13127f55cf0da132fa6518a79bc4520ddc48943f407fed24bbe0244ad9eae55e"
+        }
+      ]
+    },
+    {
+      "title": "The overlook",
+      "description": "A quiet review space has its own floor composition and small northern alcove. The completed slice remains saveable and returnable.",
+      "frames": [
+        {
+          "path": "docs/evidence/n01/before/exit-center.png",
+          "label": "Before environment work \u00b7 completed-save revisit",
+          "tested_commit": "f3514caa05d99ff60c0c666d017fced8274e11e9",
+          "sha256": "19b5e1d9438f92d07db36de482408f0ca6ad7569fe503553148a271ceafc8a36"
+        },
+        {
+          "path": "docs/evidence/n05/final/rooms/exit-center.png",
+          "label": "Current build \u00b7 same room position and facing",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "8fc4f023b7e7dc188e3323f861d9ac90c65899103d724eb8d8ae5001863ee724"
+        }
+      ]
+    },
+    {
+      "title": "The trap communicates its state",
+      "description": "Two captures from the current build at the same position: the live wire has an amber core and sparks; the spent wire is quiet and broken. Repeat traversal causes no second damage, and the spent state survives a cold reload.",
+      "frames": [
+        {
+          "path": "docs/evidence/n05/final/wire-pair/wire-live-clear.png",
+          "label": "Current: live wire",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "ccb3a03088af2fc599cf290c4966198351831f8052ca3fb1b30754a060d62dc4"
+        },
+        {
+          "path": "docs/evidence/n05/final/wire-pair/wire-spent-clear.png",
+          "label": "Current: spent wire",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "2aec41c5ecfa3b1d846847181fb865e641a29fdd87c95e9f905f30b4707843dc"
+        }
+      ]
+    },
+    {
+      "title": "An opened cache stays open",
+      "description": "Before, a successful CHARGE interaction left a sealed-looking box. Now the open cache reflects its persistent reward flag. Cancelling or lacking inventory space keeps it sealed.",
+      "frames": [
+        {
+          "path": "docs/evidence/n02/final/craft-blast-use/blasted.png",
+          "label": "Before state feedback \u00b7 successful cache interaction",
+          "tested_commit": "dec2c5e479cdceedf8b358d00448358640561b91",
+          "sha256": "ab053df8e15ad1a2f1734fd3ee0f3e97adfc1c12c050b0608915df52c4f171ed"
+        },
+        {
+          "path": "docs/evidence/n05/final/craft-blast-use/blasted.png",
+          "label": "Current \u00b7 successful cache interaction",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "7b5604eb02f503cbe3b15dce54daaf1d66c426034ef9851c8d87c88192f8e222"
+        }
+      ]
+    },
+    {
+      "title": "A locked gate looks locked",
+      "description": "The old arch looked open before the required fights. The new bars match the gameplay restriction, then open after victory. These are both pre-victory captures.",
+      "frames": [
+        {
+          "path": "docs/evidence/n02/final/gates/boss-locked.png",
+          "label": "Before state feedback \u00b7 progression still locked",
+          "tested_commit": "dec2c5e479cdceedf8b358d00448358640561b91",
+          "sha256": "76e74f4cc2caf20b939aa454bc78b31ef0590ce2c04ea2d3ca4d710c9d085144"
+        },
+        {
+          "path": "docs/evidence/n05/final/gates/boss-locked.png",
+          "label": "Current \u00b7 progression still locked",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "60e227f7b928659572c20c21c1263fcf582bf438ac1b7778796e0967d6f0d9db"
+        }
+      ]
+    },
+    {
+      "title": "Repeat recovery takes one page",
+      "description": "The old guide held control for extra advice after recovery. Repeat visits now use one contextual page: the trial hint before victory, the west ladder afterwards. Full first-use teaching and free recovery are unchanged.",
+      "frames": [
+        {
+          "path": "docs/evidence/n05/before-readable/after-two-presses.png",
+          "label": "Before \u00b7 extra advice after two A presses",
+          "tested_commit": "b530fa661254c2c4b5ef1d75ce4010c2d5d741ec",
+          "sha256": "ef6b0812189fa415d8d5b73a534faec60d71e31ea0b2074ca7a8a93ae95ebee5"
+        },
+        {
+          "path": "docs/evidence/n05/final/guide-after-trial/recovery-result.png",
+          "label": "Current \u00b7 recovery and next direction in one page",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "0d71e3d3761c5f8b43ecba3c907cf1dc79e622d5604327fb364bdbc2d9cb3e18"
+        }
+      ]
+    },
+    {
+      "title": "Recovery leads back to victory",
+      "description": "All six exact ordinary defeat saves reach victory and preserve it through manual save and cold reload. These two frames show the Carl-down case, not a newly invented or edited save.",
+      "frames": [
+        {
+          "path": "docs/evidence/n05/recovery/carl-down-win/won-clear.png",
+          "label": "Current \u00b7 victory after recovered Carl-down loss",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "ad53409a4a984b5e711bd8946f1e92f7b443980d756f26c219766ad26bf1f435"
+        },
+        {
+          "path": "docs/evidence/n05/recovery/carl-down-cold/cold-victory.png",
+          "label": "Current \u00b7 same victory after cold reload",
+          "tested_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+          "sha256": "ad53409a4a984b5e711bd8946f1e92f7b443980d756f26c219766ad26bf1f435"
+        }
+      ]
+    }
+  ]
+}

@@ -17,3 +17,11 @@ Do not describe the old128-check run as the new182-check suite.
 
 ![Corrected non-use advice](charge-menu-refused.png)
 ![Journal overflow discovered](journal-before-overflow.png)
+
+Committed-source confirmation: `39e9749e1024f5a26b3393eb48b4478db2a47347`,
+8 assertions PASS, empty error log, actual fixed screenshot reviewed. This is an
+incremental build/retest, not the pending expanded isolated suite. ROM identity
+is in journal-rom.sha256. Ordinary menu.sav came from the three production routes
+above; no state injection.
+
+![Fixed completed-quest text](journal-fixed.png)

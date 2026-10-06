@@ -781,3 +781,19 @@ as well. S02 acceptance includes new9-frame16x32 Carl walking and3-frame16x16
 Donut standing, four-direction/walk/interaction/overlap/palette checks and actual
 overworld+battle captures. This is not optional later polish. Existing reference
 transfer blocker remains: no readable bytes in this consumer environment.
+
+## S02 reviewable blocked checkpoint — 2026-10-06
+
+Draft PR27 opened: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/27
+Do not ready/merge until replacement protagonist art passes actual visual review.
+Issue26 remains open with exact Library transfer failure, art contract, previews
+and active task reference. Source39e9749 committed Journal retest8 PASS, empty
+errors, fixed text capture reviewed; archived in docs/evidence/s02-menu.
+No running build/test remains. Repository writer is paused on unavailable asset
+bytes; parent has approved reference direction and both combat/exploration scope.
+
+Resume this Cloud task after working asset delivery. Inspect downloaded file and
+verify expected hash before any pixel-dependent conversion. Then author coherent
+native battle/overworld masters, preserve generator ownership/palettes, run current
+182-check isolated suite and requested actual character-art review. S03 and
+improvement cycles have not started; Stage6 remains excluded. No scheduler added.

@@ -1,0 +1,15 @@
+make: Entering directory '/workspace/DungeonCrawlerCarlemon/engine'
+tools/scaninc/scaninc -M build/emerald/data/event_scripts.d -g build/assets -I include -I "" data/event_scripts.s
+tools/preproc/preproc data/event_scripts.s charmap.txt | cc -E -I include - | tools/preproc/preproc -ie data/event_scripts.s charmap.txt | arm-none-eabi-as -mcpu=arm7tdmi --defsym MODERN=0 -o build/emerald/data/event_scripts.o
+Memory region         Used Size  Region Size  %age Used
+           EWRAM:      249700 B       256 KB     95.25%
+           IWRAM:       30892 B        32 KB     94.27%
+             ROM:    14923398 B        32 MB     44.48%
+      SaveBlock1:       15752 B      15872 B     99.24%
+      SaveBlock2:        3884 B       3968 B     97.88%
+  PokemonStorage:       33744 B      35712 B     94.49%
+cd build/emerald && arm-none-eabi-ld -Map ../../pokeemerald.map -T ../../ld_script.ld --print-memory-usage -o ../../pokeemerald.elf <objs> <libs>
+tools/gbafix/gbafix pokeemerald.elf -t"POKEMON EMER" -cBPEE -m01 -r0 --silent
+arm-none-eabi-objcopy -O binary pokeemerald.elf pokeemerald.gba
+tools/gbafix/gbafix pokeemerald.gba -p --silent
+make: Leaving directory '/workspace/DungeonCrawlerCarlemon/engine'

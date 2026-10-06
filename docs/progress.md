@@ -517,3 +517,21 @@ first hypothesis; no unresolved blocker. Actual status curing now proven; total
 action exhaustion remains S03. Next push evidence/draft/review/merge, then D02.
 Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`; sole writer/scheduler
 ownership unchanged.
+
+## D01 integration / D02 start — 2026-10-06
+
+PR #21 merged `c42d444b8c2ae1b665105baad133094859bf8fa5`; issue #20 closed.
+Evidence `15703bb7d6d83bde5abf5b7fb3d6a35533179261`, tested `060864c`. Main
+reconciled, no open PR. Parent independently reviewed R02 with no material defect;
+its remaining Scrap-box capacity branch joins D02 inventory-limit coverage.
+D02 issue #22, branch `task/d02-explosive-crafting`, base this merge. Recipe
+Scrap2→Charge1; optional sealed cache consumes one charge for SuperPotion1 and
+persistent preparation flag, reserved for S01 boss advantage. No boss effect yet.
+Inputs/output capacity checked before consumption; no save-layout/battle/schedule
+change. Implemented/compile/runtime/merge pending. Next author bench/cache and test.
+
+D02 source compiles; fresh materials route passes16 assertions: recipe missing/
+cancel, cache needs-charge, quest obtains exactly Scrap2 and saves. Workbench and
+cache both add outputs successfully before consuming checked inputs, with no yield
+between transaction operations. Craft/use/capacity/cold routes still in progress.
+No blocker or failed production fix. S02 retains new icon/prop/audio placeholders.

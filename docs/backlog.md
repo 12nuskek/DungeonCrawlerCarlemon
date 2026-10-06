@@ -13,8 +13,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
 | R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
 | R02 | R01 | Complete: 169 assertions; merged PR #19 (`ae4679e`); issue #18 closed |
-| D01 | E02, R02 | Verified: 114 assertions; issue #20; scoped integration pending |
-| D02 | R01, D01 | Pending: explosive recipe |
+| D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
+| D02 | R01, D01 | Active: issue #22; atomic explosive recipe/cache |
 | S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |
 | S02 | S01 | Pending: original assets, dialogue/UI and placeholder review |
 | S03 | S02 | Pending: full regression and review package |
@@ -114,3 +114,12 @@ NPCs with a retrieval quest. Preserve decline/accept/complete, tag/reward quanti
 trap state and recovery across cold saves and backtracking. Prove actual paralysis
 and guide cure. No new battle model/save schema/crafting/boss/scheduler. Fresh save
 required for new map objects. Exact input routes/logs/screenshots required before merge.
+
+## D02 contract
+
+Base `c42d444b8c2ae1b665105baad133094859bf8fa5`, issue #22. Scrap2→Charge1
+workbench with empty-material/cancel/capacity/success/repeat states. Optional cache
+consumes charge only after reward capacity succeeds, awards SuperPotion1 once and
+persists. Test cold crafting/use, medicine effect, both atomic failure paths and
+R02 workshop Scrap full-capacity branch. No main-route gate, save schema, new battle
+model or scheduler. Original item/prop art remains S02.

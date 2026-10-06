@@ -177,3 +177,22 @@ upstream placeholders for S02. New metatile0x39E copies upstream cracked-floor
 visuals with ordinary floor behavior; it never invokes stock falling-floor logic.
 Route tag uses the Metal Coat icon temporarily. Source map data are authored assets,
 not generated ROM binaries. Runtime verified: [D01 114-check evidence](evidence/d01/README.md); integration pending.
+
+## D02 explosive recipe and optional cache (2026-10-06)
+
+Original compressed tutorial adaptation, not a quoted book scene. Service-room
+workbench6,8 turns two bag-held SCRAP378 into CHARGE380. Obtain Scrap2 from R02
+trial box and another2 from Mara; either source supports the one-recipe tutorial.
+Workbench checks materials then output capacity before removing inputs. Cancelling
+or failure consumes nothing. It conservatively requires room before crafting,
+even when consuming materials could free a slot. Explain that refusal in dialogue.
+
+Sealed east cache13,8 offers explicit consent to spend Charge1 for SuperPotion22
+quantity1. Check reward capacity before charge consumption, then flag0x2E prevents
+repeat rewards/spending. It never gates return or main progression. This flag is
+reserved for S01 preparation advantage; no boss effect exists yet. Empty inventory
+and spent materials leave the main route available. Charge menu use is inert and
+its description directs players to the cache. Super Potion is immediately usable
+recovery, so crafting already has a practical benefit. New dialogue original;
+MovingBox/MetalCoat icon/explosion sound are upstream placeholders for S02.
+Runtime verification pending D02. No new save layout or battle item framework.

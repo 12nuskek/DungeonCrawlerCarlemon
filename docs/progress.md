@@ -775,3 +775,9 @@ Next: obtain readable asset bytes through parent, inspect actual1254x1254 refere
 masters rather than blindly downscaling; integrate/wire palettes as sole writer,
 run182 suite and actual visual review. S02 draft/review state remains blocked,
 no merge and no dependent S03. Current Cloud task ID unchanged.
+
+User approved replacement reference style and explicitly requires it outside combat
+as well. S02 acceptance includes new9-frame16x32 Carl walking and3-frame16x16
+Donut standing, four-direction/walk/interaction/overlap/palette checks and actual
+overworld+battle captures. This is not optional later polish. Existing reference
+transfer blocker remains: no readable bytes in this consumer environment.

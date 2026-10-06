@@ -7,6 +7,12 @@ outside this repository. No overlapping repository writer is authorized.
 Current source `a242983b6f6d061dd2c5bd4916c34f8b1fd10266` compiles and passes128
 runtime assertions, but that does not override the user's art rejection.
 
+User approved the improved generated reference direction and explicitly added:
+“Much better but outside of combat as well”. Matching Carl walking directions
+and Donut on-map art are REQUIRED for current S02, not deferred polish. Verify
+all four movement directions, walk cycles, interaction/overlap and palettes plus
+battle front/back with actual emulator captures. No follower mechanic required.
+
 Target: readable, appealing Emerald-scale pixel art with stronger silhouettes,
 natural poses, deliberate shading and expressive faces. Carl: human, bare torso/
 feet, heart-patterned shorts; Donut: long-haired cat, distinctive face/ruff/tail.

@@ -218,4 +218,4 @@ DCC_Journal_Text_QuestActive:
 	.string "service crate. Return it for spare scrap.$"
 DCC_Journal_Text_QuestDone:
 	.string "MARA: Route tag returned. Job complete.\n"
-	.string "The workbench turns two scrap into a charge.$"
+	.string "Two scrap make one charge.$"

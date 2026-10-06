@@ -748,3 +748,30 @@ compile and capture actual updated duo/summary/overworld, seek requested visual
 review before treating S02 art accepted. Independent title/menu verification may
 continue. No new scheduler, no duplicate Cloud task. Task ID remains
 01a10f4b-596b-700b-b8ba-241e3ca2c000. S03 and Stage6 stay gated.
+
+## Reference delivery blocked / independent menu correction — 2026-10-06
+
+Parent supplied exact generated reference LibraryID
+libfile_bdf91f97ea7c8191a3d196d5fc3890cd, file_00000000fcac82308d3f54afcdedaa6d,
+expected SHA2564c713bb73c041af17a4daf9568087fc911f63daba617c184b68e0744b51619aa.
+Read current Library skill/materialization instructions and fetched current helper.
+prepare_materialize resolved it, but initial supported transfer and one fresh-
+preparation retry both returned “library file transfer failed: download failed”,
+exit1. Destination artifacts/s02/art-reference/...png does not exist. No pixel
+inspection/conversion performed, no parent path assumption, no private credential
+access/guessed URLs. Issue26 reports exact consumer-local blocker. Await working
+authorized asset transfer; no further blind retry.
+
+On isolated productiona242983, independent D02 materials16/craft13/blast17 pass
+46 assertions/3 empty errors. Completed-quest Journal line visibly overflowed;
+shortened it to “Two scrap make one charge.” Incremental8 checks then pass with
+read-only flags/status/resources and control return. Input movement corrected
+from20 to12 frames because the player was already facing left (not a control bug).
+Current test-s02.sh includes182 checks/10 processes; expanded isolated rerun is
+pending replacement art. Archived128-check evidence is explicit VISUAL FAIL.
+
+Next: obtain readable asset bytes through parent, inspect actual1254x1254 reference
+(SHA above), preserve generated-reference provenance and author native indexed
+masters rather than blindly downscaling; integrate/wire palettes as sole writer,
+run182 suite and actual visual review. S02 draft/review state remains blocked,
+no merge and no dependent S03. Current Cloud task ID unchanged.

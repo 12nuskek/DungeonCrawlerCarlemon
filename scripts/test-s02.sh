@@ -33,6 +33,10 @@ run_route ui "$repo/docs/evidence/s02/ui.route" 13
 run_route trial "$repo/docs/evidence/s02/trial.route" 31
 run_route rest "$repo/docs/evidence/s02/rest.route" 34
 run_route gates "$repo/docs/evidence/s01/gates.route" 17
+run_route menu-materials "$repo/docs/evidence/d02/materials.route" 16 menu.sav
+run_route menu-craft "$repo/docs/evidence/d02/craft.route" 13 menu.sav
+run_route menu-blast "$repo/docs/evidence/d02/blast-use.route" 17 menu.sav
+run_route menu-journal "$repo/docs/evidence/s02/menu-journal.route" 8 menu.sav
 python3 - "$evidence" <<'PYIMG'
 from pathlib import Path
 from PIL import Image

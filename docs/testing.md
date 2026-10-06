@@ -215,3 +215,15 @@ At tested revision `2e8de08292a8a4fe380fda06accdb2b97c798401`, run
 across18 processes use the production ROM. Prepared/unprepared strategy and
 defeat branches copy normal manual flash saves, never injected game state.
 [Full logs,30 actual screenshots and route details](evidence/s01/README.md).
+
+## S02 presentation checks (visual acceptance blocked)
+
+Tested sourcea242983 passes the isolated128-check suite in
+[evidence/s02](evidence/s02/README.md);46 additional independent menu checks pass
+on that same production ROM. A completed-quest Journal line overflow was found
+and corrected with an incremental8-check retest. Current test-s02.sh expands to
+182 checks/10 sessions; its new complete isolated run remains pending replacement
+art. Python3/Pillow12.3.0 validates indexed image/tile/palette budgets.
+
+The user rejected current character art. Runtime PASS does not mean visual
+acceptance: S02 remains unmerged, S03 dependent. [Art handoff](s02-art-handoff.md).

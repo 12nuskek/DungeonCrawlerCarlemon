@@ -11,7 +11,7 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
 | B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
-| R01 | B02, E02 | Active: issue #16; optional wrist wrap and persistent XP/level growth |
+| R01 | B02, E02 | Verified: 174 assertions; issue #16; integration pending |
 | R02 | R01 | Pending: persistent achievements/loot |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |
 | D02 | R01, D01 | Pending: explosive recipe |

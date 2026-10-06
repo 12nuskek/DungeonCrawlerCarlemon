@@ -172,3 +172,14 @@ final engine ROM is that fixture. Use a normal checkout/README build for play.
 Screenshots are real emulator captures; host `pocket`/`policy` diagnostics read RAM
 only. The fixture explicitly constructs test inputs in game code, never a hidden
 production debug route. Preserve this distinction in future acceptance reports.
+
+## R01 XP/equipment replay
+
+Run `bash scripts/test-r01.sh` at its tested revision with the documented toolchain
+variables. It preserves a local production ROM before generating a separate damage/
+capacity fixture. Eight production and two fixture routes cover ordinary obtain,
+repeat, equip/take, wins with/without gear, XP/stat growth, depleted and immediate-
+defeat saves, cold reload/retry, and capacity refusal followed by freeing a slot.
+`growth` decodes saved encrypted XP/held-item fields; `item` reads real bag quantities
+with the save encryption key. `stats`, `foes` and `flag` read actual game state.
+No host RAM writes. [174-assertion evidence](evidence/r01/README.md).

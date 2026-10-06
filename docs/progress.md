@@ -417,3 +417,13 @@ held gear and XP, then cold retry works. Full-bag refusal leaves flag unset;
 tossing one Potion allows exactly one wrap. Input routes were adjusted for extra
 level-up pages and menu return states; no engine failure found. Final isolated
 committed replay pending; compilation alone is not acceptance. Next run test-r01.sh.
+
+## R01 final verification — 2026-10-06
+
+Tested `d9db8b3a61fa36035236cb5764f732ea20d88736`, clean isolated pinned build;
+174 mGBA assertions PASS, ten empty error logs,18 actual PNGs visually reviewed.
+Production ROM `aece986da533253d66fa77151d2972d81160002e5fbd17bd8374d50c400355d0`.
+[Full evidence](evidence/r01/README.md). Implemented YES / compiled PASS / runtime
+PASS / integration pending scoped PR. No blocker. R02 persistent achievements and
+loot is next after merge. Depleted/immediate-defeat saves now covered, while actual
+status curing and total action exhaustion remain explicit S03 edges. No scheduler.

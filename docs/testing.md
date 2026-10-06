@@ -1,5 +1,21 @@
 # Build and runtime validation
 
+For the current crawler build, use the custom commands below. The matching
+Emerald baseline sections document Stage 0 at its recorded revision, not HEAD.
+
+```sh
+bash scripts/setup-foundation.sh
+make -C engine -j2
+sha256sum engine/pokeemerald.gba
+```
+
+Install Linux build-essential, binutils-arm-none-eabi, git, libpng-dev and
+pkg-config first. Runtime regression additionally needs libmgba-dev (verified
+0.10.5), Python3 and Pillow. `bash scripts/test-s03.sh` builds an isolated committed
+snapshot and runs the complete current regression; see its evidence README for
+actual acceptance state. Never run baseline `make compare` on the custom game.
+
+
 ## Matching baseline build
 
 Use Linux with `build-essential binutils-arm-none-eabi git libpng-dev pkg-config`.

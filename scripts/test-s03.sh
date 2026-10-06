@@ -68,7 +68,7 @@ run_route prepared-reload "$repo/docs/evidence/s03/prepared-reload.route" 12 pre
 run_route quest-decline "$repo/docs/evidence/d01/decline.route" 13 quest.sav game.sym
 run_route quest-accept-trap "$repo/docs/evidence/d01/accept-trap.route" 16 quest.sav game.sym
 run_route quest-tag-secret "$repo/docs/evidence/d01/tag-secret.route" 15 quest.sav game.sym
-run_route quest-complete-recover "$repo/docs/evidence/d01/complete-recover.route" 22 quest.sav game.sym
+run_route quest-complete-recover "$repo/docs/evidence/s03/quest-complete-recover.route" 22 quest.sav game.sym
 run_route quest-reload-final "$repo/docs/evidence/d01/reload-final.route" 18 quest.sav game.sym
 run_route craft-materials "$repo/docs/evidence/d02/materials.route" 16 craft.sav game.sym
 run_route craft-craft "$repo/docs/evidence/d02/craft.route" 13 craft.sav game.sym
@@ -77,11 +77,13 @@ run_route craft-reload-recover "$repo/docs/evidence/d02/reload-recover.route" 13
 run_route craft-reload-final "$repo/docs/evidence/d02/reload-final.route" 8 craft.sav game.sym
 run_route collection-setup "$repo/docs/evidence/e01/new-game.route" 16 collection.sav game.sym
 run_route collection-menus "$repo/docs/evidence/b03/menus.route" 14 collection.sav game.sym
-run_route collection-guide "$repo/docs/evidence/b02/guide-before-trial.route" 10 collection.sav game.sym
-run_route collection-battle "$repo/docs/evidence/b03/battle-menu.route" 10 collection.sav game.sym
+run_route collection-guide "$repo/docs/evidence/s03/collection-guide.route" 10 collection.sav game.sym
+run_route collection-battle "$repo/docs/evidence/s03/collection-battle.route" 10 collection.sav game.sym
 run_route equipment-setup "$repo/docs/evidence/e01/new-game.route" 16 equipment.sav game.sym
 run_route equipment-give "$repo/docs/evidence/r01/acquire-equip.route" 15 equipment.sav game.sym
 run_route equipment-reload "$repo/docs/evidence/s03/equipment-reload.route" 5 equipment.sav game.sym
+run_route continuous-prepared "$repo/docs/evidence/s03/continuous-prepared.route" 127 continuous.sav game.sym
+run_route continuous-reload "$repo/docs/evidence/s03/continuous-reload.route" 10 continuous.sav game.sym
 # Explicit diagnostic ROMs start from restored production source each time.
 cp "$repo/engine/src/crawler.c" "$evidence/original-crawler.c"
 cp "$repo/engine/src/battle_script_commands.c" "$evidence/original-battle-script-commands.c"
@@ -129,6 +131,21 @@ for log in sorted(root.glob('*/replay.log')):
     assert match and not (log.parent/'errors.log').stat().st_size
     results.append({'route':log.parent.name,'assertions':int(match[1]),'fixture':'fixture' in log.parent.name})
 (root/'validation-summary.json').write_text(json.dumps(results,indent=2)+'\n')
+# Continuous normal-input route: no mid-run boot/load or save-state injection.
+route=(root/'source/docs/evidence/s03/continuous-prepared.route').read_text()
+log=(root/'continuous-prepared/replay.log').read_text()
+steps=[tuple(map(int,line.split()[1:3])) for line in route.splitlines() if line.startswith('step ')]
+frames=int(re.findall(r'frame=(\d+) map',log)[-1])
+pilots=[int(n) for n in re.findall(r'pilot completed policy=\w+ frames=(\d+)',log)]
+assert frames==sum(n for n,k in steps)+sum(pilots)
+timing={'normal_gba_hz':59.7275,'total_frames':frames,'total_seconds':frames/59.7275,
+        'startup_frames':sum(n for n,k in steps[:9]),
+        'fixed_zero_input_frames_including_startup':sum(n for n,k in steps if k==0),
+        'scripted_button_frames':sum(n for n,k in steps if k!=0),
+        'battle_pilot_frames':pilots,'mid_route_reboots':0,
+        'interpretation':'Automated continuous prepared route with fixed waits; not fresh-player reading or decision time.'}
+(root/'pacing.json').write_text(json.dumps(timing,indent=2)+'\n')
+
 print('PASS',len(results),'sessions,',sum(x['assertions'] for x in results),'assertions; inspect actual images/motion before acceptance')
 PYIMG
 test "$(git rev-parse HEAD)" = "$revision"

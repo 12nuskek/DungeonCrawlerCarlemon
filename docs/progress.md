@@ -960,3 +960,33 @@ first uninterrupted attempt lost to the unprepared boss; it is not a successful
 completion timing. A new uninterrupted route explicitly exercises ordinary local
 recovery and retry, preserving all real XP/rewards; no injected save/state. Report
 its actual result and fixed waits separately, never extrapolate novice pacing.
+
+### S03 current-art replay reconciliation — 2026-10-06
+
+6231b66 isolated production run passed core progression, both bosses, all local
+defeat/retry routes, both incapacitation orders and staircase cold reload before
+a stale D01 route tried to walk during Lev's added third page. The corrected
+S03 quest route passes22 checks. Two older collection routes also needed explicit
+current-art inputs: walk around stationary Donut, and B from Carl's move selector
+before selecting Items. Both corrected routes pass. Historical evidence stays
+unchanged; new S03 copies document the current inputs. No production engine edits.
+
+Continuous prepared route passed127 checks in90,586 frames (25m16.655s at
+59.7275Hz), plus10 cold final-save checks. Includes53,700 fixed zero-input frames,
+4,951 scripted button frames and31,935 battle-pilot frames; startup2,044frames is
+included. No mid-route reboots. This is measured automated play, not novice pacing.
+Two prior uninterrupted unprepared-boss attempts lost; retained diagnostics do not
+count as completed routes. Main isolated unprepared strategy passed independently.
+
+Final suite now plans1,053 checks/62 processes:860 production and193 labeled
+fixture assertions. Fixture tail diagnostics are still running; final isolated
+committed rerun is required before S03 acceptance/merge. Private Library build
+delivery remains pending acceptance; no ROM enters git or public release.
+
+All corrected tail diagnostics now pass, including193 labeled fixture checks.
+Final committed suite rerun follows. Parent relayed the user's request to improve
+opponents to the approved protagonist standard. This is authorised improvement
+cycle1 after the S03 baseline, restricted to the five existing enemies' native
+battle/map artwork. Parent coordinates asset-only preparation outside this repo;
+this remains the sole implementation writer. Names, roles, paths, dimensions and
+palette constraints are posted to issue29. Preserve baseline and await candidates.

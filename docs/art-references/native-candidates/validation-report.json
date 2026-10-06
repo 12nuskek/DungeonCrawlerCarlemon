@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "pngs": [
+    {
+      "path": "assets/carl/front.png",
+      "mode": "P",
+      "size": [
+        64,
+        64
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "6c62b19145fe4a061a3080ec3ca2fae30a80452f3ea5d5aad8aaa878b29bd5aa"
+    },
+    {
+      "path": "assets/carl/back.png",
+      "mode": "P",
+      "size": [
+        64,
+        64
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1"
+    },
+    {
+      "path": "assets/carl/anim_front.png",
+      "mode": "P",
+      "size": [
+        64,
+        128
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "7da07e7604a298479d449bc2449103bf169e826461d508bdf2a97a582757dda6"
+    },
+    {
+      "path": "assets/carl/trainer_back.png",
+      "mode": "P",
+      "size": [
+        64,
+        256
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "a95f7947a7973fcf0daf2112664272a1614f047858d85519ccf508fdad1d4077"
+    },
+    {
+      "path": "assets/donut/front.png",
+      "mode": "P",
+      "size": [
+        64,
+        64
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48"
+    },
+    {
+      "path": "assets/donut/back.png",
+      "mode": "P",
+      "size": [
+        64,
+        64
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 11,
+      "binary_alpha": true,
+      "sha256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d"
+    },
+    {
+      "path": "assets/donut/anim_front.png",
+      "mode": "P",
+      "size": [
+        64,
+        128
+      ],
+      "bit_depth": 4,
+      "max_index": 15,
+      "opaque_colors_used": 14,
+      "binary_alpha": true,
+      "sha256": "d53075a5ea8d60c2ec4f2e92dedf10ca1cc0c224a42f8e0f86ded426529d11f4"
+    }
+  ],
+  "palette_files": 4,
+  "regeneration_sha256_identical": true,
+  "visual_review": "1x and nearest-neighbor 6x asset review completed; actual emulator review pending",
+  "limitations": [
+    "Not compiled or emulator-tested",
+    "Front animation and trainer intro packs contain static duplicated frames",
+    "Icons and native overworld not included as approved assets"
+  ]
+}

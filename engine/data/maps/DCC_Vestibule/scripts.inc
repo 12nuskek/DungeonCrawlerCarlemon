@@ -31,7 +31,7 @@ DCC_Vestibule_Text_Trial:
 	.string "AI: A little rehearsal. Two targets,\n"
 	.string "two crawlers. Try helping each other.\p"
 	.string "Choose an action for CARL, then DONUT.\n"
-	.string "This trial restores you both afterward.$"
+	.string "Defeat restores you. Win, then rest.$"
 DCC_Vestibule_Text_Defeat:
 	.string "AI: Teamwork. Disturbingly effective.$"
 DCC_Vestibule_Text_NeedDuo:
@@ -42,4 +42,41 @@ DCC_Vestibule_Text_Retry:
 	.string "The trial can be attempted again.$"
 DCC_Vestibule_Text_Won:
 	.string "The targets fold away. Trial complete.\n"
-	.string "CARL and DONUT are both restored.$"
+	.string "Visit the guide by the south wall.$"
+
+DCC_Vestibule_Guide::
+	lock
+	faceplayer
+	goto_if_set FLAG_DCC_GUIDE_MET, DCC_Vestibule_GuideRest
+	msgbox DCC_Vestibule_Text_GuideIntro, MSGBOX_DEFAULT
+	setflag FLAG_DCC_GUIDE_MET
+DCC_Vestibule_GuideRest:
+	special HealPlayerParty
+	msgbox DCC_Vestibule_Text_Rested, MSGBOX_DEFAULT
+	goto_if_set TRAINER_FLAGS_START + TRAINER_DCC_TRIAL, DCC_Vestibule_GuideAfterTrial
+	msgbox DCC_Vestibule_Text_TrialAdvice, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_GuideAfterTrial:
+	msgbox DCC_Vestibule_Text_ReturnAdvice, MSGBOX_DEFAULT
+	release
+	end
+
+DCC_Vestibule_Text_GuideIntro:
+	.string "GUIDE: Take a breath. This room is safe.\n"
+	.string "You can rest here as often as you need.\p"
+	.string "No fee. No trick. I'd rather explain\n"
+	.string "the rules once than carry you twice.$"
+DCC_Vestibule_Text_Rested:
+	.string "CARL and DONUT recover their health\n"
+	.string "and all their action uses.$"
+DCC_Vestibule_Text_TrialAdvice:
+	.string "Try the AI's rehearsal across the room.\n"
+	.string "Choose an action for each of you.\p"
+	.string "If you both fall, you recover here.\n"
+	.string "After a win, come back to me to rest.$"
+DCC_Vestibule_Text_ReturnAdvice:
+	.string "GUIDE: You made it back together. Good.\n"
+	.string "The ladder returns to the entrance.\p"
+	.string "Press START, then SAVE outside battle.\n"
+	.string "A saved rest is one less worry.$"

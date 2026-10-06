@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0, E01 and B01 complete; E02 is next.**
+Handoff date: 2026-10-06. **Stage 0, E01 and B01 complete; E02 active.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
 Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -275,3 +275,29 @@ are not final. Scheduled custom dungeon/protagonist art, environmental detail,
 palettes and layout polish remain S02 acceptance within the slice. Recorded in the
 content ledger; actual before/after engine captures and remaining-placeholder list
 required. Gameplay dependency order remains unchanged; no scope/platform expansion.
+
+## E02 start — 2026-10-06
+
+Parent requested immediate continuation. Main reconciled at
+`66bcbb3c6b8cc0600a0108b56a882942db12ae24`, clean tree and no open PRs.
+Branch task/e02-guide-recovery; tracker #10. Backfilled completed E01/B01 issues
+#8/#9 with real screenshots, assertions, tested commits and PR backlinks; closed
+as completed. Existing Deleted issue #1 preserved. One writer, no new scheduler.
+E02 moves victory restoration to a guide so ordinary play can test real injured/
+depleted recovery, preserves automatic defeat recovery, and updates promised text.
+Current implementation not yet compiled/runtime verified/merged. Fresh saves
+required for reproducible milestone tests; save layout unchanged.
+
+E02 exploratory emulator checks: guide restored actual party HP 22/16→30/26 and
+persistent PP 32/17→35/20; repeat use passed. Return route initially ran into the
+trial attendant, correctly failing the map assertion; rerouted through the clear
+row below the attendant. Full revised recovery route passes 16 checks. No runtime
+claim yet for curing nonzero status. Corrected README build instructions to use
+the custom-game build on current main; matching-stock comparison is Stage 0 only.
+Final isolated committed replay and screenshots pending; no implementation blocker.
+
+E02 cold save reload passed 7 checks, including healed persistent HP/PP, guide
+flag and repeat dialogue. A preliminary pre-trial test using an old B01 save
+correctly failed: the saved map object list lacked the newly added guide. Treat
+E02 as fresh-save-required (documented); final tests start a new E02 game. This is
+not a claim of save migration. No new engine workaround or forced save rewrite.

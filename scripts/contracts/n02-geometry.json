@@ -97,15 +97,6 @@
       "purpose": "recessed eastern cache bay while preserving the direct northern route",
       "changes": [
         {
-          "x": 13,
-          "y": 3,
-          "before_upper": 12288,
-          "before_attribute": 8,
-          "after_upper": 1024,
-          "after_attribute": 8,
-          "kind": "block"
-        },
-        {
           "x": 14,
           "y": 7,
           "before_upper": 1024,

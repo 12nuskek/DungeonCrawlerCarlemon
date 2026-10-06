@@ -1,0 +1,596 @@
+step 720 0 -
+step 1 8 -
+step 360 0 setup-title.ppm
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 setup-intro.ppm
+step 1 1 -
+step 400 0 setup-shoulder.ppm
+step 1 1 -
+step 400 0 setup-ai.ppm
+step 1 1 -
+step 400 0 setup-controls.ppm
+step 1 1 -
+step 120 0 setup-room.ppm
+expect 34 0 4 8 1
+flag 36 0
+flag 37 0
+flag 38 0
+flag 39 0
+step 100 16 -
+step 40 0 setup-supply-approach.ppm
+expect 34 0 10 8 1
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 setup-supply-locked.ppm
+flag 36 0
+flag 38 0
+step 1 1 -
+step 120 0 -
+step 100 32 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+expect 34 0 4 6 1
+step 1 1 -
+step 400 0 setup-crate.ppm
+step 1 1 -
+step 400 0 setup-note.ppm
+step 1 1 -
+step 400 0 setup-ladder.ppm
+step 1 1 -
+step 400 0 setup-reader-achievement.ppm
+flag 36 1
+flag 38 0
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 setup-reader-repeat.ppm
+flag 36 1
+step 1 1 -
+step 120 0 -
+step 36 128 -
+step 40 0 -
+step 100 16 -
+step 40 0 -
+expect 34 0 10 8 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 setup-supply-opened.ppm
+flag 38 1
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 setup-supply-repeat.ppm
+flag 38 1
+step 1 1 -
+step 120 0 -
+step 36 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 setup-landing.ppm
+expect 34 1 12 4 3
+step 20 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 setup-workshop-approach.ppm
+expect 34 1 11 7 3
+step 1 1 -
+step 400 0 setup-workshop-locked.ppm
+flag 37 0
+flag 39 0
+step 1 1 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+expect 34 1 11 4 3
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 trial-trial-intro.ppm
+step 1 1 -
+step 400 0 trial-duo-note.ppm
+step 1 1 -
+step 900 0 trial-battle-start.ppm
+step 1 1 -
+step 600 0 trial-opponents.ppm
+step 1 1 -
+step 600 0 trial-carl-menu.ppm
+pilot offensive 36000
+step 240 0 trial-trial-win.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+flag 2135 1
+flag 37 1
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 trial-duo-achievement-repeat.ppm
+flag 37 1
+step 1 2 -
+step 120 0 -
+step 36 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+expect 34 1 11 7 3
+step 1 1 -
+step 400 0 trial-workshop-opened.ppm
+flag 39 1
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 trial-workshop-repeat.ppm
+flag 39 1
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 trial-reward-inventory.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 trial-choose-heal.ppm
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 trial-potion-used.ppm
+step 1 1 -
+step 180 0 trial-after-potion.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 300 0 trial-no-effect.ppm
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+expect 34 1 11 7 3
+expect 34 1 11 7 3
+flag 36 1
+flag 37 1
+flag 38 1
+flag 39 1
+step 1 1 -
+step 400 0 rest-workshop-cold-repeat.ppm
+flag 39 1
+step 1 2 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+step 20 16 -
+step 180 0 rest-entrance-reentry.ppm
+expect 34 0 12 4 3
+step 68 128 -
+step 40 0 -
+step 36 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 0 10 8 3
+step 1 1 -
+step 400 0 rest-supply-cold-repeat.ppm
+flag 38 1
+step 1 2 -
+step 120 0 -
+step 100 32 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+expect 34 0 4 6 3
+step 1 1 -
+step 400 0 rest-reader-cold-repeat.ppm
+flag 36 1
+step 1 2 -
+step 120 0 -
+step 36 128 -
+step 40 0 -
+step 132 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 rest-landing-reentry.ppm
+expect 34 1 12 4 3
+step 20 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+expect 34 1 11 7 3
+step 1 1 -
+step 400 0 rest-workshop-reentry-repeat.ppm
+flag 39 1
+step 1 2 -
+step 120 0 -
+step 116 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 1 4 7 3
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 rest-reward-safe-rest.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+expect 34 1 4 7 7
+flag 46 0
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 gates-service.ppm
+expect 34 2 2 4 7
+step 36 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+expect 34 2 4 6 7
+step 1 1 -
+step 400 0 gates-quest-offer.ppm
+step 1 1 -
+step 400 0 gates-quest-choice.ppm
+step 1 2 -
+step 400 0 gates-quest-declined.ppm
+flag 41 1
+flag 42 0
+flag 43 0
+flag 40 0
+step 1 1 -
+step 120 0 -
+step 36 32 -
+step 40 0 -
+expect 34 2 2 6 7
+step 52 128 -
+step 40 0 -
+step 180 0 gates-gauntlet.ppm
+expect 34 3 2 4 7
+step 164 16 -
+step 40 0 -
+step 180 0 forward-boss-arrival.ppm
+expect 34 4 2 4 7
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+step 1 1 -
+step 400 0 gates-boss-locked.ppm
+flag 47 0
+flag 48 0
+step 1 2 -
+step 120 0 -
+step 68 16 -
+step 40 0 -
+expect 34 4 12 5 7
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 gates-stairs-locked.ppm
+flag 48 0
+step 1 2 -
+step 120 0 -
+step 164 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 180 0 gates-gauntlet-return.ppm
+expect 34 3 12 4 7
+step 116 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 3 5 5 7
+flag 2136 0
+flag 2137 0
+expect 34 3 5 5 7
+duo healthy
+step 1 1 -
+step 400 0 guard-guard-intro.ppm
+step 1 1 -
+step 400 0 guard-guard-objective.ppm
+step 1 1 -
+step 900 0 guard-battle-start.ppm
+step 1 1 -
+step 600 0 guard-opponents.ppm
+step 1 1 -
+step 600 0 guard-carl-menu.ppm
+pilot defensive 30000
+step 240 0 guard-battle-ended.ppm
+step 1 1 -
+step 400 0 guard-end-0.ppm
+step 1 1 -
+step 400 0 guard-end-1.ppm
+step 1 1 -
+step 400 0 guard-end-2.ppm
+flag 2136 1
+flag 2137 0
+step 1 1 -
+step 400 0 guard-guard-repeat.ppm
+flag 2136 1
+step 1 2 -
+step 120 0 -
+expect 34 3 5 5 7
+flag 2136 1
+flag 2137 0
+step 20 64 -
+step 40 0 -
+step 52 32 -
+step 40 0 -
+step 180 0 guard-rest-service-return.ppm
+expect 34 2 2 9 7
+step 84 64 -
+step 40 0 -
+step 180 0 guard-rest-landing-return.ppm
+expect 34 1 2 4 7
+step 20 16 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guard-rest-guard-rest.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 -
+step 84 128 -
+step 40 0 -
+step 180 0 guard-rest-gauntlet-return.ppm
+expect 34 3 2 4 7
+step 132 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 3 10 5 7
+expect 34 3 10 5 7
+duo healthy
+step 1 1 -
+step 400 0 howler-howler-intro.ppm
+step 1 1 -
+step 400 0 howler-howler-advice.ppm
+step 1 1 -
+step 900 0 howler-battle-start.ppm
+step 1 1 -
+step 600 0 howler-opponents.ppm
+step 1 1 -
+step 600 0 howler-carl-menu.ppm
+pilot offensive 30000
+step 240 0 howler-battle-ended.ppm
+step 1 1 -
+step 400 0 howler-end-0.ppm
+step 1 1 -
+step 400 0 howler-end-1.ppm
+step 1 1 -
+step 400 0 howler-end-2.ppm
+step 1 2 -
+step 120 0 -
+flag 2136 1
+flag 2137 1
+flag 47 0
+step 1 1 -
+step 400 0 howler-howler-repeat.ppm
+step 1 2 -
+step 120 0 -
+expect 34 3 10 5 7
+flag 2136 1
+flag 2137 1
+step 20 64 -
+step 40 0 -
+step 132 32 -
+step 40 0 -
+step 180 0 -
+expect 34 2 2 9 7
+step 84 64 -
+step 40 0 -
+step 180 0 -
+expect 34 1 2 4 7
+step 20 16 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 boss-rest-patrol-rest.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 -
+step 84 128 -
+step 40 0 -
+step 180 0 -
+step 164 16 -
+step 40 0 -
+step 180 0 -
+expect 34 4 2 4 7
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+flag 46 0
+flag 47 0
+expect 34 4 8 5 7
+flag 46 0
+flag 47 0
+step 100 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 180 0 -
+expect 34 3 12 4 7
+step 164 32 -
+step 40 0 -
+step 180 0 -
+expect 34 2 2 9 7
+step 52 64 -
+step 40 0 -
+step 68 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 2 6 7 7
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 preparation-charge-crafted.ppm
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 116 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 600 0 preparation-preparation-blast.ppm
+flag 46 1
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 164 32 -
+step 40 0 -
+step 180 0 -
+expect 34 3 2 4 7
+step 164 16 -
+step 40 0 -
+step 180 0 -
+expect 34 4 2 4 7
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+flag 40 0
+flag 43 0
+flag 47 0
+expect 34 4 8 5 7
+flag 46 1
+flag 47 0
+step 1 1 -
+step 400 0 boss-prepared-prepared-intro.ppm
+step 1 1 -
+step 400 0 boss-prepared-prepared-pattern.ppm
+step 1 1 -
+step 900 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 boss-prepared-carl-menu.ppm
+pilot offensive 30000
+step 240 0 boss-prepared-battle-ended.ppm
+step 1 1 -
+step 400 0 boss-prepared-end-0.ppm
+step 1 1 -
+step 400 0 boss-prepared-end-1.ppm
+step 1 1 -
+step 400 0 boss-prepared-end-2.ppm
+step 1 2 -
+step 120 0 -
+flag 47 1
+flag 48 0
+flag 2138 0
+flag 2139 1
+step 1 1 -
+step 400 0 boss-prepared-prepared-repeat.ppm
+step 1 2 -
+step 120 0 -
+expect 34 4 8 5 7
+flag 46 1
+flag 47 1
+flag 48 0
+flag 2138 0
+flag 2139 1
+step 68 16 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 600 0 forward-exit-arrival.ppm
+expect 34 5 4 6 7
+flag 48 1
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+expect 34 5 4 6 7
+flag 47 1
+flag 48 1
+flag 41 1
+flag 42 0
+flag 40 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 continuous-complete.ppm
+expect 34 5 4 6 7
+quit

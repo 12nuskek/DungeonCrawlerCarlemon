@@ -1371,3 +1371,28 @@ blocks;1149 others unchanged. All original1053 assertion routes untouched. New
 boundary route retains47 assertions, now proves the clear north spine and actual
 north wall. Connectivity still passes all targets. Next clean committed full
 rerun1126/65; this blocker has one design correction, no repeated speculative fixes.
+
+N02 second full run0fc144f stopped at crafting fixture reload after57 completed
+processes: Service13,3 corner blocked its original northward return to the guide.
+Preserved failing route/logs in evidence/n02/diagnostics/east-return. Executor
+responded normally; reported transport callbacks did not cause this assertion.
+No duplicate build was launched. Previous running process exited14 and was reaped.
+
+Second geometry correction removes that corner. Final candidate26 cells:14 added
+alcoves/12 small blocks;1150 others unchanged. Added evidence-derived route-cell
+envelope from all successful I01, N00b and N01 replay endpoints/straight segments.
+Every previously tested floor cell must remain open; it identifies13,3 as the only
+remaining conflict. All original routes/assertions stay intact. Original global
+reachability alone was insufficient; the direct-route contract now supplements it.
+
+Parent review also caught coverage omission: add all five N00b routes/43 checks
+and all three N01 legacy routes/41 checks to full N02 acceptance. Both actual
+DCC_LEGACY_RUN and DCC_CORNER_SAVE are supplied. Target1210 assertions/73 processes
+(including193 existing fixture assertions). Normal corner save was produced by
+five ordinary-input assertions on N01 ROM17e97672…cec637; no save/RAM edits.
+Fresh forward camera proof comes from the existing continuous prepared route:
+only previously unnamed capture filenames changed, identical controls/timings and
+all assertions. Parent's wire-contrast/live-spent feedback remains N03, not hidden
+inside geometry work. Next one clean committed rerun; two design corrections so
+far for the route-obstruction blocker. Stop dependent work if still unresolved
+under the three-attempt rule; preserve the scoped branch and accepted N01 baseline.

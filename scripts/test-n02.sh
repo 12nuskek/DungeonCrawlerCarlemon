@@ -40,15 +40,22 @@ run_route rest "$repo/docs/evidence/s03/rest.route" 36 playtest.sav game.sym
 cp "$evidence/playtest.sav" "$evidence/motion.sav"
 run_route movement "$repo/docs/evidence/s03/movement.route" 9 motion.sav game.sym
 run_route gates "$repo/docs/evidence/s03/gates.route" 23 playtest.sav game.sym
+cp "$evidence/playtest.sav" "$evidence/both-pending.sav"
+run_route both-pending "$repo/scripts/routes/n00b/both-pending.route" 8 both-pending.sav game.sym
+cp "$evidence/playtest.sav" "$evidence/alternate.sav"
 cp "$evidence/playtest.sav" "$evidence/guard-loss.sav"
 run_route guard-defeat "$repo/docs/evidence/s03/guard-defeat.route" 12 guard-loss.sav game.sym
 run_route guard-retry "$repo/docs/evidence/s03/guard-retry.route" 8 guard-loss.sav game.sym
 run_route guard "$repo/docs/evidence/s03/guard.route" 13 playtest.sav game.sym
+cp "$evidence/playtest.sav" "$evidence/howler-pending.sav"
+run_route howler-pending "$repo/scripts/routes/n00b/howler-pending.route" 8 howler-pending.sav game.sym
 run_route guard-rest "$repo/docs/evidence/s03/guard-rest.route" 12 playtest.sav game.sym
 cp "$evidence/playtest.sav" "$evidence/howler-loss.sav"
 run_route howler-defeat "$repo/docs/evidence/s03/howler-defeat.route" 12 howler-loss.sav game.sym
 run_route howler-retry "$repo/docs/evidence/s03/howler-retry.route" 8 howler-loss.sav game.sym
 run_route howler "$repo/docs/evidence/s03/howler.route" 13 playtest.sav game.sym
+cp "$evidence/playtest.sav" "$evidence/boss-pending.sav"
+run_route boss-pending "$repo/scripts/routes/n00b/boss-pending.route" 8 boss-pending.sav game.sym
 run_route boss-rest "$repo/docs/evidence/s03/boss-rest.route" 14 playtest.sav game.sym
 cp "$evidence/playtest.sav" "$evidence/boss-loss.sav"
 cp "$evidence/playtest.sav" "$evidence/carl-down.sav"
@@ -85,7 +92,7 @@ run_route collection-battle "$repo/docs/evidence/s03/collection-battle.route" 10
 run_route equipment-setup "$repo/docs/evidence/e01/new-game.route" 16 equipment.sav game.sym
 run_route equipment-give "$repo/docs/evidence/r01/acquire-equip.route" 15 equipment.sav game.sym
 run_route equipment-reload "$repo/docs/evidence/s03/equipment-reload.route" 5 equipment.sav game.sym
-run_route continuous-prepared "$repo/docs/evidence/s03/continuous-prepared.route" 127 continuous.sav game.sym
+run_route continuous-prepared "$repo/scripts/routes/n02/continuous-prepared.route" 127 continuous.sav game.sym
 run_route continuous-reload "$repo/docs/evidence/s03/continuous-reload.route" 10 continuous.sav game.sym
 # Explicit diagnostic ROMs start from restored production source each time.
 cp "$repo/engine/src/crawler.c" "$evidence/original-crawler.c"
@@ -120,6 +127,17 @@ run_route exhaust-fixture-setup "$repo/docs/evidence/s03/exhaust-setup.route" 20
 run_route exhaust-fixture-battle "$repo/docs/evidence/s03/exhaust-battle.route" 10 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
 run_route exhaust-fixture-recover "$repo/docs/evidence/s03/exhaust-recover.route" 13 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
 run_route exhaust-fixture-reload "$repo/docs/evidence/s03/exhaust-reload.route" 6 exhaust-fixture.sav exhaust-fixture.sym "$evidence/exhaust-fixture.gba"
+run_route howler-first "$repo/scripts/routes/n00b/howler-first.route" 11 alternate.sav game.sym
+run_route guard-pending "$repo/scripts/routes/n00b/guard-pending.route" 8 alternate.sav game.sym
+if [[ -n "${DCC_LEGACY_RUN:-}" ]]; then
+    cp "$DCC_LEGACY_RUN/motion.sav" "$evidence/legacy-landing.sav"
+    cp "$DCC_LEGACY_RUN/craft.sav" "$evidence/legacy-workshop.sav"
+    cp "$DCC_LEGACY_RUN/playtest.sav" "$evidence/legacy-ending.sav"
+    sha256sum "$evidence"/legacy-*.sav > "$evidence/legacy-inputs.sha256"
+    run_route legacy-landing "$repo/scripts/routes/n01/legacy-landing.route" 10 legacy-landing.sav game.sym
+    run_route legacy-workshop "$repo/scripts/routes/n01/legacy-workshop.route" 11 legacy-workshop.sav game.sym
+    run_route legacy-ending "$repo/scripts/routes/n01/legacy-ending.route" 20 legacy-ending.sav game.sym
+fi
 run_route rooms "$repo/docs/evidence/n01/before/input.route" 18 playtest.sav game.sym
 run_route shape-probes "$repo/scripts/routes/n02/shape-probes.route" 47 playtest.sav game.sym
 if [[ -n "${DCC_CORNER_SAVE:-}" ]]; then
@@ -142,7 +160,7 @@ for log in sorted(root.glob('*/replay.log')):
     results.append({'route':log.parent.name,'assertions':int(match[1]),'fixture':'fixture' in log.parent.name})
 (root/'validation-summary.json').write_text(json.dumps(results,indent=2)+'\n')
 # Continuous normal-input route: no mid-run boot/load or save-state injection.
-route=(root/'source/docs/evidence/s03/continuous-prepared.route').read_text()
+route=(root/'source/scripts/routes/n02/continuous-prepared.route').read_text()
 log=(root/'continuous-prepared/replay.log').read_text()
 steps=[tuple(map(int,line.split()[1:3])) for line in route.splitlines() if line.startswith('step ')]
 frames=int(re.findall(r'frame=(\d+) map',log)[-1])

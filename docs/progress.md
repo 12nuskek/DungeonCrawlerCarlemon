@@ -535,3 +535,13 @@ cancel, cache needs-charge, quest obtains exactly Scrap2 and saves. Workbench an
 cache both add outputs successfully before consuming checked inputs, with no yield
 between transaction operations. Craft/use/capacity/cold routes still in progress.
 No blocker or failed production fix. S02 retains new icon/prop/audio placeholders.
+
+D02 exploratory input routes complete: materials16, craft13, blast/use17,
+cold recovery13, final cold8; explicit inventory fixture33 plus cold11.
+Crafting spends exactly Scrap2; cancellation/missing/output-full preserve inputs.
+Charge menu use is inert; cache cancel/full/repeat preserve charge. Successful
+blast gives SuperPotion1, used for Carl26→30 without curing paralysis; guide then
+cures it and saves. Capacity tests cover R02 workshop98→failure, toss1→grant2→99;
+two successful crafts each spend2 after freeing output space; cache output failure
+retains charge, retry spends1. No failed production fix/blocker. Route navigation
+was adjusted to avoid a known sign object. Final isolated111-check run next.

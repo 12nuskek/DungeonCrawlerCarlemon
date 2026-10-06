@@ -1357,3 +1357,17 @@ explicit fixtures). Preserve all behavioral assertions. Source-native158 used
 subtiles/174 metatiles. Implemented YES; compiled/runtime/merged pending. Next
 isolated committed build/full runtime, actual shapes/camera/motion review, diff,
 PR and merge only if verified. Sole writer; no scheduler added.
+
+N02 first full run111fd5c stopped in quest-decline: expected Service11,3 but
+north utility protrusion stopped the original direct route at5,3. Static reachability
+was insufficient to prove the existing direct path remained useful. Preserve
+trace/input/initial contract and actual blocked-lane image in evidence/n02/
+diagnostics/north-lane. Boundary47 and old-save escape8 supplementary probes had
+passed, but they do not excuse this regression. No acceptance/merge claim.
+
+First correction removes three north-spine blocked cells instead of padding or
+rerouting the existing quest path. Contract now27 cells:14 alcove floors/13 small
+blocks;1149 others unchanged. All original1053 assertion routes untouched. New
+boundary route retains47 assertions, now proves the clear north spine and actual
+north wall. Connectivity still passes all targets. Next clean committed full
+rerun1126/65; this blocker has one design correction, no repeated speculative fixes.

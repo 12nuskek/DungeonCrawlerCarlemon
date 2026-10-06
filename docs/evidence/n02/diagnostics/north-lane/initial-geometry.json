@@ -94,8 +94,35 @@
       ]
     },
     "DCC_Service": {
-      "purpose": "recessed eastern cache bay while preserving the direct northern route",
+      "purpose": "north utility housing and recessed eastern cache bay",
       "changes": [
+        {
+          "x": 6,
+          "y": 3,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "before_upper": 12288,
+          "before_attribute": 8,
+          "after_upper": 1024,
+          "after_attribute": 8,
+          "kind": "block"
+        },
         {
           "x": 13,
           "y": 3,

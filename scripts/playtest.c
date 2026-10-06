@@ -7,6 +7,7 @@
  * growth CARL_LEVEL XP ITEM DONUT_LEVEL XP ITEM; stats CARL_MAXHP ATK DONUT_MAXHP MAGIC;
  * foes HP1 HP2; item ID QUANTITY; flag ID SET.
  * pattern TRAINER TURN FOE_PP0 FOE_PP1 FOE_ATTACK FOE_DEFENSE CARL_ATTACK FOE_LEVEL.
+ * color OBJ_PALETTE_SLOT COLOR_INDEX BGR555_VALUE (read actual hardware palette).
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -129,7 +130,18 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strncmp(line,"color ",6) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        if (!strncmp(line,"color ",6)) {
+            char values[3][32]; unsigned slot, index, wanted;
+            if (sscanf(line,"color %31s %31s %31s %c",values[0],values[1],values[2],&extra)!=3
+                || !number(values[0],15,&slot) || !number(values[1],15,&index)
+                || !number(values[2],32767,&wanted)) {result=30;break;}
+            unsigned actual=core->busRead16(core,0x05000200 + slot*32 + index*2);
+            if (actual!=wanted) {
+                fprintf(stderr,"FAILED actual=%u: %s",actual,line); result=30;break;
+            }
+            checks++; printf("PASS %s",line);
+        }
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);

@@ -28,11 +28,11 @@ run_route() {
 cp "$repo/engine/pokeemerald.gba" "$evidence/production.gba"
 python3 "$repo/scripts/check-slice-art.py" > "$evidence/asset-check.log"
 run_route title "$repo/docs/evidence/s02/title.route" 1 title.sav
-run_route setup "$repo/docs/evidence/s02/setup.route" 32
-run_route ui "$repo/docs/evidence/s02/ui.route" 13
-run_route trial "$repo/docs/evidence/s02/trial.route" 31
-run_route rest "$repo/docs/evidence/s02/rest.route" 34
-run_route movement "$repo/docs/evidence/s02/movement.route" 7
+run_route setup "$repo/docs/evidence/s02/setup.route" 34
+run_route ui "$repo/docs/evidence/s02/ui.route" 15
+run_route trial "$repo/docs/evidence/s02/trial.route" 33
+run_route rest "$repo/docs/evidence/s02/rest.route" 36
+run_route movement "$repo/docs/evidence/s02/movement.route" 9
 run_route gates "$repo/docs/evidence/s01/gates.route" 17
 run_route menu-materials "$repo/docs/evidence/d02/materials.route" 16 menu.sav
 run_route menu-craft "$repo/docs/evidence/d02/craft.route" 13 menu.sav

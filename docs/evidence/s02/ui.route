@@ -102,4 +102,6 @@ step 1 2 -
 step 180 0 -
 item 13 2
 expect 34 1 7 4 3
+color 2 1 4196
+color 2 8 21375
 quit

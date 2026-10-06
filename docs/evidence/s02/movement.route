@@ -41,4 +41,6 @@ step 12 32 walk-return-3.ppm
 step 40 0 idle-return.ppm
 expect 34 1 4 7 7
 duo healthy
+color 2 1 4196
+color 2 8 21375
 quit

@@ -111,4 +111,6 @@ flag 38 1
 flag 39 0
 item 13 2
 item 378 0
+color 2 1 4196
+color 2 8 21375
 quit

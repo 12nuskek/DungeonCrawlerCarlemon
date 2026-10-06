@@ -279,8 +279,13 @@ Exploration uses scripts/content/masters indexed text, manually cleaned after
 reference normalization. Carl has nine 16×32 frames with consistent head/torso
 anchors and alternating contacts; right mirrors left. Donut has three 16×16
 standing directions, with back-paw margin restored. No follower is introduced.
-Donut's palette tag0x1124 explicitly patches the existing NPC1 slot via +16;
+Donut's palette tag0x1124 loads into the existing NPC1 slot on dungeon map init;
 authored map NPCs use the special slot, so no new hardware palette bank is added.
 The palette change and all four movement directions require real runtime review.
 Old generators delegate to protagonist_art.py and cannot overwrite replacements.
 Battle-only ae32d3f passed182 checks; exploration integration pending its own run.
+
+Runtime caught paletteSlot truncation: the upstream field is four bits, so +16
+never selected its legacy patch branch. The fix loads Donut on dungeon palette
+initialization and resolves the tag consistently for reloads. Hardware-palette
+assertions now cover field, menu return, battle return and cold reload.

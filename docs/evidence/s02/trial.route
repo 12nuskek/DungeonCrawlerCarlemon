@@ -202,4 +202,6 @@ flag 39 1
 item 13 1
 item 378 2
 growth 9 495 0 9 805 0
+color 2 1 4196
+color 2 8 21375
 quit

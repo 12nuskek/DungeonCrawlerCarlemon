@@ -828,3 +828,15 @@ checks pass and all asset generators reproduce replacements without other diffs.
 Added four-direction actual walking captures to S02 runner (now189 assertions in
 11 processes). Compilation/runtime for this exploration commit pending. Next run
 this committed snapshot; inspect captures before claiming visual acceptance.
+
+### S02 runtime defect — Donut field palette
+
+Tested a2de128 (artifacts/s02/run-BAptkr): clean build,189 assertions/11 sessions
+passed with empty errors, but actual landing capture showed incorrect pink/blue
+Donut colors. Visual acceptance FAILED despite passing behavioral checks.
+Root cause: ObjectEventGraphicsInfo.paletteSlot is a four-bit field; +16 is
+truncated and cannot reach the legacy >=16 palette-load path. First corrective
+approach now reserves existing NPC1 palette during dungeon map initialization
+and returns the same tag for palette reload consumers. No save-layout change.
+Added ten hardware-palette assertions across map load, UI/battle return, cold
+reload and movement (199 total in11 sessions). Full corrected runtime pending.

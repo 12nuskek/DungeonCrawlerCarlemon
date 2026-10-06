@@ -328,3 +328,12 @@ menus; first offensive turn spent STRIKE 8→7 and SPARK 2→1. Runtime acceptan
 still in progress (depletion/support/incapacitation/reload), not claimed complete.
 No command/environment stall or active blocker. Parent requested checkpoint and
 was given E02 PR #11/merge/test details plus B02 issue #12 status. Sole writer.
+
+B02 exploratory victory and guide route passed 21 checks before extending party
+resource assertions. Empty SPARK refuses the choice with PP unchanged; WEAKEN
+permits continuing to victory. BRACE raises defense and WEAKEN lowers both attacks.
+Support-only route: Carl fainted with Donut still at 1 HP; Donut then acted (WEAKEN
+uses 30→29 while Carl's BRACE stayed 30), then both fainted. Local recovery/retry
+passed. New `uses` assertions cover all four real party resource slots; cold reload
+passes 10 checks with 8/40/2/40 restored. Final 83-check isolated replay pending.
+Source branch remains the only writer; environment available after 05:15 notice.

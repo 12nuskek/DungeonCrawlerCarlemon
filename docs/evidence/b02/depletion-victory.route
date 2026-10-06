@@ -1,0 +1,212 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+duo healthy
+uses 8 40 2 40
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 3
+step 1 1 -
+step 400 0 trial-intro.ppm
+step 1 1 -
+step 400 0 duo-note.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 8 2 0 0
+support 40 40 6 6 6
+step 1 1 -
+step 120 0 carl-actions.ppm
+step 1 1 -
+step 60 0 target.ppm
+step 1 1 -
+step 120 0 donut-menu.ppm
+step 1 1 -
+step 120 0 donut-actions.ppm
+step 1 1 -
+step 1000 0 turn-one.ppm
+battle 1 4 0 7 1 0 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1000 0 turn-two.ppm
+battle 1 4 0 6 0 0 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 spark-empty-menu.ppm
+step 1 1 -
+step 180 0 spark-empty-message.ppm
+battle 1 4 0 6 0 0 0
+roster 21 15 6 0 0 0
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 weaken-menu.ppm
+step 1 1 -
+step 1000 0 weaken-turn.ppm
+support 40 39 6 6 5
+step 1 1 -
+step 400 0 xp-one.ppm
+step 1 1 -
+step 400 0 xp-two.ppm
+step 1 1 -
+step 400 0 remaining.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1000 0 turn-four.ppm
+step 1 1 -
+step 400 0 finish-0.ppm
+step 1 1 -
+step 400 0 finish-1.ppm
+step 1 1 -
+step 400 0 finish-2.ppm
+step 1 1 -
+step 400 0 finish-3.ppm
+step 1 1 -
+step 400 0 finish-4.ppm
+step 1 1 -
+step 400 0 finish-5.ppm
+step 1 1 -
+step 400 0 finish-6.ppm
+step 1 1 -
+step 400 0 finish-7.ppm
+step 1 1 -
+step 400 0 finish-8.ppm
+step 1 1 -
+step 400 0 finish-9.ppm
+step 1 1 -
+step 400 0 finish-10.ppm
+step 1 1 -
+step 400 0 finish-11.ppm
+step 1 1 -
+step 400 0 finish-12.ppm
+step 1 1 -
+step 400 0 finish-13.ppm
+step 1 1 -
+step 400 0 finish-14.ppm
+step 1 1 -
+step 400 0 finish-15.ppm
+step 1 1 -
+step 400 0 finish-16.ppm
+step 1 1 -
+step 400 0 finish-17.ppm
+step 1 1 -
+step 400 0 finish-18.ppm
+step 1 1 -
+step 400 0 finish-19.ppm
+step 1 1 -
+step 400 0 finish-20.ppm
+step 1 1 -
+step 400 0 finish-21.ppm
+step 1 1 -
+step 400 0 finish-22.ppm
+step 1 1 -
+step 400 0 finish-23.ppm
+step 1 1 -
+step 400 0 finish-24.ppm
+step 1 1 -
+step 400 0 finish-25.ppm
+step 1 1 -
+step 400 0 finish-26.ppm
+step 1 1 -
+step 400 0 finish-27.ppm
+battle 0 4 1 2 0 1 0
+roster 17 12 2 0 0 0
+uses 2 40 0 36
+step 68 32 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 before-guide.ppm
+expect 34 1 4 7 3
+roster 17 12 2 0 0 0
+uses 2 40 0 36
+step 1 1 -
+step 400 0 guide-intro.ppm
+step 1 1 -
+step 400 0 guide-motive.ppm
+step 1 1 -
+step 400 0 rested.ppm
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 return-advice.ppm
+step 1 1 -
+step 400 0 save-advice.ppm
+step 1 1 -
+step 120 0 guide-done.ppm
+expect 34 1 4 7 7
+duo healthy
+uses 8 40 2 40
+step 1 1 -
+step 400 0 rest-repeat.ppm
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+step 132 16 -
+step 40 0 -
+step 52 64 -
+step 180 0 returned.ppm
+expect 34 0 12 4 7
+step 20 32 -
+step 40 0 -
+step 20 16 -
+step 180 0 hub-return.ppm
+expect 34 1 12 4 7
+step 20 32 -
+step 40 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 overwrite.ppm
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 1 11 4 7
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+quit

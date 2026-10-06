@@ -1,0 +1,35 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 10 5 7
+duo healthy
+step 1 1 -
+step 400 0 howler-intro.ppm
+step 1 1 -
+step 400 0 howler-advice.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 857 0 35 40 6 6 6 9
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 howler-turn-one.ppm
+pattern 857 1 35 39 6 6 5 9
+battle 1 4 0 7 1 1 0
+quit

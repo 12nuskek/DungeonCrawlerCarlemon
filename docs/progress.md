@@ -589,3 +589,20 @@ S01 incremental build PASS after source inspection and move-availability guard.
 New host `pattern` diagnostic reads trainer/turn, enemy PP/attack/defense/level and
 Carl attack from real RAM; no writes. Fresh existing setup replay is starting before
 new gate/encounter routes. No S01 runtime acceptance or integration claim yet.
+
+## S01 runtime checkpoint — 2026-10-06 (partial, not acceptance)
+
+Source `f784d58fe9692ef696224742cfa279cf3211ead4`, incremental build PASS. Reused
+R02 setup32/trial53/re-entry-rest34 pass; new gates17 verify boss/stairs locked,
+guard19 verifies pattern/victory/no duplicate XP/save, guard-rest12 verifies cold
+depletion/backtrack/recovery/save; howler opening5 verifies attack-down pattern.
+Carl after guard level10 XP627, Donut9 XP937; depleted HP25/6 and resources3/40,0/37
+survive cold save, guide restores36/28 and8/40,2/40. No S01 production defect/fix.
+Exploratory movement timing needed a direction-aware correction; longer1800-frame
+action waits finish animations before asserting the turn counter. No blocker.
+Current local save artifacts/s01/playtest.sav is before howler at gauntlet10,5;
+before-guard.sav and before-howler.sav are normal saved checkpoints. Host binary
+/workspace/toolchain/playtest-s01; symbols artifacts/s01/game.sym.
+Next exact action: finish howler route, local defeat/retry, prepared/unprepared boss,
+stairs/cold reload; isolated committed suite and scoped PR still pending. User kept
+normal S01→S02→S03 order. No parallel writer/scheduler.

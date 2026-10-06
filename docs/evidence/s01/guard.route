@@ -1,0 +1,141 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 5 5 7
+duo healthy
+step 1 1 -
+step 400 0 guard-intro.ppm
+step 1 1 -
+step 400 0 guard-objective.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 8 2 1 0
+pattern 856 0 35 40 6 6 6 9
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 guard-turn-one.ppm
+pattern 856 1 35 39 6 7 6 9
+battle 1 4 0 7 1 1 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 guard-turn-two.ppm
+pattern 856 2 34 39 6 7 6 9
+battle 1 4 0 6 0 1 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 guard-turn-three.ppm
+step 1 1 -
+step 400 0 guard-xp-0.ppm
+step 1 1 -
+step 400 0 guard-xp-1.ppm
+step 1 1 -
+step 400 0 guard-xp-2.ppm
+step 1 1 -
+step 400 0 guard-xp-3.ppm
+step 1 1 -
+step 400 0 guard-xp-4.ppm
+step 1 1 -
+step 400 0 guard-xp-5.ppm
+growth 10 576 0 9 886 0
+foes 0 16
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 guard-turn-4.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 guard-turn-5.ppm
+step 1 1 -
+step 400 0 guard-win-0.ppm
+step 1 1 -
+step 400 0 guard-win-1.ppm
+step 1 1 -
+step 400 0 guard-win-2.ppm
+step 1 1 -
+step 400 0 guard-win-3.ppm
+step 1 1 -
+step 400 0 guard-win-4.ppm
+step 1 1 -
+step 400 0 guard-win-5.ppm
+step 1 1 -
+step 400 0 guard-win-6.ppm
+step 1 1 -
+step 400 0 guard-win-7.ppm
+step 1 1 -
+step 400 0 guard-win-8.ppm
+step 1 2 -
+step 120 0 -
+battle 0 4 1 3 0 1 0
+flag 2136 1
+flag 2137 0
+growth 10 627 0 9 937 0
+roster 25 6 3 0 0 0
+uses 3 40 0 37
+step 1 1 -
+step 400 0 guard-repeat.ppm
+growth 10 627 0 9 937 0
+flag 2136 1
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 guard-saved.ppm
+expect 34 3 5 5 7
+quit

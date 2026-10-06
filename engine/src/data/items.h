@@ -4537,4 +4537,16 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+    [ITEM_DCC_WRIST_WRAP] =
+    {
+        .name = _("WRIST WRAP"),
+        .itemId = ITEM_DCC_WRIST_WRAP,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_NORMAL_POWER,
+        .holdEffectParam = 20,
+        .description = sDccWristWrapDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 };

@@ -4,16 +4,35 @@ DCC_Vestibule_MapScripts::
 DCC_Vestibule_Crate::
 	lock
 	faceplayer
-	msgbox DCC_Vestibule_Text_Crate, MSGBOX_DEFAULT
+	goto_if_set FLAG_DCC_WRAP_TAKEN, DCC_Vestibule_WrapTaken
+	additem ITEM_DCC_WRIST_WRAP, 1
+	goto_if_eq VAR_RESULT, FALSE, DCC_Vestibule_WrapNoRoom
+	setflag FLAG_DCC_WRAP_TAKEN
+	msgbox DCC_Vestibule_Text_Wrap, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_WrapTaken:
+	msgbox DCC_Vestibule_Text_WrapTaken, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_WrapNoRoom:
+	msgbox DCC_Vestibule_Text_WrapNoRoom, MSGBOX_DEFAULT
 	release
 	end
 
-DCC_Vestibule_Text_Crate:
-	.string "CARL: Quiet. I'll take quiet.\p"
-	.string "This landing is safe to explore.\n"
-	.string "The ladder leads back to the entrance.\p"
-	.string "For the moment, there is nothing\n"
-	.string "chasing you.$"
+DCC_Vestibule_Text_Wrap:
+	.string "CARL found a WRIST WRAP.\n"
+	.string "Finally. Something without teeth.\p"
+	.string "Open INVENTORY and GIVE it to CARL.\n"
+	.string "Equipped, it strengthens STRIKE.\p"
+	.string "It is optional. You can finish the\n"
+	.string "trial with or without it.$"
+DCC_Vestibule_Text_WrapTaken:
+	.string "The crate is empty. Your WRIST WRAP\n"
+	.string "is in inventory or on a crawler.$"
+DCC_Vestibule_Text_WrapNoRoom:
+	.string "Your inventory is full. The wrap\n"
+	.string "will wait here until you make room.$"
 
 DCC_Vestibule_Trial::
 	trainerbattle_double TRAINER_DCC_TRIAL, DCC_Vestibule_Text_Trial, DCC_Vestibule_Text_Defeat, DCC_Vestibule_Text_NeedDuo, DCC_Vestibule_TrialResolved

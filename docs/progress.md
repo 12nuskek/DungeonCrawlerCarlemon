@@ -387,3 +387,43 @@ Production ROM `8ffe93dde477e54c9d23a52532e73b1ca7087595250afc3b8b0ed16384256f2d
 [Full evidence](evidence/b03/README.md), [audit](collection-audit.md). Implemented YES,
 compiled PASS, runtime PASS, integration pending scoped PR. No current blocker.
 Next after merge: R01 XP/equipment, one writer, no new scheduler or expansion.
+
+## B03 integration / R01 start — 2026-10-06
+
+PR #15 merged `4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363`; issue #14 closed.
+B03 implemented/compiled/runtime/merged YES. Main reconciled, no open PR.
+R01 issue #16, task/r01-xp-equipment based on that merge: existing XP/stat growth,
+one optional held WRIST WRAP, persistent acquisition/equip/take/XP and cold reload.
+No save-layout change. Compressed tutorial starts 20 XP before level9; original
+adaptation choice, not canon. Gear is optional; no mandatory item spending.
+Fresh milestone save required. Compile/runtime/integration pending. Next: compile,
+normal acquire/equip/combat and XP routes, no-gear victory, cold reload/repeat.
+Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`; single writer, parent scheduler.
+
+R01 source compiles. Exploratory fresh save passes16 existing movement/save checks;
+acquire/repeat/equip/save route passes15 checks. Ordinary cold boot confirms
+Carl held-item377 and zero duplicate bag quantity. Both equipped/plain trial opens
+pass7 checks each. New RAM-read diagnostics report level/XP/held item, actual stats,
+bag quantities, flags and foe HP; no game RAM writes. XP dialogue/level sequence,
+full win/reload, equipment fixture and isolated acceptance remain in progress.
+
+R01 exploratory routes now pass: setup16, plain victory25, acquire/equip15,
+held-item defeat/save23, cold defeat/retry9, equipped victory/depleted save24,
+depleted reload/guide/take/re-equip/save20, final cold repeat12; separate fixture
+setup19 and full-bag/free-space/retry11. Carl attack20→23, Donut magic13→14 at level9;
+XP399→495 and709→805 persist. First foe after opening turn: equipped12HP versus
+plain14HP; fixture real damage calculation10→11 at fixed inputs. Defeat preserves
+held gear and XP, then cold retry works. Full-bag refusal leaves flag unset;
+tossing one Potion allows exactly one wrap. Input routes were adjusted for extra
+level-up pages and menu return states; no engine failure found. Final isolated
+committed replay pending; compilation alone is not acceptance. Next run test-r01.sh.
+
+## R01 final verification — 2026-10-06
+
+Tested `d9db8b3a61fa36035236cb5764f732ea20d88736`, clean isolated pinned build;
+174 mGBA assertions PASS, ten empty error logs,18 actual PNGs visually reviewed.
+Production ROM `aece986da533253d66fa77151d2972d81160002e5fbd17bd8374d50c400355d0`.
+[Full evidence](evidence/r01/README.md). Implemented YES / compiled PASS / runtime
+PASS / integration pending scoped PR. No blocker. R02 persistent achievements and
+loot is next after merge. Depleted/immediate-defeat saves now covered, while actual
+status curing and total action exhaustion remain explicit S03 edges. No scheduler.

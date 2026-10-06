@@ -1,0 +1,219 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+duo healthy
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 3
+step 1 1 -
+step 400 0 trial-intro.ppm
+step 1 1 -
+step 400 0 duo-note.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 8 2 0 0
+support 40 40 6 6 6
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 brace-menu.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 weaken-menu.ppm
+step 1 1 -
+step 1200 0 support-first.ppm
+support 39 39 7 5 5
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-0.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-1.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-2.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-3.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-4.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-5.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-6.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-7.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-8.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-9.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-10.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-11.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 donut-down.ppm
+roster 18 0 8 2 0 0
+uses 8 33 2 33
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-12.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 carl-alone.ppm
+roster 13 0 8 2 0 0
+uses 8 32 2 33
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-14.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 support-turn-15.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1200 0 both-down.ppm
+roster 0 0 8 2 0 0
+uses 8 30 2 33
+step 1 1 -
+step 1600 0 recovery.ppm
+battle 0 4 2 8 2 0 0
+duo healthy
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+expect 34 1 9 5 3
+step 1 1 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+expect 34 1 8 5 3
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+growth 8 399 377 8 709 0
+item 377 0
+flag 35 1
+expect 34 1 9 5 3
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 defeat-saved.ppm
+growth 8 399 377 8 709 0
+uses 8 40 2 40
+quit

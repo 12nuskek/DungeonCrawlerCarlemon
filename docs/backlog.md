@@ -10,8 +10,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | E02 | E01 | Complete: 55 assertions, merged PR #11; issue #10 closed |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
 | B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
-| B03 | B02 | Verified: 110 assertions; issue #14; integration pending |
-| R01 | B02, E02 | Pending: XP and equipment |
+| B03 | B02 | Complete: 110 assertions; merged PR #15 (`4a27fc4`); issue #14 closed |
+| R01 | B02, E02 | Verified: 174 assertions; issue #16; integration pending |
 | R02 | R01 | Pending: persistent achievements/loot |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |
 | D02 | R01, D01 | Pending: explosive recipe |
@@ -89,3 +89,11 @@ S03 retained edge coverage: either crawler incapacitated while the other acts;
 all actions exhausted; save/reload while depleted or immediately after defeat;
 cure a genuinely inflicted nonzero status once such encounters exist. These are
 coverage edges, not demonstrated B02 failures. B03 adds Donut-down/Carl-acting.
+
+## R01 contract
+
+Base `4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363`. Existing XP/level/stat machinery
+and one held-item effect; unique optional equipment grant. Demonstrate normal
+acquisition, equip/take, combat effect, earned level growth, save/cold reload and
+repeat interaction without duplicate gear. Win without equipment; preserve defeat
+recovery. No new save schema, combat model, maps, achievements/loot or expansion.

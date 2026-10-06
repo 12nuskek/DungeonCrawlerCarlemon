@@ -3,6 +3,8 @@
 set -euo pipefail
 repo=$(cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$repo"
+export DOCKER_CONFIG=${DCC_DOCKER_CONFIG:-"$repo/.cache/docker"}
+mkdir -p "$DOCKER_CONFIG"
 if ! git diff --quiet || ! git diff --cached --quiet; then
     echo 'Commit tracked changes before verifying the exact HEAD.' >&2
     exit 2

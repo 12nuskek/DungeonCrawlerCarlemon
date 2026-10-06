@@ -16,8 +16,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
 | D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
 | S01 | B03, R02, D02 | Complete:357 assertions; merged PR #25 (`abf9875`); issue #24 closed |
-| S02 | S01 | Implemented/compiled/runtime verified: replacement art,199 checks/11 sessions; integration pending PR #27 (issue #26) |
-| S03 | S02 | Pending: full regression and review package |
+| S02 | S01 | Complete:199 checks/11 sessions; merged PR #27 (`d8f8ae6`); issue #26 closed |
+| S03 | S02 | Verified:1053 checks/62 sessions; PR #30 integration pending; issue #29 |
 
 F01 objective: exact source pin, matching baseline ROM, real boot evidence.
 Allowed: source import, setup/build/runtime harness, provenance and handoff docs.
@@ -142,3 +142,25 @@ reachable enemies, dungeon tiles/palettes/props and room treatment; crawler-faci
 UI/dialogue review and planned flag-based Journal. Preserve combat rules, collisions
 and save schema. Build, real same-route before/after screenshots, menu/field/battle
 checks and provenance ledger. S03 final regression follows; no Stage6 expansion.
+
+
+## S03 contract
+
+Base d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530; issue29; sole writer branch
+`task/s03-slice-validation`. Revalidate complete fresh-save routes with current
+art/UI, optional branches, both boss approaches, defeat/incapacitation, empty
+resources, rewards/crafting/capacity and reload. Separate production and explicit
+GBA diagnostic fixtures; record actual captures, commands and tested commit.
+Fix verified defects, avoid unrelated features. No Stage6, save schema or release.
+
+## I01 requested opponent presentation improvement
+
+Depends on verified S03. User requested enemy quality matching protagonist upgrade.
+Five existing original adaptation enemies only: Scuttler, Grub, Guard, Howler,
+Warden. Integrate parent-staged asset-only package; preserve roles, maps/collisions,
+combat and save state. Native64×64 fronts/backs,64×128 animation atlases,32×64
+icons and existing four32×32 map tokens; index0 transparent/max15 opaque colors.
+Battle palettes may differ; icons and map tokens must respect shared palettes.
+Prevent slice_art.py from overwriting masters; address inherited Spinda spots for
+Guard. Prove reproducibility/build, actual before/after five battle appearances,
+four map tokens and affected runtime regression. No new enemies/features/Stage6.

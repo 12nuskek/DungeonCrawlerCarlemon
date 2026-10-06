@@ -289,3 +289,14 @@ Runtime caught paletteSlot truncation: the upstream field is four bits, so +16
 never selected its legacy patch branch. The fix loads Donut on dungeon palette
 initialization and resolves the tag consistently for reloads. Hardware-palette
 assertions now cover field, menu return, battle return and cold reload.
+
+### Current presentation and acceptance status — S03
+
+S02 approved replacement art is merged atd8f8ae6; S03 tested50435d1 passes1053
+checks/62 sessions with42 actual reviewed captures and380 reviewed walking frames.
+Older pending/placeholder entries above are historical milestone notes. The
+current five enemies have original S02 first-pass art, now selected for the user's
+requested improvement. They are original tutorial adaptation identities, not
+claims about canon monsters. No later-book spoilers or new roles are authorised.
+See the I01 contract in backlog and issue29 native palette/asset handoff. Current
+stock interface/audio/ball-effect/static-animation limitations remain as listed.

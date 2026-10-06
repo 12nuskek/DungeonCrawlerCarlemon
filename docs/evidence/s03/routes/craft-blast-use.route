@@ -1,0 +1,90 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 2 6 7 1
+item 378 0
+item 380 1
+flag 46 0
+item 22 0
+step 116 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 blast-offer.ppm
+step 1 2 -
+step 400 0 blast-cancel.ppm
+item 380 1
+flag 46 0
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 600 0 blasted.ppm
+item 380 0
+item 22 1
+flag 46 1
+step 1 1 -
+step 400 0 donut-comment.ppm
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 cache-repeat.ppm
+item 22 1
+item 380 0
+step 1 2 -
+step 120 0 -
+step 20 64 -
+step 40 0 -
+step 84 32 -
+step 40 0 trap-approach.ppm
+step 400 0 shock.ppm
+expect 34 2 8 6 1
+roster 26 26 8 2 64 0
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 super-potion.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 400 0 medicine-used.ppm
+roster 30 26 8 2 64 0
+item 22 0
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 cache-saved.ppm
+expect 34 2 8 6 1
+quit

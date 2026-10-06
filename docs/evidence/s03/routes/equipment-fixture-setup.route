@@ -1,0 +1,95 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+expect 34 0 4 8 1
+step 20 64 -
+step 40 0 north.ppm
+expect 34 0 4 7 1
+step 20 32 -
+step 40 0 west.ppm
+expect 34 0 3 7 1
+step 20 128 -
+step 40 0 south.ppm
+expect 34 0 3 8 1
+step 20 16 -
+step 40 0 east.ppm
+expect 34 0 4 8 1
+step 20 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+expect 34 0 4 6 1
+step 1 1 -
+step 400 0 crate.ppm
+step 1 1 -
+step 400 0 save-note.ppm
+step 1 1 -
+step 400 0 ladder-note.ppm
+step 1 1 -
+step 120 0 -
+expect 34 0 4 6 3
+step 1 1 -
+step 400 0 crate-repeat.ppm
+step 1 1 -
+step 120 0 -
+step 100 32 -
+step 40 0 wall.ppm
+expect 34 0 2 6 3
+step 120 16 -
+step 40 0 rock-block.ppm
+expect 34 0 6 6 3
+step 20 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 rock-side.ppm
+expect 34 0 6 7 3
+step 20 128 -
+step 40 0 -
+step 100 16 -
+step 40 0 across.ppm
+expect 34 0 12 8 3
+step 68 64 -
+step 180 0 landing.ppm
+expect 34 1 12 4 3
+step 20 32 -
+step 40 0 -
+expect 34 1 11 4 3
+step 20 16 -
+step 180 0 returned.ppm
+expect 34 0 12 4 3
+step 20 32 -
+step 40 0 -
+step 20 16 -
+step 180 0 -
+step 20 32 -
+step 40 0 -
+expect 34 1 11 4 3
+step 1 8 -
+step 120 0 start-menu.ppm
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 save-prompt.ppm
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 1 11 4 3
+policy 3
+item 377 0
+flag 35 0
+quit

@@ -1,0 +1,28 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+duo healthy
+uses 8 40 2 40
+growth 11 748 0 10 1058 0
+flag 2138 0
+flag 47 0
+flag 48 0
+step 1 1 -
+step 400 0 retry-intro.ppm
+step 1 1 -
+step 400 0 retry-advice.ppm
+step 1 1 -
+step 900 0 retry-start.ppm
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 retry-actions.ppm
+battle 1 4 0 8 2 1 0
+quit

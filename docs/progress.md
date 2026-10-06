@@ -866,3 +866,162 @@ Next: integrate scoped PR27 when protections permit, close issue26, record merge
 then S03 full fresh-save/alternate-boss/defeat/reward/quest/capacity regression with
 review package. No Stage6 work or new scheduler. Cloud task remains
 01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.
+
+
+### S02 merged; S03 active — 2026-10-06
+
+PR27 merged d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530; issue26 closed. Tested
+c9062da, evidence68d7a570cce1d2bb6fa6476db8fc211c9ebcef72; implemented/compiled/
+scoped-runtime/merged all YES. Actual improved battle and exploration screenshots
+are embedded in issue26/PR27 and source archive. User approved the native battle
+look; final full-slice playtest remains pending.
+
+S03 issue29, branch task/s03-slice-validation, same sole Cloud writer. Initial
+current-ROM guard replay proves old S01 critical-hit/XP timing is not a reliable
+current replay: assertions pass through turn2, then guard survives where old route
+expected a knockout. Diagnostic captures show different damage, not a progression
+lock; additional fixed A presses were still resolving attacks. Preserve stronger
+outcome assertions and use explicit input-state-aware actions to exercise intended
+strategies rather than weakening checks to fit obsolete timing. Next: add a
+read-only, normal-button battle route helper and complete current progression
+routes, including declined quest/avoided trap. No S03 completion claim yet.
+
+### S03 interim diagnostics and reviewer follow-up — 2026-10-06
+
+Production engine remains exactly S02 c9062da / merge d8f8ae6; no gameplay edits.
+Current host helper drives actual input menus with normal keys, bounded frames,
+read-only diagnostics and explicit win/flag/XP checks. Guard defensive route and
+howler offensive route pass; unprepared boss wins with three BRACE/WEAKEN opening
+turns (two BRACE failed, correctly triggering local defeat), prepared offensive
+boss also wins. These are diagnostic current-ROM runs, not final S03 acceptance.
+
+Restored trial behavior now61 assertions PASS, including four battlers, turn
+damage/PP, rejected empty SPARK with unchanged turn/HP/PP, WEAKEN reduction,
+level stats, no optional equipment and pre-workshop flag39/Scrap0. Explicit quest
+decline/avoided-trap navigation passes23; normal completion still needs final run.
+Donut actual summary/action-selector captured; consecutive-frame four-direction
+motion records380frames /6.362seconds, exact46color GIF duration6.360s. Preview
+under docs/evidence/s03-preview, clearly separate from final acceptance.
+
+Independent review supports S02 and confirmed two new stationary Donut objects;
+never claim unchanged object layout (only collision/elevation bits unchanged).
+Retained S03 gates: full final fresh route/both bosses; every encounter defeat/
+retry; both incapacitation orders; empty actions; quest/reward/crafting capacity;
+collection guards; cold saves; second Donut interaction; actual pacing measurement
+separate from automated waits/reboots.20–30minute fresh-player target remains
+unproven. Preserve inherited assets/terminology and static animations in limitations.
+Next: finish and run all S03 routes from a committed isolated snapshot, archive
+review evidence, then up to five substantive improvements; user playtest before6.
+
+
+### S03 acceptance suite assembled — 2026-10-06
+
+Draft PR30 tracks issue29. Current source helper/visual preview commit0c72f45.
+The assembled suite plans914 assertions in60 emulator processes (723 production,
+191 explicitly labeled fixture checks), including restored61-check trial, every
+encounter local defeat/retry, both boss approaches/incapacitation orders, both
+Donut scenes, motion, quest/crafting branches, equipment, collection guards and
+capacity failures. These counts are planned, not claimed passed as a whole.
+
+New isolated exhaustion fixture checks HP1 with existing poison is preserved by
+the trap, saves all action PP empty, proves real STRUGGLE wins without hanging,
+then tests cold depleted state and guide restoration/reload. Missing HealPlayerParty
+header was corrected in the diagnostic generator; its failed first build/run is
+not acceptance evidence. No production source changed. Current-ROM probes prove
+STRUGGLE victory with zero PP and guard loss/cold retry; final isolated run next.
+
+Parent reviewed full walking motion; overlapping Carl/guide lower body is normal
+foreground depth for adjacent tiles, with interaction/recovery and walk-away paths
+independently tested. Donut's stationary object must be walked around; routes now
+respect that occupancy. Main tile collision/elevation compatibility never meant
+unchanged object layout. Pacing measurement remains separate, with no20–30minute
+fresh-player timing claim. Continue until S03 and warranted improvement cycles
+finish, then await user playtest before Stage6.
+
+Exhaustion recovery route now goes around both the trial NPC and stationary Donut;
+its original direct path hit the trial object, an input-route error rather than
+changed map collision. Corrected depleted save/recovery diagnostic passes13 checks.
+Final suite plans916 checks (723 production,193 fixture),60 sessions. All counts
+remain provisional until the isolated run completes.
+
+### S03 isolated run iteration — 2026-10-06
+
+Tested fdab148 snapshot in artifacts/s03/run-p3Caxf builds the unchanged production
+ROM7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Setup/UI/trial defeat passed, but cold trial retry detected the preceding save
+never occurred: replay pressed B before recovery text finished, then pressed its
+save sequence into the encounter dialogue. Actual captures distinguish this from
+a game save bug. Increasing post-defeat text wait240→600 frames fixes the route;
+current-ROM corrected trial defeat11 and cold retry8 both pass. Apply that wait
+consistently to all six defeat routes; restart isolated suite. No engine change.
+
+Added bounded normal-A `engage` routing for a continuous pacing benchmark. The
+first uninterrupted attempt lost to the unprepared boss; it is not a successful
+completion timing. A new uninterrupted route explicitly exercises ordinary local
+recovery and retry, preserving all real XP/rewards; no injected save/state. Report
+its actual result and fixed waits separately, never extrapolate novice pacing.
+
+### S03 current-art replay reconciliation — 2026-10-06
+
+6231b66 isolated production run passed core progression, both bosses, all local
+defeat/retry routes, both incapacitation orders and staircase cold reload before
+a stale D01 route tried to walk during Lev's added third page. The corrected
+S03 quest route passes22 checks. Two older collection routes also needed explicit
+current-art inputs: walk around stationary Donut, and B from Carl's move selector
+before selecting Items. Both corrected routes pass. Historical evidence stays
+unchanged; new S03 copies document the current inputs. No production engine edits.
+
+Continuous prepared route passed127 checks in90,586 frames (25m16.655s at
+59.7275Hz), plus10 cold final-save checks. Includes53,700 fixed zero-input frames,
+4,951 scripted button frames and31,935 battle-pilot frames; startup2,044frames is
+included. No mid-route reboots. This is measured automated play, not novice pacing.
+Two prior uninterrupted unprepared-boss attempts lost; retained diagnostics do not
+count as completed routes. Main isolated unprepared strategy passed independently.
+
+Final suite now plans1,053 checks/62 processes:860 production and193 labeled
+fixture assertions. Fixture tail diagnostics are still running; final isolated
+committed rerun is required before S03 acceptance/merge. Private Library build
+delivery remains pending acceptance; no ROM enters git or public release.
+
+All corrected tail diagnostics now pass, including193 labeled fixture checks.
+Final committed suite rerun follows. Parent relayed the user's request to improve
+opponents to the approved protagonist standard. This is authorised improvement
+cycle1 after the S03 baseline, restricted to the five existing enemies' native
+battle/map artwork. Parent coordinates asset-only preparation outside this repo;
+this remains the sole implementation writer. Names, roles, paths, dimensions and
+palette constraints are posted to issue29. Preserve baseline and await candidates.
+
+### S03 acceptance PASS — 2026-10-06
+
+Tested50435d1c7db1e6778ad71e639e7a1a8ff4175653; base
+d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530; branch task/s03-slice-validation;
+PR30/issue29. Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000.
+
+`bash scripts/test-s03.sh` in the documented Linux toolchain produced the same
+ROM7a0a87273a6b53bd9104afa2029fd99fe6cee93d30f56dc01881b6adbdcb7b72.
+Isolated artifacts/s03/run-pcrKHh:1053 assertions/62 mGBA0.10.5 processes PASS,
+860 production +193 explicitly labeled fixture checks;62 empty error logs;
+unchanged-head/clean-source guard PASS. No production gameplay/save-layout edits.
+
+At12:03UTC the executor transport failed on new command, retry and existing
+session poll. At12:05 it recovered; session35025 was gone but originalPID733292
+was alive and continued the same run. No duplicate runner or replacement writer.
+That original process completed successfully and is no longer active.
+
+Evidence in docs/evidence/s03 includes complete raw logs,62 routes,42 reviewed
+actual screenshots, all source frame hashes and6.36s walking GIF. Its380 frames
+are byte-identical to the already reviewed preview. Both Donut scenes/summary/
+action selector, all encounter outcomes, both incap orders, reward/quest/crafting
+branches, capture guards, empty actions/STRUGGLE/recovery and cold saves passed.
+Continuous prepared route127 checks + cold reload10:90,586frames/25m16.655s at
+59.7275Hz. Fixed zero-input53,700frames, scripted buttons4,951, battle pilot31,935;
+startup2,044 included. No novice pacing claim. Failed diagnostic traces preserved.
+
+State: implemented YES; clean compiled YES; runtime verified YES; integration
+pending PR30 merge. Review found no gameplay/progression regression; inherited
+UI/audio/static-pose limitations remain documented. User-requested enemy visual
+upgrade is next focused improvement1/5, for the existing five enemies only.
+Parent coordinates asset-only candidate PR handoff; no parallel implementation.
+Exact next: merge verified S03, pause writes for asset-PR staging, then integrate
+its native assets with provenance/generator protection and real battle/map checks.
+Guard's SPINDA procedural spots must not alter approved native art. No Stage6.

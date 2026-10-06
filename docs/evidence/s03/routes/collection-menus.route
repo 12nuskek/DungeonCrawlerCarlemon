@@ -1,0 +1,62 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 menu-reloaded.ppm
+duo healthy
+uses 8 40 2 40
+step 1 8 -
+step 120 0 start-menu.ppm
+step 1 1 -
+step 180 0 crawlers.ppm
+step 1 1 -
+step 120 0 crawler-actions.ppm
+step 1 1 -
+step 180 0 crawler-summary.ppm
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 180 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 inventory.ppm
+pocket 0
+step 1 16 -
+step 100 0 skills-pocket.ppm
+pocket 2
+step 1 16 -
+step 100 0 berries-pocket.ppm
+pocket 3
+step 1 16 -
+step 100 0 key-pocket.ppm
+pocket 4
+step 1 16 -
+step 100 0 items-wrap.ppm
+pocket 0
+step 1 32 -
+step 100 0 -
+pocket 4
+step 1 32 -
+step 100 0 -
+pocket 3
+step 1 32 -
+step 100 0 -
+pocket 2
+step 1 32 -
+step 100 0 items-return.ppm
+pocket 0
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 120 0 menu-return.ppm
+expect 34 1 11 4 3
+duo healthy
+uses 8 40 2 40
+quit

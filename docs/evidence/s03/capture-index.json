@@ -1,0 +1,254 @@
+[
+  {
+    "image": "setup-title.png",
+    "route": "setup",
+    "raw_frame_sha256": "99f214e2c363143fe5c3091a478e02b0e01303ff21bc1f1e392f24c942e53a9d",
+    "fixture": false
+  },
+  {
+    "image": "setup-intro.png",
+    "route": "setup",
+    "raw_frame_sha256": "42a84ff37c6996bad4c53af0390bb22909cea797c2c8ffa1b3900cb771382cdf",
+    "fixture": false
+  },
+  {
+    "image": "setup-reader-achievement.png",
+    "route": "setup",
+    "raw_frame_sha256": "b3394e5a519deb04c13abec72119231c18c682e8f8a6a661d87959f5232624d8",
+    "fixture": false
+  },
+  {
+    "image": "setup-supply-opened.png",
+    "route": "setup",
+    "raw_frame_sha256": "61a751418e41b40374c0e166a9187eb359572e9dff3b69a0af58a95675a04d88",
+    "fixture": false
+  },
+  {
+    "image": "ui-donut-summary.png",
+    "route": "ui",
+    "raw_frame_sha256": "a924794f429bb0c42fb42d26638c6307fc4803cdd9681982fe6b7cfecf79eae1",
+    "fixture": false
+  },
+  {
+    "image": "ui-donut-stats.png",
+    "route": "ui",
+    "raw_frame_sha256": "7407f85bfc5b7cb7a79d9d3343f5dad9d6107cfeba84b91738d3b523e0bd4b0a",
+    "fixture": false
+  },
+  {
+    "image": "ui-donut-skills.png",
+    "route": "ui",
+    "raw_frame_sha256": "7cb1b1be377d3c833de3d5a0f87fdb6674642eef882bf48fc549815494822a1d",
+    "fixture": false
+  },
+  {
+    "image": "ui-donut-scene.png",
+    "route": "ui",
+    "raw_frame_sha256": "eede4bceb2030bcc88042494a4215077f34e4d22773f73dedd6d40c34375891b",
+    "fixture": false
+  },
+  {
+    "image": "ui-journal-objective.png",
+    "route": "ui",
+    "raw_frame_sha256": "fd66918ad27a7c6514a0d885ae2d89c449e0d7060219917c3d5f5d274f6c7693",
+    "fixture": false
+  },
+  {
+    "image": "ui-journal-recovery.png",
+    "route": "ui",
+    "raw_frame_sha256": "b17149b1bad82cf4fc15457bcee68d129f08261844d5db3428c247ec0e691706",
+    "fixture": false
+  },
+  {
+    "image": "trial-carl-menu.png",
+    "route": "trial",
+    "raw_frame_sha256": "1a9e656f2292a2604a80c2dc3e4f7adfab5861644bb6ffe46c6633f3eb3db534",
+    "fixture": false
+  },
+  {
+    "image": "trial-donut-menu.png",
+    "route": "trial",
+    "raw_frame_sha256": "24b26d29e207eb4a0aab7b2ea05d7265c76bf63a4eb4b0b58d2dd366a5847a55",
+    "fixture": false
+  },
+  {
+    "image": "trial-defeat-pilot-donut-down.png",
+    "route": "trial-defeat",
+    "raw_frame_sha256": "501ed9d25adbe80d9860e164f673ea45afdee19ee96c24b36df242624ee4cd4a",
+    "fixture": false
+  },
+  {
+    "image": "trial-defeat-defeat-saved.png",
+    "route": "trial-defeat",
+    "raw_frame_sha256": "56ab0e0aff85be7332f75cc9eb491d2d9389e397d6281716f9a676ffd539d30c",
+    "fixture": false
+  },
+  {
+    "image": "guard-carl-menu.png",
+    "route": "guard",
+    "raw_frame_sha256": "d3181c078569af8a9dd76b74d138847341a5c1e5d441f0d6b465365e609fc640",
+    "fixture": false
+  },
+  {
+    "image": "howler-carl-menu.png",
+    "route": "howler",
+    "raw_frame_sha256": "c06a52f11f8c91fda6ada5f7e39f8c483c400c86f2ba3120e180e0461d832617",
+    "fixture": false
+  },
+  {
+    "image": "boss-unprepared-carl-menu.png",
+    "route": "boss-unprepared",
+    "raw_frame_sha256": "b7f5236ed4967c06c9abe856b87e838c440f8068203b4038c71d960ee4e245df",
+    "fixture": false
+  },
+  {
+    "image": "boss-unprepared-boss-saved.png",
+    "route": "boss-unprepared",
+    "raw_frame_sha256": "ec16aa41bbca054d1fd96a230cbc598e3f74fa6a50610e0de4a7068579a33ee0",
+    "fixture": false
+  },
+  {
+    "image": "boss-prepared-carl-menu.png",
+    "route": "boss-prepared",
+    "raw_frame_sha256": "78ddf49fe7e32685687ef90c91730b8cd9a248387db6cd45a5ff67143d989c29",
+    "fixture": false
+  },
+  {
+    "image": "boss-prepared-prepared-win-saved.png",
+    "route": "boss-prepared",
+    "raw_frame_sha256": "ec16aa41bbca054d1fd96a230cbc598e3f74fa6a50610e0de4a7068579a33ee0",
+    "fixture": false
+  },
+  {
+    "image": "carl-down-pilot-carl-down.png",
+    "route": "carl-down",
+    "raw_frame_sha256": "b7b94af5e26841b6401894164315775f901daf20b2e8c6136163a67f39a47eca",
+    "fixture": false
+  },
+  {
+    "image": "boss-defeat-pilot-donut-down.png",
+    "route": "boss-defeat",
+    "raw_frame_sha256": "1b43385efc9237f9724c5edb035e25f0f468465ab4e948b99915424a7f0c9f25",
+    "fixture": false
+  },
+  {
+    "image": "ending-reload-reloaded.png",
+    "route": "ending-reload",
+    "raw_frame_sha256": "4d09def3e0059c15126056f83537d000f29da126867c3970e6bb987ce43a3dcf",
+    "fixture": false
+  },
+  {
+    "image": "ending-reload-donut-ending.png",
+    "route": "ending-reload",
+    "raw_frame_sha256": "48b33b2e2560641523da8a433304ebe8c8aa79c6230326ecf1282df4b5c7efe2",
+    "fixture": false
+  },
+  {
+    "image": "ending-reload-carl-ending-reply.png",
+    "route": "ending-reload",
+    "raw_frame_sha256": "fe44fda16abf837443506828f98c6a3a1ff02538b19c94c384450b335f447748",
+    "fixture": false
+  },
+  {
+    "image": "quest-complete-recover-lev-gauntlet.png",
+    "route": "quest-complete-recover",
+    "raw_frame_sha256": "b35fef089ae7c33707b2e5f158cde11e5109a720f9e0e1abdcd169a531b1a202",
+    "fixture": false
+  },
+  {
+    "image": "quest-complete-recover-quest-reward.png",
+    "route": "quest-complete-recover",
+    "raw_frame_sha256": "b70703d4650b8231dcb6aa341f676cfe0d28ad293c5fb16ec96e736425a53ac1",
+    "fixture": false
+  },
+  {
+    "image": "quest-complete-recover-quest-repeat.png",
+    "route": "quest-complete-recover",
+    "raw_frame_sha256": "aef1988ebcd9f61947c3dccec2d8b8198fdaf94cbc582c1e8472ebc6519ee6f4",
+    "fixture": false
+  },
+  {
+    "image": "quest-complete-recover-status-cured.png",
+    "route": "quest-complete-recover",
+    "raw_frame_sha256": "8eacccb60606725079f4d01a51830cf6b8970ee29c77fe6c9ce4665c84c32e9d",
+    "fixture": false
+  },
+  {
+    "image": "craft-craft-crafted.png",
+    "route": "craft-craft",
+    "raw_frame_sha256": "dc69cb836f59e499ec64fe1af1bc8fe95a6229a965dd2c29cd8d4589b047d850",
+    "fixture": false
+  },
+  {
+    "image": "craft-blast-use-blasted.png",
+    "route": "craft-blast-use",
+    "raw_frame_sha256": "ac49891ce8cddb1ac2edbf0fbc454704d041bbddf938ce764d50cf37a57c212a",
+    "fixture": false
+  },
+  {
+    "image": "collection-battle-battle-items.png",
+    "route": "collection-battle",
+    "raw_frame_sha256": "8ff926baaff2935b1fb44dcb3c8b46bc968d92fbc331a36ab25d481f524a8927",
+    "fixture": false
+  },
+  {
+    "image": "collection-battle-battle-skills.png",
+    "route": "collection-battle",
+    "raw_frame_sha256": "2c04bbf5980ab3ef88a92eea8472c777f5a9cb0b526e85e420bee030f1b5bef9",
+    "fixture": false
+  },
+  {
+    "image": "exhaust-fixture-battle-result.png",
+    "route": "exhaust-fixture-battle",
+    "raw_frame_sha256": "0602f0cc07334fdbd04b6ea02e6d3c3ffc89fb28e3125b89618ef90025d2473d",
+    "fixture": true
+  },
+  {
+    "image": "exhaust-fixture-battle-saved.png",
+    "route": "exhaust-fixture-battle",
+    "raw_frame_sha256": "56ab0e0aff85be7332f75cc9eb491d2d9389e397d6281716f9a676ffd539d30c",
+    "fixture": true
+  },
+  {
+    "image": "exhaust-fixture-recover-guide-2.png",
+    "route": "exhaust-fixture-recover",
+    "raw_frame_sha256": "8eacccb60606725079f4d01a51830cf6b8970ee29c77fe6c9ce4665c84c32e9d",
+    "fixture": true
+  },
+  {
+    "image": "exhaust-fixture-recover-saved.png",
+    "route": "exhaust-fixture-recover",
+    "raw_frame_sha256": "b1edc27a28bc932d919bab6d9989327c5ec7b4b4c99c046766116241e20b8856",
+    "fixture": true
+  },
+  {
+    "image": "continuous-prepared-setup-intro.png",
+    "route": "continuous-prepared",
+    "raw_frame_sha256": "42a84ff37c6996bad4c53af0390bb22909cea797c2c8ffa1b3900cb771382cdf",
+    "fixture": false
+  },
+  {
+    "image": "continuous-prepared-boss-prepared-carl-menu.png",
+    "route": "continuous-prepared",
+    "raw_frame_sha256": "78ddf49fe7e32685687ef90c91730b8cd9a248387db6cd45a5ff67143d989c29",
+    "fixture": false
+  },
+  {
+    "image": "continuous-prepared-prepared-ending-prepared-complete.png",
+    "route": "continuous-prepared",
+    "raw_frame_sha256": "076a757b4185cb9dec2d549ac43151062a68db63b40f3bfb78b80535aafa9379",
+    "fixture": false
+  },
+  {
+    "image": "continuous-prepared-continuous-complete.png",
+    "route": "continuous-prepared",
+    "raw_frame_sha256": "4d09def3e0059c15126056f83537d000f29da126867c3970e6bb987ce43a3dcf",
+    "fixture": false
+  },
+  {
+    "image": "continuous-reload-reloaded.png",
+    "route": "continuous-reload",
+    "raw_frame_sha256": "4d09def3e0059c15126056f83537d000f29da126867c3970e6bb987ce43a3dcf",
+    "fixture": false
+  }
+]

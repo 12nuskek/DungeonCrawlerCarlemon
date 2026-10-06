@@ -404,6 +404,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     // Placeholder scarf art; scheduled original equipment icon in S02.
     [ITEM_DCC_WRIST_WRAP] = {gItemIcon_SilkScarf, gItemIconPalette_SilkScarf},
     [ITEM_DCC_SCRAP] = {gItemIcon_MetalCoat, gItemIconPalette_MetalCoat},
+    [ITEM_DCC_ROUTE_TAG] = {gItemIcon_MetalCoat, gItemIconPalette_MetalCoat},
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

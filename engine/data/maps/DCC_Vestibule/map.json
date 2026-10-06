@@ -74,6 +74,13 @@
       "elevation": 3,
       "dest_map": "MAP_DCC_ENTRANCE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_DCC_SERVICE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

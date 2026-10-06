@@ -412,6 +412,7 @@ enum {
     // Authored crawler equipment; retain all upstream item IDs.
     ITEM_DCC_WRIST_WRAP,
     ITEM_DCC_SCRAP,
+    ITEM_DCC_ROUTE_TAG,
 
     ITEMS_COUNT
 };

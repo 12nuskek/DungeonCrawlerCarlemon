@@ -51,6 +51,12 @@
 #define FLAG_DCC_ACH_DUO     0x25
 #define FLAG_DCC_LOOT_SUPPLY 0x26
 #define FLAG_DCC_LOOT_SCRAP  0x27
+#define FLAG_DCC_TRAP_SPENT       0x28
+#define FLAG_DCC_QUEST_DECLINED   0x29
+#define FLAG_DCC_QUEST_ACCEPTED   0x2A
+#define FLAG_DCC_QUEST_COMPLETE   0x2B
+#define FLAG_DCC_TAG_FOUND        0x2C
+#define FLAG_DCC_SECRET_TAKEN     0x2D
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag

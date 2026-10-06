@@ -470,3 +470,50 @@ merged NO, pending scoped PR and issue #18 integration. No blocker or unsuccessf
 production fix; exploratory replay timing adjustments resolved dialogue/toss states.
 Next: push evidence, draft/review/merge R02, reconcile main, then D01 trap/secret/
 optional quest. Parent owns sole continuation; no new workflow/schedule created.
+
+## R02 integration / D01 start — 2026-10-06
+
+PR #19 merged `ae4679e2e19a94fd60ac879c9dd18e89f7de2c41`; issue #18 closed
+with actual screenshots and merged state. Evidence commit `de8af8914a030bbfb41769de8a74f339f0144e74`,
+tested implementation `fbfb9e9cad1854b5b03e2a006d1ed1745348f365`. Main clean;
+no open PR. D01 branch `task/d01-trap-secret-quest` starts at this merge.
+Objective: service room, marked avoidable nonlethal trap, optional secret and
+retrieval quest with persistent decline/accept/complete states and repeat safety.
+Two original neutral crawlers; no canon claims. Existing guide must cure actual
+inflicted paralysis. No save-layout/battle/crafting expansion or scheduler.
+Implemented/compiled/runtime/merge pending. No blocker; next author room/events.
+
+D01 issue #20 source implementation compiles. New Service Room links via the west
+landing ladder; authored optional Mara/Lev dialogue, retrieval key item, atomic
+Scrap reward, hidden medicine and marked single-use trap. Trap bounds HP at1 and
+uses paralysis (no step damage). No save-layout changes. First runtime route now
+checks fresh access and decline/save; final acceptance not yet established.
+
+D01 exploratory cold reload found a real field-input defect: the spent coordinate
+script kept starting while standing on the tile, so START could not open Save.
+Fix attempt1: disable its coordinate trigger with VAR_TEMP_0 immediately, and seed
+that temporary variable from the persistent spent flag on map load. This preserves
+repeat/reload behavior without adding a save field. Cold persistence must be rerun;
+the earlier in-memory assertions did not prove the attempted save succeeded.
+
+D01 exploratory checks now pass: decline13, accepted/trap16, tag/secret15,
+completion/guide22, final cold18; explicit capacity/boundary fixture21 and cold9.
+The coordinate-trigger fix passed cold persistence and restored menu access on the
+spent tile. One production defect fixed on first hypothesis; no unresolved blocker.
+Actual paralysis64 persists, then guide cures to0; HP26→30. Full bag/Scrap98
+refuses reward2 while retaining ROUTE TAG and incomplete state; toss1, retry grants
+2→99, removes tag and marks completion once. Final isolated committed run next.
+
+## D01 final verification — 2026-10-06
+
+Executor connection confirmed by successful tools after parent's07:07 disconnect
+notice. Existing verification session continued; no duplicate run/reset. Tested
+`060864caa9aecfa48c38c810fe2a7f87895b308e` passed isolated `test-d01.sh`:114
+assertions (84 production/30 fixture), seven empty errors,19 reviewed actual PNGs.
+Production SHA256 `427c16b312869f2dd575bac6f0b736953c524bf96753273a88d2429444b0cfec`.
+[Evidence](evidence/d01/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO, pending scoped PR for issue #20. One coordinate-input defect fixed on
+first hypothesis; no unresolved blocker. Actual status curing now proven; total
+action exhaustion remains S03. Next push evidence/draft/review/merge, then D02.
+Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`; sole writer/scheduler
+ownership unchanged.

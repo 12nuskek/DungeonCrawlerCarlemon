@@ -154,3 +154,26 @@ Both stationary box props reuse upstream Moving Box art, and SCRAP reuses the
 Metal Coat icon/palette from the pinned upstream. These are explicit S02 art
 placeholders. Positions hug room edges and preserve the established row8 entrance
 path and row7 landing path. No new map or authored battle behavior in this task.
+
+## D01 original service-room adaptation (2026-10-06)
+
+Original neutral scene, no direct book quotation or uncertain canon identification.
+MARA wants reliable escape routes; LEV wants overlooked supplies. Neither is claimed
+to be a book character. This optional service room compresses tutorial chronology.
+
+| Scene/state | Prerequisites and effect | Persistent ID / test route |
+| --- | --- | --- |
+| Service room | Quiet Landing west ladder, always reversible | New authored 16×12 map; no random encounter |
+| Warning/trap | Sign warns of cracked tile; routes on both sides | 0x28 spent; first crossing damages Carl by4 to minimum1, paralysis if healthy |
+| Mara offer | Decline freely, return to accept | 0x29 declined;0x2A accepted (accept clears declined) |
+| Route tag | Accepted quest; north crate, non-tossable key item379 | 0x2C found; once only |
+| Return tag | Two Scrap fit before tag removal/completion | 0x2B complete; repeat dialogue, no duplicate |
+| Lev/panel | Optional clue to north wall beside crate | 0x2D secret medicine claimed after capacity check |
+
+Guide recovery cures the actual trap status; walking cannot cause poison damage or
+KO. Trap does not respawn across map/reload. Quest/secret never gates the ladder.
+All dialogue authored for this adaptation. Cave tiles/NPC/box/item graphics remain
+upstream placeholders for S02. New metatile0x39E copies upstream cracked-floor
+visuals with ordinary floor behavior; it never invokes stock falling-floor logic.
+Route tag uses the Metal Coat icon temporarily. Source map data are authored assets,
+not generated ROM binaries. Runtime verified: [D01 114-check evidence](evidence/d01/README.md); integration pending.

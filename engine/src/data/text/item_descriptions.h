@@ -1559,3 +1559,8 @@ static const u8 sDccScrapDesc[] = _(
     "Useful scrap.\n"
     "Keep for crafting.\n"
     "Not usable alone.");
+
+static const u8 sDccRouteTagDesc[] = _(
+    "A numbered tag.\n"
+    "MARA needs it for\n"
+    "her route notes.");

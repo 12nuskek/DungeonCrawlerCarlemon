@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DCC_Vestibule/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Vestibule/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_SERVICE",
+      "name": "DCC_Service_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Service/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Service/map.bin"
     }
   ]
 }

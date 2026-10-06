@@ -5,6 +5,7 @@
 #include "constants/flags.h"
 #include "constants/species.h"
 #include "constants/moves.h"
+#include "constants/battle.h"
 
 // Reuse Emerald records. Species/art are temporary, not collectible pets.
 void InitCrawlerParty(void)
@@ -35,4 +36,17 @@ void InitCrawlerParty(void)
     SetMonData(&gPlayerParty[1], MON_DATA_EXP, &experience);
     gPlayerPartyCount = 2;
     FlagSet(FLAG_SYS_POKEMON_GET);
+}
+
+// Scripted field hazard: cannot knock out a crawler or cause poison-step damage.
+void DccApplyServiceTrap(void)
+{
+    u16 hp = GetMonData(&gPlayerParty[0], MON_DATA_HP);
+    u32 status = STATUS1_PARALYSIS;
+    if (hp == 0)
+        return;
+    hp = hp > 4 ? hp - 4 : 1;
+    SetMonData(&gPlayerParty[0], MON_DATA_HP, &hp);
+    if (GetMonData(&gPlayerParty[0], MON_DATA_STATUS) == 0)
+        SetMonData(&gPlayerParty[0], MON_DATA_STATUS, &status);
 }

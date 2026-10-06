@@ -133,3 +133,24 @@ No new canon claims or adaptation chronology. [Collection audit](collection-audi
 - Test route: new game→landing crate→repeat→Inventory/Give to Carl→save/cold reload→
   trial→level growth→guide→save/reload→take/re-equip. Also win without the optional
   item and exercise full-inventory refusal in a separately labelled test fixture.
+
+## R02 achievement and loot ledger (2026-10-06)
+
+| Persistent ID | Trigger / prerequisite | Authored result | Flag |
+| --- | --- | --- | --- |
+| ACH_READER_01 | Read the original entrance note | AI: Careful Reader; south supply box unlocks |0x24|
+| ACH_DUO_01 | Win the duo trial | AI: Better Together; workshop box unlocks |0x25|
+| LOOT_SUPPLY_01 | ACH_READER_01; interact entrance(10,9) | Exactly two Potions, one successful grant |0x26|
+| LOOT_SCRAP_01 | ACH_DUO_01; interact landing(11,8) | Exactly two Scrap (item378), one successful grant |0x27|
+
+All names/notices are original compressed-tutorial adaptation text, not quoted book
+achievements or claims about canon chronology. Box flags are set only after the
+whole inventory addition succeeds. Locked, insufficient-space and resolved text
+remain available. Optional rewards never gate the main route. SCRAP is reserved
+for the already planned D02 recipe; its description explicitly says it is not
+usable alone. No recipe or random reward system is claimed implemented here.
+
+Both stationary box props reuse upstream Moving Box art, and SCRAP reuses the
+Metal Coat icon/palette from the pinned upstream. These are explicit S02 art
+placeholders. Positions hug room edges and preserve the established row8 entrance
+path and row7 landing path. No new map or authored battle behavior in this task.

@@ -427,3 +427,46 @@ Production ROM `aece986da533253d66fa77151d2972d81160002e5fbd17bd8374d50c400355d0
 PASS / integration pending scoped PR. No blocker. R02 persistent achievements and
 loot is next after merge. Depleted/immediate-defeat saves now covered, while actual
 status curing and total action exhaustion remain explicit S03 edges. No scheduler.
+
+## R01 integration / R02 start — 2026-10-06
+
+PR #17 merged `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`; issue #16 closed and
+body updated to merged. B03 PR #15 merge remains `4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363`.
+Parent independently confirmed B03 110 and R01 174 (144 production/30 fixture)
+checks without material blocker. Main reconciled, no open PR. R02 issue #18 and
+task/r02-achievements-loot start here: two authored achievements, two deterministic
+boxes, unique persistent IDs, capacity/repeat/reload correctness. No new maps,
+save layout, random loot model or scheduler. Compile/runtime/merge pending. Fresh
+save required for new map objects. Next: compile and build input-driven reward
+routes, including full-stack/full-bag atomic failure and successful retry.
+
+R02 source compiles. Fresh setup-rewards route passes32 checks: both locked states,
+reader achievement/repeat, exact Potion grant/repeat and save. Trial route reaches
+both level9 and sets the duo achievement,31 checks before adding workshop/use
+steps. Extra dialogue required a replay close-state adjustment; no source game
+failure or blocker established. Capacity fixture prepares all slots occupied with
+Potion98 to prove an attempted grant of2 neither partially grants nor consumes its
+flag; after tossing1, retry should grant2 to99. Final acceptance still pending.
+
+R02 exploratory routes complete: setup32, victory/loot/use53, cold reload/map
+re-entry34, final cold13; explicit full-stack fixture28 and cold fixture repeat9.
+Both achievements and both box states survive reload/re-entry. Potion2→1 after
+healing Donut12→28; use at full health does not consume the remaining Potion.
+Repeat boxes leave Potion1/Scrap2 unchanged. Failed two-Potion reward at stack98
+and full bag leaves98 and flag unset; tossing1 then retry grants exactly2 to99,
+repeat and cold reload retain99. Menu timing for toss confirmation was adjusted;
+no production source fix was necessary. Final isolated169-check replay is next.
+
+## R02 final verification — 2026-10-06
+
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`, single writer on
+`task/r02-achievements-loot`; base `5a0fd8eaef6b4746c745e128bd9923f00afeeee0`.
+Tested `fbfb9e9cad1854b5b03e2a006d1ed1745348f365` with isolated
+`bash scripts/test-r02.sh`:169 PASS (132 production/37 fixture), six empty errors,
+17 visually reviewed actual screenshots. Production SHA256
+`dec6f1db138ed1a622da477cf14495086fe5ea7c20ca9caaa6b5016a3f42ab32`.
+[Evidence](evidence/r02/README.md). Implemented YES / compiled PASS / runtime PASS /
+merged NO, pending scoped PR and issue #18 integration. No blocker or unsuccessful
+production fix; exploratory replay timing adjustments resolved dialogue/toss states.
+Next: push evidence, draft/review/merge R02, reconcile main, then D01 trap/secret/
+optional quest. Parent owns sole continuation; no new workflow/schedule created.

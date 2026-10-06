@@ -42,6 +42,10 @@ DCC_Vestibule_TrialResolved:
 	release
 	end
 DCC_Vestibule_TrialWon:
+	goto_if_set FLAG_DCC_ACH_DUO, DCC_Vestibule_TrialWonAgain
+	setflag FLAG_DCC_ACH_DUO
+	msgbox DCC_Vestibule_Text_DuoAchievement, MSGBOX_DEFAULT
+DCC_Vestibule_TrialWonAgain:
 	msgbox DCC_Vestibule_Text_Won, MSGBOX_DEFAULT
 	release
 	end
@@ -99,3 +103,44 @@ DCC_Vestibule_Text_ReturnAdvice:
 	.string "The ladder returns to the entrance.\p"
 	.string "Press START, then SAVE outside battle.\n"
 	.string "A saved rest is one less worry.$"
+
+DCC_Vestibule_Text_DuoAchievement:
+	.string "AI: ACHIEVEMENT! Better Together.\n"
+	.string "The workshop box is unlocked.$"
+
+DCC_Vestibule_WorkshopBox::
+	lock
+	faceplayer
+	goto_if_set FLAG_DCC_LOOT_SCRAP, DCC_Vestibule_WorkshopOpened
+	goto_if_unset FLAG_DCC_ACH_DUO, DCC_Vestibule_WorkshopLocked
+	additem ITEM_DCC_SCRAP, 2
+	goto_if_eq VAR_RESULT, FALSE, DCC_Vestibule_WorkshopFull
+	setflag FLAG_DCC_LOOT_SCRAP
+	msgbox DCC_Vestibule_Text_Workshop, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_WorkshopOpened:
+	msgbox DCC_Vestibule_Text_WorkshopOpened, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_WorkshopLocked:
+	msgbox DCC_Vestibule_Text_WorkshopLocked, MSGBOX_DEFAULT
+	release
+	end
+DCC_Vestibule_WorkshopFull:
+	msgbox DCC_Vestibule_Text_WorkshopFull, MSGBOX_DEFAULT
+	release
+	end
+
+DCC_Vestibule_Text_Workshop:
+	.string "WORKSHOP BOX: Two pieces of SCRAP.\n"
+	.string "Keep them for a crafting recipe.$"
+DCC_Vestibule_Text_WorkshopOpened:
+	.string "Workshop box: already opened.\n"
+	.string "Two pieces of SCRAP were claimed.$"
+DCC_Vestibule_Text_WorkshopLocked:
+	.string "Box label: Complete the duo trial.\n"
+	.string "Teamwork before tools. How charming.$"
+DCC_Vestibule_Text_WorkshopFull:
+	.string "Two pieces of SCRAP will not fit.\n"
+	.string "Make room and try this box again.$"

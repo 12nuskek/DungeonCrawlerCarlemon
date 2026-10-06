@@ -47,6 +47,10 @@
 #define FLAG_DCC_CRATE_READ  0x21 // Tutorial interaction, not a reward
 #define FLAG_DCC_GUIDE_MET   0x22
 #define FLAG_DCC_WRAP_TAKEN  0x23 // Unique starter equipment grant
+#define FLAG_DCC_ACH_READER  0x24
+#define FLAG_DCC_ACH_DUO     0x25
+#define FLAG_DCC_LOOT_SUPPLY 0x26
+#define FLAG_DCC_LOOT_SCRAP  0x27
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag

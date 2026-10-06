@@ -1,0 +1,309 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 exit-arrival.ppm
+expect 34 5 4 6 7
+flag 47 1
+flag 48 1
+step 20 128 -
+step 40 0 -
+step 68 16 -
+step 40 0 -
+step 1 64 -
+step 40 0 exit-center.ppm
+expect 34 5 8 8 7
+step 36 16 -
+step 40 0 -
+step 84 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 overlook-alcove.ppm
+expect 34 5 10 2 7
+step 20 64 -
+step 40 0 -
+step 40 0 overlook-top-blocked.ppm
+expect 34 5 10 2 7
+step 68 32 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 40 0 overlook-left-blocked.ppm
+expect 34 5 6 2 7
+step 20 128 -
+step 40 0 -
+step 68 16 -
+step 40 0 -
+step 84 128 -
+step 40 0 -
+step 36 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 40 0 overlook-return.ppm
+expect 34 5 8 8 7
+step 68 32 -
+step 40 0 -
+step 68 64 -
+step 40 0 -
+step 36 32 -
+step 180 0 boss-arrival.ppm
+expect 34 4 2 4 7
+step 20 16 -
+step 40 0 -
+step 68 128 -
+step 40 0 -
+step 84 16 -
+step 40 0 -
+step 1 64 -
+step 40 0 boss-center.ppm
+expect 34 4 8 8 7
+step 36 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 west-support-blocked.ppm
+expect 34 4 6 7 7
+step 68 16 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 east-support-blocked.ppm
+expect 34 4 10 7 7
+step 20 128 -
+step 40 0 -
+step 36 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 40 0 gate-return.ppm
+expect 34 4 8 8 7
+step 84 32 -
+step 40 0 -
+step 68 64 -
+step 40 0 -
+step 20 32 -
+step 180 0 gauntlet-arrival.ppm
+expect 34 3 12 4 7
+step 52 128 -
+step 40 0 -
+step 68 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 gauntlet-center.ppm
+expect 34 3 8 7 7
+step 20 64 -
+step 40 0 -
+step 40 0 patrol-south-blocked.ppm
+expect 34 3 8 7 7
+step 20 16 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+step 40 0 patrol-north-blocked.ppm
+expect 34 3 8 5 7
+step 20 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 40 0 patrol-return.ppm
+expect 34 3 8 7 7
+step 84 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 180 0 service-arrival.ppm
+expect 34 2 2 9 7
+step 100 16 -
+step 40 0 -
+step 20 64 -
+step 40 0 service-center.ppm
+expect 34 2 8 8 7
+step 20 128 -
+step 40 0 -
+step 100 16 -
+step 40 0 -
+step 40 0 cache-bay.ppm
+expect 34 2 14 9 7
+step 20 64 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 40 0 cache-side-blocked.ppm
+expect 34 2 14 8 7
+step 20 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 cache-top-blocked.ppm
+expect 34 2 14 7 7
+step 36 128 -
+step 40 0 -
+step 100 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 cache-return.ppm
+expect 34 2 8 8 7
+step 20 16 -
+step 40 0 -
+step 68 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 utility-east-blocked.ppm
+expect 34 2 8 4 7
+step 20 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 utility-middle-blocked.ppm
+expect 34 2 7 4 7
+step 20 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 utility-west-blocked.ppm
+expect 34 2 6 4 7
+step 52 16 -
+step 40 0 -
+step 68 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 -
+step 40 0 workshop-return.ppm
+expect 34 2 8 8 7
+flag 40 0
+flag 40 0
+step 20 16 -
+step 40 0 -
+step 68 64 -
+step 40 0 -
+step 116 32 -
+step 180 0 landing-arrival.ppm
+expect 34 1 2 4 7
+step 20 16 -
+step 40 0 -
+step 84 128 -
+step 40 0 -
+step 84 16 -
+step 40 0 -
+step 20 64 -
+step 40 0 landing-center.ppm
+expect 34 1 8 8 7
+step 20 128 -
+step 40 0 -
+step 116 32 -
+step 40 0 -
+step 40 0 recovery-alcove.ppm
+expect 34 1 1 9 7
+step 20 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 40 0 recovery-wall-blocked.ppm
+expect 34 1 1 8 7
+step 20 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+step 100 16 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 recovery-return.ppm
+expect 34 1 8 8 7
+step 20 128 -
+step 40 0 -
+step 84 16 -
+step 40 0 -
+step 36 64 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 40 0 practice-bay.ppm
+expect 34 1 14 7 7
+step 20 16 -
+step 40 0 -
+step 40 0 practice-side-blocked.ppm
+expect 34 1 14 7 7
+step 36 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 practice-top-blocked.ppm
+expect 34 1 14 5 7
+step 36 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 84 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 practice-return.ppm
+expect 34 1 8 8 7
+step 20 128 -
+step 40 0 -
+step 68 16 -
+step 40 0 -
+step 84 64 -
+step 180 0 entrance-arrival.ppm
+expect 34 0 12 4 7
+step 68 128 -
+step 40 0 -
+step 68 32 -
+step 40 0 -
+step 1 64 -
+step 40 0 entrance-center.ppm
+expect 34 0 8 8 7
+flag 40 0
+flag 47 1
+flag 48 1
+step 84 32 -
+step 40 0 -
+step 68 64 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 entry-north-blocked.ppm
+expect 34 0 3 4 7
+step 20 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 40 0 entry-west-blocked.ppm
+expect 34 0 2 4 7
+step 68 128 -
+step 40 0 -
+step 164 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 40 0 entry-corner-blocked.ppm
+expect 34 0 12 9 7
+quit

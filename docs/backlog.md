@@ -200,3 +200,8 @@ assertions, both patrol orders and cold remaining-objective pages. N01 next.
 N00b merged d36f3af via PR39. N01 native candidate kit ready externally; integration
 pending asset-only staging handoff. Invariants and before-room route committed;
 source staging must finish/relinquish writes before implementation resumes.
+
+N01 complete: PR41 props and PR42 room materials/save-cache compatibility merged.
+N02 issue43 now active: explicit30-cell outlines/supports; full regression and
+old-save escape proof required. Persistent visual state feedback follows after
+verified geometry, then final full playthrough/private updated review package.

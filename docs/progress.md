@@ -1333,3 +1333,27 @@ validation, not a new runtime claim. Partial source kit limitations retained.
 Next: merge this verified increment, then N02 room outlines/collision separately;
 follow with existing-flag visual state feedback and final full regression. Sole
 writer and parent-owned continuation unchanged. Deadline approximately21:19UTC.
+
+### N02 room outlines — 2026-10-06
+
+N01 PR42 merged c71636ac213147181eb28ab968ffd15e718501fc; issue35 closed.
+N02 issue43, task/n02-room-outlines, base that merge. Explicit30-cell geometry
+contract:14 new alcove cells and16 small blocked corner/support cells. All other
+1146 map/border collision/elevation/behavior cells, six event contracts and49
+approved assets remain unchanged. Dimensions/warps/interaction anchors unchanged.
+The renderer follows real contours rather than painting fake walls on walkable
+floor. No added travel requirement, enemies, floors or systems.
+
+Static connectivity passes all six maps, all warp/object approaches, both wire
+bypasses, secret/craft/cache/stair approaches, every new alcove, and an adjacent
+unchanged free escape for every newly blocked old floor cell. Normal-input old
+save setup at Exit13,9 passes5 assertions on pre-geometry ROM17e97672…cec637;
+copy remains private. New runtime probe will load it on the clipped corner and
+prove a normal step out with progression/resources unchanged.
+
+Acceptance queued: original full1053 assertions unchanged, six-room18, focused
+boundary/alcove47, old-save escape8 =1126 across65 processes (including existing
+explicit fixtures). Preserve all behavioral assertions. Source-native158 used
+subtiles/174 metatiles. Implemented YES; compiled/runtime/merged pending. Next
+isolated committed build/full runtime, actual shapes/camera/motion review, diff,
+PR and merge only if verified. Sole writer; no scheduler added.

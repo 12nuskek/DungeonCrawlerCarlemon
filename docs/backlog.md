@@ -193,3 +193,6 @@ N01 remains the next visual foundation task. One implementation writer.
 
 N00 verified at f3514ca: 373 core +7 supplementary assertions, actual text reviewed;
 PR37 awaiting integration. N01 next after the external native environment kit.
+
+N00 merged PR37 a9491f1. N00b issue38 /PR39 verified8e9d0d0:23 sessions/416
+assertions, both patrol orders and cold remaining-objective pages. N01 next.

@@ -1203,3 +1203,17 @@ with existing offensive policy, same ordinary prebattle save/ROM. Passed11
 assertions and saved the howler-only state; no gameplay/balance edits. Correct
 runner's alternate-route expected count to11 (pilot itself adds an assertion).
 Next committed clean rerun, cold guard-only Journal and actual image review.
+
+### N00b verified — 2026-10-06
+
+PR39 / issue38. Tested8e9d0d05c4529d45aa268c8cc04cbde853bf1d72 on base
+ a9491f17c82a9da99fdca9acde21be612aac0260. Implemented YES, compiled YES,
+runtime verified YES; merge pending. `bash scripts/test-n00b.sh`:23 production
+sessions /416 assertions,23 empty errors,9 exact opponent pixel checks. All four
+cold-reloaded objective pages fit; before capture reproduces the stale objective
+with the same normal save in N00 ROM. ROM862302c8cad5c4d2c0c22565af7fb24cdfd7c89dbb2a405d2ad3cdae2193e0a8.
+Initial alternate fortify policy lost; offensive policy succeeds and creates the
+howler-first state normally. Failed trace preserved, no balance edits; blocker
+resolved on second strategy. Full evidence docs/evidence/n00b. Next merge then
+N01 visual integration, using prepared 1176-cell/event/49-asset invariants and
+six matched unobstructed room views. Native kit external; no overlapping writer.

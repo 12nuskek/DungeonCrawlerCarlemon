@@ -1,0 +1,62 @@
+[
+  {
+    "name": "trial",
+    "original_retry_route": "docs/evidence/s03/trial-loss-retry.route",
+    "input_save": "trial-loss.sav",
+    "policy": "offensive",
+    "route": "scripts/routes/n04/trial.route",
+    "assertions": 27,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 1 9 5 3\nflag 2135 1\nflag 37 1\nflag 47 0\nflag 48 0\ngrowth 9 495 0 9 805 0\n",
+    "cold_assertions": 9
+  },
+  {
+    "name": "guard",
+    "original_retry_route": "docs/evidence/s03/guard-retry.route",
+    "input_save": "guard-loss.sav",
+    "policy": "defensive",
+    "route": "scripts/routes/n04/guard.route",
+    "assertions": 27,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 3 5 5 7\nflag 2136 1\nflag 37 1\nflag 47 0\nflag 48 0\ngrowth 10 627 0 9 937 0\n",
+    "cold_assertions": 9
+  },
+  {
+    "name": "howler",
+    "original_retry_route": "docs/evidence/s03/howler-retry.route",
+    "input_save": "howler-loss.sav",
+    "policy": "offensive",
+    "route": "scripts/routes/n04/howler.route",
+    "assertions": 27,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 3 10 5 7\nflag 2137 1\nflag 37 1\nflag 47 0\nflag 48 0\ngrowth 11 748 0 10 1058 0\n",
+    "cold_assertions": 9
+  },
+  {
+    "name": "boss",
+    "original_retry_route": "scripts/routes/n03/boss-retry.route",
+    "input_save": "boss-loss.sav",
+    "policy": "fortify",
+    "route": "scripts/routes/n04/boss.route",
+    "assertions": 33,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 4 8 5 7\nflag 2138 1\nflag 37 1\nflag 47 1\nflag 48 0\ngrowth 12 974 0 10 1284 0\n",
+    "cold_assertions": 9
+  },
+  {
+    "name": "carl-down",
+    "original_retry_route": "docs/evidence/s03/carl-down-retry.route",
+    "input_save": "carl-down.sav",
+    "policy": "fortify",
+    "route": "scripts/routes/n04/carl-down.route",
+    "assertions": 27,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 4 8 5 7\nflag 2138 1\nflag 37 1\nflag 47 1\nflag 48 0\ngrowth 12 1136 0 11 1446 0\n",
+    "cold_assertions": 9
+  },
+  {
+    "name": "prepared",
+    "original_retry_route": "docs/evidence/s03/prepared-loss-retry.route",
+    "input_save": "prepared-loss.sav",
+    "policy": "offensive",
+    "route": "scripts/routes/n04/prepared.route",
+    "assertions": 27,
+    "cold_prefix": "step 720 0 -\nstep 1 8 -\nstep 360 0 -\nstep 1 8 -\nstep 180 0 -\nstep 1 1 -\nstep 180 0 -\nstep 1 1 -\nstep 600 0 cold-victory.ppm\nexpect 34 4 8 5 7\nflag 2139 1\nflag 37 1\nflag 47 1\nflag 48 0\ngrowth 11 940 0 10 1250 0\n",
+    "cold_assertions": 9
+  }
+]

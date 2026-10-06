@@ -146,3 +146,17 @@ run those at their recorded revision, not against E02's intentional guide flow.
 Use a fresh E02 save. Old B01 saves can retain a cached map object list without
 the newly authored guide until map re-entry; no cross-milestone migration is
 claimed. Final E02 verification always begins with a new game under the E02 ROM.
+
+## B02 crawler action replay
+
+Use `bash scripts/test-b02.sh` at the B02 revision with a fresh save. The isolated
+runner covers both new offensive choices, refused zero-use SPARK and alternate
+WEAKEN, BRACE/WEAKEN stat changes, one actor fainted while the other acts, both
+fainted with local recovery/retry, guide recovery and cold reload. `uses` reads
+all four actual party PP slots, including both support slots; it does not use stale
+battle records to claim restoration. `support` reads current battle PP and stat
+stages to prove effects and the surviving actor's action. Resource budgets and
+magic/physical types are provisional balance, using stock engine effects.
+Previous milestone fixtures must be run at their recorded revisions because move
+IDs and resource budgets intentionally changed. Nonzero status curing remains
+pending; these test enemies still only use Tackle.

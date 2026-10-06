@@ -2,6 +2,8 @@
  * Commands: step FRAMES KEYS CAPTURE.ppm (or -), expect GROUP MAP X Y FLAGS,
  * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON DONUT_ABILITY, duo healthy,
  * roster CARL_HP DONUT_HP CARL_PP DONUT_PP CARL_STATUS DONUT_STATUS,
+ * uses CARL_PP1 CARL_PP2 DONUT_PP1 DONUT_PP2,
+ * support CARL_PP2 DONUT_PP2 CARL_DEF FOE1_ATK FOE2_ATK,
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -29,12 +31,12 @@ static int number(const char *text, unsigned limit, unsigned *out)
 }
 
 // Decode only the saved party attack block; never decrypt or write game RAM in place.
-static unsigned party_pp(struct mCore *core, unsigned mon)
+static unsigned party_pp(struct mCore *core, unsigned mon, unsigned slot)
 {
     static const unsigned char attacksSlot[24]={1,1,2,3,2,3,0,0,0,0,0,0,2,3,1,1,3,2,2,3,1,1,3,2};
     unsigned personality=core->busRead32(core,mon);
     unsigned key=personality^core->busRead32(core,mon+4);
-    return (core->busRead32(core,mon+0x20+12*attacksSlot[personality%24]+8)^key)&255;
+    return ((core->busRead32(core,mon+0x20+12*attacksSlot[personality%24]+8)^key)>>(8*slot))&255;
 }
 
 static void log_emulator(struct mLogger *logger, int category, enum mLogLevel level,
@@ -110,7 +112,7 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strcmp(line,"duo healthy\n")) {result=13;break;}
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);
@@ -127,7 +129,7 @@ int main(int argc, char **argv)
             core->busRead8(core,mons+2*0x58+0x20)};
         printf("party=%u HP=%u/%u,%u/%u battle=%u battlers=%u outcome=%u PP=%u,%u trial=%u donut-ability=%u\n",
             core->busRead8(core,count),hp0,max0,hp1,max1,state[0],state[1],state[2],state[3],state[4],state[5],state[6]);
-        unsigned roster[]={hp0,hp1,party_pp(core,party),party_pp(core,party+100),
+        unsigned roster[]={hp0,hp1,party_pp(core,party,0),party_pp(core,party+100,0),
             core->busRead32(core,party+0x50),core->busRead32(core,party+100+0x50)};
         printf("persistent PP=%u,%u status=%u,%u\n",roster[2],roster[3],roster[4],roster[5]);
         if (!strncmp(line,"roster ",7)) {
@@ -135,6 +137,29 @@ int main(int argc, char **argv)
             if (sscanf(line,"roster %31s %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],values[5],&extra)!=6) result=19;
             for (unsigned i=0;i<6 && !result;i++)
                 if (!number(values[i],UINT_MAX,&wanted) || wanted!=roster[i]) result=19;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
+        unsigned support[]={core->busRead8(core,mons+0x25),core->busRead8(core,mons+2*0x58+0x25),
+            core->busRead8(core,mons+0x1A),core->busRead8(core,mons+0x58+0x19),
+            core->busRead8(core,mons+3*0x58+0x19)};
+        printf("support PP=%u,%u Carl-defense=%u enemy-attack=%u,%u\n",
+            support[0],support[1],support[2],support[3],support[4]);
+        if (!strncmp(line,"support ",8)) {
+            char values[5][32]; unsigned wanted;
+            if (sscanf(line,"support %31s %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],values[4],&extra)!=5) result=20;
+            for (unsigned i=0;i<5 && !result;i++)
+                if (!number(values[i],255,&wanted) || wanted!=support[i]) result=20;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
+        unsigned uses[]={roster[2],party_pp(core,party,1),roster[3],party_pp(core,party+100,1)};
+        printf("party action uses=%u,%u / %u,%u\n",uses[0],uses[1],uses[2],uses[3]);
+        if (!strncmp(line,"uses ",5)) {
+            char values[4][32]; unsigned wanted;
+            if (sscanf(line,"uses %31s %31s %31s %31s %c",values[0],values[1],values[2],values[3],&extra)!=4) result=21;
+            for (unsigned i=0;i<4 && !result;i++)
+                if (!number(values[i],255,&wanted) || wanted!=uses[i]) result=21;
             if (result) {fprintf(stderr,"FAILED: %s",line);break;}
             checks++; printf("PASS %s",line);
         }

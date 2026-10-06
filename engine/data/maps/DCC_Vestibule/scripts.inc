@@ -28,9 +28,9 @@ DCC_Vestibule_TrialWon:
 	end
 
 DCC_Vestibule_Text_Trial:
-	.string "AI: A little rehearsal. Two targets,\n"
-	.string "two crawlers. Try helping each other.\p"
-	.string "Choose an action for CARL, then DONUT.\n"
+	.string "AI: CARL has STRIKE and BRACE.\n"
+	.string "DONUT has SPARK and WEAKEN.\p"
+	.string "SPARK has two casts. Choose carefully.\n"
 	.string "Defeat restores you. Win, then rest.$"
 DCC_Vestibule_Text_Defeat:
 	.string "AI: Teamwork. Disturbingly effective.$"
@@ -71,10 +71,10 @@ DCC_Vestibule_Text_Rested:
 	.string "CARL and DONUT recover their health\n"
 	.string "and all their action uses.$"
 DCC_Vestibule_Text_TrialAdvice:
-	.string "Try the AI's rehearsal across the room.\n"
-	.string "Choose an action for each of you.\p"
-	.string "If you both fall, you recover here.\n"
-	.string "After a win, come back to me to rest.$"
+	.string "Try the rehearsal across the room.\n"
+	.string "BRACE raises CARL's defense.\p"
+	.string "WEAKEN lowers both enemies' attack.\n"
+	.string "I restore all your action uses.$"
 DCC_Vestibule_Text_ReturnAdvice:
 	.string "GUIDE: You made it back together. Good.\n"
 	.string "The ladder returns to the entrance.\p"

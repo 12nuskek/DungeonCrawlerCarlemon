@@ -1,0 +1,25 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 9 5 3
+growth 8 399 377 8 709 0
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+item 377 0
+flag 35 1
+flag 2135 0
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 900 0 retry-after-reload.ppm
+battle 1 4 0 8 2 0 0
+growth 8 399 377 8 709 0
+quit

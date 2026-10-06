@@ -1,0 +1,30 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 4 7 7
+growth 9 495 377 9 805 0
+stats 33 23 28 14
+roster 33 28 8 2 0 0
+uses 8 40 2 40
+item 377 0
+flag 35 1
+flag 2135 1
+step 20 64 -
+step 40 0 -
+expect 34 1 4 6 7
+step 1 1 -
+step 400 0 repeat-after-reload.ppm
+item 377 0
+growth 9 495 377 9 805 0
+step 1 1 -
+step 120 0 -
+step 20 128 -
+step 40 0 final-state.ppm
+expect 34 1 4 7 7
+quit

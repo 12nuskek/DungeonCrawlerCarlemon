@@ -406,3 +406,14 @@ Carl held-item377 and zero duplicate bag quantity. Both equipped/plain trial ope
 pass7 checks each. New RAM-read diagnostics report level/XP/held item, actual stats,
 bag quantities, flags and foe HP; no game RAM writes. XP dialogue/level sequence,
 full win/reload, equipment fixture and isolated acceptance remain in progress.
+
+R01 exploratory routes now pass: setup16, plain victory25, acquire/equip15,
+held-item defeat/save23, cold defeat/retry9, equipped victory/depleted save24,
+depleted reload/guide/take/re-equip/save20, final cold repeat12; separate fixture
+setup19 and full-bag/free-space/retry11. Carl attack20→23, Donut magic13→14 at level9;
+XP399→495 and709→805 persist. First foe after opening turn: equipped12HP versus
+plain14HP; fixture real damage calculation10→11 at fixed inputs. Defeat preserves
+held gear and XP, then cold retry works. Full-bag refusal leaves flag unset;
+tossing one Potion allows exactly one wrap. Input routes were adjusted for extra
+level-up pages and menu return states; no engine failure found. Final isolated
+committed replay pending; compilation alone is not acceptance. Next run test-r01.sh.

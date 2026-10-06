@@ -66,6 +66,12 @@ def export_rooms():
             before=room.copy();after=room.copy()
             prop(off,px,py,before);prop(on,px,py,after)
             if label=='wire':
+                wire=Image.open(backgrounds/'wire_live.png')
+                for yy in range(16):
+                    for xx in range(16):
+                        value=wire.getpixel((xx,yy))
+                        if value in (3,4):before.putpixel((px+xx,py+yy),11)
+                        elif value in (5,6):before.putpixel((px+xx,py+yy),14)
                 # Original pixel spark/highlight, not a pressure plate. Native wire
                 # silhouette stays intact; bright marks distinguish the live state.
                 for xx,yy in [(2,5),(3,4),(4,5),(3,6),(11,8),(12,7),(13,8),(12,9)]:

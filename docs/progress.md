@@ -1436,3 +1436,16 @@ behavior;49 approved assets/six event contracts/N02 geometry unchanged. Real fra
 must prove native alternate OBJ/BG art, visual readability, no capacity/cancel
 side effects and save restoration. Source kit omissions unchanged. Implemented
 candidate only; compile/runtime/PR/merge pending. Sole writer; parent owns scheduler.
+
+N03 first candidate210e734 clean run-YxvaNH passed73 processes/1263 assertions,
+plus separate ordinary-input wire setup/pair/cold3 processes40 assertions. Eight
+BG state pairs match actual fixed camera/world pixels. Review found cable itself
+still low contrast despite bright sparks. Refine only live cable palette mapping
+(amber core, pale highlight; spent unchanged), preserving native silhouette and
+unmodified source master. No gameplay failure/blocker. Fold the40 supplementary
+checks and11 BG fixed-position checks into the repeatable suite; strengthen OBJ
+checks to each of four cleared encounters, cache cancellation/capacity/immediate/
+cold state and opened initial reward boxes. All earlier1210 assertions retained.
+Next final committed clean rerun76 processes/1303 assertions and actual contrast
+review; preserve first evidence separately. Compiled/runtime pass applies to first
+candidate only; final contrast source remains pending verification.

@@ -145,6 +145,9 @@ if [[ -n "${DCC_CORNER_SAVE:-}" ]]; then
     sha256sum "$evidence/legacy-corner.sav" > "$evidence/legacy-input.sha256"
     run_route legacy-corner "$repo/scripts/routes/n02/legacy-corner.route" 8 legacy-corner.sav game.sym
 fi
+run_route wire-setup "$repo/docs/evidence/d01/decline.route" 13 wire.sav game.sym
+run_route wire-pair "$repo/scripts/routes/n03/wire-pair.route" 23 wire.sav game.sym
+run_route wire-cold "$repo/scripts/routes/n03/wire-cold.route" 4 wire.sav game.sym
 python3 "$repo/scripts/render-walk.py" "$evidence/movement" "$evidence/walking.gif" > "$evidence/walking-render.log"
 python3 - "$evidence" <<'PYIMG'
 from pathlib import Path
@@ -178,6 +181,7 @@ print('PASS',len(results),'sessions,',sum(x['assertions'] for x in results),'ass
 PYIMG
 python3 "$repo/scripts/verify-opponent-frames.py" "$evidence" > "$evidence/opponent-pixels.json"
 python3 "$repo/scripts/verify-environment-props.py" "$evidence" > "$evidence/prop-pixels.json"
+python3 "$repo/scripts/verify-dungeon-presentation.py" "$evidence" > "$evidence/presentation-pixels.json"
 test "$(git rev-parse HEAD)" = "$revision"
 git diff --quiet && git diff --cached --quiet
 echo "N03 full regression passed. Production and labeled fixture ROMs remain local; never commit ROMs/saves/executables. Pacing review is separate."

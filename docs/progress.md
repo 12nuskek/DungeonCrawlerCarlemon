@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stage 0 and E01 complete; B01 verified, PR #6 awaiting integration.**
+Handoff date: 2026-10-06. **Stage 0, E01 and B01 complete; E02 is next.**
 This is a restartable checkpoint, not completion of the authorized Stages 0–5.
 Single implementation writer: this Cloud task. Parent explicitly resumed E01.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -238,3 +238,34 @@ and setup logs and checksums replace earlier incremental B01 evidence. See repor
 PR #6 opened as draft with actual screenshots; final evidence update and authorized
 integration are next. No source/runtime acceptance blockers remain. No other
 active writer/task/scheduler was created. E01 PR #5 screenshot backfill confirmed.
+
+## Integration checkpoint — 2026-10-06
+
+B01 PR #6 merged, server-confirmed commit
+`86160253801b53dd7b1cc8c6ee417422779a1651`. Its tested source is
+`0e5e6a46e02252ed76dd06a1025dca2c92649ec9`; final pre-merge head
+`335c62fbcfbc27b442874d75685e4020c736a5fd` changed only documentation/evidence
+since that test. Main explicitly fetched and fast-forwarded; no user work removed.
+Implemented YES / compiled PASS / runtime verified PASS / merged YES.
+[E01 PR #5](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/5) and
+[B01 PR #6](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/6) embed actual
+emulator screenshots labelled by tested commit and route; no live gameplay issue
+exists to backfill. Nonvisual checkpoint screenshots are N/A; these PRs provide
+relevant actual visual evidence. Complete raw logs intentionally retain upstream
+trailing spaces; authored source/docs whitespace checks exclude only raw log files.
+
+Next continuation: reconcile current main/PRs and this checkpoint, then branch for
+E02 (safe room, guide, recovery). Contract in backlog. Require an ordinary-input
+route with genuinely injured/depleted protagonists, guide recovery, return path,
+and cold save reload; do not mark recovery proved merely because an already-healthy
+party remains healthy. Keep the B01 trial loss bypass of stock lastHealLocation;
+any newly reachable losing encounter needs its own safe-return runtime check.
+Only one writer, no duplicate Cloud task or scheduler. This run stops at a clean
+reviewable increment so the parent-owned mechanism can resume E02. No E02 gameplay
+was started. The complete Stage 5 slice and final user playtest package are pending.
+
+Remaining known follow-ups: baseline boot harness unsigned-overflow validation;
+E01 optional rock/landing-crate dialogue routes; B02 skills/resources/incapacitation;
+B03 no-catching/storage audit; R/D/S tasks and original final battle assets. No
+current access/build/emulator blocker. Cloud task ID remains
+`01a10f4b-596b-700b-b8ba-241e3ca2c000`. Parent continuation only; no new workflows.

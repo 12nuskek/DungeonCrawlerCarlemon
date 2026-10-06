@@ -632,3 +632,15 @@ adjustments only. All implementations compiled; final isolated committed357-chec
 suite still pending. Next commit these routes, run test-s01.sh, review/archive
 actual evidence, scoped issue24 draft PR and integration. S02 original visuals/UI
 then S03 complete regression remain pending; no Stage6 expansion.
+
+## S01 isolated acceptance — 2026-10-06
+
+Tested `2e8de08292a8a4fe380fda06accdb2b97c798401`, base `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`.
+`bash scripts/test-s01.sh` PASS357 assertions/18 production sessions,18 empty errors.
+ROM SHA256 `ce16d2fd150917e8d865563fd76fedea571cefc6aaf74da4fdbd780f38617248`.
+Run artifacts/s01/run-4uGUcD. Reviewed30 actual PNGs and focused source diff; no
+production defect or blocker. docs/evidence/s01 contains85 hash-verified artifacts.
+Implemented/compiled/runtime verified PASS; issue24 PR/integration pending.
+Shell healthy after context resume; source/evidence preserved, no duplicate run.
+Next push evidence, draft/merge verified S01; continue S02 original art/UI, thenS03.
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.

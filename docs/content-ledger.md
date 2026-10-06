@@ -197,7 +197,7 @@ recovery, so crafting already has a practical benefit. New dialogue original;
 MovingBox/MetalCoat icon/explosion sound are upstream placeholders for S02.
 Runtime verified: [D02 111-check evidence](evidence/d02/README.md); integration pending. No new save layout or battle item framework.
 
-## S01 connected route and authored encounters (2026-10-06, verification pending)
+## S01 connected route and authored encounters (2026-10-06, runtime verified)
 
 Entrance→Quiet Landing↔Service Room→Supply Gauntlet→Gate Chamber→First Staircase.
 All routes allow backtracking. Southwest service ladder leads onward; northwest
@@ -221,3 +221,7 @@ subject to real playtesting. Existing AI is fallback when the pattern move is
 unavailable. No second combat model. Both-defeated recovery remains local/free
 for all authored encounter IDs. New trainer portraits/species art, cave maps,
 move animations and review NPC remain S02 placeholders, explicitly not final art.
+
+S01 isolated357-assertion acceptance PASS across18 production sessions; both boss
+strategies, local defeat/cold retry, stairs/cold completion pass. [Evidence](evidence/s01/README.md).
+S01 integration pending; S02 visual replacement remains next.

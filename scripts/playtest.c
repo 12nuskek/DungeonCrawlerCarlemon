@@ -7,6 +7,7 @@
  * growth CARL_LEVEL XP ITEM DONUT_LEVEL XP ITEM; stats CARL_MAXHP ATK DONUT_MAXHP MAGIC;
  * foes HP1 HP2; item ID QUANTITY; flag ID SET.
  * pattern TRAINER TURN FOE_PP0 FOE_PP1 FOE_ATTACK FOE_DEFENSE CARL_ATTACK FOE_LEVEL.
+ * tile X Y FULL_MAP_WORD (read current map tile, including collision/elevation).
  * color OBJ_PALETTE_SLOT COLOR_INDEX BGR555_VALUE (read actual hardware palette).
  * engage MAX_FRAMES: advance nearby encounter dialogue with normal A inputs.
  * pilot POLICY MAX_FRAMES: bounded normal-button battle routing; no state writes.
@@ -80,11 +81,12 @@ static int capture(const char *name, const color_t *pixels, unsigned width, unsi
 int main(int argc, char **argv)
 {
     if (argc != 4) return 2;
-    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, trainer=0, results=0, controls=0, actionCursor=0, moveCursor=0, targetCursor=0, inputAction=0, inputMove=0, inputTarget=0, addr;
+    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, trainer=0, results=0, controls=0, actionCursor=0, moveCursor=0, targetCursor=0, inputAction=0, inputMove=0, inputTarget=0, maplayout=0, addr;
     char type, symbol[128];
     FILE *symbols=fopen(argv[3], "r");
     if (!symbols) return 3;
     while (fscanf(symbols, "%x %c %127s", &addr, &type, symbol)==3) {
+        if (!strcmp(symbol,"gBackupMapLayout")) maplayout=addr;
         if (!strcmp(symbol,"gSaveBlock1Ptr")) saveptr=addr;
         if (!strcmp(symbol,"gObjectEvents")) objects=addr;
         if (!strcmp(symbol,"gPlayerAvatar")) avatar=addr;
@@ -231,12 +233,24 @@ int main(int argc, char **argv)
                 result=capture(name,pixels,width,height);
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strncmp(line,"incap ",6) && strncmp(line,"color ",6) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"tile ",5) && strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strncmp(line,"incap ",6) && strncmp(line,"color ",6) && strcmp(line,"duo healthy\n")) {result=13;break;}
         if (!strncmp(line,"incap ",6)) {
             char value[32]; unsigned wanted;
             if (sscanf(line,"incap %31s %c",value,&extra)!=1 || !number(value,7,&wanted)
                 || wanted!=lastPilotIncap) {fprintf(stderr,"FAILED incapacitation=%u: %s",lastPilotIncap,line);result=33;break;}
             checks++;printf("PASS %s",line);
+        }
+        if (!strncmp(line,"tile ",5)) {
+            char values[3][32]; unsigned tx,ty,wanted;
+            if (!maplayout || sscanf(line,"tile %31s %31s %31s %c",values[0],values[1],values[2],&extra)!=3
+                || !number(values[0],15,&tx) || !number(values[1],11,&ty) || !number(values[2],65535,&wanted)) {result=25;break;}
+            unsigned width=core->busRead32(core,maplayout), height=core->busRead32(core,maplayout+4);
+            unsigned data=core->busRead32(core,maplayout+8);
+            if (tx+7>=width || ty+7>=height || !data) {result=25;break;}
+            unsigned actual=core->busRead16(core,data+2*((ty+7)*width+tx+7));
+            if (actual!=wanted) {fprintf(stderr,"FAILED: %sactual tile=%u\n",line,actual);result=25;break;}
+            checks++; printf("PASS %s",line);
+            continue;
         }
         if (!strncmp(line,"color ",6)) {
             char values[3][32]; unsigned slot, index, wanted;

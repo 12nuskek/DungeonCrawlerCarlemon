@@ -27,4 +27,16 @@ for name in ['legacy-landing','legacy-workshop']:
         found=match(frame,assets/'storage_rack.png')
         assert found,(name,'old generic prop identity not refreshed')
         results.append({'name':'storage_rack','frame':str(frame.relative_to(run)),**found})
+# Resolved markers retain existing object IDs/collisions and use native alternatives.
+if (run/'source/scripts/contracts/n03-presentation.json').exists():
+ for name,room in [('encounter_remains','landing'),('encounter_remains','gauntlet'),('encounter_remains','boss')]:
+  frame=run/'rooms'/(room+'-center.ppm');found=match(frame,assets/(name+'.png'))
+  assert found,(name,room,'resolved marker absent')
+  results.append({'name':name,'frame':str(frame.relative_to(run)),**found})
+ found=None
+ for frame in sorted((run/'craft-blast-use').glob('*.ppm')):
+  found=match(frame,assets/'cache_open.png')
+  if found:break
+ assert found,'open cache absent after successful blast'
+ results.append({'name':'cache_open','frame':str(frame.relative_to(run)),**found})
 print(json.dumps(results,indent=2))

@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "malloc.h"
 #include "battle_pyramid.h"
 #include "berry.h"
@@ -1919,6 +1920,13 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId)
 
     if (graphicsId >= OBJ_EVENT_GFX_VARS)
         graphicsId = VarGetObjectEventGraphicsId(graphicsId - OBJ_EVENT_GFX_VARS);
+
+    if (DccObjectIsResolved(graphicsId))
+    {
+        if (graphicsId == OBJ_EVENT_GFX_MOVING_BOX || graphicsId == OBJ_EVENT_GFX_DCC_CACHE_SEALED)
+            return &gObjectEventGraphicsInfo_DccCacheOpen;
+        return &gObjectEventGraphicsInfo_DccEncounterRemains;
+    }
 
     if (graphicsId == OBJ_EVENT_GFX_BARD)
     {

@@ -36,6 +36,14 @@ for name,old in baseline['maps'].items():
    assert word&~1023==entry['upper_bits'],(name,filename,i,'collision/elevation changed')
    assert struct.unpack_from('<H',attrs,off*2)[0]==entry['attribute'],(name,filename,i,'behavior/layer changed')
    used.add(mid);cells+=1
+# Runtime-selectable pairs preserve exactly the same upper bits and behavior.
+states=json.loads((root/'scripts/contracts/n03-presentation.json').read_text())
+for state in states:
+ for entry in state['entries']:
+  assert entry['off']&~1023==entry['on']&~1023,(state['label'],'state changes collision')
+  for key in ['off','on']:
+   mid=entry[key]&1023;used.add(mid)
+   assert struct.unpack_from('<H',attrs,(mid-512)*2)[0]==entry['attribute'],(state['label'],'state changes behavior')
 for mid in used:
  for (tile,) in struct.iter_unpack('<H',metatiles[(mid-512)*16:(mid-511)*16]):
   assert 512<=tile&1023<512+num_tiles,(mid,'tile outside atlas')

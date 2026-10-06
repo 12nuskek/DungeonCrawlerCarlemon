@@ -8,7 +8,7 @@ from pathlib import Path
 import shutil
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'docs/art-references/environment-native-candidates/native'
-PROPS = ['rubble', 'warning_sign', 'workbench', 'quest_tag', 'cache_sealed', 'storage_rack']
+PROPS = ['rubble', 'warning_sign', 'workbench', 'quest_tag', 'cache_sealed', 'storage_rack', 'cache_open', 'encounter_remains']
 
 def export_props():
     target = ROOT / 'engine/graphics/dcc/environment'
@@ -18,7 +18,7 @@ def export_props():
 
 
 def export_rooms():
-    """Compose selected native masters while preserving every baseline map bit/behavior."""
+    """Compose native masters with declared geometry and existing-flag state pairs."""
     from PIL import Image
     import json, struct
     engine = ROOT/'engine'
@@ -33,6 +33,8 @@ def export_rooms():
     native_palette=Image.open(architecture/'floor_plain.png').getpalette()
     def load(name):return Image.open(architecture/(name+'.png')).copy()
     tiles=[bytes(64)]; tile_ids={tiles[0]:0}; metatiles=[]; attributes=[]; mids={}; manifest={}
+    state_rows=[]; state_manifest=[]
+    state_dir=engine/'graphics/dcc/presentation';state_dir.mkdir(parents=True,exist_ok=True)
     def subtile(image):
         data=image.tobytes()
         if data not in tile_ids:tile_ids[data]=len(tiles);tiles.append(data)
@@ -47,17 +49,29 @@ def export_rooms():
     banks={'DCC_Entrance':6,'DCC_Vestibule':7,'DCC_Service':8,'DCC_Corridor':6,'DCC_Boss':9,'DCC_Exit':7}
     for name,old in contract['maps'].items():
         room=Image.new('P',(256,192));room.putpalette(native_palette)
+        states=[]
         floor={(i%16,i//16) for i,c in enumerate(old['cells']) if c['upper_bits']==0x3000 or c['attribute']==0x61}
         def put(x,y,kind):
             if not (0<=x<16 and 0<=y<12):return
             if kind.startswith(('floor_','mat_','conduit_','threshold_')) and (x,y) not in floor:return
             if kind.startswith(('wall_','corner_outer')) and (x,y) in floor:return
             room.paste(load(kind),(x*16,y*16))
-        def prop(kind,px,py):
+        def prop(kind,px,py,target=None):
             im=Image.open(backgrounds/(kind+'.png'))
             # Use index mask, not palette luminance, to preserve every nonzero source pixel.
             mask=Image.frombytes('L',im.size,bytes(255 if v else 0 for v in im.tobytes()))
-            room.paste(im,(px,py),mask)
+            (room if target is None else target).paste(im,(px,py),mask)
+        def state_prop(label,flag,x,y,width,height,off,on,px=None,py=None):
+            px=x*16 if px is None else px;py=y*16 if py is None else py
+            before=room.copy();after=room.copy()
+            prop(off,px,py,before);prop(on,px,py,after)
+            if label=='wire':
+                # Original pixel spark/highlight, not a pressure plate. Native wire
+                # silhouette stays intact; bright marks distinguish the live state.
+                for xx,yy in [(2,5),(3,4),(4,5),(3,6),(11,8),(12,7),(13,8),(12,9)]:
+                    before.putpixel((px+xx,py+yy),15 if xx in (3,12) else 14)
+            room.paste(before)
+            states.append((label,flag,x,y,width,height,before,after))
         for y in range(12):
             for x in range(16):put(x,y,'floor_plain' if (x,y) in floor else 'void')
         # Follow actual floor contours; two rows of north wall and thin side/rear cutaways.
@@ -107,11 +121,12 @@ def export_rooms():
             put(5,1,'wall_top_damp');put(10,2,'wall_lamp_lit')
             for y in (3,4,5,7,8):put(8,y,'conduit_vertical')
             # The existing hazard coordinate remains the wire, never a pressure plate.
-            put(8,6,'conduit_broken');prop('wire_live',8*16,6*16)
+            put(8,6,'conduit_broken')
+            state_prop('wire','FLAG_DCC_TRAP_SPENT',8,6,1,1,'wire_live','wire_spent')
             for x,y in [(7,8),(8,8),(9,8),(10,8),(11,8),(12,8),(13,8)]:put(x,y,'conduit_horizontal')
             put(7,7,'floor_drain');put(10,6,'floor_drain')
             put(6,8,'floor_repair');put(13,8,'floor_repair')
-            prop('secret_cracked',12*16,2*16)
+            state_prop('secret','FLAG_DCC_SECRET_TAKEN',12,1,1,2,'secret_cracked','secret_breached')
         elif name=='DCC_Corridor':
             for x,y in [(4,5),(6,5),(4,7),(6,7)]:put(x,y,'floor_repair')
             for x,y in [(9,5),(11,5),(9,7),(11,7)]:put(x,y,'floor_drain')
@@ -126,7 +141,9 @@ def export_rooms():
             for x in (7,8,9):put(x,7,'threshold_h')
             put(8,2,'wall_lamp_lit');put(4,2,'wall_lamp_unlit')
             for x in (9,10,11,12,13):put(x,8,'conduit_horizontal')
-            put(13,7,'conduit_vertical');put(13,6,'conduit_broken')
+            put(13,7,'conduit_vertical');put(13,6,'conduit_vertical')
+            before=room.copy();put(13,6,'conduit_broken');after=room.copy();room=before.copy()
+            states.append(('supply-line','FLAG_DCC_CACHE_BLASTED',13,6,1,1,before,after))
             put(8,6,'floor_repair')
         elif name=='DCC_Exit':
             put(8,1,'wall_lamp_lit')
@@ -141,7 +158,10 @@ def export_rooms():
           'DCC_Corridor':[(2,4,'stairs_up'),(12,4,'stairs_down')],
           'DCC_Boss':[(2,4,'stairs_up'),(12,4,'gate_open')],
           'DCC_Exit':[(2,4,'stairs_up')]}
-        for x,y,kind in warp_positions[name]:prop(kind,x*16-8,y*16-16)
+        for x,y,kind in warp_positions[name]:
+            if kind=='gate_open':
+                state_prop('gate','FLAG_DCC_BOSS_CLEARED',x-1,y-1,3,2,'gate_closed','gate_open',x*16-8,y*16-16)
+            else:prop(kind,x*16-8,y*16-16)
         words=[];bank=banks[name];mapping=[]
         for i,cell in enumerate(old['cells']):
             x=i%16;y=i//16;mid=metatile(room.crop((x*16,y*16,x*16+16,y*16+16)),bank,cell['attribute'])
@@ -151,6 +171,19 @@ def export_rooms():
         border=[c['upper_bits']|metatile(load('void'),bank,c['attribute']) for c in old['border_cells']]
         (target/'border.bin').write_bytes(struct.pack('<4H',*border))
         manifest[name]={'palette_bank':bank,'metatiles':mapping,'warps_unchanged':True}
+        for label,flag,x,y,width,height,before,after in states:
+            entries=[]
+            for yy in range(y,y+height):
+                for xx in range(x,x+width):
+                    cell=old['cells'][yy*16+xx];box=(xx*16,yy*16,(xx+1)*16,(yy+1)*16)
+                    off=cell['upper_bits']|metatile(before.crop(box),bank,cell['attribute'])
+                    on=cell['upper_bits']|metatile(after.crop(box),bank,cell['attribute'])
+                    assert off==words[yy*16+xx],(name,label,xx,yy,'overlapping state composition')
+                    state_rows.append((name,xx,yy,flag,off,on))
+                    entries.append({'x':xx,'y':yy,'off':off,'on':on,'attribute':cell['attribute']})
+            for suffix,im in [('off',before),('on',after)]:
+                im.crop((x*16,y*16,(x+width)*16,(y+height)*16)).save(state_dir/f'{label}-{suffix}.png',bits=4,transparency=0)
+            state_manifest.append({'label':label,'map':name,'flag':flag,'palette_bank':bank,'x':x,'y':y,'width':width,'height':height,'entries':entries})
     assert len(tiles)<=512 and len(metatiles)<=512,(len(tiles),len(metatiles))
     atlas=Image.new('P',(128,((len(tiles)+15)//16)*8));atlas.putpalette(native_palette)
     for i,data in enumerate(tiles):atlas.paste(Image.frombytes('P',(8,8),data),(i%16*8,i//16*8))
@@ -161,6 +194,11 @@ def export_rooms():
         # Engine secondary palette filename is the global bank number.
         shutil.copyfile(SOURCE/'optional_bg_palettes'/(name+'.pal'),base/'palettes'/f'{bank:02}.pal')
     (ROOT/'scripts/contracts/n01-composition.json').write_text(json.dumps({'tiles':len(tiles),'metatiles':len(metatiles),'rooms':manifest},indent=2)+'\n')
+    (ROOT/'scripts/contracts/n03-presentation.json').write_text(json.dumps(state_manifest,indent=2)+'\n')
+    header='// Generated by scripts/content/environment_art.py; existing flags only.\nstatic const struct DccPresentationTile sDccPresentationTiles[] = {\n'
+    for name,x,y,flag,off,on in state_rows:
+        header+=f'    {{ MAP_NUM(MAP_{name.upper()}), {x}, {y}, {flag}, 0x{off:04X}, 0x{on:04X} }},\n'
+    (engine/'src/data/dcc_presentation.h').write_text(header+'};\n')
     print('Native room composition:',len(tiles),'tiles;',len(metatiles),'metatiles; six authored maps with declared geometry')
 
 if __name__ == '__main__':

@@ -541,3 +541,5 @@ gSpecials::
 	def_special CloseDeptStoreElevatorWindow
 	def_special TrySetBattleTowerLinkType
 	def_special DccApplyServiceTrap
+	def_special DccRestoreMapPresentation
+	def_special DccRefreshMapPresentation

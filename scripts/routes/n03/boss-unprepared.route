@@ -1,0 +1,74 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+flag 46 0
+tile 13 6 12829
+duo healthy
+step 1 1 -
+step 400 0 warden-intro.ppm
+step 1 1 -
+step 400 0 warden-response.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 858 0 40 40 6 6 6 12
+pilot fortify 30000
+step 240 0 battle-ended.ppm
+step 1 1 -
+step 400 0 end-0.ppm
+step 1 1 -
+step 400 0 end-1.ppm
+step 1 1 -
+step 400 0 end-2.ppm
+step 1 2 -
+step 120 0 -
+flag 47 1
+tile 11 3 12838
+tile 12 3 12839
+tile 13 3 12840
+tile 11 4 12841
+tile 12 4 13866
+tile 13 4 12843
+battle 0 4 1 2 0 1 0
+roster 14 15 2 0 0 0
+uses 2 37 0 33
+flag 48 0
+flag 46 0
+tile 13 6 12829
+flag 2138 1
+flag 2139 0
+growth 12 974 0 10 1284 0
+item 13 1
+item 378 2
+item 380 0
+step 1 1 -
+step 400 0 boss-repeat.ppm
+growth 12 974 0 10 1284 0
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 boss-saved.ppm
+expect 34 4 8 5 7
+quit

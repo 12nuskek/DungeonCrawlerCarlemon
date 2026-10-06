@@ -1417,3 +1417,22 @@ Implemented/compiled/runtime verified YES; PR44 integration pending. Next merge
 verified geometry, then N03 existing-state feedback: conspicuous live/spent wire,
 opened cache/secret, sealed/open gate and defeated encounter markers. No new
 flags/rewards/geometry; preserve approved art and full newer regression coverage.
+
+### N03 state feedback candidate — 2026-10-06
+
+N02 PR44 merged96f651d828dd380eb836c49493417913f390d15e; issue43 complete.
+N03 issue45 task/n03-state-feedback, base that merge. Existing flags drive live/
+spent wire, closed/breached secret panel, intact/broken gate supply line, sealed/
+open gate and opened caches/cleared encounter markers. No new save variables,
+rewards, collision changes or battle rules. Immediate successful interactions
+refresh presentation; map load reconstructs it from persistent outcomes. Original
+spark pixels clarify live cable; no pressure-plate art. Secret art aligns to the
+wall above its unchanged interaction point. Dialogue identifies tag bag and
+preparation benefit before spending charge, with existing page counts retained.
+
+Acceptance: all1210 prior assertions retained plus read-only full tile-word checks
+for immediate/return/cold states. Full state variants must preserve upper bits and
+behavior;49 approved assets/six event contracts/N02 geometry unchanged. Real frames
+must prove native alternate OBJ/BG art, visual readability, no capacity/cancel
+side effects and save restoration. Source kit omissions unchanged. Implemented
+candidate only; compile/runtime/PR/merge pending. Sole writer; parent owns scheduler.

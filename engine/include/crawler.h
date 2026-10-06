@@ -4,4 +4,7 @@
 #define DCC_ALLOW_COLLECTION FALSE
 void InitCrawlerParty(void);
 void DccApplyServiceTrap(void);
+void DccRestoreMapPresentation(void);
+void DccRefreshMapPresentation(void);
+bool8 DccObjectIsResolved(u8 graphicsId);
 #endif

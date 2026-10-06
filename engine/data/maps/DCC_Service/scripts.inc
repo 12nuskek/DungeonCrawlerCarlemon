@@ -3,6 +3,7 @@ DCC_Service_MapScripts::
 	.byte 0
 
 DCC_Service_Load:
+	special DccRestoreMapPresentation
 	setvar VAR_TEMP_0, 0
 	goto_if_unset FLAG_DCC_TRAP_SPENT, DCC_Service_LoadDone
 	setvar VAR_TEMP_0, 1
@@ -16,7 +17,7 @@ DCC_Service_Warning::
 	release
 	end
 DCC_Service_Text_Warning:
-	.string "DANGER: The cracked tile sparks.\n"
+	.string "DANGER: A live wire crosses the floor.\n"
 	.string "Walk around it. Both sides are clear.\p"
 	.string "If shocked, return to the guide.\n"
 	.string "Recovery costs nothing.$"
@@ -27,6 +28,7 @@ DCC_Service_Trap::
 	lockall
 	special DccApplyServiceTrap
 	setflag FLAG_DCC_TRAP_SPENT
+	special DccRefreshMapPresentation
 	msgbox DCC_Service_Text_Trap, MSGBOX_DEFAULT
 	releaseall
 DCC_Service_TrapDone:
@@ -78,7 +80,7 @@ DCC_Service_MaraDone:
 	end
 DCC_Service_Text_Offer:
 	.string "MARA: I am marking a safe route.\n"
-	.string "My numbered tag is in the north crate.\p"
+	.string "My tag bag is beside the north wall.\p"
 	.string "Bring it back for two SCRAP?\n"
 	.string "It is optional. The ladder stays open.$"
 DCC_Service_Text_Accept:
@@ -88,7 +90,7 @@ DCC_Service_Text_Decline:
 	.string "MARA: Fair enough. Come back if you\n"
 	.string "change your mind. Watch the sparks.$"
 DCC_Service_Text_Waiting:
-	.string "MARA: The tag is in the north crate.\n"
+	.string "MARA: Find my bag by the north wall.\n"
 	.string "Take either path around the hazard.$"
 DCC_Service_Text_Full:
 	.string "MARA: No room for two SCRAP.\n"
@@ -146,7 +148,7 @@ DCC_Service_Text_Lev:
 	.string "LEV: I look for supplies. MARA looks\n"
 	.string "for exits. We disagree efficiently.\p"
 	.string "Try the north wall, right of the\n"
-	.string "crate. One panel sounds hollow.\p"
+	.string "tag bag. One panel sounds hollow.\p"
 	.string "Southwest leads to the gauntlet.\n"
 	.string "Northwest returns to the guide.$"
 
@@ -156,6 +158,7 @@ DCC_Service_Secret::
 	additem ITEM_PARALYZE_HEAL, 1
 	goto_if_eq VAR_RESULT, FALSE, DCC_Service_SecretFull
 	setflag FLAG_DCC_SECRET_TAKEN
+	special DccRefreshMapPresentation
 	msgbox DCC_Service_Text_Secret, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -231,6 +234,7 @@ DCC_Service_BlastCache::
 	goto_if_eq VAR_RESULT, FALSE, DCC_Service_CacheFull
 	removeitem ITEM_DCC_CHARGE, 1
 	setflag FLAG_DCC_CACHE_BLASTED
+	special DccRefreshMapPresentation
 	playse SE_M_EXPLOSION
 	waitse
 	msgbox DCC_Service_Text_Blasted, MSGBOX_DEFAULT
@@ -249,22 +253,22 @@ DCC_Service_CacheFull:
 	release
 	end
 DCC_Service_Text_BlastOffer:
-	.string "SEALED CACHE: A charge will open it.\n"
+	.string "Gate supplies. Blast to weaken WARDEN?\n"
 	.string "Spend one CHARGE?$"
 DCC_Service_Text_NeedsCharge:
-	.string "SEALED CACHE: You need one CHARGE.\n"
-	.string "Use the workbench to craft one.$"
+	.string "Gate supplies. A blast weakens WARDEN.\n"
+	.string "Craft a CHARGE at the workbench.$"
 DCC_Service_Text_CacheFull:
 	.string "Make room for one SUPER POTION.\n"
 	.string "Your CHARGE was not used.$"
 DCC_Service_Text_Blasted:
-	.string "CARL sets the charge. The lid pops!\n"
+	.string "The blast cuts the gate supply line.\n"
 	.string "Inside: one SUPER POTION.\p"
-	.string "DONUT: Very subtle. Next time,\n"
-	.string "try knocking with your forehead.$"
+	.string "DONUT: A door, a supply line... Next\n"
+	.string "time, try knocking with your forehead.$"
 DCC_Service_Text_CacheOpened:
 	.string "The blasted cache is empty.\n"
-	.string "Its supplies were already taken.$"
+	.string "The warden's supply line is cut.$"
 
 DCC_Service_CacheCancel:
 	msgbox DCC_Service_Text_CacheCancel, MSGBOX_DEFAULT

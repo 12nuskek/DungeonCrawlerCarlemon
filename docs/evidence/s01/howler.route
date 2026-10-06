@@ -1,0 +1,142 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 10 5 7
+duo healthy
+step 1 1 -
+step 400 0 howler-intro.ppm
+step 1 1 -
+step 400 0 howler-advice.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 857 0 35 40 6 6 6 9
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 howler-turn-one.ppm
+pattern 857 1 35 39 6 6 5 9
+battle 1 4 0 7 1 1 0
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 howler-turn-two.ppm
+step 1 1 -
+step 400 0 howler-xp-0.ppm
+step 1 1 -
+step 400 0 howler-xp-1.ppm
+step 1 1 -
+step 400 0 howler-xp-2.ppm
+step 1 1 -
+step 400 0 howler-xp-3.ppm
+step 1 1 -
+step 400 0 howler-xp-4.ppm
+step 1 1 -
+step 400 0 howler-xp-5.ppm
+growth 10 691 0 10 1001 0
+foes 0 17
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 howler-turn-3.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 howler-turn-4.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 howler-turn-5.ppm
+step 1 1 -
+step 400 0 howler-win-0.ppm
+step 1 1 -
+step 400 0 howler-win-1.ppm
+step 1 1 -
+step 400 0 howler-win-2.ppm
+step 1 1 -
+step 400 0 howler-win-3.ppm
+step 1 1 -
+step 400 0 howler-win-4.ppm
+step 1 1 -
+step 400 0 howler-win-5.ppm
+step 1 1 -
+step 400 0 howler-win-6.ppm
+step 1 1 -
+step 400 0 howler-win-7.ppm
+step 1 1 -
+step 400 0 howler-win-8.ppm
+step 1 1 -
+step 400 0 howler-win-9.ppm
+step 1 1 -
+step 400 0 howler-win-10.ppm
+step 1 2 -
+step 120 0 -
+battle 0 4 1 3 0 1 0
+flag 2136 1
+flag 2137 1
+flag 47 0
+growth 11 748 0 10 1058 0
+roster 30 19 3 0 0 0
+uses 3 40 0 37
+step 1 1 -
+step 400 0 howler-repeat.ppm
+growth 11 748 0 10 1058 0
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 howler-saved.ppm
+expect 34 3 10 5 7
+quit

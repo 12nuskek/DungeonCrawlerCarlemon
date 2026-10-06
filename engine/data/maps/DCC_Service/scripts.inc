@@ -146,7 +146,9 @@ DCC_Service_Text_Lev:
 	.string "LEV: I look for supplies. MARA looks\n"
 	.string "for exits. We disagree efficiently.\p"
 	.string "Try the north wall, right of the\n"
-	.string "crate. One panel sounds hollow.$"
+	.string "crate. One panel sounds hollow.\p"
+	.string "The southwest ladder reaches the\n"
+	.string "gauntlet. The guide is northwest.$"
 
 DCC_Service_Secret::
 	lockall

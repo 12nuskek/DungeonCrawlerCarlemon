@@ -4440,6 +4440,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DCC_Service/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Service/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_CORRIDOR",
+      "name": "DCC_Corridor_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Corridor/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Corridor/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_BOSS",
+      "name": "DCC_Boss_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Boss/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Boss/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_EXIT",
+      "name": "DCC_Exit_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DCC_Exit/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_Exit/map.bin"
     }
   ]
 }

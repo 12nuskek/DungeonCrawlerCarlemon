@@ -375,6 +375,8 @@ gBattleAnims_Moves::
 	.4byte Move_HARDEN @ DCC_BRACE
 	.4byte Move_SWIFT @ DCC_SPARK
 	.4byte Move_GROWL @ DCC_WEAKEN
+	.4byte Move_MEDITATE @ DCC_WINDUP
+	.4byte Move_POUND @ DCC_SLAM
 	.4byte Move_COUNT @ unreachable sentinel after final move
 
 	.align 2

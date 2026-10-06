@@ -1,0 +1,198 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+flag 46 0
+duo healthy
+step 1 1 -
+step 400 0 warden-intro.ppm
+step 1 1 -
+step 400 0 warden-response.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 858 0 40 40 6 6 6 12
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 windup-countered.ppm
+pattern 858 1 39 40 6 6 6 12
+support 39 39 7 6 5
+battle 1 4 0 8 2 1 0
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 defense-turn-2.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 defense-turn-3.ppm
+support 37 37 9 5 3
+uses 8 37 2 37
+step 1 1 -
+step 120 0 -
+step 1 32 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 32 -
+step 60 0 -
+step 1 1 -
+step 1800 0 offense-turn-4.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 offense-turn-5.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 offense-turn-6.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 offense-turn-7.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 offense-turn-8.ppm
+step 1 1 -
+step 400 0 boss-xp-0.ppm
+step 1 1 -
+step 400 0 boss-xp-1.ppm
+step 1 1 -
+step 400 0 boss-xp-2.ppm
+step 1 1 -
+step 400 0 boss-xp-3.ppm
+step 1 1 -
+step 400 0 boss-xp-4.ppm
+step 1 1 -
+step 400 0 boss-xp-5.ppm
+step 1 1 -
+step 400 0 boss-xp-6.ppm
+step 1000 0 helper-menu.ppm
+growth 11 910 0 10 1220 0
+foes 0 5
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 helper-finished.ppm
+step 1 1 -
+step 400 0 boss-win-0.ppm
+step 1 1 -
+step 400 0 boss-win-1.ppm
+step 1 1 -
+step 400 0 boss-win-2.ppm
+step 1 1 -
+step 400 0 boss-win-3.ppm
+step 1 1 -
+step 400 0 boss-win-4.ppm
+step 1 1 -
+step 400 0 boss-win-5.ppm
+step 1 1 -
+step 400 0 boss-win-6.ppm
+step 1 1 -
+step 400 0 boss-win-7.ppm
+step 1 1 -
+step 400 0 boss-win-8.ppm
+step 1 1 -
+step 400 0 boss-win-9.ppm
+step 1 1 -
+step 400 0 boss-win-10.ppm
+step 1 1 -
+step 400 0 boss-win-11.ppm
+step 1 2 -
+step 120 0 -
+battle 0 4 1 2 0 1 0
+flag 47 1
+flag 48 0
+flag 46 0
+flag 2138 1
+flag 2139 0
+growth 12 974 0 10 1284 0
+roster 8 10 2 0 0 0
+uses 2 37 0 33
+item 13 1
+item 378 2
+item 380 0
+step 1 1 -
+step 400 0 boss-repeat.ppm
+growth 12 974 0 10 1284 0
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 boss-saved.ppm
+expect 34 4 8 5 7
+quit

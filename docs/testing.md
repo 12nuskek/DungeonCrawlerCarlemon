@@ -207,3 +207,11 @@ variables. Five production routes67 checks and two explicit fixture routes44
 checks cover missing/cancel/craft/use, output capacity before consumption, repeated
 crafting, cache/medicine effects, cold saves and R02 workshop capacity/repeat.
 [Full 111-check evidence](evidence/d02/README.md).
+
+## S01 connected-slice replay
+
+At tested revision `2e8de08292a8a4fe380fda06accdb2b97c798401`, run
+`bash scripts/test-s01.sh` with the same toolchain variables. All357 assertions
+across18 processes use the production ROM. Prepared/unprepared strategy and
+defeat branches copy normal manual flash saves, never injected game state.
+[Full logs,30 actual screenshots and route details](evidence/s01/README.md).

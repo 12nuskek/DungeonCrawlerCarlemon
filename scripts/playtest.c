@@ -6,6 +6,7 @@
  * support CARL_PP2 DONUT_PP2 CARL_DEF FOE1_ATK FOE2_ATK,
  * growth CARL_LEVEL XP ITEM DONUT_LEVEL XP ITEM; stats CARL_MAXHP ATK DONUT_MAXHP MAGIC;
  * foes HP1 HP2; item ID QUANTITY; flag ID SET.
+ * pattern TRAINER TURN FOE_PP0 FOE_PP1 FOE_ATTACK FOE_DEFENSE CARL_ATTACK FOE_LEVEL.
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
  * Supply ROM SAVE and `arm-none-eabi-nm -g --defined-only` output paths.
@@ -62,7 +63,7 @@ static void log_emulator(struct mLogger *logger, int category, enum mLogLevel le
 int main(int argc, char **argv)
 {
     if (argc != 4) return 2;
-    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, addr;
+    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, save2ptr=0, pockets=0, trainer=0, results=0, addr;
     char type, symbol[128];
     FILE *symbols=fopen(argv[3], "r");
     if (!symbols) return 3;
@@ -79,6 +80,8 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"gBagPosition")) bag=addr;
         if (!strcmp(symbol,"gSaveBlock2Ptr")) save2ptr=addr;
         if (!strcmp(symbol,"gBagPockets")) pockets=addr;
+        if (!strcmp(symbol,"gTrainerBattleOpponent_A")) trainer=addr;
+        if (!strcmp(symbol,"gBattleResults")) results=addr;
         if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe") || !strcmp(symbol,"gDccRewardProbe")) probe=addr;
     }
     fclose(symbols);
@@ -126,7 +129,7 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strncmp(line,"growth ",7) && strncmp(line,"stats ",6) && strncmp(line,"foes ",5) && strncmp(line,"item ",5) && strncmp(line,"flag ",5) && strncmp(line,"pattern ",8) && strcmp(line,"duo healthy\n")) {result=13;break;}
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);
@@ -189,6 +192,22 @@ int main(int argc, char **argv)
                 }
             } else if (!result) actual=(core->busRead8(core,sb+0x1270+id/8)>>(id%8))&1;
             if (result || actual!=wanted) {fprintf(stderr,"FAILED actual=%u: %s",actual,line);result=24;break;}
+            checks++;printf("PASS %s",line);
+        }
+        unsigned pattern[]={trainer?core->busRead16(core,trainer):0,
+            results?core->busRead8(core,results+0x13):0,
+            core->busRead8(core,mons+0x58+0x24),core->busRead8(core,mons+0x58+0x25),
+            core->busRead8(core,mons+0x58+0x19),core->busRead8(core,mons+0x58+0x1A),
+            core->busRead8(core,mons+0x19),core->busRead8(core,mons+0x58+0x2A)};
+        printf("pattern trainer=%u turn=%u foePP=%u,%u foeAtkDef=%u,%u CarlAtk=%u foeLevel=%u\n",
+            pattern[0],pattern[1],pattern[2],pattern[3],pattern[4],pattern[5],pattern[6],pattern[7]);
+        if (!strncmp(line,"pattern ",8)) {
+            char values[8][32]; unsigned wanted;
+            if (!trainer || !results || sscanf(line+8,"%31s %31s %31s %31s %31s %31s %31s %31s %c",
+                values[0],values[1],values[2],values[3],values[4],values[5],values[6],values[7],&extra)!=8) result=25;
+            for (unsigned i=0;i<8 && !result;i++)
+                if (!number(values[i],65535,&wanted) || wanted!=pattern[i]) result=25;
+            if (result) {fprintf(stderr,"FAILED: %s",line);break;}
             checks++;printf("PASS %s",line);
         }
         unsigned support[]={core->busRead8(core,mons+0x25),core->busRead8(core,mons+2*0x58+0x25),

@@ -557,3 +557,90 @@ R02 Scrap-box full-capacity edge now exercised. S02 must replace inherited DAD
 menu-refusal wording and stock icons/props/audio as scheduled. Next push evidence,
 draft/review/merge, then S01 connected encounters/boss/staircase. Cloud task remains
 `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no overlapping writer/scheduler.
+
+## D02 integration / S01 start — 2026-10-06
+
+PR #23 merged `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`; issue #22 closed.
+Evidence `824a6ff1a7f36a008fc340715e42967f38d63a8e`, tested `b53b8e6`. Main clean
+and reconciled, no open PR. An initial PR-create response produced no PR; a read
+confirmed none before retry successfully created #23. No duplicate execution.
+Parent independently reviewed D01 with no blocker (114 checks,19 actual PNGs).
+Current evidence READMEs now include actual integration updates. Parent retains
+S03 declined-quest/avoided-trap completion route plus low-HP/existing-status trap
+edges; D01 fixture covers HP1 and production covers ordinary paralysis/cure.
+
+S01 branch `task/s01-connected-slice`, base this merge. Connect second encounter
+zone/boss/stairs, distinct durable/disruptive enemies, readable boss cadence and
+optional preparation advantage, local defeat recovery, persistent progression.
+No Stage6 expansion or save-layout change. Implemented/compiled/runtime/merge
+pending. No blocker. Next author narrow connected content/encounter changes.
+User asked about earlier visuals; parent offered reordering, but none approved yet.
+Safe sequential visual candidate: Carl/Donut battle/icons/overworld and existing
+room tiles/palettes with unchanged collisions/events. Preserve S01 if that steering
+arrives. Cloud task remains `01a10f4b-596b-700b-b8ba-241e3ca2c000`, sole writer.
+
+User confirmed “continue like normal”; keep S01→S02→S03, no visual reorder.
+S01 source authoring now connects Service→Gauntlet→Gate→Review staircase. Four
+trainer IDs add guard/howler and prepared/unprepared warden; authored cadence
+uses existing turn/move machinery. Local defeat callback extended only over these
+authored IDs. Boss/stair flags use existing save bits. Compilation/runtime pending.
+
+S01 incremental build PASS after source inspection and move-availability guard.
+New host `pattern` diagnostic reads trainer/turn, enemy PP/attack/defense/level and
+Carl attack from real RAM; no writes. Fresh existing setup replay is starting before
+new gate/encounter routes. No S01 runtime acceptance or integration claim yet.
+
+## S01 runtime checkpoint — 2026-10-06 (partial, not acceptance)
+
+Source `f784d58fe9692ef696224742cfa279cf3211ead4`, incremental build PASS. Reused
+R02 setup32/trial53/re-entry-rest34 pass; new gates17 verify boss/stairs locked,
+guard19 verifies pattern/victory/no duplicate XP/save, guard-rest12 verifies cold
+depletion/backtrack/recovery/save; howler opening5 verifies attack-down pattern.
+Carl after guard level10 XP627, Donut9 XP937; depleted HP25/6 and resources3/40,0/37
+survive cold save, guide restores36/28 and8/40,2/40. No S01 production defect/fix.
+Exploratory movement timing needed a direction-aware correction; longer1800-frame
+action waits finish animations before asserting the turn counter. No blocker.
+Current local save artifacts/s01/playtest.sav is before howler at gauntlet10,5;
+before-guard.sav and before-howler.sav are normal saved checkpoints. Host binary
+/workspace/toolchain/playtest-s01; symbols artifacts/s01/game.sym.
+Next exact action: finish howler route, local defeat/retry, prepared/unprepared boss,
+stairs/cold reload; isolated committed suite and scoped PR still pending. User kept
+normal S01→S02→S03 order. No parallel writer/scheduler.
+
+## S01 complete exploratory routes — 2026-10-06
+
+Shell/executor healthy at07:53:31UTC after07:51:52 disconnect callback; existing
+process continued, no duplicate writer/run. Parent independently reviewed D02
+without blocker. PR17/19/21/23 metadata now explicitly records actual merged SHAs.
+
+All S01 exploratory routes pass357 assertions across18 production-ROM processes.
+No game-state fixture: prepared and defeat routes branch ordinary manual flash
+saves from the same fresh-play progression. Unprepared warden12 defeated with
+BRACE/WEAKEN then attacks, no gear/explosive/healing use; Carl12 XP974/Donut10 XP1284,
+HP8/10 survive. Prepared warden10 defeated by faster offense with no BRACE or
+healing item; Carl11 XP940/Donut10 XP1250, HP21/24. Both staircase/end saves survive
+cold reload; unprepared ending returns to gate and cannot repeat boss XP.
+
+Controlled loss deliberately uses ordinary STRIKE ally-targeting to incapacitate
+Donut, then the warden defeats Carl. Both HP0 observed, local outcome2 restores
+HP38/30 and all four resources, leaves boss/stair flags unset, retains prior patrol
+progress. Immediate loss save/cold retry opens a new full-health battle. This is
+an intentional defeat test, not a recommended tactic or RAM-injected state.
+
+No S01 production defect/fix or unresolved blocker. Input timing/navigation
+adjustments only. All implementations compiled; final isolated committed357-check
+suite still pending. Next commit these routes, run test-s01.sh, review/archive
+actual evidence, scoped issue24 draft PR and integration. S02 original visuals/UI
+then S03 complete regression remain pending; no Stage6 expansion.
+
+## S01 isolated acceptance — 2026-10-06
+
+Tested `2e8de08292a8a4fe380fda06accdb2b97c798401`, base `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`.
+`bash scripts/test-s01.sh` PASS357 assertions/18 production sessions,18 empty errors.
+ROM SHA256 `ce16d2fd150917e8d865563fd76fedea571cefc6aaf74da4fdbd780f38617248`.
+Run artifacts/s01/run-4uGUcD. Reviewed30 actual PNGs and focused source diff; no
+production defect or blocker. docs/evidence/s01 contains85 hash-verified artifacts.
+Implemented/compiled/runtime verified PASS; issue24 PR/integration pending.
+Shell healthy after context resume; source/evidence preserved, no duplicate run.
+Next push evidence, draft/merge verified S01; continue S02 original art/UI, thenS03.
+Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.

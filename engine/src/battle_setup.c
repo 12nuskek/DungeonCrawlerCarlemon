@@ -1326,8 +1326,9 @@ void BattleSetup_StartTrainerBattle(void)
 
 static void CB2_EndTrainerBattle(void)
 {
-    // Trial-only safe return; never send a defeated crawler to the old hometown.
-    if (gTrainerBattleOpponent_A == TRAINER_DCC_TRIAL)
+    // Authored crawler encounters return locally; never enter stock hometown recovery.
+    if (gTrainerBattleOpponent_A >= TRAINER_DCC_TRIAL
+        && gTrainerBattleOpponent_A <= TRAINER_DCC_BOSS_PREPARED)
     {
         if (gBattleOutcome == B_OUTCOME_WON)
             SetBattledTrainersFlags();

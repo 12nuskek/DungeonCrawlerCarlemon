@@ -1,0 +1,144 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+flag 46 1
+flag 47 0
+duo healthy
+step 1 1 -
+step 400 0 prepared-intro.ppm
+step 1 1 -
+step 400 0 prepared-pattern.ppm
+step 1 1 -
+step 900 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 859 0 40 40 6 6 6 10
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 prepared-turn-1.ppm
+pattern 859 1 39 40 7 6 6 10
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 prepared-turn-2.ppm
+pattern 859 2 39 39 6 6 6 10
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 32 -
+step 60 0 -
+step 1 1 -
+step 1800 0 prepared-turn-3.ppm
+step 1 1 -
+step 400 0 prepared-xp-0.ppm
+step 1 1 -
+step 400 0 prepared-xp-1.ppm
+step 1 1 -
+step 400 0 prepared-xp-2.ppm
+growth 11 883 0 10 1193 0
+foes 0 14
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 prepared-turn-4.ppm
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1800 0 prepared-turn-5.ppm
+step 1 1 -
+step 400 0 prepared-win-0.ppm
+step 1 1 -
+step 400 0 prepared-win-1.ppm
+step 1 1 -
+step 400 0 prepared-win-2.ppm
+step 1 1 -
+step 400 0 prepared-win-3.ppm
+step 1 1 -
+step 400 0 prepared-win-4.ppm
+step 1 1 -
+step 400 0 prepared-win-5.ppm
+step 1 1 -
+step 400 0 prepared-win-6.ppm
+step 1 1 -
+step 400 0 prepared-win-7.ppm
+step 1 1 -
+step 400 0 prepared-win-8.ppm
+step 1 2 -
+step 120 0 -
+battle 0 4 1 4 0 1 0
+flag 46 1
+flag 47 1
+flag 48 0
+flag 2138 0
+flag 2139 1
+growth 11 940 0 10 1250 0
+roster 21 24 4 0 0 0
+uses 4 40 0 38
+item 13 1
+item 22 1
+item 378 0
+item 380 0
+step 1 1 -
+step 400 0 prepared-repeat.ppm
+growth 11 940 0 10 1250 0
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 prepared-win-saved.ppm
+expect 34 4 8 5 7
+quit

@@ -1250,6 +1250,18 @@
     {
       "id": "MAPSEC_DCC_SERVICE",
       "name": "SERVICE ROOM"
+    },
+    {
+      "id": "MAPSEC_DCC_CORRIDOR",
+      "name": "SUPPLY GAUNTLET"
+    },
+    {
+      "id": "MAPSEC_DCC_BOSS",
+      "name": "GATE CHAMBER"
+    },
+    {
+      "id": "MAPSEC_DCC_EXIT",
+      "name": "FIRST STAIRCASE"
     }
   ]
 }

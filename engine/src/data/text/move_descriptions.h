@@ -1787,4 +1787,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DCC_BRACE - 1] = sDccBraceDescription,
     [MOVE_DCC_SPARK - 1] = sDccSparkDescription,
     [MOVE_DCC_WEAKEN - 1] = sDccWeakenDescription,
+    [MOVE_DCC_WINDUP - 1] = sMeditateDescription,
+    [MOVE_DCC_SLAM - 1] = sPoundDescription,
 };

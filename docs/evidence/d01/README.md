@@ -1,5 +1,6 @@
 # D01 optional quest, trap and secret
 
+Integration update: merged PR #21 as `c42d444b8c2ae1b665105baad133094859bf8fa5`. Earlier pending labels below describe the verification-time checkpoint.
 Test date: 2026-10-06. Issue #20; scoped PR integration pending.
 Base `ae4679e2e19a94fd60ac879c9dd18e89f7de2c41`.
 Tested `060864caa9aecfa48c38c810fe2a7f87895b308e`.

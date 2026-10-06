@@ -14,8 +14,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | R01 | B02, E02 | Complete: 174 assertions; merged PR #17 (`5a0fd8e`); issue #16 closed |
 | R02 | R01 | Complete: 169 assertions; merged PR #19 (`ae4679e`); issue #18 closed |
 | D01 | E02, R02 | Complete: 114 assertions; merged PR #21 (`c42d444`); issue #20 closed |
-| D02 | R01, D01 | Verified: 111 assertions; issue #22; scoped integration pending |
-| S01 | B03, R02, D02 | Pending: connected slice, boss and stairs |
+| D02 | R01, D01 | Complete: 111 assertions; merged PR #23 (`369a9ea`); issue #22 closed |
+| S01 | B03, R02, D02 | 357 production assertions PASS; reviewed; integration pending |
 | S02 | S01 | Pending: original assets, dialogue/UI and placeholder review |
 | S03 | S02 | Pending: full regression and review package |
 
@@ -123,3 +123,13 @@ consumes charge only after reward capacity succeeds, awards SuperPotion1 once an
 persists. Test cold crafting/use, medicine effect, both atomic failure paths and
 R02 workshop Scrap full-capacity branch. No main-route gate, save schema, new battle
 model or scheduler. Original item/prop art remains S02.
+
+## S01 contract
+
+Base `369a9ea0dbe8aa61d7f091da533d18c6efafd5fb`, issue #24. Connected second
+zone, durable/disruptive patrols, boss with readable cadence/preparation advantage,
+confirmed staircase/review ending. Prove fresh progression, win/defeat/retry,
+prepared/unprepared strategies, cleared fights no duplicate XP, cold saves and
+return routes. Keep optional quest/trap/rewards independent of main progression.
+No Stage6 expansion, save schema, parallel writer or scheduler. User explicitly
+kept original S01→S02→S03 order after asking about visuals.

@@ -1,0 +1,74 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 5 5 7
+flag 2136 1
+flag 2137 0
+growth 10 627 0 9 937 0
+roster 25 6 3 0 0 0
+step 20 64 -
+step 40 0 -
+step 52 32 -
+step 40 0 -
+step 180 0 service-return.ppm
+expect 34 2 2 9 7
+step 84 64 -
+step 40 0 -
+step 180 0 landing-return.ppm
+expect 34 1 2 4 7
+step 20 16 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guard-rest.ppm
+roster 36 28 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 -
+step 84 128 -
+step 40 0 -
+step 180 0 gauntlet-return.ppm
+expect 34 3 2 4 7
+step 132 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 3 10 5 7
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 howler-ready.ppm
+duo healthy
+quit

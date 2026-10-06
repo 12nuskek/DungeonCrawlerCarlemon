@@ -32,6 +32,7 @@ run_route setup "$repo/docs/evidence/s03/setup.route" 34 playtest.sav game.sym
 run_route ui "$repo/docs/evidence/s03/ui.route" 16 playtest.sav game.sym
 run_route trial "$repo/docs/evidence/s03/trial.route" 61 playtest.sav game.sym
 run_route rest "$repo/docs/evidence/s03/rest.route" 36 playtest.sav game.sym
+cp "$evidence/playtest.sav" "$evidence/motion.sav"
 run_route movement "$repo/docs/evidence/s03/movement.route" 9 motion.sav game.sym
 run_route gates "$repo/docs/evidence/s03/gates.route" 23 playtest.sav game.sym
 run_route guard "$repo/docs/evidence/s03/guard.route" 13 playtest.sav game.sym

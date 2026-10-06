@@ -725,3 +725,26 @@ the first foe falls earlier, so XP/menu advance differs; we recorded actual new
 turn/resource phases and retained precise final HP/PP checks. Presentation/object
 changes can shift replay RNG timing; no battle stats/move rules changed in S02.
 Full branch coverage belongs to S03. Next final source commit/run, archive andPR.
+
+## S02 visual acceptance blocked by user — 2026-10-06
+
+User reaction through parent: “Omg these sprites are not good haha”. Treat current
+protagonist quality as FAILED visual acceptance; do not merge S02 or begin dependent
+S03. Parent is preparing an asset-only replacement package outside this repo; this
+remains the sole repository writer/integrator. Exact dimensions, frames, palette
+wiring and destinations: docs/s02-art-handoff.md. Stronger silhouettes, natural
+poses and deliberate pixel shading required; original geometry was insufficient.
+
+Latest source `a242983b6f6d061dd2c5bd4916c34f8b1fd10266`, isolated128 assertions/6
+processes PASS in artifacts/s02/run-0dHXqs,6 empty errors. ROM SHA256
+`26ef6bff3466499592b994de02293efe338362b79fb9da69a55039206ad0b921`.
+31 actual final captures reviewed; title tile0 fix and summary heading fix verified.
+Implemented/compiled/runtime PASS for current scope; visual acceptance FAIL;
+merged NO. Existing preview72fc11a source5fd9217 was delivered by parent09:03.
+
+Exact next action: receive external art package/reference, inspect dimensions and
+palettes, integrate as sole writer, prevent generators overwriting replacements,
+compile and capture actual updated duo/summary/overworld, seek requested visual
+review before treating S02 art accepted. Independent title/menu verification may
+continue. No new scheduler, no duplicate Cloud task. Task ID remains
+01a10f4b-596b-700b-b8ba-241e3ca2c000. S03 and Stage6 stay gated.

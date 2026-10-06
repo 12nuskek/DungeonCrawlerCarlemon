@@ -1,0 +1,66 @@
+[
+  {
+    "name": "rubble",
+    "frame": "rooms/entrance-center.ppm",
+    "canvas_x": 96,
+    "canvas_y": 40,
+    "opaque_pixels": 75,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "warning_sign",
+    "frame": "rooms/service-center.ppm",
+    "canvas_x": 96,
+    "canvas_y": 24,
+    "opaque_pixels": 116,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "quest_tag",
+    "frame": "rooms/service-center.ppm",
+    "canvas_x": 160,
+    "canvas_y": 8,
+    "opaque_pixels": 170,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "workbench",
+    "frame": "rooms/service-center.ppm",
+    "canvas_x": 80,
+    "canvas_y": 72,
+    "opaque_pixels": 88,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "cache_sealed",
+    "frame": "rooms/service-center.ppm",
+    "canvas_x": 192,
+    "canvas_y": 72,
+    "opaque_pixels": 127,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "storage_rack",
+    "frame": "rooms/landing-center.ppm",
+    "canvas_x": 160,
+    "canvas_y": 72,
+    "opaque_pixels": 128,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "storage_rack",
+    "frame": "legacy-landing/native-props.ppm",
+    "canvas_x": 160,
+    "canvas_y": 72,
+    "opaque_pixels": 128,
+    "exact_rgb555_pixels": true
+  },
+  {
+    "name": "storage_rack",
+    "frame": "legacy-workshop/native-props.ppm",
+    "canvas_x": 160,
+    "canvas_y": 72,
+    "opaque_pixels": 128,
+    "exact_rgb555_pixels": true
+  }
+]

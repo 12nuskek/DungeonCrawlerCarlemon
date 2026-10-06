@@ -292,3 +292,10 @@ Save structure is unchanged; tested cases/limits are in evidence/n01/rooms.
 `environment_art.py`. Accepted PNG masters are authoritative; partial reference
 source omissions do not prevent deterministic game export. Do not claim complete
 source-sheet reproduction or publish the omitted source/packed artifacts.
+
+N02 full regression: `DCC_LEGACY_RUN=/path/to/I01/run
+DCC_CORNER_SAVE=/path/to/N01-normal-corner.sav bash scripts/test-n02.sh` (set both
+on one shell command). Accepteddec2c5e,73 processes/1210 checks:1017 production,
+193 diagnostic fixture. Includes all newer Journal/alternate-order/legacy checks.
+See evidence/n02/final for exact inputs, clean build, raw runtime, actual forward
+and center views,26-cell geometry contract and two corrected route obstructions.

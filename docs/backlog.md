@@ -205,3 +205,8 @@ N01 complete: PR41 props and PR42 room materials/save-cache compatibility merged
 N02 issue43 now active: explicit30-cell outlines/supports; full regression and
 old-save escape proof required. Persistent visual state feedback follows after
 verified geometry, then final full playthrough/private updated review package.
+
+N02 verified atdec2c5e: final26-cell contract,73 processes/1210 assertions,
+17 exact rendered-art checks; all original/newer/legacy routes retained. PR44
+awaits merge. N03 next: existing-state environment feedback and accurate matching
+dialogue, with N02 geometry invariant. Final private review package still pending.

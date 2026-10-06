@@ -1396,3 +1396,24 @@ all assertions. Parent's wire-contrast/live-spent feedback remains N03, not hidd
 inside geometry work. Next one clean committed rerun; two design corrections so
 far for the route-obstruction blocker. Stop dependent work if still unresolved
 under the three-attempt rule; preserve the scoped branch and accepted N01 baseline.
+
+### N02 verified — 2026-10-06
+
+Testeddec2c5e479cdceedf8b358d00448358640561b91, basec71636a; ROM
+421d812a9a18ac1b1432dc5b831a5ba281c6e034249215364f3a99fd598d33b1.
+Full73 processes/1210 assertions PASS:1017 production and193 labeled fixture.
+All73 error logs empty. Original1053 +newer43+legacy41+rooms18+boundary47+
+ordinary old-corner escape8 retained. Nine opponent/eight prop pixel checks pass.
+All26 declared geometry changes/1150 unchanged cells/six event contracts/49 art
+files verified. Two isolated complete exports preserve8807 tracked assets.
+
+Actual six forward arrival views (Exit after closing its automatic message/save),
+six center views, alcove/boundary and old-corner escape captures reviewed. Exit13,9
+ordinary older save steps safely to12,9 with state/resources unchanged. Both earlier
+route blockers resolved by removing obstructions; no retimed gameplay detours.
+Evidence docs/evidence/n02/final includes raw logs, images, input identities and
+precise production/fixture/retry/pacing limits. No ROM/save/executable committed.
+Implemented/compiled/runtime verified YES; PR44 integration pending. Next merge
+verified geometry, then N03 existing-state feedback: conspicuous live/spent wire,
+opened cache/secret, sealed/open gate and defeated encounter markers. No new
+flags/rewards/geometry; preserve approved art and full newer regression coverage.

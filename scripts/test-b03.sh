@@ -29,7 +29,8 @@ run_route setup "$repo/docs/evidence/e01/new-game.route" 16
 # Loss never saves: the subsequent cold boot still starts at the pre-trial save.
 run_route menus "$repo/docs/evidence/b03/menus.route" 14
 run_route guide-before-trial "$repo/docs/evidence/b02/guide-before-trial.route" 10
-run_route support-defeat "$repo/docs/evidence/b02/support-defeat.route" 19
+run_route battle-menu "$repo/docs/evidence/b03/battle-menu.route" 10
+run_route support-defeat "$repo/docs/evidence/b03/support-defeat.route" 19
 run_route depletion-victory "$repo/docs/evidence/b02/depletion-victory.route" 28
 run_route reload "$repo/docs/evidence/b02/reload.route" 10
 # Explicit GBA-side fixture, patched only in the isolated source after production runs.

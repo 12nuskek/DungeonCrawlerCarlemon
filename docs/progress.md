@@ -363,3 +363,18 @@ non-capture pockets in both directions and wrap, unchanged duo/resources. Initia
 label clipping fixed; navigation test corrected after tracing actual screens.
 No game softlock found. Separate GBA-side API fixture and isolated complete replay
 pending; production gate remains unverified until those finish.
+
+B03 validation correction: first isolated attempt `a763280` compiled and passed
+setup/menu/guide, but the historical B02 loss route failed its exact HP checkpoint:
+Donut fell first and both were already restored by that frame. No defeat softlock.
+New observed route proves Donut down/Carl acting (BRACE 33→32 while Donut remains
+33), both down and full recovery/retry: 19 checks pass. Victory/depletion passes
+28 unchanged checks. Battle inventory adds 10 checks. Fixture initially failed to
+link because upstream linker discards unused libc memcmp; replaced with explicit
+byte comparison, then all 3 fixture assertions / mask127 passed. No production
+engine workaround or RAM injection. Final isolated suite still pending.
+
+Parent B02 review independently confirmed 83 assertions, 33 evidence hashes and
+14 PNGs. S03 still needs total action exhaustion, depleted/immediate-defeat saves,
+and actual nonzero-status cure once status encounters exist. B03's new route covers
+the complementary Donut-down/Carl-acting case; preserve both milestone records.

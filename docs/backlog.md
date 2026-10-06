@@ -84,3 +84,8 @@ Audit accessible maps, gifts, tutorials, storage and breeding. Preserve save lay
 Acceptance: isolated build, real menu/pocket/roster and combat/recovery replay,
 separate test-fixture defensive-rule checks, full logs and screenshots. Excludes
 new encounters/rewards, original S02 battle art, expanded campaign or scheduling.
+
+S03 retained edge coverage: either crawler incapacitated while the other acts;
+all actions exhausted; save/reload while depleted or immediately after defeat;
+cure a genuinely inflicted nonzero status once such encounters exist. These are
+coverage edges, not demonstrated B02 failures. B03 adds Donut-down/Carl-acting.

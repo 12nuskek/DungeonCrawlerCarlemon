@@ -47,6 +47,7 @@ static void ProbeCollectionPolicy(void)
     struct Pokemon gift = gPlayerParty[0];
     struct Pokemon before[2];
     bool8 noBalls = TRUE;
+    bool8 sameParty = TRUE;
     u8 level;
     memcpy(before, gPlayerParty, sizeof(before));
     for (i = ITEM_MASTER_BALL; i <= ITEM_PREMIER_BALL; i++)
@@ -57,7 +58,10 @@ static void ProbeCollectionPolicy(void)
     if (ScriptGiveEgg(SPECIES_PICHU) == MON_CANT_GIVE) gDccCollectionProbe |= 4;
     StoreSelectedPokemonInDaycare();
     GiveEggFromDaycare();
-    if (gPlayerPartyCount == 2 && memcmp(before, gPlayerParty, sizeof(before)) == 0)
+    for (i = 0; i < sizeof(before); i++)
+        if (((u8 *)before)[i] != ((u8 *)gPlayerParty)[i])
+            sameParty = FALSE;
+    if (gPlayerPartyCount == 2 && sameParty)
         gDccCollectionProbe |= 8;
     level = 28;
     SetMonData(&gift, MON_DATA_LEVEL, &level);

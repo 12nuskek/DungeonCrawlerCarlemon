@@ -8,7 +8,7 @@ older map/object caches are unsupported, never silently migrated.
 | Entry | Production boundary | Verification |
 | --- | --- | --- |
 | Ball rewards, shops, scripts | AddBagItem rejects every ball pocket item before capacity/quantity mutation | GBA fixture loops Master through Premier; ordinary Potion add/remove still works |
-| Bag field/battle | Ball pocket normalized on entry and skipped in both directions, including wrap | Actual field menu route, pocket IDs 0/2/3/4; battle regression |
+| Bag field/battle | Ball pocket normalized on entry and skipped in both directions, including wrap | Actual field and battle menu routes; pocket IDs 0/2/3/4, with battle 0→2→0 |
 | Item handler | PokeBall handler displays original refusal before removal/action submission | Source review; no ball is obtainable in production |
 | Capture opcode | Rejects before trainer, Wally, Safari, wild odds or successful catch paths; waits for controller idle | GBA fixture calls unchanged opcode for all four flags, idle and busy; no caught outcome |
 | Gifts/scripted eggs | GiveMonToPlayer returns MON_CANT_GIVE before party/storage writes; ScriptGiveEgg funnels through it | GBA fixture checks both and exact unchanged party bytes |

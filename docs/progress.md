@@ -1102,3 +1102,39 @@ defect observed, so improvement cycles stop after1. Precise S03 retry/pacing
 limits remain in the review package. Next: merge reviewed I01, attempt supported
 private Library build delivery, record result, then await user's playtest.
 No public ROM/playable release and no Stage6 work. Original runner finished.
+
+### Final slice handoff — 2026-10-06
+
+I01 PR32 merged052979d38ff9800780fac66cb052896767c4f1c8. Evidence head
+5635bcc02edf3e110e1dee8cb1b75bae3078cf91; tested source
+81b232ae41647b5e456e45ed73d51a170f17fb58. Stages0–5 and improvement1 are
+implemented, compiled, runtime verified and merged. Issue31 complete.
+
+Final production ROM SHA256:
+f46643a4a2eb0065e75ed33ea2baafe533d5508a8ee45922282108e778e43948.
+Full1053/62 runtime suite,62 empty emulator error logs and9 exact native-image
+checks passed. Complete evidence, source provenance and reproducible build/play
+instructions are in docs/evidence/i01, docs/testing.md and docs/playtest.md.
+
+Private delivery SUCCEEDED through the supported Library create flow; local
+Library identity metadata was applied successfully. Filename:
+DungeonCrawlerCarlemon-I01-81b232a.zip (7,791,421bytes), ZIP SHA256
+7e7bce9f554b49ae739fc2ef3339b2b35cc2af2a340ee33a1fe6986f0732873a.
+Contains one production ROM, instructions/provenance and evidence, no fixture
+ROMs or development saves. ZIP integrity and all input checksums verified before
+upload. Nothing playable was committed to git or released publicly; no share
+grants, visibility changes, purchases or new scheduler. Library identity remains
+private to the user rather than being copied into repository documentation.
+
+No further meaningful evidenced defect warranted another cycle; stop after1/5.
+Explicit limitations: six retry checks prove battle re-entry, separate routes
+prove wins; only prepared uninterrupted completion passed; segmented unprepared
+victory passed, two continuous attempts lost.25m16.655s is automated frame timing
+with~15min fixed waits, not measured human pacing. Static poses/tokens, inherited
+audio/UI/ball effects and compressed adaptation chronology remain documented.
+
+Current execution: saved Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; no active
+build/emulator/writer beyond this documentation checkpoint. Exact next action:
+**await user's fresh-save playtest and feedback**. Do not restart implementation,
+create speculative tasks, or expand to Stage6. Parent owns the single continuation
+mechanism and must reconcile/stop it at this boundary. No remaining tool blocker.

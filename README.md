@@ -14,7 +14,9 @@ Accepted plans copied in full at handoff **2026-10-06**:
 - [Roadmap](docs/roadmap.md)
 - [Development loop](docs/development-loop.md)
 
-Stages 0–5 are authorized. Stage 6 awaits the user's slice playtest.
+Stages 0–5 and one requested improvement are complete. Stage 6 awaits the user's
+slice playtest. A private review ZIP has been saved to the user's Library; there
+is no public ROM release.
 No ROMs or generated build products are distributed in this repository.
 
 For the current custom game, run `bash scripts/setup-foundation.sh` then

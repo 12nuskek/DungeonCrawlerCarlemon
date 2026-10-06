@@ -167,6 +167,15 @@ four map tokens and affected runtime regression. No new enemies/features/Stage6.
 
 I01 acceptance: tested81b232ae41647b5e456e45ed73d51a170f17fb58. Clean build,
 1053 runtime assertions/62 sessions and9 exact rendered-pixel checks PASS.
-All62 emulator error logs empty. Evidence docs/evidence/i01; PR32 merge pending.
+All62 emulator error logs empty. Evidence docs/evidence/i01; PR32 merged052979d38ff9800780fac66cb052896767c4f1c8.
 No further substantive defect identified; stop after cycle1 and await user playtest.
 Do not start Stage6 or manufacture improvement cycles to keep automation active.
+
+## Completion boundary
+
+Stages0–5 and requested improvement1 are implemented, compiled, runtime verified
+and merged. Private production review ZIP saved to the user's Library.
+**Next action: await the user's playtest.** No active implementation task, no
+remaining acceptance blocker, no Stage6 authorisation. Human pacing and feedback
+are pending, not established by automated tests. Parent owns the sole continuation
+mechanism and should stop/disable automatic implementation at this boundary.

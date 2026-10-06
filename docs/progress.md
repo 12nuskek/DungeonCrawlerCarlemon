@@ -1042,3 +1042,22 @@ merged NO. Resume only after package delivery and remote branch reconciliation.
 Next: fetch delivered asset PR, verify hashes/provenance/native palette contracts,
 then integrate and run scoped evidence checks. Preserve approved Carl/Donut art,
 all gameplay and saves. Stage6 and public release remain unauthorised.
+
+### I01 native integration — 2026-10-06
+
+Asset-only PR33 merged into task/i01-opponent-art at94122b57bd90532f7c8934d8141db8eba8f7d9be.
+Exact candidate head2c9a1b8;54 additions only, SHA manifest/24 PNG format checks
+and two41-output reproduction runs pass. Native battle/world pixels inspected.
+Exporter now owns all34 native files; slice_art.py delegates rather than replacing
+them with geometric art. Two complete content regenerations change only the
+five intended opponent sets; shared palette, Carl/Donut and maps unchanged.
+Guard's inherited Spinda spot renderer is now a documented no-op; no stats/AI/
+encounters/save changes. I01 implemented YES; compiled/runtime/integration pending.
+Next: isolated test-i01.sh full1053-check regression, all opponent battle/map
+captures and palette/pixel review. No Grub world object is added.
+
+Final S03 audit limits retained: six cold-retry routes prove re-entry, not victory
+in that exact saved retry; separate routes prove wins. Only prepared play has a
+successful uninterrupted fresh route. Segmented unprepared victory passes; two
+continuous unprepared attempts lost.90,586frames includes53,700 fixed idle frames
+(about15minutes);25m17s is not a human completion time or proof of20–30minute target.

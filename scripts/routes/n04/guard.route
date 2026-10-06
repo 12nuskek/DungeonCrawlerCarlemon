@@ -27,17 +27,17 @@ step 600 0 retry-actions.ppm
 battle 1 4 0 8 2 1 0
 pilot defensive 36000
 step 600 0 won-field.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-0.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-1.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-2.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-3.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-4.ppm
-step 1 1 -
+step 1 2 -
 step 400 0 outcome-5.ppm
 step 1 2 -
 step 120 0 won-clear.ppm
@@ -49,6 +49,12 @@ flag 48 0
 growth 10 627 0 9 937 0
 step 1 1 -
 step 400 0 resolved-repeat.ppm
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 120 0 -
 step 1 2 -
 step 120 0 -
 expect 34 3 5 5 7

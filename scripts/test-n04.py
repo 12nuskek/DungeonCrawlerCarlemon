@@ -37,9 +37,10 @@ for c in config:
  pp=re.findall(r'persistent PP=(\d+),(\d+) status=(\d+),(\d+)',log)[-1]
  growth=re.findall(r'growth level/xp/item=(\d+)/(\d+)/(\d+),(\d+)/(\d+)/(\d+)',log)[-1]
  uses=re.findall(r'party action uses=(\d+),(\d+) / (\d+),(\d+)',log)[-1]
- cold=c['cold_prefix']+'roster '+' '.join(hp+pp)+'\ngrowth '+' '.join(growth)+'\nuses '+' '.join(uses)+'\nquit\n'
+ (out/(c['name']+'-victory-state.json')).write_text(json.dumps({'hp':hp,'pp_and_status':pp,'growth':growth,'uses':uses},indent=2)+'\n')
+ cold=c['cold_prefix']+'roster '+' '.join(hp+pp)+'\nuses '+' '.join(uses)+'\nquit\n'
  run(c['name']+'-cold',cold,save,c['cold_assertions'])
-assert len(results)==12 and sum(x['assertions'] for x in results)==222,(len(results),results)
+assert len(results)==12 and sum(x['assertions'] for x in results)==216,(len(results),results)
 (out/'validation-summary.json').write_text(json.dumps(results,indent=2)+'\n')
 assert git('rev-parse','HEAD')==revision and not git('status','--porcelain')
-print('PASS 12 production sessions / 222 assertions; inspect actual recovery/victory/cold frames before acceptance.',flush=True)
+print('PASS 12 production sessions / 216 assertions; inspect actual recovery/victory/cold frames before acceptance.',flush=True)

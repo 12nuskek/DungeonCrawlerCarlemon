@@ -15,6 +15,7 @@
 #include "trainer_hill.h"
 #include "tv.h"
 #include "constants/rgb.h"
+#include "constants/maps.h"
 #include "constants/metatile_behaviors.h"
 
 struct ConnectionFlags
@@ -437,6 +438,15 @@ static void LoadSavedMapView(void)
     s32 x, y;
     u16 *mapView;
     s32 width;
+    // Authored dungeon maps are reconstructed from current layout + event flags.
+    // Saved viewport metatile IDs are a render cache, not persistent progression;
+    // restoring them after an art/layout revision can corrupt graphics and exits.
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+    {
+        ClearSavedMapView();
+        return;
+    }
+
     mapView = gSaveBlock1Ptr->mapView;
     if (SavedMapViewIsEmpty())
         return;

@@ -483,6 +483,30 @@ void LoadSaveblockObjEventScripts(void)
     struct ObjectEventTemplate *savObjTemplates = gSaveBlock1Ptr->objectEventTemplates;
     s32 i;
 
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+    {
+        s32 j;
+        // Refresh presentation identities without resetting crawler/NPC state.
+        // Older saves may contain the former generic crate/rock graphics IDs.
+        for (i = 0; i < gMapHeader.events->objectEventCount; i++)
+        {
+            savObjTemplates[i].script = mapHeaderObjTemplates[i].script;
+            savObjTemplates[i].graphicsId = mapHeaderObjTemplates[i].graphicsId;
+            for (j = 0; j < OBJECT_EVENTS_COUNT; j++)
+            {
+                struct ObjectEvent *objectEvent = &gObjectEvents[j];
+                if (objectEvent->active
+                    && objectEvent->mapGroup == gSaveBlock1Ptr->location.mapGroup
+                    && objectEvent->mapNum == gSaveBlock1Ptr->location.mapNum
+                    && objectEvent->localId == mapHeaderObjTemplates[i].localId)
+                {
+                    objectEvent->graphicsId = mapHeaderObjTemplates[i].graphicsId;
+                    gSaveBlock1Ptr->objectEvents[j].graphicsId = objectEvent->graphicsId;
+                }
+            }
+        }
+        return;
+    }
     for (i = 0; i < OBJECT_EVENT_TEMPLATES_COUNT; i++)
         savObjTemplates[i].script = mapHeaderObjTemplates[i].script;
 }

@@ -1278,3 +1278,58 @@ exports match. ROMec3cdf914b55d36da913db570ab83ad1cffbcd59869ab71c9e47c4fe075c55
 PR41 pending merge; evidence docs/evidence/n01/props. Implemented/compiled/runtime
 YES; merged pending. No blocker attempts. Next separate room materials/composition
 increment, then collision/layout and state feedback with their own acceptance.
+
+### N01 room materials/composition selected — 2026-10-06
+
+Prop PR41 merged eee114c07792a37e2c281d8807f774be85b5845a. Sole active
+branch task/n01-room-composition from that base. Selected native architecture,
+quiet floors, opaque void borders, depth/corner bands, floor-specific warm/cold
+palettes, sparse functional wear, guide rest mat/bedroll, workshop conduits/wire,
+two patrol bays, framed gate and distinct exit rest patch. Native stairs centered
+on existing one-cell warp anchors. This increment preserves all collision and
+behavior bits, coordinates/scripts/save state; room-outline changes and persistent
+visual states follow separately. No pressure-plate substitute for the wire.
+
+Authoritative exporter packs only selected pixels:158 used8x8 tiles (160allocated),
+157 metatiles, banks6–9; all1176 cell/border behavior and49 approved art checks
+pass. Old grid generator delegates; expanded explicit checks retain native bounds
+and behavioral invariants. Candidate source omissions remain untouched. Next
+clean committed build, real240x160 arrival/center and motion review,434 behavior
+assertions and15 character/prop pixel checks. Implemented YES, compiled/runtime/
+merged pending. No build blocker attempts. Issue35 remains open for N01 completion.
+
+N01 rooms candidate8e0690b passes clean build +24 sessions/434 assertions,
+24 empty errors and15 exact prop/opponent checks. Actual12 room views inspected;
+ROM6830b878763a27ca2b39f112ffe9010964f9484f4515439221176a5d78667bb5.
+A separate old-save preview failed after4 checks: upstream restores cached map
+metatile IDs from the prior atlas, garbling rooms and blocking an exit. Preserved
+artifacts/n01-rooms/early-views. Do NOT merge/deliver with this known regression.
+
+Focused compatibility fix now part of this visual PR as a separate engine commit:
+DCC loads reconstruct current authored maps before existing flag-driven scripts;
+refresh matching static object graphic IDs from headers, retaining positions and
+all gameplay state. No save-layout/version-field change; stock map paths unchanged.
+Add three ordinary I01-save reload routes: completed slice, leveled landing and
+completed crafting/quest states. Check progression/resources/palettes/warps and
+native refreshed prop pixels. No edited saves/fixtures. Exact next clean build,
+434 current-build assertions +41 older-save assertions, actual side-by-side proof.
+
+### N01 rooms and old-save fix verified — 2026-10-06
+
+Testedcd6946e90fb95095ca2883509dfad19890a78848 on baseeee114c.27 production
+sessions/475 assertions (434+41 legacy),27 empty errors,9 opponent+8 prop pixel
+matches; all1176 behavior/collision cells/six events/49 approved assets preserved.
+Extra exact same old-save recheck passes18 assertions after the prior failure;
+not folded into475. ROM17e97672a2a3a6b6f7b670d3d901f4e6be21425a8eb92407a4c91be874cec637.
+Actual12 room views, old-save frames and movement reviewed. Full evidence
+ docs/evidence/n01/rooms; diagnostics retained. Cache blocker resolved by first
+code fix; no game flags/party/inventory/save-layout changes. PR42 merge pending.
+
+Full regeneration found old battle palette depended on removed room `colors`.
+Restored its exact independent constant. Two complete isolated exports preserve
+8807 tracked source assets; engine tree identical to runtime-testedcd6946e. Two
+workspace exports preserve9352 source+existing ignored assets. This is exporter
+validation, not a new runtime claim. Partial source kit limitations retained.
+Next: merge this verified increment, then N02 room outlines/collision separately;
+follow with existing-flag visual state feedback and final full regression. Sole
+writer and parent-owned continuation unchanged. Deadline approximately21:19UTC.

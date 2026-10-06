@@ -21,48 +21,9 @@ def pal(path,colors=P):
  path.write_text('JASC-PAL\n0100\n16\n'+'\n'.join(' '.join(map(str,c)) for c in colors)+'\n')
 pal(Path('graphics/dcc/shared.pal'))
 
-# Independent dungeon secondary tileset. Preserve each used cave behavior exactly.
-colors=[(0,0,0),(18,26,36),(30,43,53),(47,61,68),(65,79,82),(92,107,106),(129,145,135),(179,190,166),(39,75,78),(54,114,113),(82,164,148),(199,168,100),(143,94,65),(204,87,66),(223,211,174),(244,236,205)]
-tiles=[]
-def tile(kind):
- im=canvas(16,16);d=ImageDraw.Draw(im);d.rectangle((0,0,15,15),fill=2)
- if kind in ('floor','crack','rug','stripe','debris'):
-  d.rectangle((1,1,14,14),fill=3);d.line((1,1,14,1),fill=4);d.line((1,1,1,14),fill=4);d.point((12,12),4)
-  if kind=='crack':d.line([(1,3),(6,6),(5,10),(11,14)],fill=13,width=2);d.line((1,15,15,1),fill=11)
-  if kind=='rug':d.rectangle((0,0,15,15),fill=8);d.line((0,3,15,3),fill=9);d.line((0,12,15,12),fill=9);d.rectangle((6,6,9,9),fill=11)
-  if kind=='stripe':d.rectangle((6,0,9,15),fill=11);d.line((6,0,6,15),fill=12)
-  if kind=='debris':d.line((3,5,8,6),fill=7,width=2);d.line((8,11,12,9),fill=12,width=2)
- elif kind=='stairs':
-  d.rectangle((1,0,14,15),fill=1)
-  for y in (2,6,10,14):d.rectangle((3,y,12,y+1),fill=6);d.line((3,y+2,12,y+2),fill=3)
-  d.line((1,0,1,15),fill=11);d.line((14,0,14,15),fill=11)
- else:
-  d.rectangle((0,0,15,15),fill=2)
-  for y in (0,8):
-   d.line((0,y,15,y),fill=5);d.line((0,y+1,15,y+1),fill=3);d.line(((4 if y else 11),y,(4 if y else 11),y+7),fill=1)
-  if kind=='wallbase':d.rectangle((0,10,15,12),fill=1);d.line((0,13,15,13),fill=6);d.line((0,15,15,15),fill=1)
-  if kind=='lamp':d.rectangle((5,3,10,11),fill=1);d.rectangle((6,4,9,9),fill=10);d.line((5,12,10,12),fill=11)
- return im
-kinds=['floor','stairs','wall','wallbase','crack','rug','stripe','debris','lamp']
-# Blank tile index0 ensures transparent overlay; each metatile contributes four tiles.
-atlas=canvas(128,24);metatiles=bytearray((0x1A0)*16)
-attrs=bytearray((0x1A0)*2)
-old=(R/'data/tilesets/secondary/cave/metatile_attributes.bin').read_bytes()
-attrs[:len(old)]=old
-ids={0x201:0,0x205:1,0x210:3,0x211:2,0x212:3,0x219:3,0x39e:4,0x220:5,0x221:6,0x222:7,0x223:8}
-for k,kind in enumerate(kinds):
- t=tile(kind)
- for q in range(4):
-  n=1+k*4+q;atlas.paste(t.crop(((q%2)*8,(q//2)*8,(q%2+1)*8,(q//2+1)*8)),((n%16)*8,(n//16)*8))
-for mid,k in ids.items():
- entries=[(512+1+k*4+q)|(6<<12) for q in range(4)]+[512|(6<<12)]*4
- struct.pack_into('<8H',metatiles,(mid-512)*16,*entries)
- if mid in (0x220,0x221,0x222):attrs[(mid-512)*2:(mid-512+1)*2]=old[2:4]
- if mid==0x223:attrs[(mid-512)*2:(mid-512+1)*2]=old[(0x19)*2:(0x1A)*2]
-base=Path('data/tilesets/secondary/dcc');save(atlas,base/'tiles.png')
-(R/base/'metatiles.bin').write_bytes(metatiles);(R/base/'metatile_attributes.bin').write_bytes(attrs)
-for i in range(16):pal(base/'palettes'/f'{i:02}.pal',colors)
-print('Generated dungeon tiles; native protagonists/opponents use reviewed masters.')
+# Selected native dungeon masters own the atlas, palettes and map composition.
+from environment_art import export_rooms
+export_rooms()
 # Original inventory silhouettes, same24x24 engine icon bounds.
 for name in ['wrap','scrap','tag','charge','medicine']:
  im=canvas(24,24);d=ImageDraw.Draw(im)
@@ -163,6 +124,8 @@ for block in range(2):
  for y in range(32):
   for x in range(32):struct.pack_into('<H',bm,block*2048+(y*32+x)*2,((y%16)*32+x)|(2<<12))
 (R/'graphics/dcc/battle/map.bin').write_bytes(bm)
+# Battle palette remains independent of the new room-specific background banks.
+colors=[(0,0,0),(18,26,36),(30,43,53),(47,61,68),(65,79,82),(92,107,106),(129,145,135),(179,190,166),(39,75,78),(54,114,113),(82,164,148),(199,168,100),(143,94,65),(204,87,66),(223,211,174),(244,236,205)]
 (R/'graphics/dcc/battle/palette.pal').write_text('JASC-PAL\n0100\n48\n'+'\n'.join(' '.join(map(str,c)) for c in colors*3)+'\n')
 
 # Approved protagonist battle masters own their independent palettes.

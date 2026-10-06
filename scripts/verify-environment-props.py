@@ -21,4 +21,10 @@ for name,room in [('rubble','entrance'),('warning_sign','service'),('quest_tag',
     found=match(frame,assets/(name+'.png'))
     assert found,(name,'native prop not visible in actual frame')
     results.append({'name':name,'frame':str(frame.relative_to(run)),**found})
+for name in ['legacy-landing','legacy-workshop']:
+    frame=run/name/'native-props.ppm'
+    if frame.exists():
+        found=match(frame,assets/'storage_rack.png')
+        assert found,(name,'old generic prop identity not refreshed')
+        results.append({'name':'storage_rack','frame':str(frame.relative_to(run)),**found})
 print(json.dumps(results,indent=2))

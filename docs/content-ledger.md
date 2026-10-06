@@ -337,3 +337,10 @@ shared palette unchanged. No claim of hand-drawn animation or canon object desig
 Remaining crates, inactive-state feedback and room architecture await later
 increments. Native PNG masters are authoritative for deterministic game export;
 compilation/runtime acceptance recorded separately in progress/evidence.
+
+N01 room pass selects original code-authored native architecture and reference-
+derived stair/bedroll/storage/wire/secret silhouettes. Neutral/warm/cold/gate BG
+palettes affect backgrounds only. No pressure-plate candidate is used. Props and
+room mats are static; wire/cache/secret/defeated-marker visual persistence still
+awaits its separate state increment. Existing outlines remain rectangular pending
+bounded collision/layout work. Current testedcd6946e evidence in evidence/n01/rooms.

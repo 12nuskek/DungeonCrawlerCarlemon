@@ -1,5 +1,13 @@
 DCC_Service_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, DCC_Service_Load
 	.byte 0
+
+DCC_Service_Load:
+	setvar VAR_TEMP_0, 0
+	goto_if_unset FLAG_DCC_TRAP_SPENT, DCC_Service_LoadDone
+	setvar VAR_TEMP_0, 1
+DCC_Service_LoadDone:
+	end
 
 DCC_Service_Warning::
 	lock
@@ -14,6 +22,7 @@ DCC_Service_Text_Warning:
 	.string "Recovery costs nothing.$"
 
 DCC_Service_Trap::
+	setvar VAR_TEMP_0, 1
 	goto_if_set FLAG_DCC_TRAP_SPENT, DCC_Service_TrapDone
 	lockall
 	special DccApplyServiceTrap
@@ -23,10 +32,10 @@ DCC_Service_Trap::
 DCC_Service_TrapDone:
 	end
 DCC_Service_Text_Trap:
-	.string "The cracked tile spits a spark!\n"
-	.string "CARL is hurt and paralyzed.\p"
-	.string "The wire burns out. Go to the guide\n"
-	.string "for free recovery, or walk onward.$"
+	.string "A live wire snaps at CARL.\n"
+	.string "The damaged switch burns out.\p"
+	.string "If hurt or paralyzed, the guide\n"
+	.string "will restore you for free.$"
 
 DCC_Service_Mara::
 	lock

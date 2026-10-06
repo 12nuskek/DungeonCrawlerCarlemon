@@ -1,0 +1,53 @@
+step 720 0 -
+step 1 8 -
+step 360 0 title.ppm
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+expect 34 1 9 5 3
+uses 0 0 0 0
+roster 23 4 0 0 0 0
+growth 9 495 0 9 805 0
+flag 37 1
+step 36 128 -
+step 40 0 -
+step 84 32 -
+step 40 0 -
+expect 34 1 4 7 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-0.ppm
+step 1 1 -
+step 400 0 guide-1.ppm
+step 1 1 -
+step 400 0 guide-2.ppm
+step 1 1 -
+step 400 0 guide-3.ppm
+step 1 1 -
+step 400 0 guide-4.ppm
+step 1 1 -
+step 120 0 -
+duo healthy
+uses 8 40 2 40
+roster 33 28 8 2 0 0
+flag 34 1
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 1 4 7 7
+quit

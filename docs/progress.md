@@ -912,3 +912,28 @@ separate from automated waits/reboots.20–30minute fresh-player target remains
 unproven. Preserve inherited assets/terminology and static animations in limitations.
 Next: finish and run all S03 routes from a committed isolated snapshot, archive
 review evidence, then up to five substantive improvements; user playtest before6.
+
+
+### S03 acceptance suite assembled — 2026-10-06
+
+Draft PR30 tracks issue29. Current source helper/visual preview commit0c72f45.
+The assembled suite plans914 assertions in60 emulator processes (723 production,
+191 explicitly labeled fixture checks), including restored61-check trial, every
+encounter local defeat/retry, both boss approaches/incapacitation orders, both
+Donut scenes, motion, quest/crafting branches, equipment, collection guards and
+capacity failures. These counts are planned, not claimed passed as a whole.
+
+New isolated exhaustion fixture checks HP1 with existing poison is preserved by
+the trap, saves all action PP empty, proves real STRUGGLE wins without hanging,
+then tests cold depleted state and guide restoration/reload. Missing HealPlayerParty
+header was corrected in the diagnostic generator; its failed first build/run is
+not acceptance evidence. No production source changed. Current-ROM probes prove
+STRUGGLE victory with zero PP and guard loss/cold retry; final isolated run next.
+
+Parent reviewed full walking motion; overlapping Carl/guide lower body is normal
+foreground depth for adjacent tiles, with interaction/recovery and walk-away paths
+independently tested. Donut's stationary object must be walked around; routes now
+respect that occupancy. Main tile collision/elevation compatibility never meant
+unchanged object layout. Pacing measurement remains separate, with no20–30minute
+fresh-player timing claim. Continue until S03 and warranted improvement cycles
+finish, then await user playtest before Stage6.

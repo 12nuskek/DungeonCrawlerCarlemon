@@ -202,3 +202,13 @@ The nonblocking baseline-harness unsigned-overflow defect remains in the backlog
 for its own validation-only change. Full Stages 0–5 slice is incomplete.
 Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns the sole continuation
 mechanism. No new workflow, schedule, public playable release or binary artifact.
+
+## Screenshot reporting handoff — 2026-10-06
+
+Parent relayed Kurt's request for screenshots on each gameplay issue/PR. Added the
+requirement to AGENTS.md and testing.md. B01 PR will embed real final-run action,
+recovery and saved-state captures; E01 PR #5 is being backfilled using its existing
+verified evidence. Parent handles the current chat preview; no duplicate delivery.
+Repository issue search returns only an item titled Deleted (#1), no known live
+E01/B01 gameplay issue; verify before any issue-body mutation. No new issue or
+implementation writer is needed merely to duplicate the PR evidence.

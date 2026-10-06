@@ -117,3 +117,13 @@ both offensive PP counters, outcome and the saved trial flag. Read offsets are
 bound to the pinned source structures. Review the captured images as well.
 B01 requires a fresh save: earlier E01 saves have no protagonists. The binary save
 layout is unchanged; no migration is claimed. Battle art/labels are placeholders.
+
+## Screenshot reporting requirement
+
+Every gameplay issue and PR embeds representative actual emulator captures, with
+exact tested source commit and route/assertion labels; use before/after for fixes
+where useful. Link immutable evidence paths so later art changes cannot rewrite a
+past result. Retain input routes and logs: images alone are not test proof.
+Nonvisual build/docs issues say screenshots N/A or link relevant actual runtime
+evidence. Do not fabricate screenshots or present mockups as running game output.
+This requirement was explicitly added by Kurt on 2026-10-06.

@@ -1,0 +1,354 @@
+mGBA 0.10.5; 240x160; save=../playtest.sav; read-only RAM diagnostics
+frame=720 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=721 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1081 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1082 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1262 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1263 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1443 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=1444 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+PASS duo healthy
+frame=2072 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2112 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2132 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2172 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2172 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+PASS expect 34 1 9 5 3
+frame=2173 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2573 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2574 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2974 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=2975 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+frame=3875 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=3876 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=4476 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=4477 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+PASS battle 1 4 0 35 20 0 0
+frame=5078 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5138 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5139 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5199 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5200 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5260 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5261 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5321 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5322 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5382 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=5383 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6383 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6384 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6444 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6445 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6505 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6506 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6566 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=6567 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7567 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7568 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7628 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7629 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7689 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7690 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7750 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=7751 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,16/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8751 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8752 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8812 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8813 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8873 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8874 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8934 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=8935 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,13/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=9935 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=9936 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=9996 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=9997 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=10057 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=10058 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=10118 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=10119 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11119 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11120 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11180 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11181 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11241 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11242 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11302 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=11303 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,11/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12303 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12304 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12364 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12365 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12425 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12426 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12486 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=12487 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13487 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13488 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13548 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13549 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13609 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13610 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,8/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13670 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=13671 map=34.1 pos=9,5 flags=3
+party=2 HP=27/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14671 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14672 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14732 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14733 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14793 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14794 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14854 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=14855 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=15855 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=15856 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,5/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16156 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16157 map=34.1 pos=9,5 flags=3
+party=2 HP=25/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16457 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16458 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16758 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=16759 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17059 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17060 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17360 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17361 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17661 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17662 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17962 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=17963 map=34.1 pos=9,5 flags=3
+party=2 HP=23/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18263 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18264 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18564 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18565 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,2/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18865 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=18866 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19166 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19167 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19467 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19468 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19768 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=19769 map=34.1 pos=9,5 flags=3
+party=2 HP=20/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20069 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20070 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20370 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20371 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20671 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20672 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20972 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=20973 map=34.1 pos=9,5 flags=3
+party=2 HP=15/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21273 map=34.1 pos=9,5 flags=3
+party=2 HP=11/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21274 map=34.1 pos=9,5 flags=3
+party=2 HP=11/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21574 map=34.1 pos=9,5 flags=3
+party=2 HP=9/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21575 map=34.1 pos=9,5 flags=3
+party=2 HP=9/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21875 map=34.1 pos=9,5 flags=3
+party=2 HP=9/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=21876 map=34.1 pos=9,5 flags=3
+party=2 HP=9/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22176 map=34.1 pos=9,5 flags=3
+party=2 HP=6/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22177 map=34.1 pos=9,5 flags=3
+party=2 HP=6/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22477 map=34.1 pos=9,5 flags=3
+party=2 HP=6/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22478 map=34.1 pos=9,5 flags=3
+party=2 HP=6/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22778 map=34.1 pos=9,5 flags=3
+party=2 HP=0/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=22779 map=34.1 pos=9,5 flags=3
+party=2 HP=0/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=23079 map=34.1 pos=9,5 flags=3
+party=2 HP=0/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=23080 map=34.1 pos=9,5 flags=3
+party=2 HP=0/30,0/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=23380 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23780 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23780 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+PASS battle 0 4 2 35 20 0 0
+frame=23780 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+PASS duo healthy
+frame=23780 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+PASS expect 34 1 9 5 3
+frame=23781 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23901 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23921 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23961 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=23961 map=34.1 pos=8,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+PASS expect 34 1 8 5 3
+frame=23981 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24021 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24022 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24062 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24063 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24463 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24464 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24864 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=24865 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=2 PP=35,20 trial=0 donut-ability=0
+frame=25765 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+frame=25765 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=35,20 trial=0 donut-ability=0
+PASS battle 1 4 0 35 20 0 0
+result=0 assertions=8

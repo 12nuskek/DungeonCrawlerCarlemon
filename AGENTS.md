@@ -34,3 +34,10 @@ Continue genuinely independent documentation/content when a gate is blocked.
 Never commit ROMs, build products, saves or private credentials; never force-push,
 wipe history, alter visibility/billing, bypass protections or publish a playable
 public release. Provenance and remaining placeholders must be explicit.
+
+User reporting requirement (2026-10-06): every gameplay issue and PR must embed
+representative actual emulator screenshots, labelled with exact tested commit and
+route/assertion. Include before/after captures for visual fixes where useful.
+Keep logs/assertions beside images; screenshots alone never prove acceptance.
+For nonvisual build/docs issues explicitly say screenshots N/A or link relevant
+actual evidence. Never fabricate game captures. Preserve this in continuation.

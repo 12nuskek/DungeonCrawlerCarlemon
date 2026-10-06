@@ -6,9 +6,9 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | --- | --- | --- |
 | F01 | None | Complete: implemented, compiled, runtime verified and merged in PR #2 |
 | F02 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #3 |
-| E01 | F01 | Implemented, compiled and runtime verified; integration pending |
+| E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
 | E02 | E01 | Pending: safe room, guide and recovery |
-| B01 | F01 | Pending: Carl/Donut duo prototype |
+| B01 | F01 | Implemented, compiled and runtime verified; integration pending |
 | B02 | B01 | Pending: actions and defeat recovery |
 | B03 | B02 | Pending: capture/storage/breeding removal and audit |
 | R01 | B02, E02 | Pending: XP and equipment |
@@ -42,3 +42,11 @@ crate first/repeat dialogue, both ladder transitions, actual save and cold reloa
 Validation follow-up (nonblocking): replace F01 harness scanf unsigned parsing
 with checked conversion and add overflow tests (4294967416 frames, 4294967296 keys).
 Parent independently confirmed valid F01/F02 evidence; this does not invalidate it.
+
+B01 base `91afb3deb6f856b4565e00bb65e81f0f1497a05f`. Scope: two fixed protagonist
+records, deterministic duo trial, both actors choose/execute actions, victory and
+safe loss return. Preserve save layout and list temporary species/art. Acceptance:
+four battlers, both actions/PP, victory/map return and saved roster; deliberately
+lose through ordinary inputs and retry. No broader combat rewrite, capture/storage
+audit (B03), full recovery hub (E02) or reward systems. Fresh B01 save required;
+E01 zero-party saves are not migrated.

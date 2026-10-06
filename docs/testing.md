@@ -106,3 +106,26 @@ separate emulator process loading that save. Nineteen map/position/persistent-fl
 assertions supplement visual inspection. See the [tested E01 report](evidence/e01/README.md).
 Workspace-local mGBA flags use DCC_TEST_CFLAGS and DCC_TEST_LDFLAGS; do not pass
 them as CFLAGS/LDFLAGS to the GBA compiler. Saves/executables/ROMs stay ignored.
+
+## B01 duo replay
+
+Run `bash scripts/test-b01.sh` with the same compiler and mGBA dependency flags.
+It exports the committed source into an isolated directory, hydrates the exact
+upstream inputs and rebuilds the pinned compiler via setup-foundation.sh. It then
+creates a fresh game and real flash save via the E01 route, then separately
+boots loss/retry, victory/save and cold-reload routes. Inputs are ordinary GBA
+buttons; RAM diagnostics only read protagonist HP/names/count, battle membership,
+both offensive PP counters, outcome and the saved trial flag. Read offsets are
+bound to the pinned source structures. Review the captured images as well.
+B01 requires a fresh save: earlier E01 saves have no protagonists. The binary save
+layout is unchanged; no migration is claimed. Battle art/labels are placeholders.
+
+## Screenshot reporting requirement
+
+Every gameplay issue and PR embeds representative actual emulator captures, with
+exact tested source commit and route/assertion labels; use before/after for fixes
+where useful. Link immutable evidence paths so later art changes cannot rewrite a
+past result. Retain input routes and logs: images alone are not test proof.
+Nonvisual build/docs issues say screenshots N/A or link relevant actual runtime
+evidence. Do not fabricate screenshots or present mockups as running game output.
+This requirement was explicitly added by Kurt on 2026-10-06.

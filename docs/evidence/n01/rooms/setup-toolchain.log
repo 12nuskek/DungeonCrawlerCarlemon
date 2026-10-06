@@ -1,0 +1,1669 @@
+From https://github.com/pret/pokeemerald
+ * branch                731ad5bfd6e6f265508d0efcca0ba42f9dcf5881 -> FETCH_HEAD
+HEAD is now at 731ad5bfd Report SaveBlock1/SaveBlock2/PokemonStorage usage (#2364)
+From https://github.com/pret/agbcc
+ * branch            da598c1d918402c42c0c0d7128ba14567f3175e9 -> FETCH_HEAD
+HEAD is now at da598c1 Avoid multithreaded make where that doesn't work
+make: Entering directory '/workspace/agbcc/gcc'
+rm -f agbcc agbcc.exe old_agbcc old_agbcc.exe
+rm -f toplev.o version.o tree.o print-tree.o stor-layout.o fold-const.o function.o stmt.o except.o expr.o calls.o expmed.o explow.o optabs.o varasm.o emit-rtl.o genrtl.o real.o regmove.o dwarf2out.o alias.o integrate.o jump.o cse.o loop.o unroll.o flow.o stupid.o combine.o varray.o regclass.o local-alloc.o global.o reload.o reload1.o caller-save.o gcse.o insn-peep.o final.o recog.o insn-opinit.o insn-recog.o insn-extract.o insn-output.o insn-emit.o lcm.o insn-attrtab.o thumb.o getpwd.o convert.o dyn-string.o splay-tree.o graph.o sbitmap.o resource.o c-parse.o c-lex.o c-decl.o c-typeck.o c-convert.o c-aux-info.o c-common.o c-iterate.o rtl.o bitmap.o obstack.o rtlanal.o print-rtl.o
+rm -f genrtl.c genrtl.h insn-peep.c insn-opinit.c insn-recog.c insn-extract.c insn-output.c insn-emit.c insn-attrtab.c tree-check.h insn-config.h insn-flags.h insn-codes.h insn-attr.h
+rm -f genemit genoutput genrecog genextract genflags gencodes genconfig genpeep gengenrtl gencheck genattr genattrtab genopinit genemit.exe genoutput.exe genrecog.exe genextract.exe genflags.exe gencodes.exe genconfig.exe genpeep.exe gengenrtl.exe gencheck.exe genattr.exe genattrtab.exe genopinit.exe genemit.o genoutput.o genrecog.o genextract.o genflags.o gencodes.o genconfig.o genpeep.o gengenrtl.o gencheck.o genattr.o genattrtab.o genopinit.o
+rm -f s-config s-flags s-codes s-emit s-recog s-opinit s-extract s-peep \
+s-attr s-attrtab s-output s-genrtl s-check
+rm -f -r .d
+make: Leaving directory '/workspace/agbcc/gcc'
+make: Entering directory '/workspace/agbcc/gcc'
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c gengenrtl.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o gengenrtl gengenrtl.o
+./gengenrtl tmp-genrtl.h tmp-genrtl.c
+./move-if-change tmp-genrtl.h genrtl.h
+./move-if-change tmp-genrtl.c genrtl.c
+touch s-genrtl
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genpeep.c
+gcc -MT rtl.o -MMD -MP -MF .d/rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c rtl.c
+mv -f .d/rtl.Td .d/rtl.d
+gcc -MT bitmap.o -MMD -MP -MF .d/bitmap.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c bitmap.c
+mv -f .d/bitmap.Td .d/bitmap.d
+gcc -MT obstack.o -MMD -MP -MF .d/obstack.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c obstack.c
+mv -f .d/obstack.Td .d/obstack.d
+gcc -MT print-rtl.o -MMD -MP -MF .d/print-rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c print-rtl.c
+mv -f .d/print-rtl.Td .d/print-rtl.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genpeep genpeep.o rtl.o bitmap.o obstack.o print-rtl.o
+./genpeep ./thumb.md > tmp-peep.c
+./move-if-change tmp-peep.c insn-peep.c
+touch s-peep
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genopinit.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genopinit genopinit.o rtl.o bitmap.o obstack.o print-rtl.o
+./genopinit ./thumb.md > tmp-opinit.c
+./move-if-change tmp-opinit.c insn-opinit.c
+touch s-opinit
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genrecog.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genrecog genrecog.o rtl.o bitmap.o obstack.o print-rtl.o
+./genrecog ./thumb.md > tmp-recog.c
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+./move-if-change tmp-recog.c insn-recog.c
+touch s-recog
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genconfig.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genconfig genconfig.o rtl.o bitmap.o obstack.o print-rtl.o
+./genconfig ./thumb.md > tmp-config.h
+./move-if-change tmp-config.h insn-config.h
+touch s-config
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genextract.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genextract genextract.o rtl.o bitmap.o obstack.o print-rtl.o
+./genextract ./thumb.md > tmp-extract.c
+./move-if-change tmp-extract.c insn-extract.c
+touch s-extract
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genoutput.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genoutput genoutput.o rtl.o bitmap.o obstack.o print-rtl.o
+./genoutput ./thumb.md > tmp-output.c
+./move-if-change tmp-output.c insn-output.c
+touch s-output
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genemit.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genemit genemit.o rtl.o bitmap.o obstack.o print-rtl.o
+./genemit ./thumb.md > tmp-emit.c
+./move-if-change tmp-emit.c insn-emit.c
+touch s-emit
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genattrtab.c
+gcc -MT rtlanal.o -MMD -MP -MF .d/rtlanal.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c rtlanal.c
+mv -f .d/rtlanal.Td .d/rtlanal.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genattrtab genattrtab.o rtl.o bitmap.o obstack.o print-rtl.o rtlanal.o
+./genattrtab ./thumb.md > tmp-attrtab.c;
+./move-if-change tmp-attrtab.c insn-attrtab.c
+touch s-attrtab
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c gencheck.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o gencheck gencheck.o
+./gencheck > tmp-check.h
+./move-if-change tmp-check.h tree-check.h
+touch s-check
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genflags.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genflags genflags.o rtl.o bitmap.o obstack.o print-rtl.o
+./genflags ./thumb.md > tmp-flags.h
+./move-if-change tmp-flags.h insn-flags.h
+touch s-flags
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c gencodes.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o gencodes gencodes.o rtl.o bitmap.o obstack.o print-rtl.o
+./gencodes ./thumb.md > tmp-codes.h
+./move-if-change tmp-codes.h insn-codes.h
+touch s-codes
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genattr.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o genattr genattr.o rtl.o bitmap.o obstack.o print-rtl.o
+./genattr ./thumb.md > tmp-attr.h
+./move-if-change tmp-attr.h insn-attr.h
+touch s-attr
+gcc -MT toplev.o -MMD -MP -MF .d/toplev.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c toplev.c
+mv -f .d/toplev.Td .d/toplev.d
+gcc -MT version.o -MMD -MP -MF .d/version.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c version.c
+mv -f .d/version.Td .d/version.d
+gcc -MT tree.o -MMD -MP -MF .d/tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c tree.c
+mv -f .d/tree.Td .d/tree.d
+gcc -MT print-tree.o -MMD -MP -MF .d/print-tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c print-tree.c
+mv -f .d/print-tree.Td .d/print-tree.d
+gcc -MT stor-layout.o -MMD -MP -MF .d/stor-layout.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c stor-layout.c
+mv -f .d/stor-layout.Td .d/stor-layout.d
+gcc -MT fold-const.o -MMD -MP -MF .d/fold-const.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c fold-const.c
+mv -f .d/fold-const.Td .d/fold-const.d
+gcc -MT function.o -MMD -MP -MF .d/function.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c function.c
+mv -f .d/function.Td .d/function.d
+gcc -MT stmt.o -MMD -MP -MF .d/stmt.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c stmt.c
+mv -f .d/stmt.Td .d/stmt.d
+gcc -MT except.o -MMD -MP -MF .d/except.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c except.c
+In file included from except.c:394:
+except.c: In function ‘output_exception_table_entry’:
+rtl.h:1130:50: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1130 | #define GEN_INT(N)  gen_rtx_CONST_INT (VOIDmode, (HOST_WIDE_INT) (N))
+      |                                                  ^
+except.c:2158:33: note: in expansion of macro ‘GEN_INT’
+ 2158 |               assemble_integer (GEN_INT (CATCH_ALL_TYPE),
+      |                                 ^~~~~~~
+except.c: In function ‘output_exception_table’:
+rtl.h:1130:50: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1130 | #define GEN_INT(N)  gen_rtx_CONST_INT (VOIDmode, (HOST_WIDE_INT) (N))
+      |                                                  ^
+except.c:2211:25: note: in expansion of macro ‘GEN_INT’
+ 2211 |       assemble_integer (GEN_INT (NEW_EH_RUNTIME),
+      |                         ^~~~~~~
+mv -f .d/except.Td .d/except.d
+gcc -MT expr.o -MMD -MP -MF .d/expr.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c expr.c
+In file included from expr.c:37:
+expr.c: In function ‘move_by_pieces’:
+expr.h:356:24: warning: passing argument 1 of ‘move_by_pieces_1’ from incompatible pointer type [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        struct rtx_def * (*)(struct rtx_def *, ...)
+expr.c:1044:30: note: in expansion of macro ‘GEN_FCN’
+ 1044 |             move_by_pieces_1(GEN_FCN(icode), mode, &data);
+      |                              ^~~~~~~
+expr.c:126:34: note: expected ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ but argument is of type ‘struct rtx_def * (*)(struct rtx_def *, ...)’
+  126 | static void move_by_pieces_1    (rtx (*)(rtx, rtx), enum machine_mode,
+      |                                  ^~~~~~~~~~~~~~~~~
+expr.c: In function ‘emit_block_move’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1216:59: note: in expansion of macro ‘GEN_FCN’
+ 1216 |                     rtx (*gen_insn)(rtx, rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                           ^~~~~~~
+expr.c: In function ‘clear_by_pieces’:
+expr.h:356:24: warning: passing argument 1 of ‘clear_by_pieces_1’ from incompatible pointer type [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        struct rtx_def * (*)(struct rtx_def *, ...)
+expr.c:1729:31: note: in expansion of macro ‘GEN_FCN’
+ 1729 |             clear_by_pieces_1(GEN_FCN(icode), mode, &data);
+      |                               ^~~~~~~
+expr.c:129:34: note: expected ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ but argument is of type ‘struct rtx_def * (*)(struct rtx_def *, ...)’
+  129 | static void clear_by_pieces_1   (rtx (*)(rtx, rtx), enum machine_mode,
+      |                                  ^~~~~~~~~~~~~~~~~
+expr.c: In function ‘clear_storage’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1835:58: note: in expansion of macro ‘GEN_FCN’
+ 1835 |                         rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                          ^~~~~~~
+expr.c: In function ‘emit_move_insn_1’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1995:37: note: in expansion of macro ‘GEN_FCN’
+ 1995 |         rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mov_optab->handlers[(int) mode].insn_code);
+      |                                     ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:2012:37: note: in expansion of macro ‘GEN_FCN’
+ 2012 |         rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mov_optab->handlers[(int) submode].insn_code);
+      |                                     ^~~~~~~
+expr.c: In function ‘emit_push_insn’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:2328:63: note: in expansion of macro ‘GEN_FCN’
+ 2328 |                         rtx (*gen_insn)(rtx, rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                               ^~~~~~~
+expr.c: In function ‘expand_increment’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:8854:46: note: in expansion of macro ‘GEN_FCN’
+ 8854 |             rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                              ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:8863:46: note: in expansion of macro ‘GEN_FCN’
+ 8863 |             rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                              ^~~~~~~
+mv -f .d/expr.Td .d/expr.d
+gcc -MT calls.o -MMD -MP -MF .d/calls.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c calls.c
+mv -f .d/calls.Td .d/calls.d
+gcc -MT expmed.o -MMD -MP -MF .d/expmed.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c expmed.c
+In file included from expmed.c:31:
+expmed.c: In function ‘store_bit_field’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expmed.c:349:43: note: in expansion of macro ‘GEN_FCN’
+  349 |               rtx (*gen_insn)(rtx, rtx) = GEN_FCN (icode);
+      |                                           ^~~~~~~
+expmed.c: In function ‘emit_store_flag’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expmed.c:3825:34: note: in expansion of macro ‘GEN_FCN’
+ 3825 |           rtx (*gen_insn)(rtx) = GEN_FCN (icode);
+      |                                  ^~~~~~~
+mv -f .d/expmed.Td .d/expmed.d
+gcc -MT explow.o -MMD -MP -MF .d/explow.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c explow.c
+mv -f .d/explow.Td .d/explow.d
+gcc -MT optabs.o -MMD -MP -MF .d/optabs.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c optabs.c
+optabs.c: In function ‘expand_binop’:
+optabs.c:503:44: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  503 |           rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                            ^
+optabs.c: In function ‘expand_twoval_binop’:
+optabs.c:1788:49: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 1788 |           rtx (*gen_insn)(rtx, rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                                 ^
+optabs.c: In function ‘expand_unop’:
+optabs.c:1895:35: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 1895 |       rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                   ^
+optabs.c: In function ‘expand_complex_abs’:
+optabs.c:2271:39: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2271 |           rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                       ^
+optabs.c: In function ‘emit_unop_insn’:
+optabs.c:2440:35: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2440 |       rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                   ^
+optabs.c: In function ‘emit_cmp_insn’:
+optabs.c:2861:32: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2861 |         rtx (*gen_insn)(rtx) = (GEN_FCN (icode));
+      |                                ^
+optabs.c:2887:37: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2887 |         rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                     ^
+optabs.c: In function ‘gen_add2_insn’:
+optabs.c:3304:38: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3304 |     rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                      ^
+optabs.c: In function ‘gen_sub2_insn’:
+optabs.c:3330:38: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3330 |     rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                      ^
+optabs.c: In function ‘gen_move_insn’:
+optabs.c:3414:37: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3414 |         rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (insn_code));
+      |                                     ^
+optabs.c: In function ‘gen_extend_insn’:
+optabs.c:3447:31: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3447 |   rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (extendtab[(int) mto][(int) mfrom][unsignedp]));
+      |                               ^
+mv -f .d/optabs.Td .d/optabs.d
+gcc -MT varasm.o -MMD -MP -MF .d/varasm.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c varasm.c
+mv -f .d/varasm.Td .d/varasm.d
+gcc -MT emit-rtl.o -MMD -MP -MF .d/emit-rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c emit-rtl.c
+mv -f .d/emit-rtl.Td .d/emit-rtl.d
+gcc -MT genrtl.o -MMD -MP -MF .d/genrtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c genrtl.c
+mv -f .d/genrtl.Td .d/genrtl.d
+gcc -MT real.o -MMD -MP -MF .d/real.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c real.c
+mv -f .d/real.Td .d/real.d
+gcc -MT regmove.o -MMD -MP -MF .d/regmove.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c regmove.c
+In file included from regmove.c:37:
+regmove.c: In function ‘gen_add3_insn’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:114:40: note: in expansion of macro ‘GEN_FCN’
+  114 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:128:35: note: in expansion of macro ‘GEN_FCN’
+  128 |       rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mcode);
+      |                                   ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:132:40: note: in expansion of macro ‘GEN_FCN’
+  132 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+regmove.c: In function ‘optimize_related_values’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:1584:44: note: in expansion of macro ‘GEN_FCN’
+ 1584 |           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                            ^~~~~~~
+regmove.c: In function ‘regmove_profitable_p’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:3571:40: note: in expansion of macro ‘GEN_FCN’
+ 3571 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+mv -f .d/regmove.Td .d/regmove.d
+gcc -MT dwarf2out.o -MMD -MP -MF .d/dwarf2out.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c dwarf2out.c
+mv -f .d/dwarf2out.Td .d/dwarf2out.d
+gcc -MT alias.o -MMD -MP -MF .d/alias.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c alias.c
+mv -f .d/alias.Td .d/alias.d
+gcc -MT integrate.o -MMD -MP -MF .d/integrate.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c integrate.c
+mv -f .d/integrate.Td .d/integrate.d
+gcc -MT jump.o -MMD -MP -MF .d/jump.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c jump.c
+mv -f .d/jump.Td .d/jump.d
+gcc -MT cse.o -MMD -MP -MF .d/cse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c cse.c
+mv -f .d/cse.Td .d/cse.d
+gcc -MT loop.o -MMD -MP -MF .d/loop.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c loop.c
+In file included from loop.c:41:
+loop.c: In function ‘check_dbra_loop’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+loop.c:7493:60: note: in expansion of macro ‘GEN_FCN’
+ 7493 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+loop.c:7516:60: note: in expansion of macro ‘GEN_FCN’
+ 7516 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+mv -f .d/loop.Td .d/loop.d
+gcc -MT unroll.o -MMD -MP -MF .d/unroll.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c unroll.c
+mv -f .d/unroll.Td .d/unroll.d
+gcc -MT flow.o -MMD -MP -MF .d/flow.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c flow.c
+mv -f .d/flow.Td .d/flow.d
+gcc -MT stupid.o -MMD -MP -MF .d/stupid.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c stupid.c
+mv -f .d/stupid.Td .d/stupid.d
+gcc -MT combine.o -MMD -MP -MF .d/combine.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c combine.c
+mv -f .d/combine.Td .d/combine.d
+gcc -MT varray.o -MMD -MP -MF .d/varray.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c varray.c
+mv -f .d/varray.Td .d/varray.d
+gcc -MT regclass.o -MMD -MP -MF .d/regclass.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c regclass.c
+mv -f .d/regclass.Td .d/regclass.d
+gcc -MT local-alloc.o -MMD -MP -MF .d/local-alloc.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c local-alloc.c
+mv -f .d/local-alloc.Td .d/local-alloc.d
+gcc -MT global.o -MMD -MP -MF .d/global.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c global.c
+mv -f .d/global.Td .d/global.d
+gcc -MT reload.o -MMD -MP -MF .d/reload.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c reload.c
+mv -f .d/reload.Td .d/reload.d
+gcc -MT reload1.o -MMD -MP -MF .d/reload1.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c reload1.c
+In file included from reload1.c:33:
+reload1.c: In function ‘emit_reload_insns’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6589:60: note: in expansion of macro ‘GEN_FCN’
+ 6589 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6603:68: note: in expansion of macro ‘GEN_FCN’
+ 6603 |                                   rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (tertiary_icode);
+      |                                                                    ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6870:64: note: in expansion of macro ‘GEN_FCN’
+ 6870 |                               rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (tertiary_icode);
+      |                                                                ^~~~~~~
+mv -f .d/reload1.Td .d/reload1.d
+gcc -MT caller-save.o -MMD -MP -MF .d/caller-save.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c caller-save.c
+mv -f .d/caller-save.Td .d/caller-save.d
+gcc -MT gcse.o -MMD -MP -MF .d/gcse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c gcse.c
+mv -f .d/gcse.Td .d/gcse.d
+gcc -MT insn-peep.o -MMD -MP -MF .d/insn-peep.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-peep.c
+mv -f .d/insn-peep.Td .d/insn-peep.d
+gcc -MT final.o -MMD -MP -MF .d/final.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c final.c
+mv -f .d/final.Td .d/final.d
+gcc -MT recog.o -MMD -MP -MF .d/recog.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c recog.c
+mv -f .d/recog.Td .d/recog.d
+gcc -MT insn-opinit.o -MMD -MP -MF .d/insn-opinit.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-opinit.c
+mv -f .d/insn-opinit.Td .d/insn-opinit.d
+gcc -MT insn-recog.o -MMD -MP -MF .d/insn-recog.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-recog.c
+mv -f .d/insn-recog.Td .d/insn-recog.d
+gcc -MT insn-extract.o -MMD -MP -MF .d/insn-extract.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-extract.c
+mv -f .d/insn-extract.Td .d/insn-extract.d
+gcc -MT insn-output.o -MMD -MP -MF .d/insn-output.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-output.c
+mv -f .d/insn-output.Td .d/insn-output.d
+gcc -MT insn-emit.o -MMD -MP -MF .d/insn-emit.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-emit.c
+mv -f .d/insn-emit.Td .d/insn-emit.d
+gcc -MT lcm.o -MMD -MP -MF .d/lcm.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c lcm.c
+mv -f .d/lcm.Td .d/lcm.d
+gcc -MT insn-attrtab.o -MMD -MP -MF .d/insn-attrtab.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c insn-attrtab.c
+mv -f .d/insn-attrtab.Td .d/insn-attrtab.d
+gcc -MT thumb.o -MMD -MP -MF .d/thumb.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c thumb.c
+mv -f .d/thumb.Td .d/thumb.d
+gcc -MT getpwd.o -MMD -MP -MF .d/getpwd.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c getpwd.c
+mv -f .d/getpwd.Td .d/getpwd.d
+gcc -MT convert.o -MMD -MP -MF .d/convert.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c convert.c
+mv -f .d/convert.Td .d/convert.d
+gcc -MT dyn-string.o -MMD -MP -MF .d/dyn-string.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c dyn-string.c
+mv -f .d/dyn-string.Td .d/dyn-string.d
+gcc -MT splay-tree.o -MMD -MP -MF .d/splay-tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c splay-tree.c
+mv -f .d/splay-tree.Td .d/splay-tree.d
+gcc -MT graph.o -MMD -MP -MF .d/graph.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c graph.c
+mv -f .d/graph.Td .d/graph.d
+gcc -MT sbitmap.o -MMD -MP -MF .d/sbitmap.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c sbitmap.c
+mv -f .d/sbitmap.Td .d/sbitmap.d
+gcc -MT resource.o -MMD -MP -MF .d/resource.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c resource.c
+mv -f .d/resource.Td .d/resource.d
+gcc -MT c-parse.o -MMD -MP -MF .d/c-parse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-parse.c
+mv -f .d/c-parse.Td .d/c-parse.d
+gcc -MT c-lex.o -MMD -MP -MF .d/c-lex.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-lex.c
+mv -f .d/c-lex.Td .d/c-lex.d
+gcc -MT c-decl.o -MMD -MP -MF .d/c-decl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-decl.c
+mv -f .d/c-decl.Td .d/c-decl.d
+gcc -MT c-typeck.o -MMD -MP -MF .d/c-typeck.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-typeck.c
+mv -f .d/c-typeck.Td .d/c-typeck.d
+gcc -MT c-convert.o -MMD -MP -MF .d/c-convert.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-convert.c
+mv -f .d/c-convert.Td .d/c-convert.d
+gcc -MT c-aux-info.o -MMD -MP -MF .d/c-aux-info.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-aux-info.c
+mv -f .d/c-aux-info.Td .d/c-aux-info.d
+gcc -MT c-common.o -MMD -MP -MF .d/c-common.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-common.c
+mv -f .d/c-common.Td .d/c-common.d
+gcc -MT c-iterate.o -MMD -MP -MF .d/c-iterate.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER  -I. -I. -c c-iterate.c
+mv -f .d/c-iterate.Td .d/c-iterate.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -DOLD_COMPILER -o old_agbcc toplev.o version.o tree.o print-tree.o stor-layout.o fold-const.o function.o stmt.o except.o expr.o calls.o expmed.o explow.o optabs.o varasm.o emit-rtl.o genrtl.o real.o regmove.o dwarf2out.o alias.o integrate.o jump.o cse.o loop.o unroll.o flow.o stupid.o combine.o varray.o regclass.o local-alloc.o global.o reload.o reload1.o caller-save.o gcse.o insn-peep.o final.o recog.o insn-opinit.o insn-recog.o insn-extract.o insn-output.o insn-emit.o lcm.o insn-attrtab.o thumb.o getpwd.o convert.o dyn-string.o splay-tree.o graph.o sbitmap.o resource.o c-parse.o c-lex.o c-decl.o c-typeck.o c-convert.o c-aux-info.o c-common.o c-iterate.o rtl.o bitmap.o obstack.o print-rtl.o rtlanal.o
+make: Leaving directory '/workspace/agbcc/gcc'
+make: Entering directory '/workspace/agbcc/gcc'
+rm -f agbcc agbcc.exe old_agbcc old_agbcc.exe
+rm -f toplev.o version.o tree.o print-tree.o stor-layout.o fold-const.o function.o stmt.o except.o expr.o calls.o expmed.o explow.o optabs.o varasm.o emit-rtl.o genrtl.o real.o regmove.o dwarf2out.o alias.o integrate.o jump.o cse.o loop.o unroll.o flow.o stupid.o combine.o varray.o regclass.o local-alloc.o global.o reload.o reload1.o caller-save.o gcse.o insn-peep.o final.o recog.o insn-opinit.o insn-recog.o insn-extract.o insn-output.o insn-emit.o lcm.o insn-attrtab.o thumb.o getpwd.o convert.o dyn-string.o splay-tree.o graph.o sbitmap.o resource.o c-parse.o c-lex.o c-decl.o c-typeck.o c-convert.o c-aux-info.o c-common.o c-iterate.o rtl.o bitmap.o obstack.o rtlanal.o print-rtl.o
+rm -f genrtl.c genrtl.h insn-peep.c insn-opinit.c insn-recog.c insn-extract.c insn-output.c insn-emit.c insn-attrtab.c tree-check.h insn-config.h insn-flags.h insn-codes.h insn-attr.h
+rm -f genemit genoutput genrecog genextract genflags gencodes genconfig genpeep gengenrtl gencheck genattr genattrtab genopinit genemit.exe genoutput.exe genrecog.exe genextract.exe genflags.exe gencodes.exe genconfig.exe genpeep.exe gengenrtl.exe gencheck.exe genattr.exe genattrtab.exe genopinit.exe genemit.o genoutput.o genrecog.o genextract.o genflags.o gencodes.o genconfig.o genpeep.o gengenrtl.o gencheck.o genattr.o genattrtab.o genopinit.o
+rm -f s-config s-flags s-codes s-emit s-recog s-opinit s-extract s-peep \
+s-attr s-attrtab s-output s-genrtl s-check
+rm -f -r .d
+make: Leaving directory '/workspace/agbcc/gcc'
+make: Entering directory '/workspace/agbcc/gcc'
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c gengenrtl.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o gengenrtl gengenrtl.o
+./gengenrtl tmp-genrtl.h tmp-genrtl.c
+./move-if-change tmp-genrtl.h genrtl.h
+./move-if-change tmp-genrtl.c genrtl.c
+touch s-genrtl
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genpeep.c
+gcc -MT rtl.o -MMD -MP -MF .d/rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c rtl.c
+mv -f .d/rtl.Td .d/rtl.d
+gcc -MT bitmap.o -MMD -MP -MF .d/bitmap.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c bitmap.c
+mv -f .d/bitmap.Td .d/bitmap.d
+gcc -MT obstack.o -MMD -MP -MF .d/obstack.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c obstack.c
+mv -f .d/obstack.Td .d/obstack.d
+gcc -MT print-rtl.o -MMD -MP -MF .d/print-rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c print-rtl.c
+mv -f .d/print-rtl.Td .d/print-rtl.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genpeep genpeep.o rtl.o bitmap.o obstack.o print-rtl.o
+./genpeep ./thumb.md > tmp-peep.c
+./move-if-change tmp-peep.c insn-peep.c
+touch s-peep
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genopinit.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genopinit genopinit.o rtl.o bitmap.o obstack.o print-rtl.o
+./genopinit ./thumb.md > tmp-opinit.c
+./move-if-change tmp-opinit.c insn-opinit.c
+touch s-opinit
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genrecog.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genrecog genrecog.o rtl.o bitmap.o obstack.o print-rtl.o
+./genrecog ./thumb.md > tmp-recog.c
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+Warning: `s_register_operand' not in PREDICATE_CODES
+./move-if-change tmp-recog.c insn-recog.c
+touch s-recog
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genconfig.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genconfig genconfig.o rtl.o bitmap.o obstack.o print-rtl.o
+./genconfig ./thumb.md > tmp-config.h
+./move-if-change tmp-config.h insn-config.h
+touch s-config
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genextract.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genextract genextract.o rtl.o bitmap.o obstack.o print-rtl.o
+./genextract ./thumb.md > tmp-extract.c
+./move-if-change tmp-extract.c insn-extract.c
+touch s-extract
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genoutput.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genoutput genoutput.o rtl.o bitmap.o obstack.o print-rtl.o
+./genoutput ./thumb.md > tmp-output.c
+./move-if-change tmp-output.c insn-output.c
+touch s-output
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genemit.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genemit genemit.o rtl.o bitmap.o obstack.o print-rtl.o
+./genemit ./thumb.md > tmp-emit.c
+./move-if-change tmp-emit.c insn-emit.c
+touch s-emit
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genattrtab.c
+gcc -MT rtlanal.o -MMD -MP -MF .d/rtlanal.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c rtlanal.c
+mv -f .d/rtlanal.Td .d/rtlanal.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genattrtab genattrtab.o rtl.o bitmap.o obstack.o print-rtl.o rtlanal.o
+./genattrtab ./thumb.md > tmp-attrtab.c;
+./move-if-change tmp-attrtab.c insn-attrtab.c
+touch s-attrtab
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c gencheck.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o gencheck gencheck.o
+./gencheck > tmp-check.h
+./move-if-change tmp-check.h tree-check.h
+touch s-check
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genflags.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genflags genflags.o rtl.o bitmap.o obstack.o print-rtl.o
+./genflags ./thumb.md > tmp-flags.h
+./move-if-change tmp-flags.h insn-flags.h
+touch s-flags
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c gencodes.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o gencodes gencodes.o rtl.o bitmap.o obstack.o print-rtl.o
+./gencodes ./thumb.md > tmp-codes.h
+./move-if-change tmp-codes.h insn-codes.h
+touch s-codes
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genattr.c
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o genattr genattr.o rtl.o bitmap.o obstack.o print-rtl.o
+./genattr ./thumb.md > tmp-attr.h
+./move-if-change tmp-attr.h insn-attr.h
+touch s-attr
+gcc -MT toplev.o -MMD -MP -MF .d/toplev.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c toplev.c
+mv -f .d/toplev.Td .d/toplev.d
+gcc -MT version.o -MMD -MP -MF .d/version.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c version.c
+mv -f .d/version.Td .d/version.d
+gcc -MT tree.o -MMD -MP -MF .d/tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c tree.c
+mv -f .d/tree.Td .d/tree.d
+gcc -MT print-tree.o -MMD -MP -MF .d/print-tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c print-tree.c
+mv -f .d/print-tree.Td .d/print-tree.d
+gcc -MT stor-layout.o -MMD -MP -MF .d/stor-layout.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c stor-layout.c
+mv -f .d/stor-layout.Td .d/stor-layout.d
+gcc -MT fold-const.o -MMD -MP -MF .d/fold-const.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c fold-const.c
+mv -f .d/fold-const.Td .d/fold-const.d
+gcc -MT function.o -MMD -MP -MF .d/function.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c function.c
+mv -f .d/function.Td .d/function.d
+gcc -MT stmt.o -MMD -MP -MF .d/stmt.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c stmt.c
+mv -f .d/stmt.Td .d/stmt.d
+gcc -MT except.o -MMD -MP -MF .d/except.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c except.c
+In file included from except.c:394:
+except.c: In function ‘output_exception_table_entry’:
+rtl.h:1130:50: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1130 | #define GEN_INT(N)  gen_rtx_CONST_INT (VOIDmode, (HOST_WIDE_INT) (N))
+      |                                                  ^
+except.c:2158:33: note: in expansion of macro ‘GEN_INT’
+ 2158 |               assemble_integer (GEN_INT (CATCH_ALL_TYPE),
+      |                                 ^~~~~~~
+except.c: In function ‘output_exception_table’:
+rtl.h:1130:50: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1130 | #define GEN_INT(N)  gen_rtx_CONST_INT (VOIDmode, (HOST_WIDE_INT) (N))
+      |                                                  ^
+except.c:2211:25: note: in expansion of macro ‘GEN_INT’
+ 2211 |       assemble_integer (GEN_INT (NEW_EH_RUNTIME),
+      |                         ^~~~~~~
+mv -f .d/except.Td .d/except.d
+gcc -MT expr.o -MMD -MP -MF .d/expr.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c expr.c
+In file included from expr.c:37:
+expr.c: In function ‘move_by_pieces’:
+expr.h:356:24: warning: passing argument 1 of ‘move_by_pieces_1’ from incompatible pointer type [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        struct rtx_def * (*)(struct rtx_def *, ...)
+expr.c:1044:30: note: in expansion of macro ‘GEN_FCN’
+ 1044 |             move_by_pieces_1(GEN_FCN(icode), mode, &data);
+      |                              ^~~~~~~
+expr.c:126:34: note: expected ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ but argument is of type ‘struct rtx_def * (*)(struct rtx_def *, ...)’
+  126 | static void move_by_pieces_1    (rtx (*)(rtx, rtx), enum machine_mode,
+      |                                  ^~~~~~~~~~~~~~~~~
+expr.c: In function ‘emit_block_move’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1216:59: note: in expansion of macro ‘GEN_FCN’
+ 1216 |                     rtx (*gen_insn)(rtx, rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                           ^~~~~~~
+expr.c: In function ‘clear_by_pieces’:
+expr.h:356:24: warning: passing argument 1 of ‘clear_by_pieces_1’ from incompatible pointer type [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        struct rtx_def * (*)(struct rtx_def *, ...)
+expr.c:1729:31: note: in expansion of macro ‘GEN_FCN’
+ 1729 |             clear_by_pieces_1(GEN_FCN(icode), mode, &data);
+      |                               ^~~~~~~
+expr.c:129:34: note: expected ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ but argument is of type ‘struct rtx_def * (*)(struct rtx_def *, ...)’
+  129 | static void clear_by_pieces_1   (rtx (*)(rtx, rtx), enum machine_mode,
+      |                                  ^~~~~~~~~~~~~~~~~
+expr.c: In function ‘clear_storage’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1835:58: note: in expansion of macro ‘GEN_FCN’
+ 1835 |                         rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                          ^~~~~~~
+expr.c: In function ‘emit_move_insn_1’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:1995:37: note: in expansion of macro ‘GEN_FCN’
+ 1995 |         rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mov_optab->handlers[(int) mode].insn_code);
+      |                                     ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:2012:37: note: in expansion of macro ‘GEN_FCN’
+ 2012 |         rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mov_optab->handlers[(int) submode].insn_code);
+      |                                     ^~~~~~~
+expr.c: In function ‘emit_push_insn’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:2328:63: note: in expansion of macro ‘GEN_FCN’
+ 2328 |                         rtx (*gen_insn)(rtx, rtx, rtx, rtx) = GEN_FCN ((int) code);
+      |                                                               ^~~~~~~
+expr.c: In function ‘expand_increment’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:8854:46: note: in expansion of macro ‘GEN_FCN’
+ 8854 |             rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                              ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expr.c:8863:46: note: in expansion of macro ‘GEN_FCN’
+ 8863 |             rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                              ^~~~~~~
+mv -f .d/expr.Td .d/expr.d
+gcc -MT calls.o -MMD -MP -MF .d/calls.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c calls.c
+mv -f .d/calls.Td .d/calls.d
+gcc -MT expmed.o -MMD -MP -MF .d/expmed.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c expmed.c
+In file included from expmed.c:31:
+expmed.c: In function ‘store_bit_field’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expmed.c:349:43: note: in expansion of macro ‘GEN_FCN’
+  349 |               rtx (*gen_insn)(rtx, rtx) = GEN_FCN (icode);
+      |                                           ^~~~~~~
+expmed.c: In function ‘emit_store_flag’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+expmed.c:3825:34: note: in expansion of macro ‘GEN_FCN’
+ 3825 |           rtx (*gen_insn)(rtx) = GEN_FCN (icode);
+      |                                  ^~~~~~~
+mv -f .d/expmed.Td .d/expmed.d
+gcc -MT explow.o -MMD -MP -MF .d/explow.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c explow.c
+mv -f .d/explow.Td .d/explow.d
+gcc -MT optabs.o -MMD -MP -MF .d/optabs.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c optabs.c
+optabs.c: In function ‘expand_binop’:
+optabs.c:503:44: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  503 |           rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                            ^
+optabs.c: In function ‘expand_twoval_binop’:
+optabs.c:1788:49: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 1788 |           rtx (*gen_insn)(rtx, rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                                 ^
+optabs.c: In function ‘expand_unop’:
+optabs.c:1895:35: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 1895 |       rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                   ^
+optabs.c: In function ‘expand_complex_abs’:
+optabs.c:2271:39: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2271 |           rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                       ^
+optabs.c: In function ‘emit_unop_insn’:
+optabs.c:2440:35: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2440 |       rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                   ^
+optabs.c: In function ‘emit_cmp_insn’:
+optabs.c:2861:32: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2861 |         rtx (*gen_insn)(rtx) = (GEN_FCN (icode));
+      |                                ^
+optabs.c:2887:37: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 2887 |         rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (icode));
+      |                                     ^
+optabs.c: In function ‘gen_add2_insn’:
+optabs.c:3304:38: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3304 |     rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                      ^
+optabs.c: In function ‘gen_sub2_insn’:
+optabs.c:3330:38: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3330 |     rtx (*gen_insn)(rtx, rtx, rtx) = (GEN_FCN (icode));
+      |                                      ^
+optabs.c: In function ‘gen_move_insn’:
+optabs.c:3414:37: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3414 |         rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (insn_code));
+      |                                     ^
+optabs.c: In function ‘gen_extend_insn’:
+optabs.c:3447:31: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+ 3447 |   rtx (*gen_insn)(rtx, rtx) = (GEN_FCN (extendtab[(int) mto][(int) mfrom][unsignedp]));
+      |                               ^
+mv -f .d/optabs.Td .d/optabs.d
+gcc -MT varasm.o -MMD -MP -MF .d/varasm.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c varasm.c
+mv -f .d/varasm.Td .d/varasm.d
+gcc -MT emit-rtl.o -MMD -MP -MF .d/emit-rtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c emit-rtl.c
+mv -f .d/emit-rtl.Td .d/emit-rtl.d
+gcc -MT genrtl.o -MMD -MP -MF .d/genrtl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c genrtl.c
+mv -f .d/genrtl.Td .d/genrtl.d
+gcc -MT real.o -MMD -MP -MF .d/real.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c real.c
+mv -f .d/real.Td .d/real.d
+gcc -MT regmove.o -MMD -MP -MF .d/regmove.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c regmove.c
+In file included from regmove.c:37:
+regmove.c: In function ‘gen_add3_insn’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:114:40: note: in expansion of macro ‘GEN_FCN’
+  114 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:128:35: note: in expansion of macro ‘GEN_FCN’
+  128 |       rtx (*gen_insn)(rtx, rtx) = GEN_FCN (mcode);
+      |                                   ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:132:40: note: in expansion of macro ‘GEN_FCN’
+  132 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+regmove.c: In function ‘optimize_related_values’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:1584:44: note: in expansion of macro ‘GEN_FCN’
+ 1584 |           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                            ^~~~~~~
+regmove.c: In function ‘regmove_profitable_p’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+regmove.c:3571:40: note: in expansion of macro ‘GEN_FCN’
+ 3571 |       rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                        ^~~~~~~
+mv -f .d/regmove.Td .d/regmove.d
+gcc -MT dwarf2out.o -MMD -MP -MF .d/dwarf2out.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c dwarf2out.c
+mv -f .d/dwarf2out.Td .d/dwarf2out.d
+gcc -MT alias.o -MMD -MP -MF .d/alias.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c alias.c
+mv -f .d/alias.Td .d/alias.d
+gcc -MT integrate.o -MMD -MP -MF .d/integrate.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c integrate.c
+mv -f .d/integrate.Td .d/integrate.d
+gcc -MT jump.o -MMD -MP -MF .d/jump.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c jump.c
+mv -f .d/jump.Td .d/jump.d
+gcc -MT cse.o -MMD -MP -MF .d/cse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c cse.c
+mv -f .d/cse.Td .d/cse.d
+gcc -MT loop.o -MMD -MP -MF .d/loop.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c loop.c
+In file included from loop.c:41:
+loop.c: In function ‘check_dbra_loop’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+loop.c:7493:60: note: in expansion of macro ‘GEN_FCN’
+ 7493 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+loop.c:7516:60: note: in expansion of macro ‘GEN_FCN’
+ 7516 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+mv -f .d/loop.Td .d/loop.d
+gcc -MT unroll.o -MMD -MP -MF .d/unroll.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c unroll.c
+mv -f .d/unroll.Td .d/unroll.d
+gcc -MT flow.o -MMD -MP -MF .d/flow.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c flow.c
+mv -f .d/flow.Td .d/flow.d
+gcc -MT stupid.o -MMD -MP -MF .d/stupid.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c stupid.c
+mv -f .d/stupid.Td .d/stupid.d
+gcc -MT combine.o -MMD -MP -MF .d/combine.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c combine.c
+mv -f .d/combine.Td .d/combine.d
+gcc -MT varray.o -MMD -MP -MF .d/varray.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c varray.c
+mv -f .d/varray.Td .d/varray.d
+gcc -MT regclass.o -MMD -MP -MF .d/regclass.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c regclass.c
+mv -f .d/regclass.Td .d/regclass.d
+gcc -MT local-alloc.o -MMD -MP -MF .d/local-alloc.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c local-alloc.c
+mv -f .d/local-alloc.Td .d/local-alloc.d
+gcc -MT global.o -MMD -MP -MF .d/global.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c global.c
+mv -f .d/global.Td .d/global.d
+gcc -MT reload.o -MMD -MP -MF .d/reload.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c reload.c
+mv -f .d/reload.Td .d/reload.d
+gcc -MT reload1.o -MMD -MP -MF .d/reload1.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c reload1.c
+In file included from reload1.c:33:
+reload1.c: In function ‘emit_reload_insns’:
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6589:60: note: in expansion of macro ‘GEN_FCN’
+ 6589 |                           rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (icode);
+      |                                                            ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6603:68: note: in expansion of macro ‘GEN_FCN’
+ 6603 |                                   rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (tertiary_icode);
+      |                                                                    ^~~~~~~
+expr.h:356:23: warning: initialization of ‘struct rtx_def * (*)(struct rtx_def *, struct rtx_def *, struct rtx_def *)’ from incompatible pointer type ‘struct rtx_def * (*)(struct rtx_def *, ...)’ [-Wincompatible-pointer-types]
+  356 | #define GEN_FCN(CODE) (*insn_gen_function[(int) (CODE)])
+      |                       ^
+reload1.c:6870:64: note: in expansion of macro ‘GEN_FCN’
+ 6870 |                               rtx (*gen_insn)(rtx, rtx, rtx) = GEN_FCN (tertiary_icode);
+      |                                                                ^~~~~~~
+mv -f .d/reload1.Td .d/reload1.d
+gcc -MT caller-save.o -MMD -MP -MF .d/caller-save.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c caller-save.c
+mv -f .d/caller-save.Td .d/caller-save.d
+gcc -MT gcse.o -MMD -MP -MF .d/gcse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c gcse.c
+mv -f .d/gcse.Td .d/gcse.d
+gcc -MT insn-peep.o -MMD -MP -MF .d/insn-peep.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-peep.c
+mv -f .d/insn-peep.Td .d/insn-peep.d
+gcc -MT final.o -MMD -MP -MF .d/final.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c final.c
+mv -f .d/final.Td .d/final.d
+gcc -MT recog.o -MMD -MP -MF .d/recog.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c recog.c
+mv -f .d/recog.Td .d/recog.d
+gcc -MT insn-opinit.o -MMD -MP -MF .d/insn-opinit.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-opinit.c
+mv -f .d/insn-opinit.Td .d/insn-opinit.d
+gcc -MT insn-recog.o -MMD -MP -MF .d/insn-recog.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-recog.c
+mv -f .d/insn-recog.Td .d/insn-recog.d
+gcc -MT insn-extract.o -MMD -MP -MF .d/insn-extract.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-extract.c
+mv -f .d/insn-extract.Td .d/insn-extract.d
+gcc -MT insn-output.o -MMD -MP -MF .d/insn-output.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-output.c
+mv -f .d/insn-output.Td .d/insn-output.d
+gcc -MT insn-emit.o -MMD -MP -MF .d/insn-emit.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-emit.c
+mv -f .d/insn-emit.Td .d/insn-emit.d
+gcc -MT lcm.o -MMD -MP -MF .d/lcm.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c lcm.c
+mv -f .d/lcm.Td .d/lcm.d
+gcc -MT insn-attrtab.o -MMD -MP -MF .d/insn-attrtab.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c insn-attrtab.c
+mv -f .d/insn-attrtab.Td .d/insn-attrtab.d
+gcc -MT thumb.o -MMD -MP -MF .d/thumb.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c thumb.c
+mv -f .d/thumb.Td .d/thumb.d
+gcc -MT getpwd.o -MMD -MP -MF .d/getpwd.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c getpwd.c
+mv -f .d/getpwd.Td .d/getpwd.d
+gcc -MT convert.o -MMD -MP -MF .d/convert.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c convert.c
+mv -f .d/convert.Td .d/convert.d
+gcc -MT dyn-string.o -MMD -MP -MF .d/dyn-string.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c dyn-string.c
+mv -f .d/dyn-string.Td .d/dyn-string.d
+gcc -MT splay-tree.o -MMD -MP -MF .d/splay-tree.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c splay-tree.c
+mv -f .d/splay-tree.Td .d/splay-tree.d
+gcc -MT graph.o -MMD -MP -MF .d/graph.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c graph.c
+mv -f .d/graph.Td .d/graph.d
+gcc -MT sbitmap.o -MMD -MP -MF .d/sbitmap.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c sbitmap.c
+mv -f .d/sbitmap.Td .d/sbitmap.d
+gcc -MT resource.o -MMD -MP -MF .d/resource.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c resource.c
+mv -f .d/resource.Td .d/resource.d
+gcc -MT c-parse.o -MMD -MP -MF .d/c-parse.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-parse.c
+mv -f .d/c-parse.Td .d/c-parse.d
+gcc -MT c-lex.o -MMD -MP -MF .d/c-lex.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-lex.c
+mv -f .d/c-lex.Td .d/c-lex.d
+gcc -MT c-decl.o -MMD -MP -MF .d/c-decl.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-decl.c
+mv -f .d/c-decl.Td .d/c-decl.d
+gcc -MT c-typeck.o -MMD -MP -MF .d/c-typeck.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-typeck.c
+mv -f .d/c-typeck.Td .d/c-typeck.d
+gcc -MT c-convert.o -MMD -MP -MF .d/c-convert.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-convert.c
+mv -f .d/c-convert.Td .d/c-convert.d
+gcc -MT c-aux-info.o -MMD -MP -MF .d/c-aux-info.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-aux-info.c
+mv -f .d/c-aux-info.Td .d/c-aux-info.d
+gcc -MT c-common.o -MMD -MP -MF .d/c-common.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-common.c
+mv -f .d/c-common.Td .d/c-common.d
+gcc -MT c-iterate.o -MMD -MP -MF .d/c-iterate.Td -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types  -I. -I. -c c-iterate.c
+mv -f .d/c-iterate.Td .d/c-iterate.d
+gcc -g -std=gnu11 -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -o agbcc toplev.o version.o tree.o print-tree.o stor-layout.o fold-const.o function.o stmt.o except.o expr.o calls.o expmed.o explow.o optabs.o varasm.o emit-rtl.o genrtl.o real.o regmove.o dwarf2out.o alias.o integrate.o jump.o cse.o loop.o unroll.o flow.o stupid.o combine.o varray.o regclass.o local-alloc.o global.o reload.o reload1.o caller-save.o gcse.o insn-peep.o final.o recog.o insn-opinit.o insn-recog.o insn-extract.o insn-output.o insn-emit.o lcm.o insn-attrtab.o thumb.o getpwd.o convert.o dyn-string.o splay-tree.o graph.o sbitmap.o resource.o c-parse.o c-lex.o c-decl.o c-typeck.o c-convert.o c-aux-info.o c-common.o c-iterate.o rtl.o bitmap.o obstack.o print-rtl.o rtlanal.o
+make: Leaving directory '/workspace/agbcc/gcc'
+creating cache ./config.cache
+checking LIBRARY_PATH variable... ok
+checking GCC_EXEC_PREFIX variable... ok
+checking host system type... i386-pc-linux-gnu
+checking target system type... arm-unknown-elf
+checking build system type... i386-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler (gcc  ) works... yes
+checking whether the C compiler (gcc  ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking whether make sets ${MAKE}... yes
+checking whether a default assembler was specified... no
+checking whether a default linker was specified... no
+checking for mawk... mawk
+checking for flex... lex
+checking for yywrap in -ll... no
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for volatile... yes
+checking for ranlib... ranlib
+checking for bison... no
+checking for byacc... no
+checking for a BSD compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... no
+checking whether time.h and sys/time.h may both be included... yes
+checking whether string.h and strings.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for limits.h... yes
+checking for stddef.h... yes
+checking for string.h... yes
+checking for strings.h... yes
+checking for stdlib.h... yes
+checking for time.h... yes
+checking for fcntl.h... yes
+checking for unistd.h... yes
+checking for stab.h... yes
+checking for sys/file.h... yes
+checking for sys/time.h... yes
+checking for sys/resource.h... yes
+checking for sys/param.h... yes
+checking for sys/times.h... yes
+checking for sys/stat.h... yes
+checking for thread.h... no
+checking for pthread.h... yes
+checking for gnatbind... no
+checking whether cpp understands the stringify operator... yes
+checking for inttypes.h... yes
+checking for strtoul... yes
+checking for bsearch... yes
+checking for strerror... yes
+checking for putenv... yes
+checking for popen... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for bcmp... yes
+checking for index... yes
+checking for rindex... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for kill... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for atoll... yes
+checking for atoq... no
+checking for sysconf... yes
+checking for isascii... yes
+checking for gettimeofday... yes
+checking for strsignal... yes
+checking for putc_unlocked... yes
+checking for fputc_unlocked... yes
+checking for fputs_unlocked... yes
+checking for vprintf... yes
+checking whether the printf functions support %p... no
+checking for pid_t... yes
+checking for vfork.h... no
+checking for working vfork... no
+checking whether malloc must be declared... no
+checking whether realloc must be declared... no
+checking whether calloc must be declared... no
+checking whether free must be declared... no
+checking whether bcopy must be declared... no
+checking whether bzero must be declared... no
+checking whether bcmp must be declared... no
+checking whether index must be declared... no
+checking whether rindex must be declared... no
+checking whether getenv must be declared... no
+checking whether atol must be declared... no
+checking whether sbrk must be declared... no
+checking whether abort must be declared... no
+checking whether atof must be declared... no
+checking whether strerror must be declared... no
+checking whether getcwd must be declared... no
+checking whether getwd must be declared... no
+checking whether strsignal must be declared... no
+checking whether getrlimit must be declared... no
+checking whether setrlimit must be declared... no
+checking for sys_siglist declaration in signal.h or unistd.h... no
+Using `./config/arm/arm.c' to output insns.
+Using `./config/arm/arm.md' as machine description file.
+Using `./config/arm/unknown-elf.h' as target machine macro file.
+Using `./config/i386/xm-i386.h' as host machine macro file.
+checking assembler alignment features... 
+checking assembler subsection support... 
+checking whether to enable init_priority by default... no
+Links are now set up to build a cross-compiler for arm-unknown-elf
+  from i386-pc-linux-gnu.
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating auto-host.h
+auto-host.h is unchanged
+gcc -c -DCROSS_COMPILE -DIN_GCC   -DMULTIBYTE_CHARS=1   -g -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu11  -DHAVE_CONFIG_H    -I. -I. -I./config -I./../include ./gencheck.c
+gcc -DCROSS_COMPILE -DIN_GCC   -DMULTIBYTE_CHARS=1   -g -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu11  -DHAVE_CONFIG_H  -o gencheck \
+ gencheck.o ` case "obstack.o" in ?*) echo obstack.o ;; esac ` ` case "" in ?*) echo  ;; esac ` ` case "" in ?*) echo  ;; esac ` ` case "" in ?*) echo  ;; esac ` ` case "" in ?*) echo  ;; esac ` 
+./gencheck > tmp-check.h
+./move-if-change tmp-check.h tree-check.h
+tree-check.h is unchanged
+touch s-check
+gcc -DCROSS_COMPILE -DIN_GCC   -DMULTIBYTE_CHARS=1   -g -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu11  -DHAVE_CONFIG_H    -I. -I. -I./config -I./../include \
+  -DTARGET_NAME=\"arm-elf\" \
+  -c `echo ./toplev.c | sed 's,^\./,,'`
+gcc -DCROSS_COMPILE -DIN_GCC   -DMULTIBYTE_CHARS=1   -g -Werror-implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu11  -DHAVE_CONFIG_H  -o cc1 toplev.o version.o tree.o print-tree.o stor-layout.o fold-const.o function.o stmt.o except.o expr.o calls.o expmed.o explow.o optabs.o varasm.o rtl.o print-rtl.o rtlanal.o emit-rtl.o genrtl.o real.o regmove.o sdbout.o dwarfout.o dwarf2out.o xcoffout.o bitmap.o alias.o integrate.o jump.o cse.o loop.o unroll.o flow.o stupid.o combine.o varray.o regclass.o local-alloc.o global.o reload.o reload1.o caller-save.o gcse.o insn-peep.o reorg.o sched.o final.o recog.o reg-stack.o insn-opinit.o insn-recog.o insn-extract.o insn-output.o insn-emit.o  lcm.o  range.o insn-attrtab.o arm.o getpwd.o  convert.o mbchar.o dyn-string.o splay-tree.o graph.o sbitmap.o resource.o c-parse.o c-lang.o c-lex.o c-pragma.o c-decl.o c-typeck.o c-convert.o c-aux-info.o c-common.o c-iterate.o  obstack.o     
+make: Entering directory '/workspace/agbcc/libgcc'
+rm -f *.o *.a *.s *.i
+make: Leaving directory '/workspace/agbcc/libgcc'
+make: Entering directory '/workspace/agbcc/libgcc'
+rm -f tmplibgcc1.a
+set -e
+for name in _udivsi3 _divsi3 _umodsi3 _modsi3 _dvmd_tls _call_via_rX; \
+do \
+  echo ${name}; \
+  cc -E -undef -nostdinc -DL${name} -x assembler-with-cpp -o ${name}.s lib1thumb.asm; \
+  bash -c 'echo -e ".text\n\t.align\t2, 0\n"' >> ${name}.s ; \
+  arm-none-eabi-as -mcpu=arm7tdmi -o ${name}.o ${name}.s; \
+  rm -f ${name}.s; \
+  arm-none-eabi-ar -rc tmplibgcc1.a ${name}.o; \
+  rm -f ${name}.o; \
+done
+_udivsi3
+_divsi3
+_umodsi3
+_modsi3
+_dvmd_tls
+_call_via_rX
+mv tmplibgcc1.a libgcc1.a
+rm -f tmplibgcc2.a
+set -e
+for name in _muldi3 _divdi3 _moddi3 _udivdi3 _umoddi3 _negdi2 _lshrdi3 _ashldi3 _ashrdi3 _ffsdi2 _udiv_w_sdiv _udivmoddi4 _cmpdi2 _ucmpdi2 _floatdidf _floatdisf _fixunsdfsi _fixunssfsi _fixunsdfdi _fixdfdi _fixunssfdi _fixsfdi; \
+do \
+  echo ${name}; \
+  cc -E -undef -I ../ginclude -nostdinc -DL${name} -o ${name}.i libgcc2.c; \
+  ../old_agbcc -O2 ${name}.i; \
+  rm -f ${name}.i; \
+  bash -c 'echo -e ".text\n\t.align\t2, 0\n"' >> ${name}.s ; \
+  arm-none-eabi-as -mcpu=arm7tdmi -o ${name}.o ${name}.s; \
+  rm -f ${name}.s; \
+  arm-none-eabi-ar -rc tmplibgcc2.a ${name}.o; \
+  rm -f ${name}.o; \
+done
+_muldi3
+_divdi3
+_moddi3
+_udivdi3
+_umoddi3
+_negdi2
+_lshrdi3
+_ashldi3
+_ashrdi3
+_ffsdi2
+_udiv_w_sdiv
+_udivmoddi4
+_cmpdi2
+_ucmpdi2
+_floatdidf
+_floatdisf
+_fixunsdfsi
+_fixunssfsi
+_fixunsdfdi
+_fixdfdi
+_fixunssfdi
+_fixsfdi
+mv tmplibgcc2.a libgcc2.a
+cc -E -undef -I ../ginclude -nostdinc -o fp-bit.i fp-bit.c;
+../old_agbcc -O2 fp-bit.i
+rm -f fp-bit.i
+bash -c 'echo -e ".text\n\t.align\t2, 0\n"' >> fp-bit.s
+arm-none-eabi-as -mcpu=arm7tdmi -o fp-bit.o fp-bit.s;
+rm -f fp-bit.s
+cc -E -undef -I ../ginclude -nostdinc -o dp-bit.i dp-bit.c;
+../old_agbcc -O2 dp-bit.i
+rm -f dp-bit.i
+bash -c 'echo -e ".text\n\t.align\t2, 0\n"' >> dp-bit.s
+arm-none-eabi-as -mcpu=arm7tdmi -o dp-bit.o dp-bit.s;
+rm -f dp-bit.s
+arm-none-eabi-ar -x libgcc1.a;
+arm-none-eabi-ar -x libgcc2.a;
+arm-none-eabi-ar -rc libgcc.a *.o
+make: Leaving directory '/workspace/agbcc/libgcc'
+make: Entering directory '/workspace/agbcc/libc'
+rm -f ./errno/errno.o ./arm/syscalls.o ./arm/libcfunc.o ./string/strncmp.o ./string/strlen.o ./string/strstr.o ./string/strtok_r.o ./string/strcat.o ./string/index.o ./string/strrchr.o ./string/strcspn.o ./string/strspn.o ./string/rindex.o ./string/strlwr.o ./string/bcopy.o ./string/u_strerr.o ./string/strncpy.o ./string/strpbrk.o ./string/memset.o ./string/strupr.o ./string/strxfrm.o ./string/strchr.o ./string/strncat.o ./string/strcoll.o ./string/bzero.o ./string/strcasecmp.o ./string/memcpy.o ./string/bcmp.o ./string/strncasecmp.o ./string/strerror.o ./string/memmove.o ./string/strcmp.o ./string/strtok.o ./string/memchr.o ./string/strcpy.o ./string/memcmp.o ./misc/unctrl.o ./misc/ffs.o ./misc/dprintf.o ./reent/sbrkr.o ./reent/statr.o ./reent/execr.o ./reent/linkr.o ./reent/lseekr.o ./reent/impure.o ./reent/openr.o ./reent/writer.o ./reent/closer.o ./reent/readr.o ./reent/timer.o ./reent/signalr.o ./reent/fstatr.o ./reent/reent.o ./time/time.o ./time/asctime.o ./time/gmtime.o ./time/strftime.o ./time/lcltime_r.o ./time/clock.o ./time/gmtime_r.o ./time/mktime.o ./time/ctime.o ./time/lcltime.o ./time/ctime_r.o ./time/asctime_r.o ./time/difftime.o ./math/sf_ldexp.o ./math/sf_frexp.o ./math/s_scalbn.o ./math/s_modf.o ./math/s_finite.o ./math/sf_isnan.o ./math/sf_finite.o ./math/sf_modf.o ./math/sf_isinf.o ./math/s_copysign.o ./math/s_isinf.o ./math/s_ldexp.o ./math/s_frexp.o ./math/s_isnan.o ./math/s_infconst.o ./math/sf_scalbn.o ./math/sf_copysign.o ./stdlib/exit.o ./stdlib/atoi.o ./stdlib/atof.o ./stdlib/ldiv.o ./stdlib/dtoa.o ./stdlib/wcstombs_r.o ./stdlib/strtod.o ./stdlib/realloc.o ./stdlib/__exp10.o ./stdlib/div.o ./stdlib/msize.o ./stdlib/malloc.o ./stdlib/abs.o ./stdlib/system.o ./stdlib/setenv.o ./stdlib/mstats.o ./stdlib/putenv.o ./stdlib/__ten_mu.o ./stdlib/__adjust.o ./stdlib/labs.o ./stdlib/eprintf.o ./stdlib/atoff.o ./stdlib/rand.o ./stdlib/mblen.o ./stdlib/getenv.o ./stdlib/calloc.o ./stdlib/wctomb_r.o ./stdlib/mprec.o ./stdlib/mbtowc_r.o ./stdlib/strtoul.o ./stdlib/mlock.o ./stdlib/getopt.o ./stdlib/dtoastub.o ./stdlib/bsearch.o ./stdlib/malign.o ./stdlib/assert.o ./stdlib/qsort.o ./stdlib/abort.o ./stdlib/rand_r.o ./stdlib/mbstowcs.o ./stdlib/ecvtbuf.o ./stdlib/strtol.o ./stdlib/valloc.o ./stdlib/strdup.o ./stdlib/wctomb.o ./stdlib/efgcvt.o ./stdlib/mbtowc.o ./stdlib/atol.o ./stdlib/atexit.o ./stdlib/wcstombs.o ./stdlib/mtrim.o ./stdlib/mbstowcs_r.o ./stdlib/environ.o ./stdio/fgetpos.o ./stdio/sprintf.o ./stdio/setvbuf.o ./stdio/vfprintf.o ./stdio/tmpnam.o ./stdio/fwrite.o ./stdio/fgets.o ./stdio/getc.o ./stdio/rget.o ./stdio/fclose.o ./stdio/ungetc.o ./stdio/fgetc.o ./stdio/ferror.o ./stdio/setbuf.o ./stdio/vprintf.o ./stdio/fflush.o ./stdio/stdio.o ./stdio/puts.o ./stdio/scanf.o ./stdio/fprintf.o ./stdio/flags.o ./stdio/fdopen.o ./stdio/fopen.o ./stdio/printf.o ./stdio/tmpfile.o ./stdio/clearerr.o ./stdio/fputc.o ./stdio/fwalk.o ./stdio/rename.o ./stdio/makebuf.o ./stdio/fiprintf.o ./stdio/fseek.o ./stdio/feof.o ./stdio/rewind.o ./stdio/gets.o ./stdio/findfp.o ./stdio/fread.o ./stdio/refill.o ./stdio/getchar.o ./stdio/siprintf.o ./stdio/vfscanf.o ./stdio/putchar.o ./stdio/mktemp.o ./stdio/wbuf.o ./stdio/ftell.o ./stdio/iprintf.o ./stdio/wsetup.o ./stdio/fputs.o ./stdio/fileno.o ./stdio/sscanf.o ./stdio/remove.o ./stdio/putc.o ./stdio/fvwrite.o ./stdio/fscanf.o ./stdio/vsprintf.o ./stdio/perror.o ./stdio/freopen.o ./stdio/fsetpos.o ./syscalls/syswait.o ./syscalls/syswrite.o ./syscalls/sysgetpid.o ./syscalls/sysread.o ./syscalls/sysunlink.o ./syscalls/sysexecve.o ./syscalls/syslink.o ./syscalls/sysfstat.o ./syscalls/sysfork.o ./syscalls/systimes.o ./syscalls/syssbrk.o ./syscalls/sysopen.o ./syscalls/sysgettod.o ./syscalls/syskill.o ./syscalls/sysclose.o ./syscalls/sysstat.o ./syscalls/syslseek.o ./syscalls/sysfcntl.o ./signal/raise.o ./signal/signal.o ./locale/locale.o ./ctype/isdigit.o ./ctype/iscntrl.o ./ctype/_toupper.o ./ctype/ctype_.o ./ctype/isalpha.o ./ctype/isspace.o ./ctype/ispunct.o ./ctype/islower.o ./ctype/toascii.o ./ctype/isprint.o ./ctype/_tolower.o ./ctype/isxdigit.o ./ctype/toupper.o ./ctype/isalnum.o ./ctype/tolower.o ./ctype/isupper.o ./ctype/isascii.o stdlib/mallocr.o stdlib/freer.o stdlib/reallocr.o stdlib/callocr.o stdlib/cfreer.o stdlib/malignr.o stdlib/vallocr.o stdlib/pvallocr.o stdlib/mallinfor.o stdlib/mallstatsr.o stdlib/msizer.o stdlib/malloptr.o stdio/vfiprintf.o arm/setjmp.o arm/trap.o
+rm -f ./errno/errno.i ./arm/syscalls.i ./arm/libcfunc.i ./string/strncmp.i ./string/strlen.i ./string/strstr.i ./string/strtok_r.i ./string/strcat.i ./string/index.i ./string/strrchr.i ./string/strcspn.i ./string/strspn.i ./string/rindex.i ./string/strlwr.i ./string/bcopy.i ./string/u_strerr.i ./string/strncpy.i ./string/strpbrk.i ./string/memset.i ./string/strupr.i ./string/strxfrm.i ./string/strchr.i ./string/strncat.i ./string/strcoll.i ./string/bzero.i ./string/strcasecmp.i ./string/memcpy.i ./string/bcmp.i ./string/strncasecmp.i ./string/strerror.i ./string/memmove.i ./string/strcmp.i ./string/strtok.i ./string/memchr.i ./string/strcpy.i ./string/memcmp.i ./misc/unctrl.i ./misc/ffs.i ./misc/dprintf.i ./reent/sbrkr.i ./reent/statr.i ./reent/execr.i ./reent/linkr.i ./reent/lseekr.i ./reent/impure.i ./reent/openr.i ./reent/writer.i ./reent/closer.i ./reent/readr.i ./reent/timer.i ./reent/signalr.i ./reent/fstatr.i ./reent/reent.i ./time/time.i ./time/asctime.i ./time/gmtime.i ./time/strftime.i ./time/lcltime_r.i ./time/clock.i ./time/gmtime_r.i ./time/mktime.i ./time/ctime.i ./time/lcltime.i ./time/ctime_r.i ./time/asctime_r.i ./time/difftime.i ./math/sf_ldexp.i ./math/sf_frexp.i ./math/s_scalbn.i ./math/s_modf.i ./math/s_finite.i ./math/sf_isnan.i ./math/sf_finite.i ./math/sf_modf.i ./math/sf_isinf.i ./math/s_copysign.i ./math/s_isinf.i ./math/s_ldexp.i ./math/s_frexp.i ./math/s_isnan.i ./math/s_infconst.i ./math/sf_scalbn.i ./math/sf_copysign.i ./stdlib/exit.i ./stdlib/atoi.i ./stdlib/atof.i ./stdlib/ldiv.i ./stdlib/dtoa.i ./stdlib/wcstombs_r.i ./stdlib/strtod.i ./stdlib/realloc.i ./stdlib/__exp10.i ./stdlib/div.i ./stdlib/msize.i ./stdlib/malloc.i ./stdlib/abs.i ./stdlib/system.i ./stdlib/setenv.i ./stdlib/mstats.i ./stdlib/putenv.i ./stdlib/__ten_mu.i ./stdlib/__adjust.i ./stdlib/labs.i ./stdlib/eprintf.i ./stdlib/atoff.i ./stdlib/rand.i ./stdlib/mblen.i ./stdlib/getenv.i ./stdlib/calloc.i ./stdlib/wctomb_r.i ./stdlib/mprec.i ./stdlib/mbtowc_r.i ./stdlib/strtoul.i ./stdlib/mlock.i ./stdlib/getopt.i ./stdlib/dtoastub.i ./stdlib/bsearch.i ./stdlib/malign.i ./stdlib/assert.i ./stdlib/qsort.i ./stdlib/abort.i ./stdlib/rand_r.i ./stdlib/mbstowcs.i ./stdlib/ecvtbuf.i ./stdlib/strtol.i ./stdlib/valloc.i ./stdlib/strdup.i ./stdlib/wctomb.i ./stdlib/efgcvt.i ./stdlib/mbtowc.i ./stdlib/atol.i ./stdlib/atexit.i ./stdlib/wcstombs.i ./stdlib/mtrim.i ./stdlib/mbstowcs_r.i ./stdlib/environ.i ./stdio/fgetpos.i ./stdio/sprintf.i ./stdio/setvbuf.i ./stdio/vfprintf.i ./stdio/tmpnam.i ./stdio/fwrite.i ./stdio/fgets.i ./stdio/getc.i ./stdio/rget.i ./stdio/fclose.i ./stdio/ungetc.i ./stdio/fgetc.i ./stdio/ferror.i ./stdio/setbuf.i ./stdio/vprintf.i ./stdio/fflush.i ./stdio/stdio.i ./stdio/puts.i ./stdio/scanf.i ./stdio/fprintf.i ./stdio/flags.i ./stdio/fdopen.i ./stdio/fopen.i ./stdio/printf.i ./stdio/tmpfile.i ./stdio/clearerr.i ./stdio/fputc.i ./stdio/fwalk.i ./stdio/rename.i ./stdio/makebuf.i ./stdio/fiprintf.i ./stdio/fseek.i ./stdio/feof.i ./stdio/rewind.i ./stdio/gets.i ./stdio/findfp.i ./stdio/fread.i ./stdio/refill.i ./stdio/getchar.i ./stdio/siprintf.i ./stdio/vfscanf.i ./stdio/putchar.i ./stdio/mktemp.i ./stdio/wbuf.i ./stdio/ftell.i ./stdio/iprintf.i ./stdio/wsetup.i ./stdio/fputs.i ./stdio/fileno.i ./stdio/sscanf.i ./stdio/remove.i ./stdio/putc.i ./stdio/fvwrite.i ./stdio/fscanf.i ./stdio/vsprintf.i ./stdio/perror.i ./stdio/freopen.i ./stdio/fsetpos.i ./syscalls/syswait.i ./syscalls/syswrite.i ./syscalls/sysgetpid.i ./syscalls/sysread.i ./syscalls/sysunlink.i ./syscalls/sysexecve.i ./syscalls/syslink.i ./syscalls/sysfstat.i ./syscalls/sysfork.i ./syscalls/systimes.i ./syscalls/syssbrk.i ./syscalls/sysopen.i ./syscalls/sysgettod.i ./syscalls/syskill.i ./syscalls/sysclose.i ./syscalls/sysstat.i ./syscalls/syslseek.i ./syscalls/sysfcntl.i ./signal/raise.i ./signal/signal.i ./locale/locale.i ./ctype/isdigit.i ./ctype/iscntrl.i ./ctype/_toupper.i ./ctype/ctype_.i ./ctype/isalpha.i ./ctype/isspace.i ./ctype/ispunct.i ./ctype/islower.i ./ctype/toascii.i ./ctype/isprint.i ./ctype/_tolower.i ./ctype/isxdigit.i ./ctype/toupper.i ./ctype/isalnum.i ./ctype/tolower.i ./ctype/isupper.i ./ctype/isascii.i stdlib/mallocr.i stdlib/freer.i stdlib/reallocr.i stdlib/callocr.i stdlib/cfreer.i stdlib/malignr.i stdlib/vallocr.i stdlib/pvallocr.i stdlib/mallinfor.i stdlib/mallstatsr.i stdlib/msizer.i stdlib/malloptr.i stdio/vfiprintf.i
+rm -f ./errno/errno.s ./arm/syscalls.s ./arm/libcfunc.s ./string/strncmp.s ./string/strlen.s ./string/strstr.s ./string/strtok_r.s ./string/strcat.s ./string/index.s ./string/strrchr.s ./string/strcspn.s ./string/strspn.s ./string/rindex.s ./string/strlwr.s ./string/bcopy.s ./string/u_strerr.s ./string/strncpy.s ./string/strpbrk.s ./string/memset.s ./string/strupr.s ./string/strxfrm.s ./string/strchr.s ./string/strncat.s ./string/strcoll.s ./string/bzero.s ./string/strcasecmp.s ./string/memcpy.s ./string/bcmp.s ./string/strncasecmp.s ./string/strerror.s ./string/memmove.s ./string/strcmp.s ./string/strtok.s ./string/memchr.s ./string/strcpy.s ./string/memcmp.s ./misc/unctrl.s ./misc/ffs.s ./misc/dprintf.s ./reent/sbrkr.s ./reent/statr.s ./reent/execr.s ./reent/linkr.s ./reent/lseekr.s ./reent/impure.s ./reent/openr.s ./reent/writer.s ./reent/closer.s ./reent/readr.s ./reent/timer.s ./reent/signalr.s ./reent/fstatr.s ./reent/reent.s ./time/time.s ./time/asctime.s ./time/gmtime.s ./time/strftime.s ./time/lcltime_r.s ./time/clock.s ./time/gmtime_r.s ./time/mktime.s ./time/ctime.s ./time/lcltime.s ./time/ctime_r.s ./time/asctime_r.s ./time/difftime.s ./math/sf_ldexp.s ./math/sf_frexp.s ./math/s_scalbn.s ./math/s_modf.s ./math/s_finite.s ./math/sf_isnan.s ./math/sf_finite.s ./math/sf_modf.s ./math/sf_isinf.s ./math/s_copysign.s ./math/s_isinf.s ./math/s_ldexp.s ./math/s_frexp.s ./math/s_isnan.s ./math/s_infconst.s ./math/sf_scalbn.s ./math/sf_copysign.s ./stdlib/exit.s ./stdlib/atoi.s ./stdlib/atof.s ./stdlib/ldiv.s ./stdlib/dtoa.s ./stdlib/wcstombs_r.s ./stdlib/strtod.s ./stdlib/realloc.s ./stdlib/__exp10.s ./stdlib/div.s ./stdlib/msize.s ./stdlib/malloc.s ./stdlib/abs.s ./stdlib/system.s ./stdlib/setenv.s ./stdlib/mstats.s ./stdlib/putenv.s ./stdlib/__ten_mu.s ./stdlib/__adjust.s ./stdlib/labs.s ./stdlib/eprintf.s ./stdlib/atoff.s ./stdlib/rand.s ./stdlib/mblen.s ./stdlib/getenv.s ./stdlib/calloc.s ./stdlib/wctomb_r.s ./stdlib/mprec.s ./stdlib/mbtowc_r.s ./stdlib/strtoul.s ./stdlib/mlock.s ./stdlib/getopt.s ./stdlib/dtoastub.s ./stdlib/bsearch.s ./stdlib/malign.s ./stdlib/assert.s ./stdlib/qsort.s ./stdlib/abort.s ./stdlib/rand_r.s ./stdlib/mbstowcs.s ./stdlib/ecvtbuf.s ./stdlib/strtol.s ./stdlib/valloc.s ./stdlib/strdup.s ./stdlib/wctomb.s ./stdlib/efgcvt.s ./stdlib/mbtowc.s ./stdlib/atol.s ./stdlib/atexit.s ./stdlib/wcstombs.s ./stdlib/mtrim.s ./stdlib/mbstowcs_r.s ./stdlib/environ.s ./stdio/fgetpos.s ./stdio/sprintf.s ./stdio/setvbuf.s ./stdio/vfprintf.s ./stdio/tmpnam.s ./stdio/fwrite.s ./stdio/fgets.s ./stdio/getc.s ./stdio/rget.s ./stdio/fclose.s ./stdio/ungetc.s ./stdio/fgetc.s ./stdio/ferror.s ./stdio/setbuf.s ./stdio/vprintf.s ./stdio/fflush.s ./stdio/stdio.s ./stdio/puts.s ./stdio/scanf.s ./stdio/fprintf.s ./stdio/flags.s ./stdio/fdopen.s ./stdio/fopen.s ./stdio/printf.s ./stdio/tmpfile.s ./stdio/clearerr.s ./stdio/fputc.s ./stdio/fwalk.s ./stdio/rename.s ./stdio/makebuf.s ./stdio/fiprintf.s ./stdio/fseek.s ./stdio/feof.s ./stdio/rewind.s ./stdio/gets.s ./stdio/findfp.s ./stdio/fread.s ./stdio/refill.s ./stdio/getchar.s ./stdio/siprintf.s ./stdio/vfscanf.s ./stdio/putchar.s ./stdio/mktemp.s ./stdio/wbuf.s ./stdio/ftell.s ./stdio/iprintf.s ./stdio/wsetup.s ./stdio/fputs.s ./stdio/fileno.s ./stdio/sscanf.s ./stdio/remove.s ./stdio/putc.s ./stdio/fvwrite.s ./stdio/fscanf.s ./stdio/vsprintf.s ./stdio/perror.s ./stdio/freopen.s ./stdio/fsetpos.s ./syscalls/syswait.s ./syscalls/syswrite.s ./syscalls/sysgetpid.s ./syscalls/sysread.s ./syscalls/sysunlink.s ./syscalls/sysexecve.s ./syscalls/syslink.s ./syscalls/sysfstat.s ./syscalls/sysfork.s ./syscalls/systimes.s ./syscalls/syssbrk.s ./syscalls/sysopen.s ./syscalls/sysgettod.s ./syscalls/syskill.s ./syscalls/sysclose.s ./syscalls/sysstat.s ./syscalls/syslseek.s ./syscalls/sysfcntl.s ./signal/raise.s ./signal/signal.s ./locale/locale.s ./ctype/isdigit.s ./ctype/iscntrl.s ./ctype/_toupper.s ./ctype/ctype_.s ./ctype/isalpha.s ./ctype/isspace.s ./ctype/ispunct.s ./ctype/islower.s ./ctype/toascii.s ./ctype/isprint.s ./ctype/_tolower.s ./ctype/isxdigit.s ./ctype/toupper.s ./ctype/isalnum.s ./ctype/tolower.s ./ctype/isupper.s ./ctype/isascii.s stdlib/mallocr.s stdlib/freer.s stdlib/reallocr.s stdlib/callocr.s stdlib/cfreer.s stdlib/malignr.s stdlib/vallocr.s stdlib/pvallocr.s stdlib/mallinfor.s stdlib/mallstatsr.s stdlib/msizer.s stdlib/malloptr.s stdio/vfiprintf.s
+rm -f arm/setjmp.i arm/trap.i
+rm -f libc.a
+make: Leaving directory '/workspace/agbcc/libc'
+make: Entering directory '/workspace/agbcc/libc'
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= errno/errno.c -o errno/errno.i
+arm-none-eabi-as -mcpu=arm7tdmi -o errno/errno.o errno/errno.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= arm/syscalls.c -o arm/syscalls.i
+arm-none-eabi-as -mcpu=arm7tdmi -o arm/syscalls.o arm/syscalls.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= arm/libcfunc.c -o arm/libcfunc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o arm/libcfunc.o arm/libcfunc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strncmp.c -o string/strncmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strncmp.o string/strncmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strlen.c -o string/strlen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strlen.o string/strlen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strstr.c -o string/strstr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strstr.o string/strstr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strtok_r.c -o string/strtok_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strtok_r.o string/strtok_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcat.c -o string/strcat.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcat.o string/strcat.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/index.c -o string/index.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/index.o string/index.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strrchr.c -o string/strrchr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strrchr.o string/strrchr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcspn.c -o string/strcspn.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcspn.o string/strcspn.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strspn.c -o string/strspn.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strspn.o string/strspn.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/rindex.c -o string/rindex.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/rindex.o string/rindex.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strlwr.c -o string/strlwr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strlwr.o string/strlwr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/bcopy.c -o string/bcopy.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/bcopy.o string/bcopy.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/u_strerr.c -o string/u_strerr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/u_strerr.o string/u_strerr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strncpy.c -o string/strncpy.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strncpy.o string/strncpy.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strpbrk.c -o string/strpbrk.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strpbrk.o string/strpbrk.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/memset.c -o string/memset.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/memset.o string/memset.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strupr.c -o string/strupr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strupr.o string/strupr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strxfrm.c -o string/strxfrm.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strxfrm.o string/strxfrm.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strchr.c -o string/strchr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strchr.o string/strchr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strncat.c -o string/strncat.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strncat.o string/strncat.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcoll.c -o string/strcoll.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcoll.o string/strcoll.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/bzero.c -o string/bzero.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/bzero.o string/bzero.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcasecmp.c -o string/strcasecmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcasecmp.o string/strcasecmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/memcpy.c -o string/memcpy.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/memcpy.o string/memcpy.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/bcmp.c -o string/bcmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/bcmp.o string/bcmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strncasecmp.c -o string/strncasecmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strncasecmp.o string/strncasecmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strerror.c -o string/strerror.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strerror.o string/strerror.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/memmove.c -o string/memmove.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/memmove.o string/memmove.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcmp.c -o string/strcmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcmp.o string/strcmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strtok.c -o string/strtok.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strtok.o string/strtok.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/memchr.c -o string/memchr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/memchr.o string/memchr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/strcpy.c -o string/strcpy.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/strcpy.o string/strcpy.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= string/memcmp.c -o string/memcmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o string/memcmp.o string/memcmp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= misc/unctrl.c -o misc/unctrl.i
+arm-none-eabi-as -mcpu=arm7tdmi -o misc/unctrl.o misc/unctrl.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= misc/ffs.c -o misc/ffs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o misc/ffs.o misc/ffs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= misc/dprintf.c -o misc/dprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o misc/dprintf.o misc/dprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/sbrkr.c -o reent/sbrkr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/sbrkr.o reent/sbrkr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/statr.c -o reent/statr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/statr.o reent/statr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/execr.c -o reent/execr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/execr.o reent/execr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/linkr.c -o reent/linkr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/linkr.o reent/linkr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/lseekr.c -o reent/lseekr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/lseekr.o reent/lseekr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/impure.c -o reent/impure.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/impure.o reent/impure.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/openr.c -o reent/openr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/openr.o reent/openr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/writer.c -o reent/writer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/writer.o reent/writer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/closer.c -o reent/closer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/closer.o reent/closer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/readr.c -o reent/readr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/readr.o reent/readr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/timer.c -o reent/timer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/timer.o reent/timer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/signalr.c -o reent/signalr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/signalr.o reent/signalr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/fstatr.c -o reent/fstatr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/fstatr.o reent/fstatr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= reent/reent.c -o reent/reent.i
+arm-none-eabi-as -mcpu=arm7tdmi -o reent/reent.o reent/reent.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/time.c -o time/time.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/time.o time/time.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/asctime.c -o time/asctime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/asctime.o time/asctime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/gmtime.c -o time/gmtime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/gmtime.o time/gmtime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/strftime.c -o time/strftime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/strftime.o time/strftime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/lcltime_r.c -o time/lcltime_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/lcltime_r.o time/lcltime_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/clock.c -o time/clock.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/clock.o time/clock.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/gmtime_r.c -o time/gmtime_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/gmtime_r.o time/gmtime_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/mktime.c -o time/mktime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/mktime.o time/mktime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/ctime.c -o time/ctime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/ctime.o time/ctime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/lcltime.c -o time/lcltime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/lcltime.o time/lcltime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/ctime_r.c -o time/ctime_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/ctime_r.o time/ctime_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/asctime_r.c -o time/asctime_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/asctime_r.o time/asctime_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= time/difftime.c -o time/difftime.i
+arm-none-eabi-as -mcpu=arm7tdmi -o time/difftime.o time/difftime.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_ldexp.c -o math/sf_ldexp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_ldexp.o math/sf_ldexp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_frexp.c -o math/sf_frexp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_frexp.o math/sf_frexp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_scalbn.c -o math/s_scalbn.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_scalbn.o math/s_scalbn.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_modf.c -o math/s_modf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_modf.o math/s_modf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_finite.c -o math/s_finite.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_finite.o math/s_finite.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_isnan.c -o math/sf_isnan.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_isnan.o math/sf_isnan.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_finite.c -o math/sf_finite.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_finite.o math/sf_finite.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_modf.c -o math/sf_modf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_modf.o math/sf_modf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_isinf.c -o math/sf_isinf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_isinf.o math/sf_isinf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_copysign.c -o math/s_copysign.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_copysign.o math/s_copysign.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_isinf.c -o math/s_isinf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_isinf.o math/s_isinf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_ldexp.c -o math/s_ldexp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_ldexp.o math/s_ldexp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_frexp.c -o math/s_frexp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_frexp.o math/s_frexp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_isnan.c -o math/s_isnan.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_isnan.o math/s_isnan.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/s_infconst.c -o math/s_infconst.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/s_infconst.o math/s_infconst.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_scalbn.c -o math/sf_scalbn.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_scalbn.o math/sf_scalbn.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= math/sf_copysign.c -o math/sf_copysign.i
+arm-none-eabi-as -mcpu=arm7tdmi -o math/sf_copysign.o math/sf_copysign.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/exit.c -o stdlib/exit.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/exit.o stdlib/exit.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/atoi.c -o stdlib/atoi.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/atoi.o stdlib/atoi.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/atof.c -o stdlib/atof.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/atof.o stdlib/atof.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/ldiv.c -o stdlib/ldiv.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/ldiv.o stdlib/ldiv.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/dtoa.c -o stdlib/dtoa.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/dtoa.o stdlib/dtoa.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/wcstombs_r.c -o stdlib/wcstombs_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/wcstombs_r.o stdlib/wcstombs_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/strtod.c -o stdlib/strtod.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/strtod.o stdlib/strtod.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/realloc.c -o stdlib/realloc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/realloc.o stdlib/realloc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/__exp10.c -o stdlib/__exp10.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/__exp10.o stdlib/__exp10.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/div.c -o stdlib/div.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/div.o stdlib/div.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/msize.c -o stdlib/msize.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/msize.o stdlib/msize.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/malloc.c -o stdlib/malloc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/malloc.o stdlib/malloc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/abs.c -o stdlib/abs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/abs.o stdlib/abs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/system.c -o stdlib/system.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/system.o stdlib/system.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/setenv.c -o stdlib/setenv.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/setenv.o stdlib/setenv.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mstats.c -o stdlib/mstats.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mstats.o stdlib/mstats.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/putenv.c -o stdlib/putenv.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/putenv.o stdlib/putenv.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/__ten_mu.c -o stdlib/__ten_mu.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/__ten_mu.o stdlib/__ten_mu.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/__adjust.c -o stdlib/__adjust.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/__adjust.o stdlib/__adjust.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/labs.c -o stdlib/labs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/labs.o stdlib/labs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/eprintf.c -o stdlib/eprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/eprintf.o stdlib/eprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/atoff.c -o stdlib/atoff.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/atoff.o stdlib/atoff.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/rand.c -o stdlib/rand.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/rand.o stdlib/rand.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mblen.c -o stdlib/mblen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mblen.o stdlib/mblen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/getenv.c -o stdlib/getenv.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/getenv.o stdlib/getenv.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/calloc.c -o stdlib/calloc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/calloc.o stdlib/calloc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/wctomb_r.c -o stdlib/wctomb_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/wctomb_r.o stdlib/wctomb_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mprec.c -o stdlib/mprec.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mprec.o stdlib/mprec.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mbtowc_r.c -o stdlib/mbtowc_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mbtowc_r.o stdlib/mbtowc_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/strtoul.c -o stdlib/strtoul.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/strtoul.o stdlib/strtoul.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mlock.c -o stdlib/mlock.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mlock.o stdlib/mlock.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/getopt.c -o stdlib/getopt.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/getopt.o stdlib/getopt.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/dtoastub.c -o stdlib/dtoastub.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/dtoastub.o stdlib/dtoastub.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/bsearch.c -o stdlib/bsearch.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/bsearch.o stdlib/bsearch.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/malign.c -o stdlib/malign.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/malign.o stdlib/malign.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/assert.c -o stdlib/assert.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/assert.o stdlib/assert.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/qsort.c -o stdlib/qsort.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/qsort.o stdlib/qsort.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/abort.c -o stdlib/abort.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/abort.o stdlib/abort.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/rand_r.c -o stdlib/rand_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/rand_r.o stdlib/rand_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mbstowcs.c -o stdlib/mbstowcs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mbstowcs.o stdlib/mbstowcs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/ecvtbuf.c -o stdlib/ecvtbuf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/ecvtbuf.o stdlib/ecvtbuf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/strtol.c -o stdlib/strtol.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/strtol.o stdlib/strtol.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/valloc.c -o stdlib/valloc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/valloc.o stdlib/valloc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/strdup.c -o stdlib/strdup.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/strdup.o stdlib/strdup.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/wctomb.c -o stdlib/wctomb.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/wctomb.o stdlib/wctomb.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/efgcvt.c -o stdlib/efgcvt.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/efgcvt.o stdlib/efgcvt.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mbtowc.c -o stdlib/mbtowc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mbtowc.o stdlib/mbtowc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/atol.c -o stdlib/atol.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/atol.o stdlib/atol.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/atexit.c -o stdlib/atexit.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/atexit.o stdlib/atexit.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/wcstombs.c -o stdlib/wcstombs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/wcstombs.o stdlib/wcstombs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mtrim.c -o stdlib/mtrim.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mtrim.o stdlib/mtrim.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/mbstowcs_r.c -o stdlib/mbstowcs_r.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mbstowcs_r.o stdlib/mbstowcs_r.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdlib/environ.c -o stdlib/environ.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/environ.o stdlib/environ.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fgetpos.c -o stdio/fgetpos.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fgetpos.o stdio/fgetpos.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/sprintf.c -o stdio/sprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/sprintf.o stdio/sprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/setvbuf.c -o stdio/setvbuf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/setvbuf.o stdio/setvbuf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/vfprintf.c -o stdio/vfprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/vfprintf.o stdio/vfprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/tmpnam.c -o stdio/tmpnam.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/tmpnam.o stdio/tmpnam.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fwrite.c -o stdio/fwrite.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fwrite.o stdio/fwrite.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fgets.c -o stdio/fgets.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fgets.o stdio/fgets.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/getc.c -o stdio/getc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/getc.o stdio/getc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/rget.c -o stdio/rget.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/rget.o stdio/rget.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fclose.c -o stdio/fclose.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fclose.o stdio/fclose.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/ungetc.c -o stdio/ungetc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/ungetc.o stdio/ungetc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fgetc.c -o stdio/fgetc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fgetc.o stdio/fgetc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/ferror.c -o stdio/ferror.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/ferror.o stdio/ferror.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/setbuf.c -o stdio/setbuf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/setbuf.o stdio/setbuf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/vprintf.c -o stdio/vprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/vprintf.o stdio/vprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fflush.c -o stdio/fflush.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fflush.o stdio/fflush.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/stdio.c -o stdio/stdio.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/stdio.o stdio/stdio.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/puts.c -o stdio/puts.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/puts.o stdio/puts.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/scanf.c -o stdio/scanf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/scanf.o stdio/scanf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fprintf.c -o stdio/fprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fprintf.o stdio/fprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/flags.c -o stdio/flags.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/flags.o stdio/flags.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fdopen.c -o stdio/fdopen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fdopen.o stdio/fdopen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fopen.c -o stdio/fopen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fopen.o stdio/fopen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/printf.c -o stdio/printf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/printf.o stdio/printf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/tmpfile.c -o stdio/tmpfile.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/tmpfile.o stdio/tmpfile.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/clearerr.c -o stdio/clearerr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/clearerr.o stdio/clearerr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fputc.c -o stdio/fputc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fputc.o stdio/fputc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fwalk.c -o stdio/fwalk.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fwalk.o stdio/fwalk.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/rename.c -o stdio/rename.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/rename.o stdio/rename.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/makebuf.c -o stdio/makebuf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/makebuf.o stdio/makebuf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fiprintf.c -o stdio/fiprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fiprintf.o stdio/fiprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fseek.c -o stdio/fseek.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fseek.o stdio/fseek.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/feof.c -o stdio/feof.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/feof.o stdio/feof.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/rewind.c -o stdio/rewind.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/rewind.o stdio/rewind.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/gets.c -o stdio/gets.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/gets.o stdio/gets.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/findfp.c -o stdio/findfp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/findfp.o stdio/findfp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fread.c -o stdio/fread.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fread.o stdio/fread.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/refill.c -o stdio/refill.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/refill.o stdio/refill.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/getchar.c -o stdio/getchar.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/getchar.o stdio/getchar.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/siprintf.c -o stdio/siprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/siprintf.o stdio/siprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/vfscanf.c -o stdio/vfscanf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/vfscanf.o stdio/vfscanf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/putchar.c -o stdio/putchar.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/putchar.o stdio/putchar.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/mktemp.c -o stdio/mktemp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/mktemp.o stdio/mktemp.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/wbuf.c -o stdio/wbuf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/wbuf.o stdio/wbuf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/ftell.c -o stdio/ftell.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/ftell.o stdio/ftell.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/iprintf.c -o stdio/iprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/iprintf.o stdio/iprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/wsetup.c -o stdio/wsetup.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/wsetup.o stdio/wsetup.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fputs.c -o stdio/fputs.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fputs.o stdio/fputs.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fileno.c -o stdio/fileno.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fileno.o stdio/fileno.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/sscanf.c -o stdio/sscanf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/sscanf.o stdio/sscanf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/remove.c -o stdio/remove.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/remove.o stdio/remove.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/putc.c -o stdio/putc.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/putc.o stdio/putc.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fvwrite.c -o stdio/fvwrite.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fvwrite.o stdio/fvwrite.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fscanf.c -o stdio/fscanf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fscanf.o stdio/fscanf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/vsprintf.c -o stdio/vsprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/vsprintf.o stdio/vsprintf.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/perror.c -o stdio/perror.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/perror.o stdio/perror.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/freopen.c -o stdio/freopen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/freopen.o stdio/freopen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= stdio/fsetpos.c -o stdio/fsetpos.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/fsetpos.o stdio/fsetpos.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syswait.c -o syscalls/syswait.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syswait.o syscalls/syswait.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syswrite.c -o syscalls/syswrite.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syswrite.o syscalls/syswrite.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysgetpid.c -o syscalls/sysgetpid.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysgetpid.o syscalls/sysgetpid.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysread.c -o syscalls/sysread.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysread.o syscalls/sysread.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysunlink.c -o syscalls/sysunlink.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysunlink.o syscalls/sysunlink.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysexecve.c -o syscalls/sysexecve.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysexecve.o syscalls/sysexecve.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syslink.c -o syscalls/syslink.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syslink.o syscalls/syslink.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysfstat.c -o syscalls/sysfstat.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysfstat.o syscalls/sysfstat.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysfork.c -o syscalls/sysfork.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysfork.o syscalls/sysfork.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/systimes.c -o syscalls/systimes.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/systimes.o syscalls/systimes.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syssbrk.c -o syscalls/syssbrk.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syssbrk.o syscalls/syssbrk.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysopen.c -o syscalls/sysopen.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysopen.o syscalls/sysopen.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysgettod.c -o syscalls/sysgettod.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysgettod.o syscalls/sysgettod.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syskill.c -o syscalls/syskill.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syskill.o syscalls/syskill.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysclose.c -o syscalls/sysclose.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysclose.o syscalls/sysclose.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysstat.c -o syscalls/sysstat.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysstat.o syscalls/sysstat.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/syslseek.c -o syscalls/syslseek.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/syslseek.o syscalls/syslseek.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= syscalls/sysfcntl.c -o syscalls/sysfcntl.i
+arm-none-eabi-as -mcpu=arm7tdmi -o syscalls/sysfcntl.o syscalls/sysfcntl.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= signal/raise.c -o signal/raise.i
+arm-none-eabi-as -mcpu=arm7tdmi -o signal/raise.o signal/raise.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= signal/signal.c -o signal/signal.i
+arm-none-eabi-as -mcpu=arm7tdmi -o signal/signal.o signal/signal.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= locale/locale.c -o locale/locale.i
+arm-none-eabi-as -mcpu=arm7tdmi -o locale/locale.o locale/locale.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isdigit.c -o ctype/isdigit.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isdigit.o ctype/isdigit.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/iscntrl.c -o ctype/iscntrl.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/iscntrl.o ctype/iscntrl.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/_toupper.c -o ctype/_toupper.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/_toupper.o ctype/_toupper.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/ctype_.c -o ctype/ctype_.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/ctype_.o ctype/ctype_.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isalpha.c -o ctype/isalpha.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isalpha.o ctype/isalpha.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isspace.c -o ctype/isspace.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isspace.o ctype/isspace.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/ispunct.c -o ctype/ispunct.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/ispunct.o ctype/ispunct.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/islower.c -o ctype/islower.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/islower.o ctype/islower.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/toascii.c -o ctype/toascii.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/toascii.o ctype/toascii.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isprint.c -o ctype/isprint.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isprint.o ctype/isprint.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/_tolower.c -o ctype/_tolower.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/_tolower.o ctype/_tolower.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isxdigit.c -o ctype/isxdigit.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isxdigit.o ctype/isxdigit.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/toupper.c -o ctype/toupper.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/toupper.o ctype/toupper.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isalnum.c -o ctype/isalnum.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isalnum.o ctype/isalnum.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/tolower.c -o ctype/tolower.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/tolower.o ctype/tolower.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isupper.c -o ctype/isupper.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isupper.o ctype/isupper.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= ctype/isascii.c -o ctype/isascii.i
+arm-none-eabi-as -mcpu=arm7tdmi -o ctype/isascii.o ctype/isascii.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MALLOC stdlib/mallocr.c -o stdlib/mallocr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mallocr.o stdlib/mallocr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_FREE stdlib/mallocr.c -o stdlib/freer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/freer.o stdlib/freer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_REALLOC stdlib/mallocr.c -o stdlib/reallocr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/reallocr.o stdlib/reallocr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_CALLOC stdlib/mallocr.c -o stdlib/callocr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/callocr.o stdlib/callocr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_CFREE stdlib/mallocr.c -o stdlib/cfreer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/cfreer.o stdlib/cfreer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MEMALIGN stdlib/mallocr.c -o stdlib/malignr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/malignr.o stdlib/malignr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_VALLOC stdlib/mallocr.c -o stdlib/vallocr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/vallocr.o stdlib/vallocr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_PVALLOC stdlib/mallocr.c -o stdlib/pvallocr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/pvallocr.o stdlib/pvallocr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MALLINFO stdlib/mallocr.c -o stdlib/mallinfor.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mallinfor.o stdlib/mallinfor.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MALLOC_STATS stdlib/mallocr.c -o stdlib/mallstatsr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/mallstatsr.o stdlib/mallstatsr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MALLOC_USABLE_SIZE stdlib/mallocr.c -o stdlib/msizer.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/msizer.o stdlib/msizer.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DDEFINE_MALLOPT stdlib/mallocr.c -o stdlib/malloptr.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdlib/malloptr.o stdlib/malloptr.s
+cc -E -I ../ginclude -I include -nostdinc -undef -DABORT_PROVIDED -DHAVE_GETTIMEOFDAY -D__thumb__ -DARM_RDI_MONITOR -D__GNUC__ -DINTERNAL_NEWLIB -D__USER_LABEL_PREFIX__= -DINTEGER_ONLY stdio/vfprintf.c -o stdio/vfiprintf.i
+arm-none-eabi-as -mcpu=arm7tdmi -o stdio/vfiprintf.o stdio/vfiprintf.s
+arm-none-eabi-as -mcpu=arm7tdmi -o arm/setjmp.o arm/setjmp.i
+arm-none-eabi-as -mcpu=arm7tdmi -o arm/trap.o arm/trap.i
+arm-none-eabi-ar -rc libc.a ./errno/errno.o ./arm/syscalls.o ./arm/libcfunc.o ./string/strncmp.o ./string/strlen.o ./string/strstr.o ./string/strtok_r.o ./string/strcat.o ./string/index.o ./string/strrchr.o ./string/strcspn.o ./string/strspn.o ./string/rindex.o ./string/strlwr.o ./string/bcopy.o ./string/u_strerr.o ./string/strncpy.o ./string/strpbrk.o ./string/memset.o ./string/strupr.o ./string/strxfrm.o ./string/strchr.o ./string/strncat.o ./string/strcoll.o ./string/bzero.o ./string/strcasecmp.o ./string/memcpy.o ./string/bcmp.o ./string/strncasecmp.o ./string/strerror.o ./string/memmove.o ./string/strcmp.o ./string/strtok.o ./string/memchr.o ./string/strcpy.o ./string/memcmp.o ./misc/unctrl.o ./misc/ffs.o ./misc/dprintf.o ./reent/sbrkr.o ./reent/statr.o ./reent/execr.o ./reent/linkr.o ./reent/lseekr.o ./reent/impure.o ./reent/openr.o ./reent/writer.o ./reent/closer.o ./reent/readr.o ./reent/timer.o ./reent/signalr.o ./reent/fstatr.o ./reent/reent.o ./time/time.o ./time/asctime.o ./time/gmtime.o ./time/strftime.o ./time/lcltime_r.o ./time/clock.o ./time/gmtime_r.o ./time/mktime.o ./time/ctime.o ./time/lcltime.o ./time/ctime_r.o ./time/asctime_r.o ./time/difftime.o ./math/sf_ldexp.o ./math/sf_frexp.o ./math/s_scalbn.o ./math/s_modf.o ./math/s_finite.o ./math/sf_isnan.o ./math/sf_finite.o ./math/sf_modf.o ./math/sf_isinf.o ./math/s_copysign.o ./math/s_isinf.o ./math/s_ldexp.o ./math/s_frexp.o ./math/s_isnan.o ./math/s_infconst.o ./math/sf_scalbn.o ./math/sf_copysign.o ./stdlib/exit.o ./stdlib/atoi.o ./stdlib/atof.o ./stdlib/ldiv.o ./stdlib/dtoa.o ./stdlib/wcstombs_r.o ./stdlib/strtod.o ./stdlib/realloc.o ./stdlib/__exp10.o ./stdlib/div.o ./stdlib/msize.o ./stdlib/malloc.o ./stdlib/abs.o ./stdlib/system.o ./stdlib/setenv.o ./stdlib/mstats.o ./stdlib/putenv.o ./stdlib/__ten_mu.o ./stdlib/__adjust.o ./stdlib/labs.o ./stdlib/eprintf.o ./stdlib/atoff.o ./stdlib/rand.o ./stdlib/mblen.o ./stdlib/getenv.o ./stdlib/calloc.o ./stdlib/wctomb_r.o ./stdlib/mprec.o ./stdlib/mbtowc_r.o ./stdlib/strtoul.o ./stdlib/mlock.o ./stdlib/getopt.o ./stdlib/dtoastub.o ./stdlib/bsearch.o ./stdlib/malign.o ./stdlib/assert.o ./stdlib/qsort.o ./stdlib/abort.o ./stdlib/rand_r.o ./stdlib/mbstowcs.o ./stdlib/ecvtbuf.o ./stdlib/strtol.o ./stdlib/valloc.o ./stdlib/strdup.o ./stdlib/wctomb.o ./stdlib/efgcvt.o ./stdlib/mbtowc.o ./stdlib/atol.o ./stdlib/atexit.o ./stdlib/wcstombs.o ./stdlib/mtrim.o ./stdlib/mbstowcs_r.o ./stdlib/environ.o ./stdio/fgetpos.o ./stdio/sprintf.o ./stdio/setvbuf.o ./stdio/vfprintf.o ./stdio/tmpnam.o ./stdio/fwrite.o ./stdio/fgets.o ./stdio/getc.o ./stdio/rget.o ./stdio/fclose.o ./stdio/ungetc.o ./stdio/fgetc.o ./stdio/ferror.o ./stdio/setbuf.o ./stdio/vprintf.o ./stdio/fflush.o ./stdio/stdio.o ./stdio/puts.o ./stdio/scanf.o ./stdio/fprintf.o ./stdio/flags.o ./stdio/fdopen.o ./stdio/fopen.o ./stdio/printf.o ./stdio/tmpfile.o ./stdio/clearerr.o ./stdio/fputc.o ./stdio/fwalk.o ./stdio/rename.o ./stdio/makebuf.o ./stdio/fiprintf.o ./stdio/fseek.o ./stdio/feof.o ./stdio/rewind.o ./stdio/gets.o ./stdio/findfp.o ./stdio/fread.o ./stdio/refill.o ./stdio/getchar.o ./stdio/siprintf.o ./stdio/vfscanf.o ./stdio/putchar.o ./stdio/mktemp.o ./stdio/wbuf.o ./stdio/ftell.o ./stdio/iprintf.o ./stdio/wsetup.o ./stdio/fputs.o ./stdio/fileno.o ./stdio/sscanf.o ./stdio/remove.o ./stdio/putc.o ./stdio/fvwrite.o ./stdio/fscanf.o ./stdio/vsprintf.o ./stdio/perror.o ./stdio/freopen.o ./stdio/fsetpos.o ./syscalls/syswait.o ./syscalls/syswrite.o ./syscalls/sysgetpid.o ./syscalls/sysread.o ./syscalls/sysunlink.o ./syscalls/sysexecve.o ./syscalls/syslink.o ./syscalls/sysfstat.o ./syscalls/sysfork.o ./syscalls/systimes.o ./syscalls/syssbrk.o ./syscalls/sysopen.o ./syscalls/sysgettod.o ./syscalls/syskill.o ./syscalls/sysclose.o ./syscalls/sysstat.o ./syscalls/syslseek.o ./syscalls/sysfcntl.o ./signal/raise.o ./signal/signal.o ./locale/locale.o ./ctype/isdigit.o ./ctype/iscntrl.o ./ctype/_toupper.o ./ctype/ctype_.o ./ctype/isalpha.o ./ctype/isspace.o ./ctype/ispunct.o ./ctype/islower.o ./ctype/toascii.o ./ctype/isprint.o ./ctype/_tolower.o ./ctype/isxdigit.o ./ctype/toupper.o ./ctype/isalnum.o ./ctype/tolower.o ./ctype/isupper.o ./ctype/isascii.o stdlib/mallocr.o stdlib/freer.o stdlib/reallocr.o stdlib/callocr.o stdlib/cfreer.o stdlib/malignr.o stdlib/vallocr.o stdlib/pvallocr.o stdlib/mallinfor.o stdlib/mallstatsr.o stdlib/msizer.o stdlib/malloptr.o stdio/vfiprintf.o arm/setjmp.o arm/trap.o
+make: Leaving directory '/workspace/agbcc/libc'
+agbcc successfully installed!

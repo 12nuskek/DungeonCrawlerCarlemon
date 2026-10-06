@@ -275,3 +275,20 @@ Six saved retry routes prove re-entry only; wins are checked separately. Prepare
 play has the successful uninterrupted fresh route; unprepared victory is segmented.
 90,586 emulated frames include53,700 fixed idle frames; this does not prove human
 pacing. User playtest remains the next gate, before any Stage6 expansion.
+
+### N01 native rooms and older-save compatibility
+
+`bash scripts/test-n01-rooms.sh` runs434 assertions from a clean committed build.
+For the additional41 older-save checks, first reproduce the ordinary I01 saves
+using tested81b232a and its `scripts/test-i01.sh`, then set `DCC_LEGACY_RUN` to
+that run directory. The runner copies motion.sav, craft.sav and playtest.sav,
+records input hashes, and loads them normally. No binary fixtures are committed.
+The DCC map viewport is a render cache: reload reconstructs current authored
+metatiles and applies existing state flags, avoiding stale atlas IDs. Matching
+static object graphics refresh from current headers without resetting progress.
+Save structure is unchanged; tested cases/limits are in evidence/n01/rooms.
+
+`python3 scripts/content/slice_art.py` delegates native rooms/props to
+`environment_art.py`. Accepted PNG masters are authoritative; partial reference
+source omissions do not prevent deterministic game export. Do not claim complete
+source-sheet reproduction or publish the omitted source/packed artifacts.

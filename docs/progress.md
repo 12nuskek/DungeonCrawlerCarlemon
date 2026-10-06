@@ -1313,3 +1313,23 @@ Add three ordinary I01-save reload routes: completed slice, leveled landing and
 completed crafting/quest states. Check progression/resources/palettes/warps and
 native refreshed prop pixels. No edited saves/fixtures. Exact next clean build,
 434 current-build assertions +41 older-save assertions, actual side-by-side proof.
+
+### N01 rooms and old-save fix verified — 2026-10-06
+
+Testedcd6946e90fb95095ca2883509dfad19890a78848 on baseeee114c.27 production
+sessions/475 assertions (434+41 legacy),27 empty errors,9 opponent+8 prop pixel
+matches; all1176 behavior/collision cells/six events/49 approved assets preserved.
+Extra exact same old-save recheck passes18 assertions after the prior failure;
+not folded into475. ROM17e97672a2a3a6b6f7b670d3d901f4e6be21425a8eb92407a4c91be874cec637.
+Actual12 room views, old-save frames and movement reviewed. Full evidence
+ docs/evidence/n01/rooms; diagnostics retained. Cache blocker resolved by first
+code fix; no game flags/party/inventory/save-layout changes. PR42 merge pending.
+
+Full regeneration found old battle palette depended on removed room `colors`.
+Restored its exact independent constant. Two complete isolated exports preserve
+8807 tracked source assets; engine tree identical to runtime-testedcd6946e. Two
+workspace exports preserve9352 source+existing ignored assets. This is exporter
+validation, not a new runtime claim. Partial source kit limitations retained.
+Next: merge this verified increment, then N02 room outlines/collision separately;
+follow with existing-flag visual state feedback and final full regression. Sole
+writer and parent-owned continuation unchanged. Deadline approximately21:19UTC.

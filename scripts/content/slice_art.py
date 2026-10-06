@@ -124,6 +124,8 @@ for block in range(2):
  for y in range(32):
   for x in range(32):struct.pack_into('<H',bm,block*2048+(y*32+x)*2,((y%16)*32+x)|(2<<12))
 (R/'graphics/dcc/battle/map.bin').write_bytes(bm)
+# Battle palette remains independent of the new room-specific background banks.
+colors=[(0,0,0),(18,26,36),(30,43,53),(47,61,68),(65,79,82),(92,107,106),(129,145,135),(179,190,166),(39,75,78),(54,114,113),(82,164,148),(199,168,100),(143,94,65),(204,87,66),(223,211,174),(244,236,205)]
 (R/'graphics/dcc/battle/palette.pal').write_text('JASC-PAL\n0100\n48\n'+'\n'.join(' '.join(map(str,c)) for c in colors*3)+'\n')
 
 # Approved protagonist battle masters own their independent palettes.

@@ -6,6 +6,7 @@ The runtime exporter copies validated native bytes, never re-quantizes images.
 from pathlib import Path
 import hashlib
 import shutil
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'docs/art-references/opponent-native-candidates'
@@ -29,7 +30,19 @@ def export():
             assert hashlib.sha256(src.read_bytes()).hexdigest() == expected[relative], relative
             dst = ROOT / 'engine/graphics/dcc' / name / filename
             dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(src, dst)
+            if filename in ('front.png', 'back.png', 'anim_front.png'):
+                # Native masters bottom-align at61. Lift each battle frame8px
+                # within its transparent canvas to clear the duo HP panels.
+                original = Image.open(src)
+                output = Image.new('P', original.size, 0)
+                output.putpalette(original.getpalette())
+                for top in range(0, original.height, 64):
+                    frame = original.crop((0, top, 64, top + 64))
+                    assert frame.crop((0, 0, 64, 8)).getbbox() is None
+                    output.paste(frame.crop((0, 8, 64, 64)), (0, top))
+                output.save(dst, bits=4, transparency=0)
+            else:
+                shutil.copyfile(src, dst)
 
 
 if __name__ == '__main__':

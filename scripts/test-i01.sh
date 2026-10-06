@@ -149,6 +149,7 @@ timing={'normal_gba_hz':59.7275,'total_frames':frames,'total_seconds':frames/59.
 
 print('PASS',len(results),'sessions,',sum(x['assertions'] for x in results),'assertions; inspect actual images/motion before acceptance')
 PYIMG
+python3 "$repo/scripts/verify-opponent-frames.py" "$evidence" > "$evidence/opponent-pixels.json"
 test "$(git rev-parse HEAD)" = "$revision"
 git diff --quiet && git diff --cached --quiet
 echo "I01 full regression passed. Production and labeled fixture ROMs remain local; never commit ROMs/saves/executables. Pacing review is separate."

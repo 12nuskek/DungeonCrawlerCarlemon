@@ -1066,3 +1066,12 @@ I01 first isolated preflight e2c8d60 stopped before build: upstream engine
 .gitattributes exports .pal asCRLF, while source references areLF. Palette
 entries/order were identical. Verification now normalizes only text line endings;
 PNG byte checks stay exact. No engine/art bytes changed by this correction.
+
+I01 b82dff4 builds ROM70387da9…ec94619 and initial gameplay routes pass,
+but actual trial capture revealed43 Scuttler opaque pixels in native rows55..61
+covered by Carl's HP panel (canvas168,8). Run8IQ6UV stopped deliberately after
+this visual failure; raw evidence retained, no full-acceptance claim. Export now
+lifts only battle pixels8px within each64×64 canvas, using existing transparent
+top margin. No rescale, recolor, source-master, icon or field-token change. All
+opaque source pixels remain intact. New runtime pixel check requires exact
+RGB555 colors for every native opaque pixel of five battle fronts/four tokens.

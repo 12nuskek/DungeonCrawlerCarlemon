@@ -14,9 +14,12 @@ mkdir -p "$evidence"
 git rev-parse HEAD > "$evidence/tested-commit.txt"
 # Build environment definition must also be the committed version.
 git archive HEAD docker | tar -x -C "$evidence"
-docker build -t dungeoncarlemon-foundation "$evidence/docker" > "$evidence/image-build.log" 2>&1
+cp "${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" "$evidence/docker/host-ca.crt"
+docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg NO_PROXY \
+    -t dungeoncarlemon-foundation "$evidence/docker" > "$evidence/image-build.log" 2>&1
 docker image inspect dungeoncarlemon-foundation > "$evidence/image-inspect.json"
-container=$(docker create -i dungeoncarlemon-foundation bash -c '
+container=$(docker create -i -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY \
+    -e http_proxy -e https_proxy -e no_proxy dungeoncarlemon-foundation bash -c '
     set -euo pipefail
     tar -x -C /build
     cd /build

@@ -1,0 +1,7 @@
+{
+  "Id": "sha256:9cff18dd423fd83a145be024aef22be8eb43aa8721a583d7d076fac402423859",
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2026-10-06T03:53:22.405217004Z",
+  "base": "debian:13.6-slim@sha256:d7e12182ce18b85b93007c1dedf31f2d29e01ccf3182cc4017c709b6259bc132"
+}

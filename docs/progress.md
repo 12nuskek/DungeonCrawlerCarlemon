@@ -66,3 +66,27 @@ Branch: `task/f02-reproducible-environment`; base/merged F01:
 Objective/scope/acceptance in backlog. No gameplay changes. Initial Cloud Git
 refspec fetches only HEAD; explicitly fetch `refs/heads/main:refs/remotes/origin/main`
 before reconciling main. Do not assume a plain `git fetch` updates origin/main.
+
+## F02 validation — 2026-10-06
+
+Implemented: digest-pinned Debian environment, captured-commit validation launcher,
+dirty compiler-cache rejection and strict mGBA runtime checkpoints.
+Compiled: PASS in fresh OS/container with empty compiler/source cache.
+Runtime verified: PASS, all three frame fingerprints and visual screenshot review.
+Ten positive/negative tests PASS. Merged: pending PR #3.
+PR: https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/3
+Tested commit: `fcf3bd049e5369b8fcc3015244fe53c2f557e744`; base:
+`1af617261881fcc26c6bb0fbd924d4c8a3c56d9a`.
+Commands/results, package/image identity and screenshots:
+[F02 evidence](evidence/f02/README.md). Build/ROM identity remains F01's exact hash.
+
+No current build/runtime blocker. Managed Docker proxy/DNS/CA and writable client
+cache issues are resolved and documented; do not retry old failed approaches.
+No engine changes in F02, no ROM artifacts in Git, no running test container.
+Next: merge reviewed PR #3, record the merge, then E01 on a new branch from main.
+E01 objective: Carl overworld presentation, one authored tutorial room, readable
+interaction and an exit; test four directions, collision, transition and save/reload
+in the emulator. Audit actual map/start/save paths before editing. Record any
+placeholder assets and deliberate Book 1 chronology compression in content-ledger.
+No battle engine or save-layout changes in E01; B01 follows its own narrow task.
+Use custom-build identity/runtime checks, not a false stock `make compare` pass.

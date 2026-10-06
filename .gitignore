@@ -5,3 +5,7 @@ engine/data/mb_colosseum.gba
 engine/data/mb_ereader.gba
 *.sav
 *.ss0
+
+# Python asset generators
+__pycache__/
+*.py[cod]

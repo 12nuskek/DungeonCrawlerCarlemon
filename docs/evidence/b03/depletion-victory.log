@@ -1,0 +1,1085 @@
+mGBA 0.10.5; 240x160; save=../playtest.sav; read-only RAM diagnostics
+frame=720 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=721 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1081 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1082 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1262 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1263 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1443 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1444 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS duo healthy
+frame=2044 map=34.1 pos=11,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+frame=2072 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2112 map=34.1 pos=9,4 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2132 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2172 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2172 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS expect 34 1 9 5 3
+frame=2173 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2573 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2574 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2974 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2975 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=0 battlers=0 outcome=0 PP=0,0 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=3875 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=3876 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4476 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4477 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS battle 1 4 0 8 2 0 0
+frame=5077 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+PASS support 40 40 6 6 6
+party action uses=8,40 / 2,40
+frame=5078 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5198 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5199 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5259 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5260 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5380 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5381 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5501 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=5502 map=34.1 pos=9,5 flags=3
+party=2 HP=30/30,26/26 battle=1 battlers=4 outcome=0 PP=8,2 trial=0 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=6502 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6502 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+PASS battle 1 4 0 7 1 0 0
+frame=6503 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6563 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6564 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6624 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6625 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6685 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6686 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6746 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=6747 map=34.1 pos=9,5 flags=3
+party=2 HP=26/30,20/26 battle=1 battlers=4 outcome=0 PP=7,1 trial=0 donut-ability=0
+persistent PP=7,1 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=7,40 / 1,40
+frame=7747 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7747 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+PASS battle 1 4 0 6 0 0 0
+frame=7748 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7808 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7809 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7869 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7870 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7930 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=7931 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8051 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8052 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8232 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8232 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+PASS battle 1 4 0 6 0 0 0
+frame=8232 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+PASS roster 21 15 6 0 0 0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8233 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8293 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8294 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8354 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=8355 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=6,0 trial=0 donut-ability=0
+persistent PP=6,0 status=0,0
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=6,40 / 0,40
+frame=9355 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=9355 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+PASS support 40 39 6 6 5
+party action uses=5,40 / 0,39
+frame=9356 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=9756 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=9757 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10157 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10158 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10558 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10559 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10619 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10620 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10680 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10681 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10741 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10742 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,15/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10802 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=10803 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=11803 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=11804 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=12204 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=12205 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=12605 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=12606 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=13006 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=13007 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=13407 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=13408 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,39 Carl-defense=6 enemy-attack=6,5
+party action uses=5,40 / 0,39
+frame=13808 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=5,40 / 0,38
+frame=13809 map=34.1 pos=9,5 flags=3
+party=2 HP=21/30,12/26 battle=1 battlers=4 outcome=0 PP=5,0 trial=0 donut-ability=0
+persistent PP=5,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=5,40 / 0,38
+frame=14209 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=14210 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=14610 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=14611 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15011 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15012 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15412 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15413 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15813 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=15814 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=16214 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=16215 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,38 Carl-defense=6 enemy-attack=6,4
+party action uses=4,40 / 0,38
+frame=16615 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=4,40 / 0,37
+frame=16616 map=34.1 pos=9,5 flags=3
+party=2 HP=19/30,12/26 battle=1 battlers=4 outcome=0 PP=4,0 trial=0 donut-ability=0
+persistent PP=4,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=4,40 / 0,37
+frame=17016 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=17017 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=17417 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=17418 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=17818 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=17819 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=18219 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=18220 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=18620 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=18621 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=19021 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=19022 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,37 Carl-defense=6 enemy-attack=6,3
+party action uses=3,40 / 0,37
+frame=19422 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,2
+party action uses=3,40 / 0,36
+frame=19423 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=3,0 trial=0 donut-ability=0
+persistent PP=3,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,2
+party action uses=3,40 / 0,36
+frame=19823 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=19824 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=20224 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=20225 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=20625 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=20626 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=0 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21026 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21027 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21427 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21428 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21828 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=21829 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=1 battlers=4 outcome=1 PP=2,0 trial=0 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=22229 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=22230 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=22630 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=22631 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23031 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23031 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+PASS battle 0 4 1 2 0 1 0
+frame=23031 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+PASS roster 17 12 2 0 0 0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23031 map=34.1 pos=9,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+PASS uses 2 40 0 36
+frame=23099 map=34.1 pos=5,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23139 map=34.1 pos=5,5 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23175 map=34.1 pos=5,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23215 map=34.1 pos=5,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23235 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23275 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23276 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23316 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23316 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+PASS expect 34 1 4 7 3
+frame=23316 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+PASS roster 17 12 2 0 0 0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23316 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+PASS uses 2 40 0 36
+frame=23317 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23717 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=23718 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=24118 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=24119 map=34.1 pos=4,7 flags=3
+party=2 HP=17/30,12/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=2,0 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=2,40 / 0,36
+frame=24519 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=24519 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+PASS roster 30 26 8 2 0 0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=24519 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+frame=24520 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=24920 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=24921 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25321 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25322 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25442 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25442 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS expect 34 1 4 7 7
+frame=25442 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS duo healthy
+frame=25442 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+frame=25443 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25843 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25843 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+PASS roster 30 26 8 2 0 0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=25843 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+frame=25844 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26244 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26245 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26645 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26646 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26766 map=34.1 pos=4,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26898 map=34.1 pos=12,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26938 map=34.1 pos=12,7 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=26990 map=34.1 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27170 map=34.0 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27170 map=34.0 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS expect 34 0 12 4 7
+frame=27190 map=34.0 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27230 map=34.0 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27250 map=34.0 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27430 map=34.1 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27430 map=34.1 pos=12,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS expect 34 1 12 4 7
+frame=27450 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27490 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27491 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27611 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27612 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27632 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27633 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27653 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27654 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27814 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27815 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27995 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=27996 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=28596 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=28597 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=29197 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=29197 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS expect 34 1 11 4 7
+frame=29197 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+PASS roster 30 26 8 2 0 0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=29197 map=34.1 pos=11,4 flags=7
+party=2 HP=30/30,26/26 battle=0 battlers=4 outcome=1 PP=2,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+support PP=40,36 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+result=0 assertions=28

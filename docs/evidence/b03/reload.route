@@ -1,0 +1,42 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+duo healthy
+uses 8 40 2 40
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 7
+step 68 32 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 before-guide.ppm
+expect 34 1 4 7 7
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 rest-after-reload.ppm
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+step 20 16 -
+step 40 0 -
+expect 34 1 5 7 7
+battle 0 0 0 0 0 1 0
+quit

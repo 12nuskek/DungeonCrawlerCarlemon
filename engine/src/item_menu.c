@@ -627,6 +627,8 @@ void GoToBagMenu(u8 location, u8 pocket, MainCallback exitCallback)
             gBagPosition.exitCallback = exitCallback;
         if (pocket < POCKETS_COUNT)
             gBagPosition.pocket = pocket;
+        if (gBagPosition.pocket == BALLS_POCKET)
+            gBagPosition.pocket = ITEMS_POCKET;
         if (gBagPosition.location == ITEMMENULOCATION_BERRY_TREE ||
             gBagPosition.location == ITEMMENULOCATION_BERRY_BLENDER_CRUSH)
             gBagMenu->pocketSwitchDisabled = TRUE;
@@ -1307,6 +1309,9 @@ static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
     else if (deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == 0)
         *bagPocketId = POCKETS_COUNT - 1;
     else
+        *bagPocketId += deltaBagPocketId;
+    // Retain save pocket numbering, but never expose capture supplies.
+    if (*bagPocketId == BALLS_POCKET)
         *bagPocketId += deltaBagPocketId;
 }
 

@@ -2,7 +2,7 @@
  * Commands: step FRAMES KEYS CAPTURE.ppm (or -), expect GROUP MAP X Y FLAGS,
  * battle IN_BATTLE BATTLERS OUTCOME CARL_PP DONUT_PP TRIAL_WON DONUT_ABILITY, duo healthy,
  * roster CARL_HP DONUT_HP CARL_PP DONUT_PP CARL_STATUS DONUT_STATUS,
- * uses CARL_PP1 CARL_PP2 DONUT_PP1 DONUT_PP2,
+ * uses CARL_PP1 CARL_PP2 DONUT_PP1 DONUT_PP2, pocket ID, policy FIXTURE_MASK,
  * support CARL_PP2 DONUT_PP2 CARL_DEF FOE1_ATK FOE2_ATK,
  * quit. Flags are the low three bits (E01 intro/crate and E02 guide) of save byte 0x1274.
  * RAM offsets match the pinned Emerald structs; update when their layouts change.
@@ -52,7 +52,7 @@ static void log_emulator(struct mLogger *logger, int category, enum mLogLevel le
 int main(int argc, char **argv)
 {
     if (argc != 4) return 2;
-    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, addr;
+    unsigned saveptr=0, objects=0, avatar=0, party=0, count=0, mons=0, battlers=0, outcome=0, mainstate=0, bag=0, probe=0, addr;
     char type, symbol[128];
     FILE *symbols=fopen(argv[3], "r");
     if (!symbols) return 3;
@@ -66,6 +66,8 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"gBattlersCount")) battlers=addr;
         if (!strcmp(symbol,"gBattleOutcome")) outcome=addr;
         if (!strcmp(symbol,"gMain")) mainstate=addr;
+        if (!strcmp(symbol,"gBagPosition")) bag=addr;
+        if (!strcmp(symbol,"gDccCollectionProbe")) probe=addr;
     }
     fclose(symbols);
     if (!saveptr || !objects || !avatar || !party || !count || !mons || !battlers || !outcome || !mainstate) return 4;
@@ -112,7 +114,7 @@ int main(int argc, char **argv)
                 if (fclose(out)) result=12;
                 if (result) break;
             }
-        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strcmp(line,"duo healthy\n")) {result=13;break;}
+        } else if (strncmp(line,"expect ",7) && strncmp(line,"battle ",7) && strncmp(line,"roster ",7) && strncmp(line,"support ",8) && strncmp(line,"uses ",5) && strncmp(line,"pocket ",7) && strncmp(line,"policy ",7) && strcmp(line,"duo healthy\n")) {result=13;break;}
         unsigned sb=core->busRead32(core,saveptr);
         unsigned object=objects+core->busRead8(core,avatar+5)*0x24;
         int group=core->busRead8(core,sb+4),map=core->busRead8(core,sb+5);
@@ -151,6 +153,15 @@ int main(int argc, char **argv)
             for (unsigned i=0;i<5 && !result;i++)
                 if (!number(values[i],255,&wanted) || wanted!=support[i]) result=20;
             if (result) {fprintf(stderr,"FAILED: %s",line);break;}
+            checks++; printf("PASS %s",line);
+        }
+        if (!strncmp(line,"pocket ",7) || !strncmp(line,"policy ",7)) {
+            char value[32]; unsigned wanted;
+            unsigned address=!strncmp(line,"pocket ",7)?bag:probe;
+            unsigned actual=address?(!strncmp(line,"pocket ",7)?core->busRead8(core,bag+5):core->busRead32(core,probe)):UINT_MAX;
+            if (sscanf(line+7,"%31s %c",value,&extra)!=1 || !number(value,UINT_MAX,&wanted) || !address || wanted!=actual) {
+                fprintf(stderr,"FAILED actual=%u: %s",actual,line); result=22;break;
+            }
             checks++; printf("PASS %s",line);
         }
         unsigned uses[]={roster[2],party_pp(core,party,1),roster[3],party_pp(core,party+100,1)};

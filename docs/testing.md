@@ -160,3 +160,15 @@ magic/physical types are provisional balance, using stock engine effects.
 Previous milestone fixtures must be run at their recorded revisions because move
 IDs and resource budgets intentionally changed. Nonzero status curing remains
 pending; these test enemies still only use Tackle.
+
+## B03 collection boundary replay
+
+At the B03 tested revision run `bash scripts/test-b03.sh` with the same dependency
+variables as B02. Seven production routes plus a separate GBA-side policy fixture
+prove the reachable UI and defensive entry points. The fixture is generated only
+inside the archived test snapshot and has its own ROM hash/log; the snapshot's
+final engine ROM is that fixture. Use a normal checkout/README build for play.
+[Evidence and 110 assertions](evidence/b03/README.md), [reachability audit](collection-audit.md).
+Screenshots are real emulator captures; host `pocket`/`policy` diagnostics read RAM
+only. The fixture explicitly constructs test inputs in game code, never a hidden
+production debug route. Preserve this distinction in future acceptance reports.

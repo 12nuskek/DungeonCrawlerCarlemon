@@ -1,6 +1,8 @@
 #include "global.h"
 #include "crawler.h"
 #include "pokemon.h"
+#include "event_data.h"
+#include "constants/flags.h"
 #include "constants/species.h"
 #include "constants/moves.h"
 
@@ -25,4 +27,5 @@ void InitCrawlerParty(void)
     SetMonMoveSlot(&gPlayerParty[1], MOVE_NONE, 2);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_NONE, 3);
     gPlayerPartyCount = 2;
+    FlagSet(FLAG_SYS_POKEMON_GET);
 }

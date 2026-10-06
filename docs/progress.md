@@ -347,3 +347,43 @@ acting, both defeated/local retry, all four party resources restored and saved.
 [Complete evidence](evidence/b02/README.md). Implemented YES, compiled PASS,
 runtime PASS, integration pending. No blocker. B03 is next after scoped merge.
 Inflicted-status healing remains explicitly pending, not inferred from zero status.
+
+## B02 integration / B03 start — 2026-10-06
+
+B02 PR #13 merged `4c76d692b37a2fa934e89e4b057e0b83568e64f0`; issue #12 closed.
+Implemented YES / compiled PASS / runtime PASS / merged YES. Main reconciled,
+no open PR, one writer. B03 issue #14 and task/b03-no-collection based on that merge.
+Initial guards/UI compile; emulator validation in progress, no runtime acceptance
+claim yet. Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`, parent owns continuation.
+No new workflow/scheduler. Next: verify roster/pockets, defensive collection fixture
+and B02 regression, then scoped review/PR. Fresh saves required, layout unchanged.
+
+B03 exploratory menus pass 14 assertions: roster/actions/summary return, all four
+non-capture pockets in both directions and wrap, unchanged duo/resources. Initial
+label clipping fixed; navigation test corrected after tracing actual screens.
+No game softlock found. Separate GBA-side API fixture and isolated complete replay
+pending; production gate remains unverified until those finish.
+
+B03 validation correction: first isolated attempt `a763280` compiled and passed
+setup/menu/guide, but the historical B02 loss route failed its exact HP checkpoint:
+Donut fell first and both were already restored by that frame. No defeat softlock.
+New observed route proves Donut down/Carl acting (BRACE 33→32 while Donut remains
+33), both down and full recovery/retry: 19 checks pass. Victory/depletion passes
+28 unchanged checks. Battle inventory adds 10 checks. Fixture initially failed to
+link because upstream linker discards unused libc memcmp; replaced with explicit
+byte comparison, then all 3 fixture assertions / mask127 passed. No production
+engine workaround or RAM injection. Final isolated suite still pending.
+
+Parent B02 review independently confirmed 83 assertions, 33 evidence hashes and
+14 PNGs. S03 still needs total action exhaustion, depleted/immediate-defeat saves,
+and actual nonzero-status cure once status encounters exist. B03's new route covers
+the complementary Donut-down/Carl-acting case; preserve both milestone records.
+
+## B03 final verification — 2026-10-06
+
+Tested `769196afc57635b98aa2de8b9ddc43ed1847a4ef`, isolated pinned build and 110
+mGBA assertions PASS. Eight empty error logs, 17 actual PNGs visually reviewed.
+Production ROM `8ffe93dde477e54c9d23a52532e73b1ca7087595250afc3b8b0ed16384256f2d`.
+[Full evidence](evidence/b03/README.md), [audit](collection-audit.md). Implemented YES,
+compiled PASS, runtime PASS, integration pending scoped PR. No current blocker.
+Next after merge: R01 XP/equipment, one writer, no new scheduler or expansion.

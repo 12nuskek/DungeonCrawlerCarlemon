@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "malloc.h"
 #include "apprentice.h"
 #include "battle.h"
@@ -3017,6 +3018,10 @@ u16 MonTryLearningNewMove(struct Pokemon *mon, bool8 firstMove)
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
 
+    // Crawler skills are authored, not inherited from placeholder species.
+    if (!DCC_ALLOW_COLLECTION)
+        return MOVE_NONE;
+
     // since you can learn more than one move per level
     // the game needs to know whether you decided to
     // learn it or keep the old set to avoid asking
@@ -4426,6 +4431,9 @@ u8 GiveMonToPlayer(struct Pokemon *mon)
 {
     s32 i;
 
+    if (!DCC_ALLOW_COLLECTION)
+        return MON_CANT_GIVE;
+
     SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
     SetMonData(mon, MON_DATA_OT_ID, gSaveBlock2Ptr->playerTrainerId);
@@ -5512,6 +5520,9 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
     u8 beauty = GetMonData(mon, MON_DATA_BEAUTY, 0);
     u16 upperPersonality = personality >> 16;
     u8 holdEffect;
+
+    if (!DCC_ALLOW_COLLECTION)
+        return SPECIES_NONE;
 
     if (heldItem == ITEM_ENIGMA_BERRY)
         holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;

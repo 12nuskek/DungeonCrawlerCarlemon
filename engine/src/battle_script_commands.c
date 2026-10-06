@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "battle.h"
 #include "battle_message.h"
 #include "battle_anim.h"
@@ -9905,6 +9906,14 @@ static void Cmd_removelightscreenreflect(void)
 static void Cmd_handleballthrow(void)
 {
     u8 ballMultiplier = 0;
+
+    // Also blocks scripted, tutorial and Safari throws that bypass the bag.
+    if (!DCC_ALLOW_COLLECTION)
+    {
+        if (!gBattleControllerExecFlags)
+            gBattlescriptCurrInstr = BattleScript_DccCaptureBlocked;
+        return;
+    }
 
     if (gBattleControllerExecFlags)
         return;

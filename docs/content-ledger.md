@@ -107,3 +107,9 @@ text table. Both protagonists initialize with these two role-specific actions on
 New Game; fresh B02 saves required. No save-layout change, and IDs remain below
 the existing 9-bit learnset encoding limit. Original battle art/type-label cleanup
 remains scheduled within S02; capture/evolution/storage audit remains B03.
+
+B03: crawler-facing normal/battle menu labels and original capture refusal text.
+Inventory width enlarged after actual clipping observed. Roster exposes Summary
+and Item; permanent protagonist order. Stock species summary, TM/HM/berry pocket
+labels, pocket indicator spacing and battle art remain explicit S02 placeholders.
+No new canon claims or adaptation chronology. [Collection audit](collection-audit.md).

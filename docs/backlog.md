@@ -9,8 +9,8 @@ Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-lo
 | E01 | F01 | Complete: implemented, compiled, runtime verified and merged in PR #5 |
 | E02 | E01 | Complete: 55 assertions, merged PR #11; issue #10 closed |
 | B01 | F01 | Complete: compiled/runtime verified, merged PR #6 (`8616025`) |
-| B02 | B01 | Verified: 83 assertions; issue #12; integration pending |
-| B03 | B02 | Pending: capture/storage/breeding removal and audit |
+| B02 | B01 | Complete: 83 assertions; merged PR #13 (`4c76d69`); issue #12 closed |
+| B03 | B02 | Verified: 110 assertions; issue #14; integration pending |
 | R01 | B02, E02 | Pending: XP and equipment |
 | R02 | R01 | Pending: persistent achievements/loot |
 | D01 | E02, R02 | Pending: trap, secret and optional quest |
@@ -74,3 +74,18 @@ changes, zero-use rejection with alternate action, one actor incapacitated then
 both defeated and recovered, guide HP/PP recovery and cold reload. Original action
 names and stock animation placeholders go in ledger. No capture/storage/evolution
 UI audit (B03), reward systems, new battle framework or save-layout changes.
+
+## B03 contract
+
+Base `4c76d692b37a2fa934e89e4b057e0b83568e64f0`; branch task/b03-no-collection.
+Issue #14. Block collection at both UI and engine entry points, keep two fixed
+protagonists and authored skills, expose roster/equipment access without reorder.
+Audit accessible maps, gifts, tutorials, storage and breeding. Preserve save layout.
+Acceptance: isolated build, real menu/pocket/roster and combat/recovery replay,
+separate test-fixture defensive-rule checks, full logs and screenshots. Excludes
+new encounters/rewards, original S02 battle art, expanded campaign or scheduling.
+
+S03 retained edge coverage: either crawler incapacitated while the other acts;
+all actions exhausted; save/reload while depleted or immediately after defeat;
+cure a genuinely inflicted nonzero status once such encounters exist. These are
+coverage edges, not demonstrated B02 failures. B03 adds Donut-down/Carl-acting.

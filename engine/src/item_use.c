@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "item_use.h"
 #include "battle.h"
 #include "battle_pyramid.h"
@@ -935,8 +936,19 @@ void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+static const u8 sText_NoCapture[] = _("Capturing is not part of this dungeon.");
+
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
+    // Reject before consuming an item or submitting a battle action.
+    if (!DCC_ALLOW_COLLECTION)
+    {
+        if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+            DisplayItemMessage(taskId, FONT_NORMAL, sText_NoCapture, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, sText_NoCapture, Task_CloseBattlePyramidBagMessage);
+        return;
+    }
     if (IsPlayerPartyAndPokemonStorageFull() == FALSE) // have room for mon?
     {
         RemoveBagItem(gSpecialVar_ItemId, 1);

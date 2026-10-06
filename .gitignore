@@ -1,0 +1,7 @@
+.cache/
+artifacts/
+engine/data/mb_berry_fix.gba
+engine/data/mb_colosseum.gba
+engine/data/mb_ereader.gba
+*.sav
+*.ss0

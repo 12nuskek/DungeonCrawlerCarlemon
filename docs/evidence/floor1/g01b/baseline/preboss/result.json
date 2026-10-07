@@ -1,0 +1,27 @@
+{
+  "runner_source": "ab6b04d238862663d5a04ce809d93e3bf852956e",
+  "measurement_source": "fa458cb601ce482b1e8a8b78364d43145989d5cd",
+  "production_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "seed_sha256": "76d2f2184058bad99cd60b06639bdab9b67c447571eec0c486771fa72240de09",
+  "assertions": 13,
+  "measurements": [
+    {
+      "name": "preboss-out",
+      "frames": 969,
+      "walking_frames": 304,
+      "engine_tile_changes": 19,
+      "map_changes": 2
+    },
+    {
+      "name": "preboss-back",
+      "frames": 1264,
+      "walking_frames": 431,
+      "engine_tile_changes": 27,
+      "map_changes": 3
+    }
+  ],
+  "total_steps": 46,
+  "walking_frames": 735,
+  "walking_seconds": 12.305889129639874,
+  "scope": "Ordinary copied production save; menu/dialogue/idle/fades/loaded-center state excluded. Seed HP is fully healthy; no balance or battle outcome claim."
+}

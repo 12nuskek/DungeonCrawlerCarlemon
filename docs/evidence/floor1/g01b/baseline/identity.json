@@ -1,0 +1,10 @@
+{
+  "runner_source": "fa458cb601ce482b1e8a8b78364d43145989d5cd",
+  "production_compiled_source": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "production_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "source_save_sha256": {
+    "howler-pending.sav": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "boss-loss.sav": "c1ffaf5672abf2582bda300b1c5c3348b181f34376ddb187492865f8768b0c40"
+  },
+  "method": "Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, nonforced avatar, no active palette fade, MOVING and nonzero tile transition, latched from an actual tile change until movement finishes. Menu/dialogue/idle/other callbacks excluded. No human pacing claim."
+}

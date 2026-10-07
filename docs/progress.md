@@ -21,7 +21,7 @@ Source provenance follow-up issue64 / task/floor1-g01a-cache-provenance:
 parent found optional cache could retain extra wildcard sources. Fresh archive
 only now; negative seeded C rejected,11687 blob identities pass; fresh9/708
 passes, both original ROM hashes and all captured pixels identical. Integration
-pending scoped PR. Current branch retains the G01b planning checkpoint below.
+pending reviewed draftPR65. Current branch retains the G01b planning checkpoint below.
 Continuation issue63 / task/floor1-g01b-recovery-travel, base535b080.
 Checkpoint-only planning; no new geometry/gameplay implementation or PR yet.
 Exact next action: integrate verified source-provenance repair, then ordinary

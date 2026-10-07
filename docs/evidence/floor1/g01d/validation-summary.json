@@ -1,0 +1,274 @@
+[
+  {
+    "route": "closed/guard-first",
+    "assertions": 322,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "guard-out",
+        "frames": 580,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 540,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "howler-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 744,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      }
+    ]
+  },
+  {
+    "route": "closed/guard-first-cold-buffer",
+    "assertions": 3099,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/howler-first",
+    "assertions": 319,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "howler-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 744,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "guard-out",
+        "frames": 580,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 540,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      }
+    ]
+  },
+  {
+    "route": "closed/howler-first-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/preboss",
+    "assertions": 73,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "preboss-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-back",
+        "frames": 1372,
+        "walking_frames": 431,
+        "steps": 27,
+        "warps": 2
+      }
+    ]
+  },
+  {
+    "route": "closed/preboss-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/workshop-route",
+    "assertions": 67,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/workshop-route-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/checkpoint-route",
+    "assertions": 71,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "closed/checkpoint-route-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/guard-first",
+    "assertions": 309,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "guard-out",
+        "frames": 580,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 540,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "howler-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 744,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      }
+    ]
+  },
+  {
+    "route": "open/guard-first-cold-buffer",
+    "assertions": 3099,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/howler-first",
+    "assertions": 308,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "howler-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 744,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "guard-out",
+        "frames": 580,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 540,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      }
+    ]
+  },
+  {
+    "route": "open/howler-first-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/preboss",
+    "assertions": 73,
+    "diagnostic": true,
+    "measurements": [
+      {
+        "name": "preboss-out",
+        "frames": 784,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-back",
+        "frames": 1372,
+        "walking_frames": 431,
+        "steps": 27,
+        "warps": 2
+      }
+    ]
+  },
+  {
+    "route": "open/preboss-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/workshop-route",
+    "assertions": 67,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/workshop-route-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/checkpoint-route",
+    "assertions": 65,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/checkpoint-route-cold-buffer",
+    "assertions": 251,
+    "diagnostic": true,
+    "measurements": []
+  },
+  {
+    "route": "open/continuous-motion",
+    "assertions": 30,
+    "diagnostic": true,
+    "measurements": []
+  }
+]

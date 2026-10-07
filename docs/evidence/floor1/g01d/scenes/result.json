@@ -1,0 +1,85 @@
+{
+  "observer_source": "a2b24f6a2e7092d274fde6768eb89edbffc508e5",
+  "diagnostic_runner_source": "a2a42cdf4db7cd3fe81387e7d3c37b8dd67635b4",
+  "sessions": 2,
+  "assertions": 631,
+  "results": [
+    {
+      "mode": "closed",
+      "assertions": 322,
+      "peaks": [
+        {
+          "map": 0,
+          "samples": 22468,
+          "peak_objects": 9,
+          "peak_sprites": 13
+        },
+        {
+          "map": 1,
+          "samples": 4773,
+          "peak_objects": 6,
+          "peak_sprites": 10
+        },
+        {
+          "map": 2,
+          "samples": 2579,
+          "peak_objects": 5,
+          "peak_sprites": 9
+        },
+        {
+          "map": 3,
+          "samples": 2776,
+          "peak_objects": 2,
+          "peak_sprites": 6
+        },
+        {
+          "map": 4,
+          "samples": 2042,
+          "peak_objects": 3,
+          "peak_sprites": 7
+        }
+      ],
+      "exact_capture_pixel_matches": 47,
+      "rom_sha256": "824069ff38a9f156f6b6dc2dabadea64a3f0e20c943ff59da70d3e82a963acc4"
+    },
+    {
+      "mode": "open",
+      "assertions": 309,
+      "peaks": [
+        {
+          "map": 0,
+          "samples": 21491,
+          "peak_objects": 8,
+          "peak_sprites": 12
+        },
+        {
+          "map": 1,
+          "samples": 4773,
+          "peak_objects": 6,
+          "peak_sprites": 10
+        },
+        {
+          "map": 2,
+          "samples": 2579,
+          "peak_objects": 5,
+          "peak_sprites": 9
+        },
+        {
+          "map": 3,
+          "samples": 2776,
+          "peak_objects": 2,
+          "peak_sprites": 6
+        },
+        {
+          "map": 4,
+          "samples": 2042,
+          "peak_objects": 3,
+          "peak_sprites": 7
+        }
+      ],
+      "exact_capture_pixel_matches": 47,
+      "rom_sha256": "e0745ee61a3262c73a8a7b8a62fbe29ec5707a8325645f224f5945998dd4c5fa"
+    }
+  ],
+  "method": "Actual object/sprite in-use flags sampled each stable overworld frame on all five maps; all captures exactly match original. No game/RAM writes, build, hardware performance or human pacing claim."
+}

@@ -1,5 +1,33 @@
 # Durable checkpoint
 
+Current2026-10-07: **F1-G01d diagnostic runtime verified; live migration next.**
+Issue72 / task/floor1-g01d-live-contract, base0cb6674a38f67579d5e7480ef884681a66a8b609.
+Complete five-map geometry/semantic fallback/object contract implemented in
+committed snapshots only. Closed compiled478f4bd/hash824069ff…acc4; open compiled/
+main runnera2a42cd/hashe0745ee6…c5fa; observera2b24f6.23actual mGBA sessions/
+10541assertions,23emptyerrors,94exactpixels. All5map full-cell cold checks7936
+words. Guard14/224,Howler34/544,preboss44/703 unchanged within frozen ceilings;
+both approach orders/loop variants. All-old21objects mapped once; current/new
+interior widths and controller interactions/returns verified. Candidate area
+1440/1449only; finalTnull. Peak Field9objects/13sprites; buffers/Saveblocks unchanged.
+[Complete evidence/commands/source identities](evidence/floor1/g01d/README.md).
+One host doorway re-entry correction: failed267assertions source478 preserved;
+a2a42cd normal leave/re-enter controls pass unchanged exact closedROM, fresh export
+identities match. No material geometry/migration attempt, no assertion weakening.
+Source11687canonical inputs/312gameC/327totalC audited, four declared fixture
+modifications only. Production engine/art/maps/resources/save ABI unchanged.
+Issue72; diagnosticPR not yet created. Next: review/push/draftPR/verified
+scoped integration; then implement production pre-header version/identity mapping,
+player/object/templates/all5warps/cache rebuild and future-version rejection;
+ordinary migrated controller interaction/transition/secondsave+cold idempotence
+before live adoption/persistent loop/finalT. No current build/emulator process.
+Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent quota09:12
+11%used/89%remaining, soft sampled pause>=80%; parent owns sole continuation.
+Donut correction source absent/PENDING approval, no retry; no other active writer.
+Issue63 remains open. No later floors/public release or new scheduler/task.
+
+## Earlier static checkpoint
+
 Current2026-10-07 09:13UTC: **F1-G01d contract static checks pass; build/runtime pending.**
 Executor tool/shell healthy after parent09:12disconnect callback; no running build/
 emulator or duplicate process. Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000.

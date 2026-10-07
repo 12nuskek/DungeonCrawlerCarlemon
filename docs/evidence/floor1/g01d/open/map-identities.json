@@ -1,0 +1,42 @@
+[
+  {
+    "key": "field",
+    "map_group": 35,
+    "map_num": 0,
+    "layout_id": 448,
+    "blockdata_sha256": "29f3414512b81139df7d6e405c342d88bd3e0a0e61ae83447d10ab5f7855cfc7",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "quiet",
+    "map_group": 35,
+    "map_num": 1,
+    "layout_id": 449,
+    "blockdata_sha256": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "workshop",
+    "map_group": 35,
+    "map_num": 2,
+    "layout_id": 450,
+    "blockdata_sha256": "f317fa78af64bcd5c2342dbde5cae30eec2d915152840f2953b8a217eca4e4cd",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "boss",
+    "map_group": 35,
+    "map_num": 3,
+    "layout_id": 451,
+    "blockdata_sha256": "f69418c1eee2b2a798d483e7aa7c5bc6300c4d833077ef81951cd848b6d0b56d",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "checkpoint",
+    "map_group": 35,
+    "map_num": 4,
+    "layout_id": 452,
+    "blockdata_sha256": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+    "diagnostic_nonmember": true
+  }
+]

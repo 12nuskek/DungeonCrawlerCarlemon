@@ -22,7 +22,10 @@ class Route:
         self.step(1,button);self.face=button;self.step(40);self.step(1,1);self.step(400,0,label+'.ppm');self.lines+=['dialog 3600','ready'];self.step(40);self.expect()
     def save(self,overwrite=True):
         for n,key in [(1,8),(120,0),(1,128),(20,0),(1,128),(20,0),(1,1),(160,0),(1,1),(180,0)]:self.step(n,key)
-        if overwrite:self.step(1,1)
+        if overwrite:
+            # Existing-file warning has a paragraph break before its Yes/No
+            # prompt: advance that text, then confirm the rendered question.
+            self.step(1,1);self.step(600);self.step(1,1)
         # Successful saves dismiss themselves after the sound/timer. Another A
         # after completion would interact with an adjacent overworld object.
         self.step(600)

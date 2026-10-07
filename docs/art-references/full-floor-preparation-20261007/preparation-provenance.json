@@ -1,0 +1,633 @@
+{
+  "record_kind": "historical art preparation; paths describe original generation inputs, not current package inventory",
+  "generated_with": "OpenAI built-in image_gen",
+  "prepared_utc_date": "2026-10-07",
+  "records": {
+    "environment": {
+      "schema_version": 1,
+      "prepared_at_utc": "2026-10-07T00:11:00Z",
+      "project": "DungeonCrawlerCarlemon",
+      "batch": "iteration-2-environment-preparation",
+      "status": "concept_reference",
+      "generation_tool": "built-in image_gen",
+      "scope": "Two final environment concept masters only. No repository writes, engine integration, Cloud implementation, animation, runtime validation or purchase.",
+      "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+      "sources": [
+        {
+          "file": "service-center-reference.png",
+          "kind": "native_gameplay_capture",
+          "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/evidence/n05/final/rooms/service-center.png",
+          "git_blob_sha": "84649d87d7441fd8bdc33cf4b0067f5f5c7b49f6",
+          "sha256": "60b6ef27038da304409961011626e18b892fd0f569ba6df19474648ba4271fc5",
+          "bytes": 4074,
+          "dimensions": [
+            240,
+            160
+          ],
+          "mode": "RGB"
+        },
+        {
+          "file": "landing-center-reference.png",
+          "kind": "native_gameplay_capture",
+          "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/evidence/n05/final/rooms/landing-center.png",
+          "git_blob_sha": "126918b5a58f62ea727aeecaeaa5dc95d156ba71",
+          "sha256": "46126af7cff2132917c61c33fc2d4a310fcda9b25290d12ad7e06439d7642a54",
+          "bytes": 4108,
+          "dimensions": [
+            240,
+            160
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "generation_calls": [
+        {
+          "call": 1,
+          "kind": "generate_with_reference",
+          "subject": "Service Room",
+          "prompt_file": "service-room-prompt.txt",
+          "references": [
+            "service-center-reference.png"
+          ],
+          "selected_file": "service-room-concept-v1.png"
+        },
+        {
+          "call": 2,
+          "kind": "generate_with_references",
+          "subject": "Quiet Landing",
+          "prompt_file": "quiet-landing-prompt.txt",
+          "references": [
+            "landing-center-reference.png",
+            "service-room-concept-v1.png"
+          ],
+          "draft_file": "quiet-landing-draft-v0.png",
+          "selected": false,
+          "review": "Chest relocated beside the safe-area mat and extra bedroll clutter added; corrected with one targeted pass."
+        },
+        {
+          "call": 3,
+          "kind": "targeted_edit",
+          "subject": "Quiet Landing chest placement",
+          "prompt_file": "quiet-landing-correction-prompt.txt",
+          "references": [
+            "quiet-landing-draft-v0.png",
+            "landing-center-reference.png"
+          ],
+          "selected_file": "quiet-landing-concept-v1.png",
+          "review": "Correction removed extra clutter and returned one chest to the right-of-centre floor."
+        }
+      ],
+      "deliverables": [
+        {
+          "file": "service-room-concept-v1.png",
+          "status": "concept_reference",
+          "sha256": "a00300123e94a71b18e8b18e76cebf64d67acdbfca740771b631f8409138002e",
+          "bytes": 1527122,
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        {
+          "file": "quiet-landing-concept-v1.png",
+          "status": "concept_reference",
+          "sha256": "1182b77aaabe83bfe0a1c016190ac7c3880ff95810e35eb140aad2f9e8d5ed2e",
+          "bytes": 1565178,
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "shared_direction": {
+        "camera": "Overhead orthographic RPG with three-quarter wall faces; no isometric axes.",
+        "materials": "Clustered stone masonry, brass fittings, dark object outlines, simple wood and fabric.",
+        "lighting": "Upper-left highlight convention; amber service details and warm landing lights.",
+        "palette_roles": "Shared slate shadow family; cool blue Service Room against warm olive-grey/amber Quiet Landing with teal cloth.",
+        "density": "Perimeter and workstation detail, calm broad walkable ground.",
+        "character_scale": "Composition informed by source 16x32 field sprites. No characters generated. Exact pixel-pitch contract not yet satisfied."
+      },
+      "quality_review": {
+        "passed": [
+          "Coherent matching room family and safe-room/workshop contrast.",
+          "Recognisable room silhouettes and cardinal axes.",
+          "Existing exit zones retained approximately; no invented exit.",
+          "Broad quiet central lanes and no UI or text.",
+          "Chest-placement drift in Landing corrected once."
+        ],
+        "limitations": [
+          "1536x1024 RGB generation masters, not native tiles or screenshots.",
+          "85,924 and 99,453 unique RGB colours respectively: require deliberate native palette reduction/redraw; not GBA palette-ready.",
+          "Generated pixel pitch and some softened edges need hand cleanup at native target size.",
+          "Wall thickness, prop size, exact exit/collision/interaction footprints must be reconciled with native maps before integration.",
+          "Service central trap/cable art is a concept only; create explicit live/spent states and avoid implying a raised physical barrier.",
+          "No emulator, gameplay, animation, allocation, native-size or cold-reload tests performed."
+        ]
+      },
+      "next_step": "Select material and lighting direction, then author modular native tiles and existing prop state variants only after implementation is authorised. Do not automatically integrate these room composites."
+    },
+    "characters": {
+      "created_utc": "2026-10-07",
+      "purpose": "Art preparation only: generated keypose masters, not native sprites or animation",
+      "method": "OpenAI built-in image_gen",
+      "commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+      "references": [
+        {
+          "repository_path": "docs/art-references/native-candidates/assets/carl/front.png",
+          "git_blob": "e5c901c21773c715727010c5ca19f2a9455a9f1f",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/carl/front.png"
+        },
+        {
+          "repository_path": "docs/art-references/native-candidates/assets/carl/back.png",
+          "git_blob": "f1745035b1823853198f672a82d9131266841012",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/carl/back.png"
+        },
+        {
+          "repository_path": "docs/art-references/native-candidates/assets/donut/front.png",
+          "git_blob": "36adaed64fe8998ed925680d1dd7690c66ee87d7",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/donut/front.png"
+        },
+        {
+          "repository_path": "docs/art-references/native-candidates/assets/donut/back.png",
+          "git_blob": "3306501a6d10706694a2d7e011becf6843b9bae3",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/donut/back.png"
+        },
+        {
+          "repository_path": "docs/art-references/opponent-native-candidates/assets/warden/front.png",
+          "git_blob": "d464ddd1714d000fb61d02a872ad95de0ffd287a",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/opponent-native-candidates/assets/warden/front.png"
+        },
+        {
+          "repository_path": "docs/art-references/carl-donut-proposed-replacement-reference-v2.png",
+          "git_blob": "31e758a21a2dbf87206cfac613d9ec76cbd6435f",
+          "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/carl-donut-proposed-replacement-reference-v2.png",
+          "expected_sha256": "4c713bb73c041af17a4daf9568087fc911f63daba617c184b68e0744b51619aa"
+        }
+      ],
+      "exporters_inspected": [
+        "scripts/content/protagonist_art.py",
+        "scripts/content/opponent_art.py"
+      ],
+      "selected": [
+        {
+          "file": "carl-keypose-master-v2.png",
+          "poses": [
+            "STRIKE anticipation",
+            "STRIKE action",
+            "STRIKE recovery",
+            "BRACE set",
+            "BRACE hold"
+          ],
+          "layout": "3 columns, 2 rows; bottom-right empty",
+          "view": "three-quarter rear, right-facing",
+          "prompts": [
+            "carl-prompt-v1.txt",
+            "carl-prompt-v2.txt"
+          ],
+          "size": [
+            1536,
+            1024
+          ],
+          "bytes": 1524259,
+          "sha256": "a29e44d06d61d990a9e600063e873d7b491da850112378ed618009d94116f00c",
+          "alpha_range": [
+            0,
+            254
+          ],
+          "transparent_pixel_count": 1107610,
+          "body_alpha_128_bounds": [
+            70,
+            47,
+            1447,
+            973
+          ]
+        },
+        {
+          "file": "donut-keypose-master-v1.png",
+          "poses": [
+            "SPARK anticipation",
+            "SPARK cast",
+            "SPARK recovery",
+            "WEAKEN preparation",
+            "WEAKEN release",
+            "attention reaction"
+          ],
+          "layout": "3 columns, 2 rows",
+          "view": "rear/right-facing base; WEAKEN poses drift toward three-quarter front and require harmonization",
+          "prompts": [
+            "donut-prompt-v1.txt"
+          ],
+          "size": [
+            1254,
+            1254
+          ],
+          "bytes": 1155987,
+          "sha256": "97eca32b5c6ab9b08e1a9101a75d59abc1ec956e388f673a3682d843b517acef",
+          "alpha_range": [
+            0,
+            255
+          ],
+          "transparent_pixel_count": 868097,
+          "body_alpha_128_bounds": [
+            30,
+            135,
+            1229,
+            1161
+          ]
+        },
+        {
+          "file": "warden-keypose-master-v1.png",
+          "poses": [
+            "idle",
+            "windup",
+            "warning hold",
+            "slam contact",
+            "recovery"
+          ],
+          "layout": "single row, 5 columns",
+          "view": "front-only, slightly left-facing",
+          "prompts": [
+            "warden-prompt-v1.txt"
+          ],
+          "size": [
+            1983,
+            793
+          ],
+          "bytes": 834498,
+          "sha256": "7907691df7dc5fc8b0faa1fd75e0c41bb9ff4312bf094a89485451c886048bf3",
+          "alpha_range": [
+            0,
+            255
+          ],
+          "transparent_pixel_count": 1106536,
+          "body_alpha_128_bounds": [
+            22,
+            169,
+            1950,
+            601
+          ]
+        }
+      ],
+      "unselected": [
+        {
+          "file": "carl-keypose-master-v1.png",
+          "reason": "First-pass archive; selected v2 follows one targeted transparency cleanup"
+        }
+      ],
+      "limits": [
+        "Source masters only; not 64x64 indexed assets, native animation, GBA acceptance, or gameplay evidence.",
+        "All require deliberate native pixel redraw/cleanup, per-pose baseline/pivot/scale alignment, appropriate 15-opaque-color palette and binary alpha.",
+        "Semi-transparent fringe and stray very-low-alpha pixels remain; preserve original output and clean only during native authoring.",
+        "Carl background RGB includes brown haze but inspected background locations have alpha zero. Some previews discard alpha and can falsely show that hidden RGB.",
+        "Donut WEAKEN head/body angle and relative scale need harmonizing; no visible crop at alpha >=128, body bounds leave 25px right margin.",
+        "Warden front view only; no genuine rear view authored.",
+        "Actual current battle screenshot was not retrieved; reviewed approved source/native assets only. HUD placement and motion must be tested later.",
+        "No code, repository, engine, schedules, gameplay rules or runtime assets were changed. No external paid API used."
+      ]
+    },
+    "full-floor": {
+      "schema_version": 1,
+      "prepared_at_utc": "2026-10-07T00:33:00Z",
+      "project": "DungeonCrawlerCarlemon",
+      "batch": "full-first-floor-scale-concept",
+      "generation_tool": "built-in image_gen",
+      "scope": "One panoramic concept master following explicit full-floor scale approval; planning and concept art only.",
+      "generation_calls": [
+        {
+          "call": 1,
+          "kind": "reference_guided_expansion",
+          "subject": "Full first floor overview",
+          "prompt_file": "full-floor-overview-prompt-v1.txt",
+          "reference": "../connected-layout/connected-sector-overview-v2.png",
+          "output": "full-floor-overview-v1.png",
+          "selected": true,
+          "review": "Scale expansion is visually clear. No targeted revision used."
+        }
+      ],
+      "deliverable": {
+        "file": "full-floor-overview-v1.png",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "mode": "RGB",
+        "bytes": 2739931,
+        "sha256": "a5bc83efac50bae0b177f0489633a4760ec997900daf2d06e1fdf43f5c7902ac",
+        "status": "generated_illustrative_concept"
+      },
+      "layout_intent": {
+        "scale": "Approximately 10x unique explorable floor area relative to prior opening sector; not 10x width and height.",
+        "districts": [
+          "D1 Opening District",
+          "D2 Sluice Junction",
+          "D3 Foundry Galleries",
+          "D4 Buried Arcade",
+          "D5 Crawler Commons",
+          "D6 Pumpworks",
+          "D7 Service Warrens",
+          "D8 Broken Causeway",
+          "D9 Descent Gate"
+        ],
+        "connections": [
+          "D1-D2",
+          "D2-D3-D5",
+          "D2-D4-D5",
+          "D5-D6-D8-D9",
+          "D5-D7-D8",
+          "D6-D2"
+        ],
+        "state_rules": "Far-side gate/shortcut states and all existing progression permissions belong to the written district plan and later graybox, not the generated image."
+      },
+      "limitations": [
+        "Conceptual full-floor scale only: approximately ten times the opening sector's explorable area is an intent, not a measured or tile-exact claim.",
+        "The original opening sector is recognizable in the southwest and visually subordinate to the expanded floor; nine planned districts are conveyed through thematic architectural masses rather than labeled boundaries.",
+        "Illustrated subdivisions are visual density, not a committed room, encounter, reward, quest or gameplay-duration budget.",
+        "Generated connections, door footprints, bridge gaps, collision edges and progression permission checks require a deterministic graybox and reachability audit.",
+        "The prompt's drained cistern appears water-filled, the broken great wheel appears largely intact, and the central refuge landmark reads as a pillar/fountain. The district plan governs these details.",
+        "The image is a 1672 x 941 RGB generation master, not the requested ideal 3072 x 1728, not a native GBA screenshot, and not a palette- or pixel-grid-constrained game asset.",
+        "Player camera remains local; this panoramic world overview does not imply a whole-floor gameplay camera.",
+        "No characters or new canonical monsters/story were introduced. District geography and thematic architectural landmarks are original adaptation proposals.",
+        "No code or repository changes, Page writes, runtime integration, emulator tests, native-size tests, collision tests or save/reload tests were performed."
+      ]
+    },
+    "district-stitch-pilot": {
+      "schema_version": 1,
+      "prepared_at_utc": "2026-10-07T00:50:00Z",
+      "project": "DungeonCrawlerCarlemon",
+      "scope": "Two adjacent district concept masters and unretouched stitched proof; no game implementation, repository changes or full nine-district batch.",
+      "generation_tool": "built-in image_gen",
+      "generation_calls": [
+        {
+          "call": 1,
+          "kind": "reference_guided_generation",
+          "prompt_file": "d1-opening-prompt-v1.txt",
+          "references": [
+            "../connected-layout/connected-sector-overview-v2.png",
+            "../full-floor/full-floor-overview-v1.png"
+          ],
+          "output": "d1-opening-district-v1.png",
+          "selected": false,
+          "review": "Centered north edge port added, but remaining main corridors still too narrow."
+        },
+        {
+          "call": 2,
+          "kind": "targeted_width_correction",
+          "prompt_file": "d1-opening-correction-v2.txt",
+          "references": [
+            "d1-opening-district-v1.png"
+          ],
+          "output": "d1-opening-district-v2.png",
+          "selected": true,
+          "review": "Visible expansion of west spine, upper ring, central circulation and lower service connector; still misses full clearance contract in upper-bay connector and stairs."
+        },
+        {
+          "call": 3,
+          "kind": "reference_guided_adjacent_district_generation",
+          "prompt_file": "d2-sluice-prompt-v1.txt",
+          "references": [
+            "d1-opening-district-v2.png",
+            "../full-floor/full-floor-overview-v1.png"
+          ],
+          "output": "d2-sluice-district-v1.png",
+          "selected": true,
+          "review": "Wheel/sluice identity, broad southern approach and eastern junction conveyed; finer detail scale and local service/bridge bottlenecks remain."
+        }
+      ],
+      "deliverables": [
+        {
+          "file": "d1-opening-district-v2.png",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "bytes": 2245869,
+          "sha256": "ea0c5df6f3c255bb00c0d0d91d63aade1efe08af87cfb13e79bb8d4734124693"
+        },
+        {
+          "file": "d2-sluice-district-v1.png",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "bytes": 2615258,
+          "sha256": "f827bcf90aeae182cc67e5cef2741684f909f7e1a44e87adbe667aff7a0cf2b5"
+        },
+        {
+          "file": "d1-d2-stitched-proof-v1.png",
+          "dimensions": [
+            1664,
+            2232
+          ],
+          "mode": "RGB",
+          "bytes": 4703095,
+          "sha256": "dc38d8c789cb30e40d0528f869745204f5bee6db575f50dd08b7dd6226b71096"
+        }
+      ],
+      "connection_register": [
+        {
+          "id": "D1.N-D2.S",
+          "south_panel": "D1 Opening District",
+          "north_panel": "D2 Sluice Junction",
+          "south_panel_port": "center of top edge",
+          "north_panel_port": "center of bottom edge",
+          "target_clear_width_metatiles": 7,
+          "target_elevation": "same neutral gray slate floor",
+          "registration": "Centered 1536-wide panel edges joined directly; no scaling or edge repainting.",
+          "observed": "Floor fields overlap at the join, with small wall-edge/cross-section and tile-rhythm differences. No pixel-perfect geometry claim.",
+          "status": "illustrative alignment only"
+        },
+        {
+          "id": "D2-Foundry",
+          "target": "northwest/northward onward route",
+          "status": "Visual context only. Dry reachability and gate state not verified."
+        },
+        {
+          "id": "D2-Arcade",
+          "target": "east/southeastward onward route",
+          "status": "Visual context only. Exact exit and branch progression remain governed by the written graph."
+        }
+      ],
+      "width_contract": {
+        "main_route_metatiles": [
+          5,
+          7
+        ],
+        "ordinary_branch_metatiles": [
+          3,
+          4
+        ],
+        "junction_metatiles": [
+          8,
+          12
+        ],
+        "status": "Design target; generation does not guarantee exact counts."
+      },
+      "assembly": {
+        "script": "assemble_stitch.py",
+        "order": [
+          "D2 north",
+          "D1 south"
+        ],
+        "resampling": false,
+        "cropping": false,
+        "repainting": false,
+        "blending": false,
+        "translation_offsets": {
+          "D2": [
+            64,
+            72
+          ],
+          "D1": [
+            64,
+            1096
+          ]
+        },
+        "seam_y": 1096,
+        "added_outer_margins": {
+          "left": 64,
+          "right": 64,
+          "top": 72,
+          "bottom": 112
+        },
+        "outside_annotations_only": "Title, caveat footer and amber seam arrows in side padding.",
+        "pixel_preservation_checks": {
+          "d2-sluice-district-v1.png": true,
+          "d1-opening-district-v2.png": true
+        }
+      },
+      "limitations": [
+        "Illustrative district concept images, not a native GBA screenshot, metatile atlas, measured floor plan, collision layer or reachability proof.",
+        "D1 v2 visibly expands the main footprint but the upper maintenance-bay passage and entry stairs still fall short of the written width hierarchy.",
+        "D2 uses finer floor detailing than D1. Wall-block and prop vocabulary broadly match, but exact pixel/ground scale remains to be normalized in native layout.",
+        "D2 bridges and service necks include narrow portions; any main-route use must be widened to the written contract before game implementation.",
+        "D2 repeats a small pillar motif from D1. This is generated decoration, not a new canonical refuge, checkpoint or story event.",
+        "Onward district routes, doorway footprints, gate states, water crossings and dry path continuity need deterministic layout review; the written nine-district graph governs.",
+        "The seam is an unretouched 1:1 butt join. Small wall/floor mismatch is visible and intentionally unhidden.",
+        "Further district generation is pending user review of this pilot. No seven-district continuation, code, repository, runtime or emulator work was performed.",
+        "Full-floor v2 prompt was prepared but never used; full-floor v1 remains unchanged as an orientation concept."
+      ]
+    },
+    "connected-layout": {
+      "schema_version": 1,
+      "prepared_at_utc": "2026-10-07T00:26:00Z",
+      "project": "DungeonCrawlerCarlemon",
+      "batch": "connected-opening-sector-concepts",
+      "generation_tool": "built-in image_gen",
+      "source_commit_for_approved_references": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+      "scope": "Three illustrative concept masters plus exact prompts and provenance. No code, repository writes, deployment, animation, emulator or runtime work.",
+      "generation_calls": [
+        {
+          "call": 1,
+          "kind": "reference_guided_generation",
+          "subject": "Connected sector overview",
+          "prompt_file": "connected-sector-overview-prompt-v1.txt",
+          "references": [
+            "references/service-room-concept-v1.png",
+            "references/quiet-landing-concept-v1.png"
+          ],
+          "output": "connected-sector-overview-v1.png",
+          "selected": false,
+          "review": "Workshop appeared as exposed workbench, corrected in selected v2. Draft remains locally, not included in bundle."
+        },
+        {
+          "call": 2,
+          "kind": "targeted_edit",
+          "subject": "Workshop doorway correction",
+          "prompt_file": "connected-sector-overview-correction-v2.txt",
+          "references": [
+            "connected-sector-overview-v1.png"
+          ],
+          "output": "connected-sector-overview-v2.png",
+          "selected": true
+        }
+      ],
+      "deliverables": [
+        {
+          "file": "connected-sector-overview-v2.png",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "bytes": 1972461,
+          "sha256": "bd6355a6b57f2b22e4014bc9d2aa3240a5b6f17bc93d1b9b1fd8b6b3af5ea75c",
+          "unique_rgb_colors": 146581,
+          "status": "generated_illustrative_concept"
+        }
+      ],
+      "reference_files": [
+        {
+          "file": "references/service-room-concept-v1.png",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "bytes": 1527122,
+          "sha256": "a00300123e94a71b18e8b18e76cebf64d67acdbfca740771b631f8409138002e",
+          "unique_rgb_colors": 85924
+        },
+        {
+          "file": "references/quiet-landing-concept-v1.png",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "bytes": 1565178,
+          "sha256": "1182b77aaabe83bfe0a1c016190ac7c3880ff95810e35eb140aad2f9e8d5ed2e",
+          "unique_rgb_colors": 99453
+        },
+        {
+          "file": "references/carl-front.png",
+          "dimensions": [
+            64,
+            64
+          ],
+          "mode": "P",
+          "bytes": 804,
+          "sha256": "6c62b19145fe4a061a3080ec3ca2fae30a80452f3ea5d5aad8aaa878b29bd5aa",
+          "unique_rgb_colors": 15
+        },
+        {
+          "file": "references/donut-front.png",
+          "dimensions": [
+            64,
+            64
+          ],
+          "mode": "P",
+          "bytes": 795,
+          "sha256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+          "unique_rgb_colors": 15
+        }
+      ],
+      "layout_intent": {
+        "working_envelope": "64 x 48 metatiles, illustrative graybox starting point with unfilled wall/void space",
+        "anchors": [
+          "southwest entrance",
+          "central stone/metal marker",
+          "warm Quiet Landing door on north wall with teal cue",
+          "separate workshop doorway east/southeast",
+          "optional hazard spur southeast",
+          "parallel Guard and Howler bays clearable in either order",
+          "upper-right boss doorway",
+          "far-junction return loop back to central area"
+        ],
+        "rules": "Existing trial plus both patrol flags gate boss permission. No new required encounter order, story, enemy, quest or reward budget."
+      },
+      "limitations": [
+        "Generated layout is approximate and does not certify exact tile counts, openings, collision footprints, latch behavior or progression reachability.",
+        "Close views evoke a player camera but are not exact native 240 x 160 or 15 x 10-metatile screenshots.",
+        "RGB images with well over native palette counts and variable pixel pitch require deliberate native asset authoring.",
+        "Characters are generated interpretations of approved identity references for scale, not production sprite replacements.",
+        "Central marker is an intact short pillar in images, differing from the proposed broken pillar.",
+        "The warm hub training/recovery interior and boss chamber are unseen; the plan still governs their preserved mechanics.",
+        "No gameplay, native-size, collision, animation, emulator or save/reload tests were run."
+      ]
+    }
+  }
+}

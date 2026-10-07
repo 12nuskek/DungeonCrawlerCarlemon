@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "package_kind": "selected concept/keypose source references",
+  "base_commit": "50bf6d99fdfc4cb3d1ce6799a327a9974e8b786f",
+  "existing_files_changed": false,
+  "files": [
+    {
+      "path": "INTEGRATION_HANDOFF.md",
+      "bytes": 2981,
+      "sha256": "71deceb0c424da480f33c457be47a072dbc855c214769cf13a26fb6ee2dbca5c",
+      "git_blob_sha": "3794478f48ab844c3ffa8b87934fe9e2d98b85be"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2287,
+      "sha256": "2cef3cd08d4bd62b7c71dc917723e4a2a8ae0b9cc73d4cde63ee7d38413a5f85",
+      "git_blob_sha": "1f682d8c6b8716c5acd58eeb191d831428cae60a"
+    },
+    {
+      "path": "characters/carl-keypose-master-v2.png",
+      "bytes": 1524259,
+      "sha256": "a29e44d06d61d990a9e600063e873d7b491da850112378ed618009d94116f00c",
+      "git_blob_sha": "d99efe681a21e943f00b7a7bd76096f21b150b74",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "characters/carl-prompt-v1.txt",
+      "bytes": 2591,
+      "sha256": "c02b81ec5a9d36162416e6ae8511d424cc4429f2dccd3ff8145c64643e018fff",
+      "git_blob_sha": "891291d539bc01dbcd1b3500161e7fd34be10fac"
+    },
+    {
+      "path": "characters/carl-prompt-v2.txt",
+      "bytes": 750,
+      "sha256": "c4e3494632e792286edd04d97472d0bdcd6c7bb7851f1b514a19219f4c4acdc7",
+      "git_blob_sha": "656e2504af42699527959060668c7e66eed8985b"
+    },
+    {
+      "path": "characters/donut-keypose-master-v1.png",
+      "bytes": 1155987,
+      "sha256": "97eca32b5c6ab9b08e1a9101a75d59abc1ec956e388f673a3682d843b517acef",
+      "git_blob_sha": "f31a6c77957d04bc1ef64ed66b55e414387c30e9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "characters/donut-prompt-v1.txt",
+      "bytes": 2710,
+      "sha256": "3c5d8189d975448507fb1fe046c8a08f448252826deefc9eb2ed61c6565e8fdc",
+      "git_blob_sha": "1e261540251940b5f2272cf559cc155260d664c5"
+    },
+    {
+      "path": "characters/references/carl-back.png",
+      "bytes": 750,
+      "sha256": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1",
+      "git_blob_sha": "f1745035b1823853198f672a82d9131266841012",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "characters/references/carl-donut-original.png",
+      "bytes": 947534,
+      "sha256": "4c713bb73c041af17a4daf9568087fc911f63daba617c184b68e0744b51619aa",
+      "git_blob_sha": "31e758a21a2dbf87206cfac613d9ec76cbd6435f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "characters/references/carl-front.png",
+      "bytes": 804,
+      "sha256": "6c62b19145fe4a061a3080ec3ca2fae30a80452f3ea5d5aad8aaa878b29bd5aa",
+      "git_blob_sha": "e5c901c21773c715727010c5ca19f2a9455a9f1f",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "characters/references/donut-back.png",
+      "bytes": 708,
+      "sha256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+      "git_blob_sha": "3306501a6d10706694a2d7e011becf6843b9bae3",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "characters/references/donut-front.png",
+      "bytes": 795,
+      "sha256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+      "git_blob_sha": "36adaed64fe8998ed925680d1dd7690c66ee87d7",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "characters/references/warden-front.png",
+      "bytes": 1143,
+      "sha256": "8f19db3558eb68b6bcb0f685d279aad90e03e75eb0abf4bbe1267c11e26a6a8b",
+      "git_blob_sha": "d464ddd1714d000fb61d02a872ad95de0ffd287a",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "P"
+    },
+    {
+      "path": "characters/warden-keypose-master-v1.png",
+      "bytes": 834498,
+      "sha256": "7907691df7dc5fc8b0faa1fd75e0c41bb9ff4312bf094a89485451c886048bf3",
+      "git_blob_sha": "c4686c142b46eaffa76396378dc078123023d1b0",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "characters/warden-prompt-v1.txt",
+      "bytes": 2884,
+      "sha256": "5cb9cb26f6b30dcd215115dd3c48d4274647b4947c5af8e02ec895a12469ddfd",
+      "git_blob_sha": "f2501de71e40aaaa3859cb9c4a4330851b6a415d"
+    },
+    {
+      "path": "connected-layout/connected-sector-overview-correction-v2.txt",
+      "bytes": 1377,
+      "sha256": "7002e0b06e3b52cbf5873722cb081b0b015f250ffbdd7285b9ffbe3cc8c7e1c9",
+      "git_blob_sha": "1de7adff0cb5fbc67288aff9f9daa629ab6cfad3"
+    },
+    {
+      "path": "connected-layout/connected-sector-overview-prompt-v1.txt",
+      "bytes": 4098,
+      "sha256": "76f05dca15ff5c7a20ff5a6cb0db949f8670e0f9281441ce4069422f30e81620",
+      "git_blob_sha": "12448ba5354cf46719985d5b3defeee585f7a559"
+    },
+    {
+      "path": "connected-layout/connected-sector-overview-v2.png",
+      "bytes": 1972461,
+      "sha256": "bd6355a6b57f2b22e4014bc9d2aa3240a5b6f17bc93d1b9b1fd8b6b3af5ea75c",
+      "git_blob_sha": "8b9c8de80b51d8b31006472bdd87425afac9620b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "connection-register.json",
+      "bytes": 3333,
+      "sha256": "b578ab3d5407910def5e8db626fb98c697e039845168092e07ed9b8f37cd4595",
+      "git_blob_sha": "3e05cbf575db4ed321bba23bbc3aee42bb6d6e5f"
+    },
+    {
+      "path": "district-stitch-pilot/d1-d2-stitched-proof-v1.png",
+      "bytes": 4703095,
+      "sha256": "dc38d8c789cb30e40d0528f869745204f5bee6db575f50dd08b7dd6226b71096",
+      "git_blob_sha": "bd0bb2b5a91f19d4345a2bb2229d48c13fee39dd",
+      "dimensions": [
+        1664,
+        2232
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "district-stitch-pilot/d1-opening-correction-v2.txt",
+      "bytes": 2888,
+      "sha256": "248096b9cdbd4bcc20f19b18bac9080115ca371a6d94bdce1d6b5a87c64f73c2",
+      "git_blob_sha": "c84c6b45fc1a63787ce1a9fb54ea6971e296434b"
+    },
+    {
+      "path": "district-stitch-pilot/d1-opening-district-v2.png",
+      "bytes": 2245869,
+      "sha256": "ea0c5df6f3c255bb00c0d0d91d63aade1efe08af87cfb13e79bb8d4734124693",
+      "git_blob_sha": "2e55045c0a2b8c693b0069184d600a8df85d45e9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "district-stitch-pilot/d1-opening-prompt-v1.txt",
+      "bytes": 3144,
+      "sha256": "4b3f747e8633e82a879566665408873a46f2534f95aedd4d3ed6cb4fe403e526",
+      "git_blob_sha": "8f755a2222b85e138ac38a4c7d6eb05023684c2f"
+    },
+    {
+      "path": "district-stitch-pilot/d2-sluice-district-v1.png",
+      "bytes": 2615258,
+      "sha256": "f827bcf90aeae182cc67e5cef2741684f909f7e1a44e87adbe667aff7a0cf2b5",
+      "git_blob_sha": "9dc730ff6439c2229d1069a7c7f61f010cd1ede3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "district-stitch-pilot/d2-sluice-prompt-v1.txt",
+      "bytes": 3968,
+      "sha256": "22f1f8aff602adcb277d9492a28c960b418db5ad4d0bd2175bc68dbb7e53cec4",
+      "git_blob_sha": "257d5fc12a11a550921edc004ca8b7b6c9901c3f"
+    },
+    {
+      "path": "environment/landing-center-reference.png",
+      "bytes": 4108,
+      "sha256": "46126af7cff2132917c61c33fc2d4a310fcda9b25290d12ad7e06439d7642a54",
+      "git_blob_sha": "126918b5a58f62ea727aeecaeaa5dc95d156ba71",
+      "dimensions": [
+        240,
+        160
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "environment/quiet-landing-concept-v1.png",
+      "bytes": 1565178,
+      "sha256": "1182b77aaabe83bfe0a1c016190ac7c3880ff95810e35eb140aad2f9e8d5ed2e",
+      "git_blob_sha": "4282871b9bd9dc169ff512bb34bb2e1e645eb241",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "environment/quiet-landing-correction-prompt.txt",
+      "bytes": 1303,
+      "sha256": "dc9ff92db7045c9a260ea831665b70dc0659ba0dd048e28f143fbc9104819ef8",
+      "git_blob_sha": "80ca1af4258bcacf235f37a896e37ba59f3d2580"
+    },
+    {
+      "path": "environment/quiet-landing-prompt.txt",
+      "bytes": 3400,
+      "sha256": "29980a17696d12974d37f06fd243c48d838b5cfc4819d0a2163db8c73279d5d2",
+      "git_blob_sha": "c3a84b96c40ac26880a8c1513ead71d144005d45"
+    },
+    {
+      "path": "environment/service-center-reference.png",
+      "bytes": 4074,
+      "sha256": "60b6ef27038da304409961011626e18b892fd0f569ba6df19474648ba4271fc5",
+      "git_blob_sha": "84649d87d7441fd8bdc33cf4b0067f5f5c7b49f6",
+      "dimensions": [
+        240,
+        160
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "environment/service-room-concept-v1.png",
+      "bytes": 1527122,
+      "sha256": "a00300123e94a71b18e8b18e76cebf64d67acdbfca740771b631f8409138002e",
+      "git_blob_sha": "b4386f1839415f6ed1193f8a4b5c1f8ade2c81e5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "environment/service-room-prompt.txt",
+      "bytes": 3030,
+      "sha256": "8ee2ee2d10deaa1503cd43c892bfee3b27e5fdb41082ee9377ae67cdb6d29bcf",
+      "git_blob_sha": "3bfd17eb26d92438c1fede3851af3e030b6c0490"
+    },
+    {
+      "path": "full-floor/full-floor-overview-prompt-v1.txt",
+      "bytes": 5632,
+      "sha256": "d19ccc3f32ab9df1867caa846353da7c907b2330449ac6ffaf255219fbafb405",
+      "git_blob_sha": "6d4f903ac6af24bf3236735f78f9a761e31c42bc"
+    },
+    {
+      "path": "full-floor/full-floor-overview-v1.png",
+      "bytes": 2739931,
+      "sha256": "a5bc83efac50bae0b177f0489633a4760ec997900daf2d06e1fdf43f5c7902ac",
+      "git_blob_sha": "f7da79016562599eda8109a269a60942b5aac584",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "preparation-provenance.json",
+      "bytes": 27522,
+      "sha256": "29302e8b2a5e49181749f9b795f58559ed61600f51c10ddeacb80264c31b2ac3",
+      "git_blob_sha": "d89459c9486ea2b2fd2f093f4b5a5948eff95664"
+    },
+    {
+      "path": "source-identities.json",
+      "bytes": 3492,
+      "sha256": "3b807858e9456d4bb8869707816233be08c7296cda26788832bc28a28c32d1ae",
+      "git_blob_sha": "5de3e8f9c90ac82ea005c30bceeb5de2532677f3"
+    },
+    {
+      "path": "verify_staged.py",
+      "bytes": 1924,
+      "sha256": "956abbee41f6e616f99bea6465307b4e727cf3e0e087f0dd580f8ce371866960",
+      "git_blob_sha": "dc0307bb665e65cac128e1e9550275a0d6360229"
+    }
+  ]
+}

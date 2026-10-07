@@ -12,7 +12,8 @@ accepted=json.loads((base/'validation-summary.json').read_text());assert len(acc
 l=importlib.util.spec_from_file_location('gate',root/'scripts/floor1/travel-measurements.py');gate=importlib.util.module_from_spec(l);l.loader.exec_module(gate)
 spec=json.loads((root/'scripts/contracts/f1-g01b-coordinated.json').read_text());ceiling=json.loads((root/'scripts/contracts/f1-g01b-recovery.json').read_text())
 out=Path(tempfile.mkdtemp(prefix='scene-',dir=root/'artifacts/floor1/g01b'));print('Evidence:',out,flush=True)
-code=(base/'walking.c').read_text();code=code.replace('unsigned measuring=0,','unsigned sceneSprites=0, sceneFrames[3]={0}, peakObjects[3]={0}, peakSprites[3]={0};\n    unsigned measuring=0,')
+code=(base/'walking.c').read_text();code=code.replace('maplayout=0, overworld=0, fade=0, addr;','maplayout=0, overworld=0, fade=0, sceneSprites=0, addr;')
+code=code.replace('unsigned measuring=0,','unsigned sceneFrames[3]={0}, peakObjects[3]={0}, peakSprites[3]={0};\n    unsigned measuring=0,')
 code=code.replace('if (!strcmp(symbol,"gBackupMapLayout"))','if (!strcmp(symbol,"gSprites")) sceneSprites=addr;\n        if (!strcmp(symbol,"gBackupMapLayout"))')
 point='                core->runFrame(core);';assert code.count(point)==1
 code=code.replace(point,point+'''

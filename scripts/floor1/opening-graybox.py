@@ -29,8 +29,7 @@ def path(cells, start, end):
             if n in cells and n not in parent:parent[n]=p;q.append(n)
     raise ValueError(f'Unreachable {end} from {start}')
 
-def export(spec, engine, opened, out):
-    assert (engine.parent/'.dcc-diagnostic-snapshot').is_file(), 'Explicit disposable-snapshot marker required; never export to live engine'
+def map_words(spec, opened):
     floor=geometry(spec,opened); w,h=spec['width'],spec['height']
     # Reuse already-reviewed bank6 native art; no new palette/tile allocation.
     words=[]
@@ -43,6 +42,11 @@ def export(spec, engine, opened, out):
             elif (x-1,y) in floor:word=0x3c00|575
             else:word=0x3c00|556
             words.append(word)
+    return words
+
+def export(spec, engine, opened, out):
+    assert (engine.parent/'.dcc-diagnostic-snapshot').is_file(), 'Explicit disposable-snapshot marker required; never export to live engine'
+    w,h=spec['width'],spec['height'];words=map_words(spec,opened)
     name='DCC_OpeningPreview'; directory=engine/'data/layouts'/name;directory.mkdir(parents=True)
     (directory/'map.bin').write_bytes(struct.pack('<'+str(w*h)+'H',*words))
     (directory/'border.bin').write_bytes(struct.pack('<4H',*([0x3c00|556]*4)))

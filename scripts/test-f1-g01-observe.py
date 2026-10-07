@@ -2,12 +2,12 @@
 """Read-only runtime buffer/scene measurements and a continuous actual-frame clip."""
 from pathlib import Path
 from PIL import Image
-import hashlib,json,os,shlex,struct,subprocess,tempfile
+import hashlib,importlib.util,json,os,shlex,struct,subprocess,tempfile
 root=Path(__file__).resolve().parents[1]
 def git(*args):return subprocess.check_output(['git',*args],cwd=root,text=True).strip()
 assert not git('status','--porcelain'),'Commit first'
 revision=git('rev-parse','HEAD');base=Path(os.environ['DCC_G01_BASE_RUN']).resolve();tested=(base/'tested-commit.txt').read_text().strip()
-subprocess.run(['git','diff','--quiet',tested,revision,'--','engine','scripts/playtest.c','scripts/floor1/opening-graybox.py','scripts/contracts/f1-g01-opening.json'],cwd=root,check=True)
+subprocess.run(['git','diff','--quiet',tested,revision,'--','engine','scripts/playtest.c','scripts/contracts/f1-g01-opening.json'],cwd=root,check=True)
 summary=json.loads((base/'validation-summary.json').read_text());assert (len(summary),sum(s['assertions'] for s in summary))==(9,708)
 assert all(not (base/s['route']/'errors.log').stat().st_size for s in summary)
 out=Path(tempfile.mkdtemp(prefix='observe-',dir=root/'artifacts/floor1/g01'));print('Evidence:',out,flush=True)
@@ -54,12 +54,9 @@ for mode in ['closed','open']:
     d=base/mode;rom=d/'diagnostic.gba'
     assert hashlib.sha256(rom.read_bytes()).hexdigest()==(d/'rom.sha256').read_text().split()[0]
     route=(d/'guard-first-cold/input.route').read_text().splitlines();assert route[-1]=='quit'
-    words=struct.unpack('<3072H',(base/'source/engine/data/layouts/DCC_OpeningPreview/map.bin').read_bytes())
-    # Source cache ends open; reconstruct closed source words from the saved exporter map identity.
-    if mode=='closed':
-        for x,y in [(35,y) for y in range(13,20)]:
-            # Both lateral neighbors are floors: exact exported left-wall metatile.
-            words=list(words);words[y*64+x]=0x3c00|583
+    loader=importlib.util.spec_from_file_location('gray',root/'scripts/floor1/opening-graybox.py');gray=importlib.util.module_from_spec(loader);loader.loader.exec_module(gray)
+    spec=json.loads((root/'scripts/contracts/f1-g01-opening.json').read_text())
+    words=gray.map_words(spec,mode=='open')
     digest=hashlib.sha256(struct.pack('<3072H',*words)).hexdigest()
     assert digest==json.loads((d/'map-identity.json').read_text())['blockdata_sha256']
     lines=route[:-1]+['extent 79 62']+[f'tile {i%64} {i//64} {v}' for i,v in enumerate(words)]+['quit']

@@ -13,11 +13,11 @@ two diagnostic variants compiled at4718908806057d245546cc65cf1f43105ea01b01.
 Runtime13 diagnostic sessions/7066 assertions,13 empty errors; four ordinary
 cold reloads, full3072-cell cold buffer checks in both variants, actual camera
 captures and632 consecutive motion frames/10.5814seconds. Full scene peak5
-active objects/9 sprites; EWRAM/IWRAM unchanged. Integration pending scoped PR.
+active objects/9 sprites; EWRAM/IWRAM unchanged. Draft PR62; final source/evidence review complete, integration pending.
 [Exact source/build identities, commands, corrections and limits](evidence/floor1/g01/README.md).
 Travel gate rejected for live adoption: Guard/Howler candidate field-only hub
 paths24/37steps exceed verified old guide paths14/19steps. FinalT stays null.
-Exact next action: finish reviewed G01a diagnostic/audit PR, then reshape D1
+Exact next action: integrate reviewed G01a diagnostic/audit PR62, then reshape D1
 hub/bays and compact-interior anchors for recovery ceilings before live migration.
 No V01/native art rollout, live relocation or completed full G01 claim yet.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.

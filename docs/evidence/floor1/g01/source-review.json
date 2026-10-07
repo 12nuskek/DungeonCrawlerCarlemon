@@ -1,0 +1,31 @@
+{
+  "reviewed_head": "f4529870a586ae408430d13e4ec68c006bd293b9",
+  "base": "cee81f8f5dd5cce93990007f06491c8d607a7161",
+  "production_engine_and_shared_harness_diff": "empty",
+  "diagnostic_compiled_source": "4718908806057d245546cc65cf1f43105ea01b01",
+  "observer_source": "26fc7ab057fcc878359b9972789fb0483ae6e8d5",
+  "scene_source": "327eda53bdd04858c9131396d6689a11fef020aa",
+  "runtime_sessions": 13,
+  "runtime_assertions": 7066,
+  "empty_emulator_error_logs": 13,
+  "visual_review": [
+    "junction",
+    "guard/howler markers",
+    "far junction",
+    "quiet/workshop/Warden anchors",
+    "actor dialogue",
+    "ordinary save/cold",
+    "11 actual samples of632-frame continuous walking clip"
+  ],
+  "source_review": [
+    "all source diffs manually inspected",
+    "shared read-only RAM instrumentation has no bus writes",
+    "snapshots reset every tracked engine input from committed source",
+    "preview exporter requires explicit disposable marker",
+    "both original compiled map hashes verified after composer refactor",
+    "no live classification/state/layout/warps/save/party/art changes",
+    "actual source evidence hashes and no-game-binary scan passed",
+    "recovery travel fails and is kept as explicit next blocker"
+  ],
+  "integration": "PR62 draft, reviewed tooling/audit scope; no live adoption or full G01 completion"
+}

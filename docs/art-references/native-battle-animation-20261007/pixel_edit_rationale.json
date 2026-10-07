@@ -1,0 +1,162 @@
+[
+  {
+    "frame": "strike-recovery",
+    "x": 19,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-recovery",
+    "x": 26,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-recovery",
+    "x": 20,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-recovery",
+    "x": 33,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-hold",
+    "x": 29,
+    "y": 40,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-hold",
+    "x": 17,
+    "y": 43,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-hold",
+    "x": 28,
+    "y": 45,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-anticipation",
+    "x": 28,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-anticipation",
+    "x": 20,
+    "y": 39,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-anticipation",
+    "x": 30,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-set",
+    "x": 19,
+    "y": 39,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-set",
+    "x": 26,
+    "y": 39,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-set",
+    "x": 34,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "brace-set",
+    "x": 21,
+    "y": 43,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 19,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 24,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 29,
+    "y": 38,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 19,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 26,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-contact",
+    "x": 31,
+    "y": 41,
+    "purpose": "reshape existing heart motif to tiny 3-pixel V; no new motif"
+  },
+  {
+    "frame": "strike-anticipation",
+    "purpose": "restore source eye white and dark pupil lost to contour quantization",
+    "xy": [
+      37,
+      15
+    ]
+  },
+  {
+    "frame": "strike-contact",
+    "purpose": "restore source eye white and dark pupil lost to contour quantization",
+    "xy": [
+      33,
+      15
+    ]
+  },
+  {
+    "frame": "strike-recovery",
+    "purpose": "restore source eye white and dark pupil lost to contour quantization",
+    "xy": [
+      32,
+      15
+    ]
+  },
+  {
+    "frame": "brace-set",
+    "purpose": "restore source eye white and dark pupil lost to contour quantization",
+    "xy": [
+      35,
+      18
+    ]
+  },
+  {
+    "frame": "strike-contact",
+    "purpose": "preserve source knuckle highlight / curled-thumb crease",
+    "xy": [
+      55,
+      21
+    ]
+  }
+]

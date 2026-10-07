@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "carl-keypose-master-v2.png": "../full-floor-preparation-20261007/characters/carl-keypose-master-v2.png",
+    "donut-keypose-master-v1.png": "../full-floor-preparation-20261007/characters/donut-keypose-master-v1.png",
+    "warden-keypose-master-v1.png": "../full-floor-preparation-20261007/characters/warden-keypose-master-v1.png",
+    "donut-keypose-correction-v2.png": "sources/donut-keypose-correction-v2.png"
+  },
+  "baselines": {
+    "carl-back.png": "../native-candidates/assets/carl/back.png",
+    "donut-back.png": "../native-candidates/assets/donut/back.png",
+    "warden-front.png": "../opponent-native-candidates/assets/warden/front.png"
+  }
+}

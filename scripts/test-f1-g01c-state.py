@@ -65,6 +65,36 @@ fixtures += [('a01-' + name, production / (name + '.sav')) for name in
               'boss-pending', 'prepared', 'legacy-workshop', 'legacy-ending')]
 boot = ['step 720 0 -', 'step 1 8 -', 'step 360 0 -', 'step 1 8 -',
         'step 180 0 -', 'step 1 1 -', 'step 180 0 -', 'step 1 1 -', 'step 600 0 cold.ppm']
+manual_save = ['step 1 8 -', 'step 120 0 -', 'step 1 128 -', 'step 20 0 -',
+               'step 1 128 -', 'step 20 0 -', 'step 1 1 -', 'step 160 0 -',
+               'step 1 1 -', 'step 180 0 -', 'step 1 1 -', 'step 600 0 -',
+               'step 1 1 -', 'step 600 0 saved.ppm']
+seed_summary = []
+seed_navigation = {
+    'entrance': ['expect 34 1 4 7 7', 'step 132 16 -', 'step 40 0 -',
+                 'step 52 64 -', 'step 220 0 -', 'expect 34 0 12 4 7',
+                 'step 20 128 -', 'step 40 0 -', 'expect 34 0 12 5 7'],
+    'service': ['expect 34 1 4 7 7', 'step 20 32 -', 'step 40 0 -',
+                'step 52 64 -', 'step 40 0 -', 'step 20 32 -', 'step 220 0 -',
+                'expect 34 2 2 4 7', 'step 36 16 -', 'step 40 0 -',
+                'step 36 128 -', 'step 40 0 -', 'expect 34 2 4 6 7']}
+for name, navigation in seed_navigation.items():
+    seed = production / 'guide-before-trial.sav'; original = digest(seed)
+    d = out / ('ordinary-' + name + '-seed'); d.mkdir(); save = d / 'copy.sav'; shutil.copyfile(seed, save)
+    lines = boot + navigation + manual_save + ['audit', 'quit']
+    (d / 'input.route').write_text('\n'.join(lines) + '\n')
+    with (d / 'input.route').open() as inputs, (d / 'replay.log').open('w') as log, (d / 'errors.log').open('w') as errors:
+        subprocess.run([str(out / 'playtest'), str(production / 'production.gba'), str(save), str(production / 'game.sym')],
+                       cwd=d, stdin=inputs, stdout=log, stderr=errors, check=True)
+    assert not (d / 'errors.log').stat().st_size
+    assert (d / 'replay.log').read_text().endswith('result=0 assertions=7\n')
+    assert digest(seed) == original and digest(save) != original
+    for p in d.glob('*.ppm'): Image.open(p).save(p.with_suffix('.png'))
+    seed_summary.append({'route': d.name, 'source_save': str(seed.relative_to(ROOT)), 'source_sha256': original,
+                         'generated_save_sha256': digest(save), 'original_unchanged': True, 'assertions': 7,
+                         'method': 'Ordinary navigation and manual Save/overwrite confirmation; no RAM/save-file patch.'})
+    fixtures.append(('ordinary-' + name + '-cold', save))
+    print(d.name, 'PASS', flush=True)
 summary = []
 for name, seed in fixtures:
     original = digest(seed); d = out / name; d.mkdir(); save = d / 'copy.sav'; shutil.copyfile(seed, save)
@@ -84,11 +114,13 @@ for name, seed in fixtures:
     summary.append({'route': name, 'source_save': str(seed.relative_to(ROOT)), 'source_sha256': original,
                     'original_and_copy_unchanged': True, 'assertions': 4, 'state': state})
     print(name, 'PASS', state['group'], state['map'], state['pos'], flush=True)
-assert {row['state']['map'] for row in summary} == set(range(6)), 'All six legacy maps required'
 (out / 'identity.json').write_text(json.dumps({'runner_source': HEAD, 'engine_base': BASE,
     'production_compiled_source': (production / 'tested-commit.txt').read_text().strip(),
     'production_rom_sha256': digest(production / 'production.gba'),
-    'method': '14 copied ordinary saves; controller-only cold Continue, read-only bus sampling. No ROM rebuild, save edits, RAM writes or migration. Every original/copy hash unchanged.'}, indent=2) + '\n')
+    'method': '16 copied ordinary saves plus2 controller-produced seed sessions; cold Continue, read-only bus sampling. No ROM rebuild, save-file edits, RAM writes or migration. Every cold original/copy hash unchanged;2 new seed files are saved by normal gameplay.'}, indent=2) + '\n')
 (out / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+(out / 'seeds.json').write_text(json.dumps(seed_summary, indent=2) + '\n')
+assert {row['state']['map'] for row in summary} == set(range(6)), 'All six legacy maps required'
 assert not git('status', '--porcelain') and git('rev-parse', 'HEAD') == HEAD
-print('PASS', len(summary), 'ordinary production sessions /', sum(x['assertions'] for x in summary), 'assertions', flush=True)
+print('PASS', len(summary) + len(seed_summary), 'ordinary production sessions /',
+      sum(x['assertions'] for x in summary + seed_summary), 'assertions', flush=True)

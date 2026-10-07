@@ -16,8 +16,8 @@ a2a42cd normal leave/re-enter controls pass unchanged exact closedROM, fresh exp
 identities match. No material geometry/migration attempt, no assertion weakening.
 Source11687canonical inputs/312gameC/327totalC audited, four declared fixture
 modifications only. Production engine/art/maps/resources/save ABI unchanged.
-Issue72; diagnosticPR not yet created. Next: review/push/draftPR/verified
-scoped integration; then implement production pre-header version/identity mapping,
+Issue72 / draftPR73; reviewedc138bd56ee6febe61f4ef07b91b0f168295519c5.
+Next: verified scoped integration; then implement production pre-header version/identity mapping,
 player/object/templates/all5warps/cache rebuild and future-version rejection;
 ordinary migrated controller interaction/transition/secondsave+cold idempotence
 before live adoption/persistent loop/finalT. No current build/emulator process.

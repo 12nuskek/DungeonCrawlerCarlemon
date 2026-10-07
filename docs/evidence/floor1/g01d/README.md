@@ -115,7 +115,7 @@ attempt. No old failed trace, source, binary or save was deleted.
 
 Full logs/routes/selected captures and source identities are committed here;
 ROMs, saves, host/build binaries and complete raw build logs stay local. This
-contract is implemented/compiled/runtime verified as a **diagnostic**. Verified
+contract is implemented/compiled/runtime verified as a **diagnostic**. DraftPR73; reviewedc138bd56ee6febe61f4ef07b91b0f168295519c5. Verified
 PR integration pending. Actual production version allocation/migration, unknown-
 version rejection, player/objects/templates/all5warps/cache rebuild, ordinary
 migrated interactions/transitions and second save/cold idempotence remain next.

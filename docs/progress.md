@@ -4,13 +4,15 @@ Current checkpoint2026-10-07: **Full Floor1 implementation active.**
 Kurt's05:15:54UTC fallback authorises continuing while future usage guard is researched
 by parent; quota unknown, no automatic20% guard. Historical allowance pause superseded.
 T01 merged168a0dabfe717e1ee29667c5460d45035506d786; art reference PR58 integrated.
-A01 issue59 / PR60, task/floor1-a01-membership; based on T01 merge, integration pending.
-Clean productionc5d0f1e ROM5c4f865a…7230. Full86/1399, recovery12/216 and direct
-boundary2/6 all pass:100/1621,1389 production+232 labeled fixtures,100 empty errors.
-38 pixel comparisons, actual motion/state/legacy/victory/cold images reviewed.
+A01 issue59 / PR60 merged cee81f8f5dd5cce93990007f06491c8d607a7161.
+Clean productionc5d0f1e ROM5c4f865a…7230;100/1621 runtime assertions,
+38 pixel comparisons, motion/state/legacy/victory/cold images reviewed.
 [Exact identity, commands, footprints and scoped limits](evidence/floor1/a01/README.md).
-Two diagnostic linker issues fixed without production edits; failed traces preserved.
-Next review/push evidence and merge verified A01, then F1-G01 D1 graybox/migration.
+F1-G01a issue61 / task/floor1-g01-opening-graybox, based on cee81f8.
+Candidate 64×48 field contract and isolated diagnostic exporter; production unchanged.
+Geometry-only widths include preview actor occupancy. Final T, compact-interior
+widths, live trigger relocation, loop state and save migration remain G01b.
+Next compile/run ordinary-control geometry/camera/save previews; review actual captures.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:

@@ -9,8 +9,8 @@ and motion where affected, rollback commit, blocker attempts and next action.
 |---|---|---|---|
 | F1-P01 | Delivered baseline | Preserve identities; complete plan; old anchor/flag/engine register; no engine edits | Merged PR54 |
 | F1-T01 | P01 | Runtime reproduce/fix tag Journal and spent sign; completed priority, full-inventory pickup and hand-in; immediate/re-entry/cold | Merged PR56;96/1609 runtime assertions |
-| F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Implemented/compiled/runtime100/1621; PR60 integration pending |
-| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | Pending |
+| F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Merged PR60 cee81f8;100/1621 runtime assertions |
+| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a issue61 candidate/diagnostic implementation; G01b live migration pending |
 | F1-V01 | G01, readable art | Native junction/workshop/safe-door proof; Carl gait, staged Donut, Carl/Donut/Warden motion; budgets and clips | Pending |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |

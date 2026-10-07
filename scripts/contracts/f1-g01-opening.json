@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "purpose": "G01a geometry preview only; no live migration, battles, doors or new persistent state",
+  "width": 64,
+  "height": 48,
+  "rectangles": {
+    "arrival": [
+      6,
+      34,
+      24,
+      40
+    ],
+    "arrival_approach": [
+      18,
+      20,
+      24,
+      40
+    ],
+    "central_junction": [
+      16,
+      16,
+      34,
+      30
+    ],
+    "quiet_door_approach": [
+      19,
+      15,
+      25,
+      21
+    ],
+    "return_loop": [
+      22,
+      13,
+      50,
+      19
+    ],
+    "fork_stem": [
+      32,
+      24,
+      38,
+      30
+    ],
+    "guard_approach": [
+      32,
+      24,
+      51,
+      30
+    ],
+    "guard_bay": [
+      35,
+      23,
+      45,
+      31
+    ],
+    "howler_approach": [
+      32,
+      32,
+      50,
+      38
+    ],
+    "howler_bay": [
+      40,
+      31,
+      50,
+      39
+    ],
+    "howler_return": [
+      47,
+      24,
+      53,
+      38
+    ],
+    "far_junction": [
+      47,
+      15,
+      57,
+      30
+    ],
+    "warden_approach": [
+      52,
+      8,
+      58,
+      20
+    ],
+    "warden_threshold": [
+      55,
+      7,
+      55,
+      7
+    ],
+    "workshop_branch": [
+      31,
+      30,
+      34,
+      44
+    ],
+    "workshop_approach": [
+      31,
+      41,
+      46,
+      44
+    ],
+    "workshop_threshold": [
+      42,
+      40,
+      42,
+      40
+    ],
+    "service_spur": [
+      45,
+      41,
+      48,
+      44
+    ],
+    "secret_spur": [
+      45,
+      41,
+      55,
+      44
+    ]
+  },
+  "blocked_landmark": [
+    24,
+    22,
+    26,
+    24
+  ],
+  "closed_loop_barrier": [
+    35,
+    13,
+    35,
+    19
+  ],
+  "anchors": {
+    "arrival": [
+      8,
+      38
+    ],
+    "junction": [
+      22,
+      26
+    ],
+    "quiet_door": [
+      22,
+      15
+    ],
+    "workshop_door": [
+      42,
+      40
+    ],
+    "trap": [
+      46,
+      42
+    ],
+    "tag": [
+      50,
+      42
+    ],
+    "secret": [
+      55,
+      42
+    ],
+    "guard": [
+      39,
+      27
+    ],
+    "howler": [
+      44,
+      35
+    ],
+    "far_junction": [
+      50,
+      19
+    ],
+    "loop_far": [
+      36,
+      16
+    ],
+    "loop_home": [
+      34,
+      16
+    ],
+    "warden_door": [
+      55,
+      7
+    ]
+  },
+  "width_samples": {
+    "arrival_horizontal": [
+      8,
+      34,
+      8,
+      40,
+      7
+    ],
+    "arrival_vertical": [
+      18,
+      33,
+      24,
+      33,
+      7
+    ],
+    "junction_pillar_west": [
+      16,
+      23,
+      23,
+      23,
+      8
+    ],
+    "junction_pillar_east": [
+      27,
+      23,
+      34,
+      23,
+      8
+    ],
+    "guard_approach": [
+      46,
+      24,
+      46,
+      30,
+      7
+    ],
+    "howler_approach": [
+      39,
+      32,
+      39,
+      38,
+      7
+    ],
+    "howler_return": [
+      47,
+      35,
+      53,
+      35,
+      7
+    ],
+    "warden_approach": [
+      52,
+      10,
+      58,
+      10,
+      7
+    ],
+    "open_loop": [
+      40,
+      13,
+      40,
+      19,
+      7
+    ],
+    "workshop_side": [
+      31,
+      40,
+      34,
+      40,
+      4
+    ],
+    "optional_spur": [
+      46,
+      41,
+      46,
+      44,
+      4
+    ],
+    "secret_spur": [
+      52,
+      41,
+      52,
+      44,
+      4
+    ]
+  },
+  "preview_objects": [
+    [
+      25,
+      23,
+      "OBJ_EVENT_GFX_DCC_RUBBLE",
+      "Broken pillar: central landmark."
+    ],
+    [
+      21,
+      14,
+      "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+      "Quiet Landing preview anchor."
+    ],
+    [
+      41,
+      39,
+      "OBJ_EVENT_GFX_DCC_WORKBENCH",
+      "Workshop preview anchor."
+    ],
+    [
+      38,
+      26,
+      "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+      "Guard bay preview anchor."
+    ],
+    [
+      43,
+      34,
+      "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+      "Howler bay preview anchor."
+    ],
+    [
+      49,
+      18,
+      "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+      "Far junction: return west."
+    ],
+    [
+      54,
+      6,
+      "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+      "Warden interior preview anchor."
+    ],
+    [
+      54,
+      41,
+      "OBJ_EVENT_GFX_DCC_RUBBLE",
+      "Secret spur preview anchor."
+    ]
+  ],
+  "limits": {
+    "buffer_cells": 10240,
+    "active_objects": 16,
+    "saved_templates": 64
+  },
+  "final_T": null
+}

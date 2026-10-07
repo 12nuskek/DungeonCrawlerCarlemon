@@ -71,13 +71,13 @@ manual_save = ['step 1 8 -', 'step 120 0 -', 'step 1 128 -', 'step 20 0 -',
                'step 1 1 -', 'step 600 0 saved.ppm']
 seed_summary = []
 seed_navigation = {
-    'entrance': ['expect 34 1 4 7 7', 'step 132 16 -', 'step 40 0 -',
-                 'step 52 64 -', 'step 220 0 -', 'expect 34 0 12 4 7',
-                 'step 20 128 -', 'step 40 0 -', 'expect 34 0 12 5 7'],
-    'service': ['expect 34 1 4 7 7', 'step 20 32 -', 'step 40 0 -',
+    'entrance': ['expect 34 1 4 7 5', 'step 132 16 -', 'step 40 0 -',
+                 'step 52 64 -', 'step 220 0 -', 'expect 34 0 12 4 5',
+                 'step 20 128 -', 'step 40 0 -', 'expect 34 0 12 5 5'],
+    'service': ['expect 34 1 4 7 5', 'step 20 32 -', 'step 40 0 -',
                 'step 52 64 -', 'step 40 0 -', 'step 20 32 -', 'step 220 0 -',
-                'expect 34 2 2 4 7', 'step 36 16 -', 'step 40 0 -',
-                'step 36 128 -', 'step 40 0 -', 'expect 34 2 4 6 7']}
+                'expect 34 2 2 4 5', 'step 36 16 -', 'step 40 0 -',
+                'step 36 128 -', 'step 40 0 -', 'expect 34 2 4 6 5']}
 for name, navigation in seed_navigation.items():
     seed = production / 'guide-before-trial.sav'; original = digest(seed)
     d = out / ('ordinary-' + name + '-seed'); d.mkdir(); save = d / 'copy.sav'; shutil.copyfile(seed, save)

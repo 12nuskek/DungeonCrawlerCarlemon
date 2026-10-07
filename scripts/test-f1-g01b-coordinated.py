@@ -30,11 +30,14 @@ if finish:
 else:(out/'tested-commit.txt').write_text(head+'\n')
 snap=module('snapshot',root/'scripts/floor1/committed-snapshot.py');source=out/'source'
 if not finish:
-    snap.snapshot(root,head,source,os.environ.get('DCC_G01_CACHE'),['scripts/contracts/f1-g01b-coordinated.json','scripts/contracts/f1-g01b-recovery.json','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py'])
+    snap.snapshot(root,head,source,os.environ.get('DCC_G01_CACHE'),['scripts/contracts/f1-g01b-coordinated.json','scripts/contracts/f1-g01b-recovery.json','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py','scripts/floor1/travel-measurements.py'])
     if not replay:
         with (out/'setup.log').open('w') as log:subprocess.run(['bash',str(source/'scripts/setup-foundation.sh')],stdout=log,stderr=subprocess.STDOUT,check=True)
 else:assert not os.environ.get('DCC_G01_CACHE'),'Engine caches forbidden even during recovery'
 g=module('geometry',source/'scripts/floor1/coordinated-graybox.py');walking=module('walking',source/'scripts/floor1/walking-harness.py')
+# Recovery snapshots predate this host-only validation gate. Its current committed
+# source is used explicitly; ROM/exporter/walking identity is still checked above.
+gate=module('travel_gate',root/'scripts/floor1/travel-measurements.py')
 spec=json.loads((source/'scripts/contracts/f1-g01b-coordinated.json').read_text());ceiling=json.loads((source/'scripts/contracts/f1-g01b-recovery.json').read_text())
 code=walking.instrument(git('show',head+':scripts/playtest.c')+'\n')
 code=code.replace('!number(values[0],15,&tx)','!number(values[0],255,&tx)').replace('!number(values[1],11,&ty)','!number(values[1],255,&ty)')
@@ -91,13 +94,7 @@ def result(d,name,lines):
     checks=sum(v.startswith(('expect ','duo ','uses ','flag ','tile ','extent ')) for v in lines);log=(session/'replay.log').read_text();assert log.endswith(f'result=0 assertions={checks}\n') and not (session/'errors.log').stat().st_size
     for p in session.glob('*.ppm'):Image.open(p).save(p.with_suffix('.png'))
     metrics=[{'name':a,'frames':int(b),'walking_frames':int(c),'steps':int(e),'warps':int(f)} for a,b,c,e,f in re.findall(r'MEASURE name=(\S+) frames=(\d+) walking=(\d+) tiles=(\d+) warps=(\d+)',log)]
-    for who in ['guard','howler']:
-        pair=[v for v in metrics if v['name'] in [who+'-out',who+'-back']]
-        if pair:
-            assert len(pair)==2 and all(v['steps']==spec['expected_steps'][who+'_each_leg'] for v in pair)
-            assert sum(v['steps'] for v in pair)<=ceiling['roundtrips'][who]['steps_total'] and sum(v['walking_frames'] for v in pair)<=ceiling['roundtrips'][who]['walking_frames_total']
-    pair=[v for v in metrics if v['name'] in ['preboss-out','preboss-back']]
-    if pair:assert len(pair)==2 and sum(v['steps'] for v in pair)==spec['expected_steps']['preboss_total'] and sum(v['walking_frames'] for v in pair)<=ceiling['preboss']['walking_frames_total']
+    gate.validate(name,metrics,spec,ceiling)
     summary.append({'route':f'{d.name}/{name}','assertions':checks,'diagnostic':True,'measurements':metrics});print(d.name,name,'PASS',checks,metrics,flush=True);return session
 def run(d,name,rom,sym,save,lines):
     session=d/name;session.mkdir();(session/'input.route').write_text('\n'.join(lines+['quit'])+'\n')

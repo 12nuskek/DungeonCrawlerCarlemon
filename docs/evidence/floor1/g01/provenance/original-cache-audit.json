@@ -1,0 +1,19 @@
+{
+  "reviewed_original_source": "4718908806057d245546cc65cf1f43105ea01b01",
+  "accepted_run": "preview-b_ekukga",
+  "make_wildcard_input_patterns": [
+    "src/*.c",
+    "src/*/*.c",
+    "src/*/*/*.c",
+    "src/*.s",
+    "src/*/*.s",
+    "src/*/*/*.s",
+    "asm/*.s",
+    "data/*.s",
+    "sound/songs/midi/*.mid",
+    "data/maps/*/map.json"
+  ],
+  "actual_inputs": 1386,
+  "unexpected_inputs": [],
+  "scope": "Readonly audit of original retained accepted source cache after both variants; not a substitute for fresh committed rebuild or full input provenance."
+}

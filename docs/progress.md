@@ -17,9 +17,15 @@ active objects/9 sprites; EWRAM/IWRAM unchanged. Merged PR62 at535b0809703f53a86
 [Exact source/build identities, commands, corrections and limits](evidence/floor1/g01/README.md).
 Travel gate rejected for live adoption: Guard/Howler candidate field-only hub
 paths24/37steps exceed verified old guide paths14/19steps. FinalT stays null.
-Current continuation issue63 / task/floor1-g01b-recovery-travel, base535b080.
+Source provenance follow-up issue64 / task/floor1-g01a-cache-provenance:
+parent found optional cache could retain extra wildcard sources. Fresh archive
+only now; negative seeded C rejected,11687 blob identities pass; fresh9/708
+passes, both original ROM hashes and all captured pixels identical. Integration
+pending scoped PR. Current branch retains the G01b planning checkpoint below.
+Continuation issue63 / task/floor1-g01b-recovery-travel, base535b080.
 Checkpoint-only planning; no new geometry/gameplay implementation or PR yet.
-Exact next action: ordinary same-starting-encounter recovery baseline and coordinated
+Exact next action: integrate verified source-provenance repair, then ordinary
+same-starting-encounter recovery baseline and coordinated
 hub/bay+compact-interior redesign before migration. [Task brief](floor1/g01/next-task.md).
 No V01/native art rollout, live relocation or completed full G01 claim yet.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.

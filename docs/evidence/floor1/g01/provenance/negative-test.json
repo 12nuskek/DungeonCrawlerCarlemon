@@ -1,0 +1,11 @@
+{
+  "tested_source": "0901022dacd2adbaa90b49c6d12f7ddb91ed0281",
+  "seed": "engine/src/untracked_cache_contaminant.c",
+  "negative_result": "dirty optional engine cache rejected before snapshot/make; seed preserved",
+  "message": "DCC_G01_CACHE is unsupported: do not copy an engine tree. Use DCC_CACHE for the separately pinned toolchain only.",
+  "clean_engine_files": 11687,
+  "clean_c_sources": 312,
+  "all_engine_blob_hashes_match_commit": true,
+  "cached_engine_inputs_copied": 0,
+  "runtime": "N/A tool provenance; actual clean diagnostic build checked separately"
+}

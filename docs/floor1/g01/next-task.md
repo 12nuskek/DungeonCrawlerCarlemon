@@ -72,3 +72,7 @@ No production/gameplay change has started on this continuation branch. No PR
 for G01b yet. Full G01 and the nine-district Floor1 remain incomplete; V01 art
 rollout is dependency blocked by recovery travel. Continue autonomously within
 this scope; parent can request a quota checkpoint pause under the soft safeguard.
+
+Before resuming issue63, integrate issue64 fresh-source provenance repair and
+fast-forward this branch to current main. Whole-engine DCC_G01_CACHE is forbidden;
+use fresh committed snapshots and separately pinned DCC_CACHE only.

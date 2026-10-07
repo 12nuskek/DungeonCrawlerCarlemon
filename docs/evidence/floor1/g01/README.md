@@ -88,8 +88,11 @@ idempotence are still pending.
 ## Reproduction and preserved attempts
 
 Use docs/testing.md pinned toolchain. Production is retained from accepted A01;
-diagnostic builds reset tracked inputs from a committed snapshot and preserve
-only build cache. Export requires an explicit disposable-snapshot marker.
+diagnostic builds now use a fresh committed archive with zero engine cache inputs,
+following the [parent-reviewed provenance repair](provenance/README.md). The
+historical main run used a whole-engine cache; a fresh clean rebuild produced
+both exact same ROM identities and708 passing assertions. Export requires an
+explicit disposable-snapshot marker.
 
 ```sh
 DCC_A01_BASE_RUN=/absolute/path/to/accepted/a01/run-I7PJq0 \

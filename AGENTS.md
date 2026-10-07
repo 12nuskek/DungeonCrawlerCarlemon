@@ -2,8 +2,10 @@
 
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
-Scope: Stages 0–5, then at most five evidence-led improvement cycles; await Kurt's
-playtest before Stage 6. Parent owns continuation; never add a scheduler here.
+Current scope: full nine-district Floor1 execution authorised2026-10-07 03:42:58UTC.
+Read docs/floor1/README.md and backlog.md. Earlier Stage6/playtest stops and the
+overnight time limit below are historical and superseded. Parent owns continuation;
+never add a scheduler here. No later floors or public release.
 
 Foundation gate: exact stock pret/pokeemerald pin, matching clean build, ROM
 identity and real emulator boot must pass before gameplay edits. Compilation

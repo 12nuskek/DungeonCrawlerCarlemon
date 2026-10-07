@@ -9,6 +9,11 @@ def module(name,path):
     l=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(l);l.loader.exec_module(m);return m
 assert not git('status','--porcelain'),'Commit before testing'
 head=git('rev-parse','HEAD')
+retained=Path(os.environ['DCC_G01D_CLOSED_RUN']).resolve() if os.environ.get('DCC_G01D_CLOSED_RUN') else None
+if retained:
+    compiled_source=(retained/'tested-commit.txt').read_text().strip()
+    subprocess.run(['git','diff','--quiet',compiled_source,head,'--','engine','scripts/playtest.c','scripts/contracts/f1-g01d-relocation.json','scripts/floor1/relocation-graybox.py','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py'],cwd=root,check=True)
+    assert hashlib.sha256((retained/'closed/diagnostic.gba').read_bytes()).hexdigest()==(retained/'closed/rom.sha256').read_text().split()[0]
 subprocess.run(['git','diff','--quiet','0cb6674',head,'--','engine','scripts/playtest.c','scripts/floor1/coordinated-graybox.py','scripts/contracts/f1-g01b-coordinated.json','scripts/floor1/travel-measurements.py'],cwd=root,check=True)
 out=Path(tempfile.mkdtemp(prefix='complete-',dir=root/'artifacts/floor1/g01d'));print('Evidence:',out,flush=True)
 (out/'tested-commit.txt').write_text(head+'\n')
@@ -30,7 +35,7 @@ def source_audit(d):
     expected_c={p for p in expected if p.endswith('.c')}
     actual_c={str(p.relative_to(source)) for p in (source/'engine').rglob('*.c')}
     assert actual_c==expected_c,('Unexpected C source',actual_c-expected_c,expected_c-actual_c)
-    (d/'source-review.json').write_text(json.dumps({'committed_source':head,'tracked_inputs':len(expected),'C_inputs':len(expected_c),
+    (d/'source-review.json').write_text(json.dumps({'committed_source':head,'tracked_inputs':len(expected),'C_inputs':len(expected_c),'game_C_inputs':sum(p.startswith('engine/src/') for p in expected_c),
         'unexpected_C':[],'approved_fixture_modifications':mismatches,'other_tracked_git_blob_identities_match':True,
         'method':'Fresh committed archive; only separately pinned toolchain/three verified multiboot inputs hydrated. All other tracked Git-canonical blob hashes match; no engine cache.'},indent=2)+'\n')
 code=walking.instrument(git('show',head+':scripts/playtest.c')+'\n')
@@ -60,6 +65,14 @@ class Route:
         else:self.lines.append(f'step {n} {key} {label}')
     def capture(self,label):self.step(40,0,label+'.ppm')
     def follow(self,end,label=None):
+        # Standing on an arrival warp does not trigger it a second time. Leave
+        # and re-enter with ordinary walking before claiming another transition.
+        if tuple(end)==self.pos and any(tuple(w['at'])==self.pos for w in self.m['warps']):
+            legal=g.cells(self.m,self.opened)-{tuple(w['at']) for w in self.m['warps']}
+            x,y=self.pos
+            neighbor=next((n for n in [(x,y+1),(x+1,y),(x,y-1),(x-1,y)] if n in legal),None)
+            assert neighbor is not None
+            self.follow(neighbor)
         route=g.path(self.m,self.opened,self.pos,end);self.steps+=len(route)-1
         keys=[{(0,-1):64,(1,0):16,(0,1):128,(-1,0):32}[(b[0]-a[0],b[1]-a[1])] for a,b in zip(route,route[1:])];i=0
         while i<len(keys):
@@ -111,9 +124,14 @@ for opened in [False,True]:
     subprocess.run(['python3','-B',str(source/'scripts/floor1/relocation-graybox.py'),'--engine',str(source/'engine'),'--out',str(d)]+(['--opened'] if opened else []),stdout=(d/'export.log').open('w'),check=True)
     source_audit(d)
     rom=d/'diagnostic.gba';sym=d/'game.sym'
-    with (d/'build.log').open('w') as log:subprocess.run(['make','-C',str(source/'engine'),'-j2'],stdout=log,stderr=subprocess.STDOUT,check=True)
-    shutil.copyfile(source/'engine/pokeemerald.gba',rom)
-    with sym.open('w') as log:subprocess.run(['arm-none-eabi-nm','-g','--defined-only',str(source/'engine/pokeemerald.elf')],stdout=log,check=True)
+    if retained and not opened:
+        assert json.loads((d/'map-identities.json').read_text())==json.loads((retained/'closed/map-identities.json').read_text())
+        shutil.copyfile(retained/'closed/diagnostic.gba',rom);shutil.copyfile(retained/'closed/game.sym',sym)
+        (d/'build-reuse.json').write_text(json.dumps({'compiled_source':compiled_source,'original_build':str(retained/'closed/build.log'),'method':'Exact original clean diagnostic ROM; fresh archive/export identities match; no engine/cache inputs copied. Only host doorway re-entry controls changed.'},indent=2)+'\n')
+    else:
+        with (d/'build.log').open('w') as log:subprocess.run(['make','-C',str(source/'engine'),'-j2'],stdout=log,stderr=subprocess.STDOUT,check=True)
+        shutil.copyfile(source/'engine/pokeemerald.gba',rom)
+        with sym.open('w') as log:subprocess.run(['arm-none-eabi-nm','-g','--defined-only',str(source/'engine/pokeemerald.elf')],stdout=log,check=True)
     (d/'rom.sha256').write_text(hashlib.sha256(rom.read_bytes()).hexdigest()+'  diagnostic.gba\n')
     for label,order,final in [('guard-first',['guard','howler'],'field'),('howler-first',['howler','guard'],'quiet'),('preboss',['howler'],'boss')]:
         r=Route(opened);r.unchanged();r.anchor('junction','junction')
@@ -152,7 +170,8 @@ for opened in [False,True]:
         r=Route(True);r.clip=True;r.anchor('junction');r.unchanged();session=run(d,'continuous-motion',rom,sym,d/'motion.sav',r.lines)
         with (session/'encode.log').open('w') as log:subprocess.run(['ffmpeg','-y','-framerate','59.7275005696','-i',str(session/'frame-%05d.png'),'-c:v','libvpx-vp9','-pix_fmt','yuv420p','-crf','30','-b:v','0',str(session/'walking.webm')],stdout=log,stderr=subprocess.STDOUT,check=True)
         (session/'identity.json').write_text(json.dumps({'actual_continuous_frames':r.frames,'hz':59.7275005696,'includes_idle':True,'no_interpolation':True,'human_pacing_claim':False},indent=2)+'\n')
-    for ext in ['map','elf']:shutil.copyfile(source/'engine'/('pokeemerald.'+ext),d/('diagnostic.'+ext))
+    if not retained or opened:
+        for ext in ['map','elf']:shutil.copyfile(source/'engine'/('pokeemerald.'+ext),d/('diagnostic.'+ext))
 (out/'validation-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 assert git('rev-parse','HEAD')==head and not git('status','--porcelain')
 print('PASS',len(summary),'sessions',sum(v['assertions'] for v in summary),'assertions; production unchanged, live adoption pending.',flush=True)

@@ -2,6 +2,13 @@
 
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
+Current budget authorisation2026-10-07 05:15:54UTC: Kurt explicitly resumed:
+"we can continue the build for now we are working on a future state".
+The earlier pause for an unavailable20%-remaining meter is superseded for this run.
+Parent researches a future usage guard independently. Continue implementation;
+quota remains unknown and no automatic20% guard is claimed. Do not research meter,
+authentication or billing during game work. Parent controls sole continuation.
+
 Current scope: full nine-district Floor1 execution authorised2026-10-07 03:42:58UTC.
 Read docs/floor1/README.md and backlog.md. Earlier Stage6/playtest stops and the
 overnight time limit below are historical and superseded. Parent owns continuation;

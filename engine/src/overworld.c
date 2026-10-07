@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
 #include "battle_setup.h"
@@ -483,7 +484,7 @@ void LoadSaveblockObjEventScripts(void)
     struct ObjectEventTemplate *savObjTemplates = gSaveBlock1Ptr->objectEventTemplates;
     s32 i;
 
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
         s32 j;
         // Refresh presentation identities without resetting crawler/NPC state.

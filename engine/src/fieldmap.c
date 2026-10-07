@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "battle_pyramid.h"
 #include "bg.h"
 #include "fieldmap.h"
@@ -441,7 +442,7 @@ static void LoadSavedMapView(void)
     // Authored dungeon maps are reconstructed from current layout + event flags.
     // Saved viewport metatile IDs are a render cache, not persistent progression;
     // restoring them after an art/layout revision can corrupt graphics and exits.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
         ClearSavedMapView();
         return;

@@ -1,0 +1,52 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+duo healthy
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 1 9 5 3
+step 20 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 100 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 before-guide.ppm
+expect 34 1 4 7 3
+step 1 1 -
+step 400 0 guide-intro.ppm
+step 1 1 -
+step 400 0 guide-motive.ppm
+step 1 1 -
+step 400 0 rested.ppm
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 trial-advice.ppm
+step 1 1 -
+step 400 0 retry-advice.ppm
+step 1 1 -
+step 120 0 guide-done.ppm
+expect 34 1 4 7 7
+duo healthy
+step 1 1 -
+step 400 0 rest-repeat.ppm
+roster 30 26 8 2 0 0
+uses 8 40 2 40
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+battle 0 0 0 0 0 0 0
+quit

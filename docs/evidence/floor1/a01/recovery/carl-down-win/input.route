@@ -1,0 +1,86 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 4 8 5 7
+duo healthy
+uses 8 40 2 40
+growth 11 910 0 10 1220 0
+flag 2138 0
+flag 47 0
+flag 48 0
+step 1 1 -
+step 400 0 retry-intro.ppm
+step 1 1 -
+step 400 0 retry-advice.ppm
+step 1 1 -
+step 900 0 retry-start.ppm
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 retry-actions.ppm
+battle 1 4 0 8 2 1 0
+pilot fortify 36000
+step 600 0 won-field.ppm
+step 1 2 -
+step 400 0 outcome-0.ppm
+step 1 2 -
+step 400 0 outcome-1.ppm
+step 1 2 -
+step 400 0 outcome-2.ppm
+step 1 2 -
+step 400 0 outcome-3.ppm
+step 1 2 -
+step 400 0 outcome-4.ppm
+step 1 2 -
+step 400 0 outcome-5.ppm
+step 1 2 -
+step 120 0 won-clear.ppm
+expect 34 4 8 5 7
+flag 2138 1
+flag 37 1
+flag 47 1
+flag 48 0
+growth 12 1136 0 11 1446 0
+step 1 1 -
+step 400 0 resolved-repeat.ppm
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 120 0 -
+step 1 2 -
+step 120 0 -
+expect 34 4 8 5 7
+flag 2138 1
+flag 37 1
+flag 47 1
+flag 48 0
+growth 12 1136 0 11 1446 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 victory-saved.ppm
+expect 34 4 8 5 7
+flag 2138 1
+flag 37 1
+flag 47 1
+flag 48 0
+growth 12 1136 0 11 1446 0
+quit

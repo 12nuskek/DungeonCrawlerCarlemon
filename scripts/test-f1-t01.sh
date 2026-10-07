@@ -9,8 +9,10 @@ for input in "$DCC_LEGACY_RUN/motion.sav" "$DCC_LEGACY_RUN/craft.sav" "$DCC_LEGA
 done
 git diff --quiet && git diff --cached --quiet || { echo 'Commit tracked changes first.' >&2; exit 2; }
 revision=$(git rev-parse HEAD)
-mkdir -p artifacts/floor1/t01
-evidence=$(mktemp -d "$repo/artifacts/floor1/t01/run-XXXXXX")
+task=t01
+if [[ "${DCC_MEMBERSHIP_PROBES:-0}" == 1 ]]; then task=a01; fi
+mkdir -p "artifacts/floor1/$task"
+evidence=$(mktemp -d "$repo/artifacts/floor1/$task/run-XXXXXX")
 echo "Evidence: $evidence"
 printf '%s\n' "$revision" > "$evidence/tested-commit.txt"
 # Build only the captured commit: no ignored products or untracked source can leak in.
@@ -102,11 +104,15 @@ run_route continuous-reload "$repo/docs/evidence/s03/continuous-reload.route" 10
 # Explicit diagnostic ROMs start from restored production source each time.
 cp "$repo/engine/src/crawler.c" "$evidence/original-crawler.c"
 cp "$repo/engine/src/battle_script_commands.c" "$evidence/original-battle-script-commands.c"
+cp "$repo/engine/src/crawler_identity.c" "$evidence/original-crawler-identity.c"
+cp "$repo/engine/data/maps/DCC_Entrance/scripts.inc" "$evidence/original-entrance-scripts.inc"
 fixture() {
     local name=$1 script=$2
     cp "$evidence/original-crawler.c" "$repo/engine/src/crawler.c"
     cp "$evidence/original-battle-script-commands.c" "$repo/engine/src/battle_script_commands.c"
-    python3 "$repo/scripts/$script" "$repo"
+    cp "$evidence/original-crawler-identity.c" "$repo/engine/src/crawler_identity.c"
+    cp "$evidence/original-entrance-scripts.inc" "$repo/engine/data/maps/DCC_Entrance/scripts.inc"
+    python3 "$repo/scripts/$script" "$repo" "${3:-}"
     make -C "$repo/engine" -j"${JOBS:-2}" > "$evidence/$name-build.log" 2>&1
     cp "$repo/engine/pokeemerald.gba" "$evidence/$name.gba"
     sha256sum "$evidence/$name.gba" > "$evidence/$name-rom.sha256"
@@ -166,11 +172,17 @@ cp "$evidence/motion.sav" "$evidence/guide-after-trial.sav"
 cp "$evidence/craft.sav" "$evidence/guide-before-trial.sav"
 run_route guide-after-trial "$repo/scripts/routes/n05/after-trial.route" 6 guide-after-trial.sav game.sym
 run_route guide-before-trial "$repo/scripts/routes/n05/before-trial.route" 6 guide-before-trial.sav game.sym
+if [[ "${DCC_MEMBERSHIP_PROBES:-0}" == 1 ]]; then
+    fixture membership-fixture floor1/membership-fixture.py
+    run_route membership-fixture-policy "$repo/scripts/routes/f1-a01/membership.route" 3 membership-fixture.sav membership-fixture.sym "$evidence/membership-fixture.gba"
+    fixture membership-extended-fixture floor1/membership-fixture.py extended
+    run_route membership-extended-fixture-policy "$repo/scripts/routes/f1-a01/membership.route" 3 membership-extended-fixture.sav membership-extended-fixture.sym "$evidence/membership-extended-fixture.gba"
+fi
 python3 "$repo/scripts/render-walk.py" "$evidence/movement" "$evidence/walking.gif" > "$evidence/walking-render.log"
 python3 - "$evidence" <<'PYIMG'
 from pathlib import Path
 from PIL import Image
-import json,re,sys
+import json,os,re,sys
 root=Path(sys.argv[1]);results=[]
 for path in root.glob('*/*.ppm'):
     if path.parent.name!='movement' or not path.name.startswith('walk-'):
@@ -180,9 +192,9 @@ for log in sorted(root.glob('*/replay.log')):
     assert match and not (log.parent/'errors.log').stat().st_size
     results.append({'route':log.parent.name,'assertions':int(match[1]),'fixture':'fixture' in log.parent.name})
 (root/'validation-summary.json').write_text(json.dumps(results,indent=2)+'\n')
-assert len(results)==84, ('incomplete route coverage',len(results),84)
-assert sum(x['assertions'] for x in results)==1393, ('incomplete assertion coverage',sum(x['assertions'] for x in results),1393)
-assert sum(x['assertions'] for x in results if x['fixture'])==220, 'fixture/production coverage changed'
+extended=os.environ.get('DCC_MEMBERSHIP_PROBES')=='1'
+expected=(86,1399,226) if extended else (84,1393,220)
+assert (len(results),sum(x['assertions'] for x in results),sum(x['assertions'] for x in results if x['fixture']))==expected, ('incomplete route coverage',expected)
 # Continuous normal-input route: no mid-run boot/load or save-state injection.
 route=(root/'source/scripts/routes/n02/continuous-prepared.route').read_text()
 log=(root/'continuous-prepared/replay.log').read_text()
@@ -205,4 +217,4 @@ python3 "$repo/scripts/verify-environment-props.py" "$evidence" > "$evidence/pro
 python3 "$repo/scripts/verify-dungeon-presentation.py" "$evidence" > "$evidence/presentation-pixels.json"
 test "$(git rev-parse HEAD)" = "$revision"
 git diff --quiet && git diff --cached --quiet
-echo "F1-T01 full regression passed. Production and labeled fixture ROMs remain local; never commit ROMs/saves/executables. Pacing review is separate."
+echo "F1-$task full regression passed. Production and labeled fixture ROMs remain local; never commit ROMs/saves/executables. Pacing review is separate."

@@ -2551,7 +2551,7 @@ void InitObjectEventPalettes(u8 reflectionType)
     }
     // Dungeon NPCs use the special slot; reserve the existing NPC1 slot for Donut.
     // paletteSlot is four bits, so the legacy >=16 patch path cannot select it.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         PatchObjectPalette(OBJ_EVENT_PAL_TAG_DCC_DONUT, PALSLOT_NPC_1);
 }
 
@@ -2560,7 +2560,7 @@ u16 GetObjectPaletteTag(u8 palSlot)
     u8 i;
 
     if (palSlot == PALSLOT_NPC_1
-        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE))
+        && DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         return OBJ_EVENT_PAL_TAG_DCC_DONUT;
     if (palSlot < PALSLOT_NPC_SPECIAL)
         return sObjectPaletteTagSets[sCurrentReflectionType][palSlot];

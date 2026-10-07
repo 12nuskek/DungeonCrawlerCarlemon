@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files": 2009,
+  "normalization": "Palette text line endings only; all other bytes exact",
+  "presentation_identity": "full map ID emitted by actual generator"
+}

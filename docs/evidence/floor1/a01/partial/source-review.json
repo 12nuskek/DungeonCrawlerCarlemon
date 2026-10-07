@@ -1,0 +1,18 @@
+{
+  "candidate": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "base": "168a0dabfe717e1ee29667c5460d45035506d786",
+  "scope_check": "PASS",
+  "engine_files": [
+    "engine/include/crawler.h",
+    "engine/src/battle_setup.c",
+    "engine/src/crawler.c",
+    "engine/src/crawler_identity.c",
+    "engine/src/data/dcc_presentation.h",
+    "engine/src/event_object_movement.c",
+    "engine/src/fieldmap.c",
+    "engine/src/overworld.c"
+  ],
+  "no_maps_assets_flags_saves_changed": true,
+  "ten_presentation_entries_use_full_identity": true,
+  "future_relocation_constraint": "DccObjectIsResolved currently dispatches by full map ID + graphicsId, sufficient for one existing encounter per role/map. Multiple relocated encounters sharing a graphicsId require object-local-ID/flag mapping before production in larger fields; do not infer cleared state from sprite identity."
+}

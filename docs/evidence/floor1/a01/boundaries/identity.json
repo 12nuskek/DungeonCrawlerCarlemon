@@ -1,0 +1,7 @@
+{
+  "fixture_test_source": "c4d63b359d2e77526cac943baf2da22ad81621a2",
+  "production_compiled_source": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "production_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "base_run": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/a01/run-I7PJq0",
+  "method": "Incremental isolated diagnostic builds from committed engine sources using accepted build cache; no new production rebuild or stock-map playthrough claimed."
+}

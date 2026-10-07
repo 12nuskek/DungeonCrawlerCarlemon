@@ -1,0 +1,6 @@
+{
+  "fixture_test_source": "5e0756e869f1c74fcc25dfd30fc5e645611fa540",
+  "production_compiled_source": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "production_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "method": "Retain84 verified sessions and immutable clean production ROM; restore committed engine sources before each isolated corrected fixture build. No production rebuild claimed."
+}

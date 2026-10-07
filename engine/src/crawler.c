@@ -60,7 +60,8 @@ void DccApplyServiceTrap(void)
 
 struct DccPresentationTile
 {
-    u8 mapNum, x, y;
+    u16 mapId;
+    u8 x, y;
     u16 flag, unresolved, resolved;
 };
 
@@ -71,12 +72,12 @@ struct DccPresentationTile
 void DccRestoreMapPresentation(void)
 {
     u32 i;
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (!DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         return;
     for (i = 0; i < ARRAY_COUNT(sDccPresentationTiles); i++)
     {
         const struct DccPresentationTile *tile = &sDccPresentationTiles[i];
-        if (gSaveBlock1Ptr->location.mapNum == tile->mapNum)
+        if (((gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum) == tile->mapId)
             MapGridSetMetatileEntryAt(tile->x + MAP_OFFSET, tile->y + MAP_OFFSET,
                 FlagGet(tile->flag) ? tile->resolved : tile->unresolved);
     }
@@ -84,21 +85,21 @@ void DccRestoreMapPresentation(void)
 
 bool8 DccObjectIsResolved(u8 graphicsId)
 {
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (!DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         return FALSE;
-    switch (gSaveBlock1Ptr->location.mapNum)
+    switch ((gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum)
     {
-    case MAP_NUM(MAP_DCC_ENTRANCE):
+    case MAP_DCC_ENTRANCE:
         return graphicsId == OBJ_EVENT_GFX_MOVING_BOX && FlagGet(FLAG_DCC_LOOT_SUPPLY);
-    case MAP_NUM(MAP_DCC_VESTIBULE):
+    case MAP_DCC_VESTIBULE:
         return (graphicsId == OBJ_EVENT_GFX_MOVING_BOX && FlagGet(FLAG_DCC_WRAP_TAKEN))
             || (graphicsId == OBJ_EVENT_GFX_MAN_1 && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_TRIAL));
-    case MAP_NUM(MAP_DCC_SERVICE):
+    case MAP_DCC_SERVICE:
         return graphicsId == OBJ_EVENT_GFX_DCC_CACHE_SEALED && FlagGet(FLAG_DCC_CACHE_BLASTED);
-    case MAP_NUM(MAP_DCC_CORRIDOR):
+    case MAP_DCC_CORRIDOR:
         return (graphicsId == OBJ_EVENT_GFX_NINJA_BOY && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_GUARD))
             || (graphicsId == OBJ_EVENT_GFX_MAN_3 && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_HOWLER));
-    case MAP_NUM(MAP_DCC_BOSS):
+    case MAP_DCC_BOSS:
         return graphicsId == OBJ_EVENT_GFX_HIKER && FlagGet(FLAG_DCC_BOSS_CLEARED);
     }
     return FALSE;
@@ -107,7 +108,7 @@ bool8 DccObjectIsResolved(u8 graphicsId)
 void DccRefreshMapPresentation(void)
 {
     u32 i;
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_DCC_ENTRANCE))
+    if (!DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         return;
     DccRestoreMapPresentation();
     DrawWholeMapView();

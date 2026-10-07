@@ -1,0 +1,12 @@
+[
+  {
+    "route": "membership-boundary-fixture-policy",
+    "assertions": 3,
+    "fixture": true
+  },
+  {
+    "route": "membership-extended-boundary-fixture-policy",
+    "assertions": 3,
+    "fixture": true
+  }
+]

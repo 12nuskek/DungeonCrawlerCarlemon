@@ -1,15 +1,16 @@
 # Durable checkpoint
 
-Current checkpoint2026-10-07: **Full Floor1 execution authorised and active.**
-P01 PR54 merged984f89351fe273f4ba6813aaffd7b0e3f2721504. F1-T01 issue55 / draft
-PR56 on task/floor1-t01-state-text, based on that merge. Engine50bf6d9 clean-built
-and runtime verified96 sessions/1609 assertions including all216 recovered-victory
-and cold checks. Evidence [T01](evidence/floor1/t01/README.md). Merge pending review.
-Art PR58 merged into task branch at a73eff7cb5acc2aea13151f0260864dc160bd9f6;
-231 package checks and actual source-pixel review pass. Parent relinquished writes;
-sole implementation writer resumed. No blocked asset approval or Library retries.
-Prior Stage6 pause and fixed overnight window superseded; no later floors.
-Next: integrate verified T01, then F1-A01 explicit map/encounter membership.
+Current checkpoint2026-10-07: **Full Floor1 implementation active.**
+Kurt's05:15:54UTC fallback authorises continuing while future usage guard is researched
+by parent; quota unknown, no automatic20% guard. Historical allowance pause superseded.
+T01 merged168a0dabfe717e1ee29667c5460d45035506d786; art reference PR58 integrated.
+A01 issue59 / PR60, task/floor1-a01-membership; based on T01 merge, integration pending.
+Clean productionc5d0f1e ROM5c4f865a…7230. Full86/1399, recovery12/216 and direct
+boundary2/6 all pass:100/1621,1389 production+232 labeled fixtures,100 empty errors.
+38 pixel comparisons, actual motion/state/legacy/victory/cold images reviewed.
+[Exact identity, commands, footprints and scoped limits](evidence/floor1/a01/README.md).
+Two diagnostic linker issues fixed without production edits; failed traces preserved.
+Next review/push evidence and merge verified A01, then F1-G01 D1 graybox/migration.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -1652,3 +1653,59 @@ substituted for runtime. Raw local runs floor1/t01/run-UcTIk4 and n04/run-kc8ohy
 Reference PR58 source package integrated, issue57 closed; native/runtime art remains pending.
 Next: final diff/source-identity review, push evidence, update issue55/PR56 and merge;
 then F1-A01. No current implementation blocker. No schedule added.
+
+### F1-A01 candidate — 2026-10-07
+
+Base168a0dabfe717e1ee29667c5460d45035506d786. Issue59. Scope recorded in issue;
+map/encounter registration is explicit and full identity used in presentation/markers.
+Current new-game start coordinates intentionally unchanged. All previous guards route
+through the helper; no broadening by map group or trainer range. Fixture additions
+live only in isolated ROMs; current and synthetic-extension APIs are exhaustively
+checked and temporary fixture presentation/flag/location values are restored.
+Normal harness remains input/read-only; added membership-probe symbol only.
+Full inherited84/1393 plus2 labeled identity sessions/6 harness checks target86/1399,
+then original12/216 recovery extension. No current runtime acceptance claim.
+
+### Budget pause / F1-A01 partial — 2026-10-07
+
+No exposed Codex account/plan meter or reset time found in supported tools.
+Firecrawl credits are an unrelated app allowance and were not queried. No quota
+inferred from tokens/context/time; no unsupported API or credential inspection.
+Latest user condition supersedes continuous execution until enforceable/fallback.
+Parent is pausing the existing sole scheduler; no new task/schedule created here.
+
+C5 production hash5c4f865a…7230; all84 original sessions/1393 pass,220 fixtures.
+Full script exit2 at membership-fixture linker; .data mutable statics identified.
+First fix7444dbd EWRAM state committed/pushed; not compiled/replayed. Original
+failed log/source preserved in artifacts/floor1/a01/failure-01; full partial run
+run-I7PJq0 and all prior saves/evidence retained. No live test process remains.
+PR60 stays draft/unmerged; no claim new identity or recovery216 checks passed.
+Source/generator2009-input review passed. Scope cautions and trainer901 allocation
+hazard recorded in partial evidence. Exact continuation above; do not begin G01.
+
+### Explicit continuation fallback — 2026-10-07 05:15:54UTC
+
+Kurt: "we can continue the build for now we are working on a future state".
+Resumed same Cloud task, sole writer, exactcheckpointcca9ae24; PR60 still draft/open
+with that head and base168a0da. Production/84 inherited sessions preserved; pending
+checks are not retroactively accepted. Parent handles future meter integration.
+No automatic allowance guard or known percentage/reset; no scheduler duplication.
+Next verify7444dbd fixture storage correction using the preserved clean production
+run; complete identity/boundary/recovery/visual evidence, then integrate A01.
+
+### F1-A01 acceptance — 2026-10-07
+
+ProductionC5 source c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175, hash5c4f865a…7230.
+Core fixture source5e0756e, recovery0a4d92b, direct boundaryc4d63b3; engine/harness
+unchanged from compiled C5.100/1621 passes (1389 production,232 fixture),100 empty
+errors,38 actual pixel comparisons. All inherited assertions including216 recovery
+retained. Actual6 victory/cold pairs and ordinary legacy/state/motion frames reviewed.
+
+Core linkage attempt1 discarded local mutable.data; correction7444dbd explicitEWRAM
+verified on resume. Boundary linkage attempt1 discarded libc memcmp; correctionc4d63b3
+uses direct buffer loop, attempt2 compiles/runs both masks255. Original failures under
+floor1/a01/failure-01 and boundaries-f4xz4ji6; no additional retries required.
+Direct cache/palette-tag/object/callback tests are controlledAPI probes, not full
+stock-map playthroughs. No actual trainer901 used or flagged; future allocationmust
+respect trainer/system flag boundary. Object-specific resolved state required for
+multiple reused graphics in bigger fields. No current blocker; A01 integration next.

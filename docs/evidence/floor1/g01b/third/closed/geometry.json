@@ -1,0 +1,163 @@
+{
+  "diagnostic": true,
+  "attempt": 3,
+  "opened_loop": false,
+  "maps": {
+    "field": {
+      "reachable_cells": 974,
+      "buffer_cells": 4898,
+      "objects_including_player": 9,
+      "widths": {
+        "arrival": [
+          8,
+          34,
+          8,
+          40,
+          7
+        ],
+        "arrival_stem": [
+          23,
+          33,
+          29,
+          33,
+          7
+        ],
+        "pillar_west": [
+          23,
+          27,
+          29,
+          27,
+          7
+        ],
+        "pillar_east": [
+          33,
+          27,
+          41,
+          27,
+          9
+        ],
+        "main_lane": [
+          43,
+          27,
+          43,
+          31,
+          5
+        ],
+        "guard_stem": [
+          35,
+          30,
+          41,
+          30,
+          7
+        ],
+        "right_stem": [
+          44,
+          23,
+          50,
+          23,
+          7
+        ],
+        "howler_lane": [
+          48,
+          29,
+          48,
+          33,
+          5
+        ],
+        "warden_stem": [
+          42,
+          19,
+          48,
+          19,
+          7
+        ],
+        "return_loop": [
+          40,
+          13,
+          40,
+          19,
+          7
+        ],
+        "workshop": [
+          31,
+          40,
+          34,
+          40,
+          4
+        ],
+        "service": [
+          46,
+          41,
+          46,
+          44,
+          4
+        ],
+        "secret": [
+          52,
+          41,
+          52,
+          44,
+          4
+        ]
+      }
+    },
+    "quiet": {
+      "reachable_cells": 115,
+      "buffer_cells": 868,
+      "objects_including_player": 6,
+      "widths": {
+        "arrival_stem": [
+          2,
+          4,
+          6,
+          4,
+          5
+        ],
+        "upper_lane": [
+          7,
+          2,
+          7,
+          6,
+          5
+        ],
+        "trial_stem": [
+          9,
+          7,
+          13,
+          7,
+          5
+        ]
+      }
+    },
+    "boss": {
+      "reachable_cells": 119,
+      "buffer_cells": 868,
+      "objects_including_player": 2,
+      "widths": {
+        "arrival_stem": [
+          2,
+          4,
+          6,
+          4,
+          5
+        ],
+        "arena_approach": [
+          7,
+          2,
+          7,
+          7,
+          6
+        ]
+      }
+    }
+  },
+  "steps": {
+    "guard_each_leg": 7,
+    "howler_each_leg": 17,
+    "guide_to_warden": 27,
+    "far_to_junction": 31,
+    "preboss_total": 44
+  },
+  "final_T": null,
+  "scope": "Static field+two interior paths; actor occupancy/untargeted warps excluded; no live migration, persistent loop state, battle or art acceptance."
+}

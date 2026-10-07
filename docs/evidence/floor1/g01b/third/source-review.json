@@ -1,0 +1,17 @@
+{
+  "snapshot_source": "cb887e50294aba9d9da8a13e31ab789b4ee0cc4a",
+  "tracked_engine_inputs": 11687,
+  "tracked_changes_exactly": [
+    "engine/data/event_scripts.s",
+    "engine/data/layouts/layouts.json",
+    "engine/data/maps/map_groups.json",
+    "engine/src/new_game.c"
+  ],
+  "all_other_canonical_git_blob_hashes_match": true,
+  "raw_byte_identity_claim": false,
+  "normalization": "Git hash-object applies existing engine/.gitattributes; pal and ps1 are CRLF in archive, canonical LF blobs. This is documented text normalization, not raw-byte identity.",
+  "actual_c_sources": 312,
+  "no_extra_engine_c_sources": true,
+  "external_engine_cache_inputs": 0,
+  "compiled_roms_replayed": "Closed d71a5d9, open01042e4, exact hashes and fixture identities checked. Fresh replay snapshot contains zero compiler/generated/cached engine inputs."
+}

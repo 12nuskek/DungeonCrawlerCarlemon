@@ -1,0 +1,61 @@
+{
+  "observer_source": "58ed18ecaa86a7c572ae641f486a7a3db02cb3bd",
+  "diagnostic_runner_source": "cb887e50294aba9d9da8a13e31ab789b4ee0cc4a",
+  "sessions": 2,
+  "assertions": 519,
+  "results": [
+    {
+      "mode": "closed",
+      "assertions": 264,
+      "peaks": [
+        {
+          "map": 0,
+          "samples": 20577,
+          "peak_objects": 6,
+          "peak_sprites": 10
+        },
+        {
+          "map": 1,
+          "samples": 4773,
+          "peak_objects": 6,
+          "peak_sprites": 10
+        },
+        {
+          "map": 2,
+          "samples": 1715,
+          "peak_objects": 2,
+          "peak_sprites": 6
+        }
+      ],
+      "exact_capture_pixel_matches": 37,
+      "rom_sha256": "a634b9129763fc9b896c6b455d0dee79566f7510eadc7aacc9d6cc608eaa0d1a"
+    },
+    {
+      "mode": "open",
+      "assertions": 255,
+      "peaks": [
+        {
+          "map": 0,
+          "samples": 19778,
+          "peak_objects": 5,
+          "peak_sprites": 9
+        },
+        {
+          "map": 1,
+          "samples": 4773,
+          "peak_objects": 6,
+          "peak_sprites": 10
+        },
+        {
+          "map": 2,
+          "samples": 1715,
+          "peak_objects": 2,
+          "peak_sprites": 6
+        }
+      ],
+      "exact_capture_pixel_matches": 37,
+      "rom_sha256": "efa1b963ff968b772e1fe330310a17590c5c7c7be5afcdea25aa0e127a0305bc"
+    }
+  ],
+  "method": "Actual object/sprite in-use flags sampled each stable overworld frame on all three maps; all captures exactly match original. No game/RAM writes, build, hardware performance or human pacing claim."
+}

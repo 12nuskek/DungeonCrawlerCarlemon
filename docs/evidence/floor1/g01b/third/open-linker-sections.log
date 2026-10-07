@@ -1,0 +1,28 @@
+/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01b/third-b8mktgfb/source/engine/pokeemerald.elf  :
+section                              size        addr
+.pseudo.save_block_1                15752           0
+.pseudo.save_block_2                 3884           0
+.pseudo.pokemon_storage             33744           0
+.pseudo.hall_of_fame                 6000           0
+.pseudo.recorded_battle_save         3968           0
+.pseudo.trainer_hill_challenge          8           0
+ewram                              249700    33554432
+iwram                               30892    50331648
+.text                             1945280   134217728
+script_data                       1073080   136163008
+lib_text                            42940   137236088
+.rodata                           6391188   137279028
+song_data                          684052   143670216
+lib_rodata                           1056   144354268
+multiboot_data                     191700   144355324
+anim_mon_front_pic_data            624776   145752064
+gfx_data                          2347488   146800640
+extra                                1304   149148128
+.debug_aranges                       9344           0
+.debug_pubnames                    533045           0
+.debug_info                      32467950           0
+.debug_abbrev                      213773           0
+.debug_line                       1805994           0
+Total                            48676918
+
+

@@ -1,0 +1,335 @@
+{
+  "validator_source": "87b44ba41b1d6a5097297351ef120b4dc4d8d62a",
+  "runtime_runner_source": "cb887e50294aba9d9da8a13e31ab789b4ee0cc4a",
+  "runtime_sessions": 13,
+  "runtime_assertions": 8397,
+  "positive_cases": 13,
+  "negative_cases": 41,
+  "tests": [
+    {
+      "route": "closed/guard-first",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "c04aad0eca8303d235ea055c5b04788e49faee1da5a26ed54ce9fabffde011f2"
+    },
+    {
+      "route": "guard-first",
+      "case": "both guard measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['howler-out', 'howler-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "both howler measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['guard-out', 'guard-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], [])"
+    },
+    {
+      "route": "guard-first",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['guard-out', 'guard-back', 'howler-out', 'howler-back', 'guard-out'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['unexpected', 'guard-back', 'howler-out', 'howler-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "closed/guard-first-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "d5f98acb7681a3773f335a3b1b2fb9ba714cca48fa5af9e16b401d11dd8779ee"
+    },
+    {
+      "route": "guard-first-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "closed/howler-first",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "da0e6976c7c81b342d5f8773e2244db04e636ff87d44186d515f0799c7d29fc4"
+    },
+    {
+      "route": "howler-first",
+      "case": "both guard measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['howler-out', 'howler-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "both howler measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['guard-out', 'guard-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], [])"
+    },
+    {
+      "route": "howler-first",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['howler-out', 'howler-back', 'guard-out', 'guard-back', 'howler-out'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['unexpected', 'howler-back', 'guard-out', 'guard-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "closed/howler-first-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "99083c2b3d84af84673f2d123a3fba600073d9e490f1bcbb0c4370e5abc12a33"
+    },
+    {
+      "route": "howler-first-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "closed/preboss",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "debdbc9391663b71f149222e69c4e2dedbb2ef222ebc3ca4414c692afc0a01aa"
+    },
+    {
+      "route": "preboss",
+      "case": "both preboss measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], [])"
+    },
+    {
+      "route": "preboss",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], [])"
+    },
+    {
+      "route": "preboss",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], ['preboss-out', 'preboss-back', 'preboss-out'])"
+    },
+    {
+      "route": "preboss",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], ['unexpected', 'preboss-back'])"
+    },
+    {
+      "route": "preboss",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "closed/preboss-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "f7d8c1733397ddb6d30a378585be37c7c879671ddb81f58103ad662fb7caa1d8"
+    },
+    {
+      "route": "preboss-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "open/guard-first",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "cb9ee9e8ee160e147d8ba9a9685c4ddf3d77d9ed3265177fb60076326fa8f08b"
+    },
+    {
+      "route": "guard-first",
+      "case": "both guard measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['howler-out', 'howler-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "both howler measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['guard-out', 'guard-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], [])"
+    },
+    {
+      "route": "guard-first",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['guard-out', 'guard-back', 'howler-out', 'howler-back', 'guard-out'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first', ['guard-out', 'guard-back', 'howler-out', 'howler-back'], ['unexpected', 'guard-back', 'howler-out', 'howler-back'])"
+    },
+    {
+      "route": "guard-first",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "open/guard-first-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "e283bab0b2cfa1e02dbb447984aa355bc47441b74f71420278dae0f94795b047"
+    },
+    {
+      "route": "guard-first-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'guard-first-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "open/howler-first",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "d0e92dce3187d8e149c502c1c06867ad8e12ea62919bc93ab27644ac046677df"
+    },
+    {
+      "route": "howler-first",
+      "case": "both guard measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['howler-out', 'howler-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "both howler measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['guard-out', 'guard-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], [])"
+    },
+    {
+      "route": "howler-first",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['howler-out', 'howler-back', 'guard-out', 'guard-back', 'howler-out'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first', ['howler-out', 'howler-back', 'guard-out', 'guard-back'], ['unexpected', 'howler-back', 'guard-out', 'guard-back'])"
+    },
+    {
+      "route": "howler-first",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "open/howler-first-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "9dea1912fe32a08e31f0c9fc2ea7ac0c5340bf16ab0095dbad140c5148147ec3"
+    },
+    {
+      "route": "howler-first-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'howler-first-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "open/preboss",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "96b7afa32155932b82ea9eb60d951d814f520ebeb4a6a859b3372c560451a0d6"
+    },
+    {
+      "route": "preboss",
+      "case": "both preboss measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], [])"
+    },
+    {
+      "route": "preboss",
+      "case": "all measurements missing",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], [])"
+    },
+    {
+      "route": "preboss",
+      "case": "duplicate expected measurement",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], ['preboss-out', 'preboss-back', 'preboss-out'])"
+    },
+    {
+      "route": "preboss",
+      "case": "unexpected name replacing required one",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss', ['preboss-out', 'preboss-back'], ['unexpected', 'preboss-back'])"
+    },
+    {
+      "route": "preboss",
+      "case": "active walking ceiling exceeded",
+      "result": "rejected",
+      "message": ""
+    },
+    {
+      "route": "open/preboss-cold-buffer",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "6f2e4bf60708b5428d01a9551243cade7936a680c3bed6c9c6328691838161a5"
+    },
+    {
+      "route": "preboss-cold-buffer",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'preboss-cold-buffer', [], ['unexpected'])"
+    },
+    {
+      "route": "open/continuous-motion",
+      "case": "actual accepted runtime measurements",
+      "result": "passed",
+      "log_sha256": "4316dc3c8e530d523d31df1aa85bf0fe984978915097285f420b35e011a33f98"
+    },
+    {
+      "route": "continuous-motion",
+      "case": "unexpected measurement on nontravel route",
+      "result": "rejected",
+      "message": "('Exact measurements required', 'continuous-motion', [], ['unexpected'])"
+    }
+  ],
+  "scope": "Revalidates exact real emulator logs; no gameplay, compile or emulator rerun claimed."
+}

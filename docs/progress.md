@@ -1,3 +1,15 @@
+Current2026-10-07: **F1-G01e live migration implementation pending.**
+Branch task/floor1-g01e-live-migration, base b694da17928b93ea579f55d905017aa9f7619422
+(PR73 verified diagnostic merged; reviewedbd82beed). Task scope/checks:
+[frozen live migration brief](floor1/g01/live-migration-task.md).
+No production migration compile/runtime yet; five-map diagnostic23/10541 retained.
+Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation.
+Next: implement migration before header lookup and normal local player/NPC rebuild,
+compile committed snapshot, ordinary saves+boundaries+second cold acceptance.
+Full nine-district Floor1 incomplete; no finalT or public release.
+
+## Earlier verified diagnostic checkpoint
+
 # Durable checkpoint
 
 Current2026-10-07: **F1-G01d diagnostic runtime verified; live migration next.**

@@ -2,13 +2,12 @@
 
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
-Budget condition2026-10-07: pause when20% of the user's plan allowance remains.
-If no reliable supported account meter exposes the remaining percentage/reset,
-finish only a safe focused checkpoint and remain paused until the condition can
-be enforced or the user chooses a fallback. Never infer quota from tokens,
-context capacity, elapsed time or workload. Parent controls the sole continuation.
-Current implementation is paused; see docs/progress.md. This takes precedence
-over the continuous-execution default below.
+Current budget authorisation2026-10-07 05:15:54UTC: Kurt explicitly resumed:
+"we can continue the build for now we are working on a future state".
+The earlier pause for an unavailable20%-remaining meter is superseded for this run.
+Parent researches a future usage guard independently. Continue implementation;
+quota remains unknown and no automatic20% guard is claimed. Do not research meter,
+authentication or billing during game work. Parent controls sole continuation.
 
 Current scope: full nine-district Floor1 execution authorised2026-10-07 03:42:58UTC.
 Read docs/floor1/README.md and backlog.md. Earlier Stage6/playtest stops and the

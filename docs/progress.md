@@ -1,10 +1,10 @@
 # Durable checkpoint
 
-Current checkpoint2026-10-07: **Paused at user budget boundary; full Floor1 incomplete.**
-User requires pausing when20% of the plan allowance remains. No supported account
-meter/reset tool exposed; percentage unknown, no estimates from time/tokens/context.
-Parent pauses the sole continuation. Do not start another substantial increment
-until this condition can be enforced or user chooses a fallback. No billing changes.
+Current checkpoint2026-10-07: **Full Floor1 implementation resumed.**
+Kurt's explicit05:15:54UTC fallback: "we can continue the build for now we are
+working on a future state" supersedes the unavailable-meter pause for this run.
+Quota remains unknown; no automatic20% guard claimed. Parent researches future
+usage integration; this writer continues game work without further meter/auth work.
 T01 PR56 merged168a0dabfe717e1ee29667c5460d45035506d786 with96/1609 runtime checks.
 Art references integrated; no asset approval blocker. A01 issue59 / draft PR60,
 branch task/floor1-a01-membership based on T01 merge; unmerged.
@@ -12,7 +12,7 @@ Productionc5d0f1e clean compilePASS;84/1393 inherited sessions pass,84 empty err
 New membership fixture failed linking local static bools into discarded.data;
 fixture-only fix7444dbd implemented/pushed, compile/runtime pending. Full A01
 acceptance and216 recovery extension pending. [Partial evidence](evidence/floor1/a01/README.md).
-Exact next: enforce budget/explicit fallback, reconcile PR60/head, verify fixture fix,
+Exact next: reconcile PR60/head, verify fixture fix,
 address/bound boundary-probe scope, finish runtime/recovery/visual review and integrate
 A01 only after acceptance. F1-G01 and all later districts remain pending.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
@@ -1686,3 +1686,13 @@ run-I7PJq0 and all prior saves/evidence retained. No live test process remains.
 PR60 stays draft/unmerged; no claim new identity or recovery216 checks passed.
 Source/generator2009-input review passed. Scope cautions and trainer901 allocation
 hazard recorded in partial evidence. Exact continuation above; do not begin G01.
+
+### Explicit continuation fallback — 2026-10-07 05:15:54UTC
+
+Kurt: "we can continue the build for now we are working on a future state".
+Resumed same Cloud task, sole writer, exactcheckpointcca9ae24; PR60 still draft/open
+with that head and base168a0da. Production/84 inherited sessions preserved; pending
+checks are not retroactively accepted. Parent handles future meter integration.
+No automatic allowance guard or known percentage/reset; no scheduler duplication.
+Next verify7444dbd fixture storage correction using the preserved clean production
+run; complete identity/boundary/recovery/visual evidence, then integrate A01.

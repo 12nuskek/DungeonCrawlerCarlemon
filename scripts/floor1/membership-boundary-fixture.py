@@ -56,13 +56,16 @@ bool8 DccProbeCacheBoundary(void)
     for (i = 0; i < ARRAY_COUNT(ids); i++)
     {
         bool8 member = i == 0 || (EXTENDED && i == 3);
+        bool8 sameMap = TRUE;
         memcpy(sBackupMapData, sDccProbeCacheMap, sizeof(sDccProbeCacheMap));
         for (j = 0; j < ARRAY_COUNT(gSaveBlock1Ptr->mapView); j++)
             gSaveBlock1Ptr->mapView[j] = 0x3222;
         gSaveBlock1Ptr->location.mapGroup = ids[i] >> 8;
         gSaveBlock1Ptr->location.mapNum = ids[i] & 0xFF;
         LoadSavedMapView();
-        if ((memcmp(sBackupMapData, sDccProbeCacheMap, sizeof(sDccProbeCacheMap)) == 0) != member)
+        for (j = 0; j < ARRAY_COUNT(sDccProbeCacheMap); j++)
+            if (sBackupMapData[j] != sDccProbeCacheMap[j]) sameMap = FALSE;
+        if (sameMap != member)
             ok = FALSE;
         for (j = 0; j < ARRAY_COUNT(gSaveBlock1Ptr->mapView); j++)
             if (gSaveBlock1Ptr->mapView[j] != 0) ok = FALSE;

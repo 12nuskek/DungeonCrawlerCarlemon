@@ -1,5 +1,29 @@
 # Durable checkpoint
 
+Current2026-10-07 09:13UTC: **F1-G01d contract static checks pass; build/runtime pending.**
+Executor tool/shell healthy after parent09:12disconnect callback; no running build/
+emulator or duplicate process. Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000.
+Parent quota09:12UTC11%used/89%remaining; soft sampled>=80%pause unchanged.
+Audit PR71 merged0cb6674a38f67579d5e7480ef884681a66a8b609, reviewed
+03cd4b3ea2d03c94dcf37f8e2fb185be4e9d7519.18/78 actual emulator audit passes;
+production engine unchanged. Issue70 audit complete; issue63 live migration open.
+New issue72 / task/floor1-g01d-live-contract, base0cb6674. Partial implemented:
+five-map relocation contract and disposable producer; static closed/open audits
+pass widths/connected cells/immutable accepted field+Quiet+arena anchors and
+same7/17/27/44 travel steps. Candidate unique cells1440closed/1449open;
+finalT remainsnull. Workshop/Checkpoint compact approaches plus exact all-old-map
+semantic fallback rules proposed; player fallbacks exclude warp/object/collision.
+No compile/emulator acceptance yet. No production/save/battle/art edits or allocations.
+Next: committed fresh diagnostic build of both variants; implement ordinary routes
+for Workshop/Checkpoint/stair BG surrogate, all-map save/cold loaded-cell checks,
+old strict travel gates, actor collisions, captures/provenance. Then review/PR/
+verified scoped integration before live migration implementation. No fourth material
+field layout attempt: third geometry immutable; migration/idempotence gates stay.
+This checkpoint preserves staged work before builds. Parent owns continuation;
+no new task/writer/scheduler or source upload retry. No later floors/public release.
+
+## Earlier verified audit checkpoint
+
 Current2026-10-07 09:06UTC: **F1-G01c audit verified; live migration pending.**
 Sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, parent
 01a10e89-0c59-737a-8ede-620d02be2034. Parent owns continuation and sampled

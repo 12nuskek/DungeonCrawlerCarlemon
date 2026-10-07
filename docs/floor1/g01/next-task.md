@@ -69,8 +69,20 @@ objects, every warp and idempotent second save/cold. Old completion remains the
 opening milestone, separate from newD9 completion. Use all I01/corner/state
 fixtures and full relevant regression; no save ABI expansion in this increment.
 
-No production/gameplay change has started on this continuation branch. No PR
-for G01b yet. Full G01 and the nine-district Floor1 remain incomplete; V01 art
+No production/gameplay change has started on this continuation branch. Recovery
+audit now passes5sessions/57assertions; exact observed ceilings and ordinary routes
+are in docs/evidence/floor1/g01b/baseline and scripts/contracts/f1-g01b-recovery.json.
+Guard roundtrip28steps/448activeframes; Howler38/608; pre-boss46/735.
+No new compile claim: retained C5 production ROM replayed. Third layout not started.
+
+At the next pushed checkpoint, repository writes pause for parent to stage only
+added native battle keypose candidates/scripts/provenance on a dedicated branch.
+Resume only after parent relinquishes that write handoff. Do not import engine art
+or retry the exhausted Library downloader. Candidate art is not runtime animation.
+Then co-design one third field/interior geometry, statically verify clear widths
+and warp-safe shortest paths, and compile fresh committed diagnostic snapshots.
+After travel passes, numeric ID/state audit and legal idempotent migration follow.
+ Full G01 and the nine-district Floor1 remain incomplete; V01 art
 rollout is dependency blocked by recovery travel. Continue autonomously within
 this scope; parent can request a quota checkpoint pause under the soft safeguard.
 

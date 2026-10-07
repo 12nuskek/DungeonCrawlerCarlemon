@@ -1,0 +1,77 @@
+[
+  {
+    "route": "calibration",
+    "assertions": 5,
+    "production": true,
+    "measurements": [
+      {
+        "name": "one-tile-north",
+        "frames": 56,
+        "walking_frames": 16,
+        "engine_tile_changes": 1,
+        "map_changes": 0,
+        "walking_seconds": 0.2678833007812762
+      },
+      {
+        "name": "one-tile-south",
+        "frames": 56,
+        "walking_frames": 16,
+        "engine_tile_changes": 1,
+        "map_changes": 0,
+        "walking_seconds": 0.2678833007812762
+      }
+    ]
+  },
+  {
+    "route": "howler-ordinary-seed",
+    "assertions": 7,
+    "production": true,
+    "measurements": []
+  },
+  {
+    "route": "guard-roundtrip",
+    "assertions": 16,
+    "production": true,
+    "measurements": [
+      {
+        "name": "guard-out",
+        "frames": 889,
+        "walking_frames": 224,
+        "engine_tile_changes": 14,
+        "map_changes": 2,
+        "walking_seconds": 3.7503662109378664
+      },
+      {
+        "name": "guard-back",
+        "frames": 848,
+        "walking_frames": 224,
+        "engine_tile_changes": 14,
+        "map_changes": 2,
+        "walking_seconds": 3.7503662109378664
+      }
+    ]
+  },
+  {
+    "route": "howler-roundtrip",
+    "assertions": 16,
+    "production": true,
+    "measurements": [
+      {
+        "name": "howler-out",
+        "frames": 969,
+        "walking_frames": 304,
+        "engine_tile_changes": 19,
+        "map_changes": 2,
+        "walking_seconds": 5.089782714844247
+      },
+      {
+        "name": "howler-back",
+        "frames": 928,
+        "walking_frames": 304,
+        "engine_tile_changes": 19,
+        "map_changes": 2,
+        "walking_seconds": 5.089782714844247
+      }
+    ]
+  }
+]

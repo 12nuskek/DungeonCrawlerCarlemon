@@ -1725,3 +1725,34 @@ Direct cache/palette-tag/object/callback tests are controlledAPI probes, not ful
 stock-map playthroughs. No actual trainer901 used or flagged; future allocationmust
 respect trainer/system flag boundary. Object-specific resolved state required for
 multiple reused graphics in bigger fields. No current blocker; A01 integration next.
+
+### F1-G01b ordinary recovery audit — 2026-10-07
+
+Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, sole writer; branch
+`task/floor1-g01b-recovery-travel`, baseabb77feb339e67b2ced92531985c49bb4731684d.
+Executor connected after disconnect callback; no duplicate build/test created.
+Actual retained production C5 hash5c4f865a…7230 replayed, not rebuilt.
+Baseline sourcefa458cb601ce482b1e8a8b78364d43145989d5cd:4sessions/44assertions.
+Pre-boss runnerab6b04d238862663d5a04ce809d93e3bf852956e:1session/13assertions.
+All5 errors empty; actual captures/positions reviewed. Source input save hashes
+unchanged. Howler seed is healthy, made by ordinary navigation/manual save.
+Guard same-encounter roundtrip28steps/448activeframes; Howler38/608;
+Howler→guide→Warden46/735 (return27steps/431frames, not inferred432).
+Commands: scripts/test-f1-g01b-baseline.py and scripts/test-f1-g01b-preboss.py with
+DCC_A01_BASE_RUN and DCC_G01B_BASELINE. Full local raw runs baseline-kr_10gh9,
+preboss-u3t54ju3; selected full evidence docs/evidence/floor1/g01b/baseline.
+
+Measurement correction3 (motion latch) passes; save correction2 (completed flash
+write) passes. Earlier failed logs retained. Pre-boss first run passed13 gameplay
+assertions but rejected assumed432frames; observed431 frozen and rerun passes.
+No engine/shared harness/geometry/save changes. Implemented audit, host compiled,
+runtime verified audit; not yet merged. Two prior material layout failures remain;
+third coordinated field/interior revision has not started. FullG01/finalT/migration
+and nine-district Floor1 pending. No workflow/schedule/task added.
+
+Next push this reviewable audit and pause repository writes for parent added-only
+native keypose staging at the reported exact branch/head; resume only on parent
+relinquishment. Then one coordinated third layout, fresh committed diagnostics,
+actual same-encounter and pre-boss travel compared against both frozen ceilings.
+No live adoption or art rollout until geometry gate; migration/ID audit thereafter.
+Parent official quota06:59UTC9%used, soft sampled safeguard; no quota blocker.

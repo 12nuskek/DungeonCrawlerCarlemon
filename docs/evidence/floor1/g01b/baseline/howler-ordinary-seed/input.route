@@ -1,0 +1,39 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 start.ppm
+expect 34 4 8 5 7
+flag 2136 1
+flag 2137 1
+duo healthy
+step 16 64 -
+step 40 0 -
+step 96 32 -
+step 220 0 -
+expect 34 3 12 4 7
+step 32 32 -
+step 40 0 -
+step 16 128 -
+step 40 0 howler-point.ppm
+expect 34 3 10 5 7
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 saved.ppm
+step 1 1 -
+step 600 0 seed-done.ppm
+expect 34 3 10 5 7
+quit

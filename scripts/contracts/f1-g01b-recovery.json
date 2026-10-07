@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "status": "production comparison ceilings; third candidate pending",
+  "base": "abb77feb339e67b2ced92531985c49bb4731684d",
+  "measurement_source": "fa458cb601ce482b1e8a8b78364d43145989d5cd",
+  "preboss_runner_source": "ab6b04d238862663d5a04ce809d93e3bf852956e",
+  "production_compiled_source": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "production_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "gba_hz": 59.7275005696,
+  "guide_stand": [
+    34,
+    1,
+    4,
+    7
+  ],
+  "roundtrips": {
+    "guard": {
+      "start": [
+        34,
+        3,
+        5,
+        5
+      ],
+      "steps_each_leg": 14,
+      "walking_frames_each_leg": 224,
+      "steps_total": 28,
+      "walking_frames_total": 448
+    },
+    "howler": {
+      "start": [
+        34,
+        3,
+        10,
+        5
+      ],
+      "steps_each_leg": 19,
+      "walking_frames_each_leg": 304,
+      "steps_total": 38,
+      "walking_frames_total": 608
+    }
+  },
+  "preboss": {
+    "start": [
+      34,
+      3,
+      10,
+      5
+    ],
+    "end": [
+      34,
+      4,
+      8,
+      5
+    ],
+    "steps_out": 19,
+    "walking_frames_out": 304,
+    "steps_back": 27,
+    "walking_frames_back": 431,
+    "steps_total": 46,
+    "walking_frames_total": 735
+  },
+  "comparison": "Candidate complete encounter\u2192guide\u2192same encounter and Howler\u2192guide\u2192Warden routes must not exceed BOTH steps and measured active walking frames, including compact interiors. Preserve production zero-walk local defeat retry. Compare same endpoint semantics; no resource relaxation.",
+  "method": "Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, nonforced avatar, no active palette fade, MOVING and nonzero tile transition, latched from an actual tile change until movement finishes. Menu/dialogue/idle/other callbacks excluded. No human pacing claim.",
+  "limitations": [
+    "Scripted inputs exclude human pacing.",
+    "One-tile north/south calibration measures16frames each; do not infer all movement segments as16\u00d7steps.",
+    "Howler seed is fully healthy, so this is travel evidence, not combat/balance evidence.",
+    "Retained production ROM replayed, not rebuilt in this audit."
+  ]
+}

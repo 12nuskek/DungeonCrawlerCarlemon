@@ -71,6 +71,15 @@ def run(name, save, lines):
     summary.append({'route': name, 'assertions': checks, 'emulator_errors': 0})
     print(name, 'PASS', checks, flush=True)
 
+def panel_talk(r, label):
+    # A direction press on walkable BG targets starts a step if already facing
+    # that way. Turn only when needed; otherwise interact in place with A.
+    if r.face != 64:
+        r.step(1, 64); r.face = 64; r.step(40)
+    r.step(1, 1); r.step(400, 0, label + '.ppm')
+    r.lines += ['dialog 3600', 'ready']
+    r.step(40); r.expect()
+
 save = out / 'ordinary-copy.sav'
 shutil.copyfile(original, save)
 r = routes.Route(spec, geometry, 'field', (37, 31), 1, 7)
@@ -78,10 +87,10 @@ r.lines += ['flag 45 0', 'item 18 0', f'tile 55 42 {off}']
 # The ordinary route crosses the panel before interacting, proving it is floor.
 r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.step(40, 0, 'available.ppm')
-r.talk(64, 'pickup-dialog')
+panel_talk(r, 'pickup-dialog')
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
 r.step(40, 0, 'resolved.ppm')
-r.talk(64, 'repeat-dialog')
+panel_talk(r, 'repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
 r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.anchor('quiet_door'); r.anchor('donut_staging'); r.anchor('arrival')
@@ -98,7 +107,7 @@ cold_hash = digest(cold)
 r = routes.Route(spec, geometry, 'field', (55, 43), 1, 7)
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
 r.step(40, 0, 'cold-resolved.ppm')
-r.talk(64, 'cold-repeat-dialog')
+panel_talk(r, 'cold-repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
 r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 run('cold-repeat-and-traversal', cold, boot + r.lines)

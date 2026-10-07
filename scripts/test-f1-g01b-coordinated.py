@@ -10,11 +10,14 @@ def module(name,path):
 assert not git('status','--porcelain'),'Commit before testing'
 head=git('rev-parse','HEAD');base=Path(os.environ['DCC_A01_BASE_RUN']).resolve()
 finish=Path(os.environ['DCC_G01B_FINISH_RUN']).resolve() if os.environ.get('DCC_G01B_FINISH_RUN') else None
-retained=Path(os.environ['DCC_G01B_CLOSED_RUN']).resolve() if os.environ.get('DCC_G01B_CLOSED_RUN') else None
+replay=Path(os.environ['DCC_G01B_REPLAY_RUN']).resolve() if os.environ.get('DCC_G01B_REPLAY_RUN') else None
+assert not (finish and replay)
+retained=replay or (Path(os.environ['DCC_G01B_CLOSED_RUN']).resolve() if os.environ.get('DCC_G01B_CLOSED_RUN') else None)
 if retained:
     retained_source=(retained/'tested-commit.txt').read_text().strip()
     subprocess.run(['git','diff','--quiet',retained_source,head,'--','engine','scripts/playtest.c','scripts/contracts/f1-g01b-coordinated.json','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py'],cwd=root,check=True)
     assert hashlib.sha256((retained/'closed/diagnostic.gba').read_bytes()).hexdigest()==(retained/'closed/rom.sha256').read_text().split()[0]
+    if replay:assert hashlib.sha256((replay/'open/diagnostic.gba').read_bytes()).hexdigest()==(replay/'open/rom.sha256').read_text().split()[0]
 subprocess.run(['git','diff','--quiet','ed592e7',head,'--','engine','scripts/playtest.c'],cwd=root,check=True)
 assert hashlib.sha256((base/'production.gba').read_bytes()).hexdigest()=='5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230'
 out=finish or Path(tempfile.mkdtemp(prefix='third-',dir=root/'artifacts/floor1/g01b'));print('Evidence:',out,flush=True)
@@ -28,7 +31,8 @@ else:(out/'tested-commit.txt').write_text(head+'\n')
 snap=module('snapshot',root/'scripts/floor1/committed-snapshot.py');source=out/'source'
 if not finish:
     snap.snapshot(root,head,source,os.environ.get('DCC_G01_CACHE'),['scripts/contracts/f1-g01b-coordinated.json','scripts/contracts/f1-g01b-recovery.json','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py'])
-    with (out/'setup.log').open('w') as log:subprocess.run(['bash',str(source/'scripts/setup-foundation.sh')],stdout=log,stderr=subprocess.STDOUT,check=True)
+    if not replay:
+        with (out/'setup.log').open('w') as log:subprocess.run(['bash',str(source/'scripts/setup-foundation.sh')],stdout=log,stderr=subprocess.STDOUT,check=True)
 else:assert not os.environ.get('DCC_G01_CACHE'),'Engine caches forbidden even during recovery'
 g=module('geometry',source/'scripts/floor1/coordinated-graybox.py');walking=module('walking',source/'scripts/floor1/walking-harness.py')
 spec=json.loads((source/'scripts/contracts/f1-g01b-coordinated.json').read_text());ceiling=json.loads((source/'scripts/contracts/f1-g01b-recovery.json').read_text())
@@ -116,10 +120,12 @@ for opened in ([True] if finish else [False,True]):
     if not finish:subprocess.run(['python3','-B',str(source/'scripts/floor1/coordinated-graybox.py'),'--engine',str(source/'engine'),'--out',str(d)]+(['--opened'] if opened else []),stdout=(d/'export.log').open('w'),check=True)
     rom=d/'diagnostic.gba'
     sym=d/'game.sym'
-    if retained and not opened:
-        assert json.loads((d/'map-identities.json').read_text())==json.loads((retained/'closed/map-identities.json').read_text())
-        shutil.copyfile(retained/'closed/diagnostic.gba',rom);shutil.copyfile(retained/'closed/game.sym',sym)
-        (d/'build-reuse.json').write_text(json.dumps({'compiled_source':retained_source,'original_build':str(retained/'closed/build.log'),'sha256':hashlib.sha256(rom.read_bytes()).hexdigest(),'method':'Replay original clean committed diagnostic ROM; engine/shared harness/contract/exporter/walking source diff verified empty. No engine/cache inputs copied. Open variant builds in this new fresh snapshot.'},indent=2)+'\n')
+    if (retained and not opened) or replay:
+        original_dir=retained/mode
+        assert json.loads((d/'map-identities.json').read_text())==json.loads((original_dir/'map-identities.json').read_text())
+        shutil.copyfile(original_dir/'diagnostic.gba',rom);shutil.copyfile(original_dir/'game.sym',sym)
+        original_meta=json.loads((original_dir/'build-reuse.json').read_text()) if (original_dir/'build-reuse.json').exists() else {'compiled_source':retained_source,'original_build':str(original_dir/('build-retry-01.log' if (original_dir/'build-retry-01.log').exists() else 'build.log'))}
+        (d/'build-reuse.json').write_text(json.dumps({'compiled_source':original_meta['compiled_source'],'original_build':original_meta['original_build'],'sha256':hashlib.sha256(rom.read_bytes()).hexdigest(),'method':'Replay original clean committed diagnostic ROM; engine/shared harness/contract/exporter/walking source diff verified empty. Fresh committed source/export identities independently match; no engine/cache inputs copied.'},indent=2)+'\n')
     else:
         with (d/('build-retry-01.log' if finish else 'build.log')).open('w') as log:subprocess.run(['make','-C',str(source/'engine'),'-j2'],stdout=log,stderr=subprocess.STDOUT,check=True)
         shutil.copyfile(source/'engine/pokeemerald.gba',rom)
@@ -133,7 +139,7 @@ for opened in ([True] if finish else [False,True]):
             for who in order:
                 r.anchor(who,who);r.measure(who+'-out');r.guide();r.stop();r.heal();r.measure(who+'-back');r.exit();r.anchor(who,who+'-returned');r.stop();r.unchanged()
             for name in ['workshop_door','trap','tag','secret','far_junction','junction']:r.anchor(name,name)
-            r.anchor('loop_home');r.step(148 if not opened else 36,16);r.step(40,0,'loop-wall.ppm' if not opened else 'loop-pass.ppm');r.pos=(36,16) if opened else (34,16);r.expect()
+            r.anchor('loop_home');r.step(148 if not opened else 32+(4 if r.face!=16 else 0),16);r.step(40,0,'loop-wall.ppm' if not opened else 'loop-pass.ppm');r.pos=(36,16) if opened else (34,16);r.expect()
             for key in ['field','quiet','boss']:
                 if r.key!='field':r.exit()
                 if key!='field':r.anchor('quiet_door' if key=='quiet' else 'warden_door')
@@ -151,7 +157,7 @@ for opened in ([True] if finish else [False,True]):
         r=Route(True);r.clip=True;r.anchor('junction');r.unchanged();session=run(d,'continuous-motion',rom,sym,d/'motion.sav',r.lines)
         with (session/'encode.log').open('w') as log:subprocess.run(['ffmpeg','-y','-framerate','59.7275005696','-i',str(session/'frame-%05d.png'),'-c:v','libvpx-vp9','-pix_fmt','yuv420p','-crf','30','-b:v','0',str(session/'walking.webm')],stdout=log,stderr=subprocess.STDOUT,check=True)
         (session/'identity.json').write_text(json.dumps({'actual_continuous_frames':r.frames,'hz':59.7275005696,'includes_idle':True,'no_interpolation':True,'human_pacing_claim':False},indent=2)+'\n')
-    if not retained or opened:
+    if not replay and (not retained or opened):
         for ext in ['map','elf']:shutil.copyfile(source/'engine'/('pokeemerald.'+ext),d/('diagnostic.'+ext))
 (out/'validation-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 assert git('rev-parse','HEAD')==head and not git('status','--porcelain')

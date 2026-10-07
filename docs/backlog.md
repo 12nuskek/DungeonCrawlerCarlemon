@@ -1,5 +1,8 @@
 # Live backlog
 
+**2026-10-07: full Floor1 execution is now authorised.** The active dependency
+backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
+
 Current: N05 merged in PR50 (90 sessions / 1,531 checks). Updated private
 visual/playable package delivered; N06 PR52 ready for integration, then user playtest. Historical entries below retain earlier states.
 

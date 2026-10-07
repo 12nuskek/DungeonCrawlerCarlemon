@@ -1,11 +1,14 @@
 # Durable checkpoint
 
-Handoff date: 2026-10-06. **Stages 0–5 complete; overnight N05 merged; updated private review delivered, N06 PR52 ready for integration.**
-Latest tested source `eaf073d434a9347dfc2ed921f5f44d163563964b`: 90 emulator
-sessions / 1,531 assertions, including 193 labeled fixture checks. Runtime evidence:
-[evidence/n05/final](evidence/n05/final/README.md). Updated private package delivered under issue51; await user playtest after docs integration.
-The dated entries below are historical; this heading is the current checkpoint.
-Single implementation writer: this Cloud task. No Stage6 authorisation.
+Current checkpoint2026-10-07: **Full Floor1 execution authorised and active.**
+F1-P01 issue53 on task/floor1-p01-baseline; base3f1c851cce076b51cf4eb174925d9a2e41777a1f.
+Prior Stages0–5/overnight work is complete; PR52 server-confirmed merged at that base.
+The prior playtest stop, planning-only limits and fixed eight-hour window are superseded.
+Read [full-floor authority/backlog](floor1/README.md). Single implementation writer.
+Baseline ROM/ZIP rehashed unchanged; no active PRs/CI or repo schedules at launch.
+Library art materialization blocked at supported downloader hosted-app network call;
+source/state/graybox work continues. No new floor gameplay acceptance claimed yet.
+Next: merge P01 audit, reproduce/fix Journal tag and spent-wire sign (F1-T01).
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:

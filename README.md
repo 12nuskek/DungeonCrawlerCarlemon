@@ -1,5 +1,9 @@
 # DungeonCrawlerCarlemon
 
+**Full Floor1 implementation resumed on2026-10-07.** See the [accepted plan and
+execution authority](docs/floor1/README.md) and [active backlog](docs/floor1/backlog.md).
+The delivered six-room slice below remains the preserved regression baseline.
+
 An in-development GBA adaptation using stock Pokémon Emerald's decompilation.
 The approved target is an authored Book 1 opening slice with Carl and Donut duo
 battles, original dialogue, no catching and accessible defeat recovery.

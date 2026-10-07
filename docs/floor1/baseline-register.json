@@ -1,0 +1,4308 @@
+{
+  "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+  "gameplay_tested": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "maps": [
+    {
+      "name": "DCC_Entrance",
+      "group": 34,
+      "number": 0,
+      "map_header": {
+        "id": "MAP_DCC_ENTRANCE",
+        "name": "DCC_Entrance",
+        "layout": "LAYOUT_DCC_ENTRANCE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_ENTRANCE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+            "x": 4,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Crate",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+            "x": 7,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Rock",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+            "x": 7,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_Rock",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+            "x": 10,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Entrance_SupplyBox",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_VESTIBULE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_ENTRANCE",
+        "name": "DCC_Entrance_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Entrance/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Entrance/map.bin"
+      },
+      "layout_id_one_based": 442,
+      "map_words": [
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1581,
+        1582,
+        1583,
+        1615,
+        1615,
+        1615,
+        1582,
+        1583,
+        1582,
+        1582,
+        1582,
+        1584,
+        1580,
+        1580,
+        1581,
+        1616,
+        1607,
+        1617,
+        1587,
+        1618,
+        1618,
+        1618,
+        1587,
+        1586,
+        1588,
+        1586,
+        1587,
+        1590,
+        1580,
+        1580,
+        1607,
+        1619,
+        1620,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12860,
+        12861,
+        12862,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12885,
+        12869,
+        12870,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12886,
+        12859,
+        12887,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12867,
+        12859,
+        12887,
+        12859,
+        12886,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12867,
+        12887,
+        12886,
+        12859,
+        12859,
+        12867,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12872,
+        12859,
+        12859,
+        1611,
+        1612,
+        1580,
+        1580,
+        1613,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1614,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580
+      ],
+      "map_sha256": "2c099d38cb3d83c22372a76aa4014da176b46766ec6c9b949dd6816ad54e602c",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 4,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Crate",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+          "x": 7,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Rock",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+          "x": 7,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Rock",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+          "x": 10,
+          "y": 9,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_SupplyBox",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    },
+    {
+      "name": "DCC_Vestibule",
+      "group": 34,
+      "number": 1,
+      "map_header": {
+        "id": "MAP_DCC_VESTIBULE",
+        "name": "DCC_Vestibule",
+        "layout": "LAYOUT_DCC_VESTIBULE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_VESTIBULE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+            "x": 4,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Crate",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+            "x": 9,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Trial",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+            "x": 4,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_Guide",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_STORAGE_RACK",
+            "x": 11,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Vestibule_WorkshopBox",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+            "x": 7,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Donut_Talk",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_ENTRANCE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_SERVICE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_VESTIBULE",
+        "name": "DCC_Vestibule_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Vestibule/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Vestibule/map.bin"
+      },
+      "layout_id_one_based": 443,
+      "map_words": [
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1625,
+        1626,
+        1626,
+        1626,
+        1627,
+        1626,
+        1626,
+        1626,
+        1626,
+        1627,
+        1626,
+        1626,
+        1626,
+        1628,
+        1624,
+        1624,
+        1629,
+        1633,
+        1634,
+        1694,
+        1634,
+        1633,
+        1634,
+        1633,
+        1634,
+        1695,
+        1634,
+        1633,
+        1634,
+        1636,
+        1624,
+        1624,
+        1696,
+        12961,
+        12962,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12963,
+        12902,
+        12903,
+        1700,
+        1628,
+        1624,
+        1701,
+        12966,
+        12967,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12968,
+        12907,
+        12908,
+        1633,
+        1636,
+        1625,
+        1700,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12904,
+        12969,
+        12899,
+        12969,
+        12899,
+        12899,
+        12899,
+        12899,
+        1636,
+        1629,
+        1634,
+        12899,
+        12911,
+        12912,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1636,
+        1629,
+        12899,
+        12899,
+        12970,
+        12971,
+        12972,
+        12899,
+        12899,
+        12969,
+        12910,
+        12969,
+        12899,
+        12899,
+        12899,
+        12899,
+        1636,
+        1629,
+        12899,
+        12899,
+        12973,
+        12974,
+        12975,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1712,
+        1654,
+        1629,
+        12899,
+        12899,
+        12977,
+        12978,
+        12979,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1653,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1654,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624
+      ],
+      "map_sha256": "f028072273a76a4531b971119b1fd19eb476f2bd934c0431a6f0a5257d6cf47f",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+          "x": 4,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Crate",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+          "x": 9,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Trial",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Guide",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_STORAGE_RACK",
+          "x": 11,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_WorkshopBox",
+          "flag": "0"
+        },
+        {
+          "local_id": 5,
+          "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+          "x": 7,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Donut_Talk",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    },
+    {
+      "name": "DCC_Service",
+      "group": 34,
+      "number": 2,
+      "map_header": {
+        "id": "MAP_DCC_SERVICE",
+        "name": "DCC_Service",
+        "layout": "LAYOUT_DCC_SERVICE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_SERVICE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+            "x": 4,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Mara",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+            "x": 11,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Lev",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+            "x": 7,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Warning",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_QUEST_TAG",
+            "x": 11,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Tag",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_WORKBENCH",
+            "x": 6,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_Workbench",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_CACHE_SEALED",
+            "x": 13,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Service_BlastCache",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_VESTIBULE",
+            "dest_warp_id": "1"
+          },
+          {
+            "x": 2,
+            "y": 9,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_CORRIDOR",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [
+          {
+            "type": "trigger",
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "var": "VAR_TEMP_0",
+            "var_value": "0",
+            "script": "DCC_Service_Trap"
+          }
+        ],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 2,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "DCC_Service_Secret"
+          }
+        ]
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_SERVICE",
+        "name": "DCC_Service_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Service/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Service/map.bin"
+      },
+      "layout_id_one_based": 444,
+      "map_words": [
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1656,
+        1657,
+        1657,
+        1657,
+        1658,
+        1657,
+        1657,
+        1657,
+        1657,
+        1659,
+        1657,
+        1657,
+        1657,
+        1660,
+        1655,
+        1655,
+        1661,
+        1662,
+        1663,
+        1662,
+        1664,
+        1664,
+        1664,
+        1664,
+        1663,
+        1665,
+        1663,
+        1666,
+        1663,
+        1667,
+        1655,
+        1655,
+        1668,
+        12933,
+        12934,
+        12935,
+        12935,
+        12935,
+        12935,
+        12936,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        1673,
+        1655,
+        1655,
+        1674,
+        12939,
+        12940,
+        12935,
+        12935,
+        12935,
+        12935,
+        12936,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        1673,
+        1655,
+        1655,
+        1677,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12936,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        1678,
+        1660,
+        1655,
+        1677,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12943,
+        12935,
+        12944,
+        12935,
+        12935,
+        12935,
+        1662,
+        1667,
+        1655,
+        1677,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12944,
+        12936,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        1667,
+        1655,
+        1681,
+        12946,
+        12947,
+        12935,
+        12935,
+        12948,
+        12949,
+        12949,
+        12949,
+        12949,
+        12949,
+        12949,
+        12948,
+        12935,
+        1667,
+        1655,
+        1686,
+        12951,
+        12952,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        12935,
+        1667,
+        1655,
+        1689,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1690,
+        1691,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655,
+        1655
+      ],
+      "map_sha256": "6f75fe348660a0a9f40c04f68128c414521ad57001ad98069ca212d89c44df71",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+          "x": 4,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Mara",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+          "x": 11,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Lev",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 7,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Warning",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_QUEST_TAG",
+          "x": 11,
+          "y": 4,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Tag",
+          "flag": "0"
+        },
+        {
+          "local_id": 5,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WORKBENCH",
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Workbench",
+          "flag": "0"
+        },
+        {
+          "local_id": 6,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_CACHE_SEALED",
+          "x": 13,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_BlastCache",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    },
+    {
+      "name": "DCC_Corridor",
+      "group": 34,
+      "number": 3,
+      "map_header": {
+        "id": "MAP_DCC_CORRIDOR",
+        "name": "DCC_Corridor",
+        "layout": "LAYOUT_DCC_CORRIDOR",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_CORRIDOR",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+            "x": 5,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Guard",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+            "x": 10,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Howler",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+            "x": 8,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Corridor_Rules",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_SERVICE",
+            "dest_warp_id": "1"
+          },
+          {
+            "x": 12,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_BOSS",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_CORRIDOR",
+        "name": "DCC_Corridor_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Corridor/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Corridor/map.bin"
+      },
+      "layout_id_one_based": 445,
+      "map_words": [
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1581,
+        1582,
+        1582,
+        1582,
+        1583,
+        1582,
+        1582,
+        1582,
+        1582,
+        1583,
+        1582,
+        1582,
+        1582,
+        1584,
+        1580,
+        1580,
+        1585,
+        1586,
+        1587,
+        1586,
+        1588,
+        1586,
+        1587,
+        1589,
+        1589,
+        1589,
+        1589,
+        1586,
+        1587,
+        1590,
+        1580,
+        1580,
+        1591,
+        12856,
+        12857,
+        12858,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12860,
+        12861,
+        12862,
+        1599,
+        1580,
+        1580,
+        1600,
+        12865,
+        12866,
+        12859,
+        12859,
+        12859,
+        12859,
+        12867,
+        12859,
+        12859,
+        12868,
+        12869,
+        12870,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12872,
+        12859,
+        12872,
+        12859,
+        12859,
+        12873,
+        12859,
+        12873,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1583,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12872,
+        12859,
+        12872,
+        12859,
+        12859,
+        12873,
+        12859,
+        12873,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1607,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12867,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1599,
+        1580,
+        1580,
+        1610,
+        1585,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        12859,
+        1611,
+        1612,
+        1580,
+        1580,
+        1580,
+        1613,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1611,
+        1614,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580,
+        1580
+      ],
+      "map_sha256": "8af0c39b13809ba1c6991a946c3c61f927156511100981284c7f43ce69ee07ae",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+          "x": 5,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Guard",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+          "x": 10,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Howler",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 8,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Rules",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    },
+    {
+      "name": "DCC_Boss",
+      "group": 34,
+      "number": 4,
+      "map_header": {
+        "id": "MAP_DCC_BOSS",
+        "name": "DCC_Boss",
+        "layout": "LAYOUT_DCC_BOSS",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_BOSS",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_HIKER",
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Boss_Encounter",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_CORRIDOR",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 4,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "DCC_Boss_Stairs"
+          }
+        ]
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_BOSS",
+        "name": "DCC_Boss_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Boss/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Boss/map.bin"
+      },
+      "layout_id_one_based": 446,
+      "map_words": [
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1537,
+        1538,
+        1538,
+        1538,
+        1539,
+        1539,
+        1538,
+        1538,
+        1538,
+        1539,
+        1538,
+        1538,
+        1538,
+        1540,
+        1536,
+        1536,
+        1541,
+        1542,
+        1543,
+        1544,
+        1543,
+        1545,
+        1543,
+        1546,
+        1543,
+        1545,
+        1543,
+        1542,
+        1543,
+        1547,
+        1536,
+        1536,
+        1548,
+        12813,
+        12814,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12816,
+        12817,
+        12818,
+        1555,
+        1536,
+        1536,
+        1556,
+        12821,
+        12822,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12823,
+        13848,
+        12825,
+        1555,
+        1536,
+        1536,
+        1562,
+        12815,
+        12815,
+        12815,
+        12815,
+        12827,
+        12815,
+        12815,
+        12815,
+        12827,
+        12815,
+        12815,
+        12815,
+        1555,
+        1536,
+        1536,
+        1562,
+        12815,
+        12815,
+        12815,
+        12815,
+        1539,
+        12815,
+        12828,
+        12815,
+        1539,
+        12815,
+        12815,
+        12829,
+        1555,
+        1536,
+        1536,
+        1562,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12830,
+        12830,
+        12830,
+        12815,
+        12815,
+        12815,
+        12829,
+        1555,
+        1536,
+        1536,
+        1562,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12831,
+        12831,
+        12831,
+        12831,
+        12831,
+        1555,
+        1536,
+        1536,
+        1568,
+        1541,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        12815,
+        1569,
+        1570,
+        1536,
+        1536,
+        1536,
+        1571,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1569,
+        1572,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536,
+        1536
+      ],
+      "map_sha256": "ac091f5ffb38b194024e6ff85a30d6e73ec648631b63ea0e2d32feab990e1e45",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_HIKER",
+          "x": 8,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Boss_Encounter",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    },
+    {
+      "name": "DCC_Exit",
+      "group": 34,
+      "number": 5,
+      "map_header": {
+        "id": "MAP_DCC_EXIT",
+        "name": "DCC_Exit",
+        "layout": "LAYOUT_DCC_EXIT",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_DCC_EXIT",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+            "x": 8,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Exit_Review",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+            "x": 6,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "DCC_Exit_Donut_Talk",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 2,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_DCC_BOSS",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "layout": {
+        "id": "LAYOUT_DCC_EXIT",
+        "name": "DCC_Exit_Layout",
+        "width": 16,
+        "height": 12,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Dcc",
+        "border_filepath": "data/layouts/DCC_Exit/border.bin",
+        "blockdata_filepath": "data/layouts/DCC_Exit/map.bin"
+      },
+      "layout_id_one_based": 447,
+      "map_words": [
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1625,
+        1626,
+        1626,
+        1626,
+        1626,
+        1627,
+        1628,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1625,
+        1626,
+        1626,
+        1626,
+        1629,
+        1630,
+        1631,
+        1632,
+        1631,
+        1630,
+        1626,
+        1626,
+        1626,
+        1628,
+        1624,
+        1624,
+        1629,
+        1633,
+        1634,
+        1633,
+        1634,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1634,
+        1633,
+        1634,
+        1636,
+        1624,
+        1624,
+        1637,
+        12902,
+        12903,
+        12899,
+        12899,
+        12904,
+        12904,
+        12904,
+        12904,
+        12904,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1642,
+        12907,
+        12908,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1645,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1645,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1645,
+        12899,
+        12899,
+        12899,
+        12910,
+        12910,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1645,
+        12899,
+        12899,
+        12911,
+        12912,
+        12910,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        12899,
+        1641,
+        1624,
+        1624,
+        1649,
+        1629,
+        12899,
+        12899,
+        12899,
+        12899,
+        12914,
+        12914,
+        12914,
+        12899,
+        12899,
+        12899,
+        1651,
+        1652,
+        1624,
+        1624,
+        1624,
+        1653,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1651,
+        1654,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624,
+        1624
+      ],
+      "map_sha256": "803f85d87ad2f9f06862d3edeb760fdc7645260abda250f7ab084f6316a798e2",
+      "object_local_ids": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+          "x": 8,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Exit_Review",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+          "x": 6,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Exit_Donut_Talk",
+          "flag": "0"
+        }
+      ],
+      "padded_cells": 806,
+      "legal_static_floor_candidates": [
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "new_destination": "PENDING reviewed D1 geometry; no migration implemented"
+    }
+  ],
+  "flag_numeric_aliases": [
+    {
+      "name": "FLAG_DCC_INTRO_SEEN",
+      "value": 32
+    },
+    {
+      "name": "FLAG_DCC_CRATE_READ",
+      "value": 33
+    },
+    {
+      "name": "FLAG_DCC_GUIDE_MET",
+      "value": 34
+    },
+    {
+      "name": "FLAG_DCC_WRAP_TAKEN",
+      "value": 35
+    },
+    {
+      "name": "FLAG_DCC_ACH_READER",
+      "value": 36
+    },
+    {
+      "name": "FLAG_DCC_ACH_DUO",
+      "value": 37
+    },
+    {
+      "name": "FLAG_DCC_LOOT_SUPPLY",
+      "value": 38
+    },
+    {
+      "name": "FLAG_DCC_LOOT_SCRAP",
+      "value": 39
+    },
+    {
+      "name": "FLAG_DCC_TRAP_SPENT",
+      "value": 40
+    },
+    {
+      "name": "FLAG_DCC_QUEST_DECLINED",
+      "value": 41
+    },
+    {
+      "name": "FLAG_DCC_QUEST_ACCEPTED",
+      "value": 42
+    },
+    {
+      "name": "FLAG_DCC_QUEST_COMPLETE",
+      "value": 43
+    },
+    {
+      "name": "FLAG_DCC_TAG_FOUND",
+      "value": 44
+    },
+    {
+      "name": "FLAG_DCC_SECRET_TAKEN",
+      "value": 45
+    },
+    {
+      "name": "FLAG_DCC_CACHE_BLASTED",
+      "value": 46
+    },
+    {
+      "name": "FLAG_DCC_BOSS_CLEARED",
+      "value": 47
+    },
+    {
+      "name": "FLAG_DCC_SLICE_COMPLETE",
+      "value": 48
+    },
+    {
+      "name": "FLAG_UNUSED_0x023",
+      "value": 35
+    },
+    {
+      "name": "FLAG_UNUSED_0x024",
+      "value": 36
+    },
+    {
+      "name": "FLAG_UNUSED_0x025",
+      "value": 37
+    },
+    {
+      "name": "FLAG_UNUSED_0x026",
+      "value": 38
+    },
+    {
+      "name": "FLAG_UNUSED_0x027",
+      "value": 39
+    },
+    {
+      "name": "FLAG_UNUSED_0x028",
+      "value": 40
+    },
+    {
+      "name": "FLAG_UNUSED_0x029",
+      "value": 41
+    },
+    {
+      "name": "FLAG_UNUSED_0x02A",
+      "value": 42
+    },
+    {
+      "name": "FLAG_UNUSED_0x02B",
+      "value": 43
+    },
+    {
+      "name": "FLAG_UNUSED_0x02C",
+      "value": 44
+    },
+    {
+      "name": "FLAG_UNUSED_0x02D",
+      "value": 45
+    },
+    {
+      "name": "FLAG_UNUSED_0x02E",
+      "value": 46
+    },
+    {
+      "name": "FLAG_UNUSED_0x02F",
+      "value": 47
+    },
+    {
+      "name": "FLAG_UNUSED_0x030",
+      "value": 48
+    }
+  ],
+  "engine_limits": {
+    "map_buffer_u16_cells": 10240,
+    "map_buffer_bytes": 20480,
+    "padding_w": 15,
+    "padding_h": 14,
+    "active_objects_including_player": 16,
+    "saved_object_templates": 64,
+    "primary_tiles": 512,
+    "secondary_tiles": 512,
+    "bg_palette_banks": 13
+  },
+  "envelope_buffer_checks": [
+    {
+      "width": 64,
+      "height": 48,
+      "padded_cells": 4898,
+      "remaining_cells": 5342
+    },
+    {
+      "width": 72,
+      "height": 48,
+      "padded_cells": 5394,
+      "remaining_cells": 4846
+    },
+    {
+      "width": 64,
+      "height": 56,
+      "padded_cells": 5530,
+      "remaining_cells": 4710
+    },
+    {
+      "width": 56,
+      "height": 48,
+      "padded_cells": 4402,
+      "remaining_cells": 5838
+    },
+    {
+      "width": 72,
+      "height": 56,
+      "padded_cells": 6090,
+      "remaining_cells": 4150
+    }
+  ],
+  "entry_points": {
+    "new_game": "engine/src/new_game.c:130; Entrance group34 number0 (4,8)",
+    "script_warp": "engine/data/maps/DCC_Boss/scripts.inc:50; Exit (4,6)",
+    "continue": "SaveBlock1 location/pos/mapLayoutId, mapView, objectEvents/templates; current refresh does not relocate",
+    "battle_return": "battle_setup.c CB2_EndTrainerBattle; local position, current narrow trainer range",
+    "menu_return": "current player position; no dedicated DCC relocation",
+    "debug_test_spawns": "existing ordinary routes and explicitly labeled capacity fixture initialisers; enumerate/remap through reviewed anchors before geometry changes"
+  },
+  "classification_hazards": [
+    "Use full (group,number) identity, not mapNum alone, in DccPresentationTile and resolved-object lookup.",
+    "Replace group-only palette/map cache/template guards with explicit supported crawler maps; test stock nonmembers.",
+    "Replace closed numeric trainer range with explicit crawler encounters before adding new encounters; test local recovery and stock nonmembers."
+  ],
+  "migration_required": [
+    "Map location, mapLayoutId, player position/facing",
+    "Saved and live object/template IDs and positions",
+    "Warp destinations and return anchors",
+    "Every legacy map/state; no reward/party/inventory changes",
+    "Explicit unused save discriminator after numeric alias audit",
+    "Idempotent second save and cold reload; no full-floor completion from old slice flag"
+  ]
+}

@@ -1,0 +1,130 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+flag 2136 0
+flag 2137 0
+step 68 64 -
+step 40 0 -
+expect 35 0 37 27 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 27 7
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 battle-start.ppm
+pilot fortify 36000
+step 600 0 battle-result.ppm
+dialog 6000
+ready
+expect 35 0 51 27 7
+flag 2137 1
+measure start howler-out
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+measure start howler-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 26 7
+step 20 128 -
+step 40 0 -
+expect 35 0 51 27 7
+measure stop
+step 20 32 -
+step 40 0 -
+expect 35 0 50 27 7
+step 68 128 -
+step 40 0 -
+expect 35 0 50 31 7
+step 212 32 -
+step 40 0 -
+expect 35 0 37 31 7
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 battle-start.ppm
+pilot offensive 36000
+step 600 0 battle-result.ppm
+dialog 6000
+ready
+expect 35 0 37 31 7
+flag 2136 1
+measure start guard-out
+step 84 64 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+measure start guard-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+measure stop
+flag 2136 1
+flag 2137 1
+flag 49 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+snapshot
+expect 35 0 37 31 7
+quit

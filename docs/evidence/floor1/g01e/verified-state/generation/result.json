@@ -1,0 +1,32 @@
+{
+  "source": "1e556a257cd50744ca59f9e7cc63d1f0e7c3703c",
+  "outputs": {
+    "engine/data/maps/map_groups.json": "eb84a1195fcbeee45bf0aaac38385d95b7ba4ea84ff90d116b809b57df003f51",
+    "engine/data/layouts/layouts.json": "2ec8aaffad45b0070997496a884014bc5774f425c8733cb559f2f4ddfe131d1f",
+    "engine/data/event_scripts.s": "359bf34dc28ea2f9ec27cb7bd93276d35e84ca74404045e0c9a0be657256b086",
+    "engine/src/data/dcc_opening.h": "6bc96cafc3c1f1683c7f0544b70b99b56e84ced967e1bdb1282b15ada6c59e46",
+    "engine/src/data/dcc_map_counts.h": "727255eee25dc7dfb1ec3e24fcea547633f44bdf536baa6dbf0f404f8e508ff8",
+    "engine/data/maps/DCC_F1D1Quiet/map.json": "d48cbb598d38ec2e6c4915729faba34cfb7bc8cdbcce6b463788dc012a23dafb",
+    "engine/data/maps/DCC_F1D1Quiet/scripts.inc": "5cbf2e024365feebf26d618fe9c1ead34959a3020244496b433d4e8879dd5b40",
+    "engine/data/maps/DCC_F1D1Workshop/map.json": "b143234686d3e166e2602e8847a1efe2b4882aa95faeb4311272c270462f6123",
+    "engine/data/maps/DCC_F1D1Workshop/scripts.inc": "118b99167d246d140ce1b03dd5eda39cabd2be9d209513dc4ca4739461465e82",
+    "engine/data/maps/DCC_F1D1Warden/map.json": "6061084996e942c57861819ba63becf717dcbfd596ff9ec8bcd2273c7ab10e0f",
+    "engine/data/maps/DCC_F1D1Warden/scripts.inc": "bd733e3eeb08fa40c413e469e57ea73278a361cb26dd3882ef6608f429ccacb1",
+    "engine/data/maps/DCC_F1D1Field/map.json": "b510133bcc22cbbca5bab83597847b92f463ec72e8223e70b91fbcdb2f109733",
+    "engine/data/maps/DCC_F1D1Field/scripts.inc": "b3fd6b5b83a0e354eab29f99b3105205f094ba1f9de22f68d1a25a8beeddb806",
+    "engine/data/maps/DCC_F1D1Checkpoint/map.json": "eab15b4ff3a9ab8671dc05d2553a5aae27ce17b9a7637241bdce88bba9db3e1b",
+    "engine/data/maps/DCC_F1D1Checkpoint/scripts.inc": "a9a7102ce79da81222b183b57533b8da5fe049e9c900465f17233d38748e9c3e",
+    "engine/data/layouts/DCC_F1D1Quiet/map.bin": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+    "engine/data/layouts/DCC_F1D1Quiet/border.bin": "3f5400c474ebf1fd1eaab106e98dee110af8d7a42cf86433d6343fd2d5e351a8",
+    "engine/data/layouts/DCC_F1D1Workshop/map.bin": "f317fa78af64bcd5c2342dbde5cae30eec2d915152840f2953b8a217eca4e4cd",
+    "engine/data/layouts/DCC_F1D1Workshop/border.bin": "fb9c71d326d04e49f8a37e890a1c0b17351f379c03bb6b6cf7a9af57fd99b518",
+    "engine/data/layouts/DCC_F1D1Warden/map.bin": "f69418c1eee2b2a798d483e7aa7c5bc6300c4d833077ef81951cd848b6d0b56d",
+    "engine/data/layouts/DCC_F1D1Warden/border.bin": "4dfb717c85d7d8d3975e6dd093d374e71577a6aa5ec270cbee3a89cfdab1cccb",
+    "engine/data/layouts/DCC_F1D1Field/map.bin": "53c2432d017ce9217f33a6bde7e6cb8b50985faaf96dd1a483e22187dfc573a9",
+    "engine/data/layouts/DCC_F1D1Field/border.bin": "fb9c71d326d04e49f8a37e890a1c0b17351f379c03bb6b6cf7a9af57fd99b518",
+    "engine/data/layouts/DCC_F1D1Checkpoint/map.bin": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+    "engine/data/layouts/DCC_F1D1Checkpoint/border.bin": "3f5400c474ebf1fd1eaab106e98dee110af8d7a42cf86433d6343fd2d5e351a8"
+  },
+  "idempotent": true,
+  "all_six_legacy_map_and_layout_sources_unchanged": true
+}

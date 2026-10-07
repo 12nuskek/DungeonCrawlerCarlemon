@@ -1,0 +1,115 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+dialog 6000
+ready
+snapshot
+step 68 64 -
+step 40 0 -
+expect 35 0 8 34 1
+step 20 16 -
+step 40 0 -
+expect 35 0 9 34 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 note.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 9 34 3
+flag 33 1
+flag 36 1
+step 84 16 -
+step 40 0 -
+expect 35 0 14 34 3
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+flag 38 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply-repeat.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+step 148 16 -
+step 40 0 -
+expect 35 0 23 34 3
+step 84 64 -
+step 40 0 -
+expect 35 0 23 29 3
+step 164 16 -
+step 40 0 -
+expect 35 0 33 29 3
+step 52 64 -
+step 40 0 -
+expect 35 0 33 26 3
+step 68 16 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 3
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 3
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+step 100 16 -
+step 40 0 -
+expect 35 1 10 5 7
+step 36 128 -
+step 40 0 -
+expect 35 1 10 7 7
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 battle-start.ppm
+pilot offensive 36000
+step 600 0 battle-result.ppm
+dialog 6000
+ready
+expect 35 1 10 7 7
+flag 2135 1
+flag 37 1
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+snapshot
+expect 35 1 10 7 7
+quit

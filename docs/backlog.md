@@ -3,8 +3,12 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current: N05 merged in PR50 (90 sessions / 1,531 checks). Updated private
-visual/playable package delivered; N06 PR52 ready for integration, then user playtest. Historical entries below retain earlier states.
+Current: full-floor G01e migration/adoption is implemented and compiled, with69
+verified state sessions and3partial live sessions; draftPR75 remains unmerged.
+Three full Howler-first strategy routes did not complete; lastHowler won, laterGuard
+lost. Stop blind retries/dependentV01, preserve evidence and diagnose before more
+combat work. Independent navigation copy is prepared. [Checkpoint](progress.md).
+Earlier N05/N06 delivery and playtest pauses below are historical and superseded.
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 

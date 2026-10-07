@@ -1,0 +1,290 @@
+[
+  {
+    "route": "i01-motion-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-motion-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-motion-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-craft-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-craft-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-craft-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-quest-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-quest-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-quest-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-playtest-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-playtest-controller-save",
+    "assertions": 22,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-playtest-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-boss-loss-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-boss-loss-controller-save",
+    "assertions": 20,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "i01-boss-loss-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "legacy-corner-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "legacy-corner-controller-save",
+    "assertions": 22,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "legacy-corner-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-before-trial-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-before-trial-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-before-trial-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-after-trial-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-after-trial-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-guide-after-trial-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-both-pending-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-both-pending-controller-save",
+    "assertions": 25,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-both-pending-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-howler-pending-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-howler-pending-controller-save",
+    "assertions": 25,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-howler-pending-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-boss-pending-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-boss-pending-controller-save",
+    "assertions": 26,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-boss-pending-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-prepared-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-prepared-controller-save",
+    "assertions": 22,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-prepared-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-workshop-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-workshop-controller-save",
+    "assertions": 24,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-workshop-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-ending-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-ending-controller-save",
+    "assertions": 22,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "a01-legacy-ending-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-entrance-cold-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-entrance-cold-controller-save",
+    "assertions": 30,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-entrance-cold-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-service-cold-first",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-service-cold-controller-save",
+    "assertions": 17,
+    "states": 1,
+    "errors": 0
+  },
+  {
+    "route": "ordinary-service-cold-second-cold",
+    "assertions": 3,
+    "states": 1,
+    "errors": 0
+  }
+]

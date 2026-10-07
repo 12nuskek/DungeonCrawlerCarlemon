@@ -1,91 +1,134 @@
-# Live migration — acceptance in progress
+# Live migration — implemented and compiled; gameplay acceptance blocked
 
-Issue74, branch task/floor1-g01e-live-migration; base
-`b694da17928b93ea579f55d905017aa9f7619422` (PR73). Sole Cloud task
-`01a10f4b-596b-700b-b8ba-241e3ca2c000`. No PR integration or fullG01 claim yet.
+Issue74 / **draftPR75**, branch task/floor1-g01e-live-migration, base
+`b694da17928b93ea579f55d905017aa9f7619422`. Same sole Cloud task
+`01a10f4b-596b-700b-b8ba-241e3ca2c000`; handoff2026-10-07. No merge/fullG01/finalT
+or fullFloor1 completion claim. No new workflow, scheduler or task.
 
-Implemented: five production full identities35/0..4/layouts448..452 append after
-the unchanged six legacy maps/layouts442..447. All21 legacy actors retain their
-scripts/outcomes at explicit semantic positions/localIDs; new markers are signs.
-VersionVAR0x404E and loopFLAG49 passed the [pre-allocation source audit](pre-allocation-audit.json).
-Version0 migration runs before header/layout lookup, normalizes owned remembered
-warp indices, remaps all five saved records independently and rebuilds player,
-NPCs/templates/cache through local map loading. Current ordinary pos overrides
-stale location coords/indices. Stock/dummy warp records stay unchanged. Existing
-party, inventory, outcomes/trainer flags and unowned persistent vars stay intact.
-Version1 repairs its saved layout identity without repeating relocation/resetting
-outcomes. Fresh event initialization stamps1. Optional return loop requires its
-far-side36,16 interaction and changes only the nine declared barrier words.
+Five production identities35/0..4/layouts448..452 append after unchanged legacy
+maps/layouts442..447. Migration precedes header lookup, normalizes all5owned
+remembered warps, preserves stock/dummy records and gameplay/resources, rebuilds
+legal player/NPC/template/cache state, and is idempotent after manual Save.
+Current ordinary pos takes precedence over stale current-location coordinates.
+Unknown schemas/full IDs reject Continue without changing the saved file. Fresh
+initialization stamps version1 after event reset. Optional far-side loop is authored
+but its live persistence gate remains pending. No save ABI/trainer/balance change.
 
-Current tested production source `f7cb7f421b033dca84fb91de633452401d377e4f`:
-ROM SHA256 `b4e15f83331b2b29710bfe7eed399d676d9b9d59f7a9c8b7d45283f5a31d876a`.
-Ordinary/controller and boundary runner `9acf8003627bb636ec026a30b2dfacae45c6eb68`.
-Actual mGBA0.10.5 evidence: **48 ordinary sessions/471 assertions** and
-**21 controlled-state sessions/54 assertions**,69 empty emulator error logs.
+## Exact tested identities
 
-All16 ordinary originals include the five I01 files, actual N02 corner, eight
-current guide/patrol/boss/prepared/checkpoint saves, and controller-authored old
-Entrance/Service seeds. Each has cold migration + meaningful original NPC/stairs
-interaction + normal transitions/manual Save + second cold idempotence. Original
-hashes unchanged; first/cold copies unchanged until explicit ordinary Save.
-Decoded inventory/money comparison uses each actual encryption key; raw encrypted
-bytes legitimately differ across heap relocation. Live duo, flags, vars and
-second-load positions/warps remain identical. Player/camera/active object/localID/
-initial/current/previous coordinates and cleared cache are sampled, never written.
+Clean production compile `99243073ebead4ecd4fa9e4f4362d9e0d70c86df`:
+ROM SHA256 `6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb`.
+Current controller runner `1e556a257cd50744ca59f9e7cc63d1f0e7c3703c`; engine Git diff
+from compiled source is empty. Fresh Git archive, pinned documented compiler/inputs,
+regenerated products; [complete build/setup logs](verified-state/build/build.log).
+mGBA0.10.5, GCC14.2 host. [Identity register](verified-state/identity.json).
 
-Controlled inputs are clearly separate: checksum-valid copied inputs for future
-versions2/65535, version0/2 diagnostic-number identities, unknown full map IDs,
-stale0/65535 layouts, every owned return record, stock/dummy returns, active
-continue-warp targets, invalid continue targets, Corridor wall/object/negative/
-oversized/legal cells, and version1 stale layout. No API-only substitute for the
-48 ordinary controller sessions. No original or controlled cold copy is saved.
+## Verified checks, kept separate
 
-Actual migrated captures, exact production/runner identities above:
+- **48 ordinary emulator sessions /471 assertions**,16 preserved original saves:
+  cold migration, meaningful original NPC/transition interaction, actual manual
+  Save, second cold idempotence. All6old maps, mandatoryI01 and actual corner.
+  All48 error logs empty; original hashes unchanged. Live duo, decoded inventory/
+  money, old flags32..48/trainer2135..2139, unowned persistent vars and warps
+  preserved; player/camera/objects/localIDs/templates/cache inspected read-only.
+  [Full ordinary routes/logs/states](verified-state/ordinary/summary.json).
+- **21 controlled copied-input emulator sessions /72 assertions**;21 empty errors.
+  Future versions/unknown full IDs, all owned warps, dummy/stock remembered records,
+  active Continue warp, stale layouts and invalid legacy positions. Clearly
+  synthetic checksum-valid inputs; no substitute for ordinary controller checks.
+  Rejected original/copy hashes unchanged; actual readable error, acknowledgement,
+  second page and return to menu captured.
+  [Boundary routes/logs/states](verified-state/boundaries/summary.json).
+- **3 accepted partial live sessions /3162 assertions**: fresh arrival, note/supply
+  once/repeat, guide, duo trial win and first Save; actual Guard-first two patrol
+  wins, meaningful recovery/travel/manual Save, then cold full3072field words.
+  [Partial live routes/logs](verified-partial-live/guard-first/input.route).
+  Guard→guide→sameGuard14steps/224walkingframes; Howler34/544. Strict exact-name,
+  both-leg, missing-measurement rejection and original ceilings unchanged.
+- Host-only supplement: **8694 exact-C legacy relocation vectors +5dummy/nonmember
+  records +15schema vectors**, actual old collision/actor/warp data and generated
+  map-group counts, ASan/UBSan. Not ARM ABI, emulator, stock-save or spawn proof.
+  [Source/results](verified-state/cells/result.log).
+- **25 generated source files** exactly reproduce and remain identical on a second
+  generation. All6legacy map/layout source trees unchanged from base.
+  [Output hashes](verified-state/generation/result.json).
+- [ELF sections](verified-state/build/elf-sections.log): EWRAM249704/262144,
+  IWRAM30892/32768; SaveBlock1=15752/15872 and SaveBlock2=3884/3968 unchanged.
 
-![I01 motion migrated to Quiet, legal player and NPC rebuild](migrated-quiet.png)
-![Migrated Workshop, original Lev dialogue after normal transitions](migrated-workshop.png)
-![Actual old corner migrated to opening checkpoint review](migrated-checkpoint.png)
+Actual native240×160 current production/runner captures, identities above:
 
-**Important unresolved UI gate:** screenshot review found that logical rejected
-saves remained in the menu but the error message was hidden by initial GPU window
-masks. [Actual failed before capture](unsupported-blank-before.png). This prevents
-acceptance despite the69 state sessions passing. Fixed source
-`99243073ebead4ecd4fa9e4f4362d9e0d70c86df` moves the message after standard GPU
-window initialization. A fresh committed build/replay and actual readable error/
-acknowledgement/return-to-menu captures are pending. Do not infer readability from
-the callback assertion or claim current full migration/runtime integration.
+![I01 original migrated to Quiet](current-migrated-quiet.png)
+![Original Lev interaction after migrated transitions](current-migrated-workshop.png)
+![Actual corner save at opening checkpoint](current-migrated-corner.png)
+![Readable unsupported-save warning](unsupported-readable.png)
+![File-unchanged acknowledgement](unsupported-file-unchanged.png)
+![Return to ordinary menu](unsupported-return-menu.png)
 
-Preserved attempts: first6e654d0 build omitted documented libpng pkgconfig vars;
-correct environment then exposed missing Continue-warp prototype.51c6a8e exposed
-menu callback declaration/C89 ordering.2e810f6 clean compile passed. First host
-ordinary run compared encrypted bytes; decoded quantities were identical. Second
-ordinary runner's forced-south ladder-facing assumption failed only the Entrance
-seed route; retaining real incoming ladder direction passes all48. A controlled
-old Corridor wall14,0 found bounds-only side classification: actual old collision/
-actor legality check in f7cb7f4 fixes that boundary. This is material migration
-correction1; original trace retained under attempts. No failed original/build/save
-was deleted or assertion disabled. The hidden UI message is a separate rendering
-defect with its first fix pending, not a geometry redesign.
+## Acceptance blocker and bounded attempts
 
-Raw complete inputs/builds/ROMs/saves stay local:
-`artifacts/floor1/g01e/live-fm58wq6q`, `live-bz05bmdx`, `live-2danu7iw`,
-`live-gyxzglx6`, `ordinary-7rpxkcz1`, `ordinary-lt5iqs3s`, `ordinary-8zhk2qkw`,
-`boundaries-4kkbaypz`, `boundary-attempt1-corridor-wall`.
-Public source evidence contains logs/routes/state snapshots/captures only.
+**The complete Howler-first route has not passed. Three materially different
+normal-controller strategies were attempted; further blind strategy trials stop.**
 
-Commands, using the pinned environment in docs/testing.md:
+| Attempt | Actual result | Preserved evidence |
+|---|---|---|
+| Immediate offence | Howler lost with remaining enemy2HP; local recovery returned healthy | [route/log](attempts/patrol-offensive/replay.log) |
+| Three-turn BRACE/WEAKEN, then offence | Howler lost with remaining enemy19HP; local recovery worked | [route/log](attempts/patrol-three-turn-fortify/replay.log) |
+| One WEAKEN, Carl keeps attacking, then SPARK | **Howler won** in9220pilotframes with no incapacitation. Guide restores HP/uses; later Guard offence lost with remaining enemy7HP. Carl16→3HP before fainting; exact critical-hit text was not captured. | [route/log](attempts/patrol-single-weaken/replay.log) |
+
+The third failure is **Guard after Howler**, not a third Howler loss. It does not
+prove the game is unwinnable or identify a new engine regression. Layout changes
+alter timing/RNG; unchanged battle/resource definitions and accessible retries
+remain. No health/PP/stat inflation, optional-item prerequisite or false winning
+flag is introduced to satisfy the route. Failed assertions remain active and
+nonempty failure logs are separate from accepted sessions. First2layout failures
+are still historical; this is no new geometry redesign or attempt-count reset.
+
+![Actual Carl incapacitated in final route, Donut still acting](attempts/patrol-single-weaken/pilot-carl-down.png)
+
+Fresh Save originally succeeded but an extra overwrite confirmation reopened the
+nearby NPC; [failed capture](attempts/fresh-save-extra-input/saved.png) retained.
+Fresh empty files now receive only their2actual confirmations. Existing files
+require the warning paragraph to advance before overwrite confirmation;
+[earlier prompt/timing failure](attempts/overwrite-warning/saved.png) retained.
+The ordinary matrix and fresh/manual Save acceptance pass with corrected inputs.
+The observer now checks true script shutdown as well as field lock/callback;
+this stronger check remains, but was not the cause of that extra-input failure.
+
+Earlier logical-state passing evidence and blank rejection UI are preserved in
+[initial state review](initial-state-review.md), `ordinary`,
+`boundaries-before-ui-fix` and the original failed captures/attempts. The UI defect
+is now fixed and runtime verified. No prior raw build/input/save was deleted.
+
+## Commands and next action
+
+Use the pinned toolchain environment from [testing](../../../testing.md), including
+DCC_TEST_CFLAGS and DCC_TEST_LDFLAGS. Current raw paths are local ignored artifacts:
 
 ```sh
-DCC_G01E_BUILD=/absolute/path/to/fresh-committed-build \
-python3 scripts/test-f1-g01e-migration.py
-DCC_G01E_ORDINARY_RUN=/absolute/path/to/accepted-ordinary-run \
-python3 scripts/test-f1-g01e-boundaries.py
+DCC_G01E_BUILD=artifacts/floor1/g01e/live-oy70wecu python3 scripts/test-f1-g01e-migration.py
+DCC_G01E_ORDINARY_RUN=artifacts/floor1/g01e/ordinary-24wjwxed python3 scripts/test-f1-g01e-boundaries.py
+DCC_G01E_ORDINARY_RUN=artifacts/floor1/g01e/ordinary-24wjwxed python3 scripts/test-f1-g01e-live.py
 python3 scripts/test-f1-g01e-relocation-cells.py
 ```
 
-Next: fresh9924307 build; repeat ordinary and readable rejection matrix; exact-C
-all-old-cell support check; stock nonmember boundary; fresh start, both patrol
-orders/travel, actual duo win/one-down/both-down/zero-walk retry, live loop in both
-directions with Save/cold reload, reward/quest/craft/stairs repeats and full-cell
-loads before review/merge. No native art rollout, human pacing, finalT/fullFloor1
-completion, scheduler/duplicate task or public playable release.
+Last command for live routes intentionally fails the Guard assertion in
+Howler-first; no complete live summary is produced. All5clean build attempts,
+ordinary/control matrices, `gameplay-8gfum35y`, `gameplay-o33yiddl`,
+`gameplay-xtgzgi9h`, all earlier input failures and original saves remain local.
+No ROM/save/ELF/executable products are in source commits. Full raw build/setup
+logs retain upstream command trailing whitespace and ELF section blank terminator;
+source/docs whitespace review excludes these immutable log files. Completed fresh
+and Guard-first flash files independently decode to expected map/position/version1
+and trial flag, with valid sector checksums; [read-only results](verified-state/manual-flash-check.json).
+This is not an additional emulator session or fresh cold-Quiet check.
+
+Keep PR75 draft/unmerged and dependent V01 rollout stopped. Preserve these traces
+for an evidence-led resource/AI/timing diagnosis under the accepted C01 scope;
+**do not launch a fourth blind strategy or silently change balance**. Pending live
+loop persistence, pre-boss travel, quest/trap/craft/repeat/boss/recovery/stairs/all5
+cold-word matrix were not reached by the stopped driver and are not claimed.
+Independent original navigation/dialogue preparation is recorded in
+[navigation copy audit](../../../floor1/g01/navigation-copy-audit.md); old direction
+and full-floor completion text must be corrected before adoption acceptance.
+FinalT and all nine districts, native-art/motion/human pacing remain pending.
+Donut correction source remains pending approval; no retry/workaround.

@@ -1,3 +1,44 @@
+Current2026-10-07: **F1-G01e partial runtime verified; complete route blocked.**
+Issue74 / **draftPR75**, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
+Compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, ROM SHA256
+6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb;
+runner1e556a257cd50744ca59f9e7cc63d1f0e7c3703c, identical engine diff.
+48ordinary controller/Save/secondcold sessions471assertions;21controlled boundaries
+72assertions;69emptyerrors, all16originals unchanged. Readable unsupported warning,
+file-unchanged acknowledgement and menu return now pass actual capture review.
+Exact-C8694+5+15 host sanitizer vectors are supplementary, not runtime/stock-save
+proof;25generatedfiles reproduce twice, all6legacy source trees unchanged.
+Three accepted partial live sessions3162assertions: fresh note/supply/trial/Save;
+Guard-first actual2wins/recovery/travel/Save/cold full3072words. Guard14/224 and
+Howler34/544 walking ceilings unchanged. No complete live-matrix summary or merge.
+[Sources, commands, all traces/captures, limitations](evidence/floor1/g01e/README.md).
+
+**Stop boundary: three materially different full Howler-first strategies did not
+complete.** Offence lostHowler (2enemyHP left); three-turn BRACE/WEAKEN lostHowler
+(19left); singleWEAKEN wonHowler, then laterGuard offence lost (7left). Exact third
+failure is flag2136, not2137. Local losses recover for free; no engine impossibility,
+critical-hit-message proof, stat/health/PP change or universal balance claim.
+Rawgameplay-8gfum35y/o33yiddl/xtgzgi9h and all failures/inputs/saves preserved.
+Do not launch a fourth blind strategy; retain PR75 draft and stop dependentV01.
+Pending live loop/persistence/preboss/quest/trap/craft/repeats/boss/retry/stairs/all5
+cold-word routes were not reached by the stopped driver. FinalT/fullG01 pending.
+Fresh Save extraA reopenedNPC after a successful write; overwrite warning needs
+its page advanced. Both host-input corrections verified; no saved-game defect.
+
+Independent work: original [navigation copy audit](floor1/g01/navigation-copy-audit.md)
+prepared. Old shared directions/Journal completion text must be corrected before
+adoption, with legacy source preserved and real NPC/Journal window checks.
+Next action: read currentPR75/head + this checkpoint, diagnose preserved encounter
+traces/resource/AI/timing under acceptedC01 scope before any further strategy or
+balance change; no blind attempt-count reset. Navigation/dialogue preparation is
+independent. No current build/emulator process or overlapping writer. SameCloud
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent sole continuation/quota owner, last
+reported09:12UTC11%used/89%remaining (soft sampled, not current/hard cap).
+No new workflow/scheduler/task/public release; Donut-v2 source stillPENDING approval,
+no retry/workaround. Full nine-district Floor1 remains incomplete.
+
+## Earlier checkpoint (superseded by results above)
+
 Current2026-10-07: **F1-G01e runtime state passes; readable rejection pending.**
 Issue74, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
 Production compiledf7cb7f421b033dca84fb91de633452401d377e4f; hashb4e15f83…d876a.

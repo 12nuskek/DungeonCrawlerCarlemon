@@ -1,91 +1,60 @@
-# F1-G01b recovery travel — continuation brief
+# F1-G01c live relocation/migration — next focused task
 
-Issue63. Branch `task/floor1-g01b-recovery-travel`.
-Current base `abb77feb339e67b2ced92531985c49bb4731684d`, merged source repairPR65.
-G01a originally merged PR62 at535b080; original evidence remains archived.
-Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.
-This checkpoint adds no new Cloud task, scheduler or implementation writer.
+Issue63 remains open. Third diagnostic geometry PR69 passes15sessions/8916,
+74pixel matches and41negative measurement-gate cases. Authoritative PR merge
+state/commit must be reconciled first. Current branch
+`task/floor1-g01b-coordinated-layout`; baseed592e7; source identities and full
+accepted evidence: docs/evidence/floor1/g01b/third/README.md.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, sole writer. Parent owns
+one continuation and quota sampling; no new writer/task/scheduler. Parent art
+staging relinquished all writes; no handoff pause remains. PR66 audit and PR68
+reference assets merged. Native animation/art rollout remains pending; optional
+Donut source absent/PENDING platform approval, no retry/workaround.
 
-## Problem and narrow outcome
+## Outcome and boundary
 
-The tested candidate supports64×48 field/camera/buffer/save operation, but is
-rejected for live adoption. Field-only Guard/Howler waypoint→hub-door lengths
-are24/37steps versus14/19steps in verified old encounter→guide outbound routes.
-The field numbers exclude the unfinished interior and therefore already fail.
-Co-design shorter hub/bay geography and compact-interior arrival/guide anchors;
-keep all original D1 beats, both patrol orders, free recovery and optional branches.
+The third coordinated field+Quiet+Warden diagnostic passes travel/camera/widths,
+both approach orders, fixed closed/open loop, ordinary save/cold on all3 maps,
+loaded cells and scene budgets. Production geometry/content is still original.
+Now audit and allocate explicit full IDs and legal persistent layout-version/loop
+state, then implement/review idempotent migration before live adoption. Separate
+high-risk save/identity work from subsequent content/art relocation where practical.
+No save ABI expansion, battle/resource tuning, new floor or native art rollout.
 
-Start by recording ordinary same-starting-encounter roundtrips and walking time
-on retained production; old guard-rest/boss-rest routes return to a different
-next encounter, so their outbound measurements do not prove that roundtrip.
-The guide approach in the old interior is five walking steps from its west warp.
-A compact-interior redesign may move the guide nearer the arrival, but must keep
-safety, Donut staging and the trial alcove clear and explicitly migrate old saves.
-Shorten the geometry before tuning resources, HP, encounters or balance.
+First inspect current main/PR69, checkpoint, baseline-register.json and exact
+third contract. Numeric audit must follow aliases and raw IDs, not UNUSED labels.
+Old0x23–0x30 flag aliases are already DCC-owned. Trainer901 maps to0x885 system
+space and is never a valid battle allocation; existing855–859 remain unchanged.
+Reserved unused VAR candidates were only preliminarily read, not allocated.
 
-## Ready inputs and exact next action
+Map every old6-room position/event/localID/warp/template/script/presentation and
+flag outcome to legal reviewed destinations. Remaining workshop/exit interiors
+must meet widths and be counted once before finalT. Do not silently change the
+third accepted guide/bay/arena travel anchors or rebase area. Frozen ceilings:
+Guard28steps/448activeframes,Howler38/608,preboss46/735; diagnostic14/224,34/544,
+44/703 respectively. No resource relaxation; preserve zero-walk local defeat retry.
 
-Retained production: `artifacts/floor1/a01/run-I7PJq0/production.gba`, SHA256
-`5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230`.
-Its ordinary `howler-pending.sav` was copied after Guard victory and before guide
-recovery. `boss-loss.sav` was copied after Howler clear/recovery and before boss
-loss; ordinary navigation back through the boss doorway can seed a cleared
-Howler starting point. Inspect positions/flags from actual cold loads before
-using either; never mutate save bytes/RAM or infer a fixture state from a name.
-Keep all failed inputs/logs. Use copied saves, not the preserved originals.
+Migration must execute before LoadSaveblockMapHeader/GetMapLayout on Continue.
+Handle mapLayoutID, location/player pos, active saved objects and templates,
+localIDs/scripts/gfx, every saved warp, map-view cache and idempotent second save/
+cold. Keep all flags/inventory/party/quest/reward/boss outcomes. Explicit version
+policy, legal fallback and fresh-save version stamping required. Preserve old
+opening completion separately from futureD9 ending. Test ordinaryI01/corner/
+quest/reward/boss saves plus meaningful controlled boundaries; never substitute
+API probes for actual migrated cold/re-entry/play routes. Preserve existing
+behavior assertions when retiming routes and isolate fixtures from production.
 
-Read `docs/evidence/floor1/g01/travel-review.json`, old `guard-rest`/`boss-rest`
-routes and logs first. Capture ordinary return to the same starting encounter,
-separate active walking from menus/dialogue/idle/warp transitions, and freeze
-comparison ceilings. Then make one coordinated geometry/interior revision,
-review clear widths and shortest paths statically, and run ordinary emulator
-approaches/returns before committing live relocation. Existing preview driver
-uses explicit accepted counts and must be reconciled deliberately for revised
-routes; do not silently overwrite the archived4718908 candidate or its logs.
+Keep implemented/compiled/runtime verified/merged separate. New focused task
+brief and draft PR before risky scope expands. Compile from fresh committed
+snapshots, actual emulator checks, source/diff review, push and verified scoped
+merge. FinalT/fullG01/fullFloor1 remain pending. No public playable release.
 
-Two travel layouts were examined during G01a: initial boss/hub doors were far
-apart; the revised tested candidate shortened that pair but still fails patrol
-recovery. Preserve this history and do not restart retry accounting. Avoid more
-isolated door guesses. If the coordinated next design fails materially, stop
-dependent live migration/art and continue a concrete independent audit/content
-item rather than repeating the same layout or claiming the gate passed.
+## Retry history
 
-## Acceptance before live adoption
-
-- Main paths5–7clear metatiles, side paths3–4, junctions8–12, after actors/props;
-  brief thresholds allowed, no hidden long narrow connector.
-- Both patrol orders, retreat, cleared re-entry and return-loop traversal work;
-  no new patrol lock and no loop traversal grants trial/patrol completion.
-- Actual same-encounter hub roundtrips/recovery ceilings pass; preserve existing
-  local defeat retry (zero walking). Capture native camera and continuous motion.
-- Include compact interior arrival/guide/trial/exit anchors and measurable trips.
-- FinalT remains null until reviewed final field+interiors; then count unique
-  reachable collision-valid cells consistently, including interiors once.
-
-After geometry passes, allocate explicit full map IDs and loop/layout-version
-state using numeric audits. Save migration must precede old-layout lookup and
-handle layoutID, position, object templates/localIDs/scripts/graphics, active
-objects, every warp and idempotent second save/cold. Old completion remains the
-opening milestone, separate from newD9 completion. Use all I01/corner/state
-fixtures and full relevant regression; no save ABI expansion in this increment.
-
-No production/gameplay change has started on this continuation branch. Recovery
-audit now passes5sessions/57assertions; exact observed ceilings and ordinary routes
-are in docs/evidence/floor1/g01b/baseline and scripts/contracts/f1-g01b-recovery.json.
-Guard roundtrip28steps/448activeframes; Howler38/608; pre-boss46/735.
-No new compile claim: retained C5 production ROM replayed. Third layout not started.
-
-At the next pushed checkpoint, repository writes pause for parent to stage only
-added native battle keypose candidates/scripts/provenance on a dedicated branch.
-Resume only after parent relinquishes that write handoff. Do not import engine art
-or retry the exhausted Library downloader. Candidate art is not runtime animation.
-Then co-design one third field/interior geometry, statically verify clear widths
-and warp-safe shortest paths, and compile fresh committed diagnostic snapshots.
-After travel passes, numeric ID/state audit and legal idempotent migration follow.
- Full G01 and the nine-district Floor1 remain incomplete; V01 art
-rollout is dependency blocked by recovery travel. Continue autonomously within
-this scope; parent can request a quota checkpoint pause under the soft safeguard.
-
-Issue64 fresh-source provenance repair is merged viaPR65; this branch was
-fast-forwarded to that main. Whole-engine DCC_G01_CACHE is forbidden;
-use fresh committed snapshots and separately pinned DCC_CACHE only.
+Two materialG01a layouts failed patrol recovery. Third coordinated geometry
+passes; do not restart or invent a new attempt. Host-driver/capture/facing and
+one pkg-config environment correction are separately recorded, all failed raw
+runs kept. Peak observer matching failures corrected; final2sessions pass.
+If a material live migration/adoption blocker reaches three different failed
+fixes, stop its dependents and take concrete independent native-animation/content
+work using PR68 candidates with the partial-source caveat, not repeated geometry.

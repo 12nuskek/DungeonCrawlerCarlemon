@@ -1,0 +1,6 @@
+{
+  "compiled_source": "d71a5d9d52b427925705f6da12d8b38007da9ffb",
+  "original_build": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01b/third-2vwklv4m/closed/build.log",
+  "sha256": "a634b9129763fc9b896c6b455d0dee79566f7510eadc7aacc9d6cc608eaa0d1a",
+  "method": "Replay original clean committed diagnostic ROM; engine/shared harness/contract/exporter/walking source diff verified empty. Fresh committed source/export identities independently match; no engine/cache inputs copied."
+}

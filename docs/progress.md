@@ -1756,3 +1756,49 @@ relinquishment. Then one coordinated third layout, fresh committed diagnostics,
 actual same-encounter and pre-boss travel compared against both frozen ceilings.
 No live adoption or art rollout until geometry gate; migration/ID audit thereafter.
 Parent official quota06:59UTC9%used, soft sampled safeguard; no quota blocker.
+
+### F1-G01b coordinated third geometry accepted — 2026-10-07
+
+Parent explicitly relinquished all art staging writes; sole implementation writer
+resumed same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000. Quota parent07:36UTC
+9%used/91%remaining, soft sampled guard. PR66 audit mergede1847cc53d1c49382f8f2e2e99437b2f61e940a8;
+PR68 reference assets mergeded592e7cee7a9976579b040720a6195c54ec2268 after
+independent250+180checks/native comparison. Donut correction master remains
+ABSENT/PENDING platform approval; no workaround/download or full regeneration
+claim. Warden smaller than approved baseline; live scale/HUD/animation pending.
+
+Issue63 /draftPR69, branch task/floor1-g01b-coordinated-layout, baseed592e7.
+Closed clean compile d71a5d9d52b427925705f6da12d8b38007da9ffb, ROMa634b912…d1a;
+open clean compile01042e461ba533015e238f32db48732a5a3a1eab, ROMefa1b963…05bc.
+Fresh committed snapshots, no external engine caches. Engine/shared harness unchanged.
+Runtime replaycb887e50294aba9d9da8a13e31ab789b4ee0cc4a:13/8397 passes.
+Strict gate87b44ba41b1d6a5097297351ef120b4dc4d8d62a audits13 real logs and rejects
+41negative cases, including BOTH missing measurements, duplicates/unexpected names.
+Scene observer58ed18e:2/519 passes,74captures exactly match; peak6objects/10sprites.
+Total15/8916,15empty errors. Full ordinary save/cold buffers:7040cell checks.
+Active walking: Guard14steps/224frames versus28/448;Howler34/544 versus38/608;
+preboss44/703 versus46/735. Both approach orders and loop variants pass. Static
+far→central31closed/25open; actual blocker/open traversal. Fixed variants only,
+no persistent loop-state acceptance. Native actual752frame motion includesidle.
+EWRAM249700,IWRAM30892,save blocks15752/3884 unchanged. FinalT null.
+
+Full raw runs third-2vwklv4m,third-1ttuds51,third-b8mktgfb,third-qywt1a9l and
+scene-_2k002d_ plus earlier observer failures preserved under artifacts/floor1/g01b.
+Original missing-PKG_CONFIG build.log and corrected build-retry-01.log separate.
+Travel-driver filename/warp-facing/manual-loop timing corrected without geometry
+changes; static hand-count crossed warp, corrected metric31without moving layout.
+Observer frame-loop matching failures retained; scoped loop insertion passes.
+These are host/build corrections, not a third material layout failure. Geometry
+attempt3 passes; two prior rejected layouts preserved. No failure counts reset.
+Source11687inputs/312C audited, only four declared fixture core files modified;
+Git-canonical hashes account explicitly for existing CRLF palette/PowerShell attrs.
+
+Commands test-f1-g01b-coordinated.py (fresh builds, then exact-ROM replay),
+test-f1-g01b-measurements.py and test-f1-g01b-scenes.py; commands/env/identities,
+selected full logs/routes/captures/clip in docs/evidence/floor1/g01b/third.
+Implemented/compiled/runtime verified scoped diagnostics; ready for reviewedPR69
+integration. Live old-content relocation/map-state allocation/migration/persistent
+loop/remaining interiors/finalT and fullG01 incomplete. No new workflow/scheduler.
+Next: audit legal full IDs/layout-version/loop state and design exact idempotent
+legacy migration before production geometry adoption; preserve allI01/corner/
+quest/reward/boss fixtures and all behavior assertions. V01 rollout stays gated.

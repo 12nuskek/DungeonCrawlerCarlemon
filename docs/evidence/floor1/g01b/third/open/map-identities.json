@@ -1,0 +1,26 @@
+[
+  {
+    "key": "field",
+    "map_group": 35,
+    "map_num": 0,
+    "layout_id": 448,
+    "blockdata_sha256": "c16a4c5e7d17ede71c78a54761f72e94a5874f0330b396d1ecdee0f1bc4d3d68",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "quiet",
+    "map_group": 35,
+    "map_num": 1,
+    "layout_id": 449,
+    "blockdata_sha256": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+    "diagnostic_nonmember": true
+  },
+  {
+    "key": "boss",
+    "map_group": 35,
+    "map_num": 2,
+    "layout_id": 450,
+    "blockdata_sha256": "562158b17e8ea5f10b401ed4fa16f184e2f62a446272184fb57db73fe2d3a294",
+    "diagnostic_nonmember": true
+  }
+]

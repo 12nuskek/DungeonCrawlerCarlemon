@@ -1,0 +1,44 @@
+{
+  "geometry_attempt": 3,
+  "two_previous_G01a_layouts": "Preserved; rejected live recovery travel. No reset.",
+  "third_result": "Diagnostic field+two-interior geometry passes; no live adoption claim.",
+  "preserved_raw_runs": [
+    {
+      "run": "third-2vwklv4m",
+      "source": "d71a5d9",
+      "result": "Clean closed compile;109 runtime assertions then filename underscore rejected. Closed ROM retained."
+    },
+    {
+      "run": "third-1ttuds51",
+      "source": "88edd1b",
+      "result": "Closed patrol/width/cold sessions pass;preboss extra tile from forgotten warp facing."
+    },
+    {
+      "run": "third-b8mktgfb",
+      "source": "01042e4",
+      "result": "Closed6 pass;open missing PKG_CONFIG build failure preserved in build.log. Corrected environment build-retry-01.log passes;open extra manual loop tile. Both ROMs retained."
+    },
+    {
+      "run": "third-qywt1a9l",
+      "source": "cb887e5",
+      "result": "13/8397 passed on identical binaries with fresh committed export identity checks; no engine cache."
+    },
+    {
+      "run": "scene-aovwvr5v",
+      "result": "Host insertion matched multiple frame calls; no game run."
+    },
+    {
+      "run": "scene-rbujrxrf",
+      "result": "Same insertion ambiguity after latent symbol declaration correction; no game run."
+    },
+    {
+      "run": "scene-pbww6tyo",
+      "result": "Generic call still ambiguous; no game run."
+    },
+    {
+      "run": "scene-_2k002d_",
+      "result": "Scoped walking-loop observer2/519 passes;74 exact capture matches."
+    }
+  ],
+  "retry_scope": "Three travel-driver corrections passed; one environment correction passed. Scene host insertion scoped successfully; all earlier logs retained. These are not material layout redesigns."
+}

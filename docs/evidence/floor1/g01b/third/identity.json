@@ -1,0 +1,19 @@
+{
+  "base": "ed592e7cee7a9976579b040720a6195c54ec2268",
+  "closed_compiled": "d71a5d9d52b427925705f6da12d8b38007da9ffb",
+  "open_compiled": "01042e461ba533015e238f32db48732a5a3a1eab",
+  "runtime_runner": "cb887e50294aba9d9da8a13e31ab789b4ee0cc4a",
+  "measurement_validator": "87b44ba41b1d6a5097297351ef120b4dc4d8d62a",
+  "scene_observer": "58ed18ecaa86a7c572ae641f486a7a3db02cb3bd",
+  "sessions": 15,
+  "assertions": 8916,
+  "measurement_negative_cases": 41,
+  "scene_capture_pixel_matches": 74,
+  "ewram_bytes": 249700,
+  "iwram_bytes": 30892,
+  "saveblock1_bytes": 15752,
+  "saveblock2_bytes": 3884,
+  "final_T": null,
+  "production_unchanged": true,
+  "persistent_loop_and_migration": false
+}

@@ -15,6 +15,11 @@ bool8 DccIsMap(u8 mapGroup, u8 mapNum)
     case MAP_DCC_CORRIDOR:
     case MAP_DCC_BOSS:
     case MAP_DCC_EXIT:
+    case MAP_DCC_F1D1FIELD:
+    case MAP_DCC_F1D1QUIET:
+    case MAP_DCC_F1D1WORKSHOP:
+    case MAP_DCC_F1D1WARDEN:
+    case MAP_DCC_F1D1CHECKPOINT:
         return TRUE;
     }
     return FALSE;

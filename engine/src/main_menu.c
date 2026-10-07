@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
 #include "constants/rgb.h"
@@ -38,6 +39,15 @@
 #include "title_screen.h"
 #include "window.h"
 #include "mystery_gift_menu.h"
+
+EWRAM_DATA static bool8 sDccUnsupportedSave = FALSE;
+static const u8 sDccUnsupportedSaveText[] = _("This save uses an unsupported\nlayout. Continue is unavailable.\pYour saved file was not changed.");
+
+void CB2_DccUnsupportedSave(void)
+{
+    sDccUnsupportedSave = TRUE;
+    SetMainCallback2(CB2_InitMainMenu);
+}
 
 /*
  * Main menu state machine
@@ -625,6 +635,15 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 
 static void Task_MainMenuCheckSaveFile(u8 taskId)
 {
+    if (sDccUnsupportedSave && !gPaletteFade.active)
+    {
+        sDccUnsupportedSave = FALSE;
+        gTasks[taskId].tMenuType = HAS_SAVED_GAME;
+        gTasks[taskId].tItemCount = HAS_SAVED_GAME + 2;
+        CreateMainMenuErrorWindow(sDccUnsupportedSaveText);
+        gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
+        return;
+    }
     s16 *data = gTasks[taskId].data;
 
     if (!gPaletteFade.active)

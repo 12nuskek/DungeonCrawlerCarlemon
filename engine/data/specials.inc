@@ -543,3 +543,4 @@ gSpecials::
 	def_special DccApplyServiceTrap
 	def_special DccRestoreMapPresentation
 	def_special DccRefreshMapPresentation
+	def_special DccTryOpenReturnLoop

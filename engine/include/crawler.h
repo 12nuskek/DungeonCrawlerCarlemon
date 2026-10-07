@@ -5,6 +5,9 @@
 // Membership is explicit: map numbers and trainer ranges are not identities.
 bool8 DccIsMap(u8 mapGroup, u8 mapNum);
 bool8 DccIsEncounter(u16 trainerId);
+bool8 DccContinueSupported(void);
+bool8 DccMigrateContinue(void);
+void DccTryOpenReturnLoop(void);
 void InitCrawlerParty(void);
 void DccApplyServiceTrap(void);
 void DccRestoreMapPresentation(void);

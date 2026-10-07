@@ -1,0 +1,22 @@
+{
+  "compiled_source": "a52de748f89e82c39f97361b2295d72c88b69856",
+  "runner_source": "821e0733cc1585f53cade3717967a5e4055c61eb",
+  "rom_sha256": "baf67ceb9b39e151673af2fed480651d1d2ce799a050e2a8df5ee2f06c276b82",
+  "baseline": false,
+  "sessions": [
+    {
+      "route": "ordinary-pickup",
+      "assertions": 57,
+      "emulator_errors": 0
+    },
+    {
+      "route": "cold-repeat-and-traversal",
+      "assertions": 15,
+      "emulator_errors": 0
+    }
+  ],
+  "original_unchanged": true,
+  "cold_file_unchanged": true,
+  "collision_elevation_and_behavior_unchanged": true,
+  "method": "Actual ordinary controller interactions, traversal, re-entry, manual Save and cold load. No injected flags, resources or ROM fixtures. Complete raw logs/saves remain local."
+}

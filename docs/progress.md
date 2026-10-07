@@ -1,3 +1,33 @@
+Current checkpoint —2026-10-08 Australia/Brisbane: F1-G01e-SF implemented,
+compiled and runtime verified; publication/integration pending final callback.
+Sole writer in /workspace/dcc-feedback, branch task/floor1-g01e-feedback, based
+on remote16d7012; old unpublished diagnostic ancestry remains separate in
+/workspace/DungeonCrawlerCarlemon and must not be merged/pushed. Same Cloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation and sampled quota.
+No new task, scheduler, overlapping writer, public playable release or main merge.
+
+Candidate compileda52de748f89e82c39f97361b2295d72c88b69856;
+ROM SHA256baf67ceb9b39e151673af2fed480651d1d2ce799a050e2a8df5ee2f06c276b82.
+Baseline and candidate each2 ordinary sessions/72 assertions. Empty emulator errors,
+original/cold-copy hashes unchanged, two-way traversal and full collision/elevation/
+movement behavior preserved. Immediate/re-entry/cold panel pixels match exactly;
+available/resolved differ.2076 source files reproduce byte-identically. Legacy
+maps, reward scripts, save ABI, assets and combat unchanged. Actual screenshots,
+commands, failed attempts and limitations: [evidence](evidence/floor1/g01e/feedback/README.md).
+Raw build/runner logs, saves and detailed state remain local; no rejected diagnostic
+payload, alternate encoding or raw-log history is published. Build dependency paths
+and inode exhaustion were resolved; this duplicate worktree is sparse, original
+checkout and all previous evidence preserved. No current build/emulator after tests.
+
+PR75 remains draft/unmerged at16d7012 and mainb694da1 unless final callback records
+otherwise; scoped draft PR and issue will cross-link to75. Relevant scoped assertions
+pass; full PR75/runtime/finalT/full-floor gates and three combat strategy failures
+remain unchanged. Exact next task: F1-G01e-NC original live navigation/Journal copy,
+full-identity script dispatch with archived legacy semantics/state/rewards preserved.
+Do not start broader rollout or claim a fresh-save completion from this narrow test.
+
+## Preserved previous checkpoint
+
 Current2026-10-07: **F1-G01e partial runtime verified; complete route blocked.**
 Issue74 / **draftPR75**, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
 Compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, ROM SHA256

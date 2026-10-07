@@ -1,0 +1,20 @@
+{
+  "scope": "Native unobscured floor-panel pixels only; no save-state dump.",
+  "panel_crop": [
+    112,
+    40,
+    128,
+    56
+  ],
+  "available_and_resolved_differ": true,
+  "resolved_matches": [
+    {
+      "capture": "ordinary-pickup/reentered.png",
+      "resolved_panel_pixels_match": true
+    },
+    {
+      "capture": "cold-repeat-and-traversal/cold-resolved.png",
+      "resolved_panel_pixels_match": true
+    }
+  ]
+}

@@ -76,16 +76,16 @@ shutil.copyfile(original, save)
 r = routes.Route(spec, geometry, 'field', (37, 31), 1, 7)
 r.lines += ['flag 45 0', 'item 18 0', f'tile 55 42 {off}']
 # The ordinary route crosses the panel before interacting, proving it is floor.
-r.follow((55, 43))
+r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.step(40, 0, 'available.ppm')
 r.talk(64, 'pickup-dialog')
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
 r.step(40, 0, 'resolved.ppm')
 r.talk(64, 'repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
-r.follow((55, 41)); r.follow((55, 43))
+r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.anchor('quiet_door'); r.anchor('donut_staging'); r.anchor('arrival')
-r.follow((55, 43))
+r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
 r.step(40, 0, 'reentered.ppm')
 r.save()
@@ -100,7 +100,7 @@ r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
 r.step(40, 0, 'cold-resolved.ppm')
 r.talk(64, 'cold-repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
-r.follow((55, 41)); r.follow((55, 43))
+r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 run('cold-repeat-and-traversal', cold, boot + r.lines)
 assert digest(cold) == cold_hash and digest(original) == original_hash
 (out / 'summary.json').write_text(json.dumps({'compiled_source': compiled, 'runner_source': head, 'rom_sha256': digest(rom), 'baseline': args.baseline, 'sessions': summary, 'original_unchanged': True, 'cold_file_unchanged': True, 'collision_elevation_and_behavior_unchanged': True, 'method': 'Actual ordinary controller interactions, traversal, re-entry, manual Save and cold load. No injected flags, resources or ROM fixtures. Complete raw logs/saves remain local.'}, indent=2) + '\n')

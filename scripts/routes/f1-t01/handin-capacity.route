@@ -1,0 +1,159 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+expect 34 0 4 8 1
+step 132 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 landing.ppm
+expect 34 1 12 4 1
+step 164 32 -
+step 180 0 service.ppm
+expect 34 2 2 4 1
+step 20 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+expect 34 2 4 6 1
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 offer-one.ppm
+step 1 1 -
+step 400 0 offer-choice.ppm
+step 1 1 -
+step 400 0 accepted.ppm
+flag 42 1
+policy 3
+item 378 98
+step 1 1 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+step 116 16 -
+step 40 0 -
+expect 34 2 11 3 1
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 fixture-tag.ppm
+item 379 1
+flag 44 1
+step 1 1 -
+step 120 0 -
+step 116 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+expect 34 2 4 6 1
+step 1 1 -
+step 400 0 quest-full.ppm
+flag 43 0
+item 379 1
+item 378 98
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 handin-full-return-main.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 handin-full-return.ppm
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 2 -
+step 120 0 -
+flag 44 1
+flag 43 0
+item 379 1
+item 378 98
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 nearly-full-stack.ppm
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 tossed-one.ppm
+step 1 1 -
+step 180 0 toss-confirmed.ppm
+item 378 97
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 capacity-retry.ppm
+flag 43 1
+item 379 0
+item 378 99
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 capacity-repeat.ppm
+item 378 99
+flag 43 1
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 600 0 capacity-saved.ppm
+expect 34 2 4 6 1
+quit

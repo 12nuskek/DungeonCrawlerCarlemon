@@ -13,9 +13,19 @@ DCC_Service_LoadDone:
 DCC_Service_Warning::
 	lock
 	faceplayer
+	goto_if_set FLAG_DCC_TRAP_SPENT, DCC_Service_WarningSpent
 	msgbox DCC_Service_Text_Warning, MSGBOX_DEFAULT
 	release
 	end
+DCC_Service_WarningSpent:
+	msgbox DCC_Service_Text_WarningSpent, MSGBOX_DEFAULT
+	release
+	end
+DCC_Service_Text_WarningSpent:
+	.string "The wire is spent. The switch burned out.\n"
+	.string "This crossing is safe now.\p"
+	.string "If still hurt, return to the guide.\n"
+	.string "Recovery costs nothing.$"
 DCC_Service_Text_Warning:
 	.string "DANGER: A live wire crosses the floor.\n"
 	.string "Walk around it. Both sides are clear.\p"

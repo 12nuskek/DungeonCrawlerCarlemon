@@ -1,0 +1,7 @@
+{
+  "tested_gameplay_commit": "eaf073d434a9347dfc2ed921f5f44d163563964b",
+  "production_sha256": "8e7e8c20c8dde66488d9374ec90e80391a02c255ad4a0a422e7392f04f1ccfb6",
+  "route_assertions": 25,
+  "method": "Ordinary copied wire save, existing mGBA harness; no save edits or game RAM writes. Captures reproduce wrong text while state assertions pass.",
+  "calibration": "First route tried walking north through existing warning sign. Preserved local t01-before-sign-obstruction; corrected route goes around it. Not a game defect."
+}

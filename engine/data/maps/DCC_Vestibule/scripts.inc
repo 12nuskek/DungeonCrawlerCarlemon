@@ -214,7 +214,11 @@ DCC_Journal_QuestDone:
 	msgbox DCC_Journal_Text_QuestDone, MSGBOX_DEFAULT
 	goto DCC_Journal_Close
 DCC_Journal_QuestActive:
+	goto_if_set FLAG_DCC_TAG_FOUND, DCC_Journal_QuestReturn
 	msgbox DCC_Journal_Text_QuestActive, MSGBOX_DEFAULT
+	goto DCC_Journal_Close
+DCC_Journal_QuestReturn:
+	msgbox DCC_Journal_Text_QuestReturn, MSGBOX_DEFAULT
 DCC_Journal_Close:
 	releaseall
 	end
@@ -248,8 +252,11 @@ DCC_Journal_Text_Optional:
 	.string "OPTIONAL: Mara has a job in the service\n"
 	.string "room. Neither it nor the trap is required.$"
 DCC_Journal_Text_QuestActive:
-	.string "MARA: Find her route tag in the northeast\n"
-	.string "service crate. Return it for spare scrap.$"
+	.string "MARA: Find the tag bag by the north wall\n"
+	.string "of the service room. Return it for SCRAP.$"
+DCC_Journal_Text_QuestReturn:
+	.string "MARA: You have the ROUTE TAG.\n"
+	.string "Return it to her for two SCRAP.$"
 DCC_Journal_Text_QuestDone:
 	.string "MARA: Route tag returned. Job complete.\n"
 	.string "Two scrap make one charge.$"

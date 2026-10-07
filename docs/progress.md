@@ -1623,3 +1623,18 @@ Private delivery succeeded; older Library version retained. Runtime blockers:non
 Human pacing/playtest pending; host HTML-preview limitation and partial source-kit
 omissions remain documented. Historical failed traces/retry counts remain intact.
 Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.
+
+### F1-T01 state text — 2026-10-07
+
+P01 PR54 merged984f89351fe273f4ba6813aaffd7b0e3f2721504. T01 issue55;
+base that merge, branch task/floor1-t01-state-text. Actual baseline25-check normal
+route shows stale find/crate wording before and after pickup, and live warning on
+spent wire. Candidate retains page counts, completed-quest priority, flags/rewards,
+geometry and save layout. Adds TAG_FOUND return objective and spent sign branch.
+No new gameplay systems. Full regression retains1315 original assertions and adds
+focused immediate/re-entry/cold text-state and capacity coverage:84 sessions/1393,
+including220 labeled fixture checks. New key-pocket-full fixture is isolated and
+not a production save. Candidate implemented; clean compile/runtime pending.
+Next commit candidate, run scripts/test-f1-t01.sh with mandatory legacy inputs,
+review actual text and original behavior, then scoped PR/merge. Library art blocker
+remains; no handoff writes active.

@@ -53,7 +53,7 @@ original=ROOT/'artifacts/floor1/a01/run-I7PJq0/both-pending.sav'
 for name,order in [('guard-first',['guard','howler']),('howler-first',['howler','guard'])]:
     save,sha=copied(name,original);r=R('field',(37,31));r.lines+=['flag 2136 0','flag 2137 0']
     for who in order:
-        r.anchor(who);fight(r,'fortify' if who=='howler' and order[0]=='howler' else 'offensive',2136 if who=='guard' else 2137)
+        r.anchor(who);fight(r,'weaken-first' if who=='howler' and order[0]=='howler' else 'offensive',2136 if who=='guard' else 2137)
         r.lines.append('measure start '+who+'-out');r.anchor('quiet_door');r.anchor('guide');r.lines.append('measure stop');heal(r)
         r.lines.append('measure start '+who+'-back');to_field(r);r.anchor(who);r.lines.append('measure stop')
     r.lines+=['flag 2136 1','flag 2137 1','flag 49 0'];r.save();states=run(name,save,boot+r.lines,travel=name);assert digest(original)==sha

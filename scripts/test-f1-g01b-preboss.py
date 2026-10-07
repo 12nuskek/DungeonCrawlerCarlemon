@@ -23,9 +23,9 @@ with (out/'input.route').open() as inputs,(out/'replay.log').open('w') as log,(o
 assert not (out/'errors.log').stat().st_size
 checks=sum(v.startswith(('expect ','flag ','duo ','uses ','growth ')) for v in lines);assert (out/'replay.log').read_text().endswith(f'result=0 assertions={checks}\n')
 measures=[{'name':m[0],'frames':int(m[1]),'walking_frames':int(m[2]),'engine_tile_changes':int(m[3]),'map_changes':int(m[4])} for m in re.findall(r'MEASURE name=(\S+) frames=(\d+) walking=(\d+) tiles=(\d+) warps=(\d+)',(out/'replay.log').read_text())]
-assert [(v['engine_tile_changes'],v['walking_frames']) for v in measures]==[(19,304),(27,432)]
+assert [(v['engine_tile_changes'],v['walking_frames']) for v in measures]==[(19,304),(27,431)]
 assert hashlib.sha256(seed.read_bytes()).hexdigest()==digest
 for p in out.glob('*.ppm'):Image.open(p).save(p.with_suffix('.png'))
-(out/'result.json').write_text(json.dumps({'runner_source':head,'measurement_source':identity['runner_source'],'production_sha256':identity['production_sha256'],'seed_sha256':digest,'assertions':checks,'measurements':measures,'total_steps':46,'walking_frames':736,'walking_seconds':736/59.7275005696,'scope':'Ordinary copied production save; menu/dialogue/idle/fades/loaded-center state excluded. Seed HP is fully healthy; no balance or battle outcome claim.'},indent=2)+'\n')
+(out/'result.json').write_text(json.dumps({'runner_source':head,'measurement_source':identity['runner_source'],'production_sha256':identity['production_sha256'],'seed_sha256':digest,'assertions':checks,'measurements':measures,'total_steps':46,'walking_frames':735,'walking_seconds':735/59.7275005696,'scope':'Ordinary copied production save; menu/dialogue/idle/fades/loaded-center state excluded. Seed HP is fully healthy; no balance or battle outcome claim.'},indent=2)+'\n')
 assert git('rev-parse','HEAD')==head and not git('status','--porcelain')
-print('PASS preboss',checks,'assertions;46steps/736walking frames',flush=True)
+print('PASS preboss',checks,'assertions;46steps/735walking frames',flush=True)

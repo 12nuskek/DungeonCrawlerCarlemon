@@ -1,0 +1,56 @@
+[
+  {
+    "file": "characters/references/carl-front.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/carl/front.png",
+    "repository_path": "docs/art-references/native-candidates/assets/carl/front.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "e5c901c21773c715727010c5ca19f2a9455a9f1f"
+  },
+  {
+    "file": "characters/references/carl-back.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/carl/back.png",
+    "repository_path": "docs/art-references/native-candidates/assets/carl/back.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "f1745035b1823853198f672a82d9131266841012"
+  },
+  {
+    "file": "characters/references/donut-front.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/donut/front.png",
+    "repository_path": "docs/art-references/native-candidates/assets/donut/front.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "36adaed64fe8998ed925680d1dd7690c66ee87d7"
+  },
+  {
+    "file": "characters/references/donut-back.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/donut/back.png",
+    "repository_path": "docs/art-references/native-candidates/assets/donut/back.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "3306501a6d10706694a2d7e011becf6843b9bae3"
+  },
+  {
+    "file": "characters/references/warden-front.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/opponent-native-candidates/assets/warden/front.png",
+    "repository_path": "docs/art-references/opponent-native-candidates/assets/warden/front.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "d464ddd1714d000fb61d02a872ad95de0ffd287a"
+  },
+  {
+    "file": "characters/references/carl-donut-original.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/carl-donut-proposed-replacement-reference-v2.png",
+    "repository_path": "docs/art-references/carl-donut-proposed-replacement-reference-v2.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "31e758a21a2dbf87206cfac613d9ec76cbd6435f"
+  },
+  {
+    "file": "environment/service-center-reference.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/evidence/n05/final/rooms/service-center.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "84649d87d7441fd8bdc33cf4b0067f5f5c7b49f6"
+  },
+  {
+    "file": "environment/landing-center-reference.png",
+    "source_url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/evidence/n05/final/rooms/landing-center.png",
+    "source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+    "git_blob_sha": "126918b5a58f62ea727aeecaeaa5dc95d156ba71"
+  }
+]

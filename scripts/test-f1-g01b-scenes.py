@@ -15,7 +15,7 @@ out=Path(tempfile.mkdtemp(prefix='scene-',dir=root/'artifacts/floor1/g01b'));pri
 code=(base/'walking.c').read_text();code=code.replace('maplayout=0, overworld=0, fade=0, addr;','maplayout=0, overworld=0, fade=0, sceneSprites=0, addr;')
 code=code.replace('unsigned measuring=0,','unsigned sceneFrames[3]={0}, peakObjects[3]={0}, peakSprites[3]={0};\n    unsigned measuring=0,')
 code=code.replace('if (!strcmp(symbol,"gBackupMapLayout"))','if (!strcmp(symbol,"gSprites")) sceneSprites=addr;\n        if (!strcmp(symbol,"gBackupMapLayout"))')
-point='                core->runFrame(core);';assert code.count(point)==1
+point='core->runFrame(core);';assert code.count(point)==1
 code=code.replace(point,point+'''
                 unsigned sceneSb=core->busRead32(core,saveptr), sceneMap=core->busRead8(core,sceneSb+5);
                 if (sceneSprites && core->busRead8(core,sceneSb+4)==35 && sceneMap<3

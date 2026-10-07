@@ -1,0 +1,7 @@
+{
+  "runner": "9acf8003627bb636ec026a30b2dfacae45c6eb68",
+  "compiled_source": "f7cb7f421b033dca84fb91de633452401d377e4f",
+  "rom_sha256": "b4e15f83331b2b29710bfe7eed399d676d9b9d59f7a9c8b7d45283f5a31d876a",
+  "ordinary_runtime": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01e/ordinary-8zhk2qkw",
+  "method": "Controlled copied checksum-valid save inputs; actual production cold Continue and read-only observer. No ROM fixture/RAM writes; not ordinary playthrough evidence."
+}

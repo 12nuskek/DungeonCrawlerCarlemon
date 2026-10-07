@@ -1,3 +1,25 @@
+Current2026-10-07: **F1-G01e runtime state passes; readable rejection pending.**
+Issue74, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
+Production compiledf7cb7f421b033dca84fb91de633452401d377e4f; hashb4e15f83…d876a.
+Runner9acf8003627bb636ec026a30b2dfacae45c6eb68:48 ordinary controller/Save/second
+cold sessions471assertions;21 controlled-state sessions54assertions;69emptyerrors.
+All16 old ordinary originals unchanged, all6maps; mandatoryI01/corner passed.
+Party/logicalinventory/outcomes/warps/objects/templates/camera/cache preserved/rebuilt.
+[Complete evidence, exact sources/commands and retained failures](evidence/floor1/g01e/README.md).
+Capture review found rejected-save message blank despite menu callback passes.
+Fix99243073ebead4ecd4fa9e4f4362d9e0d70c86df moves error after GPU window setup.
+Fresh992build live-oy70wecu running; no current emulator session or overlapping
+writer. Compile result pending. Runtime acceptance/PR/merge/finalT still pending.
+Next: complete current fresh build; rerun ordinary+readable reject/ack/menu matrix,
+exact-C alloldcells and stock boundary, live loop/battles/travel/content acceptance.
+All prior failing builds/source/saves preserved. Collision migration fix1 passes;
+UI issue firstfix pending; no new material geometry attempt. OneCloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation/quota. No scheduler,
+duplicate task, later floor or public playable release. Donut source stillPENDING
+approval; no source retry. Full nine-district Floor1 remains incomplete.
+
+## Earlier implementation checkpoint
+
 Current2026-10-07: **F1-G01e implemented; migration acceptance pending.**
 Issue74, branch task/floor1-g01e-live-migration, baseb694da1.
 Clean compiled2e810f676f9c60031382148055748e419340a729; ROM43178a36…46a11.

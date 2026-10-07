@@ -1,0 +1,2427 @@
+{
+  "engine_source": "b694da17928b93ea579f55d905017aa9f7619422",
+  "method": "Committed tracked inputs; host C preprocessor evaluates every FLAG_/VAR_ alias. Typed raw calls/opcodes, JSON state keys and all raw literals/direct saved-array references retained for human review. Dynamic indirect accesses require source review; this is not arbitrary C data-flow proof.",
+  "candidates": {
+    "layout_version": {
+      "value": 16462,
+      "hex": "0x404e",
+      "aliases": [
+        "VAR_UNUSED_0x404E"
+      ],
+      "symbol_references": [
+        {
+          "path": "engine/include/constants/vars.h",
+          "line": 98,
+          "text": "#define VAR_UNUSED_0x404E                                0x404E // Unused Var"
+        }
+      ],
+      "allocated": false
+    },
+    "opening_loop": {
+      "value": 49,
+      "hex": "0x31",
+      "aliases": [
+        "FLAG_UNUSED_0x031"
+      ],
+      "symbol_references": [
+        {
+          "path": "engine/include/constants/flags.h",
+          "line": 77,
+          "text": "#define FLAG_UNUSED_0x031    0x31 // Unused Flag"
+        }
+      ],
+      "allocated": false
+    }
+  },
+  "bounds": {
+    "TEMP_FLAGS_START": 0,
+    "TEMP_FLAGS_END": 31,
+    "DAILY_FLAGS_START": 2336,
+    "DAILY_FLAGS_END": 2399,
+    "TRAINER_FLAGS_START": 1280,
+    "TRAINER_FLAGS_END": 2143,
+    "SYSTEM_FLAGS": 2144,
+    "FLAGS_COUNT": 2400,
+    "TEMP_VARS_START": 16384,
+    "TEMP_VARS_END": 16399,
+    "VARS_START": 16384,
+    "VARS_END": 16639,
+    "VARS_COUNT": 256,
+    "MAX_TRAINERS_COUNT": 864
+  },
+  "owned_dcc_flags": {
+    "FLAG_DCC_ACH_DUO": 37,
+    "FLAG_DCC_ACH_READER": 36,
+    "FLAG_DCC_BOSS_CLEARED": 47,
+    "FLAG_DCC_CACHE_BLASTED": 46,
+    "FLAG_DCC_CRATE_READ": 33,
+    "FLAG_DCC_GUIDE_MET": 34,
+    "FLAG_DCC_INTRO_SEEN": 32,
+    "FLAG_DCC_LOOT_SCRAP": 39,
+    "FLAG_DCC_LOOT_SUPPLY": 38,
+    "FLAG_DCC_QUEST_ACCEPTED": 42,
+    "FLAG_DCC_QUEST_COMPLETE": 43,
+    "FLAG_DCC_QUEST_DECLINED": 41,
+    "FLAG_DCC_SECRET_TAKEN": 45,
+    "FLAG_DCC_SLICE_COMPLETE": 48,
+    "FLAG_DCC_TAG_FOUND": 44,
+    "FLAG_DCC_TRAP_SPENT": 40,
+    "FLAG_DCC_WRAP_TAKEN": 35
+  },
+  "typed_raw_candidate_uses": [],
+  "json_state_candidate_uses": [],
+  "raw_var_literals": [
+    {
+      "path": "engine/include/constants/vars.h",
+      "line": 98,
+      "text": "#define VAR_UNUSED_0x404E                                0x404E // Unused Var"
+    }
+  ],
+  "raw_flag_literals": [
+    {
+      "path": "engine/asm/macros/battle_ai_script.inc",
+      "line": 285,
+      "text": ".byte 0x31"
+    },
+    {
+      "path": "engine/asm/macros/contest_ai_script.inc",
+      "line": 305,
+      "text": ".byte 0x31"
+    },
+    {
+      "path": "engine/data/layouts/layouts.json",
+      "line": 3377,
+      "text": "\"width\": 49,"
+    },
+    {
+      "path": "engine/data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "line": 85,
+      "text": "goto_if_ne VAR_RESULT, 49, BattleFrontier_BattleTowerLobby_EventScript_LookForwardToChallenge"
+    },
+    {
+      "path": "engine/data/maps/MossdeepCity/map.json",
+      "line": 298,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route103/map.json",
+      "line": 30,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route104/map.json",
+      "line": 49,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route112/map.json",
+      "line": 63,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route112/map.json",
+      "line": 283,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route113/map.json",
+      "line": 435,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route115/map.json",
+      "line": 449,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route117/map.json",
+      "line": 109,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route117/map.json",
+      "line": 363,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route117/map.json",
+      "line": 371,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route119/map.json",
+      "line": 187,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route123/map.json",
+      "line": 407,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route123/map.json",
+      "line": 524,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route123/map.json",
+      "line": 771,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route124/map.json",
+      "line": 71,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route128/map.json",
+      "line": 177,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route132/map.json",
+      "line": 82,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route134/map.json",
+      "line": 30,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/Route134/map.json",
+      "line": 82,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/maps/RustboroCity/map.json",
+      "line": 561,
+      "text": "\"y\": 49,"
+    },
+    {
+      "path": "engine/data/maps/SootopolisCity/map.json",
+      "line": 117,
+      "text": "\"x\": 49,"
+    },
+    {
+      "path": "engine/data/script_cmd_table.inc",
+      "line": 67,
+      "text": "script_cmd_table_entry SCR_OP_PLAYFANFARE                   ScrCmd_playfanfare                    @ 0x31"
+    },
+    {
+      "path": "engine/include/AgbRfu_LinkManager.h",
+      "line": 58,
+      "text": "#define LMAN_MSG_LINK_LOSS_DETECTED_AND_START_RECOVERY   0x31    //    1        Bit indicating slot                -            Generated when a link cut is detected and the link recovery process starts. (Generated only when link recovery is ON.)"
+    },
+    {
+      "path": "engine/include/battle_message.h",
+      "line": 60,
+      "text": "#define B_TXT_TRAINER2_WIN_TEXT 0x31"
+    },
+    {
+      "path": "engine/include/constants/abilities.h",
+      "line": 53,
+      "text": "#define ABILITY_FLAME_BODY 49"
+    },
+    {
+      "path": "engine/include/constants/battle.h",
+      "line": 296,
+      "text": "#define MOVE_EFFECT_SP_ATK_MINUS_2      49"
+    },
+    {
+      "path": "engine/include/constants/battle_anim.h",
+      "line": 59,
+      "text": "#define ANIM_TAG_SPARKLE_2                  (ANIM_SPRITES_START + 49)"
+    },
+    {
+      "path": "engine/include/constants/battle_frontier.h",
+      "line": 175,
+      "text": "#define BATTLE_FRONTIER_ITEM_LANSAT_BERRY   49"
+    },
+    {
+      "path": "engine/include/constants/battle_frontier_mons.h",
+      "line": 53,
+      "text": "#define FRONTIER_MON_MAREEP         49"
+    },
+    {
+      "path": "engine/include/constants/battle_frontier_trainers.h",
+      "line": 53,
+      "text": "#define FRONTIER_TRAINER_YOSHI          49"
+    },
+    {
+      "path": "engine/include/constants/battle_move_effects.h",
+      "line": 53,
+      "text": "#define EFFECT_CONFUSE 49"
+    },
+    {
+      "path": "engine/include/constants/battle_string_ids.h",
+      "line": 49,
+      "text": "#define STRINGID_PKMNWASFROZEN              49"
+    },
+    {
+      "path": "engine/include/constants/battle_tent_mons.h",
+      "line": 53,
+      "text": "#define SLATEPORT_TENT_MON_TRAPINCH_2   49"
+    },
+    {
+      "path": "engine/include/constants/berry.h",
+      "line": 86,
+      "text": "#define BERRY_TREE_ROUTE_121_RAWST    49"
+    },
+    {
+      "path": "engine/include/constants/characters.h",
+      "line": 313,
+      "text": "#define BRAILLE_CHAR_U               0x31"
+    },
+    {
+      "path": "engine/include/constants/contest.h",
+      "line": 208,
+      "text": "#define COMBO_STARTER_MUD_SPORT     49"
+    },
+    {
+      "path": "engine/include/constants/decorations.h",
+      "line": 53,
+      "text": "#define DECOR_JUMP_MAT         49"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 134,
+      "text": "#define EC_WORD_STATIC        ((EC_GROUP_STATUS << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 245,
+      "text": "#define EC_WORD_LOSE         ((EC_GROUP_BATTLE << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 354,
+      "text": "#define EC_WORD_IT_S         ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 431,
+      "text": "#define EC_WORD_HOHOHO                      ((EC_GROUP_VOICES << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 496,
+      "text": "#define EC_WORD_AS_IF       ((EC_GROUP_SPEECH << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 558,
+      "text": "#define EC_WORD_BETTER         ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 629,
+      "text": "#define EC_WORD_SHOULD        ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 700,
+      "text": "#define EC_WORD_NATURAL       ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 771,
+      "text": "#define EC_WORD_THROW      ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/easy_chat.h",
+      "line": 898,
+      "text": "#define EC_WORD_HOLIDAY       ((EC_GROUP_HOBBIES << EC_MASK_BITS) | 49)"
+    },
+    {
+      "path": "engine/include/constants/event_object_movement.h",
+      "line": 53,
+      "text": "#define MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT 0x31"
+    },
+    {
+      "path": "engine/include/constants/event_object_movement.h",
+      "line": 136,
+      "text": "#define MOVEMENT_ACTION_SLIDE_DOWN                      0x31"
+    },
+    {
+      "path": "engine/include/constants/event_objects.h",
+      "line": 56,
+      "text": "#define OBJ_EVENT_GFX_SAILOR                      49"
+    },
+    {
+      "path": "engine/include/constants/field_effects.h",
+      "line": 53,
+      "text": "#define FLDEFF_ASH_PUFF                  49"
+    },
+    {
+      "path": "engine/include/constants/flags.h",
+      "line": 77,
+      "text": "#define FLAG_UNUSED_0x031    0x31 // Unused Flag"
+    },
+    {
+      "path": "engine/include/constants/flags.h",
+      "line": 609,
+      "text": "#define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2        (FLAG_HIDDEN_ITEMS_START + 0x31)"
+    },
+    {
+      "path": "engine/include/constants/flags.h",
+      "line": 1423,
+      "text": "#define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)"
+    },
+    {
+      "path": "engine/include/constants/flags.h",
+      "line": 1637,
+      "text": "#define FLAG_UNUSED_0x951                           (DAILY_FLAGS_START + 0x31) // Unused Flag"
+    },
+    {
+      "path": "engine/include/constants/game_stat.h",
+      "line": 53,
+      "text": "#define GAME_STAT_ENTERED_HOT_SPRINGS         49"
+    },
+    {
+      "path": "engine/include/constants/hold_effects.h",
+      "line": 53,
+      "text": "#define HOLD_EFFECT_DARK_POWER     49"
+    },
+    {
+      "path": "engine/include/constants/moves.h",
+      "line": 53,
+      "text": "#define MOVE_SONIC_BOOM 49"
+    },
+    {
+      "path": "engine/include/constants/opponents.h",
+      "line": 53,
+      "text": "#define TRAINER_DUSTY_4                      49"
+    },
+    {
+      "path": "engine/include/constants/script_menu.h",
+      "line": 60,
+      "text": "#define MULTI_GAME_CORNER_COINS            49"
+    },
+    {
+      "path": "engine/include/constants/songs.h",
+      "line": 55,
+      "text": "#define SE_TRUCK_MOVE               49 // SE_TRACK_MOVE"
+    },
+    {
+      "path": "engine/include/constants/species.h",
+      "line": 53,
+      "text": "#define SPECIES_VENOMOTH 49"
+    },
+    {
+      "path": "engine/include/constants/trainers.h",
+      "line": 68,
+      "text": "#define TRAINER_PIC_SCHOOL_KID_F          49"
+    },
+    {
+      "path": "engine/include/constants/trainers.h",
+      "line": 172,
+      "text": "#define FACILITY_CLASS_RUNNING_TRIATHLETE_F  0x31"
+    },
+    {
+      "path": "engine/include/constants/trainers.h",
+      "line": 257,
+      "text": "#define RS_FACILITY_CLASS_PARASOL_LADY          0x31"
+    },
+    {
+      "path": "engine/include/constants/trainers.h",
+      "line": 337,
+      "text": "#define TRAINER_CLASS_MAGMA_ADMIN    0x31"
+    },
+    {
+      "path": "engine/include/global.h",
+      "line": 996,
+      "text": "/*0x31*/ //u8 padding1;"
+    },
+    {
+      "path": "engine/include/librfu.h",
+      "line": 68,
+      "text": "#define ID_TEST_MODE_REQ                            0x0031    // not defined in SDK header"
+    },
+    {
+      "path": "engine/include/librfu.h",
+      "line": 108,
+      "text": "#define RFU_LINK_ICON_LEVEL2_MAX        126                // 10% - 49%  (If the value is betwen 25 and 126, the icon level is 2)"
+    },
+    {
+      "path": "engine/include/pokemon_animation.h",
+      "line": 89,
+      "text": "#define ANIM_H_JUMPS                            49"
+    },
+    {
+      "path": "engine/sound/MPlayDef.s",
+      "line": 185,
+      "text": ".equ\tCs2,\t49\t\t@"
+    },
+    {
+      "path": "engine/sound/MPlayDef.s",
+      "line": 316,
+      "text": ".equ\tv049,\t49\t\t@"
+    },
+    {
+      "path": "engine/sound/direct_sound_data.inc",
+      "line": 2151,
+      "text": ".incbin \"sound/direct_sound_samples/phonemes/49.bin\""
+    },
+    {
+      "path": "engine/sound/voicegroups/drumsets/route110.inc",
+      "line": 16,
+      "text": "voice_directsound_no_resample 32, 49, DirectSoundWaveData_sc88pro_tambourine, 255, 127, 77, 204"
+    },
+    {
+      "path": "engine/sound/voicegroups/drumsets/rs.inc",
+      "line": 19,
+      "text": "voice_directsound_no_resample 70, 49, DirectSoundWaveData_unknown_bell, 255, 165, 103, 231"
+    },
+    {
+      "path": "engine/src/battle_ai_script_commands.c",
+      "line": 211,
+      "text": "Cmd_if_type_effectiveness,                      // 0x31"
+    },
+    {
+      "path": "engine/src/battle_anim_water.c",
+      "line": 1255,
+      "text": "task->data[7] = task->data[4] + 49;"
+    },
+    {
+      "path": "engine/src/battle_arena.c",
+      "line": 780,
+      "text": "FillBgTilemapBufferRect(0, 0x31, 0,   14, 1,  1, palNum);"
+    },
+    {
+      "path": "engine/src/battle_dome.c",
+      "line": 1455,
+      "text": "{ 68,  49},"
+    },
+    {
+      "path": "engine/src/battle_dome.c",
+      "line": 1463,
+      "text": "{172,  49},"
+    },
+    {
+      "path": "engine/src/battle_dome.c",
+      "line": 1501,
+      "text": "#define LINE_V_R_LOGO2     (LINE_PAL | 0x31) // Right-side vertical, logo behind"
+    },
+    {
+      "path": "engine/src/battle_message.c",
+      "line": 1433,
+      "text": "static const u8 sText_LinkTrainerWantsToBattlePause[] = _(\"{B_LINK_OPPONENT1_NAME}\\nwants to battle!{PAUSE 49}\");"
+    },
+    {
+      "path": "engine/src/battle_message.c",
+      "line": 1434,
+      "text": "static const u8 sText_TwoLinkTrainersWantToBattlePause[] = _(\"{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}\\nwant to battle!{PAUSE 49}\");"
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 381,
+      "text": "[B_SCR_OP_COPYARRAY]                       = Cmd_copyarray,                               //0x31"
+    },
+    {
+      "path": "engine/src/battle_transition.c",
+      "line": 985,
+      "text": "12, 63, 35, 28, 10, 53,  7, 49,"
+    },
+    {
+      "path": "engine/src/contest_ai.c",
+      "line": 204,
+      "text": "ContestAICmd_get_num_move_hearts,                 // 0x31"
+    },
+    {
+      "path": "engine/src/data/battle_frontier/trainer_hill.h",
+      "line": 2604,
+      "text": ".trainerNum1 = 49,"
+    },
+    {
+      "path": "engine/src/data/heal_locations.json",
+      "line": 67,
+      "text": "\"y\": 49"
+    },
+    {
+      "path": "engine/src/data/party_menu.h",
+      "line": 74,
+      "text": "{104,  42, 108,  52, 136,  51, 102,  49},"
+    },
+    {
+      "path": "engine/src/data/party_menu.h",
+      "line": 591,
+      "text": "static const u8 sPartyBoxEmptySlotPalIds2[] = {49, 55, 56};"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 41,
+      "text": "PT(49,  8, 2, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 48,
+      "text": "PT( 5, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 49,
+      "text": "PT(56, 49, 2, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 61,
+      "text": "PT(49, 36, 3, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 76,
+      "text": "PT(62, 49, 5, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 84,
+      "text": "PT(46, 49, 5, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 102,
+      "text": "PT(55, 49, 2, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 142,
+      "text": "PT(43, 49, 5, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 155,
+      "text": "PT(49, 17, 2, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 157,
+      "text": "PT(61, 49, 6, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 166,
+      "text": "PT(49, 21, 2, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 205,
+      "text": "PT(56, 49, 6, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 262,
+      "text": "PT(49, 50, 6, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 266,
+      "text": "PT(30, 49, 6, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 280,
+      "text": "PT(29, 49, 2, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 288,
+      "text": "PT( 1, 49, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 331,
+      "text": "PT( 1, 49, 2, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 350,
+      "text": "PT(49, 31, 5, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 386,
+      "text": "PT(56, 49, 6, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 432,
+      "text": "PT(16, 49, 2, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 468,
+      "text": "PT( 4, 49, 6, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 490,
+      "text": "PT(49, 19, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 561,
+      "text": "PT(11, 49, 6, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 568,
+      "text": "PT(16, 49, 6, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 574,
+      "text": "PT( 6, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 587,
+      "text": "PT(21, 49, 3, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 642,
+      "text": "PT(60, 49, 4, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 648,
+      "text": "PT(49, 22, 3, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 678,
+      "text": "PT(48, 49, 3, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 690,
+      "text": "PT(20, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 708,
+      "text": "PT(49, 44, 5, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 777,
+      "text": "PT(14, 49, 3, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 785,
+      "text": "PT(29, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 789,
+      "text": "PT(30, 49, 4, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 800,
+      "text": "PT(52, 49, 4, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 825,
+      "text": "PT(21, 49, 2, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 836,
+      "text": "PT(12, 49, 2, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 848,
+      "text": "PT(49, 14, 4, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 857,
+      "text": "PT(38, 49, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 932,
+      "text": "PT( 6, 49, 5, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 983,
+      "text": "PT(49, 46, 5, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1010,
+      "text": "PT(49, 41, 2, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1173,
+      "text": "PT(33, 49, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1207,
+      "text": "PT(58, 49, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1254,
+      "text": "PT(62, 49, 3, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1280,
+      "text": "PT(49, 21, 4, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1288,
+      "text": "PT(24, 49, 4, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1296,
+      "text": "PT(26, 49, 3, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1298,
+      "text": "PT(51, 49, 4, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1345,
+      "text": "PT(49, 27, 3, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1368,
+      "text": "PT(49, 63, 5, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1409,
+      "text": "PT(23, 49, 2, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1470,
+      "text": "PT(49, 58, 2, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1513,
+      "text": "PT(57, 49, 3, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1520,
+      "text": "PT(49, 56, 6, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1536,
+      "text": "PT(49, 63, 4, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1564,
+      "text": "PT(36, 49, 2, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1601,
+      "text": "PT(49, 56, 2, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1625,
+      "text": "PT( 2, 49, 3, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1633,
+      "text": "PT(49, 61, 6, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1635,
+      "text": "PT(37, 49, 5, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1648,
+      "text": "PT( 6, 49, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1691,
+      "text": "PT(49, 56, 3, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1701,
+      "text": "PT(49,  8, 2, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1765,
+      "text": "PT( 0, 49, 2, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1780,
+      "text": "PT(49, 12, 6, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1789,
+      "text": "PT(49, 50, 6, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1801,
+      "text": "PT(49, 57, 5, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1825,
+      "text": "PT(59, 49, 3, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1830,
+      "text": "PT(33, 49, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1850,
+      "text": "PT(49,  2, 5, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1899,
+      "text": "PT(38, 49, 5, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1919,
+      "text": "PT(17, 49, 6, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1920,
+      "text": "PT(44, 49, 3, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 1969,
+      "text": "PT(41, 49, 5, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2002,
+      "text": "PT(49, 23, 3, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2021,
+      "text": "PT(49, 59, 6, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2023,
+      "text": "PT(49,  7, 6, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2114,
+      "text": "PT(49, 21, 6, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2143,
+      "text": "PT(21, 49, 3, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2158,
+      "text": "PT(49, 37, 3, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2168,
+      "text": "PT(49, 49, 5, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2180,
+      "text": "PT(49, 41, 4, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2182,
+      "text": "PT(49, 44, 5, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2202,
+      "text": "PT(12, 49, 6, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2266,
+      "text": "PT(24, 49, 4, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2366,
+      "text": "PT(49,  4, 4, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2413,
+      "text": "PT(28, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2425,
+      "text": "PT(47, 49, 6, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2427,
+      "text": "PT(49,  5, 2, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2433,
+      "text": "PT(49, 18, 5, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2487,
+      "text": "PT(30, 49, 3, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2510,
+      "text": "PT(32, 49, 4, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2548,
+      "text": "PT(59, 49, 2, 0,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2615,
+      "text": "PT( 8, 49, 3, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2642,
+      "text": "PT(51, 49, 4, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2662,
+      "text": "PT(31, 49, 2, 1, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2717,
+      "text": "PT(49, 47, 4, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2761,
+      "text": "PT(49, 63, 6, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2782,
+      "text": "PT(49, 48, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2808,
+      "text": "PT(49, 62, 3, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2834,
+      "text": "PT(11, 49, 4, 1,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2871,
+      "text": "PT( 6, 49, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2882,
+      "text": "PT(30, 49, 5, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 2981,
+      "text": "PT(39, 49, 6, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3008,
+      "text": "PT(49, 13, 6, 3,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3033,
+      "text": "PT(53, 49, 4, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3057,
+      "text": "PT(49, 15, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3060,
+      "text": "PT(49, 40, 5, 0, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3087,
+      "text": "PT(17, 49, 2, 2, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3131,
+      "text": "PT(49, 41, 3, 3, FALSE),"
+    },
+    {
+      "path": "engine/src/data/pointillism_points.h",
+      "line": 3179,
+      "text": "PT(49, 60, 6, 2,  TRUE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 70,
+      "text": "EXP_MEDIUM_FAST(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 173,
+      "text": "EXP_ERRATIC(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 276,
+      "text": "EXP_FLUCTUATING(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 379,
+      "text": "EXP_MEDIUM_SLOW(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 482,
+      "text": "EXP_FAST(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 585,
+      "text": "EXP_SLOW(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 688,
+      "text": "EXP_MEDIUM_FAST(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/experience_tables.h",
+      "line": 791,
+      "text": "EXP_MEDIUM_FAST(49),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 63,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FIRE_SPIN),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 514,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 552,
+      "text": "LEVEL_UP_MOVE(49, MOVE_POISON_FANG),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 601,
+      "text": "LEVEL_UP_MOVE(49, MOVE_AROMATHERAPY),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 662,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FISSURE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 778,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 787,
+      "text": "LEVEL_UP_MOVE(49, MOVE_EXTREME_SPEED),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 876,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DYNAMIC_PUNCH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 961,
+      "text": "LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1173,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SAFEGUARD),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1230,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ICE_BEAM),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1297,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SAND_TOMB),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1326,
+      "text": "LEVEL_UP_MOVE(49, MOVE_PSYCHIC),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1355,
+      "text": "LEVEL_UP_MOVE(49, MOVE_PROTECT),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1371,
+      "text": "LEVEL_UP_MOVE(49, MOVE_MIRROR_COAT),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1507,
+      "text": "LEVEL_UP_MOVE(49, MOVE_MEMENTO),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1568,
+      "text": "LEVEL_UP_MOVE(49, MOVE_LIGHT_SCREEN),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1599,
+      "text": "LEVEL_UP_MOVE(49, MOVE_REVERSAL),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1654,
+      "text": "LEVEL_UP_MOVE(49, MOVE_HORN_DRILL),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1698,
+      "text": "LEVEL_UP_MOVE(49, MOVE_BATON_PASS),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1759,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CONFUSE_RAY),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1774,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SWORDS_DANCE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1822,
+      "text": "LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1914,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ANCIENT_POWER),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 1944,
+      "text": "LEVEL_UP_MOVE(49, MOVE_MEGA_DRAIN),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2000,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ICE_BEAM),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2013,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DRILL_PECK),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2026,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2241,
+      "text": "LEVEL_UP_MOVE(49, MOVE_AMNESIA),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2359,
+      "text": "LEVEL_UP_MOVE(49, MOVE_POISON_FANG),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2374,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CHARGE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2556,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SLAM),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2668,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SCREECH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2694,
+      "text": "LEVEL_UP_MOVE(49, MOVE_RAIN_DANCE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2793,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CRUNCH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2819,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SPIKES),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2859,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CRUNCH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2887,
+      "text": "LEVEL_UP_MOVE(49, MOVE_TAKE_DOWN),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2971,
+      "text": "LEVEL_UP_MOVE(49, MOVE_THRASH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 2987,
+      "text": "LEVEL_UP_MOVE(49, MOVE_THRASH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3127,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CRUNCH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3170,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3183,
+      "text": "LEVEL_UP_MOVE(49, MOVE_EARTHQUAKE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3211,
+      "text": "LEVEL_UP_MOVE(49, MOVE_CALM_MIND),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3245,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ENDEAVOR),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3259,
+      "text": "LEVEL_UP_MOVE(49, MOVE_PERISH_SONG),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3272,
+      "text": "LEVEL_UP_MOVE(49, MOVE_THUNDER),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3285,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FIRE_BLAST),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3671,
+      "text": "LEVEL_UP_MOVE(49, MOVE_MIRROR_MOVE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3867,
+      "text": "LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3900,
+      "text": "LEVEL_UP_MOVE(49, MOVE_EXTRASENSORY),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 3983,
+      "text": "LEVEL_UP_MOVE(49, MOVE_AGILITY),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4029,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FLAIL),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4163,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ANCIENT_POWER),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4388,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SANDSTORM),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4404,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SANDSTORM),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4438,
+      "text": "LEVEL_UP_MOVE(49, MOVE_REVERSAL),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4504,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4537,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SHEER_COLD),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4654,
+      "text": "LEVEL_UP_MOVE(49, MOVE_EXPLOSION),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4668,
+      "text": "LEVEL_UP_MOVE(49, MOVE_EXPLOSION),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4853,
+      "text": "LEVEL_UP_MOVE(49, MOVE_FUTURE_SIGHT),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4888,
+      "text": "LEVEL_UP_MOVE(49, MOVE_PETAL_DANCE),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 4919,
+      "text": "LEVEL_UP_MOVE(49, MOVE_REVERSAL),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5096,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SNATCH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5296,
+      "text": "LEVEL_UP_MOVE(49, MOVE_SLASH),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5376,
+      "text": "LEVEL_UP_MOVE(49, MOVE_DRAGON_CLAW),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5463,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ZAP_CANNON),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5476,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ZAP_CANNON),"
+    },
+    {
+      "path": "engine/src/data/pokemon/level_up_learnsets.h",
+      "line": 5490,
+      "text": "LEVEL_UP_MOVE(49, MOVE_ZAP_CANNON),"
+    },
+    {
+      "path": "engine/src/data/pokemon/species_info.h",
+      "line": 42,
+      "text": ".baseAttack    = 49,"
+    },
+    {
+      "path": "engine/src/data/pokemon/species_info.h",
+      "line": 43,
+      "text": ".baseDefense   = 49,"
+    },
+    {
+      "path": "engine/src/data/pokemon/species_info.h",
+      "line": 4572,
+      "text": ".baseAttack    = 49,"
+    },
+    {
+      "path": "engine/src/data/pokemon/species_info.h",
+      "line": 4575,
+      "text": ".baseSpAttack  = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 3282,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 3299,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 3313,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 5203,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 5209,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 5215,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 8832,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 9301,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 9307,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 9401,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 11190,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 11280,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/trainer_parties.h",
+      "line": 11287,
+      "text": ".lvl = 49,"
+    },
+    {
+      "path": "engine/src/data/wild_encounters.json",
+      "line": 10678,
+      "text": "\"min_level\": 49,"
+    },
+    {
+      "path": "engine/src/data/wild_encounters.json",
+      "line": 10679,
+      "text": "\"max_level\": 49,"
+    },
+    {
+      "path": "engine/src/data/wild_encounters.json",
+      "line": 10747,
+      "text": "\"min_level\": 49,"
+    },
+    {
+      "path": "engine/src/data/wild_encounters.json",
+      "line": 10748,
+      "text": "\"max_level\": 49,"
+    },
+    {
+      "path": "engine/src/decompress.c",
+      "line": 191,
+      "text": "(dest + (i << 2))[49] = (src + (i << 2))[3];"
+    },
+    {
+      "path": "engine/src/dodrio_berry_picking.c",
+      "line": 4210,
+      "text": "*sBerryIconSpriteIds[i] = CreateSprite(&berryIcon, sBerryIconXCoords[i], 49, 0);"
+    },
+    {
+      "path": "engine/src/dodrio_berry_picking.c",
+      "line": 4545,
+      "text": "static const u16 sResultsYCoords[] = {33, 49, 65, 81, 97};"
+    },
+    {
+      "path": "engine/src/dodrio_berry_picking.c",
+      "line": 4546,
+      "text": "static const u16 sRankingYCoords[] = {17, 33, 49, 65, 81};"
+    },
+    {
+      "path": "engine/src/evolution_scene.c",
+      "line": 93,
+      "text": "{ 37, 49, 1, 6 },"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 2209,
+      "text": "7, 14, 21, 28, 35, 49, 63, 77, 91, 0"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1060,
+      "text": "AddTextPrinterParameterized(gRecordsWindowId, FONT_NORMAL, gText_Lv502, 16, 49, TEXT_SKIP_DRAW, NULL);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1063,
+      "text": "TowerPrintPrevOrCurrentStreak(battleMode, FRONTIER_LVL_50, 72, 132, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1131,
+      "text": "PrintTwoStrings(gText_Record, gText_ClearStreak, gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][FRONTIER_LVL_50], 64, 121, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1203,
+      "text": "AddTextPrinterParameterized(gRecordsWindowId, FONT_NORMAL, gText_Lv502, 16, 49, TEXT_SKIP_DRAW, NULL);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1206,
+      "text": "PalacePrintPrevOrCurrentStreak(battleMode, FRONTIER_LVL_50, 72, 131, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1259,
+      "text": "PikePrintCleared(gText_Record, gText_RoomsCleared, gSaveBlock2Ptr->frontier.pikeRecordStreaks[FRONTIER_LVL_50], 64, 114, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1318,
+      "text": "AddTextPrinterParameterized(gRecordsWindowId, FONT_NORMAL, gText_Lv502, 16, 49, TEXT_SKIP_DRAW, NULL);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1320,
+      "text": "ArenaPrintPrevOrCurrentStreak(FRONTIER_LVL_50, 72, 126, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1411,
+      "text": "FactoryPrintPrevOrCurrentStreak(battleMode, FRONTIER_LVL_50, 8, 64, 158, 49);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1468,
+      "text": "AddTextPrinterParameterized(gRecordsWindowId, FONT_NORMAL, gText_Lv502, 8, 49, TEXT_SKIP_DRAW, NULL);"
+    },
+    {
+      "path": "engine/src/frontier_util.c",
+      "line": 1471,
+      "text": "PyramidPrintPrevOrCurrentStreak(FRONTIER_LVL_50, 64, 111, 49);"
+    },
+    {
+      "path": "engine/src/intro.c",
+      "line": 928,
+      "text": "49, // E"
+    },
+    {
+      "path": "engine/src/link_rfu_3.c",
+      "line": 118,
+      "text": "0x2d, 0x2f, 0x30, 0x31, 0x32,"
+    },
+    {
+      "path": "engine/src/m4a_tables.c",
+      "line": 56,
+      "text": "49,"
+    },
+    {
+      "path": "engine/src/m4a_tables.c",
+      "line": 58,
+      "text": "-49,"
+    },
+    {
+      "path": "engine/src/m4a_tables.c",
+      "line": 80,
+      "text": "0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B,"
+    },
+    {
+      "path": "engine/src/m4a_tables.c",
+      "line": 123,
+      "text": "0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B,"
+    },
+    {
+      "path": "engine/src/match_call.c",
+      "line": 637,
+      "text": ".generalTextId = TEXT_ID(GEN_TOPIC_PERSONAL, 49),"
+    },
+    {
+      "path": "engine/src/pokedex.c",
+      "line": 3572,
+      "text": "PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 49);"
+    },
+    {
+      "path": "engine/src/pokedex.c",
+      "line": 4045,
+      "text": "LoadPalette(gPokedexBgHoenn_Pal + 49, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));"
+    },
+    {
+      "path": "engine/src/pokedex.c",
+      "line": 5425,
+      "text": "PrintSearchText(sDexSearchTypeOptions[searchParamId].title, 0x2D, 0x31);"
+    },
+    {
+      "path": "engine/src/pokedex.c",
+      "line": 5428,
+      "text": "PrintSearchText(sDexSearchTypeOptions[searchParamId].title, 0x5D, 0x31);"
+    },
+    {
+      "path": "engine/src/reset_rtc_screen.c",
+      "line": 600,
+      "text": "49,"
+    },
+    {
+      "path": "engine/src/script_menu.c",
+      "line": 356,
+      "text": "AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_LogOff, x, 49, TEXT_SKIP_DRAW, NULL);"
+    },
+    {
+      "path": "engine/src/text.c",
+      "line": 59,
+      "text": "0x2D, 0x2E, 0x2F, 0x2D, 0x30, 0x31, 0x32, 0x30, 0x33, 0x34, 0x35, 0x33, 0x2D, 0x2E, 0x2F, 0x2D,"
+    },
+    {
+      "path": "engine/src/text.c",
+      "line": 854,
+      "text": "if (subStruct->autoScrollDelay == 49)"
+    },
+    {
+      "path": "engine/src/trainer_card.c",
+      "line": 687,
+      "text": "if (trainerCard->battleTowerStraightWins > 49)"
+    },
+    {
+      "path": "engine/src/trig.c",
+      "line": 56,
+      "text": "Q_8_8(0.9296875),   // sin(49*(\u03c0/128))"
+    },
+    {
+      "path": "engine/src/trig.c",
+      "line": 381,
+      "text": "Q_4_12(0.754638671875), // sin(49\u00b0)"
+    },
+    {
+      "path": "engine/src/wild_encounter.c",
+      "line": 137,
+      "text": "if (Random() % 100 > 49)"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 195,
+      "text": "#define EM_H8_500\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 1245,
+      "text": "#define R_SPARC_LOX10\t\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 1535,
+      "text": "#define R_MIPS_TLS_TPREL_HI16\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 1799,
+      "text": "#define R_PARISC_SEGREL32\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 2173,
+      "text": "#define R_PPC64_TOC16_HI\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 2511,
+      "text": "#define R_ARM_THM_MOVW_PREL_NC\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 2840,
+      "text": "#define R_390_TLS_IEENT\t\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/elf.h",
+      "line": 2998,
+      "text": "#define R_M32R_26_PLTREL\t49"
+    },
+    {
+      "path": "engine/tools/gbafix/gbafix.c",
+      "line": 87,
+      "text": "0x10,0x46,0x4A,0x4A,0xF8,0x27,0x31,0xEC,0x58,0xC7,0xE8,0x33,0x82,0xE3,0xCE,0xBF,"
+    },
+    {
+      "path": "engine/tools/mid2agb/midi.h",
+      "line": 47,
+      "text": "KeyShift = 0x31,"
+    }
+  ],
+  "saved_array_accesses": [
+    {
+      "path": "engine/src/contest_util.c",
+      "line": 2296,
+      "text": "gSaveBlock1Ptr->vars[VAR_OBJ_GFX_ID_0 - VARS_START] = gContestMons[0].trainerGfxId;"
+    },
+    {
+      "path": "engine/src/contest_util.c",
+      "line": 2297,
+      "text": "gSaveBlock1Ptr->vars[VAR_OBJ_GFX_ID_1 - VARS_START] = gContestMons[1].trainerGfxId;"
+    },
+    {
+      "path": "engine/src/contest_util.c",
+      "line": 2298,
+      "text": "gSaveBlock1Ptr->vars[VAR_OBJ_GFX_ID_2 - VARS_START] = gContestMons[2].trainerGfxId;"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 34,
+      "text": "memset(gSaveBlock1Ptr->flags, 0, sizeof(gSaveBlock1Ptr->flags));"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 35,
+      "text": "memset(gSaveBlock1Ptr->vars, 0, sizeof(gSaveBlock1Ptr->vars));"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 41,
+      "text": "memset(&gSaveBlock1Ptr->flags[TEMP_FLAGS_START / 8], 0, TEMP_FLAGS_SIZE);"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 42,
+      "text": "memset(&gSaveBlock1Ptr->vars[TEMP_VARS_START - VARS_START], 0, TEMP_VARS_SIZE);"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 52,
+      "text": "memset(&gSaveBlock1Ptr->flags[DAILY_FLAGS_START / 8], 0, DAILY_FLAGS_SIZE);"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 169,
+      "text": "return &gSaveBlock1Ptr->vars[id - VARS_START];"
+    },
+    {
+      "path": "engine/src/event_data.c",
+      "line": 201,
+      "text": "return &gSaveBlock1Ptr->flags[id / 8];"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 3957,
+      "text": "#define FANCLUB_BITFIELD (gSaveBlock1Ptr->vars[VAR_FANCLUB_FAN_COUNTER - VARS_START])"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 3971,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_FAN_COUNTER - VARS_START] = 0;"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 3972,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = 0;"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 3980,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = gSaveBlock2Ptr->playTimeHours;"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 3990,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = gSaveBlock2Ptr->playTimeHours;"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 4140,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = gSaveBlock2Ptr->playTimeHours;"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 4147,
+      "text": "else if (gSaveBlock2Ptr->playTimeHours - gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] < 12)"
+    },
+    {
+      "path": "engine/src/field_specials.c",
+      "line": 4152,
+      "text": "gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] += 12;"
+    }
+  ],
+  "legacy_maps": [
+    {
+      "name": "DCC_Entrance",
+      "full_identity": [
+        34,
+        0
+      ],
+      "layout_id": 442,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 12,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_VESTIBULE",
+          "dest_warp_id": "0"
+        }
+      ],
+      "coord_events": [],
+      "bg_events": [],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 4,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Crate",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+          "x": 7,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Rock",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_RUBBLE",
+          "x": 7,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_Rock",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+          "x": 10,
+          "y": 9,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Entrance_SupplyBox",
+          "flag": "0"
+        }
+      ]
+    },
+    {
+      "name": "DCC_Vestibule",
+      "full_identity": [
+        34,
+        1
+      ],
+      "layout_id": 443,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 12,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_ENTRANCE",
+          "dest_warp_id": "0"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_SERVICE",
+          "dest_warp_id": "0"
+        }
+      ],
+      "coord_events": [],
+      "bg_events": [],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+          "x": 4,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Crate",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+          "x": 9,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Trial",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_Guide",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_STORAGE_RACK",
+          "x": 11,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Vestibule_WorkshopBox",
+          "flag": "0"
+        },
+        {
+          "local_id": 5,
+          "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+          "x": 7,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Donut_Talk",
+          "flag": "0"
+        }
+      ]
+    },
+    {
+      "name": "DCC_Service",
+      "full_identity": [
+        34,
+        2
+      ],
+      "layout_id": 444,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 2,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_VESTIBULE",
+          "dest_warp_id": "1"
+        },
+        {
+          "x": 2,
+          "y": 9,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_CORRIDOR",
+          "dest_warp_id": "0"
+        }
+      ],
+      "coord_events": [
+        {
+          "type": "trigger",
+          "x": 8,
+          "y": 6,
+          "elevation": 3,
+          "var": "VAR_TEMP_0",
+          "var_value": "0",
+          "script": "DCC_Service_Trap"
+        }
+      ],
+      "bg_events": [
+        {
+          "type": "sign",
+          "x": 12,
+          "y": 2,
+          "elevation": 0,
+          "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+          "script": "DCC_Service_Secret"
+        }
+      ],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+          "x": 4,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Mara",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+          "x": 11,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Lev",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 7,
+          "y": 5,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Warning",
+          "flag": "0"
+        },
+        {
+          "local_id": 4,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_QUEST_TAG",
+          "x": 11,
+          "y": 4,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Tag",
+          "flag": "0"
+        },
+        {
+          "local_id": 5,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WORKBENCH",
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_Workbench",
+          "flag": "0"
+        },
+        {
+          "local_id": 6,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_CACHE_SEALED",
+          "x": 13,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Service_BlastCache",
+          "flag": "0"
+        }
+      ]
+    },
+    {
+      "name": "DCC_Corridor",
+      "full_identity": [
+        34,
+        3
+      ],
+      "layout_id": 445,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 2,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_SERVICE",
+          "dest_warp_id": "1"
+        },
+        {
+          "x": 12,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_BOSS",
+          "dest_warp_id": "0"
+        }
+      ],
+      "coord_events": [],
+      "bg_events": [],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+          "x": 5,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Guard",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+          "x": 10,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Howler",
+          "flag": "0"
+        },
+        {
+          "local_id": 3,
+          "graphics_id": "OBJ_EVENT_GFX_DCC_WARNING_SIGN",
+          "x": 8,
+          "y": 8,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Corridor_Rules",
+          "flag": "0"
+        }
+      ]
+    },
+    {
+      "name": "DCC_Boss",
+      "full_identity": [
+        34,
+        4
+      ],
+      "layout_id": 446,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 2,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_CORRIDOR",
+          "dest_warp_id": "1"
+        }
+      ],
+      "coord_events": [],
+      "bg_events": [
+        {
+          "type": "sign",
+          "x": 12,
+          "y": 4,
+          "elevation": 0,
+          "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+          "script": "DCC_Boss_Stairs"
+        }
+      ],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_HIKER",
+          "x": 8,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Boss_Encounter",
+          "flag": "0"
+        }
+      ]
+    },
+    {
+      "name": "DCC_Exit",
+      "full_identity": [
+        34,
+        5
+      ],
+      "layout_id": 447,
+      "dimensions": [
+        16,
+        12
+      ],
+      "warps": [
+        {
+          "x": 2,
+          "y": 4,
+          "elevation": 3,
+          "dest_map": "MAP_DCC_BOSS",
+          "dest_warp_id": "0"
+        }
+      ],
+      "coord_events": [],
+      "bg_events": [],
+      "objects": [
+        {
+          "local_id": 1,
+          "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+          "x": 8,
+          "y": 6,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Exit_Review",
+          "flag": "0"
+        },
+        {
+          "local_id": 2,
+          "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+          "x": 6,
+          "y": 7,
+          "elevation": 3,
+          "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+          "movement_range_x": 0,
+          "movement_range_y": 0,
+          "trainer_type": "TRAINER_TYPE_NONE",
+          "trainer_sight_or_berry_tree_id": "0",
+          "script": "DCC_Exit_Donut_Talk",
+          "flag": "0"
+        }
+      ]
+    }
+  ],
+  "proposed_group": 35,
+  "proposed_layout_start": 448,
+  "status": "Audit only; engine unchanged. Slots and map IDs are candidates, not live allocations."
+}

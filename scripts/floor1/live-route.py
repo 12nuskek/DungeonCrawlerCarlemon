@@ -20,6 +20,10 @@ class Route:
     def anchor(self,n):self.follow(self.maps[self.key]['anchors'][n])
     def talk(self,button,label):
         self.step(1,button);self.face=button;self.step(40);self.step(1,1);self.step(400,0,label+'.ppm');self.lines+=['dialog 3600','ready'];self.step(40);self.expect()
-    def save(self):
-        for n,key in [(1,8),(120,0),(1,128),(20,0),(1,128),(20,0),(1,1),(160,0),(1,1),(180,0),(1,1),(600,0),(1,1),(600,0)]:self.step(n,key)
+    def save(self,overwrite=True):
+        for n,key in [(1,8),(120,0),(1,128),(20,0),(1,128),(20,0),(1,1),(160,0),(1,1),(180,0)]:self.step(n,key)
+        if overwrite:self.step(1,1)
+        # Successful saves dismiss themselves after the sound/timer. Another A
+        # after completion would interact with an adjacent overworld object.
+        self.step(600)
         self.step(40,0,'saved.ppm');self.lines+=['ready','snapshot'];self.expect()

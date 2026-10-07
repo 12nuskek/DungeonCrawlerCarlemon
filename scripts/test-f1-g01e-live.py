@@ -46,7 +46,7 @@ def full_words(key,state):
     return [f'tile {i%w} {i//w} {v}' for i,v in enumerate(words)]
 # Fresh new game + once-only reader/supply grant; guide and trial remain actual
 # original content at reviewed new anchors. No synthetic input for this route.
-r=R('field',(8,38),1);fresh=out/'fresh.sav';lines=boot+['dialog 6000','ready','snapshot'];r.anchor('note');r.flags=3;r.talk(64,'note');r.lines+=['flag 33 1','flag 36 1'];r.anchor('supply');r.talk(64,'supply');r.lines+=['item 13 2','flag 38 1'];r.talk(64,'supply-repeat');r.lines+=['item 13 2'];r.anchor('quiet_door');r.anchor('guide');r.flags=7;heal(r);r.anchor('trial');fight(r,'offensive',2135);r.lines+=['flag 37 1'];r.save();states=run('fresh-trial',fresh,lines+r.lines);assert states[0]['version']==1 and states[0]['loop']==0
+r=R('field',(8,38),1);fresh=out/'fresh.sav';lines=boot+['dialog 6000','ready','snapshot'];r.anchor('note');r.flags=3;r.talk(64,'note');r.lines+=['flag 33 1','flag 36 1'];r.anchor('supply');r.talk(64,'supply');r.lines+=['item 13 2','flag 38 1'];r.talk(64,'supply-repeat');r.lines+=['item 13 2'];r.anchor('quiet_door');r.anchor('guide');r.flags=7;heal(r);r.anchor('trial');fight(r,'offensive',2135);r.lines+=['flag 37 1'];r.save(overwrite=False);states=run('fresh-trial',fresh,lines+r.lines);assert states[0]['version']==1 and states[0]['loop']==0
 # Both actual patrol orders, each wounded encounter followed by measured normal
 # guide recovery/re-entry. Battle wins and return travel share the same route.
 original=ROOT/'artifacts/floor1/a01/run-I7PJq0/both-pending.sav'

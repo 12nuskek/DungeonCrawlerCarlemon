@@ -27,7 +27,7 @@ def instrument(code):
                     unsigned map=(core->busRead8(core,sb+4)<<8)|core->busRead8(core,sb+5);
                     int x=(short)core->busRead16(core,obj+0x10),y=(short)core->busRead16(core,obj+0x12);
                     unsigned flags=core->busRead8(core,avatar),run=core->busRead8(core,avatar+2),transition=core->busRead8(core,avatar+3);
-                    unsigned field=(core->busRead32(core,mainstate+4)&~1u)==(overworld&~1u) && (flags&32) && !(flags&64);
+                    unsigned field=(core->busRead32(core,mainstate+4)&~1u)==(overworld&~1u) && !(flags&64);
                     measured++;
                     if (field && run==2 && transition) walkFrames++;
                     if (map!=previousMap) mapChanges++;

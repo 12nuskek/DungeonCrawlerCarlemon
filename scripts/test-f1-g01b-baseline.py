@@ -30,7 +30,7 @@ def run(name,seed,lines):
 calibration=boot+['expect 34 3 5 5 7','flag 2136 1','flag 2137 0','measure start one-tile-north','step 16 64 -','step 40 0 north.ppm','expect 34 3 5 4 7','measure stop','measure start one-tile-south','step 16 128 -','step 40 0 south.ppm','expect 34 3 5 5 7','measure stop','quit']
 run('calibration',base/'howler-pending.sav',calibration)
 # Seed Howler point entirely through normal navigation; no modified save/RAM.
-seed=boot+['expect 34 4 8 5 7','flag 2136 1','flag 2137 1','duo healthy','step 16 64 -','step 40 0 -','step 96 32 -','step 220 0 -','expect 34 3 12 4 7','step 32 32 -','step 40 0 -','step 16 128 -','step 40 0 howler-point.ppm','expect 34 3 10 5 7','step 1 8 -','step 120 0 -','step 1 128 -','step 20 0 -','step 1 128 -','step 20 0 -','step 1 1 -','step 160 0 -','step 1 1 -','step 600 0 saved.ppm','expect 34 3 10 5 7','quit']
+seed=boot+['expect 34 4 8 5 7','flag 2136 1','flag 2137 1','duo healthy','step 16 64 -','step 40 0 -','step 96 32 -','step 220 0 -','expect 34 3 12 4 7','step 32 32 -','step 40 0 -','step 16 128 -','step 40 0 howler-point.ppm','expect 34 3 10 5 7','step 1 8 -','step 120 0 -','step 1 128 -','step 20 0 -','step 1 128 -','step 20 0 -','step 1 1 -','step 160 0 -','step 1 1 -','step 180 0 -','step 1 1 -','step 600 0 saved.ppm','step 1 1 -','step 120 0 -','expect 34 3 10 5 7','quit']
 howlerSave=run('howler-ordinary-seed',base/'boss-loss.sav',seed)
 for name,x,save,guardFlag,howlerFlag in [('guard',5,base/'howler-pending.sav',1,0),('howler',10,howlerSave,1,1)]:
     # Reuse validated original outbound/recovery controls, but return to SAME starting encounter.
@@ -44,7 +44,7 @@ for name,x,save,guardFlag,howlerFlag in [('guard',5,base/'howler-pending.sav',1,
     lines=[line for line in lines if not line.startswith('roster ')]
     run(name+'-roundtrip',save,lines)
 assert all(digest(base/n)==h for n,h in original.items())
-(out/'identity.json').write_text(json.dumps({'runner_source':head,'production_compiled_source':(base/'tested-commit.txt').read_text().strip(),'production_sha256':digest(base/'production.gba'),'source_save_sha256':original,'method':'Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, controllable/nonforced avatar, MOVING and nonzero tile transition. Menu/dialogue/idle/other callbacks excluded. No human pacing claim.'},indent=2)+'\n')
+(out/'identity.json').write_text(json.dumps({'runner_source':head,'production_compiled_source':(base/'tested-commit.txt').read_text().strip(),'production_sha256':digest(base/'production.gba'),'source_save_sha256':original,'method':'Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, nonforced avatar, MOVING and nonzero tile transition. Menu/dialogue/idle/other callbacks excluded. No human pacing claim.'},indent=2)+'\n')
 (out/'validation-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 assert not git('status','--porcelain') and git('rev-parse','HEAD')==head
 print('PASS production baseline sessions',len(summary),flush=True)

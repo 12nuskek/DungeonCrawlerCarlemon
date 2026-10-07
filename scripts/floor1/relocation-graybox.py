@@ -7,6 +7,9 @@ ROOT = Path(__file__).resolve().parents[2]
 loader = importlib.util.spec_from_file_location('coordinated', ROOT / 'scripts/floor1/coordinated-graybox.py')
 g = importlib.util.module_from_spec(loader); loader.loader.exec_module(g)
 
+path = g.path
+cells = g.cells
+
 def audit(spec, opened):
     old = json.loads((ROOT / spec['comparison_source']).read_text())
     # No new material field/guide/arena layout attempt: same collision geometry,
@@ -29,9 +32,16 @@ def audit(spec, opened):
     for rule in spec['legacy_position_rules']:
         m = spec['maps'][rule['new']]; at = tuple(m['anchors'][rule['fallback_anchor']])
         assert at in g.cells(m, opened) and at not in {tuple(w['at']) for w in m['warps']}
-    register = json.loads((ROOT / 'docs/floor1/baseline-register.json').read_text())
-    for m in register['maps']:
-        assert len(spec['legacy_object_destinations'][m['name']]) == len(m['object_local_ids'])
+    assert list(spec['legacy_object_counts'].values()) == [4,5,6,3,1,2]
+    for name,count in spec['legacy_object_counts'].items():
+        assert len(spec['legacy_object_destinations'][name]) == count
+        for key,role in spec['legacy_object_destinations'][name]:
+            item=spec['object_roles'][key][role];m=spec['maps'][key]
+            assert item['actor_at']==m['objects'][item['diagnostic_object_index']][:2]
+            x,y=item['actor_at']
+            assert any((x+dx,y+dy) in g.cells(m,opened) for dx,dy in [(0,-1),(1,0),(0,1),(-1,0)]),(name,role,'inaccessible actor')
+    for key,roles in spec['object_roles'].items():
+        assert len({r['production_local_id'] for r in roles.values()})==len(roles)
     stairs = spec['maps']['boss']['stairs_transition']
     assert tuple(stairs['at']) not in g.cells(spec['maps']['boss'], opened)
     assert sum(abs(a-b) for a,b in zip(stairs['at'], stairs['approach'])) == 1

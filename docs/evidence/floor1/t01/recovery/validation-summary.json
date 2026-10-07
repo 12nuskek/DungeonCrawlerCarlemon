@@ -1,0 +1,50 @@
+[
+  {
+    "route": "trial-win",
+    "assertions": 27
+  },
+  {
+    "route": "trial-cold",
+    "assertions": 8
+  },
+  {
+    "route": "guard-win",
+    "assertions": 27
+  },
+  {
+    "route": "guard-cold",
+    "assertions": 8
+  },
+  {
+    "route": "howler-win",
+    "assertions": 27
+  },
+  {
+    "route": "howler-cold",
+    "assertions": 8
+  },
+  {
+    "route": "boss-win",
+    "assertions": 33
+  },
+  {
+    "route": "boss-cold",
+    "assertions": 8
+  },
+  {
+    "route": "carl-down-win",
+    "assertions": 27
+  },
+  {
+    "route": "carl-down-cold",
+    "assertions": 8
+  },
+  {
+    "route": "prepared-win",
+    "assertions": 27
+  },
+  {
+    "route": "prepared-cold",
+    "assertions": 8
+  }
+]

@@ -1,0 +1,57 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 2 4 6 1
+flag 42 1
+flag 43 1
+flag 44 1
+item 379 0
+item 378 99
+roster 30 26 8 2 0 0
+step 1 1 -
+step 400 0 capacity-cold-repeat.ppm
+item 378 99
+flag 43 1
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 handin-completed-main.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 handin-completed.ppm
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 2 -
+step 120 0 -
+item 378 99
+flag 43 1
+quit

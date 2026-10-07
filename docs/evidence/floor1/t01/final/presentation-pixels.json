@@ -1,0 +1,200 @@
+[
+  {
+    "label": "gate",
+    "state": "off",
+    "frame": "gates/boss-locked.ppm",
+    "world_origin": [
+      11,
+      3
+    ],
+    "player": [
+      8,
+      5
+    ],
+    "screen_origin": [
+      160,
+      40
+    ],
+    "exact_rgb555_pixels": 1536
+  },
+  {
+    "label": "gate",
+    "state": "on",
+    "frame": "boss-unprepared/boss-saved.ppm",
+    "world_origin": [
+      11,
+      3
+    ],
+    "player": [
+      8,
+      5
+    ],
+    "screen_origin": [
+      160,
+      40
+    ],
+    "exact_rgb555_pixels": 1536
+  },
+  {
+    "label": "supply-line",
+    "state": "off",
+    "frame": "boss-unprepared/reloaded.ppm",
+    "world_origin": [
+      13,
+      6
+    ],
+    "player": [
+      8,
+      5
+    ],
+    "screen_origin": [
+      192,
+      88
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "supply-line",
+    "state": "on",
+    "frame": "boss-prepared/reloaded.ppm",
+    "world_origin": [
+      13,
+      6
+    ],
+    "player": [
+      8,
+      5
+    ],
+    "screen_origin": [
+      192,
+      88
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "wire",
+    "state": "off",
+    "frame": "quest-accept-trap/warning.ppm",
+    "world_origin": [
+      8,
+      6
+    ],
+    "player": [
+      7,
+      6
+    ],
+    "screen_origin": [
+      128,
+      72
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "wire",
+    "state": "on",
+    "frame": "quest-tag-secret/tag-saved.ppm",
+    "world_origin": [
+      8,
+      6
+    ],
+    "player": [
+      11,
+      3
+    ],
+    "screen_origin": [
+      64,
+      120
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "secret",
+    "state": "off",
+    "frame": "quest-decline/tag-reserved.ppm",
+    "world_origin": [
+      12,
+      1
+    ],
+    "player": [
+      11,
+      3
+    ],
+    "screen_origin": [
+      128,
+      40
+    ],
+    "exact_rgb555_pixels": 512
+  },
+  {
+    "label": "secret",
+    "state": "on",
+    "frame": "quest-tag-secret/tag-saved.ppm",
+    "world_origin": [
+      12,
+      1
+    ],
+    "player": [
+      11,
+      3
+    ],
+    "screen_origin": [
+      128,
+      40
+    ],
+    "exact_rgb555_pixels": 512
+  },
+  {
+    "label": "wire",
+    "state": "off",
+    "frame": "wire-pair/wire-live-clear.ppm",
+    "world_origin": [
+      8,
+      6
+    ],
+    "player": [
+      7,
+      6
+    ],
+    "screen_origin": [
+      128,
+      72
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "wire",
+    "state": "on",
+    "frame": "wire-pair/wire-spent-clear.ppm",
+    "world_origin": [
+      8,
+      6
+    ],
+    "player": [
+      7,
+      6
+    ],
+    "screen_origin": [
+      128,
+      72
+    ],
+    "exact_rgb555_pixels": 256
+  },
+  {
+    "label": "wire",
+    "state": "on",
+    "frame": "wire-cold/wire-cold-clear.ppm",
+    "world_origin": [
+      8,
+      6
+    ],
+    "player": [
+      7,
+      6
+    ],
+    "screen_origin": [
+      128,
+      72
+    ],
+    "exact_rgb555_pixels": 256
+  }
+]

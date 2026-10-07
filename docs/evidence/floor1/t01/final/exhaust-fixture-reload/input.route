@@ -1,0 +1,16 @@
+step 720 0 -
+step 1 8 -
+step 360 0 title.ppm
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+expect 34 1 4 7 7
+duo healthy
+uses 8 40 2 40
+growth 9 495 0 9 805 0
+flag 37 1
+flag 34 1
+quit

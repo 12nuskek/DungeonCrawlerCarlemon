@@ -1,0 +1,68 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 2 8 6 1
+flag 40 1
+tile 8 6 12956
+flag 41 0
+flag 42 1
+flag 43 0
+roster 26 26 8 2 64 0
+step 52 64 -
+step 40 0 -
+step 68 16 -
+step 40 0 -
+expect 34 2 12 3 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 secret.ppm
+flag 45 1
+tile 12 1 1657
+tile 12 2 1693
+item 18 1
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 secret-repeat.ppm
+item 18 1
+step 1 1 -
+step 120 0 -
+step 20 32 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 tag-found.ppm
+flag 44 1
+item 379 1
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 tag-repeat.ppm
+item 379 1
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 tag-saved.ppm
+expect 34 2 11 3 1
+roster 26 26 8 2 64 0
+quit

@@ -46,11 +46,14 @@ must cover mapLayoutId, player/object/template positions and IDs, saved warps an
 idempotent save/cold reload. Numeric UNUSED aliases at0x23–0x30 are already owned
 by DCC and cannot be treated as free. The old completion flag retains its meaning.
 
-Library references resolved successfully, but consumer materialization is blocked:
-first supported invocation lacked a bundled companion; the companion was obtained
-unchanged, then the current downloader failed `hosted apps tools/list request
-failed: network` before any file transfer. No art bytes inspected/accepted yet.
-No guessed URLs, manual download or workaround publication. Preserve this blocker;
-continue source/graybox work. If parent stages assets, first commit/push and explicitly
-pause repository writes for that handoff. Generated concepts are never collision
-or runtime evidence. No human playtime/comprehension is claimed from automated input.
+Preparatory art is now available in [the staged source package](../art-references/full-floor-preparation-20261007/INTEGRATION_HANDOFF.md).
+Parent supplied an asset-only branch after the consumer Library downloader failed
+three bounded attempts. PR58 integrated into the implementation task branch at
+`a73eff7cb5acc2aea13151f0260864dc160bd9f6`; source head
+`d78b944724d0dd6a303052fa5de91360cba5205d`. Package verification231 checks passes,
+including18 decoded PNGs and exact stitched panels. Actual masters were inspected.
+No blocked asset approval remains; never repeat downloads/imports. Parent explicitly
+relinquished all writes; this task is again the sole implementation writer.
+Concepts communicate direction; normalize native scale, widths, palette and frame
+alignment before runtime integration. They are not collision or runtime evidence.
+Human playtime/comprehension remains separate from automated input.

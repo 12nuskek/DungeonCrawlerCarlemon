@@ -1,7 +1,7 @@
 # F1-G01a opening-field preview — runtime checked, travel revision required
 
 Base/rollback production commit: `cee81f8f5dd5cce93990007f06491c8d607a7161`.
-Issue61 / draftPR62; reviewed audit/tooling scope, integration pending. Production engine and shared harness are byte-identical to that base;
+Issue61 / PR62 merged535b0809703f53a86dfd9e2cea1f751c4e6585f1; reviewed head96d4e83. Production engine and shared harness are byte-identical to that base;
 this change adds a geometry contract, isolated exporters/tests and evidence.
 The existing six-room game and its ordinary saves remain available unchanged.
 No new production ROM build, live relocation, new battle/reward/flag, save ABI,

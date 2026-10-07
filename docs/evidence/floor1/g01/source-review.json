@@ -27,5 +27,11 @@
     "actual source evidence hashes and no-game-binary scan passed",
     "recovery travel fails and is kept as explicit next blocker"
   ],
-  "integration": "PR62 draft, reviewed tooling/audit scope; no live adoption or full G01 completion"
+  "integration": "PR62 draft, reviewed tooling/audit scope; no live adoption or full G01 completion",
+  "integration_confirmed": {
+    "PR": 62,
+    "final_reviewed_head": "96d4e83c19bf40d1cd876ced182d189f6cb14b74",
+    "merge": "535b0809703f53a86dfd9e2cea1f751c4e6585f1",
+    "scope": "Tooling/audit only; no live adoption or full G01 completion"
+  }
 }

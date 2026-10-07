@@ -1,0 +1,12 @@
+{
+  "path": "sources/donut-keypose-correction-v2.png",
+  "sha256": "4c05cb176388cff7f1496e2e4219652c0e030b20535addec6740f5130e867891",
+  "git_blob_sha": "f732fc2441d2184199addae19a95dde7e9f5aa21",
+  "bytes": 1136372,
+  "status": "not_staged_platform_upload_pending",
+  "used_by": [
+    "donut/weaken-preparation",
+    "donut/weaken-release"
+  ],
+  "source_rebuild_available": false
+}

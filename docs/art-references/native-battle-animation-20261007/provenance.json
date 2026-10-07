@@ -1,0 +1,73 @@
+{
+  "baseline_source_commit": "3f1c851cce076b51cf4eb174925d9a2e41777a1f",
+  "baseline_references": [
+    {
+      "repository_path": "docs/art-references/native-candidates/assets/carl/back.png",
+      "git_blob": "f1745035b1823853198f672a82d9131266841012",
+      "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/carl/back.png"
+    },
+    {
+      "repository_path": "docs/art-references/native-candidates/assets/donut/back.png",
+      "git_blob": "3306501a6d10706694a2d7e011becf6843b9bae3",
+      "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/native-candidates/assets/donut/back.png"
+    },
+    {
+      "repository_path": "docs/art-references/opponent-native-candidates/assets/warden/front.png",
+      "git_blob": "d464ddd1714d000fb61d02a872ad95de0ffd287a",
+      "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/blob/3f1c851cce076b51cf4eb174925d9a2e41777a1f/docs/art-references/opponent-native-candidates/assets/warden/front.png"
+    }
+  ],
+  "selected_master_stage_pr": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/58",
+  "selected_master_hashes": [
+    {
+      "file": "../full-floor-preparation-20261007/characters/carl-keypose-master-v2.png",
+      "sha256": "a29e44d06d61d990a9e600063e873d7b491da850112378ed618009d94116f00c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "../full-floor-preparation-20261007/characters/donut-keypose-master-v1.png",
+      "sha256": "97eca32b5c6ab9b08e1a9101a75d59abc1ec956e388f673a3682d843b517acef",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "../full-floor-preparation-20261007/characters/warden-keypose-master-v1.png",
+      "sha256": "7907691df7dc5fc8b0faa1fd75e0c41bb9ff4312bf094a89485451c886048bf3",
+      "size": [
+        1983,
+        793
+      ]
+    }
+  ],
+  "donut_correction": {
+    "tool": "built-in image_gen",
+    "calls": 1,
+    "file": "sources/donut-keypose-correction-v2.png",
+    "used_cells": "lower-left and lower-middle only",
+    "prompt": "sources/donut-correction-prompt.txt",
+    "sha256": "4c05cb176388cff7f1496e2e4219652c0e030b20535addec6740f5130e867891",
+    "staged": false,
+    "status": "Source image upload pending; only prompt, source hashes and derived native candidates staged."
+  },
+  "baseline_files": [
+    {
+      "file": "../native-candidates/assets/carl/back.png",
+      "sha256": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1"
+    },
+    {
+      "file": "../native-candidates/assets/donut/back.png",
+      "sha256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d"
+    },
+    {
+      "file": "../opponent-native-candidates/assets/warden/front.png",
+      "sha256": "8f19db3558eb68b6bcb0f685d279aad90e03e75eb0abf4bbe1267c11e26a6a8b"
+    }
+  ],
+  "staging_base_commit": "d2c6a8545db4175718bfde87a272b515296d81a9",
+  "existing_inputs_policy": "Reuse verified repository paths; no duplicate masters or baselines staged."
+}

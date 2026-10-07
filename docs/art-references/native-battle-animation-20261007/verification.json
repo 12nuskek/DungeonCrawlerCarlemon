@@ -1,0 +1,18 @@
+{
+  "status": "PASS_NATIVE_ASSETS_PARTIAL_SOURCE",
+  "checks": 250,
+  "source_rebuild_verified": false,
+  "missing_sources": [
+    "sources/donut-keypose-correction-v2.png"
+  ],
+  "unique_native_source_pose_frames": 16,
+  "warden_lift8_variants": 5,
+  "native_png_dimensions": [
+    64,
+    64
+  ],
+  "palette_limit": "index0 transparent + at most15 opaque RGB555 colors",
+  "game_build_run": false,
+  "emulator_verified": false,
+  "animation_integration_verified": false
+}

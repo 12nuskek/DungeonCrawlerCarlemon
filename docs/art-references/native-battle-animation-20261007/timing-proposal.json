@@ -1,0 +1,13 @@
+{
+  "status": "proposal_only_not_engine_bound",
+  "timebase_hz": 60,
+  "notes": ["Times are local keypose holds. Existing game rules/actions stay unchanged.", "Distinct source poses provide coarse keypose motion; no invented in-betweens.", "A repeated idle or hold is a hold, not a newly authored motion frame.", "Warden WIND UP and SLAM remain separate existing turn actions. The warning hold can persist until SLAM; the combined local preview is illustrative only."],
+  "sequences": {
+    "carl-strike": [{"character":"carl","pose":"strike-anticipation","frames":7},{"character":"carl","pose":"strike-contact","frames":5},{"character":"carl","pose":"strike-recovery","frames":10},{"character":"carl","pose":"strike-anticipation","frames":36}],
+    "carl-brace": [{"character":"carl","pose":"brace-set","frames":8},{"character":"carl","pose":"brace-hold","frames":24},{"character":"carl","pose":"brace-set","frames":6},{"character":"carl","pose":"strike-anticipation","frames":36}],
+    "donut-spark": [{"character":"donut","pose":"spark-anticipation","frames":8},{"character":"donut","pose":"spark-cast","frames":10},{"character":"donut","pose":"spark-recovery","frames":12},{"character":"donut","pose":"spark-anticipation","frames":36}],
+    "donut-weaken": [{"character":"donut","pose":"weaken-preparation","frames":8},{"character":"donut","pose":"weaken-release","frames":10},{"character":"donut","pose":"spark-recovery","frames":10},{"character":"donut","pose":"spark-anticipation","frames":36}],
+    "warden-wind-up": [{"character":"warden","pose":"idle","frames":6},{"character":"warden","pose":"windup","frames":10},{"character":"warden","pose":"hold","frames":24,"end_behavior":"hold may persist until the existing SLAM turn"}],
+    "warden-slam": [{"character":"warden","pose":"hold","frames":8},{"character":"warden","pose":"slam","frames":5},{"character":"warden","pose":"recovery","frames":12},{"character":"warden","pose":"idle","frames":24}]
+  }
+}

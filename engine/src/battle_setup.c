@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler.h"
 #include "battle.h"
 #include "battle_setup.h"
 #include "battle_transition.h"
@@ -1327,8 +1328,7 @@ void BattleSetup_StartTrainerBattle(void)
 static void CB2_EndTrainerBattle(void)
 {
     // Authored crawler encounters return locally; never enter stock hometown recovery.
-    if (gTrainerBattleOpponent_A >= TRAINER_DCC_TRIAL
-        && gTrainerBattleOpponent_A <= TRAINER_DCC_BOSS_PREPARED)
+    if (DccIsEncounter(gTrainerBattleOpponent_A))
     {
         if (gBattleOutcome == B_OUTCOME_WON)
             SetBattledTrainersFlags();

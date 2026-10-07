@@ -1,15 +1,16 @@
 # Durable checkpoint
 
 Current checkpoint2026-10-07: **Full Floor1 execution authorised and active.**
-P01 PR54 merged984f89351fe273f4ba6813aaffd7b0e3f2721504. F1-T01 issue55 / draft
-PR56 on task/floor1-t01-state-text, based on that merge. Engine50bf6d9 clean-built
-and runtime verified96 sessions/1609 assertions including all216 recovered-victory
-and cold checks. Evidence [T01](evidence/floor1/t01/README.md). Merge pending review.
-Art PR58 merged into task branch at a73eff7cb5acc2aea13151f0260864dc160bd9f6;
-231 package checks and actual source-pixel review pass. Parent relinquished writes;
-sole implementation writer resumed. No blocked asset approval or Library retries.
-Prior Stage6 pause and fixed overnight window superseded; no later floors.
-Next: integrate verified T01, then F1-A01 explicit map/encounter membership.
+T01 PR56 merged168a0dabfe717e1ee29667c5460d45035506d786 after96/1609 runtime
+assertions,96 empty errors and actual visual review. Art PR58 included;231 reference
+checks pass, native conversion pending. Parent relinquished all writes; sole writer.
+F1-A01 issue59 on task/floor1-a01-membership, base that T01 merge. Explicit six-map
+and five-encounter classification, full map identity for presentation, scoped guards.
+No new maps/trainers/save changes. Labeled fixtures exhaust65536 map and65536 trainer
+identities each, plus synthetic cross-group/nonadjacent opt-in and no-alias checks.
+Implemented candidate; clean compile/full runtime and recovery216 checks pending.
+Next: commit candidate; scripts/test-f1-a01.sh, then test-n04.py on its exact production
+build; review actual images/identity, publish evidence and scoped PR before integration.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -1652,3 +1653,15 @@ substituted for runtime. Raw local runs floor1/t01/run-UcTIk4 and n04/run-kc8ohy
 Reference PR58 source package integrated, issue57 closed; native/runtime art remains pending.
 Next: final diff/source-identity review, push evidence, update issue55/PR56 and merge;
 then F1-A01. No current implementation blocker. No schedule added.
+
+### F1-A01 candidate — 2026-10-07
+
+Base168a0dabfe717e1ee29667c5460d45035506d786. Issue59. Scope recorded in issue;
+map/encounter registration is explicit and full identity used in presentation/markers.
+Current new-game start coordinates intentionally unchanged. All previous guards route
+through the helper; no broadening by map group or trainer range. Fixture additions
+live only in isolated ROMs; current and synthetic-extension APIs are exhaustively
+checked and temporary fixture presentation/flag/location values are restored.
+Normal harness remains input/read-only; added membership-probe symbol only.
+Full inherited84/1393 plus2 labeled identity sessions/6 harness checks target86/1399,
+then original12/216 recovery extension. No current runtime acceptance claim.

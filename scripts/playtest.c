@@ -108,7 +108,7 @@ int main(int argc, char **argv)
         if (!strcmp(symbol,"DccTestInputAction")) inputAction=addr;
         if (!strcmp(symbol,"DccTestInputMove")) inputMove=addr;
         if (!strcmp(symbol,"DccTestInputTarget")) inputTarget=addr;
-        if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe") || !strcmp(symbol,"gDccRewardProbe")) probe=addr;
+        if (!strcmp(symbol,"gDccCollectionProbe") || !strcmp(symbol,"gDccEquipmentProbe") || !strcmp(symbol,"gDccRewardProbe") || !strcmp(symbol,"gDccMembershipProbe")) probe=addr;
     }
     fclose(symbols);
     if (!saveptr || !objects || !avatar || !party || !count || !mons || !battlers || !outcome || !mainstate) return 4;

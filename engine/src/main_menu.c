@@ -1,5 +1,6 @@
 #include "global.h"
 #include "crawler.h"
+#include "main_menu.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
 #include "constants/rgb.h"
@@ -635,6 +636,7 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 
 static void Task_MainMenuCheckSaveFile(u8 taskId)
 {
+    s16 *data = gTasks[taskId].data;
     if (sDccUnsupportedSave && !gPaletteFade.active)
     {
         sDccUnsupportedSave = FALSE;
@@ -644,8 +646,6 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
         return;
     }
-    s16 *data = gTasks[taskId].data;
-
     if (!gPaletteFade.active)
     {
         SetGpuReg(REG_OFFSET_WIN0H, 0);

@@ -30,7 +30,7 @@ def path(cells, start, end):
     raise ValueError(f'Unreachable {end} from {start}')
 
 def export(spec, engine, opened, out):
-    assert engine.resolve()!= (ROOT/'engine').resolve(), 'Diagnostic export must never mutate live engine'
+    assert (engine.parent/'.dcc-diagnostic-snapshot').is_file(), 'Explicit disposable-snapshot marker required; never export to live engine'
     floor=geometry(spec,opened); w,h=spec['width'],spec['height']
     # Reuse already-reviewed bank6 native art; no new palette/tile allocation.
     words=[]

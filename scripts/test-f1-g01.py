@@ -12,7 +12,7 @@ subprocess.run(['git','diff','--quiet','cee81f8f5dd5cce93990007f06491c8d607a7161
 assert hashlib.sha256((base/'production.gba').read_bytes()).hexdigest()=='5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230'
 out=Path(tempfile.mkdtemp(prefix='preview-',dir=root/'artifacts/floor1/g01'));print('Evidence:',out,flush=True)
 (out/'tested-commit.txt').write_text(revision+'\n')
-source=out/'source';source.mkdir();shutil.copytree(base/'source/engine',source/'engine',symlinks=True)
+source=out/'source';source.mkdir();(source/'.dcc-diagnostic-snapshot').write_text(revision+'\n');shutil.copytree(base/'source/engine',source/'engine',symlinks=True)
 # Overwrite every tracked production file from this commit, preserving only build cache.
 archive=subprocess.Popen(['git','archive',revision,'engine','scripts/contracts/f1-g01-opening.json','scripts/floor1/opening-graybox.py'],cwd=root,stdout=subprocess.PIPE)
 subprocess.run(['tar','-x','-C',str(source)],stdin=archive.stdout,check=True);archive.stdout.close();assert archive.wait()==0

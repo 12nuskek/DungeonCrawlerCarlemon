@@ -1,8 +1,8 @@
 Current2026-10-07: **F1-G01e implemented; migration acceptance pending.**
 Issue74, branch task/floor1-g01e-live-migration, baseb694da1.
 Clean compiled2e810f676f9c60031382148055748e419340a729; ROM43178a36…46a11.
-Raw build artifacts/floor1/g01e/live-2danu7iw. Ordinary runner22d8db?
-(see exact tested-commit in ordinary-lt5iqs3s);42 passing sessions across14
+Raw build artifacts/floor1/g01e/live-2danu7iw. Ordinary runner52cc49b561c9bf9843de33a845b931fc865e7f3e
+(raw ordinary-lt5iqs3s);42 passing sessions across14
 ordinary originals include all mandatoryI01/corner, interactions/transitions/Save/
 second cold. Full matrix not accepted: two remaining seed routes pending.
 Host fixes preserved: inventory encryption-aware comparison; arrival-ladder facing

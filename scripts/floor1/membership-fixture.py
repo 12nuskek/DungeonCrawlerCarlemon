@@ -57,10 +57,11 @@ static u32 ProbeMapHash(void)
     return hash;
 }
 
+EWRAM_DATA static bool8 sDccProbeRunning = FALSE;
+EWRAM_DATA static bool8 sDccProbeFinished = FALSE;
+
 static void ProbePresentationIdentity(void)
 {
-    static bool8 running = FALSE;
-    static bool8 finished = FALSE;
     static const u16 aliases[] = {0x0002, 0x0004, 0x2206, 0x2302, 0x2304};
     u16 previousTiles[ARRAY_COUNT(sDccPresentationTiles)];
     bool8 previousFlags[ARRAY_COUNT(sDccPresentationTiles)];
@@ -69,9 +70,9 @@ static void ProbePresentationIdentity(void)
     u32 hash;
     bool8 aliasesOk = TRUE;
     bool8 registeredOk = TRUE;
-    if (running || finished || gBackupMapLayout.map == NULL)
+    if (sDccProbeRunning || sDccProbeFinished || gBackupMapLayout.map == NULL)
         return;
-    running = TRUE;
+    sDccProbeRunning = TRUE;
     location = gSaveBlock1Ptr->location;
     for (i = 0; i < ARRAY_COUNT(sDccPresentationTiles); i++)
     {
@@ -118,8 +119,8 @@ static void ProbePresentationIdentity(void)
     gSaveBlock1Ptr->location = location;
     if (aliasesOk) gDccMembershipProbe |= 4;
     if (registeredOk) gDccMembershipProbe |= 8;
-    finished = TRUE;
-    running = FALSE;
+    sDccProbeFinished = TRUE;
+    sDccProbeRunning = FALSE;
 }
 '''.replace('EXTENDED', 'TRUE' if extended else 'FALSE')
 p.write_text(s)

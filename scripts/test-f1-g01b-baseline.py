@@ -44,7 +44,7 @@ for name,x,save,guardFlag,howlerFlag in [('guard',5,base/'howler-pending.sav',1,
     lines=[line for line in lines if not line.startswith('roster ')]
     run(name+'-roundtrip',save,lines)
 assert all(digest(base/n)==h for n,h in original.items())
-(out/'identity.json').write_text(json.dumps({'runner_source':head,'production_compiled_source':(base/'tested-commit.txt').read_text().strip(),'production_sha256':digest(base/'production.gba'),'source_save_sha256':original,'method':'Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, nonforced avatar, MOVING and nonzero tile transition. Menu/dialogue/idle/other callbacks excluded. No human pacing claim.'},indent=2)+'\n')
+(out/'identity.json').write_text(json.dumps({'runner_source':head,'production_compiled_source':(base/'tested-commit.txt').read_text().strip(),'production_sha256':digest(base/'production.gba'),'source_save_sha256':original,'method':'Copied ordinary saves, controller navigation/recovery only; read-only callback/avatar/position frame sampling. Active walking requires CB2_Overworld, nonforced avatar, no active palette fade, MOVING and nonzero tile transition. Menu/dialogue/idle/other callbacks excluded. No human pacing claim.'},indent=2)+'\n')
 (out/'validation-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 assert not git('status','--porcelain') and git('rev-parse','HEAD')==head
 print('PASS production baseline sessions',len(summary),flush=True)

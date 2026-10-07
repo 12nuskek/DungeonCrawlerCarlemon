@@ -43,7 +43,7 @@ for c in cases:
     if expected:
         sb,sb2=si.blocks(save.read_bytes());ef=sb[0x1274]&7;group,num,x,y,layout=expected
         lines += [f'expect {group} {num} {x} {y} {ef}','ready','snapshot']
-    else:lines+=['menu','snapshot']
+    else:lines+=['menu','snapshot','step 1 1 -','step 180 0 unchanged.ppm','menu','step 1 1 -','step 360 0 returned-menu.ppm','menu']
     lines+=['quit'];(d/'input.route').write_text('\n'.join(lines)+'\n')
     with (d/'input.route').open() as inputs,(d/'replay.log').open('w') as log,(d/'errors.log').open('w') as err:subprocess.run([str(ordinary/'playtest'),str(rom),str(save),str(ordinary/'game.sym')],cwd=d,stdin=inputs,stdout=log,stderr=err,check=True)
     log=(d/'replay.log').read_text();checks=int(re.search(r'result=0 assertions=(\d+)\n$',log)[1]);state=json.loads(re.findall(r'^STATE (.+)$',log,re.M)[0]);assert not (d/'errors.log').stat().st_size
@@ -56,7 +56,11 @@ for c in cases:
     else:
         sb,sb2=si.blocks(save.read_bytes());assert state['version']==struct.unpack_from('<H',sb,0x1438)[0]
         assert (state['group'],state['map'])==(sb[4],sb[5]),'Rejected current identity changed'
-    Image.open(d/'boundary.ppm').save(d/'boundary.png');(d/'state.json').write_text(json.dumps(state,indent=2)+'\n')
+    image=Image.open(d/'boundary.ppm');image.save(d/'boundary.png')
+    if not expected:
+        assert len(image.getcolors(maxcolors=100000))>4,'Unsupported message framebuffer is blank'
+        for label in ['unchanged','returned-menu']:Image.open(d/(label+'.ppm')).save(d/(label+'.png'))
+    (d/'state.json').write_text(json.dumps(state,indent=2)+'\n')
     summary.append(dict(route=c['name'],assertions=checks,synthetic_input=True,source=str(base.relative_to(ROOT)),source_hash=before,input_hash=input_hash,expected=expected,original_and_copy_unchanged=True));print(c['name'],'PASS',checks,flush=True)
 assert digest(seed)==original_hash
 (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');(out/'identity.json').write_text(json.dumps(dict(runner=head,compiled_source=compiled,rom_sha256=digest(rom),ordinary_runtime=str(ordinary),method='Controlled copied checksum-valid save inputs; actual production cold Continue and read-only observer. No ROM fixture/RAM writes; not ordinary playthrough evidence.'),indent=2)+'\n')

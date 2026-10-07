@@ -1,0 +1,58 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 3 5 5 7
+flag 2136 0
+flag 2137 0
+step 84 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+expect 34 3 10 5 7
+duo healthy
+step 1 1 -
+step 400 0 howler-intro.ppm
+step 1 1 -
+step 400 0 howler-advice.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+pattern 857 0 35 40 6 6 6 9
+pilot offensive 30000
+step 240 0 battle-ended.ppm
+step 1 1 -
+step 400 0 end-0.ppm
+step 1 1 -
+step 400 0 end-1.ppm
+step 1 1 -
+step 400 0 end-2.ppm
+step 1 2 -
+step 120 0 -
+flag 2136 0
+flag 2137 1
+flag 47 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 howler-saved.ppm
+expect 34 3 10 5 7
+quit

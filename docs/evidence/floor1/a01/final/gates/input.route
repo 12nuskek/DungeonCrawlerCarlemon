@@ -1,0 +1,106 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 1 4 7 7
+duo healthy
+growth 9 495 0 9 805 0
+flag 46 0
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 40 0 -
+step 180 0 service.ppm
+expect 34 2 2 4 7
+step 36 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+expect 34 2 4 6 7
+step 1 1 -
+step 400 0 quest-offer.ppm
+step 1 1 -
+step 400 0 quest-choice.ppm
+step 1 2 -
+step 400 0 quest-declined.ppm
+flag 41 1
+flag 42 0
+flag 43 0
+flag 40 0
+tile 8 6 12943
+step 1 1 -
+step 120 0 -
+step 36 32 -
+step 40 0 -
+expect 34 2 2 6 7
+step 52 128 -
+step 40 0 -
+step 180 0 gauntlet.ppm
+expect 34 3 2 4 7
+step 164 16 -
+step 40 0 -
+step 180 0 gate.ppm
+expect 34 4 2 4 7
+step 84 16 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 4 8 5 7
+step 1 1 -
+step 400 0 boss-locked.ppm
+flag 47 0
+tile 11 3 12816
+tile 12 3 12817
+tile 13 3 12818
+tile 11 4 12823
+tile 12 4 13848
+tile 13 4 12825
+flag 48 0
+step 1 2 -
+step 120 0 -
+step 68 16 -
+step 40 0 -
+expect 34 4 12 5 7
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 stairs-locked.ppm
+flag 48 0
+step 1 2 -
+step 120 0 -
+step 164 32 -
+step 40 0 -
+step 20 64 -
+step 40 0 -
+step 180 0 gauntlet-return.ppm
+expect 34 3 12 4 7
+step 116 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+expect 34 3 5 5 7
+flag 2136 0
+flag 2137 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 3 5 5 7
+quit

@@ -1,0 +1,21 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+policy 15
+duo healthy
+uses 8 40 2 40
+quit

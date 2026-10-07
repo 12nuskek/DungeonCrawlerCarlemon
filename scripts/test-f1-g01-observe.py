@@ -2,7 +2,7 @@
 """Read-only runtime buffer/scene measurements and a continuous actual-frame clip."""
 from pathlib import Path
 from PIL import Image
-import hashlib,importlib.util,json,os,shlex,struct,subprocess,tempfile
+import hashlib,importlib.util,json,os,shlex,shutil,struct,subprocess,tempfile
 root=Path(__file__).resolve().parents[1]
 def git(*args):return subprocess.check_output(['git',*args],cwd=root,text=True).strip()
 assert not git('status','--porcelain'),'Commit first'

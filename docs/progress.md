@@ -13,12 +13,20 @@ two diagnostic variants compiled at4718908806057d245546cc65cf1f43105ea01b01.
 Runtime13 diagnostic sessions/7066 assertions,13 empty errors; four ordinary
 cold reloads, full3072-cell cold buffer checks in both variants, actual camera
 captures and632 consecutive motion frames/10.5814seconds. Full scene peak5
-active objects/9 sprites; EWRAM/IWRAM unchanged. Draft PR62; final source/evidence review complete, integration pending.
+active objects/9 sprites; EWRAM/IWRAM unchanged. Merged PR62 at535b0809703f53a86dfd9e2cea1f751c4e6585f1; final review96d4e83.
 [Exact source/build identities, commands, corrections and limits](evidence/floor1/g01/README.md).
 Travel gate rejected for live adoption: Guard/Howler candidate field-only hub
 paths24/37steps exceed verified old guide paths14/19steps. FinalT stays null.
-Exact next action: integrate reviewed G01a diagnostic/audit PR62, then reshape D1
-hub/bays and compact-interior anchors for recovery ceilings before live migration.
+Source provenance follow-up issue64 / task/floor1-g01a-cache-provenance:
+parent found optional cache could retain extra wildcard sources. Fresh archive
+only now; negative seeded C rejected,11687 blob identities pass; fresh9/708
+passes, both original ROM hashes and all captured pixels identical. Integration
+pending reviewed draftPR65. Current branch retains the G01b planning checkpoint below.
+Continuation issue63 / task/floor1-g01b-recovery-travel, base535b080.
+Checkpoint-only planning; no new geometry/gameplay implementation or PR yet.
+Exact next action: integrate verified source-provenance repair, then ordinary
+same-starting-encounter recovery baseline and coordinated
+hub/bay+compact-interior redesign before migration. [Task brief](floor1/g01/next-task.md).
 No V01/native art rollout, live relocation or completed full G01 claim yet.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.

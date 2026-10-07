@@ -1,7 +1,7 @@
 # F1-G01a opening-field preview — runtime checked, travel revision required
 
 Base/rollback production commit: `cee81f8f5dd5cce93990007f06491c8d607a7161`.
-Issue61 / draftPR62; reviewed audit/tooling scope, integration pending. Production engine and shared harness are byte-identical to that base;
+Issue61 / PR62 merged535b0809703f53a86dfd9e2cea1f751c4e6585f1; reviewed head96d4e83. Production engine and shared harness are byte-identical to that base;
 this change adds a geometry contract, isolated exporters/tests and evidence.
 The existing six-room game and its ordinary saves remain available unchanged.
 No new production ROM build, live relocation, new battle/reward/flag, save ABI,
@@ -88,8 +88,11 @@ idempotence are still pending.
 ## Reproduction and preserved attempts
 
 Use docs/testing.md pinned toolchain. Production is retained from accepted A01;
-diagnostic builds reset tracked inputs from a committed snapshot and preserve
-only build cache. Export requires an explicit disposable-snapshot marker.
+diagnostic builds now use a fresh committed archive with zero engine cache inputs,
+following the [parent-reviewed provenance repair](provenance/README.md). The
+historical main run used a whole-engine cache; a fresh clean rebuild produced
+both exact same ROM identities and708 passing assertions. Export requires an
+explicit disposable-snapshot marker.
 
 ```sh
 DCC_A01_BASE_RUN=/absolute/path/to/accepted/a01/run-I7PJq0 \

@@ -1,0 +1,20 @@
+{
+  "reviewed_head": "22fc52690d693ab2acee15e59458d00528b6886a",
+  "PR": 65,
+  "issue": 64,
+  "base": "535b0809703f53a86dfd9e2cea1f751c4e6585f1",
+  "compiled_tested_source": "0901022dacd2adbaa90b49c6d12f7ddb91ed0281",
+  "engine_and_shared_harness_diff": "empty",
+  "review": [
+    "whole-engine copy removed",
+    "fresh archive only; snapshot requires nonexistent output",
+    "optional engine cache rejected before archive/make",
+    "separately pinned setup inputs retained",
+    "seeded untracked C negative and all11687 blob identities pass",
+    "both freshly compiled ROM hashes exactly original",
+    "fresh9/708 and287 pixel matches pass",
+    "production and geometry/travel gates unchanged"
+  ],
+  "runtime_sensitive_gameplay_changes": false,
+  "integration": "draftPR65; source/evidence reviewed, ready for server protections"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "route": "closed/guard-first",
+    "assertions": 161,
+    "diagnostic": true,
+    "walking_steps": 816
+  },
+  {
+    "route": "closed/guard-first-cold",
+    "assertions": 25,
+    "diagnostic": true
+  },
+  {
+    "route": "closed/howler-first",
+    "assertions": 145,
+    "diagnostic": true,
+    "walking_steps": 726
+  },
+  {
+    "route": "closed/howler-first-cold",
+    "assertions": 25,
+    "diagnostic": true
+  },
+  {
+    "route": "open/guard-first",
+    "assertions": 155,
+    "diagnostic": true,
+    "walking_steps": 792
+  },
+  {
+    "route": "open/guard-first-cold",
+    "assertions": 25,
+    "diagnostic": true
+  },
+  {
+    "route": "open/howler-first",
+    "assertions": 140,
+    "diagnostic": true,
+    "walking_steps": 690
+  },
+  {
+    "route": "open/howler-first-cold",
+    "assertions": 25,
+    "diagnostic": true
+  },
+  {
+    "route": "open/motion",
+    "assertions": 7,
+    "diagnostic": true,
+    "walking_steps": 26
+  }
+]

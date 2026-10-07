@@ -1,0 +1,119 @@
+{
+  "diagnostic": true,
+  "final_T": null,
+  "reachable_preview_field_cells": 1148,
+  "buffer_cells": 4898,
+  "objects_including_player": 9,
+  "all_anchors_reachable": true,
+  "width_samples": {
+    "arrival_horizontal": [
+      8,
+      34,
+      8,
+      40,
+      7
+    ],
+    "arrival_vertical": [
+      18,
+      33,
+      24,
+      33,
+      7
+    ],
+    "junction_pillar_west": [
+      16,
+      23,
+      23,
+      23,
+      8
+    ],
+    "junction_pillar_east": [
+      27,
+      23,
+      34,
+      23,
+      8
+    ],
+    "guard_approach": [
+      46,
+      24,
+      46,
+      30,
+      7
+    ],
+    "howler_approach": [
+      39,
+      32,
+      39,
+      38,
+      7
+    ],
+    "howler_return": [
+      47,
+      35,
+      53,
+      35,
+      7
+    ],
+    "warden_approach": [
+      42,
+      20,
+      48,
+      20,
+      7
+    ],
+    "open_loop": [
+      40,
+      13,
+      40,
+      19,
+      7
+    ],
+    "workshop_side": [
+      31,
+      40,
+      34,
+      40,
+      4
+    ],
+    "optional_spur": [
+      46,
+      41,
+      46,
+      44,
+      4
+    ],
+    "secret_spur": [
+      52,
+      41,
+      52,
+      44,
+      4
+    ],
+    "fork_vertical": [
+      32,
+      31,
+      38,
+      31,
+      7
+    ]
+  },
+  "arrival_distances": {
+    "arrival": 0,
+    "junction": 26,
+    "quiet_door": 48,
+    "workshop_door": 52,
+    "trap": 58,
+    "tag": 62,
+    "secret": 67,
+    "guard": 42,
+    "howler": 49,
+    "far_junction": 61,
+    "loop_far": 62,
+    "loop_home": 48,
+    "warden_door": 62
+  },
+  "far_to_quiet_door_steps": 35,
+  "loop_opened": false,
+  "limits": "Preview widths include actor occupancy. No interior/migration or final state/recovery/T acceptance."
+}

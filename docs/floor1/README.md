@@ -57,3 +57,12 @@ relinquished all writes; this task is again the sole implementation writer.
 Concepts communicate direction; normalize native scale, widths, palette and frame
 alignment before runtime integration. They are not collision or runtime evidence.
 Human playtime/comprehension remains separate from automated input.
+
+## G01a candidate review —2026-10-07
+
+[Diagnostic runtime evidence](../evidence/floor1/g01/README.md):64×48 native
+field/camera/collision/save feasibility passed13 sessions/7066 assertions. The
+candidate is not adopted for live gameplay: Guard/Howler field travel to the hub
+already exceeds the old complete trip to the guide. Shorten the geometry and
+co-design interior arrival/guide anchors before migration or V01 art. FinalT
+remains unmeasured; retain the six-map production build and all legacy fixtures.

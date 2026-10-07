@@ -1,16 +1,25 @@
 # Durable checkpoint
 
 Current checkpoint2026-10-07: **Full Floor1 implementation active.**
-Kurt's05:15:54UTC fallback authorises continuing while future usage guard is researched
-by parent; quota unknown, no automatic20% guard. Historical allowance pause superseded.
-T01 merged168a0dabfe717e1ee29667c5460d45035506d786; art reference PR58 integrated.
-A01 issue59 / PR60, task/floor1-a01-membership; based on T01 merge, integration pending.
-Clean productionc5d0f1e ROM5c4f865a…7230. Full86/1399, recovery12/216 and direct
-boundary2/6 all pass:100/1621,1389 production+232 labeled fixtures,100 empty errors.
-38 pixel comparisons, actual motion/state/legacy/victory/cold images reviewed.
-[Exact identity, commands, footprints and scoped limits](evidence/floor1/a01/README.md).
-Two diagnostic linker issues fixed without production edits; failed traces preserved.
-Next review/push evidence and merge verified A01, then F1-G01 D1 graybox/migration.
+Parent's official same-account read05:47UTC:8% used/92% remaining, seven-day
+window. Parent samples and requests checkpoint/pause at>=80% used; soft sampled
+safeguard, no exact cap. User's05:15:54UTC continuation remains authorised.
+T01 merged168a0dabfe717e1ee29667c5460d45035506d786; art PR58 integrated.
+A01 issue59 / PR60 merged cee81f8f5dd5cce93990007f06491c8d607a7161;
+100/1621 assertions and38 pixel checks retained.
+F1-G01a issue61 / task/floor1-g01-opening-graybox, base cee81f8.
+Production unchanged; candidate geometry and diagnostic exporter implemented,
+two diagnostic variants compiled at4718908806057d245546cc65cf1f43105ea01b01.
+Runtime13 diagnostic sessions/7066 assertions,13 empty errors; four ordinary
+cold reloads, full3072-cell cold buffer checks in both variants, actual camera
+captures and632 consecutive motion frames/10.5814seconds. Full scene peak5
+active objects/9 sprites; EWRAM/IWRAM unchanged. Draft PR62; final source/evidence review complete, integration pending.
+[Exact source/build identities, commands, corrections and limits](evidence/floor1/g01/README.md).
+Travel gate rejected for live adoption: Guard/Howler candidate field-only hub
+paths24/37steps exceed verified old guide paths14/19steps. FinalT stays null.
+Exact next action: integrate reviewed G01a diagnostic/audit PR62, then reshape D1
+hub/bays and compact-interior anchors for recovery ceilings before live migration.
+No V01/native art rollout, live relocation or completed full G01 claim yet.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:

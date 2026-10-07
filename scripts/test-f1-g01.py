@@ -42,14 +42,15 @@ for opened in [False,True]:
     with (d/'game.sym').open('w') as log:subprocess.run(['arm-none-eabi-nm','-g','--defined-only',str(source/'engine/pokeemerald.elf')],stdout=log,check=True)
     cells=gray.geometry(spec,opened)
     def create(order,clip=False):
-        lines=list(boot);position=tuple(spec['anchors']['arrival']);captures=0;walk=0
+        lines=list(boot);position=tuple(spec['anchors']['arrival']);captures=0;walk=0;facing=128
         def expect():lines.append(f'expect 35 0 {position[0]} {position[1]} 0')
         def move(keys,frames,label=None):
-            nonlocal captures
+            nonlocal captures,facing
             if clip:
                 while frames:
                     n=min(3,frames);frames-=n;lines.append(f'step {n} {keys} motion-{captures:05d}.ppm');captures+=1
             else:lines.append(f'step {frames} {keys} -')
+            facing=keys
             lines.append('step 40 0 '+(label.replace('_','-')+'.ppm' if label else '-'))
         def follow(target,label=None):
             nonlocal position,walk
@@ -60,7 +61,7 @@ for opened in [False,True]:
             while i<len(directions):
                 j=i+1
                 while j<len(directions) and directions[j]==directions[i]:j+=1
-                move(directions[i],16*(j-i)+4);position=route[j];expect();i=j
+                move(directions[i],16*(j-i)+(4 if directions[i]!=facing else 0));position=route[j];expect();i=j
             if label:lines.append('step 40 0 '+label.replace('_','-')+'.ppm')
         expect();lines+=['duo healthy','uses 8 40 2 40']
         if clip:
@@ -73,7 +74,7 @@ for opened in [False,True]:
         for target,keys,label in [((6,38),32,'west-wall'),((23,23),16,'pillar-collision'),((38,27),64,'actor-collision'),((55,42),16,'secret-edge'),(tuple(spec['anchors']['warden_door']),64,'north-edge')]:
             follow(target);move(keys,148,label);expect()
             if label=='actor-collision':lines.extend(['step 1 1 -','step 400 0 actor-dialogue.ppm','step 1 1 -','step 400 0 actor-anchor.ppm','step 1 1 -','step 120 0 -']);expect()
-        follow(spec['anchors']['loop_home']);move(16,36,'loop-pass' if opened else 'loop-wall')
+        follow(spec['anchors']['loop_home']);move(16,32+(4 if facing!=16 else 0),'loop-pass' if opened else 'loop-wall')
         if opened:position=(36,16)
         expect()
         follow(spec['anchors']['quiet_door'],'final-location')

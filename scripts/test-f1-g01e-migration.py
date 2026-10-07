@@ -108,7 +108,10 @@ for fixture in fixtures:
     copy=out/(name+'-second.sav');shutil.copyfile(save,copy);second_sha=digest(copy)
     after2=run(name+'-second-cold',copy,boot+[f'expect 35 2 {r.pos[0]} {r.pos[1]} {ef}','ready','snapshot'])[-1]
     for field in ['version','loop','layout','pos','warps']:assert after[field]==after2[field],('Second load changed',name,field)
-    for field in ['live_duo','inventory_money','flags','vars']:assert after['regions'][field]==after2['regions'][field],('Second load changed',name,field)
+    for field in ['live_duo','flags','vars']:assert after['regions'][field]==after2['regions'][field],('Second load changed',name,field)
+    a,b=after['regions'],after2['regions'];ka=int.from_bytes(bytes.fromhex(a['encryption_key']),'little');kb=int.from_bytes(bytes.fromhex(b['encryption_key']),'little')
+    assert save_input.inventory(bytes.fromhex(a['inventory_money']),ka)==save_input.inventory(bytes.fromhex(b['inventory_money']),kb),'Second cold changed logical inventory/money'
+    assert bytes.fromhex(a['inventory_money'])[0x848-0x490:]==bytes.fromhex(b['inventory_money'])[0x848-0x490:],'Second cold changed unencrypted inventory tail'
     assert digest(copy)==second_sha and digest(original)==sha
 (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');(out/'identity.json').write_text(json.dumps(dict(compiled_source=compiled,runner_source=head,rom_sha256=digest(rom),build=str(build),method='Copied ordinary originals; actual controller interactions/transitions/manual Save/second cold; read-only observer. No ROM fixtures, RAM writes or save patch in ordinary matrix.'),indent=2)+'\n')
 assert git('rev-parse','HEAD')==head and not git('status','--porcelain')

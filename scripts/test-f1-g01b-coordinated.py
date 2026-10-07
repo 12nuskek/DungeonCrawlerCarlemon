@@ -58,7 +58,7 @@ class Route:
             if i<len(keys):self.expect()
         warp=next((w for w in self.m['warps'] if tuple(w['at'])==tuple(end)),None)
         if warp:
-            self.step(300,0);self.key=next(k for k,v in spec['maps'].items() if v['map_num']==warp['dest']);self.pos=tuple(self.m['warps'][warp['dest_warp']]['at']);self.face=0
+            self.step(300,0);self.key=next(k for k,v in spec['maps'].items() if v['map_num']==warp['dest']);self.pos=tuple(self.m['warps'][warp['dest_warp']]['at'])
         self.expect()
         if label:self.capture(label)
     def anchor(self,name,label=None):self.follow(self.m['anchors'][name],label)

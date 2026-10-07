@@ -1,0 +1,1 @@
+New seed expected flags7 but actual untouched-note seed is5; corrected route to preserve actual persistent state. Zero navigation assertions passed; no engine change.

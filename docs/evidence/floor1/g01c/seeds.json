@@ -1,0 +1,20 @@
+[
+  {
+    "route": "ordinary-entrance-seed",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_sha256": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "generated_save_sha256": "01b49ada9d22d4dc9864050413694bfe1edcf7064a2e58facc5b244507404c22",
+    "original_unchanged": true,
+    "assertions": 7,
+    "method": "Ordinary navigation and manual Save/overwrite confirmation; no RAM/save-file patch."
+  },
+  {
+    "route": "ordinary-service-seed",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_sha256": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "generated_save_sha256": "f146e0c89fa8e458b9848bc13d23c888802b9bbea0b0cbb20f44bd73299e5342",
+    "original_unchanged": true,
+    "assertions": 7,
+    "method": "Ordinary navigation and manual Save/overwrite confirmation; no RAM/save-file patch."
+  }
+]

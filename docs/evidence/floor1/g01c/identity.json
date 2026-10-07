@@ -1,0 +1,7 @@
+{
+  "runner_source": "d0a20ab2fd9f13d1f64a778da860aa30d9809620",
+  "engine_base": "ef5c012aba10b61cbcdbbc3313d7e25c5f448473",
+  "production_compiled_source": "c5d0f1e0c3fa45063f66375c39ccf50b3b0e1175",
+  "production_rom_sha256": "5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230",
+  "method": "16 copied ordinary saves plus2 controller-produced seed sessions; cold Continue, read-only bus sampling. No ROM rebuild, save-file edits, RAM writes or migration. Every cold original/copy hash unchanged;2 new seed files are saved by normal gameplay."
+}

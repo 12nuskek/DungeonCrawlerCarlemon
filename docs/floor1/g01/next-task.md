@@ -1,9 +1,9 @@
 # F1-G01c live relocation/migration — next focused task
 
 Issue63 remains open. Third diagnostic geometry PR69 passes15sessions/8916,
-74pixel matches and41negative measurement-gate cases. Authoritative PR merge
-state/commit must be reconciled first. Current branch
-`task/floor1-g01b-coordinated-layout`; baseed592e7; source identities and full
+74pixel matches and41negative measurement-gate cases. PR69 merged
+`ef5c012aba10b61cbcdbbc3313d7e25c5f448473`. Current audit branch
+`task/floor1-g01c-migration-audit`; baseef5c012; source identities and full
 accepted evidence: docs/evidence/floor1/g01b/third/README.md.
 Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, sole writer. Parent owns
 one continuation and quota sampling; no new writer/task/scheduler. Parent art
@@ -21,8 +21,12 @@ state, then implement/review idempotent migration before live adoption. Separate
 high-risk save/identity work from subsequent content/art relocation where practical.
 No save ABI expansion, battle/resource tuning, new floor or native art rollout.
 
-First inspect current main/PR69, checkpoint, baseline-register.json and exact
-third contract. Numeric audit must follow aliases and raw IDs, not UNUSED labels.
+Issue70 audit now passes18 ordinary production sessions/78 assertions;
+[Audit/migration policy](migration-audit.md) and [evidence](../../evidence/floor1/g01c/README.md).
+Finish audit review/merge first; then freeze remaining Workshop/Checkpoint
+interior widths, semantic destinations/localIDs and exact live warp/position
+contract before migration implementation. First inspect current main, checkpoint,
+baseline-register.json and exact third contract. Numeric audit must follow aliases and raw IDs, not UNUSED labels.
 Old0x23–0x30 flag aliases are already DCC-owned. Trainer901 maps to0x885 system
 space and is never a valid battle allocation; existing855–859 remain unchanged.
 Reserved unused VAR candidates were only preliminarily read, not allocated.

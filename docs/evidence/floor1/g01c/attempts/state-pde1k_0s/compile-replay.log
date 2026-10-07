@@ -1,0 +1,4 @@
+artifacts/floor1/g01c/state-pde1k_0s/read-state.c: In function ‘main’:
+artifacts/floor1/g01c/state-pde1k_0s/read-state.c:142:62: error: invalid suffix "-0x4000" on integer constant
+  142 |             unsigned version=core->busRead16(core,sb+0x139C+(0x404E-0x4000)*2);
+      |                                                              ^~~~~~~~~~~~~

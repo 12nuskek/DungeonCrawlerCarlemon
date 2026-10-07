@@ -1,0 +1,2036 @@
+[
+  {
+    "route": "i01-motion",
+    "source_save": "artifacts/i01/run-Yw6WfM/motion.sav",
+    "source_sha256": "0ce2d40e62373571f418e5e8776b654d68c718ad00b18003af5166d147a7553c",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "ee20afb57fa03c852c981c535bddae3333621348640024c8e01462a18e241c9e",
+        "saved_objects": "872d43034dd92dc4ab8bc29874823811d8b15aaf0c83e4456326e7538b718e1b",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+        "vars": "5f7f933c4a9c340690575840871ebea201bef32a4edd8e929463021fa7b0c6ad"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "i01-craft",
+    "source_save": "artifacts/i01/run-Yw6WfM/craft.sav",
+    "source_sha256": "ce7fcca765afc5f371b25d3ffa025765a18b3d47be20a98c614923889ebd230b",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "5352fe015c5921efcff291368094400e49809a59eedc6f24323c56ee3e14d53b",
+        "saved_objects": "6701c810b115094f182a9e797b6c601b85293f4b7e09456860b7d846ca6a200f",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "d47a9e714da678d317e59f75833338c1175f47a150d951b13904b79f747885b1",
+        "vars": "2fc384824605043f171813a02a51e6d4a72b667a22ba2a3683c85b179c190934"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "i01-quest",
+    "source_save": "artifacts/i01/run-Yw6WfM/quest.sav",
+    "source_sha256": "0949cb506076e47db3004fdb22f0afe1b8c162fb26d6c71da6f88c7c35190a55",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "b12d72193411fa65d1fe60fda904c53ab0e310485a29ea30238602678397f04b",
+        "saved_objects": "6701c810b115094f182a9e797b6c601b85293f4b7e09456860b7d846ca6a200f",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "6f0f42e83407028963fa50eaf2a4e9315dacad9d550f2939841563948f6724fc",
+        "vars": "8827e87789a32f3d67f0f0882730b3695eafc07a18a488cb3c529ef4601259dc"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "i01-playtest",
+    "source_save": "artifacts/i01/run-Yw6WfM/playtest.sav",
+    "source_sha256": "6fe98ac5a06a59d3074d3eda2b68b310f437f57f34c9646ed7889d81e1693fe6",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 5,
+      "layout": 447,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        6
+      ],
+      "warps": [
+        [
+          34,
+          5,
+          -1,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 5,
+          "gfx": 0,
+          "coords": [
+            4,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 5,
+          "gfx": 21,
+          "coords": [
+            8,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 5,
+          "gfx": 203,
+          "coords": [
+            6,
+            7
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "9bec7ed1ef5b194c9c2f2c5d1a675058e375d003217e564446e2d4938fcd3361",
+        "saved_objects": "dad25621991d7dd5cd4332dd7e1077e75c35560a154d47b54a38625a80d75197",
+        "templates": "863b54f3f38960bcefcc0b7ff20738cabee517ffdf8435e175beb2bbd18fe463",
+        "flags": "435912f384a9f4aa2c9c1c4984aa1c842a4e13faba983bf255e4cfafb907f711",
+        "vars": "0cfb89c3687e17c302e5f9d1d553b467487129f93b20e337e0f4d1005be22cbb"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "i01-boss-loss",
+    "source_save": "artifacts/i01/run-Yw6WfM/boss-loss.sav",
+    "source_sha256": "16ac10c9a9277092041a15f61e799f1b8a762ab249625704ccd644b50f902f04",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 4,
+      "layout": 446,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        8,
+        5
+      ],
+      "warps": [
+        [
+          34,
+          4,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 4,
+          "gfx": 0,
+          "coords": [
+            8,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 4,
+          "gfx": 55,
+          "coords": [
+            8,
+            6
+          ],
+          "facing": 2
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "78a08bdf9febde6ce1147ce496381bc0ccb7da48408022fb16de50f65ac0342d",
+        "saved_objects": "9ac0e15f4e376b9e944f5433dc0f8660c1b9fcf778ab1584d8071b036fd85ba6",
+        "templates": "0b1df627e5d6fa2046017e4b14b426fb9c3870492c290cc800fc0477fbef2da4",
+        "flags": "5fe1ecb4deb35003e95b3ae02e36a78253fd5060f3be508dd1a7738f901f14ed",
+        "vars": "443f4c0805d028ec4fd01f56ad1473242ab5b834841fb3cf1ada0a1870fb639c"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "legacy-corner",
+    "source_save": "artifacts/n02/legacy-corner-setup/normal-save.sav",
+    "source_sha256": "2163726ef97688c4682fd7b504ae8e6808778f2ea59ffcb6468dc180d2e64adc",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 5,
+      "layout": 447,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        13,
+        9
+      ],
+      "warps": [
+        [
+          34,
+          5,
+          -1,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 5,
+          "gfx": 0,
+          "coords": [
+            13,
+            9
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 5,
+          "gfx": 21,
+          "coords": [
+            8,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 5,
+          "gfx": 203,
+          "coords": [
+            6,
+            7
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "9bec7ed1ef5b194c9c2f2c5d1a675058e375d003217e564446e2d4938fcd3361",
+        "saved_objects": "c26f2cec20e6a16eac20e34fd9fc4b9df3eae097ef243d807e786ad8cd45860d",
+        "templates": "863b54f3f38960bcefcc0b7ff20738cabee517ffdf8435e175beb2bbd18fe463",
+        "flags": "435912f384a9f4aa2c9c1c4984aa1c842a4e13faba983bf255e4cfafb907f711",
+        "vars": "36d79af3e04b700bfda2dc3eee175e9ae70533e952b0eabdc74c36077b4b2802"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-guide-before-trial",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_sha256": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "5352fe015c5921efcff291368094400e49809a59eedc6f24323c56ee3e14d53b",
+        "saved_objects": "6701c810b115094f182a9e797b6c601b85293f4b7e09456860b7d846ca6a200f",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "d47a9e714da678d317e59f75833338c1175f47a150d951b13904b79f747885b1",
+        "vars": "2fc384824605043f171813a02a51e6d4a72b667a22ba2a3683c85b179c190934"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-guide-after-trial",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/guide-after-trial.sav",
+    "source_sha256": "ecbf3ea3d6e7cc7770ca4b28a9aeceb615e89f35387fdaed3f5086ce6cc56bd8",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "ee20afb57fa03c852c981c535bddae3333621348640024c8e01462a18e241c9e",
+        "saved_objects": "872d43034dd92dc4ab8bc29874823811d8b15aaf0c83e4456326e7538b718e1b",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+        "vars": "5f7f933c4a9c340690575840871ebea201bef32a4edd8e929463021fa7b0c6ad"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-both-pending",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/both-pending.sav",
+    "source_sha256": "ea719ffb76f510eabac88cbd345c87d7e21ce009dde0bfca9418ca0a1d3babc8",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 3,
+      "layout": 445,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        5,
+        5
+      ],
+      "warps": [
+        [
+          34,
+          3,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 3,
+          "gfx": 0,
+          "coords": [
+            5,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 3,
+          "gfx": 5,
+          "coords": [
+            5,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 3,
+          "gfx": 33,
+          "coords": [
+            10,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 3,
+          "gfx": 77,
+          "coords": [
+            8,
+            8
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "17800f2fa7f8c4fd4d7c0202c8d359667b61f848dbf2bc92de45f0c593e0e018",
+        "saved_objects": "8096aa087be57b8f3c7fc4f91d89d04c986ec72e53889c26ac97da9121a3d815",
+        "templates": "109c8c8399dbbdafd921f1b6c506d89e64c265b4004de6c9cf965892dbf28901",
+        "flags": "2514d2b545192a96ae884689f2a4a455ac8264fa5af61ab3bb2a369b841ca990",
+        "vars": "24207bb550b85768121e79409e4ec16853ac73bb92c18fa4603a2bf413c44573"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-howler-pending",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_sha256": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 3,
+      "layout": 445,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        5,
+        5
+      ],
+      "warps": [
+        [
+          34,
+          3,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 3,
+          "gfx": 0,
+          "coords": [
+            5,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 3,
+          "gfx": 5,
+          "coords": [
+            5,
+            6
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 3,
+          "gfx": 33,
+          "coords": [
+            10,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 3,
+          "gfx": 77,
+          "coords": [
+            8,
+            8
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "b399309a0fd0ba231fc9b5c3e977503c7f02a2c19481f225c7e88b59dbc41197",
+        "saved_objects": "9d09639ac38133aa86c022dc9c3852324c8481b4d58be36cfc93e869f42d8b47",
+        "templates": "109c8c8399dbbdafd921f1b6c506d89e64c265b4004de6c9cf965892dbf28901",
+        "flags": "f0ba9dd693bf89e401347e491cc23f1baa2506fc22e70a395e33723f4dc002f1",
+        "vars": "c533e1e864349f478888638f6f95550552e976c4e056a915f127676736718cef"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-boss-pending",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/boss-pending.sav",
+    "source_sha256": "c6f4214874ac2c545671feb1a45b547f150490596cf1e502a975c260da9ac57a",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 3,
+      "layout": 445,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        10,
+        5
+      ],
+      "warps": [
+        [
+          34,
+          3,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 3,
+          "gfx": 0,
+          "coords": [
+            10,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 3,
+          "gfx": 5,
+          "coords": [
+            5,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 3,
+          "gfx": 33,
+          "coords": [
+            10,
+            6
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 3,
+          "gfx": 77,
+          "coords": [
+            8,
+            8
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "fdc3ca1cdf9507a319f3437328db75fb90ca4d2f58704c2cbf21b39d36e05aed",
+        "saved_objects": "976f9e8eddfa32a4c0498927def17903f0007a3da7ffe47c087e86b9b0196b16",
+        "templates": "109c8c8399dbbdafd921f1b6c506d89e64c265b4004de6c9cf965892dbf28901",
+        "flags": "5fe1ecb4deb35003e95b3ae02e36a78253fd5060f3be508dd1a7738f901f14ed",
+        "vars": "bb078353b1485dc55225a475a0ddc37ed501cd4f02ec362b748499b110bd7f47"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-prepared",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/prepared.sav",
+    "source_sha256": "c27426064c24d9c3173ee6d0a9d07f6bca48fcae2d221b90bd2fc78e5c5c0351",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 5,
+      "layout": 447,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        6
+      ],
+      "warps": [
+        [
+          34,
+          5,
+          -1,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 5,
+          "gfx": 0,
+          "coords": [
+            4,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 5,
+          "gfx": 21,
+          "coords": [
+            8,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 5,
+          "gfx": 203,
+          "coords": [
+            6,
+            7
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "da1e6bb09f412900ca552cb6ed46ac85113569c8ca06967e889d7e8db0f4481f",
+        "saved_objects": "dad25621991d7dd5cd4332dd7e1077e75c35560a154d47b54a38625a80d75197",
+        "templates": "863b54f3f38960bcefcc0b7ff20738cabee517ffdf8435e175beb2bbd18fe463",
+        "flags": "ab819484f3c6d5d0334bd6790cfe22fa27c57538572b9cadc5eab705b1b38b36",
+        "vars": "b3a4768f76653ca9c1e393c5bfd5007da24a80370cbc20276bf13b950dbf5040"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-legacy-workshop",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/legacy-workshop.sav",
+    "source_sha256": "ce7fcca765afc5f371b25d3ffa025765a18b3d47be20a98c614923889ebd230b",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 1,
+      "layout": 443,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        7
+      ],
+      "warps": [
+        [
+          34,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 1,
+          "gfx": 0,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 1,
+          "gfx": 113,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 1,
+          "gfx": 19,
+          "coords": [
+            9,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 1,
+          "gfx": 21,
+          "coords": [
+            4,
+            8
+          ],
+          "facing": 2
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 1,
+          "gfx": 81,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 1,
+          "gfx": 203,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "5352fe015c5921efcff291368094400e49809a59eedc6f24323c56ee3e14d53b",
+        "saved_objects": "6701c810b115094f182a9e797b6c601b85293f4b7e09456860b7d846ca6a200f",
+        "templates": "e1746f47beb23846036d497b47705605b109ce8dbedc4e40e200d197d897d8f5",
+        "flags": "d47a9e714da678d317e59f75833338c1175f47a150d951b13904b79f747885b1",
+        "vars": "2fc384824605043f171813a02a51e6d4a72b667a22ba2a3683c85b179c190934"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "a01-legacy-ending",
+    "source_save": "artifacts/floor1/a01/run-I7PJq0/legacy-ending.sav",
+    "source_sha256": "6fe98ac5a06a59d3074d3eda2b68b310f437f57f34c9646ed7889d81e1693fe6",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 5,
+      "layout": 447,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        6
+      ],
+      "warps": [
+        [
+          34,
+          5,
+          -1,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 5,
+          "gfx": 0,
+          "coords": [
+            4,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 5,
+          "gfx": 21,
+          "coords": [
+            8,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 5,
+          "gfx": 203,
+          "coords": [
+            6,
+            7
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "9bec7ed1ef5b194c9c2f2c5d1a675058e375d003217e564446e2d4938fcd3361",
+        "saved_objects": "dad25621991d7dd5cd4332dd7e1077e75c35560a154d47b54a38625a80d75197",
+        "templates": "863b54f3f38960bcefcc0b7ff20738cabee517ffdf8435e175beb2bbd18fe463",
+        "flags": "435912f384a9f4aa2c9c1c4984aa1c842a4e13faba983bf255e4cfafb907f711",
+        "vars": "0cfb89c3687e17c302e5f9d1d553b467487129f93b20e337e0f4d1005be22cbb"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "ordinary-entrance-cold",
+    "source_save": "artifacts/floor1/g01c/state-v866mr6r/ordinary-entrance-seed/copy.sav",
+    "source_sha256": "01b49ada9d22d4dc9864050413694bfe1edcf7064a2e58facc5b244507404c22",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 0,
+      "layout": 442,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        12,
+        5
+      ],
+      "warps": [
+        [
+          34,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 0,
+          "gfx": 0,
+          "coords": [
+            12,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 0,
+          "gfx": 77,
+          "coords": [
+            4,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 0,
+          "gfx": 76,
+          "coords": [
+            7,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 0,
+          "gfx": 76,
+          "coords": [
+            7,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 0,
+          "gfx": 113,
+          "coords": [
+            10,
+            9
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "5352fe015c5921efcff291368094400e49809a59eedc6f24323c56ee3e14d53b",
+        "saved_objects": "dbba62db24ade57346693dac2bd2f49ba43946eca95415788d4366a5b13758d4",
+        "templates": "f190ed6cd9e396861c56b620b23ddb65600c6fd9aca7c9df89d6f393eaa1235c",
+        "flags": "d47a9e714da678d317e59f75833338c1175f47a150d951b13904b79f747885b1",
+        "vars": "3c901eea54c81db40f449e0f51f642ffc8c27941268fa4abf0fcd08fa45aa781"
+      },
+      "nonzero_cache_words": 0
+    }
+  },
+  {
+    "route": "ordinary-service-cold",
+    "source_save": "artifacts/floor1/g01c/state-v866mr6r/ordinary-service-seed/copy.sav",
+    "source_sha256": "f146e0c89fa8e458b9848bc13d23c888802b9bbea0b0cbb20f44bd73299e5342",
+    "original_and_copy_unchanged": true,
+    "assertions": 4,
+    "state": {
+      "group": 34,
+      "map": 2,
+      "layout": 444,
+      "version": 0,
+      "loop": 0,
+      "pos": [
+        4,
+        6
+      ],
+      "warps": [
+        [
+          34,
+          2,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "avatar_object": 0,
+      "live_objects": [
+        {
+          "slot": 0,
+          "player": 1,
+          "local_id": 255,
+          "group": 34,
+          "map": 2,
+          "gfx": 0,
+          "coords": [
+            4,
+            6
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 1,
+          "player": 0,
+          "local_id": 1,
+          "group": 34,
+          "map": 2,
+          "gfx": 16,
+          "coords": [
+            4,
+            7
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 2,
+          "player": 0,
+          "local_id": 2,
+          "group": 34,
+          "map": 2,
+          "gfx": 23,
+          "coords": [
+            11,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 3,
+          "player": 0,
+          "local_id": 3,
+          "group": 34,
+          "map": 2,
+          "gfx": 77,
+          "coords": [
+            7,
+            5
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 4,
+          "player": 0,
+          "local_id": 4,
+          "group": 34,
+          "map": 2,
+          "gfx": 79,
+          "coords": [
+            11,
+            4
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 5,
+          "player": 0,
+          "local_id": 5,
+          "group": 34,
+          "map": 2,
+          "gfx": 78,
+          "coords": [
+            6,
+            8
+          ],
+          "facing": 1
+        },
+        {
+          "slot": 6,
+          "player": 0,
+          "local_id": 6,
+          "group": 34,
+          "map": 2,
+          "gfx": 80,
+          "coords": [
+            13,
+            8
+          ],
+          "facing": 1
+        }
+      ],
+      "region_sha256": {
+        "map_view": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "party_inventory": "5352fe015c5921efcff291368094400e49809a59eedc6f24323c56ee3e14d53b",
+        "saved_objects": "5cb01ab0a74e8a686503ac1d4c46e320a7946b3fb52a76c280c762accbb8ab40",
+        "templates": "55e69f26d54b2a8127bd3af58c4f86ba1f5ce14347fc3c833c613534e625011b",
+        "flags": "d47a9e714da678d317e59f75833338c1175f47a150d951b13904b79f747885b1",
+        "vars": "be6c3da406077221f922b5ee8de1e96dd522ddee21700b7efc4d73358a393962"
+      },
+      "nonzero_cache_words": 0
+    }
+  }
+]

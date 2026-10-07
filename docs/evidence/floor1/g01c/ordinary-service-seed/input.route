@@ -1,0 +1,38 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+expect 34 1 4 7 5
+step 20 32 -
+step 40 0 -
+step 52 64 -
+step 40 0 -
+step 20 32 -
+step 220 0 -
+expect 34 2 2 4 5
+step 36 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+expect 34 2 4 6 5
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 saved.ppm
+audit
+quit

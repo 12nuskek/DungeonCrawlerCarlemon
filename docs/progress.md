@@ -1,5 +1,33 @@
 # Durable checkpoint
 
+Current2026-10-07 09:08UTC: **F1-G01c audit verified; live migration pending.**
+Sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, parent
+01a10e89-0c59-737a-8ede-620d02be2034. Parent owns continuation and sampled
+quota guard (latest received07:36UTC9%used/91%remaining; pause at parent request
+>=80%used). Full nine-district Floor1 remains authorised; no later floors/release.
+PR69 verified diagnostic mergedef5c012aba10b61cbcdbbc3313d7e25c5f448473;
+15/8916,74pixels,41negativegatecases retained. No production geometry changes.
+Issue70 / branchtask/floor1-g01c-migration-audit, baseef5c012.
+Source audit implemented: proposedversionVAR0x404E/loopFLAG49, full-map append
+proposal and all warp/object/cache/save hooks documented. No live allocations.
+Host/runtime runnerd0a20ab2fd9f13d1f64a778da860aa30d9809620;
+18 mGBA sessions/78assertions,18emptyerrors;16copied ordinary cold files cover
+all6legacy maps,2ordinary navigation/manual-save seeds. Original/cold copy hashes
+unchanged. Production compiledC5/hash5c4f865a retained; no new production compile.
+[Evidence and commands](evidence/floor1/g01c/README.md),
+[Migration audit](floor1/g01/migration-audit.md). AuditPR pending creation.
+Material finding: trainer864limit moves SYSTEM_FLAGS if raised; no trainer/save
+ABI expansion. Continue restoration must rebuild the player, not clear objects
+and use active-only ReturnToField. Exact Workshop/Checkpoint width/anchor contract
+is pending before live relocation. Issue63 remains open. Next: finish review/push/
+draftPR/verified audit merge; then finalize remaining interiors and explicit live
+semantic relocation anchors, implement idempotent migration with ordinary cold/
+transition/save/reload and controlled warp/version boundaries before live adoption.
+PR68 source candidates merged; corrected Donut source still PENDING approval,
+no retry/workaround. No active parent writer/handoff pause or new scheduler.
+
+## Earlier checkpoint history
+
 Current checkpoint2026-10-07: **Full Floor1 implementation active.**
 Parent's official same-account read05:47UTC:8% used/92% remaining, seven-day
 window. Parent samples and requests checkpoint/pause at>=80% used; soft sampled

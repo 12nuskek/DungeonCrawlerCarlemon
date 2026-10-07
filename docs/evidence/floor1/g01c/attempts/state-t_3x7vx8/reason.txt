@@ -1,0 +1,1 @@
+14 slot checks pass but exact six-map coverage rejects missing Entrance/Service. Names did not establish positions.

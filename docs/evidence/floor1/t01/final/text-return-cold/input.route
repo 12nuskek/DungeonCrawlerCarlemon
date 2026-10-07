@@ -1,0 +1,47 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 wire-cold-clear.ppm
+expect 34 2 11 3 1
+flag 43 0
+flag 44 1
+item 379 1
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 return-cold-main.ppm
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 return-cold.ppm
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 64 -
+step 20 0 -
+step 1 2 -
+step 120 0 -
+expect 34 2 11 3 1
+quit

@@ -1,0 +1,239 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 continue.ppm
+step 28 32 -
+step 40 0 -
+step 20 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 trial-intro.ppm
+step 1 1 -
+step 400 0 duo-note.ppm
+step 1 1 -
+step 900 0 battle-start.ppm
+step 1 1 -
+step 600 0 opponents.ppm
+step 1 1 -
+step 600 0 carl-menu.ppm
+battle 1 4 0 8 2 0 0
+roster 30 26 8 2 0 0
+support 40 40 6 6 6
+stats 30 20 26 13
+flag 35 0
+growth 8 399 0 8 709 0
+step 1 1 -
+step 120 0 carl-actions.ppm
+step 1 1 -
+step 60 0 target.ppm
+step 1 1 -
+step 120 0 donut-menu.ppm
+battle 1 4 0 8 2 0 0
+step 1 1 -
+step 120 0 donut-actions.ppm
+step 1 1 -
+step 1000 0 turn-one.ppm
+battle 1 4 0 7 1 0 0
+roster 30 17 7 1 0 0
+uses 7 40 1 40
+foes 7 21
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 1000 0 turn-two.ppm
+battle 1 4 0 6 0 0 0
+roster 25 17 6 0 0 0
+uses 6 40 0 40
+foes 0 17
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 60 0 -
+step 1 1 -
+step 120 0 xp-level.ppm
+step 1 1 -
+step 180 0 xp-stats.ppm
+step 1 1 -
+step 60 0 -
+step 1 16 -
+step 60 0 xp-advance.ppm
+step 1 1 -
+step 1000 0 weaken-turn.ppm
+step 1 1 -
+step 400 0 plain-xp-0.ppm
+step 1 1 -
+step 400 0 plain-xp-1.ppm
+step 1 1 -
+step 400 0 plain-xp-2.ppm
+step 1 1 -
+step 400 0 plain-xp-3.ppm
+step 1 1 -
+step 400 0 plain-xp-4.ppm
+step 1 1 -
+step 400 0 plain-xp-5.ppm
+step 1 1 -
+step 400 0 plain-xp-6.ppm
+step 1 1 -
+step 400 0 plain-xp-7.ppm
+step 1 1 -
+step 400 0 plain-xp-8.ppm
+step 1 1 -
+step 400 0 plain-xp-ready.ppm
+growth 9 450 0 9 760 0
+uses 6 40 0 40
+stats 33 23 28 14
+roster 25 19 6 0 0 0
+pattern 855 2 33 0 6 6 6 8
+step 1 1 -
+step 180 0 spark-empty-message.ppm
+battle 1 4 0 6 0 0 0
+roster 25 19 6 0 0 0
+uses 6 40 0 40
+pattern 855 2 33 0 6 6 6 8
+step 1 1 -
+step 60 0 spark-empty-return.ppm
+step 1 16 -
+step 60 0 -
+step 1 1 -
+step 1800 0 helper-weakened.ppm
+support 40 39 6 6 5
+roster 23 19 5 0 0 0
+foes 0 6
+battle 1 4 0 5 0 0 0
+uses 5 40 0 39
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 1800 0 helper-defeated.ppm
+step 1 1 -
+step 400 0 victory-0.ppm
+step 1 1 -
+step 400 0 victory-1.ppm
+step 1 1 -
+step 400 0 victory-2.ppm
+step 1 1 -
+step 400 0 victory-3.ppm
+step 1 1 -
+step 400 0 victory-4.ppm
+step 1 1 -
+step 400 0 victory-5.ppm
+step 1 1 -
+step 400 0 victory-6.ppm
+step 1 1 -
+step 400 0 victory-7.ppm
+step 1 1 -
+step 400 0 victory-8.ppm
+step 1 1 -
+step 400 0 victory-9.ppm
+battle 0 4 1 4 0 1 0
+growth 9 495 0 9 805 0
+uses 4 40 0 38
+flag 37 1
+flag 39 0
+item 378 0
+flag 35 0
+expect 34 1 9 5 3
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 duo-achievement-repeat.ppm
+flag 37 1
+growth 9 495 0 9 805 0
+step 1 2 -
+step 120 0 -
+step 36 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+expect 34 1 11 7 3
+step 1 1 -
+step 400 0 workshop-opened.ppm
+flag 39 1
+item 378 2
+item 13 2
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 400 0 workshop-repeat.ppm
+flag 39 1
+item 378 2
+step 1 1 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 reward-inventory.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 choose-heal.ppm
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 potion-used.ppm
+roster 23 28 4 0 0 0
+uses 4 40 0 38
+item 13 1
+item 378 2
+step 1 1 -
+step 180 0 after-potion.ppm
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 300 0 no-effect.ppm
+item 13 1
+roster 23 28 4 0 0 0
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+expect 34 1 11 7 3
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 loot-saved.ppm
+flag 36 1
+flag 37 1
+flag 38 1
+flag 39 1
+item 13 1
+item 378 2
+growth 9 495 0 9 805 0
+color 2 1 4196
+color 2 8 21375
+quit

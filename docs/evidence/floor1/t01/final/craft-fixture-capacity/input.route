@@ -1,0 +1,236 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 intro.ppm
+step 1 1 -
+step 400 0 shoulder.ppm
+step 1 1 -
+step 400 0 ai.ppm
+step 1 1 -
+step 400 0 controls.ppm
+step 1 1 -
+step 120 0 room.ppm
+expect 34 0 4 8 1
+step 132 16 -
+step 40 0 -
+step 68 64 -
+step 180 0 landing.ppm
+expect 34 1 12 4 1
+policy 1
+item 378 98
+item 380 99
+item 22 99
+step 20 32 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 workshop-full.ppm
+flag 39 0
+item 378 98
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 scrap-toss.ppm
+item 378 97
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 workshop-retry.ppm
+item 378 99
+flag 39 1
+step 1 2 -
+step 120 0 -
+step 52 64 -
+step 40 0 -
+step 148 32 -
+step 40 0 -
+step 180 0 service.ppm
+expect 34 2 2 4 1
+step 68 16 -
+step 40 0 -
+step 52 128 -
+step 40 0 -
+expect 34 2 6 7 1
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 craft-full.ppm
+item 378 99
+item 380 99
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 charge-toss.ppm
+item 380 98
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 craft-retry.ppm
+item 378 97
+item 380 99
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 craft-full-again.ppm
+item 378 97
+item 380 99
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 second-charge-toss.ppm
+item 380 98
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 second-craft.ppm
+item 378 95
+item 380 99
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 116 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 cache-full.ppm
+flag 46 0
+item 380 99
+item 22 99
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 1 -
+step 180 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 120 0 -
+step 1 1 -
+step 180 0 medicine-toss.ppm
+item 22 98
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 2 -
+step 180 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 600 0 cache-retry.ppm
+flag 46 1
+item 380 98
+item 22 99
+step 1 1 -
+step 400 0 -
+step 1 2 -
+step 120 0 -
+step 1 1 -
+step 400 0 capacity-repeat.ppm
+item 380 98
+item 22 99
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 600 0 saved.ppm
+expect 34 2 13 7 1
+quit

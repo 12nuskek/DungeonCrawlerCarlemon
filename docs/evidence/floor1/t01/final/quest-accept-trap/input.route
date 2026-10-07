@@ -1,0 +1,85 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 2 4 6 1
+flag 41 1
+flag 42 0
+flag 43 0
+step 36 64 -
+step 40 0 -
+step 36 32 -
+step 180 0 declined-exit.ppm
+expect 34 1 2 4 1
+step 20 16 -
+step 40 0 -
+step 20 32 -
+step 180 0 declined-return.ppm
+expect 34 2 2 4 1
+step 20 16 -
+step 40 0 -
+step 36 128 -
+step 40 0 -
+step 20 16 -
+step 40 0 -
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 -
+step 1 1 -
+step 400 0 accepted.ppm
+flag 41 0
+flag 42 1
+flag 43 0
+step 1 1 -
+step 120 0 -
+step 52 16 -
+step 40 0 -
+expect 34 2 7 6 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 warning.ppm
+step 1 1 -
+step 400 0 recovery-warning.ppm
+step 1 1 -
+step 120 0 -
+step 20 16 -
+step 400 0 shocked.ppm
+expect 34 2 8 6 1
+flag 40 1
+tile 8 6 12956
+roster 26 26 8 2 64 0
+step 1 1 -
+step 400 0 trap-recovery.ppm
+step 1 1 -
+step 120 0 -
+step 20 128 -
+step 40 0 -
+step 20 64 -
+step 40 0 spent-tile.ppm
+expect 34 2 8 6 1
+roster 26 26 8 2 64 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 trap-saved.ppm
+expect 34 2 8 6 1
+quit

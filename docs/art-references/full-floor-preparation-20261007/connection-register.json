@@ -1,0 +1,85 @@
+{
+  "connection_register": [
+    {
+      "id": "D1.N-D2.S",
+      "south_panel": "D1 Opening District",
+      "north_panel": "D2 Sluice Junction",
+      "south_panel_port": "center of top edge",
+      "north_panel_port": "center of bottom edge",
+      "target_clear_width_metatiles": 7,
+      "target_elevation": "same neutral gray slate floor",
+      "registration": "Centered 1536-wide panel edges joined directly; no scaling or edge repainting.",
+      "observed": "Floor fields overlap at the join, with small wall-edge/cross-section and tile-rhythm differences. No pixel-perfect geometry claim.",
+      "status": "illustrative alignment only"
+    },
+    {
+      "id": "D2-Foundry",
+      "target": "northwest/northward onward route",
+      "status": "Visual context only. Dry reachability and gate state not verified."
+    },
+    {
+      "id": "D2-Arcade",
+      "target": "east/southeastward onward route",
+      "status": "Visual context only. Exact exit and branch progression remain governed by the written graph."
+    }
+  ],
+  "width_contract": {
+    "main_route_metatiles": [
+      5,
+      7
+    ],
+    "ordinary_branch_metatiles": [
+      3,
+      4
+    ],
+    "junction_metatiles": [
+      8,
+      12
+    ],
+    "status": "Design target; generation does not guarantee exact counts."
+  },
+  "assembly": {
+    "script": "assemble_stitch.py",
+    "order": [
+      "D2 north",
+      "D1 south"
+    ],
+    "resampling": false,
+    "cropping": false,
+    "repainting": false,
+    "blending": false,
+    "translation_offsets": {
+      "D2": [
+        64,
+        72
+      ],
+      "D1": [
+        64,
+        1096
+      ]
+    },
+    "seam_y": 1096,
+    "added_outer_margins": {
+      "left": 64,
+      "right": 64,
+      "top": 72,
+      "bottom": 112
+    },
+    "outside_annotations_only": "Title, caveat footer and amber seam arrows in side padding.",
+    "pixel_preservation_checks": {
+      "d2-sluice-district-v1.png": true,
+      "d1-opening-district-v2.png": true
+    }
+  },
+  "limitations": [
+    "Illustrative district concept images, not a native GBA screenshot, metatile atlas, measured floor plan, collision layer or reachability proof.",
+    "D1 v2 visibly expands the main footprint but the upper maintenance-bay passage and entry stairs still fall short of the written width hierarchy.",
+    "D2 uses finer floor detailing than D1. Wall-block and prop vocabulary broadly match, but exact pixel/ground scale remains to be normalized in native layout.",
+    "D2 bridges and service necks include narrow portions; any main-route use must be widened to the written contract before game implementation.",
+    "D2 repeats a small pillar motif from D1. This is generated decoration, not a new canonical refuge, checkpoint or story event.",
+    "Onward district routes, doorway footprints, gate states, water crossings and dry path continuity need deterministic layout review; the written nine-district graph governs.",
+    "The seam is an unretouched 1:1 butt join. Small wall/floor mismatch is visible and intentionally unhidden.",
+    "Further district generation is pending user review of this pilot. No seven-district continuation, code, repository, runtime or emulator work was performed.",
+    "Full-floor v2 prompt was prepared but never used; full-floor v1 remains unchanged as an orientation concept."
+  ]
+}

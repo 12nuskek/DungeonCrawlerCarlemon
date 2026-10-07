@@ -1,14 +1,15 @@
 # Durable checkpoint
 
 Current checkpoint2026-10-07: **Full Floor1 execution authorised and active.**
-F1-P01 issue53 on task/floor1-p01-baseline; base3f1c851cce076b51cf4eb174925d9a2e41777a1f.
-Prior Stages0–5/overnight work is complete; PR52 server-confirmed merged at that base.
-The prior playtest stop, planning-only limits and fixed eight-hour window are superseded.
-Read [full-floor authority/backlog](floor1/README.md). Single implementation writer.
-Baseline ROM/ZIP rehashed unchanged; no active PRs/CI or repo schedules at launch.
-Library art materialization blocked at supported downloader hosted-app network call;
-source/state/graybox work continues. No new floor gameplay acceptance claimed yet.
-Next: merge P01 audit, reproduce/fix Journal tag and spent-wire sign (F1-T01).
+P01 PR54 merged984f89351fe273f4ba6813aaffd7b0e3f2721504. F1-T01 issue55 / draft
+PR56 on task/floor1-t01-state-text, based on that merge. Engine50bf6d9 clean-built
+and runtime verified96 sessions/1609 assertions including all216 recovered-victory
+and cold checks. Evidence [T01](evidence/floor1/t01/README.md). Merge pending review.
+Art PR58 merged into task branch at a73eff7cb5acc2aea13151f0260864dc160bd9f6;
+231 package checks and actual source-pixel review pass. Parent relinquished writes;
+sole implementation writer resumed. No blocked asset approval or Library retries.
+Prior Stage6 pause and fixed overnight window superseded; no later floors.
+Next: integrate verified T01, then F1-A01 explicit map/encounter membership.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -1623,3 +1624,31 @@ Private delivery succeeded; older Library version retained. Runtime blockers:non
 Human pacing/playtest pending; host HTML-preview limitation and partial source-kit
 omissions remain documented. Historical failed traces/retry counts remain intact.
 Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; sole implementation writer.
+
+### F1-T01 state text — 2026-10-07
+
+P01 PR54 merged984f89351fe273f4ba6813aaffd7b0e3f2721504. T01 issue55;
+base that merge, branch task/floor1-t01-state-text. Actual baseline25-check normal
+route shows stale find/crate wording before and after pickup, and live warning on
+spent wire. Candidate retains page counts, completed-quest priority, flags/rewards,
+geometry and save layout. Adds TAG_FOUND return objective and spent sign branch.
+No new gameplay systems. Full regression retains1315 original assertions and adds
+focused immediate/re-entry/cold text-state and capacity coverage:84 sessions/1393,
+including220 labeled fixture checks. New key-pocket-full fixture is isolated and
+not a production save. Candidate implemented; clean compile/runtime pending.
+Next commit candidate, run scripts/test-f1-t01.sh with mandatory legacy inputs,
+review actual text and original behavior, then scoped PR/merge. Library art blocker
+remains; no handoff writes active.
+
+### F1-T01 accepted regression — 2026-10-07
+
+Tested/compiled50bf6d99fdfc4cb3d1ce6799a327a9974e8b786f, productionb27d1da7…f719.
+Full runner84/1393 passes. Recovery extension source6c16fdc6be2d5787fd4ae1325fc0a79061256bd1
+uses verified identical engine/harness and the exact production build;12/216 passes.
+Total96/1609 (1389 production,220 labeled fixtures),96 empty errors,38 pixel comparisons.
+Actual immediate/re-entry/cold text/capacity and all recovered victory/cold frames
+reviewed; motion sampled from actual timed6.36s sequence. No gameplay/source assumptions
+substituted for runtime. Raw local runs floor1/t01/run-UcTIk4 and n04/run-kc8ohyg_ preserved.
+Reference PR58 source package integrated, issue57 closed; native/runtime art remains pending.
+Next: final diff/source-identity review, push evidence, update issue55/PR56 and merge;
+then F1-A01. No current implementation blocker. No schedule added.

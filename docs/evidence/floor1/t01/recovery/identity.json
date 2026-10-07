@@ -1,0 +1,9 @@
+{
+  "source_test_commit": "6c16fdc6be2d5787fd4ae1325fc0a79061256bd1",
+  "unchanged_engine_compiled_commit": "50bf6d99fdfc4cb3d1ce6799a327a9974e8b786f",
+  "base_run": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/t01/run-UcTIk4",
+  "production_sha256": "b27d1da7368cd22bc3aa8217c4003b84cd37389fd91f123f07f427fc4c39f719",
+  "harness_sha256": "fff0f6226dd05d68029e97ea7d4de8555622ac0b000ad65cef2c9290ab54d790",
+  "symbols_sha256": "00ac1418dcdc0a9bc8354ea602f0739f5cbd531ecbc72a7a706ef553f4f87c80",
+  "method": "Verified unchanged engine/harness source; reuse accepted clean production build. No engine rebuild claimed. Normal save copies and read-only RAM assertions."
+}

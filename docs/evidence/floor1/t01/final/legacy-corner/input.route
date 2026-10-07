@@ -1,0 +1,21 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 reloaded.ppm
+expect 34 5 13 9 7
+flag 48 1
+growth 12 974 0 10 1284 0
+uses 2 37 0 33
+step 20 32 -
+step 40 0 -
+expect 34 5 12 9 7
+step 40 0 escaped-old-corner.ppm
+flag 48 1
+growth 12 974 0 10 1284 0
+uses 2 37 0 33
+quit

@@ -21,7 +21,7 @@ assert code.count(point) == 1
 code = code.replace(point, point + r'''
         if (!strcmp(line,"audit\n")) {
             unsigned sb=core->busRead32(core,saveptr), group=core->busRead8(core,sb+4), num=core->busRead8(core,sb+5);
-            unsigned version=core->busRead16(core,sb+0x139C+(0x404E-0x4000)*2);
+            unsigned version=core->busRead16(core,sb+0x139C+(0x404E - 0x4000)*2);
             unsigned loop=(core->busRead8(core,sb+0x1270+49/8)>>(49%8))&1;
             unsigned layout=core->busRead16(core,sb+0x32);
             checks+=4;
@@ -52,9 +52,11 @@ code = code.replace(point, point + r'''
 ''')
 assert 'busWrite' not in code
 (out / 'read-state.c').write_text(code)
-subprocess.run(['cc', '-std=gnu11', '-Wall', '-Wextra', '-Werror',
-                *shlex.split(os.environ.get('DCC_TEST_CFLAGS', '')), str(out / 'read-state.c'),
-                *shlex.split(os.environ.get('DCC_TEST_LDFLAGS', '')), '-lmgba', '-o', str(out / 'playtest')], check=True)
+with (out / 'host-build.log').open('w') as host_log:
+    subprocess.run(['cc', '-std=gnu11', '-Wall', '-Wextra', '-Werror',
+                    *shlex.split(os.environ.get('DCC_TEST_CFLAGS', '')), str(out / 'read-state.c'),
+                    *shlex.split(os.environ.get('DCC_TEST_LDFLAGS', '')), '-lmgba', '-o', str(out / 'playtest')],
+                    stdout=host_log, stderr=subprocess.STDOUT, check=True)
 fixtures = [('i01-' + name, ROOT / 'artifacts/i01/run-Yw6WfM' / (name + '.sav'))
             for name in ('motion', 'craft', 'quest', 'playtest', 'boss-loss')]
 fixtures += [('legacy-corner', ROOT / 'artifacts/n02/legacy-corner-setup/normal-save.sav')]

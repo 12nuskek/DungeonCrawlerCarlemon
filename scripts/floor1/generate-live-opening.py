@@ -109,7 +109,9 @@ def generate(root):
         +'static const struct DccPresentationTile sDccLoopTiles[] = {\n'+''.join(f'    {{ MAP_DCC_F1D1FIELD, {x}, {y}, FLAG_DCC_D1_LOOP_OPEN, 0x{a:04X}, 0x{b:04X} }},\n' for x,y,a,b in loop_pairs)+'};\n'
         +'static const struct DccPresentationTile sDccLiveTiles[] = {\n'
         +'    { MAP_DCC_F1D1WARDEN, 12, 11, FLAG_DCC_BOSS_CLEARED, 0x3618, 0x362A },\n'
-        +'    { MAP_DCC_F1D1FIELD, 46, 42, FLAG_DCC_TRAP_SPENT, 0x328F, 0x329C },\n};\n')
+        +'    { MAP_DCC_F1D1FIELD, 46, 42, FLAG_DCC_TRAP_SPENT, 0x328F, 0x329C },\n'
+        # Existing floor panel/scuff art: retain elevation3, walkability and MB_CAVE.
+        +'    { MAP_DCC_F1D1FIELD, 55, 42, FLAG_DCC_SECRET_TAKEN, 0x3248, 0x3243 },\n};\n')
     (engine/'src/data/dcc_map_counts.h').write_text('// Generated full map-group bounds; not crawler membership.\n'
         +'static const u8 sDccMapCounts[] = {'+', '.join(str(len(groups[n])) for n in groups['group_order'])+'};\n')
 

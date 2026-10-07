@@ -13,4 +13,5 @@ static const struct DccPresentationTile sDccLoopTiles[] = {
 static const struct DccPresentationTile sDccLiveTiles[] = {
     { MAP_DCC_F1D1WARDEN, 12, 11, FLAG_DCC_BOSS_CLEARED, 0x3618, 0x362A },
     { MAP_DCC_F1D1FIELD, 46, 42, FLAG_DCC_TRAP_SPENT, 0x328F, 0x329C },
+    { MAP_DCC_F1D1FIELD, 55, 42, FLAG_DCC_SECRET_TAKEN, 0x3248, 0x3243 },
 };

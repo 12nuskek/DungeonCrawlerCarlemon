@@ -24,8 +24,11 @@ assert not git('status', '--porcelain'), 'Commit before runtime checks'
 head = git('rev-parse', 'HEAD')
 build = args.build.resolve()
 compiled = (build / 'tested-commit.txt').read_text().strip()
-subprocess.run(['git', 'diff', '--quiet', compiled, head, '--', 'engine'], cwd=ROOT, check=True)
+expected_engine = '16d7012bcff5de4ce04ad691fa81543bb3047ff7' if args.baseline else head
+subprocess.run(['git', 'diff', '--quiet', compiled, expected_engine, '--', 'engine'], cwd=ROOT, check=True)
 rom = build / 'source/engine/pokeemerald.gba'
+if args.baseline:
+    assert digest(rom) == '6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb', 'Exact old ROM required'
 original = args.original.resolve()
 original_hash = digest(original)
 parent = ROOT / 'artifacts/floor1/feedback'

@@ -9,6 +9,11 @@ def module(name,path):
     l=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(l);l.loader.exec_module(m);return m
 assert not git('status','--porcelain'),'Commit before testing'
 head=git('rev-parse','HEAD');base=Path(os.environ['DCC_A01_BASE_RUN']).resolve()
+retained=Path(os.environ['DCC_G01B_CLOSED_RUN']).resolve() if os.environ.get('DCC_G01B_CLOSED_RUN') else None
+if retained:
+    retained_source=(retained/'tested-commit.txt').read_text().strip()
+    subprocess.run(['git','diff','--quiet',retained_source,head,'--','engine','scripts/playtest.c','scripts/contracts/f1-g01b-coordinated.json','scripts/floor1/coordinated-graybox.py','scripts/floor1/walking-harness.py'],cwd=root,check=True)
+    assert hashlib.sha256((retained/'closed/diagnostic.gba').read_bytes()).hexdigest()==(retained/'closed/rom.sha256').read_text().split()[0]
 subprocess.run(['git','diff','--quiet','ed592e7',head,'--','engine','scripts/playtest.c'],cwd=root,check=True)
 assert hashlib.sha256((base/'production.gba').read_bytes()).hexdigest()=='5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230'
 out=Path(tempfile.mkdtemp(prefix='third-',dir=root/'artifacts/floor1/g01b'));print('Evidence:',out,flush=True);(out/'tested-commit.txt').write_text(head+'\n')
@@ -37,6 +42,7 @@ class Route:
     def m(self):return spec['maps'][self.key]
     def expect(self):self.lines.append(f'expect 35 {self.m["map_num"]} {self.pos[0]} {self.pos[1]} 0')
     def step(self,n,key,label='-'):
+        label=label.replace('_','-')
         if key in [16,32,64,128]:self.face=key
         if self.clip:
             for _ in range(n):self.lines.append(f'step 1 {key} frame-{self.frames:05d}.ppm');self.frames+=1
@@ -87,10 +93,17 @@ for opened in [False,True]:
         for m in spec['maps'].values():
             for area in ['maps','layouts']:shutil.rmtree(source/'engine/data'/area/m['name'])
     subprocess.run(['python3','-B',str(source/'scripts/floor1/coordinated-graybox.py'),'--engine',str(source/'engine'),'--out',str(d)]+(['--opened'] if opened else []),stdout=(d/'export.log').open('w'),check=True)
-    with (d/'build.log').open('w') as log:subprocess.run(['make','-C',str(source/'engine'),'-j2'],stdout=log,stderr=subprocess.STDOUT,check=True)
-    rom=d/'diagnostic.gba';shutil.copyfile(source/'engine/pokeemerald.gba',rom);(d/'rom.sha256').write_text(hashlib.sha256(rom.read_bytes()).hexdigest()+'  diagnostic.gba\n')
+    rom=d/'diagnostic.gba'
     sym=d/'game.sym'
-    with sym.open('w') as log:subprocess.run(['arm-none-eabi-nm','-g','--defined-only',str(source/'engine/pokeemerald.elf')],stdout=log,check=True)
+    if retained and not opened:
+        assert json.loads((d/'map-identities.json').read_text())==json.loads((retained/'closed/map-identities.json').read_text())
+        shutil.copyfile(retained/'closed/diagnostic.gba',rom);shutil.copyfile(retained/'closed/game.sym',sym)
+        (d/'build-reuse.json').write_text(json.dumps({'compiled_source':retained_source,'original_build':str(retained/'closed/build.log'),'sha256':hashlib.sha256(rom.read_bytes()).hexdigest(),'method':'Replay original clean committed diagnostic ROM; engine/shared harness/contract/exporter/walking source diff verified empty. No engine/cache inputs copied. Open variant builds in this new fresh snapshot.'},indent=2)+'\n')
+    else:
+        with (d/'build.log').open('w') as log:subprocess.run(['make','-C',str(source/'engine'),'-j2'],stdout=log,stderr=subprocess.STDOUT,check=True)
+        shutil.copyfile(source/'engine/pokeemerald.gba',rom)
+        with sym.open('w') as log:subprocess.run(['arm-none-eabi-nm','-g','--defined-only',str(source/'engine/pokeemerald.elf')],stdout=log,check=True)
+    (d/'rom.sha256').write_text(hashlib.sha256(rom.read_bytes()).hexdigest()+'  diagnostic.gba\n')
     for label,order,final in [('guard-first',['guard','howler'],'field'),('howler-first',['howler','guard'],'quiet'),('preboss',['howler'],'boss')]:
         r=Route(opened);r.unchanged();r.anchor('junction','junction')
         if label=='preboss':
@@ -117,7 +130,8 @@ for opened in [False,True]:
         r=Route(True);r.clip=True;r.anchor('junction');r.unchanged();session=run(d,'continuous-motion',rom,sym,d/'motion.sav',r.lines)
         with (session/'encode.log').open('w') as log:subprocess.run(['ffmpeg','-y','-framerate','59.7275005696','-i',str(session/'frame-%05d.png'),'-c:v','libvpx-vp9','-pix_fmt','yuv420p','-crf','30','-b:v','0',str(session/'walking.webm')],stdout=log,stderr=subprocess.STDOUT,check=True)
         (session/'identity.json').write_text(json.dumps({'actual_continuous_frames':r.frames,'hz':59.7275005696,'includes_idle':True,'no_interpolation':True,'human_pacing_claim':False},indent=2)+'\n')
-    for ext in ['map','elf']:shutil.copyfile(source/'engine'/('pokeemerald.'+ext),d/('diagnostic.'+ext))
+    if not retained or opened:
+        for ext in ['map','elf']:shutil.copyfile(source/'engine'/('pokeemerald.'+ext),d/('diagnostic.'+ext))
 (out/'validation-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 assert git('rev-parse','HEAD')==head and not git('status','--porcelain')
 print('PASS',len(summary),'sessions',sum(v['assertions'] for v in summary),'assertions; production unchanged, live adoption pending.',flush=True)

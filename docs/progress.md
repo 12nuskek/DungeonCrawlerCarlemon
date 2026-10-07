@@ -1,6 +1,6 @@
 # Durable checkpoint
 
-Current2026-10-07 09:08UTC: **F1-G01c audit verified; live migration pending.**
+Current2026-10-07 09:06UTC: **F1-G01c audit verified; live migration pending.**
 Sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, parent
 01a10e89-0c59-737a-8ede-620d02be2034. Parent owns continuation and sampled
 quota guard (latest received07:36UTC9%used/91%remaining; pause at parent request
@@ -15,7 +15,7 @@ Host/runtime runnerd0a20ab2fd9f13d1f64a778da860aa30d9809620;
 all6legacy maps,2ordinary navigation/manual-save seeds. Original/cold copy hashes
 unchanged. Production compiledC5/hash5c4f865a retained; no new production compile.
 [Evidence and commands](evidence/floor1/g01c/README.md),
-[Migration audit](floor1/g01/migration-audit.md). AuditPR pending creation.
+[Migration audit](floor1/g01/migration-audit.md). AuditPR71 draft opened; review/integration pending.
 Material finding: trainer864limit moves SYSTEM_FLAGS if raised; no trainer/save
 ABI expansion. Continue restoration must rebuild the player, not clear objects
 and use active-only ReturnToField. Exact Workshop/Checkpoint width/anchor contract

@@ -343,3 +343,13 @@ and complete raw logs: [N05 evidence](evidence/n05/final/README.md). First-use
 instruction preserved; before/after-trial repeat control return visually verified.
 Prepared continuous completion and segmented unprepared wins remain distinct.
 Human playtime is not inferred from scripted waits.
+
+## Opening-field diagnostic preview (F1-G01a)
+
+Use the pinned build environment and accepted A01 artifact path with
+`scripts/test-f1-g01.py`; disposable snapshots only. Follow
+[exact reproduction, identities and evidence](evidence/floor1/g01/README.md) for
+read-only whole-buffer/cold checks and continuous frame capture. Do not load
+diagnostic map35/0/layout448 saves into production. Candidate doors/bays and
+closed/open loop variants do not implement live state or migration. Geometry
+travel still fails its comparison, so these checks do not unblock V01 or finalT.

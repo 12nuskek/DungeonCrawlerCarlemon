@@ -376,3 +376,13 @@ select text; HealPlayerParty remains free with unchanged effects. No new chronol
 art, reward or save field. Actual first-use and both repeat-state captures and normal
 control-return checks: tested eaf073d, evidence/n05/final. All prior placeholders
 and source-kit omissions remain disclosed.
+
+## F1-G01a technical preview —2026-10-07
+
+The isolated opening-field preview uses existing reviewed bank6 floor/wall art
+and eight existing object graphics as neutral geometry markers. Text explicitly
+says geometry preview, no live encounter/door; no new book chronology, scene,
+reward, capture flow or gameplay flag is supplied. The diagram is an analytical
+layout image, not game art. No new finished artwork/animation is claimed.
+Candidate travel failed the recovery comparison and must be reshaped before
+relocating existing beats; [evidence and exact next gate](evidence/floor1/g01/README.md).

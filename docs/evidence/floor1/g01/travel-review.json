@@ -1,0 +1,18 @@
+{
+  "candidate_source": "4718908806057d245546cc65cf1f43105ea01b01",
+  "candidate_open_field_only": {
+    "guard": 24,
+    "howler": 37,
+    "far_junction": 27,
+    "warden_door": 16
+  },
+  "baseline_verified_outbound_to_guide": {
+    "guard": 14,
+    "howler": 19
+  },
+  "baseline_sources": [
+    "artifacts/floor1/a01/run-I7PJq0/guard-rest/replay.log",
+    "artifacts/floor1/a01/run-I7PJq0/boss-rest/replay.log"
+  ],
+  "limits": "Baseline outbound steps derived from recorded ordinary map positions and inputs. Existing routes return to the next encounter, not to the same starting point: do not claim measured same-encounter roundtrip. Candidate field values exclude unfinished interior/door steps and already exceed old guide distances. Final geometry is rejected for live relocation until shortened. Existing defeat retry is local, zero walking."
+}

@@ -1,0 +1,13 @@
+{
+  "observer_source": "26fc7ab057fcc878359b9972789fb0483ae6e8d5",
+  "diagnostic_game_source": "4718908806057d245546cc65cf1f43105ea01b01",
+  "base": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01/preview-b_ekukga",
+  "main_sessions": 9,
+  "main_assertions": 708,
+  "observer_sessions": 3,
+  "observer_assertions": 6203,
+  "motion_frames": 632,
+  "motion_hz": 59.7275005696,
+  "motion_seconds": 10.581390380860409,
+  "method": "Two cold ordinary saves: all3072 field cells compared against exact diagnostic map source; extent79x62. Sampled engine arrays via read-only mGBA bus reads. Continuous actual-frame silent motion, includes all stationary segment waits; no interpolation or skipped frames. No hardware performance/human pacing claim."
+}

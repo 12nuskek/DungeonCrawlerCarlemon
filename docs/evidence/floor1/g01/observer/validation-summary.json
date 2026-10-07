@@ -1,0 +1,17 @@
+[
+  {
+    "route": "closed-buffer-cold",
+    "assertions": 3098,
+    "diagnostic": true
+  },
+  {
+    "route": "open-buffer-cold",
+    "assertions": 3098,
+    "diagnostic": true
+  },
+  {
+    "route": "continuous-motion",
+    "assertions": 7,
+    "diagnostic": true
+  }
+]

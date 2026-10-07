@@ -1,0 +1,35 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+expect 35 0 30 12 0
+duo healthy
+uses 8 40 2 40
+flag 32 0
+flag 33 0
+flag 34 0
+flag 35 0
+flag 36 0
+flag 37 0
+flag 38 0
+flag 39 0
+flag 40 0
+flag 41 0
+flag 42 0
+flag 43 0
+flag 44 0
+flag 45 0
+flag 46 0
+flag 47 0
+flag 48 0
+flag 2135 0
+flag 2136 0
+flag 2137 0
+flag 2138 0
+flag 2139 0
+quit

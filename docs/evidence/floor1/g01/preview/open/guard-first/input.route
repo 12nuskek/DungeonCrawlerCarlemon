@@ -1,0 +1,459 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 arrival.ppm
+expect 35 0 8 38 0
+duo healthy
+uses 8 40 2 40
+step 68 64 -
+step 40 0 -
+expect 35 0 8 34 0
+step 164 16 -
+step 40 0 -
+expect 35 0 18 34 0
+step 132 64 -
+step 40 0 -
+expect 35 0 18 26 0
+step 68 16 -
+step 40 0 -
+expect 35 0 22 26 0
+step 40 0 junction.ppm
+step 212 64 -
+step 40 0 -
+expect 35 0 22 13 0
+step 84 16 -
+step 40 0 -
+expect 35 0 27 13 0
+step 20 64 -
+step 40 0 -
+expect 35 0 27 12 0
+step 52 16 -
+step 40 0 -
+expect 35 0 30 12 0
+step 40 0 quiet-door.ppm
+step 48 16 -
+step 40 0 -
+expect 35 0 33 12 0
+step 20 128 -
+step 40 0 -
+expect 35 0 33 13 0
+step 148 16 -
+step 40 0 -
+expect 35 0 42 13 0
+step 436 128 -
+step 40 0 -
+expect 35 0 42 40 0
+step 40 0 workshop-door.ppm
+step 16 128 -
+step 40 0 -
+expect 35 0 42 41 0
+step 68 16 -
+step 40 0 -
+expect 35 0 46 41 0
+step 20 128 -
+step 40 0 -
+expect 35 0 46 42 0
+step 40 0 trap.ppm
+step 68 16 -
+step 40 0 -
+expect 35 0 50 42 0
+step 40 0 tag.ppm
+step 80 16 -
+step 40 0 -
+expect 35 0 55 42 0
+step 40 0 secret.ppm
+step 36 32 -
+step 40 0 -
+expect 35 0 53 42 0
+step 20 64 -
+step 40 0 -
+expect 35 0 53 41 0
+step 180 32 -
+step 40 0 -
+expect 35 0 42 41 0
+step 228 64 -
+step 40 0 -
+expect 35 0 42 27 0
+step 52 32 -
+step 40 0 -
+expect 35 0 39 27 0
+step 40 0 guard.ppm
+step 84 16 -
+step 40 0 -
+expect 35 0 44 27 0
+step 132 128 -
+step 40 0 -
+expect 35 0 44 35 0
+step 40 0 howler.ppm
+step 260 64 -
+step 40 0 -
+expect 35 0 44 19 0
+step 100 16 -
+step 40 0 -
+expect 35 0 50 19 0
+step 40 0 far-junction.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 50 13 0
+step 84 32 -
+step 40 0 -
+expect 35 0 45 13 0
+step 40 0 warden-door.ppm
+step 84 16 -
+step 40 0 -
+expect 35 0 50 13 0
+step 100 128 -
+step 40 0 -
+expect 35 0 50 19 0
+step 40 0 far-junction.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 50 13 0
+step 276 32 -
+step 40 0 -
+expect 35 0 33 13 0
+step 20 64 -
+step 40 0 -
+expect 35 0 33 12 0
+step 52 32 -
+step 40 0 -
+expect 35 0 30 12 0
+step 40 0 quiet-door.ppm
+step 292 128 -
+step 40 0 -
+expect 35 0 30 30 0
+step 100 32 -
+step 40 0 -
+expect 35 0 24 30 0
+step 68 128 -
+step 40 0 -
+expect 35 0 24 34 0
+step 260 32 -
+step 40 0 -
+expect 35 0 8 34 0
+step 100 128 -
+step 40 0 -
+expect 35 0 8 40 0
+step 40 0 arrival-horizontal.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 8 34 0
+step 164 16 -
+step 40 0 -
+expect 35 0 18 34 0
+step 20 64 -
+step 40 0 -
+expect 35 0 18 33 0
+step 100 16 -
+step 40 0 -
+expect 35 0 24 33 0
+step 40 0 arrival-vertical.ppm
+step 100 32 -
+step 40 0 -
+expect 35 0 18 33 0
+step 164 64 -
+step 40 0 -
+expect 35 0 18 23 0
+step 36 32 -
+step 40 0 -
+expect 35 0 16 23 0
+step 116 16 -
+step 40 0 -
+expect 35 0 23 23 0
+step 40 0 junction-pillar-west.ppm
+step 116 32 -
+step 40 0 -
+expect 35 0 16 23 0
+step 36 64 -
+step 40 0 -
+expect 35 0 16 21 0
+step 180 16 -
+step 40 0 -
+expect 35 0 27 21 0
+step 36 128 -
+step 40 0 -
+expect 35 0 27 23 0
+step 116 16 -
+step 40 0 -
+expect 35 0 34 23 0
+step 40 0 junction-pillar-east.ppm
+step 116 32 -
+step 40 0 -
+expect 35 0 27 23 0
+step 308 16 -
+step 40 0 -
+expect 35 0 46 23 0
+step 20 128 -
+step 40 0 -
+expect 35 0 46 24 0
+step 96 128 -
+step 40 0 -
+expect 35 0 46 30 0
+step 40 0 guard-approach.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 46 24 0
+step 132 128 -
+step 40 0 -
+expect 35 0 46 32 0
+step 116 32 -
+step 40 0 -
+expect 35 0 39 32 0
+step 100 128 -
+step 40 0 -
+expect 35 0 39 38 0
+step 40 0 howler-approach.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 39 32 0
+step 132 16 -
+step 40 0 -
+expect 35 0 47 32 0
+step 52 128 -
+step 40 0 -
+expect 35 0 47 35 0
+step 100 16 -
+step 40 0 -
+expect 35 0 53 35 0
+step 40 0 howler-return.ppm
+step 100 32 -
+step 40 0 -
+expect 35 0 47 35 0
+step 244 64 -
+step 40 0 -
+expect 35 0 47 20 0
+step 84 32 -
+step 40 0 -
+expect 35 0 42 20 0
+step 100 16 -
+step 40 0 -
+expect 35 0 48 20 0
+step 40 0 warden-approach.ppm
+step 100 32 -
+step 40 0 -
+expect 35 0 42 20 0
+step 116 64 -
+step 40 0 -
+expect 35 0 42 13 0
+step 36 32 -
+step 40 0 -
+expect 35 0 40 13 0
+step 100 128 -
+step 40 0 -
+expect 35 0 40 19 0
+step 40 0 open-loop.ppm
+step 100 64 -
+step 40 0 -
+expect 35 0 40 13 0
+step 100 128 -
+step 40 0 -
+expect 35 0 40 19 0
+step 100 32 -
+step 40 0 -
+expect 35 0 34 19 0
+step 340 128 -
+step 40 0 -
+expect 35 0 34 40 0
+step 52 32 -
+step 40 0 -
+expect 35 0 31 40 0
+step 52 16 -
+step 40 0 -
+expect 35 0 34 40 0
+step 40 0 workshop-side.ppm
+step 52 32 -
+step 40 0 -
+expect 35 0 31 40 0
+step 52 16 -
+step 40 0 -
+expect 35 0 34 40 0
+step 20 128 -
+step 40 0 -
+expect 35 0 34 41 0
+step 196 16 -
+step 40 0 -
+expect 35 0 46 41 0
+step 52 128 -
+step 40 0 -
+expect 35 0 46 44 0
+step 40 0 optional-spur.ppm
+step 52 64 -
+step 40 0 -
+expect 35 0 46 41 0
+step 100 16 -
+step 40 0 -
+expect 35 0 52 41 0
+step 52 128 -
+step 40 0 -
+expect 35 0 52 44 0
+step 40 0 secret-spur.ppm
+step 52 64 -
+step 40 0 -
+expect 35 0 52 41 0
+step 164 32 -
+step 40 0 -
+expect 35 0 42 41 0
+step 164 64 -
+step 40 0 -
+expect 35 0 42 31 0
+step 164 32 -
+step 40 0 -
+expect 35 0 32 31 0
+step 100 16 -
+step 40 0 -
+expect 35 0 38 31 0
+step 40 0 fork-vertical.ppm
+step 100 32 -
+step 40 0 -
+expect 35 0 32 31 0
+step 20 64 -
+step 40 0 -
+expect 35 0 32 30 0
+step 132 32 -
+step 40 0 -
+expect 35 0 24 30 0
+step 132 128 -
+step 40 0 -
+expect 35 0 24 38 0
+step 292 32 -
+step 40 0 -
+expect 35 0 6 38 0
+step 148 32 -
+step 40 0 west-wall.ppm
+expect 35 0 6 38 0
+step 68 64 -
+step 40 0 -
+expect 35 0 6 34 0
+step 196 16 -
+step 40 0 -
+expect 35 0 18 34 0
+step 180 64 -
+step 40 0 -
+expect 35 0 18 23 0
+step 84 16 -
+step 40 0 -
+expect 35 0 23 23 0
+step 148 16 -
+step 40 0 pillar-collision.ppm
+expect 35 0 23 23 0
+step 36 128 -
+step 40 0 -
+expect 35 0 23 25 0
+step 228 16 -
+step 40 0 -
+expect 35 0 37 25 0
+step 36 128 -
+step 40 0 -
+expect 35 0 37 27 0
+step 20 16 -
+step 40 0 -
+expect 35 0 38 27 0
+step 148 64 -
+step 40 0 actor-collision.ppm
+expect 35 0 38 27 0
+step 1 1 -
+step 400 0 actor-dialogue.ppm
+step 1 1 -
+step 400 0 actor-anchor.ppm
+step 1 1 -
+step 120 0 -
+expect 35 0 38 27 0
+step 68 16 -
+step 40 0 -
+expect 35 0 42 27 0
+step 228 128 -
+step 40 0 -
+expect 35 0 42 41 0
+step 180 16 -
+step 40 0 -
+expect 35 0 53 41 0
+step 20 128 -
+step 40 0 -
+expect 35 0 53 42 0
+step 36 16 -
+step 40 0 -
+expect 35 0 55 42 0
+step 148 16 -
+step 40 0 secret-edge.ppm
+expect 35 0 55 42 0
+step 36 32 -
+step 40 0 -
+expect 35 0 53 42 0
+step 20 64 -
+step 40 0 -
+expect 35 0 53 41 0
+step 180 32 -
+step 40 0 -
+expect 35 0 42 41 0
+step 452 64 -
+step 40 0 -
+expect 35 0 42 13 0
+step 52 16 -
+step 40 0 -
+expect 35 0 45 13 0
+step 148 64 -
+step 40 0 north-edge.ppm
+expect 35 0 45 13 0
+step 52 128 -
+step 40 0 -
+expect 35 0 45 16 0
+step 180 32 -
+step 40 0 -
+expect 35 0 34 16 0
+step 36 16 -
+step 40 0 loop-pass.ppm
+expect 35 0 36 16 0
+step 52 64 -
+step 40 0 -
+expect 35 0 36 13 0
+step 52 32 -
+step 40 0 -
+expect 35 0 33 13 0
+step 20 64 -
+step 40 0 -
+expect 35 0 33 12 0
+step 52 32 -
+step 40 0 -
+expect 35 0 30 12 0
+step 40 0 final-location.ppm
+flag 32 0
+flag 33 0
+flag 34 0
+flag 35 0
+flag 36 0
+flag 37 0
+flag 38 0
+flag 39 0
+flag 40 0
+flag 41 0
+flag 42 0
+flag 43 0
+flag 44 0
+flag 45 0
+flag 46 0
+flag 47 0
+flag 48 0
+flag 2135 0
+flag 2136 0
+flag 2137 0
+flag 2138 0
+flag 2139 0
+duo healthy
+uses 8 40 2 40
+step 1 8 -
+step 120 0 menu.ppm
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 save-choice.ppm
+step 1 1 -
+step 600 0 saved.ppm
+expect 35 0 30 12 0
+quit

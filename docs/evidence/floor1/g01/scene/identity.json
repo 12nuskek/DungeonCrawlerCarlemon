@@ -1,0 +1,10 @@
+{
+  "measurement_runner_source": "327eda53bdd04858c9131396d6689a11fef020aa",
+  "diagnostic_source": "4718908806057d245546cc65cf1f43105ea01b01",
+  "observer_source": "26fc7ab057fcc878359b9972789fb0483ae6e8d5",
+  "observer_harness_sha256": "663d5f43fc7accdf723f08677e10c4d7d305420c9ce7dcee7334a7dd940a6010",
+  "route": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01/preview-b_ekukga/open/guard-first/input.route",
+  "assertions": 155,
+  "diagnostic": true,
+  "scope": "Readonly arrays sampled on every ordinary step frame whose loaded map extent is79x62. All candidate anchors/lane samples visited; not a whole-floor or hardware performance budget."
+}

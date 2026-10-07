@@ -1,16 +1,20 @@
 # Durable checkpoint
 
-Current checkpoint2026-10-07: **Full Floor1 execution authorised and active.**
-T01 PR56 merged168a0dabfe717e1ee29667c5460d45035506d786 after96/1609 runtime
-assertions,96 empty errors and actual visual review. Art PR58 included;231 reference
-checks pass, native conversion pending. Parent relinquished all writes; sole writer.
-F1-A01 issue59 on task/floor1-a01-membership, base that T01 merge. Explicit six-map
-and five-encounter classification, full map identity for presentation, scoped guards.
-No new maps/trainers/save changes. Labeled fixtures exhaust65536 map and65536 trainer
-identities each, plus synthetic cross-group/nonadjacent opt-in and no-alias checks.
-Implemented candidate; clean compile/full runtime and recovery216 checks pending.
-Next: commit candidate; scripts/test-f1-a01.sh, then test-n04.py on its exact production
-build; review actual images/identity, publish evidence and scoped PR before integration.
+Current checkpoint2026-10-07: **Paused at user budget boundary; full Floor1 incomplete.**
+User requires pausing when20% of the plan allowance remains. No supported account
+meter/reset tool exposed; percentage unknown, no estimates from time/tokens/context.
+Parent pauses the sole continuation. Do not start another substantial increment
+until this condition can be enforced or user chooses a fallback. No billing changes.
+T01 PR56 merged168a0dabfe717e1ee29667c5460d45035506d786 with96/1609 runtime checks.
+Art references integrated; no asset approval blocker. A01 issue59 / draft PR60,
+branch task/floor1-a01-membership based on T01 merge; unmerged.
+Productionc5d0f1e clean compilePASS;84/1393 inherited sessions pass,84 empty errors.
+New membership fixture failed linking local static bools into discarded.data;
+fixture-only fix7444dbd implemented/pushed, compile/runtime pending. Full A01
+acceptance and216 recovery extension pending. [Partial evidence](evidence/floor1/a01/README.md).
+Exact next: enforce budget/explicit fallback, reconcile PR60/head, verify fixture fix,
+address/bound boundary-probe scope, finish runtime/recovery/visual review and integrate
+A01 only after acceptance. F1-G01 and all later districts remain pending.
 Cloud task: `01a10f4b-596b-700b-b8ba-241e3ca2c000`.
 Parent/source thread: `01a10e89-0c59-737a-8ede-620d02be2034`.
 Parent owns sole continuation automation `6ac46da8df5881918271382eed68361e`:
@@ -1665,3 +1669,20 @@ checked and temporary fixture presentation/flag/location values are restored.
 Normal harness remains input/read-only; added membership-probe symbol only.
 Full inherited84/1393 plus2 labeled identity sessions/6 harness checks target86/1399,
 then original12/216 recovery extension. No current runtime acceptance claim.
+
+### Budget pause / F1-A01 partial — 2026-10-07
+
+No exposed Codex account/plan meter or reset time found in supported tools.
+Firecrawl credits are an unrelated app allowance and were not queried. No quota
+inferred from tokens/context/time; no unsupported API or credential inspection.
+Latest user condition supersedes continuous execution until enforceable/fallback.
+Parent is pausing the existing sole scheduler; no new task/schedule created here.
+
+C5 production hash5c4f865a…7230; all84 original sessions/1393 pass,220 fixtures.
+Full script exit2 at membership-fixture linker; .data mutable statics identified.
+First fix7444dbd EWRAM state committed/pushed; not compiled/replayed. Original
+failed log/source preserved in artifacts/floor1/a01/failure-01; full partial run
+run-I7PJq0 and all prior saves/evidence retained. No live test process remains.
+PR60 stays draft/unmerged; no claim new identity or recovery216 checks passed.
+Source/generator2009-input review passed. Scope cautions and trainer901 allocation
+hazard recorded in partial evidence. Exact continuation above; do not begin G01.

@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "overworld.h"
+#include "load_save.h"
 #include "constants/maps.h"
 #include "constants/flags.h"
 

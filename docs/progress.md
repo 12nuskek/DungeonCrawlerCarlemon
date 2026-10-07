@@ -1,5 +1,57 @@
 # Durable checkpoint
 
+Current2026-10-07: **F1-G01d diagnostic runtime verified; live migration next.**
+Issue72 / task/floor1-g01d-live-contract, base0cb6674a38f67579d5e7480ef884681a66a8b609.
+Complete five-map geometry/semantic fallback/object contract implemented in
+committed snapshots only. Closed compiled478f4bd/hash824069ff…acc4; open compiled/
+main runnera2a42cd/hashe0745ee6…c5fa; observera2b24f6.23actual mGBA sessions/
+10541assertions,23emptyerrors,94exactpixels. All5map full-cell cold checks7936
+words. Guard14/224,Howler34/544,preboss44/703 unchanged within frozen ceilings;
+both approach orders/loop variants. All-old21objects mapped once; current/new
+interior widths and controller interactions/returns verified. Candidate area
+1440/1449only; finalTnull. Peak Field9objects/13sprites; buffers/Saveblocks unchanged.
+[Complete evidence/commands/source identities](evidence/floor1/g01d/README.md).
+One host doorway re-entry correction: failed267assertions source478 preserved;
+a2a42cd normal leave/re-enter controls pass unchanged exact closedROM, fresh export
+identities match. No material geometry/migration attempt, no assertion weakening.
+Source11687canonical inputs/312gameC/327totalC audited, four declared fixture
+modifications only. Production engine/art/maps/resources/save ABI unchanged.
+Issue72 / draftPR73; reviewedc138bd56ee6febe61f4ef07b91b0f168295519c5.
+Next: verified scoped integration; then implement production pre-header version/identity mapping,
+player/object/templates/all5warps/cache rebuild and future-version rejection;
+ordinary migrated controller interaction/transition/secondsave+cold idempotence
+before live adoption/persistent loop/finalT. No current build/emulator process.
+Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent quota09:12
+11%used/89%remaining, soft sampled pause>=80%; parent owns sole continuation.
+Donut correction source absent/PENDING approval, no retry; no other active writer.
+Issue63 remains open. No later floors/public release or new scheduler/task.
+
+## Earlier static checkpoint
+
+Current2026-10-07 09:13UTC: **F1-G01d contract static checks pass; build/runtime pending.**
+Executor tool/shell healthy after parent09:12disconnect callback; no running build/
+emulator or duplicate process. Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000.
+Parent quota09:12UTC11%used/89%remaining; soft sampled>=80%pause unchanged.
+Audit PR71 merged0cb6674a38f67579d5e7480ef884681a66a8b609, reviewed
+03cd4b3ea2d03c94dcf37f8e2fb185be4e9d7519.18/78 actual emulator audit passes;
+production engine unchanged. Issue70 audit complete; issue63 live migration open.
+New issue72 / task/floor1-g01d-live-contract, base0cb6674. Partial implemented:
+five-map relocation contract and disposable producer; static closed/open audits
+pass widths/connected cells/immutable accepted field+Quiet+arena anchors and
+same7/17/27/44 travel steps. Candidate unique cells1440closed/1449open;
+finalT remainsnull. Workshop/Checkpoint compact approaches plus exact all-old-map
+semantic fallback rules proposed; player fallbacks exclude warp/object/collision.
+No compile/emulator acceptance yet. No production/save/battle/art edits or allocations.
+Next: committed fresh diagnostic build of both variants; implement ordinary routes
+for Workshop/Checkpoint/stair BG surrogate, all-map save/cold loaded-cell checks,
+old strict travel gates, actor collisions, captures/provenance. Then review/PR/
+verified scoped integration before live migration implementation. No fourth material
+field layout attempt: third geometry immutable; migration/idempotence gates stay.
+This checkpoint preserves staged work before builds. Parent owns continuation;
+no new task/writer/scheduler or source upload retry. No later floors/public release.
+
+## Earlier verified audit checkpoint
+
 Current2026-10-07 09:06UTC: **F1-G01c audit verified; live migration pending.**
 Sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, parent
 01a10e89-0c59-737a-8ede-620d02be2034. Parent owns continuation and sampled

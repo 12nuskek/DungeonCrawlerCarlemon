@@ -1,0 +1,27 @@
+{
+  "committed_source": "a2a42cdf4db7cd3fe81387e7d3c37b8dd67635b4",
+  "tracked_inputs": 11687,
+  "C_inputs": 327,
+  "game_C_inputs": 312,
+  "unexpected_C": [],
+  "approved_fixture_modifications": {
+    "engine/data/event_scripts.s": {
+      "original_git_blob": "4ecdd98f793b0a4cc39c585f2154c9066b42f988",
+      "diagnostic_git_blob": "4323839220b76901d565d06a1c354ad5b4e29b20"
+    },
+    "engine/data/layouts/layouts.json": {
+      "original_git_blob": "763c704cd0eea7c0f7a90d9f250c0a2cd118cd6d",
+      "diagnostic_git_blob": "f5eb7dc47f9c58cf52da336171c65ef3603173f6"
+    },
+    "engine/data/maps/map_groups.json": {
+      "original_git_blob": "74ff939253c612f4ad15ad334484e406f0b41789",
+      "diagnostic_git_blob": "b707243d64cd7954e472962b39849a1d2faa607e"
+    },
+    "engine/src/new_game.c": {
+      "original_git_blob": "9112ae453fb766163d662c355492bba145ec4186",
+      "diagnostic_git_blob": "9034405fe4b7b84e016ac07e9515ce0aaa2b43c4"
+    }
+  },
+  "other_tracked_git_blob_identities_match": true,
+  "method": "Fresh committed archive; only separately pinned toolchain/three verified multiboot inputs hydrated. All other tracked Git-canonical blob hashes match; no engine cache."
+}

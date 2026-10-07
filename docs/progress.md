@@ -1,3 +1,21 @@
+Current2026-10-07: **F1-G01e implemented; migration acceptance pending.**
+Issue74, branch task/floor1-g01e-live-migration, baseb694da1.
+Clean compiled2e810f676f9c60031382148055748e419340a729; ROM43178a36…46a11.
+Raw build artifacts/floor1/g01e/live-2danu7iw. Ordinary runner22d8db?
+(see exact tested-commit in ordinary-lt5iqs3s);42 passing sessions across14
+ordinary originals include all mandatoryI01/corner, interactions/transitions/Save/
+second cold. Full matrix not accepted: two remaining seed routes pending.
+Host fixes preserved: inventory encryption-aware comparison; arrival-ladder facing
+was wrongly forced south, now retains incoming direction as actual engine does.
+Controlled legacy Corridor wall14,0 found bounds-only side-selection error;
+material migration fix1 checks real old collision/object occupancy before Howler
+selection. Original failing probe preserved at boundary-attempt1-corridor-wall.
+New committed clean build and full ordinary/boundary/travel/gameplay replay next;
+no PR/merge/live acceptance/finalT. Same soleCloud01a10f4b-596b-700b-b8ba-241e3ca2c000.
+Parent owns continuation/quota; no scheduler, duplicate writer or public release.
+
+## Earlier implementation checkpoint
+
 Current2026-10-07: **F1-G01e live migration implementation pending.**
 Branch task/floor1-g01e-live-migration, base b694da17928b93ea579f55d905017aa9f7619422
 (PR73 verified diagnostic merged; reviewedbd82beed). Task scope/checks:

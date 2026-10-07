@@ -49,6 +49,19 @@ static bool8 ValidSchema(const struct WarpData *warp, u16 version)
     return TRUE; // Preserve stock Continue semantics and its unowned var slot.
 }
 
+static bool8 LegacyCellLegal(const struct MapHeader *header, s16 x, s16 y)
+{
+    u32 i;
+    if (x < 0 || y < 0 || x >= header->mapLayout->width || y >= header->mapLayout->height)
+        return FALSE;
+    if (header->mapLayout->map[y * header->mapLayout->width + x] & MAPGRID_COLLISION_MASK)
+        return FALSE;
+    for (i = 0; i < header->events->objectEventCount; i++)
+        if (header->events->objectEvents[i].x == x && header->events->objectEvents[i].y == y)
+            return FALSE;
+    return TRUE;
+}
+
 bool8 DccContinueSupported(void)
 {
     u16 version = VarGet(VAR_DCC_LAYOUT_VERSION);
@@ -87,8 +100,7 @@ static void RemapLegacy(struct WarpData *warp)
     case MAP_DCC_SERVICE: dest = MAP_DCC_F1D1WORKSHOP; x = 4; y = 4; break;
     case MAP_DCC_CORRIDOR:
         x = 37; y = 31;
-        if (warp->x >= 8 && warp->x < header->mapLayout->width
-            && warp->y >= 0 && warp->y < header->mapLayout->height)
+        if (warp->x >= 8 && LegacyCellLegal(header, warp->x, warp->y))
         { x = 51; y = 27; }
         break;
     case MAP_DCC_BOSS: dest = MAP_DCC_F1D1WARDEN; x = 8; y = 7; break;

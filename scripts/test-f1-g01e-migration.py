@@ -75,7 +75,7 @@ class Route:
             if i<len(buttons):self.expect()
         warp=next((w for w in m['warps'] if tuple(w['at'])==end),None)
         if warp:
-            self.step(300);self.key=next(k for k,v in maps.items() if v['map_num']==warp['dest']);self.pos=tuple(maps[self.key]['warps'][warp['dest_warp']]['at']);self.face=128
+            self.step(300);self.key=next(k for k,v in maps.items() if v['map_num']==warp['dest']);self.pos=tuple(maps[self.key]['warps'][warp['dest_warp']]['at'])
         self.expect()
     def anchor(self,n):self.follow(maps[self.key]['anchors'][n])
     def talk(self,button,label):

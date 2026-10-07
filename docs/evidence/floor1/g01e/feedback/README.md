@@ -50,6 +50,9 @@ Actual native240×160 captures; no overlays, retouching or fabricated frames:
 ![Candidate: same resolved pixels after map re-entry](reentered.png)
 ![Candidate: same resolved pixels after manual Save and cold load](cold-resolved.png)
 
+Issue #76 / [draft PR77](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/77),
+targeting the existing draft migration branch. Main and PR75 remain unchanged.
+
 ## Commands and retained attempts
 
 Build uses a `git archive` of the committed candidate, setup-foundation.sh and
@@ -67,6 +70,17 @@ DCC_TEST_LDFLAGS='-L/workspace/toolchain/root/usr/lib/x86_64-linux-gnu -Wl,-rpat
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/test-f1-g01e-feedback.py \
   --build artifacts/floor1/feedback/build-jpbb593l \
   --original /workspace/DungeonCrawlerCarlemon/artifacts/floor1/a01/run-I7PJq0/both-pending.sav
+```
+
+The candidate source/build snapshot is now packed losslessly as
+`artifacts/floor1/feedback/build-jpbb593l/source.tar.gz`. TAR comparison passed before
+removing only that duplicate extracted snapshot. Its SHA256 is retained beside it;
+private `production.gba` retains the exact tested ROM hash. No earlier work was removed.
+Restore the snapshot before the candidate command above:
+
+```sh
+tar -xzf artifacts/floor1/feedback/build-jpbb593l/source.tar.gz \
+  -C artifacts/floor1/feedback/build-jpbb593l
 ```
 
 The automated route requires that retained ordinary Cloud fixture; no save is

@@ -1,5 +1,5 @@
 Current checkpoint —2026-10-08 Australia/Brisbane: F1-G01e-SF implemented,
-compiled and runtime verified; publication/integration pending final callback.
+compiled and runtime verified; pushed, draft PR77 / issue76, unmerged.
 Sole writer in /workspace/dcc-feedback, branch task/floor1-g01e-feedback, based
 on remote16d7012; old unpublished diagnostic ancestry remains separate in
 /workspace/DungeonCrawlerCarlemon and must not be merged/pushed. Same Cloud task
@@ -14,13 +14,18 @@ movement behavior preserved. Immediate/re-entry/cold panel pixels match exactly;
 available/resolved differ.2076 source files reproduce byte-identically. Legacy
 maps, reward scripts, save ABI, assets and combat unchanged. Actual screenshots,
 commands, failed attempts and limitations: [evidence](evidence/floor1/g01e/feedback/README.md).
+Review package pushed at09b6e4b8d7cda7fda5783855c6d23939be7e8f2e;
+final metadata checkpoint follows it on the same scoped branch.
 Raw build/runner logs, saves and detailed state remain local; no rejected diagnostic
 payload, alternate encoding or raw-log history is published. Build dependency paths
 and inode exhaustion were resolved; this duplicate worktree is sparse, original
-checkout and all previous evidence preserved. No current build/emulator after tests.
+checkout and all previous evidence preserved. No current build/emulator after tests. The owned candidate snapshot is packed as
+source.tar.gz after successful TAR comparison, with the exact private production ROM
+retained separately. Restore instructions are in the evidence; this frees inodes
+for the next fresh build while preserving every snapshot byte.
 
 PR75 remains draft/unmerged at16d7012 and mainb694da1 unless final callback records
-otherwise; scoped draft PR and issue will cross-link to75. Relevant scoped assertions
+otherwise; scoped draft PR77 and open issue76 cross-link to75. Relevant scoped assertions
 pass; full PR75/runtime/finalT/full-floor gates and three combat strategy failures
 remain unchanged. Exact next task: F1-G01e-NC original live navigation/Journal copy,
 full-identity script dispatch with archived legacy semantics/state/rewards preserved.

@@ -12,18 +12,12 @@ subprocess.run(['git','diff','--quiet','cee81f8f5dd5cce93990007f06491c8d607a7161
 assert hashlib.sha256((base/'production.gba').read_bytes()).hexdigest()=='5c4f865a95c0b9e4c65f13d86c8ba44c9082599432b387f6fc350c0bd99b7230'
 out=Path(tempfile.mkdtemp(prefix='preview-',dir=root/'artifacts/floor1/g01'));print('Evidence:',out,flush=True)
 (out/'tested-commit.txt').write_text(revision+'\n')
-source=out/'source';source.mkdir();(source/'.dcc-diagnostic-snapshot').write_text(revision+'\n');shutil.copytree(Path(os.environ.get('DCC_G01_CACHE',str(base/'source')))/'engine',source/'engine',symlinks=True)
-# Overwrite every tracked production file from this commit, preserving only build cache.
-committed=out/'committed';committed.mkdir()
-archive=subprocess.Popen(['git','archive',revision,'engine','scripts/contracts/f1-g01-opening.json','scripts/floor1/opening-graybox.py'],cwd=root,stdout=subprocess.PIPE)
-subprocess.run(['tar','-x','-C',str(committed)],stdin=archive.stdout,check=True);archive.stdout.close();assert archive.wait()==0
-for p in committed.rglob('*'):
-    if p.is_file():
-        target=source/p.relative_to(committed);target.parent.mkdir(parents=True,exist_ok=True)
-        if not target.is_file() or target.read_bytes()!=p.read_bytes():target.write_bytes(p.read_bytes())
-for p in ['data/maps/DCC_OpeningPreview','data/layouts/DCC_OpeningPreview']:
-    target=source/'engine'/p
-    if target.exists():shutil.rmtree(target)
+loader=importlib.util.spec_from_file_location('committed_snapshot',root/'scripts/floor1/committed-snapshot.py');snap=importlib.util.module_from_spec(loader);loader.loader.exec_module(snap)
+source=out/'source';snap.snapshot(root,revision,source,os.environ.get('DCC_G01_CACHE'))
+# Build compiler and hydrate only hash-checked upstream inputs through the pinned setup.
+# No cached engine source, generated dependency, object, linker input or asset is copied.
+with (out/'setup-toolchain.log').open('w') as log:
+    subprocess.run(['bash',str(source/'scripts/setup-foundation.sh')],stdout=log,stderr=subprocess.STDOUT,check=True)
 loader=importlib.util.spec_from_file_location('graybox',source/'scripts/floor1/opening-graybox.py');gray=importlib.util.module_from_spec(loader);loader.loader.exec_module(gray)
 spec=json.loads((source/'scripts/contracts/f1-g01-opening.json').read_text())
 boot=['step 720 0 -','step 1 8 -','step 360 0 -','step 1 8 -','step 180 0 -','step 1 1 -','step 180 0 -','step 1 1 -','step 600 0 arrival.ppm']

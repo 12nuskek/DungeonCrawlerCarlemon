@@ -1,10 +1,27 @@
 """Generate a read-only mGBA observer; no game/save writes or injected logic."""
 def instrument(code):
-    code=code.replace('maplayout=0, addr;', 'maplayout=0, menuCallback=0, fieldCallback=0, addr;')
-    code=code.replace('        if (!strcmp(symbol,"gMain")) mainstate=addr;', '        if (!strcmp(symbol,"gMain")) mainstate=addr;\n        if (!strcmp(symbol,"CB2_MainMenu")) menuCallback=addr;\n        if (!strcmp(symbol,"CB2_Overworld")) fieldCallback=addr;')
+    code=code.replace('maplayout=0, addr;', 'maplayout=0, menuCallback=0, fieldCallback=0, fieldLock=0, addr;')
+    code=code.replace('fade=0, addr;', 'fade=0, menuCallback=0, fieldCallback=0, fieldLock=0, addr;')
+    code=code.replace('        if (!strcmp(symbol,"gMain")) mainstate=addr;', '        if (!strcmp(symbol,"gMain")) mainstate=addr;\n        if (!strcmp(symbol,"CB2_MainMenu")) menuCallback=addr;\n        if (!strcmp(symbol,"CB2_Overworld")) fieldCallback=addr;\n        if (!strcmp(symbol,"sLockFieldControls")) fieldLock=addr;')
     point='        if (!strcmp(line,"quit\\n")) break;'
     assert code.count(point)==1
     addition=r'''
+        if (!strncmp(line,"dialog ",7)) {
+            unsigned limit,elapsed=0;
+            if (!fieldLock || sscanf(line,"dialog %u %c",&limit,&extra)!=1 || limit>36000) {result=40;break;}
+            while (elapsed<limit && core->busRead8(core,fieldLock)) {
+                if (core->busRead8(core,mainstate+0x439)&2) {result=40;break;}
+                core->setKeys(core,elapsed%60==0?1:0);core->runFrame(core);elapsed++;total++;
+            }
+            core->setKeys(core,0);
+            if (result || core->busRead8(core,fieldLock)) {result=40;fprintf(stderr,"Dialog exceeded bound\n");break;}
+            checks++;printf("PASS dialog frames=%u\n",elapsed);continue;
+        }
+        if (!strcmp(line,"ready\n")) {
+            if (!fieldLock || !fieldCallback || core->busRead8(core,fieldLock)
+                || (core->busRead32(core,mainstate+4)&~1u)!=(fieldCallback&~1u)) {result=40;fprintf(stderr,"Field controls not ready\n");break;}
+            checks++;printf("PASS ready\n");continue;
+        }
         if (!strcmp(line,"menu\n")) {
             unsigned cb=core->busRead32(core,mainstate+4)&~1u;
             if (!menuCallback || cb!=(menuCallback&~1u)) {result=40;fprintf(stderr,"Not main menu:callback=%x expected=%x\n",cb,menuCallback);break;}

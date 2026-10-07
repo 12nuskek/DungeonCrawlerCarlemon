@@ -71,6 +71,10 @@ def run(name, save, lines):
     summary.append({'route': name, 'assertions': checks, 'emulator_errors': 0})
     print(name, 'PASS', checks, flush=True)
 
+def record_panel(r, label):
+    # Stand two cells below the panel so Carl cannot obscure its native pixels.
+    r.follow((55, 44)); r.step(40, 0, label + '.ppm'); r.follow((55, 43))
+
 def panel_talk(r, label):
     # A direction press on walkable BG targets starts a step if already facing
     # that way. Turn only when needed; otherwise interact in place with A.
@@ -86,17 +90,17 @@ r = routes.Route(spec, geometry, 'field', (37, 31), 1, 7)
 r.lines += ['flag 45 0', 'item 18 0', f'tile 55 42 {off}']
 # The ordinary route crosses the panel before interacting, proving it is floor.
 r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
-r.step(40, 0, 'available.ppm')
+record_panel(r, 'available')
 panel_talk(r, 'pickup-dialog')
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
-r.step(40, 0, 'resolved.ppm')
+record_panel(r, 'resolved')
 panel_talk(r, 'repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
 r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.anchor('quiet_door'); r.anchor('donut_staging'); r.anchor('arrival')
 r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
-r.step(40, 0, 'reentered.ppm')
+record_panel(r, 'reentered')
 r.save()
 r.lines = [line for line in r.lines if line != 'snapshot']
 run('ordinary-pickup', save, boot + r.lines)
@@ -106,7 +110,7 @@ shutil.copyfile(save, cold)
 cold_hash = digest(cold)
 r = routes.Route(spec, geometry, 'field', (55, 43), 1, 7)
 r.lines += ['flag 45 1', 'item 18 1', f'tile 55 42 {on}']
-r.step(40, 0, 'cold-resolved.ppm')
+record_panel(r, 'cold-resolved')
 panel_talk(r, 'cold-repeat-dialog')
 r.lines += ['item 18 1', f'tile 55 42 {on}']
 r.follow((55, 42)); r.follow((55, 41)); r.follow((55, 42)); r.follow((55, 43))

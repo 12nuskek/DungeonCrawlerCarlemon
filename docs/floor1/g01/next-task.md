@@ -1,7 +1,8 @@
 # F1-G01b recovery travel — continuation brief
 
 Issue63. Branch `task/floor1-g01b-recovery-travel`.
-Base `535b0809703f53a86dfd9e2cea1f751c4e6585f1`, mergedG01a PR62.
+Current base `abb77feb339e67b2ced92531985c49bb4731684d`, merged source repairPR65.
+G01a originally merged PR62 at535b080; original evidence remains archived.
 Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; parent owns continuation.
 This checkpoint adds no new Cloud task, scheduler or implementation writer.
 
@@ -73,6 +74,6 @@ for G01b yet. Full G01 and the nine-district Floor1 remain incomplete; V01 art
 rollout is dependency blocked by recovery travel. Continue autonomously within
 this scope; parent can request a quota checkpoint pause under the soft safeguard.
 
-Before resuming issue63, integrate issue64 fresh-source provenance repair and
-fast-forward this branch to current main. Whole-engine DCC_G01_CACHE is forbidden;
+Issue64 fresh-source provenance repair is merged viaPR65; this branch was
+fast-forwarded to that main. Whole-engine DCC_G01_CACHE is forbidden;
 use fresh committed snapshots and separately pinned DCC_CACHE only.

@@ -2,7 +2,7 @@
 
 Parent's independent review found that the original optional whole-engine cache
 could retain untracked Make wildcard inputs. PR62 was already merged; this is
-issue64 / draftPR65's scoped tooling follow-up (review complete; integration pending). It does not establish that the original run
+issue64 / PR65's scoped tooling follow-up, mergedabb77feb339e67b2ced92531985c49bb4731684d; reviewed head03b869d. It does not establish that the original run
 was contaminated and does not unblock the rejected live geometry.
 
 Build driver now extracts only a fresh committed Git archive. It copies zero

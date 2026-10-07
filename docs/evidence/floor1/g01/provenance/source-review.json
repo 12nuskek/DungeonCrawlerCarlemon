@@ -16,5 +16,10 @@
     "production and geometry/travel gates unchanged"
   ],
   "runtime_sensitive_gameplay_changes": false,
-  "integration": "draftPR65; source/evidence reviewed, ready for server protections"
+  "integration": "draftPR65; source/evidence reviewed, ready for server protections",
+  "integration_confirmed": {
+    "PR": 65,
+    "final_reviewed_head": "03b869d7376339797f7667ca9540009eeab3a506",
+    "merge": "abb77feb339e67b2ced92531985c49bb4731684d"
+  }
 }

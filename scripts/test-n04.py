@@ -9,11 +9,19 @@ assert not git('status','--porcelain'), 'Commit changes first'
 revision=git('rev-parse','HEAD');base=Path(os.environ['DCC_RECOVERY_BASE_RUN']).resolve()
 tested=(base/'tested-commit.txt').read_text().strip()
 subprocess.run(['git','diff','--quiet',tested,revision,'--','engine','scripts/playtest.c','scripts/battle-input-symbols.py'],cwd=root,check=True)
-summary=json.loads((base/'validation-summary.json').read_text());assert (len(summary),sum(x['assertions'] for x in summary)) in [(76,1303),(78,1315)], 'Require full N03 or N05 acceptance coverage'
-assert sum(x['assertions'] for x in summary if x['fixture'])==193
-if len(summary)==78:
+summary=json.loads((base/'validation-summary.json').read_text());shape=(len(summary),sum(x['assertions'] for x in summary))
+assert shape in [(76,1303),(78,1315),(84,1393)], 'Require full N03, N05 or F1-T01 acceptance coverage'
+assert len({x['route'] for x in summary})==len(summary), 'Duplicate session names'
+assert sum(x['assertions'] for x in summary if x['fixture'])==(220 if shape==(84,1393) else 193)
+if len(summary)>=78:
  assert {x['route']:x['assertions'] for x in summary if x['route'].startswith('guide-')}=={'guide-after-trial':6,'guide-before-trial':6}
-assert all(not x.stat().st_size for x in base.glob('*/errors.log'))
+if shape==(84,1393):
+ counts={x['route']:x['assertions'] for x in summary}
+ assert {name:counts[name] for name in ['text-state','text-return-cold','text-return-reentry','text-complete','tag-fixture-full','tag-fixture-cold','quest-fixture-capacity','quest-fixture-reload','wire-pair','wire-cold']}=={'text-state':25,'text-return-cold':5,'text-return-reentry':11,'text-complete':7,'tag-fixture-full':14,'tag-fixture-cold':7,'quest-fixture-capacity':25,'quest-fixture-reload':11,'wire-pair':23,'wire-cold':7}
+for entry in summary:
+ errors=base/entry['route']/'errors.log'
+ assert errors.is_file() and not errors.stat().st_size, errors
+ assert (base/entry['route']/'replay.log').read_text().endswith(f"result=0 assertions={entry['assertions']}\n"), entry['route']
 rom=base/'production.gba';digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert digest(rom)==(base/'rom.sha256').read_text().split()[0]
 parent=root/'artifacts/n04';parent.mkdir(exist_ok=True);out=Path(tempfile.mkdtemp(prefix='run-',dir=parent));print('Evidence:',out,flush=True)

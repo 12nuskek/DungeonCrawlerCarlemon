@@ -105,6 +105,16 @@ code = replace_once(code, '            char policy[32], limitText[32]; unsigned 
                 if (potionStage || !tasks || !partyMenu || !bagInput || !contextInput || !partyInput || !restoredText || !closeText || !battleMain || !selectedItem) {result=44;break;}
                 strcpy(line,"pilot offensive 36000\\n");
             }''')
+
+# A missing live Carl action at the prescribed turn is divergence, not permission to continue.
+code = replace_once(code, '                unsigned turn=core->busRead8(core,results+0x13);', r'''
+                unsigned turn=core->busRead8(core,results+0x13);
+                if (rescue && potionStage==0 && (turn>4 || (turn==4 && !chp))) {
+                    capture("decision-blocked.ppm",pixels,width,height);
+                    printf("CANDIDATE blocked decision frame=%u turn=%u CarlHP=%u DonutHP=%u\n",total,turn,chp,dhp);
+                    result=44;fprintf(stderr,"Prespecified live Carl turn4 action unavailable; STOP\n");break;
+                }
+''')
 anchor = '                    if (actor!=UINT_MAX)\n                        printf("pilot frame=%u turn=%u actor=%u menu=%u selection=%u key=%u\\n",total,turn,actor,menu,selection,key);'
 code = replace_once(code, anchor, r'''
                     if (rescue && potionStage==0 && actor==0 && menu==1 && turn==4) {

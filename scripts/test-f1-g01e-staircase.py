@@ -22,7 +22,7 @@ def sha(path):
 p = argparse.ArgumentParser()
 p.add_argument('--build', type=Path, required=True)
 p.add_argument('--originals', type=Path, required=True)
-p.add_argument('--case', choices=['stairs', 'quiet', 'workshop'])
+p.add_argument('--case', choices=['stairs', 'quiet', 'workshop', 'sealed'])
 args = p.parse_args()
 assert not git('status', '--porcelain'), 'Commit runner before runtime'
 head = git('rev-parse', 'HEAD')
@@ -31,7 +31,7 @@ compiled = (build / 'tested-commit.txt').read_text().strip()
 subprocess.run(['git', 'diff', '--quiet', compiled, head, '--', 'engine'], cwd=ROOT, check=True)
 rom = build / 'source/engine/pokeemerald.gba'
 assert sha(rom) == ROM_SHA
-parent = ROOT / 'artifacts/floor1/staircase'
+parent = ROOT / ('artifacts/floor1/sealed' if args.case == 'sealed' else 'artifacts/floor1/staircase')
 parent.mkdir(parents=True, exist_ok=True)
 out = Path(tempfile.mkdtemp(prefix='runtime-', dir=parent))
 print('Evidence:', out, flush=True)
@@ -79,6 +79,19 @@ code = code.replace(point, point + r'''
             for (unsigned i=0;i<200;i++) if (savedDuo[i]!=core->busRead8(core,party+i)) {result=42;break;}
             if (result) {fprintf(stderr,"Persistent flags or duo equality failed\n");break;}
             checks+=3;printf("PASS unchanged flags inventory duo\n");continue;
+        }
+''')
+if args.case == 'sealed':
+    # Latch a battle on every emulated frame, including text/menu/save frames.
+    declaration = '    int result=0;\n'
+    assert code.count(declaration) == 1
+    code = code.replace(declaration, declaration + '    unsigned sawBattle=0, guardedFrames=0;\n')
+    assert code.count('core->runFrame(core);') >= 3
+    code = code.replace('core->runFrame(core);', 'core->runFrame(core); guardedFrames++; if (core->busRead8(core,mainstate+0x439)&2) sawBattle=1;')
+    code = code.replace(point, point + r'''
+        if (!strcmp(line,"no-battle\n")) {
+            if (sawBattle || (core->busRead8(core,mainstate+0x439)&2)) {result=43;fprintf(stderr,"Unexpected battle frame\n");break;}
+            checks++;printf("PASS no-battle observed_frames=%u\n",guardedFrames);continue;
         }
 ''')
 assert 'busWrite' not in code
@@ -280,6 +293,75 @@ if not args.case or args.case == 'workshop':
     talk(r, 128, 'cold-cache-no-charge', 'DCC_Service_Text_NeedsCharge')
     run('ordinary-workshop-cold-buffer', c, r)
     assert sha(c) == identity
+
+if args.case == 'sealed':
+    def boss_pending(r):
+        r.lines += ['no-battle', 'flag 2135 1', 'flag 2136 1', 'flag 2137 1',
+                    'flag 2138 0', 'flag 2139 0', 'flag 47 0', 'flag 48 0',
+                    'flag 40 0', 'flag 43 0', 'flag 45 0', 'flag 46 0', 'flag 49 0',
+                    'item 378 2', 'item 380 0', 'item 22 0', 'unchanged check']
+
+    def field_words(r):
+        assert r.key == 'field'
+        name = spec['production_identity_proposal']['maps']['field']['name']
+        raw = (build / 'source/engine/data/layouts' / name / 'map.bin').read_bytes()
+        data = list(struct.unpack('<' + 'H' * (len(raw) // 2), raw))
+        text = (build / 'source/engine/src/data/dcc_opening.h').read_text()
+        # All three persistent Field presentation flags are asserted unset.
+        for x, y, off in re.findall(r'MAP_DCC_F1D1FIELD, (\d+), (\d+), FLAG_DCC_\w+, 0x([0-9A-F]+), 0x[0-9A-F]+', text):
+            data[int(y) * 64 + int(x)] = int(off, 16)
+        r.lines += [f'tile {i % 64} {i // 64} {value}' for i, value in enumerate(data)]
+
+    def sealed(r, prefix):
+        r.anchor('stairs')
+        talk(r, 128, prefix, 'DCC_Boss_Text_StairsLocked')
+        r.lines += ['tile 12 11 13848', 'no-battle']
+        # Ordinary movement into the sealed stair must stay at12,10.
+        r.step(20, 128)
+        r.step(40, 0, prefix + '-blocked.ppm')
+        r.expect()
+        r.lines += ['ready', 'unchanged check']
+        boss_pending(r)
+
+    def boss_journal(r, prefix):
+        r.step(1, 8); r.step(120)
+        for i in range((4 - r.cursor) % 6):
+            r.step(1, 128); r.step(20)
+        r.cursor = 4
+        r.step(1, 1); r.step(400)
+        page(r, prefix, 'DCC_Live_Journal_Text_Boss', 'DCC_Live_Journal_Text_Rules', 'DCC_Live_Journal_Text_Optional')
+        close(r)
+        boss_pending(r)
+
+    s = copy('sealed', 'boss-pending')
+    r = R('field', (51, 27))
+    r.expect(); boss_pending(r); field_words(r)
+    r.anchor('warden_door'); words(r)
+    sealed(r, 'first-refusal'); sealed(r, 'repeat-refusal'); words(r)
+    r.anchor('arrival'); field_words(r); boss_pending(r)
+    r.anchor('warden_door'); words(r)
+    sealed(r, 'reentered-refusal'); boss_journal(r, 'boss-pending-journal')
+    save(r); words(r); boss_pending(r)
+    facing = saved_facing(r)
+    run('ordinary-sealed-refusal-return-reentry-save', s, r)
+
+    c, identity = cold('sealed-cold', s)
+    r = R('boss', (12, 10), facing)
+    r.expect(); boss_pending(r); words(r)
+    sealed(r, 'cold-refusal'); sealed(r, 'cold-repeat-refusal'); words(r)
+    r.anchor('arrival'); field_words(r); boss_pending(r)
+    r.anchor('warden_door'); words(r)
+    sealed(r, 'cold-reentered-refusal'); boss_journal(r, 'cold-boss-journal')
+    words(r); boss_pending(r)
+    run('ordinary-sealed-cold-return-reentry', c, r)
+    assert sha(c) == identity
+    # Publish frame-count verdicts only; no private state/key/saves.
+    for verdict in summary:
+        log = (out / verdict['route'] / 'replay.log').read_text()
+        frames = list(map(int, re.findall(r'PASS no-battle observed_frames=(\d+)', log)))
+        assert frames and frames == sorted(frames)
+        verdict['no_battle_guarded_frames'] = frames[-1]
+        verdict['no_battle_assertions'] = len(frames)
 
 assert all(sha(f) == identity for f, identity in originals.items())
 (out / 'summary.json').write_text(json.dumps(dict(compiled_source=compiled, runner_source=head, rom_sha256=sha(rom), sessions=summary, originals_unchanged=True, read_only_cold_inputs_unchanged=True, method='Already-completed/pending ordinary saves and actual manual Save copies. Normal controller input, read-only observer; no synthetic save input, snapshot dump, RAM/ROM write, new battle or first-clear claim. Full flags/live duo/decrypted inventory equality verdicts only; private values/logs/saves remain local.'), indent=2) + '\n')

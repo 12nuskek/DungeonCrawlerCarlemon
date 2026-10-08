@@ -1,3 +1,12 @@
+Current focused result (2026-10-08): F1-G01e-CP currentc643/b025 patrol verified,
+2 ordinary sessions/81 assertions and29 host readiness checks. RealPotion/Howler→
+Guard/rewards/guide/repeat/manual Save/cold pass. [Evidence](../evidence/floor1/g01e/current-patrol/README.md).
+Next prescribe current first-clear Warden→staircase/persistence from the new
+ordinary patrol-complete save. Reverse order/full/finalT/V01 and broader G01 remain
+pending; no broad merge, new writer/scheduler/quota call. Prior failures preserved.
+
+## Preserved PR checkpoint
+
 Current focused result (2026-10-08): F1-G01e-PR readiness repair runtime verified;
 issue88 / draft PR89 pushed, unmerged.
 29 host negative/ack checks,2 historical sessions/80 assertions, real20HP heal/
@@ -88,7 +97,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; G01e draftPR75 implemented/compiled:69state sessions543assertions;3partial live sessions3162. Three Howler-first strategy routes failed (lastHowler won, laterGuard lost); further blind attempts/dependentV01 stopped. OP verifies loop/trap/craft in8ordinary sessions/15701 assertions; first-clear/full gameplay/finalT pending; see OP and navigation evidence |
 | F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failed one controller test (exit32, premature Bag A); exact prefix/state passed; heal/victory/XP/Save/cold pending; combat stopped, no retry or candidate gate claim |
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | Verified historical intervention:29 host checks,2 sessions/80 assertions,20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold; unmerged, current candidate/full/V01 pending |
-| F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | Authorised; one bounded run pending; no historical coverage transfer |
+| F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | Currentc643/b025 verified:29 host checks,2/81 assertions, realPotion/Howler→Guard/rewards/repeat/Save/cold; no full/V01 or broad merge claim |
 | F1-V01 | G01, readable art | Native junction/workshop/safe-door proof; Carl gait, staged Donut, Carl/Donut/Warden motion; budgets and clips | Pending |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |

@@ -90,3 +90,13 @@ The prior failed controller execution and three original strategy failures remai
 preserved. No game change, merge/V01/full-route or newer-candidate gate claim.
 Parent review precedes further current-candidate combat direction; independent
 source/menu checks remain ready. Do not rerun the exclusive corrected execution.
+
+## Current-candidate patrol proof — 2026-10-08
+
+Currentc643/b025 independently passes the focused Howler→guide→Guard owned-Potion
+route and persistence:2 sessions/81 assertions,29 readiness checks. Source/save
+and timing differences were pinned before execution; historical pass was not
+transferred. [Evidence](../evidence/floor1/g01e/current-patrol/README.md). No game
+source change/broad merge/V01/full-route claim. Next prescribe current first-clear
+Warden→staircase/Save/cold from the new ordinary patrol-complete save. Reverse
+patrol order/full/finalT/human pacing remain pending; preserve old failures.

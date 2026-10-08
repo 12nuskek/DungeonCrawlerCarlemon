@@ -1,13 +1,48 @@
-Current priority checkpoint — 2026-10-08: F1-G01e-CP focused current-candidate
-Howler→guide→Guard validation authorised after parent reviewed PR89. Sole writer,
-`task/floor1-g01e-current-patrol`, basef8178113b42cdf14f5540ecd50268df5da8a947f.
-Older drafts/main unchanged; CI0 runs. [Prespecified contract](floor1/g01e-current-patrol-contract.md)
-pins gamec643f01c /ROMb0251d46 and the same ordinary pending saveea719ffb; source
-and timing differences recorded before execution. Recovered4 build/symbol inputs
-from the rehashed retained archive; no new game compile. One bounded execution
-pending; stop at semantic decision divergence/failure, no search/retiming. Current
-coverage is separate from historical80-assertion/59-input pass. Same Cloud task,
-parent continuation; no quota/new writer/scheduler/merge/V01/full-route claim.
+Current checkpoint — 2026-10-08: F1-G01e-CP current-candidate patrol route
+runtime verified. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-current-patrol`,
+basef8178113b42cdf14f5540ecd50268df5da8a947f (draft PR89 unchanged). Prespecified
+contractda2f9cd before execution. Actual tested hostc7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4;
+current compiled gamec643f01c11ec68119b0347b107ee20115131debc, exact loaded ROM
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a. Retained
+isolated compile reused; no new game build/source change. Rehashed archive and
+production ROM; four symbol/build inputs recovered atbuild-selected-w3yhnr9w.
+Addresses resolved from current ELF/object; engine diff against c643 passes.
+Eight source differences versus historical992/6c447 documented; same ordinary
+pending saveea719ffb…abc8, no injected/synthetic resource or state.
+
+29 readiness/negative/ack tests and final prepare-only host compile pass. One
+actual current execution plus cold,2 sessions/81 assertions (63+18), empty errors.
+Actual semantic decision observed at24673 exactly matches Carl3/36HP, Donut30/30,
+PP4/40/0/38, foes0/18, one Potion. All59 pre-intervention input pulses independently
+match history; the timestamp was not a current stop predicate. Real menu readiness
+and receiving context/Carl acknowledgements,20HP heal, consume1, unchanged PP;
+Howler then Guard wins/no incapacity, flag2136 after2137, guide return/re-entry,
+resolved repeat no battle/no duplicate XP, manual Save/cold at37,31 pass. Rewards:
+121+132XP each,360+320=680money, onlyPotion consumed/twoSCRAP retained. Original
+ordinary/read-only cold unchanged. Actual current guide text captured. Immediate
+HP-animation frame displays22; readback23 verified separately. No game assertion
+was relaxed, no divergent/failing current emulator execution or retimed retry.
+
+[Current evidence/commands/native captures](evidence/floor1/g01e/current-patrol/README.md).
+Private fullrun artifacts/floor1/current-patrol/runtime-n12mxgz8; final host
+prepare-edviuq03, earlier prepare-z2il9lrj. Separate exclusive current claim retained;
+do not rerun. Offline evidence checker rejects deliberately wrong runner identity,
+then exact tested runner passes; no emulator involved. Historical failedrun and
+claim, historical corrected80 checks/PR89 and all three original failed strategies
+stay preserved. Denied raw datasets/keys/c298ac7/996b947 ancestry local only. No
+active emulator/build; no usage-meter/new writer/task/workflow/scheduler/publicROM.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation.
+
+Implemented host adaptation, host compiled, scoped current patrol runtime verified;
+unmerged. Older drafts75–89/mainb694da17928b93ea579f55d905017aa9f7619422 unchanged;
+CI0 runs. Historical acceptance is distinct; c643/b025 current patrol is now proved,
+but reverse-order combat, first-clear Warden/staircase, full fresh route/finalT/
+human pacing/V01/fullG01/Floor1 remain pending. No broad merge or rollout. Next
+dependency-ready action: prescribe current first-clear Warden→staircase/Save/cold
+from the newly controller-authored ordinary patrol-complete save, restored duo at
+37,31, Potion0/twoSCRAP. Preserve exact save identity and state; do not inherit
+boss/full acceptance. Complementary order/prepared-unprepared/full-route gates
+must still be completed before broad G01/V01 claims.
 
 ## Preserved PR checkpoint
 

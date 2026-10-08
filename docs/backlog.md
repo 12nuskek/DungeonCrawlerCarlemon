@@ -3,12 +3,14 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current priority: F1-G01e-CP currentc643/b025 Howler→guide→Guard validation,
-[fixed contract](floor1/g01e-current-patrol-contract.md). Same ordinary pending
-save, deliberate host adaptation, stop at divergent decision/failure. No historical
-pass transfer or timing/policy/RNG search. One execution pending.
+Current focused result: F1-G01e-CP currentc643/b025 Howler→guide→Guard passes
+2 ordinary sessions/81 assertions,29 readiness checks, realPotion/rewards/repeat/
+manual Save/cold. [Evidence](evidence/floor1/g01e/current-patrol/README.md). No game
+edit/broad merge/V01/full-route claim; historical failures retained. Next prescribe
+first-clear current Warden→staircase/Save/cold from the new ordinary patrol-complete
+save; reverse order/full/finalT and broader gates remain pending.
 
-Current focused result: F1-G01e-PR readiness repair and ONE corrected historical
+Preserved PR result: F1-G01e-PR readiness repair and ONE corrected historical
 Potion replay pass; issue88 / draft PR89 pushed and unmerged.29 host checks,2 runtime sessions/80 assertions; real20HP heal/
 one consumption, Howler→Guard wins, XP/rewards/return/manual Save/cold verified.
 [Evidence](evidence/floor1/g01e/potion-ready/README.md). No game edit/merge/current-

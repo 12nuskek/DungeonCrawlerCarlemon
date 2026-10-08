@@ -1,0 +1,49 @@
+{
+  "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+  "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+  "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "sessions": [
+    {
+      "route": "howler-first-potion",
+      "exit": 0,
+      "errors_bytes": 0,
+      "decision_observed": true,
+      "current_prefix_actions": 59,
+      "historical_prefix_actions": 59,
+      "historical_timestamps_equal": true,
+      "historical_normalized_prefix_equal": true,
+      "assertions": 63
+    },
+    {
+      "route": "cold-potion-victories",
+      "exit": 0,
+      "errors_bytes": 0,
+      "assertions": 18
+    }
+  ],
+  "original_save_unchanged": true,
+  "cold_save_unchanged": true,
+  "game_changes": false,
+  "current_candidate_patrol_gate": "verified_scoped",
+  "full_route_gate": "pending",
+  "host_readiness_checks": 29,
+  "runtime_assertions": 81,
+  "current_prefix_actions": 59,
+  "heal_hp": 20,
+  "potions_consumed": 1,
+  "action_pp_unchanged": true,
+  "howler_then_guard_won": true,
+  "xp_each_howler": 121,
+  "xp_each_guard": 132,
+  "level_xp_equipment_same_after_repeat_and_cold": true,
+  "total_money_reward": 680,
+  "other_inventory_preserved": true,
+  "manual_save_cold_verified": true,
+  "original_and_cold_unchanged": true,
+  "current_candidate_patrol": "verified_scoped",
+  "first_clear_full_finalT_V01": "pending",
+  "actual_current_candidate_executions": 1,
+  "historical_claim_transferred": false,
+  "historical_failures_preserved": true,
+  "merged": false
+}

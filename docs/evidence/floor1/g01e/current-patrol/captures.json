@@ -1,0 +1,167 @@
+[
+  {
+    "file": "decision-observed.png",
+    "source_capture": "decision-observed.png",
+    "sha256": "f1641d6cf25d0a083b7f8b786e7fe0f78a5347f75599bfad70ef0fea3cd1c289",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": 24673,
+    "note": "Current semantic decision verified, not assumed from historical clock"
+  },
+  {
+    "file": "owned-potion-bag.png",
+    "source_capture": "owned-potion-bag.png",
+    "sha256": "2b3bfa20f38a2523bf81fcbaef22f8b3e99f96e52d6abc782abd89927eb4cced",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": 24745,
+    "note": "Actual candidate Bag ready, ownedPotion1"
+  },
+  {
+    "file": "potion-recipient.png",
+    "source_capture": "potion-recipient.png",
+    "sha256": "f39f263bfe8248958970b4b9ab4e389b6871ccaa1f35cf31dcb9c1599e7b501a",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": 24829,
+    "note": "Observed candidate Carl recipient acknowledgement"
+  },
+  {
+    "file": "healed-party.png",
+    "source_capture": "healed-party.png",
+    "sha256": "fdb6c709582544b597cb5fe2d2a4416c2af115f1efc7c28c9178e69072f64439",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Immediate animation renders22HP; synchronous23HP readback verified separately"
+  },
+  {
+    "file": "healed-battle.png",
+    "source_capture": "healed-battle.png",
+    "sha256": "61974d6c1605e5ac7f9031ae9368b564fe7e5c83b28399fe78617008e8faa45a",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": 25105,
+    "note": "Battle return actual23HP/quantity0/unchanged actionPP"
+  },
+  {
+    "file": "guard-result.png",
+    "source_capture": "guard-result.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Current Guard victory return after Howler"
+  },
+  {
+    "file": "guide-rest.png",
+    "source_capture": "guide-rest.png",
+    "sha256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Actual current live north-exit recovery text and full resources"
+  },
+  {
+    "file": "guard-resolved.png",
+    "source_capture": "guard-resolved.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Repeated Guard after guide return: no new battle/XP"
+  },
+  {
+    "file": "saved.png",
+    "source_capture": "saved.png",
+    "sha256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "howler-first-potion",
+    "frame": 32721,
+    "note": "Actual manual Save complete at37,31"
+  },
+  {
+    "file": "cold.png",
+    "source_capture": "cold.png",
+    "sha256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "cold-potion-victories",
+    "frame": null,
+    "note": "Current cold Continue from actual manual Save"
+  },
+  {
+    "file": "cold-guard-resolved.png",
+    "source_capture": "guard-resolved.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+    "compiled": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "route": "cold-potion-victories",
+    "frame": null,
+    "note": "Cold repeat resolved with no duplicate XP/battle"
+  }
+]

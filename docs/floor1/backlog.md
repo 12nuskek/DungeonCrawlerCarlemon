@@ -1,4 +1,5 @@
-Current focused result (2026-10-08): F1-G01e-PT one targeted Potion test failed.
+Current focused result (2026-10-08): F1-G01e-PT one targeted Potion test failed;
+issue86 / draft PR87 pushed, unmerged.
 All59 pre-intervention battle inputs/exact Carl3HP/ownedPotion matched. The host
 pressed A before Bag fade readiness and reached its frame bound, exit32. Actual
 heal/consumption/Guard victory/XP/Save/cold remain unverified. Combat stopped;

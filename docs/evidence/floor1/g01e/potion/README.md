@@ -2,6 +2,9 @@
 
 F1-G01e-PT, 2026-10-08 Australia/Brisbane. Branch `task/floor1-g01e-potion`,
 base `f4e568d582430dc9fc118f0af4afbc26b781e884` (draft PR85).
+[Issue86](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/86) /
+[draft PR87](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/87), pushed
+and unmerged; evidence package `3528fb8cd5ad5dc5d796435da316581beffcafa7`.
 The [hypothesis and stop conditions](../../../../floor1/g01e-potion-contract.md)
 were committed at `9e2ebf3` before the single actual execution. This is a failed
 verification increment; no game change, merge or full-route acceptance.

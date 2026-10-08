@@ -4,7 +4,7 @@
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
 Current priority result: F1-G01e-PT failed its single authorised test; combat
-stopped. Exact59-input prefix/Carl3HP/ownedPotion checks passed, but the controller
+stopped; issue86 / draft PR87 pushed, unmerged. Exact59-input prefix/Carl3HP/ownedPotion checks passed, but the controller
 pressed A before Bag fade readiness and reached its bound (exit32). Heal/use/Guard
 win/XP/Save/cold remain pending. [Evidence](evidence/floor1/g01e/potion/README.md).
 No retry or strategy reset. Next independent work: live no-collection source and

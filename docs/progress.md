@@ -1,5 +1,7 @@
 Current checkpoint — 2026-10-08: F1-G01e-PT single authorised Potion test failed;
-combat stopped. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-potion`,
+combat stopped. [Issue86](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/86) /
+[draft PR87](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/87), pushed and
+unmerged; evidence package3528fb8cd5ad5dc5d796435da316581beffcafa7. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-potion`,
 basef4e568d582430dc9fc118f0af4afbc26b781e884 (draft PR85 unchanged). Contract
 9e2ebf3 committed before execution; actual tested runnerfa17534. No game edit.
 Historical compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, ROM6c447159…7cb,

@@ -1,5 +1,10 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent review continuation: one separate fresh-save recovery replay is authorised
+under docs/floor1/g01e-new-save-recovery-contract.md. Preserve the historical
+contract/runner and both prior recovery failures. The below parent-review stop
+is historical for this single bounded continuation; no Warden permission.
+
 Recovery authority — 2026-10-08 20:35 UTC: Kurt approved a replacement workspace
 and ordinary-gameplay reconstruction. Original task
 01a10f4b-596b-700b-b8ba-241e3ca2c000 is deleted/terminal; never resume it or create

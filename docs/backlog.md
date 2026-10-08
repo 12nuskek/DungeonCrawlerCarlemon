@@ -1,5 +1,7 @@
 Native-context correction — 2026-10-08: **new walking delta proven; strict53 stop preserved; parent review next; unmerged**.
 
+[Issue #102](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/102) / [draft PR #103](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/103), open/unmerged, stacked on unchanged PR101. Evidence commit `030e753d8e64eb417a79ccda5a6657c0007686f7`.
+
 Base PR101/531276ae7ee4e238ed804cff4c5d970d32d63ff0 unchanged. Minimal separate
 host corrects logical resource equality using each actual native context, privately
 captured, at existing stable checkpoints. Strict200/rest400/count/flags preserved,

@@ -1,5 +1,6 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR103 / issue102, stacked on unchanged PR101.
 Corrected noncombat probe completed ONE execution and stopped strict53 atframe4702
 on natural127→0: new Carl friendship92→93/checksum70→326 proven; every other
 party/logical resource exact, actual contexts captured privately. Actual stairsNO

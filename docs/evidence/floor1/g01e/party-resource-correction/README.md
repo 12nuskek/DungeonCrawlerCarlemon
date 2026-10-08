@@ -1,5 +1,7 @@
 # Native-context correction — legitimate new walking delta, strict stop preserved
 
+[Issue #102](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/102) / [draft PR #103](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/103), open/unmerged, stacked on unchanged PR101. Evidence commit `030e753d8e64eb417a79ccda5a6657c0007686f7`.
+
 Corrected host implemented/compiled and tested. **One separately claimed
 noncombat probe passed actual staircaseNO and12 stable canonical resource checks,
 then stopped at the natural127→0 boundary on strict reason53.** New buffers prove

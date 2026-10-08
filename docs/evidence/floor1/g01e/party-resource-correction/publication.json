@@ -1,0 +1,16 @@
+{
+  "issue": 102,
+  "draft_PR": 103,
+  "base_branch": "task/floor1-g01e-party-preservation-diagnosis",
+  "base_source": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+  "head_branch": "task/floor1-g01e-party-resource-correction",
+  "evidence_commit": "030e753d8e64eb417a79ccda5a6657c0007686f7",
+  "host_runner_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+  "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+  "implemented": true,
+  "compiled": true,
+  "runtime_observed": "one corrected noncombat strict53 stop; full route unfinished",
+  "merged": false,
+  "CI_pass_claim": false,
+  "next_dependency": "Parent review; separate narrow source-valid walking preservation contract before any further execution"
+}

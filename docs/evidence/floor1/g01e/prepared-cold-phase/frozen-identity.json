@@ -1,0 +1,15 @@
+{
+  "runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+  "base": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+  "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "ROM_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "seed_SHA256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+  "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+  "host_SHA256": "5350ef885723e249a68b23061a3a9b16799ecfdbe6089d630a38fe0721bbf4fd",
+  "historical_generated_host_SHA256": "a15f03615c01b463388b0dd8f17a9239050bedaf16f701e60588b701bdb7100b",
+  "frame_limit": 24000,
+  "execution_limit": 1,
+  "battle_attempt_limit": 0,
+  "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "method": "One separately authorised cold-only dependent route from actual normal prepared Save; unchanged inputs/cadence, native phase gate and absolute clock"
+}

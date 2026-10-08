@@ -1,5 +1,8 @@
 # DungeonCrawlerCarlemon working contract
 
+Current candidate review package: draft PR99 / issue98, stacked on PR97;
+global prepared STOP active, no further execution before parent review.
+
 Candidate execution checkpoint: two unprepared first-clear/Save/cold pairs pass;
 prepared combat wins but exact post-victory duo comparison after stairs NO fails.
 Global STOP preserved. No further emulator execution, prepared YES/Save/cold or

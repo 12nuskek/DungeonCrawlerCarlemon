@@ -1,5 +1,7 @@
 # Authored Warden fairness candidate — two unprepared passes, prepared stop
 
+[Issue #98](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/98) / [draft PR #99](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/99), open/unmerged, stacked on unchanged PR97. Evidence commit `91cc9f82df62ec7bdde469341edf5c661413f3e7`.
+
 Implemented and freshly compiled; both frozen unprepared first-clear/Save/cold
 pairs passed. Prepared combat won, but its post-victory exact-duo gate failed
 after actual staircase NO. **Global STOP remains active. Prepared YES, manual

@@ -1,5 +1,7 @@
 Warden fairness candidate — 2026-10-08: **two unprepared pairs pass; prepared stop preserved; unmerged**.
 
+[Issue #98](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/98) / [draft PR #99](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/99), open/unmerged, stacked on unchanged PR97. Evidence commit `91cc9f82df62ec7bdde469341edf5c661413f3e7`.
+
 Focused draft review package is stacked on unchanged PR97 (ed519a05e34f47bf45fa150aa5e456b9e1028926).
 Game5084a1814904f1a43fd999fddf770b221bb53653; exact ROM SHA256
 23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167.

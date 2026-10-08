@@ -83,7 +83,7 @@ code = code.replace(point, point + r'''
 ''')
 if args.case == 'sealed':
     # Latch a battle on every emulated frame, including text/menu/save frames.
-    declaration = '    int result=0;\n'
+    declaration = '    unsigned frames,keys,total=0,checks=0,lastPilotIncap=0;\n    int result=0;\n'
     assert code.count(declaration) == 1
     code = code.replace(declaration, declaration + '    unsigned sawBattle=0, guardedFrames=0;\n')
     assert code.count('core->runFrame(core);') >= 3

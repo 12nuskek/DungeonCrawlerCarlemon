@@ -1,3 +1,10 @@
+Current live navigation verification (2026-10-08): [F1-G01e-NC evidence](evidence/floor1/g01e/navigation/README.md),
+compiled/runner c643f01;17real mGBA sessions236assertions,5ordinary and12explicit
+controlled save-input branches. Native text is compared to compiled labels and
+captured paragraph by paragraph. Host font/source/65536identity checks supplement
+runtime. Original files, raw evidence and saves remain local; no public ROM.
+PR75/full gameplay/finalT/V01 gates remain pending despite this focused pass.
+
 # Build and runtime validation
 
 For the current crawler build, use the custom commands below. The matching

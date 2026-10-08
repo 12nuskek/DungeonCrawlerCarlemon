@@ -1,0 +1,26 @@
+{
+  "engine_source": "a52de748f89e82c39f97361b2295d72c88b69856",
+  "rom_sha256": "baf67ceb9b39e151673af2fed480651d1d2ce799a050e2a8df5ee2f06c276b82",
+  "sessions": [
+    {
+      "route": "guide-repeat-posttrial",
+      "assertions": 17,
+      "emulator_errors": 0,
+      "original_unchanged": true
+    },
+    {
+      "route": "ordinary-optional-quest",
+      "assertions": 85,
+      "emulator_errors": 0,
+      "original_unchanged": true
+    },
+    {
+      "route": "ordinary-completed-context",
+      "assertions": 16,
+      "emulator_errors": 0,
+      "original_unchanged": true
+    }
+  ],
+  "method": "Actual unchanged pre-navigation ROM, same ordinary controller routes, legacy compiled text labels. Scoped comparison, not whole-floor acceptance.",
+  "observer_source": "9179945781d9c2c437a3225faaaedb0ef25f9108"
+}

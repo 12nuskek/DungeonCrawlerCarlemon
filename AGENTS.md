@@ -1,5 +1,14 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent PR101 review authorises minimal native-context logical-resource correction
+and ONE separately claimed corrected noncombat probe under
+docs/floor1/g01e-party-resource-correction-contract.md. Same completed ordinary
+input/frozen route/cadence/24,000 bound; preserve strict200-byte duo/all remaining
+party/count/flags and historical failures. No prepared replay, battle, Save,
+injected state/counters, extra walking/RNG search or friendship exception. Test
+focused host cases first; capture actual encoding context privately, compare
+resources at existing stable ready/preservation checkpoints, never infer keys.
+
 Current diagnosis package: draft PR101 / issue100 on PR99. Diagnostic STOP
 preserved; parent review next, no further execution.
 

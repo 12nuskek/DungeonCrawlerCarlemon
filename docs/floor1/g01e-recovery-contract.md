@@ -52,3 +52,12 @@ contract is one unprepared trainer 858 fortify attempt bounded at 30,000 frames,
 then actual first-clear staircase/reward/manual Save/cold checks. This is a future
 dependency, not permission to run it in this increment. Full route/finalT/V01 and
 Floor 1 completion remain pending.
+
+Pre-seed host correction: the first recovery execution passed 52 assertions and
+matches the published fresh-trial PP 3/40/0/37 exactly. The unexecuted field-item
+route had mistakenly borrowed 4/40/0/38 from the different S03 manual trial.
+Correct its exact PP assertion to the actual published fresh-trial result before
+any seed execution. No runtime assertion failed or was weakened; no trial replay,
+policy change or timing search. The original prepared host remains immutable;
+subsequent route-source commits must match its engine/host/helper sources by Git
+diff and its actual generated C hash. Every execution records its own source.

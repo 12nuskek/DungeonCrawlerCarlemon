@@ -58,7 +58,10 @@ if args.stage == 'prepare':
     raise SystemExit(0)
 
 identity = json.loads((out / 'identity.json').read_text())
-assert identity['runner'] == head and identity['host_sha256'] == sha(out / 'observer.c')
+assert identity['host_sha256'] == sha(out / 'observer.c')
+subprocess.run(['git', 'diff', '--quiet', identity['runner'], head, '--', 'engine',
+    'scripts/playtest.c', 'scripts/floor1/recovery-host.py', 'scripts/floor1/live-save-observer.py',
+    'scripts/floor1/walking-harness.py', 'scripts/floor1/potion-menu-readiness.h'], cwd=ROOT, check=True)
 assert not (out / 'STOP.json').exists(), 'A prior failure requires diagnosis and parent review before another execution'
 summary_path = out / 'summary.json'
 summary = json.loads(summary_path.read_text()) if summary_path.exists() else []
@@ -91,7 +94,7 @@ elif args.stage == 'seed':
                 'wait-task field-context 3600', 'step 1 1 -', 'step 12 0 -',
                 'wait-task party 3600', 'step 1 128 -', 'step 40 0 -',
                 'step 1 1 -', 'wait-task healed 3600', 'step 40 0 field-potion.ppm',
-                'item 13 1', 'uses 4 40 0 38', 'return-field', 'ready']
+                'item 13 1', 'uses 3 40 0 37', 'return-field', 'ready']
     r.anchor('guide'); r.talk(128, 'guide-rest')
     r.lines += ['duo healthy', 'uses 8 40 2 40', 'growth 9 495 0 9 805 0']
     r.anchor('arrival'); r.anchor('guard')
@@ -131,7 +134,7 @@ for image in d.glob('*.ppm'):
     assert frame.size == (240, 160)
     frame.save(image.with_suffix('.png'))
 log = (d / 'replay.log').read_text()
-verdict = dict(stage=args.stage, exit=result.returncode, errors_bytes=(d / 'errors.log').stat().st_size,
+verdict = dict(stage=args.stage, runner=head, host_runner=identity['runner'], exit=result.returncode, errors_bytes=(d / 'errors.log').stat().st_size,
                assertions=int(re.search(r'assertions=(\d+)\n$', log)[1]), input_save_sha256=before,
                output_save_sha256=sha(save), route_sha256=sha(route), reconstructed_input=True)
 summary.append(verdict)

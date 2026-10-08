@@ -1,5 +1,14 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent review of PR99 accepts both bounded unprepared first-clear/cold pairs and
+encounter-local guards. Authorises exact-field diagnosis only under
+docs/floor1/g01e-party-preservation-diagnosis-contract.md: one completed ordinary
+unprepared Save, fixed noncombat walking/staircase-NO probe, strict200-byte gate,
+stop at first mismatch. No prepared replay, Warden battle, injected state/counters,
+RNG search, retry or preservation relaxation. Keep original prepared failure and
+all frozen records unchanged; new mechanism evidence cannot identify missing
+original buffers. Raw party/resource buffers and decoded identities stay private.
+
 Current candidate review package: draft PR99 / issue98, stacked on PR97;
 global prepared STOP active, no further execution before parent review.
 

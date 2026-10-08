@@ -9,11 +9,14 @@ def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT,text=True).strip(
 p=argparse.ArgumentParser();p.add_argument('--build',type=Path,required=True);a=p.parse_args();build=a.build.resolve();source=build/'source';engine=source/'engine'
 compiled=(build/'tested-commit.txt').read_text().strip();head=git('rev-parse','HEAD');subprocess.run(['git','diff','--quiet',compiled,head,'--','engine','scripts/floor1/live-navigation.py','scripts/floor1/generate-live-opening.py'],cwd=ROOT,check=True)
 nav=module('nav',ROOT/'scripts/floor1/live-navigation.py');original=nav.blocks(engine)
-raw=(engine/'data/scripts/dcc_live_navigation.inc').read_text();starts=list(re.finditer(r'^(\w+)::?\s*$',raw,re.M));count=0
+raw=(engine/'data/scripts/dcc_live_navigation.inc').read_text();starts=list(re.finditer(r'^(\w+)::?\s*$',raw,re.M));count=0;preserved_texts=0
 for i,m in enumerate(starts):
     end=starts[i+1].start() if i+1<len(starts) else len(raw);block=raw[m.start():end].rstrip()+'\n';old=m[1].replace('DCC_Live_','DCC_',1)
     normalized=re.sub(r'\bDCC_Live_', 'DCC_',block)
-    if old not in nav.TEXT:assert normalized==original[old],old;count+=1
+    if old not in nav.TEXT:
+        assert normalized==original[old],old
+        if '.string' in original[old]:preserved_texts+=1
+        else:count+=1
     else:assert '.string' in normalized and normalized.count('.string')==1
 # All six archived script sources and geometry/save/combat source remain untouched.
 base='ce43420b1c76210f0fa4aaee18c0e195b9354b2d'
@@ -54,5 +57,5 @@ int main(void) {
 '''
 with tempfile.TemporaryDirectory(prefix='dispatch-',dir=build) as temp:
     d=Path(temp);(d/'check.c').write_text(c);subprocess.run(['cc','-std=c11','-Wall','-Wextra','-Werror','-fsanitize=undefined','-fno-sanitize-recover=all',str(d/'check.c'),'-o',str(d/'check')],check=True);subprocess.run([str(d/'check')],check=True)
-result=dict(compiled_source=compiled,runner_source=head,non_text_blocks_identical=count,changed_text_labels=len(nav.TEXT),physical_lines=len(line_widths),maximum_width=max(line_widths),window_width=216,generated_engine_files_identical=len(tracked),dispatch_identities=65536,dispatch_method='Verbatim C, exhaustive host-only UBSan; legacy contexts migrate on Continue, so no claimed legacy runtime fallback.',legacy_and_geometry_save_combat_unchanged=True)
+result=dict(compiled_source=compiled,runner_source=head,non_text_blocks_identical=count,unchanged_text_blocks_identical=preserved_texts,changed_text_labels=len(nav.TEXT),physical_lines=len(line_widths),maximum_width=max(line_widths),window_width=216,generated_engine_files_identical=len(tracked),dispatch_identities=65536,dispatch_method='Verbatim C, exhaustive host-only UBSan; legacy contexts migrate on Continue, so no claimed legacy runtime fallback.',legacy_and_geometry_save_combat_unchanged=True)
 (build/'navigation-source-checks.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

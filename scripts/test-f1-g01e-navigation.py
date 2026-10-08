@@ -76,13 +76,13 @@ s=copy('guide-post','guide-after-trial');r=R('quiet',(4,5));talk(r,128,'guide-po
 
 # Ordinary optional route: reserve, decline, accept, wait, take, hand in, repeat,
 # all four quest Journal hints, and manual Save/cold-file persistence.
-s=copy('quest','both-pending');r=R('field',(37,31));r.anchor('tag_interaction');talk(r,64,'reserved','Service_Text_TagReserved');r.anchor('workshop_door');r.anchor('lev');talk(r,128,'lev','Service_Text_Lev');r.anchor('mara');talk(r,128,'offer','Service_Text_Offer',finish=False);choose_mara(r,True);r.lines+=['flag 41 1','flag 42 0'];journal(r,'declined','Patrols','Optional')
+s=copy('quest','both-pending');r=R('field',(37,31));r.lines+=['item 378 2'];r.anchor('tag_interaction');talk(r,64,'reserved','Service_Text_TagReserved');r.anchor('workshop_door');r.anchor('lev');talk(r,128,'lev','Service_Text_Lev');r.anchor('mara');talk(r,128,'offer','Service_Text_Offer',finish=False);choose_mara(r,True);r.lines+=['flag 41 1','flag 42 0'];journal(r,'declined','Patrols','Optional')
 talk(r,128,'reoffer','Service_Text_Offer',finish=False);choose_mara(r);r.lines+=['flag 41 0','flag 42 1'];talk(r,128,'waiting','Service_Text_Waiting');journal(r,'accepted','Patrols','QuestActive')
-r.anchor('arrival');r.anchor('tag_interaction');talk(r,64,'pickup','Service_Text_Tag');r.lines+=['flag 44 1','item 379 1'];journal(r,'tag-return','Patrols','QuestReturn');talk(r,64,'tag-repeat','Service_Text_TagEmpty');r.anchor('workshop_door');r.anchor('mara');talk(r,128,'handin','Service_Text_Complete');r.lines+=['flag 43 1','item 379 0','item 378 2'];talk(r,128,'completed','Service_Text_Done');journal(r,'complete','Patrols','QuestDone');save(r);run('ordinary-optional-quest',s,r)
+r.anchor('arrival');r.anchor('tag_interaction');talk(r,64,'pickup','Service_Text_Tag');r.lines+=['flag 44 1','item 379 1'];journal(r,'tag-return','Patrols','QuestReturn');talk(r,64,'tag-repeat','Service_Text_TagEmpty');r.anchor('workshop_door');r.anchor('mara');talk(r,128,'handin','Service_Text_Complete');r.lines+=['flag 43 1','item 379 0','item 378 4'];talk(r,128,'completed','Service_Text_Done');journal(r,'complete','Patrols','QuestDone');save(r);run('ordinary-optional-quest',s,r)
 if not args.case or args.case=='ordinary-quest-cold':
     # A --case cold run depends on the saved file from the ordinary route.
     assert not args.case, 'Run the complete matrix to create the ordinary cold input'
-    cold=out/'quest-cold.sav';shutil.copyfile(s,cold);sha=digest(cold);r=R('workshop',(4,5));r.lines+=['flag 43 1','flag 44 1','item 379 0','item 378 2'];talk(r,128,'cold-done','Service_Text_Done');journal(r,'cold-quest','Patrols','QuestDone');run('ordinary-quest-cold',cold,r);assert digest(cold)==sha
+    cold=out/'quest-cold.sav';shutil.copyfile(s,cold);sha=digest(cold);r=R('workshop',(4,5));r.lines+=['flag 43 1','flag 44 1','item 379 0','item 378 4'];talk(r,128,'cold-done','Service_Text_Done');journal(r,'cold-quest','Patrols','QuestDone');run('ordinary-quest-cold',cold,r);assert digest(cold)==sha
 
 # Actual completed legacy save: checkpoint is an opening milestone, not Floor1.
 s=copy('checkpoint','continuous');r=R('checkpoint',(4,4));journal(r,'checkpoint','Done','Optional');r.anchor('arrival');r.anchor('warden');talk(r,128,'warden-cleared','Boss_Text_Won');journal(r,'arena-done','Done','Optional');run('ordinary-completed-context',s,r)

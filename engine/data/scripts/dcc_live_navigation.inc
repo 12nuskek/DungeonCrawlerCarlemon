@@ -390,4 +390,3 @@ DCC_Live_Boss_Text_Won:
 
 DCC_Live_Boss_Text_Locked:
 	.string "AI: Clear the landing trial and both\npatrols outside before this fight.$"
-

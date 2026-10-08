@@ -92,8 +92,11 @@ def controlled(name,key,pos,flags=(),clear=(),full=False):
     s=copy(name,'both-pending');raw=s.read_bytes();sb1,sb2=saveinput.blocks(raw);bits=bytearray(sb1[0x1270:0x139c])
     for n in clear:bits[n//8]&=~(1<<(n%8))
     for n in flags:bits[n//8]|=1<<(n%8)
-    num=spec['production_identity_proposal']['maps'][key]['map_num'];layout=spec['production_identity_proposal']['maps'][key]['layout_id']
-    changes=[(0,struct.pack('<hh',*pos)),(4,saveinput.warp(35,num,-1,*pos)),(0x32,struct.pack('<H',layout)),(0x1438,struct.pack('<H',1)),(0x1270,bytes(bits)),(0x34,bytes(512)),(0xA30,bytes(0x240)),(0xC70,bytes(0x600))]
+    # Use the real legacy migration/spawn path. An invented version1 save
+    # with blank saved objects is not a valid live Continue input.
+    num={'field':3,'quiet':1,'workshop':2,'boss':4,'checkpoint':5}[key]
+    legacy_pos=(5,5) if key=='field' else pos
+    changes=[(0,struct.pack('<hh',*legacy_pos)),(4,saveinput.warp(34,num,-1,*legacy_pos)),(0x1438,struct.pack('<H',0)),(0x1270,bytes(bits))]
     if full:
         encryption=struct.unpack_from('<I',sb2,0xAC)[0]&0xffff
         items=b''.join(struct.pack('<HH',item,qty^encryption) for item,qty in [(378,98)]+[(item,99) for item in range(13,42)])
@@ -103,7 +106,7 @@ kind='explicit controlled checksum-valid save input; ordinary controllers; unmod
 s=controlled('first-post','quiet',(4,5),clear=(34,));r=R('quiet',(4,5),3);talk(r,128,'first-post','Vestibule_Text_GuideIntro','Vestibule_Text_Rested','Vestibule_Text_ReturnAdvice');r.flags=7;r.lines=[x.replace('expect 35 1 4 5 3','expect 35 1 4 5 7') for x in r.lines];r.lines+=['duo healthy','uses 8 40 2 40'];run('controlled-first-posttrial',s,r,kind)
 s=controlled('locked','boss',(8,7));r=R('boss',(8,7));talk(r,128,'locked','Boss_Text_Locked');journal(r,'locked-journal','Patrols','Optional');run('controlled-warden-locked',s,r,kind)
 s=controlled('stairs','boss',(8,7),flags=(47,));r=R('boss',(8,7));talk(r,128,'cleared','Boss_Text_Won');journal(r,'stairs','Stairs','Optional');run('controlled-warden-stairs-hint',s,r,kind)
-s=controlled('capacity','workshop',(4,5),flags=(42,44),clear=(43,),full=True);r=R('workshop',(4,5));r.lines+=['item 378 98','item 379 1'];talk(r,128,'full','Service_Text_Full');r.lines+=['item 378 98','item 379 1','flag 43 0'];journal(r,'capacity-return','Patrols','QuestReturn');save(r);run('controlled-capacity-no-consumption',s,r,kind)
+s=controlled('capacity','workshop',(4,5),flags=(42,44),clear=(43,),full=True);r=R('workshop',(4,4));r.anchor('mara');r.lines+=['item 378 98','item 379 1'];talk(r,128,'full','Service_Text_Full');r.lines+=['item 378 98','item 379 1','flag 43 0'];journal(r,'capacity-return','Patrols','QuestReturn');save(r);run('controlled-capacity-no-consumption',s,r,kind)
 if not args.case:
     cold=out/'capacity-cold.sav';shutil.copyfile(s,cold);sha=digest(cold);r=R('workshop',(4,5));r.lines+=['item 378 98','item 379 1','flag 43 0'];talk(r,128,'full-cold','Service_Text_Full');journal(r,'capacity-cold','Patrols','QuestReturn');run('controlled-capacity-cold',cold,r,kind);assert digest(cold)==sha
 for name,objective,on,off in [('trial','Trial',(),(2135,2136,2137)),('both','Patrols',(2135,),(2136,2137)),('guard','Guard',(2135,2137),(2136,)),('howler','Howler',(2135,2136),(2137,)),('boss','Boss',(2135,2136,2137),()),('stairs','Stairs',(47,),()),('done','Done',(47,48),())]:

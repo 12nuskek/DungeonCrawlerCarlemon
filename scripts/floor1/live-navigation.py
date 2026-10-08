@@ -86,5 +86,5 @@ def generate(engine):
         output.append(replacement + '\n')
     path = engine / 'data/scripts/dcc_live_navigation.inc'
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(''.join(output))
+    path.write_text(''.join(output).rstrip() + '\n')
     return {name: renames[name] for name in ROOTS}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+    "execution_source": "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route": "one frozen noncombat walking/stairs-NO probe; stopped before NO",
+    "assertions_completed": 21
+  },
+  {
+    "name": "probe-anchor.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+    "execution_source": "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route": "one frozen noncombat walking/stairs-NO probe; stopped before NO",
+    "assertions_completed": 21
+  },
+  {
+    "name": "probe-stop.png",
+    "SHA256": "47fbde60709a27683035d7b385f06dd1447f68c6548272758e15a335cf3bc15e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+    "execution_source": "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route": "one frozen noncombat walking/stairs-NO probe; stopped before NO",
+    "assertions_completed": 21
+  }
+]

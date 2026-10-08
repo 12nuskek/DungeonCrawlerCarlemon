@@ -1,3 +1,41 @@
+Exact-field diagnosis — 2026-10-08: **one noncombat probe stopped; resource-observer review next; unmerged**.
+
+Base PR99/61fba93c0485af269944a739953240e1f745466a unchanged. Parent accepts its
+two bounded unprepared first-clear/cold pairs and encounter-local guards. Separate
+observer/decoder implemented and compiled; same approved5084a1 game/exact23c77
+ROM, no engine edits. Hostsourcea9e730744fe8505ae53b6c4dae2a62032c27a8ba;
+execution5bc8b2b203638c9a65290bb9e57ea4e49cabfe81. Frozen route/input/claim,
+normal completed offensive Save6ab135…386, no battle/state injection/RNG search.
+
+One exclusive noncombat probe:2236frames,21 completed emulator assertions,
+192 armed frame checks,6 natural counter increments66→72, zero battle attempts/
+frames. Added raw-owned-resource guard stopped at ordinary map warp (exit57).
+All600 party bytes unchanged; both native party checksums/exact re-encoding valid;
+friendship deltas0. All378 changed resource bytes match native money/coins/186
+bag-quantity encoding locations/common XOR pattern; unencoded resource bytes
+exact. The guard was too broad for native map-load re-encoding. Actual old/new
+resource encoding context was not retained, so independently decoded balances
+remain unproved. StairsNO/128 boundary unreached; no friendship mechanism claim.
+No retry, prepared replay, battle, Save or preservation relaxation followed STOP.
+
+Original prepared buffers were not retained; its changed field remains unknown.
+Strict historical200-byte gate/prepared failed claim/controllers/evidence unchanged.
+Full new private raw buffers/decoded fields/logs/claim/STOP retained separately;
+Git contains only safe bounded findings and3 actual native captures. Initial host
+variable-collision compile stop retained; corrected host Wall/Wextra/Werror passes.
+Offline real-save native checksum/identity/round-trip tests pass, no fake inputs.
+
+[Exact findings, native captures, identities and next dependency](evidence/floor1/g01e/party-preservation-diagnosis/README.md).
+Parent review of resource-observer flaw is next before any separately authorised
+probe. No legitimate friendship delta proven, so no friendship-allowing preservation
+contract recommended yet. All57 earlier heads/main preserved; no CI pass/merge.
+Original Warden loss1/1, candidate3 combat wins/2 accepted persistence pairs/1
+prepared stop and historical patrol/recovery failures remain distinct. Original
+legacy inputs still missing; no prepared/legacy/fullFloor1/finalT/human-pacing/V01
+acceptance or new task/schedule.
+
+## Historical fairness checkpoint
+
 Warden fairness candidate — 2026-10-08: **two unprepared pairs pass; prepared stop preserved; unmerged**.
 
 [Issue #98](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/98) / [draft PR #99](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/99), open/unmerged, stacked on unchanged PR97. Evidence commit `91cc9f82df62ec7bdde469341edf5c661413f3e7`.

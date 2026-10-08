@@ -1,0 +1,178 @@
+{
+  "scope": "new single noncombat probe; no retrospective prepared-field identification",
+  "summary": {
+    "runner": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+    "base": "61fba93c0485af269944a739953240e1f745466a",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+    "input_save_SHA256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+    "host_SHA256": "5fb1277ec61c000eccf901fb029871c62f6415f88d3fe685d0e8e5f984dc6354",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "frame_limit": 24000,
+    "execution_limit": 1,
+    "seed_method": "controller-authored completed offensive unprepared Save; no synthetic state",
+    "old_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+    "execution_runner": "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81",
+    "exit": 57,
+    "assertions": 21,
+    "frames": 2236,
+    "battle_frames": 0,
+    "armed_strict_frame_checks": 192,
+    "reason": 57,
+    "input_copy_unchanged": true,
+    "errors_bytes": 47
+  },
+  "capture_metadata": {
+    "reason": 57,
+    "frame": 2236,
+    "last_stable_frame": 2235,
+    "armed_frame": 2044,
+    "counter_anchor": 66,
+    "counter_last_stable": 72,
+    "counter_after": 72,
+    "counter_transitions": 6,
+    "party_count_before": 2,
+    "party_count_after": 2,
+    "strict200_changed_bytes": 0,
+    "map": [
+      35,
+      3
+    ],
+    "position": [
+      4,
+      3
+    ],
+    "other400_exact": true,
+    "owned_exact": false,
+    "flags_exact": true
+  },
+  "party_comparison": {
+    "members": [
+      {
+        "member": "Carl",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      },
+      {
+        "member": "Donut",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      }
+    ],
+    "remaining400_party_bytes_exact": true,
+    "strict200_byte_equal": true
+  },
+  "last_stable_comparison": {
+    "members": [
+      {
+        "member": "Carl",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      },
+      {
+        "member": "Donut",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      }
+    ],
+    "remaining400_party_bytes_exact": true,
+    "strict200_byte_equal": true
+  },
+  "private_buffer_SHA256": {
+    "anchor-owned.bin": "6544f79192fdc27129d53d9baee2714f37633c3d81b50a2be4732a4224f08cf1",
+    "after-party.bin": "8fdb8f282910de3fe42b222e7953962aeff4d46cef03490da201b8c0ca6598bc",
+    "anchor-flags.bin": "f28ad40cd0475236c9f6635f813216b9eabdedff4d4d4e25bdda188593ad34d4",
+    "last-stable-party.bin": "8fdb8f282910de3fe42b222e7953962aeff4d46cef03490da201b8c0ca6598bc",
+    "after-flags.bin": "f28ad40cd0475236c9f6635f813216b9eabdedff4d4d4e25bdda188593ad34d4",
+    "anchor-party.bin": "8fdb8f282910de3fe42b222e7953962aeff4d46cef03490da201b8c0ca6598bc",
+    "after-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480"
+  },
+  "resource_findings": {
+    "raw_changed_bytes": 378,
+    "owned_region_bytes": 1272,
+    "changes_confined_to_native_encoded_money_coins_bag_quantities": true,
+    "bag_pockets": [
+      {
+        "pocket": "ITEMS",
+        "slots": 30
+      },
+      {
+        "pocket": "KEYITEMS",
+        "slots": 30
+      },
+      {
+        "pocket": "POKEBALLS",
+        "slots": 16
+      },
+      {
+        "pocket": "TMHM",
+        "slots": 64
+      },
+      {
+        "pocket": "BERRIES",
+        "slots": 46
+      }
+    ],
+    "bag_quantity_words": 186,
+    "all_bag_quantities_and_coins_have_same_XOR_difference": true,
+    "money_low16_XOR_difference_matches": true,
+    "every_unencrypted_owned_region_byte_exact": true,
+    "encoding_pattern_matches_native_map_load_rekey_source": true,
+    "actual_resource_encryption_context_captured": false,
+    "decoded_money_resource_invariance_independently_proven": false,
+    "limitation": "No old/new resource key context retained. Inferring keys from assumed unchanged values would be circular; no such inference is used as acceptance."
+  },
+  "natural_counter_transitions": [
+    "frame=2069 counter=66->67 transition=1",
+    "frame=2085 counter=67->68 transition=2",
+    "frame=2101 counter=68->69 transition=3",
+    "frame=2161 counter=69->70 transition=4",
+    "frame=2177 counter=70->71 transition=5",
+    "frame=2193 counter=71->72 transition=6"
+  ],
+  "actual_staircase_NO_reached": false,
+  "natural128_boundary_reached": false,
+  "legitimate_friendship_delta_proven": false,
+  "original_prepared_changed_field_identified": false,
+  "preservation_relaxation_implemented": false,
+  "next_dependency": "Parent review of resource-observer encoding flaw; any new probe requires separate authorisation. No friendship-delta preservation contract recommended on this evidence.",
+  "source_paths": [
+    "engine/src/overworld.c:LoadMapInStepsLocal/ResetMirageTowerAndSaveBlockPtrs",
+    "engine/src/load_save.c:MoveSaveBlocks_ResetHeap/ApplyNewEncryptionKeyToAllEncryptedData",
+    "engine/src/item.c:ApplyNewEncryptionKeyToBagItems",
+    "engine/src/pokemon.c:GetSubstruct/CalculateBoxMonChecksum/EncryptBoxMon/AdjustFriendship",
+    "engine/src/field_control_avatar.c:UpdateFriendshipStepCounter"
+  ]
+}

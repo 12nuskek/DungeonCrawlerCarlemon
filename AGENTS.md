@@ -1,5 +1,13 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent PR105 review authorises ONE separate cold-only completion from normal
+Save dbaaf731…ccd7 under docs/floor1/g01e-prepared-cold-phase-contract.md.
+Minimal native phase gate before all SaveBlock-backed observer reads; retain
+accepted snapshots through transitions, exact state on field re-entry; dedicated
+absolute frame clock and zero-battle guards throughout. Test/freeze before one
+unchanged route/cadence claim. Preserve all failed claims/STOPs; no battle replay,
+game change/search/automatic retry. Historical stops below remain unchanged.
+
 Current review package: draft PR105 / issue104, stacked on unchanged PR103.
 Prepared increment executed: new first route/manual Save and exact cold boot pass;
 dependent cold return warp STOP57 on source-compatible transient relocation guard.

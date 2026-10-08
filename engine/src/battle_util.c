@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler_warden.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_arena.h"
@@ -85,6 +86,16 @@ void HandleAction_UseMove(void)
     if (*(&gBattleStruct->absentBattlerFlags) & gBitTable[gBattlerAttacker])
     {
         gCurrentActionFuncId = B_ACTION_FINISHED;
+        return;
+    }
+
+    if (DccWardenHelper(gTrainerBattleOpponent_A, gBattleTypeFlags,
+                        gBattleMons[gBattlerAttacker].species, GetBattlerSide(gBattlerAttacker))
+        && (!DccWardenHelperAttacks(gBattleResults.battleTurnCounter)
+            || (gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)])))
+    {
+        // Advance the ordinary action queue without a move, PP cost or buff.
+        HandleAction_ActionFinished();
         return;
     }
 

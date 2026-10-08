@@ -62,13 +62,21 @@ DCC_Boss_StairsCancel:
 DCC_Boss_Text_Intro:
 	.string "AI: The gate warden alternates\n"
 	.string "WIND UP, then SLAM. Watch its arms.\p"
-	.string "BRACE softens the hit. WEAKEN offsets\n"
-	.string "its rising attack. Or strike fast.$"
+	.string "BRACE softens each SLAM. WEAKEN\n"
+	.string "offsets its attack. Or strike fast.\p"
+	.string "The helper hits DONUT on the first\n"
+	.string "WIND UP, then every other WIND UP.\p"
+	.string "Between those hits, it rests.\n"
+	.string "SLAM cannot bypass your support.$"
 DCC_Boss_Text_Prepared:
 	.string "AI: Your cache blast spoiled the\n"
 	.string "warden's supplies. It is weaker now.\p"
 	.string "It still alternates WIND UP and SLAM.\n"
-	.string "BRACE or WEAKEN can blunt the blow.$"
+	.string "BRACE and WEAKEN reliably soften it.\p"
+	.string "The helper hits DONUT on the first\n"
+	.string "WIND UP, then every other WIND UP.\p"
+	.string "Between those hits, it rests.\n"
+	.string "SLAM cannot bypass your support.$"
 DCC_Boss_Text_Defeat:
 	.string "AI: A staircase. You earned this one.$"
 DCC_Boss_Text_Retry:

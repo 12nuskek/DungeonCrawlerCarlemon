@@ -1,0 +1,112 @@
+PASS exact C guards: all65536 trainer identities; both members/player/wild/link/frontier/species/move exclusions;256 cadence turns
+PASS stock critical body/shared moves/parties/duo/save structs unchanged
+{
+  "method": "Pure exact C guards plus pinned source integer endpoints; no RNG/emulator/alternate trajectory",
+  "offensive_slam_bounds": [
+    [
+      13,
+      16
+    ],
+    [
+      10,
+      12
+    ]
+  ],
+  "fortify_slam_bounds": [
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "carl_ordinary_hp_floor_offensive": 10,
+  "carl_ordinary_hp_floor_fortify": 20,
+  "helper_offensive_turns": [
+    0,
+    4
+  ],
+  "helper_fortify_turns": [
+    0,
+    4,
+    8
+  ],
+  "helper_offensive_bounds": [
+    [
+      5,
+      7
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "helper_fortify_bounds": [
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "donut_ordinary_hp_floor_offensive": 19,
+  "donut_ordinary_hp_floor_fortify": 16,
+  "warden_clear_turns_no_player_crit": {
+    "offensive": [
+      3,
+      4
+    ],
+    "fortify": [
+      6,
+      7
+    ]
+  },
+  "last_cleanup_turn_max": {
+    "offensive": 6,
+    "fortify": 9
+  },
+  "carl_strike_cost_max": 7,
+  "donut_spark_cost": 2,
+  "helper_critical_bounds_at_negative_stages": [
+    12,
+    15
+  ],
+  "helper_crit_limitation": "Two maximum stock helper criticals may exhaust30HP; retained global mechanic, no universal RNG guarantee or searched trajectory",
+  "prepared_offensive_slam_bounds": [
+    [
+      12,
+      15
+    ],
+    [
+      8,
+      10
+    ]
+  ],
+  "prepared_ordinary_carl_hp_floor": 13,
+  "prepared_enemy_initial_hp": [
+    36,
+    28
+  ],
+  "prepared_xp_gain_each": 192,
+  "prepared_money_gain": 320,
+  "warden_slam_critical_multiplier": 1,
+  "shared_slam_power": 65,
+  "authored_slam_power": 45,
+  "new_emulator_executions_at_envelope_gate": 0
+}

@@ -1,0 +1,184 @@
+[
+  {
+    "file": "loop-closed.png",
+    "route": "ordinary-loop-opening-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Closed before normal far-side interaction",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "9378a94d3dbfebd9a1b84440a72dd33f2e6c1e44bbf0d045ad150dce2302bf28"
+  },
+  {
+    "file": "loop-denied.png",
+    "route": "ordinary-loop-opening-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Wrong-side denial; closed collision and flag preserved",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "01be345ee53e91505e7301bb1c8346568c19ca2a93c92833f9576212d652ec12"
+  },
+  {
+    "file": "loop-open.png",
+    "route": "ordinary-loop-opening-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Open after normal far-side interaction",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "ae173c46a335c3f739622c3173b93d065a6fee5e8cfa11897d26274ebc7f9723"
+  },
+  {
+    "file": "loop-reentered.png",
+    "route": "ordinary-loop-opening-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Open after Quiet Landing re-entry",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "ae173c46a335c3f739622c3173b93d065a6fee5e8cfa11897d26274ebc7f9723"
+  },
+  {
+    "file": "loop-cold.png",
+    "route": "ordinary-loop-cold-two-way",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Open after manual Save and cold reload",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "ae173c46a335c3f739622c3173b93d065a6fee5e8cfa11897d26274ebc7f9723"
+  },
+  {
+    "file": "trap-warning.png",
+    "route": "ordinary-trap-first-repeat-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Unspent wire warning",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "e533055a551fe28fd5fcb336a0f599203ae2b2f62c977de09e463f0354d57a4d"
+  },
+  {
+    "file": "trap-shock.png",
+    "route": "ordinary-trap-first-repeat-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "First trigger: damage and paralysis",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "ecf03ec13ff0a94f88ba6aa0275ff148846ec3e32f6bed0a2751b844b1f371e9"
+  },
+  {
+    "file": "trap-spent.png",
+    "route": "ordinary-trap-first-repeat-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Spent sign after repeated crossing",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "c0b86c6f53394da705682d6303884194f7efe5e7871159412e4f6b28038e3722"
+  },
+  {
+    "file": "trap-recovery.png",
+    "route": "ordinary-trap-guide-recovery-reentry",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Guide restores both protagonists and action uses",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd"
+  },
+  {
+    "file": "crafted.png",
+    "route": "ordinary-recipe-cache-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Two existing SCRAP become one CHARGE",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "e0534de4e86a87a47738cc9751b3f2cf98b39573672137f07ed9e271aeade8d0"
+  },
+  {
+    "file": "recipe-missing.png",
+    "route": "ordinary-recipe-cache-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Missing materials refuse a second craft",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "53259b9e19de44abbf71fa9e535e202f3340cf0e3f21d0df29d693ae9a18cb56"
+  },
+  {
+    "file": "cache-cancel.png",
+    "route": "ordinary-recipe-cache-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Declining retains CHARGE and unopened state",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "b2f57e2e1e1a6b4c732f04b343eafafc3e0c44abedd1724c07c3722a598020cf"
+  },
+  {
+    "file": "cache-blasted.png",
+    "route": "ordinary-recipe-cache-reentry-save",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "One CHARGE consumed and one SUPER POTION awarded",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "58097864b89571c014d6836fb37cee9e6015d7a2ca8d9902f428cdd01997cc85"
+  },
+  {
+    "file": "cache-cold.png",
+    "route": "ordinary-recipe-cache-cold",
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+    "method": "Ordinary controllers, preserved ordinary input or manual-Save copy",
+    "purpose": "Cold repeat gives no second reward",
+    "native_size": [
+      240,
+      160
+    ],
+    "sha256": "008c923c7903a79425962ca884834174b051207b5dba1cb851f0f0835a3d1afd"
+  }
+]

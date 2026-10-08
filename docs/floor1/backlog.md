@@ -1,3 +1,14 @@
+Current focused increment (2026-10-08 Brisbane): F1-G01e-OP runtime verified;
+8 ordinary sessions /15,701 assertions. Loop/wrong-side/two-way, trap/recovery,
+craft/cache cancellation/use/repeat/re-entry/Save/cold pass; no game source edits.
+Issue80, focused draft pending, unmerged. [Evidence](../evidence/floor1/g01e/optional/README.md).
+User02:01:39UTC withdrew meter/20%-remaining guard; current AGENTS applies.
+Next independent task: resolved staircase and remaining map-buffer checks from
+completed ordinary saves. Three-strategy stop, first-clear/full/finalT/V01 gates
+remain. No later floors, new writer/scheduler or public ROM.
+
+## Preserved NC checkpoint
+
 Current focused increment (2026-10-08 Brisbane): F1-G01e-NC implemented,
 compiled and runtime verified; issue78 / draft PR79, pushed and unmerged.
 17sessions/236assertions (5ordinary147;12explicit controlled89), real native
@@ -30,7 +41,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-P01 | Delivered baseline | Preserve identities; complete plan; old anchor/flag/engine register; no engine edits | Merged PR54 |
 | F1-T01 | P01 | Runtime reproduce/fix tag Journal and spent sign; completed priority, full-inventory pickup and hand-in; immediate/re-entry/cold | Merged PR56;96/1609 runtime assertions |
 | F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Merged PR60 cee81f8;100/1621 runtime assertions |
-| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; G01e draftPR75 implemented/compiled:69state sessions543assertions;3partial live sessions3162. Three Howler-first strategy routes failed (lastHowler won, laterGuard lost); further blind attempts/dependentV01 stopped. Live loop/remaining gameplay/finalT pending; see migration evidence and navigation copy audit |
+| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; G01e draftPR75 implemented/compiled:69state sessions543assertions;3partial live sessions3162. Three Howler-first strategy routes failed (lastHowler won, laterGuard lost); further blind attempts/dependentV01 stopped. OP verifies loop/trap/craft in8ordinary sessions/15701 assertions; first-clear/full gameplay/finalT pending; see OP and navigation evidence |
 | F1-V01 | G01, readable art | Native junction/workshop/safe-door proof; Carl gait, staged Donut, Carl/Donut/Warden motion; budgets and clips | Pending |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |

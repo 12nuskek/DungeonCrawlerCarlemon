@@ -1,22 +1,34 @@
-Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-OP in progress.
-Base91a4b79bfe7041060de560cd65b037322233047a (draft PR79); sole writer on
-/workspace/dcc-feedback, task/floor1-g01e-optional. PR79/77/75 remain open draft
-and unmerged; main b694da1 unchanged. Preserve all prior diagnostics locally.
+Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-OP implemented,
+existing compile reused and scoped runtime verified; issue80, draft PR pending,
+unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-optional; base
+91a4b79bfe7041060de560cd65b037322233047a (PR79). PR79/77/75 remain draft,
+mainb694da1 unchanged. No game source edits. Denied diagnostics/history stay local.
 
-User02:01:39UTC update withdraws usage-meter prerequisites and20%-remaining pause:
+User02:01:39UTC withdrew the meter prerequisite and20%-remaining pause rule:
 > ok we cant use it reliably so give up using it. we currently have 83 percent so just continue til i stay stop
-Do not read the meter, request login or block on quota. Continue the bounded
-nine-district Floor1 scope until review package or user stop. No later floors.
-Parent owns the sole continuation; no extra writer, task or scheduler.
-Older quota readings/guards below are historical and superseded.
+No meter, login request or quota prerequisite. Continue bounded nine-district
+Floor1 until review package or user stop; no later floors. Parent owns sole
+continuation; no new writer/Cloud task/scheduler. Same task01a10f4b-596b-700b-b8ba-241e3ca2c000.
+Current AGENTS supersedes old guard; historical evidence below is preserved.
 
-Current task: ordinary controller verification of optional loop/wrong-side/open/
-two-way/re-entry/Save/cold, trap warning/first/repeat/recovery/persistence, recipe
-cancel/missing/success/consumption, cache cancel/use/repeat and cold state. No new
-combat strategy or V01 rollout. Reuse exact compiled c643f01 snapshot only after
-engine-identity and ROM hash checks; no raw dumps or rejected upload/ancestry.
-Acceptance remains pending. Exact next action: implement bounded read-only routes,
-run actual emulator and review native captures against compiled source.
+Game compiled c643f01c11ec68119b0347b107ee20115131debc, read-only runner
+2ae9d14854e1b3fbc58f612450c8399ac251f461. Exact ROM SHA256
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+8 ordinary sessions /15,701 assertions, five complete Field comparisons,
+26 native messages /33 pages. Empty emulator errors. Original ordinary input
+and four read-only cold copies unchanged. No synthetic inputs, RAM/ROM writes,
+policy, snapshots, battle attempt or gameplay defect. Loop, trap/recovery and
+recipe/cache repeat/re-entry/Save/cold verified. [Evidence](evidence/floor1/g01e/optional/README.md).
+Runtime artifacts/floor1/optional/runtime-2ktytnkb; source/archive remains
+artifacts/floor1/navigation/build-0lj52td4, exact compiled c643f01. Host cc14.2.0,
+mGBA0.10.5. Syntax fault9109e75 preserved locally; corrected first runtime passed.
+No active emulator/build. No walking ceiling, battle stat or reward rule changed.
+
+Exact next action: reconcile scoped OP draft/checkpoint, then independent already-
+resolved staircase refusal/return/re-entry/Save/cold and remaining map buffers
+from completed ordinary saves. First-clear boss/stairs and fresh complete route,
+finalT, human pacing and V01 remain pending. Keep the three-strategy stop; no
+fourth blind strategy, broader art rollout, public ROM or full-floor claim.
 
 ## Preserved PR79 checkpoint (quota guard withdrawn above)
 

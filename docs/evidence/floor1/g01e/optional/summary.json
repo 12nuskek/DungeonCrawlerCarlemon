@@ -1,0 +1,74 @@
+{
+  "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "runner_source": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+  "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "sessions": [
+    {
+      "route": "ordinary-loop-opening-reentry-save",
+      "assertions": 6239,
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 3,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-loop-cold-two-way",
+      "assertions": 3099,
+      "emulator_errors": 0,
+      "native_messages": 1,
+      "native_pages": 1,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-trap-first-repeat-save",
+      "assertions": 44,
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 6,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-trap-cold-no-retrigger",
+      "assertions": 3085,
+      "emulator_errors": 0,
+      "native_messages": 1,
+      "native_pages": 2,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-trap-guide-recovery-reentry",
+      "assertions": 3109,
+      "emulator_errors": 0,
+      "native_messages": 2,
+      "native_pages": 3,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-trap-recovered-cold",
+      "assertions": 8,
+      "emulator_errors": 0,
+      "native_messages": 0,
+      "native_pages": 0,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-recipe-cache-reentry-save",
+      "assertions": 91,
+      "emulator_errors": 0,
+      "native_messages": 13,
+      "native_pages": 15,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    },
+    {
+      "route": "ordinary-recipe-cache-cold",
+      "assertions": 26,
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 3,
+      "method": "Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only"
+    }
+  ],
+  "originals_unchanged": true,
+  "read_only_cold_inputs_unchanged": true,
+  "method": "Actual production ROM/normal controllers, original ordinary saves and controller-authored copies only. No synthetic save input, RAM/ROM write, policy, snapshot dump or battle. Raw routes/logs/saves remain local."
+}

@@ -2,7 +2,8 @@
 
 F1-G01e-LK, 2026-10-08 Australia/Brisbane. Branch `task/floor1-g01e-sealed`,
 base `a9658676a53d519e9769494c52bf57b28d54473a` (draft PR83 on81/79/77/75).
-Task issue/draft PR are recorded in the checkpoint. This is a focused verification
+[Issue84](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/84),
+[draft PR85](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/85); pushed and unmerged. This is a focused verification
 increment; no game source change or new combat attempt.
 
 ## Exact identity and checks
@@ -113,6 +114,7 @@ state recorded separately. Parent owns the sole continuation and same Cloud task
 public ROM or later floor.
 
 Next ready task: independent read-only audit of live no-collection entry points
-and ordinary Crawlers/Inventory/Stats/Options menu return paths using preserved
+and ordinary Start/Crawlers/Inventory/Options return paths plus crawler summary
+screens using preserved
 saves; keep the exact ROM and boss state, with no battle or new strategy. Record
 actual UI evidence separately from already-proven battle-rule source checks.

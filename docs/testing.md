@@ -1,3 +1,15 @@
+Latest focused runtime (2026-10-08 Brisbane): F1-G01e-LK sealed staircase,
+2 ordinary sessions /11,382 assertions on unchanged exactc643f01 ROM. Tested
+runner0317dc8, real mGBA0.10.5;11 full buffers,6 stair words,368 other checks;
+12 messages/16 pages.20 verdicts latch all17,407 host-issued frames, zero battle.
+All errors empty; original/cold identities and full flags/inventory/duo preserved.
+[Reproduce/native screenshots/limits](evidence/floor1/g01e/sealed/README.md).
+Explicit `--case sealed` preserves all existing SR helpers/routes/assertions;
+prior SR matrix is not repeated. Issue84 / draft PR85, unmerged. No new game
+compile/change/strategy/first-clear claim. Three-strategy/full/finalT/V01 remain.
+
+## Preserved SR verification
+
 Current focused runtime (2026-10-08 Brisbane): resolved staircase and all four
 compact interior buffers,7 ordinary sessions /3,750 assertions on reused exact
 compiled c643f01; runner477e505, actual mGBA0.10.5.15 complete buffers contribute

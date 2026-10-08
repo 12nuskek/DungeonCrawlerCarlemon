@@ -3,13 +3,13 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current: F1-G01e-SR ordinary resolved staircase/interior buffers verified
-(7 sessions /3,750 assertions); issue82 / draft PR83, pushed and unmerged. Prior
-exact game compile reused; no engine change.15 full interior buffers, NO/return/
-re-entry/repeat YES/Save/cold pass. OP remains recorded below in the checkpoint.
-Next independent task: ordinary sealed-staircase refusal/re-entry/Save/cold from
-boss-pending file. Keep three-strategy/first-clear/full/finalT/V01 gates pending.
-No quota prerequisite. [Checkpoint](progress.md).
+Current: F1-G01e-LK ordinary sealed stairs verified (2 sessions /11,382
+assertions), issue84 / draft PR85, pushed and unmerged. No battle across17,407
+host-observed frames; state/inventory/duo preserved,11 full buffers plus refusal/
+blocking/return/re-entry/Journal/Save/cold pass. Prior exact compile reused.
+Next: independent live no-collection source audit and ordinary menu/summary return
+paths; no combat or game change. Keep three-strategy/full/first-clear/finalT/V01
+gates pending. No quota prerequisite. [Checkpoint](progress.md).
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 

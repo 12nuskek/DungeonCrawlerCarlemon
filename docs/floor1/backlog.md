@@ -1,3 +1,14 @@
+Current focused increment (2026-10-08 Brisbane): F1-G01e-LK runtime verified;
+2 ordinary sessions /11,382 assertions,11 full buffers; first/repeat sealed refusal,
+blocking, return/re-entry, Journal, Save/cold pass. No battle across17,407 guarded
+frames; boss/checkpoint state, flags/items/duo unchanged. No game source change.
+Issue84 / draft PR85, pushed/unmerged; [evidence](../evidence/floor1/g01e/sealed/README.md).
+Next: independent live no-collection source audit and ordinary menu/summary return
+paths. Three-strategy/full/first-clear/finalT/V01 gates remain. No quota calls or
+new writer/task/scheduler; parent owns continuation.
+
+## Preserved SR checkpoint
+
 Current focused increment (2026-10-08 Brisbane): F1-G01e-SR runtime verified;
 7 ordinary sessions /3,750 assertions,15 complete interior buffers, resolved-stair
 refusal/return/re-entry/repeat transition/Save/cold. No game change/new defect.

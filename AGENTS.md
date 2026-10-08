@@ -1,5 +1,11 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent review passed PR93's bounded new-save recovery. One unprepared Warden
+first-clear attempt plus dependent staircase/Save/cold checks is now authorised
+under [the separate committed contract](docs/floor1/g01e-warden-first-clear-contract.md).
+The previous Warden stops below are historical for this one focused increment.
+Preserve all earlier contracts/results; stop on failure. No retry or broad merge.
+
 The authorised separate fresh-save replay is now complete: 199 assertions in
 patrol/cold, target Save026c16fe…23220a verified. See
 [exact evidence](docs/evidence/floor1/g01e/new-save-recovery/README.md).

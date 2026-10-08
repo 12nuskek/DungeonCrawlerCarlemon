@@ -4,7 +4,7 @@
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
 Current: F1-G01e-OP ordinary optional routes runtime verified (8 sessions /
-15,701 assertions); issue80, draft pending, unmerged. No game source change;
+15,701 assertions); issue80 / draft PR81, pushed and unmerged. No game source change;
 compiled c643f01 reused after identity checks. Loop, trap/recovery and crafting/
 cache repeats/re-entry/Save/cold pass. User withdrew meter/20%-remaining guard.
 Next independent checks: resolved stairs/remaining map buffers. Keep three combat

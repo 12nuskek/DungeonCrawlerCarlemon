@@ -1,6 +1,7 @@
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-OP implemented,
-existing compile reused and scoped runtime verified; issue80, draft PR pending,
-unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-optional; base
+existing compile reused and scoped runtime verified; issue80 / [draft PR81](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/81),
+pushed and unmerged. Review packageab5cbe11f2d8ea408f8c7c832fe87f3e1dd8751e;
+metadata checkpoint follows it. Sole writer /workspace/dcc-feedback, task/floor1-g01e-optional; base
 91a4b79bfe7041060de560cd65b037322233047a (PR79). PR79/77/75 remain draft,
 mainb694da1 unchanged. No game source edits. Denied diagnostics/history stay local.
 
@@ -22,7 +23,8 @@ recipe/cache repeat/re-entry/Save/cold verified. [Evidence](evidence/floor1/g01e
 Runtime artifacts/floor1/optional/runtime-2ktytnkb; source/archive remains
 artifacts/floor1/navigation/build-0lj52td4, exact compiled c643f01. Host cc14.2.0,
 mGBA0.10.5. Syntax fault9109e75 preserved locally; corrected first runtime passed.
-No active emulator/build. No walking ceiling, battle stat or reward rule changed.
+Snapshot archive comparison passed after the run; duplicate extraction removed
+losslessly. No active emulator/build. No walking ceiling, battle stat or reward rule changed.
 
 Exact next action: reconcile scoped OP draft/checkpoint, then independent already-
 resolved staircase refusal/return/re-entry/Save/cold and remaining map buffers

@@ -1,6 +1,6 @@
 # Ordinary optional routes — runtime verified, draft/unmerged
 
-F1-G01e-OP, 2026-10-08 Australia/Brisbane. [Issue80](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/80), focused follow-up to draft PR79/77/75. Base `91a4b79bfe7041060de560cd65b037322233047a`; branch `task/floor1-g01e-optional`. This adds verification and instruction/checkpoint updates; **no game source change** was needed.
+F1-G01e-OP, 2026-10-08 Australia/Brisbane. [Issue80](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/80), [draft PR81](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/81), stacked on draft PR79/77/75. Base `91a4b79bfe7041060de560cd65b037322233047a`; branch `task/floor1-g01e-optional`. This adds verification and instruction/checkpoint updates; **no game source change** was needed.
 
 The user's02:01:39UTC update withdrew the usage-meter prerequisite and20%-remaining pause. Current instructions supersede the historical guard. No meter read or login request; bounded nine-district Floor1 work continues until the review package or user stop. Parent owns the sole continuation. Same Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`; no new writer, scheduler or task.
 
@@ -62,7 +62,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/test-f1-g01e-optional.py \
   --originals /workspace/DungeonCrawlerCarlemon/artifacts/floor1/a01/run-I7PJq0
 ```
 
-Restore `source.tar.gz` at that build path before replay; the exact source/build and private ROM are retained losslessly. [Build/archive details](../navigation/README.md). Optional `--case loop`, `trap` or `craft` isolates an independent route family without changing assertions. The retained ordinary fixture is not distributed.
+The restored snapshot matched its retained TAR archive after this run; the duplicate extraction was removed losslessly to free inodes. Restore `source.tar.gz` at that build path before replay; the exact source/build and private ROM are retained losslessly. [Build/archive details](../navigation/README.md). Optional `--case loop`, `trap` or `craft` isolates an independent route family without changing assertions. The retained ordinary fixture is not distributed.
 
 Complete runtime evidence: `artifacts/floor1/optional/runtime-2ktytnkb`. An initial unmatched-parenthesis syntax check failed before emulator execution; history and the local `syntax-9109e75` diagnostic preserve it. Corrected runner2ae9d14 passed all eight emulator sessions on the first runtime attempt. No game assertion was weakened, game defect fabricated or combat retry count reset.
 

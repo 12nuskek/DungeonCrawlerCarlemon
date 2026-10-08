@@ -1,7 +1,7 @@
 Current focused increment (2026-10-08 Brisbane): F1-G01e-OP runtime verified;
 8 ordinary sessions /15,701 assertions. Loop/wrong-side/two-way, trap/recovery,
 craft/cache cancellation/use/repeat/re-entry/Save/cold pass; no game source edits.
-Issue80, focused draft pending, unmerged. [Evidence](../evidence/floor1/g01e/optional/README.md).
+Issue80 / draft PR81, pushed and unmerged. [Evidence](../evidence/floor1/g01e/optional/README.md).
 User02:01:39UTC withdrew meter/20%-remaining guard; current AGENTS applies.
 Next independent task: resolved staircase and remaining map-buffer checks from
 completed ordinary saves. Three-strategy stop, first-clear/full/finalT/V01 gates

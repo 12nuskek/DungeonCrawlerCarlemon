@@ -1,0 +1,22 @@
+{
+  "runner": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+  "base": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+  "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "rom_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "input_save_SHA256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+  "host_SHA256": "34b0ed879ae3bfcd02da3842c6ae3f45ff4232be10c6f4218df183e5241f9de0",
+  "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+  "frame_limit": 24000,
+  "execution_limit": 1,
+  "seed_method": "controller-authored completed offensive unprepared Save; no synthetic state",
+  "old_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "execution_runner": "eed04fae769756605418bcbc3f335c99027e50f8",
+  "exit": 53,
+  "assertions": 72,
+  "frames": 4702,
+  "battle_frames": 0,
+  "armed_strict_frame_checks": 2658,
+  "reason": 53,
+  "input_copy_unchanged": true,
+  "errors_bytes": 47
+}

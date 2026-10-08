@@ -1,0 +1,298 @@
+{
+  "scope": "new separately claimed corrected noncombat probe only",
+  "summary": {
+    "runner": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "base": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+    "input_save_SHA256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+    "host_SHA256": "34b0ed879ae3bfcd02da3842c6ae3f45ff4232be10c6f4218df183e5241f9de0",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "frame_limit": 24000,
+    "execution_limit": 1,
+    "seed_method": "controller-authored completed offensive unprepared Save; no synthetic state",
+    "old_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+    "execution_runner": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "exit": 53,
+    "assertions": 72,
+    "frames": 4702,
+    "battle_frames": 0,
+    "armed_strict_frame_checks": 2658,
+    "reason": 53,
+    "input_copy_unchanged": true,
+    "errors_bytes": 47
+  },
+  "capture_metadata": {
+    "reason": 53,
+    "frame": 4702,
+    "last_stable_frame": 4701,
+    "armed_frame": 2044,
+    "counter_anchor": 66,
+    "counter_last_stable": 127,
+    "counter_after": 0,
+    "counter_transitions": 61,
+    "party_count_before": 2,
+    "party_count_after": 2,
+    "strict200_changed_bytes": 2,
+    "map": [
+      35,
+      3
+    ],
+    "position": [
+      6,
+      10
+    ],
+    "other400_exact": true,
+    "owned_exact": true,
+    "flags_exact": true
+  },
+  "party_comparison": {
+    "members": [
+      {
+        "member": "Carl",
+        "changed_field_names": [
+          "checksum",
+          "friendship"
+        ],
+        "safe_changed_fields": {
+          "checksum": {
+            "before": 70,
+            "after": 326
+          },
+          "friendship": {
+            "before": 92,
+            "after": 93
+          }
+        },
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [
+          29,
+          65
+        ],
+        "canonical_changed_offsets": [
+          29,
+          41
+        ],
+        "friendship_delta": 1
+      },
+      {
+        "member": "Donut",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      }
+    ],
+    "remaining400_party_bytes_exact": true,
+    "strict200_byte_equal": false
+  },
+  "last_stable_comparison": {
+    "members": [
+      {
+        "member": "Carl",
+        "changed_field_names": [
+          "checksum",
+          "friendship"
+        ],
+        "safe_changed_fields": {
+          "checksum": {
+            "before": 70,
+            "after": 326
+          },
+          "friendship": {
+            "before": 92,
+            "after": 93
+          }
+        },
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [
+          29,
+          65
+        ],
+        "canonical_changed_offsets": [
+          29,
+          41
+        ],
+        "friendship_delta": 1
+      },
+      {
+        "member": "Donut",
+        "changed_field_names": [],
+        "safe_changed_fields": {},
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [],
+        "canonical_changed_offsets": [],
+        "friendship_delta": 0
+      }
+    ],
+    "remaining400_party_bytes_exact": true,
+    "strict200_byte_equal": false
+  },
+  "resource_comparison": {
+    "stable_checkpoints": [
+      {
+        "snapshot": "ready-00-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-01-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-02-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-03-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-04-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-05-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-06-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-07-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-08-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-09-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-10-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      },
+      {
+        "snapshot": "ready-11-owned",
+        "logical_exact": true,
+        "actual_context_captured": true,
+        "context_changed": true,
+        "raw_encoded_changed": true
+      }
+    ],
+    "all_logical_owned_bytes_exact": true,
+    "money_before_after": 4360,
+    "coins_before_after": 0,
+    "all186_bag_IDs_quantities_including_empty_exact": true,
+    "PC_items_and_unencoded_bytes_exact": true,
+    "actual_native_context_used": true,
+    "context_inferred": false,
+    "independent_offline_decode_agrees_with_host": true,
+    "at_stop_logical_resources_exact": true
+  },
+  "source_walking_compatibility": {
+    "walking_base_modifier": 1,
+    "held_item_bonus_absent": true,
+    "luxury_ball_bonus_absent": true,
+    "current_map_met_location_bonus_absent": true,
+    "Carl_delta_matches_native_base_modifier": true,
+    "native_clamping_not_needed": true,
+    "Donut_unchanged_is_source_valid_skip_outcome": true
+  },
+  "actual_staircase_NO_verified": true,
+  "new_natural_boundary_friendship_delta_proven": true,
+  "original_prepared_changed_field_identified": false,
+  "strict_gate_relaxed": false,
+  "new_battle_Save_prepared_replay": false,
+  "private_buffer_SHA256": {
+    "anchor-owned.bin": "6544f79192fdc27129d53d9baee2714f37633c3d81b50a2be4732a4224f08cf1",
+    "ready-08-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-10-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-01-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-07-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-09-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "last-stable-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-00-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-11-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-05-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "after-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "after-party.bin": "7c145767b5b02f36c5d3f4185124a235d84d2b46dd4409410d615073d19a4a33",
+    "last-stable-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-02-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "anchor-flags.bin": "f28ad40cd0475236c9f6635f813216b9eabdedff4d4d4e25bdda188593ad34d4",
+    "ready-02-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-07-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-09-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "anchor-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "ready-06-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "last-stable-party.bin": "8fdb8f282910de3fe42b222e7953962aeff4d46cef03490da201b8c0ca6598bc",
+    "ready-01-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-10-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-11-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-00-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-05-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-03-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "after-flags.bin": "f28ad40cd0475236c9f6635f813216b9eabdedff4d4d4e25bdda188593ad34d4",
+    "anchor-party.bin": "8fdb8f282910de3fe42b222e7953962aeff4d46cef03490da201b8c0ca6598bc",
+    "ready-03-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-04-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-04-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "after-owned.bin": "9e5dbf35c23ad884e5c0f82b95d25df14d597d7e41ab4965be4b543379599480",
+    "ready-08-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5",
+    "ready-06-context.bin": "c35d770483d6013a7b7105fa302654aae4836e3ae57d9781128ac90c7ef389c5"
+  },
+  "next_dependency": "Parent review of proven new walking mechanism and separate narrow preservation contract; no further execution authorised."
+}

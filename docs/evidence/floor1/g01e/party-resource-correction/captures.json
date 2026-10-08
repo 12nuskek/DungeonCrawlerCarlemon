@@ -1,0 +1,100 @@
+[
+  {
+    "name": "cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "probe-anchor.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "probe-stop.png",
+    "SHA256": "69db74211767716ba5f858a5d33c40a0be3c71d98cb2ffa81452aaf22ac4f47f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  },
+  {
+    "name": "stairs-no-passed.png",
+    "SHA256": "ec531bddbb0887420fca6bbe145e01c7b2db7aab9fc5775b6ef2de522863d60e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator frame",
+    "host_source": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+    "execution_source": "eed04fae769756605418bcbc3f335c99027e50f8",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "efad1580ea49f49bd215868aec53f4f9313face05ef6d563bf32856d779a0f69",
+    "assertions_completed": 72
+  }
+]

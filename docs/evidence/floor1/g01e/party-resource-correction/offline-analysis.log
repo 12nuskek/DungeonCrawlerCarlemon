@@ -1,0 +1,4 @@
+PASS new actual boundary127→0: Carl friendship92→93, checksum70→326 (+256), only derived bytes29/65; Donut/rest400 exact
+PASS native party checksums, exact re-encoding, source walking+1/no bonus; every other canonical party byte exact
+PASS12 stable resource snapshots and stop independently decoded with actual privately captured context: money4360/coins0/all186 IDs+quantities/PC/unencoded exact
+STOP53 remains strict:4702frames/72assertions/2658armed checks/zero battles; actualNO passed; no Save/retry/exception; original prepared field unknown

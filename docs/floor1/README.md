@@ -1,5 +1,12 @@
 # Full Floor 1 execution
 
+Current focused checkpoint: prepared victory/manual Save and exact cold boot pass;
+dependent cold return warp stopped57. Full prepared persistence gate remains
+unverified. Parent review next, no retry or broad integration.
+[Exact evidence and next dependency](../evidence/floor1/g01e/prepared-persistence/README.md).
+
+## Historical read-only audit checkpoint
+
 [Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
 
 Current checkpoint: read-only Warden threat/action audit complete. No new battle

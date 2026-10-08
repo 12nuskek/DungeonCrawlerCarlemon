@@ -1,0 +1,5 @@
+PASS new prepared victory/manual Save/native sectors:270 assertions,6952 battle frames,exact rewards/NO/YES;HP26/24 PP4/40/0/38
+PASS actual87/83→88/84 at observed127→0;native checksums/re-encoding/all other600 party bytes exact;11 stable logical resource checks
+PASS exact cold boot600 party/count/counter8/flags/resources and initial stable check; Save byte-identical;25 assertions/zero battles
+STOP57 during cold return warp:party600 exact;counter14→transient5953;flags232 bytes exactly displaced68;owned1196/1204 displaced68. Native relocation source fits; CPU phase not captured. No retry.
+LIMIT timestamp labels use batch-start total; event actual19138..19189, cold stop3049..3348; full cold return route remains unverified

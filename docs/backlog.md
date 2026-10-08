@@ -1,3 +1,39 @@
+Prepared persistence — **new victory/manual Save and exact cold boot pass; cold return STOP57; parent review next; unmerged**.
+
+Separate narrow preservation contract on unchanged PR103/1e81d129. Frozen host/
+runner5cdc77a44fb83e55020c5cf2f296f71dd9cc649b, executions873d504a28668924374758bc5626eae6e9071c51,
+unchanged game5084/ROM23c77.2872 focused host cases and fresh warning-as-error
+compile pass. Historical strict gates/failures/controllers/evidence unchanged.
+
+ONE new ordinary prepared route from seed026c16…23220a, exact historical route/
+policy/cadence:270 assertions,6952 whole-battle frames, genuine trainer859 victory,
+XP192 each/money320, exact rewards/repeat, actual stairsNO/YES, manual Save. Actual
+post-victory friendships87/83→88/84 at one observed127→0 walking boundary; native
+checksums/precise re-encoding/all other party bytes and11 stable logical resources
+exact.5205 actual per-frame party comparisons plus11 stable comparisons; event
+host label is batch-start, true interval19138..19189. Save
+`dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7`, HP26/24,
+PP4/40/0/38,XP940/1250,levels11/10,SuperPotion1/SCRAP0/Charge0/Potion0,money4320.
+Native14 latest sector checksums/full saved state validate. Complete new private
+logs/contexts/normal seed/saves/claims/STOP/raw findings/captures backed up in Library.
+
+Dependent cold exact boot600 party/count/counter8/flags/resources and one stable
+resource check pass; then return warp STOP57,25 assertions/zero battles/unchanged
+Save. Native counter14→transient5953; party600 exact; flags232 bytes exactly
+shift68/owned1196of1204same shift. Pinned native pointer-before-copy relocation
+fits the pattern; CPU copy phase/pointers not captured, so diagnosis is bounded.
+Exact stop frame unavailable (interrupted batch3049..3348). No retry/further frame.
+Full cold return/repeat/stairs gate remains unverified; prepared gate incomplete.
+
+[Exact native findings, captures, STOP, review and identities](evidence/floor1/g01e/prepared-persistence/README.md).
+Next parent review: minimal separate readiness-aware relocation guard and accurate
+per-frame bookkeeping, preserving full-party protection/exact state and all STOPs;
+if authorised, dependent cold only from retained normal Save. No new battle/policy/
+search/automatic retry, legacy equivalence, broad merge/full-route/V01/Floor1 claim.
+All59 previous heads/main/accepted plan preserved; no CI-pass claim.
+
+## Historical PR103 resource correction checkpoint
+
 Native-context correction — 2026-10-08: **new walking delta proven; strict53 stop preserved; parent review next; unmerged**.
 
 [Issue #102](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/102) / [draft PR #103](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/103), open/unmerged, stacked on unchanged PR101. Evidence commit `030e753d8e64eb417a79ccda5a6657c0007686f7`.

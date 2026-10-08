@@ -1,3 +1,16 @@
+Current priority checkpoint — 2026-10-08: F1-G01e-PT pre-specified on
+`task/floor1-g01e-potion`, basef4e568d582430dc9fc118f0af4afbc26b781e884.
+PR85 unchanged draft/open; previous evidence preserved. Parent moved the exact
+Guard-after-Howler progression blocker ahead of the independent menu audit.
+Retained diagnosis establishes Carl turn4/action/frame24673 at3HP and one owned
+Potion. [Fixed one-test contract](floor1/g01e-potion-contract.md) records identities,
+inputs and stop conditions. No new emulator run yet, no game source edits or
+strategy reset; historical6c447 ROM only. Currentc643/b025, first-clear/full/finalT/
+V01 remain pending. Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; sole
+writer/parent continuation. Denied raw diagnostic data and ancestry stay local.
+
+## Preserved LK checkpoint
+
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-LK ordinary sealed
 staircase verified; issue84 / [draft PR85](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/85),
 pushed and unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-sealed;

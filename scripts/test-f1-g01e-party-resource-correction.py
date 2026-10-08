@@ -76,8 +76,9 @@ if args.stage=='prepare':
 
 identity=json.loads((out/'identity.json').read_text())
 assert identity['host_SHA256']==sha(out/'observer.c') and identity['route_SHA256']==sha(out/'planned.route')
-subprocess.run(['git','diff','--quiet',identity['runner'],head,'--','scripts/floor1/party-preservation-observer.h',
- 'scripts/floor1/party-resource-host.py','scripts/floor1/party-fields.py','scripts/test-f1-g01e-party-preservation.py'],cwd=ROOT,check=True)
+subprocess.run(['git','diff','--quiet',identity['runner'],head,'--','scripts/floor1/party-resource-observer.h',
+ 'scripts/floor1/party-resource-canonical.h','scripts/floor1/party-resource-host.py',
+ 'scripts/floor1/party-fields.py','scripts/test-f1-g01e-party-resource-correction.py'],cwd=ROOT,check=True)
 assert not (out/'execution-claim.json').exists() and not (out/'STOP.json').exists()
 save=out/'input-copy.sav';shutil.copyfile(seed,save)
 with (out/'execution-claim.json').open('x') as f:

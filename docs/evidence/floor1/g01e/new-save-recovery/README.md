@@ -1,5 +1,8 @@
 # New ordinary-save recovery — patrol target verified
 
+[Issue #92](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/92) / [draft PR #93](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/93), open/unmerged, stacked on unchanged PR91.
+Evidence publication `68784e6b5400bf703cce52e25bbb4be95bd495b0`; tested host/runner remains `cc3845767959820ce6d4c2693a927fc1a24dd197`.
+
 Parent review of PR91 authorised one separate fresh-save contract before replay.
 Base `b36f750c689029e4fcc9f0a43b73c0c3dca7dccf`, branch
 `task/floor1-g01e-new-save-recovery`. The inherited historical-fixture HP gate

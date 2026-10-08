@@ -1,5 +1,8 @@
 # Full Floor 1 execution
 
+[Issue #92](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/92) / [draft PR #93](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/93), open/unmerged, stacked on unchanged PR91.
+Evidence publication `68784e6b5400bf703cce52e25bbb4be95bd495b0`; tested host/runner remains `cc3845767959820ce6d4c2693a927fc1a24dd197`.
+
 Fresh-save recovery continuation — 2026-10-08: **target verified**, Warden unexecuted.
 
 Parent review authorised one separate fresh-input contract. Tested source

@@ -1,0 +1,17 @@
+{
+  "issue": 92,
+  "draft_pr": 93,
+  "base": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+  "base_branch": "task/floor1-g01e-recovery",
+  "head_branch": "task/floor1-g01e-new-save-recovery",
+  "evidence_commit": "68784e6b5400bf703cce52e25bbb4be95bd495b0",
+  "tested_source": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+  "implemented": true,
+  "compiled": true,
+  "fresh_save_contract_runtime_verified": true,
+  "merged": false,
+  "original_legacy_input_gate_restored": false,
+  "warden_started": false,
+  "ci_pr_runs_returned_for_tested_source": 0,
+  "next_dependency": "Parent review of recovered new Save026c16fe\u202623220a before separate Warden trainer858 fortify/30000-frame contract"
+}

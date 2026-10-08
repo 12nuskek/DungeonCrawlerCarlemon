@@ -77,7 +77,8 @@ identity = json.loads((out / 'identity.json').read_text())
 assert identity['host_sha256'] == sha(out / 'observer.c')
 subprocess.run(['git', 'diff', '--quiet', identity['runner'], head, '--', 'engine',
     'scripts/playtest.c', 'scripts/floor1/recovery-host.py', 'scripts/floor1/live-save-observer.py',
-    'scripts/floor1/walking-harness.py', 'scripts/floor1/potion-menu-readiness.h'], cwd=ROOT, check=True)
+    'scripts/floor1/walking-harness.py', 'scripts/floor1/potion-menu-readiness.h',
+    'scripts/floor1/recovery-field-readiness.h'], cwd=ROOT, check=True)
 assert not (out / 'STOP.json').exists(), 'A prior failure requires diagnosis and parent review before another execution'
 summary_path = out / 'summary.json'
 summary = json.loads(summary_path.read_text()) if summary_path.exists() else []

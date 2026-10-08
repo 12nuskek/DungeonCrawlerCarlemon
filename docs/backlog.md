@@ -4,7 +4,7 @@
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
 Current focused result: F1-G01e-PR readiness repair and ONE corrected historical
-Potion replay pass.29 host checks,2 runtime sessions/80 assertions; real20HP heal/
+Potion replay pass; issue88 / draft PR89 pushed and unmerged.29 host checks,2 runtime sessions/80 assertions; real20HP heal/
 one consumption, Howler→Guard wins, XP/rewards/return/manual Save/cold verified.
 [Evidence](evidence/floor1/g01e/potion-ready/README.md). No game edit/merge/current-
 candidate combat/V01/full-route claim. Older failure/three strategies preserved.

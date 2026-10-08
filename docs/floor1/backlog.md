@@ -1,4 +1,5 @@
 Current focused result (2026-10-08): F1-G01e-PR readiness repair runtime verified;
+issue88 / draft PR89 pushed, unmerged.
 29 host negative/ack checks,2 historical sessions/80 assertions, real20HP heal/
 1Potion consumption, Howler→Guard, XP/rewards/repeat/manual Save/cold pass.
 [Evidence](../evidence/floor1/g01e/potion-ready/README.md). No game edit, merge,

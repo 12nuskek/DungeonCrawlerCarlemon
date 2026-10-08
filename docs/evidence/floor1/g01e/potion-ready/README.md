@@ -2,7 +2,10 @@
 
 F1-G01e-PR, 2026-10-08 Australia/Brisbane. Branch
 `task/floor1-g01e-potion-ready`, base `00a31be5d1622308a6d02c4fcce165e1d581b710`
-(draft PR87). Parent explicitly authorised one corrected controller replay after
+(draft PR87). [Issue88](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/88) /
+[draft PR89](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/89), pushed and
+unmerged; evidence package`17158ef9abe27788450ee098c20ad5cc3b227cb5`.
+Parent explicitly authorised one corrected controller replay after
 PR87 never delivered a Potion. [Pre-execution repair contract](../../../../floor1/g01e-potion-ready-contract.md)
 committed at9890144 preserves the same hypothesis, ROM/save/route and stop rule.
 No game or balance changes, merge, full-route or newer-candidate acceptance.

@@ -1,5 +1,8 @@
 Current checkpoint — 2026-10-08: F1-G01e-PR corrected Potion intervention
-runtime verified on the exact historical ROM. Sole writer /workspace/dcc-feedback,
+runtime verified on the exact historical ROM.
+[Issue88](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/88) /
+[draft PR89](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/89), pushed and
+unmerged; evidence package17158ef9abe27788450ee098c20ad5cc3b227cb5. Sole writer /workspace/dcc-feedback,
 `task/floor1-g01e-potion-ready`, base00a31be5d1622308a6d02c4fcce165e1d581b710
 (draft PR87 unchanged). Repair contract9890144 before execution; actual tested
 runnerdb085577a8866fa272f31ea2ab5869f00fbd7bd2. No game edit or new game compile.

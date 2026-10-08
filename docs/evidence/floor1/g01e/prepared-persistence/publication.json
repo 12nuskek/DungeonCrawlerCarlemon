@@ -1,0 +1,17 @@
+{
+  "issue": 104,
+  "draft_PR": 105,
+  "base_branch": "task/floor1-g01e-party-resource-correction",
+  "base_source": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+  "head_branch": "task/floor1-g01e-prepared-persistence",
+  "evidence_source": "10a423669690085b9d01f51defaa5dfed84cd1b0",
+  "frozen_host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+  "execution_source": "873d504a28668924374758bc5626eae6e9071c51",
+  "implemented": true,
+  "compiled": true,
+  "runtime_verified": "first route/normal manual Save/native sectors and exact cold boot",
+  "runtime_incomplete": "cold return route STOP57; complete prepared gate not closed",
+  "merged": false,
+  "CI_pass_claim": false,
+  "next_dependency": "Parent review of readiness-aware native relocation guard/counter bookkeeping; no further battle/retry authorised"
+}

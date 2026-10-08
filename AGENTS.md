@@ -1,5 +1,6 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR105 / issue104, stacked on unchanged PR103.
 Prepared increment executed: new first route/manual Save and exact cold boot pass;
 dependent cold return warp STOP57 on source-compatible transient relocation guard.
 Preserve claim/STOP/saves; no retry/further frame/battle. Full cold route unverified.

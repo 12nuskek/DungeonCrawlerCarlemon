@@ -1,5 +1,7 @@
 Prepared persistence — **new victory/manual Save and exact cold boot pass; cold return STOP57; parent review next; unmerged**.
 
+[Issue #104](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/104) / [draft PR #105](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/105), open/unmerged, stacked on unchanged PR103. Evidence commit `10a423669690085b9d01f51defaa5dfed84cd1b0`.
+
 Separate narrow preservation contract on unchanged PR103/1e81d129. Frozen host/
 runner5cdc77a44fb83e55020c5cf2f296f71dd9cc649b, executions873d504a28668924374758bc5626eae6e9071c51,
 unchanged game5084/ROM23c77.2872 focused host cases and fresh warning-as-error

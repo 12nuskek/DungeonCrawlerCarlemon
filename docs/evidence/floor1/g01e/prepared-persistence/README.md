@@ -1,5 +1,7 @@
 # Separate prepared completion — victory/Save and exact cold boot pass; cold return STOP
 
+[Issue #104](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/104) / [draft PR #105](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/105), open/unmerged, stacked on unchanged PR103. Evidence commit `10a423669690085b9d01f51defaa5dfed84cd1b0`.
+
 The new narrow contract is implemented/compiled. One separately claimed ordinary
 prepared route passes victory, exact rewards/repeat, actual staircaseNO/YES,
 review and manual Save:270 assertions,6,952 whole-battle frames, one attempt.

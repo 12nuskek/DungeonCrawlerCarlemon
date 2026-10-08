@@ -1,3 +1,16 @@
+Current priority checkpoint — 2026-10-08: F1-G01e-PR focused host readiness
+repair authorised by parent; branch `task/floor1-g01e-potion-ready`, base
+00a31be5d1622308a6d02c4fcce165e1d581b710 (draft PR87 unchanged). The prior
+controller failure never delivered the Potion; it and all three original strategy
+failures remain preserved. [Repair contract](floor1/g01e-potion-ready-contract.md)
+fixes readiness/acknowledgement scope and ONE corrected replay, same historical
+ROM/save,59-input prefix and Carl3HP decision. No emulator execution yet. Focused
+negative/readiness tests precede runtime. Any corrected failure stops combat again;
+no game edit, policy/resource/RNG search, merge/V01/full/newer-candidate claim.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000, sole writer/parent continuation.
+
+## Preserved PT checkpoint
+
 Current checkpoint — 2026-10-08: F1-G01e-PT single authorised Potion test failed;
 combat stopped. [Issue86](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/86) /
 [draft PR87](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/87), pushed and

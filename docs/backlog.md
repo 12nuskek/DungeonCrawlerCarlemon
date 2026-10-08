@@ -3,6 +3,12 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
+Current priority: F1-G01e-PR, specifically authorised Bag fade/task readiness and
+observed-context/recipient acknowledgement repair. Negative checks first, then ONE
+corrected historical Potion replay with unchanged inputs/hypothesis/identities.
+[Contract](floor1/g01e-potion-ready-contract.md). Prior failure and three strategies
+remain counted; any corrected failure stops combat without another retry.
+
 Current priority result: F1-G01e-PT failed its single authorised test; combat
 stopped; issue86 / draft PR87 pushed, unmerged. Exact59-input prefix/Carl3HP/ownedPotion checks passed, but the controller
 pressed A before Bag fade readiness and reached its bound (exit32). Heal/use/Guard

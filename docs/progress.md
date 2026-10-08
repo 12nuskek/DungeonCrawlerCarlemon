@@ -1,3 +1,39 @@
+Warden fairness candidate — 2026-10-08: **two unprepared pairs pass; prepared stop preserved; unmerged**.
+
+Focused draft review package is stacked on unchanged PR97 (ed519a05e34f47bf45fa150aa5e456b9e1028926).
+Game5084a1814904f1a43fd999fddf770b221bb53653; exact ROM SHA256
+23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167.
+Frozen host/runner a31355a22267e1e8b309adde7e59206cd3e43f3a.
+Only authored858/859 enemy SLAM effective45/noncritical and helper Donut-target
+TACKLE turns0/4/8/rest changed; native cues updated. Shared moves/stock crits,
+duo/enemy parties, preparation advantage, rewards/flags/save ABI unchanged.
+Exact-header guard/cadence checks, full two-response cleanup bounds and fresh
+isolated pinned build passed; original missing-include compile stop retained.
+
+Unprepared offensive: one victory8,669 frames,204 first-clear+132 cold assertions,
+Save6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386.
+Unprepared fortify: one victory13,733 frames,204+132 assertions,
+Save7092ce7704a94158046195581e6b9e72dfb640005c46dea20efc83ff3638badf.
+Both exact226XP/money360, both contributions/support, full inventory/repeat,
+actual stairsNO/YES, manualSave and separate cold byte/resource persistence pass.
+Prepared ordinary craft/cache859: one victory6,952 frames,193 assertions completed;
+exact192XP/money320, unused Super Potion, repeat and actual stairsNO pass, then
+strict200-byte post-victory duo comparison fails (exit53). Global STOP remains.
+No prepared YES/Save/cold, no retry or relaxed assertion. Walking friendship is
+plausible source cause; exact changed field was not logged and remains unknown.
+Parent review of a separate exact-field diagnostic is next; no new execution.
+
+[Full identities, actual native captures/motion, diagnosis and limitations](evidence/floor1/g01e/warden-fairness/README.md).
+Complete new safe logs/claims/saves/captures/STOP retained privately; Git excludes
+saves/ROMs/keys. All56 prior branch heads and accepted plan preserved; mainb694
+unchanged. Original Warden loss1/1, three historical patrol failures and two
+initial replacement recovery failures unchanged/separate. Candidate3 combat wins,
+2 complete first-clear/cold pairs,1 post-victory route stop;865 completed assertions
+across5 processes. Legacy inputs still missing; no legacy/fullFloor1/finalT/
+human-pacing/reverse-order/V01 acceptance or merge.
+
+## Historical audit checkpoint
+
 Warden threat/action audit — 2026-10-08: **read-only complete; design review next**.
 
 [Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.

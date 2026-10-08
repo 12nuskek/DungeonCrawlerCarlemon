@@ -1,0 +1,4214 @@
+[
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-opening-checkpoint-00-00.png",
+    "SHA256": "926cec47235cbee3b676a54d99803f1a2217f0e4a06ad2c468d256ef29e68d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-opening-checkpoint-00-01.png",
+    "SHA256": "a6a5beb6ae59a82bef53832c22ade778b3092d6a635d5e57f4cd8a33ef27664b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-returned.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-yes-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-stairs-yes-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold-warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/cold/cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-000.png",
+    "SHA256": "b547b29a042a5b1c3275c234a0198c9407424eeb304c60e6afc33e1e6cbdc3c3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-001.png",
+    "SHA256": "ef16870e63a6ddd2882e206876cb8e0a147af03653427d10734c31d6bd89e739",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-002.png",
+    "SHA256": "fc9976398fdb335bbd2c8297cf1a72667bc38bb17d4586a2c57b89c322624355",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-003.png",
+    "SHA256": "d0fbe288e26a848f8a03d91eef71c976769f104357ab5dfebe4af274df393e16",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-004.png",
+    "SHA256": "9b4fec891c9a0b46f4e0f8b32c6f5d8c2ea66aabcdada207423e247e67c8812e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-005.png",
+    "SHA256": "cd7150e7760db531c9db7b13f902de5f0a2d41c426938270f49132fc36c6cbd3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-006.png",
+    "SHA256": "d238277df1b959a41e01b6d0aecfcffede0037183d16f93cb38448e0f610816e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-007.png",
+    "SHA256": "077c64f10fd1c42aba74fa13f1b068f1f6f1de4f4008bd33c651ad040a94fc47",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-008.png",
+    "SHA256": "1c3b0792bb934a319a852b5a899ec8d5dfdccba161735e7000f7bb44c12869bc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/cue-009.png",
+    "SHA256": "06fb5b87da1dbf87c2a01615ae41e509b03ad334a6e11f7a1518c38e7b1bdeb7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-000.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-001.png",
+    "SHA256": "d97f21aece8951f8523a2a90dab476b5f4f08d5c3c387fb5b96c6495eed18011",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-002.png",
+    "SHA256": "6ca1a731333aade64ab751ccc63136e54de1c7c8ff5a1545d72a06e0c6b2e2c6",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-003.png",
+    "SHA256": "dfd7454f712cf70f3b887ce87947b912f2755fefa4c4cfe0a43a4c7177e4e5b7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-004.png",
+    "SHA256": "2ae89693e6ccd0f7b8aa13d3a13fcdafb25b3c109c958a878343b9928ef90adf",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-005.png",
+    "SHA256": "ab6e20114cc34e78728c223fd0b9ca03be72f6b1ebbaa92488db5903249ed064",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-006.png",
+    "SHA256": "6b0b75640b93b80b4d9af3efc7b87d66a2d14f22de9bfb504225c7eeeed6417d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-007.png",
+    "SHA256": "bab5fc7d7d6473f35731cd255069a5a0d32beff60757eb86ab48f156fce634a2",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-008.png",
+    "SHA256": "694fe41585da7e18a67c75bf2aa035685aaf66c669eb92f53e96a20c9ad4a368",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-009.png",
+    "SHA256": "a2926e538045b29470d4d00e866aed98da1e76bcabb19f3f1fcb344bae457bbc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-010.png",
+    "SHA256": "2da7c6f53d28329574b3e5de09426c2193cfd5120a97340632161b979f8e5576",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-011.png",
+    "SHA256": "95ceeceab7c9495aa670e44cedea0b23056196059cba7e59d833b083bd2b4918",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-012.png",
+    "SHA256": "1209ae1bec30dc8c25cb3476a805d684d6432bbbef99844260e79667294441f4",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-013.png",
+    "SHA256": "efecaa2619e11f0454b130684a2cdc174dc02c4bede7c03b2d63a9529476ddd7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-014.png",
+    "SHA256": "6243e6cabd60962d6b336d905a48eea8defe5e1f35ef73e07a35a90e8ca5ae6b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-015.png",
+    "SHA256": "22648444458c862de8c2b6e072e0261d6aa7843cb9a250cd5ab874cea4205337",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-016.png",
+    "SHA256": "6bc836939ef0d29136ff12ee587feb17d3029dae2e913e618ea6232ebe2a2499",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-017.png",
+    "SHA256": "abe05a77859ea90b2f4751620e817bfd8f93fca06dcd760bc43bad520f67046c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-018.png",
+    "SHA256": "871085a1511a6b40d8140fa12f6176331608a9d20ed5819977a2831326c3093e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-019.png",
+    "SHA256": "bd8d6c0200e1bc1234ffa99ba367bb1080e46cf730e2908abad53bac48881908",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-020.png",
+    "SHA256": "9a933437775661239fc7f49da7062f2cd185f7a62377efbfe09e89ed7c49a6f6",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-021.png",
+    "SHA256": "b82a9f2c5ecb633b92b82e782d687e8f49638daef01f50ce0e5cee934fdd40fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-022.png",
+    "SHA256": "68bb9a8c8c768a524d160039ce20bfa40564f2e926345f71e984ad1fdc971d68",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-023.png",
+    "SHA256": "7e2b72b94a9ed3184e5ed5327864709dc72af13b254903d339bb493d4b862506",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-024.png",
+    "SHA256": "5a0754305d76367bf22b4646ad77e5385dac99ad5fc5dd9c2621c6181cfa0e37",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-025.png",
+    "SHA256": "ab6e20114cc34e78728c223fd0b9ca03be72f6b1ebbaa92488db5903249ed064",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-026.png",
+    "SHA256": "afc27a7cc893476dc0cbb19f4f8aeaa277a4fed172d123b69f3da2eeba76c400",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-027.png",
+    "SHA256": "83962d5919b5677c695cedce3d6719360414c78a18376ecfd1d2fe46b55da2b7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-028.png",
+    "SHA256": "48610dd59a27b3bd1bf4361d70388f93c0268dc36b1e6db15b122bd82eb6cf03",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-029.png",
+    "SHA256": "0e0645a5fad2fb214779a29eea2984453d36ce2eb2db6c4bee1a55451afee82d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-030.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-031.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-032.png",
+    "SHA256": "80bd6276fc3353115aef706b64c850de874b7be460f67f17b2a68e8f03884123",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-033.png",
+    "SHA256": "e0878c4d67da31dd5276b18586b19daa1f0e7ba6dc957ba6e8f9e9d5636417aa",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-034.png",
+    "SHA256": "2fccd86cddbd46577fdfe975a23d28b979053736340e71a4d6e56fcb1a93d7fe",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-035.png",
+    "SHA256": "a0b361714dae441b3245d06a73bc43968612fe165bbfb339798973cc8b38b28d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-036.png",
+    "SHA256": "faee856ceb15fb2f14d559e3d35dcf08ffea755f3c1064ac70437d458b8f7292",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-037.png",
+    "SHA256": "6c344ab55f92063a24ba88cb273db2363a28a114f01f5ad4d2ee7da4d512cc8c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-038.png",
+    "SHA256": "21005af5ca39669e150256e73bccf528d145fde9a9916cdc26a334fe1db285ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-039.png",
+    "SHA256": "44d3cfc5b29569e9e1bd292f735abe522b7809a3ea9c8bc39a6b9fc3381a82df",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-040.png",
+    "SHA256": "faf9bed8e9aa67e7f7de94cc58042109d4a1c86ff70665599286f9979016586f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-041.png",
+    "SHA256": "c9472320e309a863441600f195cb1dd5c21df53776d5269a8a82e41981ae4e44",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-042.png",
+    "SHA256": "52a2b6abd2a96e499b45944f7fee609d530337b6444173b77f939d3ac6ccd66c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-043.png",
+    "SHA256": "e18a91cf33efabb968e2b82e1113be85a11b29322db899465da6efad2b5a7c96",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-044.png",
+    "SHA256": "702a45725523135d91c7e318bbda92f6e6b281377bf6febcdb7f0c4084fb85f7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-045.png",
+    "SHA256": "34d7c6a16c95648b1528fbfa556c933d8eb1620c5b2d632da62d0c79fd2c35c1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-046.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-047.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-048.png",
+    "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-049.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-050.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-051.png",
+    "SHA256": "351e4bfb39ca8077f6e6aaa81431482ddb2bbd5ff23725ce106d920b12450c89",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-052.png",
+    "SHA256": "351e4bfb39ca8077f6e6aaa81431482ddb2bbd5ff23725ce106d920b12450c89",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-053.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-054.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-055.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-056.png",
+    "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/opening-checkpoint-00-00.png",
+    "SHA256": "926cec47235cbee3b676a54d99803f1a2217f0e4a06ad2c468d256ef29e68d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/opening-checkpoint-00-01.png",
+    "SHA256": "a6a5beb6ae59a82bef53832c22ade778b3092d6a635d5e57f4cd8a33ef27664b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/saved.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-yes-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/stairs-yes-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/turn-00.png",
+    "SHA256": "812b1024a9e4173ba66deb7475237bc49f3ecd166ca31038c559d1a455209ed7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/turn-01.png",
+    "SHA256": "823f93eb252c8c911fd4424b15a1b83801925598ebde4a5d1e13e51d22196537",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/turn-02.png",
+    "SHA256": "655804d9501c85d098011c9a8adcbd236e522e7b0fe265dd3defdcae564d57fe",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/turn-03.png",
+    "SHA256": "a98411b86651b6eabdc2d43174224e24a633a36ae9768a4e7217025429f75a50",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/turn-04.png",
+    "SHA256": "9a8763e3d3c16f97a59bae1ee3ad976670fe9303b86e4e217c31513c07d1cdf2",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/warden-result.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "offensive",
+    "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/warden-start.png",
+    "SHA256": "ed2d989e633b99407368462a107582c6e2b4cb3628b3b038a8d54954261852d1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "path": "docs/evidence/floor1/g01e/warden-fairness/offensive-wind-up.gif",
+    "SHA256": "a0d58d7d7c07c8e52532da3c49440c49d1cdfd0563fd5f17cda55777c33bc9ab",
+    "kind": "actual native motion frames assembled at 70ms each; no generated/interpolated frames",
+    "sources": [
+      {
+        "frame": 6785,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-000.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      },
+      {
+        "frame": 6789,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-001.png",
+        "SHA256": "d97f21aece8951f8523a2a90dab476b5f4f08d5c3c387fb5b96c6495eed18011"
+      },
+      {
+        "frame": 6793,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-002.png",
+        "SHA256": "6ca1a731333aade64ab751ccc63136e54de1c7c8ff5a1545d72a06e0c6b2e2c6"
+      },
+      {
+        "frame": 6797,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-003.png",
+        "SHA256": "dfd7454f712cf70f3b887ce87947b912f2755fefa4c4cfe0a43a4c7177e4e5b7"
+      },
+      {
+        "frame": 6801,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-004.png",
+        "SHA256": "2ae89693e6ccd0f7b8aa13d3a13fcdafb25b3c109c958a878343b9928ef90adf"
+      },
+      {
+        "frame": 6805,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-005.png",
+        "SHA256": "ab6e20114cc34e78728c223fd0b9ca03be72f6b1ebbaa92488db5903249ed064"
+      },
+      {
+        "frame": 6809,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-006.png",
+        "SHA256": "6b0b75640b93b80b4d9af3efc7b87d66a2d14f22de9bfb504225c7eeeed6417d"
+      },
+      {
+        "frame": 6813,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-007.png",
+        "SHA256": "bab5fc7d7d6473f35731cd255069a5a0d32beff60757eb86ab48f156fce634a2"
+      },
+      {
+        "frame": 6817,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-008.png",
+        "SHA256": "694fe41585da7e18a67c75bf2aa035685aaf66c669eb92f53e96a20c9ad4a368"
+      },
+      {
+        "frame": 6821,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-009.png",
+        "SHA256": "a2926e538045b29470d4d00e866aed98da1e76bcabb19f3f1fcb344bae457bbc"
+      },
+      {
+        "frame": 6825,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-010.png",
+        "SHA256": "2da7c6f53d28329574b3e5de09426c2193cfd5120a97340632161b979f8e5576"
+      },
+      {
+        "frame": 6829,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-011.png",
+        "SHA256": "95ceeceab7c9495aa670e44cedea0b23056196059cba7e59d833b083bd2b4918"
+      },
+      {
+        "frame": 6833,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-012.png",
+        "SHA256": "1209ae1bec30dc8c25cb3476a805d684d6432bbbef99844260e79667294441f4"
+      },
+      {
+        "frame": 6837,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-013.png",
+        "SHA256": "efecaa2619e11f0454b130684a2cdc174dc02c4bede7c03b2d63a9529476ddd7"
+      },
+      {
+        "frame": 6841,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-014.png",
+        "SHA256": "6243e6cabd60962d6b336d905a48eea8defe5e1f35ef73e07a35a90e8ca5ae6b"
+      },
+      {
+        "frame": 6845,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-015.png",
+        "SHA256": "22648444458c862de8c2b6e072e0261d6aa7843cb9a250cd5ab874cea4205337"
+      },
+      {
+        "frame": 6849,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-016.png",
+        "SHA256": "6bc836939ef0d29136ff12ee587feb17d3029dae2e913e618ea6232ebe2a2499"
+      },
+      {
+        "frame": 6853,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-017.png",
+        "SHA256": "abe05a77859ea90b2f4751620e817bfd8f93fca06dcd760bc43bad520f67046c"
+      },
+      {
+        "frame": 6857,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-018.png",
+        "SHA256": "871085a1511a6b40d8140fa12f6176331608a9d20ed5819977a2831326c3093e"
+      },
+      {
+        "frame": 6861,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-019.png",
+        "SHA256": "bd8d6c0200e1bc1234ffa99ba367bb1080e46cf730e2908abad53bac48881908"
+      },
+      {
+        "frame": 6865,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-020.png",
+        "SHA256": "9a933437775661239fc7f49da7062f2cd185f7a62377efbfe09e89ed7c49a6f6"
+      },
+      {
+        "frame": 6869,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-021.png",
+        "SHA256": "b82a9f2c5ecb633b92b82e782d687e8f49638daef01f50ce0e5cee934fdd40fd"
+      },
+      {
+        "frame": 6873,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-022.png",
+        "SHA256": "68bb9a8c8c768a524d160039ce20bfa40564f2e926345f71e984ad1fdc971d68"
+      },
+      {
+        "frame": 6877,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-023.png",
+        "SHA256": "7e2b72b94a9ed3184e5ed5327864709dc72af13b254903d339bb493d4b862506"
+      },
+      {
+        "frame": 6881,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-024.png",
+        "SHA256": "5a0754305d76367bf22b4646ad77e5385dac99ad5fc5dd9c2621c6181cfa0e37"
+      },
+      {
+        "frame": 6885,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-025.png",
+        "SHA256": "ab6e20114cc34e78728c223fd0b9ca03be72f6b1ebbaa92488db5903249ed064"
+      },
+      {
+        "frame": 6889,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-026.png",
+        "SHA256": "afc27a7cc893476dc0cbb19f4f8aeaa277a4fed172d123b69f3da2eeba76c400"
+      },
+      {
+        "frame": 6893,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-027.png",
+        "SHA256": "83962d5919b5677c695cedce3d6719360414c78a18376ecfd1d2fe46b55da2b7"
+      },
+      {
+        "frame": 6897,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-028.png",
+        "SHA256": "48610dd59a27b3bd1bf4361d70388f93c0268dc36b1e6db15b122bd82eb6cf03"
+      },
+      {
+        "frame": 6901,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-029.png",
+        "SHA256": "0e0645a5fad2fb214779a29eea2984453d36ce2eb2db6c4bee1a55451afee82d"
+      },
+      {
+        "frame": 6909,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-030.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      },
+      {
+        "frame": 6913,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-031.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      },
+      {
+        "frame": 6917,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-032.png",
+        "SHA256": "80bd6276fc3353115aef706b64c850de874b7be460f67f17b2a68e8f03884123"
+      },
+      {
+        "frame": 6921,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-033.png",
+        "SHA256": "e0878c4d67da31dd5276b18586b19daa1f0e7ba6dc957ba6e8f9e9d5636417aa"
+      },
+      {
+        "frame": 6925,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-034.png",
+        "SHA256": "2fccd86cddbd46577fdfe975a23d28b979053736340e71a4d6e56fcb1a93d7fe"
+      },
+      {
+        "frame": 6929,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-035.png",
+        "SHA256": "a0b361714dae441b3245d06a73bc43968612fe165bbfb339798973cc8b38b28d"
+      },
+      {
+        "frame": 6933,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-036.png",
+        "SHA256": "faee856ceb15fb2f14d559e3d35dcf08ffea755f3c1064ac70437d458b8f7292"
+      },
+      {
+        "frame": 6937,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-037.png",
+        "SHA256": "6c344ab55f92063a24ba88cb273db2363a28a114f01f5ad4d2ee7da4d512cc8c"
+      },
+      {
+        "frame": 6941,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-038.png",
+        "SHA256": "21005af5ca39669e150256e73bccf528d145fde9a9916cdc26a334fe1db285ac"
+      },
+      {
+        "frame": 6945,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-039.png",
+        "SHA256": "44d3cfc5b29569e9e1bd292f735abe522b7809a3ea9c8bc39a6b9fc3381a82df"
+      },
+      {
+        "frame": 6949,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-040.png",
+        "SHA256": "faf9bed8e9aa67e7f7de94cc58042109d4a1c86ff70665599286f9979016586f"
+      },
+      {
+        "frame": 6953,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-041.png",
+        "SHA256": "c9472320e309a863441600f195cb1dd5c21df53776d5269a8a82e41981ae4e44"
+      },
+      {
+        "frame": 6957,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-042.png",
+        "SHA256": "52a2b6abd2a96e499b45944f7fee609d530337b6444173b77f939d3ac6ccd66c"
+      },
+      {
+        "frame": 6961,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-043.png",
+        "SHA256": "e18a91cf33efabb968e2b82e1113be85a11b29322db899465da6efad2b5a7c96"
+      },
+      {
+        "frame": 6965,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-044.png",
+        "SHA256": "702a45725523135d91c7e318bbda92f6e6b281377bf6febcdb7f0c4084fb85f7"
+      },
+      {
+        "frame": 6969,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-045.png",
+        "SHA256": "34d7c6a16c95648b1528fbfa556c933d8eb1620c5b2d632da62d0c79fd2c35c1"
+      },
+      {
+        "frame": 6973,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-046.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      },
+      {
+        "frame": 6977,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-047.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      },
+      {
+        "frame": 6981,
+        "move": 359,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-048.png",
+        "SHA256": "d193e41548c7970dcfe2000ac76420ff8bc038240de20d60446e077a63ed7b91"
+      }
+    ],
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "path": "docs/evidence/floor1/g01e/warden-fairness/offensive-slam.gif",
+    "SHA256": "6834f32d8fe25c31957a3f4a4ec2b4105ba3530a01049e565b5a2aa3c430e8cc",
+    "kind": "actual native motion frames assembled at 70ms each; no generated/interpolated frames",
+    "sources": [
+      {
+        "frame": 8121,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-049.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      },
+      {
+        "frame": 8125,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-050.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      },
+      {
+        "frame": 8129,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-051.png",
+        "SHA256": "351e4bfb39ca8077f6e6aaa81431482ddb2bbd5ff23725ce106d920b12450c89"
+      },
+      {
+        "frame": 8133,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-052.png",
+        "SHA256": "351e4bfb39ca8077f6e6aaa81431482ddb2bbd5ff23725ce106d920b12450c89"
+      },
+      {
+        "frame": 8137,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-053.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      },
+      {
+        "frame": 8141,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-054.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      },
+      {
+        "frame": 8145,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-055.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      },
+      {
+        "frame": 8149,
+        "move": 360,
+        "path": "artifacts/floor1/warden-fairness/runtime/offensive/first-clear/motion-056.png",
+        "SHA256": "86872bb4f42416a0b0f38b917d1edf8c9daad39e93607cdc4fff84f107b56f48"
+      }
+    ],
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-opening-checkpoint-00-00.png",
+    "SHA256": "926cec47235cbee3b676a54d99803f1a2217f0e4a06ad2c468d256ef29e68d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-opening-checkpoint-00-01.png",
+    "SHA256": "a6a5beb6ae59a82bef53832c22ade778b3092d6a635d5e57f4cd8a33ef27664b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-returned.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-yes-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-stairs-yes-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold-warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/cold/cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-000.png",
+    "SHA256": "b547b29a042a5b1c3275c234a0198c9407424eeb304c60e6afc33e1e6cbdc3c3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-001.png",
+    "SHA256": "ef16870e63a6ddd2882e206876cb8e0a147af03653427d10734c31d6bd89e739",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-002.png",
+    "SHA256": "fc9976398fdb335bbd2c8297cf1a72667bc38bb17d4586a2c57b89c322624355",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-003.png",
+    "SHA256": "d0fbe288e26a848f8a03d91eef71c976769f104357ab5dfebe4af274df393e16",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-004.png",
+    "SHA256": "9b4fec891c9a0b46f4e0f8b32c6f5d8c2ea66aabcdada207423e247e67c8812e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-005.png",
+    "SHA256": "cd7150e7760db531c9db7b13f902de5f0a2d41c426938270f49132fc36c6cbd3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-006.png",
+    "SHA256": "d238277df1b959a41e01b6d0aecfcffede0037183d16f93cb38448e0f610816e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-007.png",
+    "SHA256": "077c64f10fd1c42aba74fa13f1b068f1f6f1de4f4008bd33c651ad040a94fc47",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-008.png",
+    "SHA256": "1c3b0792bb934a319a852b5a899ec8d5dfdccba161735e7000f7bb44c12869bc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/cue-009.png",
+    "SHA256": "06fb5b87da1dbf87c2a01615ae41e509b03ad334a6e11f7a1518c38e7b1bdeb7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-000.png",
+    "SHA256": "b3763b0c6a6debe84bbfeea9e4d8eac227188bd77eda3f186192f3b6a94ffb91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-001.png",
+    "SHA256": "b3763b0c6a6debe84bbfeea9e4d8eac227188bd77eda3f186192f3b6a94ffb91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-002.png",
+    "SHA256": "8400a639556394ad7a43a1a17b43875c991c857655ceb5554a2085de0828c980",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-003.png",
+    "SHA256": "17b222a7a14fef21b690d710bf13a704698e926a9a1c6c555f0bfb73c9c60b30",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-004.png",
+    "SHA256": "019984d75cfd5f75f97dfbc3af7a627eff8339d8ba0eb0b846714cb3dc5dd456",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-005.png",
+    "SHA256": "53e3b6fa2186febdcd6de72f77d10a4b6933d4bd2b69f9be4cdc540e674ac245",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-006.png",
+    "SHA256": "c65f68bf6a624b39149bdf9b0faffda0f86e71111bbb773753319c0f06ebf37e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-007.png",
+    "SHA256": "ab4b01f5b08c277cb83ef305c547ece71315a343ac2ccab6defc9891cf89c0ed",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-008.png",
+    "SHA256": "a45dad17d050aab7f63814ecc289acad791ce3072fdde74aaa14b640ecaca3d7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-009.png",
+    "SHA256": "fb89b91ac808ad33b4a466620b37475ffe90ab9f093ce52bb0fd1f68fc05f36f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-010.png",
+    "SHA256": "fc55834c6310f6025fb5732d8459fafdbb37deb183e8c5af0005c7c0d6da80c2",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-011.png",
+    "SHA256": "2adeea2428bb7a39a00e6d8c4ca3deb166077609ab0913197c5e40d07570946e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-012.png",
+    "SHA256": "63ad0b66a1f61a8dbe9d41db2b79f110b14aee9bef4e1a1e44d71f611ec77f18",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-013.png",
+    "SHA256": "53e3b6fa2186febdcd6de72f77d10a4b6933d4bd2b69f9be4cdc540e674ac245",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-014.png",
+    "SHA256": "8ee1a8495950379cb41764eb8dfb8244964e282400b4caa25d5a1fb2da6ad03c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-015.png",
+    "SHA256": "34c6613d82a05855a659f14df1824e8ac532306f00885ae0df33d6ffbc228518",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-016.png",
+    "SHA256": "b262f69a2558987bdf8e2e46c3c28718a8a72124140b098c088dfe308131f117",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-017.png",
+    "SHA256": "b3763b0c6a6debe84bbfeea9e4d8eac227188bd77eda3f186192f3b6a94ffb91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-018.png",
+    "SHA256": "b3763b0c6a6debe84bbfeea9e4d8eac227188bd77eda3f186192f3b6a94ffb91",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-019.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-020.png",
+    "SHA256": "da65d8233e1e8bd08e1fe884e2b2cc8ff3e6f3a1ded77d6d9343e1eba76a3ee8",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-021.png",
+    "SHA256": "031ff8bf17023e79883077749fb00fb7722cb09b778926e902bdefdacc2f385d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-022.png",
+    "SHA256": "411d75bd2d5056f893f47ee13fcb79090783aa4e4e8bb4fc949ff7cea78894a3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-023.png",
+    "SHA256": "610a51bb0c39f03ce89ce2252fc1e77cf63000dc8eaf4c5b4bc15d9835de3a96",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-024.png",
+    "SHA256": "2a83564f26d733a71e5f476678850d943a3df38bea5a5a0e04d9b54358db7416",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-025.png",
+    "SHA256": "ac80dcecbd541d993778b65b8e72e006c4f2f5515514c6bf10ab7a62fe10cc06",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-026.png",
+    "SHA256": "fe4db4e569aa122c4fce63db605aec4fc5b81ee155bea0a2e14d4c95763dd28d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-027.png",
+    "SHA256": "a8d9e8560003c0b3ac7ec76bd1c242ac9ebccec9f9c7757b47c59cf5edbf071f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-028.png",
+    "SHA256": "da60f6306518b560275c26b5c826704d49446c1c147e273ea74605f22d445255",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-029.png",
+    "SHA256": "a981e8b4448fed216ad9fd13ca0181f81fbcb8c86ca9927f7a28dacd7dd53082",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-030.png",
+    "SHA256": "7680dc1d3a7586fd0975c4c95ae0977cbbb4897f8e56bb39bff28656e436e063",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-031.png",
+    "SHA256": "a986b3bfdd10d2dd2e99d6a6e8369f16d3f385c24eee57b494ca604cc8132070",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-032.png",
+    "SHA256": "6aa40f1701e91ac22fbcd20a6c98cfa9e4051f1c21588ef742176dea3eb1deb4",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-033.png",
+    "SHA256": "c66b5e6b8e81d24d7e22123fa52a1ddbbe03f1f241bb9a23a9318aa108204854",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-034.png",
+    "SHA256": "a08841094f9134ae9befd6b5a9cfffce80e2a7c1aa128d7dc8277589fd1c8be9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-035.png",
+    "SHA256": "f7db4d3aaf8a1547c981d36b66b68c20fc6e64314665fcb556312fc408bb23b2",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-036.png",
+    "SHA256": "ae29544f3e50df7b7c98529a045faeccbc35c3789808a8de03a137c04dd0ac56",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-037.png",
+    "SHA256": "3c8ad88bbc13f4db6fd567e537cb03edbbe552ba82441ce046b7bf4be54a6b8e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-038.png",
+    "SHA256": "f03744b2baf118ce3a98982246e89f033ac37f696e8ea249d1a9010e727a8d7f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-039.png",
+    "SHA256": "5a05a498fe74776b5f1444d52a81119e04e4efa9d369b31d6e6556b8927c2b0a",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-040.png",
+    "SHA256": "0f06ef5070c1e0fedc0fc69c02c05ab2bbf9281612426f2e793cc84667e0570e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-041.png",
+    "SHA256": "46638d6fa56675ec47d1e2cb474383bde3541a285589cd2cf4b58ad32d0b16b5",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-042.png",
+    "SHA256": "ed6d904ec14e299b122c6ec9e61306d9a642c2b7bb9e9f5cd6420237fd3d593b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-043.png",
+    "SHA256": "53dfe33a9cee5561176e56b6104f5c04054f342aeea326d8c205ed3f1d44545c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-044.png",
+    "SHA256": "2a83564f26d733a71e5f476678850d943a3df38bea5a5a0e04d9b54358db7416",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-045.png",
+    "SHA256": "7bf89a97f4b2c77701a03b8d5dfa296bf0956f8043da1bedbd05e58019aba0a8",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-046.png",
+    "SHA256": "9b5dcd08bc8309a2a90f3cb7a68217319d86b42d9689014b67454847742499fe",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-047.png",
+    "SHA256": "b00dfeab1bae9d9a3654372a20851e61eccdd8ed0314b9b66b4d1a194639e9db",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-048.png",
+    "SHA256": "aa7c0cd96b18b93a9365a1465a6ad0072d64c3c91e13a1f0b649dc059b576f78",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-049.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-050.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-051.png",
+    "SHA256": "c6a22b197f8cee0fe59309495fcf33f8524b9fac4feaef156a8785b0f25e1a67",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-052.png",
+    "SHA256": "977b9b55a682469c38df2352d7bec6573a0a01122664f2a45df7612decd14220",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-053.png",
+    "SHA256": "3cc42231b68d6f9117f595552474f182f6d0e9e38609a6a21814806baa43e0af",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-054.png",
+    "SHA256": "27d57d4e644ad09ff9f91d3d0e3425c96472c4b692429b665ec3fdedf04ebee0",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-055.png",
+    "SHA256": "7eb6aabd13601e748457a845f4fa3f204f49ab09d2f3f28f93f559049b585dc1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-056.png",
+    "SHA256": "2bf6b4d986b820c8926701e2695e1a53e26517e4781007a9648ef2d27c5be225",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-057.png",
+    "SHA256": "27d08d88fc2a00289fec22442a732d4b8cb49d6bd9ca66250272de387a988494",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-058.png",
+    "SHA256": "7580ae4c147364f7c9d98caf4d82acaf094ca4a0ae3eb32956f0f60e6de12d92",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-059.png",
+    "SHA256": "a86cfb9128d75e4d992816ae7c61117faabeae52702e9fc35ca84ce30aad74d5",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-060.png",
+    "SHA256": "9169ff2a9c6ce7754d7810c55279faaeb555268858e9e7e47d8972a41f68c50f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-061.png",
+    "SHA256": "17f7d2c59a685fa9616084d9766d24d02ce507eb02d3051b3c948304ca24e95f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-062.png",
+    "SHA256": "516f42f57cf75760ba725dda0954618a7f2f8d41080259b02a1f3a91b230a76b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-063.png",
+    "SHA256": "8fdb02c2e01b85d323a95b46763bd0b8bbd796c0bbe0aed7602830d183c88896",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-064.png",
+    "SHA256": "a7d6a9c5ceb0215b0e83302ce55d785cc2b40dfa1585a9eed789f7ec278dff36",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-065.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-066.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-067.png",
+    "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-068.png",
+    "SHA256": "5a8bc894370fdf915e00e4d8e06fb5d4cb1bf77fa74f2285ac2cd753761c3afc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-069.png",
+    "SHA256": "5a8bc894370fdf915e00e4d8e06fb5d4cb1bf77fa74f2285ac2cd753761c3afc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-070.png",
+    "SHA256": "22f4e08291aabddea1dedff75d1cc299c1e0e75c81c5ac1d67995216e7934f01",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-071.png",
+    "SHA256": "46556f368444ed64e277e213f06b9ead759e9411250260182b6d0dee0ad599bb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-072.png",
+    "SHA256": "650f3fa4b87d102f4f81d6815c15cf0570913344ddbc4b62da93b7ec6735b593",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-073.png",
+    "SHA256": "e8b4d25498813582f037b15d2113034b3a321f40164dee4acd40ec8b4f3de94f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-074.png",
+    "SHA256": "5a0b330f559391802ccafb186b44297c84bfa897718e339e2b4e85aa3ffd1131",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-075.png",
+    "SHA256": "a3b079bcdf6811a2fe221713b213ea5155907c7d0ec477fbddb5443751db5751",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-076.png",
+    "SHA256": "4e6d011e21c888a850b6ebefe2e9bb6cf2e7de1d8d1773c1854cbaa4f7b8f98a",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-077.png",
+    "SHA256": "e9a4e9f68bab4aa524d3ccfaa314bc67c50f0adb1425a7388ce07762b90ec3ad",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-078.png",
+    "SHA256": "d6efe0418f68cb4a25c78d56812482abdbd2c9b42095cfefd992a0ce854ee636",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-079.png",
+    "SHA256": "f2178c6bd43cf92c1defaf8af395bb201c04bcacc604c82cd3fc0b30b6ed2043",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-080.png",
+    "SHA256": "ef095684f8c128ee44e24a73398848f373ba1ba2a4cb8ef3314fd26d962eb2ce",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-081.png",
+    "SHA256": "e8b4d25498813582f037b15d2113034b3a321f40164dee4acd40ec8b4f3de94f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-082.png",
+    "SHA256": "3b037db9bd40c6c3c53edeb1bc8ccea314ff3c8f716531b1e303887519c6b316",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-083.png",
+    "SHA256": "453bb978755003c3a9d9e4954524a6ed39c9cc4493061877df95fa8c33b3f393",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-084.png",
+    "SHA256": "3379a7b59dae1baa516b55a411d78555d7199a5072a285747acc10d363c8c5c3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-085.png",
+    "SHA256": "5a8bc894370fdf915e00e4d8e06fb5d4cb1bf77fa74f2285ac2cd753761c3afc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-086.png",
+    "SHA256": "5a8bc894370fdf915e00e4d8e06fb5d4cb1bf77fa74f2285ac2cd753761c3afc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-087.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-088.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-089.png",
+    "SHA256": "0c2ccb03924aa5a8a583bebed55cfbc05194b80dc4c157ca909d29c00eeaffc0",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-090.png",
+    "SHA256": "0c2ccb03924aa5a8a583bebed55cfbc05194b80dc4c157ca909d29c00eeaffc0",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-091.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-092.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-093.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/motion-094.png",
+    "SHA256": "00f24ed0517033bbb3895f366e0155401ad53bd0182de35c9e00a6c0a5984d70",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/opening-checkpoint-00-00.png",
+    "SHA256": "926cec47235cbee3b676a54d99803f1a2217f0e4a06ad2c468d256ef29e68d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/opening-checkpoint-00-01.png",
+    "SHA256": "a6a5beb6ae59a82bef53832c22ade778b3092d6a635d5e57f4cd8a33ef27664b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/saved.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-yes-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/stairs-yes-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-00.png",
+    "SHA256": "812b1024a9e4173ba66deb7475237bc49f3ecd166ca31038c559d1a455209ed7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-01.png",
+    "SHA256": "15d025c9f9d633f1e9305adc1a21eadd8d30e009efd93c8ab26521e9b70adae1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-02.png",
+    "SHA256": "709d67a961f16423d5c3b672d1e9e5924a717316cd0e0e722e638e3a8ea08071",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-03.png",
+    "SHA256": "709d67a961f16423d5c3b672d1e9e5924a717316cd0e0e722e638e3a8ea08071",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-04.png",
+    "SHA256": "ec131115b03936e3ba168303f50fe3218d42b00f33061e3b5c19a08879cedcfb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-05.png",
+    "SHA256": "ef5c13fcf50848d3452bf986bf63bbe7e66acec8f62d028d8575498f4454e31b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-06.png",
+    "SHA256": "06965dd90942cb5941ed908cac70bffa2c04d1ef2d0635af96f4abe5aea38549",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-07.png",
+    "SHA256": "2098690d065f7a00cb17c8f97fc45faf91d7392c752e7c1ac598c0db99a81bc3",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/turn-08.png",
+    "SHA256": "7dacbcdaa455ae98e33faaec2e68a11c20531ff7c69eadad0fb32314ea6c934d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/warden-result.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "fortify",
+    "path": "artifacts/floor1/warden-fairness/runtime/fortify/first-clear/warden-start.png",
+    "SHA256": "ed2d989e633b99407368462a107582c6e2b4cb3628b3b038a8d54954261852d1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-blasted-00-00.png",
+    "SHA256": "f5d0e0abca1cfe4daf1de19361bc0e5b5c2a22f7a38e491b47a9a512db3ac1ea",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-blasted-00-01.png",
+    "SHA256": "bcbab16b2d90e4e84d8dd9ad4e5ab0ba2e15b4026c4a8ceb54e1d24518349f65",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-cancelled-00-00.png",
+    "SHA256": "b2f57e2e1e1a6b4c732f04b343eafafc3e0c44abedd1724c07c3722a598020cf",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-decline-00-00.png",
+    "SHA256": "bd64e286402f70d6d9b9f695b6f15690377dd3145673d79817b83d2a8a5353cb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-repeat-00-00.png",
+    "SHA256": "008c923c7903a79425962ca884834174b051207b5dba1cb851f0f0835a3d1afd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cache-use-00-00.png",
+    "SHA256": "bd64e286402f70d6d9b9f695b6f15690377dd3145673d79817b83d2a8a5353cb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/crafted-00-00.png",
+    "SHA256": "e0534de4e86a87a47738cc9751b3f2cf98b39573672137f07ed9e271aeade8d0",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/crafted-00-01.png",
+    "SHA256": "e8741bebfa0cf8dcbf8d64854729f4b15549bf94b337758a121e851940dc9793",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-000.png",
+    "SHA256": "9cce8121d38ed8d78e5ce12b7db09d08c17a64eb52ed715090e318ade2be95ed",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-001.png",
+    "SHA256": "41bceb3135be2e491513e937f21e80d0962a54569338b7602ea487017d1a6585",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-002.png",
+    "SHA256": "7aa502cf4999301ac52dafa20ad22362e8839bd06cf2ed1a968dabe826c74617",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-003.png",
+    "SHA256": "46f235e5eb426760db1d253ea51d05c933f9935c9693d78d23a2e4c568ec8ddd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-004.png",
+    "SHA256": "e6de0ef15387b4c43be1f88c6956b0217e4d6eadf98c532197b08a56a94dcb01",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-005.png",
+    "SHA256": "ada0965a989137d0377afa76ce194f4ce6db79f95ce6162807490f432b063cac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-006.png",
+    "SHA256": "6c236d65b24a25cdf8288f0f19d17541aeee08669e46de0e24600480f6089211",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-007.png",
+    "SHA256": "4ffc02472e58962e716e2cbd71a9cf4f842004306bfa8c6d893af30e626e3b3c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-008.png",
+    "SHA256": "ff531fb242dc9d49a7e5529bec571cb6ba617e6a678a8e80ed2f0fb20befb6fb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/cue-009.png",
+    "SHA256": "b96781ccc54704af9c3e66295a060900fe1ca71539328338a1ae6eba266f776f",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-000.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-001.png",
+    "SHA256": "87aded774b686cdbb682c8e521bcc0dd9ded4211cc99e4d91a4f18398c1a9ad9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-002.png",
+    "SHA256": "05979ea1cfe982813e5c084f13488f72fe48102c9200bc28f3850eb3e81e44dc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-003.png",
+    "SHA256": "19b42b3b1d7c403feb1083e77a274ecc2c6ff2405e3bf990cf7cc8cd9a02f15b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-004.png",
+    "SHA256": "8c0d16578395be2d691edeb3e264736d7cb080ad51d58647ffb156fa8eebbf20",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-005.png",
+    "SHA256": "21fea1319163ed97a650212d4d01f4615343cfc72a7aa6fed93c1ee313d15d2b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-006.png",
+    "SHA256": "c2f0a61babd3fc953eae1cba6f36f01e94e15b3d711f330ad055e2aaa0ec7acc",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-007.png",
+    "SHA256": "0221e288e525e47ed87ee4a96067e3a41644aa4650a532314f017616432e9308",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-008.png",
+    "SHA256": "cec25116f09b6570a05d2e17e6d53368ce9538a0b10403a62f75132d82a2a3db",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-009.png",
+    "SHA256": "0e375da23b8fa5653d0bd41e2a38675c5d10b170a248e03b1900117357b9b6ee",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-010.png",
+    "SHA256": "4dd0b3af99e984eccc020c766e17ea453cff688c03c9d454a434d58aa2d7fcc9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-011.png",
+    "SHA256": "3347cdf6c039e5d21f2a230ff09fe46076497e55bbc67e2ba33daf5816b6d8d7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-012.png",
+    "SHA256": "8192d9ffc15cf026738ea72b7448e252cfa561718aef4da7d09d60487af438bf",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-013.png",
+    "SHA256": "0af397b371a232f9d42827e0f9fd8b4c8e60a5d681859d79c49bef444f535c97",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-014.png",
+    "SHA256": "9e6c75f32e30ce1f1c5900d7a142ba051ee3bb50cd8119f3b24a371d0998cb0e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-015.png",
+    "SHA256": "9b9d2150f1d989fe6f3bc519ba81ff3972a8c0cc1b0bfc83d7d022e98739ac48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-016.png",
+    "SHA256": "4f11c88422475f3abb0b32c12901b263a6ab5eedb3ff9e12b3cbb0dca5fdadb2",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-017.png",
+    "SHA256": "4b5237febe0aee3572c60c3b7071d1fec586b06b6a890d45569d7a4a00004b1a",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-018.png",
+    "SHA256": "5b578a39379ec57d5d3f09516019b5c5d6ebd10431af2be6a665d9d3b6093114",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-019.png",
+    "SHA256": "bc7d878c9fbd3de12d7ef051a37e911a0f87c7d0f8a3ac6b93bcdeac10fe409d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-020.png",
+    "SHA256": "bd23d246f1909cb11bc2f0cf82f6f8bf37c510ca7d28253b7af1c16953952e95",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-021.png",
+    "SHA256": "7205f13e3547845f520583d10b38137a18da8aca2505c25c626ab017b2f736aa",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-022.png",
+    "SHA256": "5047b09e0a6bb117f41dc777d01e53847cff347c2a0c7241bc6e46964e76d4f7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-023.png",
+    "SHA256": "75ae7156e0cf9b9d7436d50738bd2236e04d0ee7fa945770c3148caabf4ee75d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-024.png",
+    "SHA256": "f781fdda1095ef7ed2c6110ed04e1c95701cef59890d490fecde6189212974ff",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-025.png",
+    "SHA256": "21fea1319163ed97a650212d4d01f4615343cfc72a7aa6fed93c1ee313d15d2b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-026.png",
+    "SHA256": "633c209af0e4d145edb9b80412534467dd8be9aa1e97169092d11182cc041873",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-027.png",
+    "SHA256": "cc2e3fe4800d7b9ecd79045e8a0bbe4aba80a320d2fb299596d2c8ff6a4b0649",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-028.png",
+    "SHA256": "8ad0b7dd87e92d8c2a903dfe1058500dd0e5864109abfee3c86b5f8152529935",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-029.png",
+    "SHA256": "52674d36e7bf69765b1813b1055df2f1d02941e1ac97ba30fd74346b0184c0f1",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-030.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-031.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-032.png",
+    "SHA256": "f5442ce9e4b1add4ecb5102331fcd8f817f1daef11d3f711b768103f7f7a840d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-033.png",
+    "SHA256": "3e926fd3028402423380253bc251197e012e6a30862f0181b8768d5dc4d72958",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-034.png",
+    "SHA256": "890f044d9b55d0af12b2b7e740907203abdfcee9dbae346fad3695fd75d334ea",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-035.png",
+    "SHA256": "d56c8c56cbcf93d9d51014bcd9d50859a605e4e7f8bd61593e558e7de7976dee",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-036.png",
+    "SHA256": "385285da8f9dc0234d91f81475027e5b1e8999b1ca205ce968e975272d54732b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-037.png",
+    "SHA256": "2d03120e4f7a3d858f2e91881b81eed27e2697af249f0543b9d6672d6b950be9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-038.png",
+    "SHA256": "d7a9fb399e0c89a8ef6403725ba06e1ec37b58b3ad8757435eced005e302e4f5",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-039.png",
+    "SHA256": "5c4b63a0dbcd662dc148eb195f908920190b9442c935455becb1952624966730",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-040.png",
+    "SHA256": "b796c6f323ea2add5960f430de6b1d62639b503cf70eee4c01b6572883cca013",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-041.png",
+    "SHA256": "cd3ca985ee8eb44bcd20d04315949174acc6468e1f37f7451099dedd59805646",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-042.png",
+    "SHA256": "1765c0033db0a20ec5b8d71a9b1b6a5e8d1c0d26554d380b03b8c3574f833141",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-043.png",
+    "SHA256": "accf82a7d25c6c183bcacdd9afb32713ad26f02d23da001c10c941bddb62eb3b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-044.png",
+    "SHA256": "1201f44311fe4b4c7e0c1ea9bb2b62f4f4053e78cc9a48117cdc4e551846b538",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-045.png",
+    "SHA256": "278f734558e243376342f9dc7c89eee472e936b8c0e663e14e579baff82f24a9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-046.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-047.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-048.png",
+    "SHA256": "fad7492cd62f813f1b44305b9312b46a2b8c30efd83a5cbdeb0ae80d8f619631",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-049.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-050.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-051.png",
+    "SHA256": "5ad2157231a6a87e80619665f7b2362e39eb5b3a232dd2d9752a12a57842ea49",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-052.png",
+    "SHA256": "5ad2157231a6a87e80619665f7b2362e39eb5b3a232dd2d9752a12a57842ea49",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-053.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-054.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-055.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/motion-056.png",
+    "SHA256": "d93531c815712ef9babc9c3e0f803ef9a59adea986bb96835df6f9838975581d",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/recipe-00-00.png",
+    "SHA256": "0a75854fa842353e3c92e96a812d6aecf5ef279c2dbcf6c9a847c2718e35af64",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/stairs-no-00-00.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/stairs-no-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/turn-00.png",
+    "SHA256": "812b1024a9e4173ba66deb7475237bc49f3ecd166ca31038c559d1a455209ed7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/turn-01.png",
+    "SHA256": "bfc256c7615e9479c2cfc2cfbcef1f2df15c808bdf8404c5141cd53eb8cf4774",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/turn-02.png",
+    "SHA256": "1665b24542b39fee33bfc17b597e30aa9e1f0bc6dda07254fb7aaae9b81528f9",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/turn-03.png",
+    "SHA256": "ab1bcd41ead603ddc3611db9ff7bf8188ab26fe146c24d5aff0404972fafaeae",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/warden-result.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  },
+  {
+    "case": "prepared",
+    "path": "artifacts/floor1/warden-fairness/runtime/prepared/first-clear/warden-start.png",
+    "SHA256": "812b1024a9e4173ba66deb7475237bc49f3ecd166ca31038c559d1a455209ed7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167"
+  }
+]

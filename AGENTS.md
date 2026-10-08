@@ -1,5 +1,12 @@
 # DungeonCrawlerCarlemon working contract
 
+Candidate execution checkpoint: two unprepared first-clear/Save/cold pairs pass;
+prepared combat wins but exact post-victory duo comparison after stairs NO fails.
+Global STOP preserved. No further emulator execution, prepared YES/Save/cold or
+retry before parent review of the exact-field diagnostic gap. See
+docs/evidence/floor1/g01e/warden-fairness/README.md. Original loss/failures remain
+separate; candidate is unmerged. Preserve all frozen sources/claims/assertions.
+
 Parent review of PR97 authorises the separate prespecified encounter-local
 Warden fairness candidate in docs/floor1/g01e-warden-fairness-contract.md.
 Preserve original Warden loss1/1 and all patrol/recovery failures. Only the new

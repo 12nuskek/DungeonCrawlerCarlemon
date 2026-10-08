@@ -1,12 +1,12 @@
 # Live navigation and Journal — runtime verified, draft/unmerged
 
-F1-G01e-NC, 2026-10-08 Australia/Brisbane. Issue [78](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/78), stacked follow-up to draft PR77/75. Base `ce43420b1c76210f0fa4aaee18c0e195b9354b2d`; sole writer on `task/floor1-g01e-navigation`. Same Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`. Parent owns the existing continuation and quota; last supplied sample 00:05:01UTC:15% used/85% remaining. No new workflow, schedule or Cloud task.
+F1-G01e-NC, 2026-10-08 Australia/Brisbane. Issue [78](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/78), [draft PR79](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/79), stacked on draft PR77/75. Base `ce43420b1c76210f0fa4aaee18c0e195b9354b2d`; sole writer on `task/floor1-g01e-navigation`. Same Cloud task `01a10f4b-596b-700b-b8ba-241e3ca2c000`. Parent owns the existing continuation and quota; last supplied sample 00:05:01UTC:15% used/85% remaining. No new workflow, schedule or Cloud task.
 
 ## Result and scope
 
 Live Guide, Mara, Lev, tag pickup, Warden and Journal instructions now match Field↔Quiet/Workshop/Warden↔Checkpoint. Quiet and Workshop exit north; the workshop is southeast of the warm guide door, the tag is outside east of the workshop, and the warden stairs are southeast. The Journal calls flag48 an **opening checkpoint**, with the remainder of Floor1 in progress.
 
-The generated live script closure preserves all38 control blocks and22 unchanged text blocks byte-for-byte after namespace normalization. Only21 text labels change. Actor script roots bind explicitly to live labels. The menu chooses the new Journal for all five exact live map identities and retains the old script for every other identity. Unsigned-byte casts avoid shifting signed map fields. All six archived sources, geometry, collision, palettes, save ABI, state/reward ownership, recovery and combat have no diff. No new asset or book quotation; the existing compressed opening adaptation and placeholders remain documented.
+The generated live script closure preserves all 38 control blocks and 22 unchanged text blocks byte-for-byte after namespace normalization. Only 21 text labels change. Actor script roots bind explicitly to live labels. The menu chooses the new Journal for all five exact live map identities and retains the old script for every other identity. Unsigned-byte casts avoid shifting signed map fields. All six archived sources, geometry, collision, palettes, save ABI, state/reward ownership, recovery and combat have no diff. No new asset or book quotation; the existing compressed opening adaptation and placeholders remain documented.
 
 ## Exact evidence
 
@@ -19,22 +19,22 @@ Compiled game and final runner source: `c643f01c11ec68119b0347b107ee20115131debc
 | Explicit controlled save-input branches on the real candidate |12 sessions /89 assertions|
 | Candidate total |17 sessions /236 assertions;86 expanded messages /116 actual native pages; empty emulator error logs|
 | Original input identities and read-only cold files |Unchanged; manual Save writes only owned copies|
-| Source reproduction |All11711 tracked engine files identical after generator reproduction|
+| Source reproduction |All 11,711 tracked engine files identical after generator reproduction|
 | Legacy controls / unchanged text |38 /22 blocks identical after label normalization|
-| Changed lines / bounds |53 physical lines; maximum202px in engine's216px normal-font window|
-| Complete map identity negatives |65536 verbatim-C host UBSan vectors; supplementary, not emulator fallback proof|
+| Changed lines / bounds |53 physical lines; maximum 202px in engine's 216px normal-font window|
+| Complete map identity negatives |65,536 verbatim-C host UBSan vectors; supplementary, not emulator fallback proof|
 
 [Candidate verdicts](candidate-summary.json), [before verdicts](before-summary.json), [source checks](source-checks.json), [capture provenance](captures.json). No raw state, saves, keys, ROM or rejected diagnostic payload/history is published here.
 
 Ordinary routes verify first/repeat pretrial guide recovery, repeat posttrial advice and already-cleared trial text; Mara offer/decline/reoffer/accept/wait/tag pickup/return/complete/repeat; Lev; all quest Journal hints; manual Save/cold completion; checkpoint Journal and already-cleared warden page. Existing two SCRAP become four after hand-in, remain four on repeat and cold load; the tag is consumed exactly once. Both protagonists' health/actions recover.
 
-Controlled inputs explicitly test first posttrial guide, locked/cleared warden, all seven objective priorities, and full bag hand-in refusal with98 SCRAP/tag preserved before, after and on cold load. These use the actual legacy migration/spawn path and ordinary buttons on the unchanged production ROM, not an injected RAM state or patched battle policy. Journal is opened through actual menus in all five live contexts. Legacy Continue remaps to live maps; the fallback itself is checked by preserved source and exhaustive host C, **not claimed as actual legacy runtime**.
+Controlled inputs explicitly test first posttrial guide, locked/cleared warden, all seven objective priorities, and full bag hand-in refusal with 98 SCRAP/tag preserved before, after and on cold load. These use the actual legacy migration/spawn path and ordinary buttons on the unchanged production ROM, not an injected RAM state or patched battle policy. Journal is opened through actual menus in all five live contexts. Legacy Continue remaps to live maps; the fallback itself is checked by preserved source and exhaustive host C, **not claimed as actual legacy runtime**.
 
 The Warden/trial resolved text is checked from already-cleared state. There is no new battle strategy, new warden victory/defeat, actual staircase transition, fresh complete route or whole-floor acceptance claim. PR75's three-strategy stop, full gameplay/finalT and V01 gates remain pending.
 
 ## Actual native windows
 
-All images are untouched240×160 emulator captures, labelled with source/route in the manifest. Screenshot evidence supplements assertions.
+All images are untouched 240×160 emulator captures, labelled with source/route in the manifest. Screenshot evidence supplements assertions.
 
 ![Before guide: old west ladder; a52de74, ordinary repeat](before-guide.png)
 ![After guide: north exit; c643f01, ordinary repeat](guide.png)
@@ -52,7 +52,7 @@ All images are untouched240×160 emulator captures, labelled with source/route i
 
 ## Reproduce and retained attempts
 
-Stock pret/pokeemerald pin `731ad5bfd6e6f265508d0efcca0ba42f9dcf5881`, agbcc `da598c1d918402c42c0c0d7128ba14567f3175e9`: [provenance](../../../../upstream/provenance.md). Host cc Debian14.2.0, actual mGBA0.10.5. Use [setup/testing](../../../../testing.md). Snapshot from `git archive c643f01`, `bash source/scripts/setup-foundation.sh`, then `make -C source/engine -j2`. Saved environment PATH/LD_LIBRARY_PATH point to `/workspace/toolchain/root`; PKG_CONFIG_SYSROOT_DIR points there, PKG_CONFIG_LIBDIR includes both its libpng metadata and system zlib pkgconfig.
+Stock pret/pokeemerald pin `731ad5bfd6e6f265508d0efcca0ba42f9dcf5881`, agbcc `da598c1d918402c42c0c0d7128ba14567f3175e9`: [provenance](../../../../upstream/provenance.md). Host cc Debian14.2.0, actual mGBA 0.10.5. Use [setup/testing](../../../../testing.md). Snapshot from `git archive c643f01`, `bash source/scripts/setup-foundation.sh`, then `make -C source/engine -j2`. Saved environment PATH/LD_LIBRARY_PATH point to `/workspace/toolchain/root`; PKG_CONFIG_SYSROOT_DIR points there, PKG_CONFIG_LIBDIR includes both its libpng metadata and system zlib pkgconfig.
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-f1-g01e-navigation.py \

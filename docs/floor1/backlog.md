@@ -1,5 +1,5 @@
 Current focused increment (2026-10-08 Brisbane): F1-G01e-NC implemented,
-compiled and runtime verified; issue78, scoped draft PR pending creation, unmerged.
+compiled and runtime verified; issue78 / draft PR79, pushed and unmerged.
 17sessions/236assertions (5ordinary147;12explicit controlled89), real native
 NPC/Journal pages on all5live maps, Save/cold and capacity checks.38controls and
 22unchanged texts preserved;21live text labels corrected; legacy/geometry/save/

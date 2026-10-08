@@ -4,7 +4,7 @@
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
 Current: navigation/Journal correction F1-G01e-NC implemented, compiled and
-runtime verified:17sessions236assertions; issue78, scoped draft PR pending,
+runtime verified:17sessions236assertions; issue78 / draft PR79, pushed,
 unmerged. PR77/75 remain draft; full G01e/finalT/V01 gates and three combat
 strategy stop unchanged. Next independent checks: optional loop/trap/craft/re-entry/
 cold routes from existing ordinary saves. [Checkpoint](progress.md).

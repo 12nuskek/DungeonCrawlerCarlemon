@@ -1,0 +1,44 @@
+[
+  {
+    "file": "cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a2f44379112d4fd06107b13862f403ddb6fd9f8566ffac39a33c944e05f5aee0",
+    "route_sha256": "c8ea6bfaca164c9c082df57716e5c907726debd3c915a32cc82e126d7010e526",
+    "assertion": "Actual pre-attempt cold Continue from reviewed patrol-complete input atField37,31"
+  },
+  {
+    "file": "warden-start.png",
+    "SHA256": "ed2d989e633b99407368462a107582c6e2b4cb3628b3b038a8d54954261852d1",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a2f44379112d4fd06107b13862f403ddb6fd9f8566ffac39a33c944e05f5aee0",
+    "route_sha256": "c8ea6bfaca164c9c082df57716e5c907726debd3c915a32cc82e126d7010e526",
+    "assertion": "Actual first trainer858 encounter introduction; source assertions require level12/9 foes"
+  },
+  {
+    "file": "pilot-carl-down.png",
+    "SHA256": "a5418beeeafcdc872309a4753e3595cc5a41b9daa387f10b39e993b5743716ec",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a2f44379112d4fd06107b13862f403ddb6fd9f8566ffac39a33c944e05f5aee0",
+    "route_sha256": "c8ea6bfaca164c9c082df57716e5c907726debd3c915a32cc82e126d7010e526",
+    "assertion": "Actual Carl fainted after criticalSLAM; Donut WEAKEN menu, SPARK exhausted"
+  }
+]

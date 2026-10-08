@@ -1,0 +1,27 @@
+{
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/DungeonCrawlerCarlemon-warden-first-clear-20261008.zip",
+  "file_id": "file_0000000096bc823084cb85039dc843c2",
+  "library_file_id": "libfile_bc4520663fe4819187cf23bb768c5526",
+  "file_name": "DungeonCrawlerCarlemon-warden-first-clear-20261008.zip",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "libdir_ed4301526e048191a0e2077b17476723",
+  "mime_type": "application/zip",
+  "library_artifact_type": "other",
+  "file_size_bytes": 79045,
+  "external_connectors_accessed": false,
+  "SHA256": "8b2df8db0aeb1aa37a95ccfae963a2ef136d12cbfc49739b4c2346ebc642e8ea",
+  "manifest_files": 29,
+  "includes": "Unchanged copied input save; complete new failure trace/errors/claim/STOP/counts, frozen route, generated observer, host compilation, actual native captures, boundary checks and source/ref records; prior private retention identity",
+  "excludes": "ROMs, emulator savestates, keys, original missing inputs, old denied datasets/ancestry",
+  "first_clear_verified": false,
+  "original_legacy_acceptance_restored": false
+}

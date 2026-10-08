@@ -1,0 +1,32 @@
+{
+  "base": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+  "branch": "task/floor1-g01e-warden-threat-audit",
+  "prior_remote_branch_count": 55,
+  "main": "b694da17928b93ea579f55d905017aa9f7619422",
+  "current_patrol": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+  "pr95": {
+    "head": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+    "base": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "returned_pr_triggered_workflow_runs": 0
+  },
+  "pr93": {
+    "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+    "base": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+    "state": "open",
+    "draft": true,
+    "merged": false
+  },
+  "accepted_plan_sha256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "prior_private_archive_unchanged": true,
+  "prior_game_and_controller_evidence_diff": "empty",
+  "new_emulator_executions": 0,
+  "warden_attempts_total_current_input": 1,
+  "warden_failures_total_current_input": 1,
+  "historical_patrol_strategy_failures_separate": 3,
+  "initial_replacement_recovery_failures_separate": 2,
+  "original_legacy_acceptance_restored": false,
+  "next_dependency": "Parent narrow threat-budget/two-response design review before separately scoped direction"
+}

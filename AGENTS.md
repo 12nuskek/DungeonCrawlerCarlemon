@@ -1,5 +1,12 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent review of PR95 authorised a read-only trainer858 threat/action audit.
+The audit is complete: no new emulator execution, current Warden attempts/losses
+remain1/1, separately from patrol/recovery failures. See
+docs/evidence/floor1/g01e/warden-threat-audit/README.md. No second response is
+prescribed; parent review of the narrow threat-budget/two-response design gap
+is next. Do not execute a battle or change balance without separate direction.
+
 Current review package: draft PR95 / issue94, stacked on unchanged PR93.
 No further emulator execution before parent review of the preserved loss.
 

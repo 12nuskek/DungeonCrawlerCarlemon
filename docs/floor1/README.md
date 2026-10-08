@@ -1,5 +1,14 @@
 # Full Floor 1 execution
 
+Current checkpoint: read-only Warden threat/action audit complete. No new battle
+or balance edit; reconstructed-input Warden attempts/failures remain1/1, distinct
+from patrol/recovery failures. No fixed second response is prescribed. Parent
+review of the narrow threat-budget/two-response gap is next; prepared victory
+cannot close unprepared acceptance.
+[Audit, source arithmetic and next dependency](../evidence/floor1/g01e/warden-threat-audit/README.md).
+
+## Historical first-clear attempt
+
 Unprepared Warden first-clear — 2026-10-08: **single attempt lost; stopped**.
 
 [Issue #94](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94) / [draft PR #95](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95), open/unmerged, stacked on PR93 at `1263d8b915f37d70bdcb04167c9088cd107666bc`. Evidence publication `d5d505c57bddc26b899d78bb033a6b2e41b3affe`; tested contract/runner remains `7197e785a704e216c9f4a5429ae6cb4fb9302703`.

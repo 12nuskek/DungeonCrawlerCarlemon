@@ -7,7 +7,7 @@ host-rendered transcription. Raw logs/saves remain local.
 def instrument(code):
     code = code.replace('scriptStatus=0, addr;', 'scriptStatus=0, string4=0, printers=0, addr;')
     point = '        if (!strcmp(symbol,"gMain")) mainstate=addr;'
-    code = code.replace(point, point + '\n        if (!strcmp(symbol,"gStringVar4")) string4=addr;\n        if (!strcmp(symbol,"gTextPrinters")) printers=addr;')
+    code = code.replace(point, point + '\n        if (!strcmp(symbol,"gStringVar4")) string4=addr;\n        if (!strcmp(symbol,"sTextPrinters")) printers=addr;')
     code = code.replace('char line[256],name[128]', 'char line[2048],name[128]')
     point = '        if (!strcmp(line,"quit\\n")) break;'
     assert code.count(point) == 1

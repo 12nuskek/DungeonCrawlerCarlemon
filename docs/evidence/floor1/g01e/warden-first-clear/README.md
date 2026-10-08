@@ -1,5 +1,7 @@
 # Unprepared Warden first-clear — single attempt lost, stopped
 
+[Issue #94](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94) / [draft PR #95](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95), open/unmerged, stacked on PR93 at `1263d8b915f37d70bdcb04167c9088cd107666bc`. Evidence publication `d5d505c57bddc26b899d78bb033a6b2e41b3affe`; tested contract/runner remains `7197e785a704e216c9f4a5429ae6cb4fb9302703`.
+
 Parent review passed PR93's bounded recovered-input claim and authorised one
 unprepared trainer858 fortify attempt plus dependent first-clear checks.
 Base `1263d8b915f37d70bdcb04167c9088cd107666bc`, branch

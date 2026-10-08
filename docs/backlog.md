@@ -1,5 +1,7 @@
 Unprepared Warden first-clear — 2026-10-08: **single attempt lost; stopped**.
 
+[Issue #94](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94) / [draft PR #95](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95), open/unmerged, stacked on PR93 at `1263d8b915f37d70bdcb04167c9088cd107666bc`. Evidence publication `d5d505c57bddc26b899d78bb033a6b2e41b3affe`; tested contract/runner remains `7197e785a704e216c9f4a5429ae6cb4fb9302703`.
+
 Prespecified/tested source `7197e785a704e216c9f4a5429ae6cb4fb9302703`, unchanged
 c643 game/exactb025 ROM. Correct trainer858/levels12,9 and restored reviewed
 input verified; one documented fortify attempt,12,875 whole-battle frames

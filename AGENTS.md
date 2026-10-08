@@ -1,5 +1,8 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR95 / issue94, stacked on unchanged PR93.
+No further emulator execution before parent review of the preserved loss.
+
 The authorised unprepared Warden attempt is now completed and failed: genuine
 loss at12,875 whole-battle frames. See
 [exact failure evidence](docs/evidence/floor1/g01e/warden-first-clear/README.md).

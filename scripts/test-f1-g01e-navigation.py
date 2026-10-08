@@ -61,8 +61,8 @@ def save(r):
     r.save();r.lines=[x for x in r.lines if x!='snapshot'];r.cursor=2
 
 def choose_mara(r,no=False):
-    # pages stopped after the final offer page, before the native Yes/No opens.
-    r.step(1,1);r.step(400,0,'mara-choice.ppm')
+    # MSGBOX_YESNO opens automatically when the final page finishes.
+    r.step(40,0,'mara-choice.ppm')
     if no:r.step(1,128);r.step(20)
     r.step(1,1);r.step(400);pages(r,'decline' if no else 'accept','Service_Text_Decline' if no else 'Service_Text_Accept');close(r)
 

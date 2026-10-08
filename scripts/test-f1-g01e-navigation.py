@@ -51,8 +51,8 @@ def talk(r,button,prefix,*labels,finish=True):
     if finish:close(r)
 def journal(r,prefix,objective,quest):
     r.step(1,8);r.step(120)
-    for i in range((3-r.cursor)%5):r.step(1,128);r.step(20)
-    r.cursor=3;r.step(1,1);r.step(400);pages(r,prefix,'Journal_Text_'+objective,'Journal_Text_Rules','Journal_Text_'+quest);close(r)
+    for i in range((4-r.cursor)%6):r.step(1,128);r.step(20)
+    r.cursor=4;r.step(1,1);r.step(400);pages(r,prefix,'Journal_Text_'+objective,'Journal_Text_Rules','Journal_Text_'+quest);close(r)
 def save(r):
     if r.cursor:
         r.step(1,8);r.step(120)

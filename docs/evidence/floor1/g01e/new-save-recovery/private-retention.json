@@ -1,0 +1,26 @@
+{
+  "operation": "create_library_file",
+  "status": "succeeded",
+  "path": "/DungeonCrawlerCarlemon-new-save-recovery-20261008.zip",
+  "file_id": "file_00000000b2f08230b8a688e6a3514cdd",
+  "library_file_id": "libfile_4dcde9d9320481918a4d015bf167259d",
+  "file_name": "DungeonCrawlerCarlemon-new-save-recovery-20261008.zip",
+  "current_version_number": 0,
+  "restored_from_version_number": null,
+  "xattrs": [
+    {
+      "name": "user.library-file-version",
+      "value": "0"
+    }
+  ],
+  "directory_id": "libdir_ed4301526e048191a0e2077b17476723",
+  "mime_type": "application/zip",
+  "library_artifact_type": "other",
+  "file_size_bytes": 170041,
+  "external_connectors_accessed": false,
+  "SHA256": "c6772875b922b8af990654133ead0b4ebd6ce8e679599917156a227f73a4d005",
+  "manifest_files": 57,
+  "includes": "Pinned new pending save; new patrol-complete and unchanged cold copies; complete new routes, claims, logs, observer source and actual captures; source/check/ref records; prior private build bundle identity",
+  "excludes": "ROMs, emulator savestates, keys, old denied datasets/ancestry, missing original saves",
+  "original_legacy_acceptance_restored": false
+}

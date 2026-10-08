@@ -1,5 +1,11 @@
 # DungeonCrawlerCarlemon working contract
 
+The authorised separate fresh-save replay is now complete: 199 assertions in
+patrol/cold, target Save026c16fe…23220a verified. See
+[exact evidence](docs/evidence/floor1/g01e/new-save-recovery/README.md).
+Do not repeat combat or start Warden. Parent review is the next dependency;
+original legacy-input acceptance remains unavailable. No merge authorised here.
+
 Parent review continuation: one separate fresh-save recovery replay is authorised
 under docs/floor1/g01e-new-save-recovery-contract.md. Preserve the historical
 contract/runner and both prior recovery failures. The below parent-review stop

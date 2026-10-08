@@ -1,0 +1,130 @@
+{
+  "identity": {
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "base": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "seed_sha256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+    "method": "Separate parent-reviewed fresh-save contract; no historical-input equivalence"
+  },
+  "sessions": [
+    {
+      "stage": "patrol",
+      "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+      "host_runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+      "exit": 0,
+      "errors_bytes": 0,
+      "assertions": 121,
+      "input_save_sha256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+      "output_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+      "reconstructed_input": true
+    },
+    {
+      "stage": "cold",
+      "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+      "host_runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+      "exit": 0,
+      "errors_bytes": 0,
+      "assertions": 78,
+      "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "output_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "route_sha256": "8e913352d182836b8abe6acdd61aa77e9f3e89ffadb7bc67c669b0e0a4cefc85",
+      "reconstructed_input": true
+    }
+  ],
+  "assertions": 199,
+  "successful_sessions": 2,
+  "host_checks": 49,
+  "game_changed": false,
+  "warden_started": false,
+  "legacy_input_equivalence": false,
+  "intervention": {
+    "trainer": 856,
+    "actor": 0,
+    "turn": 4,
+    "observed_hp": 20,
+    "maximum_hp": 36,
+    "expected_final_hp": 36,
+    "actual_gain": 16,
+    "donut_hp_unchanged": 16,
+    "owned_quantity_before": 1,
+    "owned_quantity_after": 0,
+    "pp_unchanged": [
+      4,
+      40,
+      0,
+      38
+    ],
+    "bag_ready_frame": 24625,
+    "context_ack_frame": 24637,
+    "recipient_ack_frame": 24709,
+    "battle_return_frame": 24973
+  },
+  "wins": {
+    "howler": {
+      "pilot_frames": 9220,
+      "outcome": 1,
+      "incapacitation": 0,
+      "xp_gain_each": 121,
+      "money_gain": 360
+    },
+    "guard": {
+      "pilot_frames": 9784,
+      "outcome": 1,
+      "incapacitation": 0,
+      "xp_gain_each": 132,
+      "money_gain": 320
+    }
+  },
+  "target": {
+    "map": [
+      35,
+      0
+    ],
+    "position": [
+      37,
+      31
+    ],
+    "levels": [
+      11,
+      10
+    ],
+    "xp": [
+      748,
+      1058
+    ],
+    "hp": [
+      38,
+      30
+    ],
+    "status": [
+      0,
+      0
+    ],
+    "pp": [
+      8,
+      40,
+      2,
+      40
+    ],
+    "potion": 0,
+    "scrap": 2,
+    "trial_won": true,
+    "howler_won": true,
+    "guard_won": true,
+    "preparation_boss_checkpoint_unset": true,
+    "save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+    "cold_file_unchanged": true
+  },
+  "verification": {
+    "tested_source": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "prior_remote_branches_unchanged": 53,
+    "prior_retained_files_unchanged": 64,
+    "preintervention_exact_frame_and_choice_records": 59,
+    "ordinary_patrol_commands_unchanged": true,
+    "engine_and_historical_contracts_runners_evidence_unchanged": true
+  }
+}

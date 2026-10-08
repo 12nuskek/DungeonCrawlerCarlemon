@@ -1,5 +1,7 @@
 # Exact-field diagnosis — one noncombat resource-encoding stop
 
+[Issue #100](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/100) / [draft PR #101](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/101), open/unmerged, stacked on unchanged PR99. Evidence commit `bfc2a32992a1af7e77c8561b1b2db3b2e8832f4b`.
+
 **One probe stopped; intended staircase NO and friendship boundary were not
 reached.** Added raw-resource guard stopped at frame2236 during a normal warp.
 All600 party bytes stayed exact, both native member checksums/re-encoding valid.

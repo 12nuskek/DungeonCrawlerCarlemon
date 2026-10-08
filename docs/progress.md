@@ -1,5 +1,7 @@
 Exact-field diagnosis — 2026-10-08: **one noncombat probe stopped; resource-observer review next; unmerged**.
 
+[Issue #100](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/100) / [draft PR #101](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/101), open/unmerged, stacked on unchanged PR99. Evidence commit `bfc2a32992a1af7e77c8561b1b2db3b2e8832f4b`.
+
 Base PR99/61fba93c0485af269944a739953240e1f745466a unchanged. Parent accepts its
 two bounded unprepared first-clear/cold pairs and encounter-local guards. Separate
 observer/decoder implemented and compiled; same approved5084a1 game/exact23c77

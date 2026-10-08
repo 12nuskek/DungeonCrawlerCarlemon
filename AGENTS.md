@@ -1,5 +1,8 @@
 # DungeonCrawlerCarlemon working contract
 
+Current diagnosis package: draft PR101 / issue100 on PR99. Diagnostic STOP
+preserved; parent review next, no further execution.
+
 Exact-field diagnostic completed one noncombat execution and stopped atframe2236
 on the added raw-resource guard during warp. All600 party bytes/checksums stayed
 exact; counter66→72, no stairsNO/128 boundary or friendship delta observed.

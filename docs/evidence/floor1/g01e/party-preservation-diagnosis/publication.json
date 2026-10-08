@@ -1,0 +1,22 @@
+{
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/100",
+  "draft_PR": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/101",
+  "base_branch": "task/floor1-g01e-warden-fairness",
+  "base_sha": "61fba93c0485af269944a739953240e1f745466a",
+  "head_branch": "task/floor1-g01e-party-preservation-diagnosis",
+  "evidence_commit": "bfc2a32992a1af7e77c8561b1b2db3b2e8832f4b",
+  "host_source": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+  "execution_source": "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81",
+  "game_source_unchanged": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "draft": true,
+  "merged": false,
+  "tooling_implemented_compiled": true,
+  "single_probe_stopped": true,
+  "actual_stairs_NO_boundary_verified": false,
+  "friendship_mechanism_verified": false,
+  "original_prepared_field_identified": false,
+  "preservation_relaxation_implemented": false,
+  "new_battle_attempts": 0,
+  "CI_at_evidence_commit": "PR-triggered first-page lookup returned no runs; no pass claim",
+  "next_dependency": "Parent review of added raw-resource observer flaw; no further execution without separate authority"
+}

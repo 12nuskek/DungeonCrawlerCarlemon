@@ -1,5 +1,7 @@
 # Full Floor 1 execution
 
+[Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
+
 Current checkpoint: read-only Warden threat/action audit complete. No new battle
 or balance edit; reconstructed-input Warden attempts/failures remain1/1, distinct
 from patrol/recovery failures. No fixed second response is prescribed. Parent

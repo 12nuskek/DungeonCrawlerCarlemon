@@ -1,5 +1,7 @@
 Warden threat/action audit — 2026-10-08: **read-only complete; design review next**.
 
+[Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
+
 No new emulator execution or balance change. Current reconstructed-input Warden
 attempts/failures remain1/1, separate from three historical patrol strategies and
 two initial replacement recovery failures. Offline pinned-source arithmetic

@@ -1,5 +1,7 @@
 # Warden 858 threat/action audit — read-only, no second attempt
 
+[Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
+
 Parent review of PR95 confirmed one genuine loss and authorised this bounded
 source/retained-trace audit. Base `e0d75cc339548a9d57a5ecc9b2e80036deda6f50`;
 branch `task/floor1-g01e-warden-threat-audit`. **Current reconstructed-input Warden

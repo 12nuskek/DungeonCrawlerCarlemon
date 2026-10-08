@@ -1,5 +1,7 @@
 Warden audit checkpoint — 2026-10-08: **parent design review next**.
 
+[Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
+
 Read-only audit complete; no emulator/balance change; current Warden attempts/
 failures1/1. Strike-fast's ordinary kill deadline depends on early helper targets;
 fortify reduces ordinary damage but critical bypass remains. No second policy

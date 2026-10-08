@@ -1,5 +1,7 @@
 # DungeonCrawlerCarlemon working contract
 
+Current read-only audit review package: draft PR97 / issue96, based on PR95.
+
 Parent review of PR95 authorised a read-only trainer858 threat/action audit.
 The audit is complete: no new emulator execution, current Warden attempts/losses
 remain1/1, separately from patrol/recovery failures. See

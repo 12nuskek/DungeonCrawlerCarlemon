@@ -10,8 +10,8 @@ def generate(git):
     code,base=prior.generate(git);assert hashlib.sha256(code.encode()).hexdigest()=='a2f44379112d4fd06107b13862f403ddb6fd9f8566ffac39a33c944e05f5aee0'
     replace=helper.replace_once
     code=replace(code,'unsigned wardenFrames=0, attemptUsed=0,', 'unsigned candidateTrainer=0, candidateFortify=0, motionCount=0, cueCount=0, powerAddress=0;\n    unsigned wardenFrames=0, attemptUsed=0,')
-    code=replace(code,'unsigned attacker=0, defender=0, currentMove=0, critical=0, moveDamage=0,', 'unsigned battlePower=0, attacker=0, defender=0, currentMove=0, critical=0, moveDamage=0,')
-    code=replace(code,'        if (!strcmp(symbol,"gTasks")) tasks=addr;', '        if (!strcmp(symbol,"gBattleMovePower")) battlePower=addr;\n        if (!strcmp(symbol,"gTasks")) tasks=addr;')
+    code=replace(code,'unsigned attacker=0, defender=0, currentMove=0, critical=0, moveDamage=0,', 'unsigned animationActive=0, animationActor=0, battlePower=0, attacker=0, defender=0, currentMove=0, critical=0, moveDamage=0,')
+    code=replace(code,'        if (!strcmp(symbol,"gTasks")) tasks=addr;', '        if (!strcmp(symbol,"gAnimScriptActive")) animationActive=addr;\n        if (!strcmp(symbol,"gBattleAnimAttacker")) animationActor=addr;\n        if (!strcmp(symbol,"gBattleMovePower")) battlePower=addr;\n        if (!strcmp(symbol,"gTasks")) tasks=addr;')
     code=replace(code,'    yesNoTask=yesNoAddress;choiceResult=choiceAddress;', '    powerAddress=battlePower;\n    yesNoTask=yesNoAddress;choiceResult=choiceAddress;')
     point='        if (!strcmp(line,"quit\\n")) break;'
     code=replace(code,point,point+r'''
@@ -67,10 +67,11 @@ def generate(git):
     point='                elapsed++;total++;\n                if (turn!=lastTurn) {'
     code=replace(code,point,r'''
                 elapsed++;total++;
-                if (turn<2 && elapsed%120==0 && motionCount<64) {
+                if (turn<2 && elapsed%4==0 && motionCount<128 && animationActive && animationActor
+                    && core->busRead8(core,animationActive) && core->busRead8(core,animationActor)==1) {
                     char frameName[64];snprintf(frameName,sizeof frameName,"motion-%03u.ppm",motionCount++);
                     result=capture(frameName,pixels,width,height);if (result) break;
-                    printf("MOTION frame=%u turn=%u file=%s\n",total,turn,frameName);
+                    printf("MOTION frame=%u turn=%u move=%u file=%s\n",total,turn,core->busRead16(core,currentMove),frameName);
                 }
                 if (turn!=lastTurn) {''')
     point='                WARDEN_FRAME(); if (noBattleMonitoring && (core->busRead8(core,mainstate+0x439)&2)) sawBattle=1;elapsed++;total++;'

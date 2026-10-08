@@ -1,0 +1,45 @@
+{
+  "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+  "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "sessions": [
+    {
+      "route": "ordinary-sealed-refusal-return-reentry-save",
+      "assertions": 7231,
+      "map_words": 7043,
+      "emulator_errors": 0,
+      "native_messages": 6,
+      "native_pages": 8,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads",
+      "no_battle_guarded_frames": 10226,
+      "no_battle_assertions": 10
+    },
+    {
+      "route": "ordinary-sealed-cold-return-reentry",
+      "assertions": 4151,
+      "map_words": 3971,
+      "emulator_errors": 0,
+      "native_messages": 6,
+      "native_pages": 8,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads",
+      "no_battle_guarded_frames": 7181,
+      "no_battle_assertions": 10
+    }
+  ],
+  "originals_unchanged": true,
+  "read_only_cold_inputs_unchanged": true,
+  "method": "Already-completed/pending ordinary saves and actual manual Save copies. Normal controller input, read-only observer; no synthetic save input, snapshot dump, RAM/ROM write, new battle or first-clear claim. Full flags/live duo/decrypted inventory equality verdicts only; private values/logs/saves remain local.",
+  "totals": {
+    "sessions": 2,
+    "assertions": 11382,
+    "full_buffer_comparisons": 11,
+    "full_buffer_words": 11008,
+    "targeted_stair_words": 6,
+    "other_assertions": 368,
+    "native_messages": 12,
+    "native_pages": 16,
+    "no_battle_guarded_frames": 17407,
+    "no_battle_assertions": 20
+  },
+  "scope": "F1-G01e-LK ordinary boss-pending sealed staircase only; prior SR cases untouched and not rerun."
+}

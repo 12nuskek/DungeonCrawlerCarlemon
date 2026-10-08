@@ -1,5 +1,14 @@
 # Live backlog
 
+Replacement recovery 2026-10-08: exact c643/b025 build reproduced; new fresh and
+field reconstruction two sessions/96 assertions pass. One field gate failure
+diagnosed/repaired without battle replay. Fresh patrol stops at unchanged Guard
+turn4 gate before Potion (34 completed/exit44). Target file unavailable; durable
+new input is healthy pending Field37,31, levels9/9, Potion1/SCRAP2. Original legacy
+inputs are not recovered. Next is parent recovery review, no combat retry/Warden
+or acceptance substitution. [Evidence](evidence/floor1/g01e/recovery/README.md).
+Earlier CP/PR claims below belong to the deleted environment and published history.
+
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 

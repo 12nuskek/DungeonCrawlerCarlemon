@@ -1,0 +1,13 @@
+{
+  "kind": "Supported private Library retention",
+  "status": "succeeded",
+  "file_name": "DungeonCrawlerCarlemon-recovery-20261008.zip",
+  "library_file_id": "libfile_610ebd3db2588191852091db4cf267f9",
+  "file_id": "file_00000000ddc881f583e95ebdf272da56",
+  "path": "/DungeonCrawlerCarlemon-recovery-20261008.zip",
+  "size_bytes": 306372,
+  "SHA256": "5c6d07c81bd71d91718e7fd3105a69a6684feba1771a0f1c0f24f664982eaaea",
+  "includes": "New ordinary recovery saves; complete fresh/reconstruction and failure logs, claims, routes, actual captures; complete fresh setup/build/package logs",
+  "excludes": "ROMs, emulator savestates, original missing inputs, old denied raw datasets/keys/ancestry",
+  "original_legacy_acceptance_restored": false
+}

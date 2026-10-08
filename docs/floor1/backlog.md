@@ -1,3 +1,14 @@
+Current replacement recovery (2026-10-08): target blocked before Potion.
+Fresh isolated c643/b025 build matches; two successful sessions/96 assertions,
+one diagnosed field readiness failure, one stopped fresh patrol divergence.
+New safe pending Save37,31/levels9,9/Potion1/SCRAP2 exists. Original legacy and
+patrol-complete inputs/private raw logs are not recovered. Warden/target Save
+unverified. [Evidence](../evidence/floor1/g01e/recovery/README.md).
+Next: parent recovery review; preserve stop and historical failed strategies.
+Future trainer858 fortify/30000frames/first-clear/persistence stays gated.
+
+## Historical original-workspace CP checkpoint
+
 Current focused result (2026-10-08): F1-G01e-CP currentc643/b025 patrol verified,
 2 ordinary sessions/81 assertions and29 host readiness checks. RealPotion/Howler→
 Guard/rewards/guide/repeat/manual Save/cold pass. [Evidence](../evidence/floor1/g01e/current-patrol/README.md).

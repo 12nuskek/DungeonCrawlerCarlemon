@@ -1,5 +1,13 @@
 # Full Floor 1 execution
 
+Replacement recovery 2026-10-08: Kurt approved replacement/ordinary replay at
+20:35UTC. Original task is terminal. Exact pinned game/tooling reproduced;
+fresh trial/field Save pass, then Guard semantic divergence stops before Potion.
+No target patrol-complete file or original legacy inputs recovered. Fresh files
+cannot restore original legacy acceptance. [Recovery evidence and next dependency](../evidence/floor1/g01e/recovery/README.md).
+Older statements about readable local originals describe the deleted environment.
+The complete accepted plan remains unchanged.
+
 Continuation update2026-10-08 02:01:39UTC: usage-meter prerequisite and the20%-
 remaining pause rule are withdrawn. Do not query the meter or ask for login;
 continue bounded Floor1 until the review package or user stop. Parent owns the

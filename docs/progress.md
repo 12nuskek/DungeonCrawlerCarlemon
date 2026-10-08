@@ -1,3 +1,40 @@
+Current replacement recovery checkpoint — 2026-10-08: **target blocked**.
+
+Kurt authorised replacement/ordinary replay at 20:35 UTC. Original task
+01a10f4b-596b-700b-b8ba-241e3ca2c000 is terminal and was not resumed. Sole writer,
+branch task/floor1-g01e-recovery, base 72e08ed17afc69e28ef545bbbff383a434e90df5.
+Main b694da17928b93ea579f55d905017aa9f7619422 and every earlier remote ref are
+preserved. All eight drafts #75/77/79/81/83/85/87/89 remain open/unmerged.
+CI returned zero PR-triggered runs for main, all draft heads and patrol checkpoint.
+Original saves/private raw logs/archives/claims/denied ancestry are not recovered.
+Published source/routes/verdicts/captures and historical failed strategies remain.
+
+Fresh isolated game c643f01c11ec68119b0347b107ee20115131debc compiles to exact
+ROM b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+29 readiness plus seven field-setup regression checks pass. Fresh/trial/Save
+3f604ade: 52 pass. First field route 84541097: ten completed/exit46; diagnosed
+task-created-before-running-callback. Separate callback-gated field resume
+7d89fcdd: 44 pass/manual Save, no battle replay. Two successful sessions/96 checks.
+Fresh patrol a349825d: 34 completed/exit44. Howler won and guide recovered; all
+59 normalized prior choices match. Guard turn4 semantic state diverged before
+Potion. Both failed claims/logs/STOPs remain. No retry, policy or timing search.
+
+Latest durable new save c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f:
+Field37,31, restored levels9/9, XP495/805, PP8/40/2/40, Potion1/SCRAP2, trial won,
+both patrols/preparation/boss/checkpoint unset. Cold Continue observed at the start
+of the stopped patrol; its copy is unchanged. Howler victory was not saved.
+Target levels11/10/Potion0/bothpatrols file was not created. Original legacy gate
+remains unavailable; no old acceptance transfers to fresh files.
+[Recovery identities/evidence/limitations](evidence/floor1/g01e/recovery/README.md).
+
+Implemented recovery tooling/host; compiled exact game/hosts; partial runtime;
+unmerged. Parent recovery review blocks further execution and Warden. Future
+contract remains one unprepared trainer858 fortify attempt/30000frames, then actual
+first-clear stairs/reward/Save/cold, after reviewed recovery. Full/finalT/V01/Floor1
+pending. No new task/schedule, quota call, later floor/publicROM or merge.
+
+## Historical original-workspace CP checkpoint — published, inputs missing
+
 Current checkpoint — 2026-10-08: F1-G01e-CP current-candidate patrol route
 runtime verified. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-current-patrol`,
 basef8178113b42cdf14f5540ecd50268df5da8a947f (draft PR89 unchanged). Prespecified

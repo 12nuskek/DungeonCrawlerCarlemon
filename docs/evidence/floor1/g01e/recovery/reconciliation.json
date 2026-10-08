@@ -95,5 +95,18 @@
     "Denied private datasets/keys/local unpushed ancestry"
   ],
   "legacy_gate": "Unavailable; fresh reconstructions cannot substitute for original input identity",
-  "old_task": "01a10f4b-596b-700b-b8ba-241e3ca2c000 terminal; not resumed"
+  "old_task": "01a10f4b-596b-700b-b8ba-241e3ca2c000 terminal; not resumed",
+  "PR_triggered_CI_checked": [
+    "main",
+    "PR75",
+    "PR77",
+    "PR79",
+    "PR81",
+    "PR83",
+    "PR85",
+    "PR87",
+    "PR89",
+    "current-patrol"
+  ],
+  "all_checked_PR_triggered_runs_empty": true
 }

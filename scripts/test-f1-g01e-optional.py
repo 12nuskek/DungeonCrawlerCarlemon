@@ -42,7 +42,7 @@ def run(name,save,r):
         frame=Image.open(image);assert frame.size==(240,160);frame.save(image.with_suffix('.png'))
     assert result.returncode==0,(name,'retained failed route',d,result.returncode)
     log=(d/'replay.log').read_text();assert not (d/'errors.log').stat().st_size
-    checks=int(re.search(r'result=0 assertions=(\d+)\n$',log)[1]);summary.append(dict(route=name,assertions=checks,emulator_errors=0,native_messages=sum(map(int,re.findall(r'native-pages messages=(\d+)',log))),native_pages=sum(map(int,re.findall(r'native-pages messages=\d+ pages=(\d+)',log))),method='Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only')))
+    checks=int(re.search(r'result=0 assertions=(\d+)\n$',log)[1]);summary.append(dict(route=name,assertions=checks,emulator_errors=0,native_messages=sum(map(int,re.findall(r'native-pages messages=(\d+)',log))),native_pages=sum(map(int,re.findall(r'native-pages messages=\d+ pages=(\d+)',log))),method='Preserved ordinary save or controller-created manual Save; ordinary buttons, RAM reads only'))
     print('PASS',name,checks,flush=True)
 
 def page(r,prefix,*labels):r.lines.append('pages '+prefix+' '+','.join(labels))

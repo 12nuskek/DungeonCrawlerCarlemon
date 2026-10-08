@@ -1,0 +1,73 @@
+{
+  "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "runner_source": "477e50551229311efabad367902302e175355a02",
+  "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "sessions": [
+    {
+      "route": "ordinary-resolved-return-refusal-save",
+      "assertions": 745,
+      "map_words": 672,
+      "emulator_errors": 0,
+      "native_messages": 8,
+      "native_pages": 10,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-resolved-arena-cold-repeat-transition-save",
+      "assertions": 746,
+      "map_words": 672,
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-resolved-checkpoint-cold-return-reentry",
+      "assertions": 752,
+      "map_words": 672,
+      "emulator_errors": 0,
+      "native_messages": 7,
+      "native_pages": 9,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-quiet-buffer-reentry-save",
+      "assertions": 500,
+      "map_words": 448,
+      "emulator_errors": 0,
+      "native_messages": 2,
+      "native_pages": 3,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-quiet-cold-buffer",
+      "assertions": 248,
+      "map_words": 224,
+      "emulator_errors": 0,
+      "native_messages": 1,
+      "native_pages": 1,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-workshop-buffer-reentry-save",
+      "assertions": 513,
+      "map_words": 448,
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 5,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    },
+    {
+      "route": "ordinary-workshop-cold-buffer",
+      "assertions": 246,
+      "map_words": 224,
+      "emulator_errors": 0,
+      "native_messages": 1,
+      "native_pages": 1,
+      "method": "Original ordinary save/controller-authored Save only; controller inputs and RAM reads"
+    }
+  ],
+  "originals_unchanged": true,
+  "read_only_cold_inputs_unchanged": true,
+  "method": "Already-completed/pending ordinary saves and actual manual Save copies. Normal controller input, read-only observer; no synthetic save input, snapshot dump, RAM/ROM write, new battle or first-clear claim. Full flags/live duo/decrypted inventory equality verdicts only; private values/logs/saves remain local."
+}

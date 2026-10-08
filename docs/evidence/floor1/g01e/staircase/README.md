@@ -2,7 +2,8 @@
 
 F1-G01e-SR, 2026-10-08 Australia/Brisbane. Branch `task/floor1-g01e-staircase`,
 base `7866c8730fbef0f6570e269aa247b90a2e9a3c23` (draft PR81 on79 on77 on75).
-The task issue/draft PR are recorded in the checkpoint. No game source change;
+[Issue82](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/82),
+[draft PR83](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/83); pushed and unmerged. No game source change;
 this completes an independent verification increment while full progression is gated.
 
 ## Exact source and result
@@ -95,6 +96,8 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/test-f1-g01e-staircase.py \
   --originals /workspace/DungeonCrawlerCarlemon/artifacts/floor1/a01/run-I7PJq0
 ```
 
+The restored snapshot compared identically against its retained TAR after the run;
+private ROM equality passed and the duplicate extraction was removed losslessly.
 Optional `--case stairs`, `quiet` or `workshop` selects an independent family.
 Ordinary retained fixtures are not distributed. [Existing build/archive evidence](../navigation/README.md).
 Implemented verifier; prior exact compile reused; scoped runtime verified;

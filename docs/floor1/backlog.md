@@ -1,3 +1,13 @@
+Current focused increment (2026-10-08 Brisbane): F1-G01e-SR runtime verified;
+7 ordinary sessions /3,750 assertions,15 complete interior buffers, resolved-stair
+refusal/return/re-entry/repeat transition/Save/cold. No game change/new defect.
+Issue82 / draft PR83, pushed and unmerged; [evidence](../evidence/floor1/g01e/staircase/README.md).
+PR81/79/77/75 stay draft; full/first-clear/finalT/V01 and three-strategy stop pending.
+Next: ordinary sealed-staircase refusal/re-entry/Save/cold from boss-pending save.
+No meter prerequisite; parent owns continuation. No new writer/task/scheduler.
+
+## Preserved OP checkpoint
+
 Current focused increment (2026-10-08 Brisbane): F1-G01e-OP runtime verified;
 8 ordinary sessions /15,701 assertions. Loop/wrong-side/two-way, trap/recovery,
 craft/cache cancellation/use/repeat/re-entry/Save/cold pass; no game source edits.

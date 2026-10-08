@@ -1,3 +1,43 @@
+Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-SR implemented,
+prior exact compile reused and scoped runtime verified; issue82 / [draft PR83](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/83),
+pushed and unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-staircase;
+base7866c8730fbef0f6570e269aa247b90a2e9a3c23 (draft PR81). Evidence package
+98ae7edf4667dfa94590d21648ae3caeb3e2e4e7; metadata checkpoint follows. PR81/79/77/75
+remain draft/unmerged; mainb694da17928b93ea579f55d905017aa9f7619422 unchanged.
+No engine/game patch or new defect. Denied diagnostics/c298ac7/996b947 stay local
+and outside this branch's ancestry. No new workflow/scheduler/task/writer/publicROM.
+
+Game compiled c643f01c11ec68119b0347b107ee20115131debc; actual runner
+477e50551229311efabad367902302e175355a02; exact ROM SHA256
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+7 ordinary sessions /3,750 assertions:15 complete224-word interior buffers
+(3,360 map words),390 behavioral assertions,26 native messages /34 pages.
+Every emulator error log empty. Two ordinary originals/three read-only cold copies
+unchanged; four owned copies use actual manual Save. Full flags/inventory/duo
+stay equal. Resolved NO/return/re-entry/repeat YES/Save/cold and all four interiors
+pass. Pending patrol flags stay pending through Quiet/Workshop tours. First
+runtime attempt passed every session; no synthetic input, snapshot dump, RAM/ROM
+write, pilot/policy/engage, new battle, timing reset or relaxed check.
+[Actual evidence/commands/limits](evidence/floor1/g01e/staircase/README.md).
+
+Raw artifacts/floor1/staircase/runtime-5regoi5l (including private fixture hashes).
+Exact snapshot artifacts/floor1/navigation/build-0lj52td4/source.tar.gz retained;
+TAR comparison and private ROM equality passed after runtime, duplicate extraction
+removed losslessly.47,602 free inodes after packaging. GNU14.2.0 host observer,
+actual mGBA0.10.5. No active emulator/build. Existing compile reused, no new compile
+claim. Ordinary fixture originals remain at original repo artifacts/floor1/a01/run-I7PJq0.
+
+User02:01:39UTC withdrew meter prerequisite/20%-remaining pause. No quota calls
+or login request. Bounded nine-district Floor1 remains authorised until review
+package/user stop; no later floors. Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000;
+parent owns sole continuation. Exact next independent task: reconcile PR83, then
+ordinary sealed-staircase refusal/re-entry/Save/cold from preserved boss-pending
+save without triggering the Warden. The three-strategy stop and first-clear boss/
+stairs, fresh full route, finalT, human pacing and V01 remain pending. Do not claim
+new boss victory/full floor, reset attempts or begin dependent art/district rollout.
+
+## Preserved OP checkpoint
+
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-OP implemented,
 existing compile reused and scoped runtime verified; issue80 / [draft PR81](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/81),
 pushed and unmerged. Review packageab5cbe11f2d8ea408f8c7c832fe87f3e1dd8751e;

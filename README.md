@@ -8,6 +8,9 @@ feedback and [PR79 navigation/Journal](https://github.com/12nuskek/DungeonCrawle
 sessions /236 assertions; [scoped evidence](docs/evidence/floor1/g01e/navigation/README.md).
 Optional loop/trap/crafting/cache checks now pass 8 ordinary sessions /15,701
 assertions on the same exact game; [evidence](docs/evidence/floor1/g01e/optional/README.md).
+Resolved stairs/return/refusal/repeat/Save/cold and all four compact interiors now
+pass7 ordinary sessions /3,750 assertions; [draft PR83](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/83),
+[exact evidence](docs/evidence/floor1/g01e/staircase/README.md). No game patch or new boss victory.
 Full live gameplay/finalT and native-art rollout remain gated by the recorded combat
 stop. The Stage0–5 delivery claims below describe the preserved baseline.
 

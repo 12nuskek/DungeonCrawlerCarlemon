@@ -1,0 +1,142 @@
+[
+  {
+    "file": "decision-before.png",
+    "sha256": "f1641d6cf25d0a083b7f8b786e7fe0f78a5347f75599bfad70ef0fea3cd1c289",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 24673,
+    "note": "Exact pre-intervention turn4; pixel-identical to preserved failed run"
+  },
+  {
+    "file": "owned-potion-bag.png",
+    "sha256": "2b3bfa20f38a2523bf81fcbaef22f8b3e99f96e52d6abc782abd89927eb4cced",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 24745,
+    "note": "Potion x1; expected Bag task active and actual palette fade complete"
+  },
+  {
+    "file": "potion-recipient.png",
+    "sha256": "f39f263bfe8248958970b4b9ab4e389b6871ccaa1f35cf31dcb9c1599e7b501a",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 24829,
+    "note": "Observed Carl recipient acknowledgement before A"
+  },
+  {
+    "file": "healed-party.png",
+    "sha256": "fdb6c709582544b597cb5fe2d2a4416c2af115f1efc7c28c9178e69072f64439",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "HP animation renders22/36; synchronous read-only HP23 and quantity0 verified, not a standalone visual23HP claim"
+  },
+  {
+    "file": "healed-battle.png",
+    "sha256": "61974d6c1605e5ac7f9031ae9368b564fe7e5c83b28399fe78617008e8faa45a",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 25105,
+    "note": "Battle return read-only HP23, quantity0 and all four action PP verified"
+  },
+  {
+    "file": "guard-result.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Ordinary Guard victory return; flag2136 after2137"
+  },
+  {
+    "file": "guard-resolved.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": null,
+    "note": "Repeat interaction after guide return; no new battle or XP"
+  },
+  {
+    "file": "saved.png",
+    "sha256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 32721,
+    "note": "Actual manual Save completed; field ready at37,31"
+  },
+  {
+    "file": "cold.png",
+    "sha256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "cold-potion-victories",
+    "frame": null,
+    "note": "Cold Continue from controller-authored Save; flags/Potion/XP/position checked"
+  },
+  {
+    "file": "cold-guard-resolved.png",
+    "sha256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "cold-potion-victories",
+    "frame": null,
+    "note": "Cold repeated Guard dialogue; no battle or duplicate XP"
+  }
+]

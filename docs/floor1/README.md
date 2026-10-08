@@ -71,3 +71,12 @@ candidate is not adopted for live gameplay: Guard/Howler field travel to the hub
 already exceeds the old complete trip to the guide. Shorten the geometry and
 co-design interior arrival/guide anchors before migration or V01 art. FinalT
 remains unmeasured; retain the six-map production build and all legacy fixtures.
+
+## Current G01e blocker — 2026-10-08
+
+The one specifically authorised Potion intervention failed at its controller bound.
+Exact59-input prefix and Carl turn4/3HP/one ownedPotion matched; premature A during
+Bag fade prevented healing proof. Combat stopped; no retimed retry. See
+[evidence](../evidence/floor1/g01e/potion/README.md) and [live backlog](backlog.md).
+Independent source/menu audits remain ready. Full/first-clear/finalT/V01 and newer
+candidate combat remain pending; no game change, merge or rollout is claimed.

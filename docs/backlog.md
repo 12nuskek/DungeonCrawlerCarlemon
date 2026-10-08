@@ -3,14 +3,15 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current priority: F1-G01e-PT, one diagnosis-led owned-Potion intervention on the
-preserved exact historical Howler-first failure. Parent prioritises the progression
-blocker ahead of menu audits. [Pre-execution contract](floor1/g01e-potion-contract.md)
-fixes ROM/save/route, Carl turn4 3HP, one20HP Potion and all acceptance checks.
-No blind-strategy counter reset, second test, game change or current-candidate
-acceptance. Prior LK issue84/draft PR85 remains verified, pushed and unmerged.
+Current priority result: F1-G01e-PT failed its single authorised test; combat
+stopped. Exact59-input prefix/Carl3HP/ownedPotion checks passed, but the controller
+pressed A before Bag fade readiness and reached its bound (exit32). Heal/use/Guard
+win/XP/Save/cold remain pending. [Evidence](evidence/floor1/g01e/potion/README.md).
+No retry or strategy reset. Next independent work: live no-collection source and
+ordinary menu/summary return audits; further combat needs focused parent direction.
+Prior LK issue84/draft PR85 remains verified, pushed and unmerged.
 
-Current: F1-G01e-LK ordinary sealed stairs verified (2 sessions /11,382
+Preserved LK checkpoint: F1-G01e-LK ordinary sealed stairs verified (2 sessions /11,382
 assertions), issue84 / draft PR85, pushed and unmerged. No battle across17,407
 host-observed frames; state/inventory/duo preserved,11 full buffers plus refusal/
 blocking/return/re-entry/Journal/Save/cold pass. Prior exact compile reused.

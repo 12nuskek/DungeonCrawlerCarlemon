@@ -1,3 +1,16 @@
+Current priority checkpoint — 2026-10-08: F1-G01e-CP focused current-candidate
+Howler→guide→Guard validation authorised after parent reviewed PR89. Sole writer,
+`task/floor1-g01e-current-patrol`, basef8178113b42cdf14f5540ecd50268df5da8a947f.
+Older drafts/main unchanged; CI0 runs. [Prespecified contract](floor1/g01e-current-patrol-contract.md)
+pins gamec643f01c /ROMb0251d46 and the same ordinary pending saveea719ffb; source
+and timing differences recorded before execution. Recovered4 build/symbol inputs
+from the rehashed retained archive; no new game compile. One bounded execution
+pending; stop at semantic decision divergence/failure, no search/retiming. Current
+coverage is separate from historical80-assertion/59-input pass. Same Cloud task,
+parent continuation; no quota/new writer/scheduler/merge/V01/full-route claim.
+
+## Preserved PR checkpoint
+
 Current checkpoint — 2026-10-08: F1-G01e-PR corrected Potion intervention
 runtime verified on the exact historical ROM.
 [Issue88](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/88) /

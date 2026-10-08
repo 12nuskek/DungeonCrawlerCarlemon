@@ -45,22 +45,25 @@ def generate(git):
     code = namespace['code']
     assert not any(x in code for x in ['snapshot', 'STATE {', 'encryption_key', 'busWrite'])
     # Field item controls are separate from the unchanged published battle policy.
-    code = replace_once(code, 'selectedItem=0;', 'selectedItem=0, fieldContext=0;')
+    code = replace_once(code, 'int main(int argc, char **argv)',
+        (ROOT / 'scripts/floor1/recovery-field-readiness.h').read_text() + '\nint main(int argc, char **argv)')
+    code = replace_once(code, 'selectedItem=0;', 'selectedItem=0, fieldContext=0, bagMain=0, partyMain=0;')
     code = replace_once(code, '        if (!strcmp(symbol,"gTasks")) tasks=addr;',
-        '        if (!strcmp(symbol,"Task_ItemContext_MultipleRows")) fieldContext=addr;\n        if (!strcmp(symbol,"gTasks")) tasks=addr;')
+        '        if (!strcmp(symbol,"Task_ItemContext_MultipleRows")) fieldContext=addr;\n        if (!strcmp(symbol,"CB2_BagMenuRun")) bagMain=addr;\n        if (!strcmp(symbol,"CB2_UpdatePartyMenu")) partyMain=addr;\n        if (!strcmp(symbol,"gTasks")) tasks=addr;')
     point = '        if (!strcmp(line,"quit\\n")) break;'
     code = replace_once(code, point, point + r'''
         if (!strncmp(line,"wait-task ",10)) {
-            char task[32];unsigned limit,elapsed=0,callback=0;
+            char task[32];unsigned limit,elapsed=0,callback=0,expectedMain=0;
             if (sscanf(line,"wait-task %31s %u %c",task,&limit,&extra)!=2 || !limit || limit>3600) {result=46;break;}
             if (!strcmp(task,"bag")) callback=bagInput;
             if (!strcmp(task,"field-context")) callback=fieldContext;
             if (!strcmp(task,"party")) callback=partyInput;
             if (!strcmp(task,"healed")) callback=restoredText;
-            if (!callback) {result=46;break;}
+            expectedMain=(!strcmp(task,"bag") || !strcmp(task,"field-context"))?bagMain:partyMain;
+            if (!callback || !expectedMain) {result=46;break;}
             core->setKeys(core,0);
-            while (elapsed<limit && !menu_ready(core,tasks,fade,callback)) {core->runFrame(core);elapsed++;total++;}
-            if (!menu_ready(core,tasks,fade,callback)) {result=46;fprintf(stderr,"Required field menu not ready: %s",line);break;}
+            while (elapsed<limit && !recovery_field_ready(core,mainstate,expectedMain,tasks,fade,callback)) {core->runFrame(core);elapsed++;total++;}
+            if (!recovery_field_ready(core,mainstate,expectedMain,tasks,fade,callback)) {capture("field-menu-stop.ppm",pixels,width,height);result=46;fprintf(stderr,"Required field menu not ready: %s",line);break;}
             checks++;printf("PASS task ready %s frames=%u\n",task,elapsed);continue;
         }
         if (!strcmp(line,"return-field\n")) {

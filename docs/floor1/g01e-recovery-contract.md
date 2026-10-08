@@ -61,3 +61,15 @@ any seed execution. No runtime assertion failed or was weakened; no trial replay
 policy change or timing search. The original prepared host remains immutable;
 subsequent route-source commits must match its engine/host/helper sources by Git
 diff and its actual generated C hash. Every execution records its own source.
+
+Diagnosed recovery field-menu failure (seed execution 1): exit 46 after ten
+assertions. The Bag gate matched at 30 frames, before setup finished. Source
+`SetupBagMenu` creates `Task_BagMenu_HandleInput` at state 14, resets palette fade
+earlier, starts the real fade only at state 20, then switches to `CB2_BagMenuRun`.
+Task plus inactive fade can therefore acknowledge an unfinished menu. The new
+field gate must additionally require the correct running Bag/party callback.
+This leaves the published battle controller/helper untouched. Preserve failed
+claim/log/save/summary and STOP file; prepare a separate diagnosed-resume directory
+using the successful fresh Save, whose bytes equal the failed seed's unchanged
+input/output. Resume only field reconstruction after compile/mock checks. No
+trial replay, combat retry, timing/RNG search, game change or counter reset.

@@ -29,6 +29,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--build', type=Path, required=True)
 parser.add_argument('--output', type=Path, required=True)
 parser.add_argument('--stage', choices=['prepare', 'fresh', 'seed', 'patrol', 'cold'], required=True)
+parser.add_argument('--resume-from', type=Path, help='Prepare a diagnosed field-menu repair using the unchanged successful fresh Save')
 args = parser.parse_args()
 assert not git('status', '--porcelain'), 'Commit recovery source first'
 head = git('rev-parse', 'HEAD')
@@ -54,6 +55,21 @@ if args.stage == 'prepare':
     identity = dict(runner=head, game=GAME, rom=ROM, reconstructed_base_observer=base_observer,
                     host_sha256=sha(out / 'observer.c'), method='Fresh ordinary gameplay recovery; no original input or acceptance transfer')
     (out / 'identity.json').write_text(json.dumps(identity, indent=2) + '\n')
+    if args.resume_from:
+        prior = args.resume_from.resolve()
+        failure = json.loads((prior / 'STOP.json').read_text())
+        rows = json.loads((prior / 'summary.json').read_text())
+        assert failure['stage'] == 'seed' and failure['exit'] == 46
+        assert 'wait-task field-context 3600' in (prior / 'seed/errors.log').read_text()
+        assert [x['stage'] for x in rows] == ['fresh', 'seed'] and rows[0]['exit'] == 0 and rows[0]['errors_bytes'] == 0
+        assert sha(prior / 'fresh.sav') == sha(prior / 'seed.sav') == rows[0]['output_save_sha256']
+        assert json.loads((prior / 'identity.json').read_text())['rom'] == ROM
+        shutil.copyfile(prior / 'fresh.sav', out / 'fresh.sav')
+        (out / 'summary.json').write_text(json.dumps(rows[:1], indent=2) + '\n')
+        (out / 'diagnosed-resume.json').write_text(json.dumps(dict(source=head, prior=str(prior),
+            failed_claim_sha256=sha(prior / 'seed/execution-claim.json'),
+            preserved_failure_sha256=sha(prior / 'STOP.json'),
+            reason='SetupBagMenu creates input task at state14 before fade at state20 and callback switch; require CB2_BagMenuRun. No battle replay.'), indent=2) + '\n')
     print('PASS prepared recovery host; no emulator or save execution')
     raise SystemExit(0)
 

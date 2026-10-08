@@ -1,5 +1,11 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent review of PR97 authorises the separate prespecified encounter-local
+Warden fairness candidate in docs/floor1/g01e-warden-fairness-contract.md.
+Preserve original Warden loss1/1 and all patrol/recovery failures. Only the new
+candidate's frozen offensive/fortify and ordinary prepared routes are authorised;
+30,000 whole-battle frames each, no timing/RNG search or retry. Stop on failure.
+
 Current read-only audit review package: draft PR97 / issue96, based on PR95.
 
 Parent review of PR95 authorised a read-only trainer858 threat/action audit.

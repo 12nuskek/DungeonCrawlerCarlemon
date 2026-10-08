@@ -1,3 +1,25 @@
+Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-OP in progress.
+Base91a4b79bfe7041060de560cd65b037322233047a (draft PR79); sole writer on
+/workspace/dcc-feedback, task/floor1-g01e-optional. PR79/77/75 remain open draft
+and unmerged; main b694da1 unchanged. Preserve all prior diagnostics locally.
+
+User02:01:39UTC update withdraws usage-meter prerequisites and20%-remaining pause:
+> ok we cant use it reliably so give up using it. we currently have 83 percent so just continue til i stay stop
+Do not read the meter, request login or block on quota. Continue the bounded
+nine-district Floor1 scope until review package or user stop. No later floors.
+Parent owns the sole continuation; no extra writer, task or scheduler.
+Older quota readings/guards below are historical and superseded.
+
+Current task: ordinary controller verification of optional loop/wrong-side/open/
+two-way/re-entry/Save/cold, trap warning/first/repeat/recovery/persistence, recipe
+cancel/missing/success/consumption, cache cancel/use/repeat and cold state. No new
+combat strategy or V01 rollout. Reuse exact compiled c643f01 snapshot only after
+engine-identity and ROM hash checks; no raw dumps or rejected upload/ancestry.
+Acceptance remains pending. Exact next action: implement bounded read-only routes,
+run actual emulator and review native captures against compiled source.
+
+## Preserved PR79 checkpoint (quota guard withdrawn above)
+
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-NC implemented,
 compiled and runtime verified; pushed, [draft PR79](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/79) / issue78, unmerged.
 Sole writer: /workspace/dcc-feedback, task/floor1-g01e-navigation. Base:

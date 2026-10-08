@@ -1,6 +1,7 @@
 #include "global.h"
 #include "crawler_warden.h"
 #include "battle.h"
+#include "battle_setup.h"
 #include "battle_anim.h"
 #include "battle_arena.h"
 #include "battle_pyramid.h"

@@ -1,5 +1,10 @@
 # Replacement-workspace recovery — target blocked
 
+[Issue #90](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/90) /
+[draft PR #91](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/91), open,
+unmerged. Reviewed evidence publication commit
+`291800f9f47918de671efed92650add0b3372344`; actual tested hosts remain those below.
+
 Kurt authorised recovery through ordinary gameplay on 8 October 2026 at 20:35 UTC.
 This replacement did not resume the deleted terminal task or create a task/schedule.
 Base `72e08ed17afc69e28ef545bbbff383a434e90df5`; all previous remote refs and

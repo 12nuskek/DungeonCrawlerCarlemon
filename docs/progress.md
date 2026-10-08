@@ -1,5 +1,13 @@
 Current replacement recovery checkpoint — 2026-10-08: **target blocked**.
 
+[Issue90](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/90) /
+[draft PR91](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/91), pushed,
+open/unmerged, stacked on the unchanged current-patrol branch. Evidence source
+291800f9f47918de671efed92650add0b3372344. New recovery saves/full logs are retained
+in private Library `DungeonCrawlerCarlemon-recovery-20261008.zip`, SHA256
+5c6d07c81bd71d91718e7fd3105a69a6684feba1771a0f1c0f24f664982eaaea.
+Exact supported recovery identity is in evidence/floor1/g01e/recovery/private-retention.json.
+
 Kurt authorised replacement/ordinary replay at 20:35 UTC. Original task
 01a10f4b-596b-700b-b8ba-241e3ca2c000 is terminal and was not resumed. Sole writer,
 branch task/floor1-g01e-recovery, base 72e08ed17afc69e28ef545bbbff383a434e90df5.

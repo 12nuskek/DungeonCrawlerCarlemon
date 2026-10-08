@@ -1,4 +1,5 @@
 Current replacement recovery (2026-10-08): target blocked before Potion.
+Issue90 / draft PR91, pushed/open/unmerged; private recovery bundle retained.
 Fresh isolated c643/b025 build matches; two successful sessions/96 assertions,
 one diagnosed field readiness failure, one stopped fresh patrol divergence.
 New safe pending Save37,31/levels9,9/Potion1/SCRAP2 exists. Original legacy and

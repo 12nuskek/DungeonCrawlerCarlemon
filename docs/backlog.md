@@ -1,6 +1,8 @@
 # Live backlog
 
 Replacement recovery 2026-10-08: exact c643/b025 build reproduced; new fresh and
+field recovery issue90 / draft PR91 is pushed/open/unmerged; new private bundle
+retains saves/full logs. New fresh and
 field reconstruction two sessions/96 assertions pass. One field gate failure
 diagnosed/repaired without battle replay. Fresh patrol stops at unchanged Guard
 turn4 gate before Potion (34 completed/exit44). Target file unavailable; durable

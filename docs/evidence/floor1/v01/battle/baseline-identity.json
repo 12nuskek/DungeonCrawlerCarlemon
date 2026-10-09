@@ -1,0 +1,26 @@
+{
+  "source": "d1dc479212fbe1421f0b55c38ec374e34f5ed964",
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "game_build": "4938927da512543ca9aeea9527c103c84955e632",
+  "engine_tree": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+  "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+  "host_SHA256": "56d3d11cfaabb7fcdeee879a3fcf87c00b53f46035c4109502f7bf5f41618673",
+  "binary_SHA256": "d80e8f78f485da55a032c726d1c5e31b95bbbbeb058cf0e5b035b6a62e9252b6",
+  "route_SHA256": "50940ba09128e02c6cb0b2ef3242beb53a50f86e121bff7c518dd7c58505028b",
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "fixture_SHA256": {
+    "expected-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "expected-counter.bin": "ade0274f84b828b0980112609bb51775d0a4e39bf4728f21dcdd04a627abb92a",
+    "expected-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "expected-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "expected-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "visual-mode.bin": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+    "visual-palettes.bin": "6e31587a42fa24769d796bd77cb21ce5d3a9255ab472efef34d58e8e81029ca3",
+    "visual-poses.bin": "4074fba020d29f2dbcd609aa182ca3313d661375f371bcc0f98107bebf9ac3f8"
+  },
+  "battle_bound": 30000,
+  "visual_bound": 36000,
+  "execution_limit": 1,
+  "case": "before"
+}

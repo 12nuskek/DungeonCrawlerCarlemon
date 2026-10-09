@@ -1,3 +1,13 @@
+Current V01 battle checkpoint — 2026-10-09: **pose bindings implemented and compiled; entry baseline stopped before combat, candidate unexecuted; unmerged**.
+
+Parent accepted PR113; healthy/clean executor reconciled and ordinary merge `c6d647a815ffce44a2419a2cf83b6c2c094359f0` verified exact reviewed tree/parents,66 non-main heads retained, CI absent. Battle game candidate `dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf`, engine `32199a30f0d7013e64f7ec1e274211ecc45df8ed`, ROM `830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9` compiled after a retained missing-header compile error. Carl/Donut/Warden17 exact native PNGs, no second lift or palette/mechanics/save/environment change; actual-source offline lifecycle negatives pass. Frozen host/route/execution `d1dc479212fbe1421f0b55c38ec374e34f5ed964`.
+
+First actual baseline STOP35/22 partial assertions/5685 absolute frames: route turned north64 at8,7 while authored Warden is south at8,8. Full input/readiness/preboss checks passed;3600-frame engage bound expired, zero battle frames/attempts, unchanged ordinary Save030b. Candidate prepared only, no execution claim. Original route/STOP/source retained; unapplied/unexecuted one-line south128 proposal ready for parent diagnosis review.3672 original captures including3641-frame actual ordinary-speed entry clip plus safe save/logs/preparations/builds retained privately in Library; keys/denied .bin buffers/state traces remain local. Actual battle poses/HUD/allocations/faint/exit remain unverified; no battle-stage acceptance, strategy search or retry. Parent review→separately authorised fresh bounded pair; STOP further execution/merge/rollout/C01/later districts here.
+
+[Exact identities, retained STOP, diagnosis/proposal, actual entry clip and limits](../evidence/floor1/v01/battle/README.md).
+
+## Historical overworld checkpoint (now merged PR113)
+
 [Draft PR #113](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/113) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `b26c9dee91675d94597635e00c5d3621abf95ad7`; tested game/host/execution remains `4938927da512543ca9aeea9527c103c84955e632`. Environment PR112 merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f`.
 
 Current V01 overworld checkpoint — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged pending parent visual review**.

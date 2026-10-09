@@ -1,0 +1,38 @@
+{
+  "execution_source": "d1dc479212fbe1421f0b55c38ec374e34f5ed964",
+  "tested_game": "4938927da512543ca9aeea9527c103c84955e632",
+  "native_exit": 35,
+  "partial_assertions": 22,
+  "absolute_frames": 5685,
+  "recorded_native_frames": 3641,
+  "battle_frames": 0,
+  "attempts": 0,
+  "position": [
+    8,
+    7
+  ],
+  "authored_actor": [
+    8,
+    8
+  ],
+  "route_input": {
+    "key": 64,
+    "direction": "north"
+  },
+  "published_ordinary_approach": {
+    "key": 128,
+    "direction": "south"
+  },
+  "terminal_captured_frame": "battle-03640.ppm",
+  "input_output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "candidate_prepared_source": "d1dc479212fbe1421f0b55c38ec374e34f5ed964",
+  "candidate_game_build": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+  "candidate_ROM_SHA256": "830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9",
+  "candidate_execution_claim_exists": false,
+  "candidate_runtime_verified": false,
+  "proposed_single_line_correction": "step 1 64 - -> step 1 128 -",
+  "proposal_executed": false,
+  "original_route_SHA256": "50940ba09128e02c6cb0b2ef3242beb53a50f86e121bff7c518dd7c58505028b",
+  "proposed_route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "next": "Parent review of retained STOP/source diagnosis and one-line proposal before any new execution; original STOP blocks dependent run"
+}

@@ -1,3 +1,20 @@
+Current battle entry STOP — 2026-10-09: PR113 normally merged c6d647a8.
+Battle candidate dbcc859c/engine32199a3/ROM830f compiled, offline negatives
+pass; actual game/battle visuals UNVERIFIED. Frozen host/route/executiond1dc4792
+baselineSTOP35/22/5685,0 battle frames/attempts. Full600 party/count300 flags/
+1272 logical resource/counter/readiness/preboss gates pass; original030b Save
+unchanged. Route turns north64 at8,7, authored Warden south8,8; native capture
+and published approach diagnose own entry-direction error. Candidate prepared
+only; no execution claim. Unapplied/unexecuted south128 one-line proposal ready
+for parent diagnosis review. Original route/source/STOP blocks dependent runs;
+no further emulator execution/search/automatic retry/merge/rollout here.
+Private Library1 ordinary Save/safe logs/preparations/builds/3672 original PPMs/
+actual3641-frame clip retained; denied .bin/state traces/keys local only. Draft
+blocked checkpoint then STOP for parent review before separately authorised
+fresh pair. Actual Warden silhouette/HUD/actions/allocations/faint/exit and
+legacy/C01/human-pacing/full-floor gates remain. See battle evidence README.
+Previous authorised pilot instructions/results below are historical.
+
 Current battle pilot authority — 2026-10-09: parent accepted bounded PR113;
 executor reconnected and clean ac2d87eb/engine76001ee verified. PR113 normally
 merged c6d647a8, exact reviewed tree and parents, all66 non-main heads retained;

@@ -1,0 +1,15 @@
+{
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94",
+  "draft_pr": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95",
+  "branch": "task/floor1-g01e-warden-first-clear",
+  "base_branch": "task/floor1-g01e-new-save-recovery",
+  "base_sha": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+  "tested_contract_runner_sha": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+  "evidence_publication_sha": "d5d505c57bddc26b899d78bb033a6b2e41b3affe",
+  "draft_at_creation": true,
+  "merged_at_creation": false,
+  "runtime_outcome": "single bounded loss; stopped",
+  "first_clear_acceptance": "failed; dependent checks unexecuted",
+  "next_dependency": "parent review of critical-hit/support-mechanics diagnosis",
+  "private_retention": "private-retention.json"
+}

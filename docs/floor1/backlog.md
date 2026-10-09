@@ -1,3 +1,29 @@
+Unprepared Warden first-clear — 2026-10-08: **single attempt lost; stopped**.
+
+[Issue #94](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94) / [draft PR #95](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95), open/unmerged, stacked on PR93 at `1263d8b915f37d70bdcb04167c9088cd107666bc`. Evidence publication `d5d505c57bddc26b899d78bb033a6b2e41b3affe`; tested contract/runner remains `7197e785a704e216c9f4a5429ae6cb4fb9302703`.
+
+Prespecified/tested source `7197e785a704e216c9f4a5429ae6cb4fb9302703`, unchanged
+c643 game/exactb025 ROM. Correct trainer858/levels12,9 and restored reviewed
+input verified; one documented fortify attempt,12,875 whole-battle frames
+(11,674 pilot), outcome2, exit44,50 completed assertions. CriticalSLAM28 against
+Carl23HP at turn5; later Donut falls. Pinned critical damage ignores negative
+Attack and positive Defense stages. No retry, timing/RNG search or game change.
+Eleven host boundary checks plus30,000-frame entry/interior/exit vector; every
+emulator frame site wrapped. Error log is the explicit46-byte victory-gate stop,
+no mGBA errors. First-clear acceptance failed; rewards/boss-clear/repeat/stairs
+NO/YES/checkpoint/Save/post-Warden cold were not reached. Actual3 native captures,
+complete failure trace/claim/count/STOP and unchanged input copy retained privately.
+Latest durable save remains PR93's `026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a`,
+restored patrol-complete Field37,31, boss/preparation/checkpoint unset.
+Historical contracts/results/failures,54 prior branch heads, engine/accepted plan
+unchanged; legacy-input gate unavailable. Tooling implemented/compiled, bounded
+loss observed, first-clear unverified; unmerged. Next parent review of preserved
+critical/support-mechanics diagnosis before any separately scoped combat/fix.
+No broad merge, prepared/reverse-order/full/finalT/human-pacing/V01/Floor1 claim.
+[Actual first-clear attempt, evidence and remaining gates](../evidence/floor1/g01e/warden-first-clear/README.md).
+
+## Historical verified fresh-save recovery
+
 Fresh-save recovery continuation — 2026-10-08: **target verified**, Warden unexecuted.
 
 [Issue #92](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/92) / [draft PR #93](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/93), open/unmerged, stacked on unchanged PR91.

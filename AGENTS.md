@@ -1,5 +1,21 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR95 / issue94, stacked on unchanged PR93.
+No further emulator execution before parent review of the preserved loss.
+
+The authorised unprepared Warden attempt is now completed and failed: genuine
+loss at12,875 whole-battle frames. See
+[exact failure evidence](docs/evidence/floor1/g01e/warden-first-clear/README.md).
+Preserve STOP/trace/counts; no retry, retiming/policy/balance change or dependent
+cold. Parent review of the critical-hit/support-mechanics diagnosis is next.
+Latest safe input is still PR93 Save026c16fe…23220a. No first-clear/merge claim.
+
+Parent review passed PR93's bounded new-save recovery. One unprepared Warden
+first-clear attempt plus dependent staircase/Save/cold checks is now authorised
+under [the separate committed contract](docs/floor1/g01e-warden-first-clear-contract.md).
+The previous Warden stops below are historical for this one focused increment.
+Preserve all earlier contracts/results; stop on failure. No retry or broad merge.
+
 The authorised separate fresh-save replay is now complete: 199 assertions in
 patrol/cold, target Save026c16fe…23220a verified. See
 [exact evidence](docs/evidence/floor1/g01e/new-save-recovery/README.md).

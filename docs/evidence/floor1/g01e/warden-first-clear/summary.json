@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+    "base": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "seed_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+    "host_sha256": "a2f44379112d4fd06107b13862f403ddb6fd9f8566ffac39a33c944e05f5aee0",
+    "first_route_sha256": "c8ea6bfaca164c9c082df57716e5c907726debd3c915a32cc82e126d7010e526",
+    "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+    "method": "Single unprepared Warden first-clear from reviewed new ordinary save; actual normal controls, read-only observer, whole-battle30000 bound"
+  },
+  "sessions": [
+    {
+      "stage": "first-clear",
+      "runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+      "host_runner": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+      "exit": 44,
+      "errors_bytes": 46,
+      "assertions": 50,
+      "battle_frames": 12875,
+      "attempts": 1,
+      "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "output_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "route_sha256": "c8ea6bfaca164c9c082df57716e5c907726debd3c915a32cc82e126d7010e526",
+      "reconstructed_input": true
+    }
+  ],
+  "successful_runtime_sessions": 0,
+  "completed_assertions_before_stop": 50,
+  "runtime_acceptance": false,
+  "implemented": true,
+  "compiled": true,
+  "merged": false,
+  "host_boundary_checks": 11,
+  "host_boundary_vector_frames": 30000,
+  "actual_attempts": 1,
+  "actual_whole_battle_frames": 12875,
+  "actual_pilot_frames": 11674,
+  "outcome": 2,
+  "incapacitation": 5,
+  "host_error": "Warden victory/no-incapacity assertion failed",
+  "host_error_bytes": 46,
+  "emulator_error_messages": 0,
+  "decisive_event": {
+    "frame": 13923,
+    "turn": 5,
+    "attacker": 1,
+    "target": 0,
+    "move": 360,
+    "critical_multiplier": 2,
+    "damage": 28,
+    "carl_hp_before": 23,
+    "carl_hp_after": 0
+  },
+  "later_donut_loss": {
+    "frame": 16620,
+    "attacker": 1,
+    "target": 2,
+    "move": 360,
+    "critical_multiplier": 1,
+    "damage": 11,
+    "hp_before": 9,
+    "hp_after": 0
+  },
+  "terminal_foes_hp": [
+    17,
+    18
+  ],
+  "first_clear_reward_checks_executed": false,
+  "stairs_no_yes_executed": false,
+  "manual_save_executed": false,
+  "post_warden_cold_executed": false,
+  "original_legacy_input_equivalence": false,
+  "latest_durable_input_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+  "verification": {
+    "prior_remote_branches_unchanged": 54,
+    "previous_retained_records_compared_unchanged": 121,
+    "exact_inherited_battle_choice_block": true,
+    "all_run_frame_sites_wrapped": true,
+    "whole_battle_bound_enforced": 30000,
+    "original_input_and_failed_output_save_identical": true,
+    "no_emulator_execution_after_failure": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "base": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+  "prior_remote_branch_count": 54,
+  "prs": [
+    {
+      "number": 75,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "b694da17928b93ea579f55d905017aa9f7619422",
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7"
+    },
+    {
+      "number": 77,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "isError": false
+    },
+    {
+      "number": 79,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "isError": false
+    },
+    {
+      "number": 81,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "91a4b79bfe7041060de560cd65b037322233047a",
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "isError": false
+    },
+    {
+      "number": 83,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "isError": false
+    },
+    {
+      "number": 85,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "isError": false
+    },
+    {
+      "number": 87,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "isError": false
+    },
+    {
+      "number": 89,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "isError": false
+    },
+    {
+      "number": 91,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "isError": false
+    },
+    {
+      "number": 93,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "base": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "isError": false
+    }
+  ],
+  "ci": [
+    {
+      "number": 75,
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 77,
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 79,
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 81,
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 83,
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 85,
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 87,
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 89,
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 91,
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "isError": false,
+      "workflow_runs": []
+    },
+    {
+      "number": 93,
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "isError": false,
+      "workflow_runs": []
+    }
+  ],
+  "main": "b694da17928b93ea579f55d905017aa9f7619422",
+  "notes": "PR75 full-diff transport failed twice; successful REST metadata read confirms open/draft/unmerged exact base/head. Original terminal task never resumed; original legacy inputs remain missing."
+}

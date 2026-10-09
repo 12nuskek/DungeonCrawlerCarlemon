@@ -1,0 +1,20 @@
+{
+  "result": "Reviewed actual first-STOP evidence and docs-only diff",
+  "executions": "One frozen baseline PASS then one conditional matching candidate FIRST STOP117; sourcef3ceae89 unchanged",
+  "native_alignment": "Expected nextB4894; actual failed header/count not retained; inference clearly labelled; no actual failed values fabricated",
+  "visuals": "Actual14 turn0 pose events only; partial HUD/silhouette reviewed at native pixels; complete candidate gates explicitly unverified",
+  "preservation": "All four historical STOPs and baselinePASS42/controllers/strategy records unchanged; totals5/2 include exactly one new pair",
+  "runtime_code_changes": 0,
+  "executions_after_STOP": 0,
+  "public_exclusions": [
+    "ROM/ELF",
+    "executables",
+    "Saves",
+    "raw .bin state/trace/VRAM/key datasets",
+    "key-bearing raw controller lines",
+    "secrets",
+    "Library identities/signed URLs"
+  ],
+  "private_retention": "Confirmed supported private safe archive; every returned local Library metadata attribute verified",
+  "merge_status": "Unmerged; parent partial visual/diagnosis review next"
+}

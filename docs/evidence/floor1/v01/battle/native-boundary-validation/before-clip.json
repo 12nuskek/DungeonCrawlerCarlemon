@@ -1,0 +1,21 @@
+{
+  "case": "before",
+  "file": "baseline-native-complete.mp4",
+  "frames": 15627,
+  "all_original_frame_pixels_verified_lossless": 15627,
+  "pixel_sequence_SHA256": "ce1f048a1fafad1a2555cf919d2e41fdfda69971b6a6057275552d4f4e870f2b",
+  "probe": {
+    "codec_name": "h264",
+    "width": 240,
+    "height": 160,
+    "pix_fmt": "gbrp",
+    "avg_frame_rate": "262144/4389",
+    "duration": "261.638271",
+    "nb_frames": "15627"
+  },
+  "bytes": 18519539,
+  "SHA256": "14079a64871639545011d02917aadb3fffa657f337a8d38340673ba83cad2efe",
+  "encoding": "libx264rgb crf0; native240x160 and262144/4389fps; no scaling/interpolation/audio claim",
+  "source": "all original numbered completed video-frame captures only; emergency STOP framebuffer is separate",
+  "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9"
+}

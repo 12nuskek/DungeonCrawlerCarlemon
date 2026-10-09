@@ -1,0 +1,94 @@
+{
+  "actual_captures": [
+    {
+      "private_review_png": "actual-emergency-stop.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/visual-stop.ppm",
+      "actual_source_SHA256": "a70edb4f332294094a54f95a39cf4e504e36d516bea82ac13953f71ae5dc9c16",
+      "PNG_SHA256": "30c17eb9537edd47bc9eb90cdd7f918fbcd5bf5f9a17ffcf50544afb53c382f3",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03155.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03155.ppm",
+      "actual_source_SHA256": "0c02e934c7f70e206e4678e002c4f1bb9cd1dafd50f46794c752dd39493f305d",
+      "PNG_SHA256": "4262d745ab0f93da2642aa1969be946925bb6c9f700f41ef426b267fbd76ca35",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03313.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03313.ppm",
+      "actual_source_SHA256": "35b615024a39daa1d75b0956c120e7cbe82cc36b23ab5cd5352d6a6dfd3c0994",
+      "PNG_SHA256": "da58b91f0eefec5bfb395c1991f56b174f515498fbd2d9384e9fcf8f1dc34117",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03321.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03321.ppm",
+      "actual_source_SHA256": "ed130ffc42f5f2f72ec243937bdf116c1c0ca2a88d30d0283937cafb18316452",
+      "PNG_SHA256": "5857c4d241197fc54a8adf85e8ffeef109cd45c4d4eab8e53a1ed0532175e5e2",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03973.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03973.ppm",
+      "actual_source_SHA256": "2ea365912e0a8af5307388fa2f3cfa87fc5df0fcd001107433e651390de13f4c",
+      "PNG_SHA256": "22250bb2a8a93275ce690422b3496976afc9707fb6fe102709664c0203642ef6",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03979.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03979.ppm",
+      "actual_source_SHA256": "f96ea71fba44f823ab321e67b356005aedd0abea9c18977e8846a4e4ca388ecb",
+      "PNG_SHA256": "79eebf48cf71eb243523fc7b4574cf958a867d225497ee85e7cd2ea811112957",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-03989.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-03989.ppm",
+      "actual_source_SHA256": "784b2f64c781bd2d9b56a2717b363f8f8aae4153716085ac61d47f4a89d8f126",
+      "PNG_SHA256": "dc22b00238e9e0747751aceed01d5a5fd2310ca518b0dad271f817ab06c3bbd6",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-04409.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-04409.ppm",
+      "actual_source_SHA256": "979e7964953c22c896135c8f31aad9dc142d919128191649f295d634ce59d5e9",
+      "PNG_SHA256": "ba647a3d72bcd18fc79d07f197a3480f2d1338f906c3a67044186265e3f234f2",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-04419.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-04419.ppm",
+      "actual_source_SHA256": "b0a88361803f169899416339dddd8f9f69f5a2677112fd064206b5a21acb3c7d",
+      "PNG_SHA256": "39855dda7e4eb3a87657631029016747e31cffef961c869521b13fddd4698748",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-04516.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-04516.ppm",
+      "actual_source_SHA256": "4d8ef3fafd05b05fbc9452394c3feb57d3296bdcf425491b94a95c382977df3f",
+      "PNG_SHA256": "0ba21429beda130d5a69085b086b80c02e71511f510f133c204716e6b05aba7b",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    },
+    {
+      "private_review_png": "battle-04947.png",
+      "actual_source": "artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/battle-04947.ppm",
+      "actual_source_SHA256": "a70edb4f332294094a54f95a39cf4e504e36d516bea82ac13953f71ae5dc9c16",
+      "PNG_SHA256": "30c17eb9537edd47bc9eb90cdd7f918fbcd5bf5f9a17ffcf50544afb53c382f3",
+      "native_pixels": "240x160 unscaled original capture; no generated artwork/repeated frame"
+    }
+  ],
+  "private_clip": "candidate-native-complete-through-stop.mp4",
+  "partial_observation": [
+    "Donut WEAKEN",
+    "Warden WIND UP",
+    "Carl BRACE",
+    "native HUD and Warden silhouette"
+  ],
+  "not_acceptance": [
+    "STRIKE/SPARK/all Warden actions",
+    "full faint/cleanup/exit",
+    "complete candidate budgets/gameplay equivalence"
+  ],
+  "pixel_format": "Native ordinary-speed, unscaled; generated concepts/staged native candidates/runtime evidence remain distinct."
+}

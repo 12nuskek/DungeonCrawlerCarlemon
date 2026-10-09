@@ -1,0 +1,14 @@
+{
+  "archive": "DungeonCrawlerCarlemon-V01-native-boundary-baseline-PASS-candidate-STOP117-f3ceae89-20261009.tar.xz",
+  "bytes": 19616680,
+  "SHA256": "a1fc48683dbe90b38dbfbaa9bdeff740c364c3692c081f727f5384265aedd898",
+  "entries": 20956,
+  "byte_verified_entries": 20956,
+  "original_PPMs": 20789,
+  "ordinary_Save_copies": 2,
+  "both_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "all_decoded_pixel_frames_verified": 20576,
+  "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "result": "baseline PASS42, candidate first STOP117/27; actual failed metadata not retained",
+  "exclusions": "All .bin raw state/trace/VRAM/key datasets, raw key-bearing controller lines/replay.log, complete symbols, executables, ROM/ELF, secrets/Library identities. Remain local, no durable claim."
+}

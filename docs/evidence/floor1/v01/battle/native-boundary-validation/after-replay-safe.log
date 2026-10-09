@@ -1,0 +1,321 @@
+mGBA 0.10.5; 240x160; save=/workspace/DungeonCrawlerCarlemon/artifacts/floor1/v01-battle/runtime-native-boundary-reviewed/after/ordinary.sav; read-only RAM diagnostics
+frame=720 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=721 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1081 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1082 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1262 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1263 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1443 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=1444 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS ready
+PASS retained ordinary input exact600 party/count300 flags1272 logical resources/counter; native field ready
+PASS frozen candidate trainer=858 policy=fortify
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS expect 35 3 8 7 7
+PASS levels 11 10
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS duo healthy
+PASS vitals 38 30 0 0 8 40 2 40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+PASS uses 8 40 2 40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 2135 1
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 2136 1
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 2137 1
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 46 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 47 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 48 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 2138 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS flag 2139 0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS item 13 1
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2044 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+PASS item 378 2
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+MONEY anchor=4000
+frame=2045 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+frame=2085 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=0 battlers=0 outcome=0 PP=0,0 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=0,0
+pattern trainer=0 turn=0 foePP=0,0 foeAtkDef=0,0 CarlAtk=0 foeLevel=0
+support PP=0,0 Carl-defense=0 enemy-attack=0,0
+party action uses=8,40 / 2,40
+engage completed frames=1264
+BV_PHASE frame=1334 native_ID=1805988224
+BV_PHASE frame=1335 native_ID=1593264619
+BV_PHASE frame=1344 native_ID=1575480183
+BV_PHASE frame=1345 native_ID=1907277023
+BV_PHASE frame=1346 native_ID=1998037596
+BV_PHASE frame=1500 native_ID=3662237044
+BV_PHASE frame=1505 native_ID=1672621914
+frame=4549 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=1 battlers=4 outcome=0 PP=8,2 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=42,30
+pattern trainer=858 turn=0 foePP=40,40 foeAtkDef=6,6 CarlAtk=6 foeLevel=12
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4549 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=1 battlers=4 outcome=0 PP=8,2 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=42,30
+PASS foes 42 30
+pattern trainer=858 turn=0 foePP=40,40 foeAtkDef=6,6 CarlAtk=6 foeLevel=12
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+frame=4549 map=35.3 pos=8,7 flags=7
+party=2 HP=38/38,30/30 battle=1 battlers=4 outcome=0 PP=8,2 trial=1 donut-ability=0
+persistent PP=8,2 status=0,0
+growth level/xp/item=11/748/0,10/1058/0 stats maxHP/attack,maxHP/magic=38/26,30/15 foesHP=42,30
+pattern trainer=858 turn=0 foePP=40,40 foeAtkDef=6,6 CarlAtk=6 foeLevel=12
+support PP=40,40 Carl-defense=6 enemy-attack=6,6
+party action uses=8,40 / 2,40
+PASS battle 1 4 0 8 2 1 0
+PASS exact candidate trainer=858 attempts=1
+pilot turn=0 HP=38,30 foeHP=42,30 foeAtk=6 foeDef=6 CarlAtk=6
+CANDIDATE turn=0 CarlDEF=6 WardenATK=6 helperATK=6 helperPP=35 helperHP=30 duoPP=8,40,2,40 power=0
+BV_PHASE frame=2511 native_ID=350769081
+BV_PHASE frame=2675 native_ID=2253367906
+BV_PHASE frame=2887 native_ID=3931622494
+BV_PHASE frame=2888 native_ID=512211571
+BV_PHASE frame=2959 native_ID=1094586919
+BV_PHASE frame=3155 native_ID=1549553168
+BV_READY frame=3155 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=3155 turn=0 actor=0 pose=0 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=3155 turn=0 actor=1 pose=17 sprite=11 tile=462 palette=1 x=200 y=40 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=3155 turn=0 actor=2 pose=6 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=3228 native_ID=925149502
+BV_PHASE frame=3229 native_ID=2288791309
+BV_PHASE frame=3230 native_ID=1210621480
+BV_POSE frame=3313 turn=0 actor=2 pose=10 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=2 move=358 hardware_bytes=2048
+BV_POSE frame=3321 turn=0 actor=2 pose=11 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=2 move=358 hardware_bytes=2048
+BV_POSE frame=3365 turn=0 actor=2 pose=9 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=2 move=358 hardware_bytes=2048
+MOTION frame=5413 turn=0 move=358 file=motion-000.ppm
+MOTION frame=5417 turn=0 move=358 file=motion-001.ppm
+MOTION frame=5421 turn=0 move=358 file=motion-002.ppm
+BV_POSE frame=3377 turn=0 actor=2 pose=6 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=1 active=1 animation_actor=1 move=358 hardware_bytes=2048
+MOTION frame=5425 turn=0 move=358 file=motion-003.ppm
+MOTION frame=5429 turn=0 move=358 file=motion-004.ppm
+MOTION frame=5433 turn=0 move=358 file=motion-005.ppm
+MOTION frame=5437 turn=0 move=358 file=motion-006.ppm
+MOTION frame=5441 turn=0 move=358 file=motion-007.ppm
+MOTION frame=5445 turn=0 move=358 file=motion-008.ppm
+MOTION frame=5449 turn=0 move=358 file=motion-009.ppm
+MOTION frame=5453 turn=0 move=358 file=motion-010.ppm
+MOTION frame=5457 turn=0 move=358 file=motion-011.ppm
+MOTION frame=5461 turn=0 move=358 file=motion-012.ppm
+MOTION frame=5465 turn=0 move=358 file=motion-013.ppm
+MOTION frame=5469 turn=0 move=358 file=motion-014.ppm
+MOTION frame=5473 turn=0 move=358 file=motion-015.ppm
+MOTION frame=5477 turn=0 move=358 file=motion-016.ppm
+MOTION frame=5481 turn=0 move=358 file=motion-017.ppm
+MOTION frame=5485 turn=0 move=358 file=motion-018.ppm
+MOTION frame=6017 turn=0 move=359 file=motion-019.ppm
+BV_POSE frame=3973 turn=0 actor=1 pose=12 sprite=11 tile=462 palette=1 x=200 y=40 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=1 move=359 hardware_bytes=2048
+MOTION frame=6021 turn=0 move=359 file=motion-020.ppm
+BV_POSE frame=3979 turn=0 actor=1 pose=13 sprite=11 tile=462 palette=1 x=200 y=40 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=1 move=359 hardware_bytes=2048
+MOTION frame=6025 turn=0 move=359 file=motion-021.ppm
+MOTION frame=6029 turn=0 move=359 file=motion-022.ppm
+MOTION frame=6033 turn=0 move=359 file=motion-023.ppm
+BV_POSE frame=3989 turn=0 actor=1 pose=14 sprite=11 tile=462 palette=1 x=200 y=40 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=1 move=359 hardware_bytes=2048
+MOTION frame=6037 turn=0 move=359 file=motion-024.ppm
+MOTION frame=6041 turn=0 move=359 file=motion-025.ppm
+MOTION frame=6045 turn=0 move=359 file=motion-026.ppm
+MOTION frame=6049 turn=0 move=359 file=motion-027.ppm
+MOTION frame=6053 turn=0 move=359 file=motion-028.ppm
+MOTION frame=6057 turn=0 move=359 file=motion-029.ppm
+MOTION frame=6061 turn=0 move=359 file=motion-030.ppm
+MOTION frame=6065 turn=0 move=359 file=motion-031.ppm
+MOTION frame=6069 turn=0 move=359 file=motion-032.ppm
+MOTION frame=6073 turn=0 move=359 file=motion-033.ppm
+MOTION frame=6077 turn=0 move=359 file=motion-034.ppm
+MOTION frame=6081 turn=0 move=359 file=motion-035.ppm
+MOTION frame=6085 turn=0 move=359 file=motion-036.ppm
+MOTION frame=6089 turn=0 move=359 file=motion-037.ppm
+MOTION frame=6093 turn=0 move=359 file=motion-038.ppm
+MOTION frame=6097 turn=0 move=359 file=motion-039.ppm
+MOTION frame=6101 turn=0 move=359 file=motion-040.ppm
+MOTION frame=6105 turn=0 move=359 file=motion-041.ppm
+MOTION frame=6109 turn=0 move=359 file=motion-042.ppm
+MOTION frame=6113 turn=0 move=359 file=motion-043.ppm
+MOTION frame=6117 turn=0 move=359 file=motion-044.ppm
+MOTION frame=6121 turn=0 move=359 file=motion-045.ppm
+MOTION frame=6125 turn=0 move=359 file=motion-046.ppm
+MOTION frame=6129 turn=0 move=359 file=motion-047.ppm
+MOTION frame=6133 turn=0 move=359 file=motion-048.ppm
+MOTION frame=6141 turn=0 move=359 file=motion-049.ppm
+MOTION frame=6145 turn=0 move=359 file=motion-050.ppm
+MOTION frame=6149 turn=0 move=359 file=motion-051.ppm
+MOTION frame=6153 turn=0 move=359 file=motion-052.ppm
+MOTION frame=6157 turn=0 move=359 file=motion-053.ppm
+MOTION frame=6161 turn=0 move=359 file=motion-054.ppm
+MOTION frame=6165 turn=0 move=359 file=motion-055.ppm
+MOTION frame=6169 turn=0 move=359 file=motion-056.ppm
+MOTION frame=6173 turn=0 move=359 file=motion-057.ppm
+MOTION frame=6177 turn=0 move=359 file=motion-058.ppm
+MOTION frame=6181 turn=0 move=359 file=motion-059.ppm
+MOTION frame=6185 turn=0 move=359 file=motion-060.ppm
+MOTION frame=6189 turn=0 move=359 file=motion-061.ppm
+MOTION frame=6193 turn=0 move=359 file=motion-062.ppm
+MOTION frame=6197 turn=0 move=359 file=motion-063.ppm
+MOTION frame=6201 turn=0 move=359 file=motion-064.ppm
+MOTION frame=6205 turn=0 move=359 file=motion-065.ppm
+MOTION frame=6209 turn=0 move=359 file=motion-066.ppm
+MOTION frame=6213 turn=0 move=359 file=motion-067.ppm
+BV_POSE frame=4409 turn=0 actor=0 pose=4 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=0 move=356 hardware_bytes=2048
+BV_POSE frame=4419 turn=0 actor=0 pose=5 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=0 active=1 animation_actor=0 move=356 hardware_bytes=2048
+BV_POSE frame=4510 turn=0 actor=0 pose=4 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=356 hardware_bytes=2048
+BV_POSE frame=4516 turn=0 actor=0 pose=0 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=1 active=1 animation_actor=0 move=356 hardware_bytes=2048
+HP transition frame=6973 battler=2 from=30 to=25 attacker=3 target=2 move=33 criticalMultiplier=1 pendingDamage=5
+BV_PHASE frame=4941 native_ID=1510729709
+BV_PHASE frame=4942 native_ID=841500469
+BV_PHASE frame=4944 native_ID=1549553168
+pilot turn=1 HP=38,25 foeHP=42,30 foeAtk=6 foeDef=6 CarlAtk=6
+CANDIDATE turn=1 CarlDEF=7 WardenATK=6 helperATK=5 helperPP=34 helperHP=30 duoPP=8,39,2,39 power=35
+result=117 assertions=27

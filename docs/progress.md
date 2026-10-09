@@ -1,3 +1,21 @@
+Current Guard-first order/travel check — 2026-10-09: **first milestone STOP71; unmerged**.
+
+Parent PR108 inventory review authorised ONE current Guard-first route plus
+its dependent cold. Frozen source/host/execution `cad9eadfd8405f8eb040e478a7f7c7fb8948788c`,
+unchanged game5084/ROM23c77 and ordinary pendingc11c input. New host compiles;
+42 focused cases pass. Guard won without incapacitation in11272 battle frames;
+23 assertions/14680 absolute frames before the validator incorrectly rejected
+the matching native met-location friendship bonus (Carl75→81 =5+1).
+Independent complete600-party/300-flags/1272-owned diagnosis is source-compatible,
+not acceptance. STOP/raw buffers/actual4 captures/logs privately retained.
+No guide/Howler/travel/manual Save/cold; diskc11c unchanged. Current order/travel,
+legacy/C01/full-floor remain unverified. No retry/integration/V01.
+Next parent review: narrowly source-derived modifier and actual-map tests before
+any separately authorised corrected complete route/cold, then explicit integration.
+[Exact failure, diagnosis, durable receipt and next dependency](evidence/floor1/g01e/guard-first-current/README.md).
+
+## Historical PR108 inventory checkpoint
+
 G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
 
 [Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.

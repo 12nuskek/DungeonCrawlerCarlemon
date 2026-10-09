@@ -1,5 +1,14 @@
 # DungeonCrawlerCarlemon working contract
 
+Current Guard-first execution STOP71 after Guard victory at14680 exact frames/
+23 completed assertions. Frozen cad9eadf/5084/23c77 preserved; observer incorrectly
+requires nonmatching native met location, actual Field match adds1 to grow-level
+friendship (Carl75→81). Independent raw diagnosis complete, no pass/re-anchor.
+No guide/Howler/travel/Save/cold; input diskc11c unchanged. No further emulator
+execution, code-gate change or integration before parent scope review. See
+docs/evidence/floor1/g01e/guard-first-current/README.md. Historical failures and
+unavailable original legacy inputs remain distinct.
+
 Parent PR108 review authorises ONE separately claimed current Guard-first route
 plus dependent exact native cold under docs/floor1/g01e-guard-first-current-contract.md.
 Unchanged5084/23c77, ordinary pendingc11c…c67f; historical offensive policy/complete

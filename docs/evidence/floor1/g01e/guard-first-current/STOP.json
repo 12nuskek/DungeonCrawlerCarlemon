@@ -1,0 +1,24 @@
+{
+  "stage": "patrol",
+  "execution_source": "cad9eadfd8405f8eb040e478a7f7c7fb8948788c",
+  "host_source": "cad9eadfd8405f8eb040e478a7f7c7fb8948788c",
+  "exit": 71,
+  "errors_bytes": 815,
+  "assertions": 23,
+  "input_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "output_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "route_SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+  "clock": {
+    "absolute_frames": 14680,
+    "valid_samples": 0,
+    "deferred_samples": 0,
+    "reentries": 0,
+    "unarmed_frames": 2044,
+    "mutation_frames": 12636,
+    "checkpoints": 1,
+    "battle_frames": 11272,
+    "battle_attempts": 1,
+    "stage": 1
+  },
+  "validation_failure": "first native failure"
+}

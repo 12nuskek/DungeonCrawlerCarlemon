@@ -1,0 +1,26 @@
+[
+  {
+    "file": "boot.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "33930909f10dc76f76d88047c4beeaf2fbead78cc8d27d655ef4ff72b770a76c"
+  },
+  {
+    "file": "guard-start.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a"
+  },
+  {
+    "file": "guard-victory.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed"
+  },
+  {
+    "file": "stop.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed"
+  }
+]

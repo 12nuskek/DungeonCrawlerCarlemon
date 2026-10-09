@@ -1,0 +1,193 @@
+{
+  "base": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+  "main": "b694da17928b93ea579f55d905017aa9f7619422",
+  "existing_remote_heads": 62,
+  "existing_PRs": [
+    {
+      "number": 75,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "head_branch": "task/floor1-g01e-live-migration",
+      "base": "main",
+      "base_sha": "b694da17928b93ea579f55d905017aa9f7619422"
+    },
+    {
+      "number": 77,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "head_branch": "task/floor1-g01e-feedback",
+      "base": "task/floor1-g01e-live-migration",
+      "base_sha": "16d7012bcff5de4ce04ad691fa81543bb3047ff7"
+    },
+    {
+      "number": 79,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "head_branch": "task/floor1-g01e-navigation",
+      "base": "task/floor1-g01e-feedback",
+      "base_sha": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d"
+    },
+    {
+      "number": 81,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "head_branch": "task/floor1-g01e-optional",
+      "base": "task/floor1-g01e-navigation",
+      "base_sha": "91a4b79bfe7041060de560cd65b037322233047a"
+    },
+    {
+      "number": 83,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "head_branch": "task/floor1-g01e-staircase",
+      "base": "task/floor1-g01e-optional",
+      "base_sha": "7866c8730fbef0f6570e269aa247b90a2e9a3c23"
+    },
+    {
+      "number": 85,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "head_branch": "task/floor1-g01e-sealed",
+      "base": "task/floor1-g01e-staircase",
+      "base_sha": "a9658676a53d519e9769494c52bf57b28d54473a"
+    },
+    {
+      "number": 87,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "head_branch": "task/floor1-g01e-potion",
+      "base": "task/floor1-g01e-sealed",
+      "base_sha": "f4e568d582430dc9fc118f0af4afbc26b781e884"
+    },
+    {
+      "number": 89,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "head_branch": "task/floor1-g01e-potion-ready",
+      "base": "task/floor1-g01e-potion",
+      "base_sha": "00a31be5d1622308a6d02c4fcce165e1d581b710"
+    },
+    {
+      "number": 91,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "head_branch": "task/floor1-g01e-recovery",
+      "base": "task/floor1-g01e-current-patrol",
+      "base_sha": "72e08ed17afc69e28ef545bbbff383a434e90df5"
+    },
+    {
+      "number": 93,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "head_branch": "task/floor1-g01e-new-save-recovery",
+      "base": "task/floor1-g01e-recovery",
+      "base_sha": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf"
+    },
+    {
+      "number": 95,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "head_branch": "task/floor1-g01e-warden-first-clear",
+      "base": "task/floor1-g01e-new-save-recovery",
+      "base_sha": "1263d8b915f37d70bdcb04167c9088cd107666bc"
+    },
+    {
+      "number": 97,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "head_branch": "task/floor1-g01e-warden-threat-audit",
+      "base": "task/floor1-g01e-warden-first-clear",
+      "base_sha": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50"
+    },
+    {
+      "number": 99,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "61fba93c0485af269944a739953240e1f745466a",
+      "head_branch": "task/floor1-g01e-warden-fairness",
+      "base": "task/floor1-g01e-warden-threat-audit",
+      "base_sha": "ed519a05e34f47bf45fa150aa5e456b9e1028926"
+    },
+    {
+      "number": 101,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "head_branch": "task/floor1-g01e-party-preservation-diagnosis",
+      "base": "task/floor1-g01e-warden-fairness",
+      "base_sha": "61fba93c0485af269944a739953240e1f745466a"
+    },
+    {
+      "number": 103,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "head_branch": "task/floor1-g01e-party-resource-correction",
+      "base": "task/floor1-g01e-party-preservation-diagnosis",
+      "base_sha": "531276ae7ee4e238ed804cff4c5d970d32d63ff0"
+    },
+    {
+      "number": 105,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "head_branch": "task/floor1-g01e-prepared-persistence",
+      "base": "task/floor1-g01e-party-resource-correction",
+      "base_sha": "1e81d1293b53016f40d1a1f59f5f7d564513341a"
+    },
+    {
+      "number": 107,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "head_branch": "task/floor1-g01e-prepared-cold-phase",
+      "base": "task/floor1-g01e-prepared-persistence",
+      "base_sha": "84cbb196b52db3330e39ec793828ee2d06c63f2b"
+    },
+    {
+      "number": 108,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "head_branch": "task/floor1-g01e-acceptance-inventory",
+      "base": "task/floor1-g01e-prepared-cold-phase",
+      "base_sha": "1663abb05000374b03d0c0db3c78a974c87b3852"
+    }
+  ],
+  "inventory_head_workflow_runs": [],
+  "CI_pass_claim": false,
+  "history_preserved": true,
+  "current_patrol_checkpoint": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+  "current_patrol_own_PR": null,
+  "no_merge_or_retarget": true
+}

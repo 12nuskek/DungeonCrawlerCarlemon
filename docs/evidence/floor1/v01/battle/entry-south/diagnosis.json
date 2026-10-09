@@ -1,0 +1,52 @@
+{
+  "source": "cf7263503f74bf70bcad1a9d3212a4ca181b96f4",
+  "native_stop": 107,
+  "partial_assertions": 27,
+  "zero_based_stop_visual_frame": 2675,
+  "recorded_visual_frames": 2676,
+  "absolute_frames": 4720,
+  "in_battle_recorded_frames": 1372,
+  "attempts": 1,
+  "turn": 0,
+  "current_move": 0,
+  "battler_HP": [
+    38,
+    42,
+    30,
+    30
+  ],
+  "Save_unchanged": true,
+  "candidate_executed": false,
+  "actual_observation": "Original baseline entered trainer858. Last actual capture still shows native trainer send-out text, Carl/Warden trainer sprites, party summaries, no completed battler HUD. No move or turn completed.",
+  "source_diagnosis": "visual ready only tests in-battle and turn0; it enables exact pose enforcement while native intro is still active. BattleMainCB2 RunTasks can create new send-out sprites after AnimateSprites/BuildOamBuffer. CreateSpriteAt marks inUse and allocates tiles before frame-image copy; next animation/copy/VBlank stages fill pixels. Native source permits unknown2048-byte VRAM at this unqualified sprite/copy phase; the exact actual allocation/queue was not retained.",
+  "inference_limit": "Likely premature pose enforcement during send-out allocation/first-copy phase. Host did not retain offending battler/sprite/VRAM/copy queue at STOP107; exact offending actor/pixels/queue state cannot be recovered from retained trace/captures. No claim that candidate game caused this baseline STOP.",
+  "callback_identity_limitation": [
+    {
+      "case": "before",
+      "first_selected_compiler_label_addresses": 314,
+      "distinct_function_aliases": 311,
+      "representative_aliases": [
+        "OpponentDummy",
+        "AgbMain",
+        "BattleControllerDummy",
+        "InitCrawlerParty"
+      ],
+      "method": "Actual linked symbols, same first-address/name selection as frozen host; offline only"
+    },
+    {
+      "case": "after",
+      "first_selected_compiler_label_addresses": 315,
+      "distinct_function_aliases": 312,
+      "representative_aliases": [
+        "OpponentDummy",
+        "AgbMain",
+        "BattleControllerDummy",
+        "InitCrawlerParty"
+      ],
+      "method": "Actual linked symbols, same first-address/name selection as frozen host; offline only"
+    }
+  ],
+  "runtime_peaks": "No BV_PEAK footer reached; actual complete budget/palette/pose/faint/exit gates remain pending.",
+  "next_dependency": "Parent review of phase-qualified observer diagnosis and callback compiler-label ambiguity; no applied host correction or further execution.",
+  "preserved_original": "d1dc4792 STOP35/22partial/5685/zero combat/unchanged Save remains separate and byte-identical."
+}

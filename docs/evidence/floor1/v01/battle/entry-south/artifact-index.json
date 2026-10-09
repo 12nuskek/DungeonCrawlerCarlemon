@@ -1,0 +1,72 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4326,
+    "SHA256": "46707181cd24f318fc8c8784e8cacef6c8e7e151e20f21329c5431d4f6a0b07d"
+  },
+  {
+    "path": "STOP.json",
+    "bytes": 740,
+    "SHA256": "225fb1d939c7b9b2728c7e3d544d64b28c737e529f63ab7859b2ee9b08f82a9d"
+  },
+  {
+    "path": "baseline-identity.json",
+    "bytes": 1623,
+    "SHA256": "5b8ed3c78177eaf647fb091b1ee94ce8a8c7fe9cd08f86a3bd590c1f3210a10a"
+  },
+  {
+    "path": "baseline-sendout-stop.mp4",
+    "bytes": 319272,
+    "SHA256": "2707a0c58fa68b84a130f2f8196e0cf84b0cb0408e24c71b19f2024805f8f156"
+  },
+  {
+    "path": "baseline-summary.json",
+    "bytes": 641,
+    "SHA256": "1af67d6258702d6dcf4f9a8a89bb3689a91add3fbe302fcbb01a5c061cb3dc5b"
+  },
+  {
+    "path": "battle-02674.png",
+    "bytes": 6748,
+    "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+  },
+  {
+    "path": "battle-02675.png",
+    "bytes": 6748,
+    "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+  },
+  {
+    "path": "battle-start.png",
+    "bytes": 6766,
+    "SHA256": "ed2d989e633b99407368462a107582c6e2b4cb3628b3b038a8d54954261852d1"
+  },
+  {
+    "path": "boot.png",
+    "bytes": 2802,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  },
+  {
+    "path": "clip-encoding.json",
+    "bytes": 119,
+    "SHA256": "3fe7a25e58293afeaa5f8ee530463e9de921dc5da0f01a83e194d14829efe05e"
+  },
+  {
+    "path": "diagnosis.json",
+    "bytes": 2651,
+    "SHA256": "9bd8c861a608a16b2dcaf73cb992032c87b62037efa9a8260bcd171d927f086b"
+  },
+  {
+    "path": "private-retention.json",
+    "bytes": 453,
+    "SHA256": "3c90fff85422c91334e71daac1058197f3c9e316e8ebc4c6b239c48dfea33138"
+  },
+  {
+    "path": "unexecuted-candidate-identity.json",
+    "bytes": 1622,
+    "SHA256": "ac2dabdea57bb71ae7dc0d9d19a81e80faf40f9a6a27f4fafdcb494243cf4b82"
+  },
+  {
+    "path": "visual-stop.png",
+    "bytes": 6748,
+    "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+  }
+]

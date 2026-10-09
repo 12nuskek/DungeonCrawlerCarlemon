@@ -1,0 +1,12 @@
+{
+  "filename": "DungeonCrawlerCarlemon-V01-battle-south-entry-stop-20261009.zip",
+  "bytes": 8978590,
+  "SHA256": "75efb4bbda7d723f83ffd9cf6f960e23b61f55c48928d436412a912eea552f64",
+  "files": 2724,
+  "original_PPM_captures": 2692,
+  "ordinary_saves": 1,
+  "actual_mp4_clips": 1,
+  "excluded": ".bin diagnostics/state traces, symbols/executables, ROM/ELF; remain local only",
+  "Library_status": "succeeded",
+  "local_identity_xattrs_verified": true
+}

@@ -1,0 +1,17 @@
+{
+  "PR": 113,
+  "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/113",
+  "draft": true,
+  "merged": false,
+  "base": "c2f0d74759bb35b2f25e99f104e48f88635f049f",
+  "initial_evidence_publication": "b26c9dee91675d94597635e00c5d3621abf95ad7",
+  "tested_candidate": "4938927da512543ca9aeea9527c103c84955e632",
+  "tested_engine": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "preserved_previous_heads": 66,
+  "all_previous_heads_unchanged": true,
+  "checks": 0,
+  "statuses": 0,
+  "workflow_runs": 0,
+  "CI": "absent, not success",
+  "next": "Stop for parent visual review; no further execution/merge/battle stage/rollout"
+}

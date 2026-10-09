@@ -1,3 +1,5 @@
+[Draft PR #113](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/113) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `b26c9dee91675d94597635e00c5d3621abf95ad7`; tested game/host/execution remains `4938927da512543ca9aeea9527c103c84955e632`. Environment PR112 merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f`.
+
 # V01 overworld character stage — actual runtime review
 
 **Implemented, compiled and bounded emulator checks passed; character stage remains unmerged pending parent visual review.** Environment PR112 was accepted by the parent and Kurt, then normally merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f`. Its reviewed tree and both parents are recorded in [environment-merge.json](environment-merge.json). All 65 non-main heads remain unchanged. CI checks/statuses/workflows were absent, not passing.

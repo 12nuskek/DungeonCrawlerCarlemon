@@ -1,3 +1,5 @@
+[Draft PR #113](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/113) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `b26c9dee91675d94597635e00c5d3621abf95ad7`; tested game/host/execution remains `4938927da512543ca9aeea9527c103c84955e632`. Environment PR112 merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f`.
+
 Current V01 overworld checkpoint — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged pending parent visual review**.
 
 Environment PR112 was normally merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f` after parent/Kurt acceptance; exact reviewed tree/parents verified and all 65 non-main heads preserved. Current character stage reuses Carl9/Donut3 authoritative masters and native right mirroring, adds one cleaned side attention pose on the existing Talk interaction. Frozen corrected game/host/execution `4938927da512543ca9aeea9527c103c84955e632`, engine `76001ee128785714b7c15aef6d9c95630587d0a9`, ROM `ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461`.

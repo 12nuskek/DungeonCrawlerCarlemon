@@ -1,3 +1,8 @@
+Current published review package: draft PR113 / existing106, initial evidence
+b26c9dee; tested4938927d/ae1e engine76001ee unchanged. Verified draft/unmerged,
+mainc2f and all66 pre-existing remote heads unchanged; CI absent, not pass.
+STOP for parent visual review, no further execution/merge/battle stage/rollout.
+
 Current publication authority — 2026-10-09: environment PR112 merged c2f0d747,
 exact reviewed tree/parents and65 non-main heads retained. Character candidate
 4938927d/ae1e ROM passed64 native assertions/7924 frames against unchanged

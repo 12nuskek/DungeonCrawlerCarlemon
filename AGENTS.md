@@ -1,5 +1,13 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent PR109 review authorises only the source-pinned native friendship helper
+and ONE separately claimed corrected identical current Guard-first route/cold
+under docs/floor1/g01e-guard-first-corrected-contract.md. Actual native Field
+met match/base5+1, each level uses current friendship; complete reconstruction
+and no-held/Pokerus input restriction stay. Offline parity first, frozen unchanged
+route/decisions/cadence/game, preserve PR109 STOP and all old failures. Stop FIRST
+failure; no extra execution/search/strategy or integration. New root/claim only.
+
 Current review package: draft PR109 / existing issue106, stacked on unchanged PR108.
 
 Current Guard-first execution STOP71 after Guard victory at14680 exact frames/

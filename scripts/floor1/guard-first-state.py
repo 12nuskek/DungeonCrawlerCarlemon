@@ -8,6 +8,7 @@ def module(name,path):
     s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 fields=module('gf_native_fields',ROOT/'scripts/floor1/party-fields.py')
 resources=module('gf_native_resources',ROOT/'scripts/floor1/prepared-save-validation.py')
+friendship=module('gf_native_friendship',ROOT/'scripts/floor1/native-friendship.py')
 def snapshot(prefix):
     p=Path(prefix);s=json.loads(Path(str(p)+'-metadata.json').read_text())
     for kind in ('party','flags','owned','context'):s[kind]=Path(str(p)+'-'+kind+'.bin').read_bytes()
@@ -76,8 +77,8 @@ def validate(stage,before,after,seed):
             assert c[68]==0 and struct.unpack_from('<H',c,34)[0]==0,'source EV multipliers'
             for j,v in enumerate(evdelta):c[56+j]+=v
             changes=levels[i]-c[84]
-            assert ((struct.unpack_from('<H',c,70)[0]>>11)&15)!=11 and c[69]!=after['section'],'source friendship modifiers'
-            for _ in range(changes):c[41]=min(255,c[41]+(5 if c[41]<=99 else 3 if c[41]<=199 else 2))
+            c[41]=friendship.level_ups(c[41],levels=changes,met_location=c[69],section=after['section'],
+                ball=(struct.unpack_from('<H',c,70)[0]>>11)&15,held_item=struct.unpack_from('<H',c,34)[0],pokerus=c[68])
             c[84]=levels[i]
             stats=level_stats(c,levels[i]);struct.pack_into('<6H',c,88,*stats)
             # HP and action expenditure are combat outputs; validate their legal

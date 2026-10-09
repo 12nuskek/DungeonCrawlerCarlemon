@@ -12,7 +12,7 @@ def rejected(fn):
  raise AssertionError('invalid evidence accepted')
 seed=ROOT/'artifacts/floor1/recovery/runtime-menu-repair/seed.sav'
 with tempfile.TemporaryDirectory(dir=ROOT/'artifacts/floor1/guard-first-current') as tmp:
- d=Path(tmp);state.seed_snapshot(seed,d/'expected');s=state.snapshot(d/'expected');s['section']=0
+ d=Path(tmp);state.seed_snapshot(seed,d/'expected');s=state.snapshot(d/'expected');s['section']=state.snapshot(ROOT/'artifacts/floor1/guard-first-current/runtime/patrol/guard-before')['section']
  state.validate('boot',s,s,s);checks=1
  for f in d.glob('expected-*'):__import__('shutil').copyfile(f,d/f.name.replace('expected-','current-'))
  subprocess.run(['python3',str(ROOT/'scripts/floor1/guard-first-state.py'),'boot'],cwd=d,check=True);checks+=1
@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory(dir=ROOT/'artifacts/floor1/guard-first-current'
  party=bytearray(s['party'])
  for i in range(2):
   raw=s['party'][i*100:i*100+100];c=bytearray(state.fields.decode(raw)['canonical']);struct.pack_into('<I',c,36,(627,937)[i]);c[59]+=1;c[60]+=1
-  if i==0:c[41]+=5
+  c[41]=state.friendship.level_ups(c[41],levels=(10,9)[i]-c[84],met_location=c[69],section=s['section'],ball=(struct.unpack_from('<H',c,70)[0]>>11)&15,held_item=struct.unpack_from('<H',c,34)[0],pokerus=c[68])
   c[84]=(10,9)[i];stats=state.level_stats(c,c[84]);struct.pack_into('<6H',c,88,*stats);struct.pack_into('<H',c,86,stats[0]);c[52]-=1;party[i*100:i*100+100]=state.encode(c,raw)
  after['party']=bytes(party);state.validate('guard-win',s,after,s);checks+=1
  for key,index in [('party',36),('party',8),('party',212),('flags',6),('flags',2137//8),('logical',0),('logical',20)]:

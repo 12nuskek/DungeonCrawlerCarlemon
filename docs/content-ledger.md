@@ -535,3 +535,24 @@ native assets and implementation await F1-C01/G02/S01 and district production.
 Documentation only: not implemented, compiled or runtime tested; no captures.
 Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
 remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D3 Foundry milestone narrative — authored preparation only
+
+[Provisional local narrative brief](floor1/foundry-milestone-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`d81ede01d9f4e07b51cdc20120e7b747fe078456`. `F1-D3-ARRIVAL` recognises the
+cold furnace/brace assembly; `F1-D3-SUCCESS` acknowledges only actual reviewed
+`FOUNDRY_COMPLETE`; `F1-D3-REVISIT` supplies a short resolved reminder. Dialogue
+grants no state. This local milestone beat is distinct from the existing Commons
+handoff and links its tests instead of repeating branch-order/refuge routes.
+
+Original short Carl/Donut adaptation wording within the Book1 opening ceiling;
+no quotation, verified canon claim or new NPC/party member. Arcade-first and
+ordinary retreat remain legal; Commons free recovery/save is available after
+either actual branch milestone. Readiness, skipped/interrupted presentation,
+depletion/incapacitation and three local future cases remain preparation only.
+No mechanical solution, mandatory fight/item, Charge cost, reward or extra gate
+is prescribed. Encounters/resources, flags/save fields, geometry/native staging
+and implementation await F1-C01/G02/S01 and production. Not implemented, compiled
+or runtime tested; no captures. Missing inputs and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.

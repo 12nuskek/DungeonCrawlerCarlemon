@@ -425,3 +425,23 @@ contract, not an independently verified chapter citation.38control and22unchange
 text blocks reproduce after namespace normalization. No replacement art scheduled
 by this narrow text task; all existing asset placeholders/provenance remain tracked.
 [Test routes, state coverage, native captures and limitations](evidence/floor1/g01e/navigation/README.md).
+
+## F1-D2 Sluice orientation — authored preparation only
+
+[Arrival and revisit scene brief](floor1/d2-sluice-orientation-brief.md), prepared
+on parent checkpoint `01cd2432aaea72f6debca736fa8b02118b2fb1ed`.
+`F1-D2-ORIENT` introduces the wheel landmark and Foundry/Arcade choice;
+`F1-D2-REVISIT` responds to the remaining branch, Commons refuge access and later
+Pumpworks service return. Original dialogue by Codex; Carl and Donut remain the
+permanent duo. Invented geography and connective scene, Book1 opening ceiling,
+no book quotation, verified chapter claim or new party member. District D2 is
+distinct from the historical D02 recipe entry above.
+
+The linked brief records purpose, symbolic prerequisites, once-only introduction,
+state-aware repeats, no proposed scene reward, and future test routes for either
+branch order, early Commons recovery, retreat/depletion/incapacitation and the
+persistent two-way service passage. Numeric flags, save fields, map coordinates,
+encounter/reward budgets, native art/staging and engine integration remain
+unassigned pending F1-C01/G02/S01. Authored documentation only: not implemented,
+compiled or runtime tested; no captures. PR114 gameplay status and historical
+counts six baseline/four candidate are unchanged. No existing scene is replaced.

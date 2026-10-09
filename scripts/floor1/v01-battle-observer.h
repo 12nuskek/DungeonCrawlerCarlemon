@@ -6,14 +6,14 @@ struct BattleVisual {
     unsigned maxSprites,maxTiles,maxPalettes,maxHeap,minFree,heapSamples,paletteChecks,paletteMask,enforced,warningFrames,warningOtherActor;
     unsigned char poses[18][2048],palettes[96];
     FILE *trace;
-    unsigned callbackCount,callbackAddresses[10000],callbackNames[10000];
+    unsigned callbackCount,callbackAddresses[20000],callbackNames[20000];
 };
 static void bv_symbol(struct BattleVisual *v,unsigned address,char type,const char *name)
 {
     if(type!='T' && type!='t')return;
     unsigned hash=2166136261u;for(const unsigned char *p=(const unsigned char *)name;*p;p++)hash=(hash^*p)*16777619u;
     for(unsigned i=0;i<v->callbackCount;i++)if(v->callbackAddresses[i]==(address&~1u))return;
-    if(v->callbackCount>=10000){fprintf(stderr,"Native callback symbol table overflow\n");exit(112);}
+    if(v->callbackCount>=20000){fprintf(stderr,"Native callback symbol table overflow\n");exit(112);}
     v->callbackAddresses[v->callbackCount]=address&~1u;v->callbackNames[v->callbackCount++]=hash;
 }
 static unsigned bv_load(const char *file,void *data,unsigned n)

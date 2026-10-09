@@ -50,10 +50,15 @@ The brief reserves no numeric IDs, coordinates, encounters or rewards.
 | `FOUNDRY_COMPLETE`, `ARCADE_COMPLETE` | Independently reviewed branch milestones; read them to select guidance. The scene never writes either. |
 | `SERVICE_RETURN_OPEN` | Reviewed persistent Pumpworks service-access state; select the open passage cue only when the connection is actually usable. The scene never unlocks it. |
 
-On first legal D1-to-D2 arrival, offer the short introduction once from a safe,
-unobstructed staging anchor. Subsequent arrivals do not replay it. Optional
-inspection of the wheel-side route board supplies current guidance on every
-visit, including a visit from either branch or the later service passage.
+On first legal D1-to-D2 arrival, offer the short introduction as an optional
+interaction from a safe, unobstructed staging anchor. A completed introduction
+never replays on re-entry or cold reload. A skipped or interrupted introduction
+leaves `SLUICE_ORIENTATION_SEEN` unset and remains available **on request** on
+re-entry; it never restarts automatically or blocks retreat, recovery or either
+branch. Current route-board guidance remains accessible whether the introduction
+was completed or not, and takes account of intervening progress. Optional
+inspection supplies that guidance on every visit, including arrival from either
+branch or the later service passage.
 
 Arrival presentation and optional inspection must not require optional quests,
 items, money or both protagonists being conscious. With an incapacitated duo
@@ -124,6 +129,7 @@ inputs or a substitute for missing original runtime inputs.
 | Route | Required future evidence |
 | --- | --- |
 | Legal opening checkpoint → first D2 arrival → inspect board → leave/re-enter → manual Save/cold reload | One introduction, unchanged D1 milestones, permanent duo, no later milestone/floor-complete grant, current repeat guidance and ordinary control return. |
+| Skip or interrupt the introduction → retreat → re-enter with changed branch state → optionally Save/cold reload → request the introduction later | No automatic restart or travel/recovery gate; incomplete marker remains unset and the introduction stays optional. Board guidance reflects current progress. Once the requested introduction completes, further re-entry/reload never replays it. |
 | D2 → Foundry objective → Commons recovery/save → return to D2 → Arcade objective → Commons | Foundry-only variation, accessible free refuge before Arcade completion, remaining objective stays required; then both-complete guidance and legal Pumpworks gate. |
 | D2 → Arcade objective → Commons recovery/save → return to D2 → Foundry objective → Commons | Mirror the preceding order with the Arcade-only variation; no dialogue-imposed order or stranded depleted duo. |
 | Start either branch, retreat before its objective with low action uses or an incapacitated member | Board/recovery guidance remains usable, Quiet Landing return remains legal, no item fee, forced rematch or automatic healing; no false branch-complete line. |

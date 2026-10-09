@@ -445,3 +445,24 @@ encounter/reward budgets, native art/staging and engine integration remain
 unassigned pending F1-C01/G02/S01. Authored documentation only: not implemented,
 compiled or runtime tested; no captures. PR114 gameplay status and historical
 counts six baseline/four candidate are unchanged. No existing scene is replaced.
+
+## F1-D5 branch-to-Commons handoff — authored preparation only
+
+[Foundry/Arcade-to-Commons scene brief](floor1/branches-to-commons-scene-brief.md),
+prepared on accepted documentation checkpoint
+`9ec85c7f94fc7c388b35fdfcfbb616822a5896ac`.
+`F1-D5-HANDOFF` offers a short optional refuge arrival exchange;
+`F1-D5-ROUTE` names the unfinished branch or the legal onward route on revisits.
+Both branch orders reach free Commons recovery/save after either milestone;
+Pumpworks access still requires both. Completed introductions never repeat;
+skipped/interrupted ones stay optional on request and cannot block retreat or
+services. The Sluice brief now states that handling explicitly too.
+
+Original Carl/Donut dialogue by Codex, invented connective geography within the
+Book1 opening ceiling; no quotation, verified chapter claim or new party member.
+The linked brief records symbolic conditions, depletion/incapacitation and
+optional-skip variants, future route checks, and no proposed scene reward.
+Encounter/reward budgets, numeric flags, coordinates, native staging and engine
+binding await F1-C01/G02/S01 and district production. Documentation only: not
+implemented, compiled or runtime tested, no captures. PR114 gameplay/legacy
+limitations and six baseline/four candidate totals remain unchanged.

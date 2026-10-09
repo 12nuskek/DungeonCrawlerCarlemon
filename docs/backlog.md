@@ -1,3 +1,5 @@
+[Draft PR #112](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/112) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `4f497561e35508555d9463479f2f3ad539c330e4`; tested host/route/game identities below stay frozen.
+
 V01 environment pilot — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged**.
 
 PR111 documentation/matrix checkpoint verified merged at

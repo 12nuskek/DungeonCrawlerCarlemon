@@ -1,3 +1,5 @@
+[Draft PR #112](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/112) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `4f497561e35508555d9463479f2f3ad539c330e4`; tested host/route/game identities below stay frozen.
+
 Current environment-stage checkpoint — 9 October2026: integration accepted,
 PR111 matrix/docs merged at54526744. First environment-only pilot now implemented,
 compiled and bounded runtime verified; unmerged. Native assets only, no character/

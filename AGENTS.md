@@ -1,3 +1,6 @@
+Current publication: draft PR112 / existing tracking106, initial evidence4f497561;
+open/unmerged. Parent visible-pilot review next; no further execution/merge/rollout.
+
 Current V01 visible checkpoint — 2026-10-09: environment stage implemented/compiled/
 bounded runtime verified on game2748/ROM76dd, host/route/executions45fd.
 Before/after116+116,8188 frames/14 scenes/720 clip frames each, zero battles/Save

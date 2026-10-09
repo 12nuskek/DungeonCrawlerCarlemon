@@ -1,5 +1,7 @@
 # V01 environment-only visible pilot
 
+[Draft PR #112](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/112) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106). [Verified publication](publication.json): initial evidence head4f497561, all65 pre-existing remote heads unchanged; no checks/statuses/workflows/reviews.
+
 Implemented, compiled and bounded runtime verified; **draft/unmerged**, parent
 visible-pilot review next. Base is PR111's verified ordinary merge
 `54526744eb7ed961007ffe6100f976a1e7448e8b`. The accepted G01e integration and

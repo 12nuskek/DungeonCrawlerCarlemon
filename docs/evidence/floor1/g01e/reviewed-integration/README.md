@@ -117,4 +117,3 @@ review of this integration checkpoint, followed by the separately scoped
 is published on its own branch/draft PR; it is not an additional main merge.
 Screenshots for this nonvisual integration are N/A; actual source-bound captures
 remain in the original evidence packages.
-

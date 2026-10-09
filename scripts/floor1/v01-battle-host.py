@@ -14,6 +14,8 @@ def generate(git):
     fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx'}
     point='        if (!strcmp(symbol,"gTasks")) tasks=addr;'
     code=replace(code,point,point+'\n'+''.join(f'        if (!strcmp(symbol,"{name}")) visual.a.{field}=addr;\n' for name,field in fields.items()))
+    point='    while (fscanf(symbols, "%x %c %127s", &addr, &type, symbol)==3) {'
+    code=replace(code,point,point+'\n        bv_symbol(&visual,addr,type,symbol);')
     point='    core->runFrame(core); \\\n'
     code=replace(code,point,point+r'''    if(visual.recording){ \
         if(visual.frames>=36000)exit(109); \

@@ -6,7 +6,16 @@ struct BattleVisual {
     unsigned maxSprites,maxTiles,maxPalettes,maxHeap,minFree,heapSamples,paletteChecks,paletteMask,enforced,warningFrames,warningOtherActor;
     unsigned char poses[18][2048],palettes[96];
     FILE *trace;
+    unsigned callbackCount,callbackAddresses[10000],callbackNames[10000];
 };
+static void bv_symbol(struct BattleVisual *v,unsigned address,char type,const char *name)
+{
+    if(type!='T' && type!='t')return;
+    unsigned hash=2166136261u;for(const unsigned char *p=(const unsigned char *)name;*p;p++)hash=(hash^*p)*16777619u;
+    for(unsigned i=0;i<v->callbackCount;i++)if(v->callbackAddresses[i]==(address&~1u))return;
+    if(v->callbackCount>=10000){fprintf(stderr,"Native callback symbol table overflow\n");exit(112);}
+    v->callbackAddresses[v->callbackCount]=address&~1u;v->callbackNames[v->callbackCount++]=hash;
+}
 static unsigned bv_load(const char *file,void *data,unsigned n)
 {
     FILE *f=fopen(file,"rb");if(!f)return 100;
@@ -49,13 +58,19 @@ static unsigned bv_heap(struct mCore *core,struct BattleVisual *v)
 static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned party,unsigned mons,unsigned saveptr,unsigned save2ptr,unsigned mainstate,unsigned results,unsigned currentMove,unsigned attacker,unsigned defender,unsigned outcome,unsigned controls)
 {
     /* Private byte record includes full party and resources; never upload it. */
-    unsigned char data[2560]={0},expected[2560];unsigned at=0;
+    unsigned char data[2560]={0},expected[2560]={0};unsigned at=0;
 #define BV_BYTES(address,n) do {for(unsigned z=0;z<(n);z++)data[at++]=core->busRead8(core,(address)+z);}while(0)
     unsigned sb=core->busRead32(core,saveptr),sb2=core->busRead32(core,save2ptr);
     if(sb<0x02000000 || sb+0x3d88>0x02040000 || sb2<0x02000000 || sb2+0xf2c>0x02040000)return 102;
     BV_BYTES(party,600);BV_BYTES(mons,352);BV_BYTES(sb+0x1270,300);BV_BYTES(sb+0x490,1272);
-    BV_BYTES(mainstate+0x439,1);BV_BYTES(results+0x13,1);BV_BYTES(currentMove,2);BV_BYTES(attacker,1);BV_BYTES(defender,1);BV_BYTES(outcome,1);BV_BYTES(controls,4);BV_BYTES(0x04000130,2);
+    BV_BYTES(mainstate+0x439,1);BV_BYTES(results+0x13,1);BV_BYTES(currentMove,2);BV_BYTES(attacker,1);BV_BYTES(defender,1);BV_BYTES(outcome,1);BV_BYTES(0x04000130,2);
 #undef BV_BYTES
+    // Link addresses differ by build. Compare the native callback's exact symbol identity.
+    for(unsigned b=0;b<4;b++){
+        unsigned address=core->busRead32(core,controls+4*b)&~1u,id=0;
+        if(address){for(unsigned i=0;i<v->callbackCount;i++)if(v->callbackAddresses[i]==address){id=v->callbackNames[i];break;}if(!id)return 112;}
+        for(unsigned i=0;i<4;i++)data[at++]=(id>>(8*i))&255;
+    }
     if(v->candidate){if(fread(expected,1,sizeof expected,v->trace)!=sizeof expected || memcmp(data,expected,sizeof data)){
         unsigned diff=0;while(diff<sizeof data && data[diff]==expected[diff])diff++;
         fprintf(stderr,"Exact battle-state/control divergence visual_frame=%u byte=%u; STOP\n",v->frames,diff);return 103;}}

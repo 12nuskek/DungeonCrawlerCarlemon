@@ -33,7 +33,9 @@ search, fabricated state, automatic retry or broad first-clear acceptance.
 
 Retain all existing native policy/victory/no-incapacity/foe/support/budget gates.
 Candidate compares every recorded frame's party600, battleMons352, flags300,
-owned1272 plus native move/turn/outcome/controllers/actual keys byte-for-byte
+owned1272 plus native move/turn/outcome/actual keys byte-for-byte; all four
+controller callbacks compare exact native symbol identity because link addresses
+differ between builds
 against baseline. Private traces contain denied raw diagnostics and remain
 local outside uploads. Stop at FIRST difference; no subsequent execution.
 Native VRAM must show all17 poses, repeated swaps, warning across other actors;

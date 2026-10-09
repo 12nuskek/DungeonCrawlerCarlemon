@@ -6,6 +6,8 @@ The delivered six-room slice below remains the preserved regression baseline.
 The current live-opening branches are draft/unmerged: PR75 migration, PR77 pickup
 feedback and [PR79 navigation/Journal](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/79) (issue78). The latter passes 17 emulator
 sessions /236 assertions; [scoped evidence](docs/evidence/floor1/g01e/navigation/README.md).
+Optional loop/trap/crafting/cache checks now pass 8 ordinary sessions /15,701
+assertions on the same exact game; [evidence](docs/evidence/floor1/g01e/optional/README.md).
 Full live gameplay/finalT and native-art rollout remain gated by the recorded combat
 stop. The Stage0–5 delivery claims below describe the preserved baseline.
 

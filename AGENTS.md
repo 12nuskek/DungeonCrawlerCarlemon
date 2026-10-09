@@ -2,13 +2,13 @@
 
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
-Current budget authority: user resumed2026-10-07 05:15:54UTC. Parent's official
-same-account read at00:05:01UTC2026-10-08 reported15% used/85% remaining in a seven-day window.
-Parent samples periodically and before continuations; at>=80% used it will ask
-for checkpoint/pause. Honour that immediately. This is a soft sampled guard,
-not an exact hard cap or a permanently fresh reading. Keep frequent checkpoints.
-Do not research meter/auth/billing or copy credentials here. Parent controls sole
-continuation; no new task/scheduler.
+Current continuation authority: user update2026-10-08 02:01:39UTC withdraws
+usage-meter prerequisites and the20%-remaining /80%-used pause rule. Do not read
+the meter, request login or block continuation on quota. Continue the bounded
+full Floor1 work until the review package or the user's stop, taking one focused
+task at a time. Parent owns the sole continuation; no new writer/task/scheduler.
+Preserve frequent durable checkpoints. Historical budget evidence below is not
+an active instruction.
 Current scope: full nine-district Floor1 execution authorised2026-10-07 03:42:58UTC.
 Read docs/floor1/README.md and backlog.md. Earlier Stage6/playtest stops and the
 overnight time limit below are historical and superseded. Parent owns continuation;
@@ -69,3 +69,13 @@ Retimed routes must preserve behavior assertions. Keep before/after real capture
 precise retry/pacing limits, durable blockers/attempt counts and exact next action.
 Avoid routine overnight notifications; report significant findings/blockers to
 parent for the morning review. No padding or artificial waits to claim playtime.
+
+## Historical quota guard — superseded2026-10-08
+
+Current budget authority: user resumed2026-10-07 05:15:54UTC. Parent's official
+same-account read at00:05:01UTC2026-10-08 reported15% used/85% remaining in a seven-day window.
+Parent samples periodically and before continuations; at>=80% used it will ask
+for checkpoint/pause. Honour that immediately. This is a soft sampled guard,
+not an exact hard cap or a permanently fresh reading. Keep frequent checkpoints.
+Do not research meter/auth/billing or copy credentials here. Parent controls sole
+continuation; no new task/scheduler.

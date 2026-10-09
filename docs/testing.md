@@ -1,3 +1,9 @@
+Latest optional verification: [F1-G01e-OP](evidence/floor1/g01e/optional/README.md),
+8 ordinary-controller sessions /15,701 assertions, compiled c643f01 /runner2ae9d14.
+Existing exact isolated compile reused after engine/ROM identity checks; host
+observer compiled with warnings as errors. No gameplay source change, synthetic
+input or new battle. Full/first-clear/finalT/V01 gates remain pending.
+
 Current live navigation verification (2026-10-08): [F1-G01e-NC evidence](evidence/floor1/g01e/navigation/README.md),
 compiled/runner c643f01;17real mGBA sessions236assertions,5ordinary and12explicit
 controlled save-input branches. Native text is compared to compiled labels and

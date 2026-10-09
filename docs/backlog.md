@@ -3,11 +3,12 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current: navigation/Journal correction F1-G01e-NC implemented, compiled and
-runtime verified:17sessions236assertions; issue78 / draft PR79, pushed,
-unmerged. PR77/75 remain draft; full G01e/finalT/V01 gates and three combat
-strategy stop unchanged. Next independent checks: optional loop/trap/craft/re-entry/
-cold routes from existing ordinary saves. [Checkpoint](progress.md).
+Current: F1-G01e-OP ordinary optional routes runtime verified (8 sessions /
+15,701 assertions); issue80 / draft PR81, pushed and unmerged. No game source change;
+compiled c643f01 reused after identity checks. Loop, trap/recovery and crafting/
+cache repeats/re-entry/Save/cold pass. User withdrew meter/20%-remaining guard.
+Next independent checks: resolved stairs/remaining map buffers. Keep three combat
+strategy stop and first-clear/full/finalT/V01 gates. [Checkpoint](progress.md).
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 

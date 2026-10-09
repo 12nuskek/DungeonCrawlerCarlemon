@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_ai_script_commands.h"
 #include "battle_anim.h"
@@ -939,6 +940,7 @@ static void Task_HandleCopyReceivedLinkBuffersData(u8 taskId)
                 gBattlerAttacker    = BYTE_TO_RECEIVE(LINK_BUFF_ATTACKER);
                 gBattlerTarget      = BYTE_TO_RECEIVE(LINK_BUFF_TARGET);
                 gAbsentBattlerFlags = BYTE_TO_RECEIVE(LINK_BUFF_ABSENT_BATTLER_FLAGS);
+                DccBattlePoseNotify();
                 gEffectBattler      = BYTE_TO_RECEIVE(LINK_BUFF_EFFECT_BATTLER);
             }
             break;

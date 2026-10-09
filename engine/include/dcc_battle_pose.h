@@ -6,5 +6,6 @@ void DccBattlePoseUpdate(void);
 void DccBattlePoseImpact(void);
 void DccBattlePoseFaint(u8 battler);
 void DccBattlePoseReset(void);
+void DccBattlePoseNotify(void);
 
 #endif

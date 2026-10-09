@@ -69,6 +69,11 @@ int main(void){
  puts("PASS actual-source lifecycle/negative cases: six action bindings, warning persists across other actors, SLAM real-impact recovery, repeated/interrupted swaps, faint/absence/reset, invalid encounter/species/buffer/sprite; no mechanical writes");
 }
 ''')
+    # These fixture assignments stand in for the native event writers, which
+    # now notify pending work without copying poses outside the update callback.
+    cases = (out/'cases.c').read_text().replace('gAnimScriptActive=0;', 'gAnimScriptActive=0;DccBattlePoseNotify();')
+    cases = cases.replace('gAbsentBattlerFlags=1;', 'gAbsentBattlerFlags=1;DccBattlePoseNotify();')
+    (out/'cases.c').write_text(cases)
     subprocess.run(['cc','-std=c99','-Wall','-Wextra','-Werror','-I'+str(out),'-I'+str(ROOT/'engine/include'),'-I'+str(ROOT/'engine/src'),str(out/'cases.c'),'-o',str(out/'cases')],check=True)
     subprocess.run([str(out/'cases')],check=True)
 if __name__=='__main__':main()

@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle_anim.h"
 #include "contest.h"
 #include "gpu_regs.h"
@@ -1047,6 +1048,7 @@ void AnimTask_IsContest(u8 taskId)
 void AnimTask_SetAnimAttackerAndTargetForEffectTgt(u8 taskId)
 {
     gBattleAnimAttacker = gBattlerTarget;
+    DccBattlePoseNotify();
     gBattleAnimTarget = gEffectBattler;
     DestroyAnimVisualTask(taskId);
 }
@@ -1070,6 +1072,7 @@ void AnimTask_SetAnimTargetToBattlerTarget(u8 taskId)
 void AnimTask_SetAnimAttackerAndTargetForEffectAtk(u8 taskId)
 {
     gBattleAnimAttacker = gBattlerAttacker;
+    DccBattlePoseNotify();
     gBattleAnimTarget = gEffectBattler;
     DestroyAnimVisualTask(taskId);
 }

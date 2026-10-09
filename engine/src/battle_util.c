@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "crawler_warden.h"
 #include "battle.h"
 #include "battle_setup.h"
@@ -1904,7 +1905,10 @@ bool8 HandleFaintedMonActions(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (gAbsentBattlerFlags & gBitTable[i] && !HasNoMonsToSwitch(i, PARTY_SIZE, PARTY_SIZE))
+                {
                     gAbsentBattlerFlags &= ~(gBitTable[i]);
+                    DccBattlePoseNotify();
+                }
             }
             // fall through
         case 1:

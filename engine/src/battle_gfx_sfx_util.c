@@ -481,6 +481,7 @@ bool8 TryHandleLaunchBattleTableAnimation(u8 activeBattler, u8 atkBattler, u8 de
     }
 
     gBattleAnimAttacker = atkBattler;
+    DccBattlePoseNotify();
     gBattleAnimTarget = defBattler;
     gBattleSpritesDataPtr->animationData->animArg = argument;
     LaunchBattleAnimation(gBattleAnims_General, tableId, FALSE);
@@ -526,6 +527,7 @@ void InitAndLaunchSpecialAnimation(u8 activeBattler, u8 atkBattler, u8 defBattle
     u8 taskId;
 
     gBattleAnimAttacker = atkBattler;
+    DccBattlePoseNotify();
     gBattleAnimTarget = defBattler;
     LaunchBattleAnimation(gBattleAnims_Special, tableId, FALSE);
     taskId = CreateTask(Task_ClearBitWhenSpecialAnimDone, 10);

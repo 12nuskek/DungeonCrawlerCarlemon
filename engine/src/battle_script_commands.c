@@ -1911,8 +1911,12 @@ static void Cmd_datahpupdate(void)
             {
                 // Negative damage is HP gain
                 gBattleMons[gActiveBattler].hp += -gBattleMoveDamage;
+                DccBattlePoseNotify();
                 if (gBattleMons[gActiveBattler].hp > gBattleMons[gActiveBattler].maxHP)
+                {
                     gBattleMons[gActiveBattler].hp = gBattleMons[gActiveBattler].maxHP;
+                    DccBattlePoseNotify();
+                }
             }
             else
             {
@@ -1934,12 +1938,14 @@ static void Cmd_datahpupdate(void)
                 if (gBattleMons[gActiveBattler].hp > gBattleMoveDamage)
                 {
                     gBattleMons[gActiveBattler].hp -= gBattleMoveDamage;
+                    DccBattlePoseNotify();
                     gHpDealt = gBattleMoveDamage;
                 }
                 else
                 {
                     gHpDealt = gBattleMons[gActiveBattler].hp;
                     gBattleMons[gActiveBattler].hp = 0;
+                    DccBattlePoseNotify();
                 }
 
                 // Record damage for Shell Bell
@@ -3482,6 +3488,7 @@ static void Cmd_getexp(void)
                 {
                     gBattleMons[0].level = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL);
                     gBattleMons[0].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
+                    DccBattlePoseNotify();
                     gBattleMons[0].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
                     gBattleMons[0].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
                     gBattleMons[0].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
@@ -3496,6 +3503,7 @@ static void Cmd_getexp(void)
                 {
                     gBattleMons[2].level = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL);
                     gBattleMons[2].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
+                    DccBattlePoseNotify();
                     gBattleMons[2].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
                     gBattleMons[2].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
                     gBattleMons[2].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
@@ -4648,6 +4656,7 @@ static void Cmd_switchindataupdate(void)
 
     for (i = 0; i < sizeof(struct BattlePokemon); i++)
         monData[i] = gBattleBufferB[gActiveBattler][4 + i];
+    DccBattlePoseNotify();
 
     gBattleMons[gActiveBattler].types[0] = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[0];
     gBattleMons[gActiveBattler].types[1] = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[1];
@@ -4702,6 +4711,7 @@ static void Cmd_switchinanim(void)
         HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
 
     gAbsentBattlerFlags &= ~(gBitTable[gActiveBattler]);
+    DccBattlePoseNotify();
 
     BtlController_EmitSwitchInAnim(B_COMM_TO_CONTROLLER, gBattlerPartyIndexes[gActiveBattler], gBattlescriptCurrInstr[2]);
     MarkBattlerForControllerExec(gActiveBattler);
@@ -4899,6 +4909,7 @@ static void Cmd_openpartyscreen(void)
                     if (HasNoMonsToSwitch(gActiveBattler, PARTY_SIZE, PARTY_SIZE))
                     {
                         gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                        DccBattlePoseNotify();
                         gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                         BtlController_EmitLinkStandbyMsg(B_COMM_TO_CONTROLLER, LINK_STANDBY_MSG_ONLY, FALSE);
                         MarkBattlerForControllerExec(gActiveBattler);
@@ -4928,6 +4939,7 @@ static void Cmd_openpartyscreen(void)
                 if (HasNoMonsToSwitch(gActiveBattler, PARTY_SIZE, PARTY_SIZE))
                 {
                     gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                    DccBattlePoseNotify();
                     gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                     BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(gActiveBattler);
@@ -4950,6 +4962,7 @@ static void Cmd_openpartyscreen(void)
                 if (HasNoMonsToSwitch(gActiveBattler, PARTY_SIZE, PARTY_SIZE))
                 {
                     gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                    DccBattlePoseNotify();
                     gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                     BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(gActiveBattler);
@@ -4971,6 +4984,7 @@ static void Cmd_openpartyscreen(void)
                 if (HasNoMonsToSwitch(gActiveBattler, PARTY_SIZE, PARTY_SIZE))
                 {
                     gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                    DccBattlePoseNotify();
                     gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                     BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(gActiveBattler);
@@ -4993,6 +5007,7 @@ static void Cmd_openpartyscreen(void)
                 if (HasNoMonsToSwitch(gActiveBattler, PARTY_SIZE, PARTY_SIZE))
                 {
                     gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                    DccBattlePoseNotify();
                     gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                     BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(gActiveBattler);
@@ -5056,6 +5071,7 @@ static void Cmd_openpartyscreen(void)
                     if (HasNoMonsToSwitch(gActiveBattler, gBattleBufferB[0][1], PARTY_SIZE))
                     {
                         gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                        DccBattlePoseNotify();
                         gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                         BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                         MarkBattlerForControllerExec(gActiveBattler);
@@ -5072,6 +5088,7 @@ static void Cmd_openpartyscreen(void)
                     if (HasNoMonsToSwitch(gActiveBattler, gBattleBufferB[1][1], PARTY_SIZE))
                     {
                         gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+                        DccBattlePoseNotify();
                         gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
                         BtlController_EmitCantSwitch(B_COMM_TO_CONTROLLER);
                         MarkBattlerForControllerExec(gActiveBattler);
@@ -5122,6 +5139,7 @@ static void Cmd_openpartyscreen(void)
         {
             gActiveBattler = battler;
             gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+            DccBattlePoseNotify();
             gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
             gBattlescriptCurrInstr = jumpPtr;
         }
@@ -6423,12 +6441,14 @@ static void Cmd_various(void)
         break;
     case VARIOUS_ARENA_OPPONENT_MON_LOST:
         gBattleMons[1].hp = 0;
+        DccBattlePoseNotify();
         gHitMarker |= HITMARKER_FAINTED(1);
         gBattleStruct->arenaLostOpponentMons |= gBitTable[gBattlerPartyIndexes[1]];
         gDisableStructs[1].truantSwitchInHack = 1;
         break;
     case VARIOUS_ARENA_PLAYER_MON_LOST:
         gBattleMons[0].hp = 0;
+        DccBattlePoseNotify();
         gHitMarker |= HITMARKER_FAINTED(0);
         gHitMarker |= HITMARKER_PLAYER_FAINTED;
         gBattleStruct->arenaLostPlayerMons |= gBitTable[gBattlerPartyIndexes[0]];
@@ -6436,7 +6456,9 @@ static void Cmd_various(void)
         break;
     case VARIOUS_ARENA_BOTH_MONS_LOST:
         gBattleMons[0].hp = 0;
+        DccBattlePoseNotify();
         gBattleMons[1].hp = 0;
+        DccBattlePoseNotify();
         gHitMarker |= HITMARKER_FAINTED(0);
         gHitMarker |= HITMARKER_FAINTED(1);
         gHitMarker |= HITMARKER_PLAYER_FAINTED;
@@ -6596,6 +6618,7 @@ static void Cmd_setatkhptozero(void)
 
     gActiveBattler = gBattlerAttacker;
     gBattleMons[gActiveBattler].hp = 0;
+    DccBattlePoseNotify();
     BtlController_EmitSetMonData(B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[gActiveBattler].hp), &gBattleMons[gActiveBattler].hp);
     MarkBattlerForControllerExec(gActiveBattler);
 
@@ -7804,6 +7827,7 @@ static void Cmd_transformdataexecution(void)
 
         for (i = 0; i < offsetof(struct BattlePokemon, pp); i++)
             battleMonAttacker[i] = battleMonTarget[i];
+        DccBattlePoseNotify();
 
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
@@ -10319,6 +10343,7 @@ static void Cmd_trygivecaughtmonnick(void)
 static void Cmd_subattackerhpbydmg(void)
 {
     gBattleMons[gBattlerAttacker].hp -= gBattleMoveDamage;
+    DccBattlePoseNotify();
     gBattlescriptCurrInstr++;
 }
 

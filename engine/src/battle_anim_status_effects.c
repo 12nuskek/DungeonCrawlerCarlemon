@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "decompress.h"
@@ -545,6 +546,7 @@ void LaunchStatusAnimation(u8 battler, u8 statusAnimId)
     u8 taskId;
 
     gBattleAnimAttacker = battler;
+    DccBattlePoseNotify();
     gBattleAnimTarget = battler;
     LaunchBattleAnimation(gBattleAnims_StatusConditions, statusAnimId, FALSE);
     taskId = CreateTask(Task_DoStatusAnimation, 10);

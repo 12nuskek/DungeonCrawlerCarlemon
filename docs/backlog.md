@@ -1,9 +1,27 @@
 # Live backlog
 
+Replacement recovery 2026-10-08: exact c643/b025 build reproduced; new fresh and
+field recovery issue90 / draft PR91 is pushed/open/unmerged; new private bundle
+retains saves/full logs. New fresh and
+field reconstruction two sessions/96 assertions pass. One field gate failure
+diagnosed/repaired without battle replay. Fresh patrol stops at unchanged Guard
+turn4 gate before Potion (34 completed/exit44). Target file unavailable; durable
+new input is healthy pending Field37,31, levels9/9, Potion1/SCRAP2. Original legacy
+inputs are not recovered. Next is parent recovery review, no combat retry/Warden
+or acceptance substitution. [Evidence](evidence/floor1/g01e/recovery/README.md).
+Earlier CP/PR claims below belong to the deleted environment and published history.
+
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current focused result: F1-G01e-PR readiness repair and ONE corrected historical
+Current focused result: F1-G01e-CP currentc643/b025 Howler→guide→Guard passes
+2 ordinary sessions/81 assertions,29 readiness checks, realPotion/rewards/repeat/
+manual Save/cold. [Evidence](evidence/floor1/g01e/current-patrol/README.md). No game
+edit/broad merge/V01/full-route claim; historical failures retained. Next prescribe
+first-clear current Warden→staircase/Save/cold from the new ordinary patrol-complete
+save; reverse order/full/finalT and broader gates remain pending.
+
+Preserved PR result: F1-G01e-PR readiness repair and ONE corrected historical
 Potion replay pass; issue88 / draft PR89 pushed and unmerged.29 host checks,2 runtime sessions/80 assertions; real20HP heal/
 one consumption, Howler→Guard wins, XP/rewards/return/manual Save/cold verified.
 [Evidence](evidence/floor1/g01e/potion-ready/README.md). No game edit/merge/current-

@@ -1,0 +1,90 @@
+{
+  "game_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "ROM_SHA256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "fresh_runner": "3f604ade37f84745f4a9f7a2831c90add4f42540",
+  "failed_seed_runner": "84541097c4bd923ab938736feebb1c237e311dba",
+  "repaired_field_host": "7d89fcddadc6032e27f339859fc0dabdf995dae5",
+  "patrol_runner": "a349825d19c4fa3ba1bf1c65c3063ea62cf20f22",
+  "readiness_checks": 29,
+  "field_setup_regression_checks": 7,
+  "successful_sessions": [
+    {
+      "name": "fresh-trial-save",
+      "assertions": 52,
+      "errors_bytes": 0
+    },
+    {
+      "name": "repaired-field-inputs-manual-save",
+      "assertions": 44,
+      "errors_bytes": 0
+    }
+  ],
+  "failed_sessions": [
+    {
+      "name": "field-menu-setup-gate",
+      "completed_assertions": 10,
+      "exit": 46,
+      "host_errors_bytes": 60,
+      "diagnosed": "task existed before running callback; repaired without battle replay"
+    },
+    {
+      "name": "fresh-input-current-patrol",
+      "completed_assertions": 34,
+      "exit": 44,
+      "host_errors_bytes": 65,
+      "diagnosed": "prespecified Guard turn4 semantic state diverged; stop before Potion, no retry"
+    }
+  ],
+  "normalized_preintervention_buttons_match": true,
+  "matched_button_pulses": 59,
+  "howler_win_verified_in_memory": true,
+  "guide_recovery_verified_in_memory": true,
+  "guard_win_verified": false,
+  "Potion_intervention_started": false,
+  "warden_started": false,
+  "target_reconstructed": false,
+  "target_cold_verified": false,
+  "durable_pending_save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "durable_pending_state": {
+    "map": [
+      35,
+      0
+    ],
+    "position": [
+      37,
+      31
+    ],
+    "levels": [
+      9,
+      9
+    ],
+    "XP": [
+      495,
+      805
+    ],
+    "healthy": true,
+    "PP": [
+      8,
+      40,
+      2,
+      40
+    ],
+    "Potion": 1,
+    "SCRAP": 2,
+    "trial_won": true,
+    "patrols_won": [
+      false,
+      false
+    ],
+    "prepared": false,
+    "boss_won": false,
+    "checkpoint": false
+  },
+  "legacy_originals_recovered": false,
+  "old_acceptance_transferred": false,
+  "old_remote_refs_unchanged": true,
+  "implemented": "recovery host/tooling/contract",
+  "compiled": "exact pinned game and hosts",
+  "runtime_verified": "partial recovery only",
+  "merged": false
+}

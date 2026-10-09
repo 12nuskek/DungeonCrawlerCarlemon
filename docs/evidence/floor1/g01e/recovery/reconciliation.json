@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-08",
+  "main": "b694da17928b93ea579f55d905017aa9f7619422",
+  "latest_checkpoint": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+  "prs": [
+    {
+      "number": 75,
+      "base": "main",
+      "base_sha": "b694da17928b93ea579f55d905017aa9f7619422",
+      "head": "task/floor1-g01e-live-migration",
+      "head_sha": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 77,
+      "base": "task/floor1-g01e-live-migration",
+      "base_sha": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "head": "task/floor1-g01e-feedback",
+      "head_sha": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 79,
+      "base": "task/floor1-g01e-feedback",
+      "base_sha": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "head": "task/floor1-g01e-navigation",
+      "head_sha": "91a4b79bfe7041060de560cd65b037322233047a",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 81,
+      "base": "task/floor1-g01e-navigation",
+      "base_sha": "91a4b79bfe7041060de560cd65b037322233047a",
+      "head": "task/floor1-g01e-optional",
+      "head_sha": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 83,
+      "base": "task/floor1-g01e-optional",
+      "base_sha": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "head": "task/floor1-g01e-staircase",
+      "head_sha": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 85,
+      "base": "task/floor1-g01e-staircase",
+      "base_sha": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "head": "task/floor1-g01e-sealed",
+      "head_sha": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 87,
+      "base": "task/floor1-g01e-sealed",
+      "base_sha": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "head": "task/floor1-g01e-potion",
+      "head_sha": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 89,
+      "base": "task/floor1-g01e-potion",
+      "base_sha": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "head": "task/floor1-g01e-potion-ready",
+      "head_sha": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "draft": true,
+      "merged": false
+    }
+  ],
+  "patrol_checkpoint_pr_triggered_workflow_runs": [],
+  "current_patrol_pr_found": false,
+  "recovery_pr_found_at_start": false,
+  "local_agent_skills_found": false,
+  "source_game": "c643f01c11ec68119b0347b107ee20115131debc",
+  "original_host": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+  "ROM_SHA256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "recovered": [
+    "Published Git commits, branch refs, accepted plan and docs",
+    "Published controllers, input routes, bounded verdicts and actual captures"
+  ],
+  "missing": [
+    "Original I01/corner/A01 ordinary legacy saves",
+    "Original pending ea719ffb76f510eabac88cbd345c87d7e21ce009dde0bfca9418ca0a1d3babc8 save",
+    "Original patrol-complete ordinary-copy and cold saves",
+    "Private build archives/raw runtime logs/exclusive claim files",
+    "Denied private datasets/keys/local unpushed ancestry"
+  ],
+  "legacy_gate": "Unavailable; fresh reconstructions cannot substitute for original input identity",
+  "old_task": "01a10f4b-596b-700b-b8ba-241e3ca2c000 terminal; not resumed",
+  "PR_triggered_CI_checked": [
+    "main",
+    "PR75",
+    "PR77",
+    "PR79",
+    "PR81",
+    "PR83",
+    "PR85",
+    "PR87",
+    "PR89",
+    "current-patrol"
+  ],
+  "all_checked_PR_triggered_runs_empty": true
+}

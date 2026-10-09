@@ -1,5 +1,13 @@
 # Full Floor 1 execution
 
+Replacement recovery 2026-10-08: Kurt approved replacement/ordinary replay at
+20:35UTC. Original task is terminal. Exact pinned game/tooling reproduced;
+fresh trial/field Save pass, then Guard semantic divergence stops before Potion.
+No target patrol-complete file or original legacy inputs recovered. Fresh files
+cannot restore original legacy acceptance. [Recovery evidence and next dependency](../evidence/floor1/g01e/recovery/README.md).
+Older statements about readable local originals describe the deleted environment.
+The complete accepted plan remains unchanged.
+
 Continuation update2026-10-08 02:01:39UTC: usage-meter prerequisite and the20%-
 remaining pause rule are withdrawn. Do not query the meter or ask for login;
 continue bounded Floor1 until the review package or user stop. Parent owns the
@@ -90,3 +98,13 @@ The prior failed controller execution and three original strategy failures remai
 preserved. No game change, merge/V01/full-route or newer-candidate gate claim.
 Parent review precedes further current-candidate combat direction; independent
 source/menu checks remain ready. Do not rerun the exclusive corrected execution.
+
+## Current-candidate patrol proof — 2026-10-08
+
+Currentc643/b025 independently passes the focused Howler→guide→Guard owned-Potion
+route and persistence:2 sessions/81 assertions,29 readiness checks. Source/save
+and timing differences were pinned before execution; historical pass was not
+transferred. [Evidence](../evidence/floor1/g01e/current-patrol/README.md). No game
+source change/broad merge/V01/full-route claim. Next prescribe current first-clear
+Warden→staircase/Save/cold from the new ordinary patrol-complete save. Reverse
+patrol order/full/finalT/human pacing remain pending; preserve old failures.

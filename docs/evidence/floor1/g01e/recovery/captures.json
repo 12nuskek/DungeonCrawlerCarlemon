@@ -1,0 +1,47 @@
+[
+  {
+    "file": "fresh-saved.png",
+    "SHA256": "887196182dee6fdc9d1a9541f1472ea36f7f0159aa69052dbde21ac233ddca95",
+    "source": "artifacts/floor1/recovery/runtime/fresh/saved.png",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "runner": "3f604ade37f84745f4a9f7a2831c90add4f42540",
+    "kind": "Actual unmodified 240x160 mGBA capture from new reconstruction"
+  },
+  {
+    "file": "pending-saved.png",
+    "SHA256": "33930909f10dc76f76d88047c4beeaf2fbead78cc8d27d655ef4ff72b770a76c",
+    "source": "artifacts/floor1/recovery/runtime-menu-repair/seed/saved.png",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "runner": "7d89fcddadc6032e27f339859fc0dabdf995dae5",
+    "kind": "Actual unmodified 240x160 mGBA capture from new reconstruction"
+  },
+  {
+    "file": "pending-cold.png",
+    "SHA256": "33930909f10dc76f76d88047c4beeaf2fbead78cc8d27d655ef4ff72b770a76c",
+    "source": "artifacts/floor1/recovery/runtime-menu-repair/patrol/cold.png",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "runner": "a349825d19c4fa3ba1bf1c65c3063ea62cf20f22",
+    "kind": "Actual unmodified 240x160 mGBA capture from new reconstruction"
+  },
+  {
+    "file": "divergent-decision.png",
+    "SHA256": "f75ede3433fbe4007a34e63beba156146e0e5536b634a7a2d1e4149de70208cf",
+    "source": "artifacts/floor1/recovery/runtime-menu-repair/patrol/decision-observed.png",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "runner": "a349825d19c4fa3ba1bf1c65c3063ea62cf20f22",
+    "kind": "Actual unmodified 240x160 mGBA capture from new reconstruction"
+  },
+  {
+    "file": "owned-field-potion.png",
+    "SHA256": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+    "source": "artifacts/floor1/recovery/runtime-menu-repair/seed/field-potion.png",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "runner": "7d89fcddadc6032e27f339859fc0dabdf995dae5",
+    "kind": "Actual unmodified 240x160 mGBA capture from new reconstruction"
+  }
+]

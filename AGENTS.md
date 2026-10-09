@@ -1,5 +1,16 @@
 # DungeonCrawlerCarlemon working contract
 
+Recovery authority — 2026-10-08 20:35 UTC: Kurt approved a replacement workspace
+and ordinary-gameplay reconstruction. Original task
+01a10f4b-596b-700b-b8ba-241e3ca2c000 is deleted/terminal; never resume it or create
+a task/schedule. Replacement is the sole writer. Read
+docs/evidence/floor1/g01e/recovery/README.md and the recovery contract first.
+Recovery stopped before Potion on a divergent Guard decision. The target file
+and original legacy inputs are unavailable. Do not rerun combat, relax assertions
+or start Warden before parent recovery review. Fresh files never substitute for
+original legacy acceptance. Historical claims about local raw artifacts describe
+the deleted workspace; published Git history and new outputs remain available.
+
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
 Current continuation authority: user update2026-10-08 02:01:39UTC withdraws

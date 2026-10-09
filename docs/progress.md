@@ -1,3 +1,96 @@
+Current replacement recovery checkpoint — 2026-10-08: **target blocked**.
+
+[Issue90](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/90) /
+[draft PR91](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/91), pushed,
+open/unmerged, stacked on the unchanged current-patrol branch. Evidence source
+291800f9f47918de671efed92650add0b3372344. New recovery saves/full logs are retained
+in private Library `DungeonCrawlerCarlemon-recovery-20261008.zip`, SHA256
+5c6d07c81bd71d91718e7fd3105a69a6684feba1771a0f1c0f24f664982eaaea.
+Exact supported recovery identity is in evidence/floor1/g01e/recovery/private-retention.json.
+
+Kurt authorised replacement/ordinary replay at 20:35 UTC. Original task
+01a10f4b-596b-700b-b8ba-241e3ca2c000 is terminal and was not resumed. Sole writer,
+branch task/floor1-g01e-recovery, base 72e08ed17afc69e28ef545bbbff383a434e90df5.
+Main b694da17928b93ea579f55d905017aa9f7619422 and every earlier remote ref are
+preserved. All eight drafts #75/77/79/81/83/85/87/89 remain open/unmerged.
+CI returned zero PR-triggered runs for main, all draft heads and patrol checkpoint.
+Original saves/private raw logs/archives/claims/denied ancestry are not recovered.
+Published source/routes/verdicts/captures and historical failed strategies remain.
+
+Fresh isolated game c643f01c11ec68119b0347b107ee20115131debc compiles to exact
+ROM b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+29 readiness plus seven field-setup regression checks pass. Fresh/trial/Save
+3f604ade: 52 pass. First field route 84541097: ten completed/exit46; diagnosed
+task-created-before-running-callback. Separate callback-gated field resume
+7d89fcdd: 44 pass/manual Save, no battle replay. Two successful sessions/96 checks.
+Fresh patrol a349825d: 34 completed/exit44. Howler won and guide recovered; all
+59 normalized prior choices match. Guard turn4 semantic state diverged before
+Potion. Both failed claims/logs/STOPs remain. No retry, policy or timing search.
+
+Latest durable new save c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f:
+Field37,31, restored levels9/9, XP495/805, PP8/40/2/40, Potion1/SCRAP2, trial won,
+both patrols/preparation/boss/checkpoint unset. Cold Continue observed at the start
+of the stopped patrol; its copy is unchanged. Howler victory was not saved.
+Target levels11/10/Potion0/bothpatrols file was not created. Original legacy gate
+remains unavailable; no old acceptance transfers to fresh files.
+[Recovery identities/evidence/limitations](evidence/floor1/g01e/recovery/README.md).
+
+Implemented recovery tooling/host; compiled exact game/hosts; partial runtime;
+unmerged. Parent recovery review blocks further execution and Warden. Future
+contract remains one unprepared trainer858 fortify attempt/30000frames, then actual
+first-clear stairs/reward/Save/cold, after reviewed recovery. Full/finalT/V01/Floor1
+pending. No new task/schedule, quota call, later floor/publicROM or merge.
+
+## Historical original-workspace CP checkpoint — published, inputs missing
+
+Current checkpoint — 2026-10-08: F1-G01e-CP current-candidate patrol route
+runtime verified. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-current-patrol`,
+basef8178113b42cdf14f5540ecd50268df5da8a947f (draft PR89 unchanged). Prespecified
+contractda2f9cd before execution. Actual tested hostc7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4;
+current compiled gamec643f01c11ec68119b0347b107ee20115131debc, exact loaded ROM
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a. Retained
+isolated compile reused; no new game build/source change. Rehashed archive and
+production ROM; four symbol/build inputs recovered atbuild-selected-w3yhnr9w.
+Addresses resolved from current ELF/object; engine diff against c643 passes.
+Eight source differences versus historical992/6c447 documented; same ordinary
+pending saveea719ffb…abc8, no injected/synthetic resource or state.
+
+29 readiness/negative/ack tests and final prepare-only host compile pass. One
+actual current execution plus cold,2 sessions/81 assertions (63+18), empty errors.
+Actual semantic decision observed at24673 exactly matches Carl3/36HP, Donut30/30,
+PP4/40/0/38, foes0/18, one Potion. All59 pre-intervention input pulses independently
+match history; the timestamp was not a current stop predicate. Real menu readiness
+and receiving context/Carl acknowledgements,20HP heal, consume1, unchanged PP;
+Howler then Guard wins/no incapacity, flag2136 after2137, guide return/re-entry,
+resolved repeat no battle/no duplicate XP, manual Save/cold at37,31 pass. Rewards:
+121+132XP each,360+320=680money, onlyPotion consumed/twoSCRAP retained. Original
+ordinary/read-only cold unchanged. Actual current guide text captured. Immediate
+HP-animation frame displays22; readback23 verified separately. No game assertion
+was relaxed, no divergent/failing current emulator execution or retimed retry.
+
+[Current evidence/commands/native captures](evidence/floor1/g01e/current-patrol/README.md).
+Private fullrun artifacts/floor1/current-patrol/runtime-n12mxgz8; final host
+prepare-edviuq03, earlier prepare-z2il9lrj. Separate exclusive current claim retained;
+do not rerun. Offline evidence checker rejects deliberately wrong runner identity,
+then exact tested runner passes; no emulator involved. Historical failedrun and
+claim, historical corrected80 checks/PR89 and all three original failed strategies
+stay preserved. Denied raw datasets/keys/c298ac7/996b947 ancestry local only. No
+active emulator/build; no usage-meter/new writer/task/workflow/scheduler/publicROM.
+Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation.
+
+Implemented host adaptation, host compiled, scoped current patrol runtime verified;
+unmerged. Older drafts75–89/mainb694da17928b93ea579f55d905017aa9f7619422 unchanged;
+CI0 runs. Historical acceptance is distinct; c643/b025 current patrol is now proved,
+but reverse-order combat, first-clear Warden/staircase, full fresh route/finalT/
+human pacing/V01/fullG01/Floor1 remain pending. No broad merge or rollout. Next
+dependency-ready action: prescribe current first-clear Warden→staircase/Save/cold
+from the newly controller-authored ordinary patrol-complete save, restored duo at
+37,31, Potion0/twoSCRAP. Preserve exact save identity and state; do not inherit
+boss/full acceptance. Complementary order/prepared-unprepared/full-route gates
+must still be completed before broad G01/V01 claims.
+
+## Preserved PR checkpoint
+
 Current checkpoint — 2026-10-08: F1-G01e-PR corrected Potion intervention
 runtime verified on the exact historical ROM.
 [Issue88](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/88) /

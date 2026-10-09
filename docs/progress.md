@@ -1,3 +1,29 @@
+Fresh-save recovery continuation — 2026-10-08: **target verified**, Warden unexecuted.
+
+[Issue #92](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/92) / [draft PR #93](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/93), open/unmerged, stacked on unchanged PR91.
+Evidence publication `68784e6b5400bf703cce52e25bbb4be95bd495b0`; tested host/runner remains `cc3845767959820ce6d4c2693a927fc1a24dd197`.
+
+Parent review authorised one separate fresh-input contract. Tested source
+`cc3845767959820ce6d4c2693a927fc1a24dd197`, exact c643 game/b025 ROM unchanged.
+One patrol replay and one cold process pass **199 assertions (121+78)**, empty
+errors; 49 compiled host checks. Same59 exact input/frame records and ordinary
+patrol route/cadence. Carl turn4 actual20/36→36/36: capped16HP heal, consume one
+owned Potion, unchanged PP; Howler then Guard wins with no incapacitation.
+Once-only XP121+132 each/money360+320, guide recovery, resolved repeats,
+manual Save/cold and unchanged cold bytes verified. New durable Save SHA256
+`026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a`:
+Field37,31, restored levels11/10, XP748/1058, HP38/38 and30/30, PP8/40/2/40,
+Potion0/SCRAP2, both patrols won, preparation/boss/checkpoint unset.
+New saves/complete logs retained in private Library. Historical contracts,
+all three strategy failures, both earlier recovery failures and original refs
+unchanged. Original legacy-input gate stays unavailable; no equivalence claim.
+Implemented/compiled/scoped runtime verified; unmerged. Next parent review of
+this recovery, then separately prescribe trainer858 unprepared fortify/30000
+frames plus actual first-clear/reward/Save/cold. Do not start Warden or replay.
+[Fresh-save evidence and exact identities](evidence/floor1/g01e/new-save-recovery/README.md).
+
+## Historical prior replacement recovery
+
 Current replacement recovery checkpoint — 2026-10-08: **target blocked**.
 
 [Issue90](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/90) /

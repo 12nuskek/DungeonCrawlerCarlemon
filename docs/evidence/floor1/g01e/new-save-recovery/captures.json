@@ -1,0 +1,142 @@
+[
+  {
+    "file": "patrol-decision-before.png",
+    "SHA256": "f75ede3433fbe4007a34e63beba156146e0e5536b634a7a2d1e4149de70208cf",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Turn4 Carl20/36, before intervention"
+  },
+  {
+    "file": "patrol-owned-potion-bag.png",
+    "SHA256": "2b3bfa20f38a2523bf81fcbaef22f8b3e99f96e52d6abc782abd89927eb4cced",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Actual owned Potion1, menu ready"
+  },
+  {
+    "file": "patrol-potion-recipient.png",
+    "SHA256": "e0f3e0092983f5ac04b7a8644b9506123e49d011bd596f93ffcc6c4fc405448b",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Actual Carl recipient acknowledgement, Carl20/36 and Donut16/30"
+  },
+  {
+    "file": "patrol-healed-battle.png",
+    "SHA256": "d8b69a5716d49c88d883fcf998240d10d28b4f4bd54a2ced0e2c244f4533f21e",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Returned battle Carl36/36 after actual16HP heal; PP unchanged"
+  },
+  {
+    "file": "patrol-battle-result.png",
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Guard patrol won after Howler"
+  },
+  {
+    "file": "patrol-guide-rest.png",
+    "SHA256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Guide recovery after Guard"
+  },
+  {
+    "file": "patrol-saved.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "f50cb05d49b839ee278e2621c5e20805cd65b7f5fe8090031fbc0166304a96d4",
+    "assertion": "Completed manual Save at Field37,31"
+  },
+  {
+    "file": "cold-cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "8e913352d182836b8abe6acdd61aa77e9f3e89ffadb7bc67c669b0e0a4cefc85",
+    "assertion": "Cold Continue from new manual Save"
+  },
+  {
+    "file": "cold-cold-guard-resolved.png",
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "8e913352d182836b8abe6acdd61aa77e9f3e89ffadb7bc67c669b0e0a4cefc85",
+    "assertion": "Cold resolved Guard; no battle/duplicate rewards"
+  },
+  {
+    "file": "cold-cold-howler-resolved.png",
+    "SHA256": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d",
+    "size": [
+      240,
+      160
+    ],
+    "runner": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+    "game": "c643f01c11ec68119b0347b107ee20115131debc",
+    "rom": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "host_sha256": "a3af0f882d95912304e5c3c8d537449f8b335930bf6a806244358fa395af2a12",
+    "route_sha256": "8e913352d182836b8abe6acdd61aa77e9f3e89ffadb7bc67c669b0e0a4cefc85",
+    "assertion": "Cold resolved Howler; no battle/duplicate rewards"
+  }
+]

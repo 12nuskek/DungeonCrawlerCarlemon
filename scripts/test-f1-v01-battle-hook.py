@@ -37,7 +37,7 @@ void RequestSpriteCopy(const u8 *,u8 *,u16);
 u8 GetBattlerSide(u8);u8 GetBattlerPosition(u8);
 #endif
 ''')
-    for h in ['battle.h','battle_anim.h','battle_util.h','sprite.h']:(out/h).write_text('#include "global.h"\n')
+    for h in ['battle.h','battle_anim.h','battle_setup.h','battle_util.h','sprite.h','util.h']:(out/h).write_text('#include "global.h"\n')
     for h in ['moves.h','species.h','trainers.h']:(out/'constants'/h).write_text((ROOT/'engine/include/constants'/h).read_text())
     (out/'cases.c').write_text('''#include "global.h"
 #include <stdio.h>

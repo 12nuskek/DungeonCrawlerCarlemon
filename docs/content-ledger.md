@@ -466,3 +466,26 @@ Encounter/reward budgets, numeric flags, coordinates, native staging and engine
 binding await F1-C01/G02/S01 and district production. Documentation only: not
 implemented, compiled or runtime tested, no captures. PR114 gameplay/legacy
 limitations and six baseline/four candidate totals remain unchanged.
+
+## F1-D6 Pumpworks drainage/service return — authored preparation only
+
+[Drainage consequence and service-return scene brief](floor1/pumpworks-drainage-scene-brief.md),
+prepared on accepted documentation checkpoint
+`2e4d0ba161b1e28406202d33afcd66ce8afd488c`.
+`F1-D6-DRAINAGE-ORIENT` supplies optional incomplete-state guidance;
+`F1-D6-DRAINAGE-RETURN` responds only to actual reviewed drainage completion.
+The scene reads symbolic progression and never grants it: both branch milestones
+still gate Pumpworks, drainage opens the Causeway route and persistent two-way
+Sluice service return, Commons stays a free refuge, Warrens stays optional and D9
+completion remains separate. Sluice's broken wheel is not repaired by this beat.
+
+Original Carl/Donut dialogue by Codex, invented connective geography within the
+Book1 opening ceiling; no quotation, verified chapter claim or new party member.
+The linked brief covers readiness, state-aware repeats, skipped/interrupted
+presentation, depleted/incapacitated recovery guidance and future routes in both
+branch orders with optional content skipped. No scene reward or paid/consumable
+recovery is proposed. Machinery, costs, encounter/reward budgets, flags/save fields,
+geometry/native staging and runtime/persistence proof await F1-C01/G02/S01 and
+district production. Documentation only: not implemented, compiled or runtime
+tested, no captures. Missing inputs and PR114 gameplay/legacy limitations remain;
+six baseline/four candidate execution totals are unchanged. No old entry is replaced.

@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "baselines": 6,
+    "candidates": 4
+  },
+  "original_nine_claims_unchanged": true,
+  "new_actual_claims": 1,
+  "new_baselines": 0,
+  "no_retries_or_poststop_stepping": true,
+  "no_source_route_policy_edits": true,
+  "old_archive_SHA256": "2002f5e41fbaa23fce16f6765410af8373568099fb0bcba20d7493d1718535bd",
+  "all_original_PPMS_kept": true,
+  "candidate_PPMS": 8667,
+  "completed_visual_PPMS": 8536,
+  "input_output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "fresh_durable_delivery": false,
+  "Library_transfer_attempts": 0,
+  "private_trace_Save_ROM_keys_symbols_excluded": true,
+  "redacted_key_bearing_control_lines": 21,
+  "full_replay_log_SHA256": "9f657fdfbd21c35ad9975f2e05322232b2c0d0685b68de1c8aa68c4dacb7e90a"
+}

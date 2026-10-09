@@ -1,0 +1,14 @@
+{
+  "maximum_startup_chunks": 2044,
+  "maximum_active_chunks": 13,
+  "startup_limit": 2046,
+  "active_limit": 250,
+  "summary_limit": 38045,
+  "actual_summary_chunks": 10581,
+  "first_terminal_reason": 117,
+  "FINISH_present": false,
+  "terminal_afterwards": false,
+  "runtime_log_says_first_native_failure": true,
+  "internal_runner_preflight_passed_before_Save_claim_game_by_frozen_control_flow": true,
+  "internal_preflight_available_bytes_not_separately_logged": true
+}

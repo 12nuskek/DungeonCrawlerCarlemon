@@ -1,0 +1,1636 @@
+{
+  "candidate_retained_records": 140,
+  "baseline_comparison_records": 200,
+  "candidate_selected_events": [
+    {
+      "index": 0,
+      "event": 1,
+      "point_mask": 128,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80008ae",
+      "CPSR": "0x3f",
+      "cycles": 677,
+      "next_event": 851,
+      "time32": 2970925906,
+      "global_time64": 2970925906,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "event": 1,
+      "point_mask": 256,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80008ba",
+      "CPSR": "0x3f",
+      "cycles": 707,
+      "next_event": 851,
+      "time32": 2970925936,
+      "global_time64": 2970925936,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10578,
+      "rawPC": "0x80008c8",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 1,
+      "time32": 2971078003,
+      "global_time64": 2971078003,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10578,
+      "rawPC": "0x80008c8",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 1,
+      "time32": 2971078003,
+      "global_time64": 2971078003,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 36,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 383,
+      "next_event": 542,
+      "time32": 2971137889,
+      "global_time64": 2971137889,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 38,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 389,
+      "next_event": 542,
+      "time32": 2971137895,
+      "global_time64": 2971137895,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 40,
+      "event": 1,
+      "point_mask": 512,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80008d4",
+      "CPSR": "0x2000003f",
+      "cycles": 26,
+      "next_event": 112,
+      "time32": 2971137962,
+      "global_time64": 2971137962,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 42,
+      "event": 1,
+      "point_mask": 1,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x800042c",
+      "CPSR": "0x2000003f",
+      "cycles": 42,
+      "next_event": 112,
+      "time32": 2971137978,
+      "global_time64": 2971137978,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:AgbMain"
+        ]
+      ]
+    },
+    {
+      "index": 48,
+      "event": 1,
+      "point_mask": 8,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x800051e",
+      "CPSR": "0x6000003f",
+      "cycles": 337,
+      "next_event": 700,
+      "time32": 2971138709,
+      "global_time64": 2971138709,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 50,
+      "event": 1,
+      "point_mask": 2097152,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x8039e8e",
+      "CPSR": "0x2000003f",
+      "cycles": 374,
+      "next_event": 700,
+      "time32": 2971138746,
+      "global_time64": 2971138746,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:battle_main.o:BattleMainCB1"
+        ]
+      ]
+    },
+    {
+      "index": 62,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10579,
+      "rawPC": "0x8004f84",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971358893,
+      "global_time64": 2971358893,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:CopyGlyphToWindow"
+        ]
+      ]
+    },
+    {
+      "index": 63,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10579,
+      "rawPC": "0x8004f84",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971358893,
+      "global_time64": 2971358893,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:CopyGlyphToWindow"
+        ]
+      ]
+    },
+    {
+      "index": 84,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10579,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 64,
+      "next_event": 176,
+      "time32": 2971420560,
+      "global_time64": 2971420560,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 86,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10579,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 70,
+      "next_event": 176,
+      "time32": 2971420566,
+      "global_time64": 2971420566,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 98,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10580,
+      "rawPC": "0x806a126",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 3,
+      "time32": 2971639793,
+      "global_time64": 2971639793,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:pokemon.o:GetSubstruct"
+        ]
+      ]
+    },
+    {
+      "index": 99,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10580,
+      "rawPC": "0x806a126",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 3,
+      "time32": 2971639793,
+      "global_time64": 2971639793,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:pokemon.o:GetSubstruct"
+        ]
+      ]
+    },
+    {
+      "index": 120,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 155,
+      "next_event": 702,
+      "time32": 2971769309,
+      "global_time64": 2971769309,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 122,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 161,
+      "next_event": 702,
+      "time32": 2971769315,
+      "global_time64": 2971769315,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 124,
+      "event": 1,
+      "point_mask": 16,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x800052c",
+      "CPSR": "0x6000003f",
+      "cycles": 353,
+      "next_event": 613,
+      "time32": 2971870921,
+      "global_time64": 2971870921,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 126,
+      "event": 1,
+      "point_mask": 4194304,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80383ba",
+      "CPSR": "0x2000003f",
+      "cycles": 377,
+      "next_event": 613,
+      "time32": 2971870945,
+      "global_time64": 2971870945,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "G:BattleMainCB2"
+        ]
+      ]
+    },
+    {
+      "index": 138,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10581,
+      "rawPC": "0x80047ea",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 4,
+      "time32": 2971920688,
+      "global_time64": 2971920688,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "G:RunTextPrinters"
+        ]
+      ]
+    },
+    {
+      "index": 139,
+      "event": 8,
+      "point_mask": null,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10581,
+      "rawPC": "0x80047ea",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 4,
+      "time32": 2971920688,
+      "global_time64": 2971920688,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "G:RunTextPrinters"
+        ]
+      ]
+    }
+  ],
+  "baseline_selected_events": [
+    {
+      "index": 20,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 48,
+      "next_event": 223,
+      "time32": 2970872078,
+      "global_time64": 2970872078,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10294,
+      "dispatch_iteration": 10294,
+      "CB1_iteration": 8915,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 22,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 54,
+      "next_event": 223,
+      "time32": 2970872084,
+      "global_time64": 2970872084,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10294,
+      "dispatch_iteration": 10294,
+      "CB1_iteration": 8915,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 24,
+      "event": 1,
+      "point_mask": 512,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80008d4",
+      "CPSR": "0x2000003f",
+      "cycles": 12,
+      "next_event": 128,
+      "time32": 2970872137,
+      "global_time64": 2970872137,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10294,
+      "dispatch_iteration": 10294,
+      "CB1_iteration": 8915,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 26,
+      "event": 1,
+      "point_mask": 1,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x800042c",
+      "CPSR": "0x2000003f",
+      "cycles": 28,
+      "next_event": 128,
+      "time32": 2970872153,
+      "global_time64": 2970872153,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10294,
+      "dispatch_iteration": 10294,
+      "CB1_iteration": 8915,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "G:AgbMain"
+        ]
+      ]
+    },
+    {
+      "index": 32,
+      "event": 1,
+      "point_mask": 8,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x800051e",
+      "CPSR": "0x6000003f",
+      "cycles": 70,
+      "next_event": 429,
+      "time32": 2970872902,
+      "global_time64": 2970872902,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8915,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 34,
+      "event": 1,
+      "point_mask": 2097152,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x8039e8a",
+      "CPSR": "0x2000003f",
+      "cycles": 107,
+      "next_event": 429,
+      "time32": 2970872939,
+      "global_time64": 2970872939,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:battle_main.o:BattleMainCB1"
+        ]
+      ]
+    },
+    {
+      "index": 36,
+      "event": 1,
+      "point_mask": 16,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x800052c",
+      "CPSR": "0x6000003f",
+      "cycles": 411,
+      "next_event": 833,
+      "time32": 2970875303,
+      "global_time64": 2970875303,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10294,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 38,
+      "event": 1,
+      "point_mask": 4194304,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80383ba",
+      "CPSR": "0x2000003f",
+      "cycles": 435,
+      "next_event": 833,
+      "time32": 2970875327,
+      "global_time64": 2970875327,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:BattleMainCB2"
+        ]
+      ]
+    },
+    {
+      "index": 40,
+      "event": 1,
+      "point_mask": 32,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x8000536",
+      "CPSR": "0x6000003f",
+      "cycles": 580,
+      "next_event": 765,
+      "time32": 2970923588,
+      "global_time64": 2970923588,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 42,
+      "event": 1,
+      "point_mask": 64,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x800053a",
+      "CPSR": "0x6000003f",
+      "cycles": 584,
+      "next_event": 765,
+      "time32": 2970923592,
+      "global_time64": 2970923592,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 48,
+      "event": 1,
+      "point_mask": 128,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80008ae",
+      "CPSR": "0x3f",
+      "cycles": 87,
+      "next_event": 194,
+      "time32": 2970923890,
+      "global_time64": 2970923890,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 50,
+      "event": 1,
+      "point_mask": 256,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10577,
+      "rawPC": "0x80008ba",
+      "CPSR": "0x3f",
+      "cycles": 117,
+      "next_event": 194,
+      "time32": 2970923920,
+      "global_time64": 2970923920,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 62,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10578,
+      "rawPC": "0x80008c8",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 1,
+      "time32": 2971078003,
+      "global_time64": 2971078003,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 63,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10578,
+      "visual_epoch": 8533,
+      "video_counter": 10578,
+      "rawPC": "0x80008c8",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 1,
+      "time32": 2971078003,
+      "global_time64": 2971078003,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 84,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 383,
+      "next_event": 542,
+      "time32": 2971137889,
+      "global_time64": 2971137889,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 86,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 389,
+      "next_event": 542,
+      "time32": 2971137895,
+      "global_time64": 2971137895,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 88,
+      "event": 1,
+      "point_mask": 512,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x80008d4",
+      "CPSR": "0x2000003f",
+      "cycles": 26,
+      "next_event": 112,
+      "time32": 2971137962,
+      "global_time64": 2971137962,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 90,
+      "event": 1,
+      "point_mask": 1,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x800042c",
+      "CPSR": "0x2000003f",
+      "cycles": 42,
+      "next_event": 112,
+      "time32": 2971137978,
+      "global_time64": 2971137978,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10295,
+      "dispatch_iteration": 10295,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:AgbMain"
+        ]
+      ]
+    },
+    {
+      "index": 96,
+      "event": 1,
+      "point_mask": 8,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x800051e",
+      "CPSR": "0x6000003f",
+      "cycles": 337,
+      "next_event": 700,
+      "time32": 2971138709,
+      "global_time64": 2971138709,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8916,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 98,
+      "event": 1,
+      "point_mask": 2097152,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10578,
+      "rawPC": "0x8039e8a",
+      "CPSR": "0x2000003f",
+      "cycles": 374,
+      "next_event": 700,
+      "time32": 2971138746,
+      "global_time64": 2971138746,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:battle_main.o:BattleMainCB1"
+        ]
+      ]
+    },
+    {
+      "index": 110,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10579,
+      "rawPC": "0x8004f84",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971358893,
+      "global_time64": 2971358893,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:CopyGlyphToWindow"
+        ]
+      ]
+    },
+    {
+      "index": 111,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10579,
+      "visual_epoch": 8534,
+      "video_counter": 10579,
+      "rawPC": "0x8004f84",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971358893,
+      "global_time64": 2971358893,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "G:CopyGlyphToWindow"
+        ]
+      ]
+    },
+    {
+      "index": 132,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10579,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 64,
+      "next_event": 176,
+      "time32": 2971420560,
+      "global_time64": 2971420560,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 134,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10579,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 70,
+      "next_event": 176,
+      "time32": 2971420566,
+      "global_time64": 2971420566,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 146,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10580,
+      "rawPC": "0x806a10e",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 3,
+      "time32": 2971639793,
+      "global_time64": 2971639793,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:pokemon.o:GetSubstruct"
+        ]
+      ]
+    },
+    {
+      "index": 147,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10580,
+      "visual_epoch": 8535,
+      "video_counter": 10580,
+      "rawPC": "0x806a10e",
+      "CPSR": "0x3f",
+      "cycles": 0,
+      "next_event": 3,
+      "time32": 2971639793,
+      "global_time64": 2971639793,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:pokemon.o:GetSubstruct"
+        ]
+      ]
+    },
+    {
+      "index": 168,
+      "event": 1,
+      "point_mask": 4096,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80007d6",
+      "CPSR": "0x3f",
+      "cycles": 155,
+      "next_event": 702,
+      "time32": 2971769309,
+      "global_time64": 2971769309,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 170,
+      "event": 1,
+      "point_mask": 8192,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80007dc",
+      "CPSR": "0x3f",
+      "cycles": 161,
+      "next_event": 702,
+      "time32": 2971769315,
+      "global_time64": 2971769315,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:VBlankIntr"
+        ]
+      ]
+    },
+    {
+      "index": 172,
+      "event": 1,
+      "point_mask": 16,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x800052c",
+      "CPSR": "0x6000003f",
+      "cycles": 353,
+      "next_event": 613,
+      "time32": 2971870921,
+      "global_time64": 2971870921,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10295,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 174,
+      "event": 1,
+      "point_mask": 4194304,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80383ba",
+      "CPSR": "0x2000003f",
+      "cycles": 377,
+      "next_event": 613,
+      "time32": 2971870945,
+      "global_time64": 2971870945,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 0,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "G:BattleMainCB2"
+        ]
+      ]
+    },
+    {
+      "index": 184,
+      "event": 1,
+      "point_mask": 32,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x8000536",
+      "CPSR": "0x6000003f",
+      "cycles": 12,
+      "next_event": 16,
+      "time32": 2971919469,
+      "global_time64": 2971919469,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 186,
+      "event": 1,
+      "point_mask": 64,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x800053a",
+      "CPSR": "0x6000003f",
+      "cycles": 0,
+      "next_event": 911,
+      "time32": 2971919473,
+      "global_time64": 2971919473,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:CallCallbacks"
+        ]
+      ]
+    },
+    {
+      "index": 192,
+      "event": 1,
+      "point_mask": 128,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80008ae",
+      "CPSR": "0x3f",
+      "cycles": 298,
+      "next_event": 911,
+      "time32": 2971919771,
+      "global_time64": 2971919771,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 194,
+      "event": 1,
+      "point_mask": 256,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10580,
+      "rawPC": "0x80008ba",
+      "CPSR": "0x3f",
+      "cycles": 328,
+      "next_event": 911,
+      "time32": 2971919801,
+      "global_time64": 2971919801,
+      "main_flag": 5,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 198,
+      "event": 5,
+      "point_mask": null,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10581,
+      "rawPC": "0x80008ce",
+      "CPSR": "0x4000003f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971920685,
+      "global_time64": 2971920685,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    },
+    {
+      "index": 199,
+      "event": 6,
+      "point_mask": null,
+      "input_epoch": 10581,
+      "visual_epoch": 8536,
+      "video_counter": 10581,
+      "rawPC": "0x80008ce",
+      "CPSR": "0x4000003f",
+      "cycles": 0,
+      "next_event": 7,
+      "time32": 2971920685,
+      "global_time64": 2971920685,
+      "main_flag": 4,
+      "bios_flag": 5,
+      "copy_count": 0,
+      "copy_armed": 1,
+      "copy_bytes": 0,
+      "read_iteration": 10296,
+      "dispatch_iteration": 10296,
+      "CB1_iteration": 8917,
+      "CB2_iteration": 10296,
+      "function": [
+        [
+          "L:main.o:WaitForVBlank"
+        ]
+      ]
+    }
+  ],
+  "baseline_scope": "Actual4e295249 source4938927 instrumentation; partial through13956. Exact original f3 typed reference supplies accepted metadata, not missing old timing.",
+  "no_new_CPU_instructions": true,
+  "candidate_ELF_SHA256": "f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218",
+  "baseline_ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066"
+}

@@ -1,0 +1,11 @@
+{
+  "base": "fa8fcf2b964271dc4999fbdcda09feace61730bc",
+  "complete_prior_bodies_preserved": true,
+  "old_SHA256": {
+    "AGENTS.md": "898d8366f4bf62438588b592c01b3c9add74b41a3236a4d9d5147f621b793a02",
+    "docs/progress.md": "3081c8faeef362d6d456f8f30c2405614e6c17de0235a07e1822f3dd2420807a",
+    "docs/backlog.md": "2df9c6a4d7b36b030ad6bb7d8f80a453da95f6b5bd056027e5f8df375a7e713f",
+    "docs/floor1/v01-entry-plan.md": "b5fde7089f036298939b2b665ec90efc0462f37a81872e941a0d7e79d74776b6"
+  },
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27"
+}

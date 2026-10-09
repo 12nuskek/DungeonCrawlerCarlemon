@@ -1,0 +1,14 @@
+{
+  "parent_review_accepts": "fa8fcf2b /214a10a2",
+  "execution_limit": 1,
+  "baseline_restart_allowed": false,
+  "candidate_only": true,
+  "start_counts": {
+    "baseline": 6,
+    "candidate": 3
+  },
+  "source": "fa8fcf2b964271dc4999fbdcda09feace61730bc",
+  "stop_first_failure": true,
+  "source_edits_or_retry_allowed": false,
+  "Library_retry_allowed": false
+}

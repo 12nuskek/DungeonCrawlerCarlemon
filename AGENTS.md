@@ -1,3 +1,12 @@
+Current registered candidate authority — accepted corrected baseline640be782
+64 assertions/7924; original candidate STOP97/61/7924 retained. Donut north stale
+because new graphics animation table omitted native step registry; actual compiled
+native lookup/SetStepAnim reproduces omission, corrected registry cases pass.
+ONE standard-metadata entry only; freeze new build and ONE separately claimed
+candidate against existing accepted baseline under v01-overworld-registered
+contract. All game/visual gates and153-line route/cadence unchanged, no baseline
+repetition/search/automatic retry. Preserve both failures; stop further divergence.
+
 Current character correction — original baseline2a76829f STOP97/61/7924
 preserved; game candidate never executed. Source diagnosis: Sprite.hFlip is the
 base override, effective mirrored direction lives in OAM.attr1bit12. Four actual

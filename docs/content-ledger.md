@@ -576,3 +576,27 @@ geometry/native assets and implementation await F1-C01/G02/S01 and production.
 Documentation only: not implemented, compiled or runtime tested; no captures.
 Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
 remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D9 victory/descent acknowledgement — authored preparation only
+
+[Local ending narrative brief](floor1/d9-victory-descent-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`48249c2bc4ef97fa1efcc9f5f0cf519646ab5c5e`. `F1-D9-INSPECT` explains the unresolved
+challenge without starting combat; `F1-D9-VICTORY-ACK` acknowledges only genuine
+D9 victory without starting descent; `F1-D9-DESCENT-ACK` follows only the actual
+reviewed descent/full-floor outcome. D1 Warden opening completion, D9 victory
+and full-floor completion retain separate meanings. Dialogue grants neither new
+outcome, performs no transaction and gates no outcome, retreat or refuge service.
+
+Original optional Carl/Donut wording within the Book1 opening ceiling; permanent
+duo, no quote, verified canon claim or later-floor scene. Current-state cues,
+interrupted/skipped acknowledgements, stale-text suppression and resolved repeats
+have local future cases; existing Causeway approach/recovery tests are linked.
+Combat, rewards, numeric IDs, completion transactions, geometry/native staging
+and implementation remain pending F1-C01/G02/S01 and production. Documentation
+only: not implemented, compiled or runtime tested; no captures. Missing inputs,
+historical failures/controllers and PR114 limits remain; six baseline/four
+candidate totals unchanged. No old entry is replaced. This completes useful
+independent district narrative coverage in the authorized preparation sequence,
+not playable district or full-floor acceptance; further work needs dependency
+decisions and parent review rather than redundant briefs.

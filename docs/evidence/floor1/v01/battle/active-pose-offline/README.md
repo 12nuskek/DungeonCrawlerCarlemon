@@ -1,4 +1,8 @@
-# Offline active-pose correction — environment blocked
+# Offline active-pose correction
+
+Current checkpoint: implementation source `9c83611e8e9b61d55388c18496c361d3362e462e` is committed and pushed to existing draft PR114. The same selected workspace retained the implementation, fixtures, completed synthetic checks and isolated build through the transport interruption. See [implementation and remaining gates](implementation.md), [exact build identities](build-identity.json), [equivalence results](equivalence-result.json) and [synthetic costs](cost-result.json). Implemented, compiled and tested offline; unmerged and unexecuted in gameplay. Counts remain six baselines/four candidates.
+
+## Historical environment blocker at 6d6a80aa
 
 2026-10-09. Parent accepted b466f486/actual STOP117 and authorised one bounded active-pose mask implementation, offline equivalence/cost tests and pinned compilation. **No source implementation, compilation or tests completed in this increment. No gameplay preparation/execution.** Counts remain six baselines/four candidates. Existing draftPR114 stays unmerged.
 

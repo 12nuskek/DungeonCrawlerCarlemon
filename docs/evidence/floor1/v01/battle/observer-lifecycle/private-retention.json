@@ -1,0 +1,15 @@
+{
+  "archive": "DungeonCrawlerCarlemon-V01-offline-retirement-contract-20261009.tar.xz",
+  "bytes": 40400,
+  "SHA256": "8da33ea672cce3b6e6452238072aaa16ae4cbfe41219376510dbe1d7627a259e",
+  "entries": 66,
+  "byte_verified_entries": 66,
+  "frozen_source": "a89899c7d84d815c7f4ac4b9273c48aceb220c3b",
+  "emulator_frames": 0,
+  "new_Save_files": 0,
+  "exclusions": "ROM/ELF/executables/saves/.bin/raw state/key/VRAM/complete symbol datasets; earlier runtime archive remains separately retained",
+  "supported_private_Library_confirmed": true,
+  "local_identity_persisted": true,
+  "contains": "Frozen observer/test/contract source, full generated host C, safe source review/results/compile logs and retained offline cases including initial expectation failure; zero runtime captures or saves",
+  "prior_runtime_archive": "5999176 bytes,15174 entries, SHA2568e4653f960e6ed828f01d9d07845315d4c8e9a952c7415df700d358fccdf288e; existing ordinary Save/logs/captures retained separately"
+}

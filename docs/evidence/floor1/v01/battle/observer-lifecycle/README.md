@@ -1,7 +1,8 @@
 # Offline lifecycle checkpoint for PR114
 
 **Implemented, offline tested and host compiled; zero emulator frames; draft
-unmerged.** Parent review of this contract is the next dependency. No fresh
+unmerged.** Frozen implementation source `a89899c7d84d815c7f4ac4b9273c48aceb220c3b`;
+parent review of this contract is the next dependency. No fresh
 execution pair or automatic retry is authorised by this checkpoint.
 
 The observer now qualifies ACTIVE → RETIRING → FIELD, keeps live ownership and
@@ -15,7 +16,8 @@ proof. Engine/route/controller/assets/bounds remain unchanged.
 [11 scoped lifecycle functions in both pinned ELF builds](lifecycle-functions.json) ·
 [Offline result](offline-result.json) · [Complete fixture log](offline-observer.log) ·
 [Host and build identities](compile-identity.json) ·
-[Actual history preservation](preservation.json).
+[Actual history preservation](preservation.json) ·
+[Frozen source](frozen-checkpoint.json) · [Confirmed private retention](private-retention.json).
 
 The full native path was reviewed from trainer savedCallback through fast fade,
 graphics/resources free, native no-evolution loop, ReturnFromBattle, trainer end,
@@ -68,3 +70,8 @@ actual logs/captures; this increment introduces no new Save or runtime capture.
 Denied raw datasets/keys/.bin/complete symbols/executables/ROM/ELF stay outside
 uploads. No candidate pose/HUD/warning/budget/matched-control/field-return,
 first-clear, C01/human-pacing, legacy or full-floor acceptance is claimed.
+
+Supported private Library retained the new offline package:40400 bytes,66
+byte-verified entries, SHA256 `8da33ea672cce3b6e6452238072aaa16ae4cbfe41219376510dbe1d7627a259e`.
+It contains frozen source/safe offline logs and cases, including the initial
+fixture expectation failure, and no Saves/runtime captures/denied datasets.

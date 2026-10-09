@@ -80,3 +80,13 @@ Bag fade prevented healing proof. Combat stopped; no retimed retry. See
 [evidence](../evidence/floor1/g01e/potion/README.md) and [live backlog](backlog.md).
 Independent source/menu audits remain ready. Full/first-clear/finalT/V01 and newer
 candidate combat remain pending; no game change, merge or rollout is claimed.
+
+## Corrected controller intervention — 2026-10-08
+
+The specifically authorised readiness repair passes29 host checks and2 historical
+runtime sessions/80 assertions. One owned Potion actually heals20HP, Guard wins
+after Howler, and XP/rewards/manual Save/cold pass. [Evidence](../evidence/floor1/g01e/potion-ready/README.md).
+The prior failed controller execution and three original strategy failures remain
+preserved. No game change, merge/V01/full-route or newer-candidate gate claim.
+Parent review precedes further current-candidate combat direction; independent
+source/menu checks remain ready. Do not rerun the exclusive corrected execution.

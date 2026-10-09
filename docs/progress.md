@@ -1,3 +1,50 @@
+Current checkpoint — 2026-10-08: F1-G01e-PR corrected Potion intervention
+runtime verified on the exact historical ROM.
+[Issue88](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/88) /
+[draft PR89](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/89), pushed and
+unmerged; evidence package17158ef9abe27788450ee098c20ad5cc3b227cb5. Sole writer /workspace/dcc-feedback,
+`task/floor1-g01e-potion-ready`, base00a31be5d1622308a6d02c4fcce165e1d581b710
+(draft PR87 unchanged). Repair contract9890144 before execution; actual tested
+runnerdb085577a8866fa272f31ea2ab5869f00fbd7bd2. No game edit or new game compile.
+Historical compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, exact ROM
+6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb reused.
+
+29 compiled readiness/negative/acknowledgement tests and prepare-only host compile
+pass before emulator use. Actual fade/task readiness and receiving context/Carl
+menu acknowledgements replace premature A. One corrected combat execution, plus
+cold verification:2 sessions/80 assertions (62+18), both error logs empty. Every59
+pre-intervention battle input matches the original failure; frame24673/native
+pixels/turn4/Carl3HP/onePotion exact. Real Potion heals20HP (3→23), consumes1→0,
+leaves PP4/40/0/38 unchanged; original battle choices resume. Howler then Guard
+wins, Guard2136 after Howler2137, no incapacitation; map return/guide/re-entry,
+repeat no-battle/no duplicate XP, actual manual Save/cold at37,31 pass.
+
+Read-only reward validation:121+132=253XP per crawler, no repeat/cold duplication;
+actual save money increase360+320=680, only the one Potion consumed, two SCRAP
+preserved. Ordinary original/read-only cold unchanged. Route/Save/cold source after
+`lines` exactly matches PR87 by text/AST. Fresh GNU14.2.0 Wall/Wextra/Werror host,
+mGBA0.10.5. [Bounded evidence/native captures/commands](evidence/floor1/g01e/potion-ready/README.md).
+Immediate healed-party image renders22/36 during animation; readback23 verified
+separately. Do not claim the screenshot alone proves healing.
+
+Local full correctedrun artifacts/floor1/potion-ready/runtime-k5b3n5vy;
+prepare-wieate4m. Separate exclusive corrected execution claim retained. Prior
+failedrun artifacts/floor1/potion/runtime-_16gl_zj and claim unchanged; three
+original strategy failures preserved, no reset. Denied diagnostics/keys/dumps/
+c298ac7/996b947 stay local and outside this branch's ancestry. No emulator/build
+running. Parent explicitly authorised this one controller repair/replay; do not
+repeat it. Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns sole
+continuation; no new writer/task/scheduler/quota call/publicROM.
+
+Implemented host repair, host compiled and scoped historical runtime verified;
+not merged. PR87/85/83/81/79/77/75 preserved draft/unmerged; mainb694da17928b93ea579f55d905017aa9f7619422 unchanged. Newerc643/b025 combat, first-clear/full/finalT/
+human pacing/V01/full Floor1 remain pending. No rollout/full-route claim. Next:
+parent review exact historical intervention evidence, then focused instruction
+for current-candidate combat verification; independent no-collection source and
+ordinary menu/summary audits remain ready. Do not transfer acceptance across ROMs.
+
+## Preserved PT checkpoint
+
 Current checkpoint — 2026-10-08: F1-G01e-PT single authorised Potion test failed;
 combat stopped. [Issue86](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/86) /
 [draft PR87](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/87), pushed and

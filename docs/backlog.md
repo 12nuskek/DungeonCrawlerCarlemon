@@ -3,7 +3,15 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current priority result: F1-G01e-PT failed its single authorised test; combat
+Current focused result: F1-G01e-PR readiness repair and ONE corrected historical
+Potion replay pass; issue88 / draft PR89 pushed and unmerged.29 host checks,2 runtime sessions/80 assertions; real20HP heal/
+one consumption, Howler→Guard wins, XP/rewards/return/manual Save/cold verified.
+[Evidence](evidence/floor1/g01e/potion-ready/README.md). No game edit/merge/current-
+candidate combat/V01/full-route claim. Older failure/three strategies preserved.
+Next: parent review and focused current-candidate combat direction; independent
+source/menu audits remain ready. Do not rerun the one corrected execution.
+
+Preserved prior result: F1-G01e-PT failed its single authorised test; combat
 stopped; issue86 / draft PR87 pushed, unmerged. Exact59-input prefix/Carl3HP/ownedPotion checks passed, but the controller
 pressed A before Bag fade readiness and reached its bound (exit32). Heal/use/Guard
 win/XP/Save/cold remain pending. [Evidence](evidence/floor1/g01e/potion/README.md).

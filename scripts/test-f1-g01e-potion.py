@@ -28,13 +28,14 @@ engine = retained / 'live-oy70wecu/source/engine'
 diag = retained / 'guard-diagnosis-a9buq1t_/howler-first'
 files = dict(rom=engine / 'pokeemerald.gba', save=a.original_save.resolve(), route=diag / 'input.route', observer=retained / 'ordinary-24wjwxed/observer.c')
 for name, path in files.items(): assert sha(path) == IDENTITIES[name], ('identity', name)
-parent = ROOT / 'artifacts/floor1/potion'
+parent = ROOT / 'artifacts/floor1/potion-ready'
+subprocess.run(['python3',str(ROOT/'scripts/test-potion-menu-readiness.py')],check=True)
 parent.mkdir(parents=True, exist_ok=True)
 out = Path(tempfile.mkdtemp(prefix='prepare-' if a.prepare_only else 'runtime-', dir=parent))
 print('Evidence:', out, flush=True)
 # Claim the one actual execution before constructing the host. A failure never permits a retry.
 if not a.prepare_only:
-    with (parent / 'one-execution-claimed.json').open('x') as f:
+    with (parent / 'one-corrected-execution-claimed.json').open('x') as f:
         json.dump(dict(runner=head, output=str(out), identities=IDENTITIES), f, indent=2)
 sym = out / 'game.sym'
 with sym.open('w') as f:
@@ -59,12 +60,7 @@ static unsigned owned_potions(struct mCore *core, unsigned pockets, unsigned sav
     }
     return quantity;
 }
-static int active_task(struct mCore *core, unsigned tasks, unsigned callback)
-{
-    for (unsigned i=0;i<16;i++)
-        if (core->busRead8(core,tasks+40*i+4) && (core->busRead32(core,tasks+40*i)&~1u)==callback) return 1;
-    return 0;
-}
+''' + (ROOT/'scripts/floor1/potion-menu-readiness.h').read_text() + r'''
 int main(int argc, char **argv)''')
 code = replace_once(code, '    char type, symbol[128];', '    unsigned tasks=0, partyMenu=0, bagInput=0, contextInput=0, partyInput=0, restoredText=0, closeText=0, battleMain=0, selectedItem=0;\n    char type, symbol[128];')
 code = replace_once(code, '        if (!strcmp(symbol,"CB2_Overworld")) overworld=addr;', '''        if (!strcmp(symbol,"gTasks")) tasks=addr;
@@ -77,7 +73,7 @@ code = replace_once(code, '        if (!strcmp(symbol,"CB2_Overworld")) overworl
         if (!strcmp(symbol,"BattleMainCB2")) battleMain=addr;
         if (!strcmp(symbol,"gSpecialVar_ItemId")) selectedItem=addr;
         if (!strcmp(symbol,"CB2_Overworld")) overworld=addr;''')
-code = replace_once(code, '    int result=0;\n    unsigned measuring=', '    int result=0;\n    unsigned potionStage=0, healed=0, noBattleMonitoring=0, sawBattle=0, xpAnchor[6]={0}, haveXp=0;\n    unsigned measuring=')
+code = replace_once(code, '    int result=0;\n    unsigned measuring=', '    int result=0;\n    unsigned potionStage=0, pendingContext=0, pendingRecipient=0, healed=0, noBattleMonitoring=0, sawBattle=0, xpAnchor[6]={0}, haveXp=0;\n    unsigned measuring=')
 point = '        if (!strcmp(line,"quit\\n")) break;'
 code = replace_once(code, point, point + r'''
         if (!strcmp(line,"xp remember\n") || !strcmp(line,"xp same\n")) {
@@ -119,24 +115,36 @@ code = replace_once(code, anchor, r'''
                         checks++;printf("PASS exact Potion decision frame=24673 turn=4 CarlHP=3 DonutHP=30 PP=4,40,0,38 foesHP=0,18 owned=1\n");
                         potionStage=1;
                     }
+
                     if (rescue && potionStage>0 && potionStage<7) {
                         actor=UINT_MAX;key=0;
+                        if (potionStage==2 && pendingContext) {
+                            unsigned next=acknowledged_stage(potionStage,pendingContext,
+                                menu_ready(core,tasks,fade,contextInput),0,core->busRead16(core,selectedItem),0);
+                            if (next==3) {potionStage=next;printf("PASS actual Potion context acknowledged frame=%u\n",total);checks++;}
+                        }
+                        if (potionStage==3 && pendingRecipient) {
+                            unsigned next=acknowledged_stage(potionStage,pendingRecipient,0,
+                                menu_ready(core,tasks,fade,partyInput),core->busRead16(core,selectedItem),core->busRead8(core,partyMenu+9));
+                            if (next==4) {potionStage=next;printf("PASS actual Carl recipient acknowledged frame=%u\n",total);checks++;}
+                        }
                         if (potionStage==1 && (core->busRead32(core,controls)&~1u)==inputAction) {
                             unsigned cursor=core->busRead8(core,actionCursor);
                             if (cursor>1) {result=44;fprintf(stderr,"Unexpected Bag action cursor\n");break;}
                             key=cursor==1?1:16;
                             if (cursor==1) potionStage=2;
-                        } else if (potionStage==2 && active_task(core,tasks,bagInput)) {
+                        } else if (potionStage==2 && !pendingContext && menu_ready(core,tasks,fade,bagInput)) {
                             if (core->busRead8(core,bag+5)!=0 || core->busRead16(core,bag+8)!=0 || core->busRead16(core,bag+18)!=0
                                 || core->busRead16(core,core->busRead32(core,pockets))!=13) {
                                 result=44;fprintf(stderr,"Expected first owned Potion in Items pocket\n");break;
                             }
                             result=capture("owned-potion-bag.ppm",pixels,width,height);if (result) break;
-                            key=1;potionStage=3;
-                        } else if (potionStage==3 && active_task(core,tasks,contextInput)) {
+                            key=1;pendingContext=1;
+                            printf("PASS Bag selection ready fade=0 expected_task=1 frame=%u\n",total);checks++;
+                        } else if (potionStage==3 && !pendingRecipient && menu_ready(core,tasks,fade,contextInput)) {
                             if (core->busRead16(core,selectedItem)!=13) {result=44;break;}
-                            key=1;potionStage=4;
-                        } else if (potionStage==4 && active_task(core,tasks,partyInput)) {
+                            key=1;pendingRecipient=1;
+                        } else if (potionStage==4 && menu_ready(core,tasks,fade,partyInput)) {
                             if (core->busRead8(core,partyMenu+9)!=0 || core->busRead16(core,selectedItem)!=13) {result=44;fprintf(stderr,"Potion recipient is not Carl\n");break;}
                             result=capture("potion-recipient.ppm",pixels,width,height);if (result) break;
                             key=1;potionStage=5;

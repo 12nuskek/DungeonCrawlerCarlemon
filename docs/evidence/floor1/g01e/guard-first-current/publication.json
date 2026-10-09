@@ -1,0 +1,14 @@
+{
+  "draft_PR": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/109",
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "branch": "task/floor1-g01e-guard-first-current",
+  "base_branch": "task/floor1-g01e-acceptance-inventory",
+  "base_SHA": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+  "frozen_host_execution_source": "cad9eadfd8405f8eb040e478a7f7c7fb8948788c",
+  "evidence_commit": "8d97a2f7a2bdf87ef21de0d6e6cfffe252920dcf",
+  "runtime_status": "FIRST MILESTONE STOP71; remaining route/travel/Save/cold unverified",
+  "next_dependency": "Parent review of narrow source-derived native met-location modifier before separately authorised corrected route/cold; no integration."
+}

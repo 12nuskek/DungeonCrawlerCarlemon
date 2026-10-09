@@ -1,0 +1,10 @@
+{
+  "completed_emulator_assertions": 23,
+  "actual_controller_menu_records": 36,
+  "HP_transition_records": 21,
+  "actual_captures": 4,
+  "distinct_capture_hashes": 3,
+  "measurements": 0,
+  "executions": 1,
+  "dependent_cold_executions": 0
+}

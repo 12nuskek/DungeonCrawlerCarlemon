@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/DungeonCrawlerCarlemon/scripts/floor1/guard-first-state.py", line 105, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/floor1/guard-first-state.py", line 103, in main
+    validate(stage,before,after,seed)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/floor1/guard-first-state.py", line 79, in validate
+    assert ((struct.unpack_from('<H',c,70)[0]>>11)&15)!=11 and c[69]!=after['section'],'source friendship modifiers'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: source friendship modifiers
+Guard-first STOP reason=71 absolute_frame=14680 last_accepted=2044 pending=1 stage=1

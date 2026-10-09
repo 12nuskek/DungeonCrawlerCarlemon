@@ -1,0 +1,15 @@
+{
+  "archive_file": "DungeonCrawlerCarlemon-guard-first-current-STOP-20261009.zip",
+  "bytes": 59668,
+  "SHA256": "6396e1d1b30b27d65c3b3052f81901d4a6c6a4b74453f5c6ddab7b531e5f723e",
+  "files": 54,
+  "only_new_increment_private_outputs": true,
+  "original_legacy_datasets_not_included": true,
+  "ROM_executables_credentials_not_included": true,
+  "new_saved_game_created": false,
+  "unchanged_pending_input_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "Library_status": "succeeded",
+  "Library_file_name": "DungeonCrawlerCarlemon-guard-first-current-STOP-20261009.zip",
+  "Library_current_version_number": 0,
+  "local_identity_metadata_applied": true
+}

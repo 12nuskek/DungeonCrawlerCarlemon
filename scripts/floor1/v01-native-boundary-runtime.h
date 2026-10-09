@@ -3,11 +3,13 @@
 #define V01_NATIVE_BOUNDARY_RUNTIME_H
 #include <stddef.h>
 #include <stdio.h>
+#include <errno.h>
 #include <mgba/core/core.h>
 #include <mgba/core/timing.h>
 #include <mgba/internal/gba/gba.h>
 #include <mgba/internal/arm/debugger/debugger.h>
 #include "v01-native-boundary-adapter.h"
+#include "v01-native-boundary-diagnostics.h"
 struct BvNativeRuntime {
     struct mDebugger debugger; /* First member: passive hook owns this instance. */
     struct mCore *core;
@@ -19,6 +21,9 @@ struct BvNativeRuntime {
     unsigned char actual[2560],expected[2560];
     unsigned expectedBytes;
     FILE *stream;
+    struct BvNativeMetadata pendingMetadata;
+    struct BvNativeFailure failure;
+    unsigned retentionAttempted,privateDiagnosticRetained,safeDiagnosticRetained;
 };
 /* Typed little-endian stream records: B=boundary, F=completed video frame,
  * E=finish. All ordinals/epochs/counts/keys are compared, including zero counts.
@@ -27,16 +32,74 @@ static inline void bv_native_u32(unsigned char *p,unsigned n)
 {for(unsigned i=0;i<4;i++)p[i]=(n>>(8*i))&255;}
 static inline void bv_native_u64(unsigned char *p,uint64_t n)
 {for(unsigned i=0;i<8;i++)p[i]=(n>>(8*i))&255;}
+static inline void bv_native_header(struct BvNativeRuntime *r,unsigned char p[29],unsigned kind,unsigned count,unsigned keys)
+{
+    memset(p,0,29);p[0]=kind;
+    bv_native_u64(p+1,r->sequence.ordinal);bv_native_u32(p+9,r->video);
+    bv_native_u32(p+13,r->inputEpoch);bv_native_u32(p+17,count);
+    bv_native_u32(p+21,r->core->frameCounter(r->core));bv_native_u32(p+25,keys);
+}
+static inline unsigned bv_native_capture117(struct BvNativeRuntime *r,unsigned origin,
+    const struct BvNativeMetadata *metadata,uint64_t expectedOrdinal,unsigned expectedCount,
+    unsigned observedKeys,unsigned observedKeysAvailable,unsigned trailingPresent,unsigned trailingByte)
+{
+    if(r->failure.present)return r->failure.reason;
+    struct BvNativeFailure *d=&r->failure;memset(d,0,sizeof *d);
+    d->present=1;d->reason=117;d->origin=origin;d->metadata=*metadata;d->firstDifference=bv_diag_difference(metadata);
+    d->ordinal=r->sequence.ordinal;d->expectedOrdinal=expectedOrdinal;d->frameCount=r->sequence.frameCount;d->expectedCount=expectedCount;
+    d->guardVideo=d->guardExpectedVideo=r->video;d->guardInput=d->guardExpectedInput=r->inputEpoch;
+    d->video=r->video;d->inputEpoch=r->inputEpoch;d->lastCount=r->lastCount;d->started=r->started;d->finished=r->finished;
+    d->keysAtFrameStart=r->lastInput;d->observedKeys=observedKeys;d->observedKeysAvailable=observedKeysAvailable;
+    d->trailingPresent=trailingPresent;d->trailingByte=trailingByte;
+    const struct ARMCore *cpu=r->core->cpu;const struct GBA *gba=r->core->board;
+    if(cpu){d->cpuAvailable=1;d->pc=cpu->gprs[ARM_PC];d->lr=cpu->gprs[ARM_LR];d->sp=cpu->gprs[ARM_SP];d->cpsr=cpu->cpsr.packed;
+        d->executionMode=cpu->executionMode;d->privilegeMode=cpu->privilegeMode;d->halted=cpu->halted;
+        d->cycles=cpu->cycles;d->nextEvent=cpu->nextEvent;d->eventDue=cpu->cycles>=cpu->nextEvent;}
+    if(gba){d->frame=gba->video.frameCounter;d->timingCurrent=(uint32_t)mTimingCurrentTime(&gba->timing);d->masterCycles=gba->timing.masterCycles;d->globalCycles=gba->timing.globalCycles;}
+    r->reason=117;return 117;
+}
+static inline void bv_native_guard_headers(struct BvNativeRuntime *r,struct BvNativeMetadata *m,
+    unsigned kind,unsigned actualCount,unsigned expectedCount,unsigned actualKeys)
+{
+    memset(m,0,sizeof *m);m->kind=kind;m->actualBytes=m->expectedBytes=29;
+    m->actualSource=m->expectedSource=BV_HEADER_GUARD;
+    bv_native_header(r,m->actual,kind,actualCount,actualKeys);bv_native_header(r,m->expected,kind,expectedCount,r->lastInput);
+    m->startPosition=m->endPosition=r->stream?(int64_t)ftello(r->stream):-1;
+}
 static inline unsigned bv_native_metadata(struct BvNativeRuntime *r,unsigned type,unsigned count)
 {
-    unsigned char actual[29]={0},expected[29]={0};actual[0]=type;
-    bv_native_u64(actual+1,r->sequence.ordinal);bv_native_u32(actual+9,r->video);
-    bv_native_u32(actual+13,r->inputEpoch);bv_native_u32(actual+17,count);
-    bv_native_u32(actual+21,r->core->frameCounter(r->core));bv_native_u32(actual+25,r->lastInput);
+    if(r->reason || r->failure.present)return r->failure.present?r->failure.reason:r->reason;
+    struct BvNativeMetadata *m=&r->pendingMetadata;memset(m,0,sizeof *m);
+    m->kind=type;m->actualBytes=29;m->actualSource=BV_HEADER_RECORD;
+    bv_native_header(r,m->actual,type,count,r->lastInput);m->startPosition=(int64_t)ftello(r->stream);
     if(r->candidate){
-        if(fread(expected,1,sizeof expected,r->stream)!=sizeof expected || memcmp(actual,expected,sizeof actual))return 117;
-    }else if(fwrite(actual,1,sizeof actual,r->stream)!=sizeof actual)return 117;
+        m->expectedSource=BV_HEADER_RECORD;
+        m->expectedBytes=m->headerReadBytes=m->operationReadBytes=(unsigned)fread(m->expected,1,29,r->stream);
+        m->ioError=ferror(r->stream)!=0;m->ioErrno=m->ioError?errno:0;m->eof=feof(r->stream)!=0;m->endPosition=(int64_t)ftello(r->stream);
+        if(m->expectedBytes!=29)return bv_native_capture117(r,BV_FAIL_METADATA_SHORT,m,r->sequence.ordinal,count,r->lastInput,1,0,0);
+        if(memcmp(m->actual,m->expected,29))return bv_native_capture117(r,BV_FAIL_METADATA_DIFFERENT,m,r->sequence.ordinal,count,r->lastInput,1,0,0);
+    }else{
+        // No reference header exists for a baseline write. Expected is explicitly
+        // the intended output, not a fabricated reference-stream read.
+        memcpy(m->expected,m->actual,29);m->expectedBytes=29;m->expectedSource=BV_HEADER_OUTPUT;
+        m->writeBytes=(unsigned)fwrite(m->actual,1,29,r->stream);
+        m->ioError=ferror(r->stream)!=0;m->ioErrno=m->ioError?errno:0;m->eof=feof(r->stream)!=0;m->endPosition=(int64_t)ftello(r->stream);
+        if(m->writeBytes!=29)return bv_native_capture117(r,BV_FAIL_METADATA_WRITE,m,r->sequence.ordinal,count,r->lastInput,1,0,0);
+    }
     return 0;
+}
+static inline unsigned bv_native_compare(struct BvNativeRuntime *r,uint64_t expectedOrdinal,
+    unsigned video,unsigned expectedVideo,unsigned input,unsigned expectedInput)
+{
+    if(r->reason || r->failure.present)return r->failure.present?r->failure.reason:r->reason;
+    unsigned reason=bv_boundary_compare(&r->sequence,1,expectedOrdinal,video,expectedVideo,input,expectedInput,r->actual,r->expected);
+    if(reason==117){
+        bv_native_capture117(r,BV_FAIL_BOUNDARY_SEQUENCE,&r->pendingMetadata,expectedOrdinal,r->sequence.frameCount,r->lastInput,1,0,0);
+        r->failure.guardVideo=video;r->failure.guardExpectedVideo=expectedVideo;
+        r->failure.guardInput=input;r->failure.guardExpectedInput=expectedInput;
+        return reason;
+    }
+    return reason;
 }
 static inline unsigned bv_native_sample(struct BvNativeRuntime *r)
 {
@@ -49,8 +112,7 @@ static inline unsigned bv_native_sample(struct BvNativeRuntime *r)
     }else{
         memcpy(r->expected,r->actual,2560);r->expectedBytes=2560;
     }
-    reason=bv_boundary_compare(&r->sequence,1,r->sequence.ordinal,r->video,r->video,
-        r->inputEpoch,r->inputEpoch,r->actual,r->expected);
+    reason=bv_native_compare(r,r->sequence.ordinal,r->video,r->video,r->inputEpoch,r->inputEpoch);
     if(reason)return reason;
     if(!r->candidate && fwrite(r->actual,1,2560,r->stream)!=2560)return 103;
     return 0;
@@ -92,7 +154,9 @@ static inline void bv_native_events(void *p)
 {struct ARMCore *cpu=((struct BvNativeRuntime *)p)->core->cpu;cpu->irqh.processEvents(cpu);}
 static inline unsigned bv_native_observe(void *p)
 {
-    struct BvNativeRuntime *r=p;struct ARMCore *cpu=r->core->cpu;
+    struct BvNativeRuntime *r=p;
+    if(r->reason || r->failure.present)return r->failure.present?r->failure.reason:r->reason;
+    struct ARMCore *cpu=r->core->cpu;
     /* An installed hardware observation must leave the ENTIRE CPU unchanged. */
     struct ARMCore original=*cpu;r->debugger.platform->checkBreakpoints(r->debugger.platform);
     if(memcmp(cpu,&original,sizeof original))return 115;
@@ -107,7 +171,12 @@ static inline void bv_native_step(void *p)
     ARMRun(cpu);
 }
 static inline unsigned bv_native_fail(struct BvNativeRuntime *r,unsigned reason)
-{if(r)r->reason=reason;return reason;}
+{
+    if(r && r->failure.present)return r->failure.reason;
+    if(r && reason==117)return bv_native_capture117(r,BV_FAIL_FALLBACK,&r->pendingMetadata,r->sequence.ordinal,r->sequence.frameCount,r->lastInput,0,0,0);
+    if(r)r->reason=reason;
+    return reason;
+}
 static inline unsigned bv_native_frame(struct BvNativeRuntime *r,unsigned active,unsigned candidate,FILE *stream,unsigned video)
 {
     if(!r || !r->core || !r->authority.verified || r->reason || (active && !stream))return bv_native_fail(r,r && r->reason?r->reason:115);
@@ -119,10 +188,15 @@ static inline unsigned bv_native_frame(struct BvNativeRuntime *r,unsigned active
     struct BvBoundaryDriverOps ops={r,bv_native_frame_counter,bv_native_time,bv_native_due,bv_native_events,bv_native_observe,bv_native_step};
     unsigned reason=bv_boundary_drive_frame(&ops,1,VIDEO_TOTAL_LENGTH+VIDEO_HORIZONTAL_LENGTH);
     if(!reason && r->core->frameCounter(r->core)!=before+1)reason=118;
-    if(!reason && r->core->getKeys(r->core)!=r->lastInput)reason=117;
+    if(!reason){unsigned observedKeys=r->core->getKeys(r->core);
+        if(observedKeys!=r->lastInput){struct BvNativeMetadata m;
+            bv_native_guard_headers(r,&m,'F',r->sequence.frameCount,r->sequence.frameCount,observedKeys);
+            reason=bv_native_capture117(r,BV_FAIL_FRAME_KEYS,&m,r->sequence.ordinal,r->sequence.frameCount,observedKeys,1,0,0);}
+    }
     if(!reason && active){
         r->lastCount=r->sequence.frameCount;reason=bv_native_metadata(r,'F',r->lastCount);
-        if(!reason)reason=bv_boundary_end_frame(&r->sequence,r->lastCount);
+        if(!reason){reason=bv_boundary_end_frame(&r->sequence,r->lastCount);
+            if(reason==117)reason=bv_native_capture117(r,BV_FAIL_FRAME_COUNT,&r->pendingMetadata,r->sequence.ordinal,r->lastCount,r->lastInput,1,0,0);}
     }
     r->reason=reason;return reason;
 }
@@ -132,9 +206,26 @@ static inline unsigned bv_native_finish(struct BvNativeRuntime *r)
 {
     if(!r || !r->started || r->finished || r->reason)return bv_native_fail(r,r && r->reason?r->reason:115);
     unsigned reason=bv_native_checkpoint(r);if(reason)return bv_native_fail(r,reason);
-    reason=bv_boundary_finish(&r->sequence,r->sequence.ordinal,0);if(reason)return bv_native_fail(r,reason);
+    reason=bv_boundary_finish(&r->sequence,r->sequence.ordinal,0);
+    if(reason==117){struct BvNativeMetadata m;bv_native_guard_headers(r,&m,'E',r->sequence.frameCount,0,r->lastInput);
+        return bv_native_capture117(r,BV_FAIL_FINISH_SEQUENCE,&m,r->sequence.ordinal,0,r->lastInput,1,0,0);}
+    if(reason)return bv_native_fail(r,reason);
     reason=bv_native_metadata(r,'E',0);if(reason)return bv_native_fail(r,reason);
-    if(r->candidate && (fgetc(r->stream)!=EOF || ferror(r->stream)))return bv_native_fail(r,117);
+    if(r->candidate){
+        struct BvNativeMetadata m=r->pendingMetadata;m.startPosition=(int64_t)ftello(r->stream);
+        int trailing=fgetc(r->stream);m.operationReadBytes=trailing==EOF?0:1;
+        m.ioError=ferror(r->stream)!=0;m.ioErrno=m.ioError?errno:0;m.eof=feof(r->stream)!=0;m.endPosition=(int64_t)ftello(r->stream);
+        if(trailing!=EOF)return bv_native_capture117(r,BV_FAIL_TRAILING_BYTE,&m,r->sequence.ordinal,0,r->lastInput,1,1,(unsigned char)trailing);
+        if(m.ioError)return bv_native_capture117(r,BV_FAIL_TRAILING_IO,&m,r->sequence.ordinal,0,r->lastInput,1,0,0);
+    }
     r->finished=1;return 0;
+}
+static inline void bv_native_retain_failure(struct BvNativeRuntime *r)
+{
+    if(!r || !r->failure.present || r->retentionAttempted)return;
+    r->retentionAttempted=1;
+    r->privateDiagnosticRetained=bv_diag_write(&r->failure,"visual-stop-native-boundary-private.json",1);
+    r->safeDiagnosticRetained=bv_diag_write(&r->failure,"visual-stop-native-boundary.json",0);
+    fprintf(stderr,"Native first failure origin=%s reason=%u private_diagnostic_complete=%u safe_diagnostic_complete=%u; no further instructions\n",bv_diag_origin(r->failure.origin),r->failure.reason,r->privateDiagnosticRetained,r->safeDiagnosticRetained);
 }
 #endif

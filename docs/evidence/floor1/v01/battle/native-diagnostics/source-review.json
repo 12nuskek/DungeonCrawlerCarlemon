@@ -1,0 +1,76 @@
+{
+  "result": "PASS source/diff and frozen comparison/cadence audit",
+  "unchanged_functions": [
+    {
+      "function": "bv_native_enter",
+      "SHA256": "967a820b87e9898d970faf2a826d7a30e7c4b8e1a831925b48a3f1253f3e8f3b"
+    },
+    {
+      "function": "bv_native_attach",
+      "SHA256": "054fa80d232ca0eb48524e37fb3de2fb9c17852fb9f04e9b531e78f1bd6f3776"
+    },
+    {
+      "function": "bv_native_frame_counter",
+      "SHA256": "7030175e53be53ec873206e1ae7628de3211e2e10fc5df2aa792189f72cf8371"
+    },
+    {
+      "function": "bv_native_time",
+      "SHA256": "0f620bf869fe065ef6c68dc099f40888df26d34c652db5bee46e2c2345ddc487"
+    },
+    {
+      "function": "bv_native_due",
+      "SHA256": "81cf8da83515bdec888173ef9efd62da131bd786cb853a26a99c8c4ee9b0302f"
+    },
+    {
+      "function": "bv_native_events",
+      "SHA256": "0a2d85d045a7ab6e2248f587e57c49230557eae2581864fda068a9e28b15ee79"
+    },
+    {
+      "function": "bv_native_step",
+      "SHA256": "bab955cbe56dc230c047bb233b44a71f5b8c18cd17a2c71d94a1d81be1361013"
+    },
+    {
+      "function": "bv_native_checkpoint",
+      "SHA256": "12cc00763ed8de85654bd0d7e3f2a30c9e68e990ff6e9d130eda010cb29acb4c"
+    }
+  ],
+  "unchanged_complete_reader_visual_lifecycle_comparisons_route_controller": [
+    {
+      "path": "scripts/floor1/v01-native-boundary-adapter.h",
+      "SHA256": "a21936b975e32ccd16b115e5b379a852232304527076d3f11dd1b2f0aff6222c"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-observer.h",
+      "SHA256": "608b487a7cc6fb56853740930f300f95dc49227e54202e706c41e4af54289629"
+    },
+    {
+      "path": "scripts/floor1/party-resource-canonical.h",
+      "SHA256": "31496d39562abb9af1e21d508dbf2f2a0e7bd2c50361acb864a2141aea8f27c1"
+    },
+    {
+      "path": "scripts/test-f1-v01-battle.py",
+      "SHA256": "dffbb3b2e82a5c4985ff997feb57523bf2db5f696d4ad98b51c1825610634039"
+    },
+    {
+      "path": "scripts/contracts/f1-v01-battle.route",
+      "SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27"
+    }
+  ],
+  "reviewed_unmodified_comparisons": [
+    "single original29 metadata read/write + full29 memcmp",
+    "single original2560 read/full memcmp and all six native checksum/BadEgg tests",
+    "original sequence arguments without stricter/relaxed comparisons",
+    "original end-frame and finish guards, one original trailing fgetc",
+    "exact getKeys cadence; keys/header projection only after failing guard",
+    "frame driver/event/step/authority byte-identical; no stream seek/re-align/search/input edits"
+  ],
+  "host_setKeys_sites": 13,
+  "host_native_frame_driver_sites": 1,
+  "host_core_runFrame_sites": 0,
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_claims": 0,
+  "timing_limit": "Host diagnostics add read-only host work; emulated CPU/event/input timing proven in synthetic fixtures, game parity remains unverified",
+  "historical_failure_limit": "Actual STOP117 failed header/count remain absent; alignment is inference; existing pixels never waive strict comparisons"
+}

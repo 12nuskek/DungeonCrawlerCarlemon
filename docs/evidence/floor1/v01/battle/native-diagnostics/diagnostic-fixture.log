@@ -1,0 +1,9 @@
+PASS 87 typed-header mutations: B/F/E every29 byte, wrong kind/ordinal/video/input/count/absolute-frame/keys, exact first offset and original29 read; immutable failure and CPU/stream/ordinal
+PASS installed hardware entry every29 header byte: retained actual PC/LR/timing, zero snapshot acceptance/entry instruction, sticky failure without stream/CPU advancement
+PASS 58 short headers: all0..28 original read lengths, EOF and EIO, zero unread tail distinguished; earlier prefix mismatch retained without realignment
+PASS metadata short write and original boundary sequence ordinal/video/input guard failures; original accepted headers distinct from guard values
+PASS installed due-event frame-key failure without extra instruction; four frame-count and four finish-count guard cases; matched actual headers never replaced by invented mismatches
+PASS one original trailing read: unexpected byte and EIO retained with accepted E header; fallback117 first-only; truncated full snapshot remains103
+Native first failure origin=metadata_read_short reason=117 private_diagnostic_complete=1 safe_diagnostic_complete=1; no further instructions
+Native first failure origin=native_fail_fallback reason=117 private_diagnostic_complete=0 safe_diagnostic_complete=0; no further instructions
+PASS all10 STOP117 origins, first-only host retention/O_EXCL/missing-directory and existing-file failure, nonseekable position=-1; safe projection and exact private header exported for offline schema checks; ZERO gameplay/new claims

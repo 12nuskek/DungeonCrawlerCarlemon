@@ -6,6 +6,10 @@ engine/data/mb_ereader.gba
 *.sav
 *.ss0
 
+# Native-boundary metadata contains private input-key values.
+visual-stop-native-boundary-private.json
+private-fixture-output/
+
 # Python asset generators
 __pycache__/
 *.py[cod]

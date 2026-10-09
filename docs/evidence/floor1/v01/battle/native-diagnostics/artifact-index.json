@@ -1,0 +1,56 @@
+{
+  "scope": "safe offline code/docs/evidence only; no raw headers/keys, ROM/ELF/binaries/Saves/private identities",
+  "prior_checkpoint": "5d96918705b263e9ccea2948e6fd917b961b82a3",
+  "artifacts": [
+    {
+      "file": "README.md",
+      "bytes": 4158,
+      "SHA256": "592fe5c46e15ca3baf3399d663b47910d83c180ee23605eefe49fbd347a67b94"
+    },
+    {
+      "file": "complete-reader.log",
+      "bytes": 1888,
+      "SHA256": "49bcaad92d4902110280a4244470fc94f197c9e75f2d1d8ad9fe9e9f37799660"
+    },
+    {
+      "file": "diagnostic-build.log",
+      "bytes": 0,
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "diagnostic-fixture.log",
+      "bytes": 1509,
+      "SHA256": "ef44df7269f13e44d10b7304e5c221d586e84557ae9f3529407d02c068894414"
+    },
+    {
+      "file": "host-build.log",
+      "bytes": 0,
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "interpreter.log",
+      "bytes": 1672,
+      "SHA256": "98917d66ea4c9ea24d7686e17aa5232640abb020c4dd7dda0142cac77575d5a6"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 45001,
+      "SHA256": "1f8e03f5a51a75de1afcda656805aa34604561f15764fd9d9f507c954639bae1"
+    },
+    {
+      "file": "remote-before.json",
+      "bytes": 8344,
+      "SHA256": "cf13a7115bd94c49f96f7b2416ff7dea941c05a94478f357c696721f039d496b"
+    },
+    {
+      "file": "result.json",
+      "bytes": 3895,
+      "SHA256": "7bfa8442a740d83999052e8367842ccbedf244549b4cf9cde94f6e798416bb1f"
+    },
+    {
+      "file": "source-review.json",
+      "bytes": 3033,
+      "SHA256": "e9c157e01f963fb6e4b3c15fe59cc25f50ca2b3b97e53551c26d892616496d3b"
+    }
+  ]
+}

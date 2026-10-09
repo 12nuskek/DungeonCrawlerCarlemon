@@ -1,5 +1,8 @@
 /* Read-only battle graphics and exact baseline/candidate state comparison. */
-struct BattleVisualAddresses {unsigned sprites,ids,healthboxes,tiles,palettes,heapStart,heapSize,poseState,unfaded,gfx,fieldCB2,battleCB2,phase,firstTurn,positions,copyCount,copies,copyArmed;};
+struct BattleVisualAddresses {unsigned sprites,ids,healthboxes,tiles,palettes,heapStart,heapSize,poseState,unfaded,gfx,fieldCB2,battleCB2,phase,firstTurn,positions,copyCount,copies,copyArmed;
+    unsigned freeReset,tryEvolve,returnBattle,endTrainer,continueScript,returnLocal,fieldCB1,fieldHook,fieldHook2,fieldLock,scriptStatus,fade,tasks,waitFade,battleResources,battleStruct,battleSprites;
+};
+enum { BV_UNENTERED, BV_ACTIVE, BV_RETIRING, BV_FIELD };
 struct BattleVisual {
     struct BattleVisualAddresses a;
     unsigned candidate,recording,frames,samples,mask,changes[4],last[4],repeat[4],captured,seenFaint,exitClean;
@@ -8,6 +11,7 @@ struct BattleVisual {
     FILE *trace;
     unsigned callbackCount,callbackAddresses[20000],callbackNames[20000];
     unsigned readyRequested,readyFrame,transitionFrames,lastPhase,failedActor,failedSprite,failedStage,failedAddress,failedTraceByte;
+    unsigned lifecycle,retirementFrame,fieldFrame,returnPath,cleanupRank,localStates,savedReturn,endTrainerObserved,retainedGfx,retainedBuffers[4];
 };
 static void bv_symbol(struct BattleVisual *v,unsigned address,char type,const char *name)
 {
@@ -77,8 +81,97 @@ static unsigned bv_readiness(struct mCore *core,struct BattleVisual *v,unsigned 
         if(!species || !core->busRead16(core,mons+88*b+40) || !bv_owned(core,v,b)
             || core->busRead16(core,sprite+46)!=b || core->busRead16(core,sprite+50)!=species || !bv_first_copy(core,v,b))return 0;
     }
-    v->enforced=1;v->readyFrame=v->frames;
+    unsigned saved=core->busRead32(core,mainstate+8);
+    if(!v->a.endTrainer || (saved&~1u)!=(v->a.endTrainer&~1u)){v->failedStage=12;v->failedAddress=saved;return 114;}
+    v->savedReturn=saved&~1u;
+    v->enforced=1;v->readyFrame=v->frames;v->lifecycle=BV_ACTIVE;
+    v->retainedGfx=core->busRead32(core,v->a.gfx);
+    for(unsigned b=0;b<4;b++)v->retainedBuffers[b]=core->busRead32(core,v->retainedGfx+4+4*core->busRead8(core,v->a.positions+b));
     printf("BV_READY frame=%u phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1\n",v->frames);
+    return 0;
+}
+static unsigned bv_same(unsigned address,unsigned function) {return function && (address&~1u)==(function&~1u);}
+static unsigned bv_cleanup_phase(struct BattleVisual *v,unsigned phase)
+{
+    return bv_same(phase,v->a.freeReset)?1:bv_same(phase,v->a.tryEvolve)?2:bv_same(phase,v->a.returnBattle)?3:0;
+}
+static unsigned bv_retired_clean(struct mCore *core,struct BattleVisual *v)
+{
+    // Retired memory is never dereferenced. Retain its original source ranges
+    // to reject queued copies, even when native sprites still reference it.
+    if(core->busRead32(core,v->a.gfx)){v->failedStage=9;return 105;}
+    if(core->busRead32(core,v->a.battleResources) || core->busRead32(core,v->a.battleStruct)
+        || core->busRead32(core,v->a.battleSprites)){v->failedStage=9;return 105;}
+    if(v->candidate)for(unsigned i=0;i<16;i++)if(core->busRead8(core,v->a.poseState+i)){v->failedActor=i/4;v->failedStage=10;return 105;}
+    unsigned count=core->busRead8(core,v->a.copyCount);if(count>64)return 113;
+    for(unsigned i=0;i<count;i++){
+        unsigned at=v->a.copies+12*i,src=core->busRead32(core,at),size=core->busRead16(core,at+8);
+        for(unsigned b=0;b<4;b++)if(size && (uint64_t)src+size>v->retainedBuffers[b] && src<v->retainedBuffers[b]+8192){
+            v->failedActor=b;v->failedStage=11;v->failedAddress=src;return 113;
+        }
+    }
+    return 0;
+}
+static unsigned bv_field_ready(struct mCore *core,struct BattleVisual *v,unsigned mainstate)
+{
+    if(!bv_same(core->busRead32(core,mainstate),v->a.fieldCB1) || core->busRead8(core,v->a.fieldLock)
+        || core->busRead8(core,v->a.scriptStatus)!=2 || core->busRead32(core,v->a.fieldHook)
+        || core->busRead32(core,v->a.fieldHook2) || (core->busRead8(core,v->a.fade+7)&128))return 0;
+    for(unsigned i=0;i<16;i++)if(core->busRead8(core,v->a.tasks+40*i+4)
+        && bv_same(core->busRead32(core,v->a.tasks+40*i),v->a.waitFade))return 0;
+    return 1;
+}
+static unsigned bv_lifecycle(struct mCore *core,struct BattleVisual *v,unsigned mainstate)
+{
+    unsigned battle=core->busRead8(core,mainstate+0x439)&2,cb=core->busRead32(core,mainstate+4),phase=core->busRead32(core,v->a.phase);
+    if(v->lifecycle==BV_UNENTERED)return 0; // No pre-entry frame is exit evidence.
+    if((core->busRead32(core,mainstate+8)&~1u)!=v->savedReturn){v->failedStage=12;return 114;}
+    if(v->lifecycle==BV_ACTIVE){
+        if(!battle || !bv_same(cb,v->a.battleCB2)){v->failedStage=12;return 114;}
+        if(core->busRead32(core,v->a.gfx)){
+            if(core->busRead32(core,v->a.gfx)!=v->retainedGfx){v->failedStage=9;return 105;}
+            return 0; // Strict live ownership/pixels stay enforced, including fade.
+        }
+        if(!bv_cleanup_phase(v,phase)){v->failedStage=12;return 114;}
+        unsigned reason=bv_retired_clean(core,v);if(reason)return reason;
+        v->lifecycle=BV_RETIRING;v->retirementFrame=v->frames;
+        printf("BV_RETIRING frame=%u native_ID=%u registry_cleared=1 pose_state_cleared=1 pose_state_applicable=%u retired_source_copies=0\n",v->frames,bv_callback(v,phase),v->candidate);
+    }
+    unsigned reason=bv_retired_clean(core,v);if(reason)return reason;
+    if(battle){
+        unsigned rank=bv_cleanup_phase(v,phase);
+        if(v->lifecycle!=BV_RETIRING || !bv_same(cb,v->a.battleCB2) || !rank || rank<v->cleanupRank){v->failedStage=12;return 114;}
+        v->cleanupRank=rank;
+        return 0;
+    }
+    // Native ReturnFromBattle leaves its phase pointer in place on the field.
+    if(!bv_same(phase,v->a.returnBattle)){v->failedStage=12;return 114;}
+    if(v->lifecycle==BV_FIELD){
+        if(!bv_same(cb,v->a.fieldCB2) || !bv_field_ready(core,v,mainstate)){v->failedStage=13;return 114;}
+        v->exitClean++;return 0;
+    }
+    if(bv_same(cb,v->a.endTrainer)){
+        if(v->returnPath!=0 && v->returnPath!=1){v->failedStage=12;return 114;}
+        v->returnPath=1;v->endTrainerObserved=1;
+    }else if(bv_same(cb,v->a.continueScript)){
+        // CallCallbacks runs CB1 then the newly selected CB2 in the same
+        // iteration. ReturnFromBattle (CB1) selects the pinned saved trainer
+        // callback; that CB2 can already select this wrapper before sampling.
+        if(v->returnPath!=0 && v->returnPath!=1 && v->returnPath!=3){v->failedStage=12;return 114;}v->returnPath=3;
+    }else if(bv_same(cb,v->a.returnLocal)){
+        if(v->returnPath!=3 && v->returnPath!=7 && v->returnPath!=15){v->failedStage=12;return 114;}
+        v->returnPath=7;
+        unsigned state=core->busRead8(core,mainstate+0x438);
+        if(state>3 || (v->localStates!=(1u<<state)-1 && v->localStates!=(1u<<(state+1))-1)){v->failedStage=12;return 114;}
+        v->localStates|=1u<<state;
+        if(state==3)v->returnPath=15;
+    }else if(bv_same(cb,v->a.fieldCB2)){
+        if(v->returnPath!=15){v->failedStage=12;return 114;}
+        if(bv_field_ready(core,v,mainstate)){
+            v->lifecycle=BV_FIELD;v->fieldFrame=v->frames;v->exitClean++;
+            printf("BV_FIELD frame=%u native_return_path=15 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=%u retired_source_copies=0 field_controls_ready=1\n",v->frames,v->candidate);
+        }
+    }else{v->failedStage=12;v->failedAddress=cb;return bv_callback(v,cb)?114:112;}
     return 0;
 }
 static void bv_diagnose(struct mCore *core,struct BattleVisual *v,unsigned reason,unsigned mons,unsigned mainstate,unsigned currentMove)
@@ -93,7 +186,11 @@ static void bv_diagnose(struct mCore *core,struct BattleVisual *v,unsigned reaso
     }
     fputs("],\"copy_queue\":[",f);
     for(unsigned i=0;i<count && i<64;i++){unsigned at=v->a.copies+12*i;fprintf(f,"%s{\"source\":%u,\"destination\":%u,\"size\":%u}",i?",":"",core->busRead32(core,at),core->busRead32(core,at+4),core->busRead16(core,at+8));}
-    fprintf(f,"],\"failed_trace_byte\":%u,\"partial_peaks\":{\"samples\":%u,\"sprites\":%u,\"obj_tiles\":%u,\"obj_palettes\":%u,\"heap_used\":%u,\"heap_free_min\":%u}}\n",v->failedTraceByte,v->heapSamples,v->maxSprites,v->maxTiles,v->maxPalettes,v->maxHeap,v->minFree);fclose(f);
+    fprintf(f,"],\"lifecycle\":%u,\"retirement_frame\":%u,\"field_frame\":%u,\"return_path\":%u,\"graphics_registry\":%u,\"retained_graphics_registry\":%u,\"retained_picture_ranges\":[",v->lifecycle,v->retirementFrame,v->fieldFrame,v->returnPath,core->busRead32(core,v->a.gfx),v->retainedGfx);
+    for(unsigned b=0;b<4;b++)fprintf(f,"%s{\"actor\":%u,\"source\":%u,\"size\":8192}",b?",":"",b,v->retainedBuffers[b]);
+    fprintf(f,"],\"cleanup_rank\":%u,\"local_rebuild_states\":%u,\"battle_resources\":%u,\"battle_struct\":%u,\"battle_sprites_registry\":%u",v->cleanupRank,v->localStates,core->busRead32(core,v->a.battleResources),core->busRead32(core,v->a.battleStruct),core->busRead32(core,v->a.battleSprites));
+    fprintf(f,",\"saved_trainer_return\":%u,\"saved_trainer_return_now\":%u,\"end_trainer_callback_observed\":%u",v->savedReturn,core->busRead32(core,mainstate+8),v->endTrainerObserved);
+    fprintf(f,",\"field_CB1\":%u,\"field_load_state\":%u,\"field_locked\":%u,\"script_status\":%u,\"field_hook\":%u,\"field_hook2\":%u,\"palette_fade_active\":%u,\"postbattle_exit_clean_frames\":%u,\"failed_trace_byte\":%u,\"partial_peaks\":{\"samples\":%u,\"sprites\":%u,\"obj_tiles\":%u,\"obj_palettes\":%u,\"heap_used\":%u,\"heap_free_min\":%u}}\n",core->busRead32(core,mainstate),core->busRead8(core,mainstate+0x438),core->busRead8(core,v->a.fieldLock),core->busRead8(core,v->a.scriptStatus),core->busRead32(core,v->a.fieldHook),core->busRead32(core,v->a.fieldHook2),(core->busRead8(core,v->a.fade+7)>>7)&1,v->exitClean,v->failedTraceByte,v->heapSamples,v->maxSprites,v->maxTiles,v->maxPalettes,v->maxHeap,v->minFree);fclose(f);
 }
 static unsigned bv_load(const char *file,void *data,unsigned n)
 {
@@ -105,8 +202,13 @@ static unsigned bv_begin(struct BattleVisual *v)
 {
     unsigned char mode;
     if(!v->a.phase || !v->a.positions || !v->a.copyCount || !v->a.copies || !v->a.copyArmed || !bv_callback(v,v->a.firstTurn))return 112;
+    unsigned functions[]={v->a.freeReset,v->a.tryEvolve,v->a.returnBattle,v->a.endTrainer,v->a.continueScript,v->a.returnLocal,v->a.fieldCB1,v->a.fieldCB2,v->a.battleCB2,v->a.waitFade};
+    for(unsigned i=0;i<sizeof functions/sizeof *functions;i++)if(!functions[i] || !bv_callback(v,functions[i]))return 112;
+    if(!v->a.fieldHook || !v->a.fieldHook2 || !v->a.fieldLock || !v->a.scriptStatus || !v->a.fade || !v->a.tasks
+        || !v->a.battleResources || !v->a.battleStruct || !v->a.battleSprites)return 112;
     if(v->recording || v->frames || bv_load("visual-mode.bin",&mode,1) || mode>1)return 100;
     v->candidate=mode;
+    if(v->candidate && !v->a.poseState)return 112;
     if(bv_load("visual-poses.bin",v->poses,sizeof v->poses) || bv_load("visual-palettes.bin",v->palettes,sizeof v->palettes))return 100;
     for(unsigned b=0;b<4;b++)v->last[b]=255;
     v->trace=fopen(mode?"expected-state-trace.bin":"state-trace.bin",mode?"rb":"wb");
@@ -172,16 +274,25 @@ static unsigned bv_sample(struct mCore *core,struct BattleVisual *v,unsigned mai
     if(core->busRead8(core,v->a.copyCount)>64){v->failedStage=3;return 113;}
     if(callback==(v->a.fieldCB2&~1u) || callback==(v->a.battleCB2&~1u)){unsigned reason=bv_heap(core,v);if(reason)return reason;}
     char name[80];snprintf(name,sizeof name,"battle-%05u.ppm",v->frames);if(capture(name,pixels,width,height))return 104;
-    if(!battle){
-        if(v->candidate && v->a.poseState)for(unsigned i=0;i<16;i++)if(core->busRead8(core,v->a.poseState+i))return 105;
-        v->exitClean++;return 0;
-    }
-    if(callback!=(v->a.battleCB2&~1u))return 0;
     unsigned phase=core->busRead32(core,v->a.phase);
-    if(phase && !bv_callback(v,phase)){v->failedStage=1;v->failedAddress=phase;return 112;}
-    if((phase&~1u)!=v->lastPhase){v->lastPhase=phase&~1u;printf("BV_PHASE frame=%u native_ID=%u\n",v->frames,bv_callback(v,phase));}
-    unsigned readiness=bv_readiness(core,v,mainstate,mons,results,currentMove);if(readiness)return readiness;
+    // Preserve the original pre-entry candidate reset assertion; it supplies
+    // no evidence about a battle exit that has not happened.
+    if(!battle && v->lifecycle==BV_UNENTERED && v->candidate && v->a.poseState)
+        for(unsigned i=0;i<16;i++)if(core->busRead8(core,v->a.poseState+i)){v->failedActor=i/4;v->failedStage=10;return 105;}
+    if((battle && callback==(v->a.battleCB2&~1u)) || v->lifecycle!=BV_UNENTERED){
+        if(!phase || !bv_callback(v,phase)){v->failedStage=1;v->failedAddress=phase;return 112;}
+    }
+    if(battle && callback==(v->a.battleCB2&~1u)){
+        if((phase&~1u)!=v->lastPhase){v->lastPhase=phase&~1u;printf("BV_PHASE frame=%u native_ID=%u\n",v->frames,bv_callback(v,phase));}
+        unsigned readiness=bv_readiness(core,v,mainstate,mons,results,currentMove);if(readiness)return readiness;
+    }
+    unsigned lifecycle=bv_lifecycle(core,v,mainstate);if(lifecycle)return lifecycle;
+    if(!battle || callback!=(v->a.battleCB2&~1u))return 0;
     if(!v->enforced){v->transitionFrames++;return 0;}
+    if(v->lifecycle!=BV_ACTIVE)return 0;
+    for(unsigned b=0;b<4;b++)if(core->busRead16(core,mons+88*b+40) && !bv_owned(core,v,b)){
+        v->failedActor=b;v->failedSprite=core->busRead8(core,v->a.ids+b);v->failedStage=3;return 105;
+    }
     unsigned turn=core->busRead8(core,results+0x13),active=core->busRead8(core,animationActive),actor=core->busRead8(core,animationActor),move=core->busRead16(core,currentMove);
     for(unsigned b=0;b<3;b++){
         unsigned species=core->busRead16(core,mons+88*b),hp=core->busRead16(core,mons+88*b+40),expectedSpecies=b==0?66:b==1?371:52;
@@ -229,6 +340,7 @@ static unsigned bv_finish(struct BattleVisual *v)
 {
     if(!v->recording || !v->trace)return 106;
     if(!v->enforced || !v->readyFrame)return 110;
+    if(v->lifecycle!=BV_FIELD || !v->retirementFrame || !v->fieldFrame || v->returnPath!=15 || v->localStates!=15 || !v->exitClean)return 114;
     if(v->candidate && fgetc(v->trace)!=EOF)return 103;
     if(ferror(v->trace) || fclose(v->trace))return 103;
     v->recording=0;

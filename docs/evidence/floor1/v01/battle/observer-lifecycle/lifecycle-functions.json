@@ -1,0 +1,226 @@
+{
+  "before": {
+    "firstTurn": {
+      "address": 134462988,
+      "token": "fn_c0c36ec8e9c5d3dfd147d59e45b31a7162ad39522bbd0fc0b784d951d76f58ae",
+      "identity": "L:battle_main.o:HandleTurnActionSelectionState",
+      "aliases": [
+        "L:battle_main.o:HandleTurnActionSelectionState"
+      ],
+      "size": 3908,
+      "hash32": 1549553168
+    },
+    "freeReset": {
+      "address": 134471128,
+      "token": "fn_75467db53eff8fdfa2d4c0db815f168596c589092e9c0679aaa1a25418305aeb",
+      "identity": "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions",
+      "aliases": [
+        "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions"
+      ],
+      "size": 116,
+      "hash32": 2594348249
+    },
+    "tryEvolve": {
+      "address": 134471244,
+      "token": "fn_79d725df0caa01091b0f62271d270effc8cdb7e66cb798a199da65ad0d5db195",
+      "identity": "L:battle_main.o:TryEvolvePokemon",
+      "aliases": [
+        "L:battle_main.o:TryEvolvePokemon"
+      ],
+      "size": 148,
+      "hash32": 3886897904
+    },
+    "returnBattle": {
+      "address": 134471432,
+      "token": "fn_3f8bc8877a9d5465690955b5e9f372b3a75b8be95431121f206c4d1c08e1d2a2",
+      "identity": "L:battle_main.o:ReturnFromBattleToOverworld",
+      "aliases": [
+        "L:battle_main.o:ReturnFromBattleToOverworld"
+      ],
+      "size": 168,
+      "hash32": 749920720
+    },
+    "endTrainer": {
+      "address": 134944032,
+      "token": "fn_a294815896c08c5377b6a04a92556416764f40e1a2180dde6b4540d262dc6626",
+      "identity": "L:battle_setup.o:CB2_EndTrainerBattle",
+      "aliases": [
+        "L:battle_setup.o:CB2_EndTrainerBattle"
+      ],
+      "size": 160,
+      "hash32": 792070575
+    },
+    "continueScript": {
+      "address": 134765652,
+      "token": "fn_22552aa703c1ff90f909b2baba383933d444714e301614873b10d3b10b92b034",
+      "identity": "G:CB2_ReturnToFieldContinueScriptPlayMapMusic",
+      "aliases": [
+        "G:CB2_ReturnToFieldContinueScriptPlayMapMusic"
+      ],
+      "size": 28,
+      "hash32": 2882238029
+    },
+    "returnLocal": {
+      "address": 134765436,
+      "token": "fn_972f878821a865ac04cc8301b10b573c5607d3145050fd846203339869495928",
+      "identity": "L:overworld.o:CB2_ReturnToFieldLocal",
+      "aliases": [
+        "L:overworld.o:CB2_ReturnToFieldLocal"
+      ],
+      "size": 36,
+      "hash32": 2446138819
+    },
+    "fieldCB1": {
+      "address": 134764684,
+      "token": "fn_46419b1d937abc30527304136cd05beaa0d25e6455da39604acfb402cd1e441e",
+      "identity": "G:CB1_Overworld",
+      "aliases": [
+        "G:CB1_Overworld"
+      ],
+      "size": 32,
+      "hash32": 768325995
+    },
+    "fieldCB2": {
+      "address": 134764772,
+      "token": "fn_cdc22f0440225f9b476145ab97816979a64a4473e7406e2ea3808b8d3f6e5962",
+      "identity": "G:CB2_Overworld",
+      "aliases": [
+        "G:CB2_Overworld"
+      ],
+      "size": 44,
+      "hash32": 2295658176
+    },
+    "battleCB2": {
+      "address": 134448056,
+      "token": "fn_9af13c610036b25154af89dff4178e26521ef55d8ccacf27ef8e2ca89f555d94",
+      "identity": "G:BattleMainCB2",
+      "aliases": [
+        "G:BattleMainCB2"
+      ],
+      "size": 124,
+      "hash32": 1060388090
+    },
+    "waitFade": {
+      "address": 134933840,
+      "token": "fn_7ac0ab5901c2e36de51c87fe59576d0f5b49b4b1ecd4054ba72d2fa32460187e",
+      "identity": "L:field_screen_effect.o:Task_WaitForFadeAndEnableScriptCtx",
+      "aliases": [
+        "L:field_screen_effect.o:Task_WaitForFadeAndEnableScriptCtx"
+      ],
+      "size": 30,
+      "hash32": 2786618345
+    }
+  },
+  "after": {
+    "firstTurn": {
+      "address": 134462992,
+      "token": "fn_c0c36ec8e9c5d3dfd147d59e45b31a7162ad39522bbd0fc0b784d951d76f58ae",
+      "identity": "L:battle_main.o:HandleTurnActionSelectionState",
+      "aliases": [
+        "L:battle_main.o:HandleTurnActionSelectionState"
+      ],
+      "size": 3908,
+      "hash32": 1549553168
+    },
+    "freeReset": {
+      "address": 134471132,
+      "token": "fn_75467db53eff8fdfa2d4c0db815f168596c589092e9c0679aaa1a25418305aeb",
+      "identity": "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions",
+      "aliases": [
+        "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions"
+      ],
+      "size": 116,
+      "hash32": 2594348249
+    },
+    "tryEvolve": {
+      "address": 134471248,
+      "token": "fn_79d725df0caa01091b0f62271d270effc8cdb7e66cb798a199da65ad0d5db195",
+      "identity": "L:battle_main.o:TryEvolvePokemon",
+      "aliases": [
+        "L:battle_main.o:TryEvolvePokemon"
+      ],
+      "size": 148,
+      "hash32": 3886897904
+    },
+    "returnBattle": {
+      "address": 134471436,
+      "token": "fn_3f8bc8877a9d5465690955b5e9f372b3a75b8be95431121f206c4d1c08e1d2a2",
+      "identity": "L:battle_main.o:ReturnFromBattleToOverworld",
+      "aliases": [
+        "L:battle_main.o:ReturnFromBattleToOverworld"
+      ],
+      "size": 168,
+      "hash32": 749920720
+    },
+    "endTrainer": {
+      "address": 134944068,
+      "token": "fn_a294815896c08c5377b6a04a92556416764f40e1a2180dde6b4540d262dc6626",
+      "identity": "L:battle_setup.o:CB2_EndTrainerBattle",
+      "aliases": [
+        "L:battle_setup.o:CB2_EndTrainerBattle"
+      ],
+      "size": 160,
+      "hash32": 792070575
+    },
+    "continueScript": {
+      "address": 134765676,
+      "token": "fn_22552aa703c1ff90f909b2baba383933d444714e301614873b10d3b10b92b034",
+      "identity": "G:CB2_ReturnToFieldContinueScriptPlayMapMusic",
+      "aliases": [
+        "G:CB2_ReturnToFieldContinueScriptPlayMapMusic"
+      ],
+      "size": 28,
+      "hash32": 2882238029
+    },
+    "returnLocal": {
+      "address": 134765460,
+      "token": "fn_972f878821a865ac04cc8301b10b573c5607d3145050fd846203339869495928",
+      "identity": "L:overworld.o:CB2_ReturnToFieldLocal",
+      "aliases": [
+        "L:overworld.o:CB2_ReturnToFieldLocal"
+      ],
+      "size": 36,
+      "hash32": 2446138819
+    },
+    "fieldCB1": {
+      "address": 134764708,
+      "token": "fn_46419b1d937abc30527304136cd05beaa0d25e6455da39604acfb402cd1e441e",
+      "identity": "G:CB1_Overworld",
+      "aliases": [
+        "G:CB1_Overworld"
+      ],
+      "size": 32,
+      "hash32": 768325995
+    },
+    "fieldCB2": {
+      "address": 134764796,
+      "token": "fn_cdc22f0440225f9b476145ab97816979a64a4473e7406e2ea3808b8d3f6e5962",
+      "identity": "G:CB2_Overworld",
+      "aliases": [
+        "G:CB2_Overworld"
+      ],
+      "size": 44,
+      "hash32": 2295658176
+    },
+    "battleCB2": {
+      "address": 134448056,
+      "token": "fn_9af13c610036b25154af89dff4178e26521ef55d8ccacf27ef8e2ca89f555d94",
+      "identity": "G:BattleMainCB2",
+      "aliases": [
+        "G:BattleMainCB2"
+      ],
+      "size": 128,
+      "hash32": 1060388090
+    },
+    "waitFade": {
+      "address": 134933876,
+      "token": "fn_7ac0ab5901c2e36de51c87fe59576d0f5b49b4b1ecd4054ba72d2fa32460187e",
+      "identity": "L:field_screen_effect.o:Task_WaitForFadeAndEnableScriptCtx",
+      "aliases": [
+        "L:field_screen_effect.o:Task_WaitForFadeAndEnableScriptCtx"
+      ],
+      "size": 30,
+      "hash32": 2786618345
+    }
+  }
+}

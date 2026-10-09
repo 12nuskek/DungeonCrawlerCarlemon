@@ -1,0 +1,38 @@
+{
+  "parent_checkpoint": "3a872a174f4f6fa71c60b614d95bad6605f053a8",
+  "host_source_SHA256": "c96c002ec12d8105c8da139d2ffdc1063e9b0b3943e0cc6f90ade3629875465b",
+  "host_binary_SHA256": "c2629fb98bfa463be627c2600c49e003d752157d4b420bb219b9c3944cc60c24",
+  "host_compile_exit": 0,
+  "host_compile_log_bytes": 0,
+  "host_compile_command": "cc -std=gnu11 -Wall -Wextra -Werror observer.c -lmgba -o playtest",
+  "source_files_SHA256": {
+    "scripts/floor1/v01-battle-observer.h": "d25f0076dd892a78c141cffc897e8f3101ab11a50bb2a875eedbbef75a0129e5",
+    "scripts/floor1/v01-battle-host.py": "e34d545fb485ae20a2745d62ba0c803016c5cbe3f4aed3249ed1e0d2e9301b2e",
+    "scripts/floor1/v01-battle-symbols.py": "06d284b637353d261149edc0534fc9617b672e24b3de2cada4dd84aac7385c39",
+    "scripts/floor1/v01-battle-layout.c": "802f39e2bf31f92f733c2efa2c2fd0936985c94960b0dd59147391c70a90e8f5",
+    "scripts/test-f1-v01-battle-observer.py": "2cafa6b41735e00d93abda642767c6714468982ebc1ee2f995f3eced37793453"
+  },
+  "builds": [
+    {
+      "case": "before",
+      "game": "4938927da512543ca9aeea9527c103c84955e632",
+      "engine": "76001ee128785714b7c15aef6d9c95630587d0a9",
+      "ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+      "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+      "executed_in_this_increment": false
+    },
+    {
+      "case": "after",
+      "game": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+      "engine": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+      "ROM_SHA256": "830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9",
+      "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+      "executed_in_this_increment": false
+    }
+  ],
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "emulator_frames": 0,
+  "new_execution_claims": 0,
+  "game_changes": 0,
+  "native_layout": "Pinned agbcc compile; Main callback1/2/savedCallback/state offsets0/4/8/0x438, Task stride40/active4; generated fade accessor byte7 bit7 verified"
+}

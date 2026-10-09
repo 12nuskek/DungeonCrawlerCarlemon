@@ -2,6 +2,28 @@
 from pathlib import Path
 import hashlib,json,struct
 
+# Routing addresses come from scoped ELF STT_FUNC identities, not nm names.
+LIFECYCLE_FUNCTIONS={
+    'firstTurn':'L:battle_main.o:HandleTurnActionSelectionState',
+    'freeReset':'L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions',
+    'tryEvolve':'L:battle_main.o:TryEvolvePokemon',
+    'returnBattle':'L:battle_main.o:ReturnFromBattleToOverworld',
+    'endTrainer':'L:battle_setup.o:CB2_EndTrainerBattle',
+    'continueScript':'G:CB2_ReturnToFieldContinueScriptPlayMapMusic',
+    'returnLocal':'L:overworld.o:CB2_ReturnToFieldLocal',
+    'fieldCB1':'G:CB1_Overworld','fieldCB2':'G:CB2_Overworld',
+    'battleCB2':'G:BattleMainCB2',
+    'waitFade':'L:field_screen_effect.o:Task_WaitForFadeAndEnableScriptCtx',
+}
+
+def lifecycle_symbols(rows):
+    result=''
+    for field,identity in LIFECYCLE_FUNCTIONS.items():
+        matches=[r for r in rows if identity in r['aliases']]
+        assert len(matches)==1, 'Missing/ambiguous source-pinned lifecycle function: '+identity
+        result+=f"{matches[0]['address']:08x} V bv_{field}\n"
+    return result
+
 def elf_symbols(path):
     data=Path(path).read_bytes()
     header=struct.unpack_from('<16sHHIIIIIHHHHHH',data)
@@ -49,4 +71,4 @@ def functions(rows):
 def export(elf,output):
     rows=functions(elf_symbols(elf))
     Path(output).write_text(json.dumps(rows,indent=2)+'\n')
-    return ''.join(f"{r['address']:08x} F {r['token']}\n" for r in rows)
+    return ''.join(f"{r['address']:08x} F {r['token']}\n" for r in rows)+lifecycle_symbols(rows)

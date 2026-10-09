@@ -42,10 +42,10 @@
 | CB2 resume | global2971919469 | not observed before drain |
 | Wait entry | global2971919771 | not reached before drain |
 | Wait clear | global2971919801 | not reached before drain |
-| Video drain | global2971920688; Wait polling | global2971920688; RunTextPrinters rawPC080047ea |
+| After video drain | global2971920685; Wait polling | global2971920688; RunTextPrinters rawPC080047ea |
 | Typed record for this frame | B, then F | F; strict117 before B |
 
-The baseline reached Wait917 emulated cycles before the common drain; the candidate was still inside CB2. Main flag remained5 during the intervening callbacks/VBlank observations, with no candidate Wait clear after the last accepted anchor. This directly proves the new boundary-timing divergence. It does not identify an earlier discarded cause, recover missing historical observations, demonstrate a correction or justify realignment/waiver. No new CPU execution or source edit was used for this review.
+The baseline reached Wait914 emulated cycles before its own after-drain observation, or917 before the candidate's after-drain observation; the candidate was still inside CB2. Main flag remained5 during the intervening callbacks/VBlank observations, with no candidate Wait clear after the last accepted anchor. This directly proves the new boundary-timing divergence. It does not identify an earlier discarded cause, recover missing historical observations, demonstrate a correction or justify realignment/waiver. No new CPU execution or source edit was used for this review.
 
 ## Actual captures and motion inspection
 
@@ -74,3 +74,6 @@ Inspected consecutive native windows: [BRACE4419–4434](actual-brace-16frames.p
 [Preservation](preservation.json): all nine earlier claims/hash identities, original reference/Save/archive2002f5e4 and all historical failures/controllers/three strategy failures preserved. Exactly one new candidate claim; counts6 baseline/4 candidate. Game/host/route/policy/assertions unchanged, all earlier captures retained. Denied raw datasets/keys/private symbols/VRAM/binaries/ROMs/Saves stay outside Git/uploads. Original deleted-environment legacy inputs/patrol raw logs/missing historical timing remain missing; fresh inputs do not restore legacy acceptance.
 
 There is no E/BV_FINISH/BV_PEAK/BV_WARNING/pilot completion, victory, cleanup, field return, reward/resource/Save/equivalence acceptance.27 partial assertions and screenshots do not satisfy the finish gate. Legacy/C01, human pacing and full-floor checks remain unresolved. Parent review of this first STOP117/causal window is next; no retry, baseline restart, further emulator execution/source edits/waiver/merge/rollout/expansion follow automatically. Existing PR114 remains draft/unmerged; nine-district Floor1/Book1 scope retained. All68 heads/65 PRs reconciled at start, mainc6d647a8/accepted plan/historical bodies preserved. CI checks/statuses/workflow runs0 indicate absence, not PASS.
+
+
+Timestamp clarification — 2026-10-09 parent review: baseline after-drain2971920685 versus candidate2971920688, not a common observed timestamp. Baseline Wait2971919771 is914 cycles before its own observation or917 before the candidate's. These aggregate after-drain observations do not establish an exact internal video callback timestamp. No lost iteration or post-stop native boundary is inferred.

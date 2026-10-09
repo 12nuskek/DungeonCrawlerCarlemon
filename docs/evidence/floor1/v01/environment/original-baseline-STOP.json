@@ -1,0 +1,29 @@
+{
+  "case": "before",
+  "validation_failure": "",
+  "summary": {
+    "case": "before",
+    "execution_source": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+    "exit": 14,
+    "errors_bytes": 28,
+    "assertions": 25,
+    "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "replay_log_SHA256": "6ff4712cde24f4b4220b6c5374c97e4856f174d8f3ebb6a3cbeb322c5c13b122",
+    "scene_peaks": [
+      "SCENE_PEAK map=0 samples=1675 objects=6 sprites=10 obj_tiles=64 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+      "SCENE_PEAK map=1 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0",
+      "SCENE_PEAK map=2 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0",
+      "SCENE_PEAK map=3 samples=714 objects=2 sprites=6 obj_tiles=36 obj_palettes=2 heap_used=34176 heap_free_min=80384",
+      "SCENE_PEAK map=4 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0"
+    ],
+    "views": [
+      "SCENE_VIEW label=boot map=3 bg_referenced_unique_tiles=23 bg_max_tile=594 bg_palette_mask=0208 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+      "SCENE_VIEW label=junction map=0 bg_referenced_unique_tiles=20 bg_max_tile=630 bg_palette_mask=0048 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072"
+    ],
+    "clock": [],
+    "battles": [
+      "WARDEN battle_frames=0 attempts=0"
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 boot.ppm
+ready
+expect 35 3 8 7 7
+preserve start
+scene boot
+step 68 64 -
+step 40 0 -
+expect 35 3 8 3 7
+step 68 32 -
+step 40 0 -
+step 300 0 -
+expect 35 0 45 17 7
+step 164 128 -
+step 40 0 -
+expect 35 0 45 27 7
+step 148 32 -
+step 40 0 -
+expect 35 0 36 27 7
+step 20 64 -
+step 40 0 -
+expect 35 0 36 26 7
+step 36 32 -
+step 40 0 -
+expect 35 0 34 26 7
+step 36 64 -
+step 40 0 -
+expect 35 0 34 24 7
+step 68 32 -
+step 40 0 -
+expect 35 0 30 24 7
+step 40 0 junction.ppm
+ready
+scene junction
+expect 35 0 30 24 7
+record start
+step 64 32 -
+step 40 0 -
+expect 35 0 26 24 7
+step 132 16 -
+step 40 0 -
+expect 35 0 34 24 7
+step 20 128 -
+step 40 0 -
+expect 35 0 34 25 7
+step 84 32 -
+step 40 0 -
+expect 35 0 29 25 7
+step 20 128 -
+step 40 0 -
+expect 35 0 29 26 7
+step 24 16 pillar-blocked.ppm
+ready
+expect 35 0 29 26 7
+step 36 64 -
+step 40 0 -
+expect 35 0 29 24 7
+step 20 16 -
+step 40 0 -
+expect 35 0 30 24 7
+record stop
+step 40 0 junction-return.ppm
+ready
+scene junction-return
+expect 35 0 30 24 7
+step 64 16 -
+step 40 0 -
+expect 35 0 34 24 7
+step 36 128 -
+step 40 0 -
+expect 35 0 34 26 7
+step 52 16 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 40 0 quiet-door.ppm
+ready
+scene quiet-door
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+step 40 0 quiet-guide.ppm
+ready
+scene quiet-guide
+expect 35 1 4 5 7
+step 20 16 -
+step 40 0 -
+expect 35 1 5 5 7
+step 36 128 -
+step 40 0 -
+expect 35 1 5 7 7
+step 40 0 quiet-mat.ppm
+ready
+scene quiet-mat
+expect 35 1 5 7 7
+step 68 64 -
+step 40 0 -
+expect 35 1 5 3 7
+step 20 32 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 40 0 safe-doorway.ppm
+ready
+scene safe-doorway
+expect 35 0 37 26 7
+step 36 128 -
+step 40 0 -
+expect 35 0 37 28 7
+step 40 0 safe-approach.ppm
+ready
+scene safe-approach
+expect 35 0 37 28 7
+step 48 128 -
+step 40 0 -
+expect 35 0 37 31 7
+step 20 32 -
+step 40 0 -
+expect 35 0 36 31 7
+step 20 128 -
+step 40 0 -
+expect 35 0 36 32 7
+step 20 32 -
+step 40 0 -
+expect 35 0 35 32 7
+step 68 128 -
+step 40 0 -
+expect 35 0 35 36 7
+step 20 32 -
+step 40 0 -
+expect 35 0 34 36 7
+step 84 128 -
+step 40 0 -
+expect 35 0 34 41 7
+step 132 16 -
+step 40 0 -
+expect 35 0 42 41 7
+step 20 64 -
+step 40 0 -
+step 300 0 -
+expect 35 2 4 3 7
+step 40 0 workshop-door.ppm
+ready
+scene workshop-door
+expect 35 2 4 3 7
+step 36 16 -
+step 40 0 -
+expect 35 2 6 3 7
+step 100 128 -
+step 40 0 -
+expect 35 2 6 9 7
+step 40 0 workshop-bench.ppm
+ready
+scene workshop-bench
+expect 35 2 6 9 7
+step 100 16 -
+step 40 0 -
+expect 35 2 12 9 7
+step 40 0 workshop-cache.ppm
+ready
+scene workshop-cache
+expect 35 2 12 9 7
+step 100 64 -
+step 40 0 -
+expect 35 2 12 3 7
+step 132 32 -
+step 40 0 -
+step 300 0 -
+expect 35 0 42 40 7
+step 40 0 optional-cue.ppm
+ready
+scene optional-cue
+expect 35 0 42 40 7
+step 20 128 -
+step 40 0 -
+expect 35 0 42 41 7
+step 52 16 -
+step 40 0 -
+expect 35 0 45 41 7
+step 20 128 -
+step 40 0 -
+expect 35 0 45 42 7
+step 40 0 optional-approach.ppm
+ready
+scene optional-approach
+expect 35 0 45 42 7
+step 36 32 -
+step 40 0 -
+expect 35 0 43 42 7
+step 40 0 final.ppm
+ready
+scene final
+expect 35 0 43 42 7
+preserve check
+quit

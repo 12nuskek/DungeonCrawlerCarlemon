@@ -1,0 +1,39 @@
+{
+  "case": "before",
+  "execution_source": "45fd1550be6c6f895a20e66bc63d5d4027a241e2",
+  "exit": 0,
+  "errors_bytes": 0,
+  "assertions": 116,
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "replay_log_SHA256": "d49c0b24a939d40927b34f3ce523eecc36ce14a88f3d47c41c35acae7b9e2503",
+  "scene_peaks": [
+    "SCENE_PEAK map=0 samples=4023 objects=8 sprites=12 obj_tiles=64 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+    "SCENE_PEAK map=1 samples=790 objects=6 sprites=10 obj_tiles=56 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+    "SCENE_PEAK map=2 samples=1078 objects=5 sprites=9 obj_tiles=44 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+    "SCENE_PEAK map=3 samples=714 objects=2 sprites=6 obj_tiles=36 obj_palettes=2 heap_used=34176 heap_free_min=80384",
+    "SCENE_PEAK map=4 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0"
+  ],
+  "views": [
+    "SCENE_VIEW label=boot map=3 bg_referenced_unique_tiles=23 bg_max_tile=594 bg_palette_mask=0208 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=junction map=0 bg_referenced_unique_tiles=20 bg_max_tile=630 bg_palette_mask=0048 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=junction-return map=0 bg_referenced_unique_tiles=20 bg_max_tile=630 bg_palette_mask=0048 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=quiet-door map=1 bg_referenced_unique_tiles=12 bg_max_tile=565 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=quiet-guide map=1 bg_referenced_unique_tiles=14 bg_max_tile=594 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=quiet-mat map=1 bg_referenced_unique_tiles=14 bg_max_tile=594 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=safe-doorway map=0 bg_referenced_unique_tiles=20 bg_max_tile=630 bg_palette_mask=0048 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=safe-approach map=0 bg_referenced_unique_tiles=20 bg_max_tile=630 bg_palette_mask=0048 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=workshop-door map=2 bg_referenced_unique_tiles=15 bg_max_tile=565 bg_palette_mask=00c8 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=workshop-bench map=2 bg_referenced_unique_tiles=20 bg_max_tile=594 bg_palette_mask=00c8 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=workshop-cache map=2 bg_referenced_unique_tiles=17 bg_max_tile=594 bg_palette_mask=00c8 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=optional-cue map=0 bg_referenced_unique_tiles=21 bg_max_tile=665 bg_palette_mask=0148 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=optional-approach map=0 bg_referenced_unique_tiles=21 bg_max_tile=665 bg_palette_mask=0148 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072",
+    "SCENE_VIEW label=final map=0 bg_referenced_unique_tiles=21 bg_max_tile=665 bg_palette_mask=0148 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=3072"
+  ],
+  "clock": [
+    "COLD_CLOCK absolute_frames=8188 valid_frame_samples=6094 deferred_frame_samples=50 explicit_checkpoints=30 reentry_comparisons=5 boundary_events=1 armed_frame=2044"
+  ],
+  "battles": [
+    "WARDEN battle_frames=0 attempts=0"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "PR": 112,
+  "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/112",
+  "draft": true,
+  "merged": false,
+  "state": "open",
+  "base": "54526744eb7ed961007ffe6100f976a1e7448e8b",
+  "initial_publication_head": "4f497561e35508555d9463479f2f3ad539c330e4",
+  "mergeable": true,
+  "mergeable_state": "clean",
+  "existing_remote_heads_checked": 65,
+  "existing_remote_heads_unchanged": true,
+  "new_branch": "task/floor1-v01-environment",
+  "check_runs": 0,
+  "statuses": 0,
+  "workflow_runs": 0,
+  "reviews": 0,
+  "CI": "absent, not success",
+  "next": "Parent visible environment pilot review; no further execution/rollout/merge"
+}

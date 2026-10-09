@@ -1,0 +1,10 @@
+{
+  "filename": "DungeonCrawlerCarlemon-V01-environment-20261009.zip",
+  "SHA256": "8760c446696319dc3a77cbcd147f9b6d6de2fcfa2b939f5ac2dd07de38a954b5",
+  "bytes": 6744456,
+  "files": 3687,
+  "excluded_native_diagnostic_buffers": 386,
+  "Library_saved": true,
+  "identity_applied_locally": true,
+  "exclusions": "ROMs, ELF/executables, all native .bin diagnostic buffers including encoding contexts/keys, credentials and denied old datasets stay outside uploads. Necessary new ordinary saves/text logs/native captures retained privately."
+}

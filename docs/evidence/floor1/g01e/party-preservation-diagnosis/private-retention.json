@@ -1,0 +1,15 @@
+{
+  "status": "succeeded",
+  "retained_privately_in": "ChatGPT Library",
+  "file_name": "DungeonCrawlerCarlemon-party-preservation-diagnosis-20261008.zip",
+  "SHA256": "3656476086cfc5f04f589193da57c7b538391ac189d20cccd7f7d20c67aea9c4",
+  "bytes": 96125,
+  "files": 50,
+  "includes": "Complete new diagnostic raw buffers/full decoded party fields, unchanged completed ordinary input copy, compile/runtime/analysis logs, route/claim/STOP and native captures",
+  "excludes": "ROMs, ELF/executables, emulator states, credentials, original missing inputs, old denied raw datasets and actual resource encoding context (not captured)",
+  "new_noncombat_probes": 1,
+  "new_battle_attempts": 0,
+  "friendship_delta_proven": false,
+  "original_prepared_field_identified": false,
+  "stairs_NO_boundary_reached": false
+}

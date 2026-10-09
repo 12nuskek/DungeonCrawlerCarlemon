@@ -1,0 +1,4 @@
+PASS offline exact decoding: all600 party bytes unchanged; both native checksums and re-encoding valid; friendship deltas0
+OBSERVED strict new resource stop:378 encoded bytes,186 bag words/common XOR difference, unencrypted resource bytes exact
+LIMIT counter66→72; NO/128 boundary unreached. Actual key context absent; no independent decoded-resource invariance or friendship mechanism proof.
+STOP/claim preserved; no new emulator frames, prepared replay, retry or preservation relaxation

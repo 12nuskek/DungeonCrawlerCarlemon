@@ -1,5 +1,25 @@
 # DungeonCrawlerCarlemon working contract
 
+Current diagnosis package: draft PR101 / issue100 on PR99. Diagnostic STOP
+preserved; parent review next, no further execution.
+
+Exact-field diagnostic completed one noncombat execution and stopped atframe2236
+on the added raw-resource guard during warp. All600 party bytes/checksums stayed
+exact; counter66→72, no stairsNO/128 boundary or friendship delta observed.
+Preserve diagnostic STOP/claim/private buffers; no retry or further execution.
+Parent review of the resource-encoding observer flaw is next. No gate relaxation,
+friendship exception, prepared replay or battle. See
+docs/evidence/floor1/g01e/party-preservation-diagnosis/README.md.
+
+Parent review of PR99 accepts both bounded unprepared first-clear/cold pairs and
+encounter-local guards. Authorises exact-field diagnosis only under
+docs/floor1/g01e-party-preservation-diagnosis-contract.md: one completed ordinary
+unprepared Save, fixed noncombat walking/staircase-NO probe, strict200-byte gate,
+stop at first mismatch. No prepared replay, Warden battle, injected state/counters,
+RNG search, retry or preservation relaxation. Keep original prepared failure and
+all frozen records unchanged; new mechanism evidence cannot identify missing
+original buffers. Raw party/resource buffers and decoded identities stay private.
+
 Current candidate review package: draft PR99 / issue98, stacked on PR97;
 global prepared STOP active, no further execution before parent review.
 

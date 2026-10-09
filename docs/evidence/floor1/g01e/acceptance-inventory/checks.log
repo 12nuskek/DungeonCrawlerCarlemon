@@ -1,0 +1,14 @@
+2026-10-09; read-only source/art/build checks; no emulator executions or new build.
+python3 scripts/inventory-f1-g01e.py --build artifacts/floor1/warden-fairness/build/source/engine --output docs/evidence/floor1/g01e/acceptance-inventory
+PASS source-only inventory: live T=1449 (982+115+116+118+118); closed1440; all25 authored clear-width probes; unchanged geometry/actors; exact5084 ROM/ELF; EWRAM249704/IWRAM30892; no emulator
+python3 docs/art-references/native-battle-animation-20261007/verify_candidates.py
+PASS_NATIVE_ASSETS_PARTIAL_SOURCE:250 checks;16 unique source pose frames;5 Warden lift8 variants; corrected Donut source absent; full source rebuild NO; runtime NO.
+python3 verify_staged.py (cwd docs/art-references/native-battle-animation-20261007)
+PASS:180 checks;41 staged files;24 native PNGs;6 existing inputs; emulator verified false.
+python3 verify_staged.py (cwd docs/art-references/full-floor-preparation-20261007)
+PASS:231 checks;2 exact stitch panels;37 payload files;18 PNGs;8 source identities; runtime false.
+python3 docs/art-references/environment-native-candidates/verify_staged.py
+PASS:123 staged checksums;91 native decoded PNG identities;721 static checks. Full source reproduction unavailable: main source PNG absent.
+Read-only pending-save hash: two existing local ordinary files match c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f; no Save writes.
+Current engine equals5084; loader/membership/geometry/tilesets/Carl masters unchanged from earlier accepted live source; 5084 combat hooks confined to Warden trainers858/859 (source reviewed, no new runtime claim).
+GitHub:17 existing open/draft/unmerged PRs75..107odd; CP72e exact PR91 base, no CP PR across all states;61 prior remote heads/mainb694 preserved. PR107 first-page PR-triggered workflow_runs empty; no checked-in workflow at head/main, no CI-pass claim.

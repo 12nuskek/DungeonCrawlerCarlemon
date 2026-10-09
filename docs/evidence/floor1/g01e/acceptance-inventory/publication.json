@@ -1,0 +1,11 @@
+{
+  "draft_pr": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108",
+  "existing_issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106",
+  "base": "1663abb05000374b03d0c0db3c78a974c87b3852",
+  "inventory_source": "ba2237c8f2a9b5e338528000293d1332ff26f7de",
+  "status": "open/draft/unmerged; no integration",
+  "new_issue_created": false,
+  "new_issue_rejection": "Automatic approval review: new persistent public issue not specifically authorised; existing issue covers work. Use existing106; no bypass or retry.",
+  "no_game_edits": true,
+  "no_emulator_executions": true
+}

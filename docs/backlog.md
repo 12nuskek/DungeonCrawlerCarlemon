@@ -1,3 +1,14 @@
+G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
+
+[Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.
+Final live T1449 (982+115+116+118+118),25width probes, unchanged geometry/actors;
+current5084 linked EWRAM249704/IWRAM30892. Original legacy-input limitation retained.
+Only current Guard-first order/travel/Save/cold remains before scoped integration
+and staged V01. No emulator/game changes; no merge/full-route/human pacing claim.
+[Requirement matrix, exact evidence, integration including CP72e and V01 pilot](floor1/g01e-acceptance-inventory.md).
+
+## Historical PR107 closure checkpoint
+
 Prepared dependent cold closure — 2026-10-09: **132 assertions pass; bounded prepared persistence pair complete; parent review next; unmerged**.
 
 [Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.

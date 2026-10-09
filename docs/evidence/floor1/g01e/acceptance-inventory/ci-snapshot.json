@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-09",
+  "scope": "GitHub connector: PR-triggered workflow runs, first page only; no CI-pass inference",
+  "results": [
+    {
+      "pr": 75,
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 77,
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 79,
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 81,
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 83,
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 85,
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 87,
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 89,
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 91,
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 93,
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 95,
+      "head": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 97,
+      "head": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 99,
+      "head": "61fba93c0485af269944a739953240e1f745466a",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 101,
+      "head": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 103,
+      "head": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 105,
+      "head": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "runs": [],
+      "error": false
+    },
+    {
+      "pr": 107,
+      "head": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "runs": [],
+      "error": false
+    }
+  ]
+}

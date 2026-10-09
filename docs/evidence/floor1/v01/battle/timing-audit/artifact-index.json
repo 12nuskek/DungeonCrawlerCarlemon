@@ -3,18 +3,18 @@
   "files": [
     {
       "path": "docs/evidence/floor1/v01/battle/timing-audit/README.md",
-      "bytes": 13778,
-      "SHA256": "2c2b4ad839cdbca254c2f531c54f381b773a971c7f0d394e504fd4cdb639a6d6"
+      "bytes": 13965,
+      "SHA256": "f9cdd2793af9d1dfed1d25f3fbd9c58296873447e10cdc056e562c8a98c99765"
     },
     {
       "path": "docs/evidence/floor1/v01/battle/timing-audit/after-mechanism-trace.jsonl",
-      "bytes": 10273,
-      "SHA256": "0b16be4dabe319c1d3c51a4c7d31a05102bc13da339e406466c9a8a59861e37c"
+      "bytes": 13224,
+      "SHA256": "c9f47df1c6e4eb015685e576c99cb87c1d9ca3e35c671601ad8b0a3c59ef3ece"
     },
     {
       "path": "docs/evidence/floor1/v01/battle/timing-audit/before-mechanism-trace.jsonl",
-      "bytes": 10273,
-      "SHA256": "0b16be4dabe319c1d3c51a4c7d31a05102bc13da339e406466c9a8a59861e37c"
+      "bytes": 13224,
+      "SHA256": "c9f47df1c6e4eb015685e576c99cb87c1d9ca3e35c671601ad8b0a3c59ef3ece"
     },
     {
       "path": "docs/evidence/floor1/v01/battle/timing-audit/elf-path-identities.json",
@@ -84,7 +84,7 @@
     {
       "path": "docs/evidence/floor1/v01/battle/timing-audit/tool-identities.json",
       "bytes": 1083,
-      "SHA256": "8496e8fef7d521e32ff94f4dc8688b7317f1d2ddc13fee1ea658c51f75b7ceb5"
+      "SHA256": "3f08588976a79657f1489b00af2d57198125d4de0cb671c75a4e56688a0cbc00"
     },
     {
       "path": "docs/floor1/v01-timing-audit-contract.md",
@@ -103,8 +103,8 @@
     },
     {
       "path": "scripts/floor1/v01-timing-audit-fixture.c",
-      "bytes": 8494,
-      "SHA256": "55578f2b203ec914a90379b34e428d6d8a6891df69d81e9d5ea64e3702d98096"
+      "bytes": 8771,
+      "SHA256": "18382c35c3d4439f842db200a5a90255124baf4d1ad7d558224bc9d9d53c069d"
     },
     {
       "path": "scripts/floor1/v01-timing-audit.py",

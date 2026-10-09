@@ -1,5 +1,7 @@
 # Full Floor 1 execution
 
+[Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
+
 Current focused checkpoint: dependent prepared cold route verified132 assertions,
 6258 exact frames, zero battles and unchanged normal Save; separate prepared
 pair402 assertions. Historical failed cold/STOP and legacy limitations retained.

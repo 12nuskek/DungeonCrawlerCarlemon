@@ -1,5 +1,7 @@
 # Dependent prepared cold route closed — exact native phase/clock proof
 
+[Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
+
 ONE separately claimed cold-only process passes **132 assertions/6,258 absolute
 frames**, empty errors, zero battle frames/attempts and byte-identical normal Save.
 Actual boot, arena return, resolved repeat, staircaseNO/YES, checkpoint re-entry

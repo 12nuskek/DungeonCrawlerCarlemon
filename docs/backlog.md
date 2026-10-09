@@ -1,5 +1,7 @@
 Prepared dependent cold closure — 2026-10-09: **132 assertions pass; bounded prepared persistence pair complete; parent review next; unmerged**.
 
+[Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
+
 Separate native phase adapter/absolute clock on unchanged PR105/84cbb196. Frozen
 host/runner514187f69d1cd0d84536d66071da988ece0c337a; execution8896e1f2e8b203bb90c224a864f26266bce60200.
 Unchanged approved game5084/ROM23c77; fresh warning-as-error host compile and

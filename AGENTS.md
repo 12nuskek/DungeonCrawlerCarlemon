@@ -1,11 +1,12 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR107 / issue106, stacked on unchanged PR105.
 Cold-only closure completed ONE execution:132 assertions/6258 exact frames,
 zero battles/unchanged normal savedbaaf…ccd7. Source phase gate retains accepted
 snapshots through19 deferred frames; full exact state on2 re-entries. Historical
 failed cold/STOP preserved. No further execution; parent closure review and
 read-only remaining F1-G01e evidence inventory next. See
- docs/evidence/floor1/g01e/prepared-cold-phase/README.md.
+docs/evidence/floor1/g01e/prepared-cold-phase/README.md.
 
 Parent PR105 review authorises ONE separate cold-only completion from normal
 Save dbaaf731…ccd7 under docs/floor1/g01e-prepared-cold-phase-contract.md.

@@ -1,5 +1,7 @@
 # Derived Donut native source master
 
+Publication clarification — 2026-10-09: routine source/documentation/art Git blobs are authorised and the original offline checkpoint0d9e93f5 is published through existing draft PR114. The local-only wording below records its initial offline authority, superseded for this publication only. ROMs/playable releases/secrets/private raw diagnostics remain excluded; runtime binding and gameplay remain unstarted. Offline source, tests and derived pixels are unchanged. See docs/evidence/floor1/v01/battle/native-boundary/publication.json.
+
 This local source package is derived from ten verified native indexed PNGs at
 checkpoint a86ceca9a3e642e87d3319e7072d35fd9adea21a. It is not the original
 illustration, a new generated concept, newly authored art or new approval.

@@ -1,7 +1,7 @@
 {
   "README.md": {
-    "SHA256": "565875b3acc69081ef4eaab913583f2e1cdf5e6759823d0506366c54426dc0a1",
-    "bytes": 1915
+    "SHA256": "0c9caf9da142b0d152a72b9c20c94ce1623e3e9f4c4348b9b9df41f43a5276bb",
+    "bytes": 2454
   },
   "after-boundary.json": {
     "SHA256": "fcfed903cd56a93b2db05d732195bfbc43176b21d48f4634c360daf2b2210cc3",
@@ -26,6 +26,10 @@
   "preservation.json": {
     "SHA256": "479ae7072c8da3ef8763c70b0ab07c889a2158b8835dc07a60f122cdaf3a5397",
     "bytes": 13928
+  },
+  "publication.json": {
+    "SHA256": "a56f31cc7924f425761304fe7a1046dcc12d8916bdffaff9b1962e8c06561692",
+    "bytes": 1320
   },
   "result.json": {
     "SHA256": "bcc0fa729223db99609ff1164db03c6715a44e6d7de778a6a0b8a690014d42c9",

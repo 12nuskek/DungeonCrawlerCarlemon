@@ -1,0 +1,24 @@
+{
+  "implemented_tested_offline_source": "0d9e93f5f6cbe1d3f537e6be16ab0f2b26d90858",
+  "PR": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/114",
+  "source_checkpoint_publication_verified": true,
+  "draft": true,
+  "merged": false,
+  "scope": "Routine offline source/documentation/derived-asset Git blobs only",
+  "previous_local_hold": "Instruction interpretation; no publication action denied",
+  "restriction": "ROMs/playable releases/executables/secrets/Saves/denied private raw buffers excluded",
+  "runtime_binding_started": false,
+  "gameplay_frames": 0,
+  "new_claims": 0,
+  "source_contract": "docs/floor1/v01-native-boundary-prototype-contract.md",
+  "source_evidence": "docs/evidence/floor1/v01/battle/native-boundary/README.md",
+  "derived_source": "docs/art-references/derived-donut-master-20261009/README.md",
+  "private_Library_retention": {
+    "confirmed": true,
+    "archive_SHA256": "e77020d62902a1b7b4b3878846964d07ddc08024bc7af36a70096716b7731370",
+    "bytes": 107704,
+    "byte_verified_entries": 37,
+    "scope": "Exact0d9 scoped text/source/documentation/derived palette and pixel definitions plus safe package metadata; no raw/ROM/executable/Save/key/Library identity"
+  },
+  "parent_dependency": "Offline boundary/source review; runtime binding/gameplay/merge remain unauthorised"
+}

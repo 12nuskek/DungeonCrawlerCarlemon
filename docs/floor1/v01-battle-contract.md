@@ -24,7 +24,7 @@ Faint/absent guard prevents writes; native allocation/free reset clears state.
 
 Freeze game, host and route before emulation. Use retained ordinary preboss
 Save030b12fd…db6b73c, source-qualified input, actual boot/readiness and full600
-party/count300 flags1272 logical owned/counter checks. Same50-command route
+party/count300 flags1272 logical owned/counter checks. Same48-command route
 (the committed route is authority for exact command count), existing fortify
 policy: BRACE/WEAKEN turns0–2 then offence using inherited exhaustion fallback.
 One exclusively claimed baseline and one candidate, trainer858, max30000 battle

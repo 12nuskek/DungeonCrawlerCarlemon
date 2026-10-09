@@ -1,5 +1,15 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent PR108 review authorises ONE separately claimed current Guard-first route
+plus dependent exact native cold under docs/floor1/g01e-guard-first-current-contract.md.
+Unchanged5084/23c77, ordinary pendingc11c…c67f; historical offensive policy/complete
+route/cadence frozen before execution. Source-valid native phase sampling with
+declared battle/recovery milestones, exact named measured legs, manual Save/cold.
+Stop FIRST failure; no retry, Warden, optional/extra walking, game edit or integration.
+Current authority supersedes inventory-only stop for this focused check; preserve
+all historical stops/controllers/legacy limitations. Next parent review→explicit
+stack integration→V01. No tasks/schedules/other writer.
+
 Current review package: inventory draft PR108 / existing issue106, stacked on unchanged PR107.
 Parent PR107 review passed: bounded prepared270+132 closed; old failures retained.
 Current focused increment is read-only G01e acceptance inventory under

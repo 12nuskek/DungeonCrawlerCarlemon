@@ -1,0 +1,297 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 boot.ppm
+ready
+checkpoint boot
+flag 2135 1
+growth 9 495 0 9 805 0
+duo healthy
+uses 8 40 2 40
+item 13 1
+item 378 2
+money remember
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+flag 2136 0
+flag 2137 0
+expect 35 0 37 31 7
+mutation guard
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 guard-start.ppm
+pilot offensive 36000
+step 600 0 guard-victory.ppm
+dialog 6000
+ready
+expect 35 0 37 31 7
+flag 2136 1
+checkpoint guard-win
+flag 2137 0
+growth 10 627 0 9 937 0
+money gain 320
+money remember
+item 13 1
+item 378 2
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start guard-out
+step 84 64 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+mutation heal
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-1.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+checkpoint guide-guard
+xp remember
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start guard-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+measure stop
+no-battle start
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guard-resolved.ppm
+dialog 3600
+ready
+step 40 0 -
+xp same
+money same
+no-battle end
+checkpoint guard-repeat
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+step 68 64 -
+step 40 0 -
+expect 35 0 37 27 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 27 7
+mutation howler
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 howler-start.ppm
+pilot offensive 36000
+step 600 0 howler-victory.ppm
+dialog 6000
+ready
+expect 35 0 51 27 7
+flag 2137 1
+checkpoint howler-win
+flag 2136 1
+growth 11 748 0 10 1058 0
+money gain 360
+money remember
+item 13 1
+item 378 2
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start howler-out
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+mutation heal
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-2.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+checkpoint guide-howler
+xp remember
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start howler-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 26 7
+step 20 128 -
+step 40 0 -
+expect 35 0 51 27 7
+measure stop
+no-battle start
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 howler-resolved.ppm
+dialog 3600
+ready
+step 40 0 -
+xp same
+money same
+no-battle end
+checkpoint howler-repeat
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+flag 2136 1
+flag 2137 1
+flag 49 0
+measure start preboss-out
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+mutation heal
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-preboss.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+checkpoint guide-preboss
+measure start preboss-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+approach
+step 116 16 -
+step 40 0 -
+expect 35 0 44 26 7
+step 148 64 -
+step 40 0 -
+expect 35 0 44 17 7
+step 20 16 -
+step 40 0 -
+step 300 0 -
+expect 35 3 4 3 7
+step 64 16 -
+step 40 0 -
+expect 35 3 8 3 7
+step 68 128 -
+step 40 0 -
+expect 35 3 8 7 7
+measure stop
+step 40 0 approach.ppm
+checkpoint final
+growth 11 748 0 10 1058 0
+duo healthy
+uses 8 40 2 40
+item 13 1
+item 378 2
+flag 2135 1
+flag 2136 1
+flag 2137 1
+xp same
+money same
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+expect 35 3 8 7 7
+checkpoint saved
+growth 11 748 0 10 1058 0
+duo healthy
+uses 8 40 2 40
+item 13 1
+item 378 2
+xp same
+money same
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+quit

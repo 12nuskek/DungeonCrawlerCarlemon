@@ -1,0 +1,29 @@
+cold-approach
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+ready
+checkpoint boot
+expect 35 3 8 7 7
+growth 11 748 0 10 1058 0
+duo healthy
+uses 8 40 2 40
+item 13 1
+item 378 2
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+checkpoint cold
+quit

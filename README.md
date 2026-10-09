@@ -11,6 +11,10 @@ assertions on the same exact game; [evidence](docs/evidence/floor1/g01e/optional
 Resolved stairs/return/refusal/repeat/Save/cold and all four compact interiors now
 pass7 ordinary sessions /3,750 assertions; [draft PR83](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/83),
 [exact evidence](docs/evidence/floor1/g01e/staircase/README.md). No game patch or new boss victory.
+Sealed stairs now pass2 ordinary sessions /11,382 assertions, including refusal,
+blocking, return/re-entry and Save/cold; no battle across17,407 observed frames.
+[Draft PR85](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/85),
+[exact sealed-state evidence](docs/evidence/floor1/g01e/sealed/README.md).
 Full live gameplay/finalT and native-art rollout remain gated by the recorded combat
 stop. The Stage0–5 delivery claims below describe the preserved baseline.
 

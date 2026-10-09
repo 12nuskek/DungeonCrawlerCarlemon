@@ -1,0 +1,137 @@
+[
+  {
+    "file": "sealed-first.png",
+    "source_route": "ordinary-sealed-refusal-return-reentry-save",
+    "source_capture": "first-refusal-00-00.png",
+    "assertion": "Initial ordinary sealed refusal; no choice or transition.",
+    "sha256": "a608adc9051ae94ad42a9e485f084efc3a005d6a96f12d5fa78881b7dc6d8f31",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "sealed-blocked.png",
+    "source_route": "ordinary-sealed-refusal-return-reentry-save",
+    "source_capture": "first-refusal-blocked.png",
+    "assertion": "Ordinary south input stays at12,10; full0x3618 entry unchanged.",
+    "sha256": "61d71744be1eac282b92781d5e806b0c7d7ac7d1eab7c11cdd0d868cbb444156",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "sealed-reentered.png",
+    "source_route": "ordinary-sealed-refusal-return-reentry-save",
+    "source_capture": "reentered-refusal-00-00.png",
+    "assertion": "Field return and arena re-entry still refuse passage.",
+    "sha256": "a608adc9051ae94ad42a9e485f084efc3a005d6a96f12d5fa78881b7dc6d8f31",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "saved.png",
+    "source_route": "ordinary-sealed-refusal-return-reentry-save",
+    "source_capture": "saved.png",
+    "assertion": "Actual manual Save completes at the sealed stairs.",
+    "sha256": "61d71744be1eac282b92781d5e806b0c7d7ac7d1eab7c11cdd0d868cbb444156",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "cold.png",
+    "source_route": "ordinary-sealed-cold-return-reentry",
+    "source_capture": "cold.png",
+    "assertion": "Cold Continue restores arena12,10 with unresolved boss.",
+    "sha256": "61d71744be1eac282b92781d5e806b0c7d7ac7d1eab7c11cdd0d868cbb444156",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "cold-refusal.png",
+    "source_route": "ordinary-sealed-cold-return-reentry",
+    "source_capture": "cold-refusal-00-00.png",
+    "assertion": "Cold interaction still returns the sealed message.",
+    "sha256": "a608adc9051ae94ad42a9e485f084efc3a005d6a96f12d5fa78881b7dc6d8f31",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "cold-reentered.png",
+    "source_route": "ordinary-sealed-cold-return-reentry",
+    "source_capture": "cold-reentered-refusal-00-00.png",
+    "assertion": "Cold Field return/arena re-entry preserves sealed state.",
+    "sha256": "a608adc9051ae94ad42a9e485f084efc3a005d6a96f12d5fa78881b7dc6d8f31",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "boss-journal.png",
+    "source_route": "ordinary-sealed-cold-return-reentry",
+    "source_capture": "cold-boss-journal-00-00.png",
+    "assertion": "Cold Journal retains the boss objective; no checkpoint completion.",
+    "sha256": "b973d5688033e011ab0b0bb8759d5cea756bd83d16163c07308c5c9373f3cf48",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "boss-journal-route.png",
+    "source_route": "ordinary-sealed-cold-return-reentry",
+    "source_capture": "cold-boss-journal-00-01.png",
+    "assertion": "Second boss Journal page retains correct door/preparation directions.",
+    "sha256": "045a4aab2d68568070372038705d21cdaad8e172e9906e0f9c20f41479afa9b6",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  }
+]

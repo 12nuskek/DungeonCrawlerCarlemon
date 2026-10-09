@@ -1,3 +1,49 @@
+Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-LK ordinary sealed
+staircase verified; issue84 / [draft PR85](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/85),
+pushed and unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-sealed;
+base a9658676a53d519e9769494c52bf57b28d54473a (draft PR83). Evidence package
+8252622d9f3c0211c1da875f8af3abfb00c93b6d; metadata checkpoint follows. PR83/81/79/77/75
+remain draft/unmerged; main b694da17928b93ea579f55d905017aa9f7619422 unchanged.
+No game source change/new defect/new battle; denied datasets/c298ac7/996b947
+remain local and excluded from ancestry. No new workflow/scheduler/task/writer.
+
+Game compiled c643f01c11ec68119b0347b107ee20115131debc, exact prior compile reused;
+actual tested runner 0317dc8c7405dc9d6acb02fc284579703f717fcb; ROM SHA256
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+2 ordinary sessions /11,382 assertions:11 complete Field/arena buffers (11,008
+words),6 targeted stair words,368 other behavioral assertions;12 messages/16 pages.
+20 no-battle verdicts cover every host-issued frame:17,407 observed, none in battle.
+Original boss-pending and read-only cold input byte-identical; only an owned copy
+uses actual manual Save. Full flags, decoded inventory and both crawler records
+stay equal. Trial/both patrols remain won, boss variants/clearance/checkpoint remain
+unset. First/repeat sealed refusal, physical blocking, Field return/re-entry,
+Journal, manual Save/cold pass. No Warden actor interaction or fourth strategy.
+All prior SR functions/three route blocks/assertions AST-identical and not rerun.
+[Commands/native captures/verdicts/limits](evidence/floor1/g01e/sealed/README.md).
+
+Raw artifacts/floor1/sealed/runtime-o0evy71o; private fixture identities and prior
+SR AST comparison stored locally. f8a0b21 caught ambiguous host insertion before
+emulator/save-copy execution; failed runner/symbols/diagnostic retained in
+runtime-tmz_n7mc. Corrected0317dc8 passed both actual sessions first try. Every
+emulator error log empty; no game assertion/battle-attempt counter reset. No
+synthetic input, RAM/ROM write, snapshot, policy/pilot/engage or timing fishing.
+GNU14.2.0 observer with Wall/Wextra/Werror, actual mGBA0.10.5. Snapshot/ROM retained
+at artifacts/floor1/navigation/build-0lj52td4; archive/engine/checksum identity and
+post-runtime TAR/private ROM comparison pass. Verified duplicate source extraction
+removed losslessly;47,485 free inodes. No new game compile claim.
+
+Parent explicitly resumed this increment froma965867. Same Cloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; sole continuation belongs to parent. No quota
+checks/prerequisites, public ROM or later floor. Three-strategy combat stop and
+first-clear/full fresh/finalT/human pacing/V01 gates remain pending.
+Exact next ready task: reconcile PR85/checkpoint, then independent source audit
+of live no-collection entry points and ordinary Start/Crawlers/Inventory/Options
+return paths plus crawler summary screens using preserved saves/exact ROM. No
+Warden interaction, battle or stat/resource change; distinguish source/interface
+checks from new battle-rule runtime acceptance. Keep all gated expansion pending.
+
+## Preserved SR checkpoint
+
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-SR implemented,
 prior exact compile reused and scoped runtime verified; issue82 / [draft PR83](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/83),
 pushed and unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-staircase;

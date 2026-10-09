@@ -1,4 +1,5 @@
 /* Read-only battle graphics and exact baseline/candidate state comparison. */
+#include <sys/stat.h>
 struct BattleVisualAddresses {unsigned sprites,ids,healthboxes,tiles,palettes,heapStart,heapSize,poseState,unfaded,gfx,fieldCB2,battleCB2,phase,firstTurn,positions,copyCount,copies,copyArmed;
     unsigned freeReset,tryEvolve,returnBattle,endTrainer,continueScript,returnLocal,fieldCB1,fieldHook,fieldHook2,fieldLock,scriptStatus,fade,tasks,waitFade,battleResources,battleStruct,battleSprites;
 };
@@ -11,6 +12,7 @@ struct BattleVisual {
     FILE *trace;
     unsigned callbackCount,callbackAddresses[20000],callbackNames[20000];
     unsigned readyRequested,readyFrame,transitionFrames,lastPhase,failedActor,failedSprite,failedStage,failedAddress,failedTraceByte;
+    unsigned cpuAvailable,cpuPC,cpuLR,cpuSP,cpuCPSR,failedValuesPresent,failedActual,failedExpected,failedExpectedBytes,failedActualRetained,failedExpectedRetained;
     unsigned lifecycle,retirementFrame,fieldFrame,returnPath,cleanupRank,localStates,savedReturn,endTrainerObserved,retainedGfx,retainedBuffers[4];
 };
 static void bv_symbol(struct BattleVisual *v,unsigned address,char type,const char *name)
@@ -189,6 +191,10 @@ static void bv_diagnose(struct mCore *core,struct BattleVisual *v,unsigned reaso
     fprintf(f,"],\"lifecycle\":%u,\"retirement_frame\":%u,\"field_frame\":%u,\"return_path\":%u,\"graphics_registry\":%u,\"retained_graphics_registry\":%u,\"retained_picture_ranges\":[",v->lifecycle,v->retirementFrame,v->fieldFrame,v->returnPath,core->busRead32(core,v->a.gfx),v->retainedGfx);
     for(unsigned b=0;b<4;b++)fprintf(f,"%s{\"actor\":%u,\"source\":%u,\"size\":8192}",b?",":"",b,v->retainedBuffers[b]);
     fprintf(f,"],\"cleanup_rank\":%u,\"local_rebuild_states\":%u,\"battle_resources\":%u,\"battle_struct\":%u,\"battle_sprites_registry\":%u",v->cleanupRank,v->localStates,core->busRead32(core,v->a.battleResources),core->busRead32(core,v->a.battleStruct),core->busRead32(core,v->a.battleSprites));
+    fprintf(f,",\"CPU_available\":%u,\"CPU_PC_raw\":%u,\"CPU_LR\":%u,\"CPU_SP\":%u,\"CPU_CPSR\":%u,\"serialization_authority\":\"unresolved_no_deferral\",\"mismatch_values_present\":%u",v->cpuAvailable,v->cpuPC,v->cpuLR,v->cpuSP,v->cpuCPSR,v->failedValuesPresent);
+    fprintf(f,",\"expected_record_bytes\":%u",v->failedExpectedBytes);
+    fprintf(f,",\"local_actual_record_retained\":%u,\"local_expected_record_retained\":%u",v->failedActualRetained,v->failedExpectedRetained);
+    if(v->failedValuesPresent)fprintf(f,",\"actual_byte\":%u,\"expected_byte\":%u",v->failedActual,v->failedExpected);
     fprintf(f,",\"saved_trainer_return\":%u,\"saved_trainer_return_now\":%u,\"end_trainer_callback_observed\":%u",v->savedReturn,core->busRead32(core,mainstate+8),v->endTrainerObserved);
     fprintf(f,",\"field_CB1\":%u,\"field_load_state\":%u,\"field_locked\":%u,\"script_status\":%u,\"field_hook\":%u,\"field_hook2\":%u,\"palette_fade_active\":%u,\"postbattle_exit_clean_frames\":%u,\"failed_trace_byte\":%u,\"partial_peaks\":{\"samples\":%u,\"sprites\":%u,\"obj_tiles\":%u,\"obj_palettes\":%u,\"heap_used\":%u,\"heap_free_min\":%u}}\n",core->busRead32(core,mainstate),core->busRead8(core,mainstate+0x438),core->busRead8(core,v->a.fieldLock),core->busRead8(core,v->a.scriptStatus),core->busRead32(core,v->a.fieldHook),core->busRead32(core,v->a.fieldHook2),(core->busRead8(core,v->a.fade+7)>>7)&1,v->exitClean,v->failedTraceByte,v->heapSamples,v->maxSprites,v->maxTiles,v->maxPalettes,v->maxHeap,v->minFree);fclose(f);
 }
@@ -237,12 +243,20 @@ static unsigned bv_heap(struct mCore *core,struct BattleVisual *v)
     if(!v->heapSamples || free<v->minFree)v->minFree=free;
     v->heapSamples++;return 0;
 }
+static unsigned bv_retain_private(const char *name,const unsigned char *data,size_t bytes)
+{
+    FILE *raw=fopen(name,"wb");if(!raw)return 0;
+    if(fchmod(fileno(raw),0600)){fclose(raw);return 0;}
+    unsigned complete=fwrite(data,1,bytes,raw)==bytes;
+    if(fclose(raw))complete=0;
+    return complete;
+}
 static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned party,unsigned mons,unsigned saveptr,unsigned save2ptr,unsigned mainstate,unsigned results,unsigned currentMove,unsigned attacker,unsigned defender,unsigned outcome,unsigned controls)
 {
     /* Private byte record includes full party and resources; never upload it. */
     unsigned char data[2560]={0},expected[2560]={0};unsigned at=0;
     v->failedActor=v->failedSprite=255;v->failedStage=v->failedAddress=0;
-    v->failedTraceByte=2560;
+    v->failedTraceByte=2560;v->failedValuesPresent=0;v->failedExpectedBytes=v->failedActualRetained=v->failedExpectedRetained=0;
 #define BV_BYTES(address,n) do {for(unsigned z=0;z<(n);z++)data[at++]=core->busRead8(core,(address)+z);}while(0)
     unsigned sb=core->busRead32(core,saveptr),sb2=core->busRead32(core,save2ptr);
     if(sb<0x02000000 || sb+0x3d88>0x02040000 || sb2<0x02000000 || sb2+0xf2c>0x02040000)return 102;
@@ -255,9 +269,20 @@ static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned part
         if(address && !id){v->failedActor=b;v->failedSprite=core->busRead8(core,v->a.ids+b);v->failedStage=1;v->failedAddress=address;return 112;}
         for(unsigned i=0;i<4;i++)data[at++]=(id>>(8*i))&255;
     }
-    if(v->candidate){if(fread(expected,1,sizeof expected,v->trace)!=sizeof expected || memcmp(data,expected,sizeof data)){
+    if(v->candidate){size_t expectedBytes=fread(expected,1,sizeof expected,v->trace);
+      if(expectedBytes!=sizeof expected || memcmp(data,expected,sizeof data)){
+        v->failedExpectedBytes=(unsigned)expectedBytes;
+        // Local denied raw evidence only. Never publish these records or register payloads.
+        v->failedActualRetained=bv_retain_private("visual-stop-actual-private.bin",data,sizeof data);
+        v->failedExpectedRetained=bv_retain_private("visual-stop-expected-private.bin",expected,expectedBytes);
+
         unsigned diff=0;while(diff<sizeof data && data[diff]==expected[diff])diff++;
         v->failedStage=8;v->failedTraceByte=diff;
+        // Owned-resource bytes may contain encrypted key material: safe JSON omits their values.
+        if(expectedBytes==sizeof expected && diff<sizeof data
+            && ((diff<600 && diff%100>=32) || (diff>=952 && diff<1252) || diff>=2524)){
+            v->failedValuesPresent=1;v->failedActual=data[diff];v->failedExpected=expected[diff];
+        }
         if(diff<200)v->failedActor=diff<100?0:2;
         else if(diff>=600 && diff<952)v->failedActor=(diff-600)/88;
         else if(diff>=2533 && diff<2549)v->failedActor=(diff-2533)/4;

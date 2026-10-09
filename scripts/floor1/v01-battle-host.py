@@ -8,7 +8,7 @@ def generate(git):
     code,base=module('battle_visual_prior',ROOT/'scripts/floor1/warden-fairness-host.py').generate(git)
     assert hashlib.sha256(code.encode()).hexdigest()=='b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71'
     replace=module('battle_visual_replace',ROOT/'scripts/floor1/recovery-host.py').replace_once
-    addition=(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
+    addition='#include <mgba/internal/arm/arm.h>\n'+(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
     code=replace(code,'int main(int argc, char **argv)',addition+'\nint main(int argc, char **argv)')
     code=replace(code,'    FILE *symbols=fopen(argv[3], "r");','    struct BattleVisual visual={0};\n    FILE *symbols=fopen(argv[3], "r");')
     fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx','bv_fieldCB2':'fieldCB2','bv_battleCB2':'battleCB2','gBattleMainFunc':'phase','bv_firstTurn':'firstTurn','gBattlerPositions':'positions','sSpriteCopyRequestCount':'copyCount','sSpriteCopyRequests':'copies','sShouldProcessSpriteCopyRequests':'copyArmed','bv_freeReset':'freeReset','bv_tryEvolve':'tryEvolve','bv_returnBattle':'returnBattle','bv_endTrainer':'endTrainer','bv_continueScript':'continueScript','bv_returnLocal':'returnLocal','bv_fieldCB1':'fieldCB1','gFieldCallback':'fieldHook','gFieldCallback2':'fieldHook2','sLockFieldControls':'fieldLock','sGlobalScriptContextStatus':'scriptStatus','gPaletteFade':'fade','gTasks':'tasks','gBattleResources':'battleResources','gBattleStruct':'battleStruct','gBattleSpritesDataPtr':'battleSprites','bv_waitFade':'waitFade'}
@@ -19,6 +19,9 @@ def generate(git):
     point='    core->runFrame(core); \\\n'
     code=replace(code,point,point+r'''    if(visual.recording){ \
         if(visual.frames>=36000)exit(109); \
+        const struct ARMCore *cpu=core->cpu; \
+        visual.cpuAvailable=cpu!=NULL; \
+        if(cpu){visual.cpuPC=(unsigned)cpu->gprs[ARM_PC];visual.cpuLR=(unsigned)cpu->gprs[ARM_LR];visual.cpuSP=(unsigned)cpu->gprs[ARM_SP];visual.cpuCPSR=(unsigned)cpu->cpsr.packed;} \
         unsigned vr=bv_trace(core,&visual,party,mons,saveptr,save2ptr,mainstate,results,currentMove,attacker,defender,outcome,controls); \
         if(!vr)vr=bv_sample(core,&visual,mainstate,mons,results,animationActive,animationActor,currentMove,pixels,width,height); \
         if(vr){bv_diagnose(core,&visual,vr,mons,mainstate,currentMove);capture("visual-stop.ppm",pixels,width,height);fprintf(stderr,"Battle visual stop reason=%u frame=%u; no further frames\n",vr,visual.frames);printf("result=%u assertions=%u\n",vr,checks);exit(vr);} \

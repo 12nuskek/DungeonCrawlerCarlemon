@@ -145,6 +145,28 @@ int main(void){
  setup();v.recording=1;v.trace=tmpfile();assert(v.trace&&bv_finish(&v)==110);fclose(v.trace); // Cannot finish without qualified native readiness.
  setup();bv_symbol(&v,0x08000301,'t',".gcc2_compiled.");assert(v.callbackCount==11&&!bv_callback(&v,0x08000301));bv_symbol(&v,0x08000101,'F',token);assert(v.callbackCount==11);
  pid_t pid=fork();assert(pid>=0);if(!pid){bv_symbol(&v,0x08000301,'F',token);exit(0);}int status;waitpid(pid,&status,0);assert(WIFEXITED(status)&&WEXITSTATUS(status)==112);
+ setup();put32(SAVEPTR,0x0200e000);put32(SAVE2PTR,0x0201c000);v.trace=tmpfile();assert(v.trace);
+ assert(!bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL));
+ rewind(v.trace);v.candidate=1;put8(MONS+170,23);
+ assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(v.failedTraceByte==170&&v.failedValuesPresent&&v.failedActual==23&&v.failedExpected==0&&v.failedActualRetained&&v.failedExpectedRetained);
+ v.cpuAvailable=1;v.cpuPC=0x0806a54c;v.cpuLR=0x0806a54b;v.cpuSP=0x03007e00;v.cpuCPSR=0x3f;
+ bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);assert(!rename("visual-stop.json","party-diagnostic-fixture.json"));
+ FILE *raw=fopen("visual-stop-actual-private.bin","rb");assert(raw);assert(!fseek(raw,170,SEEK_SET)&&fgetc(raw)==23);assert(!fseek(raw,0,SEEK_END)&&ftell(raw)==2560);fclose(raw);
+ rewind(v.trace);put8(MONS+170,0);put8(0x0200e000+0x490+16,77);
+ assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(v.failedTraceByte==1268&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
+ assert(!rename("visual-stop.json","resource-diagnostic-fixture.json"));
+ rewind(v.trace);put8(0x0200e000+0x490+16,0);put8(MONS,99);
+ assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(v.failedTraceByte==0&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
+ assert(!rename("visual-stop.json","header-diagnostic-fixture.json"));
+ fclose(v.trace);v.trace=tmpfile();assert(v.trace);unsigned char shortReference[17]={0};
+ assert(fwrite(shortReference,1,17,v.trace)==17);rewind(v.trace);
+ assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(v.failedExpectedBytes==17&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
+ assert(!rename("visual-stop.json","truncated-diagnostic-fixture.json"));fclose(v.trace);
+ puts("PASS actual observer mismatch diagnostics: exact actual/expected party bytes and local full failed records, safe CPU metadata, resource values redacted; no runtime authority inferred");
  setup();memset(vram,255,sizeof vram);assert(!sample()&&!v.enforced&&v.transitionFrames==1);put32(PHASE,v.a.firstTurn);assert(!sample()&&!v.enforced); // Unfilled VRAM in native first-turn phase never falsely becomes ready.
  setup();put32(PHASE,v.a.firstTurn);put32(SPRITES+12,0);assert(!sample()&&!v.enforced); // Trainer/reused64x64 slot is not a mon picture.
  setup();put32(PHASE,v.a.firstTurn);put16(SPRITES+50,52);assert(!sample()&&!v.enforced); // Native species ownership required.
@@ -210,6 +232,18 @@ int main(void){
     with (out/'observer-unit.log').open('w') as log:
         subprocess.run(['cc','-std=gnu11','-Wall','-Wextra','-Werror','-I'+str(ROOT/'scripts/floor1'),str(out/'cases.c'),'-o',str(out/'cases')],stdout=log,stderr=subprocess.STDOUT,check=True)
         subprocess.run([str(out/'cases')],cwd=out,stdout=log,stderr=subprocess.STDOUT,check=True)
+    party_diag=json.loads((out/'party-diagnostic-fixture.json').read_text());resource_diag=json.loads((out/'resource-diagnostic-fixture.json').read_text())
+    assert party_diag['failed_trace_byte']==170 and party_diag['actual_byte']==23 and party_diag['expected_byte']==0
+    assert party_diag['local_actual_record_retained']==1 and party_diag['local_expected_record_retained']==1
+    assert party_diag['CPU_available']==1 and party_diag['CPU_PC_raw']==0x0806a54c
+    assert party_diag['serialization_authority']=='unresolved_no_deferral'
+    assert resource_diag['failed_trace_byte']==1268 and resource_diag['mismatch_values_present']==0
+    assert 'actual_byte' not in resource_diag and 'expected_byte' not in resource_diag
+    for name in ['header','truncated']:
+        d=json.loads((out/(name+'-diagnostic-fixture.json')).read_text())
+        assert not d['mismatch_values_present'] and 'actual_byte' not in d and 'expected_byte' not in d
+    assert json.loads((out/'truncated-diagnostic-fixture.json').read_text())['expected_record_bytes']==17
+
     diagnostic=json.loads((out/'visual-stop.json').read_text());assert diagnostic['failed_actor']==0 and diagnostic['stage']==4 and len(diagnostic['actors'])==4 and 'copy_queue' in diagnostic
     record=dict(STOP105_projection=dict(diagnostic_SHA256=hashlib.sha256((evidence/'native-stop-diagnostic.json').read_bytes()).hexdigest(),registry_NULL='modeled only; original runtime pointer not separately captured',resource_pointers_NULL='modeled only; original runtime did not separately serialize these pointers',original_runtime_result='STOP105 unchanged'),result='PASS',emulator_frames=0,native_layout='Pinned agbcc compile against actual native headers passed',symbols=native,coverage='Original readiness/symbol/ownership negatives plus ACTIVE to RETIRING to FIELD, four live owners, retired registry/pose state and queued source ranges, source-pinned saved trainer callback, same-iteration CB1 to CB2 dispatch, native callback/rebuild order, postbattle readiness, pre-entry false exit, incomplete field return')
     (out/'result.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record))

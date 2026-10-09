@@ -1,0 +1,20 @@
+{
+  "failures_preserved": [
+    {
+      "fixture_run": "final-diagnostics",
+      "log_SHA256": "bee4fb22acc3710d88c0b4cbde370e721b6cb4200272bf6fcbc3665fffe3ca7f",
+      "result": "Offline assertion failed: expected short-reference size17; stale stdio buffer in fixture after ftruncate",
+      "diagnosis": "Create fresh17-byte tmpfile; no production behavior/assertion relaxation",
+      "emulator_frames": 0
+    },
+    {
+      "fixture_run": "reviewed-final",
+      "log_SHA256": "707fc4411cb708b1db1f78d4d04d514f8b020b367d7ee957e510c32967d18a4a",
+      "result": "Offline assertion failed: expected short-reference size17; stale stdio buffer in fixture after ftruncate",
+      "diagnosis": "Create fresh17-byte tmpfile; no production behavior/assertion relaxation",
+      "emulator_frames": 0
+    }
+  ],
+  "final_result": "PASS verified-final actual observer and existing lifecycle/native ABI fixtures",
+  "new_battle_executions": 0
+}

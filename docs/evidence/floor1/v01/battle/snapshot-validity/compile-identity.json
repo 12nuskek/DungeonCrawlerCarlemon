@@ -1,0 +1,25 @@
+{
+  "starting_source": "a17e2513c85c7d8b7bdec522a1246f35cd9ddd85",
+  "implemented": "Safe mismatch/CPU diagnostics; disconnected offline read/defer/reentry contract",
+  "runtime_validity_correction": "BLOCKED: no verified CPU/native serialization classifier; no runtime deferral activated",
+  "emulator_frames": 0,
+  "new_execution_claims": 0,
+  "host_SHA256": "a25e4db703dd5282ebb68e7a98d29e4e7d19a53d01a92751e7c86d09fa74afe7",
+  "binary_SHA256": "15992679c389c32296f92f8f63bde9e614ab298b62fe9b64e60078e7a604c4ab",
+  "compiler_flags": "cc -std=gnu11 -Wall -Wextra -Werror; -lmgba; compile only, binary never invoked",
+  "engine_tree": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "ordinary_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "baseline_game": "4938927da512543ca9aeea9527c103c84955e632",
+  "baseline_ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+  "candidate_game": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+  "candidate_ROM_SHA256": "830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9",
+  "source_files_SHA256": {
+    "scripts/floor1/v01-battle-host.py": "7e51ce2ce17ba90070734d42161891f87adfd47c984a7320ef3210b957b967de",
+    "scripts/floor1/v01-battle-observer.h": "e9f5511a86dc0fc18388bbdfdf5aac794b3a660efded65a554468be0c55db74c",
+    "scripts/floor1/v01-battle-snapshot-contract.h": "4c1149a4f1cca03b3bedd53f2f6dc9290a9d49552008d3c34d2d76519994896a",
+    "scripts/test-f1-v01-battle-snapshot-contract.py": "5cda7762c6bc72d03b95634aa9dbdcf4d2b1b23982d409c1a2d75a5aaa72b65a",
+    "scripts/test-f1-v01-battle-observer.py": "1f49e36685098eb98c9e4748fe5c7d4b5d0330a67a0ea8a571dc792f232ca926"
+  }
+}

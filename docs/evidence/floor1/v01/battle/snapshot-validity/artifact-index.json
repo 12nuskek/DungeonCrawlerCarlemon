@@ -1,0 +1,42 @@
+{
+  "README.md": {
+    "SHA256": "763a55f8e2bd374b2ac32b7a5ccd3f45d02c92290b156839e51272d8d6400bf8",
+    "bytes": 2276
+  },
+  "compile-identity.json": {
+    "SHA256": "d1ec1a3f2fc4356617abb806b82665ce4d8daaa0594bdad204eace554381d410",
+    "bytes": 1879
+  },
+  "historical-preservation.json": {
+    "SHA256": "1a28f4d1726e9d32447c70f80a375e1f67eb52d4fb76081240d60ecdef300826",
+    "bytes": 12494
+  },
+  "host-build.log": {
+    "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "observer-regression-result.json": {
+    "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07",
+    "bytes": 1041
+  },
+  "observer-regression.log": {
+    "SHA256": "6db3a77c9e6fca58f79275a1d3369cafbf2e7f6b8cf1ebd02daa42857ac94047",
+    "bytes": 26825
+  },
+  "offline-contract-result.json": {
+    "SHA256": "daab75f3e72885fa964e7aa6e729f2841f2c9bc64574c3e91f61e0c1200148eb",
+    "bytes": 181
+  },
+  "offline-contract.log": {
+    "SHA256": "3fb870d934ba90a87db71e8b2715e8e430af97caa5656bb3979b51d96ee946d1",
+    "bytes": 315
+  },
+  "offline-validation-history.json": {
+    "SHA256": "e3f3e0a184612d2fc2ccc209bc28babcd3078e232960bec0c31e8d96e41f2a3f",
+    "bytes": 938
+  },
+  "verified-serialization-functions.json": {
+    "SHA256": "7c12ac88dbea16ba7ed1f35ccedc0014857222ae5691df6ac27c0880ff555ecb",
+    "bytes": 4710
+  }
+}

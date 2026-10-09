@@ -1,5 +1,7 @@
 # Read-only G01e inventory — 2026-10-09
 
+[Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.
+
 Parent PR107 review passed. Bounded prepared persistence is complete270+132;
 historical failed cold25 remains failure evidence. Base/source checkpoint
 1663abb05000374b03d0c0db3c78a974c87b3852. No game edits, build, emulator process,

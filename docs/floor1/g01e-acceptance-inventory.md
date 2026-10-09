@@ -1,5 +1,7 @@
 # G01e acceptance inventory and V01 entry — 9 October 2026
 
+[Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.
+
 Parent review accepts PR107's bounded prepared pair: PR105 first-route270 plus
 PR107 cold132 =402. The failed cold25 and all older failures remain separate.
 This inventory changes no game data or controller policy and runs no emulator.

@@ -1,4 +1,6 @@
 G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
+
+[Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.
 Final live T1449 (982+115+116+118+118),25width probes, unchanged geometry/actors;
 current5084 linked EWRAM249704/IWRAM30892. Original legacy-input limitation retained.
 Only current Guard-first order/travel/Save/cold remains before scoped integration

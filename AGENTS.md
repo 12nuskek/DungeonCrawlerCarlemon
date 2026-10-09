@@ -1,5 +1,6 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: inventory draft PR108 / existing issue106, stacked on unchanged PR107.
 Parent PR107 review passed: bounded prepared270+132 closed; old failures retained.
 Current focused increment is read-only G01e acceptance inventory under
 docs/floor1/g01e-acceptance-inventory.md. No emulator route, game edit, diagnosis

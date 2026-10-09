@@ -1,0 +1,27 @@
+{
+  "file": "DungeonCrawlerCarlemon-V01-candidate-only-STOP117-fe6bda55-20261009.tar.xz",
+  "bytes": 7573140,
+  "SHA256": "6ffe67afd458f47c3dbca38398a66bb700107561f51e70de66afdd0e022e1b11",
+  "entries": 5070,
+  "byte_verified_entries": 5070,
+  "original_PPMs": 5042,
+  "actual_clip_frames_pixel_verified": 4949,
+  "ordinary_Save_copies": 1,
+  "ordinary_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "new_baseline_executions": 0,
+  "new_candidate_executions": 1,
+  "exclusive_total_baselines": 5,
+  "exclusive_total_candidates": 3,
+  "execution_source": "fe6bda55009bb2b21aa4641f988c8a94655a0ebc",
+  "baseline_reused_execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "exclusions": [
+    "original raw baseline reference and candidate expected-native copy",
+    ".bin raw state/VRAM/keys/crypto/fixtures",
+    "exact key-bearing visual-stop-native-boundary-private.json",
+    "raw replay.log and six input-key-bearing pilot lines",
+    "complete game.sym",
+    "ROM/ELF/executables",
+    "secrets and Library identities"
+  ],
+  "private_exact_header": "Retained local0600 only, excluded from archive/uploads; no durable claim"
+}

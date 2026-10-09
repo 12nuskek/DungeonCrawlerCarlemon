@@ -1,0 +1,111 @@
+{
+  "execution_source": "fe6bda55009bb2b21aa4641f988c8a94655a0ebc",
+  "baseline_reused_execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "safe_public_evidence_files": [
+    {
+      "file": "README.md",
+      "bytes": 4490,
+      "SHA256": "30863bc8048018ae2cce902da9b2de7f34e2f2f7bc557050f0b12e25e9f3d3b6"
+    },
+    {
+      "file": "STOP.json",
+      "bytes": 918,
+      "SHA256": "ec8802433c291b5ea5477975ef2b07b12ac9d35aa56241fa4ebd5e5191da0872"
+    },
+    {
+      "file": "actual-diagnostic-reduction.json",
+      "bytes": 3791,
+      "SHA256": "53fa25ced47aa9d1541e7b977441a91aba8632609c036c4b77188750d0c6beaf"
+    },
+    {
+      "file": "actual-stop-native.png",
+      "bytes": 9606,
+      "SHA256": "30c17eb9537edd47bc9eb90cdd7f918fbcd5bf5f9a17ffcf50544afb53c382f3"
+    },
+    {
+      "file": "after-errors.log",
+      "bytes": 203,
+      "SHA256": "db7f3bef7ba069ebc49f9c01e546c11760ee151cf1166933b596812f092b5ef0"
+    },
+    {
+      "file": "after-execution-claim.json",
+      "bytes": 2002,
+      "SHA256": "13578054f88384e6d6553bdb699250f7d8f274890c8eb11e0085e3e4fbc82332"
+    },
+    {
+      "file": "after-identity.json",
+      "bytes": 2003,
+      "SHA256": "34dafb79549d91eac71acdb788a91343e9e1af490a43e85f58ab6ba89724a23d"
+    },
+    {
+      "file": "after-replay-safe.log",
+      "bytes": 18679,
+      "SHA256": "453f5d1d371533df40d21fa45e04abf76d33025b26d88b6360d533ceec737d94"
+    },
+    {
+      "file": "after-stop-complete-clip.json",
+      "bytes": 932,
+      "SHA256": "c294ba4e6b0196a977874a60b8cf272f94e29d8f43aaa10ce2d36c123b9f0df9"
+    },
+    {
+      "file": "after-summary.json",
+      "bytes": 812,
+      "SHA256": "988014fcc86a4b2a4e82e953e5305f220eaa6d13c8624f70828471f94a1a0fc1"
+    },
+    {
+      "file": "after-visual-stop.json",
+      "bytes": 3960,
+      "SHA256": "965bbbc5c96c49c754b11db6788c83528df0f8f555998401d6cfad712f666b8d"
+    },
+    {
+      "file": "archive.json",
+      "bytes": 1180,
+      "SHA256": "878efc3c4c200a2d8e1ce6a73b6f36e10bf8866a5e5b807f7f04e54c6d77666d"
+    },
+    {
+      "file": "baseline-reference-link.json",
+      "bytes": 3412,
+      "SHA256": "d4fdada46ecc93cd740268c2cee29f0edc53de1667c96eb10ab6b33dec0ebebb"
+    },
+    {
+      "file": "capture-provenance.json",
+      "bytes": 678,
+      "SHA256": "41f55e4164bf66b9b5a1de1a5383480c052c9e56b101149625e3c31a6963288f"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 47414,
+      "SHA256": "71b7595d593249d87455f29d2fa41416b3f3dcbe70575876c6ecf69599d4d47c"
+    },
+    {
+      "file": "private-retention-safe.json",
+      "bytes": 978,
+      "SHA256": "5d9bd3da2aa0a69cf3ad653e6ec3ad7a4142fc43c0d61dfcfb0157fecb655f95"
+    },
+    {
+      "file": "remote-before.json",
+      "bytes": 8267,
+      "SHA256": "703726090b01e92cfb42ec86040f2e485a27994772e04009e0dc79eedabbfe09"
+    },
+    {
+      "file": "retained-reference-verification.json",
+      "bytes": 2351,
+      "SHA256": "ae0d5b1db5273ca5dc6fbcd4de7340b74bea9ff43fc6c95afdebd0aa28314c91"
+    },
+    {
+      "file": "safe-log-receipt.json",
+      "bytes": 328,
+      "SHA256": "f3a2a61a3e2aa6058f6652f6db90c3c582badf04893b72feb88c43a7c76d1d68"
+    },
+    {
+      "file": "safe-native-diagnostic.json",
+      "bytes": 1974,
+      "SHA256": "6122f6336ebe5a2a1b3b551ca36f315fd1d174b53e879c8d8425575d7284ea4d"
+    }
+  ],
+  "exclusions": "No exact key-bearing diagnostic/raw reference/bin/full symbols/ROM/binaries/Saves/Library identities; actual native STOP PNG has pixel provenance",
+  "implemented": "diagnostic host unchanged; evidence/docs only",
+  "tested": "ONE candidate FIRST STOP117; not successful complete candidate acceptance",
+  "merged": false,
+  "next": "Parent new metadata diagnosis review; no further execution or merge"
+}

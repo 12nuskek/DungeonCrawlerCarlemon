@@ -1,0 +1,21 @@
+{
+  "case": "after",
+  "file": "candidate-native-complete-through-stop.mp4",
+  "frames": 4949,
+  "all_original_frame_pixels_verified_lossless": 4949,
+  "pixel_sequence_SHA256": "27e30bd0b5205a4f31f58d80a90456c30dc951ed6268af1bc93e913546873f4a",
+  "probe": {
+    "codec_name": "h264",
+    "width": 240,
+    "height": 160,
+    "pix_fmt": "gbrp",
+    "avg_frame_rate": "262144/4389",
+    "duration": "82.859653",
+    "nb_frames": "4949"
+  },
+  "bytes": 6126319,
+  "SHA256": "8b64694a52c9cbc20e4057cf826ec486f6de5d749a021bc42d32e57765462500",
+  "encoding": "libx264rgb crf0; native240x160 and262144/4389fps; no scaling/interpolation/audio claim",
+  "source": "4948 original numbered captures plus original actual emergency STOP capture at4948; no repeat/padding/generated frame; STOP117 occurred after completed frame loop according to frozen source and captured CPU",
+  "execution_source": "fe6bda55009bb2b21aa4641f988c8a94655a0ebc"
+}

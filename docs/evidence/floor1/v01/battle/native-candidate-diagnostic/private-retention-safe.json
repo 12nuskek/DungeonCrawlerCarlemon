@@ -1,0 +1,20 @@
+{
+  "result": "CONFIRMED supported private Library safe candidate archive retained",
+  "archive_SHA256": "6ffe67afd458f47c3dbca38398a66bb700107561f51e70de66afdd0e022e1b11",
+  "archive_bytes": 7573140,
+  "archive_entries_byte_verified": 5070,
+  "original_PPMs": 5042,
+  "actual_clip_frames_pixel_verified": 4949,
+  "ordinary_Save_copies": 1,
+  "ordinary_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "local_metadata_persisted": true,
+  "returned_attributes_verified": 1,
+  "baseline_reused": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "new_candidate_execution": "fe6bda55009bb2b21aa4641f988c8a94655a0ebc",
+  "new_baselines": 0,
+  "new_candidates": 1,
+  "existing_archives": "unchanged/separate",
+  "excluded_key_bearing_exact_diagnostic": "local0600 only; no durable-retention claim",
+  "all_raw_references_and_denied_datasets": "remain local outside uploads; no durable-retention claim",
+  "no_Library_identities_or_keys_in_Git": true
+}

@@ -1,0 +1,7 @@
+{
+  "original_replay_SHA256": "acd59ec3387ab5cf5a62d08b27fcffb0c5156c4fe86227f1bc449b51e170fd00",
+  "safe_replay_SHA256": "453f5d1d371533df40d21fa45e04abf76d33025b26d88b6360d533ceec737d94",
+  "omitted_key_bearing_lines": 6,
+  "unchanged_other_lines": true,
+  "raw_key_lines_retention": "local only; excluded from all uploads"
+}

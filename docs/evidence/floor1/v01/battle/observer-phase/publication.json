@@ -1,0 +1,19 @@
+{
+  "PR": 114,
+  "draft": true,
+  "merged": false,
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "tested_source": "8ee0595461cff3bc5da6b5ea353067308e087076",
+  "game_baseline": "4938927da512543ca9aeea9527c103c84955e632",
+  "game_candidate": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+  "engine_candidate": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "baseline_result": 105,
+  "assertions_partial": 27,
+  "absolute_frames": 17032,
+  "visual_frames": 14988,
+  "ready_frame": 3155,
+  "candidate_executed": false,
+  "original_STOP35_SHA256": "115e713bd149be3f7fa50c356289d921074a904aa9d901dcbdd13cd93b098227",
+  "original_STOP107_SHA256": "225fb1d939c7b9b2728c7e3d544d64b28c737e529f63ab7859b2ee9b08f82a9d",
+  "status": "Observer correction implemented/offline verified/compiled; actual baseline blocked at native retirement; no candidate or complete runtime acceptance. Next parent diagnosis review."
+}

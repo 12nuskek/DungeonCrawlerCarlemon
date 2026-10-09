@@ -1,0 +1,15 @@
+{
+  "filename": "DungeonCrawlerCarlemon-V01-native-observer-retirement-stop-20261009.tar.xz",
+  "bytes": 5999176,
+  "SHA256": "8e4653f960e6ed828f01d9d07845315d4c8e9a952c7415df700d358fccdf288e",
+  "files": 15174,
+  "original_PPM_captures": 15108,
+  "ordinary_saves": 1,
+  "actual_mp4_clips": 1,
+  "excluded": ".bin/raw state/key/VRAM diagnostics, full symbol/function datasets, executables/ROM/ELF/build products; local only",
+  "format": "tar.xz",
+  "repackaging": "Every entry/content retained from validated ZIP; larger ZIP and failed read-only discovery log retained locally. No prior Library mutation began.",
+  "Library_status": "succeeded",
+  "local_identity_xattrs_verified": true,
+  "all_content_bytes_verified": true
+}

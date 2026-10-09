@@ -1,0 +1,23 @@
+{
+  "source": "8ee0595461cff3bc5da6b5ea353067308e087076",
+  "STOP": 105,
+  "actor": 0,
+  "sprite": 9,
+  "native_phase": "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions",
+  "CB2": "G:BattleMainCB2",
+  "copy_count": 0,
+  "readiness_frame": 3155,
+  "source_diagnosis": "The live-picture ownership assertion remains enforced in native retirement phase. FreeResetData_ReturnToOvOrDoEvolutions frees MonSpritesGfx/resources while the fade is active; BattleMainCB2/inBattle and surviving sprite structures still exist. At the next recorded frame, actor0/sprite9 ownership returned false. This is an observer exit-phase error, not unknown/corrupted pixels: all3 retained art VRAM blocks still exactly equal their known baseline fixtures.",
+  "native_source_paths": [
+    "engine/src/battle_main.c:FreeResetData_ReturnToOvOrDoEvolutions",
+    "engine/src/battle_gfx_sfx_util.c:FreeMonSpritesGfx",
+    "scripts/floor1/v01-battle-observer.h:bv_owned/bv_sample"
+  ],
+  "retained_diagnostics": "Exact actual actor/sprite/native phase/copy queue and partial peaks plus local-only raw VRAM; no key/raw-state upload. MonSpritesGfx registry pointer value was not separately serialized; no invented raw value.",
+  "offline_predicate_reproduction": "Actual frozen observer header with native-retirement fixture (registry cleared, sprite/inBattle still active) returns105 foractor0; actual console PASS, no emulator execution. Fixture result is distinct from actual game trace.",
+  "future_proposal_unapplied": "Qualify verified native retirement phase separately: continue all transition/state/capture recording, assert visual state reset/native graphics retirement/no writes from retired buffers, then actual field exit cleanup. Retain strict live-owner/pixel/action gates before retirement. Parent review before any correction/fresh execution.",
+  "candidate_executed": false,
+  "additional_emulator_execution": false,
+  "game_engine_route_policy_assertions_unchanged": true,
+  "remaining_gates": "Matching candidate/controller/resources/all17 poses/repeated swaps/held warning/SLAM contact/recovery/HUD/palettes/full peak comparison/final exit/postbattle rewards/state/save remain pending; no broad first-clear/legacy/C01/full-floor acceptance."
+}

@@ -1,3 +1,8 @@
+Latest tooling-only continuation: [partial official-package restoration and
+access-denial stop](tooling/README.md). Two packages now verified/extracted;
+full toolchain remains incomplete. The original first-acquisition checkpoint
+below is preserved as history; no gameplay or new Save followed.
+
 # Replacement recovery checkpoint — stopped before gameplay
 
 Kurt authorized this sole replacement writer on 9 October 2026 at 23:29 UTC.

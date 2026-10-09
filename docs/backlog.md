@@ -1,3 +1,15 @@
+## Active tooling dependency — access denied, 2026-10-09
+
+The authorized tooling-only continuation from 5895f3af restored exact
+manifest-verified ARM binutils/libepoxy locally. Local APT indexes are empty;
+official package unavailability was not established. Incorrect inih pool 404
+retained; supplied official package-page resolution hit tunnel 403 Forbidden.
+[Partial tooling evidence and next action](evidence/floor1/ordinary-recovery-20261009/tooling/README.md).
+STOP acquisition after denial. Parent review/resolved official URLs or supported
+access resolution→complete pinned agbcc/libmGBA tooling→ordinary contract/build/
+freeze/reconstruction. No game build/gameplay/Save/Warden/Library retry/merge.
+Historical six baseline/four candidate/STOP117 and all earlier bodies retained.
+
 ## Active dependency — replacement recovery, 2026-10-09
 
 Kurt authorized one ordinary New Game→reviewed Guard-first→manual Save→independent

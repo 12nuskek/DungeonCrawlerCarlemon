@@ -1,3 +1,19 @@
+## Tooling continuation — partial restoration and access-denial stop
+
+Base `5895f3af34aaddff1c49e2b6d228a2540056a286`; official Debian ARM binutils
+2.44-3+23+b1 and libepoxy 1.5.10-2 downloaded once, manifest/control-verified and
+extracted locally. Empty local APT indexes explain why previous discovery did
+not establish official package unavailability. Incorrect inih pool 404 preserved;
+supplied download-page resolution then failed with tunnel 403 Forbidden.
+[Exact partial tooling/bundle, access denial and next dependency](evidence/floor1/ordinary-recovery-20261009/tooling/README.md).
+Tooling remains incomplete: no agbcc/libmGBA recovery, game build or gameplay.
+No acquisition after denial, no new Save/Warden/Library retry/merge.
+Six baseline/four candidate executions and STOP117 visual 8536/expected B8402
+unchanged. Local partial bundle has no independently verified private backup.
+Parent access-denial review/resolved official URLs or supported access
+resolution precede tooling completion and ordinary contract freeze.
+Earlier checkpoints below preserved.
+
 ## Replacement workspace recovery — 2026-10-09, blocked before gameplay
 
 Kurt's 23:29 UTC authorization permits one ordinary reconstruction using main

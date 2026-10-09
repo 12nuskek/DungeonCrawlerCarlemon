@@ -1,3 +1,16 @@
+Current tooling-only continuation — 2026-10-09: base 5895f3af; local APT indexes
+are empty, so previous lookup does not prove official package unavailability.
+Exact official Debian ARM binutils 2.44-3+23+b1 and libepoxy 1.5.10-2 downloaded,
+manifest/control-verified and extracted locally. Wrong guessed inih pool 404
+preserved; supplied official download-page resolution then denied by tunnel 403.
+STOP all acquisition/agbcc restoration; no alternate retry after denial.
+Partial local bundle verified, full tooling/libmGBA/agbcc still unavailable.
+No game build/gameplay/Save/Warden/Library retry/merge; counts six baseline/four candidate,
+STOP117 visual 8536/expected B8402 unchanged. Next parent denial review/resolved
+official URLs or supported access resolution before tooling completion.
+See docs/evidence/floor1/ordinary-recovery-20261009/tooling/README.md.
+All earlier checkpoint bodies below preserved unchanged.
+
 Current replacement recovery checkpoint — 2026-10-09: Kurt explicitly approved
 the sole replacement writer at 23:29 UTC. Main c6d647a8 includes merged PR113;
 existing draft PR114 starts at96f314c8 and has active-pose engine8d8c7761/source9c83611e,

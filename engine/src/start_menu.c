@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/maps.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
@@ -98,6 +99,7 @@ static bool8 StartMenuBagCallback(void);
 static bool8 StartMenuPokeNavCallback(void);
 static bool8 StartMenuJournalCallback(void);
 extern const u8 DCC_Journal[];
+extern const u8 DCC_Live_Journal[];
 static const u8 sText_Journal[] = _("JOURNAL");
 static bool8 StartMenuPlayerNameCallback(void);
 static bool8 StartMenuSaveCallback(void);
@@ -1430,10 +1432,25 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
     (*pos)++;
 }
 
+static const u8 *GetDccJournalScript(void)
+{
+    switch (((u8)gSaveBlock1Ptr->location.mapGroup << 8) | (u8)gSaveBlock1Ptr->location.mapNum)
+    {
+    case MAP_DCC_F1D1FIELD:
+    case MAP_DCC_F1D1QUIET:
+    case MAP_DCC_F1D1WORKSHOP:
+    case MAP_DCC_F1D1WARDEN:
+    case MAP_DCC_F1D1CHECKPOINT:
+        return DCC_Live_Journal;
+    default:
+        return DCC_Journal;
+    }
+}
+
 static bool8 StartMenuJournalCallback(void)
 {
     RemoveExtraStartMenuWindows();
     HideStartMenu();
-    ScriptContext_SetupScript(DCC_Journal);
+    ScriptContext_SetupScript(GetDccJournalScript());
     return TRUE;
 }

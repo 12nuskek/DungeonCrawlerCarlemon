@@ -1070,3 +1070,4 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/DCC_F1D1Workshop/scripts.inc"
 	.include "data/maps/DCC_F1D1Warden/scripts.inc"
 	.include "data/maps/DCC_F1D1Checkpoint/scripts.inc"
+	.include "data/scripts/dcc_live_navigation.inc"

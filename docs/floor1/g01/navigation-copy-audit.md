@@ -1,3 +1,9 @@
+2026-10-08 update: the prepared proposal below is now implemented as21live text
+substitutions, compiled and runtime verified in F1-G01e-NC, issue78 / draft PR79, pushed and unmerged.
+[Final copy, exact source, native evidence and limits](../../evidence/floor1/g01e/navigation/README.md).
+The table remains the preserved proposal; generated live-navigation.py is the
+implemented wording. Legacy sources/state/rewards preserved; broader gates pending.
+
 # Opening relocation: original navigation copy prepared
 
 2026-10-07; issue74 / draftPR75, baseb694da1. Independent content preparation

@@ -1,0 +1,14 @@
+{
+  "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "runner_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "non_text_blocks_identical": 38,
+  "unchanged_text_blocks_identical": 22,
+  "changed_text_labels": 21,
+  "physical_lines": 53,
+  "maximum_width": 202,
+  "window_width": 216,
+  "generated_engine_files_identical": 11711,
+  "dispatch_identities": 65536,
+  "dispatch_method": "Verbatim C, exhaustive host-only UBSan; legacy contexts migrate on Continue, so no claimed legacy runtime fallback.",
+  "legacy_and_geometry_save_combat_unchanged": true
+}

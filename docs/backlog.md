@@ -3,12 +3,11 @@
 **2026-10-07: full Floor1 execution is now authorised.** The active dependency
 backlog is [floor1/backlog.md](floor1/backlog.md). All prior pauses below are historical.
 
-Current: full-floor G01e migration/adoption is implemented and compiled, with69
-verified state sessions and3partial live sessions; draftPR75 remains unmerged.
-Three full Howler-first strategy routes did not complete; lastHowler won, laterGuard
-lost. Stop blind retries/dependentV01, preserve evidence and diagnose before more
-combat work. Independent navigation copy is prepared. [Checkpoint](progress.md).
-Earlier N05/N06 delivery and playtest pauses below are historical and superseded.
+Current: navigation/Journal correction F1-G01e-NC implemented, compiled and
+runtime verified:17sessions236assertions; issue78 / draft PR79, pushed,
+unmerged. PR77/75 remain draft; full G01e/finalT/V01 gates and three combat
+strategy stop unchanged. Next independent checks: optional loop/trap/craft/re-entry/
+cold routes from existing ordinary saves. [Checkpoint](progress.md).
 
 Handoff: 2026-10-06. Full acceptance criteria: [development loop](development-loop.md).
 

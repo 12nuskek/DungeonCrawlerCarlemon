@@ -1,0 +1,145 @@
+[
+  {
+    "file": "before-guide.png",
+    "route": "guide-repeat-posttrial",
+    "source": "a52de748f89e82c39f97361b2295d72c88b69856",
+    "method": "ordinary pre-change repeat guide",
+    "sha256": "083adbd71009818bebc17b1f9939b75eb681cb89c43e8115e316eb8e07c14647",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "guide.png",
+    "route": "guide-repeat-posttrial",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "ordinary repeat guide",
+    "sha256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "before-lev.png",
+    "route": "ordinary-optional-quest",
+    "source": "a52de748f89e82c39f97361b2295d72c88b69856",
+    "method": "ordinary pre-change Lev last paragraph",
+    "sha256": "582753988707bac4aed8ce05c4d1f74361138943b713cdbaabd9b82eb073280e",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "lev.png",
+    "route": "ordinary-optional-quest",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "ordinary Lev last paragraph",
+    "sha256": "3ddb6ee1c4bba167cc04879945f686c9fec47ce94f9eac8cf63cd28e7c0deaa4",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "before-checkpoint.png",
+    "route": "ordinary-completed-context",
+    "source": "a52de748f89e82c39f97361b2295d72c88b69856",
+    "method": "ordinary pre-change checkpoint Journal",
+    "sha256": "df1a70b0ae3c350a9ba788e24db576b7025b4dc00274a1373f0583cb4f14f490",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "checkpoint.png",
+    "route": "ordinary-completed-context",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "ordinary completed-context Journal",
+    "sha256": "365dafda942ec82a3538e9ab22f103d38a59c32c7413dcb7c03ba5c7e19bee37",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "quest-return.png",
+    "route": "ordinary-optional-quest",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "ordinary tag-found Journal",
+    "sha256": "4ba5bc22bf9cb9097b4b43afc3dfa8ff9bbca8fbd929d1bb67d4e88ed8a9812e",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "quest-cold.png",
+    "route": "ordinary-quest-cold",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "ordinary cold completed quest",
+    "sha256": "1e7fc2a97d3016b399e36182a75503a52f1d0a86b5780a21998c177de66024e2",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "capacity.png",
+    "route": "controlled-capacity-no-consumption",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "explicit controlled full inventory",
+    "sha256": "54078ac9b718174a72e62dc43c99402c147130530e1fc6d715c3176bce17dde5",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "stairs.png",
+    "route": "controlled-warden-stairs-hint",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "explicit controlled warden-cleared Journal",
+    "sha256": "2c9d0802980e70827a713be3f26d2cba449362a0851752269d01ffc834334e76",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "first-posttrial.png",
+    "route": "controlled-first-posttrial",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "explicit controlled first posttrial guide",
+    "sha256": "9f4556079c8624b1c7ed8f823433a4fd68521963f8f5436ed64bea50649d1172",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "guard.png",
+    "route": "controlled-journal-guard",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "explicit controlled Howler-cleared Journal",
+    "sha256": "647fc3830f9fe8303a47ddd855bb4fa7e382f8c7cc5384b26f088646bac35053",
+    "native_size": [
+      240,
+      160
+    ]
+  },
+  {
+    "file": "howler.png",
+    "route": "controlled-journal-howler",
+    "source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "method": "explicit controlled Guard-cleared Journal",
+    "sha256": "97d945f3e33d24ae80c9d5c29963aae668fac2a4c7616d5869e71af68d9e5591",
+    "native_size": [
+      240,
+      160
+    ]
+  }
+]

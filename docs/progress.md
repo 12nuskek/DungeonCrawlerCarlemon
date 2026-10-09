@@ -1,3 +1,47 @@
+Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-NC implemented,
+compiled and runtime verified; pushed, [draft PR79](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/79) / issue78, unmerged.
+Sole writer: /workspace/dcc-feedback, task/floor1-g01e-navigation. Base:
+ce43420b1c76210f0fa4aaee18c0e195b9354b2d (PR77). Review package:
+4e67a7554b8041cc770d0d615f5f4f7358983c89; metadata checkpoint follows it.
+PR79 is clean/mergeable but stays draft; PR77/75 remain draft, and main remains
+b694da17928b93ea579f55d905017aa9f7619422. Broader runtime gates are pending.
+Never merge/push unpublished diagnostics from /workspace/DungeonCrawlerCarlemon;
+preserve its c298ac7 /996b947 local archive, excluded from this branch's ancestry.
+Same Cloud task 01a10f4b-596b-700b-b8ba-241e3ca2c000. Parent owns continuation and
+quota; last supplied sample 00:05:01UTC:15% used /85% remaining. No new workflow,
+schedule, Cloud task or writer. No repository workflows under .github were found.
+
+Compiled game and runner: c643f01c11ec68119b0347b107ee20115131debc. ROM SHA256:
+b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a.
+Actual unchanged before ROM:3 ordinary sessions /118 assertions. Candidate:
+17 sessions /236 assertions (5 ordinary /147;12 explicit controlled inputs /89),
+86 expanded messages /116 native pages. Emulator error logs empty; original and
+read-only cold identities unchanged. Guide/quest/Journal, manual Save/cold and
+capacity refusal pass. Actual Journal menus verified on all5 live maps.
+All38 control blocks and22 unchanged text blocks normalize identically;21 text
+labels corrected.53 physical lines use at most202px of the216px window.
+All11,711 engine files regenerate identically.65,536 verbatim-C host UBSan identity
+checks supplement runtime; legacy contexts migrate, so no actual legacy fallback
+runtime claim. [Evidence, commands, captures, attempts and limits](evidence/floor1/g01e/navigation/README.md).
+
+Build: artifacts/floor1/navigation/build-0lj52td4; runtime-ygjozl4x;
+before-05e0c8n2. Complete raw evidence remains local. Initial build-zugwd4m0 and
+final c643f01 snapshots are packed losslessly as source.tar.gz after successful
+TAR comparison; each retains its private production.gba and hashes. Restore only
+when needed.48,079 free inodes after packaging. Historical evidence omitted from
+this reversible sparse checkout remains in Git; hydrate required paths as needed.
+Environment restart reconciled without duplicate issue creation. No active build
+or emulator after validation. No rejected dataset, renamed upload or denied ancestry.
+
+Legacy sources, geometry, collision, save ABI, reward/recovery and combat unchanged.
+Resolved Warden/trial pages use already-cleared state, not a new battle victory.
+The three-strategy combat stop and full gameplay/finalT/V01/whole-floor gates remain.
+Exact next task: reconcile PR79 and checkpoint, then verify remaining independent
+optional loop/trap/craft/re-entry/cold routes from existing ordinary saves. Do not
+reset the three attempts, roll out broader art or claim full-floor completion.
+
+## Preserved SF checkpoint
+
 Current checkpoint —2026-10-08 Australia/Brisbane: F1-G01e-SF implemented,
 compiled and runtime verified; pushed, draft PR77 / issue76, unmerged.
 Sole writer in /workspace/dcc-feedback, branch task/floor1-g01e-feedback, based

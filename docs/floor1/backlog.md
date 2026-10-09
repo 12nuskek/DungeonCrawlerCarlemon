@@ -1,3 +1,15 @@
+Current focused increment (2026-10-08 Brisbane): F1-G01e-NC implemented,
+compiled and runtime verified; issue78 / draft PR79, pushed and unmerged.
+17sessions/236assertions (5ordinary147;12explicit controlled89), real native
+NPC/Journal pages on all5live maps, Save/cold and capacity checks.38controls and
+22unchanged texts preserved;21live text labels corrected; legacy/geometry/save/
+combat unchanged. [Evidence](../evidence/floor1/g01e/navigation/README.md).
+PR77/75 remain draft; three-strategy combat stop and full/finalT/V01 gates unchanged.
+Next: reconcile NC review, then independent optional loop/trap/craft/re-entry/cold
+checks using existing ordinary inputs. No new strategy, scheduler or writer.
+
+## Preserved SF checkpoint
+
 Current focused increment (2026-10-08 Brisbane): F1-G01e-SF pickup feedback is
 implemented, freshly compiled and ordinary-runtime verified; draft PR77 / issue76,
 not merged. See [evidence](../evidence/floor1/g01e/feedback/README.md). Baseline and

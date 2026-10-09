@@ -3,6 +3,18 @@
 **Full Floor1 implementation resumed on2026-10-07.** See the [accepted plan and
 execution authority](docs/floor1/README.md) and [active backlog](docs/floor1/backlog.md).
 The delivered six-room slice below remains the preserved regression baseline.
+The current live-opening branches are draft/unmerged: PR75 migration, PR77 pickup
+feedback and [PR79 navigation/Journal](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/79) (issue78). The latter passes 17 emulator
+sessions /236 assertions; [scoped evidence](docs/evidence/floor1/g01e/navigation/README.md).
+Full live gameplay/finalT and native-art rollout remain gated by the recorded combat
+stop. The Stage0–5 delivery claims below describe the preserved baseline.
+
+On the draft live opening: the warm door leads to Quiet Landing; its guide restores
+you and the east alcove holds the trial. Both Quiet Landing and the southeast
+workshop exit north to Field. Patrols wait south/east of the warm door. Mara's tag
+is outside east of the workshop; the warden door is north of it. The warden's
+southeast stairs lead to an opening checkpoint. The rest of Floor1 is in progress.
+
 
 An in-development GBA adaptation using stock Pokémon Emerald's decompilation.
 The approved target is an authored Book 1 opening slice with Carl and Donut duo
@@ -30,7 +42,7 @@ review. Matching-stock ROM comparison and `scripts/verify-container.sh` belong t
 the Stage 0 revision `03353fb3f1287074102a5bc98df4f19b0d4c189f`, before gameplay
 changes; see the [baseline evidence](docs/evidence/f02/README.md).
 
-Play from a fresh save in a GBA emulator. Move with the D-pad, interact/confirm
+For the preserved six-room baseline, play from a fresh save in a GBA emulator. Move with the D-pad, interact/confirm
 with A, cancel with B; START opens the menu (Save outside battle). Read the entrance
 note, reach the Quiet Landing guide/trial, then explore the Service Room. Its
 southwest ladder leads to two gauntlet patrols and the gate warden. Win the trial

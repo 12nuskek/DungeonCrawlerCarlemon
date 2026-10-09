@@ -409,3 +409,19 @@ architecture masters exactly. This is an original gameplay adaptation, not a boo
 location claim. No new art allocation, copied dialogue, reward or save state.
 See [scoped evidence](evidence/floor1/g01e/feedback/README.md) for ordinary pickup,
 repeat, traversal, re-entry, Save and cold verification.
+
+## F1-G01e-NC live navigation — 2026-10-08
+
+Original adaptation copy by Codex in scripts/floor1/live-navigation.py; generated
+engine/data/scripts/dcc_live_navigation.inc. Purpose: align Guide, Mara, Lev, tag,
+Warden and Journal directions with reviewed live geometry; label flag48 as opening
+checkpoint rather than final Floor1 descent.21changed text labels; no book quote,
+new character/event/asset or later-book spoiler. Existing compressed Book1 tutorial
+and shared Field are intentional game adaptations, not claimed canonical geography.
+
+Prerequisites, rewards, acceptance/decline/completion, recovery and all control
+commands remain from archived scripts. Source: accepted design and relocation
+contract, not an independently verified chapter citation.38control and22unchanged
+text blocks reproduce after namespace normalization. No replacement art scheduled
+by this narrow text task; all existing asset placeholders/provenance remain tracked.
+[Test routes, state coverage, native captures and limitations](evidence/floor1/g01e/navigation/README.md).

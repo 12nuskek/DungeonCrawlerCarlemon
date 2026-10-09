@@ -3,7 +3,7 @@
 Read docs/progress.md and current remote branches/PRs before changing anything.
 One implementation writer and one dependency-ready task at a time. Preserve work.
 Current budget authority: user resumed2026-10-07 05:15:54UTC. Parent's official
-same-account read at05:47UTC reported8% used/92% remaining in a seven-day window.
+same-account read at00:05:01UTC2026-10-08 reported15% used/85% remaining in a seven-day window.
 Parent samples periodically and before continuations; at>=80% used it will ask
 for checkpoint/pause. Honour that immediately. This is a soft sampled guard,
 not an exact hard cap or a permanently fresh reading. Keep frequent checkpoints.

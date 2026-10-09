@@ -1,0 +1,145 @@
+{
+  "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "runner_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "sessions": [
+    {
+      "route": "guide-first-pretrial",
+      "assertions": 16,
+      "method": "ordinary copied save and controller route",
+      "emulator_errors": 0,
+      "native_messages": 7,
+      "native_pages": 10
+    },
+    {
+      "route": "guide-repeat-posttrial",
+      "assertions": 17,
+      "method": "ordinary copied save and controller route",
+      "emulator_errors": 0,
+      "native_messages": 5,
+      "native_pages": 6
+    },
+    {
+      "route": "ordinary-optional-quest",
+      "assertions": 85,
+      "method": "ordinary copied save and controller route",
+      "emulator_errors": 0,
+      "native_messages": 23,
+      "native_pages": 32
+    },
+    {
+      "route": "ordinary-quest-cold",
+      "assertions": 13,
+      "method": "ordinary copied save and controller route",
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5
+    },
+    {
+      "route": "ordinary-completed-context",
+      "assertions": 16,
+      "method": "ordinary copied save and controller route",
+      "emulator_errors": 0,
+      "native_messages": 7,
+      "native_pages": 9
+    },
+    {
+      "route": "controlled-first-posttrial",
+      "assertions": 7,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-warden-locked",
+      "assertions": 9,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-warden-stairs-hint",
+      "assertions": 9,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-capacity-no-consumption",
+      "assertions": 17,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-capacity-cold",
+      "assertions": 12,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 4,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-journal-trial",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    },
+    {
+      "route": "controlled-journal-both",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    },
+    {
+      "route": "controlled-journal-guard",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    },
+    {
+      "route": "controlled-journal-howler",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    },
+    {
+      "route": "controlled-journal-boss",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 5
+    },
+    {
+      "route": "controlled-journal-stairs",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    },
+    {
+      "route": "controlled-journal-done",
+      "assertions": 5,
+      "method": "explicit controlled checksum-valid save input; ordinary controllers; unmodified ROM",
+      "emulator_errors": 0,
+      "native_messages": 3,
+      "native_pages": 4
+    }
+  ],
+  "originals_unchanged": true,
+  "method": "Real native 240x160 pages and expanded-message byte equality against compiled labels. Controller-only routes; controlled save inputs explicitly distinguished. No new strategy, timing fishing, RAM writes or public raw dumps."
+}

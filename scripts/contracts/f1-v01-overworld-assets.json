@@ -1,0 +1,84 @@
+{
+  "scope": "Existing Carl nine gait frames, Donut three standing frames; one side attention cleanup, right via native horizontal flip",
+  "masters": [
+    {
+      "path": "scripts/content/masters/carl-down.txt",
+      "SHA256": "c73b1cbb181f475d893bee859ae6a654f1b624d44617dbbbdbca076295eaf3eb",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-up.txt",
+      "SHA256": "2b12c45b055d730af572d8128127bd043c5e09cc912b451c674be6a9f28f47ba",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-left.txt",
+      "SHA256": "18e30a649dc2d2911102eb2a2533ebcffaeec265f0a9d5a7efc587cf912a255e",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-down-1.txt",
+      "SHA256": "6b91e62e0e03812ac176ed0afcb63efdfab9a3d8c6b88d62cb24d04a35316663",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-down-2.txt",
+      "SHA256": "2b4c2b8250cb34f62f88ea8da58b548f83674eb1685cd8bc0525b46dc8951160",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-up-1.txt",
+      "SHA256": "3468162ef57c8a7b4f1d72ce5b37728327eb2bf6bc19276ad050c4696ed1d396",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-up-2.txt",
+      "SHA256": "301c0abb4105270f370767ab6988bd9b21b36626c4c814b6a48bd3c0deb9927f",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-left-1.txt",
+      "SHA256": "f313e8569b570e651eb83a8200ef8ca125c52775d4d9d9e34fe288fbe6e494f5",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/carl-left-2.txt",
+      "SHA256": "32f2530c26065228c8902969f18fffedc0da7e975809e1cc88846284559f8aac",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/donut-down.txt",
+      "SHA256": "ab0c2003dbc766ec83cb2d30212cd621d6fe874bca5f80f7c8bcf2994f705c38",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/donut-up.txt",
+      "SHA256": "aa281b757afca11da0065a327c5b4868f5f4ede07ff69271e4b6c3dc0d5dda21",
+      "existing_atlas_exact": true
+    },
+    {
+      "path": "scripts/content/masters/donut-left.txt",
+      "SHA256": "274141f9b0963d6df076c85404077d74e85582349240eb09e00db14ee28ab038",
+      "existing_atlas_exact": true
+    }
+  ],
+  "attention": {
+    "staged_source": "docs/art-references/native-battle-animation-20261007/frames/donut/attention.png",
+    "staged_SHA256": "44b31213a72cfb3bfa41a14a86bb51f0d4603238f01b55b148b7bbe2867a66a8",
+    "native_master": "scripts/content/masters/donut-attention-left.txt",
+    "master_SHA256": "6a8f52982aea20b6312d88f6d7d9c6604700322489bc7d2de41962a4d42fcedf",
+    "size": [
+      16,
+      16
+    ],
+    "bbox": [
+      1,
+      2,
+      15,
+      15
+    ],
+    "feet_and_pivot_rows12_15_identical": true,
+    "native_palette_unchanged": true,
+    "single_side_pose_right_mirrored": true
+  }
+}

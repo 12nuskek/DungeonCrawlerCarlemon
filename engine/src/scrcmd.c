@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_overworld.h"
 #include "frontier_util.h"
 #include "battle_setup.h"
 #include "berry.h"
@@ -1154,6 +1155,7 @@ bool8 ScrCmd_faceplayer(struct ScriptContext *ctx)
 {
     if (gObjectEvents[gSelectedObjectEvent].active)
         ObjectEventFaceOppositeDirection(&gObjectEvents[gSelectedObjectEvent], GetPlayerFacingDirection());
+    DccDonutAttentionTryStart(ctx->scriptPtr);
     return FALSE;
 }
 

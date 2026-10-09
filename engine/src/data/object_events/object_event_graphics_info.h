@@ -3926,7 +3926,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skitty = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_DccDonut,
     .images = sPicTable_Skitty,
     .affineAnims = gDummySpriteAffineAnimTable,
 };

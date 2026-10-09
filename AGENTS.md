@@ -1,3 +1,17 @@
+Current V01 overworld authority — 2026-10-09: parent/Kurt accepted PR112's
+visible environment pilot; ordinary mergec2f0d747 verified exact8f669796 tree,
+parents54526744/8f669796. Next ONE bounded overworld character stage authorised:
+reuse inspected Carl9 gait/Donut3 standing masters, mirrored right, one cleaned
+native attention reaction on existing interaction. Existing slots/graphics IDs,
+feet/pivots/palettes/environment/geometry/input cadence/interaction logic/save ABI
+fixed. Battle action-bound poses remain later. Freeze source/build; bounded
+ordinary before/after directions/reaction, actual OBJ/palette/heap captures/clips.
+Preserve all prior gates/failures/legacy/C01 limits. Stop first divergence and
+retain; no broad replay/fabricated input/search/automatic retry. Private Library
+saves/logs/frames; keys/buffers outside uploads. Scoped draft then parent visual
+review, no rollout/merge of this stage. See docs/floor1/v01-overworld-contract.md.
+Historical PR112 review stop below is superseded only by this current authority.
+
 Current publication: draft PR112 / existing tracking106, initial evidence4f497561;
 open/unmerged. Parent visible-pilot review next; no further execution/merge/rollout.
 

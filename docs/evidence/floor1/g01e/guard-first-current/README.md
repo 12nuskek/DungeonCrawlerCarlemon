@@ -1,5 +1,7 @@
 # Current Guard-first: first milestone STOP, no retry
 
+[Draft PR #109](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/109) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR108; open/draft/unmerged. Evidence checkpoint `8d97a2f7a2bdf87ef21de0d6e6cfffe252920dcf`.
+
 The ONE parent-scoped route stopped at native validation immediately after
 Guard victory. Current order/travel/Save/cold acceptance remains **unverified**.
 Parent review of the observer's source-defined friendship modifier is next;

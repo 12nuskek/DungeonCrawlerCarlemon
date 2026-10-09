@@ -1,5 +1,7 @@
 Current Guard-first order/travel check — 2026-10-09: **first milestone STOP71; unmerged**.
 
+[Draft PR #109](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/109) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR108; open/draft/unmerged. Evidence checkpoint `8d97a2f7a2bdf87ef21de0d6e6cfffe252920dcf`.
+
 Parent PR108 inventory review authorised ONE current Guard-first route plus
 its dependent cold. Frozen source/host/execution `cad9eadfd8405f8eb040e478a7f7c7fb8948788c`,
 unchanged game5084/ROM23c77 and ordinary pendingc11c input. New host compiles;

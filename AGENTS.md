@@ -1,5 +1,7 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR109 / existing issue106, stacked on unchanged PR108.
+
 Current Guard-first execution STOP71 after Guard victory at14680 exact frames/
 23 completed assertions. Frozen cad9eadf/5084/23c77 preserved; observer incorrectly
 requires nonmatching native met location, actual Field match adds1 to grow-level

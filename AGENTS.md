@@ -1,5 +1,13 @@
 # DungeonCrawlerCarlemon working contract
 
+Corrected current Guard-first route/manual Save/cold PASSED182 assertions
+(164+18), frozen model/host/execution8a21c95f on unchanged5084/23c77. Strict six
+measured legs14/224,34/544,44/703; normal Save030b12fd…db6b73c restored at
+arena approach35.3/8,7, zero Warden combat. PR109 STOP71/23/14680 remains
+unchanged/separate. No further emulator execution or integration here. Parent
+review→explicit protected stack integration→V01; retain unavailable original
+legacy input gate and CP72e bridge. See corrected evidence README.
+
 Parent PR109 review authorises only the source-pinned native friendship helper
 and ONE separately claimed corrected identical current Guard-first route/cold
 under docs/floor1/g01e-guard-first-corrected-contract.md. Actual native Field

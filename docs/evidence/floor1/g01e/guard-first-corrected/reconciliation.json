@@ -1,0 +1,268 @@
+{
+  "base": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+  "main": "b694da17928b93ea579f55d905017aa9f7619422",
+  "prior_remote_heads_preserved": 63,
+  "prior_heads": [
+    {
+      "SHA": "86ca854225892d74254d475fa800cc4350963d2c",
+      "ref": "refs/heads/docs/b01-checkpoint"
+    },
+    {
+      "SHA": "fa8f309714e0d0ec9c445f1fda93296efe29ced8",
+      "ref": "refs/heads/docs/final-slice-handoff"
+    },
+    {
+      "SHA": "d78b944724d0dd6a303052fa5de91360cba5205d",
+      "ref": "refs/heads/docs/floor1-art-preparation-20261007"
+    },
+    {
+      "SHA": "2c9a1b8ec8cde57cb064d12153a2fc438a10b77b",
+      "ref": "refs/heads/docs/i01-opponent-native-candidates"
+    },
+    {
+      "SHA": "3a1a9c6ce920fd7f6149f2a76d2b64ffd4e9d2e3",
+      "ref": "refs/heads/docs/n01-environment-native-candidates"
+    },
+    {
+      "SHA": "8a007fa3d8f3dee8d82d5f3b5e27cf02f2b7e34d",
+      "ref": "refs/heads/docs/native-battle-animation-candidates-20261007"
+    },
+    {
+      "SHA": "7c528a35513358dc12caeda50d2c111e052f7141",
+      "ref": "refs/heads/docs/s02-protagonist-art-references"
+    },
+    {
+      "SHA": "1725fb78750ad2a126172ce66143a878e57e4c32",
+      "ref": "refs/heads/docs/stage0-checkpoint"
+    },
+    {
+      "SHA": "d33e73f1aeec30fb55056b1efb3eb7c271cafdc9",
+      "ref": "refs/heads/evidence/s02-wip-5963c8f"
+    },
+    {
+      "SHA": "b694da17928b93ea579f55d905017aa9f7619422",
+      "ref": "refs/heads/main"
+    },
+    {
+      "SHA": "335c62fbcfbc27b442874d75685e4020c736a5fd",
+      "ref": "refs/heads/task/b01-duo-prototype"
+    },
+    {
+      "SHA": "c0cafaa91f67300d7e4b9825a8ee83457520ecb4",
+      "ref": "refs/heads/task/b02-crawler-actions"
+    },
+    {
+      "SHA": "d5a3fe750faf4072b984f833cb042e081e7ab825",
+      "ref": "refs/heads/task/b03-no-collection"
+    },
+    {
+      "SHA": "15703bb7d6d83bde5abf5b7fb3d6a35533179261",
+      "ref": "refs/heads/task/d01-trap-secret-quest"
+    },
+    {
+      "SHA": "824a6ff1a7f36a008fc340715e42967f38d63a8e",
+      "ref": "refs/heads/task/d02-explosive-crafting"
+    },
+    {
+      "SHA": "56a68e95c15fd7638fb06f96e3b625c4fcb18638",
+      "ref": "refs/heads/task/e01-tutorial"
+    },
+    {
+      "SHA": "f2a9c3574b683af430c8e4440419557bdc63ea59",
+      "ref": "refs/heads/task/e02-guide-recovery"
+    },
+    {
+      "SHA": "eb31014d9d4355af3f4d854f71a075443e6d8181",
+      "ref": "refs/heads/task/f01-foundation"
+    },
+    {
+      "SHA": "bdefa2565f74c30853d0ef392feae3ab11e6204a",
+      "ref": "refs/heads/task/f02-reproducible-environment"
+    },
+    {
+      "SHA": "2415f6519888a605a6f32309b644e9fa8e04f371",
+      "ref": "refs/heads/task/floor1-a01-membership"
+    },
+    {
+      "SHA": "96d4e83c19bf40d1cd876ced182d189f6cb14b74",
+      "ref": "refs/heads/task/floor1-g01-opening-graybox"
+    },
+    {
+      "SHA": "03b869d7376339797f7667ca9540009eeab3a506",
+      "ref": "refs/heads/task/floor1-g01a-cache-provenance"
+    },
+    {
+      "SHA": "fde3bd38daa03fda03cf43b58e8218ae6fb85e96",
+      "ref": "refs/heads/task/floor1-g01b-coordinated-layout"
+    },
+    {
+      "SHA": "d2c6a8545db4175718bfde87a272b515296d81a9",
+      "ref": "refs/heads/task/floor1-g01b-recovery-travel"
+    },
+    {
+      "SHA": "03cd4b3ea2d03c94dcf37f8e2fb185be4e9d7519",
+      "ref": "refs/heads/task/floor1-g01c-migration-audit"
+    },
+    {
+      "SHA": "bd82beed2c1518d7d42339239ff42cb808d46364",
+      "ref": "refs/heads/task/floor1-g01d-live-contract"
+    },
+    {
+      "SHA": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "ref": "refs/heads/task/floor1-g01e-acceptance-inventory"
+    },
+    {
+      "SHA": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+      "ref": "refs/heads/task/floor1-g01e-current-patrol"
+    },
+    {
+      "SHA": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "ref": "refs/heads/task/floor1-g01e-feedback"
+    },
+    {
+      "SHA": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "ref": "refs/heads/task/floor1-g01e-guard-first-current"
+    },
+    {
+      "SHA": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "ref": "refs/heads/task/floor1-g01e-live-migration"
+    },
+    {
+      "SHA": "91a4b79bfe7041060de560cd65b037322233047a",
+      "ref": "refs/heads/task/floor1-g01e-navigation"
+    },
+    {
+      "SHA": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "ref": "refs/heads/task/floor1-g01e-new-save-recovery"
+    },
+    {
+      "SHA": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "ref": "refs/heads/task/floor1-g01e-optional"
+    },
+    {
+      "SHA": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "ref": "refs/heads/task/floor1-g01e-party-preservation-diagnosis"
+    },
+    {
+      "SHA": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "ref": "refs/heads/task/floor1-g01e-party-resource-correction"
+    },
+    {
+      "SHA": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "ref": "refs/heads/task/floor1-g01e-potion"
+    },
+    {
+      "SHA": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "ref": "refs/heads/task/floor1-g01e-potion-ready"
+    },
+    {
+      "SHA": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "ref": "refs/heads/task/floor1-g01e-prepared-cold-phase"
+    },
+    {
+      "SHA": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "ref": "refs/heads/task/floor1-g01e-prepared-persistence"
+    },
+    {
+      "SHA": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "ref": "refs/heads/task/floor1-g01e-recovery"
+    },
+    {
+      "SHA": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "ref": "refs/heads/task/floor1-g01e-sealed"
+    },
+    {
+      "SHA": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "ref": "refs/heads/task/floor1-g01e-staircase"
+    },
+    {
+      "SHA": "61fba93c0485af269944a739953240e1f745466a",
+      "ref": "refs/heads/task/floor1-g01e-warden-fairness"
+    },
+    {
+      "SHA": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "ref": "refs/heads/task/floor1-g01e-warden-first-clear"
+    },
+    {
+      "SHA": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "ref": "refs/heads/task/floor1-g01e-warden-threat-audit"
+    },
+    {
+      "SHA": "ac4e950df7a36bfdeb6cc2cca1bd64d6a23e8b68",
+      "ref": "refs/heads/task/floor1-p01-baseline"
+    },
+    {
+      "SHA": "16f61a90d488b36d313b1cc726792d1f16a44abd",
+      "ref": "refs/heads/task/floor1-t01-state-text"
+    },
+    {
+      "SHA": "5635bcc02edf3e110e1dee8cb1b75bae3078cf91",
+      "ref": "refs/heads/task/i01-opponent-art"
+    },
+    {
+      "SHA": "fa219b7b1c22f57405c6e91a881a9e7761ca5494",
+      "ref": "refs/heads/task/n00-dungeon-guidance"
+    },
+    {
+      "SHA": "a21a8d98f6df5e6ce02c9f0250db6f1a0ddf5262",
+      "ref": "refs/heads/task/n00b-remaining-objective"
+    },
+    {
+      "SHA": "9374534365ecb8d106cae2693a606cf7289ae73b",
+      "ref": "refs/heads/task/n01-dungeon-materials"
+    },
+    {
+      "SHA": "3c77e9176ba40643471222bb881c06f30d9d9e4d",
+      "ref": "refs/heads/task/n01-room-composition"
+    },
+    {
+      "SHA": "1448dd60a2c7b483972bb3b0ac14326092957032",
+      "ref": "refs/heads/task/n02-room-outlines"
+    },
+    {
+      "SHA": "e2919e6eaf89146c74f0ceb63f19b32c9e1b35db",
+      "ref": "refs/heads/task/n03-state-feedback"
+    },
+    {
+      "SHA": "e0f690b3f0fe0d3513f1607e102decc7a4c14668",
+      "ref": "refs/heads/task/n04-recovery-wins"
+    },
+    {
+      "SHA": "005154eef04e24318d48b6435087e1c6954cff42",
+      "ref": "refs/heads/task/n05-guide-recovery"
+    },
+    {
+      "SHA": "c3fc32d3fa506988b058779c6c60c5018ba0d231",
+      "ref": "refs/heads/task/n06-review-package"
+    },
+    {
+      "SHA": "b3c26e388bd94cd7bd7197a3190ac0774dcc11af",
+      "ref": "refs/heads/task/r01-xp-equipment"
+    },
+    {
+      "SHA": "de8af8914a030bbfb41769de8a74f339f0144e74",
+      "ref": "refs/heads/task/r02-achievements-loot"
+    },
+    {
+      "SHA": "8e34180de438a291067fdb2ec8d8bb08d3ec316d",
+      "ref": "refs/heads/task/s01-connected-slice"
+    },
+    {
+      "SHA": "68d7a570cce1d2bb6fa6476db8fc211c9ebcef72",
+      "ref": "refs/heads/task/s02-original-presentation"
+    },
+    {
+      "SHA": "7807a9c286a7fa11fd35cce2065d02e280f78b2a",
+      "ref": "refs/heads/task/s03-slice-validation"
+    }
+  ],
+  "PR109_original_STOP_preserved": true,
+  "PR109_head_unchanged": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+  "PR108_head_unchanged": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+  "tested_source_workflow_runs": [],
+  "CI_pass_claim": false,
+  "merge_retarget_delete_force_push": false,
+  "current_patrol_checkpoint": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+  "current_patrol_own_PR": null,
+  "next_scope": "Parent review then explicit reviewed stack integration, including PR91 CP bridge; retain legacy input limitation. V01 after integration."
+}

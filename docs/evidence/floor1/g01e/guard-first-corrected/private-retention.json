@@ -1,0 +1,15 @@
+{
+  "archive_file": "DungeonCrawlerCarlemon-guard-first-corrected-20261009.zip",
+  "bytes": 145581,
+  "SHA256": "a245382c64bb2f5b6cd7eea3c550a0e3bd90ab189e1514d1eece44dbcf758cfa",
+  "files": 160,
+  "only_this_separately_authorised_increment": true,
+  "original_legacy_or_denied_datasets_not_included": true,
+  "ROM_executables_credentials_not_included": true,
+  "input_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "ordinary_manual_output_and_cold_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "Library_status": "succeeded",
+  "Library_file_name": "DungeonCrawlerCarlemon-guard-first-corrected-20261009.zip",
+  "Library_current_version_number": 0,
+  "local_identity_metadata_applied": true
+}

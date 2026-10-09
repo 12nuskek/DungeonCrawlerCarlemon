@@ -1,0 +1,558 @@
+{
+  "method": "Read-only review of actual newly executed native milestones/serialized Save/cold; raw identities and encoding contexts private",
+  "execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "current_order_travel_Save_cold": "PASS, bounded only; unmerged",
+  "exact_original_PR109_Guard_output_reproduced": true,
+  "original_PR109_STOP_preserved": true,
+  "milestones": [
+    {
+      "name": "guard-win",
+      "absolute_frame": 14680,
+      "map": [
+        35,
+        0
+      ],
+      "position": [
+        37,
+        31
+      ],
+      "counter": 72,
+      "safe_party": [
+        {
+          "member": "Carl",
+          "level": 10,
+          "XP": 627,
+          "HP": 19,
+          "maxHP": 36,
+          "PP": [
+            1,
+            40,
+            0,
+            0
+          ],
+          "friendship": 81,
+          "EVs": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        },
+        {
+          "member": "Donut",
+          "level": 9,
+          "XP": 937,
+          "HP": 5,
+          "maxHP": 28,
+          "PP": [
+            0,
+            35,
+            0,
+            0
+          ],
+          "friendship": 75,
+          "EVs": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        }
+      ],
+      "complete_native_member_reconstruction": true,
+      "all300_flags_and1272_logical_resources_exact_to_declared_transition": true
+    },
+    {
+      "name": "guide-guard",
+      "absolute_frame": 15664,
+      "map": [
+        35,
+        1
+      ],
+      "position": [
+        4,
+        5
+      ],
+      "counter": 78,
+      "safe_party": [
+        {
+          "member": "Carl",
+          "level": 10,
+          "XP": 627,
+          "HP": 36,
+          "maxHP": 36,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "friendship": 81,
+          "EVs": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        },
+        {
+          "member": "Donut",
+          "level": 9,
+          "XP": 937,
+          "HP": 28,
+          "maxHP": 28,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "friendship": 75,
+          "EVs": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        }
+      ],
+      "complete_native_member_reconstruction": true,
+      "all300_flags_and1272_logical_resources_exact_to_declared_transition": true
+    },
+    {
+      "name": "howler-win",
+      "absolute_frame": 24440,
+      "map": [
+        35,
+        0
+      ],
+      "position": [
+        51,
+        27
+      ],
+      "counter": 102,
+      "safe_party": [
+        {
+          "member": "Carl",
+          "level": 11,
+          "XP": 748,
+          "HP": 35,
+          "maxHP": 38,
+          "PP": [
+            5,
+            40,
+            0,
+            0
+          ],
+          "friendship": 87,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        },
+        {
+          "member": "Donut",
+          "level": 10,
+          "XP": 1058,
+          "HP": 21,
+          "maxHP": 30,
+          "PP": [
+            0,
+            39,
+            0,
+            0
+          ],
+          "friendship": 81,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        }
+      ],
+      "complete_native_member_reconstruction": true,
+      "all300_flags_and1272_logical_resources_exact_to_declared_transition": true
+    },
+    {
+      "name": "guide-howler",
+      "absolute_frame": 25628,
+      "map": [
+        35,
+        1
+      ],
+      "position": [
+        4,
+        5
+      ],
+      "counter": 118,
+      "safe_party": [
+        {
+          "member": "Carl",
+          "level": 11,
+          "XP": 748,
+          "HP": 38,
+          "maxHP": 38,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "friendship": 87,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        },
+        {
+          "member": "Donut",
+          "level": 10,
+          "XP": 1058,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "friendship": 81,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        }
+      ],
+      "complete_native_member_reconstruction": true,
+      "all300_flags_and1272_logical_resources_exact_to_declared_transition": true
+    },
+    {
+      "name": "guide-preboss",
+      "absolute_frame": 28004,
+      "map": [
+        35,
+        1
+      ],
+      "position": [
+        4,
+        5
+      ],
+      "counter": 22,
+      "safe_party": [
+        {
+          "member": "Carl",
+          "level": 11,
+          "XP": 748,
+          "HP": 38,
+          "maxHP": 38,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "friendship": 89,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        },
+        {
+          "member": "Donut",
+          "level": 10,
+          "XP": 1058,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "friendship": 81,
+          "EVs": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "status": 0,
+          "checksum_and_reencoding_valid": true
+        }
+      ],
+      "complete_native_member_reconstruction": true,
+      "all300_flags_and1272_logical_resources_exact_to_declared_transition": true
+    }
+  ],
+  "all10_stable_positions_match_route_and_source_native_collision": true,
+  "once_only_XP_money_and_patrol_flags": true,
+  "all_other_optional_preparation_boss_checkpoint_loop_flags_seed_exact": true,
+  "all_owned_except680_money_seed_exact": true,
+  "manual_Save_latest14_native_sector_checksums_valid": true,
+  "exact600_party_count_counter_flags_all1272_logical_resources_map_position_across_Save_and_cold": true,
+  "final_map": [
+    35,
+    3
+  ],
+  "final_position": [
+    8,
+    7
+  ],
+  "final_counter": 47,
+  "final_party": [
+    {
+      "member": "Carl",
+      "level": 11,
+      "XP": 748,
+      "HP": 38,
+      "maxHP": 38,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "friendship": 89,
+      "EVs": [
+        2,
+        0,
+        0,
+        3,
+        1,
+        0
+      ],
+      "status": 0,
+      "checksum_and_reencoding_valid": true
+    },
+    {
+      "member": "Donut",
+      "level": 10,
+      "XP": 1058,
+      "HP": 30,
+      "maxHP": 30,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "friendship": 81,
+      "EVs": [
+        2,
+        0,
+        0,
+        3,
+        1,
+        0
+      ],
+      "status": 0,
+      "checksum_and_reencoding_valid": true
+    }
+  ],
+  "walking_boundary": {
+    "absolute_frame": 26157,
+    "counter": "127->0",
+    "friendship_delta": [
+      2,
+      0
+    ],
+    "Carl_native_walk_base1_plus_matching1": true,
+    "Donut_engine_observed_skip": true,
+    "all_other_party_bytes_and_derived_checksum_ciphertext_exact": true
+  },
+  "measured_travel": [
+    {
+      "name": "guard-out",
+      "frames": 500,
+      "walking_frames": 112,
+      "steps": 7,
+      "warps": 1
+    },
+    {
+      "name": "guard-back",
+      "frames": 500,
+      "walking_frames": 112,
+      "steps": 7,
+      "warps": 1
+    },
+    {
+      "name": "howler-out",
+      "frames": 704,
+      "walking_frames": 272,
+      "steps": 17,
+      "warps": 1
+    },
+    {
+      "name": "howler-back",
+      "frames": 704,
+      "walking_frames": 272,
+      "steps": 17,
+      "warps": 1
+    },
+    {
+      "name": "preboss-out",
+      "frames": 704,
+      "walking_frames": 272,
+      "steps": 17,
+      "warps": 1
+    },
+    {
+      "name": "preboss-back",
+      "frames": 1292,
+      "walking_frames": 431,
+      "steps": 27,
+      "warps": 2
+    }
+  ],
+  "combined_emulator_assertions": 182,
+  "actual_only_trainers": [
+    856,
+    857
+  ],
+  "Warden_battles": 0,
+  "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "raw_snapshot_hashes": {
+    "patrol/before-context.bin": "a7b42c2c364b1ac2520feb7d5c650640a21ba74514f7c9091ba40cd55579c45f",
+    "patrol/before-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/before-owned.bin": "f7a46870bfce97b2ea6df902772d94b8df2bd8b7a937ff67e0765f4fb208471c",
+    "patrol/before-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/boot-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "patrol/boot-flags.bin": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+    "patrol/boot-owned.bin": "8585a952c8a198a69123eeb3117e7f5b74e0db8fdb91c373015f00790e343c6a",
+    "patrol/boot-party.bin": "daf4126a1b465a3f21588520f69e1cf881484a9a03db8418fa1a42ca660ad00c",
+    "patrol/current-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "patrol/current-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/current-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "patrol/current-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/disk-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "patrol/disk-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/disk-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "patrol/disk-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/expected-context.bin": "9cc76bd369224e84ae4585d8ea0f3407134610d40a9b239f28349e57a406c501",
+    "patrol/expected-flags.bin": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+    "patrol/expected-owned.bin": "0c9e43e37b0f74d69bc073d8eb72bd5768f93ba0571a7f5961c14c02a7329b31",
+    "patrol/expected-party.bin": "daf4126a1b465a3f21588520f69e1cf881484a9a03db8418fa1a42ca660ad00c",
+    "patrol/final-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "patrol/final-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/final-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "patrol/final-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/guard-before-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "patrol/guard-before-flags.bin": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+    "patrol/guard-before-owned.bin": "8585a952c8a198a69123eeb3117e7f5b74e0db8fdb91c373015f00790e343c6a",
+    "patrol/guard-before-party.bin": "daf4126a1b465a3f21588520f69e1cf881484a9a03db8418fa1a42ca660ad00c",
+    "patrol/guard-repeat-context.bin": "a2d1045bc4c223c83ffb4c9e0535bd133554cff37c67c720e70e7cf239dcfb5d",
+    "patrol/guard-repeat-flags.bin": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "patrol/guard-repeat-owned.bin": "68b9de697b2c651fd175fe10dd537d682d769407b9db014d73bfaf3a6a7b2491",
+    "patrol/guard-repeat-party.bin": "9fa443da524cf055296bff13b26aae647febc332ac8328ce0fb1aeb5a6b67c6f",
+    "patrol/guard-win-context.bin": "75197dad98d33115221746b0a71ee9ad403966515da48f56128e33611246daab",
+    "patrol/guard-win-flags.bin": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "patrol/guard-win-owned.bin": "a306ef9c80617dc25c4e25143659349f1ebb398be48bd24a98e9f1d1b7258def",
+    "patrol/guard-win-party.bin": "d3d4a4da0b089234e18d94aeeaf45301628cbf39d4932dc02d005f0eeb02a6cd",
+    "patrol/guide-guard-before-context.bin": "168cdb509fc3502ab65f5e240d9753277501ca91a2a615da07df0ac0b46d6e3f",
+    "patrol/guide-guard-before-flags.bin": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "patrol/guide-guard-before-owned.bin": "003ee1d60b027444bbd3f78014d8a2df17db2470c2f2b3614e5a74bf513b59e3",
+    "patrol/guide-guard-before-party.bin": "d3d4a4da0b089234e18d94aeeaf45301628cbf39d4932dc02d005f0eeb02a6cd",
+    "patrol/guide-guard-context.bin": "168cdb509fc3502ab65f5e240d9753277501ca91a2a615da07df0ac0b46d6e3f",
+    "patrol/guide-guard-flags.bin": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "patrol/guide-guard-owned.bin": "003ee1d60b027444bbd3f78014d8a2df17db2470c2f2b3614e5a74bf513b59e3",
+    "patrol/guide-guard-party.bin": "9fa443da524cf055296bff13b26aae647febc332ac8328ce0fb1aeb5a6b67c6f",
+    "patrol/guide-howler-before-context.bin": "015e77130635c893272302c3c8f8402ad7ab97fef8048cd53a787795176e1fa2",
+    "patrol/guide-howler-before-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/guide-howler-before-owned.bin": "b0e04d68880c6b654dc14f0b783177b0a9cf26984c8e0bc67e3de773dc6810c2",
+    "patrol/guide-howler-before-party.bin": "61632bceca2baa8f755d538867b26c50f714e78828eef1145f79abad3430a8e1",
+    "patrol/guide-howler-context.bin": "015e77130635c893272302c3c8f8402ad7ab97fef8048cd53a787795176e1fa2",
+    "patrol/guide-howler-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/guide-howler-owned.bin": "b0e04d68880c6b654dc14f0b783177b0a9cf26984c8e0bc67e3de773dc6810c2",
+    "patrol/guide-howler-party.bin": "a816007d0c9a10190ad6ade7e4c5916093897553dac44826866c45e687bc3ff9",
+    "patrol/guide-preboss-before-context.bin": "a7b42c2c364b1ac2520feb7d5c650640a21ba74514f7c9091ba40cd55579c45f",
+    "patrol/guide-preboss-before-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/guide-preboss-before-owned.bin": "f7a46870bfce97b2ea6df902772d94b8df2bd8b7a937ff67e0765f4fb208471c",
+    "patrol/guide-preboss-before-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/guide-preboss-context.bin": "a7b42c2c364b1ac2520feb7d5c650640a21ba74514f7c9091ba40cd55579c45f",
+    "patrol/guide-preboss-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/guide-preboss-owned.bin": "f7a46870bfce97b2ea6df902772d94b8df2bd8b7a937ff67e0765f4fb208471c",
+    "patrol/guide-preboss-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/howler-before-context.bin": "a2d1045bc4c223c83ffb4c9e0535bd133554cff37c67c720e70e7cf239dcfb5d",
+    "patrol/howler-before-flags.bin": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "patrol/howler-before-owned.bin": "68b9de697b2c651fd175fe10dd537d682d769407b9db014d73bfaf3a6a7b2491",
+    "patrol/howler-before-party.bin": "9fa443da524cf055296bff13b26aae647febc332ac8328ce0fb1aeb5a6b67c6f",
+    "patrol/howler-repeat-context.bin": "3bdff730f47240c50ae876397bc4fdbc910bb7b03829f00e5688e59ae96f4e23",
+    "patrol/howler-repeat-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/howler-repeat-owned.bin": "4ca4ae94d015bffddf867c426577bba6e7200019c1edc3a87d8ec5c672d5707d",
+    "patrol/howler-repeat-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "patrol/howler-win-context.bin": "c569073e2149df8dc379b78d1f287f814bbc5be613a5353f80d7baf941e4d233",
+    "patrol/howler-win-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/howler-win-owned.bin": "50466a04887240c5f99b6b029fa5d79255d39232587df30b9a4e3b8a65cf287d",
+    "patrol/howler-win-party.bin": "61632bceca2baa8f755d538867b26c50f714e78828eef1145f79abad3430a8e1",
+    "patrol/saved-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "patrol/saved-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "patrol/saved-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "patrol/saved-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "cold/boot-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "cold/boot-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "cold/boot-owned.bin": "3d982be73304d61fdb4df45da2ea61b6a903fe77b8cbeaea545b98bf6aa27f25",
+    "cold/boot-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "cold/cold-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "cold/cold-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "cold/cold-owned.bin": "3d982be73304d61fdb4df45da2ea61b6a903fe77b8cbeaea545b98bf6aa27f25",
+    "cold/cold-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "cold/current-context.bin": "e1ad406b076319cbf2bc4a99fa5b64175800b11e06557bcf4e30611adbb7d66d",
+    "cold/current-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "cold/current-owned.bin": "3d982be73304d61fdb4df45da2ea61b6a903fe77b8cbeaea545b98bf6aa27f25",
+    "cold/current-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "cold/expected-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "cold/expected-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "cold/expected-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "cold/expected-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000"
+  },
+  "legacy_inputs_recovered": false,
+  "full_floor_C01_human_pacing_acceptance": false,
+  "next_dependency": "Parent review then explicit reviewed-stack integration authority, preserving CP72e bridge and legacy limitation; staged V01 after integration. No further execution here."
+}

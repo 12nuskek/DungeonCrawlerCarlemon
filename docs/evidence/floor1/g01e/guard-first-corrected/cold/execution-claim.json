@@ -1,0 +1,9 @@
+{
+  "execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "host_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "stage": "cold",
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "route_SHA256": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67",
+  "execution_limit": 1,
+  "battle_attempts": 0
+}

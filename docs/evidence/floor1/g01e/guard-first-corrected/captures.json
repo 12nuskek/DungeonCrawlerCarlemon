@@ -1,0 +1,80 @@
+[
+  {
+    "file": "patrol/approach.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  },
+  {
+    "file": "patrol/boot.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "33930909f10dc76f76d88047c4beeaf2fbead78cc8d27d655ef4ff72b770a76c"
+  },
+  {
+    "file": "patrol/guard-resolved.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed"
+  },
+  {
+    "file": "patrol/guard-start.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a"
+  },
+  {
+    "file": "patrol/guard-victory.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "ffc3b0ee3314930293ad60f49e0890b01fb439a8c316df2134ddd212be2647ed"
+  },
+  {
+    "file": "patrol/guide-1.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd"
+  },
+  {
+    "file": "patrol/guide-2.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd"
+  },
+  {
+    "file": "patrol/guide-preboss.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "cf88a7d5e57de1a0d69ed13098bffe280b34aa5a8ecbc5548a00341749100dbd"
+  },
+  {
+    "file": "patrol/howler-resolved.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d"
+  },
+  {
+    "file": "patrol/howler-start.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "0601ece1ba4306b6921e782e5dde85c3efa290ab5a34dc7dec05d0a59ed8da0f"
+  },
+  {
+    "file": "patrol/howler-victory.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d"
+  },
+  {
+    "file": "patrol/saved.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  },
+  {
+    "file": "cold/cold.png",
+    "width": 240,
+    "height": 160,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  }
+]

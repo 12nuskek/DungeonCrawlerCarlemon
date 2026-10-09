@@ -1,0 +1,94 @@
+[
+  {
+    "stage": "patrol",
+    "execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+    "host_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+    "exit": 0,
+    "errors_bytes": 0,
+    "assertions": 164,
+    "input_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "route_SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+    "clock": {
+      "absolute_frames": 31083,
+      "valid_samples": 7463,
+      "deferred_samples": 72,
+      "reentries": 7,
+      "unarmed_frames": 2044,
+      "mutation_frames": 21504,
+      "checkpoints": 10,
+      "battle_frames": 17336,
+      "battle_attempts": 2,
+      "stage": 4
+    },
+    "measurements": [
+      {
+        "name": "guard-out",
+        "frames": 500,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 500,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "howler-out",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-out",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-back",
+        "frames": 1292,
+        "walking_frames": 431,
+        "steps": 27,
+        "warps": 2
+      }
+    ],
+    "native_manual_Save_exact": true
+  },
+  {
+    "stage": "cold",
+    "execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+    "host_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+    "exit": 0,
+    "errors_bytes": 0,
+    "assertions": 18,
+    "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "route_SHA256": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67",
+    "clock": {
+      "absolute_frames": 2044,
+      "valid_samples": 0,
+      "deferred_samples": 0,
+      "reentries": 0,
+      "unarmed_frames": 2044,
+      "mutation_frames": 0,
+      "checkpoints": 2,
+      "battle_frames": 0,
+      "battle_attempts": 0,
+      "stage": 4
+    },
+    "native_cold_exact": true
+  }
+]

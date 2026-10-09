@@ -1,0 +1,9 @@
+{
+  "execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "host_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "stage": "patrol",
+  "input_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "route_SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+  "execution_limit": 1,
+  "battle_attempts": 2
+}

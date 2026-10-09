@@ -1,5 +1,7 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR110 / existing issue106, stacked on unchanged PR109.
+
 Corrected current Guard-first route/manual Save/cold PASSED182 assertions
 (164+18), frozen model/host/execution8a21c95f on unchanged5084/23c77. Strict six
 measured legs14/224,34/544,44/703; normal Save030b12fd…db6b73c restored at

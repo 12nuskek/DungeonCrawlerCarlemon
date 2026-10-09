@@ -1,5 +1,7 @@
 Corrected current Guard-first — 2026-10-09: **182 emulator assertions pass; unmerged**.
 
+[Draft PR #110](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR109; open/draft/unmerged. Evidence checkpoint `768994da3c90a16758ae2e0dfeb67413f089a480`.
+
 Frozen source/model/host/executions `8a21c95f4381a581397cae5c5dd1109c7312583a`,
 unchanged5084 game/23c77 ROM; pending ordinaryc11c input and identical PR109
 route/decisions/cadence. Native friendship helper uses actual captured section;

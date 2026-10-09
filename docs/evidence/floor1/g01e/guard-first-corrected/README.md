@@ -1,5 +1,7 @@
 # Corrected current Guard-first: bounded route and exact cold pass
 
+[Draft PR #110](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR109; open/draft/unmerged. Evidence checkpoint `768994da3c90a16758ae2e0dfeb67413f089a480`.
+
 ONE separately authorised corrected route and its dependent cold pass
 **182 emulator assertions (164+18)**. Current order/travel/manual Save/native
 cold gate is closed for this ordinary input. Implemented/compiled/runtime-tested;

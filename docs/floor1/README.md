@@ -1,3 +1,15 @@
+# Reviewed integration checkpoint — 9 October 2026
+
+All 20 reviewed PRs through PR110 are verified merged on main a83777b9, preserving
+all 63 non-main heads and CP72e ancestry. Fresh build reproduces 5084/23c77 with
+exact engine 46e5f0f; no emulator replay or art work. See the
+[full integration record](../evidence/floor1/g01e/reviewed-integration/README.md)
+and [dependency-ready V01 plan](v01-entry-plan.md). Original legacy inputs remain
+missing; C01/human pacing/full-floor gates remain. Current checkpoint takes
+precedence over historical draft/unmerged statuses preserved below.
+
+## Historical pre-integration checkpoints
+
 Corrected current Guard-first — 2026-10-09: **182 emulator assertions pass; unmerged**.
 
 [Draft PR #110](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR109; open/draft/unmerged. Evidence checkpoint `768994da3c90a16758ae2e0dfeb67413f089a480`.

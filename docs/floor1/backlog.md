@@ -1,3 +1,15 @@
+# Reviewed integration checkpoint — 9 October 2026
+
+Main a83777b9 integrates the reviewed stack through PR110 with exact 5084/23c77
+engine/build and original heads/failures preserved. See
+[integration evidence](../evidence/floor1/g01e/reviewed-integration/README.md).
+Next parent review of this checkpoint→the separately scoped
+[V01 pilot](v01-entry-plan.md); no art implemented here. Original legacy-input
+gate stays unavailable, and C01/human pacing/nine-district completion remain
+later gates. Historical draft/unmerged rows below retain their publication dates.
+
+## Historical pre-integration backlog
+
 G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
 
 [Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.

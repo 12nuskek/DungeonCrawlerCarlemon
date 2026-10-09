@@ -1,0 +1,89 @@
+{
+  "existing_backups": [
+    {
+      "package": "recovery",
+      "original_receipt": "docs/evidence/floor1/g01e/recovery/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-recovery-20261008.zip",
+      "SHA256": "5c6d07c81bd71d91718e7fd3105a69a6684feba1771a0f1c0f24f664982eaaea",
+      "status": "succeeded"
+    },
+    {
+      "package": "new-save-recovery",
+      "original_receipt": "docs/evidence/floor1/g01e/new-save-recovery/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-new-save-recovery-20261008.zip",
+      "SHA256": "c6772875b922b8af990654133ead0b4ebd6ce8e679599917156a227f73a4d005",
+      "status": "succeeded"
+    },
+    {
+      "package": "warden-first-clear",
+      "original_receipt": "docs/evidence/floor1/g01e/warden-first-clear/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-warden-first-clear-20261008.zip",
+      "SHA256": "8b2df8db0aeb1aa37a95ccfae963a2ef136d12cbfc49739b4c2346ebc642e8ea",
+      "status": "succeeded"
+    },
+    {
+      "package": "warden-fairness",
+      "original_receipt": "docs/evidence/floor1/g01e/warden-fairness/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-warden-fairness-20261008.zip",
+      "SHA256": "ce1fed73ab423431f79637da763283d6ee574641bcc2af72c81116b1f29e0878",
+      "status": "succeeded"
+    },
+    {
+      "package": "party-preservation-diagnosis",
+      "original_receipt": "docs/evidence/floor1/g01e/party-preservation-diagnosis/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-party-preservation-diagnosis-20261008.zip",
+      "SHA256": "3656476086cfc5f04f589193da57c7b538391ac189d20cccd7f7d20c67aea9c4",
+      "status": "succeeded"
+    },
+    {
+      "package": "party-resource-correction",
+      "original_receipt": "docs/evidence/floor1/g01e/party-resource-correction/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-party-resource-correction-20261008.zip",
+      "SHA256": "e5f612ac5cf052dcff13c4599f47a349c2663af9371603d48c2f5bb1992a3b4a",
+      "status": "saved privately in ChatGPT Library"
+    },
+    {
+      "package": "prepared-persistence",
+      "original_receipt": "docs/evidence/floor1/g01e/prepared-persistence/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-prepared-persistence-20261008.zip",
+      "SHA256": "5541fea3648aac41cfb32fcaf4cf9ea8ab8966fc9bf019527ed8704c0f4c6218",
+      "status": "saved privately in ChatGPT Library"
+    },
+    {
+      "package": "prepared-cold-phase",
+      "original_receipt": "docs/evidence/floor1/g01e/prepared-cold-phase/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-prepared-cold-phase-20261009.zip",
+      "SHA256": "d1ef90355bbf45772d2abaeb67b3baa236b27063cafbbb2cba78c7465076baaf",
+      "status": "saved privately in ChatGPT Library"
+    },
+    {
+      "package": "guard-first-current",
+      "original_receipt": "docs/evidence/floor1/g01e/guard-first-current/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-guard-first-current-STOP-20261009.zip",
+      "SHA256": "6396e1d1b30b27d65c3b3052f81901d4a6c6a4b74453f5c6ddab7b531e5f723e",
+      "status": "succeeded"
+    },
+    {
+      "package": "guard-first-corrected",
+      "original_receipt": "docs/evidence/floor1/g01e/guard-first-corrected/private-retention.json",
+      "filename": "DungeonCrawlerCarlemon-guard-first-corrected-20261009.zip",
+      "SHA256": "a245382c64bb2f5b6cd7eea3c550a0e3bd90ab189e1514d1eece44dbcf758cfa",
+      "status": "succeeded"
+    }
+  ],
+  "this_increment": "No new save or emulator raw dataset; existing private backups unchanged. New build/audit archive saved privately in Library.",
+  "original_missing_inputs_recovered": false,
+  "fresh_inputs_substitute_for_legacy": false,
+  "new_integration_backup": {
+    "filename": "DungeonCrawlerCarlemon-reviewed-integration-20261009.zip",
+    "bytes": 176891,
+    "files": 35,
+    "SHA256": "5186aafaee1704e46d7e07b2a9a8e0f261aff9641926eefa6bf9438b90167e9c",
+    "includes": "Fresh build log/setup; actual merge audit, preflight/final read records, original/current heads, commit lists, integration and V01 plan",
+    "excludes": "ROMs/saves/executables/keys/denied datasets/old private raw records",
+    "status": "succeeded",
+    "Library_file_name": "DungeonCrawlerCarlemon-reviewed-integration-20261009.zip",
+    "local_identity_persisted": true,
+    "snapshot_boundary": "Pre-publication integration/build audit and draft docs; upload receipt and final doc publication head are recorded separately."
+  }
+}

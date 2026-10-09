@@ -1,3 +1,12 @@
+G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
+Final live T1449 (982+115+116+118+118),25width probes, unchanged geometry/actors;
+current5084 linked EWRAM249704/IWRAM30892. Original legacy-input limitation retained.
+Only current Guard-first order/travel/Save/cold remains before scoped integration
+and staged V01. No emulator/game changes; no merge/full-route/human pacing claim.
+[Requirement matrix, exact evidence, integration including CP72e and V01 pilot](g01e-acceptance-inventory.md).
+
+## Historical PR107 closure checkpoint
+
 Prepared dependent cold closure — 2026-10-09: **132 assertions pass; bounded prepared persistence pair complete; parent review next; unmerged**.
 
 [Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
@@ -208,11 +217,11 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-P01 | Delivered baseline | Preserve identities; complete plan; old anchor/flag/engine register; no engine edits | Merged PR54 |
 | F1-T01 | P01 | Runtime reproduce/fix tag Journal and spent sign; completed priority, full-inventory pickup and hand-in; immediate/re-entry/cold | Merged PR56;96/1609 runtime assertions |
 | F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Merged PR60 cee81f8;100/1621 runtime assertions |
-| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; G01e draftPR75 implemented/compiled:69state sessions543assertions;3partial live sessions3162. Three Howler-first strategy routes failed (lastHowler won, laterGuard lost); further blind attempts/dependentV01 stopped. OP verifies loop/trap/craft in8ordinary sessions/15701 assertions; first-clear/full gameplay/finalT pending; see OP and navigation evidence |
+| F1-G01 | T01,A01 | D1 live geometry/migration, both patrol orders, widths, loop/camera, T and recovery | Bounded Howler-first/recovery and prepared/unprepared Warden/persistence closed through parent-reviewed PR107; final liveT1449/25width probes/current linked budgets frozen. One current Guard-first order/travel/Save/cold check remains; original legacy inputs unavailable. [Exact inventory and safe integration](g01e-acceptance-inventory.md); draft stack unmerged |
 | F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failed one controller test (exit32, premature Bag A); exact prefix/state passed; heal/victory/XP/Save/cold pending; combat stopped, no retry or candidate gate claim |
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | Verified historical intervention:29 host checks,2 sessions/80 assertions,20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold; unmerged, current candidate/full/V01 pending |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | Currentc643/b025 verified:29 host checks,2/81 assertions, realPotion/Howler→Guard/rewards/repeat/Save/cold; no full/V01 or broad merge claim |
-| F1-V01 | G01, readable art | Native junction/workshop/safe-door proof; Carl gait, staged Donut, Carl/Donut/Warden motion; budgets and clips | Pending |
+| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Direct next pilot after narrow Guard-first closure/scoped integration; reuse staged native assets; source gaps do not block verified PNGs. [Pilot dependencies](g01e-acceptance-inventory.md) |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |

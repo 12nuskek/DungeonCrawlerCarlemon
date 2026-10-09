@@ -1,5 +1,12 @@
 # DungeonCrawlerCarlemon working contract
 
+Parent PR107 review passed: bounded prepared270+132 closed; old failures retained.
+Current focused increment is read-only G01e acceptance inventory under
+docs/floor1/g01e-acceptance-inventory.md. No emulator route, game edit, diagnosis
+restart or merge. Final liveT1449/source widths/budgets frozen; next parent-scoped
+current Guard-first order/travel check, safe integration plan, then staged V01.
+Original legacy inputs remain unavailable; C01/human pacing are separate later gates.
+
 Current review package: draft PR107 / issue106, stacked on unchanged PR105.
 Cold-only closure completed ONE execution:132 assertions/6258 exact frames,
 zero battles/unchanged normal savedbaaf…ccd7. Source phase gate retains accepted

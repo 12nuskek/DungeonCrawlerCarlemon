@@ -1,0 +1,21 @@
+{
+  "file": "DungeonCrawlerCarlemon-baseline-completed-frames-STOP119-4e295249-native.mp4",
+  "bytes": 14122942,
+  "SHA256": "cf574ee3263faabf943a4e6a56c6668df952d837f6123a31a287a0dc43d44226",
+  "probe": {
+    "codec_name": "h264",
+    "width": 240,
+    "height": 160,
+    "pix_fmt": "gbrp",
+    "avg_frame_rate": "262144/4389",
+    "duration": "233.661209",
+    "nb_frames": "13956"
+  },
+  "decoded_frames": 13956,
+  "all_original_frame_pixels_verified_lossless": 13956,
+  "RGB_sequence_SHA256": "e545f21dcdee0a4f5c197d5808722aedb715bb55a875536a0ffb789a63578167",
+  "execution_source": "4e295249b79d3ba5df13d95655e08a533ef49e8e",
+  "game_source": "4938927da512543ca9aeea9527c103c84955e632",
+  "scope": "All completed-frame captures only; emergency image duplicate excluded; no scaling, overlays, interpolation or audio claim. Partial original baseline, not candidate acceptance.",
+  "encoding_diagnostics": "Eight PPM pipe maxval warnings; final decoded frame count/rate and entire RGB sequence byte-exact to all original captures."
+}

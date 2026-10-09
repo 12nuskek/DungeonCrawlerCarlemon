@@ -1,0 +1,11 @@
+{
+  "file": "DungeonCrawlerCarlemon-V01-baseline-STOP119-4e295249-20261009.tar.xz",
+  "bytes": 11231496,
+  "SHA256": "2002f5e41fbaa23fce16f6765410af8373568099fb0bcba20d7493d1718535bd",
+  "all_file_entries_byte_verified": 14097,
+  "actual_capture_PPMs": 14076,
+  "unchanged_ordinary_Saves": 1,
+  "standalone_completed_clip_frames": 13956,
+  "raw_trace_keys_datasets_full_symbols_ROMs_binaries_excluded": true,
+  "scope": "Only this new original baseline; no candidate. Raw timeline/reference/key-bearing control log remain local, without durable retention claim."
+}

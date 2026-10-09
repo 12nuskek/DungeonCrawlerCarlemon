@@ -1,0 +1,20 @@
+{
+  "frozen_execution_source": "4e295249b79d3ba5df13d95655e08a533ef49e8e",
+  "prior_canonical_Git_files": 19106,
+  "engine_host_scripts_assets_route_unchanged": true,
+  "new_gameplay_counts": {
+    "baselines": 1,
+    "candidates": 0
+  },
+  "total_gameplay_counts": {
+    "baselines": 6,
+    "candidates": 3
+  },
+  "all_old_output_directories_preserved": true,
+  "candidate_directory_absent": true,
+  "no_gameplay_retry_poststop_stepping_source_edits_or_waiver": true,
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "all_four_historical_status_bodies_preserved": true,
+  "all_frozen_artifacts_and_Save_verified_after_STOP": true,
+  "prior_canonical_Git_files_unchanged_except_four_status_prefixes": 19102
+}

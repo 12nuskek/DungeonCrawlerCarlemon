@@ -1,0 +1,17 @@
+{
+  "execution_source": "4e295249b79d3ba5df13d95655e08a533ef49e8e",
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "candidate_game": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69",
+  "original_baseline_game": "4938927da512543ca9aeea9527c103c84955e632",
+  "all_frozen_SHA256_verified": true,
+  "historical_execution_claims": {
+    "baselines": 5,
+    "candidates": 3
+  },
+  "all_old_outputs_preserved": true,
+  "fresh_output": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/v01-battle/passive-validation-4e295249",
+  "seed_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "no_gameplay_yet": true,
+  "preflight_note": "Previous preflight verified all frozen hashes/counts then attempted absent local main ref; pinned existing base commit verified directly; no host invocation or claim."
+}

@@ -9,8 +9,19 @@
 #include <mgba/core/core.h>
 #include <mgba/internal/gba/gba.h>
 #include <mgba/internal/gba/io.h>
-enum { BV_TL_POINTS=21, BV_TL_WORDS=46, BV_TL_BUFFER=4096, BV_TL_LIMIT=1000000,
+/* Pinned route: 2044 boot steps, then the generated host's 36000-frame guard.
+ * Each frame can retain at most one 4096-record buffer (including its marker).
+ * Add the largest pre-instruction reserve and one final terminal marker. This
+ * is a route/buffer proof, independent of observed trace density. */
+enum { BV_TL_POINTS=21, BV_TL_WORDS=46, BV_TL_BUFFER=4096,
+       BV_TL_PREVISUAL_FRAMES=2044, BV_TL_VISUAL_FRAMES=36000,
+       BV_TL_FRAME_CALLS=BV_TL_PREVISUAL_FRAMES+BV_TL_VISUAL_FRAMES,
+       BV_TL_INSTRUCTION_RESERVE=70, BV_TL_TERMINAL_RECORDS=1,
+       BV_TL_LIMIT=BV_TL_FRAME_CALLS*BV_TL_BUFFER
+           +BV_TL_INSTRUCTION_RESERVE+BV_TL_TERMINAL_RECORDS,
        BV_TL_QUEUE_LIMIT=64, BV_TL_FAILURE=119 };
+_Static_assert(BV_TL_LIMIT==155828295, "Pinned route capacity changed");
+_Static_assert(sizeof(unsigned)>=4, "Timeline counters require 32 bits");
 enum { BV_TL_BEFORE=1,BV_TL_AFTER,BV_TL_EVENTS_BEFORE,BV_TL_EVENTS_AFTER,
        BV_TL_VIDEO_AFTER_DRAIN,BV_TL_FRAME,BV_TL_FINISH,BV_TL_STOP,BV_TL_QUEUE };
 enum { BV_TL_READ_CALL,BV_TL_READ_ENTRY,BV_TL_READ_EXIT,BV_TL_DISPATCH,
@@ -106,7 +117,7 @@ static inline unsigned bv_tl_append(struct BvTimeline *t,struct BvTimelineRecord
 static inline unsigned bv_tl_before(struct BvTimeline *t)
 {
     if(!t)return 0;
-    if(bv_tl_reserve(t,70))return t->reason;
+    if(bv_tl_reserve(t,BV_TL_INSTRUCTION_RESERVE))return t->reason;
     const struct ARMCore *c=t->core->cpu;const struct GBA *g=t->core->board;t->pending=0;
     if(c->halted)return 0;
     unsigned pc=(unsigned)c->gprs[ARM_PC]-(c->executionMode==MODE_THUMB?2:4),mask=0;
@@ -168,6 +179,16 @@ static inline void bv_tl_symbol(struct BvTimelineConfig *c,unsigned value,const 
     else if(sscanf(name,"bv_tlOP%u%c",&i,&extra)==1&&i<BV_TL_POINTS){c->point[i].opcode=value;c->point[i].seen|=4;}
     else if(sscanf(name,"bv_tlMODE%u%c",&i,&extra)==1&&i<BV_TL_POINTS){c->point[i].mode=value;c->point[i].seen|=8;}
 }
+static inline unsigned bv_tl_write_header(FILE *file)
+{
+    unsigned char header[16]={'B','V','T','I','M','E','0','2'};
+    for(unsigned k=0;k<4;k++){
+        header[8+k]=(uint32_t)BV_TL_WORDS>>(8*k);
+        header[12+k]=(uint32_t)BV_TL_LIMIT>>(8*k);
+    }
+    return fwrite(header,1,sizeof header,file)!=sizeof header||fflush(file)||ferror(file)
+        ?BV_TL_FAILURE:0;
+}
 static inline unsigned bv_tl_open(struct BvTimeline *t,struct mCore *core,const struct BvTimelineConfig *config,const char *path)
 {
     memset(t,0,sizeof *t);t->core=core;t->config=*config;t->limit=BV_TL_LIMIT;
@@ -187,20 +208,26 @@ static inline unsigned bv_tl_open(struct BvTimeline *t,struct mCore *core,const 
     t->buffer=calloc(BV_TL_BUFFER,sizeof *t->buffer);if(!t->buffer)return t->reason=BV_TL_FAILURE;
     int fd=open(path,O_WRONLY|O_CREAT|O_EXCL,0600);if(fd<0){free(t->buffer);t->buffer=NULL;return t->reason=BV_TL_FAILURE;}
     t->file=fdopen(fd,"wb");if(!t->file){close(fd);free(t->buffer);t->buffer=NULL;return t->reason=BV_TL_FAILURE;}
-    const unsigned char header[16]={'B','V','T','I','M','E','0','1',BV_TL_WORDS,0,0,0,0x40,0x42,0x0f,0};
-    if(fwrite(header,1,16,t->file)!=16||fflush(t->file)||ferror(t->file))return t->reason=BV_TL_FAILURE;
+    if(bv_tl_write_header(t->file))return t->reason=BV_TL_FAILURE;
     return 0;
+}
+/* Same production serialization, usable offline with retained records and no
+ * core/CPU. Never grows the buffer or treats a short write as a whole record. */
+static inline unsigned bv_tl_write_buffer(struct BvTimeline *t)
+{
+    for(unsigned i=0;i<t->used;i++){
+        unsigned char bytes[BV_TL_WORDS*4];for(unsigned j=0;j<BV_TL_WORDS;j++)for(unsigned k=0;k<4;k++)bytes[4*j+k]=t->buffer[i].word[j]>>(8*k);
+        if(fwrite(bytes,1,sizeof bytes,t->file)!=sizeof bytes||ferror(t->file)){t->reason=BV_TL_FAILURE;break;}
+    }
+    t->used=0;if(fflush(t->file)||ferror(t->file))t->reason=BV_TL_FAILURE;
+    return t->reason;
 }
 static inline unsigned bv_tl_flush(struct BvTimeline *t,unsigned reason,unsigned finish)
 {
     if(!t)return 0;
     if(t->stopped)return t->reason;
     if(!t->reason){struct BvTimelineRecord r;if(!bv_tl_collect(t,&r))bv_tl_append(t,r,reason?BV_TL_STOP:finish?BV_TL_FINISH:BV_TL_FRAME,reason);}
-    for(unsigned i=0;i<t->used;i++){
-        unsigned char bytes[BV_TL_WORDS*4];for(unsigned j=0;j<BV_TL_WORDS;j++)for(unsigned k=0;k<4;k++)bytes[4*j+k]=t->buffer[i].word[j]>>(8*k);
-        if(fwrite(bytes,1,sizeof bytes,t->file)!=sizeof bytes||ferror(t->file)){t->reason=BV_TL_FAILURE;break;}
-    }
-    t->used=0;if(fflush(t->file)||ferror(t->file))t->reason=BV_TL_FAILURE;
+    bv_tl_write_buffer(t);
     if(reason||finish||t->reason)t->stopped=1;
     return t->reason;
 }

@@ -11,12 +11,13 @@ def main():
             str(ROOT/'scripts/floor1/v01-native-timeline-fixture.c'),'-lmgba','-o',str(out/'fixture')],stdout=log,stderr=subprocess.STDOUT,check=True)
         subprocess.run([str(out/'fixture')],cwd=private,stdout=log,stderr=subprocess.STDOUT,check=True)
     assert 'total38 synthetic timeline cases' in (out/'fixture.log').read_text()
+    spec=importlib.util.spec_from_file_location('timeline_format',ROOT/'scripts/floor1/v01-native-timeline-format.py');fmt=importlib.util.module_from_spec(spec);spec.loader.exec_module(fmt)
     data=[]
     for f in sorted(private.glob('*.bin')):
         assert stat.S_IMODE(f.stat().st_mode)==0o600
-        b=f.read_bytes();assert b[:8]==b'BVTIME01' and struct.unpack_from('<II',b,8)==(46,1000000)
-        assert (len(b)-16)%184==0
-        rows=[struct.unpack_from('<46I',b,i) for i in range(16,len(b),184)]
+        with f.open('rb') as stream:
+            header=fmt.read_header(stream);assert header['magic']=='BVTIME02' and header['limit']==fmt.LIMIT
+            rows=list(fmt.records(stream,header))
         data.append({'file':f.name,'records':len(rows),'synthetic':True,'SHA256':sha(f)})
     spec=importlib.util.spec_from_file_location('timeline_symbols',ROOT/'scripts/floor1/v01-native-timeline-symbols.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
     pins={}
@@ -27,7 +28,7 @@ def main():
         'installed_library_SHA256':sha('/usr/lib/x86_64-linux-gnu/libmgba.so.0.10.5'),'fixture_binary_SHA256':sha(out/'fixture'),
         'source_SHA256':{str(f.relative_to(ROOT)):sha(f) for f in [ROOT/'scripts/floor1'/n for n in ['v01-native-timeline.h','v01-native-timeline-fixture.c','v01-native-timeline-symbols.py','v01-native-boundary-runtime.h','v01-native-boundary-adapter.h']]},
         'synthetic_binary_inventory':data,'ELF_pins':{k:v['ELF_SHA256'] for k,v in pins.items()},
-        'limits':{'per_batch_records':4096,'total_records':1000000,'event_queue_nodes':64,'copy_requests':64},
+        'limits':{'per_batch_records':4096,'total_records':fmt.LIMIT,'event_queue_nodes':64,'copy_requests':64},
         'scope':'Synthetic mechanism/control neutrality only. No actual timing ground truth or gameplay-equivalence claim.'}
     (out/'result.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['source_SHA256','synthetic_binary_inventory']}))
 if __name__=='__main__':main()

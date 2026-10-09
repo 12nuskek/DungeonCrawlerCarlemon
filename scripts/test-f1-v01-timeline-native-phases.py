@@ -74,10 +74,13 @@ static void phaseClose(void)
     assert completed.stdout==(private/'before-trace.jsonl').read_text()
     (out/'fixture.log').write_text('PASS three native Wait mechanisms: original stdout/event/frame/flag ordering identical; every observation whole CPU/GBA byte neutral\n')
     cases=[]
+    spec=importlib.util.spec_from_file_location('phase_timeline_format',ROOT/'scripts/floor1/v01-native-timeline-format.py')
+    fmt=importlib.util.module_from_spec(spec);spec.loader.exec_module(fmt)
     for f in sorted(private.glob('*-private.bin')):
         assert f.stat().st_mode&0o777==0o600
-        b=f.read_bytes();assert b[:8]==b'BVTIME01' and (len(b)-16)%184==0
-        rows=[struct.unpack_from('<46I',b,i) for i in range(16,len(b),184)]
+        with f.open('rb') as stream:
+            header=fmt.read_header(stream);assert header['magic']=='BVTIME02'
+            rows=list(fmt.records(stream,header))
         clear=[r for r in rows if r[41]&(1<<8)];irq=[r for r in rows if r[41]&(1<<20)]
         assert len(clear)==2 and clear[0][0]==1 and clear[1][0]==2 and clear[1][19]==0
         assert clear[0][19]==(1 if f.name.startswith('serviced-') else 0)

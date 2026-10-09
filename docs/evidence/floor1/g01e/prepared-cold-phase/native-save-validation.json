@@ -1,0 +1,13 @@
+{
+  "latest_native_sector_checksums_valid": true,
+  "exact600_party_and_count": true,
+  "exact_counter_flags_all_logical_resources": true,
+  "map": [
+    35,
+    4
+  ],
+  "position": [
+    8,
+    6
+  ]
+}

@@ -1,3 +1,40 @@
+Prepared dependent cold closure — 2026-10-09: **132 assertions pass; bounded prepared persistence pair complete; parent review next; unmerged**.
+
+[Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
+
+Separate native phase adapter/absolute clock on unchanged PR105/84cbb196. Frozen
+host/runner514187f69d1cd0d84536d66071da988ece0c337a; execution8896e1f2e8b203bb90c224a864f26266bce60200.
+Unchanged approved game5084/ROM23c77; fresh warning-as-error host compile and
+4225 focused host cases (2872 walking+1353 phase/clock) pass. Historical gates,
+contracts/controllers/failed cold claim/STOP and accepted plan unchanged.
+
+ONE separately claimed cold-only route, identical180 lines/hash/cadence from
+actual normal savedbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7.
+132 emulator assertions/6258 exact absolute frames, empty errors, zero battles/
+attempts/newSave. Boot35.4/8,6, arena return/resolved repeat/actualNO/YES/checkpoint
+re-entry/final state pass; normal Save byte-identical.4195 valid per-frame samples,
+19 deferred frames,9 explicit checkpoints,2 complete re-entry comparisons separate.
+Native callback gate before actual SaveBlock reads; accepted/expected snapshots
+retained without reads/re-anchoring during3076..3085 and5618..5626. Full600 native
+party/count/counter/flags/canonical resources compare exactly at3086/5627.
+Offline13 snapshots agree: party600/flags300/logical resources1272 exact, valid
+checksums/re-encoding, actual contexts. Counter8→35 through27 ordinary timestamped
+steps, friendship88/84 unchanged; no boundary event or tolerance. Disk counter8
+unchanged, live final counter35 is expected ordinary walking.
+
+[Exact native evidence, identities, review and remaining dependencies](evidence/floor1/g01e/prepared-cold-phase/README.md).
+Complete new private logs/contexts/input/raw findings/claim/captures retained in
+Library. Separate prepared pair: accepted PR105 first-route270 +this cold132=402;
+historical failed cold25 and all older failures stay separate, no retroactive pass
+or original CPU-phase inference. All60 prior branch heads/mainb694 preserved.
+No new combat, automatic retry, legacy equivalence or merge/CI/V01/fullFloor1 claim.
+Next parent review of this bounded closure, then read-only remaining F1-G01e
+acceptance inventory (reverse-order/optional matrix, measuredT, native geometry/
+headroom and normal-speed pacing versus actual evidence; legacy-input limitation)
+before separately scoped F1-V01/G02. No further execution authorised here.
+
+## Historical PR105 prepared/cold STOP checkpoint
+
 Prepared persistence — **new victory/manual Save and exact cold boot pass; cold return STOP57; parent review next; unmerged**.
 
 [Issue #104](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/104) / [draft PR #105](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/105), open/unmerged, stacked on unchanged PR103. Evidence commit `10a423669690085b9d01f51defaa5dfed84cd1b0`.

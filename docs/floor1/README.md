@@ -1,5 +1,15 @@
 # Full Floor 1 execution
 
+[Issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106) / [draft PR #107](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/107), open/unmerged, stacked on unchanged PR105. Evidence commit `00e91c459a40107a9f4098d99dcf242eb413a4a9`.
+
+Current focused checkpoint: dependent prepared cold route verified132 assertions,
+6258 exact frames, zero battles and unchanged normal Save; separate prepared
+pair402 assertions. Historical failed cold/STOP and legacy limitations retained.
+Parent review and read-only remaining F1-G01e inventory next; no broader acceptance.
+[Exact bounded cold closure](../evidence/floor1/g01e/prepared-cold-phase/README.md).
+
+## Historical PR105 prepared/cold STOP checkpoint
+
 [Issue #104](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/104) / [draft PR #105](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/105), open/unmerged, stacked on unchanged PR103. Evidence commit `10a423669690085b9d01f51defaa5dfed84cd1b0`.
 
 Current focused checkpoint: prepared victory/manual Save and exact cold boot pass;

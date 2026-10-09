@@ -1,0 +1,5 @@
+PASS one cold-only route132 assertions/6258 absolute frames/zero battles/empty errors/unchanged savedbaaf…ccd7
+PASS all13 valid snapshots:600 party bytes/checksums/reencoding/count2/300flags/full1272 logical resource bytes exact;actual contexts privately captured
+PASS native counter8→35 through27 ordinary steps,friendships88/84 unchanged,no boundary event;actual return/repeat/NO/YES/re-entry/final state
+PASS deferred3076..3085 and5618..5626:19 frames/no reads or anchors accepted;complete exact re-entry at3086/5627
+PASS exact dedicated clock:4195 valid frame samples+19 deferred=6258−2044;9 explicit checkpoints/2 re-entry comparisons counted separately;no historical acceptance or CPU-phase inference

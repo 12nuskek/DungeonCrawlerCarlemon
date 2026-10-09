@@ -1,0 +1,16 @@
+{
+  "issue": 106,
+  "draft_PR": 107,
+  "base_branch": "task/floor1-g01e-prepared-persistence",
+  "base_source": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+  "head_branch": "task/floor1-g01e-prepared-cold-phase",
+  "evidence_source": "00e91c459a40107a9f4098d99dcf242eb413a4a9",
+  "frozen_host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+  "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+  "implemented": true,
+  "compiled": true,
+  "runtime_verified": "one complete unchanged cold-only route,132 assertions/6258 exact frames/zero battles/unchanged normal Save",
+  "merged": false,
+  "CI_pass_claim": false,
+  "next_dependency": "Parent bounded closure review, then read-only remaining F1-G01e acceptance inventory before F1-V01/G02; no further execution"
+}

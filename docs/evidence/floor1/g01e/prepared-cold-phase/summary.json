@@ -1,0 +1,21 @@
+{
+  "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+  "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+  "exit": 0,
+  "errors_bytes": 0,
+  "assertions": 132,
+  "battle_frames": 0,
+  "battle_attempts": 0,
+  "clock": {
+    "absolute_frames": 6258,
+    "valid_frame_samples": 4195,
+    "deferred_frame_samples": 19,
+    "explicit_checkpoints": 9,
+    "reentry_comparisons": 2,
+    "boundary_events": 0,
+    "armed_frame": 2044
+  },
+  "input_Save_SHA256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+  "output_Save_SHA256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+  "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427"
+}

@@ -1,0 +1,180 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+ready
+candidate 859 offensive
+expect 35 4 8 6 7
+levels 11 10
+growth 11 940 0 10 1250 0
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 1
+flag 49 0
+item 13 0
+item 378 0
+item 22 1
+item 379 0
+item 380 0
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+vitals 26 24 0 0 4 40 0 38
+xp remember
+money remember
+preserve start
+no-battle start
+step 1 1 -
+step 400 0 -
+pages cold-opening-checkpoint DCC_F1D1Checkpoint_ReviewText
+dialog 3600
+ready
+step 40 0 -
+expect 35 4 8 6 7
+step 52 64 -
+step 40 0 -
+expect 35 4 8 3 7
+step 68 32 -
+step 40 0 -
+step 300 0 -
+expect 35 3 4 3 7
+step 68 16 -
+step 40 0 -
+expect 35 3 8 3 7
+step 68 128 -
+step 40 0 -
+expect 35 3 8 7 7
+step 1 1 -
+step 400 0 -
+pages cold-warden-resolved DCC_Live_Boss_Text_Won
+dialog 3600
+ready
+step 40 0 -
+expect 35 3 8 7 7
+levels 11 10
+growth 11 940 0 10 1250 0
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 1
+flag 49 0
+item 13 0
+item 378 0
+item 22 1
+item 379 0
+item 380 0
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+xp same
+money same
+preserve check
+step 68 16 -
+step 40 0 -
+expect 35 3 12 7 7
+step 52 128 -
+step 40 0 -
+expect 35 3 12 10 7
+step 1 1 -
+step 400 0 -
+pages cold-stairs-no DCC_F1D1Warden_StairsText
+choice-ready
+step 40 0 cold-stairs-no-choice.ppm
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 400 0 -
+pages cold-stairs-no-cancelled DCC_Boss_Text_StairsCancel
+dialog 3600
+ready
+step 40 0 -
+expect 35 3 12 10 7
+choice-result 0
+levels 11 10
+growth 11 940 0 10 1250 0
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 1
+flag 49 0
+item 13 0
+item 378 0
+item 22 1
+item 379 0
+item 380 0
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+tile 12 11 13866
+xp same
+money same
+preserve check
+expect 35 3 12 10 7
+step 1 1 -
+step 400 0 -
+pages cold-stairs-yes DCC_F1D1Warden_StairsText
+choice-ready
+step 40 0 cold-stairs-yes-choice.ppm
+step 1 1 -
+step 400 0 -
+ready
+choice-result 1
+expect 35 4 4 4 7
+step 40 0 cold-stairs-yes-arrived.ppm
+levels 11 10
+growth 11 940 0 10 1250 0
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 1
+flag 49 0
+item 13 0
+item 378 0
+item 22 1
+item 379 0
+item 380 0
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+xp same
+money same
+preserve check
+step 68 16 -
+step 40 0 -
+expect 35 4 8 4 7
+step 36 128 -
+step 40 0 -
+expect 35 4 8 6 7
+levels 11 10
+growth 11 940 0 10 1250 0
+flag 2135 1
+flag 2136 1
+flag 2137 1
+flag 46 1
+flag 49 0
+item 13 0
+item 378 0
+item 22 1
+item 379 0
+item 380 0
+flag 47 1
+flag 48 1
+flag 2138 0
+flag 2139 1
+vitals 26 24 0 0 4 40 0 38
+xp same
+money same
+preserve check
+no-battle end
+step 40 0 cold-returned.ppm
+quit

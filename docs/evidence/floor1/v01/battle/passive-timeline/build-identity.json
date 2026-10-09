@@ -1,0 +1,35 @@
+{
+  "source_commit": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69",
+  "engine_tree": "baac7fee52e2133fa6192799ef3851f629f188d7",
+  "ROM_SHA256": "a022b2a5030214f8cbeb0621af47e6cb9a47208424aa86f56b67862b5028f8d4",
+  "ELF_SHA256": "f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218",
+  "pose_source_SHA256": "06d1ed9de308e617e3756e8e81e39aa997b2bb829f9ded7d0b04060d0be6d1ac",
+  "pose_object_text_SHA256": "b5383fd351b53e0e82bf1c94bda6c6dc17276802f388da8d02d47760c6fc6672",
+  "accepted_counterfactual_object_text_exact": true,
+  "Apply_bytes": 240,
+  "tracked_engine_source_files_verified": 11734,
+  "host_source_SHA256": "ee269bb94ce4ab112f89035ae8e5d2b340972934f1f341e1993eae406376c504",
+  "host_binary_SHA256": "357a8b9b5c67f6a4ae00b389300191bab5850367dee734509a5163413506fcb3",
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "toolchain": "gcc14.2/binutils2.44/pinned agbcc da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "agbcc_binary_SHA256": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+  "preserved_original_builds": {
+    "baseline": {
+      "ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+      "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066"
+    },
+    "original_candidate": {
+      "ROM_SHA256": "830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9",
+      "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f"
+    }
+  },
+  "build_log_SHA256": "1b9a33b7d3793505e166d5a9af867f986237c8106255f0b6f4409b736321d115",
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_execution_claims": 0,
+  "scope": "Game/host compiled, never invoked. No gameplay equivalence or actual failure remedy proven.",
+  "canonical_CRLF_file_count": 2677,
+  "canonical_CRLF_path_inventory_SHA256": "5ce4e9d46a452e8af35ba432e5461b6e262eb8dc00f01f70c1652cf11323c75e",
+  "canonical_source_verification": "All tracked copied source blobs exact after only existing CRLF-to-LF Git normalization where required; no other normalization or exception."
+}

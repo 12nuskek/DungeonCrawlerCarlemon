@@ -1,0 +1,11 @@
+PASS12 trace-on vs original ARMRunLoop: exact interpreter/register/banked/prefetch/cycle/event-deadline/order/frame/input/RAM/IO parity; whole same-core CPU/GBA byte neutrality of observations
+PASS8 fixed input epochs unchanged; no hidden setKeys/post-frame instruction
+PASS strict complete2560/typed B/F/E stream unchanged with trace enabled
+PASS capacity fails before next instruction or due event, immutable first failure/no CPU/event/stream advancement
+PASS corrupt opcode/oversized queue/cyclic event chain fail closed without execution
+PASS private mode0600 exclusive create; existing evidence never overwritten
+PASS7 incomplete/invalid pins/opcode/mode/span/missing synthetic code fail before file creation or execution
+PASS write EIO fails after original frame, before any further execution; failed record never treated complete
+PASS source-pinned queue stride/size/ordered descriptors, direct read only
+PASS original strict117 remains first failure even when trace retention also fails119
+PASS strict typed first mismatch retained/no post-stop stepping or realignment; total38 synthetic timeline cases

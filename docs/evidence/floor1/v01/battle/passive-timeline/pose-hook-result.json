@@ -1,0 +1,8 @@
+{
+  "result": "PASS actual-source lifecycle/negative cases; six bindings, all write-time guard/four-buffer-copy checks preserved; no mechanical writes",
+  "command": "python3 scripts/test-f1-v01-battle-hook.py --output /workspace/scratch/v01-passive-timeline/battle-hook-final",
+  "engine_source_SHA256": "06d1ed9de308e617e3756e8e81e39aa997b2bb829f9ded7d0b04060d0be6d1ac",
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0
+}

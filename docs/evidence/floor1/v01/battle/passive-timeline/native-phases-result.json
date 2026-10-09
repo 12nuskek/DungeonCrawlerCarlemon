@@ -1,0 +1,41 @@
+{
+  "result": "PASS three exact native Wait clear/exit phase observations and synthetic IRQ-store phases, original ordering unchanged",
+  "cases": [
+    {
+      "case": "clear-before-video",
+      "records": 9,
+      "trace_SHA256": "ab561ffb97244ba31f672976f424d1b4a1c8809ce9a6ec271109f3d5690bd1a7",
+      "native_clear_before": 0,
+      "native_clear_after": 0
+    },
+    {
+      "case": "serviced-flag-before-late-clear",
+      "records": 11,
+      "trace_SHA256": "ebcbbf21984025cc84153d97fc601ab2d0730fd21b6c9ff6a2c4d5bc52bd057e",
+      "native_clear_before": 1,
+      "native_clear_after": 0
+    },
+    {
+      "case": "video-before-Wait-pending-masked-IRQ",
+      "records": 9,
+      "trace_SHA256": "f9e594546dad5561ecf556c1bc31d8938cf2a98cb22fe281336db09dc29aae36",
+      "native_clear_before": 0,
+      "native_clear_after": 0
+    }
+  ],
+  "observations_whole_CPU_GBA_byte_neutral": true,
+  "original_stdout_exact": true,
+  "source_SHA256": {
+    "scripts/test-f1-v01-timeline-native-phases.py": "8b0032bcc2897a6c31b0f523b6197c0a7d2061c342d568304342436c9f330371",
+    "scripts/floor1/v01-native-timeline.h": "e163c1207ca2bfea9011750feee84077181863a487e2ec2ccb6f0ee69a737d52",
+    "scripts/floor1/v01-timing-audit-fixture.c": "18382c35c3d4439f842db200a5a90255124baf4d1ad7d558224bc9d9d53c069d"
+  },
+  "generated_fixture_SHA256": "ff700bb495df25ac17276ad52fdd8aad25f1a55c5c4558f5d56a4569b5e6e56a",
+  "fixture_binary_SHA256": "7e9c79d42d62f77c515f1fe944882373f22f61bf6b206942d8925d78b042d472",
+  "native_Wait_SHA256": "6dd32b0546df4097a69177989a0096e2f435738b7d2a2145a036aa18d0371cb4",
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_execution_claims": 0,
+  "limits": "Native Wait only; synthetic service body/bus/callback costs. Due ARMRun calls unchanged and uninstrumented here; production event-drain parity has separate synthetic tests. No historical timing recovered."
+}

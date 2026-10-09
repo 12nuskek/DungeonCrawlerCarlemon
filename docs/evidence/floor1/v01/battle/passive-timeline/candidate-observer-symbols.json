@@ -1,0 +1,10 @@
+{
+  "result": "PASS scoped canonical/native callback and lifecycle symbol export resolves new candidate ELF",
+  "ELF_SHA256": "f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218",
+  "verified_function_inventory_private_SHA256": "3c2deaf6b5dcf89423af0d01f93be536372128b3422bb849a9bbcdede1ee0cff",
+  "exported_host_symbol_text_SHA256": "1513a22b9e036784dc134a5a621facea8a1970587bd5f248201b6f8b80765f35",
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "scope": "Offline export only; full symbol inventory retained locally, not uploaded."
+}

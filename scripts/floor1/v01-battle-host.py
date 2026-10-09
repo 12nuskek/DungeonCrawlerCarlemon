@@ -11,7 +11,7 @@ def generate(git):
     addition=(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
     code=replace(code,'int main(int argc, char **argv)',addition+'\nint main(int argc, char **argv)')
     code=replace(code,'    FILE *symbols=fopen(argv[3], "r");','    struct BattleVisual visual={0};\n    FILE *symbols=fopen(argv[3], "r");')
-    fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx','CB2_Overworld':'fieldCB2','BattleMainCB2':'battleCB2'}
+    fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx','CB2_Overworld':'fieldCB2','BattleMainCB2':'battleCB2','gBattleMainFunc':'phase','HandleTurnActionSelectionState':'firstTurn','gBattlerPositions':'positions','sSpriteCopyRequestCount':'copyCount','sSpriteCopyRequests':'copies','sShouldProcessSpriteCopyRequests':'copyArmed'}
     point='        if (!strcmp(symbol,"gTasks")) tasks=addr;'
     code=replace(code,point,point+'\n'+''.join(f'        if (!strcmp(symbol,"{name}")) visual.a.{field}=addr;\n' for name,field in fields.items()))
     point='    while (fscanf(symbols, "%x %c %127s", &addr, &type, symbol)==3) {'
@@ -21,7 +21,7 @@ def generate(git):
         if(visual.frames>=36000)exit(109); \
         unsigned vr=bv_trace(core,&visual,party,mons,saveptr,save2ptr,mainstate,results,currentMove,attacker,defender,outcome,controls); \
         if(!vr)vr=bv_sample(core,&visual,mainstate,mons,results,animationActive,animationActor,currentMove,pixels,width,height); \
-        if(vr){capture("visual-stop.ppm",pixels,width,height);fprintf(stderr,"Battle visual stop reason=%u frame=%u; no further frames\n",vr,visual.frames);printf("result=%u assertions=%u\n",vr,checks);exit(vr);} \
+        if(vr){bv_diagnose(core,&visual,vr,mons,mainstate,currentMove);capture("visual-stop.ppm",pixels,width,height);fprintf(stderr,"Battle visual stop reason=%u frame=%u; no further frames\n",vr,visual.frames);printf("result=%u assertions=%u\n",vr,checks);exit(vr);} \
         visual.frames++; \
     } \
 ''')
@@ -45,7 +45,7 @@ def generate(git):
         if(!strcmp(line,"visual start\n")){unsigned vr=bv_begin(&visual);if(vr){result=vr;break;}checks++;continue;}
         if(!strcmp(line,"visual ready\n")){
             if(!visual.recording || !(core->busRead8(core,mainstate+0x439)&2) || core->busRead8(core,results+0x13)!=0){result=110;break;}
-            visual.enforced=1;checks++;continue;
+            visual.readyRequested=1;checks++;continue;
         }
         if(!strcmp(line,"visual finish\n")){unsigned vr=bv_finish(&visual);if(vr){result=vr;break;}checks+=8;continue;}
 ''')

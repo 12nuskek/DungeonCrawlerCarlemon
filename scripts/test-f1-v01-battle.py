@@ -38,11 +38,13 @@ def main():
         with (out/'host-build.log').open('w') as f:subprocess.run(['cc','-std=gnu11','-Wall','-Wextra','-Werror',str(out/'observer.c'),'-lmgba','-o',str(out/'playtest')],stdout=f,stderr=subprocess.STDOUT,check=True)
         with (out/'game.sym').open('w') as f:subprocess.run(['arm-none-eabi-nm','--defined-only',str(engine/'pokeemerald.elf')],stdout=f,check=True)
         with (out/'game.sym').open('a') as f:subprocess.run(['python3',str(ROOT/'scripts/battle-input-symbols.py'),str(engine)],stdout=f,check=True)
+        with (out/'game.sym').open('a') as f:f.write(module('verified_battle_functions',ROOT/'scripts/floor1/v01-battle-symbols.py').export(engine/'pokeemerald.elf',out/'verified-functions.json'))
         fixtures(out,seed,a.case=='after');shutil.copyfile(route,out/'input.route')
-        identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
+        identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'symbols_SHA256':sha(out/'game.sym'),'verified_functions_SHA256':sha(out/'verified-functions.json'),'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
         (out/'identity.json').write_text(json.dumps(identity,indent=2)+'\n');print('PASS prepared',a.case,'without emulator');return
     identity=json.loads((out/'identity.json').read_text());assert identity['source']==head and identity['host_SHA256']==sha(out/'observer.c') and identity['binary_SHA256']==sha(out/'playtest') and identity['ROM_SHA256']==sha(rom) and identity['route_SHA256']==sha(route)==sha(out/'input.route')
     for name,digest in identity['fixture_SHA256'].items():assert sha(out/name)==digest
+    assert identity['symbols_SHA256']==sha(out/'game.sym') and identity['verified_functions_SHA256']==sha(out/'verified-functions.json')
     if a.case=='after':
         before=a.output.resolve()/'before';summary=json.loads((before/'summary.json').read_text());assert summary['native_exit']==0 and summary['errors_bytes']==0
         shutil.copyfile(before/'state-trace.bin',out/'expected-state-trace.bin')
@@ -50,8 +52,15 @@ def main():
     with (out/'execution-claim.json').open('x') as f:json.dump(identity,f,indent=2)
     with (out/'input.route').open() as inp,(out/'replay.log').open('w') as log,(out/'errors.log').open('w') as err:run=subprocess.run([str(out/'playtest'),str(rom),str(save),str(out/'game.sym')],cwd=out,stdin=inp,stdout=log,stderr=err)
     log=(out/'replay.log').read_text();footer=re.search(r'result=(\d+) assertions=(\d+)\n$',log)
+    if (out/'visual-stop.json').exists():
+        diagnostic=json.loads((out/'visual-stop.json').read_text());functions=json.loads((out/'verified-functions.json').read_text());lookup={r['address']:r['aliases'] for r in functions}
+        diagnostic['native_phase_functions']=lookup.get(diagnostic['native_phase_address']&~1,[])
+        diagnostic['CB2_functions']=lookup.get(diagnostic['CB2']&~1,[])
+        diagnostic['unresolved_callback_functions']=lookup.get(diagnostic['unresolved_callback_address']&~1,[])
+        diagnostic['private_VRAM_SHA256']={f.name:sha(f) for f in out.glob('visual-stop-actor*-vram.bin')}
+        (out/'visual-stop.json').write_text(json.dumps(diagnostic,indent=2)+'\n')
     summary={'case':a.case,'execution_source':head,'native_exit':run.returncode,'errors_bytes':(out/'errors.log').stat().st_size,'assertions':int(footer[2]) if footer else None,'input_Save_SHA256':SEED,'output_Save_SHA256':sha(save),'replay_log_SHA256':sha(out/'replay.log'),'visual':re.findall(r'BV_FINISH .*',log),'peaks':re.findall(r'BV_PEAK .*',log),'warning':re.findall(r'BV_WARNING .*',log),'battles':re.findall(r'WARDEN .*',log),'vitals':re.findall(r'VITALS .*',log),'pilot':re.findall(r'pilot completed .*',log),'ordinary_controls_SHA256':hashlib.sha256('\n'.join(re.findall(r'pilot frame=.*',log)).encode()).hexdigest(),'pose_events':len(re.findall(r'BV_POSE .*',log))}
-    (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+    summary['native_readiness']=re.findall(r'BV_READY .*',log);summary['native_phase_events']=len(re.findall(r'BV_PHASE .*',log));(out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     try:
         assert run.returncode==0 and summary['errors_bytes']==0 and footer and int(footer[1])==0 and len(summary['visual'])==1 and len(summary['peaks'])==1
         assert summary['output_Save_SHA256']==SEED and sha(seed)==SEED

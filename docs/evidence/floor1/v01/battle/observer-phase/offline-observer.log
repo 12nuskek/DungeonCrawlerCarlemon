@@ -1,0 +1,21 @@
+BV_PHASE frame=1 native_ID=2373077694
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=2373077694
+PASS actual observer: send-out/unfilled VRAM, native phase and4 registered owners/first-copy completion, invalid pixels/ownership after readiness, action-before-readiness, unknown phase/controller, label filtering/duplicate identity, exact safe STOP diagnostics; zero emulator frames

@@ -90,6 +90,16 @@ static void put16(unsigned a,unsigned x){put8(a,x);put8(a+1,x>>8);}
 static void put32(unsigned a,unsigned x){put16(a,x);put16(a+2,x>>16);}
 static unsigned capture(const char *n,unsigned *p,unsigned w,unsigned h){(void)n;(void)p;(void)w;(void)h;return 0;}
 #include "v01-battle-observer.h"
+/* Diagnostic regression harness only: the production host consumes this reader
+ * through its typed native-boundary stream, never through a raw-frame trace. */
+static unsigned fixture_trace(struct mCore *core,struct BattleVisual *v,unsigned party,unsigned mons,unsigned saveptr,unsigned save2ptr,unsigned mainstate,unsigned results,unsigned currentMove,unsigned attacker,unsigned defender,unsigned outcome,unsigned controls)
+{
+ unsigned char actual[2560],expected[2560]={0};unsigned reason=bv_snapshot(core,v,party,mons,saveptr,save2ptr,mainstate,results,currentMove,attacker,defender,outcome,controls,actual);
+ if(reason)return reason;
+ if(v->candidate){size_t n=fread(expected,1,2560,v->trace);if(n!=2560||memcmp(actual,expected,2560)){bv_snapshot_mismatch(core,v,actual,expected,n);return 103;}}
+ else if(fwrite(actual,1,2560,v->trace)!=2560)return 103;
+ return 0;
+}
 static struct mCore core={read8,read16,read32};
 static struct BattleVisual v;
 enum { MAIN=0x02001000,MONS=0x0200d400,RESULTS=0x02001800,MOVE=0x02001880,GFX=0x02000200,BUFFER=0x02004000,SPRITES=0x0200c000,PHASE=0x02000100,COPIES=0x02019000,COUNT=0x02000108,CTRL=0x02000110,SAVEPTR=0x02000130,SAVE2PTR=0x02000134 };
@@ -146,24 +156,24 @@ int main(void){
  setup();bv_symbol(&v,0x08000301,'t',".gcc2_compiled.");assert(v.callbackCount==11&&!bv_callback(&v,0x08000301));bv_symbol(&v,0x08000101,'F',token);assert(v.callbackCount==11);
  pid_t pid=fork();assert(pid>=0);if(!pid){bv_symbol(&v,0x08000301,'F',token);exit(0);}int status;waitpid(pid,&status,0);assert(WIFEXITED(status)&&WEXITSTATUS(status)==112);
  setup();put32(SAVEPTR,0x0200e000);put32(SAVE2PTR,0x0201c000);v.trace=tmpfile();assert(v.trace);
- assert(!bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL));
+ assert(!fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL));
  rewind(v.trace);v.candidate=1;put8(MONS+170,23);
- assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
  assert(v.failedTraceByte==170&&v.failedValuesPresent&&v.failedActual==23&&v.failedExpected==0&&v.failedActualRetained&&v.failedExpectedRetained);
  v.cpuAvailable=1;v.cpuPC=0x0806a54c;v.cpuLR=0x0806a54b;v.cpuSP=0x03007e00;v.cpuCPSR=0x3f;
  bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);assert(!rename("visual-stop.json","party-diagnostic-fixture.json"));
  FILE *raw=fopen("visual-stop-actual-private.bin","rb");assert(raw);assert(!fseek(raw,170,SEEK_SET)&&fgetc(raw)==23);assert(!fseek(raw,0,SEEK_END)&&ftell(raw)==2560);fclose(raw);
  rewind(v.trace);put8(MONS+170,0);put8(0x0200e000+0x490+16,77);
- assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
  assert(v.failedTraceByte==1268&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
  assert(!rename("visual-stop.json","resource-diagnostic-fixture.json"));
  rewind(v.trace);put8(0x0200e000+0x490+16,0);put8(MONS,99);
- assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
  assert(v.failedTraceByte==0&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
  assert(!rename("visual-stop.json","header-diagnostic-fixture.json"));
  fclose(v.trace);v.trace=tmpfile();assert(v.trace);unsigned char shortReference[17]={0};
  assert(fwrite(shortReference,1,17,v.trace)==17);rewind(v.trace);
- assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
+ assert(fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==103);
  assert(v.failedExpectedBytes==17&&!v.failedValuesPresent);bv_diagnose(&core,&v,103,MONS,MAIN,MOVE);
  assert(!rename("visual-stop.json","truncated-diagnostic-fixture.json"));fclose(v.trace);
  puts("PASS actual observer mismatch diagnostics: exact actual/expected party bytes and local full failed records, safe CPU metadata, resource values redacted; no runtime authority inferred");
@@ -177,7 +187,7 @@ int main(void){
  setup();put32(PHASE,v.a.firstTurn);assert(!sample()&&v.enforced);put32(SPRITES+12,0);assert(sample()==105&&v.failedActor==0); // Ownership remains mandatory after readiness.
  setup();put16(MOVE,356);assert(sample()==110&&!v.enforced); // No action allowed to slip past unqualified readiness.
  setup();put32(PHASE,0x08000400);assert(sample()==112&&v.failedAddress==0x08000400);
- setup();put32(SAVEPTR,0x0200e000);put32(SAVE2PTR,0x0201c000);put32(CTRL+8,0x08000401);assert(bv_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==112&&v.failedActor==2&&v.failedAddress==0x08000400);
+ setup();put32(SAVEPTR,0x0200e000);put32(SAVE2PTR,0x0201c000);put32(CTRL+8,0x08000401);assert(fixture_trace(&core,&v,MONS,MONS,SAVEPTR,SAVE2PTR,MAIN,RESULTS,MOVE,MOVE,MOVE,MOVE,CTRL)==112&&v.failedActor==2&&v.failedAddress==0x08000400);
  setup();put8(COUNT,65);assert(sample()==113);
 
  // Pre-entry field frames, including a falsely populated old exit counter,

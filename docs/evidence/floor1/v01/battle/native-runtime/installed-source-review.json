@@ -1,0 +1,19 @@
+{
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "version": "0.10.5",
+  "downloaded_sources": [
+    {
+      "URL": "https://raw.githubusercontent.com/mgba-emu/mgba/0.10.5/src/arm/arm.c",
+      "SHA256": "16205d016e4d61a1c1f0b53e1fd3035b0720b8cf5f871b511a6f5495b6f6f442"
+    },
+    {
+      "URL": "https://raw.githubusercontent.com/mgba-emu/mgba/0.10.5/src/gba/core.c",
+      "SHA256": "57cc9ac807357a5bf27a5e44aec83e3e0696e7be41bddf26ac4f653aa23fc723"
+    },
+    {
+      "URL": "https://raw.githubusercontent.com/mgba-emu/mgba/0.10.5/src/gba/gba.c",
+      "SHA256": "92b0fd214bfa563a1694921661c4413ffd96871cd6162cd762542fb5c2a2c098"
+    }
+  ],
+  "review": "Actual installed-library fixture parity, not source/model-only proof. Source receipts and relevant semantics; no vendor source dump or ROM/binaries uploaded."
+}

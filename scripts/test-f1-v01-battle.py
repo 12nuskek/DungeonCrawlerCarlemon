@@ -28,6 +28,8 @@ def fixtures(out,seed,candidate):
     assert len(palette)==48;(out/'visual-palettes.bin').write_bytes(struct.pack('<48H',*palette))
 def main():
     p=argparse.ArgumentParser();p.add_argument('--case',choices=['before','after'],required=True);p.add_argument('--build',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--seed',type=Path,required=True);p.add_argument('--prepare',action='store_true');a=p.parse_args()
+    library=Path('/usr/lib/x86_64-linux-gnu/libmgba.so.0.10')
+    assert sha(library)=='a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63'
     assert not git('status','--porcelain'),'Commit source/host/route before preparation or execution'
     head=git('rev-parse','HEAD');build=a.build.resolve();out=a.output.resolve()/a.case;seed=a.seed.resolve();engine=build/'source/engine';rom=engine/'pokeemerald.gba';game=(build/'tested-commit.txt').read_text().strip();route=ROOT/'scripts/contracts/f1-v01-battle.route'
     assert sha(seed)==SEED and git('rev-parse',game+':engine')==git('rev-parse',(BASE if a.case=='before' else head)+':engine')
@@ -35,19 +37,24 @@ def main():
     assert not (a.output.resolve()/'STOP.json').exists(),'Retain first STOP; no dependent execution'
     if a.prepare:
         out.mkdir(parents=True,exist_ok=False);code,_=module('visual_host',ROOT/'scripts/floor1/v01-battle-host.py').generate(git);(out/'observer.c').write_text(code)
-        with (out/'host-build.log').open('w') as f:subprocess.run(['cc','-std=gnu11','-Wall','-Wextra','-Werror',str(out/'observer.c'),'-lmgba','-o',str(out/'playtest')],stdout=f,stderr=subprocess.STDOUT,check=True)
+        with (out/'host-build.log').open('w') as f:subprocess.run(['cc','-DUSE_DEBUGGERS','-std=gnu11','-Wall','-Wextra','-Werror',str(out/'observer.c'),'-lmgba','-o',str(out/'playtest')],stdout=f,stderr=subprocess.STDOUT,check=True)
         with (out/'game.sym').open('w') as f:subprocess.run(['arm-none-eabi-nm','--defined-only',str(engine/'pokeemerald.elf')],stdout=f,check=True)
         with (out/'game.sym').open('a') as f:subprocess.run(['python3',str(ROOT/'scripts/battle-input-symbols.py'),str(engine)],stdout=f,check=True)
         with (out/'game.sym').open('a') as f:f.write(module('verified_battle_functions',ROOT/'scripts/floor1/v01-battle-symbols.py').export(engine/'pokeemerald.elf',out/'verified-functions.json'))
+        boundary=module('native_boundary_symbols',ROOT/'scripts/floor1/v01-native-boundary-symbols.py').write(engine/'pokeemerald.elf',out/'native-boundary.json')
+        with (out/'game.sym').open('a') as f:
+            for name,key in [('Entry','entry'),('Caller','caller_LR'),('Opcode','entry_opcode')]:f.write(f"{boundary[key]:08x} A bv_native{name}\n")
         fixtures(out,seed,a.case=='after');shutil.copyfile(route,out/'input.route')
-        identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'symbols_SHA256':sha(out/'game.sym'),'verified_functions_SHA256':sha(out/'verified-functions.json'),'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
+        identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'installed_library_SHA256':sha(library),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'symbols_SHA256':sha(out/'game.sym'),'verified_functions_SHA256':sha(out/'verified-functions.json'),'native_boundary_SHA256':sha(out/'native-boundary.json'),'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
         (out/'identity.json').write_text(json.dumps(identity,indent=2)+'\n');print('PASS prepared',a.case,'without emulator');return
     identity=json.loads((out/'identity.json').read_text());assert identity['source']==head and identity['host_SHA256']==sha(out/'observer.c') and identity['binary_SHA256']==sha(out/'playtest') and identity['ROM_SHA256']==sha(rom) and identity['route_SHA256']==sha(route)==sha(out/'input.route')
+    assert identity['installed_library_SHA256']==sha(library)
     for name,digest in identity['fixture_SHA256'].items():assert sha(out/name)==digest
+    assert identity['native_boundary_SHA256']==sha(out/'native-boundary.json')
     assert identity['symbols_SHA256']==sha(out/'game.sym') and identity['verified_functions_SHA256']==sha(out/'verified-functions.json')
     if a.case=='after':
         before=a.output.resolve()/'before';summary=json.loads((before/'summary.json').read_text());assert summary['native_exit']==0 and summary['errors_bytes']==0
-        shutil.copyfile(before/'state-trace.bin',out/'expected-state-trace.bin')
+        shutil.copyfile(before/'native-boundary-trace.bin',out/'expected-native-boundary-trace.bin')
     save=out/'ordinary.sav';assert not save.exists();shutil.copyfile(seed,save)
     with (out/'execution-claim.json').open('x') as f:json.dump(identity,f,indent=2)
     with (out/'input.route').open() as inp,(out/'replay.log').open('w') as log,(out/'errors.log').open('w') as err:run=subprocess.run([str(out/'playtest'),str(rom),str(save),str(out/'game.sym')],cwd=out,stdin=inp,stdout=log,stderr=err)

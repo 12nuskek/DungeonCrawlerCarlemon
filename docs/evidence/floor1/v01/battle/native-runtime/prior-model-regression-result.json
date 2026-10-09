@@ -1,0 +1,14 @@
+{
+  "result": "PASS installed hardware capability and synthetic offline adapter fixtures",
+  "emulator_gameplay_frames": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "CPU_instructions_executed_by_capability_probe": 0,
+  "new_execution_claims": 0,
+  "live_adapter": "not integrated or enabled; actual game/frame equivalence unverified",
+  "before_ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+  "after_ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "capability_binary_SHA256": "903e0312784216dd523415ba13d71da5472c09752b1dc4c8dccaf07cc877d57b",
+  "fixture_binary_SHA256": "ffd5b95f4ab570e00d4f8407f174e64b807495c9a2313b8d42fda9f7b75d8877"
+}

@@ -217,8 +217,8 @@ static unsigned bv_begin(struct BattleVisual *v)
     if(v->candidate && !v->a.poseState)return 112;
     if(bv_load("visual-poses.bin",v->poses,sizeof v->poses) || bv_load("visual-palettes.bin",v->palettes,sizeof v->palettes))return 100;
     for(unsigned b=0;b<4;b++)v->last[b]=255;
-    v->trace=fopen(mode?"expected-state-trace.bin":"state-trace.bin",mode?"rb":"wb");
-    if(!v->trace)return 100;
+    v->trace=fopen(mode?"expected-native-boundary-trace.bin":"native-boundary-trace.bin",mode?"rb":"wb");
+    if(!v->trace || (!mode && fchmod(fileno(v->trace),0600)))return 100;
     v->recording=1;return 0;
 }
 static unsigned bv_heap(struct mCore *core,struct BattleVisual *v)
@@ -251,10 +251,10 @@ static unsigned bv_retain_private(const char *name,const unsigned char *data,siz
     if(fclose(raw))complete=0;
     return complete;
 }
-static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned party,unsigned mons,unsigned saveptr,unsigned save2ptr,unsigned mainstate,unsigned results,unsigned currentMove,unsigned attacker,unsigned defender,unsigned outcome,unsigned controls)
+static unsigned bv_snapshot(struct mCore *core,struct BattleVisual *v,unsigned party,unsigned mons,unsigned saveptr,unsigned save2ptr,unsigned mainstate,unsigned results,unsigned currentMove,unsigned attacker,unsigned defender,unsigned outcome,unsigned controls,unsigned char data[2560])
 {
     /* Private byte record includes full party and resources; never upload it. */
-    unsigned char data[2560]={0},expected[2560]={0};unsigned at=0;
+    memset(data,0,2560);unsigned at=0;
     v->failedActor=v->failedSprite=255;v->failedStage=v->failedAddress=0;
     v->failedTraceByte=2560;v->failedValuesPresent=0;v->failedExpectedBytes=v->failedActualRetained=v->failedExpectedRetained=0;
 #define BV_BYTES(address,n) do {for(unsigned z=0;z<(n);z++)data[at++]=core->busRead8(core,(address)+z);}while(0)
@@ -269,17 +269,19 @@ static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned part
         if(address && !id){v->failedActor=b;v->failedSprite=core->busRead8(core,v->a.ids+b);v->failedStage=1;v->failedAddress=address;return 112;}
         for(unsigned i=0;i<4;i++)data[at++]=(id>>(8*i))&255;
     }
-    if(v->candidate){size_t expectedBytes=fread(expected,1,sizeof expected,v->trace);
-      if(expectedBytes!=sizeof expected || memcmp(data,expected,sizeof data)){
+    return 0;
+}
+static void bv_snapshot_mismatch(struct mCore *core,struct BattleVisual *v,const unsigned char data[2560],const unsigned char expected[2560],size_t expectedBytes)
+{
         v->failedExpectedBytes=(unsigned)expectedBytes;
         // Local denied raw evidence only. Never publish these records or register payloads.
-        v->failedActualRetained=bv_retain_private("visual-stop-actual-private.bin",data,sizeof data);
+        v->failedActualRetained=bv_retain_private("visual-stop-actual-private.bin",data,2560);
         v->failedExpectedRetained=bv_retain_private("visual-stop-expected-private.bin",expected,expectedBytes);
 
-        unsigned diff=0;while(diff<sizeof data && data[diff]==expected[diff])diff++;
+        unsigned diff=0;while(diff<2560 && data[diff]==expected[diff])diff++;
         v->failedStage=8;v->failedTraceByte=diff;
         // Owned-resource bytes may contain encrypted key material: safe JSON omits their values.
-        if(expectedBytes==sizeof expected && diff<sizeof data
+        if(expectedBytes==2560 && diff<2560
             && ((diff<600 && diff%100>=32) || (diff>=952 && diff<1252) || diff>=2524)){
             v->failedValuesPresent=1;v->failedActual=data[diff];v->failedExpected=expected[diff];
         }
@@ -287,9 +289,6 @@ static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned part
         else if(diff>=600 && diff<952)v->failedActor=(diff-600)/88;
         else if(diff>=2533 && diff<2549)v->failedActor=(diff-2533)/4;
         if(v->failedActor<4)v->failedSprite=core->busRead8(core,v->a.ids+v->failedActor);
-        fprintf(stderr,"Exact battle-state/control divergence visual_frame=%u byte=%u; STOP\n",v->frames,diff);return 103;}}
-    else if(fwrite(data,1,sizeof data,v->trace)!=sizeof data)return 103;
-    return 0;
 }
 static unsigned bv_sample(struct mCore *core,struct BattleVisual *v,unsigned mainstate,unsigned mons,unsigned results,unsigned animationActive,unsigned animationActor,unsigned currentMove,unsigned pixels[],unsigned width,unsigned height)
 {

@@ -1,4 +1,5 @@
-/* OFFLINE PROTOTYPE: never wired to the frozen gameplay driver. */
+/* Boundary/sequence and original-batch contract; concrete installed binding
+ * lives in v01-native-boundary-runtime.h. Game equivalence remains unverified. */
 #ifndef V01_NATIVE_BOUNDARY_ADAPTER_H
 #define V01_NATIVE_BOUNDARY_ADAPTER_H
 #include <stdint.h>
@@ -74,7 +75,8 @@ static inline unsigned bv_boundary_finish(const struct BvBoundarySequence *g,uin
  * Events are dispatched before any next instruction and the guard is then
  * rechecked. A breakpoint observes inside the existing loop, without advancing
  * time. It never calls runFrame followed by extra steps, sets keys or changes
- * CPU registers. Actual mGBA callbacks must be bound and reviewed separately. */
+ * CPU registers. Concrete callbacks are in v01-native-boundary-runtime.h; gameplay validation
+ * remains a separate parent-reviewed dependency. */
 struct BvBoundaryDriverOps {
     void *context;
     unsigned (*frame)(void *);

@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "expanded interpreter fixture",
+    "result": "STOP fixture assertion only",
+    "log_SHA256": "1f8278057dfdc4f386bcba7f016aa24b98ae28a8f6d4208fbe08cbdd53703886",
+    "diagnosis": "Pending stdio output rewrote ftruncate result on rewind; fflush before ftruncate. No game execution."
+  },
+  {
+    "stage": "complete reader fixture compile",
+    "result": "STOP compile only",
+    "log_SHA256": "43239ca71c8fbec652bde9cd5a92d76d7561c5d5a42c91aca93a989e23c32a96",
+    "diagnosis": "Synthetic EWRAM pointer is uint32_t*, so byte offsets require unsigned-char view; scope register variable to its fixture variant. -Werror retained. No complete-reader execution occurred."
+  }
+]

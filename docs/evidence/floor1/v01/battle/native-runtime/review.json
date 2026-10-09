@@ -1,0 +1,40 @@
+{
+  "result": "Reviewed scoped source diff and negative cases",
+  "previous_source": "3c92f08daf9192fde5db551b55cdde2f8224829a",
+  "graphics_lifecycle_sample_and_finish": "Byte-identical original functions; all existing enforcement/acceptance gates preserved",
+  "complete_snapshot_read_and_controller_canonicalization": "Byte-identical original reads and canonicalisation, extracted from raw-frame trace",
+  "input_controller": "Frozen base generated code SHA256 b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71; all13 native setKeys calls remain, binding never sets keys",
+  "frame_driving_site": "One bv_native_frame call; zero core->runFrame calls in generated gameplay host, no extra post-frame stepping",
+  "boundaries": "Exact source/ELF entry/caller/hardware/opcode/Thumb/SYSTEM checks; SYSTEM alone rejected, pending events processed before next instruction",
+  "complete_comparison": "All2560 bytes strict; all typed metadata/count/ordinal/epoch/key/frame records exact; no masks/phase exception/alignment search",
+  "failure_paths": "Sticky stop before next instruction; invalid/truncated snapshot and all byte mutations reject; bad order/missing frame/trailing finish reject; no stale-checkpoint stepping",
+  "compiled_flags": [
+    "-DUSE_DEBUGGERS",
+    "-std=gnu11",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "new_gameplay_executions": 0,
+  "game_equivalence": "UNVERIFIED",
+  "merge_status": "Unmerged; parent review before fresh execution",
+  "public_exclusions": [
+    "ROMs",
+    "ELFs",
+    "executables",
+    "saves",
+    "private raw trace/VRAM/key buffers",
+    "secrets",
+    "full vendor source dump"
+  ],
+  "unchanged_historical_limits": [
+    "STOP35",
+    "STOP107",
+    "STOP105",
+    "STOP103 missing actual failed bytes/CPU",
+    "original strategy/controller failures",
+    "four baseline/one candidate claims",
+    "missing original legacy inputs",
+    "C01/human pacing/full-floor acceptance"
+  ]
+}

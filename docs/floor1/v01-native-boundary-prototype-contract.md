@@ -1,3 +1,5 @@
+Subsequent concrete binding checkpoint: [runtime contract](v01-native-boundary-runtime-contract.md), with actual installed interpreter fixtures and production snapshot reader. This document remains the historical limited offline prototype; its zero-instruction proof is distinct from later synthetic instruction executions. No game equivalence or new gameplay claim.
+
 # Offline native-boundary adapter prototype
 
 Publication clarification — 2026-10-09: routine source/documentation/art Git blobs are authorised and the original offline checkpoint0d9e93f5 is published through existing draft PR114. The local-only wording below records its initial offline authority, superseded for this publication only. ROMs/playable releases/secrets/private raw diagnostics remain excluded; runtime binding and gameplay remain unstarted. Offline source, tests and derived pixels are unchanged. See docs/evidence/floor1/v01/battle/native-boundary/publication.json.

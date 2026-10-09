@@ -1,0 +1,24 @@
+{
+  "STOP105_projection": {
+    "diagnostic_SHA256": "9fdfab9104cbd1b5371785ace73c8cc9cce87cfee31a817f0e5b1d9132f3b5a0",
+    "registry_NULL": "modeled only; original runtime pointer not separately captured",
+    "resource_pointers_NULL": "modeled only; original runtime did not separately serialize these pointers",
+    "original_runtime_result": "STOP105 unchanged"
+  },
+  "result": "PASS",
+  "emulator_frames": 0,
+  "native_layout": "Pinned agbcc compile against actual native headers passed",
+  "symbols": [
+    {
+      "case": "before",
+      "functions": 15904,
+      "true_alias_groups": 2
+    },
+    {
+      "case": "after",
+      "functions": 15921,
+      "true_alias_groups": 2
+    }
+  ],
+  "coverage": "Original readiness/symbol/ownership negatives plus ACTIVE to RETIRING to FIELD, four live owners, retired registry/pose state and queued source ranges, source-pinned saved trainer callback, same-iteration CB1 to CB2 dispatch, native callback/rebuild order, postbattle readiness, pre-entry false exit, incomplete field return"
+}

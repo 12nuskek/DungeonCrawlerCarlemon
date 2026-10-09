@@ -1,0 +1,30 @@
+[
+  {
+    "file": "decision-before.png",
+    "sha256": "f1641d6cf25d0a083b7f8b786e7fe0f78a5347f75599bfad70ef0fea3cd1c289",
+    "size": [
+      240,
+      160
+    ],
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "runner": "fa175347918b580cbdda47738407bf3857fa21ca",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 24673,
+    "note": "Exact pre-intervention state; fresh normal emulator frame"
+  },
+  {
+    "file": "owned-potion-bag.png",
+    "sha256": "47fbde60709a27683035d7b385f06dd1447f68c6548272758e15a335cf3bc15e",
+    "size": [
+      240,
+      160
+    ],
+    "compiled": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+    "runner": "fa175347918b580cbdda47738407bf3857fa21ca",
+    "rom": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+    "route": "howler-first-potion",
+    "frame": 24721,
+    "note": "Black during Bag fade before premature A; no Potion use or healing proof"
+  }
+]

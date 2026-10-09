@@ -1,3 +1,41 @@
+Current checkpoint — 2026-10-08: F1-G01e-PT single authorised Potion test failed;
+combat stopped. [Issue86](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/86) /
+[draft PR87](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/87), pushed and
+unmerged; evidence package3528fb8cd5ad5dc5d796435da316581beffcafa7. Sole writer /workspace/dcc-feedback, `task/floor1-g01e-potion`,
+basef4e568d582430dc9fc118f0af4afbc26b781e884 (draft PR85 unchanged). Contract
+9e2ebf3 committed before execution; actual tested runnerfa17534. No game edit.
+Historical compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, ROM6c447159…7cb,
+retained compile reused. Fresh host GNU14.2.0 Wall/Wextra/Werror; mGBA0.10.5.
+
+One actual battle execution,26 completed assertions; all59 pre-intervention battle
+input pulses exactly match the preserved failure. Howler won; Carl decision at
+frame24673/turn4 matched3/36HP, Donut30/30, PP4/40 and0/38, foes0/18 and one owned
+Potion. RIGHT24673/A24685 opened Bag; A24721 was premature during its black fade.
+Host checked active task but omitted palette-fade readiness. It stalled awaiting
+context and hit36,000-frame pilot bound:exit32, one harness timeout message, no
+logged mGBA error. Potion heal/consumption/Guard win/XP/Save/cold unverified. This
+is a failed controller check, not another observed Guard defeat or a refuted
+Potion hypothesis. No corrected/retimed test, baseline repeat or strategy reset.
+
+[Bounded verdicts/native captures/commands](evidence/floor1/g01e/potion/README.md).
+Local complete failedrun artifacts/floor1/potion/runtime-_16gl_zj; prepare-only
+compileprepare-9p38yvzf. Ordinary original and owned failedrun save copy remained
+byte-identical; no actual Save/cold attempted. One-execution claim retained; no
+active emulator/build. Denied datasets/keys/dumps/c298ac7/996b947 remain private,
+excluded from public source/evidence/ancestry. Older drafts remain preserved and
+unmerged; mainb694da17928b93ea579f55d905017aa9f7619422 unchanged. No V01 rollout.
+
+Priority changed before testing: parent placed this exact progression blocker
+ahead of menu audits. Same Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; one
+writer/parent continuation; no quota calls/new schedule/public ROM. Report this
+single-test failure; stop combat. Exact independent next task: live no-collection
+source audit and ordinary Start/Crawlers/Inventory/Options/summary return paths
+on preserved candidate saves. Further combat requires a focused parent instruction
+addressing the controller failure. Currentc643/b025 combat, first-clear/full/finalT/
+human pacing/V01 and full Floor1 remain pending; no historical-pass substitute.
+
+## Preserved LK checkpoint
+
 Current checkpoint — 2026-10-08 Australia/Brisbane: F1-G01e-LK ordinary sealed
 staircase verified; issue84 / [draft PR85](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/85),
 pushed and unmerged. Sole writer /workspace/dcc-feedback, task/floor1-g01e-sealed;

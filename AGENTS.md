@@ -1,5 +1,23 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR103 / issue102, stacked on unchanged PR101.
+Corrected noncombat probe completed ONE execution and stopped strict53 atframe4702
+on natural127→0: new Carl friendship92→93/checksum70→326 proven; every other
+party/logical resource exact, actual contexts captured privately. Actual stairsNO
+and12 stable resource checks passed. No further frame/exception/replay/battle.
+Original prepared field remains unidentified. Parent review of a separate narrow
+preservation contract is next; preserve this strict stop and all historical ones.
+See docs/evidence/floor1/g01e/party-resource-correction/README.md.
+
+Parent PR101 review authorises minimal native-context logical-resource correction
+and ONE separately claimed corrected noncombat probe under
+docs/floor1/g01e-party-resource-correction-contract.md. Same completed ordinary
+input/frozen route/cadence/24,000 bound; preserve strict200-byte duo/all remaining
+party/count/flags and historical failures. No prepared replay, battle, Save,
+injected state/counters, extra walking/RNG search or friendship exception. Test
+focused host cases first; capture actual encoding context privately, compare
+resources at existing stable ready/preservation checkpoints, never infer keys.
+
 Current diagnosis package: draft PR101 / issue100 on PR99. Diagnostic STOP
 preserved; parent review next, no further execution.
 

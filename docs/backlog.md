@@ -1,3 +1,41 @@
+Native-context correction — 2026-10-08: **new walking delta proven; strict53 stop preserved; parent review next; unmerged**.
+
+[Issue #102](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/102) / [draft PR #103](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/103), open/unmerged, stacked on unchanged PR101. Evidence commit `030e753d8e64eb417a79ccda5a6657c0007686f7`.
+
+Base PR101/531276ae7ee4e238ed804cff4c5d970d32d63ff0 unchanged. Minimal separate
+host corrects logical resource equality using each actual native context, privately
+captured, at existing stable checkpoints. Strict200/rest400/count/flags preserved,
+party53 priority, old observer/gate/PR101 and original prepared failure unchanged.
+398 focused exact-header cases pass (relocation/rekey/high-half, money/coin/every
+quantity+ID corruption, unencoded/wrong/zero contexts/empty slots,53 priority).
+Fresh host Wall/Wextra/Werror compile passes; game5084a1/exact23c77 unchanged.
+
+ONE separately claimed corrected noncombat probe, exact same completed offensive
+Save6ab135…386/145-line route/cadence/24,000 bound: actual staircaseNO passed,
+12 stable canonical resource checks passed across native rekey; then strict53
+atframe4702/natural127→0.72 completed emulator assertions,2658 armed frame
+comparisons, zero battles/Save. Private buffers prove Carl friendship92→93,
+checksum70→326 (+256), only derived raw offsets29/65; Donut/rest400/every other
+canonical party byte exact, valid native checksums and exact re-encoding.
+Independent actual-context resource decoding agrees at every snapshot and stop:
+money4360/coins0/all186 bag IDs+quantities including empty/PC/unencoded exact.
+No inferred context, injected state, extra walking, RNG search, retry or exception.
+Route intentionally stops at first mismatch, no further frame. Hostsource
+8a3f598c55f3d3f4bceb707b955d7b18a448e564, execution
+eed04fae769756605418bcbc3f335c99027e50f8 (same game; host newly compiled).
+
+[Exact new findings, native captures, identities and review dependency](evidence/floor1/g01e/party-resource-correction/README.md).
+Raw buffers/actual contexts/full decoded fields/logs/normal input/claim/STOP backed
+up privately; safe bounded findings/seven actual PNGs only in Git. All58 earlier
+heads/main/accepted plan preserved. Original prepared field stays unknown: new
+mechanism does not recover missing original buffers. Parent review may consider
+separate source-valid walking friendship preservation with every other party/
+logical resource exact and valid derived encoding/checksums; none implemented here.
+Historical strict failures/counts remain separate, no prepared replay/battle,
+legacy-input/fullFloor1/finalT/human-pacing/V01 acceptance, CI pass or merge.
+
+## Historical PR101 diagnostic checkpoint
+
 Exact-field diagnosis — 2026-10-08: **one noncombat probe stopped; resource-observer review next; unmerged**.
 
 [Issue #100](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/100) / [draft PR #101](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/101), open/unmerged, stacked on unchanged PR99. Evidence commit `bfc2a32992a1af7e77c8561b1b2db3b2e8832f4b`.

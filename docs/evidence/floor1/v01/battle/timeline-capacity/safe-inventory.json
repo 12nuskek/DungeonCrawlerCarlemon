@@ -1,0 +1,50 @@
+{
+  "scope": "Safe source/aggregate offline evidence only; raw traces/references/keys/binaries/ROMs/Saves/upload sessions excluded",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 7980,
+      "SHA256": "b0bfa118dd19044f866cdc7f32928d41ac35cb17301ff5885731fad02a54319b"
+    },
+    {
+      "file": "build-identity.json",
+      "bytes": 514,
+      "SHA256": "9f09dc7b37197c1bd014499fd684b67912f96cbcd9a8d1c4f997f830d859e496"
+    },
+    {
+      "file": "capture-preservation.json",
+      "bytes": 300,
+      "SHA256": "ee18e966f1c8700ff46b79566e1f34d13a9ffc8a33892d90c2e161b3c5de8e10"
+    },
+    {
+      "file": "git-preservation.json",
+      "bytes": 677,
+      "SHA256": "94df012844c70c053a8f9986022d71e3f2d3c187f1feeb902db65b259eea4139"
+    },
+    {
+      "file": "offline-writer.log",
+      "bytes": 722,
+      "SHA256": "ff31d2d0506e8846efc555d4fee3dbb0956925bb5de0fe2ad0b85a279de91086"
+    },
+    {
+      "file": "preservation-review.json",
+      "bytes": 1072,
+      "SHA256": "1417bd937c95fc44f6382fcd2fa65110c813f28cf7aeae8cab672029f4df3b09"
+    },
+    {
+      "file": "reconciliation.json",
+      "bytes": 24291,
+      "SHA256": "6d41f3077c9c2b64c6e1071c5842b4842c1c9af1ffbfade9d819907e29edcff2"
+    },
+    {
+      "file": "result.json",
+      "bytes": 2140,
+      "SHA256": "2a66224bb40b17cc5a9fa17fa86f934eb963f35dca5e8e26b828309da3ea5490"
+    },
+    {
+      "file": "route-bound.json",
+      "bytes": 518,
+      "SHA256": "c6e7dbd066aac433b7744fd2697329dd800bb2045dd27d96990b2460a8b243de"
+    }
+  ]
+}

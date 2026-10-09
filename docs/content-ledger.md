@@ -489,3 +489,28 @@ geometry/native staging and runtime/persistence proof await F1-C01/G02/S01 and
 district production. Documentation only: not implemented, compiled or runtime
 tested, no captures. Missing inputs and PR114 gameplay/legacy limitations remain;
 six baseline/four candidate execution totals are unchanged. No old entry is replaced.
+
+## F1-D8 Causeway refuge/final approach — authored preparation only
+
+[Refuge and final-approach scene brief](floor1/causeway-refuge-scene-brief.md),
+prepared on accepted documentation checkpoint
+`022473cf21a56893c4a393abc1ec09071adbfcec`.
+`F1-D8-REFUGE` offers an optional arrival exchange beside the independently usable
+free recovery/manual Save service; `F1-D8-ROUTES` distinguishes onward challenge,
+existing retreat and the optional Warrens return. The far gate opens only through
+the reviewed D8-side interaction and then persists both ways; dialogue grants no
+unlock. Main milestones and drainage remain prerequisites for legal Causeway
+access. D9 victory and descent/full-floor completion retain separate checks;
+arrival, refuge use, preparation and dialogue award none of them.
+
+Original short Carl/Donut dialogue by Codex, invented connective geography within
+the Book1 opening ceiling; no quotation, verified chapter claim or new party
+member. The brief records symbolic readiness, state-aware interruption/revisits,
+depleted/incapacitated service guidance and future routes for both branch orders,
+optional skips, both gate approaches and cold persistence. Recovery has no quest,
+payment or consumable prerequisite; no scene reward or automatic combat is proposed.
+Encounters, rewards, flags/save fields, geometry/native staging and implementation
+await F1-C01/G02/S01 and district production. Documentation only: not implemented,
+compiled or runtime tested, no captures. Missing inputs and PR114 gameplay/legacy
+limitations remain; six baseline/four candidate totals unchanged. No old entry is
+replaced and no district or mandatory objective is added.

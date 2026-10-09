@@ -1,3 +1,11 @@
+Current character correction — original baseline2a76829f STOP97/61/7924
+preserved; game candidate never executed. Source diagnosis: Sprite.hFlip is the
+base override, effective mirrored direction lives in OAM.attr1bit12. Four actual
+native XOR cases pass. ONE separate effective-flip adapter/pair now frozen under
+docs/floor1/v01-overworld-effective-flip-contract.md; game/assets/route/cadence/
+all visual+gameplay assertions unchanged. No retroactive acceptance or automatic
+retry. Preserve old root/STOP; any new divergence stops dependent execution.
+
 Current V01 overworld authority — 2026-10-09: parent/Kurt accepted PR112's
 visible environment pilot; ordinary mergec2f0d747 verified exact8f669796 tree,
 parents54526744/8f669796. Next ONE bounded overworld character stage authorised:

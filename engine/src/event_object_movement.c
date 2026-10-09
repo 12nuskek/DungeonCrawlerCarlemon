@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_overworld.h"
 #include "crawler.h"
 #include "malloc.h"
 #include "battle_pyramid.h"
@@ -4936,6 +4937,7 @@ void UpdateObjectEventCurrentMovement(struct ObjectEvent *objectEvent, struct Sp
     UpdateObjectEventSpriteAnimPause(objectEvent, sprite);
     UpdateObjectEventVisibility(objectEvent, sprite);
     ObjectEventUpdateSubpriority(objectEvent, sprite);
+    DccDonutAttentionUpdate(objectEvent, sprite);
 }
 
 #define dirn_to_anim(name, table)\

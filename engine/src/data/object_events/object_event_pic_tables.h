@@ -1783,6 +1783,7 @@ static const struct SpriteFrameImage sPicTable_Skitty[] = {
     overworld_frame(gObjectEventPic_Skitty, 2, 2, 1),
     overworld_frame(gObjectEventPic_Skitty, 2, 2, 2),
     overworld_frame(gObjectEventPic_Skitty, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Skitty, 2, 2, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_Kecleon[] = {

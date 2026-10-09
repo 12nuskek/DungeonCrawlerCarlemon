@@ -1,0 +1,20 @@
+{
+  "base": "c2f0d74759bb35b2f25e99f104e48f88635f049f",
+  "source": "4938927da512543ca9aeea9527c103c84955e632",
+  "engine_changed_files": [
+    "engine/graphics/dcc/donut/overworld.png",
+    "engine/include/dcc_overworld.h",
+    "engine/src/data/object_events/object_event_anims.h",
+    "engine/src/data/object_events/object_event_graphics_info.h",
+    "engine/src/data/object_events/object_event_pic_tables.h",
+    "engine/src/dcc_overworld.c",
+    "engine/src/event_object_movement.c",
+    "engine/src/scrcmd.c"
+  ],
+  "environment_geometry_actors_scripts_interactions_rewards_encounters_save_ABI_unchanged": true,
+  "Carl_nine_frames_unchanged": true,
+  "Donut_first_three_frames_and_palette_exact": true,
+  "standing_feet_and_attention_rows12_15_exact": true,
+  "all_historical_source_contracts_and_helpers_unchanged": true,
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27"
+}

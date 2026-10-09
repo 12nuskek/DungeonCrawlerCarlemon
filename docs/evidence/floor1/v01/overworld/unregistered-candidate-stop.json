@@ -1,0 +1,40 @@
+{
+  "case": "after",
+  "validation_failure": "",
+  "summary": {
+    "case": "after",
+    "execution_source": "640be7827e2cf302ed88b202836beafd68953e90",
+    "native_exit": 97,
+    "errors_bytes": 65,
+    "assertions": 61,
+    "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "replay_log_SHA256": "fae0f33dcbbfba6d19e3941941296648ff4ea362db3fbc315dda3355153dbb62",
+    "clock": [],
+    "battles": [
+      "WARDEN battle_frames=0 attempts=0"
+    ],
+    "characters": [],
+    "talks": [
+      "CHAR_TALK direction=2 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1",
+      "CHAR_TALK direction=1 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1",
+      "CHAR_TALK direction=3 frames=704 native_reaction_frames=24 field_controls_ready=1 exact_resources=1",
+      "CHAR_TALK direction=4 frames=704 native_reaction_frames=24 field_controls_ready=1 exact_resources=1"
+    ],
+    "clips": [
+      "CLIP label=directions native_frames=752 rate=262144/4389",
+      "CLIP label=talk-north native_frames=704 rate=262144/4389",
+      "CLIP label=talk-south native_frames=704 rate=262144/4389",
+      "CLIP label=talk-west native_frames=704 rate=262144/4389",
+      "CLIP label=talk-east native_frames=704 rate=262144/4389"
+    ],
+    "scene_peaks": [],
+    "views": [
+      "SCENE_VIEW label=quiet-before map=1 bg_referenced_unique_tiles=28 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+      "SCENE_VIEW label=donut-north map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+      "SCENE_VIEW label=donut-south map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+      "SCENE_VIEW label=donut-west map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+      "SCENE_VIEW label=donut-east map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224"
+    ]
+  }
+}

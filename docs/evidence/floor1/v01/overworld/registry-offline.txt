@@ -1,0 +1,2 @@
+REPRODUCED original native defect:custom table absent, animNum changes but SeekSpriteAnim never runs
+PASS corrected actual registry and native SetStepAnim:4 starting indices, unchanged standard metadata, inanimate guard

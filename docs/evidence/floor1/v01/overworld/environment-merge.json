@@ -1,0 +1,24 @@
+{
+  "PR": 112,
+  "merged": true,
+  "merge": "c2f0d74759bb35b2f25e99f104e48f88635f049f",
+  "reviewed_head": "8f6697962aa3eebe1451264f2123a74ea613880a",
+  "parents": [
+    "54526744eb7ed961007ffe6100f976a1e7448e8b",
+    "8f6697962aa3eebe1451264f2123a74ea613880a"
+  ],
+  "full_tree": "d719ada9e99efa54f04d30b4945b3ac49ac3d4c5",
+  "exact_reviewed_tree": true,
+  "tested_game": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+  "tested_host_route": "45fd1550be6c6f895a20e66bc63d5d4027a241e2",
+  "ROM_SHA256": "76dd6ae4606ad52167e7cdad5966ae02c695b968407b6e7c3b9bc5c66d0cc4e5",
+  "engine_tree": "fc20261a125a62357fc90293c53a2995e31fe855",
+  "preserved_nonmain_heads": 65,
+  "all_preserved_nonmain_heads_unchanged": true,
+  "checks": 0,
+  "statuses": 0,
+  "workflow_runs": 0,
+  "CI": "absent, not success",
+  "protection": "off / no required checks / rulesets empty; no bypass",
+  "next_stage": "One separately authorised bounded overworld character stage"
+}

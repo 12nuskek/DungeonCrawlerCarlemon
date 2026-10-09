@@ -1,3 +1,16 @@
+Current publication authority — 2026-10-09: environment PR112 merged c2f0d747,
+exact reviewed tree/parents and65 non-main heads retained. Character candidate
+4938927d/ae1e ROM passed64 native assertions/7924 frames against unchanged
+accepted baseline640be782 (64/7924); both earlier STOP97/61 claims preserved.
+Native all-directions/OBJ/palette/pivots/reaction24/24 and exact resources,
+controls/704-frame talk cadence/environment/budgets passed. Private Library
+four ordinary saves/text logs/14385 raw native captures/20 clips retained;
+key-bearing/denied .bin buffers stay local. Character stage unmerged; scoped
+draft and STOP for parent visual review. No further emulator execution, merge,
+battle stage or rollout. Original legacy/C01/human pacing/full-floor gates stay.
+Actual review package: docs/evidence/floor1/v01/overworld/README.md.
+Previous instructions/results below are historical and remain intact.
+
 Current registered candidate authority — accepted corrected baseline640be782
 64 assertions/7924; original candidate STOP97/61/7924 retained. Donut north stale
 because new graphics animation table omitted native step registry; actual compiled

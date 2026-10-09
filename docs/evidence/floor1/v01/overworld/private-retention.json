@@ -1,0 +1,12 @@
+{
+  "filename": "DungeonCrawlerCarlemon-V01-overworld-20261009.zip",
+  "bytes": 36460857,
+  "sha256": "78d9dbaa8dce6b8a392793480ddd54f702416a31696b15a349075bdd349bab56",
+  "files": 14661,
+  "raw_ppm_frames": 14385,
+  "ordinary_saves": 4,
+  "mp4_clips": 20,
+  "excluded": ".bin diagnostics, executables/game.sym, duplicate sequential PNGs; ROM/ELF/build products not selected",
+  "Library_status": "succeeded",
+  "local_xattrs_verified": true
+}

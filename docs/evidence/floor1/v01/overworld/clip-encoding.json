@@ -1,0 +1,182 @@
+[
+  {
+    "case": "original-failed",
+    "label": "directions",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "12.590515",
+    "nb_frames": "752"
+  },
+  {
+    "case": "original-failed",
+    "label": "talk-north",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "original-failed",
+    "label": "talk-south",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "original-failed",
+    "label": "talk-west",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "original-failed",
+    "label": "talk-east",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "before",
+    "label": "directions",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "12.590515",
+    "nb_frames": "752"
+  },
+  {
+    "case": "before",
+    "label": "talk-north",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "before",
+    "label": "talk-south",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "before",
+    "label": "talk-west",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "before",
+    "label": "talk-east",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "candidate-failed",
+    "label": "directions",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "12.590515",
+    "nb_frames": "752"
+  },
+  {
+    "case": "candidate-failed",
+    "label": "talk-north",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "candidate-failed",
+    "label": "talk-south",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "candidate-failed",
+    "label": "talk-west",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "candidate-failed",
+    "label": "talk-east",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "after",
+    "label": "directions",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "12.590515",
+    "nb_frames": "752"
+  },
+  {
+    "case": "after",
+    "label": "talk-north",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "after",
+    "label": "talk-south",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "after",
+    "label": "talk-west",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  },
+  {
+    "case": "after",
+    "label": "talk-east",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "duration": "11.786865",
+    "nb_frames": "704"
+  }
+]

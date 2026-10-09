@@ -1,3 +1,13 @@
+Current V01 overworld checkpoint — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged pending parent visual review**.
+
+Environment PR112 was normally merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f` after parent/Kurt acceptance; exact reviewed tree/parents verified and all 65 non-main heads preserved. Current character stage reuses Carl9/Donut3 authoritative masters and native right mirroring, adds one cleaned side attention pose on the existing Talk interaction. Frozen corrected game/host/execution `4938927da512543ca9aeea9527c103c84955e632`, engine `76001ee128785714b7c15aef6d9c95630587d0a9`, ROM `ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461`.
+
+Accepted baseline640be782 and corrected candidate4938927d each pass64 native assertions/7924 frames/zero battles; exact153-command route, four704-frame conversations, five scene checks, 3568 actual clip frames each. All Carl gait/Donut standing directions and24-frame west/east attention verified in actual OBJ VRAM; palettes/pivots/slots, sampled heap/OBJ budgets, existing environment and resources unchanged. Ordinary Save030b unchanged. Original observer STOP97/61 and unregistered-table candidate STOP97/61 remain separate, with source diagnoses and frozen correction contracts; neither is retroactively accepted. Private Library retained four claims/saves/logs,14385 raw captures and20 clips; keys/denied .bin buffers remain local outside uploads. Absent CI remains absent. No battle-pose, C01/human pacing, legacy equivalence or whole-floor acceptance. Next: scoped draft→parent visual review; stop further execution/merge/rollout of this stage.
+
+[Actual source/build, screenshots, clips, budgets, failures and private receipt](../evidence/floor1/v01/overworld/README.md).
+
+## Historical environment pilot checkpoint (now merged)
+
 [Draft PR #112](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/112) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `4f497561e35508555d9463479f2f3ad539c330e4`; tested host/route/game identities below stay frozen.
 
 Current environment-stage checkpoint — 9 October2026: integration accepted,

@@ -1,0 +1,1 @@
+PASS 10 actual-source visual-hook lifecycle/negative cases;24-frame hold; object fields untouched

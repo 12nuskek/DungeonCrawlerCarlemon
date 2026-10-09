@@ -1,0 +1,46 @@
+{
+  "case": "before",
+  "execution_source": "640be7827e2cf302ed88b202836beafd68953e90",
+  "native_exit": 0,
+  "errors_bytes": 0,
+  "assertions": 64,
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "replay_log_SHA256": "2a24651a264093f8d4dc3f00a18066c1f93274e04e5d2f38d5843a0626068d74",
+  "clock": [
+    "COLD_CLOCK absolute_frames=7924 valid_frame_samples=5859 deferred_frame_samples=21 explicit_checkpoints=16 reentry_comparisons=2 boundary_events=0 armed_frame=2044"
+  ],
+  "battles": [
+    "WARDEN battle_frames=0 attempts=0"
+  ],
+  "characters": [
+    "CHAR_FINISH samples=4329 carl_normal=511 carl_mirrored=391 donut_normal=7 donut_mirrored=4 reaction_west=0 reaction_east=0"
+  ],
+  "talks": [
+    "CHAR_TALK direction=2 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1",
+    "CHAR_TALK direction=1 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1",
+    "CHAR_TALK direction=3 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1",
+    "CHAR_TALK direction=4 frames=704 native_reaction_frames=0 field_controls_ready=1 exact_resources=1"
+  ],
+  "clips": [
+    "CLIP label=directions native_frames=752 rate=262144/4389",
+    "CLIP label=talk-north native_frames=704 rate=262144/4389",
+    "CLIP label=talk-south native_frames=704 rate=262144/4389",
+    "CLIP label=talk-west native_frames=704 rate=262144/4389",
+    "CLIP label=talk-east native_frames=704 rate=262144/4389"
+  ],
+  "scene_peaks": [
+    "SCENE_PEAK map=0 samples=649 objects=6 sprites=10 obj_tiles=64 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+    "SCENE_PEAK map=1 samples=5007 objects=6 sprites=10 obj_tiles=56 obj_palettes=2 heap_used=11648 heap_free_min=102944",
+    "SCENE_PEAK map=2 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0",
+    "SCENE_PEAK map=3 samples=714 objects=2 sprites=6 obj_tiles=36 obj_palettes=2 heap_used=34688 heap_free_min=79872",
+    "SCENE_PEAK map=4 samples=0 objects=0 sprites=0 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=0"
+  ],
+  "views": [
+    "SCENE_VIEW label=quiet-before map=1 bg_referenced_unique_tiles=28 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=donut-north map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=donut-south map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=donut-west map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224",
+    "SCENE_VIEW label=donut-east map=1 bg_referenced_unique_tiles=34 bg_max_tile=691 bg_palette_mask=0088 loaded_secondary_bytes_verified=1 palettes6_7_8_verified=1 exact_interior_words=224"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source": "4938927da512543ca9aeea9527c103c84955e632",
+  "game_source": "4938927da512543ca9aeea9527c103c84955e632",
+  "engine_tree": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "upstream_emerald": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+  "agbcc": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "tooling_image": "4aafe586a8b5c8e5ec720843a42e3afd63f03e62663965d06c1492702c579a54",
+  "fresh_engine_git_archive": true,
+  "verified_hydrated_upstream_blobs": [
+    [
+      "0afff07f5d2314e2bd35d99de518cbc114009b5e",
+      "data/mb_berry_fix.gba"
+    ],
+    [
+      "fdeb854a054ba02191f6a209ec5b649f21c4e335",
+      "data/mb_colosseum.gba"
+    ],
+    [
+      "85057cf4e2bd657da5d632ac12d1ea24aeaa4499",
+      "data/mb_ereader.gba"
+    ]
+  ],
+  "command": "make -C engine -j2",
+  "reused_verified_recovery_agbcc_binaries": true,
+  "cc_version": "cc (Debian 14.2.0-19) 14.2.0",
+  "as_version": "GNU assembler (2.44-3+23+b1) 2.44",
+  "agbcc_binary_sha256": {
+    "tools/agbcc/bin/agbcc": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+    "tools/agbcc/bin/agbcc_arm": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+    "tools/agbcc/bin/old_agbcc": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f"
+  },
+  "base": "c2f0d74759bb35b2f25e99f104e48f88635f049f"
+}

@@ -1,0 +1,173 @@
+{
+  "frozen_execution_source": "e017e185c34c53fb969ecdaeb84267c9019376c6",
+  "reviewed_observer_source": "a89899c7d84d815c7f4ac4b9273c48aceb220c3b",
+  "candidate_STOP": 103,
+  "candidate_partial_assertions": 22,
+  "candidate_failed_visual_frame_zero_based": 1304,
+  "candidate_absolute_STOP_frame": 3349,
+  "candidate_numbered_clip_frames": 1304,
+  "candidate_emergency_STOP_capture": true,
+  "candidate_complete_clip_frames_including_emergency": 1305,
+  "candidate_execution_claims": 1,
+  "candidate_entered_trainer_encounters": 1,
+  "candidate_executed_policy_moves": 0,
+  "candidate_policy_attempt_gate_reached": false,
+  "candidate_native_ready": false,
+  "candidate_poses_observed": 0,
+  "candidate_failed_trace_byte": 170,
+  "field": "Donut member1 BoxPokemon secure physical slot3, byte2; native SUBSTRUCT_CASE maps to misc packed origin bits, raw representation observation, not a proved logical-field mutation",
+  "candidate_callback": "L:battle_main.o:CB2_HandleStartBattle",
+  "candidate_phase": "G:BeginBattleIntroDummy",
+  "candidate_lifecycle": "UNENTERED/not yet first-turn-qualified",
+  "candidate_failed_party_value_retained": false,
+  "candidate_CPU_position_retained": false,
+  "baseline_native_ready_visual_frame": 3155,
+  "baseline_retirement_visual_frame": 14987,
+  "baseline_FIELD_visual_frame": 15626,
+  "baseline_clip_frames": 15627,
+  "baseline_absolute_frames": 17671,
+  "baseline_native_inBattle_trace_frames": 13720,
+  "baseline_policy_frames": 12520,
+  "baseline_controller_battle_frames": 13721,
+  "baseline_attempts": 1,
+  "baseline_complete_assertions": 42,
+  "baseline_final_vitals": "30 22 0 0 2 37 0 33",
+  "baseline_Potion": 1,
+  "baseline_SCRAP": 2,
+  "baseline_reward": 360,
+  "baseline_flag47": true,
+  "baseline_postbattle_field_clean_samples": 1,
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "both_Save_hashes_unchanged": true,
+  "observed_baseline1304_Donut_fully_decrypted": true,
+  "observed_adjacent_baseline1303_1305_full_party_equals_seed": true,
+  "baseline1304_Donut_plain_checksum_valid": true,
+  "baseline1304_party_SHA256": "e5348f547aea0e31ec5d6648552823eeec77a1ff2cddf7d8dded705c698e2975",
+  "diagnosis": "Actual baseline trace demonstrably includes transient in-place-decrypted BoxPokemon; native getters decrypt/read/re-encrypt. Candidate serialization-phase mismatch is plausible, not conclusively proved because failed candidate record/value and CPU position were not retained. No game mutation or actual candidate lifecycle/visual acceptance established.",
+  "remaining_blocker": "Parent diagnosis review of raw-party observation qualification and missing failing-byte/CPU diagnostics. No observer/route/game change or further execution applied.",
+  "offline_emulator_frames": 0,
+  "source_references": [
+    {
+      "file": "engine/src/pokemon.c",
+      "lines": "3546\u20133565,3733\u20133765,4082\u20134086",
+      "SHA256": "df008d2d381b70f30998e476ed1f7183871580ea037d0fc5832bea11beb9c064"
+    },
+    {
+      "file": "engine/src/battle_main.c",
+      "lines": "954\u2013980,1095\u20131117",
+      "SHA256": "f8b04aec3a038612c6eaad0fca9d3e7ce37bc750b7106e2fb80673bd80552cd4"
+    },
+    {
+      "file": "engine/include/pokemon.h",
+      "lines": "99\u2013179,196\u2013236",
+      "SHA256": "cbc063087534965d07db0b29af873b09b7f4d289845829dc4b3eabd4db912db9"
+    }
+  ],
+  "original_capture_counts": {
+    "before": {
+      "numbered_frames": 15627,
+      "helper_PPMs": 120,
+      "all_original_PPMs": 15747
+    },
+    "after": {
+      "numbered_frames": 1304,
+      "helper_PPMs": 12,
+      "all_original_PPMs": 1316
+    }
+  },
+  "all_original_PPMs": 17063,
+  "clip_sequence_samples": 16932,
+  "candidate_native_inBattle_frames": "not independently serialized after STOP; phase/source indicates entered setup, no policy moves",
+  "baseline_final_native_party": [
+    {
+      "species": 66,
+      "level": 12,
+      "experience": 974,
+      "PP": [
+        2,
+        37,
+        0,
+        0
+      ],
+      "status": 0,
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        30,
+        41,
+        28,
+        19,
+        15,
+        13,
+        15
+      ]
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1284,
+      "PP": [
+        0,
+        33,
+        0,
+        0
+      ],
+      "status": 0,
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        22,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ]
+    }
+  ],
+  "baseline_final_party_integrity_valid": true,
+  "baseline_money_events": [
+    "MONEY anchor=4000"
+  ],
+  "baseline_first_native_inBattle_visual_frame": 1304,
+  "candidate_prior_successfully_compared_frames": 1304,
+  "candidate_prior_compared_inBattle_frames": 0,
+  "counter_sampling": "Native controller counts13721; after-run full trace contains13720 inBattle flag samples. Different boundary sampling points retained explicitly.",
+  "clips": [
+    {
+      "case": "before",
+      "file": "baseline-native-complete.mp4",
+      "frames": 15627,
+      "source": "numbered original native frames",
+      "pixel_frames_verified_lossless": 15627,
+      "probe": {
+        "codec_name": "h264",
+        "width": 240,
+        "height": 160,
+        "pix_fmt": "gbrp",
+        "avg_frame_rate": "262144/4389",
+        "duration": "261.638271",
+        "nb_frames": "15627"
+      },
+      "bytes": 18519539,
+      "SHA256": "14079a64871639545011d02917aadb3fffa657f337a8d38340673ba83cad2efe",
+      "encoding": "libx264rgb, crf0, rgb24 source, native262144/4389fps, no interpolation/scaling/audio claim"
+    },
+    {
+      "case": "after",
+      "file": "candidate-native-first-stop.mp4",
+      "frames": 1305,
+      "source": "numbered original native frames; final actual emergency STOP capture appended at1304",
+      "pixel_frames_verified_lossless": 1305,
+      "probe": {
+        "codec_name": "h264",
+        "width": 240,
+        "height": 160,
+        "pix_fmt": "gbrp",
+        "avg_frame_rate": "262144/4389",
+        "duration": "21.849232",
+        "nb_frames": "1305"
+      },
+      "bytes": 1042410,
+      "SHA256": "6e7287976391dace65a1ae07e81f3d4ead743d207f32190dc3e127b73d02bcbf",
+      "encoding": "libx264rgb, crf0, rgb24 source, native262144/4389fps, no interpolation/scaling/audio claim"
+    }
+  ]
+}

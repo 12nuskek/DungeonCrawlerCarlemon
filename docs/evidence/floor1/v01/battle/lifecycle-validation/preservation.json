@@ -1,0 +1,41 @@
+{
+  "frozen_execution_source": "e017e185c34c53fb969ecdaeb84267c9019376c6",
+  "reviewed_observer_source": "a89899c7d84d815c7f4ac4b9273c48aceb220c3b",
+  "original_stops_unchanged": [
+    {
+      "name": "STOP35",
+      "STOP_SHA256": "115e713bd149be3f7fa50c356289d921074a904aa9d901dcbdd13cd93b098227",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    },
+    {
+      "name": "STOP107",
+      "STOP_SHA256": "225fb1d939c7b9b2728c7e3d544d64b28c737e529f63ab7859b2ee9b08f82a9d",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    },
+    {
+      "name": "STOP105",
+      "STOP_SHA256": "6ef99dc10736ac871425f3c8afb932b8d7661faa01c940ebcbbee02f6b06eef1",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    }
+  ],
+  "new_before_claims": 1,
+  "new_after_claims": 1,
+  "baseline_result": "PASS42",
+  "candidate_result": "STOP103/22",
+  "new_Stop_SHA256": "51568a97a12f339f8a610f84cad830435f61c45506b463a5444a82cf904da8ab",
+  "total_V01_battle_baseline_claims": 4,
+  "total_V01_battle_candidate_claims": 1,
+  "total_V01_battle_live_blocked_approaches": 4,
+  "game_engine": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "failure_count_reset": false,
+  "further_emulator_execution": false,
+  "method": "Old stopped baseline claims3 plus this PASS baseline; prior candidates unclaimed, this candidate claimed once and stopped. These are execution claims, separate from native policy-attempt counters.",
+  "original_legacy_inputs": "missing; ordinary inputs do not substitute"
+}

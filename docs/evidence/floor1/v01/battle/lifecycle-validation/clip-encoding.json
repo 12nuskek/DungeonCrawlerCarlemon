@@ -1,0 +1,43 @@
+{
+  "clips": [
+    {
+      "case": "before",
+      "file": "baseline-native-complete.mp4",
+      "frames": 15627,
+      "source": "numbered original native frames",
+      "pixel_frames_verified_lossless": 15627,
+      "probe": {
+        "codec_name": "h264",
+        "width": 240,
+        "height": 160,
+        "pix_fmt": "gbrp",
+        "avg_frame_rate": "262144/4389",
+        "duration": "261.638271",
+        "nb_frames": "15627"
+      },
+      "bytes": 18519539,
+      "SHA256": "14079a64871639545011d02917aadb3fffa657f337a8d38340673ba83cad2efe",
+      "encoding": "libx264rgb, crf0, rgb24 source, native262144/4389fps, no interpolation/scaling/audio claim"
+    },
+    {
+      "case": "after",
+      "file": "candidate-native-first-stop.mp4",
+      "frames": 1305,
+      "source": "numbered original native frames; final actual emergency STOP capture appended at1304",
+      "pixel_frames_verified_lossless": 1305,
+      "probe": {
+        "codec_name": "h264",
+        "width": 240,
+        "height": 160,
+        "pix_fmt": "gbrp",
+        "avg_frame_rate": "262144/4389",
+        "duration": "21.849232",
+        "nb_frames": "1305"
+      },
+      "bytes": 1042410,
+      "SHA256": "6e7287976391dace65a1ae07e81f3d4ead743d207f32190dc3e127b73d02bcbf",
+      "encoding": "libx264rgb, crf0, rgb24 source, native262144/4389fps, no interpolation/scaling/audio claim"
+    }
+  ],
+  "all_decoded_pixel_frames_verified": 16932
+}

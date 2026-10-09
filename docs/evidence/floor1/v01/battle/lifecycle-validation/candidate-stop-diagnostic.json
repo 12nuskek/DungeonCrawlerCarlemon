@@ -1,0 +1,157 @@
+{
+  "reason": 103,
+  "visual_frame": 1304,
+  "enforced": 0,
+  "ready_frame": 0,
+  "failed_actor": 2,
+  "failed_sprite": 0,
+  "stage": 8,
+  "unresolved_callback_address": 0,
+  "native_phase_address": 134454885,
+  "native_phase_ID": 1199531231,
+  "CB2": 134442821,
+  "current_move": 0,
+  "copy_count": 0,
+  "copy_armed": 0,
+  "actors": [
+    {
+      "actor": 0,
+      "sprite": 0,
+      "species": 0,
+      "HP": 0,
+      "position": 255,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 160,
+      "attr1": 304,
+      "attr2": 3072,
+      "images": 0,
+      "flags62": 0,
+      "flags63": 0,
+      "scratch_data0": 0,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 1,
+      "sprite": 0,
+      "species": 0,
+      "HP": 0,
+      "position": 255,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 160,
+      "attr1": 304,
+      "attr2": 3072,
+      "images": 0,
+      "flags62": 0,
+      "flags63": 0,
+      "scratch_data0": 0,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 2,
+      "sprite": 0,
+      "species": 0,
+      "HP": 0,
+      "position": 255,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 160,
+      "attr1": 304,
+      "attr2": 3072,
+      "images": 0,
+      "flags62": 0,
+      "flags63": 0,
+      "scratch_data0": 0,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 3,
+      "sprite": 0,
+      "species": 0,
+      "HP": 0,
+      "position": 255,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 160,
+      "attr1": 304,
+      "attr2": 3072,
+      "images": 0,
+      "flags62": 0,
+      "flags63": 0,
+      "scratch_data0": 0,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    }
+  ],
+  "copy_queue": [],
+  "lifecycle": 0,
+  "retirement_frame": 0,
+  "field_frame": 0,
+  "return_path": 0,
+  "graphics_registry": 33576524,
+  "retained_graphics_registry": 0,
+  "retained_picture_ranges": [
+    {
+      "actor": 0,
+      "source": 0,
+      "size": 8192
+    },
+    {
+      "actor": 1,
+      "source": 0,
+      "size": 8192
+    },
+    {
+      "actor": 2,
+      "source": 0,
+      "size": 8192
+    },
+    {
+      "actor": 3,
+      "source": 0,
+      "size": 8192
+    }
+  ],
+  "cleanup_rank": 0,
+  "local_rebuild_states": 0,
+  "battle_resources": 33555140,
+  "battle_struct": 33554448,
+  "battle_sprites_registry": 33576268,
+  "saved_trainer_return": 0,
+  "saved_trainer_return_now": 134944069,
+  "end_trainer_callback_observed": 0,
+  "field_CB1": 134764709,
+  "field_load_state": 0,
+  "field_locked": 1,
+  "script_status": 1,
+  "field_hook": 0,
+  "field_hook2": 0,
+  "palette_fade_active": 0,
+  "postbattle_exit_clean_frames": 0,
+  "failed_trace_byte": 170,
+  "partial_peaks": {
+    "samples": 1134,
+    "sprites": 6,
+    "obj_tiles": 36,
+    "obj_palettes": 2,
+    "heap_used": 11648,
+    "heap_free_min": 102944
+  },
+  "native_phase_functions": [
+    "G:BeginBattleIntroDummy"
+  ],
+  "CB2_functions": [
+    "L:battle_main.o:CB2_HandleStartBattle"
+  ],
+  "unresolved_callback_functions": [],
+  "private_VRAM_SHA256": {
+    "visual-stop-actor2-vram.bin": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "visual-stop-actor1-vram.bin": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "visual-stop-actor0-vram.bin": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "visual-stop-actor3-vram.bin": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+  }
+}

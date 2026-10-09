@@ -28,7 +28,7 @@ item 378 2
 inventory start
 money remember
 visual start
-step 1 64 -
+step 1 128 -
 step 40 0 -
 engage 3600
 step 1200 0 battle-start.ppm

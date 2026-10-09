@@ -1,0 +1,92 @@
+[
+  {
+    "name": "cold-boot.png",
+    "source": "cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  },
+  {
+    "name": "resolved-repeat.png",
+    "source": "cold-warden-resolved-00-00.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  },
+  {
+    "name": "stairs-no.png",
+    "source": "cold-stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  },
+  {
+    "name": "stairs-yes-choice.png",
+    "source": "cold-stairs-yes-choice.png",
+    "SHA256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  },
+  {
+    "name": "stairs-yes-arrived.png",
+    "source": "cold-stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  },
+  {
+    "name": "cold-returned.png",
+    "source": "cold-returned.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "514187f69d1cd0d84536d66071da988ece0c337a",
+    "execution_source": "8896e1f2e8b203bb90c224a864f26266bce60200",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 132
+  }
+]

@@ -514,3 +514,24 @@ await F1-C01/G02/S01 and district production. Documentation only: not implemente
 compiled or runtime tested, no captures. Missing inputs and PR114 gameplay/legacy
 limitations remain; six baseline/four candidate totals unchanged. No old entry is
 replaced and no district or mandatory objective is added.
+
+## F1-D7 Warrens optional route — authored preparation only
+
+[Optional entry/revisit brief](floor1/warrens-optional-route-brief.md), prepared
+on accepted documentation checkpoint `e3a73c6251f3335d1a5eaf1dfd5df0e1acf7dc5e`.
+`F1-D7-ROUTE` supplies optional original Carl/Donut wording and local guidance
+from Commons: closed Causeway exit before the real D8-side unlock, safe Commons
+return, and changed guidance afterward. It reads the existing proposed symbolic
+`WARRENS_RETURN_OPEN`; dialogue grants no unlock or main milestone. Visit/skip
+remains optional, with no salvage/payment/consumable or dialogue prerequisite for
+retreat/recovery. No new introduction marker, reward, NPC or district is proposed.
+
+Invented connective fiction within the Book1 opening ceiling, not a quotation or
+verified canon claim. Readiness, depleted/incapacitated guidance, interruption and
+state-aware revisits are recorded with concise local future checks; the brief
+links existing Causeway gate/persistence tests instead of duplicating them.
+Salvage, rewards and encounters remain undecided; flags/save fields, geometry,
+native assets and implementation await F1-C01/G02/S01 and district production.
+Documentation only: not implemented, compiled or runtime tested; no captures.
+Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.

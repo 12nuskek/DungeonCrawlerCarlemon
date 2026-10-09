@@ -1,0 +1,15 @@
+{
+  "stage": "first-clear",
+  "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+  "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+  "exit": 53,
+  "errors_bytes": 41,
+  "assertions": 193,
+  "battle_frames": 6952,
+  "attempts": 1,
+  "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+  "output_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+  "route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+  "reconstructed_input": true,
+  "case": "prepared"
+}

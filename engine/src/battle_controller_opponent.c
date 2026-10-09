@@ -1,4 +1,5 @@
 #include "global.h"
+#include "crawler_warden.h"
 #include "battle.h"
 #include "battle_ai_script_commands.h"
 #include "battle_anim.h"
@@ -1583,13 +1584,22 @@ static void OpponentHandleChooseMove(void)
                     || gTrainerBattleOpponent_A == TRAINER_DCC_BOSS_PREPARED)
                     && gBattleMons[gActiveBattler].species == SPECIES_LOUDRED)
                     pattern = turn % 2;
+                else if (DccWardenHelper(gTrainerBattleOpponent_A, gBattleTypeFlags,
+                                         gBattleMons[gActiveBattler].species, GetBattlerSide(gActiveBattler)))
+                    pattern = 0;
                 if (pattern < MAX_MON_MOVES
                     && !(CheckMoveLimitations(gActiveBattler, 0, MOVE_LIMITATIONS_ALL) & gBitTable[pattern]))
                 {
                     chosenMoveId = pattern;
-                    gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                    if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
+                    if (DccWardenHelper(gTrainerBattleOpponent_A, gBattleTypeFlags,
+                                         gBattleMons[gActiveBattler].species, GetBattlerSide(gActiveBattler)))
                         gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                    else
+                    {
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+                        if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
+                            gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                    }
                 }
             }
 

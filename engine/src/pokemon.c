@@ -1,5 +1,6 @@
 #include "global.h"
 #include "crawler.h"
+#include "crawler_warden.h"
 #include "malloc.h"
 #include "apprentice.h"
 #include "battle.h"
@@ -3125,6 +3126,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = gBattleMoves[move].power;
     else
         gBattleMovePower = powerOverride;
+
+    if (DccWardenSlam(gTrainerBattleOpponent_A, gBattleTypeFlags, attacker->species,
+                      GetBattlerSide(battlerIdAtk), move))
+        gBattleMovePower = 45;
 
     if (!typeOverride)
         type = gBattleMoves[move].type;

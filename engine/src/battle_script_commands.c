@@ -1,5 +1,6 @@
 #include "global.h"
 #include "crawler.h"
+#include "crawler_warden.h"
 #include "battle.h"
 #include "battle_message.h"
 #include "battle_anim.h"
@@ -1255,6 +1256,15 @@ static void Cmd_critcalc(void)
 {
     u8 holdEffect;
     u16 item, critChance;
+
+    if (DccWardenSlam(gTrainerBattleOpponent_A, gBattleTypeFlags,
+                      gBattleMons[gBattlerAttacker].species, GetBattlerSide(gBattlerAttacker), gCurrentMove))
+    {
+        // Only the authored Warden's SLAM has dependable support mitigation.
+        gCritMultiplier = 1;
+        gBattlescriptCurrInstr++;
+        return;
+    }
 
     item = gBattleMons[gBattlerAttacker].item;
 

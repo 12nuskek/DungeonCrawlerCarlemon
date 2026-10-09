@@ -1,0 +1,20 @@
+{
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/98",
+  "draft_PR": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/99",
+  "base_branch": "task/floor1-g01e-warden-threat-audit",
+  "base_sha": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+  "head_branch": "task/floor1-g01e-warden-fairness",
+  "evidence_commit": "91cc9f82df62ec7bdde469341edf5c661413f3e7",
+  "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "frozen_host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+  "draft": true,
+  "merged": false,
+  "PR_triggered_workflow_lookup_at_evidence_commit": "no runs returned; first page only; no CI pass claim",
+  "global_STOP": "prepared exact-duo comparison after actual staircase NO; preserve failure and await parent review",
+  "implemented": true,
+  "freshly_compiled": true,
+  "unprepared_first_clear_Save_cold_pairs_verified": 2,
+  "prepared_combat_won": true,
+  "prepared_Save_cold_verified": false,
+  "original_legacy_input_gate_restored": false
+}

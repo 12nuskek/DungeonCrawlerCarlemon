@@ -1,0 +1,15 @@
+{
+  "status": "succeeded",
+  "retained_privately_in": "ChatGPT Library",
+  "file_name": "DungeonCrawlerCarlemon-warden-fairness-20261008.zip",
+  "SHA256": "ce1fed73ab423431f79637da763283d6ee574641bcc2af72c81116b1f29e0878",
+  "bytes": 5674644,
+  "files": 738,
+  "includes": "Complete new safe build/runtime logs, exact observers, frozen routes/claims, all actual native captures, STOP and necessary normal saves/input copies",
+  "excludes": "ROMs, ELF/executables, emulator savestates, keys, original missing legacy inputs and old denied raw datasets",
+  "complete_unprepared_first_clear_cold_pairs": 2,
+  "prepared_combat_won": true,
+  "prepared_route_stopped": true,
+  "prepared_save_cold_verified": false,
+  "original_legacy_acceptance_restored": false
+}

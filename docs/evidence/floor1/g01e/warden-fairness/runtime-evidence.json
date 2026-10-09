@@ -1,0 +1,719 @@
+{
+  "offensive": {
+    "identity": {
+      "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+      "base": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+      "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+      "seed_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "host_sha256": "b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71",
+      "first_route_sha256": "2155f00adad3f6893f16aaa3c34dd04481d6bb631b8dcfe7f4ba2cdcf6925aaa",
+      "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+      "case": "offensive",
+      "method": "Single candidate Warden first-clear from reviewed new ordinary save; actual normal controls, read-only observer, whole-battle30000 bound"
+    },
+    "sessions": [
+      {
+        "stage": "first-clear",
+        "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "exit": 0,
+        "errors_bytes": 0,
+        "assertions": 204,
+        "battle_frames": 8669,
+        "attempts": 1,
+        "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+        "output_save_sha256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+        "route_sha256": "2155f00adad3f6893f16aaa3c34dd04481d6bb631b8dcfe7f4ba2cdcf6925aaa",
+        "reconstructed_input": true
+      },
+      {
+        "stage": "cold",
+        "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "exit": 0,
+        "errors_bytes": 0,
+        "assertions": 132,
+        "battle_frames": 0,
+        "attempts": 0,
+        "input_save_sha256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+        "output_save_sha256": "6ab1357be75bcf4f41fe8064e8df590876348e28fe78e557f28ff90648246386",
+        "route_sha256": "db6820f73e5880ce4ee27feb43bf0f44f8afc3fc7a41aed3c786639c3b507ff7",
+        "reconstructed_input": true
+      }
+    ],
+    "turn_records": [
+      "CANDIDATE turn=0 CarlDEF=6 WardenATK=6 helperATK=6 helperPP=35 helperHP=30 duoPP=8,40,2,40 power=0",
+      "CANDIDATE turn=1 CarlDEF=6 WardenATK=7 helperATK=6 helperPP=34 helperHP=24 duoPP=7,40,1,40 power=35",
+      "CANDIDATE turn=2 CarlDEF=6 WardenATK=7 helperATK=6 helperPP=34 helperHP=12 duoPP=6,40,0,40 power=40",
+      "CANDIDATE turn=3 CarlDEF=6 WardenATK=7 helperATK=5 helperPP=34 helperHP=12 duoPP=5,40,0,39 power=40",
+      "CANDIDATE turn=4 CarlDEF=6 WardenATK=6 helperATK=4 helperPP=34 helperHP=12 duoPP=4,40,0,38 power=40"
+    ],
+    "hp_transitions": [
+      {
+        "frame": 6595,
+        "battler": 1,
+        "from": 42,
+        "to": 38,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 4,
+        "turn": 0
+      },
+      {
+        "frame": 6668,
+        "battler": 3,
+        "from": 30,
+        "to": 24,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      },
+      {
+        "frame": 7320,
+        "battler": 1,
+        "from": 38,
+        "to": 29,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 0
+      },
+      {
+        "frame": 7527,
+        "battler": 2,
+        "from": 30,
+        "to": 24,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      },
+      {
+        "frame": 7808,
+        "battler": 1,
+        "from": 29,
+        "to": 24,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 1
+      },
+      {
+        "frame": 7891,
+        "battler": 3,
+        "from": 24,
+        "to": 12,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 2,
+        "pendingDamage": 12,
+        "turn": 1
+      },
+      {
+        "frame": 8210,
+        "battler": 0,
+        "from": 38,
+        "to": 25,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 13,
+        "turn": 1
+      },
+      {
+        "frame": 8392,
+        "battler": 1,
+        "from": 24,
+        "to": 15,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 1
+      },
+      {
+        "frame": 9769,
+        "battler": 1,
+        "from": 15,
+        "to": 5,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 10,
+        "turn": 2
+      },
+      {
+        "frame": 10666,
+        "battler": 0,
+        "from": 25,
+        "to": 15,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 10,
+        "turn": 3
+      },
+      {
+        "frame": 10843,
+        "battler": 1,
+        "from": 5,
+        "to": 0,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 3
+      },
+      {
+        "frame": 11945,
+        "battler": 3,
+        "from": 12,
+        "to": 0,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 14,
+        "turn": 4
+      },
+      {
+        "frame": 12285,
+        "battler": 0,
+        "from": 15,
+        "to": 18,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 1,
+        "turn": 4
+      }
+    ],
+    "actual_damage_contributions": {
+      "Carl": 45,
+      "Donut": 27
+    },
+    "SLAM_damage": [
+      13,
+      10
+    ],
+    "helper_hits": [
+      {
+        "frame": 7527,
+        "battler": 2,
+        "from": 30,
+        "to": 24,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      }
+    ],
+    "observed_vitals": [
+      "18 24 0 0 3 40 0 37",
+      "18 24 0 0 3 40 0 37"
+    ],
+    "first_clear_complete": true,
+    "cold_complete": true,
+    "battle_outcome": 1,
+    "prepared_persistence_verified": null
+  },
+  "fortify": {
+    "identity": {
+      "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+      "base": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+      "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+      "seed_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "host_sha256": "b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71",
+      "first_route_sha256": "38271446a5fdd133f4eebf973f5189dcf38175d0a660cde1319f3f313bef82ee",
+      "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+      "case": "fortify",
+      "method": "Single candidate Warden first-clear from reviewed new ordinary save; actual normal controls, read-only observer, whole-battle30000 bound"
+    },
+    "sessions": [
+      {
+        "stage": "first-clear",
+        "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "exit": 0,
+        "errors_bytes": 0,
+        "assertions": 204,
+        "battle_frames": 13733,
+        "attempts": 1,
+        "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+        "output_save_sha256": "7092ce7704a94158046195581e6b9e72dfb640005c46dea20efc83ff3638badf",
+        "route_sha256": "38271446a5fdd133f4eebf973f5189dcf38175d0a660cde1319f3f313bef82ee",
+        "reconstructed_input": true
+      },
+      {
+        "stage": "cold",
+        "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "exit": 0,
+        "errors_bytes": 0,
+        "assertions": 132,
+        "battle_frames": 0,
+        "attempts": 0,
+        "input_save_sha256": "7092ce7704a94158046195581e6b9e72dfb640005c46dea20efc83ff3638badf",
+        "output_save_sha256": "7092ce7704a94158046195581e6b9e72dfb640005c46dea20efc83ff3638badf",
+        "route_sha256": "31362bcefe3bf757e38298a9952c566eb0572d96873a6a0a15e9f2ca13cc9ebe",
+        "reconstructed_input": true
+      }
+    ],
+    "turn_records": [
+      "CANDIDATE turn=0 CarlDEF=6 WardenATK=6 helperATK=6 helperPP=35 helperHP=30 duoPP=8,40,2,40 power=0",
+      "CANDIDATE turn=1 CarlDEF=7 WardenATK=6 helperATK=5 helperPP=34 helperHP=30 duoPP=8,39,2,39 power=35",
+      "CANDIDATE turn=2 CarlDEF=8 WardenATK=5 helperATK=4 helperPP=34 helperHP=30 duoPP=8,38,2,38 power=45",
+      "CANDIDATE turn=3 CarlDEF=9 WardenATK=5 helperATK=3 helperPP=34 helperHP=30 duoPP=8,37,2,37 power=35",
+      "CANDIDATE turn=4 CarlDEF=9 WardenATK=5 helperATK=3 helperPP=34 helperHP=24 duoPP=7,37,1,37 power=40",
+      "CANDIDATE turn=5 CarlDEF=9 WardenATK=6 helperATK=3 helperPP=33 helperHP=18 duoPP=6,37,0,37 power=35",
+      "CANDIDATE turn=6 CarlDEF=9 WardenATK=5 helperATK=2 helperPP=33 helperHP=18 duoPP=5,37,0,36 power=40",
+      "CANDIDATE turn=7 CarlDEF=9 WardenATK=6 helperATK=1 helperPP=33 helperHP=18 duoPP=4,37,0,35 power=40",
+      "CANDIDATE turn=8 CarlDEF=9 WardenATK=6 helperATK=0 helperPP=33 helperHP=4 duoPP=3,37,0,34 power=40"
+    ],
+    "hp_transitions": [
+      {
+        "frame": 8101,
+        "battler": 2,
+        "from": 30,
+        "to": 25,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 0
+      },
+      {
+        "frame": 8980,
+        "battler": 0,
+        "from": 38,
+        "to": 33,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 1
+      },
+      {
+        "frame": 11252,
+        "battler": 1,
+        "from": 42,
+        "to": 37,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 3
+      },
+      {
+        "frame": 11325,
+        "battler": 3,
+        "from": 30,
+        "to": 24,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 3
+      },
+      {
+        "frame": 11509,
+        "battler": 0,
+        "from": 33,
+        "to": 30,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 3,
+        "turn": 3
+      },
+      {
+        "frame": 11691,
+        "battler": 1,
+        "from": 37,
+        "to": 29,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 8,
+        "turn": 3
+      },
+      {
+        "frame": 11971,
+        "battler": 1,
+        "from": 29,
+        "to": 25,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 4,
+        "turn": 4
+      },
+      {
+        "frame": 12044,
+        "battler": 3,
+        "from": 24,
+        "to": 18,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 4
+      },
+      {
+        "frame": 12696,
+        "battler": 1,
+        "from": 25,
+        "to": 16,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 4
+      },
+      {
+        "frame": 12898,
+        "battler": 2,
+        "from": 25,
+        "to": 22,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 3,
+        "turn": 4
+      },
+      {
+        "frame": 13803,
+        "battler": 0,
+        "from": 30,
+        "to": 26,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 4,
+        "turn": 5
+      },
+      {
+        "frame": 13984,
+        "battler": 1,
+        "from": 16,
+        "to": 7,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 5
+      },
+      {
+        "frame": 15345,
+        "battler": 1,
+        "from": 7,
+        "to": 0,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 9,
+        "turn": 6
+      },
+      {
+        "frame": 16448,
+        "battler": 3,
+        "from": 18,
+        "to": 4,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 14,
+        "turn": 7
+      },
+      {
+        "frame": 17016,
+        "battler": 3,
+        "from": 4,
+        "to": 0,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 12,
+        "turn": 8
+      },
+      {
+        "frame": 17349,
+        "battler": 0,
+        "from": 26,
+        "to": 29,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 1,
+        "turn": 8
+      }
+    ],
+    "actual_damage_contributions": {
+      "Carl": 51,
+      "Donut": 21
+    },
+    "SLAM_damage": [
+      5,
+      3,
+      4
+    ],
+    "helper_hits": [
+      {
+        "frame": 8101,
+        "battler": 2,
+        "from": 30,
+        "to": 25,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 0
+      },
+      {
+        "frame": 12898,
+        "battler": 2,
+        "from": 25,
+        "to": 22,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 3,
+        "turn": 4
+      }
+    ],
+    "observed_vitals": [
+      "29 22 0 0 2 37 0 33",
+      "29 22 0 0 2 37 0 33"
+    ],
+    "first_clear_complete": true,
+    "cold_complete": true,
+    "battle_outcome": 1,
+    "prepared_persistence_verified": null
+  },
+  "prepared": {
+    "identity": {
+      "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+      "base": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+      "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+      "seed_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "host_sha256": "b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71",
+      "first_route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+      "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+      "case": "prepared",
+      "method": "Single candidate Warden first-clear from reviewed new ordinary save; actual normal controls, read-only observer, whole-battle30000 bound"
+    },
+    "sessions": [
+      {
+        "stage": "first-clear",
+        "runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "host_runner": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "exit": 53,
+        "errors_bytes": 41,
+        "assertions": 193,
+        "battle_frames": 6952,
+        "attempts": 1,
+        "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+        "output_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+        "route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+        "reconstructed_input": true
+      }
+    ],
+    "turn_records": [
+      "CANDIDATE turn=0 CarlDEF=6 WardenATK=6 helperATK=6 helperPP=35 helperHP=28 duoPP=8,40,2,40 power=0",
+      "CANDIDATE turn=1 CarlDEF=6 WardenATK=7 helperATK=6 helperPP=34 helperHP=22 duoPP=7,40,1,40 power=35",
+      "CANDIDATE turn=2 CarlDEF=6 WardenATK=7 helperATK=6 helperPP=34 helperHP=9 duoPP=6,40,0,40 power=40",
+      "CANDIDATE turn=3 CarlDEF=6 WardenATK=6 helperATK=5 helperPP=34 helperHP=9 duoPP=5,40,0,39 power=40"
+    ],
+    "hp_transitions": [
+      {
+        "frame": 13153,
+        "battler": 1,
+        "from": 36,
+        "to": 31,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 5,
+        "turn": 0
+      },
+      {
+        "frame": 13227,
+        "battler": 3,
+        "from": 28,
+        "to": 22,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      },
+      {
+        "frame": 13411,
+        "battler": 1,
+        "from": 31,
+        "to": 21,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 10,
+        "turn": 0
+      },
+      {
+        "frame": 14083,
+        "battler": 2,
+        "from": 30,
+        "to": 24,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      },
+      {
+        "frame": 14364,
+        "battler": 1,
+        "from": 21,
+        "to": 17,
+        "attacker": 2,
+        "target": 1,
+        "move": 357,
+        "criticalMultiplier": 1,
+        "pendingDamage": 4,
+        "turn": 1
+      },
+      {
+        "frame": 14450,
+        "battler": 3,
+        "from": 22,
+        "to": 9,
+        "attacker": 2,
+        "target": 3,
+        "move": 357,
+        "criticalMultiplier": 2,
+        "pendingDamage": 13,
+        "turn": 1
+      },
+      {
+        "frame": 14769,
+        "battler": 0,
+        "from": 38,
+        "to": 26,
+        "attacker": 1,
+        "target": 0,
+        "move": 360,
+        "criticalMultiplier": 1,
+        "pendingDamage": 12,
+        "turn": 1
+      },
+      {
+        "frame": 14956,
+        "battler": 1,
+        "from": 17,
+        "to": 6,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 11,
+        "turn": 1
+      },
+      {
+        "frame": 15853,
+        "battler": 1,
+        "from": 6,
+        "to": 0,
+        "attacker": 0,
+        "target": 1,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 11,
+        "turn": 2
+      },
+      {
+        "frame": 16961,
+        "battler": 3,
+        "from": 9,
+        "to": 0,
+        "attacker": 0,
+        "target": 3,
+        "move": 355,
+        "criticalMultiplier": 1,
+        "pendingDamage": 14,
+        "turn": 3
+      }
+    ],
+    "actual_damage_contributions": {
+      "Carl": 36,
+      "Donut": 28
+    },
+    "SLAM_damage": [
+      12
+    ],
+    "helper_hits": [
+      {
+        "frame": 14083,
+        "battler": 2,
+        "from": 30,
+        "to": 24,
+        "attacker": 3,
+        "target": 2,
+        "move": 33,
+        "criticalMultiplier": 1,
+        "pendingDamage": 6,
+        "turn": 0
+      }
+    ],
+    "observed_vitals": [
+      "26 24 0 0 4 40 0 38"
+    ],
+    "first_clear_complete": false,
+    "cold_complete": false,
+    "battle_outcome": 1,
+    "prepared_persistence_verified": false
+  }
+}

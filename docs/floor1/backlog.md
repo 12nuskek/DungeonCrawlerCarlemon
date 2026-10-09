@@ -1,3 +1,11 @@
+Current focused increment (2026-10-08 Brisbane): F1-G01e-SF pickup feedback is
+implemented, freshly compiled and ordinary-runtime verified; draft PR77 / issue76,
+not merged. See [evidence](../evidence/floor1/g01e/feedback/README.md). Baseline and
+candidate each2 sessions/72 assertions; immediate/re-entry/cold panel pixels agree,
+movement and once-only reward unchanged. Broader PR75 gates remain pending.
+Next dependency-ready task: F1-G01e-NC live navigation/Journal copy correction,
+preserving archived scripts and state/reward ownership. No combat attempt reset.
+
 # Dependency-ready full-floor backlog
 
 Source/authority: [execution contract](README.md). One implementation writer.

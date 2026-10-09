@@ -399,3 +399,13 @@ compression recorded; preserved quest/reward IDs, optionality and free recovery.
 No new assets: live geometry still uses existing authored/placeholder tiles/props/
 NPC graphics from the baseline. Native junction/workshop/safe-door/motion rollout
 is pendingV01. Donut correction master remains pending approval; no source retry.
+
+## F1-G01e-SF floor-panel feedback (2026-10-08 Brisbane)
+
+The relocated optional medicine panel uses the existing authored native
+`floor_repair.png` before collection and `floor_scuff.png` afterward, exported by
+`scripts/content/environment_art.py`. Indexed tile pixels match the accepted
+architecture masters exactly. This is an original gameplay adaptation, not a book
+location claim. No new art allocation, copied dialogue, reward or save state.
+See [scoped evidence](evidence/floor1/g01e/feedback/README.md) for ordinary pickup,
+repeat, traversal, re-entry, Save and cold verification.

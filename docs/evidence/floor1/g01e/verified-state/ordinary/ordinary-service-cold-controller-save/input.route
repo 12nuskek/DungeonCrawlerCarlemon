@@ -1,0 +1,70 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+step 100 16 -
+step 40 0 -
+expect 35 2 10 4 5
+step 20 128 -
+step 40 0 -
+expect 35 2 10 5 5
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 lev.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 2 10 5 5
+step 36 64 -
+step 40 0 -
+expect 35 2 10 3 5
+step 100 32 -
+step 40 0 -
+step 300 0 -
+expect 35 0 42 40 5
+step 20 128 -
+step 40 0 -
+expect 35 0 42 41 5
+step 20 64 -
+step 40 0 -
+step 300 0 -
+expect 35 2 4 3 5
+step 100 16 -
+step 40 0 -
+expect 35 2 10 3 5
+step 36 128 -
+step 40 0 -
+expect 35 2 10 5 5
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 lev-after-transition.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 2 10 5 5
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+snapshot
+expect 35 2 10 5 5
+quit

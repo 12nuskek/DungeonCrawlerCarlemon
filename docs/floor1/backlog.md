@@ -10,7 +10,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-P01 | Delivered baseline | Preserve identities; complete plan; old anchor/flag/engine register; no engine edits | Merged PR54 |
 | F1-T01 | P01 | Runtime reproduce/fix tag Journal and spent sign; completed priority, full-inventory pickup and hand-in; immediate/re-entry/cold | Merged PR56;96/1609 runtime assertions |
 | F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Merged PR60 cee81f8;100/1621 runtime assertions |
-| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; live IDs/state/migration/loop/finalT pending |
+| F1-G01 | T01,A01 | D1 64×48 graybox + compact interiors; relocation/version migration; both patrol orders, widths, loop, camera, measured T and recovery | G01a merged PR62 535b080,13/7066; travel rejected. G01b issue63/PR69 third coordinated diagnostic15/8916 passed; Guard14/224,Howler34/544,preboss44/703 within frozen ceilings. G01c audit PR71 merged0cb6674,18/78; G01d issue72 complete five-map diagnostics23/10541 and94pixels verified; G01e draftPR75 implemented/compiled:69state sessions543assertions;3partial live sessions3162. Three Howler-first strategy routes failed (lastHowler won, laterGuard lost); further blind attempts/dependentV01 stopped. Live loop/remaining gameplay/finalT pending; see migration evidence and navigation copy audit |
 | F1-V01 | G01, readable art | Native junction/workshop/safe-door proof; Carl gait, staged Donut, Carl/Donut/Warden motion; budgets and clips | Pending |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
@@ -30,7 +30,7 @@ nine-district core. No filler to satisfy area/time. Human playtime/comprehension
 requires actual human observations; automation cannot impersonate that evidence.
 If unavailable, report that final evidence item pending while completing technical work.
 
-Current allowed files: docs, AGENTS and read-only baseline audit script. P01 excludes
+Historical P01 allowed files: docs, AGENTS and read-only baseline audit script. P01 excludes
 engine/art/map/save edits. F1-T01 limits engine edits to the two map scripts and adds
 focused runtime routes; UI paging redesign is separate. Every subsequent PR states
 its own file/system boundary. Preserve failed traces; max3 different approaches per

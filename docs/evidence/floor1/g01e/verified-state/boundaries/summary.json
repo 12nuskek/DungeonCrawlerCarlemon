@@ -1,0 +1,284 @@
+[
+  {
+    "route": "future-legacy-2",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "4c66c58a75beda72bda7029a69728744b8186bd316290635ac6d576286e94350",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "future-legacy-65535",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "841e33683c371369cdaa517235e0d051c8b048ec151fb898b079077dda3b08a4",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unsupported-live-0",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "70810af81ed1cca8a9069e6fd861406d291a4fdd46b2184ae01d7d998634b4b2",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unsupported-live-2",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "7bb1533aac154730de0305818b7cf7da1e445090ee4a3625aada1c66f7a7519b",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unknown-36-0",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "68496f13e4620f2a8be458e594fe1e0a0aede25534584a88c98bbd22de84800f",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unknown-34-6",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "dac6e87529d5ee52211a4b9d8dc17bfd6340a310cca2b5a1cbc048a5672c7b70",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unknown-negative1-0",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "4d0552d3f1fa93a925705c6feae98d869ae524b9d7e400aa96c0fe5eee4ba9af",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "unknown-35-5",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "6ef6db3f24e35444a787c4da9beabcf875d9731341cfab5df67c46b6dd0e9c12",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "stale-layout-0",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "d219abe082bd082077a9cea0a7960c3ac07bab5a6f9ab08006f90d61cabd3769",
+    "expected": [
+      35,
+      1,
+      4,
+      5,
+      449
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "stale-layout-65535",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "200ad324c9821ecac3d4fd01c398d1915a2384e43193b09a4d72fbcd39977c63",
+    "expected": [
+      35,
+      1,
+      4,
+      5,
+      449
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "all-owned-return-warps",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "4889e41c478697d7af81122b4d4c1f8c24e97ef2aaf08caf62bf7d3def3f806d",
+    "expected": [
+      35,
+      1,
+      4,
+      5,
+      449
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "dummy-and-stock-returns",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "45e6babf2c09db568ab08dc18529b814d7d769e334d451dc54d4a6114e8e8f6f",
+    "expected": [
+      35,
+      1,
+      4,
+      5,
+      449
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "continue-owned-howler",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "865a2f099c6a785de27782ea7ba5e1e5e250e0dd86233e263d086b4fcf0ea71b",
+    "expected": [
+      35,
+      0,
+      51,
+      27,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "continue-owned-warden",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "7984f0c580f7143895e13cdd2ae970e319ec979089e1827f1dbf471ba8281bbc",
+    "expected": [
+      35,
+      3,
+      8,
+      7,
+      451
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "continue-invalid",
+    "assertions": 4,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/guide-before-trial.sav",
+    "source_hash": "e01f8207ce4199d32a5b86fd4e9608560db55aaa4c34b5fb3a41148be1e47d8a",
+    "input_hash": "f769fa0e5d0000219fad3720cc2079f11bad7ac913710349cf554683d1425f9a",
+    "expected": null,
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "corridor-wall",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_hash": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "input_hash": "6694881c102b2775b5c0dcfbfdab38e7d5418eccfaac5ebd9abb4a0a820f9c53",
+    "expected": [
+      35,
+      0,
+      37,
+      31,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "corridor-actor",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_hash": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "input_hash": "8bed46bc2821048f9819d3f670a67522107f468b8b37443444fdedda68aa1f8d",
+    "expected": [
+      35,
+      0,
+      37,
+      31,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "corridor-legal-howler",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_hash": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "input_hash": "f1bb77d9d7187221fb0b550612b9e51a0071a101dc00409bd31b7eac30cf5435",
+    "expected": [
+      35,
+      0,
+      51,
+      27,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "corridor-negative",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_hash": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "input_hash": "0cb356cfac602fa0ee4dc38a2a54ab6734b8b5b3cf5db317d04e9590c4d89c1b",
+    "expected": [
+      35,
+      0,
+      37,
+      31,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "corridor-oversized",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/a01/run-I7PJq0/howler-pending.sav",
+    "source_hash": "e69ac7ce3cdec789defd0c0bfa38ea279c0ea6ac60902e5d2ab15fe9172da62f",
+    "input_hash": "33df6c5b9afa1f2fb82e800b4b0a34926cc8a3ae973898a5f577bcc75f638425",
+    "expected": [
+      35,
+      0,
+      37,
+      31,
+      448
+    ],
+    "original_and_copy_unchanged": true
+  },
+  {
+    "route": "live-stale-layout",
+    "assertions": 3,
+    "synthetic_input": true,
+    "source": "artifacts/floor1/g01e/ordinary-24wjwxed/i01-motion-second.sav",
+    "source_hash": "ce0fe780ad3f6265532187d7935461c4cbb3d81c88d65028a4e25b688e57c169",
+    "input_hash": "67db779a742da23556408089db8b262ec9d8dadfc1edeae50b4f319035061e0d",
+    "expected": [
+      35,
+      2,
+      10,
+      5,
+      450
+    ],
+    "original_and_copy_unchanged": true
+  }
+]

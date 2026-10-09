@@ -4470,6 +4470,56 @@
       "secondary_tileset": "gTileset_Dcc",
       "border_filepath": "data/layouts/DCC_Exit/border.bin",
       "blockdata_filepath": "data/layouts/DCC_Exit/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_F1D1FIELD",
+      "name": "DCC_F1D1Field_Layout",
+      "width": 64,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dcc",
+      "border_filepath": "data/layouts/DCC_F1D1Field/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_F1D1Field/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_F1D1QUIET",
+      "name": "DCC_F1D1Quiet_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dcc",
+      "border_filepath": "data/layouts/DCC_F1D1Quiet/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_F1D1Quiet/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_F1D1WORKSHOP",
+      "name": "DCC_F1D1Workshop_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dcc",
+      "border_filepath": "data/layouts/DCC_F1D1Workshop/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_F1D1Workshop/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_F1D1WARDEN",
+      "name": "DCC_F1D1Warden_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dcc",
+      "border_filepath": "data/layouts/DCC_F1D1Warden/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_F1D1Warden/map.bin"
+    },
+    {
+      "id": "LAYOUT_DCC_F1D1CHECKPOINT",
+      "name": "DCC_F1D1Checkpoint_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dcc",
+      "border_filepath": "data/layouts/DCC_F1D1Checkpoint/border.bin",
+      "blockdata_filepath": "data/layouts/DCC_F1D1Checkpoint/map.bin"
     }
   ]
 }

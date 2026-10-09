@@ -155,7 +155,7 @@ int main(int argc, char **argv)
                 || !number(limitText,36000,&limit) || !limit || total>UINT_MAX-limit
                 || !controls || !actionCursor || !moveCursor || !targetCursor
                 || !inputAction || !inputMove || !inputTarget || !results
-                || (strcmp(policy,"defensive") && strcmp(policy,"fortify") && strcmp(policy,"offensive") && strcmp(policy,"loss"))
+                || (strcmp(policy,"defensive") && strcmp(policy,"fortify") && strcmp(policy,"weaken-first") && strcmp(policy,"offensive") && strcmp(policy,"loss"))
                 || !(core->busRead8(core,mainstate+0x439)&2)) {result=31;break;}
             unsigned elapsed=0, lastTurn=UINT_MAX, capturedIncap=0;
             lastPilotIncap=0;
@@ -185,7 +185,8 @@ int main(int argc, char **argv)
                             unsigned desired=0;
                             if (!strcmp(policy,"loss")) desired=(b==2 || !core->busRead16(core,party+100+0x56));
                             else if ((!strcmp(policy,"defensive") && turn<(b==0?2:3))
-                                     || (!strcmp(policy,"fortify") && turn<3)) desired=1;
+                                     || (!strcmp(policy,"fortify") && turn<3)
+                                     || (!strcmp(policy,"weaken-first") && b==2 && turn==0)) desired=1;
                             else if (b==2 && !core->busRead8(core,mons+b*0x58+0x24)) desired=1;
                             unsigned cursor=core->busRead8(core,moveCursor+b);
                             // Fixed duo has exactly two actions; exhausted pairs use engine STRUGGLE.

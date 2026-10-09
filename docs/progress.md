@@ -1,3 +1,96 @@
+Current2026-10-07: **F1-G01e partial runtime verified; complete route blocked.**
+Issue74 / **draftPR75**, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
+Compiled99243073ebead4ecd4fa9e4f4362d9e0d70c86df, ROM SHA256
+6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb;
+runner1e556a257cd50744ca59f9e7cc63d1f0e7c3703c, identical engine diff.
+48ordinary controller/Save/secondcold sessions471assertions;21controlled boundaries
+72assertions;69emptyerrors, all16originals unchanged. Readable unsupported warning,
+file-unchanged acknowledgement and menu return now pass actual capture review.
+Exact-C8694+5+15 host sanitizer vectors are supplementary, not runtime/stock-save
+proof;25generatedfiles reproduce twice, all6legacy source trees unchanged.
+Three accepted partial live sessions3162assertions: fresh note/supply/trial/Save;
+Guard-first actual2wins/recovery/travel/Save/cold full3072words. Guard14/224 and
+Howler34/544 walking ceilings unchanged. No complete live-matrix summary or merge.
+[Sources, commands, all traces/captures, limitations](evidence/floor1/g01e/README.md).
+
+**Stop boundary: three materially different full Howler-first strategies did not
+complete.** Offence lostHowler (2enemyHP left); three-turn BRACE/WEAKEN lostHowler
+(19left); singleWEAKEN wonHowler, then laterGuard offence lost (7left). Exact third
+failure is flag2136, not2137. Local losses recover for free; no engine impossibility,
+critical-hit-message proof, stat/health/PP change or universal balance claim.
+Rawgameplay-8gfum35y/o33yiddl/xtgzgi9h and all failures/inputs/saves preserved.
+Do not launch a fourth blind strategy; retain PR75 draft and stop dependentV01.
+Pending live loop/persistence/preboss/quest/trap/craft/repeats/boss/retry/stairs/all5
+cold-word routes were not reached by the stopped driver. FinalT/fullG01 pending.
+Fresh Save extraA reopenedNPC after a successful write; overwrite warning needs
+its page advanced. Both host-input corrections verified; no saved-game defect.
+
+Independent work: original [navigation copy audit](floor1/g01/navigation-copy-audit.md)
+prepared. Old shared directions/Journal completion text must be corrected before
+adoption, with legacy source preserved and real NPC/Journal window checks.
+Next action: read currentPR75/head + this checkpoint, diagnose preserved encounter
+traces/resource/AI/timing under acceptedC01 scope before any further strategy or
+balance change; no blind attempt-count reset. Navigation/dialogue preparation is
+independent. No current build/emulator process or overlapping writer. SameCloud
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent sole continuation/quota owner, last
+reported09:12UTC11%used/89%remaining (soft sampled, not current/hard cap).
+No new workflow/scheduler/task/public release; Donut-v2 source stillPENDING approval,
+no retry/workaround. Full nine-district Floor1 remains incomplete.
+
+## Earlier checkpoint (superseded by results above)
+
+Current2026-10-07: **F1-G01e runtime state passes; readable rejection pending.**
+Issue74, task/floor1-g01e-live-migration, baseb694da17928b93ea579f55d905017aa9f7619422.
+Production compiledf7cb7f421b033dca84fb91de633452401d377e4f; hashb4e15f83…d876a.
+Runner9acf8003627bb636ec026a30b2dfacae45c6eb68:48 ordinary controller/Save/second
+cold sessions471assertions;21 controlled-state sessions54assertions;69emptyerrors.
+All16 old ordinary originals unchanged, all6maps; mandatoryI01/corner passed.
+Party/logicalinventory/outcomes/warps/objects/templates/camera/cache preserved/rebuilt.
+[Complete evidence, exact sources/commands and retained failures](evidence/floor1/g01e/README.md).
+Capture review found rejected-save message blank despite menu callback passes.
+Fix99243073ebead4ecd4fa9e4f4362d9e0d70c86df moves error after GPU window setup.
+Fresh992build live-oy70wecu running; no current emulator session or overlapping
+writer. Compile result pending. Runtime acceptance/PR/merge/finalT still pending.
+Next: complete current fresh build; rerun ordinary+readable reject/ack/menu matrix,
+exact-C alloldcells and stock boundary, live loop/battles/travel/content acceptance.
+All prior failing builds/source/saves preserved. Collision migration fix1 passes;
+UI issue firstfix pending; no new material geometry attempt. OneCloud task
+01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation/quota. No scheduler,
+duplicate task, later floor or public playable release. Donut source stillPENDING
+approval; no source retry. Full nine-district Floor1 remains incomplete.
+
+## Earlier implementation checkpoint
+
+Current2026-10-07: **F1-G01e implemented; migration acceptance pending.**
+Issue74, branch task/floor1-g01e-live-migration, baseb694da1.
+Clean compiled2e810f676f9c60031382148055748e419340a729; ROM43178a36…46a11.
+Raw build artifacts/floor1/g01e/live-2danu7iw. Ordinary runner52cc49b561c9bf9843de33a845b931fc865e7f3e
+(raw ordinary-lt5iqs3s);42 passing sessions across14
+ordinary originals include all mandatoryI01/corner, interactions/transitions/Save/
+second cold. Full matrix not accepted: two remaining seed routes pending.
+Host fixes preserved: inventory encryption-aware comparison; arrival-ladder facing
+was wrongly forced south, now retains incoming direction as actual engine does.
+Controlled legacy Corridor wall14,0 found bounds-only side-selection error;
+material migration fix1 checks real old collision/object occupancy before Howler
+selection. Original failing probe preserved at boundary-attempt1-corridor-wall.
+New committed clean build and full ordinary/boundary/travel/gameplay replay next;
+no PR/merge/live acceptance/finalT. Same soleCloud01a10f4b-596b-700b-b8ba-241e3ca2c000.
+Parent owns continuation/quota; no scheduler, duplicate writer or public release.
+
+## Earlier implementation checkpoint
+
+Current2026-10-07: **F1-G01e live migration implementation pending.**
+Branch task/floor1-g01e-live-migration, base b694da17928b93ea579f55d905017aa9f7619422
+(PR73 verified diagnostic merged; reviewedbd82beed). Task scope/checks:
+[frozen live migration brief](floor1/g01/live-migration-task.md).
+No production migration compile/runtime yet; five-map diagnostic23/10541 retained.
+Same sole Cloud task01a10f4b-596b-700b-b8ba-241e3ca2c000; parent owns continuation.
+Next: implement migration before header lookup and normal local player/NPC rebuild,
+compile committed snapshot, ordinary saves+boundaries+second cold acceptance.
+Full nine-district Floor1 incomplete; no finalT or public release.
+
+## Earlier verified diagnostic checkpoint
+
 # Durable checkpoint
 
 Current2026-10-07: **F1-G01d diagnostic runtime verified; live migration next.**

@@ -1,0 +1,7 @@
+{
+  "compiled_source": "f7cb7f421b033dca84fb91de633452401d377e4f",
+  "runner_source": "9acf8003627bb636ec026a30b2dfacae45c6eb68",
+  "rom_sha256": "b4e15f83331b2b29710bfe7eed399d676d9b9d59f7a9c8b7d45283f5a31d876a",
+  "build": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01e/live-gyxzglx6",
+  "method": "Copied ordinary originals; actual controller interactions/transitions/manual Save/second cold; read-only observer. No ROM fixtures, RAM writes or save patch in ordinary matrix."
+}

@@ -1,4 +1,6 @@
 #include "global.h"
+#include "crawler.h"
+#include "main_menu.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
 #include "constants/rgb.h"
@@ -38,6 +40,15 @@
 #include "title_screen.h"
 #include "window.h"
 #include "mystery_gift_menu.h"
+
+EWRAM_DATA static bool8 sDccUnsupportedSave = FALSE;
+static const u8 sDccUnsupportedSaveText[] = _("This save uses an unsupported\nlayout. Continue is unavailable.\pYour saved file was not changed.");
+
+void CB2_DccUnsupportedSave(void)
+{
+    sDccUnsupportedSave = TRUE;
+    SetMainCallback2(CB2_InitMainMenu);
+}
 
 /*
  * Main menu state machine
@@ -626,7 +637,6 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 static void Task_MainMenuCheckSaveFile(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
-
     if (!gPaletteFade.active)
     {
         SetGpuReg(REG_OFFSET_WIN0H, 0);
@@ -636,6 +646,19 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_EFFECT_DARKEN | BLDCNT_TGT1_BG0);
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 7);
+
+        // The standard save-error window needs the same GPU window masks as
+        // other main-menu errors. Initial menu masks hide BG0 until this point.
+        if (sDccUnsupportedSave)
+        {
+            sDccUnsupportedSave = FALSE;
+            tMenuType = HAS_SAVED_GAME;
+            tCurrItem = 0;
+            tItemCount = HAS_SAVED_GAME + 2;
+            CreateMainMenuErrorWindow(sDccUnsupportedSaveText);
+            gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
+            return;
+        }
 
         if (IsWirelessAdapterConnected())
             tWirelessAdapterConnected = TRUE;

@@ -1,0 +1,79 @@
+{
+  "compiled_source": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+  "runner_source": "1e556a257cd50744ca59f9e7cc63d1f0e7c3703c",
+  "rom_sha256": "6c447159ae6d3cf62b5c8860d1fd0ff62e0cb93a0a603553c3d2a0ca14bce7cb",
+  "build": "/workspace/DungeonCrawlerCarlemon/artifacts/floor1/g01e/live-oy70wecu",
+  "method": "Copied ordinary originals; actual controller interactions/transitions/manual Save/second cold; read-only observer. No ROM fixtures, RAM writes or save patch in ordinary matrix.",
+  "live_runner": "1e556a257cd50744ca59f9e7cc63d1f0e7c3703c",
+  "live_complete": false,
+  "accepted_live_sessions": [
+    {
+      "route": "fresh-trial",
+      "assertions": 43
+    },
+    {
+      "route": "guard-first",
+      "assertions": 43
+    },
+    {
+      "route": "guard-first-cold-full",
+      "assertions": 3076
+    }
+  ],
+  "failed_patrol_attempts": [
+    {
+      "strategy": "offensive",
+      "raw": "gameplay-8gfum35y",
+      "route": "howler-first",
+      "accepted": false,
+      "policies": [
+        [
+          "offensive",
+          "11853",
+          "2",
+          "5"
+        ]
+      ],
+      "failure": "FAILED actual=0: flag 2137 1",
+      "passing_assertions": 9
+    },
+    {
+      "strategy": "three-turn-fortify",
+      "raw": "gameplay-o33yiddl",
+      "route": "howler-first",
+      "accepted": false,
+      "policies": [
+        [
+          "fortify",
+          "14817",
+          "2",
+          "5"
+        ]
+      ],
+      "failure": "FAILED actual=0: flag 2137 1",
+      "passing_assertions": 9
+    },
+    {
+      "strategy": "single-weaken",
+      "raw": "gameplay-xtgzgi9h",
+      "route": "howler-first",
+      "accepted": false,
+      "policies": [
+        [
+          "weaken-first",
+          "9220",
+          "1",
+          "0"
+        ],
+        [
+          "offensive",
+          "14646",
+          "2",
+          "5"
+        ]
+      ],
+      "failure": "FAILED actual=0: flag 2136 1",
+      "passing_assertions": 29
+    }
+  ]
+}

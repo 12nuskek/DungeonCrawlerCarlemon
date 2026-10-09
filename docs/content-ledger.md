@@ -386,3 +386,16 @@ reward, capture flow or gameplay flag is supplied. The diagram is an analytical
 layout image, not game art. No new finished artwork/animation is claimed.
 Candidate travel failed the recovery comparison and must be reshaped before
 relocating existing beats; [evidence and exact next gate](evidence/floor1/g01/README.md).
+
+
+## F1-G01e relocation copy audit —2026-10-07
+
+[Original navigation pages prepared](floor1/g01/navigation-copy-audit.md), issue74/
+draftPR75. Not implemented/compiled/runtime verified. Shared old NPC and Journal
+text retains obsolete ladder/tag/stairs directions and old full-floor completion
+wording; corrected original candidates follow the five-map relocation contract.
+Book1 opening only; no quotes or later spoilers. Deliberate geography/chronology
+compression recorded; preserved quest/reward IDs, optionality and free recovery.
+No new assets: live geometry still uses existing authored/placeholder tiles/props/
+NPC graphics from the baseline. Native junction/workshop/safe-door/motion rollout
+is pendingV01. Donut correction master remains pending approval; no source retry.

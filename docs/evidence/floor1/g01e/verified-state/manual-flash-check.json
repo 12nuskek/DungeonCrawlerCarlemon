@@ -1,0 +1,38 @@
+{
+  "runner": "1e556a257cd50744ca59f9e7cc63d1f0e7c3703c",
+  "method": "Read the actual completed flash files with committed save-boundary-input.blocks; no save patch/write. Supplement to ordinary Save, not an additional emulator/cold session.",
+  "files": [
+    {
+      "save": "artifacts/floor1/g01e/gameplay-xtgzgi9h/fresh.sav",
+      "sha256": "2abc418b5f13ade8a315990ffc90a6aca5c269d18348613ac8fae435c23d986f",
+      "position": [
+        10,
+        7
+      ],
+      "map": [
+        35,
+        1
+      ],
+      "layout": 449,
+      "version": 1,
+      "trial_flag": 1,
+      "flash_sections_checksum_valid": true
+    },
+    {
+      "save": "artifacts/floor1/g01e/gameplay-xtgzgi9h/guard-first.sav",
+      "sha256": "3b39359f60d22af8c6adabc5c84bbe8defa83f575a4a5e482f1d514c6b3dada3",
+      "position": [
+        51,
+        27
+      ],
+      "map": [
+        35,
+        0
+      ],
+      "layout": 448,
+      "version": 1,
+      "trial_flag": 1,
+      "flash_sections_checksum_valid": true
+    }
+  ]
+}

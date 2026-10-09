@@ -1064,3 +1064,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/DCC_Corridor/scripts.inc"
 	.include "data/maps/DCC_Boss/scripts.inc"
 	.include "data/maps/DCC_Exit/scripts.inc"
+
+	.include "data/maps/DCC_F1D1Field/scripts.inc"
+	.include "data/maps/DCC_F1D1Quiet/scripts.inc"
+	.include "data/maps/DCC_F1D1Workshop/scripts.inc"
+	.include "data/maps/DCC_F1D1Warden/scripts.inc"
+	.include "data/maps/DCC_F1D1Checkpoint/scripts.inc"

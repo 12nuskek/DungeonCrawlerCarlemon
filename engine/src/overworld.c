@@ -1,4 +1,5 @@
 #include "global.h"
+#include "main_menu.h"
 #include "crawler.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
@@ -197,6 +198,7 @@ EWRAM_DATA static struct WarpData sFixedDiveWarp = {0};
 EWRAM_DATA static struct WarpData sFixedHoleWarp = {0};
 EWRAM_DATA static mapsec_u16_t sLastMapSectionId = 0;
 EWRAM_DATA static struct InitialPlayerAvatarState sInitialPlayerAvatarState = {0};
+EWRAM_DATA static u8 sDccMigrationFacing = 0;
 EWRAM_DATA static u16 sAmbientCrySpecies = 0;
 EWRAM_DATA static bool8 sIsAmbientCryWaterMon = FALSE;
 EWRAM_DATA struct LinkPlayerObjectEvent gLinkPlayerObjectEvents[4] = {0};
@@ -1730,6 +1732,41 @@ static void FieldCB_FadeTryShowMapPopup(void)
 void CB2_ContinueSavedGame(void)
 {
     u8 trainerHillMapId;
+    u32 i;
+
+    // Must precede every header/layout lookup and migration write.
+    if (!DccContinueSupported())
+    {
+        SetMainCallback1(NULL);
+        CB2_DccUnsupportedSave();
+        return;
+    }
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DCC_ENTRANCE)
+        && DccIsMap(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        u8 facing = DIR_SOUTH;
+        for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+            if (gObjectEvents[i].active && gObjectEvents[i].isPlayer
+                && gObjectEvents[i].facingDirection >= DIR_SOUTH && gObjectEvents[i].facingDirection <= DIR_EAST)
+                facing = gObjectEvents[i].facingDirection;
+        if (DccMigrateContinue())
+        {
+            ClearContinueGameWarpStatus();
+            ClearDiveAndHoleWarps();
+            ResetInitialPlayerAvatarState();
+            sDccMigrationFacing = facing;
+            SetWarpDestination(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum,
+                gSaveBlock1Ptr->location.warpId, gSaveBlock1Ptr->location.x, gSaveBlock1Ptr->location.y);
+            WarpIntoMap();
+            PlayTimeCounter_Start();
+            InitMatchCallCounters();
+            gFieldCallback = FieldCB_FadeTryShowMapPopup;
+            SetMainCallback2(CB2_LoadMap);
+            return;
+        }
+    }
+    else
+        DccMigrateContinue(); // Version1 layout identity repair; no state reset.
 
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
@@ -2195,6 +2232,12 @@ static void InitObjectEventsLocal(void)
     ResetObjectEvents();
     GetCameraFocusCoords(&x, &y);
     player = GetInitialPlayerAvatarState();
+    if (sDccMigrationFacing)
+    {
+        player->direction = sDccMigrationFacing;
+        player->transitionFlags = PLAYER_AVATAR_FLAG_ON_FOOT;
+        sDccMigrationFacing = 0;
+    }
     InitPlayerAvatar(x, y, player->direction, gSaveBlock2Ptr->playerGender);
     SetPlayerAvatarTransitionFlags(player->transitionFlags);
     ResetInitialPlayerAvatarState();

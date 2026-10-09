@@ -66,6 +66,7 @@ struct DccPresentationTile
 };
 
 #include "data/dcc_presentation.h"
+#include "data/dcc_opening.h"
 
 // Reconstruct presentation from existing persistent outcomes. No new save fields,
 // reward writes, collision changes or inventory effects belong in this layer.
@@ -81,6 +82,20 @@ void DccRestoreMapPresentation(void)
             MapGridSetMetatileEntryAt(tile->x + MAP_OFFSET, tile->y + MAP_OFFSET,
                 FlagGet(tile->flag) ? tile->resolved : tile->unresolved);
     }
+    for (i = 0; i < ARRAY_COUNT(sDccLoopTiles); i++)
+    {
+        const struct DccPresentationTile *tile = &sDccLoopTiles[i];
+        if (((gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum) == tile->mapId)
+            MapGridSetMetatileEntryAt(tile->x + MAP_OFFSET, tile->y + MAP_OFFSET,
+                FlagGet(tile->flag) ? tile->resolved : tile->unresolved);
+    }
+    for (i = 0; i < ARRAY_COUNT(sDccLiveTiles); i++)
+    {
+        const struct DccPresentationTile *tile = &sDccLiveTiles[i];
+        if (((gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum) == tile->mapId)
+            MapGridSetMetatileEntryAt(tile->x + MAP_OFFSET, tile->y + MAP_OFFSET,
+                FlagGet(tile->flag) ? tile->resolved : tile->unresolved);
+    }
 }
 
 bool8 DccObjectIsResolved(u8 graphicsId)
@@ -91,18 +106,41 @@ bool8 DccObjectIsResolved(u8 graphicsId)
     {
     case MAP_DCC_ENTRANCE:
         return graphicsId == OBJ_EVENT_GFX_MOVING_BOX && FlagGet(FLAG_DCC_LOOT_SUPPLY);
+    case MAP_DCC_F1D1FIELD:
+        return (graphicsId == OBJ_EVENT_GFX_MOVING_BOX && FlagGet(FLAG_DCC_LOOT_SUPPLY))
+            || (graphicsId == OBJ_EVENT_GFX_NINJA_BOY && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_GUARD))
+            || (graphicsId == OBJ_EVENT_GFX_MAN_3 && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_HOWLER));
     case MAP_DCC_VESTIBULE:
+    case MAP_DCC_F1D1QUIET:
         return (graphicsId == OBJ_EVENT_GFX_MOVING_BOX && FlagGet(FLAG_DCC_WRAP_TAKEN))
             || (graphicsId == OBJ_EVENT_GFX_MAN_1 && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_TRIAL));
     case MAP_DCC_SERVICE:
+    case MAP_DCC_F1D1WORKSHOP:
         return graphicsId == OBJ_EVENT_GFX_DCC_CACHE_SEALED && FlagGet(FLAG_DCC_CACHE_BLASTED);
     case MAP_DCC_CORRIDOR:
         return (graphicsId == OBJ_EVENT_GFX_NINJA_BOY && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_GUARD))
             || (graphicsId == OBJ_EVENT_GFX_MAN_3 && FlagGet(TRAINER_FLAGS_START + TRAINER_DCC_HOWLER));
     case MAP_DCC_BOSS:
+    case MAP_DCC_F1D1WARDEN:
         return graphicsId == OBJ_EVENT_GFX_HIKER && FlagGet(FLAG_DCC_BOSS_CLEARED);
     }
     return FALSE;
+}
+
+void DccTryOpenReturnLoop(void)
+{
+    gSpecialVar_Result = FALSE;
+    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_DCC_F1D1FIELD)
+        || gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_DCC_F1D1FIELD))
+        return;
+    if (FlagGet(FLAG_DCC_D1_LOOP_OPEN))
+        gSpecialVar_Result = TRUE;
+    else if (gSaveBlock1Ptr->pos.x == 36 && gSaveBlock1Ptr->pos.y == 16)
+    {
+        FlagSet(FLAG_DCC_D1_LOOP_OPEN);
+        DccRefreshMapPresentation();
+        gSpecialVar_Result = TRUE;
+    }
 }
 
 void DccRefreshMapPresentation(void)

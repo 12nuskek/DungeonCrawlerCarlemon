@@ -127,7 +127,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_DCC_ENTRANCE), MAP_NUM(MAP_DCC_ENTRANCE), WARP_ID_NONE, 4, 8);
+    SetWarpDestination(MAP_GROUP(MAP_DCC_F1D1FIELD), MAP_NUM(MAP_DCC_F1D1FIELD), WARP_ID_NONE, 8, 38);
     WarpIntoMap();
 }
 
@@ -166,6 +166,7 @@ void NewGameInitData(void)
     PlayTimeCounter_Reset();
     ClearPokedexFlags();
     InitEventData();
+    VarSet(VAR_DCC_LAYOUT_VERSION, 1);
     ClearTVShowData();
     ResetGabbyAndTy();
     ClearSecretBases();

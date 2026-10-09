@@ -1,0 +1,79 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+step 68 16 -
+step 40 0 -
+expect 35 3 12 7 7
+step 52 128 -
+step 40 0 -
+expect 35 3 12 10 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 stairs.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 3 12 10 7
+step 116 64 -
+step 40 0 -
+expect 35 3 12 3 7
+step 132 32 -
+step 40 0 -
+step 300 0 -
+expect 35 0 45 17 7
+step 308 128 -
+step 40 0 -
+expect 35 0 45 36 7
+step 180 32 -
+step 40 0 -
+expect 35 0 34 36 7
+step 84 128 -
+step 40 0 -
+expect 35 0 34 41 7
+step 132 16 -
+step 40 0 -
+expect 35 0 42 41 7
+step 20 64 -
+step 40 0 -
+step 300 0 -
+expect 35 2 4 3 7
+step 100 16 -
+step 40 0 -
+expect 35 2 10 3 7
+step 36 128 -
+step 40 0 -
+expect 35 2 10 5 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 lev-after-transition.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 2 10 5 7
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+snapshot
+expect 35 2 10 5 7
+quit

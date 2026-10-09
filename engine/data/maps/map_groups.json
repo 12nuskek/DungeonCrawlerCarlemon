@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_DungeonCrawler"
+    "gMapGroup_DungeonCrawler",
+    "gMapGroup_DccFloor1Opening"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -696,5 +697,12 @@
     "DCC_Corridor",
     "DCC_Boss",
     "DCC_Exit"
+  ],
+  "gMapGroup_DccFloor1Opening": [
+    "DCC_F1D1Field",
+    "DCC_F1D1Quiet",
+    "DCC_F1D1Workshop",
+    "DCC_F1D1Warden",
+    "DCC_F1D1Checkpoint"
   ]
 }

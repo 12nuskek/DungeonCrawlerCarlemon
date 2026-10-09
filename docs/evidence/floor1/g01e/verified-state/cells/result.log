@@ -1,0 +1,2 @@
+PASS 8694 relocation vectors +5 nonmember/dummy records; exact C functions; host header adapter only
+PASS 15 schema vectors incl stock nonmembers/all four version values; exact C guard bodies; host adapter only

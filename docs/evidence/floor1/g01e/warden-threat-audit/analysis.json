@@ -1,0 +1,694 @@
+{
+  "method": "Offline plaintext save stats, pinned ROM metadata/source, retained trace, integer min/max arithmetic; no emulator/RNG/seed/trajectory/policy search",
+  "game_source": "c643f01c11ec68119b0347b107ee20115131debc",
+  "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+  "save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+  "trace_sha256": "598e6f5e7f3675e3d65d7a775e56af61671a7e0827463925800e7d9900046ba2",
+  "symbols_sha256": "b5ce937aa5d54594fc01957905be8ea977c6fdf8c14505db4fadf88be38edc4e",
+  "sources_sha256": {
+    "engine/include/global.h": "64aa1a2288a9b3da03cd7353dd528767c42bb970f90b915c3287e0aacd547cb4",
+    "engine/include/pokemon.h": "cbc063087534965d07db0b29af873b09b7f4d289845829dc4b3eabd4db912db9",
+    "engine/include/data.h": "9e240303749846ecf7badcff42f76f370155012bd0517b29f86046ca479c655a",
+    "engine/include/save.h": "5503327afcb4d135508ffa989689b99e3efd1037d6b64eb6c422740ee2678ab4",
+    "engine/src/save.c": "e670a5a45405533611b9ca88d3f54f22610755e5aa4b5c44293cf6c304d55020",
+    "engine/src/crawler.c": "fef6006d71b076177e6a7d0a39d96bdc7c262c4c7d446676717ff0e280faeb61",
+    "engine/src/pokemon.c": "2247ce9c2ac718235adbb0b1bae0ca2ad07f96cf1ac65899a208cd5addb382c0",
+    "engine/src/battle_main.c": "ee79b86ff0f681ab783b363135fd84d050e7123bea2a77c5530f2c7ddc8b8408",
+    "engine/src/battle_controller_opponent.c": "e8e0c5f6af098d32821469b0397e6ff28ee378b6cd9ee514e83cb0d695f1d379",
+    "engine/src/battle_ai_script_commands.c": "c75ed7f1a1dc775eb4b4cee3ff05e74451a34e239cffb6a37be0d766f38f66e6",
+    "engine/data/battle_ai_scripts.s": "f6d545de4fdec89b1844aae93b8d844e691b8f14773c1e84ecea1c2e2ce4bf2c",
+    "engine/src/battle_script_commands.c": "3931998b8b2cd355ef51cb7b8f14cdc4f06fed152a13a313ca380bceebf618b2",
+    "engine/data/battle_scripts_1.s": "06030c542bfbc38e69ed1bc15ca1fdbee440c021a3fb7462313689e4d3123118",
+    "engine/src/data/battle_moves.h": "1ea146df3b2231c4ae6347087f64dc371a73b7c15d54b12f54cc27a82e9aa97f",
+    "engine/src/data/trainer_parties.h": "5872814da7b1a059b8b306f18439489f31988546e762768aa02ac5077e03ebce",
+    "engine/src/data/trainers.h": "e1b81cb61302efd446e7f03a146bc432b304738cdb9a3220f8c763aa1c621dd9",
+    "engine/src/data/pokemon/species_info.h": "1aac881bb02361339dc4dd33c7a5804a7127c0367426b77b982ee213a713e0af",
+    "engine/data/maps/DCC_Boss/scripts.inc": "9498c1945ebe9816d45898c6e281fa1a9c62639a4810e4e75005e7eaa14bd3e1"
+  },
+  "party": [
+    {
+      "max_hp": 38,
+      "attack": 26,
+      "defense": 18,
+      "speed": 14,
+      "special_attack": 12,
+      "special_defense": 14,
+      "name": "Carl",
+      "level": 11,
+      "hp": 38,
+      "status": 0
+    },
+    {
+      "max_hp": 30,
+      "attack": 16,
+      "defense": 14,
+      "speed": 25,
+      "special_attack": 15,
+      "special_defense": 15,
+      "name": "Donut",
+      "level": 10,
+      "hp": 30,
+      "status": 0
+    }
+  ],
+  "enemies_source_derived": [
+    {
+      "max_hp": 42,
+      "attack": 22,
+      "defense": 15,
+      "speed": 16,
+      "special_attack": 22,
+      "special_defense": 15,
+      "name": "Warden",
+      "level": 12,
+      "nature_index": 0,
+      "moves": [
+        359,
+        360,
+        0,
+        0
+      ],
+      "iv": 0,
+      "ev": 0
+    },
+    {
+      "max_hp": 30,
+      "attack": 14,
+      "defense": 9,
+      "speed": 10,
+      "special_attack": 14,
+      "special_defense": 9,
+      "name": "Helper",
+      "level": 9,
+      "nature_index": 18,
+      "moves": [
+        33,
+        0,
+        0,
+        0
+      ],
+      "iv": 0,
+      "ev": 0
+    }
+  ],
+  "badge_1_3_5_7_unset": true,
+  "source_inferred_turn_order": [
+    "Donut",
+    "Warden",
+    "Carl",
+    "Helper"
+  ],
+  "pp_column_order": [
+    "Carl STRIKE",
+    "Carl BRACE",
+    "Donut SPARK",
+    "Donut WEAKEN",
+    "WIND UP",
+    "SLAM",
+    "TACKLE"
+  ],
+  "retained_turn_reconstruction": [
+    {
+      "turn": 0,
+      "observed_hp": [
+        38,
+        30,
+        42,
+        30
+      ],
+      "observed_warden_attack_stage": 0,
+      "source_inferred_carl_defense_start": 0,
+      "source_inferred_pp_start": [
+        8,
+        40,
+        2,
+        40,
+        40,
+        40,
+        35
+      ],
+      "hits": [
+        {
+          "frame": 7587,
+          "turn": 0,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            30,
+            24
+          ],
+          "observed_damage": 6,
+          "source_damage_bounds": [
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "observed_hp": [
+        38,
+        24,
+        42,
+        30
+      ],
+      "observed_warden_attack_stage": 0,
+      "source_inferred_carl_defense_start": 1,
+      "source_inferred_pp_start": [
+        8,
+        39,
+        2,
+        39,
+        39,
+        40,
+        34
+      ],
+      "hits": [
+        {
+          "frame": 8466,
+          "turn": 1,
+          "attacker": 1,
+          "target": 0,
+          "move": 360,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            38,
+            31
+          ],
+          "observed_damage": 7,
+          "source_damage_bounds": [
+            7,
+            9
+          ]
+        },
+        {
+          "frame": 9065,
+          "turn": 1,
+          "attacker": 3,
+          "target": 0,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            31,
+            28
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "observed_hp": [
+        28,
+        24,
+        42,
+        30
+      ],
+      "observed_warden_attack_stage": -1,
+      "source_inferred_carl_defense_start": 2,
+      "source_inferred_pp_start": [
+        8,
+        38,
+        2,
+        38,
+        39,
+        39,
+        33
+      ],
+      "hits": [
+        {
+          "frame": 10834,
+          "turn": 2,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            24,
+            21
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "observed_hp": [
+        28,
+        21,
+        42,
+        30
+      ],
+      "observed_warden_attack_stage": -1,
+      "source_inferred_carl_defense_start": 3,
+      "source_inferred_pp_start": [
+        8,
+        37,
+        2,
+        37,
+        38,
+        39,
+        32
+      ],
+      "hits": [
+        {
+          "frame": 11143,
+          "turn": 3,
+          "attacker": 2,
+          "target": 1,
+          "move": 357,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            42,
+            38
+          ],
+          "observed_damage": 4,
+          "source_damage_bounds": [
+            4,
+            5
+          ]
+        },
+        {
+          "frame": 11216,
+          "turn": 3,
+          "attacker": 2,
+          "target": 3,
+          "move": 357,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            30,
+            24
+          ],
+          "observed_damage": 6,
+          "source_damage_bounds": [
+            5,
+            7
+          ]
+        },
+        {
+          "frame": 11404,
+          "turn": 3,
+          "attacker": 1,
+          "target": 0,
+          "move": 360,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            28,
+            23
+          ],
+          "observed_damage": 5,
+          "source_damage_bounds": [
+            5,
+            6
+          ]
+        },
+        {
+          "frame": 11587,
+          "turn": 3,
+          "attacker": 0,
+          "target": 1,
+          "move": 355,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            38,
+            30
+          ],
+          "observed_damage": 8,
+          "source_damage_bounds": [
+            8,
+            10
+          ]
+        },
+        {
+          "frame": 11786,
+          "turn": 3,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            21,
+            18
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "observed_hp": [
+        23,
+        18,
+        30,
+        24
+      ],
+      "observed_warden_attack_stage": -1,
+      "source_inferred_carl_defense_start": 3,
+      "source_inferred_pp_start": [
+        7,
+        37,
+        1,
+        37,
+        38,
+        38,
+        31
+      ],
+      "hits": [
+        {
+          "frame": 12067,
+          "turn": 4,
+          "attacker": 2,
+          "target": 1,
+          "move": 357,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            30,
+            26
+          ],
+          "observed_damage": 4,
+          "source_damage_bounds": [
+            4,
+            5
+          ]
+        },
+        {
+          "frame": 12140,
+          "turn": 4,
+          "attacker": 2,
+          "target": 3,
+          "move": 357,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            24,
+            18
+          ],
+          "observed_damage": 6,
+          "source_damage_bounds": [
+            5,
+            7
+          ]
+        },
+        {
+          "frame": 12792,
+          "turn": 4,
+          "attacker": 0,
+          "target": 1,
+          "move": 355,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            26,
+            17
+          ],
+          "observed_damage": 9,
+          "source_damage_bounds": [
+            8,
+            10
+          ]
+        },
+        {
+          "frame": 12994,
+          "turn": 4,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            18,
+            15
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "observed_hp": [
+        23,
+        15,
+        17,
+        18
+      ],
+      "observed_warden_attack_stage": 0,
+      "source_inferred_carl_defense_start": 3,
+      "source_inferred_pp_start": [
+        6,
+        37,
+        0,
+        37,
+        37,
+        38,
+        30
+      ],
+      "hits": [
+        {
+          "frame": 13923,
+          "turn": 5,
+          "attacker": 1,
+          "target": 0,
+          "move": 360,
+          "critical_multiplier": 2,
+          "observed_hp": [
+            23,
+            0
+          ],
+          "observed_damage": 28,
+          "source_damage_bounds": [
+            28,
+            33
+          ]
+        },
+        {
+          "frame": 14410,
+          "turn": 5,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            15,
+            12
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "observed_hp": [
+        0,
+        12,
+        17,
+        18
+      ],
+      "observed_warden_attack_stage": -1,
+      "source_inferred_carl_defense_start": 3,
+      "source_inferred_pp_start": [
+        6,
+        37,
+        0,
+        36,
+        37,
+        37,
+        29
+      ],
+      "hits": [
+        {
+          "frame": 15750,
+          "turn": 6,
+          "attacker": 3,
+          "target": 2,
+          "move": 33,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            12,
+            9
+          ],
+          "observed_damage": 3,
+          "source_damage_bounds": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "observed_hp": [
+        0,
+        9,
+        17,
+        18
+      ],
+      "observed_warden_attack_stage": -1,
+      "source_inferred_carl_defense_start": 3,
+      "source_inferred_pp_start": [
+        6,
+        37,
+        0,
+        35,
+        36,
+        37,
+        28
+      ],
+      "hits": [
+        {
+          "frame": 16620,
+          "turn": 7,
+          "attacker": 1,
+          "target": 2,
+          "move": 360,
+          "critical_multiplier": 1,
+          "observed_hp": [
+            9,
+            0
+          ],
+          "observed_damage": 11,
+          "source_damage_bounds": [
+            10,
+            12
+          ]
+        }
+      ]
+    }
+  ],
+  "source_inferred_pp_end": [
+    6,
+    37,
+    0,
+    34,
+    36,
+    36,
+    28
+  ],
+  "observed_hits_within_source_bounds": 17,
+  "damage_bounds": {
+    "carl_strike_warden": [
+      8,
+      10
+    ],
+    "carl_strike_warden_critical": [
+      17,
+      20
+    ],
+    "carl_strike_helper": [
+      12,
+      15
+    ],
+    "donut_spark_warden_two_foes": [
+      4,
+      5
+    ],
+    "donut_spark_warden_two_foes_critical": [
+      8,
+      10
+    ],
+    "donut_spark_helper_two_foes": [
+      5,
+      7
+    ],
+    "strike_fast_first_slam_normal": [
+      20,
+      24
+    ],
+    "strike_fast_first_slam_critical": [
+      40,
+      48
+    ],
+    "strike_fast_second_slam_normal": [
+      13,
+      16
+    ],
+    "strike_fast_second_slam_critical": [
+      28,
+      33
+    ],
+    "unweakened_helper_tackle_carl": [
+      5,
+      6
+    ],
+    "fortify_first_slam_normal": [
+      7,
+      9
+    ],
+    "fortify_second_or_third_slam_normal": [
+      5,
+      6
+    ],
+    "fortify_slam_critical_bypassing_support": [
+      28,
+      33
+    ]
+  },
+  "strike_fast_noncritical_warden_cumulative_after_turns_0_1_2_3_4": [
+    [
+      12,
+      15
+    ],
+    [
+      24,
+      30
+    ],
+    [
+      32,
+      40
+    ],
+    [
+      40,
+      50
+    ],
+    [
+      48,
+      60
+    ]
+  ],
+  "fortify_noncritical_warden_cumulative_after_turns_3_4_5_6_7": [
+    [
+      12,
+      15
+    ],
+    [
+      24,
+      30
+    ],
+    [
+      32,
+      40
+    ],
+    [
+      40,
+      50
+    ],
+    [
+      48,
+      60
+    ]
+  ],
+  "warden_attempts_total_current_reconstructed_input": 1,
+  "warden_failures_total_current_reconstructed_input": 1,
+  "new_emulator_executions": 0,
+  "second_response_proposed": false,
+  "conclusion": "Strike-fast is conditionally viable, but ordinary helper targeting or the first critical SLAM defeats its no-incapacity margin. Three support turns mitigate ordinary hits but lose tempo and critical protection. Parent design review, not another seeded attempt, is the supported next action."
+}

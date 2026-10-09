@@ -1,3 +1,19 @@
+Warden threat/action audit — 2026-10-08: **read-only complete; design review next**.
+
+[Issue #96](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96) / [draft PR #97](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97), stacked on unchanged PR95; open/unmerged. Audit source/publication `dd349a2e54b7a7fb0d782534f933236f4193522d`.
+
+No new emulator execution or balance change. Current reconstructed-input Warden
+attempts/failures remain1/1, separate from three historical patrol strategies and
+two initial replacement recovery failures. Offline pinned-source arithmetic
+matches17 actual retained HP transitions. Strike-fast cannot ordinarily kill
+before its second SLAM; one opening helper hit on Carl exhausts that survival
+budget. Three support turns soften normal hits but critical SLAM bypasses them.
+No second fixed response is prescribed. Parent narrow threat-budget/two-response
+design review is next; prepared victory cannot close unprepared acceptance.
+[Exact stats, stages, PP, damage/kill bounds and scope](evidence/floor1/g01e/warden-threat-audit/README.md).
+
+## Historical first-clear attempt
+
 Unprepared Warden first-clear — 2026-10-08: **single attempt lost; stopped**.
 
 [Issue #94](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/94) / [draft PR #95](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/95), open/unmerged, stacked on PR93 at `1263d8b915f37d70bdcb04167c9088cd107666bc`. Evidence publication `d5d505c57bddc26b899d78bb033a6b2e41b3affe`; tested contract/runner remains `7197e785a704e216c9f4a5429ae6cb4fb9302703`.

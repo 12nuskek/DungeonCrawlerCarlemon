@@ -1,0 +1,15 @@
+{
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/96",
+  "draft_pr": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/97",
+  "branch": "task/floor1-g01e-warden-threat-audit",
+  "base_branch": "task/floor1-g01e-warden-first-clear",
+  "base_sha": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+  "audit_source_publication_sha": "dd349a2e54b7a7fb0d782534f933236f4193522d",
+  "draft_at_creation": true,
+  "merged_at_creation": false,
+  "new_emulator_executions": 0,
+  "current_input_warden_attempts": 1,
+  "current_input_warden_failures": 1,
+  "second_response_proposed": false,
+  "next_dependency": "Parent narrow offensive-deadline/helper-pressure and support-cue/critical-bypass design review"
+}

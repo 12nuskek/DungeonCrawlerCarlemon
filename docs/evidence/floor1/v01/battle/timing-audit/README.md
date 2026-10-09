@@ -102,7 +102,9 @@ markers are explicit synthetic constructs. It does not execute native
 VBlankIntr, music, playtime, ReadKeys or the battle. The separate compiled audit
 pins those real paths. Trace records include time, frame, nextPC, flag,
 IE/IF/IME/CPSR, deadline and queue identity, IRQ entry/service/return, Wait
-entry/clear/exit, next native ReadKeys callsite and synthetic callback iteration.
+entry/clear/exit, next native ReadKeys callsite and synthetic callback iteration. Region-switch hooks explicitly label the
+selected target before prefetch and retain rawPC separately; an unfinished
+pipeline PC is not presented as a stable next-instruction observation.
 
 Seven cases per ELF pass; both seven-case trace sets are byte identical:
 

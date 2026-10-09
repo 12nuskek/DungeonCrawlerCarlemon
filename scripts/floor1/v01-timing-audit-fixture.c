@@ -16,19 +16,22 @@ static uint32_t code[1024];
 static uint32_t (*load32)(struct ARMCore*,uint32_t,int*);
 static void (*store16)(struct ARMCore*,uint32_t,int16_t,int*);
 static unsigned clears,sets,entries,reads,exits,irqActive;
+static unsigned regionSwitch,regionTarget;
 static void trace(const char *event)
 {
     struct GBA *g=core->board;struct ARMCore *c=core->cpu;
     const struct mTimingEvent *q=g->timing.root;
-    printf("{\"event\":\"%s\",\"time\":%u,\"frame\":%u,\"nextPC\":%u,\"flag\":%u,\"IE\":%u,\"IF\":%u,\"IME\":%u,\"CPSR\":%u,\"nextEvent\":%d,\"queueRoot\":\"%s\",\"queueDue\":%u}\n",
+    printf("{\"event\":\"%s\",\"time\":%u,\"frame\":%u,\"nextPC\":%u,\"PCPhase\":\"%s\",\"rawPC\":%u,\"flag\":%u,\"IE\":%u,\"IF\":%u,\"IME\":%u,\"CPSR\":%u,\"nextEvent\":%d,\"queueRoot\":\"%s\",\"queueDue\":%u}\n",
         event,(unsigned)mTimingCurrentTime(&g->timing),g->video.frameCounter,
-        (unsigned)c->gprs[ARM_PC]-(c->executionMode==MODE_THUMB?2:4),
+        regionSwitch?regionTarget:(unsigned)c->gprs[ARM_PC]-(c->executionMode==MODE_THUMB?2:4),
+        regionSwitch?"selected-region-target-before-prefetch":"interpreter-observation",(unsigned)c->gprs[ARM_PC],
         ((uint16_t*)g->memory.iwram)[0x22dc/2],g->memory.io[REG_IE/2],
         g->memory.io[REG_IF/2],g->memory.io[REG_IME/2],c->cpsr.packed,
         c->nextEvent,q?q->name:"none",q?q->when:0);
 }
 static void region(struct ARMCore *c,uint32_t address)
 {
+    regionSwitch=1;regionTarget=address;
     if(address==0x18&&c->privilegeMode==MODE_IRQ){
         irqActive=1;
         trace("IRQ-entry");((struct GBA*)core->board)->memory.io[REG_IF/2]&=~1;
@@ -38,6 +41,7 @@ static void region(struct ARMCore *c,uint32_t address)
     c->memory.activeRegion=code;c->memory.activeMask=4095;
     c->memory.activeSeqCycles32=c->memory.activeSeqCycles16=1;
     c->memory.activeNonseqCycles32=c->memory.activeNonseqCycles16=1;
+    regionSwitch=0;
 }
 static uint32_t literal(struct ARMCore *c,uint32_t address,int *cycles)
 {

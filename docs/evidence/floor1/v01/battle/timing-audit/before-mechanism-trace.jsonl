@@ -1,67 +1,67 @@
 {"case":"clear-before-video","syntheticPostCallbackNOPs":0,"firstVideoDeadline":300,"maskUntilClear":0}
-{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA Video","queueDue":300}
-{"event":"Wait-entry","time":6,"frame":0,"nextPC":134219948,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":300,"queueRoot":"GBA Video","queueDue":300}
-{"event":"Wait-flag-clear","time":25,"frame":0,"nextPC":134219962,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":300,"queueRoot":"GBA Video","queueDue":300}
-{"event":"video-IRQ-raised-before-frame-increment","time":302,"frame":0,"nextPC":134219976,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":5,"queueRoot":"GBA IRQ Event","queueDue":307}
-{"event":"video-frame-increment","time":302,"frame":1,"nextPC":134219976,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":5,"queueRoot":"GBA IRQ Event","queueDue":307}
-{"event":"IRQ-entry","time":308,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"synthetic-dispatcher-IF-ack","time":308,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"IRQ-service-flag-set","time":325,"frame":1,"nextPC":44,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612882,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"IRQ-return","time":333,"frame":1,"nextPC":134219980,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612799,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"Wait-exit","time":367,"frame":1,"nextPC":134218942,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"next-native-ReadKeys-call-site","time":373,"frame":1,"nextPC":134218794,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
-{"event":"next-synthetic-callback-iteration","time":377,"frame":1,"nextPC":134218798,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA Video","queueDue":300}
+{"event":"Wait-entry","time":6,"frame":0,"nextPC":134219948,"PCPhase":"interpreter-observation","rawPC":134219950,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":300,"queueRoot":"GBA Video","queueDue":300}
+{"event":"Wait-flag-clear","time":25,"frame":0,"nextPC":134219962,"PCPhase":"interpreter-observation","rawPC":134219964,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":300,"queueRoot":"GBA Video","queueDue":300}
+{"event":"video-IRQ-raised-before-frame-increment","time":302,"frame":0,"nextPC":134219976,"PCPhase":"interpreter-observation","rawPC":134219978,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":5,"queueRoot":"GBA IRQ Event","queueDue":307}
+{"event":"video-frame-increment","time":302,"frame":1,"nextPC":134219976,"PCPhase":"interpreter-observation","rawPC":134219978,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":5,"queueRoot":"GBA IRQ Event","queueDue":307}
+{"event":"IRQ-entry","time":308,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"synthetic-dispatcher-IF-ack","time":308,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"IRQ-service-flag-set","time":325,"frame":1,"nextPC":44,"PCPhase":"interpreter-observation","rawPC":48,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612882,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"IRQ-return","time":333,"frame":1,"nextPC":134219982,"PCPhase":"selected-region-target-before-prefetch","rawPC":134219982,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612799,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"Wait-exit","time":367,"frame":1,"nextPC":134218942,"PCPhase":"interpreter-observation","rawPC":134218944,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"next-native-ReadKeys-call-site","time":373,"frame":1,"nextPC":134218794,"PCPhase":"interpreter-observation","rawPC":134218796,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
+{"event":"next-synthetic-callback-iteration","time":377,"frame":1,"nextPC":134218798,"PCPhase":"interpreter-observation","rawPC":134218800,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1308}
 {"result":"PASS","framesBeforeNextIteration":1,"WaitEntries":1,"flagClears":1,"IRQFlagSets":1,"nextIterations":1}
 {"case":"video-before-Wait-pending-masked-IRQ","syntheticPostCallbackNOPs":40,"firstVideoDeadline":50,"maskUntilClear":1}
-{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":191,"nextEvent":0,"queueRoot":"GBA Video","queueDue":50}
-{"event":"video-IRQ-raised-before-frame-increment","time":50,"frame":0,"nextPC":134218034,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
-{"event":"video-frame-increment","time":50,"frame":1,"nextPC":134218034,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
-{"event":"Wait-entry","time":86,"frame":1,"nextPC":134219948,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"Wait-flag-clear","time":105,"frame":1,"nextPC":134219962,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073742015,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"synthetic-IRQ-unmask-after-clear","time":108,"frame":1,"nextPC":134219962,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073741887,"nextEvent":57,"queueRoot":"GBA IRQ Event","queueDue":115}
-{"event":"IRQ-entry","time":116,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073741842,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"synthetic-dispatcher-IF-ack","time":116,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741842,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"IRQ-service-flag-set","time":133,"frame":1,"nextPC":44,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1073741970,"nextEvent":942,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"IRQ-return","time":141,"frame":1,"nextPC":134219966,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"Wait-exit","time":175,"frame":1,"nextPC":134218942,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"next-native-ReadKeys-call-site","time":181,"frame":1,"nextPC":134218794,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"next-synthetic-callback-iteration","time":185,"frame":1,"nextPC":134218798,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":191,"nextEvent":0,"queueRoot":"GBA Video","queueDue":50}
+{"event":"video-IRQ-raised-before-frame-increment","time":50,"frame":0,"nextPC":134218034,"PCPhase":"interpreter-observation","rawPC":134218036,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
+{"event":"video-frame-increment","time":50,"frame":1,"nextPC":134218034,"PCPhase":"interpreter-observation","rawPC":134218036,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
+{"event":"Wait-entry","time":86,"frame":1,"nextPC":134219948,"PCPhase":"interpreter-observation","rawPC":134219950,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":191,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"Wait-flag-clear","time":105,"frame":1,"nextPC":134219962,"PCPhase":"interpreter-observation","rawPC":134219964,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073742015,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"synthetic-IRQ-unmask-after-clear","time":108,"frame":1,"nextPC":134219962,"PCPhase":"interpreter-observation","rawPC":134219964,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073741887,"nextEvent":57,"queueRoot":"GBA IRQ Event","queueDue":115}
+{"event":"IRQ-entry","time":116,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1073741842,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"synthetic-dispatcher-IF-ack","time":116,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741842,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"IRQ-service-flag-set","time":133,"frame":1,"nextPC":44,"PCPhase":"interpreter-observation","rawPC":48,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1073741970,"nextEvent":942,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"IRQ-return","time":141,"frame":1,"nextPC":134219968,"PCPhase":"selected-region-target-before-prefetch","rawPC":134219968,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"Wait-exit","time":175,"frame":1,"nextPC":134218942,"PCPhase":"interpreter-observation","rawPC":134218944,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"next-native-ReadKeys-call-site","time":181,"frame":1,"nextPC":134218794,"PCPhase":"interpreter-observation","rawPC":134218796,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"next-synthetic-callback-iteration","time":185,"frame":1,"nextPC":134218798,"PCPhase":"interpreter-observation","rawPC":134218800,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":911,"queueRoot":"GBA Video","queueDue":1058}
 {"result":"PASS","framesBeforeNextIteration":1,"WaitEntries":1,"flagClears":1,"IRQFlagSets":1,"nextIterations":1}
 {"case":"serviced-flag-before-late-clear","syntheticPostCallbackNOPs":120,"firstVideoDeadline":50,"maskUntilClear":0}
-{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA Video","queueDue":50}
-{"event":"video-IRQ-raised-before-frame-increment","time":50,"frame":0,"nextPC":134218034,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
-{"event":"video-frame-increment","time":50,"frame":1,"nextPC":134218034,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
-{"event":"IRQ-entry","time":58,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"synthetic-dispatcher-IF-ack","time":58,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"IRQ-service-flag-set","time":75,"frame":1,"nextPC":44,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":146,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"IRQ-return","time":83,"frame":1,"nextPC":134218040,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"Wait-entry","time":277,"frame":1,"nextPC":134219948,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"Wait-flag-clear","time":296,"frame":1,"nextPC":134219962,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1058}
-{"event":"video-IRQ-raised-before-frame-increment","time":280947,"frame":1,"nextPC":134219982,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":280953}
-{"event":"video-frame-increment","time":280947,"frame":2,"nextPC":134219982,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":280953}
-{"event":"IRQ-entry","time":280953,"frame":2,"nextPC":20,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"synthetic-dispatcher-IF-ack","time":280953,"frame":2,"nextPC":20,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"IRQ-service-flag-set","time":280970,"frame":2,"nextPC":44,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612882,"nextEvent":1001,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"IRQ-return","time":280978,"frame":2,"nextPC":134219972,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612799,"nextEvent":25,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"Wait-exit","time":281006,"frame":2,"nextPC":134218942,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"next-native-ReadKeys-call-site","time":281012,"frame":2,"nextPC":134218794,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
-{"event":"next-synthetic-callback-iteration","time":281016,"frame":2,"nextPC":134218798,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"synthetic-callback-complete","time":0,"frame":0,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA Video","queueDue":50}
+{"event":"video-IRQ-raised-before-frame-increment","time":50,"frame":0,"nextPC":134218034,"PCPhase":"interpreter-observation","rawPC":134218036,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
+{"event":"video-frame-increment","time":50,"frame":1,"nextPC":134218034,"PCPhase":"interpreter-observation","rawPC":134218036,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":7,"queueRoot":"GBA IRQ Event","queueDue":57}
+{"event":"IRQ-entry","time":58,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"synthetic-dispatcher-IF-ack","time":58,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"IRQ-service-flag-set","time":75,"frame":1,"nextPC":44,"PCPhase":"interpreter-observation","rawPC":48,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":146,"nextEvent":1000,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"IRQ-return","time":83,"frame":1,"nextPC":134218042,"PCPhase":"selected-region-target-before-prefetch","rawPC":134218042,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":25,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"Wait-entry","time":277,"frame":1,"nextPC":134219948,"PCPhase":"interpreter-observation","rawPC":134219950,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"Wait-flag-clear","time":296,"frame":1,"nextPC":134219962,"PCPhase":"interpreter-observation","rawPC":134219964,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1073741887,"nextEvent":969,"queueRoot":"GBA Video","queueDue":1058}
+{"event":"video-IRQ-raised-before-frame-increment","time":280947,"frame":1,"nextPC":134219982,"PCPhase":"interpreter-observation","rawPC":134219984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":280953}
+{"event":"video-frame-increment","time":280947,"frame":2,"nextPC":134219982,"PCPhase":"interpreter-observation","rawPC":134219984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612799,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":280953}
+{"event":"IRQ-entry","time":280953,"frame":2,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"synthetic-dispatcher-IF-ack","time":280953,"frame":2,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":1610612754,"nextEvent":0,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"IRQ-service-flag-set","time":280970,"frame":2,"nextPC":44,"PCPhase":"interpreter-observation","rawPC":48,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612882,"nextEvent":1001,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"IRQ-return","time":280978,"frame":2,"nextPC":134219974,"PCPhase":"selected-region-target-before-prefetch","rawPC":134219974,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":1610612799,"nextEvent":25,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"Wait-exit","time":281006,"frame":2,"nextPC":134218942,"PCPhase":"interpreter-observation","rawPC":134218944,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"next-native-ReadKeys-call-site","time":281012,"frame":2,"nextPC":134218794,"PCPhase":"interpreter-observation","rawPC":134218796,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":536870975,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
+{"event":"next-synthetic-callback-iteration","time":281016,"frame":2,"nextPC":134218798,"PCPhase":"interpreter-observation","rawPC":134218800,"flag":1,"IE":1,"IF":0,"IME":1,"CPSR":63,"nextEvent":970,"queueRoot":"GBA Video","queueDue":281954}
 {"result":"PASS","framesBeforeNextIteration":2,"WaitEntries":1,"flagClears":1,"IRQFlagSets":2,"nextIterations":1}
 {"case":"punctual-frame-end-leaves-IRQ-pending","explicitTickLateness":0}
-{"event":"video-IRQ-raised-before-frame-increment","time":100,"frame":0,"nextPC":134217984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
-{"event":"video-frame-increment","time":100,"frame":1,"nextPC":134217984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
-{"event":"timing-drain-return","time":100,"frame":1,"nextPC":134217984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
+{"event":"video-IRQ-raised-before-frame-increment","time":100,"frame":0,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
+{"event":"video-frame-increment","time":100,"frame":1,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
+{"event":"timing-drain-return","time":100,"frame":1,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":0,"queueRoot":"GBA IRQ Event","queueDue":107}
 {"result":"PASS","nativeIRQBodyExecuted":false}
 {"case":"late-frame-end-drains-IRQ-after-increment","explicitTickLateness":8}
-{"event":"video-IRQ-raised-before-frame-increment","time":108,"frame":0,"nextPC":134217984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":-1,"queueRoot":"GBA IRQ Event","queueDue":107}
-{"event":"video-frame-increment","time":108,"frame":1,"nextPC":134217984,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":-1,"queueRoot":"GBA IRQ Event","queueDue":107}
-{"event":"IRQ-entry","time":108,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
-{"event":"synthetic-dispatcher-IF-ack","time":108,"frame":1,"nextPC":20,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
-{"event":"timing-drain-return","time":112,"frame":1,"nextPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":146,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
+{"event":"video-IRQ-raised-before-frame-increment","time":108,"frame":0,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":-1,"queueRoot":"GBA IRQ Event","queueDue":107}
+{"event":"video-frame-increment","time":108,"frame":1,"nextPC":134217984,"PCPhase":"interpreter-observation","rawPC":134217986,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":63,"nextEvent":-1,"queueRoot":"GBA IRQ Event","queueDue":107}
+{"event":"IRQ-entry","time":108,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
+{"event":"synthetic-dispatcher-IF-ack","time":108,"frame":1,"nextPC":24,"PCPhase":"selected-region-target-before-prefetch","rawPC":24,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":18,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
+{"event":"timing-drain-return","time":112,"frame":1,"nextPC":24,"PCPhase":"interpreter-observation","rawPC":28,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":146,"nextEvent":0,"queueRoot":"GBA Video","queueDue":1108}
 {"result":"PASS","nativeIRQBodyExecuted":false}
 {"case":"nextEvent6-IRQ"}
-{"event":"same-deadline-different-event-identity","time":0,"frame":0,"nextPC":4294967292,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":0,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":6}
+{"event":"same-deadline-different-event-identity","time":0,"frame":0,"nextPC":4294967292,"PCPhase":"interpreter-observation","rawPC":0,"flag":0,"IE":1,"IF":1,"IME":1,"CPSR":0,"nextEvent":6,"queueRoot":"GBA IRQ Event","queueDue":6}
 {"result":"PASS"}
 {"case":"nextEvent6-unrelated"}
-{"event":"same-deadline-different-event-identity","time":0,"frame":0,"nextPC":4294967292,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":0,"nextEvent":6,"queueRoot":"synthetic unrelated event","queueDue":6}
+{"event":"same-deadline-different-event-identity","time":0,"frame":0,"nextPC":4294967292,"PCPhase":"interpreter-observation","rawPC":0,"flag":0,"IE":1,"IF":0,"IME":1,"CPSR":0,"nextEvent":6,"queueRoot":"synthetic unrelated event","queueDue":6}
 {"result":"PASS"}

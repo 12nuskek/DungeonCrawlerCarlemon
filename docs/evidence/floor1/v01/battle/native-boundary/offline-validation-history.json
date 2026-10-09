@@ -1,0 +1,38 @@
+{
+  "offline_failures_preserved": [
+    {
+      "run": "offline-initial",
+      "result": "Compile stopped",
+      "log_SHA256": "0fc2f69a0d3ac1baff7cb4b9560cff21e8ea78ab2679e4aeb6f4f58ccc279ab7",
+      "diagnosis": "Installed debugger declarations require USE_DEBUGGERS; unused standalone header helpers changed to static inline. No capability executable ran."
+    },
+    {
+      "run": "offline-debugger-abi",
+      "result": "Synthetic installed capability assertion STOP",
+      "log_SHA256": "2f1bdf187eb233130a4348f6e8d5951638945b83f045556fb36931b319eaf6bf",
+      "diagnosis": "Default platform entry hook changes ARMCore nextEvent=cycles. Source-pinned exact scheduling side effect. Preserve failure; custom passive hardware-only hook tested separately, no compensating CPU restore."
+    },
+    {
+      "run": "offline-passive-hook",
+      "result": "Synthetic capability process cleanup SIGSEGV",
+      "log_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnosis": "Probe called extra free(core) after native core deinit owns that free; removed duplicate cleanup. No game/reset/CPU instruction/frame."
+    },
+    {
+      "run": "donut strict palette provenance",
+      "result": "Palette file hash assertion stopped; dependent rebuild had no master file",
+      "working_palette_SHA256": "f642f6eaa01658f998a8e6feb2c0d78c1ff57c6a76998f403b3a70c77295fa3a",
+      "Git_palette_blob_SHA256": "5e5827de36d660a71ad7dc74b834543f0f2d0ddaeb4c658d20fd0c564bbe2128",
+      "diagnosis": "Declared .gitattributes CRLF checkout versus LF Git blob; text equality proved after only CRLF normalization. Both hashes/provenance recorded; all PNG/palette RGB/pixel bytes exact."
+    },
+    {
+      "run": "final-contract-check",
+      "result": "Model fixture compile stopped with warnings-as-errors; installed passive capability had passed",
+      "log_SHA256": "ca46bf73a1f31c16723e0f7d1fbd336c944b32388ab7563c5f6235b7505c59c1",
+      "diagnosis": "Misleading-indentation warning in explicit bad-step counterexample; added braces/newline. No warnings/assertions relaxed, driver logic unchanged; no game/CPU instruction/frame."
+    }
+  ],
+  "new_gameplay_executions": 0,
+  "new_claims": 0,
+  "original_failure_history_unchanged": true
+}

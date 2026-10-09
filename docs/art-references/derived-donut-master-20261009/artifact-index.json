@@ -1,0 +1,62 @@
+{
+  "00-front.txt": {
+    "SHA256": "86e5d0d02662a3f2756a0419fa9a500306cc72d3f17b2637ba4e2d62d1eef2b6",
+    "bytes": 4160
+  },
+  "01-back.txt": {
+    "SHA256": "221c1db1d1dc9ab44d8f112e791c3bc002e27554906ceef54c62a3df109f258e",
+    "bytes": 4160
+  },
+  "02-anim_front.txt": {
+    "SHA256": "a8c026d128ebec3a5727c634c0dcc642cc0b03f09e0ad56fa5edba387b01f4f3",
+    "bytes": 8320
+  },
+  "03-icon.txt": {
+    "SHA256": "c44ddcad4c643dc7e589c7d5e7b22ba92b4303bc1ac5499d04cf59a97b69ba79",
+    "bytes": 2112
+  },
+  "04-overworld.txt": {
+    "SHA256": "befdd28c868b6b59480f904c2066e3bca725111e5cc0e6e605b52c04d612ed7e",
+    "bytes": 1040
+  },
+  "05-spark-anticipation.txt": {
+    "SHA256": "b95a2625a53be541bf5744fb41c98776fc46cf47b103bb84febafeae87efa5da",
+    "bytes": 4160
+  },
+  "06-spark-cast.txt": {
+    "SHA256": "5f58028b165052f19e0c9e52c06a0d7eba356ffbeb5637e9fdde72429401d34c",
+    "bytes": 4160
+  },
+  "07-spark-recovery.txt": {
+    "SHA256": "825923384298cd20dde7819a58b12ddab5bb7964e98650398edb4ff02c1bcd48",
+    "bytes": 4160
+  },
+  "08-weaken-preparation.txt": {
+    "SHA256": "27fc77ac64c3cdfa7727c9a4dd7e71ad1a33b97106febdf6bb096ec1951203ba",
+    "bytes": 4160
+  },
+  "09-weaken-release.txt": {
+    "SHA256": "e859a3d444ca50bbfd05c6b0ae0cd21312ddf13035a3463df7a881dd8d681d9e",
+    "bytes": 4160
+  },
+  "README.md": {
+    "SHA256": "e37af07576d0883426acf68d4ad18e603641b2b55028226baf62fb9c30b559e0",
+    "bytes": 2095
+  },
+  "master.json": {
+    "SHA256": "4f1537130084f17558d0f57387a17f5c1b073c6a83ae72a97a487f3e823731ac",
+    "bytes": 8137
+  },
+  "palette.json": {
+    "SHA256": "aa52f2b28ce74e1676019506f8e68dc633eb7b5edcd042f7bdbfa1140ad6d2fa",
+    "bytes": 779
+  },
+  "reproducibility.json": {
+    "SHA256": "634a89f01bc3e4d760d639ed35f5603de5dd5d24f38c94a2f60cccbf2478305f",
+    "bytes": 1529
+  },
+  "roundtrip.json": {
+    "SHA256": "7087125aaad20bf99c26ed9222357304ac43c53c6a1b9097d80c17a018539817",
+    "bytes": 4985
+  }
+}

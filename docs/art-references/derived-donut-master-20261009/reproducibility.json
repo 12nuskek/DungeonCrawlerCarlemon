@@ -1,0 +1,25 @@
+{
+  "result": "PASS two independent derivations byte exact",
+  "definition_files": {
+    "master.json": "4f1537130084f17558d0f57387a17f5c1b073c6a83ae72a97a487f3e823731ac",
+    "palette.json": "aa52f2b28ce74e1676019506f8e68dc633eb7b5edcd042f7bdbfa1140ad6d2fa",
+    "00-front.txt": "86e5d0d02662a3f2756a0419fa9a500306cc72d3f17b2637ba4e2d62d1eef2b6",
+    "01-back.txt": "221c1db1d1dc9ab44d8f112e791c3bc002e27554906ceef54c62a3df109f258e",
+    "02-anim_front.txt": "a8c026d128ebec3a5727c634c0dcc642cc0b03f09e0ad56fa5edba387b01f4f3",
+    "03-icon.txt": "c44ddcad4c643dc7e589c7d5e7b22ba92b4303bc1ac5499d04cf59a97b69ba79",
+    "04-overworld.txt": "befdd28c868b6b59480f904c2066e3bca725111e5cc0e6e605b52c04d612ed7e",
+    "05-spark-anticipation.txt": "b95a2625a53be541bf5744fb41c98776fc46cf47b103bb84febafeae87efa5da",
+    "06-spark-cast.txt": "5f58028b165052f19e0c9e52c06a0d7eba356ffbeb5637e9fdde72429401d34c",
+    "07-spark-recovery.txt": "825923384298cd20dde7819a58b12ddab5bb7964e98650398edb4ff02c1bcd48",
+    "08-weaken-preparation.txt": "27fc77ac64c3cdfa7727c9a4dd7e71ad1a33b97106febdf6bb096ec1951203ba",
+    "09-weaken-release.txt": "e859a3d444ca50bbfd05c6b0ae0cd21312ddf13035a3463df7a881dd8d681d9e"
+  },
+  "definition_file_count": 12,
+  "source_master_recipe_SHA256": "873b39f2d98adb7cb7f0c2dafd58c3872e594ea0625fd1252525f1a70055cbd0",
+  "native_images": 10,
+  "pixel_palette_transparency_RGBA_exact": true,
+  "PNG_file_bytes_exact_count": 10,
+  "integrated_assets_changed": false,
+  "emulator_frames": 0,
+  "public_upload": false
+}

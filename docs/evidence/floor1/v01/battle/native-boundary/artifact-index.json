@@ -1,0 +1,34 @@
+{
+  "README.md": {
+    "SHA256": "565875b3acc69081ef4eaab913583f2e1cdf5e6759823d0506366c54426dc0a1",
+    "bytes": 1915
+  },
+  "after-boundary.json": {
+    "SHA256": "fcfed903cd56a93b2db05d732195bfbc43176b21d48f4634c360daf2b2210cc3",
+    "bytes": 3446
+  },
+  "before-boundary.json": {
+    "SHA256": "397aec36bad5328b589e60e39748713857f75e33f424874d23251fa2e836ff09",
+    "bytes": 3446
+  },
+  "capability.log": {
+    "SHA256": "d78db100eba3426487027ccc984b19dc74278f236a2d6dac08ff96dbd37b5aeb",
+    "bytes": 379
+  },
+  "fixtures.log": {
+    "SHA256": "e550d786ef61b58dfa09d5ff946f0f48341018449b700ee50044b5bea4235ca7",
+    "bytes": 573
+  },
+  "offline-validation-history.json": {
+    "SHA256": "d85730f6e2255283e34ac5ca720c1c8de2af00f2d3a38155c8eff5e45d17de30",
+    "bytes": 2267
+  },
+  "preservation.json": {
+    "SHA256": "479ae7072c8da3ef8763c70b0ab07c889a2158b8835dc07a60f122cdaf3a5397",
+    "bytes": 13928
+  },
+  "result.json": {
+    "SHA256": "bcc0fa729223db99609ff1164db03c6715a44e6d7de778a6a0b8a690014d42c9",
+    "bytes": 2189
+  }
+}

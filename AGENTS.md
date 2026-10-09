@@ -1,5 +1,21 @@
 # DungeonCrawlerCarlemon working contract
 
+Current V01 environment-only authority — 2026-10-09: parent independently
+accepted integration through PR110; corrected active backlog and documentation
+PR111 verified merged at54526744. ONE first environment-stage pilot authorised:
+verified native D1 junction, Workshop/optional cue, safe doorway and Quiet contrast.
+Freeze geometry/collision/actors/anchors/widths/encounters/save logic. Inspect
+native pixels; no concept batch, character reaction or battle animation change.
+Commit source/build; bounded noncombat equivalent before/after route on existing
+ordinary Save030b12fd, actual scene/palette/VRAM budgets and ordinary-speed clip.
+No broad G01 replay, fabricated state, RNG/timing search or automatic retry.
+Stop and diagnose first divergence; preserve all old gates/failures. Private
+logs/saves/clips stay supported Library; scoped draft PR then parent pilot review.
+Original legacy, C01/human pacing/full-floor limitations remain. Parent owns sole
+continuation; no new task/schedule/writer. See V01 environment contract.
+
+## Historical integration checkpoint
+
 Current integration checkpoint — 2026-10-09: parent PR110 review accepted and
 Kurt authorised ONE sequential reviewed stack integration through PR110. All 20
 PRs now verified merged using ordinary merge commits; main a83777b9, exact game

@@ -1,0 +1,2207 @@
+{
+  "base": "54526744eb7ed961007ffe6100f976a1e7448e8b",
+  "native_sources": {
+    "floor_slab_00": "f02cc6d36c3a258f714720ae89cf663b9886b00ed00ef914f0e3ab8faec53724",
+    "floor_slab_10": "50dfdcc55c4e43cdf730c63b6fc7e71551498632c8291632fc979f12065026d1",
+    "floor_slab_01": "71a83af9aeceba68999810417eb902c8ddd97a07ab9b0d1a36c48a708359f93d",
+    "floor_slab_11": "5d399b723e01f76729ed79d3b98d70e075348def0d98cb14a5843e6b5a6da157",
+    "floor_scuff": "1231620b439b9cf402026ca10c75506801a371bba3e681572bfca9e862fc927d",
+    "floor_crack": "98221a471459ce69c1223f18dace61f4f0d762f96c2788972be7651ffcd4494f",
+    "door_lintel": "aa099e04617fec0aad828d8dfca2cde08efc6bc46f0457cb53455b1bab594567",
+    "wall_lamp_lit": "83dd1dffb6249f9a8d2d1417cf775927853a375f946dd1dc7abd09244f5e0d63",
+    "floor_warm_pool": "c5ce7360fad39e490a96bf55c87c3ccec734741b33e203b94de930432be287b5",
+    "floor_repair": "8c28e6b020f9ae1969bfced2ae4ce4e1db60bc4725215e8dbc93c9af9d00d2c8",
+    "conduit_horizontal": "859ec85a2b0dc26dfcffedf5a406c9ad8d77671f1d08d295d1745040125f11ed",
+    "mat_corner_nw": "7908b193e258e63d006d397822823a4c5322596a63d67473b8315f56cf7e81d0",
+    "mat_top": "cf6fe7e8f937e50e9b3050d4d574282222b9d66278bdf2128abfe369933c1462",
+    "mat_corner_ne": "3b3071a8bc1dfcb35d453246913aa671e11d0bef9ac2e20f20d0fa66362c9d74",
+    "mat_left": "4f5cafd02c25f30c95b1858384327c7943d08a5a7f24da8eef6aa15749efde91",
+    "mat_right": "0fae34d75567acdb00719e40b5b29162ae8882ba7516530f757e18c91d047e99",
+    "mat_middle": "bcd00ef3337388baed8f71c3940e89b49662d41424f6c3e43788814697a25171",
+    "mat_corner_sw": "0dbf0b3beeffa82108454193d297da9d693eee36b09640a4badafc50f8abc014",
+    "mat_bottom": "587a5f315eadc726f2ffeb615341eedaf938b2ff709373085c1beef3bfdac11c",
+    "mat_corner_se": "26c94914cc09ac1ebd2e638165c899e5bc3d5143e5e260062b34a18644b3bc65"
+  },
+  "old_tiles": 192,
+  "new_unique_tiles": 196,
+  "allocated_tiles": 208,
+  "old_metatiles": 180,
+  "new_metatiles": 206,
+  "old_tile_pixels_preserved": true,
+  "old_metatile_prefix_preserved": true,
+  "all_map_collision_elevation_and_attributes_identical": true,
+  "palettes_unchanged": true,
+  "warps_actors_and_dynamic_state_cells_excluded": true,
+  "changes": [
+    {
+      "map": "field",
+      "x": 26,
+      "y": 20,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 20,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 20,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 20,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 20,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 20,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 20,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 20,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 20,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 26,
+      "y": 21,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 21,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 21,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 21,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 21,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 21,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 21,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 21,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 21,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 26,
+      "y": 22,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 22,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 22,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 22,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 22,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 22,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 22,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 22,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 22,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 26,
+      "y": 23,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 23,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 23,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 23,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 23,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 23,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 23,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 23,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 23,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 26,
+      "y": 24,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 24,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 24,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 24,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 24,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 24,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 24,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 24,
+      "before": 12859,
+      "after": 12981,
+      "asset": "floor_slab_10",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 24,
+      "before": 12859,
+      "after": 12980,
+      "asset": "floor_slab_00",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 26,
+      "y": 25,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 27,
+      "y": 25,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 25,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 25,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 25,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 31,
+      "y": 25,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 32,
+      "y": 25,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 25,
+      "before": 12859,
+      "after": 12983,
+      "asset": "floor_slab_11",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 25,
+      "before": 12859,
+      "after": 12982,
+      "asset": "floor_slab_01",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 28,
+      "y": 24,
+      "before": 12859,
+      "after": 12984,
+      "asset": "floor_scuff",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 25,
+      "before": 12859,
+      "after": 12984,
+      "asset": "floor_scuff",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 24,
+      "before": 12859,
+      "after": 12984,
+      "asset": "floor_scuff",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 34,
+      "y": 23,
+      "before": 12859,
+      "after": 12984,
+      "asset": "floor_scuff",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 29,
+      "y": 26,
+      "before": 12859,
+      "after": 12985,
+      "asset": "floor_crack",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 33,
+      "y": 26,
+      "before": 12859,
+      "after": 12985,
+      "asset": "floor_crack",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 30,
+      "y": 23,
+      "before": 12859,
+      "after": 12985,
+      "asset": "floor_crack",
+      "bank": 6,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 37,
+      "y": 25,
+      "before": 15923,
+      "after": 16058,
+      "asset": "door_lintel",
+      "bank": 7,
+      "attribute": 0
+    },
+    {
+      "map": "field",
+      "x": 39,
+      "y": 25,
+      "before": 15923,
+      "after": 16059,
+      "asset": "wall_lamp_lit",
+      "bank": 7,
+      "attribute": 0
+    },
+    {
+      "map": "field",
+      "x": 36,
+      "y": 27,
+      "before": 12859,
+      "after": 12988,
+      "asset": "floor_warm_pool",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 38,
+      "y": 27,
+      "before": 12859,
+      "after": 12988,
+      "asset": "floor_warm_pool",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 37,
+      "y": 28,
+      "before": 12859,
+      "after": 12988,
+      "asset": "floor_warm_pool",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 40,
+      "y": 40,
+      "before": 15923,
+      "after": 16061,
+      "asset": "wall_lamp_lit",
+      "bank": 8,
+      "attribute": 0
+    },
+    {
+      "map": "field",
+      "x": 44,
+      "y": 40,
+      "before": 15923,
+      "after": 16061,
+      "asset": "wall_lamp_lit",
+      "bank": 8,
+      "attribute": 0
+    },
+    {
+      "map": "field",
+      "x": 41,
+      "y": 41,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 43,
+      "y": 41,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 42,
+      "y": 42,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 44,
+      "y": 42,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 47,
+      "y": 42,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 48,
+      "y": 42,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 49,
+      "y": 42,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "field",
+      "x": 51,
+      "y": 42,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 3,
+      "y": 5,
+      "before": 12899,
+      "after": 12992,
+      "asset": "mat_corner_nw",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 4,
+      "y": 5,
+      "before": 12899,
+      "after": 12993,
+      "asset": "mat_top",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 5,
+      "y": 5,
+      "before": 12899,
+      "after": 12994,
+      "asset": "mat_corner_ne",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 3,
+      "y": 6,
+      "before": 12899,
+      "after": 12995,
+      "asset": "mat_left",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 5,
+      "y": 6,
+      "before": 12899,
+      "after": 12996,
+      "asset": "mat_right",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 3,
+      "y": 7,
+      "before": 12899,
+      "after": 12995,
+      "asset": "mat_left",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 4,
+      "y": 7,
+      "before": 12899,
+      "after": 12997,
+      "asset": "mat_middle",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 5,
+      "y": 7,
+      "before": 12899,
+      "after": 12996,
+      "asset": "mat_right",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 3,
+      "y": 8,
+      "before": 12899,
+      "after": 12998,
+      "asset": "mat_corner_sw",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 4,
+      "y": 8,
+      "before": 12899,
+      "after": 12999,
+      "asset": "mat_bottom",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 5,
+      "y": 8,
+      "before": 12899,
+      "after": 13000,
+      "asset": "mat_corner_se",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 4,
+      "y": 1,
+      "before": 15969,
+      "after": 16059,
+      "asset": "wall_lamp_lit",
+      "bank": 7,
+      "attribute": 0
+    },
+    {
+      "map": "quiet",
+      "x": 11,
+      "y": 1,
+      "before": 15969,
+      "after": 16059,
+      "asset": "wall_lamp_lit",
+      "bank": 7,
+      "attribute": 0
+    },
+    {
+      "map": "quiet",
+      "x": 7,
+      "y": 5,
+      "before": 12899,
+      "after": 13001,
+      "asset": "floor_repair",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 8,
+      "y": 6,
+      "before": 12899,
+      "after": 13001,
+      "asset": "floor_repair",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 9,
+      "y": 9,
+      "before": 12899,
+      "after": 13001,
+      "asset": "floor_repair",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "quiet",
+      "x": 11,
+      "y": 9,
+      "before": 12899,
+      "after": 13001,
+      "asset": "floor_repair",
+      "bank": 7,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 2,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 2,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 3,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 3,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 3,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 3,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 3,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 3,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 4,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 4,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 5,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 5,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 6,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 6,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 6,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 6,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 6,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 7,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 7,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 8,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 8,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 9,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 9,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 10,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 10,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 10,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 10,
+      "before": 12859,
+      "after": 13002,
+      "asset": "floor_slab_00",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 10,
+      "before": 12859,
+      "after": 13003,
+      "asset": "floor_slab_10",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 2,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 3,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 6,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 12,
+      "y": 11,
+      "before": 12859,
+      "after": 13004,
+      "asset": "floor_slab_01",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 11,
+      "before": 12859,
+      "after": 13005,
+      "asset": "floor_slab_11",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 5,
+      "y": 9,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 7,
+      "y": 9,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 11,
+      "y": 9,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 13,
+      "y": 9,
+      "before": 12859,
+      "after": 12990,
+      "asset": "floor_repair",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 8,
+      "y": 7,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 9,
+      "y": 7,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 7,
+      "before": 12859,
+      "after": 12991,
+      "asset": "conduit_horizontal",
+      "bank": 8,
+      "attribute": 8
+    },
+    {
+      "map": "workshop",
+      "x": 4,
+      "y": 1,
+      "before": 15923,
+      "after": 16061,
+      "asset": "wall_lamp_lit",
+      "bank": 8,
+      "attribute": 0
+    },
+    {
+      "map": "workshop",
+      "x": 10,
+      "y": 1,
+      "before": 15923,
+      "after": 16061,
+      "asset": "wall_lamp_lit",
+      "bank": 8,
+      "attribute": 0
+    }
+  ]
+}

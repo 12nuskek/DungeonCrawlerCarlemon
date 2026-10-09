@@ -40,7 +40,9 @@ against baseline. Private traces contain denied raw diagnostics and remain
 local outside uploads. Stop at FIRST difference; no subsequent execution.
 Native VRAM must show all17 poses, repeated swaps, warning across other actors;
 real faint/exit cleanup, restored hardware palette checks, actual allocator
-headers/OBJ bitmaps/tags/heap and240x160 clips. Inspect HUD overlap/silhouette
+headers/OBJ bitmaps/tags/heap in native stable field/battle CB2 phases and
+240x160 clips. Intro/exit allocator transitions are deferred, never read as a
+stable heap; complete actual control/state trace and clip still retain them. Inspect HUD overlap/silhouette
 at native resolution; native motion/fade effects retained, no new hardware or
 stack claim. Offline actual-source lifecycle negatives cover interruptions,
 invalid trainer/species/buffers, repeated swaps and faint/exit resets.

@@ -11,7 +11,7 @@ def generate(git):
     addition=(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
     code=replace(code,'int main(int argc, char **argv)',addition+'\nint main(int argc, char **argv)')
     code=replace(code,'    FILE *symbols=fopen(argv[3], "r");','    struct BattleVisual visual={0};\n    FILE *symbols=fopen(argv[3], "r");')
-    fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx'}
+    fields={'gSprites':'sprites','gBattlerSpriteIds':'ids','gHealthboxSpriteIds':'healthboxes','sSpriteTileAllocBitmap':'tiles','sSpritePaletteTags':'palettes','sHeapStart':'heapStart','sHeapSize':'heapSize','sDccBattlePoses':'poseState','gPlttBufferUnfaded':'unfaded','gMonSpritesGfxPtr':'gfx','CB2_Overworld':'fieldCB2','BattleMainCB2':'battleCB2'}
     point='        if (!strcmp(symbol,"gTasks")) tasks=addr;'
     code=replace(code,point,point+'\n'+''.join(f'        if (!strcmp(symbol,"{name}")) visual.a.{field}=addr;\n' for name,field in fields.items()))
     point='    while (fscanf(symbols, "%x %c %127s", &addr, &type, symbol)==3) {'

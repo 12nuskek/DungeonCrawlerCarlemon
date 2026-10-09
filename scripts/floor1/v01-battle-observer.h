@@ -1,5 +1,5 @@
 /* Read-only battle graphics and exact baseline/candidate state comparison. */
-struct BattleVisualAddresses {unsigned sprites,ids,healthboxes,tiles,palettes,heapStart,heapSize,poseState,unfaded,gfx;};
+struct BattleVisualAddresses {unsigned sprites,ids,healthboxes,tiles,palettes,heapStart,heapSize,poseState,unfaded,gfx,fieldCB2,battleCB2;};
 struct BattleVisual {
     struct BattleVisualAddresses a;
     unsigned candidate,recording,frames,samples,mask,changes[4],last[4],repeat[4],captured,seenFaint,exitClean;
@@ -80,12 +80,14 @@ static unsigned bv_trace(struct mCore *core,struct BattleVisual *v,unsigned part
 static unsigned bv_sample(struct mCore *core,struct BattleVisual *v,unsigned mainstate,unsigned mons,unsigned results,unsigned animationActive,unsigned animationActor,unsigned currentMove,unsigned pixels[],unsigned width,unsigned height)
 {
     unsigned battle=core->busRead8(core,mainstate+0x439)&2;
-    unsigned reason=bv_heap(core,v);if(reason)return reason;
+    unsigned callback=core->busRead32(core,mainstate+4)&~1u;
+    if(callback==(v->a.fieldCB2&~1u) || callback==(v->a.battleCB2&~1u)){unsigned reason=bv_heap(core,v);if(reason)return reason;}
     char name[80];snprintf(name,sizeof name,"battle-%05u.ppm",v->frames);if(capture(name,pixels,width,height))return 104;
     if(!battle){
         if(v->candidate && v->a.poseState)for(unsigned i=0;i<16;i++)if(core->busRead8(core,v->a.poseState+i))return 105;
         v->exitClean++;return 0;
     }
+    if(callback!=(v->a.battleCB2&~1u))return 0;
     unsigned turn=core->busRead8(core,results+0x13),active=core->busRead8(core,animationActive),actor=core->busRead8(core,animationActor),move=core->busRead16(core,currentMove);
     for(unsigned b=0;b<3;b++){
         unsigned species=core->busRead16(core,mons+88*b),hp=core->busRead16(core,mons+88*b+40),expectedSpecies=b==0?66:b==1?371:52;

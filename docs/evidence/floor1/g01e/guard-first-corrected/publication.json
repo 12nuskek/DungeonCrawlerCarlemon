@@ -1,0 +1,16 @@
+{
+  "draft_PR": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110",
+  "issue": "https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "branch": "task/floor1-g01e-guard-first-corrected",
+  "base_branch": "task/floor1-g01e-guard-first-current",
+  "base_SHA": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+  "tested_model_host_execution_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "evidence_commit": "768994da3c90a16758ae2e0dfeb67413f089a480",
+  "actual_emulator_assertions": 182,
+  "ordinary_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "runtime_status": "PASS: bounded current Guard-first travel/manual Save/exact native cold only",
+  "next_dependency": "Parent review then explicit protected stack integration including CP72e/PR91 bridge and legacy-input limitation; staged V01 after integration. No further execution here."
+}

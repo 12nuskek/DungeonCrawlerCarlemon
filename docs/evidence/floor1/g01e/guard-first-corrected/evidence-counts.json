@@ -1,0 +1,21 @@
+{
+  "sessions": [
+    {
+      "stage": "patrol",
+      "emulator_assertions": 164,
+      "controller_records": 52,
+      "HP_transitions": 32,
+      "measurements": 6
+    },
+    {
+      "stage": "cold",
+      "emulator_assertions": 18,
+      "controller_records": 0,
+      "HP_transitions": 0,
+      "measurements": 0
+    }
+  ],
+  "total_emulator_assertions": 182,
+  "actual_captures": 13,
+  "distinct_capture_hashes": 7
+}

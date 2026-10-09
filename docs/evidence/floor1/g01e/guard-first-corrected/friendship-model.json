@@ -1,0 +1,20 @@
+{
+  "tested_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "native_pokemon_source_SHA256": "df008d2d381b70f30998e476ed1f7183871580ea037d0fc5832bea11beb9c064",
+  "model_files_SHA256": {
+    "scripts/floor1/native-friendship.py": "64f25daa19b8e34afc5cc68fddc7a4bbb24876419430817b8958ae903acb75ec",
+    "scripts/floor1/guard-first-state.py": "f6a9ad1bfc2df08753b70a49d722e81f73b2d93e7a9bead9f95ac23688eb9428",
+    "scripts/floor1/guard-first-tests.py": "982ac8a4ff6b3f0c141afaade5d34de434081ed2fe619e7f43d9586f4f740650",
+    "scripts/floor1/native-friendship-tests.py": "2d88dba0d27a45ae673fa7f49720d1fe7e24b7e92864a104a3f93d09f44b0422",
+    "scripts/test-f1-g01e-guard-first-corrected.py": "9375912c7bbb356c0ce38827fb518f4ae7b6db75572f0a33bc8c55d770e4cc1d"
+  },
+  "original_rejection_cases": 42,
+  "source_actual_native_transition_cases": 40,
+  "walking_parity_cases": 2048,
+  "walking_parity_assertions": 22528,
+  "same_generated_C_and_binary_as_PR109": true,
+  "same_input_route_and_cold_cadence_as_PR109": true,
+  "actual_retained_Field_matching_case_validates_complete_native_transition": true,
+  "original_frozen_validator_still_rejects_retained_actual_input": true,
+  "offline_only": true
+}

@@ -1,3 +1,27 @@
+Corrected current Guard-first — 2026-10-09: **182 emulator assertions pass; unmerged**.
+
+[Draft PR #110](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR109; open/draft/unmerged. Evidence checkpoint `768994da3c90a16758ae2e0dfeb67413f089a480`.
+
+Frozen source/model/host/executions `8a21c95f4381a581397cae5c5dd1109c7312583a`,
+unchanged5084 game/23c77 ROM; pending ordinaryc11c input and identical PR109
+route/decisions/cadence. Native friendship helper uses actual captured section;
+42 rejection+40 model cases and2048 walking parity cases/22528 assertions pass.
+ONE corrected route164 assertions/31083 frames plus ONE exact cold18/2044.
+Guard/Howler win with no incapacity; once-only XP/money/repeats/guide restoration,
+all flags/resources/positions and manual Save/cold pass. Actual measured totals
+14steps/224activeframes,34/544,44/703 satisfy28/448,38/608,46/735 ceilings.
+Ordinary Save `030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c`,
+Warden approach35.3/8,7, levels11/10/fullHP38/30/PP8/40/2/40, Potion1/SCRAP2,
+patrols won; preparation/boss/checkpoint/loop unset; cold Save unchanged.
+13 actual captures and complete private160-file package retained in Library.
+PR109 STOP71/23/14680 and all older failures preserved,63 prior heads unchanged.
+No Warden/engine/integration/C01/full-floor/human-pacing/legacy-equivalence claim.
+Next parent review→explicit reviewed-stack integration including CP72e bridge→V01.
+Original unavailable legacy inputs require a scoped limitation, never substitution.
+[Exact bounded evidence, identities and next dependency](evidence/floor1/g01e/guard-first-corrected/README.md).
+
+## Historical PR109 first-milestone STOP checkpoint
+
 Current Guard-first order/travel check — 2026-10-09: **first milestone STOP71; unmerged**.
 
 [Draft PR #109](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/109) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR108; open/draft/unmerged. Evidence checkpoint `8d97a2f7a2bdf87ef21de0d6e6cfffe252920dcf`.

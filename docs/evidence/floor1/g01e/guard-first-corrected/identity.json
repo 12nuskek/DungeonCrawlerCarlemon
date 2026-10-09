@@ -1,0 +1,19 @@
+{
+  "host_source": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+  "base": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+  "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "ROM_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "ELF_SHA256": "cafc512d915d01ff1b598b1a7050261f5990bc50fc0faed533b0ec6d7309336b",
+  "input_Save_SHA256": "c11c64559f38680dd21afe693327e703fd4b452776ace69f8e7f1e0b1f3bc67f",
+  "host_SHA256": "b651ff60034b0c432d2b96f4aba3c7a54466c2f940e64ac334e195b996b6a1e6",
+  "binary_SHA256": "60977f782c422f820f63c09922e50f1d28c9361b0f66b0901ed9eb1f9a115b1d",
+  "routes": {
+    "patrol": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+    "cold": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67"
+  },
+  "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "frame_limit": 100000,
+  "patrol_battle_frames_each": 36000,
+  "battle_attempts": 2,
+  "method": "One separately authorised current Guard-first route and exact native cold; approved unchanged game build reused, new host compiled"
+}

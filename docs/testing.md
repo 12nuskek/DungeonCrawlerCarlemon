@@ -1,3 +1,14 @@
+Current focused runtime (2026-10-08 Brisbane): resolved staircase and all four
+compact interior buffers,7 ordinary sessions /3,750 assertions on reused exact
+compiled c643f01; runner477e505, actual mGBA0.10.5.15 complete buffers contribute
+3,360 map words,390 behavioral assertions;26 messages/34 pages. Errors empty,
+originals/read-only cold copies unchanged, full flags/items/duo equality passes.
+[Commands, native screenshots, exact identities and limits](evidence/floor1/g01e/staircase/README.md).
+Issue82 / draft PR83, unmerged. No new compile/game patch/new battle or first-clear
+claim. Three-strategy/full/finalT/V01 gates remain. Meter prerequisite withdrawn.
+
+## Preserved OP verification
+
 Latest optional verification: [F1-G01e-OP](evidence/floor1/g01e/optional/README.md),
 8 ordinary-controller sessions /15,701 assertions, compiled c643f01 /runner2ae9d14.
 Existing exact isolated compile reused after engine/ROM identity checks; host

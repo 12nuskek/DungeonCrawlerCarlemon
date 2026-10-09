@@ -1,0 +1,122 @@
+[
+  {
+    "file": "stairs-offer.png",
+    "source_route": "ordinary-resolved-return-refusal-save",
+    "source_capture": "refusal-choice.png",
+    "assertion": "Actual resolved-stairs offer; YES/NO stays explicit.",
+    "sha256": "b220221a422964733dce9d66142cb68c9158a7e0a727be68ce6726610a2534fd",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "stairs-cancelled.png",
+    "source_route": "ordinary-resolved-return-refusal-save",
+    "source_capture": "refusal-cancelled-00-00.png",
+    "assertion": "NO returns control in the Warden room; all flags/items/duo unchanged.",
+    "sha256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "checkpoint-arrival.png",
+    "source_route": "ordinary-resolved-arena-cold-repeat-transition-save",
+    "source_capture": "repeat-transition-arrived.png",
+    "assertion": "YES repeats the resolved transition to checkpoint4,4.",
+    "sha256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "checkpoint-return-text.png",
+    "source_route": "ordinary-resolved-arena-cold-repeat-transition-save",
+    "source_capture": "reentered-review-00-01.png",
+    "assertion": "Review dialogue explains return ladder and incomplete Floor1.",
+    "sha256": "a6a5beb6ae59a82bef53832c22ade778b3092d6a635d5e57f4cd8a33ef27664b",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "checkpoint-cold.png",
+    "source_route": "ordinary-resolved-checkpoint-cold-return-reentry",
+    "source_capture": "cold.png",
+    "assertion": "Real manual Save then cold Continue restores checkpoint8,6.",
+    "sha256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "opening-journal.png",
+    "source_route": "ordinary-resolved-checkpoint-cold-return-reentry",
+    "source_capture": "cold-opening-only-00-00.png",
+    "assertion": "Journal reports opening checkpoint, never Floor1 completion.",
+    "sha256": "b08fdfe172019be14924ae2d4b11676951676c3a3a8b833368922cdc80af67fb",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "quiet-cold.png",
+    "source_route": "ordinary-quiet-cold-buffer",
+    "source_capture": "cold-trial-resolved-00-00.png",
+    "assertion": "Ordinary pending save: cold Quiet buffer and resolved trial text.",
+    "sha256": "382e9df6065fa3601b80a2eab1d7a58b8e7fd32db03bd9d6030cb5c19b2d517c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  },
+  {
+    "file": "workshop-cold.png",
+    "source_route": "ordinary-workshop-cold-buffer",
+    "source_capture": "cold-cache-no-charge-00-00.png",
+    "assertion": "Ordinary pending save: cold Workshop buffer and no-charge refusal.",
+    "sha256": "3584034c8589d7807fd08b5a7035365b43cfb46ae18eeb9ddf867ebc19346d3c",
+    "dimensions": [
+      240,
+      160
+    ],
+    "compiled_source": "c643f01c11ec68119b0347b107ee20115131debc",
+    "runner_source": "477e50551229311efabad367902302e175355a02",
+    "rom_sha256": "b0251d46f4d102cfbd91df961bb7aa98bd3e711d8598e9f690ec45abc5e64b1a",
+    "unretouched": true
+  }
+]

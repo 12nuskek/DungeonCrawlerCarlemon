@@ -1,3 +1,5 @@
+Published blocked battle checkpoint: [draft PR114](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/114), initial head `9db157e7dbd1cf2f7e7386261bd5f7d3b0c38cdf`; base/main `c6d647a815ffce44a2419a2cf83b6c2c094359f0`. Candidate compiled only; first baseline stopped before combat. Original route and STOP remain intact, proposed south-facing correction unapplied/unexecuted. Parent diagnosis review is the next dependency; no further emulator execution or merge authorised here. All 67 previous heads preserved; CI absent. Publication details: `docs/evidence/floor1/v01/battle/publication.json`.
+
 # V01 battle bindings — blocked entry checkpoint
 
 **Implemented and compiled; actual battle visuals are unverified.** PR113 was accepted by the parent and normally merged at `c6d647a815ffce44a2419a2cf83b6c2c094359f0`, exact reviewed tree and both parents, all66 previous non-main heads preserved. CI absent, not success. The executor reconnected and the accepted ac2d87eb checkpoint was clean before any further writes. [Merge identities](overworld-merge.json).

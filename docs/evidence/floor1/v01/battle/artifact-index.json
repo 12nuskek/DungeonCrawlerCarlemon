@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "bytes": 7375,
-    "SHA256": "32b7605fe39ae9ba9fec3f7241577e3636e02e38d92f9861a0b8210e4f0af4b7"
+    "bytes": 7978,
+    "SHA256": "4a77e6e1a4de8e0089a0be1257b41d8e19a8835cac85c1f20b5ebc5d88bdc4f0"
   },
   {
     "path": "STOP.json",
@@ -73,6 +73,11 @@
     "path": "proposed-entry-direction.patch",
     "bytes": 243,
     "SHA256": "81404a8f39b7858d987e659b0c14e1ac0b604034351aca561d9fe9b1f359cc0d"
+  },
+  {
+    "path": "publication.json",
+    "bytes": 991,
+    "SHA256": "2a793a9f4f22437f5a326ce93de94bf71c83c05b4f4ccbf3578a4559778065e8"
   },
   {
     "path": "static-review.json",

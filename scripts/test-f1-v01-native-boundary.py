@@ -26,7 +26,7 @@ static unsigned due(void *v){struct Model *m=v;return m->cycles>=m->event;}
 static void events(void *v){struct Model *m=v;m->time+=m->cycles;m->cycles=0;m->events++;if(m->eventAdvancesFrame)m->frame++;}
 static void step(void *v){struct Model *m=v;assert(!due(v));m->cycles+=3;m->steps++;}
 static unsigned observe(void *v){struct Model *m=v;m->observations++;return m->stop;}
-static struct BvBoundaryDriverOps ops(struct Model *m){return (struct BvBoundaryDriverOps){m,frame,timeNow,due,events,observe,step};}
+static struct BvBoundaryDriverOps ops(struct Model *m){return (struct BvBoundaryDriverOps){m,frame,timeNow,due,events,observe,step,NULL};}
 // Model the ORIGINAL runFrame -> ARMRunLoop batch and event ordering.
 static void original(struct Model *m,unsigned limit){unsigned f=m->frame;uint32_t t=timeNow(m);
  while(m->frame==f && (uint32_t)(timeNow(m)-t)<limit){while(!due(m))step(m);events(m);}}

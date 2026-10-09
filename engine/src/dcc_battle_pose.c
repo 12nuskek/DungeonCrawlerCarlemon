@@ -40,11 +40,12 @@ static void Apply(u8 battler, u8 pose)
     u8 position, i, id = gBattlerSpriteIds[battler];
     struct DccPoseState *state = &sDccBattlePoses[battler];
     if (!gMonSpritesGfxPtr || id >= MAX_SPRITES || pose >= ARRAY_COUNT(sDccPosePictures)) return;
+    if (state->applied == pose + 1) return;
     sprite = &gSprites[id];
     position = GetBattlerPosition(battler);
     // Do not touch reused trainer/effect slots or a replaced sprite buffer.
     if (!sprite->inUse || sprite->images != gMonSpritesGfxPtr->frameImages[position]
-        || !gMonSpritesGfxPtr->sprites.ptr[position] || state->applied == pose + 1) return;
+        || !gMonSpritesGfxPtr->sprites.ptr[position]) return;
     for (i = 0; i < MAX_MON_PIC_FRAMES; i++)
         CpuCopy32(sDccPosePictures[pose], gMonSpritesGfxPtr->sprites.byte[position] + MON_PIC_SIZE * i, MON_PIC_SIZE);
     RequestSpriteCopy(gMonSpritesGfxPtr->sprites.ptr[position],

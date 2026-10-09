@@ -10,6 +10,7 @@
 #include <mgba/internal/arm/debugger/debugger.h>
 #include "v01-native-boundary-adapter.h"
 #include "v01-native-boundary-diagnostics.h"
+#include "v01-native-timeline.h"
 struct BvNativeRuntime {
     struct mDebugger debugger; /* First member: passive hook owns this instance. */
     struct mCore *core;
@@ -24,6 +25,7 @@ struct BvNativeRuntime {
     struct BvNativeMetadata pendingMetadata;
     struct BvNativeFailure failure;
     unsigned retentionAttempted,privateDiagnosticRetained,safeDiagnosticRetained;
+    struct BvTimeline *timeline; /* Optional in isolated fixtures; mandatory host. */
 };
 /* Typed little-endian stream records: B=boundary, F=completed video frame,
  * E=finish. All ordinals/epochs/counts/keys are compared, including zero counts.
@@ -151,11 +153,16 @@ static inline uint32_t bv_native_time(void *p)
 static inline unsigned bv_native_due(void *p)
 {const struct ARMCore *cpu=((struct BvNativeRuntime *)p)->core->cpu;return cpu->cycles>=cpu->nextEvent;}
 static inline void bv_native_events(void *p)
-{struct ARMCore *cpu=((struct BvNativeRuntime *)p)->core->cpu;cpu->irqh.processEvents(cpu);}
+{
+    struct BvNativeRuntime *r=p;struct ARMCore *cpu=r->core->cpu;
+    if(bv_tl_events_before(r->timeline))return;
+    cpu->irqh.processEvents(cpu);bv_tl_events_after(r->timeline);
+}
 static inline unsigned bv_native_observe(void *p)
 {
     struct BvNativeRuntime *r=p;
     if(r->reason || r->failure.present)return r->failure.present?r->failure.reason:r->reason;
+    unsigned trace=bv_tl_before(r->timeline);if(trace)return trace;
     struct ARMCore *cpu=r->core->cpu;
     /* An installed hardware observation must leave the ENTIRE CPU unchanged. */
     struct ARMCore original=*cpu;r->debugger.platform->checkBreakpoints(r->debugger.platform);
@@ -164,11 +171,17 @@ static inline unsigned bv_native_observe(void *p)
 }
 static inline void bv_native_step(void *p)
 {
-    struct ARMCore *cpu=((struct BvNativeRuntime *)p)->core->cpu;
+    struct BvNativeRuntime *r=p;struct ARMCore *cpu=r->core->cpu;
     /* Only reached inside cycles<nextEvent. ARMRun cannot dispatch an event here.
      * Its installed interpreter executes precisely the next original instruction.
      * BX/MSR/IRQ scheduling changes force the inner batch to exit normally. */
     ARMRun(cpu);
+    bv_tl_after(r->timeline);
+}
+static inline unsigned bv_native_pending_failure(void *p)
+{
+    const struct BvNativeRuntime *r=p;
+    return r->failure.present?r->failure.reason:r->reason?r->reason:r->timeline?r->timeline->reason:0;
 }
 static inline unsigned bv_native_fail(struct BvNativeRuntime *r,unsigned reason)
 {
@@ -184,8 +197,9 @@ static inline unsigned bv_native_frame(struct BvNativeRuntime *r,unsigned active
     if(active)r->started=1;
     r->active=active;r->candidate=candidate;r->stream=stream;r->video=video;
     r->lastInput=r->core->getKeys(r->core);r->inputEpoch++;
+    if(r->timeline){r->timeline->inputEpoch=r->inputEpoch;r->timeline->visualEpoch=video;}
     unsigned before=r->core->frameCounter(r->core);
-    struct BvBoundaryDriverOps ops={r,bv_native_frame_counter,bv_native_time,bv_native_due,bv_native_events,bv_native_observe,bv_native_step};
+    struct BvBoundaryDriverOps ops={r,bv_native_frame_counter,bv_native_time,bv_native_due,bv_native_events,bv_native_observe,bv_native_step,bv_native_pending_failure};
     unsigned reason=bv_boundary_drive_frame(&ops,1,VIDEO_TOTAL_LENGTH+VIDEO_HORIZONTAL_LENGTH);
     if(!reason && r->core->frameCounter(r->core)!=before+1)reason=118;
     if(!reason){unsigned observedKeys=r->core->getKeys(r->core);
@@ -198,6 +212,7 @@ static inline unsigned bv_native_frame(struct BvNativeRuntime *r,unsigned active
         if(!reason){reason=bv_boundary_end_frame(&r->sequence,r->lastCount);
             if(reason==117)reason=bv_native_capture117(r,BV_FAIL_FRAME_COUNT,&r->pendingMetadata,r->sequence.ordinal,r->lastCount,r->lastInput,1,0,0);}
     }
+    unsigned trace=bv_tl_flush(r->timeline,reason,0);if(!reason)reason=trace;
     r->reason=reason;return reason;
 }
 static inline unsigned bv_native_checkpoint(const struct BvNativeRuntime *r)
@@ -218,12 +233,13 @@ static inline unsigned bv_native_finish(struct BvNativeRuntime *r)
         if(trailing!=EOF)return bv_native_capture117(r,BV_FAIL_TRAILING_BYTE,&m,r->sequence.ordinal,0,r->lastInput,1,1,(unsigned char)trailing);
         if(m.ioError)return bv_native_capture117(r,BV_FAIL_TRAILING_IO,&m,r->sequence.ordinal,0,r->lastInput,1,0,0);
     }
-    r->finished=1;return 0;
+    r->finished=1;unsigned trace=bv_tl_flush(r->timeline,0,1);if(trace)r->reason=trace;return trace;
 }
 static inline void bv_native_retain_failure(struct BvNativeRuntime *r)
 {
     if(!r || !r->failure.present || r->retentionAttempted)return;
     r->retentionAttempted=1;
+    bv_tl_flush(r->timeline,r->failure.reason,0);
     r->privateDiagnosticRetained=bv_diag_write(&r->failure,"visual-stop-native-boundary-private.json",1);
     r->safeDiagnosticRetained=bv_diag_write(&r->failure,"visual-stop-native-boundary.json",0);
     fprintf(stderr,"Native first failure origin=%s reason=%u private_diagnostic_complete=%u safe_diagnostic_complete=%u; no further instructions\n",bv_diag_origin(r->failure.origin),r->failure.reason,r->privateDiagnosticRetained,r->safeDiagnosticRetained);

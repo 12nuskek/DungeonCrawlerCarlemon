@@ -85,6 +85,7 @@ struct BvBoundaryDriverOps {
     void (*processEvents)(void *);
     unsigned (*observe)(void *);
     void (*step)(void *);
+    unsigned (*failed)(void *); /* Optional sidecar stop; never dispatches work. */
 };
 static inline unsigned bv_boundary_drive_frame(const struct BvBoundaryDriverOps *ops,unsigned verified,unsigned originalLimit)
 {
@@ -97,8 +98,11 @@ static inline unsigned bv_boundary_drive_frame(const struct BvBoundaryDriverOps 
         while(!ops->eventDue(ops->context)){
             unsigned reason=ops->observe(ops->context);if(reason)return reason;
             ops->step(ops->context);
+            if(ops->failed){unsigned reason=ops->failed(ops->context);if(reason)return reason;}
         }
+        if(ops->failed){unsigned reason=ops->failed(ops->context);if(reason)return reason;}
         ops->processEvents(ops->context);
+        if(ops->failed){unsigned reason=ops->failed(ops->context);if(reason)return reason;}
     }
     return 0;
 }

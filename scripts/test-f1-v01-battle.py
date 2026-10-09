@@ -44,6 +44,7 @@ def main():
         boundary=module('native_boundary_symbols',ROOT/'scripts/floor1/v01-native-boundary-symbols.py').write(engine/'pokeemerald.elf',out/'native-boundary.json')
         with (out/'game.sym').open('a') as f:
             for name,key in [('Entry','entry'),('Caller','caller_LR'),('Opcode','entry_opcode')]:f.write(f"{boundary[key]:08x} A bv_native{name}\n")
+            f.write(module('native_timeline_symbols',ROOT/'scripts/floor1/v01-native-timeline-symbols.py').export(engine/'pokeemerald.elf',out/'native-timeline-points.json'))
         fixtures(out,seed,a.case=='after');shutil.copyfile(route,out/'input.route')
         identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'installed_library_SHA256':sha(library),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'symbols_SHA256':sha(out/'game.sym'),'verified_functions_SHA256':sha(out/'verified-functions.json'),'native_boundary_SHA256':sha(out/'native-boundary.json'),'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
         (out/'identity.json').write_text(json.dumps(identity,indent=2)+'\n');print('PASS prepared',a.case,'without emulator');return

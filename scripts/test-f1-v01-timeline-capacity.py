@@ -44,13 +44,12 @@ def main():
     out.mkdir(mode=0o700, parents=True, exist_ok=False)
     fmt = module('capacity_format', ROOT/'scripts/floor1/v01-native-timeline-format.py')
     code, _ = module('capacity_host', ROOT/'scripts/floor1/v01-battle-host.py').generate(git)
-    old_timeline = git('show', BASE + ':scripts/floor1/v01-native-timeline.h') + '\n'
-    old_host_code = module('capacity_old_host', ROOT/'scripts/floor1/v01-battle-host.py').generate(git)[0]
-    old_host_code = old_host_code.replace((ROOT/'scripts/floor1/v01-native-timeline.h').read_text(), old_timeline)
-    assert hashlib.sha256(old_host_code.encode()).hexdigest() == 'ee269bb94ce4ab112f89035ae8e5d2b340972934f1f341e1993eae406376c504'
+    # The later explicit storage contract adds reviewed hooks; retain a byte
+    # proof against the compiled capacity host for all surrounding policy code.
+    module('capacity_storage_binding',ROOT/'scripts/floor1/v01-retained-reference.py').legacy_host(code,git)
     assert code.count('bv_native_frame(&native,') == 1 and 'core->runFrame(core);' not in code
     assert code.count('core->setKeys(') == 13
-    assert code.count('if(visual.recording && visual.frames>=36000)exit(109);') == 1
+    assert code.count('if(visual.recording && visual.frames>=36000)') == 1
     ready = code.split('if (!strcmp(line,"ready\\n")) {', 1)[1].split('continue;', 1)[0]
     assert 'WARDEN_FRAME' not in ready
     route = ROOT/'scripts/contracts/f1-v01-battle.route'

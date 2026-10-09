@@ -43,11 +43,14 @@ enum { BV_TL_EVENT,BV_TL_PHASE,BV_TL_PC,BV_TL_RAWPC,BV_TL_LR,BV_TL_CPSR,
 struct BvTimelinePoint {unsigned pc,rom,opcode,mode,seen;};
 struct BvTimelineConfig {unsigned mainAddress,copyCount,copyArmed,copies,seen;struct BvTimelinePoint point[BV_TL_POINTS];};
 struct BvTimelineRecord {uint32_t word[BV_TL_WORDS];};
+struct BvTimelineStorage;
 struct BvTimeline {
     struct mCore *core;struct BvTimelineConfig config;
     struct BvTimelineRecord *buffer,eventsBefore;
     FILE *file;unsigned used,total,limit,reason,pending,reads,dispatches,cb1,cb2,stopped;
     unsigned inputEpoch,visualEpoch;
+    struct BvTimelineStorage *storage;
+    unsigned flushReason,flushFinish;
 };
 static inline unsigned bv_tl_valid_ram(unsigned a,unsigned n)
 {return (a>=0x02000000&&a<=0x02040000&&n<=0x02040000-a)
@@ -189,6 +192,7 @@ static inline unsigned bv_tl_write_header(FILE *file)
     return fwrite(header,1,sizeof header,file)!=sizeof header||fflush(file)||ferror(file)
         ?BV_TL_FAILURE:0;
 }
+#include "v01-native-timeline-storage.h"
 static inline unsigned bv_tl_open(struct BvTimeline *t,struct mCore *core,const struct BvTimelineConfig *config,const char *path)
 {
     memset(t,0,sizeof *t);t->core=core;t->config=*config;t->limit=BV_TL_LIMIT;
@@ -215,6 +219,7 @@ static inline unsigned bv_tl_open(struct BvTimeline *t,struct mCore *core,const 
  * core/CPU. Never grows the buffer or treats a short write as a whole record. */
 static inline unsigned bv_tl_write_buffer(struct BvTimeline *t)
 {
+    if(t->storage)return bv_tl_storage_write(t);
     for(unsigned i=0;i<t->used;i++){
         unsigned char bytes[BV_TL_WORDS*4];for(unsigned j=0;j<BV_TL_WORDS;j++)for(unsigned k=0;k<4;k++)bytes[4*j+k]=t->buffer[i].word[j]>>(8*k);
         if(fwrite(bytes,1,sizeof bytes,t->file)!=sizeof bytes||ferror(t->file)){t->reason=BV_TL_FAILURE;break;}
@@ -226,11 +231,12 @@ static inline unsigned bv_tl_flush(struct BvTimeline *t,unsigned reason,unsigned
 {
     if(!t)return 0;
     if(t->stopped)return t->reason;
+    t->flushReason=reason;t->flushFinish=finish;
     if(!t->reason){struct BvTimelineRecord r;if(!bv_tl_collect(t,&r))bv_tl_append(t,r,reason?BV_TL_STOP:finish?BV_TL_FINISH:BV_TL_FRAME,reason);}
     bv_tl_write_buffer(t);
     if(reason||finish||t->reason)t->stopped=1;
     return t->reason;
 }
 static inline unsigned bv_tl_close(struct BvTimeline *t)
-{if(!t)return 0;if(t->file&&fclose(t->file))t->reason=BV_TL_FAILURE;t->file=NULL;free(t->buffer);t->buffer=NULL;return t->reason;}
+{if(!t)return 0;if(bv_tl_storage_close(t))t->reason=BV_TL_FAILURE;if(t->file&&fclose(t->file))t->reason=BV_TL_FAILURE;t->file=NULL;free(t->buffer);t->buffer=NULL;return t->reason;}
 #endif

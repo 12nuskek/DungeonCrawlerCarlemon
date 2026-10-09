@@ -117,6 +117,7 @@ static inline unsigned bv_native_sample(struct BvNativeRuntime *r)
     reason=bv_native_compare(r,r->sequence.ordinal,r->video,r->video,r->inputEpoch,r->inputEpoch);
     if(reason)return reason;
     if(!r->candidate && fwrite(r->actual,1,2560,r->stream)!=2560)return 103;
+    if(bv_tl_storage_boundary(r->timeline,r->sequence.ordinal-1))return 119;
     return 0;
 }
 static inline void bv_native_enter(struct mDebuggerPlatform *p,enum mDebuggerEntryReason why,struct mDebuggerEntryInfo *info)
@@ -194,6 +195,7 @@ static inline unsigned bv_native_frame(struct BvNativeRuntime *r,unsigned active
 {
     if(!r || !r->core || !r->authority.verified || r->reason || (active && !stream))return bv_native_fail(r,r && r->reason?r->reason:115);
     if((r->finished && active) || (r->started && !r->finished && (!active || r->candidate!=candidate || r->stream!=stream)))return bv_native_fail(r,115);
+    if(bv_tl_storage_frame(r->timeline))return bv_native_fail(r,119);
     if(active)r->started=1;
     r->active=active;r->candidate=candidate;r->stream=stream;r->video=video;
     r->lastInput=r->core->getKeys(r->core);r->inputEpoch++;

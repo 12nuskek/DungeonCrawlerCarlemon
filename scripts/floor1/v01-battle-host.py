@@ -8,7 +8,8 @@ def generate(git):
     code,base=module('battle_visual_prior',ROOT/'scripts/floor1/warden-fairness-host.py').generate(git)
     assert hashlib.sha256(code.encode()).hexdigest()=='b2030b4da242f14d9993cbb00493dd9bb02c746fc12ce75cd994b11b760f0c71'
     replace=module('battle_visual_replace',ROOT/'scripts/floor1/recovery-host.py').replace_once
-    addition=(ROOT/'scripts/floor1/v01-native-boundary-adapter.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-native-boundary-diagnostics.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-native-timeline.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-native-boundary-runtime.h').read_text().replace('#include "v01-native-boundary-adapter.h"','').replace('#include "v01-native-boundary-diagnostics.h"','').replace('#include "v01-native-timeline.h"','')+'\n'+(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
+    timeline=(ROOT/'scripts/floor1/v01-native-timeline.h').read_text().replace('#include "v01-native-timeline-storage.h"',(ROOT/'scripts/floor1/v01-native-timeline-storage.h').read_text())
+    addition=(ROOT/'scripts/floor1/v01-native-boundary-adapter.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-native-boundary-diagnostics.h').read_text()+'\n'+timeline+'\n'+(ROOT/'scripts/floor1/v01-native-boundary-runtime.h').read_text().replace('#include "v01-native-boundary-adapter.h"','').replace('#include "v01-native-boundary-diagnostics.h"','').replace('#include "v01-native-timeline.h"','')+'\n'+(ROOT/'scripts/floor1/party-resource-canonical.h').read_text()+'\n'+(ROOT/'scripts/floor1/v01-battle-observer.h').read_text()
     code=replace(code,'int main(int argc, char **argv)',addition+r'''
 struct BvSnapshotContext {struct mCore *core;struct BattleVisual *visual;unsigned party,mons,saveptr,save2ptr,mainstate,results,currentMove,attacker,defender,outcome,controls;};
 static unsigned bv_native_snapshot_reader(void *context,unsigned char data[2560])
@@ -25,9 +26,9 @@ int main(int argc, char **argv)''' )
     code=replace(code,point,point+'\n        bv_tl_symbol(&timelineConfig,addr,symbol);')
     code=replace(code,'    core->reset(core);','    core->reset(core);\n    struct BvSnapshotContext snapshot={core,&visual,party,mons,saveptr,save2ptr,mainstate,results,currentMove,attacker,defender,outcome,controls};\n    if(core->busRead16(core,nativeEntry)!=nativeOpcode || bv_native_attach(&native,core,nativeEntry,nativeCaller,&snapshot,bv_native_snapshot_reader))return 115;')
     point='    if(core->busRead16(core,nativeEntry)!=nativeOpcode || bv_native_attach(&native,core,nativeEntry,nativeCaller,&snapshot,bv_native_snapshot_reader))return 115;'
-    code=replace(code,point,point+'\n    if(bv_tl_open(&timeline,core,&timelineConfig,"native-timeline-private.bin"))return 119;\n    native.timeline=&timeline;')
+    code=replace(code,point,point+'\n    if(bv_tl_open(&timeline,core,&timelineConfig,"native-timeline-private.bin"))return 119;\n    if(bv_tl_storage_enable(&timeline,"native-timeline-summary-private.bin"))return 119;\n    native.timeline=&timeline;')
     point='    core->runFrame(core); \\\n'
-    code=replace(code,point,r'''    if(visual.recording && visual.frames>=36000)exit(109); \
+    code=replace(code,point,r'''    if(visual.recording && visual.frames>=36000){bv_tl_flush(&timeline,109,0);exit(109);} \
     unsigned vr=bv_native_frame(&native,visual.recording,visual.candidate,visual.trace,visual.frames); \
     if(visual.recording){ \
         const struct ARMCore *cpu=core->cpu; \
@@ -35,7 +36,7 @@ int main(int argc, char **argv)''' )
         if(cpu){visual.cpuPC=(unsigned)cpu->gprs[ARM_PC];visual.cpuLR=(unsigned)cpu->gprs[ARM_LR];visual.cpuSP=(unsigned)cpu->gprs[ARM_SP];visual.cpuCPSR=(unsigned)cpu->cpsr.packed;} \
         if(vr==103)bv_snapshot_mismatch(core,&visual,native.actual,native.expected,native.expectedBytes); \
         if(!vr)vr=bv_sample(core,&visual,mainstate,mons,results,animationActive,animationActor,currentMove,pixels,width,height); \
-        if(vr){bv_native_retain_failure(&native);bv_diagnose(core,&visual,vr,mons,mainstate,currentMove);capture("visual-stop.ppm",pixels,width,height);fprintf(stderr,"Battle visual stop reason=%u frame=%u; no further frames\n",vr,visual.frames);printf("result=%u assertions=%u\n",vr,checks);exit(vr);} \
+        if(vr){bv_native_retain_failure(&native);bv_tl_flush(&timeline,vr,0);bv_diagnose(core,&visual,vr,mons,mainstate,currentMove);capture("visual-stop.ppm",pixels,width,height);fprintf(stderr,"Battle visual stop reason=%u frame=%u; no further frames\n",vr,visual.frames);printf("result=%u assertions=%u\n",vr,checks);exit(vr);} \
         visual.frames++; \
     }else if(vr){bv_native_retain_failure(&native);fprintf(stderr,"Native frame stop=%u; no further instructions\n",vr);exit(vr);} \
 ''')
@@ -65,5 +66,6 @@ int main(int argc, char **argv)''' )
         if(!strcmp(line,"visual finish\n")){unsigned vr=bv_native_finish(&native);if(!vr)vr=bv_finish(&visual);if(vr){bv_native_retain_failure(&native);result=vr;break;}checks+=8;continue;}
 ''')
     assert code.count('bv_native_frame(&native,')==1 and code.count('core->runFrame(core);')==0 and 'busWrite' not in code
-    code=replace(code,'    mCoreConfigDeinit(&core->config);','    unsigned timelineResult=bv_tl_close(&timeline);if(!result)result=timelineResult;\n    mCoreConfigDeinit(&core->config);')
+    code=replace(code,'    mCoreConfigDeinit(&core->config);','    if(result)bv_tl_flush(&timeline,result,0);\n    unsigned timelineResult=bv_tl_close(&timeline);if(!result)result=timelineResult;\n    mCoreConfigDeinit(&core->config);')
+    code=replace(code,'    capture("warden-budget-stop.ppm",pixels,width,height); \\\n','    bv_tl_flush(&timeline,51,0); \\\n    capture("warden-budget-stop.ppm",pixels,width,height); \\\n')
     return code,base

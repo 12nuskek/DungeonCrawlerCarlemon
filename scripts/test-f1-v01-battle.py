@@ -27,7 +27,8 @@ def fixtures(out,seed,candidate):
             r,g,b=map(int,line.split());palette.append((r>>3)|((g>>3)<<5)|((b>>3)<<10))
     assert len(palette)==48;(out/'visual-palettes.bin').write_bytes(struct.pack('<48H',*palette))
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--case',choices=['before','after'],required=True);p.add_argument('--build',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--seed',type=Path,required=True);p.add_argument('--prepare',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--case',choices=['before','after'],required=True);p.add_argument('--build',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--seed',type=Path,required=True);p.add_argument('--prepare',action='store_true')
+    p.add_argument('--retained-reference',type=Path,help='Explicit candidate-only contract: exact original complete PASS oracle, never newer partial baseline');a=p.parse_args()
     library=Path('/usr/lib/x86_64-linux-gnu/libmgba.so.0.10')
     assert sha(library)=='a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63'
     assert not git('status','--porcelain'),'Commit source/host/route before preparation or execution'
@@ -35,6 +36,22 @@ def main():
     assert sha(seed)==SEED and git('rev-parse',game+':engine')==git('rev-parse',(BASE if a.case=='before' else head)+':engine')
     if a.case=='before':assert sha(rom)=='ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461'
     assert not (a.output.resolve()/'STOP.json').exists(),'Retain first STOP; no dependent execution'
+    # This explicit contract is separately reviewed; the legacy fresh-baseline
+    # gate below still applies when this option is absent. Verification/preflight
+    # precede any output directory, Save copy, claim or game process.
+    binding=module('visual_retained_reference',ROOT/'scripts/floor1/v01-retained-reference.py')
+    reference=None
+    if a.retained_reference:
+        assert a.case=='after','Retained-reference contract never restarts a baseline'
+        reference=binding.verify(a.retained_reference,seed)
+        assert game=='2feadf56764c0d89c3dde9ef4622ea6d43b32f69'
+        assert sha(rom)=='a022b2a5030214f8cbeb0621af47e6cb9a47208424aa86f56b67862b5028f8d4'
+        assert sha(engine/'pokeemerald.elf')=='f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218'
+    storage_identity=json.loads((ROOT/'docs/evidence/floor1/v01/battle/storage-binding/build-identity.json').read_text())
+    current_code,_=module('visual_storage_host',ROOT/'scripts/floor1/v01-battle-host.py').generate(git)
+    assert hashlib.sha256(current_code.encode()).hexdigest()==storage_identity['host_source_SHA256']
+    budget=binding.storage_bound(current_code,storage_identity['working_files_upper_bytes'])
+    if a.prepare:binding.preflight(budget,a.output)
     if a.prepare:
         out.mkdir(parents=True,exist_ok=False);code,_=module('visual_host',ROOT/'scripts/floor1/v01-battle-host.py').generate(git);(out/'observer.c').write_text(code)
         with (out/'host-build.log').open('w') as f:subprocess.run(['cc','-DUSE_DEBUGGERS','-std=gnu11','-Wall','-Wextra','-Werror',str(out/'observer.c'),'-lmgba','-o',str(out/'playtest')],stdout=f,stderr=subprocess.STDOUT,check=True)
@@ -47,15 +64,27 @@ def main():
             f.write(module('native_timeline_symbols',ROOT/'scripts/floor1/v01-native-timeline-symbols.py').export(engine/'pokeemerald.elf',out/'native-timeline-points.json'))
         fixtures(out,seed,a.case=='after');shutil.copyfile(route,out/'input.route')
         identity={'source':head,'base':BASE,'game_build':game,'engine_tree':git('rev-parse',game+':engine'),'ROM_SHA256':sha(rom),'ELF_SHA256':sha(engine/'pokeemerald.elf'),'installed_library_SHA256':sha(library),'host_SHA256':sha(out/'observer.c'),'binary_SHA256':sha(out/'playtest'),'route_SHA256':sha(route),'input_Save_SHA256':SEED,'fixture_SHA256':{f.name:sha(f) for f in sorted(out.glob('*.bin'))},'symbols_SHA256':sha(out/'game.sym'),'verified_functions_SHA256':sha(out/'verified-functions.json'),'native_boundary_SHA256':sha(out/'native-boundary.json'),'battle_bound':30000,'visual_bound':36000,'execution_limit':1,'case':a.case}
+        assert identity['binary_SHA256']==storage_identity['host_binary_SHA256']
+        identity['storage_bound']=budget
+        if reference:identity['retained_reference']=reference
         (out/'identity.json').write_text(json.dumps(identity,indent=2)+'\n');print('PASS prepared',a.case,'without emulator');return
     identity=json.loads((out/'identity.json').read_text());assert identity['source']==head and identity['host_SHA256']==sha(out/'observer.c') and identity['binary_SHA256']==sha(out/'playtest') and identity['ROM_SHA256']==sha(rom) and identity['route_SHA256']==sha(route)==sha(out/'input.route')
     assert identity['installed_library_SHA256']==sha(library)
     for name,digest in identity['fixture_SHA256'].items():assert sha(out/name)==digest
     assert identity['native_boundary_SHA256']==sha(out/'native-boundary.json')
     assert identity['symbols_SHA256']==sha(out/'game.sym') and identity['verified_functions_SHA256']==sha(out/'verified-functions.json')
+    assert identity['storage_bound']==budget
+    assert identity.get('retained_reference')==reference
     if a.case=='after':
-        before=a.output.resolve()/'before';summary=json.loads((before/'summary.json').read_text());assert summary['native_exit']==0 and summary['errors_bytes']==0
+        before=a.retained_reference.resolve() if reference else a.output.resolve()/'before'
+        summary=json.loads((before/'summary.json').read_text());assert summary['native_exit']==0 and summary['errors_bytes']==0
+        assert not (out/'expected-native-boundary-trace.bin').exists(),'Exclusive oracle copy; preserve prior files'
         shutil.copyfile(before/'native-boundary-trace.bin',out/'expected-native-boundary-trace.bin')
+        if reference:assert sha(out/'expected-native-boundary-trace.bin')==binding.RAW
+    credited_names=set(identity['fixture_SHA256'])|{'observer.c','playtest','game.sym','verified-functions.json','native-boundary.json','native-timeline-points.json','input.route','expected-metadata.json','identity.json','host-build.log','expected-native-boundary-trace.bin'}
+    allocated=sum((out/name).stat().st_blocks*512 for name in credited_names if (out/name).is_file() and not (out/name).is_symlink())
+    credit=min(allocated,budget['working_files']+budget['reference_copy']+budget['metadata_files'])
+    binding.preflight(budget,out,credited=credit) # Recheck immediately before Save/claim/process.
     save=out/'ordinary.sav';assert not save.exists();shutil.copyfile(seed,save)
     with (out/'execution-claim.json').open('x') as f:json.dump(identity,f,indent=2)
     with (out/'input.route').open() as inp,(out/'replay.log').open('w') as log,(out/'errors.log').open('w') as err:run=subprocess.run([str(out/'playtest'),str(rom),str(save),str(out/'game.sym')],cwd=out,stdin=inp,stdout=log,stderr=err)
@@ -73,7 +102,8 @@ def main():
         assert run.returncode==0 and summary['errors_bytes']==0 and footer and int(footer[1])==0 and len(summary['visual'])==1 and len(summary['peaks'])==1
         assert summary['output_Save_SHA256']==SEED and sha(seed)==SEED
         if a.case=='after':
-            before=json.loads((a.output.resolve()/'before/summary.json').read_text())
+            baseline=a.retained_reference.resolve() if reference else a.output.resolve()/'before'
+            before=json.loads((baseline/'summary.json').read_text())
             for field in ['peaks','battles','vitals','pilot','ordinary_controls_SHA256']:assert summary[field]==before[field],field
         assert sha(rom)==identity['ROM_SHA256']
     except Exception as e:

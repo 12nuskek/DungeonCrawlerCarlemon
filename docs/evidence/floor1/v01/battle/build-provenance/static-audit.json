@@ -1,0 +1,140 @@
+{
+  "scope": "Static ELF and compiled native ABI inspection only; zero emulator/Save/runtime execution",
+  "pre_mask_ROM_parity": true,
+  "active_ELF_sha256": "98fc1accd7516fb54baf15ba76cb954ca24a30051dfea63704a0efcf2882c53d",
+  "memory": {
+    "ewram": {
+      "origin": 33554432,
+      "capacity": 262144,
+      "used": 249732,
+      "linked_end": 33804164,
+      "unallocated_static_bytes": 12412,
+      "pre_mask_used": 249728,
+      "growth_bytes": 4
+    },
+    "iwram": {
+      "origin": 50331648,
+      "capacity": 32768,
+      "used": 30892,
+      "linked_end": 50362540,
+      "unallocated_static_bytes": 1876,
+      "pre_mask_used": 30892,
+      "growth_bytes": 0
+    },
+    "stack": {
+      "initial_system_sp": 50363968,
+      "initial_irq_sp": 50364320,
+      "interrupt_vector": 50364412,
+      "static_gap_below_initial_system_sp": 1428,
+      "runtime_stack_depth_measured": false,
+      "compiled_initial_stack_words": {
+        "sp_sys": {
+          "literal_address": 134218296,
+          "value": 50363968
+        },
+        "sp_irq": {
+          "literal_address": 134218300,
+          "value": 50364320
+        }
+      }
+    },
+    "symbols": {
+      "gHeap": {
+        "value": 33554432,
+        "size": 114688,
+        "type": 1
+      },
+      "sHeapStart": {
+        "value": 50331652,
+        "size": 4,
+        "type": 1
+      },
+      "sHeapSize": {
+        "value": 50331656,
+        "size": 4,
+        "type": 1
+      },
+      "sDccBattlePoses": {
+        "value": 33804136,
+        "size": 16,
+        "type": 1
+      },
+      "sDccPoseActive": {
+        "value": 33804152,
+        "size": 1,
+        "type": 1
+      },
+      "sDccPosePending": {
+        "value": 33804153,
+        "size": 1,
+        "type": 1
+      }
+    },
+    "heap": {
+      "reserved_bytes": 114688,
+      "included_in_ewram_used": true,
+      "runtime_allocations_or_free_heap_measured": false
+    }
+  },
+  "native_boundary_pins_verified": true,
+  "unique_lifecycle_function_count": 11,
+  "existing_layout_assertions_compiled": true,
+  "observer_layout": {
+    "pokemon_bytes": 100,
+    "box_bytes": 80,
+    "battle_mon_bytes": 88,
+    "battle_hp_offset": 40,
+    "save1_bytes": 15752,
+    "save2_bytes": 3884,
+    "flags_offset": 4720,
+    "flags_bytes": 300,
+    "resource_start": 1168,
+    "resource_end": 2440,
+    "battle_turn_offset": 19,
+    "copy_request_bytes": 12,
+    "copy_dest_offset": 4,
+    "copy_size_offset": 8,
+    "allocator_header_bytes": 16,
+    "allocator_magic_offset": 2,
+    "allocator_size_offset": 4,
+    "allocator_next_offset": 12
+  },
+  "observer_bitfields": [
+    {
+      "name": "observerInUse",
+      "offset": 62,
+      "value": 1
+    },
+    {
+      "name": "observerInvisible",
+      "offset": 62,
+      "value": 4
+    },
+    {
+      "name": "observerAnimBeginning",
+      "offset": 63,
+      "value": 4
+    },
+    {
+      "name": "observerUsingSheet",
+      "offset": 63,
+      "value": 64
+    },
+    {
+      "name": "observerInBattle",
+      "offset": 1081,
+      "value": 2
+    },
+    {
+      "name": "observerFadeActive",
+      "offset": 7,
+      "value": 128
+    }
+  ],
+  "native_ABI_source_sha256": "fbaac99351931ddf3e55edaf70a2f8c6c2fa3206550ce0474ba0d3ba872c2329",
+  "native_ABI_object_sha256": "34f8dcf8bf5d7f4aa3b030a8cea5a09675ac4b4ebb6c99a3082d5ddae16dc9c2",
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "PASS": true,
+  "reproduction_command": "python3 scripts/floor1/v01-static-build-audit.py --active-engine /workspace/scratch/v01-active-pose-build/engine --pre-mask-engine /workspace/scratch/v01-pre-mask-provenance/engine --tool-root /workspace/scratch/v01-active-pose-tooling/root --output /workspace/scratch/v01-pre-mask-provenance/static-audit"
+}

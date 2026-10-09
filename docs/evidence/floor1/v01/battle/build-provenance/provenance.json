@@ -1,0 +1,60 @@
+{
+  "engine_tree": "baac7fee52e2133fa6192799ef3851f629f188d7",
+  "rebuilt_ROM_sha256": "a022b2a5030214f8cbeb0621af47e6cb9a47208424aa86f56b67862b5028f8d4",
+  "historical_ROM_sha256": "a022b2a5030214f8cbeb0621af47e6cb9a47208424aa86f56b67862b5028f8d4",
+  "ROM_parity": true,
+  "rebuilt_ELF_sha256": "f1dc95e4efcd16afd65dce33b4f85af88975077e3545eccf3fdb39c38fe074ec",
+  "compile_invocations": 1,
+  "emulator_executions": 0,
+  "source_game_commit": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69",
+  "active_game_source_commit": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "checkpoint_parent": "d5b2a784d3588b4627029948f350fa1bfc1384c1",
+  "active_engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "compiler_source_commit": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "compilers": {
+    "agbcc": {
+      "rebuilt_sha256": "58078c3fe54c564bf23496d355f498a394fd5bb2b3a933e35cc835cc9bb14e0e",
+      "historical_sha256": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+      "matches_historical_binary": false
+    },
+    "old_agbcc": {
+      "rebuilt_sha256": "11950fef1d8af0192e91a0dea634d9d7421e2a4a2bcd8a64ec8ed0e9e4f38060",
+      "historical_sha256": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f",
+      "matches_historical_binary": false
+    },
+    "agbcc_arm": {
+      "rebuilt_sha256": "390164b62ba47d58d5cdc0e362d5c429c391d98e682a91be04ccb03003696862",
+      "historical_sha256": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+      "matches_historical_binary": false
+    }
+  },
+  "gcc_version": "14.2.0",
+  "binutils_version": "GNU assembler (2.44-3+23+b1) 2.44",
+  "preparation": {
+    "engine_tree": "baac7fee52e2133fa6192799ef3851f629f188d7",
+    "source_archive_sha256": "ace066ed02ac3a433a088f8586e5408c56ba90ae9332d3d41bf2b9632fc0d5de",
+    "verified_hydration": [
+      {
+        "path": "data/mb_berry_fix.gba",
+        "git_blob": "0afff07f5d2314e2bd35d99de518cbc114009b5e"
+      },
+      {
+        "path": "data/mb_colosseum.gba",
+        "git_blob": "fdeb854a054ba02191f6a209ec5b649f21c4e335"
+      },
+      {
+        "path": "data/mb_ereader.gba",
+        "git_blob": "85057cf4e2bd657da5d632ac12d1ea24aeaa4499"
+      }
+    ],
+    "compile_invocations": 1,
+    "scope": "One isolated compile only, no game execution or historical-input reconstruction"
+  },
+  "build_log_sha256": "5cf92ea28bac096f20338890a2fb5889c7110232710f982add18eeb9bc582163",
+  "audit_script_sha256": "2c55905a72e61eacd253a74af27b33ffa1493eb3bdacb30a79e41065fed8c125",
+  "reproduction_command": "python3 scripts/floor1/v01-static-build-audit.py --active-engine /workspace/scratch/v01-active-pose-build/engine --pre-mask-engine /workspace/scratch/v01-pre-mask-provenance/engine --tool-root /workspace/scratch/v01-active-pose-tooling/root --output /workspace/scratch/v01-pre-mask-provenance/static-audit",
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "original_private_inputs_restored": false,
+  "scope": "One unchanged pre-mask game compile; source-only ABI compilation/static inspection. No emulator execution, Save access or reference reconstruction."
+}

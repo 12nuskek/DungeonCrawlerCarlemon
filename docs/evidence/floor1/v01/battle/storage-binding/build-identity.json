@@ -1,0 +1,21 @@
+{
+  "host_source_SHA256": "1647352d92b3fa6f0135cf80f4c48df1c2a8a3818b711fd94651390a6334977f",
+  "host_binary_SHA256": "a17ea5134e700efd77552d9a279fd4d6dd94294d443683b8e9fbfe142361ccbd",
+  "host_binary_bytes": 137752,
+  "working_files_upper_bytes": 13488067,
+  "compiled_only": true,
+  "gameplay_host_invocations": 0,
+  "candidate_preparations": 0,
+  "execution_counts": {
+    "baseline": 6,
+    "candidate": 3
+  },
+  "translation_unit_basename": "observer.c",
+  "source_checkpoint": "214a10a214bda76422bf59aaa71df9c42766360e",
+  "starting_publication": "268fa9a8e0673824ff47e191e7be5777e8b6489e",
+  "game_source": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69",
+  "engine_tree": "baac7fee52e2133fa6192799ef3851f629f188d7",
+  "ROM_SHA256": "a022b2a5030214f8cbeb0621af47e6cb9a47208424aa86f56b67862b5028f8d4",
+  "ELF_SHA256": "f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218",
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63"
+}

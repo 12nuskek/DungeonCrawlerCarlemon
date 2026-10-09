@@ -1,0 +1,2 @@
+PASS2968 offline rotation/startup/250-window/last-boundary/overflow/short-write/first-failure/freeze cases; zero CPU execution
+{"cases":2968,"record_buffer_bytes":753664,"storage_context_bytes":88,"active_chunks":250,"startup_chunks":2046,"CPU_instructions":0}

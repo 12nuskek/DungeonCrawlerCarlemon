@@ -1,3 +1,14 @@
+Current V01 visible checkpoint — 2026-10-09: environment stage implemented/compiled/
+bounded runtime verified on game2748/ROM76dd, host/route/executions45fd.
+Before/after116+116,8188 frames/14 scenes/720 clip frames each, zero battles/Save
+mutation. Original baseline STOP25/3932/exit14 remains separate; diagnosed40-frame
+zero-input settle, no gate/assets/game change. Native diagnostic buffers/keys stay
+local outside uploads; new ordinary saves/text logs/native frames retained in
+supported private Library. Draft publication then STOP for parent visible-pilot
+review. No further emulator execution, art iteration, reaction/battle stage,
+merge or rollout authorised here. Original legacy/C01/human pacing limitations
+remain. See docs/evidence/floor1/v01/environment/README.md.
+
 # DungeonCrawlerCarlemon working contract
 
 Current V01 environment-only authority — 2026-10-09: parent independently

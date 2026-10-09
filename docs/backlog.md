@@ -1,3 +1,24 @@
+V01 environment pilot — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged**.
+
+PR111 documentation/matrix checkpoint verified merged at
+`54526744eb7ed961007ffe6100f976a1e7448e8b`. Environment-only source
+`2748afa8bca3e3f405c8da3342c9938fd1e5d3df`; separate frozen host/route/executions
+`45fd1550be6c6f895a20e66bc63d5d4027a241e2`. Equivalent ordinary noncombat
+before/after passed116+116 assertions,8188 frames each,14 hardware/scene checks
+and720 native clip frames each, zero battles/Save mutation. Six engine asset
+files only;205 cells, collision/elevation/behavior/actors/warps/game code fixed.
+Original baseline failure25/3932/exit14 retained, separately diagnosed/corrected;
+container clip encoding failed after native success and was completed offline
+from existing frames with host ffmpeg, no emulator replay.
+
+[Actual images, clips, source/build/allocation identities and limits](evidence/floor1/v01/environment/README.md).
+Private new saves/text logs/native captures retained in supported Library; key-bearing
+native diagnostic buffers stay local/outside uploads. Parent visible-pilot review
+is next, before any further V01 stage or rollout. Original legacy inputs remain
+unavailable; C01/human pacing/nine-district completion remain separate gates.
+
+## Historical integration checkpoint
+
 Reviewed stack integration — 2026-10-09: **20 PRs merged; exact engine/build verified**.
 
 Main `a83777b94684919d121cabf4f6b2d45de23027c7` integrates

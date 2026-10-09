@@ -1,3 +1,24 @@
+V01 environment pilot — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged**.
+
+PR111 documentation/matrix checkpoint verified merged at
+`54526744eb7ed961007ffe6100f976a1e7448e8b`. Environment-only source
+`2748afa8bca3e3f405c8da3342c9938fd1e5d3df`; separate frozen host/route/executions
+`45fd1550be6c6f895a20e66bc63d5d4027a241e2`. Equivalent ordinary noncombat
+before/after passed116+116 assertions,8188 frames each,14 hardware/scene checks
+and720 native clip frames each, zero battles/Save mutation. Six engine asset
+files only;205 cells, collision/elevation/behavior/actors/warps/game code fixed.
+Original baseline failure25/3932/exit14 retained, separately diagnosed/corrected;
+container clip encoding failed after native success and was completed offline
+from existing frames with host ffmpeg, no emulator replay.
+
+[Actual images, clips, source/build/allocation identities and limits](../evidence/floor1/v01/environment/README.md).
+Private new saves/text logs/native captures retained in supported Library; key-bearing
+native diagnostic buffers stay local/outside uploads. Parent visible-pilot review
+is next, before any further V01 stage or rollout. Original legacy inputs remain
+unavailable; C01/human pacing/nine-district completion remain separate gates.
+
+## Historical integration checkpoint
+
 # Reviewed integration checkpoint — 9 October 2026
 
 Main a83777b9 integrates the reviewed stack through PR110 with exact 5084/23c77
@@ -235,7 +256,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failure record integrated by PR87: exit32 premature Bag A, exact prefix/state passed; this execution's heal/victory/XP/Save/cold remain unverified. Separate PR89 closure does not rewrite the failed controller record |
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
-| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Environment-only first stage now authorised after accepted integration: reuse verified native junction, Workshop/optional cue, safe doorway and Quiet contrast; geometry/gameplay fixed. No character reaction or battle-animation changes in this increment. [Scoped entry plan](v01-entry-plan.md); later V01 stages and C01/human pacing remain pending |
+| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Environment-only first stage implemented/compiled/bounded runtime verified; unmerged. Game2748/ROM76dd, host/route45fd;116+116 assertions, equivalent native captures and720-frame clips. Geometry/gameplay fixed; original baseline STOP25 preserved separately. Parent visible-pilot review next. Character/reaction/action-bound battle stages, C01 and human pacing remain pending. [Actual environment pilot](../evidence/floor1/v01/environment/README.md) |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |

@@ -1,0 +1,116 @@
+{
+  "base": "54526744eb7ed961007ffe6100f976a1e7448e8b",
+  "game_source": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+  "host_route_execution_source": "45fd1550be6c6f895a20e66bc63d5d4027a241e2",
+  "candidate_build": {
+    "source": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+    "game_source": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+    "engine_tree": "fc20261a125a62357fc90293c53a2995e31fe855",
+    "upstream_emerald": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+    "agbcc": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "tooling_image": "4aafe586a8b5c8e5ec720843a42e3afd63f03e62663965d06c1492702c579a54",
+    "fresh_engine_git_archive": true,
+    "verified_hydrated_upstream_blobs": [
+      [
+        "0afff07f5d2314e2bd35d99de518cbc114009b5e",
+        "data/mb_berry_fix.gba"
+      ],
+      [
+        "fdeb854a054ba02191f6a209ec5b649f21c4e335",
+        "data/mb_colosseum.gba"
+      ],
+      [
+        "85057cf4e2bd657da5d632ac12d1ea24aeaa4499",
+        "data/mb_ereader.gba"
+      ]
+    ],
+    "command": "make -C engine -j2",
+    "reused_verified_recovery_agbcc_binaries": true,
+    "cc_version": "cc (Debian 14.2.0-19) 14.2.0",
+    "as_version": "GNU assembler (2.44-3+23+b1) 2.44",
+    "agbcc_binary_sha256": {
+      "tools/agbcc/bin/agbcc": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+      "tools/agbcc/bin/agbcc_arm": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+      "tools/agbcc/bin/old_agbcc": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f"
+    },
+    "base": "54526744eb7ed961007ffe6100f976a1e7448e8b"
+  },
+  "candidate_ROM_SHA256": "76dd6ae4606ad52167e7cdad5966ae02c695b968407b6e7c3b9bc5c66d0cc4e5",
+  "candidate_ELF_SHA256": "b99a602cb3250883e1a508c984da3415e44dad928ae542b90a51e93b7de75053",
+  "baseline_ROM_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "baseline_ELF_SHA256": "3932815872d850af777f0620c3114f8d6975964d8792570bd1d2af776215e6af",
+  "build_log_SHA256": "e23766413aa2df7d4cfe7686a0f486543dd2f5c8d3e3e3db0093ff62177c36cb",
+  "make_exit": 0,
+  "warning_as_error_host_compile_exit": 0,
+  "existing_host_cases": {
+    "walking": 2872,
+    "phase_clock_additional": 1353
+  },
+  "native_asset_verifier": {
+    "checksums": 123,
+    "native_png": 91,
+    "static_checks": 721
+  },
+  "cases": {
+    "before": {
+      "source": "45fd1550be6c6f895a20e66bc63d5d4027a241e2",
+      "base": "54526744eb7ed961007ffe6100f976a1e7448e8b",
+      "game_build": "a83777b94684919d121cabf4f6b2d45de23027c7",
+      "engine_tree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "ROM_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+      "host_SHA256": "500c4bff81fd73e9d22b699812f961c63867c592aa02af94b521a529a0bb9d6b",
+      "binary_SHA256": "3b31f95bee81ea337a653858443852c7e43eb05c1628fe25a81285ce98f932a2",
+      "route_SHA256": "79d29997129e40d16f2b44c76790c388d8d28156aef20ece8000d64ac85d9307",
+      "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+      "native_fixture_SHA256": {
+        "expected-atlas.bin": "99ab727f90028061699622110ca006ec20bfe2c5d1c28c9a39e13ac5c3566660",
+        "expected-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+        "expected-counter.bin": "ade0274f84b828b0980112609bb51775d0a4e39bf4728f21dcdd04a627abb92a",
+        "expected-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+        "expected-map-0.bin": "8ca0ec674fac103f442a219ab524e654113dae33ebd9eeee544600bb4467e71b",
+        "expected-map-1.bin": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+        "expected-map-2.bin": "f317fa78af64bcd5c2342dbde5cae30eec2d915152840f2953b8a217eca4e4cd",
+        "expected-map-3.bin": "f69418c1eee2b2a798d483e7aa7c5bc6300c4d833077ef81951cd848b6d0b56d",
+        "expected-map-4.bin": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+        "expected-metadata.json": "c86b858a5996a64d698b5e7db94d1617d5fda0191690b92a4aac402489388cac",
+        "expected-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+        "expected-palettes.bin": "959bea5eba96007411b64f72871d47303bf4a6ad6b95ca80c929110ff5ef6622",
+        "expected-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000"
+      },
+      "frame_bound": 24000,
+      "battle_bound": 0,
+      "execution_limit": 1,
+      "case": "before"
+    },
+    "after": {
+      "source": "45fd1550be6c6f895a20e66bc63d5d4027a241e2",
+      "base": "54526744eb7ed961007ffe6100f976a1e7448e8b",
+      "game_build": "2748afa8bca3e3f405c8da3342c9938fd1e5d3df",
+      "engine_tree": "fc20261a125a62357fc90293c53a2995e31fe855",
+      "ROM_SHA256": "76dd6ae4606ad52167e7cdad5966ae02c695b968407b6e7c3b9bc5c66d0cc4e5",
+      "host_SHA256": "500c4bff81fd73e9d22b699812f961c63867c592aa02af94b521a529a0bb9d6b",
+      "binary_SHA256": "3b31f95bee81ea337a653858443852c7e43eb05c1628fe25a81285ce98f932a2",
+      "route_SHA256": "79d29997129e40d16f2b44c76790c388d8d28156aef20ece8000d64ac85d9307",
+      "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+      "native_fixture_SHA256": {
+        "expected-atlas.bin": "61b5533986028df47e2a8a10eaa5866b769e28f10ec7a2e71d9dadb09bca726f",
+        "expected-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+        "expected-counter.bin": "ade0274f84b828b0980112609bb51775d0a4e39bf4728f21dcdd04a627abb92a",
+        "expected-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+        "expected-map-0.bin": "a59cd3ecaba3c2c0c1a776989e615846a22b23f9a6dc3a68e01f3dc4cdebf4c2",
+        "expected-map-1.bin": "084c94389966310a3e4e5f88568d830d56aa78ef2eda7e7a20b45715e5068a74",
+        "expected-map-2.bin": "7f046cd0fa7b0fefd75a79f96bf904a231460d31f3e66733c297834d7702ef44",
+        "expected-map-3.bin": "f69418c1eee2b2a798d483e7aa7c5bc6300c4d833077ef81951cd848b6d0b56d",
+        "expected-map-4.bin": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+        "expected-metadata.json": "c86b858a5996a64d698b5e7db94d1617d5fda0191690b92a4aac402489388cac",
+        "expected-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+        "expected-palettes.bin": "959bea5eba96007411b64f72871d47303bf4a6ad6b95ca80c929110ff5ef6622",
+        "expected-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000"
+      },
+      "frame_bound": 24000,
+      "battle_bound": 0,
+      "execution_limit": 1,
+      "case": "after"
+    }
+  }
+}

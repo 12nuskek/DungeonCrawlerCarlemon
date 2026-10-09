@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_ai_script_commands.h"
@@ -1862,6 +1863,7 @@ static void CB2_HandleStartMultiBattle(void)
 
 void BattleMainCB2(void)
 {
+    DccBattlePoseUpdate();
     AnimateSprites();
     BuildOamBuffer();
     RunTextPrinters();

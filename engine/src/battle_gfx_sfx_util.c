@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_controllers.h"
 #include "battle_ai_script_commands.h"
@@ -1288,6 +1289,7 @@ void AllocateMonSpritesGfx(void)
 {
     u8 i = 0, j;
 
+    DccBattlePoseReset();
     gMonSpritesGfxPtr = NULL;
     gMonSpritesGfxPtr = AllocZeroed(sizeof(*gMonSpritesGfxPtr));
     gMonSpritesGfxPtr->firstDecompressed = AllocZeroed(MON_PIC_SIZE * 4 * MAX_BATTLERS_COUNT);
@@ -1311,6 +1313,7 @@ void AllocateMonSpritesGfx(void)
 
 void FreeMonSpritesGfx(void)
 {
+    DccBattlePoseReset();
     if (gMonSpritesGfxPtr == NULL)
         return;
 

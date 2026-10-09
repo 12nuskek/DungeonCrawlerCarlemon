@@ -1,0 +1,274 @@
+[
+  {
+    "index": 0,
+    "character": "carl",
+    "pose": "rest",
+    "source": "engine/graphics/dcc/carl/back.png",
+    "SHA256": "860950dcd34595eeb2d7e83e9965575373f24babb71699b7e8bf0b0ebf245fa1",
+    "bbox": [
+      13,
+      6,
+      51,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 1,
+    "character": "carl",
+    "pose": "strike-anticipation",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-anticipation.png",
+    "SHA256": "4f9a672988363183f88563c5ff448f95fb4ff8956bc9cade9771638d09ba7e95",
+    "bbox": [
+      7,
+      8,
+      48,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 2,
+    "character": "carl",
+    "pose": "strike-contact",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-contact.png",
+    "SHA256": "821e2cae11fb28333e8166ce708a823c47712a06ebbb5ff3fc9471a349108d18",
+    "bbox": [
+      2,
+      8,
+      60,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 3,
+    "character": "carl",
+    "pose": "strike-recovery",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-recovery.png",
+    "SHA256": "3e0f1312187e2e8b7ff41237e9506ce41390c98fedbdae77164d6f184f2d4db5",
+    "bbox": [
+      6,
+      8,
+      49,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 4,
+    "character": "carl",
+    "pose": "brace-set",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/carl/brace-set.png",
+    "SHA256": "799866fa6cef370fc44f5a514597e8d328635309608f515892fc9bc43048a0f4",
+    "bbox": [
+      5,
+      11,
+      51,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 5,
+    "character": "carl",
+    "pose": "brace-hold",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/carl/brace-hold.png",
+    "SHA256": "ac5b7ef08b85ee4c017c98455b1aaa0fc5120fea289d0bd895af28c9f2d3b077",
+    "bbox": [
+      5,
+      14,
+      47,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 6,
+    "character": "donut",
+    "pose": "rest",
+    "source": "engine/graphics/dcc/donut/back.png",
+    "SHA256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+    "bbox": [
+      11,
+      18,
+      53,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 7,
+    "character": "donut",
+    "pose": "spark-anticipation",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-anticipation.png",
+    "SHA256": "a61f70c9b54c610fe68d5121076d4f9779c747b476689e003a85e7d81df09840",
+    "bbox": [
+      4,
+      14,
+      50,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 8,
+    "character": "donut",
+    "pose": "spark-cast",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-cast.png",
+    "SHA256": "b05f3ccfe9de5f134aa765cbd258215f8fa1fd4cc38fdacba377046e015a027b",
+    "bbox": [
+      6,
+      8,
+      54,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 9,
+    "character": "donut",
+    "pose": "spark-recovery",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-recovery.png",
+    "SHA256": "2d4af9c6b76adb83b90b7879d6d61e14ef2878c4d277552b6be37cac63c84792",
+    "bbox": [
+      6,
+      13,
+      48,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 10,
+    "character": "donut",
+    "pose": "weaken-preparation",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-preparation.png",
+    "SHA256": "67b798b0019f06a7dcfdd25c5e9ce277097ba3b426ef3b7e0a807a33f4109dce",
+    "bbox": [
+      4,
+      16,
+      50,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 11,
+    "character": "donut",
+    "pose": "weaken-release",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-release.png",
+    "SHA256": "8c0a40de75298cdac75b0ae852f4bf31f940c6c49ba2d4cc0edf25279cf3c01d",
+    "bbox": [
+      8,
+      13,
+      54,
+      62
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": false
+  },
+  {
+    "index": 12,
+    "character": "warden",
+    "pose": "idle",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/warden/idle-runtime-lift8.png",
+    "SHA256": "c82202ab239ba7855fcc2eac6487b5ba97bbd0e411de082e7cae8957bbe3fb4a",
+    "bbox": [
+      9,
+      14,
+      56,
+      54
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": true
+  },
+  {
+    "index": 13,
+    "character": "warden",
+    "pose": "windup",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/warden/windup-runtime-lift8.png",
+    "SHA256": "270f4ca32a663790a4c06882f27b6f13ef4bae711e0cb50a3713d5acaf496407",
+    "bbox": [
+      9,
+      12,
+      56,
+      54
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": true
+  },
+  {
+    "index": 14,
+    "character": "warden",
+    "pose": "hold",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/warden/hold-runtime-lift8.png",
+    "SHA256": "39dc8e04410129721e08240e8c5669dfe6b983e981a1cfe6cf10668bd6db0285",
+    "bbox": [
+      11,
+      1,
+      54,
+      54
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": true
+  },
+  {
+    "index": 15,
+    "character": "warden",
+    "pose": "slam",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/warden/slam-runtime-lift8.png",
+    "SHA256": "fe106c634031cb01f81509ac90c498bb65cf5eed7405591fb47050cddfe45abf",
+    "bbox": [
+      10,
+      21,
+      56,
+      54
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": true
+  },
+  {
+    "index": 16,
+    "character": "warden",
+    "pose": "recovery",
+    "source": "docs/art-references/native-battle-animation-20261007/frames/warden/recovery-runtime-lift8.png",
+    "SHA256": "bc7dcde4f5256527a9114c2ce7bbf5a8046eb2726f20b7c3766fbf9b267eb2a8",
+    "bbox": [
+      10,
+      16,
+      55,
+      54
+    ],
+    "palette_exact": true,
+    "shift_applied": false,
+    "already_lift8": true
+  }
+]

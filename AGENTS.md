@@ -1,3 +1,20 @@
+Current battle pilot authority — 2026-10-09: parent accepted bounded PR113;
+executor reconnected and clean ac2d87eb/engine76001ee verified. PR113 normally
+merged c6d647a8, exact reviewed tree and parents, all66 non-main heads retained;
+CI absent/protection off/no rulesets, no bypass. Next ONE battle visual pilot:
+verified staged Carl STRIKE/BRACE, Donut SPARK/WEAKEN, Warden native poses,
+Warden lift8 already applied; inspect pixels and smaller silhouette/HUD live.
+Native move/action/HP-update bindings only, existing encounter/mechanics/
+resources/rewards/controller cadence/palettes/save fixed. Freeze source/build,
+ONE baseline and ONE candidate identical fortify-then-offence route from ordinary
+030b preboss input, read-only exact per-frame state/control comparison and
+native clips/OBJ/palette/heap. Actual faint/exit plus offline negatives. Stop FIRST
+unexpected divergence; preserve all failure histories, no search/retry/broad
+first-clear reacceptance. Private supported Library saves/logs/frames, no public
+ROM/keys/denied raw buffers. Scoped draft then STOP for parent visual review;
+no broader rollout/C01/later districts. See v01-battle-contract.md. Previous
+character review stop below is historical, superseded only by this authority.
+
 Current published review package: draft PR113 / existing106, initial evidence
 b26c9dee; tested4938927d/ae1e engine76001ee unchanged. Verified draft/unmerged,
 mainc2f and all66 pre-existing remote heads unchanged; CI absent, not pass.

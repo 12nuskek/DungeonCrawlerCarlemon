@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "crawler.h"
 #include "crawler_warden.h"
 #include "battle.h"
@@ -1859,6 +1860,8 @@ static void Cmd_datahpupdate(void)
     if (gBattleControllerExecFlags)
         return;
 
+    DccBattlePoseImpact();
+
     // moveType will be used later to record for Counter/Mirror Coat whether this was physical or special damage.
     // For moves with a dynamic type that have F_DYNAMIC_TYPE_IGNORE_PHYSICALITY set (in vanilla, just Hidden Power) this will ignore
     // the dynamic type and use the move's base type instead, meaning (as a Normal type) Hidden Power will only ever trigger Counter.
@@ -3066,6 +3069,7 @@ static void Cmd_dofaintanimation(void)
     {
         gActiveBattler = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
         BtlController_EmitFaintAnimation(B_COMM_TO_CONTROLLER);
+        DccBattlePoseFaint(gActiveBattler);
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr += 2;
     }

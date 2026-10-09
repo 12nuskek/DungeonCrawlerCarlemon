@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
@@ -203,6 +204,7 @@ void DoMoveAnim(u16 move)
     gBattleAnimAttacker = gBattlerAttacker;
     gBattleAnimTarget = gBattlerTarget;
     LaunchBattleAnimation(gBattleAnims_Moves, move, TRUE);
+    DccBattlePoseStart(move);
 }
 
 void LaunchBattleAnimation(const u8 *const animsTable[], u16 tableId, bool8 isMoveAnim)

@@ -1,5 +1,20 @@
 # DungeonCrawlerCarlemon working contract
 
+Current review package: draft PR105 / issue104, stacked on unchanged PR103.
+Prepared increment executed: new first route/manual Save and exact cold boot pass;
+dependent cold return warp STOP57 on source-compatible transient relocation guard.
+Preserve claim/STOP/saves; no retry/further frame/battle. Full cold route unverified.
+Parent review of separate stable SaveBlock sampling/frame bookkeeping is next.
+See docs/evidence/floor1/g01e/prepared-persistence/README.md.
+
+Parent PR103 review authorises ONE separate complete prepared route plus dependent
+cold under docs/floor1/g01e-prepared-persistence-contract.md. Implement narrowly
+source-valid walking preservation with observed127→0 boundaries, exact derived
+checksum/ciphertext, all other party/resources exact and checkpoint48 only after
+actualYES. Freeze/test before execution; no exploration/search/retry. Historical
+strict gates/failures remain unchanged; this supersedes their current stop only
+for the separately claimed prepared completion. Game5084/23c77 unchanged.
+
 Current review package: draft PR103 / issue102, stacked on unchanged PR101.
 Corrected noncombat probe completed ONE execution and stopped strict53 atframe4702
 on natural127→0: new Carl friendship92→93/checksum70→326 proven; every other

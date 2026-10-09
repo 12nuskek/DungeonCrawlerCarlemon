@@ -1,0 +1,37 @@
+[
+  {
+    "stage": "first-clear",
+    "runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "exit": 0,
+    "errors_bytes": 0,
+    "assertions": 270,
+    "battle_frames": 6952,
+    "attempts": 1,
+    "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+    "output_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+    "route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "reconstructed_input": true,
+    "walking_observer": {
+      "frame_checks": 5216,
+      "boundary_events": 1,
+      "resource_checks": 11,
+      "total_frames": 23791
+    }
+  },
+  {
+    "stage": "cold",
+    "runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "exit": 57,
+    "errors_bytes": 62,
+    "assertions": 25,
+    "battle_frames": 0,
+    "attempts": 0,
+    "input_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+    "output_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+    "route_sha256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "reconstructed_input": true,
+    "walking_observer": null
+  }
+]

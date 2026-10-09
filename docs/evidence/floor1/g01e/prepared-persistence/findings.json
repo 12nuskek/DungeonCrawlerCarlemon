@@ -1,0 +1,214 @@
+{
+  "summary": [
+    {
+      "stage": "first-clear",
+      "runner": "873d504a28668924374758bc5626eae6e9071c51",
+      "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+      "exit": 0,
+      "errors_bytes": 0,
+      "assertions": 270,
+      "battle_frames": 6952,
+      "attempts": 1,
+      "input_save_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+      "output_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+      "route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+      "reconstructed_input": true,
+      "walking_observer": {
+        "frame_checks": 5216,
+        "boundary_events": 1,
+        "resource_checks": 11,
+        "total_frames": 23791
+      }
+    },
+    {
+      "stage": "cold",
+      "runner": "873d504a28668924374758bc5626eae6e9071c51",
+      "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+      "exit": 57,
+      "errors_bytes": 62,
+      "assertions": 25,
+      "battle_frames": 0,
+      "attempts": 0,
+      "input_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+      "output_save_sha256": "dbaaf7312ed6100b780811cd9b71c627ba42c6100bf318071b8cd1616a62ccd7",
+      "route_sha256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+      "reconstructed_input": true,
+      "walking_observer": null
+    }
+  ],
+  "native_manual_Save_validation": {
+    "latest_native_sector_checksums_valid": true,
+    "exact600_party_and_count": true,
+    "exact_counter_flags_all_logical_resources": true,
+    "map": [
+      35,
+      4
+    ],
+    "position": [
+      8,
+      6
+    ]
+  },
+  "walking_event_comparison": {
+    "members": [
+      {
+        "member": "Carl",
+        "changed_field_names": [
+          "checksum",
+          "friendship"
+        ],
+        "safe_changed_fields": {
+          "checksum": {
+            "before": 64293,
+            "after": 64549
+          },
+          "friendship": {
+            "before": 87,
+            "after": 88
+          }
+        },
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [
+          29,
+          65
+        ],
+        "canonical_changed_offsets": [
+          29,
+          41
+        ],
+        "friendship_delta": 1
+      },
+      {
+        "member": "Donut",
+        "changed_field_names": [
+          "checksum",
+          "friendship"
+        ],
+        "safe_changed_fields": {
+          "checksum": {
+            "before": 30285,
+            "after": 30541
+          },
+          "friendship": {
+            "before": 83,
+            "after": 84
+          }
+        },
+        "checksums_valid_before_after": true,
+        "reencoding_exact": true,
+        "all_other_canonical_bytes_exact": true,
+        "derived_checksum_delta_exact": true,
+        "only_derived_ciphertext_bytes_changed": true,
+        "raw_changed_offsets": [
+          29,
+          41
+        ],
+        "canonical_changed_offsets": [
+          29,
+          41
+        ],
+        "friendship_delta": 1
+      }
+    ],
+    "remaining400_party_bytes_exact": true,
+    "strict200_byte_equal": false
+  },
+  "walking_event_source_bonuses_absent": true,
+  "first_clear_resources": [
+    {
+      "snapshot": "stable-00-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-01-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-02-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-03-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-04-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-05-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-06-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-07-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-08-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-09-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    },
+    {
+      "snapshot": "stable-10-owned",
+      "logical_exact": true,
+      "actual_context_used": true
+    }
+  ],
+  "first_clear_actual_per_frame_party_comparisons": 5205,
+  "first_clear_stable_party_comparisons": 11,
+  "counter_event_host_label": 19138,
+  "counter_event_actual_frame_interval": [
+    19138,
+    19189
+  ],
+  "counter_event_label_limitation": "historical total updates after step batches; event label is batch start, not exact per-frame timestamp",
+  "cold_exact_boot_party_count_counter_flags_resources": true,
+  "cold_initial_stable_resources_exact": true,
+  "cold_return_route_completed": false,
+  "cold_stop_reason": 57,
+  "cold_last_accepted_counter": 14,
+  "cold_stop_raw_counter": 5953,
+  "cold_stop_party600_exact": true,
+  "cold_stop_party_count": 2,
+  "cold_Save_byte_identical": true,
+  "cold_shifted_flags_overlap": {
+    "displacement_bytes": 68,
+    "exact_bytes": 232
+  },
+  "cold_shifted_owned_overlap": {
+    "displacement_bytes": 68,
+    "matching_bytes": 1196,
+    "compared_bytes": 1204
+  },
+  "cold_stop_frame_interval": [
+    3049,
+    3348
+  ],
+  "exact_stop_frame_not_captured": true,
+  "diagnosis": "source-compatible transient SaveBlock relocation guard failure: native pointers move before copied data is restored; per-frame SaveBlock counter/flag reads are unsafe here. CPU PC/relocation pointers were not captured, so exact copy phase is not independently proven.",
+  "resource_invariance_at_transient_stop_not_claimed": true,
+  "strict_stop_preserved": true,
+  "next_dependency": "Parent review of cold STOP and minimal readiness-aware relocation guard/counter bookkeeping correction; no battle retry or cold retry authorised here.",
+  "cold_stop_matches_transient_relocation_pattern": true
+}

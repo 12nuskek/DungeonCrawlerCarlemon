@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ordinary-seed.png",
+    "source": "first-clear/cold.png",
+    "SHA256": "14b9750aa284970ad258448b703f0c9416608b55603b94ed9a62f7690bcdbd30",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "prepared-cache.png",
+    "source": "first-clear/cache-blasted-00-00.png",
+    "SHA256": "f5d0e0abca1cfe4daf1de19361bc0e5b5c2a22f7a38e491b47a9a512db3ac1ea",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "warden-start.png",
+    "source": "first-clear/warden-start.png",
+    "SHA256": "812b1024a9e4173ba66deb7475237bc49f3ecd166ca31038c559d1a455209ed7",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "warden-result.png",
+    "source": "first-clear/warden-result.png",
+    "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "stairs-no.png",
+    "source": "first-clear/stairs-no-cancelled-00-00.png",
+    "SHA256": "018d26b3585355eec807e362568759914800fd6caab93772ef2ec69992252d21",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "stairs-yes.png",
+    "source": "first-clear/stairs-yes-arrived.png",
+    "SHA256": "1e1e8707142f3fb47c29465352190e65f36b808cb1374b78b6d9634fd938e564",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "saved.png",
+    "source": "first-clear/saved.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+    "assertions_completed": 270,
+    "outcome": "first route passed"
+  },
+  {
+    "name": "cold-boot.png",
+    "source": "cold/cold.png",
+    "SHA256": "bd309eaa093cdee96cb66ab7ccc4388b94d0a1dbdb79d83a4c03b5669ddbf818",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 25,
+    "outcome": "first route passed; cold return STOP57"
+  },
+  {
+    "name": "cold-warp-stop.png",
+    "source": "cold/walking-preservation-stop.png",
+    "SHA256": "47fbde60709a27683035d7b385f06dd1447f68c6548272758e15a335cf3bc15e",
+    "dimensions": [
+      240,
+      160
+    ],
+    "kind": "actual unmodified native emulator capture",
+    "host_runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+    "execution_runner": "873d504a28668924374758bc5626eae6e9071c51",
+    "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "route_SHA256": "b3e46bacbbd903d674a8329dafc78a6ccb1ceee3ed6d34508613a3fc0c572427",
+    "assertions_completed": 25,
+    "outcome": "first route passed; cold return STOP57"
+  }
+]

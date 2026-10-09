@@ -1,0 +1,12 @@
+{
+  "runner": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+  "base": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+  "game": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "rom": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "seed_sha256": "026c16feccd0a1741ff0c3ec077e7272fc6ee43bf0e4fa12ab8953c50523220a",
+  "host_sha256": "a15f03615c01b463388b0dd8f17a9239050bedaf16f701e60588b701bdb7100b",
+  "first_route_sha256": "2119ee24f3ad50c5f9e6b2b7ac947e00e7a53ef832253f6a0fca8e5d9ee26373",
+  "reconstructed_base_observer": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "case": "prepared",
+  "method": "Separate authorised prepared completion from ordinary seed; narrow source-valid walking preservation, actual controls/cadence, whole-battle30000 bound"
+}

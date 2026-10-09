@@ -1,3 +1,15 @@
+# Reviewed integration checkpoint — 9 October 2026
+
+Main a83777b9 integrates the reviewed stack through PR110 with exact 5084/23c77
+engine/build and original heads/failures preserved. See
+[integration evidence](../evidence/floor1/g01e/reviewed-integration/README.md).
+Next parent review of this checkpoint→the separately scoped
+[V01 pilot](v01-entry-plan.md); no art implemented here. Original legacy-input
+gate stays unavailable, and C01/human pacing/nine-district completion remain
+later gates. Historical draft/unmerged rows below retain their publication dates.
+
+## Historical pre-integration backlog
+
 G01e read-only acceptance inventory — 2026-10-09: parent accepted prepared270+132.
 
 [Draft PR #108](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/108) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR107; open/draft/unmerged. Inventory source `ba2237c8f2a9b5e338528000293d1332ff26f7de`.
@@ -219,11 +231,11 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-P01 | Delivered baseline | Preserve identities; complete plan; old anchor/flag/engine register; no engine edits | Merged PR54 |
 | F1-T01 | P01 | Runtime reproduce/fix tag Journal and spent sign; completed priority, full-inventory pickup and hand-in; immediate/re-entry/cold | Merged PR56;96/1609 runtime assertions |
 | F1-A01 | P01 | Explicit full map identity and encounter membership; preserve old/nonmember behavior, recovery/palette/cache | Merged PR60 cee81f8;100/1621 runtime assertions |
-| F1-G01 | T01,A01 | D1 live geometry/migration, both patrol orders, widths, loop/camera, T and recovery | Bounded Howler-first/recovery and prepared/unprepared Warden/persistence closed through parent-reviewed PR107; final liveT1449/25width probes/current linked budgets frozen. One current Guard-first order/travel/Save/cold check remains; original legacy inputs unavailable. [Exact inventory and safe integration](g01e-acceptance-inventory.md); draft stack unmerged |
-| F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failed one controller test (exit32, premature Bag A); exact prefix/state passed; heal/victory/XP/Save/cold pending; combat stopped, no retry or candidate gate claim |
-| F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | Verified historical intervention:29 host checks,2 sessions/80 assertions,20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold; unmerged, current candidate/full/V01 pending |
-| F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | Currentc643/b025 verified:29 host checks,2/81 assertions, realPotion/Howler→Guard/rewards/repeat/Save/cold; no full/V01 or broad merge claim |
-| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Direct next pilot after narrow Guard-first closure/scoped integration; reuse staged native assets; source gaps do not block verified PNGs. [Pilot dependencies](g01e-acceptance-inventory.md) |
+| F1-G01 | T01,A01 | D1 live geometry/migration, both patrol orders, widths, loop/camera, T and recovery | Parent-reviewed bounded cases integrated through PR110 on main a83777b9: Howler-first reconstruction, prepared/unprepared Warden/persistence and corrected current Guard-first 164+18 assertions, six travel legs and native Save/cold. Live T1449, 25 width probes and linked budgets remain frozen. Original legacy-input gate remains unavailable; C01/uninterrupted opening and human pacing remain later gates. [Verified integration](../evidence/floor1/g01e/reviewed-integration/README.md) |
+| F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failure record integrated by PR87: exit32 premature Bag A, exact prefix/state passed; this execution's heal/victory/XP/Save/cold remain unverified. Separate PR89 closure does not rewrite the failed controller record |
+| F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
+| F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
+| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Environment-only first stage now authorised after accepted integration: reuse verified native junction, Workshop/optional cue, safe doorway and Quiet contrast; geometry/gameplay fixed. No character reaction or battle-animation changes in this increment. [Scoped entry plan](v01-entry-plan.md); later V01 stages and C01/human pacing remain pending |
 | F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |

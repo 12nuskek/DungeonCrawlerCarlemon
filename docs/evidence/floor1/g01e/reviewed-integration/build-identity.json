@@ -1,0 +1,46 @@
+{
+  "setup": {
+    "source": "a83777b94684919d121cabf4f6b2d45de23027c7",
+    "game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+    "engine_tree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+    "upstream_emerald": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+    "agbcc": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "tooling_image": "4aafe586a8b5c8e5ec720843a42e3afd63f03e62663965d06c1492702c579a54",
+    "fresh_engine_git_archive": true,
+    "verified_hydrated_upstream_blobs": [
+      [
+        "0afff07f5d2314e2bd35d99de518cbc114009b5e",
+        "data/mb_berry_fix.gba"
+      ],
+      [
+        "fdeb854a054ba02191f6a209ec5b649f21c4e335",
+        "data/mb_colosseum.gba"
+      ],
+      [
+        "85057cf4e2bd657da5d632ac12d1ea24aeaa4499",
+        "data/mb_ereader.gba"
+      ]
+    ],
+    "command": "make -C engine -j2",
+    "reused_verified_recovery_agbcc_binaries": true,
+    "setup_stop": "Git dubious-ownership before hydration/build; diagnosed cache ownership and used command-local exact safe.directory; no source or toolchain change",
+    "cc_version": "cc (Debian 14.2.0-19) 14.2.0",
+    "as_version": "GNU assembler (2.44-3+23+b1) 2.44",
+    "agbcc_binary_sha256": {
+      "tools/agbcc/bin/agbcc": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+      "tools/agbcc/bin/agbcc_arm": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+      "tools/agbcc/bin/old_agbcc": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f"
+    }
+  },
+  "compile_exit": 0,
+  "new_emulator_executions": 0,
+  "ROM_SHA256": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "ROM_bytes": 16777216,
+  "ELF_SHA256": "3932815872d850af777f0620c3114f8d6975964d8792570bd1d2af776215e6af",
+  "reference_ELF_SHA256": "cafc512d915d01ff1b598b1a7050261f5990bc50fc0faed533b0ec6d7309336b",
+  "ELF_debug_difference": "Full ELF differs; command-identical --strip-debug outputs are byte-identical for reference and fresh builds. Non-debug identity and ROM match; no original ELF identity claim.",
+  "both_stripped_ELF_SHA256": "a00515ca9371c1bc897bbdc9026c7c345c7b0a68c1947f55f310731755ed467c",
+  "build_log_SHA256": "d5b77ee5d88911cda72c56ec6420c1a761df7507806e8287db8f255ecd3b94da",
+  "build_log_retention": "private Library checkpoint archive",
+  "fresh_build_source": "a83777b94684919d121cabf4f6b2d45de23027c7"
+}

@@ -1,3 +1,29 @@
+Reviewed stack integration — 2026-10-09: **20 PRs merged; exact engine/build verified**.
+
+Main `a83777b94684919d121cabf4f6b2d45de23027c7` integrates
+75→77→79→81→83→85→87→89→91→93→95→97→99→101→103→105→107→108→109→110.
+Sequential ordinary merge commits, freshly retargeted diffs and exact two-parent/
+full-tree checks; 63 non-main heads unchanged. CP72e is an ancestor via PR91's
+reviewed 89→CP bridge. Engine 46e5f0f equals game 5084. Fresh committed-main compile
+reproduces ROM 23c77 exactly; stripped non-debug ELF equals reference, full ELF
+debug identity is separately recorded. No new emulator execution.
+
+Checks/statuses/workflow results were empty, **absent CI rather than CI success**.
+Main reports protection disabled/no required checks/rulesets; administration-only
+protection read 403 retained. No bypass/conflict/mandatory approval/unreviewed diff.
+PR110's separately qualified 164+18 assertions/native Save/cold/captures retained;
+PR109 STOP and all historical failures/controllers unchanged. Original 16 legacy
+inputs/raw logs/patrol-complete input remain missing and gate unavailable, not
+waived. Existing new saves/raw evidence remain privately backed up in Library.
+
+[Exact integration/build/protection/identity record](evidence/floor1/g01e/reviewed-integration/README.md).
+Next: parent review integration checkpoint, then separately scoped
+[V01 entry plan](floor1/v01-entry-plan.md). No art implemented in this increment;
+C01/human pacing/nine-district completion remain later gates. Documentation-only
+checkpoint branch is separate from integrated main.
+
+## Historical pre-integration PR110 checkpoint
+
 Corrected current Guard-first — 2026-10-09: **182 emulator assertions pass; unmerged**.
 
 [Draft PR #110](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/110) / existing [issue #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), stacked on unchanged PR109; open/draft/unmerged. Evidence checkpoint `768994da3c90a16758ae2e0dfeb67413f089a480`.

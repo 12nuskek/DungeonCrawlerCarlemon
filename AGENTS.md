@@ -1,5 +1,21 @@
 # DungeonCrawlerCarlemon working contract
 
+Current integration checkpoint — 2026-10-09: parent PR110 review accepted and
+Kurt authorised ONE sequential reviewed stack integration through PR110. All 20
+PRs now verified merged using ordinary merge commits; main a83777b9, exact game
+engine 46e5f0f/5084/ROM 23c77. Original 63 non-main heads/history/failures retained;
+CP72e bridge carried by PR91 and ancestor of final main. Check/status/workflow
+results empty (absent CI, not success); branch protection off/no rulesets, 403
+administration read retained; no protection bypass. See integration evidence.
+This focused increment ends with the documentation checkpoint and V01 plan.
+No new emulator execution or art work. Parent integration review→separately
+scoped V01 pilot. Original legacy inputs remain unavailable; reconstructed inputs
+do not substitute. C01/human pacing/full Floor 1 gates are not waived. Historical
+pre-integration instructions/results below remain unchanged records; current
+integration authority superseded their no-merge stop for this increment only.
+
+## Historical PR110 review checkpoint
+
 Current review package: draft PR110 / existing issue106, stacked on unchanged PR109.
 
 Corrected current Guard-first route/manual Save/cold PASSED182 assertions

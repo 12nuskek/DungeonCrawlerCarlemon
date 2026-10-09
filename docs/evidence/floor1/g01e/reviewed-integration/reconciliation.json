@@ -1,0 +1,731 @@
+{
+  "authority": "Parent review of PR110 accepted; Kurt authorised one sequential merge-commit stack integration through PR110, no V01 art in this increment.",
+  "initialMain": "b694da17928b93ea579f55d905017aa9f7619422",
+  "finalMain": "a83777b94684919d121cabf4f6b2d45de23027c7",
+  "expectedGame": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "expectedEngineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+  "expectedROM": "23c77a0c3eb86bac74aee25b189c147f172601d29403cbd485f665aec705b167",
+  "cpCheckpoint": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+  "mergeSteps": [
+    {
+      "pr": 75,
+      "originalHead": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "originalBase": "b694da17928b93ea579f55d905017aa9f7619422",
+      "reviewBase": "b694da17928b93ea579f55d905017aa9f7619422",
+      "base": "b694da17928b93ea579f55d905017aa9f7619422",
+      "merged": "9557bc0efafda3c9dee1bb1486d04c799dfe01f9",
+      "patchSha256": "b9bc8151330becf6307e3c206b617022d4755b27e0298181e5a46cf420d7943a",
+      "tree": "d2936f1c4569487d815eff6a73966a9c78d87bca",
+      "engineTree": "da66b8973b2da118dfe4b8fc4683de051afa0e72",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:41:21Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "game": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+        "host": "1e556a257cd50744ca59f9e7cc63d1f0e7c3703c",
+        "evidence": "docs/evidence/floor1/g01e/README.md"
+      }
+    },
+    {
+      "pr": 77,
+      "originalHead": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "originalBase": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "reviewBase": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "base": "9557bc0efafda3c9dee1bb1486d04c799dfe01f9",
+      "merged": "c7f47475e7db3fe775aebfbaace97bacdd02c00f",
+      "patchSha256": "eedd44cf8618e1e76aab29a54a47f38382b16369a77fbacfa336a76af4a8f884",
+      "tree": "be1c9dc4f7b4ca8b948020ff0387991166b62a03",
+      "engineTree": "fc0376eb7f3723dbb3ad78b68cacaefb78220792",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:42:13Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "game": "a52de748f89e82c39f97361b2295d72c88b69856",
+        "host": "821e0733cc1585f53cade3717967a5e4055c61eb",
+        "evidence": "docs/evidence/floor1/g01e/feedback/README.md"
+      }
+    },
+    {
+      "pr": 79,
+      "originalHead": "91a4b79bfe7041060de560cd65b037322233047a",
+      "originalBase": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "reviewBase": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "base": "c7f47475e7db3fe775aebfbaace97bacdd02c00f",
+      "merged": "30080aa6b69393ea3e609448592d8407ad8beb75",
+      "patchSha256": "0086428e6ceea9bfb3deb6806fbb36c7493e83126e8e73c5bd5be1cc2eb9a5da",
+      "tree": "ff4cc20744fce6daf290f45df4c77f29b2938ccf",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:43:02Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "game": "c643f01c11ec68119b0347b107ee20115131debc",
+        "host": "c643f01c11ec68119b0347b107ee20115131debc",
+        "evidence": "docs/evidence/floor1/g01e/navigation/README.md"
+      }
+    },
+    {
+      "pr": 81,
+      "originalHead": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "originalBase": "91a4b79bfe7041060de560cd65b037322233047a",
+      "reviewBase": "91a4b79bfe7041060de560cd65b037322233047a",
+      "base": "30080aa6b69393ea3e609448592d8407ad8beb75",
+      "merged": "5a33575a7c9dacd2b2936ceef4f928b3c6020325",
+      "patchSha256": "8e3ac44b1fd95f76db27bbc91e8bb191dcde9f5256edc54f928bad31f74dbcdf",
+      "tree": "43fcbf976041a7a9875ed419264be28ee637c72d",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:43:42Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "host": "2ae9d14854e1b3fbc58f612450c8399ac251f461",
+        "evidence": "docs/evidence/floor1/g01e/optional/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 83,
+      "originalHead": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "originalBase": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "reviewBase": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "base": "5a33575a7c9dacd2b2936ceef4f928b3c6020325",
+      "merged": "463c3e78f60be67a8a90355b722ae0726bbb9620",
+      "patchSha256": "ef0ef1132fca720c350bf2ba10626fd758a127162129b53afd78c6595da410a9",
+      "tree": "072e3b6f1941957d0944741e03118b22e9a23ffd",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:44:23Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "host": "477e50551229311efabad367902302e175355a02",
+        "evidence": "docs/evidence/floor1/g01e/staircase/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 85,
+      "originalHead": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "originalBase": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "reviewBase": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "base": "463c3e78f60be67a8a90355b722ae0726bbb9620",
+      "merged": "5223b0df7f68a651a9ea963340a56269ac67c312",
+      "patchSha256": "a0429cee1cfa7fb350b063572cfef5394442cc0e82766d0a697ebb3655e2ba77",
+      "tree": "b6f7bedde51fe907805c1da687ddbbc83e468ef9",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:44:58Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "host": "0317dc8c7405dc9d6acb02fc284579703f717fcb",
+        "evidence": "docs/evidence/floor1/g01e/sealed/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 87,
+      "originalHead": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "originalBase": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "reviewBase": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "base": "5223b0df7f68a651a9ea963340a56269ac67c312",
+      "merged": "d432899a3c8aea1baf54ec25c3538b9aec58eb83",
+      "patchSha256": "3a4afe1ae9aea06a789bb1e3e081be66b899ed91ea3c79f500f675935d7dbcaf",
+      "tree": "9908dda1d31ebae52b40b9b36c10c64fda4c152a",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:45:30Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "game": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+        "host": "fa175347918b580cbdda47738407bf3857fa21ca",
+        "evidence": "docs/evidence/floor1/g01e/potion/README.md"
+      }
+    },
+    {
+      "pr": 89,
+      "originalHead": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "originalBase": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "reviewBase": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "base": "d432899a3c8aea1baf54ec25c3538b9aec58eb83",
+      "merged": "1df3d18225a22bc7f53d6e44228ac3710b7dbe5e",
+      "patchSha256": "2f4d513b76a75d5f83d33202874f15183ccef6b57a00c5260d8749edff5ec7d7",
+      "tree": "dd4a2c2edbd460c86a50c153373aba87097c8174",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:46:06Z",
+      "cp72eAncestor": false,
+      "tested": {
+        "game": "99243073ebead4ecd4fa9e4f4362d9e0d70c86df",
+        "host": "db085577a8866fa272f31ea2ab5869f00fbd7bd2",
+        "evidence": "docs/evidence/floor1/g01e/potion-ready/README.md"
+      }
+    },
+    {
+      "pr": 91,
+      "originalHead": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "originalBase": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+      "reviewBase": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "base": "1df3d18225a22bc7f53d6e44228ac3710b7dbe5e",
+      "merged": "b26865f8127656732dbb01260bb1394ac0bdc211",
+      "patchSha256": "daa85cf40bd10d63ef0a60722779867b84501e71b1e1f86ef15eafefd7737837",
+      "tree": "e98158514a16e974332995fa7c4eeea10ad86a92",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:46:38Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "7d89fcddadc6032e27f339859fc0dabdf995dae5",
+        "executions": [
+          "3f604ade37f84745f4a9f7a2831c90add4f42540",
+          "84541097c4bd923ab938736feebb1c237e311dba",
+          "a349825d19c4fa3ba1bf1c65c3063ea62cf20f22"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/recovery/README.md",
+        "bridge": {
+          "checkpoint": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+          "host": "c7c5ca5d68ece7ce8aaebf2cfcad002368da0ce4",
+          "evidence": "docs/evidence/floor1/g01e/current-patrol/README.md"
+        },
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 93,
+      "originalHead": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "originalBase": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "reviewBase": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "base": "b26865f8127656732dbb01260bb1394ac0bdc211",
+      "merged": "0e56c4627e59962bfe816387d63784b9e12e85c6",
+      "patchSha256": "359b93fdb825c978604a90c832b938f4cf16cf805ae92d8e65bd1af927192112",
+      "tree": "929247ac4f598cfc6eac6aaca63f34073508a9a2",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:47:16Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "cc3845767959820ce6d4c2693a927fc1a24dd197",
+        "evidence": "docs/evidence/floor1/g01e/new-save-recovery/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 95,
+      "originalHead": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "originalBase": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "reviewBase": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "base": "0e56c4627e59962bfe816387d63784b9e12e85c6",
+      "merged": "f5e55edd2bc38033d8c178485798c5cfec705e3e",
+      "patchSha256": "1967098c8d0f6ad6de6e0b071e36dcf4f8b29c47c7075c2bfcfb132c35397464",
+      "tree": "42ee4ffd10d3e623f560aea4a97b66398b9e1b1b",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:48:11Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "7197e785a704e216c9f4a5429ae6cb4fb9302703",
+        "evidence": "docs/evidence/floor1/g01e/warden-first-clear/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 97,
+      "originalHead": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "originalBase": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "reviewBase": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "base": "f5e55edd2bc38033d8c178485798c5cfec705e3e",
+      "merged": "fd5579ad1f24e3c877ad7622f2960095c0e745f1",
+      "patchSha256": "6490bd417e79ae97549376af0764bd89aa7997c2e45ce04f637d25f848ca5674",
+      "tree": "92d8e1fd1045f5657594c4cbf7aba86606e09ea6",
+      "engineTree": "c15fc2186f2697b059cacaef0cc64b6f6cdd146a",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:48:41Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "audit": "dd349a2e54b7a7fb0d782534f933236f4193522d",
+        "newEmulator": false,
+        "evidence": "docs/evidence/floor1/g01e/warden-threat-audit/README.md",
+        "game": "c643f01c11ec68119b0347b107ee20115131debc"
+      }
+    },
+    {
+      "pr": 99,
+      "originalHead": "61fba93c0485af269944a739953240e1f745466a",
+      "originalBase": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "reviewBase": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "base": "fd5579ad1f24e3c877ad7622f2960095c0e745f1",
+      "merged": "50d02e4e87d2c46e3d3584e5829ab7d9c9acb5cd",
+      "patchSha256": "e7c21bd2760fee720a429c3d126e8d1ea7e155d80e355ffe81d4fa7927ab2d03",
+      "tree": "7c24d749f20da1308e357062cde098f0c3eff120",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:49:15Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "a31355a22267e1e8b309adde7e59206cd3e43f3a",
+        "evidence": "docs/evidence/floor1/g01e/warden-fairness/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 101,
+      "originalHead": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "originalBase": "61fba93c0485af269944a739953240e1f745466a",
+      "reviewBase": "61fba93c0485af269944a739953240e1f745466a",
+      "base": "50d02e4e87d2c46e3d3584e5829ab7d9c9acb5cd",
+      "merged": "9783bb110e446271178d63441c754f6037250a3b",
+      "patchSha256": "8d90ffcc21df17e5f6402462af26ddf0ca15fbac38e5970e4d1c4a08a988dcb3",
+      "tree": "f74d622b4a4408f9c4c33a9978b71b8f2fed0257",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:49:44Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "a9e730744fe8505ae53b6c4dae2a62032c27a8ba",
+        "executions": [
+          "5bc8b2b203638c9a65290bb9e57ea4e49cabfe81"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/party-preservation-diagnosis/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 103,
+      "originalHead": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "originalBase": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "reviewBase": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "base": "9783bb110e446271178d63441c754f6037250a3b",
+      "merged": "1c152c90dc74cf75f9238226f41d57eb788bcd17",
+      "patchSha256": "20e19dd6dc9d8ddc2302f992338647cc15a2b5eb1541f6bfb331b31e9ab0e002",
+      "tree": "9c0b62ab55c8c48ec7888c8c318396fd27890060",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:50:22Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "8a3f598c55f3d3f4bceb707b955d7b18a448e564",
+        "executions": [
+          "eed04fae769756605418bcbc3f335c99027e50f8"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/party-resource-correction/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 105,
+      "originalHead": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "originalBase": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "reviewBase": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "base": "1c152c90dc74cf75f9238226f41d57eb788bcd17",
+      "merged": "a8e443a633bb361bcf26979dc109b055d503b93f",
+      "patchSha256": "c720d3746cf0cf8c257b83c49276362e5d274ebaf1edfd192c9ba2609c53a8ff",
+      "tree": "f08922292f91c989b70e4cc0d80a7f96b240f081",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:51:11Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "5cdc77a44fb83e55020c5cf2f296f71dd9cc649b",
+        "executions": [
+          "873d504a28668924374758bc5626eae6e9071c51"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/prepared-persistence/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 107,
+      "originalHead": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "originalBase": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "reviewBase": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "base": "a8e443a633bb361bcf26979dc109b055d503b93f",
+      "merged": "780ab00cb48e1005136c4e9e095b0b7e3c3ea8ab",
+      "patchSha256": "3e71b05c855fb90724a9cf4c2817f85688b02fc0897cb33b10c9b86b1b4b94c6",
+      "tree": "43dcdf0f034a2a37b91e78d470a6454d3207fcdd",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:51:45Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "514187f69d1cd0d84536d66071da988ece0c337a",
+        "executions": [
+          "8896e1f2e8b203bb90c224a864f26266bce60200"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/prepared-cold-phase/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 108,
+      "originalHead": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "originalBase": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "reviewBase": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "base": "780ab00cb48e1005136c4e9e095b0b7e3c3ea8ab",
+      "merged": "848c79a91857c829e1054db2a19b870b92d3b5d4",
+      "patchSha256": "264cf1dc51aacadc2cde1e1e651349706b746a0137e6df3cf43990d1425c3970",
+      "tree": "2c28fb0f3e2b353c1f00c54c2ad046ebdc9e7188",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:52:25Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "audit": "ba2237c8f2a9b5e338528000293d1332ff26f7de",
+        "newEmulator": false,
+        "evidence": "docs/evidence/floor1/g01e/acceptance-inventory/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 109,
+      "originalHead": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "originalBase": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "reviewBase": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "base": "848c79a91857c829e1054db2a19b870b92d3b5d4",
+      "merged": "2016782ea8fbdbf94322630c8157de6851524783",
+      "patchSha256": "3e9909d014494491d170fc9c67581eb31b4d5312be9b05a04e4d0913fbba8ac2",
+      "tree": "f4134c89b62df449743e7d9f3fc03827764fdce9",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:53:01Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "cad9eadfd8405f8eb040e478a7f7c7fb8948788c",
+        "executions": [
+          "cad9eadfd8405f8eb040e478a7f7c7fb8948788c"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/guard-first-current/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    },
+    {
+      "pr": 110,
+      "originalHead": "6c7f2e10f861b0518da3e7841e523433b2a1b451",
+      "originalBase": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "reviewBase": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "base": "2016782ea8fbdbf94322630c8157de6851524783",
+      "merged": "a83777b94684919d121cabf4f6b2d45de23027c7",
+      "patchSha256": "aa5ea689ee50a10a193be1bf2ad20f9757a50f6d641f5d2a94e5e86d6318d6d9",
+      "tree": "b01c73212e4b17ecb4eceebb9f964ee65e4feb0c",
+      "engineTree": "46e5f0f58684e61719c08ad4909b4727b0ca0af9",
+      "checks": 0,
+      "statuses": 0,
+      "workflowRuns": 0,
+      "reviews": [],
+      "protected": false,
+      "rulesets": [],
+      "requiredContexts": [],
+      "requiredChecks": [],
+      "protectionAdministrationRead": "403 not accessible by integration",
+      "mergedAt": "2026-10-09T01:53:30Z",
+      "cp72eAncestor": true,
+      "tested": {
+        "host": "8a21c95f4381a581397cae5c5dd1109c7312583a",
+        "executions": [
+          "8a21c95f4381a581397cae5c5dd1109c7312583a"
+        ],
+        "evidence": "docs/evidence/floor1/g01e/guard-first-corrected/README.md",
+        "game": "5084a1814904f1a43fd999fddf770b221bb53653"
+      }
+    }
+  ],
+  "originalBranchesPreserved": 63,
+  "totalBranchesBeforeCheckpointPublication": 64,
+  "protection": {
+    "branchProtected": false,
+    "requiredContextCount": 0,
+    "requiredCheckCount": 0,
+    "rulesets": [],
+    "administrationEndpoint": "403: Resource not accessible by integration",
+    "mergeMethod": "merge",
+    "automaticBranchDeletion": false,
+    "noBypass": true
+  },
+  "ci": "No check runs, commit statuses or workflow runs were returned for any retargeted original head; final main also zero at post-merge read. Empty results are not CI success.",
+  "limitations": [
+    "Original 16 legacy saves, original raw logs, original patrol-complete input, exclusive claims and denied local ancestry not recovered; original-input gate remains unavailable.",
+    "Reconstructed ordinary inputs retain separate qualified acceptance.",
+    "C01 uninterrupted/timing/human pacing and full nine-district completion remain later gates.",
+    "No emulator replay or art implementation in integration increment."
+  ],
+  "originalHeads": [
+    {
+      "pr": 75,
+      "branch": "task/floor1-g01e-live-migration",
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "base": "b694da17928b93ea579f55d905017aa9f7619422"
+    },
+    {
+      "pr": 77,
+      "branch": "task/floor1-g01e-feedback",
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "base": "16d7012bcff5de4ce04ad691fa81543bb3047ff7"
+    },
+    {
+      "pr": 79,
+      "branch": "task/floor1-g01e-navigation",
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "base": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d"
+    },
+    {
+      "pr": 81,
+      "branch": "task/floor1-g01e-optional",
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "base": "91a4b79bfe7041060de560cd65b037322233047a"
+    },
+    {
+      "pr": 83,
+      "branch": "task/floor1-g01e-staircase",
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "base": "7866c8730fbef0f6570e269aa247b90a2e9a3c23"
+    },
+    {
+      "pr": 85,
+      "branch": "task/floor1-g01e-sealed",
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "base": "a9658676a53d519e9769494c52bf57b28d54473a"
+    },
+    {
+      "pr": 87,
+      "branch": "task/floor1-g01e-potion",
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "base": "f4e568d582430dc9fc118f0af4afbc26b781e884"
+    },
+    {
+      "pr": 89,
+      "branch": "task/floor1-g01e-potion-ready",
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "base": "00a31be5d1622308a6d02c4fcce165e1d581b710"
+    },
+    {
+      "pr": 91,
+      "branch": "task/floor1-g01e-recovery",
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "base": "72e08ed17afc69e28ef545bbbff383a434e90df5"
+    },
+    {
+      "pr": 93,
+      "branch": "task/floor1-g01e-new-save-recovery",
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "base": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf"
+    },
+    {
+      "pr": 95,
+      "branch": "task/floor1-g01e-warden-first-clear",
+      "head": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "base": "1263d8b915f37d70bdcb04167c9088cd107666bc"
+    },
+    {
+      "pr": 97,
+      "branch": "task/floor1-g01e-warden-threat-audit",
+      "head": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "base": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50"
+    },
+    {
+      "pr": 99,
+      "branch": "task/floor1-g01e-warden-fairness",
+      "head": "61fba93c0485af269944a739953240e1f745466a",
+      "base": "ed519a05e34f47bf45fa150aa5e456b9e1028926"
+    },
+    {
+      "pr": 101,
+      "branch": "task/floor1-g01e-party-preservation-diagnosis",
+      "head": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "base": "61fba93c0485af269944a739953240e1f745466a"
+    },
+    {
+      "pr": 103,
+      "branch": "task/floor1-g01e-party-resource-correction",
+      "head": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "base": "531276ae7ee4e238ed804cff4c5d970d32d63ff0"
+    },
+    {
+      "pr": 105,
+      "branch": "task/floor1-g01e-prepared-persistence",
+      "head": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "base": "1e81d1293b53016f40d1a1f59f5f7d564513341a"
+    },
+    {
+      "pr": 107,
+      "branch": "task/floor1-g01e-prepared-cold-phase",
+      "head": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "base": "84cbb196b52db3330e39ec793828ee2d06c63f2b"
+    },
+    {
+      "pr": 108,
+      "branch": "task/floor1-g01e-acceptance-inventory",
+      "head": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "base": "1663abb05000374b03d0c0db3c78a974c87b3852"
+    },
+    {
+      "pr": 109,
+      "branch": "task/floor1-g01e-guard-first-current",
+      "head": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "base": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3"
+    },
+    {
+      "pr": 110,
+      "branch": "task/floor1-g01e-guard-first-corrected",
+      "head": "6c7f2e10f861b0518da3e7841e523433b2a1b451",
+      "base": "4eb46e72165d2f9c5125f0926c38a301de2184f7"
+    }
+  ],
+  "postMergeOpenPRs": [],
+  "acceptedPlanSHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "bridgeDiff": {
+    "from": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+    "to": "72e08ed17afc69e28ef545bbbff383a434e90df5",
+    "files": 21,
+    "gameSourceUnchanged": true,
+    "carriedByPR": 91
+  }
+}

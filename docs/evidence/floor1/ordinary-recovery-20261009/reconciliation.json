@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-09",
+  "authorization": "Kurt approved sole replacement writer at 23:29 UTC; stop before gameplay if source/tooling/contract cannot be verified; no automatic retry after unexpected failure.",
+  "base_commit": "96f314c892acaaab363e87b72c3016540003dc8a",
+  "ordinary_gameplay_source": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "ordinary_engine_tree": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "active_pose_source": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "active_pose_engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "active_pose_recorded_ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+  "active_pose_recorded_ELF_SHA256": "98fc1accd7516fb54baf15ba76cb954ca24a30051dfea63704a0efcf2882c53d",
+  "active_pose_outputs_locally_verified": false,
+  "required_tool_manifests": [
+    "docs/evidence/floor1/v01/battle/active-pose-offline/build-identity.json",
+    "docs/evidence/floor1/v01/battle/build-provenance/README.md",
+    "docs/evidence/floor1/v01/battle/observer-binding/README.md"
+  ],
+  "gcc_observed": "14.2.0",
+  "arm_binutils_required": "2.44-3+23+b1",
+  "agbcc_source_required": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "libmgba_required": "0.10.5+dfsg-1",
+  "tool_status": "BLOCKED: ARM tools, agbcc binaries/source cache and libmGBA not recovered or verified; GCC version alone verified.",
+  "acquisition_attempts": 1,
+  "acquisition_command": "apt download binutils-arm-none-eabi=2.44-3+23+b1 libmgba-dev=0.10.5+dfsg-1 libmgba0.10t64=0.10.5+dfsg-1 libinih1=59-1 libzip5=1.11.3-2 libepoxy0=1.5.10-2",
+  "failure": "Unable to locate package binutils-arm-none-eabi, libmgba-dev, libmgba0.10t64; no source for the requested dependency versions. Apt metadata absent/incomplete. Warning: /etc/apt/apt.conf.d/80-applied-apt-retries unreadable. Root cause beyond returned metadata errors not established.",
+  "failed_log": "/workspace/scratch/download.log",
+  "failed_log_retention": "Local workspace only, not independently backed up.",
+  "auto_retry": false,
+  "pr": {
+    "number": 114,
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "base_sha": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+    "head_sha": "96f314c892acaaab363e87b72c3016540003dc8a"
+  },
+  "pr113": {
+    "merged": true,
+    "merge_commit": "c6d647a815ffce44a2419a2cf83b6c2c094359f0"
+  },
+  "remote_heads_before": 68,
+  "open_prs": [
+    114
+  ],
+  "CI": {
+    "combined_statuses": [],
+    "pull_request_triggered_first_page_workflow_runs": [],
+    "check_runs": "not verified: gh REST access returned Forbidden",
+    "interpretation": "No returned status/workflow checks; no CI pass claimed."
+  },
+  "workspace_skills": "Repository .agents absent; /workspace/.agents empty. No applicable local skill found.",
+  "gameplay_executions": 0,
+  "new_saves": 0,
+  "new_captures": 0,
+  "repeated_offline_tests": 0,
+  "new_builds": 0,
+  "historical_baseline_executions": 6,
+  "historical_candidate_executions": 4,
+  "latest_historical_stop": {
+    "code": 117,
+    "requested_visual": 8536,
+    "expected_boundary": 8402
+  },
+  "exhausted_transfers": {
+    "failed_uploads": 5,
+    "supported_existing_backup_download_failures": 1,
+    "recovered_bytes": 0,
+    "cause": "unknown",
+    "new_attempts": 0
+  },
+  "missing_inputs": [
+    "original runtime-reference stream",
+    "original legacy inputs",
+    "historical Save 030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+  ],
+  "execution_freeze_complete": false,
+  "independent_cold_verification": false
+}

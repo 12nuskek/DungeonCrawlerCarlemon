@@ -1,0 +1,97 @@
+{
+  "main": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "publication_base": "96f314c892acaaab363e87b72c3016540003dc8a",
+  "reviewed_game_source": "5084a1814904f1a43fd999fddf770b221bb53653",
+  "source_comparisons": [
+    {
+      "path": "engine/src/crawler.c",
+      "main_SHA256": "fef6006d71b076177e6a7d0a39d96bdc7c262c4c7d446676717ff0e280faeb61",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/pokemon.c",
+      "main_SHA256": "df008d2d381b70f30998e476ed1f7183871580ea037d0fc5832bea11beb9c064",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/crawler_save.c",
+      "main_SHA256": "a106deee61af5a9ee33a67a3e6006b90b5eb16a49cb5928db7bd2ce2e07a102b",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/battle_main.c",
+      "main_SHA256": "ee79b86ff0f681ab783b363135fd84d050e7123bea2a77c5530f2c7ddc8b8408",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "main_SHA256": "f300fdf0344d5e25baf6f331d12ea91ed2651f2c73a0a3045139d51e1443d821",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/battle_util.c",
+      "main_SHA256": "a23b5504165dc586549f78021b688ca99a9ca019fdb5868b24cf41b8c791259d",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/party_menu.c",
+      "main_SHA256": "fdced309e37f26639ca8509ed132391880acd48ce091d7ad0dc9642c3541ca8f",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/src/item_menu.c",
+      "main_SHA256": "042dc66ba845b72882b4070f1975247b418fdf66b5213ede74cb165617d59f55",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/data/maps/DCC_Entrance/scripts.inc",
+      "main_SHA256": "02935b96731e86394a269833f7d17c2cb6cd2dbd293d40a554115bcad25f9e84",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/data/maps/DCC_Vestibule/scripts.inc",
+      "main_SHA256": "ad045d9a25de89d7da34f65aa7eb9dc83e672c1e6aa1d7ea50f807f52a6d2e02",
+      "matches_reviewed_5084_source": true
+    },
+    {
+      "path": "engine/data/maps/DCC_Corridor/scripts.inc",
+      "main_SHA256": "6911ee62229bc5eebf2bc905760a409f20c1303a9f64ffb552cefaa8572fae2b",
+      "matches_reviewed_5084_source": true
+    }
+  ],
+  "rehash_only": [
+    {
+      "path": "scripts/contracts/f1-g01e-guard-first-current.route",
+      "SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+      "unchanged_from_PR114_base": true
+    },
+    {
+      "path": "scripts/contracts/f1-g01e-guard-first-current-cold.route",
+      "SHA256": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67",
+      "unchanged_from_PR114_base": true
+    },
+    {
+      "path": "scripts/floor1/recovery-field-readiness.h",
+      "SHA256": "65278e46d9e412527e8b534af2ebd3bdc40719bc9dfa728508e22fd81b6502b1",
+      "unchanged_from_PR114_base": true
+    },
+    {
+      "path": "scripts/floor1/native-friendship.py",
+      "SHA256": "64f25daa19b8e34afc5cc68fddc7a4bbb24876419430817b8958ae903acb75ec",
+      "unchanged_from_PR114_base": true
+    },
+    {
+      "path": "docs/floor1/accepted-plan.md",
+      "SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+      "unchanged_from_PR114_base": true
+    }
+  ],
+  "historical_status_bodies_preserved_as_exact_suffixes": true,
+  "engine_scripts_historical_evidence_unchanged": true,
+  "package_attempt_log_SHA256": "1431bfc10cbb88207a72c26e4f301550f283de5b7990970298d30cb11b31ff1d",
+  "downloaded_packages": 0,
+  "remote_heads_before_SHA256": "cd9d5482d019ef199baed41773699c1f6c35201dd721df88afb6cdd6e5d531aa",
+  "new_offline_test_executions": 0,
+  "new_gameplay_executions": 0,
+  "meaning": "Source comparisons and documentation validation only; no build, generated host, emulator, Save or runtime acceptance."
+}

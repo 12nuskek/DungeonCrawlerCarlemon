@@ -556,3 +556,23 @@ is prescribed. Encounters/resources, flags/save fields, geometry/native staging
 and implementation await F1-C01/G02/S01 and production. Not implemented, compiled
 or runtime tested; no captures. Missing inputs and PR114 gameplay/legacy limits
 remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D4 Arcade milestone narrative — authored preparation only
+
+[Provisional local narrative brief](floor1/arcade-milestone-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`2385d5b9b42b4c8ce64e53836e39433d51ba8dcb`. `F1-D4-ARRIVAL` recognises the
+ruined shopfront/sign/shutter identity; `F1-D4-SUCCESS` acknowledges only actual
+reviewed `ARCADE_COMPLETE`; `F1-D4-REVISIT` supplies a resolved reminder. Dialogue
+grants no objective progress. Crawler-clue meaning remains narrative preparation,
+with no prescribed clue text/solution, required NPC encounter, fight, item or cost.
+
+Original short Carl/Donut adaptation within the Book1 opening ceiling; no quotation,
+verified canon claim or new party member. Foundry-first, safe retreat and free
+Commons recovery/save remain legal. Readiness, interrupted/depleted guidance and
+three local future cases link existing Commons route tests without repeating them.
+Clue solutions, encounters, items, costs, rewards, numeric flags/save fields,
+geometry/native assets and implementation await F1-C01/G02/S01 and production.
+Documentation only: not implemented, compiled or runtime tested; no captures.
+Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.

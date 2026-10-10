@@ -19,7 +19,7 @@ pages and new prompt. Yes reads all4 compiled native notes pages; B closes notes
 Reopen No and B close without notes; reopen Yes rereads all4 notes. Assert actual
 Start cursor4/running Task_ShowStartMenu/HandleStartMenuInput and native active
 Task_HandleYesNoInput with tRight=data[2]>=5; actual VAR_RESULT1/0. Return native
-field callback/control-unlocked/script-stopped/fade-clear. Player workshop35,3 at
+field callback/control-unlocked/script-stopped/fade-clear. Player Warden room35,3 at
 8,7; no walking/encounter/battle/Save command. Whole600 live party/count1/counter2/
 300flags/512vars/1440resources/key4/savedparty600/savedcount4/legalposition-map6
 read before/after and byte-equal; initialparty600 matches certified cold Save.

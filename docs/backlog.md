@@ -1,3 +1,35 @@
+## Current C01a accepted integration and next contract
+
+Independent source/evidence and native visual reviews accept PR115 at
+5b2b4b697fb54a4ee85f808cb299a35fe2d51535 against basebdff4e1a. The277-file
+review has only the optional Journal appendix as net engine change; engine tree
+0fedd142f43f136ceee189c54101b095fc88f495 equals compiled game4a92a9de and both
+executed helpers36cfd1e3/2faeaffe. Correct map35,3 label to Warden room; workshop
+is35,2. Actual positions/assertions/captures are unchanged; no rebuild/replay.
+Independent visual review:12 exact240x160 PNGs/MP4 hashes/whole-clip3-second
+samples/five consecutive frames around four closures; text fits and no blocking
+clipping/stuck overlay/sprite loss found. Technical frame-sequence acceptance,
+not ordinary-speed human playback/exhaustive flicker/pacing acceptance.
+Scope authorises docs-only correction, commit/push, final head/base/permissions/
+CI/protection checks, ready transition and ordinary head-pinned PR115 merge if
+eligible; no force/bypass/branch deletion. Empty hosted checks are absent.
+Actual process counts5 baseline/3 candidate/1 field=9; consumed6/3/1=10; no new
+claims/gameplay/private upload. OriginalV016/4 STOP117 visual8536 before B8402,
+separate accepted pair1/1, ordinary recovery5, Library5+1/unknown cause/zero original
+recovered bytes and all failed live-hint history/Saves/raw evidence preserved.
+Issue116 unchanged/no denied-publication retry. Independent backup unverified;
+private upload approval pending. Verify final merged main equals tested engine
+and retain identities in the PR/private integration receipt after success.
+C01 remains incomplete; G02 gated. Next review proposal is
+ docs/floor1/c01-uninterrupted-unprepared-proposal.md: genuinely uninterrupted
+New Game through unprepared Warden/opening checkpoint/manual Save and whole-route
+resource evaluation, later prescribed prepared route. No gameplay authorised
+by this integration/proposal. Native phase/menu/party/friendship/reward gates and
+frozen observer/route/storage/exclusive claim needed before any run. Missing
+original legacy inputs/oracle, human/full-floor gates remain open; accepted plan
+unchanged. Evidence docs/evidence/floor1/c01a/journal-integration-20261010/
+independent-review.md. Earlier bodies historical.
+
 ## Current C01a optional Journal notes — battle and native field PASS
 
 Compiled game4a92a9de70848b9d7275f9f255bb0d2f53232ab8; main/basebdff4e1a unchanged.
@@ -12,7 +44,7 @@ Field helper2faeaffeac45bf6e9f2253e381f24f97c995c811, separate claim10/field1/
 actual emulator9 PASS:15949 native frames/38 assertions, Yes/No/B/reopen/reread/
 closures/native controls; all3469 packet bytes and original Save unchanged.
 All6 party checksums/reencoding valid; duo11/10 XP748/1058 HP38/30 clear,
-uses8/40/2/40 friendship89/81, Potion1/Scrap2; workshop35,3(8,7) facing7.
+uses8/40/2/40 friendship89/81, Potion1/Scrap2; Warden room35,3(8,7) facing7.
 No field battle/walking/Save/grants/injection. Recovered tooling verified, no
 historical compiler binary identity. Both private FFV1 exports decoded every
 frame exactly; native PNGs visually inspected, lossy review MP4s native timing.

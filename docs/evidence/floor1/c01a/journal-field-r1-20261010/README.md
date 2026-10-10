@@ -23,7 +23,8 @@ count, counter, flags, variables, resources, key, saved party/count and legal ma
 position. Initial party equals the certified cold Save. All six party checksums
 and reencodings pass. Carl/Donut remain levels11/10, XP748/1058, HP38/30, status
 clear, uses8/40/2/40 and native friendship89/81. Potion1 and Scrap2 are unchanged.
-Workshop map35,3 at(8,7), actual recorded facing7, remains legal. Save bytes remain
+Warden room map35,3 at(8,7), actual recorded facing7, remains legal. The workshop
+is map35,2. Save bytes remain
 unchanged; raw packets, decoded identities and Save hashes are private.
 
 Actual screenshots: [Yes/No prompt](yes-objective-03-05.png),

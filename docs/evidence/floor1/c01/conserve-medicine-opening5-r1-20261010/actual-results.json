@@ -1,0 +1,103 @@
+{
+  "C01a_actual_baseline_candidate_field_processes": [
+    5,
+    3,
+    1
+  ],
+  "C01a_claim_counts": [
+    6,
+    3,
+    1
+  ],
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "STOP_SHA256": "82ce9db25cbed4fe9ab25343e898fa82700fdd06abb19ecd4e74de848d94fe47",
+  "actual_cold_claims_processes_total": [
+    1,
+    1
+  ],
+  "actual_opening_claims_processes_total": [
+    5,
+    5
+  ],
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "claims_SHA256": {
+    "cold": "14e29731c2997e76d657c99e6b6e4e4c3eea55f9fad6419e69ba87d1019cf29c",
+    "opening": "2d52748ea21af5c3dd3664364ba1c4d431aea69761ff34be910e29a17318f79f"
+  },
+  "cold": {
+    "PASS": false,
+    "PID": 177954,
+    "STOP": 96,
+    "Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+    "actual_process_started": true,
+    "admitted": true,
+    "claim_consumed": true,
+    "frames": 2044,
+    "no_battle_heal_Save": true
+  },
+  "cold_route_SHA256": "d75f3b8943f7a4b1fddb7c363750fffcb32e94fd1a1823391f558d98f1f00b72",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "engine_changed": false,
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "freeze_SHA256": "5c6cb0c82a70cb14c87257354349d753ee702c0f8070d7995151819e2372ad55",
+  "full_offline_tested_source": "f53fc3a97ad20560ac9a7f9e14c3bb52d8a25128",
+  "historical_V01_STOP": 117,
+  "historical_V01_baseline_candidate": [
+    6,
+    4
+  ],
+  "historical_V01_requested_visual": 8536,
+  "historical_expected_B": 8402,
+  "later_separate_pair": [
+    1,
+    1
+  ],
+  "merge": false,
+  "next_dependency": "Review native Continue TV-watch flag lifecycle against the strict full-flag contract; any proposed contract or source change and further execution need separate review.",
+  "observer_C_SHA256": "a5c38fcc695c53127d9f9593f9fb47a801912b97702c77d1b7b7ebe83353c1e7",
+  "observer_binary_SHA256": "5223546d319a68907e22a867c81220f547a098928cef8b5cc59f3eb4196303b5",
+  "opening": {
+    "PASS": true,
+    "actual_Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+    "battle_attempts": 2,
+    "battle_frames": [
+      8309,
+      9989,
+      0,
+      0
+    ],
+    "deferred_frames": 20174,
+    "frames": 34117,
+    "helper": "55556fc5f352d8fe2f8d17db73123dad9ee09fb8",
+    "independent_backup_verified": false,
+    "mode": "opening",
+    "native_acknowledgement_lifecycle": {
+      "all_native_closure_stages_observed": true,
+      "single_fresh_A_each": true,
+      "uses": 1
+    },
+    "native_medicine_consumptions": 1,
+    "phase_valid_field_snapshots": 13943,
+    "raw_RGB_all_frames": true,
+    "runtime_log_SHA256": "5aeccc35b8adafe736ca717847efd532fda619f070ee2513672de75a545c496f",
+    "source_guard_checks": {
+      "PASS": true,
+      "all14_sector_checksums": true,
+      "full_live_disk_party_count_counter_flags_vars_resources_legalfield": true
+    },
+    "wall_seconds": 102.94172285099921
+  },
+  "opening_route_SHA256": "66e4186d59e4ff6e571542e499fb7ef663fe63dd767f62e35bad6a938a06f601",
+  "ordinary_recovery_executions": 5,
+  "original_oracle_legacy_human_full_floor_acceptance": false,
+  "published_frozen_executed_helper": "55556fc5f352d8fe2f8d17db73123dad9ee09fb8",
+  "retained_prior_STOPs": [
+    82,
+    90,
+    104,
+    101
+  ],
+  "retry": false,
+  "wiring_tested_source": "8e7598ea1ca2db13216498af9e7c2c6ecf34484f"
+}

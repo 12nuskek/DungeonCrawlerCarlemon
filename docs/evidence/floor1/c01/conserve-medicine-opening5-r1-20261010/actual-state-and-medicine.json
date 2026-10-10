@@ -1,0 +1,172 @@
+{
+  "Guard_postwin_before_guide": {
+    "Potion": 1,
+    "Scrap": 2,
+    "count": 2,
+    "counter": 72,
+    "facing": 1,
+    "map": [
+      35,
+      0
+    ],
+    "money": 3640,
+    "party": [
+      {
+        "PP": [
+          2,
+          40,
+          0,
+          0
+        ],
+        "experience": 627,
+        "friendship": 81,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          25,
+          36,
+          25,
+          17,
+          14,
+          12,
+          14
+        ],
+        "level": 10,
+        "moves": [
+          355,
+          356,
+          0,
+          0
+        ],
+        "species": 66,
+        "status": 0
+      },
+      {
+        "PP": [
+          0,
+          37,
+          0,
+          0
+        ],
+        "experience": 937,
+        "friendship": 75,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          17,
+          28,
+          14,
+          13,
+          23,
+          14,
+          14
+        ],
+        "level": 9,
+        "moves": [
+          357,
+          358,
+          0,
+          0
+        ],
+        "species": 52,
+        "status": 0
+      }
+    ],
+    "position": [
+      37,
+      31
+    ],
+    "saved_count": 0
+  },
+  "Howler_Warden_preparation_checkpoint_stairs": false,
+  "actual_decision_log": [
+    "GUARD_CHOICE absolute=22919 turn=0 CarlHP=33 DonutHP=28 GuardAlive=1 ScuttlerAlive=1 Potion=2 choice=0",
+    "GUARD_CHOICE absolute=24105 turn=1 CarlHP=33 DonutHP=23 GuardAlive=1 ScuttlerAlive=1 Potion=2 choice=0",
+    "GUARD_CHOICE absolute=25052 turn=2 CarlHP=22 DonutHP=23 GuardAlive=1 ScuttlerAlive=1 Potion=2 choice=0",
+    "GUARD_CHOICE absolute=26366 turn=3 CarlHP=17 DonutHP=20 GuardAlive=1 ScuttlerAlive=1 Potion=2 choice=1",
+    "GUARD_CHOICE absolute=27430 turn=4 CarlHP=28 DonutHP=17 GuardAlive=1 ScuttlerAlive=1 Potion=1 choice=0",
+    "GUARD_CHOICE absolute=29336 turn=5 CarlHP=25 DonutHP=17 GuardAlive=0 ScuttlerAlive=1 Potion=1 choice=0"
+  ],
+  "actual_medicine_log": [
+    "MEDICINE_CONFIRM absolute=26559 turn=3 owner=2 recipient=0 UI=0 position=0 HP=17 max=33",
+    "MEDICINE_HEAL absolute=26577 turn=3 owner=2 recipient=0 UI=0 HP=17->33 restored=16 wasted=4 Potion=2->1 CarlSTRIKE=355 DonutItemPP=0",
+    "MEDICINE_ACK absolute=26739 turn=3 use=1 WAIT=1 owner=2 fresh_A=1 full_state_exact=1",
+    "MEDICINE_RETURN absolute=26822 turn=3 uses=1 full_state_exact=1 ack_frame=26739 released=1 printer_done=1 print_task_destroyed=1 party_fade=1 field_order=1 exit=1 setup=1 reshow_entry=1 reshow=1"
+  ],
+  "saved_endpoint": {
+    "Potion": 1,
+    "Scrap": 2,
+    "count": 2,
+    "counter": 78,
+    "facing": 1,
+    "map": [
+      35,
+      1
+    ],
+    "money": 3640,
+    "party": [
+      {
+        "PP": [
+          8,
+          40,
+          0,
+          0
+        ],
+        "experience": 627,
+        "friendship": 81,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          36,
+          36,
+          25,
+          17,
+          14,
+          12,
+          14
+        ],
+        "level": 10,
+        "moves": [
+          355,
+          356,
+          0,
+          0
+        ],
+        "species": 66,
+        "status": 0
+      },
+      {
+        "PP": [
+          2,
+          40,
+          0,
+          0
+        ],
+        "experience": 937,
+        "friendship": 75,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          28,
+          28,
+          14,
+          13,
+          23,
+          14,
+          14
+        ],
+        "level": 9,
+        "moves": [
+          357,
+          358,
+          0,
+          0
+        ],
+        "species": 52,
+        "status": 0
+      }
+    ],
+    "position": [
+      4,
+      5
+    ],
+    "saved_count": 2
+  },
+  "trial_and_Guard_win": true
+}

@@ -1,0 +1,41 @@
+{
+  "Library_history": "5 failed uploads + 1 failed supported existing-backup download; cause unknown, no original bytes recovered, no retry",
+  "all_entries_readback_verified": true,
+  "all_frames_rehashed": {
+    "cold": 2044,
+    "opening": 34117
+  },
+  "available_after_exports_bytes": 6263894016,
+  "available_at_freeze_bytes": 10512097280,
+  "backup_options": "Separately authorized private object storage or user-controlled download with verified readback; neither performed or guaranteed here.",
+  "bytes": 4247172620,
+  "entry_count": 127,
+  "frozen_limits": {
+    "cold": 894152512,
+    "opening": 8837820160
+  },
+  "full_admission_reservation_bytes": 10000408128,
+  "historical_preservation": [
+    {
+      "PASS": true,
+      "bytes": 3190319959,
+      "directory": "c01-guard-choice-opening4-r3-20261010",
+      "entries_rehashed": 102,
+      "manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30"
+    },
+    {
+      "PASS": true,
+      "bytes": 218729208,
+      "directory": "c01-rgb-preservation-r1-20261010",
+      "entries_rehashed": 98,
+      "manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7"
+    }
+  ],
+  "independent_backup_verified": false,
+  "local_only": true,
+  "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+  "runtime_directory_bytes": {
+    "cold": 237942646,
+    "opening": 4005668266
+  }
+}

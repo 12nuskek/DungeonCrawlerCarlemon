@@ -1,3 +1,21 @@
+## Current C01 opening5 checkpoint — Guard Save PASS; cold1 STOP96
+
+One authorized opening5 process completed normal NewGame/trial/Guard/guide/manual
+Save at Quiet Landing35,1(4,5), facing1. Full14-sector and decoded live/disk checks
+PASS; one earned Potion used, one retained. Conditional cold1 started once and
+stopped at native2044 STOP96: native Continue sets FLAG_SYS_TV_WATCH2193. All other
+decoded fields match; native resource encryption context differs physically.
+Cold acceptance FAIL; no retry/assertion change/engine edit/merge/further gameplay.
+Opening claims/processes5/5; cold1/1; old STOP82/90/104/101 preserved. Frozen helper
+55556fc5f352d8fe2f8d17db73123dad9ee09fb8; full offline sourcef53fc3a97ad20560ac9a7f9e14c3bb52d8a25128.
+Actual evidence docs/evidence/floor1/c01/conserve-medicine-opening5-r1-20261010/README.md.
+Stop idle on draft PR117 for native Continue/full-flag contract review. Local raw
+retention hash-verified; independent backup unverified, Library5+1 history intact.
+Historical records below are preserved; their preparation/next-run wording is
+superseded by this terminal checkpoint. Full C01/oracle/legacy/human/floor open.
+
+---
+
 ## Current C01 conservation policy — opening5 explicitly authorized; preparation
 
 Independent review accepts037bc3cbcfaed70fb0979a88dae47c9383c7cf0c. One focused

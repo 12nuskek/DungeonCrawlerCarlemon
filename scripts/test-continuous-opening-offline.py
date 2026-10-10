@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Inert native-layout fixtures; never launch mGBA or exclusive gameplay runners."""
 from pathlib import Path
-import importlib.util,subprocess,tempfile,json,struct,copy,hashlib
+import importlib.util,subprocess,tempfile,json,struct,copy,hashlib,os,shutil
 ROOT=Path(__file__).resolve().parents[1]
 TOOL=Path('/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root')
 def module(n,p):
@@ -10,12 +10,12 @@ def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT,text=True).strip(
 def fixtures(model):
  party=b''
  for i in range(2):
-  c=bytearray(100);struct.pack_into('<I',c,0,128 if i==0 else 0);struct.pack_into('<I',c,4,1234567);c[19]=2
+  c=bytearray(100);struct.pack_into('<I',c,0,128 if i==0 else 0);struct.pack_into('<I',c,4,1234567);c[19]=2;c[85]=model.MAIL_NONE
   struct.pack_into('<H',c,32,66 if i==0 else 52);struct.pack_into('<I',c,36,399 if i==0 else 709);c[41]=70
   struct.pack_into('<4H',c,44,355 if i==0 else 357,356 if i==0 else 358,0,0);c[52:56]=bytes((8 if i==0 else 2,40,0,0));c[84]=8
   struct.pack_into('<I',c,72,sum(20<<(5*j) for j in range(6))|(i<<31));stats=model.prior.level_stats(c,8);struct.pack_into('<7H',c,86,stats[0],*stats)
   party+=model.prior.encode(c,c)
- party+=bytes(400);flags=bytearray(300);flags[4]=1
+ party+=model.EMPTY_POKEMON*4;flags=bytearray(300);flags[4]=1
  owned=bytearray(1272);struct.pack_into('<I',owned,0,3000)
  variables=bytearray(512);struct.pack_into('<H',variables,2,1);struct.pack_into('<H',variables,0x9c,1)
  return dict(party=party,flags=bytes(flags),logical=bytes(owned),owned=bytes(owned),vars=bytes(variables),saved=bytes(600),saved_count=0,context=0,counter=0,count=2,group=35,mapnum=0,map=[35,0],section=0,position=[8,38],x=8,y=38,facing=1)
@@ -95,6 +95,34 @@ def main():
   (d/'test.c').write_text(source)
   command=['cc','-std=gnu11','-Wall','-Wextra','-Werror','-fsanitize=undefined','-I'+str(TOOL/'usr/include'),str(d/'test.c'),'-L'+str(TOOL/'usr/lib/x86_64-linux-gnu'),'-lmgba','-o',str(d/'test')]
   subprocess.run(command,check=True);env=dict(__import__('os').environ,LD_LIBRARY_PATH=str(TOOL/'usr/lib/x86_64-linux-gnu'))
-  log=subprocess.check_output([str(d/'test')],cwd=d,env=env,text=True);print(log,end='')
- print(json.dumps(dict(PASS=True,generated_host_SHA256=hashlib.sha256(code.encode()).hexdigest(),route_phases=len(names),battle_decision_vectors=decisions,complete_transition_positive_negative_checks=battle_checks,native_sector_corruption_negatives=14,lossless_native_timing_roundtrip_frames=3,gameplay_processes=0),sort_keys=True))
+  if not os.environ.get('CO_R2_ONLY'):
+   log=subprocess.check_output([str(d/'test')],cwd=d,env=env,text=True);print(log,end='')
+  snapshot_init=model.snapshot(d/'fixture.bin');assert snapshot_init['party']==init['party']
+  extra=module('co_r2_batch',ROOT/'scripts/floor1/continuous-opening-r2-offline.py').run(model,d,d/'test',env,host.NAMES,host.KINDS,plans['opening'])
+  print('R2_COMPREHENSIVE '+json.dumps(extra,sort_keys=True))
+  runner=module('co_r2_native_admission',ROOT/'scripts/test-f1-c01-uninterrupted-r2.py')
+  native=runner.abi(d);assert native['values'][-3:]==[model.POKEMON_BYTES,model.MAIL_OFFSET,model.MAIL_NONE]
+  binding=runner.binding_table(code,d);assert len(binding)==72
+  budget=runner.storage();assert budget['opening']['worst_case_bytes']==12656270208 and budget['cold']['worst_case_bytes']==1011593024
+  # Admission checks the own-compiled inert file without invoking host main.
+  import stat
+  os.chmod(d/'test',0o700);fs=(d/'test').stat()
+  expected={'SHA256':hashlib.sha256((d/'test').read_bytes()).hexdigest(),'owner_uid':fs.st_uid,'mode':stat.S_IMODE(fs.st_mode),'device':fs.st_dev,'inode':fs.st_ino}
+  checker=module('co_offline_execfile',ROOT/'scripts/floor1/c01a-prefix-execfile.py')
+  assert checker.verify_executable(d/'test',expected)['regular_non_symlink']
+  for key,bad in [('SHA256','0'*64),('owner_uid',fs.st_uid+1),('mode',0o755),('inode',fs.st_ino+1)]:
+   changed=dict(expected);changed[key]=bad
+   try:checker.verify_executable(d/'test',changed)
+   except AssertionError:pass
+   else:raise AssertionError(('unsafe executable admission',key))
+  (d/'test-symlink').symlink_to(d/'test')
+  try:checker.verify_executable(d/'test-symlink',expected)
+  except AssertionError:pass
+  else:raise AssertionError('symlink executable admitted')
+
+  if os.environ.get('CO_ARTIFACT_DIRECTORY'):
+   target=Path(os.environ['CO_ARTIFACT_DIRECTORY']);target.mkdir()
+   for name in ('native-ABI.s','native-ABI.o','game.sym','actual-ELF-bindings-private.json'):shutil.copyfile(d/name,target/name)
+  print('R2_NATIVE_ADMISSION '+json.dumps(dict(native_ABI=native,binding_count=len(binding),storage=budget),sort_keys=True))
+ print(json.dumps(dict(PASS=True,generated_host_SHA256=hashlib.sha256(code.encode()).hexdigest(),route_phases=len(names),battle_decision_vectors=decisions,complete_transition_positive_negative_checks=battle_checks,native_sector_corruption_negatives=14,lossless_native_timing_roundtrip_frames=3,r2_comprehensive=extra,native_ABI=native,binding_count=len(binding),executable_admission_negative_cases=5,full_aggregate=not bool(os.environ.get('CO_R2_ONLY')),gameplay_processes=0),sort_keys=True))
 if __name__=='__main__':main()

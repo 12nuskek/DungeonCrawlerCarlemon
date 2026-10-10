@@ -6,6 +6,9 @@ def module(n,p):
     s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 prior=module('co_models',ROOT/'scripts/floor1/continuous-opening-native-model.py')
 fields=prior.fields;friendship=prior.friendship
+# Native compile-only ABI independently binds these three constants before execution.
+POKEMON_BYTES=100;MAIL_OFFSET=85;MAIL_NONE=0xFF
+EMPTY_POKEMON=bytes(MAIL_OFFSET)+bytes([MAIL_NONE])+bytes(POKEMON_BYTES-MAIL_OFFSET-1)
 def snapshot(path):
     raw=Path(path).read_bytes();assert len(raw)==3324
     values=struct.unpack('<10I',raw[3284:]);keys=['context','counter','count','saved_count','group','mapnum','section','x','y','facing']
@@ -15,7 +18,9 @@ def snapshot(path):
     for i in range(6):
         raw=d['party'][100*i:100*(i+1)];m=fields.decode(raw);assert m['checksum_valid'] and m['reencoding_exact']
         if i<2:assert not m['bad_egg'] and not m['egg'] and m['fields']['species']==(66 if i==0 else 52) and m['fields']['held_item']==0
-        else:assert raw==bytes(100)
+        else:assert raw==EMPTY_POKEMON
+    assert d['saved_count'] in (0,2)
+    if d['saved_count']==0:assert d['saved']==bytes(600),'pre-Save SaveBlock1 remains zero, distinct from live native empty records'
     for flag in (35,40,41,42,43,44,45,46,49,2139):assert not(d['flags'][flag//8]&(1<<(flag%8)))
     return d
 def change_item(logical,item,delta):
@@ -39,6 +44,12 @@ def validate(name,before,after):
             iv=struct.unpack_from('<I',c,72)[0];assert all((iv>>(5*j))&31==20 for j in range(6)) and (iv>>31)==i
             stats=prior.level_stats(c,8);assert f['hp_maxhp_attack_defense_speed_spatk_spdef']==[stats[0]]+stats and f['status']==0
         assert struct.unpack_from('<I',after['logical'])[0]==3000 and struct.unpack_from('<H',after['vars'],0x9c)[0]==1
+        # The native initialized anchor precedes only the intro flag/Temp1 event.
+        # Runtime's boot endpoint anchor can already contain those events.
+        assert after['party']==before['party'] and after['logical']==before['logical']
+        flags=bytearray(before['flags']);flags[4]|=1;assert after['flags']==bytes(flags)
+        variables=bytearray(before['vars']);struct.pack_into('<H',variables,2,1);assert after['vars']==bytes(variables)
+        assert after['saved_count']==before['saved_count']==0 and after['saved']==before['saved']==bytes(600)
         return
     assert before['counter']==after['counter'],'no counter jump in stationary phase'
     if name=='stairs-yes':assert before['map']==[35,3] and before['position']==[12,10] and after['map']==[35,4] and after['position']==[4,4]
@@ -86,15 +97,17 @@ def disk_equivalence(save,live):
         if signature==0x08012025 and count==latest and sid<14:selected[sid]=sec
     sb=b''.join(selected[i+1][:min(3968,0x3d88-i*3968)] for i in range(4));key=selected[0][0xac:0xb0]
     assert d['party']==live['party']==live['saved'] and d['count']==live['count']==live['saved_count']==2
+    assert struct.unpack_from('<I',sb,0x234)[0]==live['saved_count']==2,'full native u32 saved-party count'
     assert d['friendship_counter']==live['counter'] and d['map']==live['map']==[35,4] and d['position']==live['position']==[8,6]
     assert sb[0x1270:0x139c]==live['flags'] and sb[0x139c:0x159c]==live['vars']
     assert prior.resources.canonical(sb[0x490:0x988],key)==live['logical']
     return {'PASS':True,'all14_sector_checksums':True,'full_live_disk_party_count_counter_flags_vars_resources_legalfield':True}
+def cold_equivalence(before,after,save):
+    for k in ('party','count','counter','flags','vars','logical','saved','saved_count','map','position'):
+        assert before[k]==after[k],('actual cold state',k)
+    return disk_equivalence(save,after)
 if __name__=='__main__':
     name=sys.argv[1];after=snapshot('current-state.bin')
-    if name=='cold':
-        before=snapshot('expected-final-state.bin')
-        for k in ('party','count','counter','flags','vars','logical','saved','saved_count','map','position'):assert before[k]==after[k],('actual cold state',k)
-        disk_equivalence('game.sav',after)
+    if name=='cold':cold_equivalence(snapshot('expected-final-state.bin'),after,'game.sav')
     else:validate(name,snapshot('before-state.bin'),after)
     print('PASS complete source-native transition '+name)

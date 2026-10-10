@@ -1,10 +1,12 @@
 /* Host-only continuous phase, native reads and bounded lossless RGB chunks. */
+/* Verified against native sizeof(Pokemon), offsetof(mail), MAIL_NONE by compile-only ABI. */
+enum {CO_POKEMON_BYTES=100,CO_MAIL_OFFSET=85,CO_MAIL_NONE=0xFF};
 struct CoSnapshot {unsigned char party[600],flags[300],owned[1272],vars[512],saved[600];
     unsigned context,counter,count,savedCount,group,map,section,x,y,facing;};
 _Static_assert(sizeof(struct CoSnapshot)==3324,"Frozen complete native snapshot layout");
 struct CoAddresses {unsigned party,count,save1,save2,main,cb1,cb2,vblank,objects,avatar,maps,trainer,outcome,newGame,continueGame,grid,mons,turn,move,power,crit,attacker,target,controls,chosen,moveResults,damage,battleMain;};
 enum CoKind {CO_BOOT,CO_STABLE,CO_NOTE,CO_SUPPLY,CO_GUIDE,CO_TRIAL,CO_SCRAP,CO_POTION,CO_GUARD,CO_HOWLER,CO_BOSS,CO_STAIRS,CO_SAVE,CO_COLD};
-struct CoGuard {struct CoSnapshot last,before;struct CoAddresses a;unsigned frames,limit,kind,armed,pending,attempts,battleWas,encounterFrames[4],newSeen,continueSeen,valid,deferred,phaseFrames;FILE *motion,*trace,*index,*battleTrace;unsigned chunk,chunkFrames,cold,combatLoaded;};
+struct CoGuard {struct CoSnapshot last,before;struct CoAddresses a;unsigned frames,limit,kind,armed,pending,attempts,battleWas,encounterFrames[4],newSeen,continueSeen,valid,deferred,phaseFrames;FILE *motion,*trace,*index,*battleTrace;unsigned chunk,chunkFrames,cold,combatLoaded;struct mCore*core;};
 static struct CoGuard co;
 static unsigned co_task_state(struct mCore*c,unsigned tasks,unsigned callback,unsigned index,unsigned low,unsigned high) {
     unsigned found=0,value=0;
@@ -39,7 +41,7 @@ static unsigned co_read(struct mCore*c,struct CoSnapshot*s) {
         unsigned char plain[48];const unsigned char*p=s->party+100*i;walk_decode(p,plain);
         if(walk_checksum(plain)!=walk_u16(p+28))return 82;
         if(i<2&&(!walk_valid(p)||!walk_u16(p+86)))return 82;
-        if(i>=2){unsigned char zero[100]={0};if(memcmp(p,zero,100))return 82;}
+        if(i>=2){unsigned char empty[CO_POKEMON_BYTES]={0};empty[CO_MAIL_OFFSET]=CO_MAIL_NONE;if(memcmp(p,empty,CO_POKEMON_BYTES))return 82;}
     }
     const unsigned skipped[]={35,40,41,42,43,44,45,46,49,2139};
     for(unsigned i=0;i<sizeof skipped/sizeof *skipped;i++)if(s->flags[skipped[i]/8]&(1u<<(skipped[i]%8)))return 83;
@@ -147,6 +149,16 @@ static unsigned co_field_validate(struct CoSnapshot*s) {
     co.last=*s;return 0;
 }
 static void co_stop(unsigned reason,const color_t*p,unsigned w,unsigned h) {
+    /* Read-only CPU registers at the exact stop boundary; never advance/restore. */
+    unsigned regs[20]={co.frames,reason,0,0};
+    if(co.core&&co.core->readRegister)for(unsigned i=0;i<16;i++) {
+        char name[8];snprintf(name,sizeof name,"r%u",i);
+        if(co.core->readRegister(co.core,name,regs+4+i))regs[2]|=1u<<i;
+    }
+    unsigned psr[4]={0};
+    if(co.core&&co.core->readRegister){psr[0]=co.core->readRegister(co.core,"cpsr",psr+2);psr[1]=co.core->readRegister(co.core,"spsr",psr+3);}
+    FILE*cpu=fopen("first-failure-CPU-context-private.bin","wb");
+    if(cpu){fwrite(regs,1,sizeof regs,cpu);fwrite(psr,1,sizeof psr,cpu);fclose(cpu);}
     capture("first-failure.ppm",p,w,h);if(co.armed)co_dump(&co.last,"last-accepted");
     fprintf(stderr,"CONTINUOUS STOP reason=%u frame=%u phase=%u encounters=%u\n",reason,co.frames,co.kind,co.attempts);fflush(stdout);exit(reason);
 }
@@ -162,6 +174,7 @@ static void co_capture_frame(const color_t*p,unsigned w,unsigned h,unsigned afte
     unsigned idx[4]={co.frames,co.kind,after,co.attempts};if(fwrite(idx,1,sizeof idx,co.index)!=sizeof idx)co_stop(84,p,w,h);co.chunkFrames++;
 }
 static void co_run(struct mCore*c,const color_t*p,unsigned w,unsigned h) {
+    co.core=c;
     if(w!=240||h!=160||co.frames>=co.limit)co_stop(87,p,w,h);
     unsigned before=(c->busRead8(c,co.a.main+0x439)&2)!=0;
     if(before){unsigned i=0;const unsigned phases[]={CO_TRIAL,CO_GUARD,CO_HOWLER,CO_BOSS};

@@ -1,3 +1,32 @@
+## Current C01 r2 — authorized native empty-party repair and one new opening
+
+Independent review authorizes continuation from605f64777807ad8724500470e450d12b5cdab306
+on draft PR117. Correct both validators to exact100-byte native empty Pokemon:
+only mail85=MAIL_NONE0xFF, bound through compile-only sizeof/offsetof/constant ABI.
+Keep all six checksums/reencoding/unused400 bytes exact and pre-Save count0/zero600
+separate. Full source-derived18-phase, counters/TEMP_1/resources/Save/disk/cold
+admission and retained frame1538 offline checks required; prior24 were battle-only.
+Final aggregate PASS (288 decisions/24 battle checks/18 full phases/412 slot negatives/
+108 endpoint negatives/273 walks/19 map lifecycles/54 rekeys/30 Save-cold cases,20-value
+ABI/72 ELF bindings/11 bounded-driver CPU-context mocks/5 executable negatives).
+Checkpoint publication precedes one r2 opening in separately named
+output; conditional cold1 only after actual complete opening/native Save/14-sector
+full equivalence. No success-only approval pause; diagnosed ordinary offline errors
+may be corrected and retained. First unexpected runtime failure terminal, no retry.
+New wrapper scripts/test-f1-c01-uninterrupted-r2.py; contract
+ docs/floor1/c01-uninterrupted-unprepared-r2-contract.md. No game/rebuild/strategy/
+cadence/route/bounds change. Save intermediate buffer equality is exempt only in
+CO_SAVE; endpoint/disk/cold enforce equality. Callback identity does not prove
+native setter/healing frame atomicity. Retain first-failure state/CPU context;
+Pokerus acquisition/spread/later EV changes stay strictly unsupported native state,
+not corruption/defeat or RNG-search authority. Pickup excluded by ABILITY_NONE.
+R1 opening1 STOP82/freeze/claim/blank Save/captures stay immutable. Opening2 is
+counted only if launched; no r2 claim/process yet at this source preparation.
+Preserve all other histories/counts/branches/private artifacts. No merge, issue116,
+Library/private upload, extra writer/schedule/platform change. Backup unapproved/
+unverified; engine/accepted nine-district plan/C01/G02/legacy/human/full-floor unchanged.
+Earlier bodies below are historical authorities for their scope.
+
 ## Current C01 opening — terminal STOP82; cold blocked
 
 Draft PR117 source checkpoint/tested helper c3db41b2c9a3e25220ee13b5531d83f0bf11ef19

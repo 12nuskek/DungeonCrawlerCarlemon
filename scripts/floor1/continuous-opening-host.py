@@ -69,7 +69,7 @@ def generate(git):
     if(!grid||!currentMove||!movePower||!critical||!attacker||!target||!mons||!results||!controls||!menuState||!bagPosition||!chosen||!moveResults||!damage)return 4;
     co.battleTrace=fopen("complete-battle-trace-private.bin","wb");if(!co.battleTrace)return 84;
     unsigned phaseSeq=0;const char *phaseNames[]={NAMES};const unsigned phaseKinds[]={KINDS};
-    co.pending=!co.cold;
+    co.core=core;co.pending=!co.cold;
     setvbuf(stdout,NULL,_IOLBF,0);
 '''.replace('NAMES',','.join('"'+n+'"' for n in NAMES)).replace('KINDS',','.join('CO_'+n for n in KINDS))
     once('    while (fgets(line,sizeof(line),stdin)) {',init+'    while (fgets(line,sizeof(line),stdin)) {')

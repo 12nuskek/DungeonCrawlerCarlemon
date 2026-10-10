@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """New scope/layout/receipt tests; never repeat the completed codec admission."""
 from pathlib import Path
-import copy,importlib.util,json,types,sys
+import copy,importlib.machinery,importlib.util,json,tempfile,types,sys
 p=Path(__file__).resolve().parent/'floor1/rgb-preservation-expanded.py'
 s=importlib.util.spec_from_file_location('expanded_scope_test',p);a=importlib.util.module_from_spec(s);s.loader.exec_module(a);m=a.m
 def main():
@@ -10,14 +10,36 @@ def main():
     m.require(not out.exists(),'exclusive new scope admission')
     prior=a.prior_admission();cases=[]
     python=Path(sys.executable).resolve()
-    builtin=types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='built-in'))
+    def module(origin,loader,file=None,name='zlib'):
+        return types.SimpleNamespace(__spec__=types.SimpleNamespace(name=name,origin=origin,loader=loader),**({} if file is None else dict(__file__=file)))
+    machinery=importlib.machinery
+    builtin=module('built-in',machinery.BuiltinImporter)
     assert a.zlib_provider(builtin,python)==(python,'built-in');cases.append('built-in-zlib-provider-without-file')
-    extension=types.SimpleNamespace(__spec__=types.SimpleNamespace(origin=str(m.GZIP)),__file__=str(m.GZIP))
-    assert a.zlib_provider(extension,python)==(m.GZIP.resolve(),str(m.GZIP));cases.append('extension-provider-file-identity-fixture')
-    for i,module in enumerate((types.SimpleNamespace(),types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='built-in'),__file__=str(m.GZIP)),types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='extension'),__file__='/absent/zlib.so'))):
-        try:a.zlib_provider(module,python)
-        except RuntimeError:cases.append('provider-identity-negative-'+str(i))
-        else:raise AssertionError('unverifiable zlib provider accepted')
+    # Inert path/loader fixtures only: no extension binary is loaded or executed.
+    with tempfile.TemporaryDirectory(prefix='zlib-provider-offline-') as directory:
+        path=Path(directory)/('zlib'+machinery.EXTENSION_SUFFIXES[0]);path.touch()
+        other=path.with_name('other'+machinery.EXTENSION_SUFFIXES[0]);other.touch()
+        loader=machinery.ExtensionFileLoader('zlib',str(path))
+        extension=module(str(path),loader,str(path))
+        assert a.zlib_provider(extension,python)==(path.resolve(),str(path));cases.append('extension-provider-matching-paths-and-loader')
+        alias=path.with_name('alias'+machinery.EXTENSION_SUFFIXES[0]);alias.symlink_to(path.name)
+        extension=module(str(alias),machinery.ExtensionFileLoader('zlib',str(alias)),str(path))
+        assert a.zlib_provider(extension,python)==(path.resolve(),str(alias));cases.append('extension-provider-matching-resolved-aliases')
+        bads=(('missing-spec',types.SimpleNamespace()),
+            ('built-in-with-file',module('built-in',machinery.BuiltinImporter,str(path))),
+            ('missing-extension-file',module('/absent/zlib.so',machinery.ExtensionFileLoader('zlib','/absent/zlib.so'),'/absent/zlib.so')),
+            ('unknown-frozen-origin-existing-file',module('frozen',loader,str(path))),
+            ('mismatched-origin-file',module(str(other),loader,str(path))),
+            ('wrong-extension-loader',module(str(path),machinery.SourceFileLoader('zlib',str(path)),str(path))),
+            ('mismatched-loader-path',module(str(path),machinery.ExtensionFileLoader('zlib',str(other)),str(path))),
+            ('wrong-built-in-loader',module('built-in',loader)),
+            ('wrong-extension-name',module(str(path),machinery.ExtensionFileLoader('other',str(path)),str(path))),
+            ('wrong-module-name',module(str(path),loader,str(path),name='other')),
+            ('unsupported-extension-suffix',module(str(m.GZIP),machinery.ExtensionFileLoader('zlib',str(m.GZIP)),str(m.GZIP))))
+        for label,bad in bads:
+            try:a.zlib_provider(bad,python)
+            except RuntimeError:cases.append('provider-identity-negative-'+label)
+            else:raise AssertionError('unverifiable zlib provider accepted: '+label)
     origin,pins=a.decoder_dependencies();assert origin==m.zlib.__spec__.origin and pins[str(python)]==m.digest(python);cases.append('actual-runtime-provider-and-linked-dependency-pins')
     rows=[dict(r,raw_identity=dict(bytes=r['frames']*m.FRAME),raw_SHA256='raw-'+str(i),compressed_SHA256='gzip-'+str(i)) for i,r in enumerate(a.definitions())]
     a.validate_layout(rows);cases.append('complete42-file82482-frame-layout')

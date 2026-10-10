@@ -1,6 +1,6 @@
 """Enumerated expansion of the tested gzip preservation engine; no game imports."""
 from pathlib import Path
-import importlib.util,json,os,subprocess
+import importlib.machinery,importlib.util,json,os,subprocess
 ROOT=Path(__file__).resolve().parents[2]
 OLD_SOURCE='e5073a511b62041f4356932c7fcc3c355cc3ff76'
 OLD_RECEIPTS='dee9076184cedebc72aedc0ae01ac79bd4de0a57'
@@ -88,12 +88,20 @@ def protected_paths(targets):
         files.add(SCRATCH/name)
     return sorted(files-{Path(p) for p in targets})
 def zlib_provider(module,python):
-    origin=getattr(getattr(module,'__spec__',None),'origin',None)
+    spec=getattr(module,'__spec__',None)
+    origin=getattr(spec,'origin',None);loader=getattr(spec,'loader',None)
     file=getattr(module,'__file__',None)
+    m.require(getattr(spec,'name',None)=='zlib','zlib module identity required')
     if origin=='built-in':
-        m.require(file is None,'built-in zlib must not claim an extension file');provider=python
+        m.require(loader is importlib.machinery.BuiltinImporter,'built-in zlib loader required')
+        m.require(file is None,'built-in zlib must not claim an extension file');provider=python.resolve()
     else:
-        m.require(origin and file,'zlib must have a verified built-in or extension identity');provider=Path(file).resolve()
+        m.require(type(loader) is importlib.machinery.ExtensionFileLoader and loader.name=='zlib','zlib extension loader required')
+        paths=(origin,file,loader.path)
+        m.require(all(isinstance(p,str) and Path(p).is_absolute() for p in paths),'absolute zlib extension identities required')
+        provider=Path(file).resolve()
+        m.require(all(Path(p).resolve()==provider for p in paths),'zlib extension origin/file/loader mismatch')
+        m.require(any(provider.name.endswith(suffix) for suffix in importlib.machinery.EXTENSION_SUFFIXES),'supported zlib extension suffix required')
     m.require(provider.is_file(),'zlib provider binary missing')
     return provider,origin
 def decoder_dependencies():

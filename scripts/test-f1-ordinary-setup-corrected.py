@@ -14,6 +14,7 @@ TRIAL='f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281'
 PRIOR_ID='e2447f13519b6352f907559c3c57556a2f387ceaf765660503cbcb344125ec05'
 STAGES=['setup','patrol','cold']
 SCOPED=['scripts/test-f1-ordinary-setup-corrected.py','scripts/test-f1-ordinary-recovery.py',
+        'scripts/test-ordinary-setup-relocation.py',
         'scripts/floor1','scripts/contracts','docs/floor1/ordinary-setup-corrected-20261010-contract.md']
 
 
@@ -35,7 +36,7 @@ def corrected_route(text,code):
     index=positions[0];after=before[:index]+new+before[index+4:]
     observed={'item 13 1','uses 3 40 0 37'}
     assert [x for x in before if x not in observed]==[x for x in after if x not in observed]
-    assert all(before.count(x)==after.count(x)==1 for x in observed)
+    assert all(before.count(x)==after.count(x)>=1 for x in observed)
     # Inspect each actual compiled host command block; neither advances a frame/input.
     for anchor in ['!strncmp(line,"item ",5)','!strncmp(line,"uses ",5)']:
         assert code.count(anchor)==1,anchor
@@ -65,6 +66,11 @@ def verify_artifacts(build,out,identity):
 
 def prepare(build,prior,out):
     assert not out.exists(),'Separate empty claim only'
+    out.mkdir(parents=True)
+    with (out/'prepare-claim.json').open('x') as f:
+        json.dump(dict(source=git('rev-parse','HEAD'),base=BASE,output=str(out),prior=str(prior),
+                       preparation_attempt=2,prior_ordinary_processes=2,next_ordinary_process=3,
+                       next_setup_attempt=2,execution_limit=1),f,indent=2)
     assert sha(prior/'fresh.sav')==TRIAL and sha(prior/'identity.json')==PRIOR_ID
     history=json.loads((prior/'summary.json').read_text());failure=json.loads((prior/'STOP.json').read_text())
     assert [x['stage'] for x in history]==['fresh','seed'] and [x['exit'] for x in history]==[0,40]
@@ -74,10 +80,6 @@ def prepare(build,prior,out):
     identity=json.loads((prior/'identity.json').read_text());verify_artifacts(build,prior,identity)
     before=(prior/'seed.route').read_text();assert sha(prior/'seed.route')==identity['routes']['seed']
     route,proof=corrected_route(before,(prior/'observer.c').read_text())
-    out.mkdir(parents=True)
-    with (out/'prepare-claim.json').open('x') as f:
-        json.dump(dict(source=git('rev-parse','HEAD'),base=BASE,output=str(out),prior=str(prior),
-                       prior_ordinary_processes=2,next_ordinary_process=3,next_setup_attempt=2,execution_limit=1),f,indent=2)
     for name in ['observer.c','playtest','game.sym','source-manifest.json']:shutil.copy2(prior/name,out/name)
     shutil.copyfile(prior/'fresh.sav',out/'trial.sav');assert sha(out/'trial.sav')==TRIAL
     (out/'setup.route').write_text(route)

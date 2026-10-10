@@ -1,0 +1,10 @@
+{
+  "source": "9972ef046b9180912d285818258a5382ed5b0515",
+  "stage": "prepare",
+  "attempt": 2,
+  "exit": 1,
+  "emulator_executions": 0,
+  "failure": "Compiled item branch contains a second !strncmp in its is_item local variable; whole-file anchor count is not handler identity",
+  "log_SHA256": "0400f628ae69d4ce6bb06ca751da9e7d6c507f73c738f871681d4211d577cad6",
+  "fix": "Match unique line-anchored if command handler; verify actual item/uses blocks advance no frame/input"
+}

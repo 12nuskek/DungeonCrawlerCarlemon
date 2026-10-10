@@ -1,0 +1,10 @@
+{
+  "source": "cceba2930c101a3f2d3d04b1d6922d826759671d",
+  "stage": "prepare",
+  "attempt": 1,
+  "exit": 1,
+  "emulator_executions": 0,
+  "failure": "Proof assumed global item13=1 uniqueness; final setup repeats the same required resource assertion",
+  "log_SHA256": "2d51975620d453239ed9700a46b47538aadebf8bc966058742d5876866b70d78",
+  "fix": "Require one exact relocation window and unchanged counts of both resource assertions; preserve repeated final assertion"
+}

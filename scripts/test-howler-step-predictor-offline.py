@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """One separately named offline correction check; consumed runtime stays CLOSED."""
 from pathlib import Path
-import copy,hashlib,importlib.util,json,os,struct,subprocess
+import copy,hashlib,importlib.util,json,os,resource,signal,struct,subprocess
 if not __debug__:raise RuntimeError('offline checks require assertions')
 ROOT=Path(__file__).resolve().parents[1]
 BASE='24655f700a395f541ec853c7556522fbf5dfa317'
-OUT=Path('/workspace/scratch/c01-howler-step-predictor-offline-r1-20261010')
+BOOTSTRAP_BASE='c727aa2d3279bdd49a043f085cfc71c8f7befd50'
+OUT=Path('/workspace/scratch/c01-howler-step-predictor-offline-r2-20261010')
 CHANGED=('scripts/floor1/howler-continuation-state.py',
          'scripts/floor1/howler-continuation-audit.py',
          'scripts/test-howler-continuation-offline.py',
@@ -21,6 +22,8 @@ def main():
     global _owned_output
     source=w.current_source();assert w.git('merge-base',BASE,source)==BASE
     assert set(w.git('diff','--name-only',BASE,source).splitlines())==set(CHANGED)
+    assert w.git('merge-base',BOOTSTRAP_BASE,source)==BOOTSTRAP_BASE
+    assert w.git('diff','--name-only',BOOTSTRAP_BASE,source)==CHANGED[3],'bootstrap harness correction only'
     assert not OUT.exists(),'exclusive offline output already consumed'
     w.no_active_process()
     OUT.mkdir(mode=0o700)
@@ -36,7 +39,18 @@ def main():
       w.SCRATCH/'c01-howler-runtime-r1-post-STOP-private-readback-20261010.json':'c141b2edd5fb4bef25d70686791ad30b7047d8670e12653c9d3229a7b726fd89',
       w.SCRATCH/'c01-howler-runtime-r1-final-STOP94-handoff-20261010.json':'4eae9d9f72d2a5f88327a6972f70a022005c19d9ef83042b961bb894501f1724',
       w.SCRATCH/'c01-howler-runtime-r1-handoff-export-STOP-20261010.json':'890097b9482d0e74ae365c009fe9738e3e73e8e2a35fbcd3cf1269101d7d8ce6',
-      w.SCRATCH/'c01-howler-runtime-r1-admission-before-prepare-20261010.json':'e8aa0b9602af743bcc3107277e3b65e9723e4b6bc5897597d71c268ab0e12af5'}
+      w.SCRATCH/'c01-howler-runtime-r1-admission-before-prepare-20261010.json':'e8aa0b9602af743bcc3107277e3b65e9723e4b6bc5897597d71c268ab0e12af5',
+      w.SCRATCH/'c01-howler-step-offline-terminal-checkpoint-r1-20261010.json':'74618aa0fc7a5bb635de4503e4e5a9fcb94dbc4ce59a6dc220c602c479f9bf5c',
+      w.SCRATCH/'c01-howler-step-predictor-offline-r1-20261010.log':'0ed7c1da4336e80059dc8a860cbf49f6dfa676ce6a1f6dfdbba35e5cc8c74f64'}
+    prior_output=w.SCRATCH/'c01-howler-step-predictor-offline-r1-20261010'
+    prior_files={'offline-STOP-private.json':'de787e2da6d8fc6adf018ddb830550036ae74d91b03abf33bb6454edd0b05f5f',
+                 'step-source-proof-private.json':'ac61c379be504e8200ea5cff5f52c9e3c0fab1a8425ee8f94566f71ec15b6d73',
+                 'synthetic-initial.bin':'96061074cedead4ebb088e6d8248afd9ff58e541ccaaecb59e024eb1b7e72e0f',
+                 'synthetic-walk.bin':'645c3d3b77117697c6ac9e3cdf01149229dec61001defba0a03716818b2269bc',
+                 'native-before.bin':'96061074cedead4ebb088e6d8248afd9ff58e541ccaaecb59e024eb1b7e72e0f',
+                 'native-after.bin':'645c3d3b77117697c6ac9e3cdf01149229dec61001defba0a03716818b2269bc'}
+    assert {p.name for p in prior_output.iterdir()}==set(prior_files)
+    fixed.update({prior_output/name:pin for name,pin in prior_files.items()})
     for p,h in fixed.items():assert w.sha(p)==h
     accepted=w.read(w.ACCEPTED/'offline-receipt.json');registry=w.read(w.REGISTRY)
     assert accepted['PASS'] and accepted['tested_source_commit']==w.TESTED and accepted['source_status_at_start']==''
@@ -73,33 +87,28 @@ def main():
     route=module('howler_step_route',ROOT/'scripts/floor1/howler-continuation-route.py')
     assert route.budget(route.routes()['howler-continuation'])['total']==70625
     for name,text in route.routes().items():assert text==(ROOT/f'scripts/contracts/f1-c01-{name}.route').read_text()
-    counts=dict(step_counter_vectors=0,physical_steps=0,ordinary_updates=0,ladder_transitions=0,
+    prior=w.read(w.SCRATCH/'c01-howler-step-offline-terminal-checkpoint-r1-20261010.json')
+    assert prior['attempted_test_source']==BOOTSTRAP_BASE and prior['completed_before_failure']['ordinary_ladder_modulo_vectors_asserted']==1024
+    for rel in CHANGED[:3]:
+        assert hashlib.sha256(subprocess.check_output(['git','show',BOOTSTRAP_BASE+':'+rel],cwd=ROOT)).hexdigest()==w.sha(ROOT/rel)
+    counts=dict(prior_step_counter_vectors_reused=1024,step_counter_vectors_executed=0,physical_steps=0,ordinary_updates=0,ladder_transitions=0,
                 GAME_STAT_STEPS_delta=0,native_step_transitions=0,retained_phase_checks=0,
                 native_retained_phase_checks=0,exact_endpoint_counter_negatives=0,exact_endpoint_poison_negatives=0,
-                retained_guide_byte_negatives=0)
-    # All modulo/127 boundaries for both transitions; physical stat always +1.
-    for counter in range(128):
-        for poison in range(4):
-            for kind in ('ordinary','ladder'):
-                step=state.step_counters(counter,poison,kind);ordinary=kind=='ordinary'
-                assert step==dict(counter=(counter+1)%128 if ordinary else counter,
-                    poison=(poison+1)%4 if ordinary else poison,GAME_STAT_STEPS_delta=1,
-                    step_script_updates=int(ordinary),walking_friendship_event=ordinary and counter==127)
-                counts['step_counter_vectors']+=1
-    for counter,poison,kind in ((128,0,'ordinary'),(-1,0,'ordinary'),(0,4,'ordinary'),(0,-1,'ladder'),(0,0,'warp')):
-        reject('invalid-step-input',lambda c=counter,p=poison,k=kind:state.step_counters(c,p,k))
-    reject('unproven-map-change',lambda:state.route_step([35,0],[51,27],[35,1],[4,3]))
-    reject('extra-ordinary-movement',lambda:state.route_step([35,1],[4,5],[35,1],[4,3]))
+                retained_guide_byte_negatives=0,missing_bootstrap_negative=0)
+    # Completed ordinary/ladder/127-boundary vectors are reused by exact source
+    # and receipt identity, not repeated or promoted to gameplay acceptance.
     def snap(raw,name):
         p=OUT/(name+'.bin');p.write_bytes(raw);return state.snapshot(p)
     def sync(s,name):
         s=copy.deepcopy(s);s['owned']=state.prior.resources.canonical(s['logical'],struct.pack('<I',s['context']))
         return snap(pack(s),name)
     def native(a,b,kind):
+        assert (OUT/'fixture.bin').is_file() and w.sha(OUT/'fixture.bin')==bootstrap_SHA256
         (OUT/'native-before.bin').write_bytes(pack(a));(OUT/'native-after.bin').write_bytes(pack(b))
         p=subprocess.run([str(w.ACCEPTED/'inert'),'--transition',str(OUT/'native-before.bin'),str(OUT/'native-after.bin'),str(kind)],
                          cwd=OUT,env=w.legacy.ENV,capture_output=True,timeout=10)
         assert p.returncode==0,(kind,p.stdout,p.stderr)
+        assert w.sha(OUT/'fixture.bin')==bootstrap_SHA256
     def walk(s,mapnum,pos,facing):
         kind=state.route_step(s['map'],s['position'],[35,mapnum],pos)
         step=state.step_counters(s['counter'],struct.unpack_from('<H',s['vars'],0x56)[0],kind)
@@ -116,6 +125,32 @@ def main():
     outbound=[([4,4],1,2),([37,26],0,2)]+[([x,26],0,4) for x in range(38,52)]+[([51,27],0,1)]
     inbound=[([51,26],0,2)]+[([x,26],0,3) for x in range(50,37,-1)]+[([4,3],1,3),([4,4],1,1),([4,5],1,1)]
     s=sync(state.old.expected(initial),'synthetic-initial');kinds=[]
+    # setup() always reads a complete CoSnapshot from cwd/fixture.bin, even
+    # though --transition subsequently replaces co.last/co.before with argv[2]
+    # and installs argv[3]. Supply the intended synthetic initial fixture only.
+    bootstrap=pack(s);assert len(bootstrap)==3324
+    assert hashlib.sha256(bootstrap).hexdigest()==prior_files['synthetic-initial.bin']
+    with (OUT/'fixture.bin').open('xb') as f:f.write(bootstrap)
+    bootstrap_SHA256=w.sha(OUT/'fixture.bin')
+    assert (OUT/'fixture.bin').read_bytes()==(OUT/'synthetic-initial.bin').read_bytes()
+    inert_source=(w.ACCEPTED/'inert.c').read_text()
+    contract='FILE*f=fopen("fixture.bin","rb");assert(f&&fread(&co.last,1,sizeof co.last,f)==sizeof co.last&&!fclose(f));'
+    assert contract in inert_source and 'setup();struct CoSnapshot before={0},after={0},actual={0};' in inert_source
+    assert 'co.last=co.before=before;' in inert_source and 'installSnapshot(&after);result=co_read(&mock,&actual);' in inert_source
+    missing=OUT/'missing-bootstrap-negative';missing.mkdir(mode=0o700)
+    def no_core_dump():resource.setrlimit(resource.RLIMIT_CORE,(0,0))
+    p=subprocess.run([str(w.ACCEPTED/'inert'),'--transition',str(OUT/'synthetic-initial.bin'),str(OUT/'synthetic-initial.bin'),'1'],
+        cwd=missing,env=w.legacy.ENV,capture_output=True,timeout=10,preexec_fn=no_core_dump)
+    assert p.returncode==-signal.SIGABRT and not p.stdout and b'setup:' in p.stderr
+    assert b'f&&fread(&co.last,1,sizeof co.last,f)==sizeof co.last&&!fclose(f)' in p.stderr
+    assert not list(missing.iterdir()) and w.sha(OUT/'fixture.bin')==bootstrap_SHA256
+    counts['missing_bootstrap_negative']=1
+    w.write(OUT/'bootstrap-contract-private.json',dict(PASS=True,inert_source_SHA256=w.sha(w.ACCEPTED/'inert.c'),
+        inert_executable_SHA256=w.sha(w.ACCEPTED/'inert'),bootstrap_fixture_SHA256=bootstrap_SHA256,fixture_bytes=3324,
+        fixture_origin='same synthetic initial expectation as preserved failed r1; derived only from verified Guard input and explicit native Continue expectation',
+        original_Guard_Save_SHA256=state.old.SAVE_SHA,missing_fixture_exit_code=p.returncode,
+        missing_fixture_stderr=p.stderr.decode(),missing_fixture_directory_stays_empty=True,
+        no_actual_snapshots_changed=True,no_core_initialization=True))
     for pos,mapnum,facing in outbound:s,kind=walk(s,mapnum,pos,facing);kinds.append(kind)
     assert tuple(kinds)==state.LEG_TRANSITIONS[0] and s['counter']==94 and struct.unpack_from('<H',s['vars'],0x56)[0]==2
     # Actual battle snapshots; no invented reward/save/endpoint bytes.
@@ -179,7 +214,8 @@ def main():
     for name,record in runtime_files.items():assert w.sha(w.OUT/name)==record['SHA256']
     assert w.current_source()==source;w.no_active_process()
     receipt=dict(schema='c01-howler-step-predictor-offline-correction/v1',PASS=True,offline_only=True,
-        base_commit=BASE,tested_source_commit=source,source_status_at_start='',changed_source_pins={p:w.sha(ROOT/p) for p in CHANGED},
+        base_commit=BASE,bootstrap_base_commit=BOOTSTRAP_BASE,tested_source_commit=source,source_status_at_start='',changed_source_pins={p:w.sha(ROOT/p) for p in CHANGED},
+        bootstrap_fixture_SHA256=bootstrap_SHA256,bootstrap_contract_receipt_SHA256=w.sha(OUT/'bootstrap-contract-private.json'),
         historical_helper_pins=historical,current_helper_pins=refreshed,accepted_artifacts_rehashed=len(accepted['artifacts']),
         inherited_observer_and_ELF_proofs_reused=True,generated_C_SHA256=accepted['generated_C_SHA256'],observer_SHA256=accepted['observer_SHA256'],
         complete_current_source_dependencies=w.dependencies(),wiring_files={p:w.sha(ROOT/p) for p in w.WIRING},

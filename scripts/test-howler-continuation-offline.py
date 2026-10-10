@@ -32,6 +32,8 @@ def main():
     assert code.count('->runFrame(')==code.count('core->reset(')==1
     assert not any(x in code for x in ('busWrite','loadState','RNG_SEED'))
     assert 'co.attempts!=0' in code and 'phaseSeq!=4||co.attempts!=1' in code
+    assert 'if(phaseSeq==0)co_dump(&current,"before")' not in code
+    assert code.count('co_dump(&current,"before")')==1 # only genuine phase begin
     assert 'if(co.newSeen)co_stop(88' in code
     assert 'cm!=36&&cm!=38' in code and 'dm!=28&&dm!=30' in code
     assert 'money!=initial+360' in code and 'gc.uses>=1' in code
@@ -199,6 +201,7 @@ def main():
         else:raise AssertionError('runtime action admitted')
     used=sum(p.stat().st_size for p in d.rglob('*') if p.is_file() and not p.is_symlink());assert used<=256*1024**2
     storage=runner.storage();reservation=runner.reservation();free=shutil.disk_usage(d).free
+    assert git('rev-parse','HEAD')==tested and git('status','--porcelain')==source_status, 'source changed during offline aggregate'
     captures={name:[x.split()[3] for x in text.splitlines() if x.startswith('step ') and x.split()[3]!='-'] for name,text in plans.items()}
     receipt=dict(PASS=True,offline_only=True,runtime_review='CLOSED',gameplay_processes=0,base_commit=BASE,tested_source_commit=tested,source_status_at_start=source_status,
         generated_C_SHA256=sha(d/'observer.c'),observer_SHA256=sha(d/'observer'),inherited_generated_source_SHA256=inherited,

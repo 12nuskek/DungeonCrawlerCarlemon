@@ -46,6 +46,10 @@ def generate(git):
     once('const char *phaseNames[]={'+','.join('"'+n+'"' for n in inherited.NAMES)+'};const unsigned phaseKinds[]={'+','.join('CO_'+n.replace('GUARD','HOWLER') for n in inherited.KINDS)+'};',
          'const char *phaseNames[]={'+','.join('"'+n+'"' for n in NAMES)+'};const unsigned phaseKinds[]={'+','.join('CO_'+n for n in KINDS)+'};')
     code = code.replace('phaseSeq>=10', 'phaseSeq>=4')
+    # The historical first phase was boot and deliberately re-anchored before.
+    # Here the first phase is earned combat: its immutable pre-battle operand
+    # must never be overwritten by the post-win snapshot.
+    once('                if(phaseSeq==0)co_dump(&current,"before");', '')
     once('if((co.cold&&(!co.continueSeen||co.attempts))||(!co.cold&&(!co.newSeen||phaseSeq!=10||co.attempts!=2)))',
          'if(!co.continueSeen||co.newSeen||(co.cold?co.attempts!=0:(!hc.anchored||phaseSeq!=4||co.attempts!=1||hc.saveStage!=3)))')
     once('int main(int argc, char **argv)', (ROOT/'scripts/floor1/howler-continuation-save.h').read_text()+'\nint main(int argc, char **argv)')

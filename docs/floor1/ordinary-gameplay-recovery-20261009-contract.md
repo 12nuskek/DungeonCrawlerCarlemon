@@ -1,20 +1,23 @@
 # Ordinary gameplay recovery — replacement workspace contract
 
-Status: **terminal preparation STOP before host compilation/gameplay**. The new
-source verifier failed at engine/asmdiff.ps1 because it compared raw Git bytes
-with the pinned CRLF archive representation. Read-only diagnosis found only
-explicit attribute-driven CRLF transformations. No retry or executable freeze.
-[Exact build/stop/diagnosis](../evidence/floor1/ordinary-recovery-20261009/build-r4/README.md).
-A separately reviewed archive-attribute-aware source check and new prepare claim
-are the next dependency; the successful single game build should be reused.
-This prospective contract replaces only its previously blocked draft. Historical contracts and executions remain
+Status: focused continuation authorized after parent review of checkpoint
+6e4b8d4573c717b12c4da91b17027dec0ec67955. The narrow source fix derives exact
+archive bytes from each path's pinned-commit text/eol attributes; it never
+normalizes actual inputs. Focused offline cases reject corruption, unmarked EOL
+changes, attribute changes and missing/extra tracked inventory. Ordinary
+diagnosed offline preparation bugs may be fixed/retested while retaining their
+claims/failures; unexpected actual gameplay failure remains terminal.
+The previous r4 source STOP and full diagnosis are untouched. Reuse its single
+successful build; no tool reacquisition or rebuild. New exclusive preparation
+root: /workspace/scratch/ordinary-recovery-r5-20261010/prepare-01. This contract
+is prospective until its complete identity.json is verified and frozen. Historical contracts and executions remain
 unchanged. Kurt authorized the replacement on 9 October 2026 at 23:29 UTC;
 accepted tooling-r3 identities permit this explicitly new ordinary recovery.
 First unexpected failure is terminal; checkpoint before dependent gameplay.
 
 Gameplay source is integrated main c6d647a815ffce44a2419a2cf83b6c2c094359f0,
 engine tree 76001ee128785714b7c15aef6d9c95630587d0a9. Publication starts from
-PR114 head 5b1c108557ecdb2704dea94c61aff1fb28845acd, retaining its active-pose
+PR114 head 6e4b8d4573c717b12c4da91b17027dec0ec67955, retaining its active-pose
 engine 8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a. No engine edits or merge.
 Actual new ROM SHA256 ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461;
 actual new ELF SHA256 6e56b32192e1a861b39c70e62bb5c43e762b9f5cc8ce0389d3cb494c3ee6dde6.
@@ -41,8 +44,9 @@ only the three recorded multiboot blobs from official pret/pokeemerald commit
 731ad5bfd6e6f265508d0efcca0ba42f9dcf5881, checking exact Git blob IDs before use.
 Freeze generated host/binary, actual ELF symbols, native compiler ABI constants
 and bitfields, four routes, tooling/dependencies and encoder before execution.
-Every tracked archived engine file is compared with main except those exact
-hydrated blobs. Native friendship must use main pokemon.c SHA256
+Every archived tracked engine/helper file must equal the exact archive bytes
+derived from main's pinned attributes; the three untracked hydrated blobs are
+independently pinned. Archive attribute files themselves must remain exact. Native friendship must use main pokemon.c SHA256
 df008d2d381b70f30998e476ed1f7183871580ea037d0fc5832bea11beb9c064.
 
 Use the separately named test-f1-ordinary-recovery.py and ordinary-recovery-host.py.
@@ -86,7 +90,7 @@ set; preparation 46, boss 47, checkpoint 48, loop 49 and Warden 2138/2139 unset.
 No Warden interaction, boss execution, later floors or candidate pair.
 
 Before execution freeze output root
-/workspace/scratch/ordinary-recovery-r4-20261010/runtime. Require empty output,
+/workspace/scratch/ordinary-recovery-r5-20261010/prepare-01. Require empty output,
 create-only execution claims, fixed dependencies and terminal STOP.json. Each
 stage is at most 100000 native frames and 600 wall seconds. Fresh permits only
 trainer855 once, patrol only trainers856/857 once each, each battle at most

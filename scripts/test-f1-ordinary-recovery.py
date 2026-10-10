@@ -15,11 +15,12 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 GAME = 'c6d647a815ffce44a2419a2cf83b6c2c094359f0'
 ENGINE = '76001ee128785714b7c15aef6d9c95630587d0a9'
-BASE = '5b1c108557ecdb2704dea94c61aff1fb28845acd'
+BASE = '6e4b8d4573c717b12c4da91b17027dec0ec67955'
 STAGES = ['fresh', 'seed', 'patrol', 'cold']
 CONTRACT = 'docs/floor1/ordinary-gameplay-recovery-20261009-contract.md'
 NEW = ['scripts/test-f1-ordinary-recovery.py', 'scripts/floor1/ordinary-recovery-host.py',
        'scripts/floor1/ordinary-recovery-abi.c', CONTRACT]
+NEW += ['scripts/floor1/ordinary-recovery-source.py', 'scripts/test-ordinary-recovery-source.py']
 
 
 def git(*args):
@@ -152,17 +153,17 @@ def prepare(build, out):
     assert not out.exists(), 'New output only'
     out.mkdir(parents=True)
     source = build / 'source'; engine = source / 'engine'
+    with (out/'prepare-claim.json').open('x') as f:
+        json.dump(dict(stage='prepare',source=git('rev-parse','HEAD'),game=GAME,output=str(out),execution_limit=1),f,indent=2)
     assert (build / 'tested-commit.txt').read_text().strip() == GAME
     assert git('rev-parse', GAME+':engine') == ENGINE
-    # Every archived tracked engine file, except the three pinned hydrated blobs.
+    built=json.loads((build.parent/'build-result.json').read_text())
+    assert built['source']==GAME and built['engine_tree']==ENGINE and built['build_attempts']==1 and built['build_exit']==0
+    assert sha(engine/'pokeemerald.gba')==built['ROM_SHA256'] and sha(engine/'pokeemerald.elf')==built['ELF_SHA256']
+    # Exact pinned archive bytes, including explicit attribute transformations.
     hydration = json.loads((build.parent / 'hydration.json').read_text())
-    for path in git('ls-tree', '-r', '--name-only', GAME, '--', 'engine').splitlines():
-        local = source / path
-        if path[7:] in hydration:
-            assert sha(local) == hydration[path[7:]]['SHA256']
-        else:
-            expected = subprocess.check_output(['git','show',GAME+':'+path],cwd=ROOT)
-            assert local.read_bytes() == expected, ('main source bytes', path)
+    manifest=module('ordinary_source',ROOT/'scripts/floor1/ordinary-recovery-source.py').verify(ROOT,GAME,source,hydration)
+    (out/'source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     host = module('ordinary_host', ROOT / 'scripts/floor1/ordinary-recovery-host.py')
     code, base = host.generate(git, source); (out / 'observer.c').write_text(code)
     with (out / 'host-build.log').open('w') as log:
@@ -175,6 +176,8 @@ def prepare(build, out):
                     host_SHA256=sha(out/'observer.c'), binary_SHA256=sha(out/'playtest'), symbols_SHA256=sha(out/'game.sym'),
                     routes={s:sha(out/(s+'.route')) for s in STAGES}, bindings=observer, native_ABI=native,
                     reconstructed_base_observer=base, hydrated_blobs=hydration,
+                    source_manifest_SHA256=sha(out/'source-manifest.json'),
+                    prepare_claim_SHA256=sha(out/'prepare-claim.json'),
                     frame_limit_each=100000, battle_frame_limit_each=36000, execution_limit_each=1,
                     motion=dict(sample_every_frames=4, native_fps='16777216/280896', rgb_bytes_limit_each=2880000000,
                                 no_replay=True, encoded_speed='native ordinary speed'),
@@ -196,6 +199,12 @@ def execute(build, out, stage):
         assert sha(path) == identity[key]
     assert sha(out/(stage+'.route')) == identity['routes'][stage]
     assert sha(Path(shutil.which('ffmpeg'))) == identity['ffmpeg_SHA256']
+    assert sha(out/'source-manifest.json')==identity['source_manifest_SHA256']
+    for path,record in json.loads((out/'source-manifest.json').read_text()).items():
+        assert sha(source/path)==record['archive_SHA256'],('frozen archive identity',path)
+    assert sha(Path(identity['mgba']['path']))==identity['mgba']['SHA256']
+    for record in identity['mgba']['resolved_dependency_hashes']:
+        assert sha(Path(record['path']))==record['SHA256'],('frozen native dependency',record['path'])
     summaryfile=out/'summary.json'; summary=json.loads(summaryfile.read_text()) if summaryfile.exists() else []
     assert [r['stage'] for r in summary] == STAGES[:STAGES.index(stage)]
     assert shutil.disk_usage(out).free >= 7000000000, 'Fresh storage check before emulator'

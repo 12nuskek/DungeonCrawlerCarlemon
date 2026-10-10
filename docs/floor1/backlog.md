@@ -1,3 +1,30 @@
+## Current C01a actual diagnostic pair — baseline prefix matched; candidate STOP124
+
+Narrow mode correction admitted separate claim7/baseline attempt6 (actual run5/
+emulator6), then gated claim8/candidate attempt2 (actual emulator7). Tested/frozen/
+executed656fc902ac6d0a1583e3396372b9da1f126e3844; no recompile/game change/rebuild.
+Read-only mode/identity/owner/hash/access checks passed before freeze/each claim;
+11 inert negatives passed. Old failed claim6/0600/empty log/STOP/all bytes immutable.
+Baseline3172B/3194F/3194x2700 matched original strict reference through command27/
+Move-ready;25 diagnostic frames/1132 rows/footer0. Candidate firstSTOP124 visual3171/
+epoch5216/command26;2 complete frames+failing context/557 rows/footer124; no later
+step/retry/Move-ready. Both partial,no full E+EOF/acceptance. Actual runs5/2/7,
+consumed claims6/2/8; preserve distinction and historicalV016/4/STOP117,new1/1/
+ordinary5/Library5+1/all prior C01a failures.
+
+Earliest recorded PP/USES cycle split+162; sameVBlank hits candidate locked inside
+RequestDma3Copy, native DMA early-return versus baseline40KiB service. Candidate
+init completes197722 cycles earlier, opponent1 command53 exec11->9, then actual
+battler3 command18 handler/__umodsi3+48 atSTOP. Other2695 bytes/600 party/count2/
+counter47/flags/raw resources/RNG exact; no DMA defect or optimized/padding remedy
+proved. All3171 candidate frames+terminal match original baseline. Actual paired
+motion/pixels and closed queues retained; no visible new hints/candidate acceptance.
+Next: review unapplied withdrawal patch restoring baseline menu render path; apply
+nothing in this increment. Local verified private retention only,no backup upload/
+Library retry/raw recovery metadata publication. Publish draftPR115/open issue116
+and stop idle,no merge. Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-execmode-r2-20261010/README.md.
+Earlier authority bodies below historical.
+
 ## Current C01a reviewed executable-mode correction and gated prefix pair
 
 Review accepts narrow correction from9bcda7fba27a32cfdada3c3bebce44985a5eebd0.

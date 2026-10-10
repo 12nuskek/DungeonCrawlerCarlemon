@@ -1,3 +1,22 @@
+## Current C01 Guard-choice opening4 — explicitly authorized after review
+
+Independent review accepts tested32a25769c5427656a010287bed6cf03c5f62b45c / published
+fd73289ae75dcbb61b3fb2fbb576cdc605e53361. Exactly one separately frozen Guard-only
+opening4, one cold conditional on actual manual Save/full live-disk/all14sectors.
+New named launcher/contract bind exact reviewed observer/helper/ELF/library/proof/
+routes; old CLOSED gate/37negatives stay unchanged. Output only
+/workspace/scratch/c01-guard-choice-opening4-r3-20261010. Currentopeningclaims/processes
+3/3,cold0/0, STOP82/90/104 preserved; no claim/freeze/runtime yet. Publish and verify
+new wiring negatives and fresh full10000408128B reservation before claim. Same
+72000/36000/medicine3600/cold6000/600seconds/12-frame cadence/thresholds. Ordinary
+NewGame/note/twoPotions/guide/offensiveTrial/earnedScrap/guide/Guard/guide/manualSave
+QuietLanding35,1(4,5); no field demo/Howler/Warden/preparation/stairs. Firstfailure
+terminal/no retry or waiver. No engine/balance/rebuild, compression/deletion/upload,
+privatebackup or merge; main/all69otherheads/issue116/history preserved. Contract
+docs/floor1/c01-guard-choice-opening4-r3-contract.md authoritative for this scope.
+Return clean actual-evidence checkpoint before another increment. Earlier bodies
+below remain historical; earlier CLOSED state superseded only for this named scope.
+
 ## Current C01 r3 final offline checks PASS; gameplay CLOSED
 
 Clean source32a25769c5427656a010287bed6cf03c5f62b45c; start3270cdb0819fd29cc06cf9716e027911db75511f;

@@ -1,3 +1,27 @@
+## Current scoped merge checkpoint — Guard-only Save and cold2 merged
+
+PR117 merged normally at a207545f122558f07aa9f6b59181b469cef6a01c, with exact
+approved head833fc360316407e943a7b9483e79ddc58fc2cf9e and base
+b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. The accepted merge is limited to the
+Guard-only ordinary manual Save milestone and explicit native Continue cold2
+verification. Opening claims/processes remain5/5; cold2/2. Cold1 STOP96 and every
+older failure remain unchanged; no retroactive PASS or assertion-count completion.
+No new gameplay, implementation, freeze, claim, build, compression or upload in
+this merge/record increment. Engine, ROM/ELF/library and accepted plan unchanged.
+Hosted reviews/check-runs/statuses/returned PR workflows were empty, not PASS.
+Local recordings remain retained; independent backup unverified, Library5+1
+unknown-cause failures/zero original bytes unchanged. Issue116 remains unchanged.
+Merge record: docs/evidence/floor1/c01/cold2-continue-r1-20261010/merge-checkpoint.json.
+
+Complete patrol/C01/full uninterrupted prepared-unprepared opening, original
+oracle/legacy acceptance, human comprehension/pacing, both branch orders/optional
+skips and full-floor gates remain open. F1-C01's earlier live-hint STOP124 summary
+in docs/floor1/backlog.md is historical; reconcile it in the next separately
+reviewed contract. No new execution authority. Stop clean and idle after this
+record. Historical checkpoint bodies below preserve their original scopes.
+
+---
+
 ## Current C01a actual diagnostic pair — baseline prefix matched; candidate STOP124
 
 Narrow mode correction admitted separate claim7/baseline attempt6 (actual run5/
@@ -698,7 +722,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Corrected retained baseline4 certificate/full native+supplemental EOF/coverage/complete passive gates PASS, old r4 STOP/PASS=false untouched. Candidate process5/attempt1 first STOP124 atvisual3171/15 assertions: five-byte controller/exec phase divergence. No visible USES/hints/full candidate/pixel acceptance or retry. [Exact source, retained records and actual STOP motion](../evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md). Offline retained timing audit complete; no justified game remedy. Terminal host retention tests pass; review passive diagnostic proposal before any new claim. Broader human/full-floor gates remain separate |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Scoped Guard-only manual Save and explicit Continue cold2 accepted and merged in PR117 (a207545f); opening5/5, cold2/2. Complete uninterrupted opening/patrol/C01 and broader gates remain OPEN. The following live-hint STOP124 summary is stale historical context to reconcile in the next reviewed contract; its evidence remains unchanged. Historical summary: Corrected retained baseline4 certificate/full native+supplemental EOF/coverage/complete passive gates PASS, old r4 STOP/PASS=false untouched. Candidate process5/attempt1 first STOP124 atvisual3171/15 assertions: five-byte controller/exec phase divergence. No visible USES/hints/full candidate/pixel acceptance or retry. [Exact source, retained records and actual STOP motion](../evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md). Offline retained timing audit complete; no justified game remedy. Terminal host retention tests pass; review passive diagnostic proposal before any new claim. Broader human/full-floor gates remain separate |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

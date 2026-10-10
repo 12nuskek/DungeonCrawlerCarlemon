@@ -1,0 +1,142 @@
+{
+  "PR117": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/117",
+  "approved_head": "833fc360316407e943a7b9483e79ddc58fc2cf9e",
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "merge_commit": "a207545f122558f07aa9f6b59181b469cef6a01c",
+  "merged": true,
+  "merge_method": "merge",
+  "expected_head_pinned": true,
+  "force_or_protection_bypass": false,
+  "branch_deletion": false,
+  "auto_merge": false,
+  "pre_merge_clean_worktree": true,
+  "PR_changed_files": 211,
+  "changed_file_scope": [
+    "AGENTS.md",
+    "docs/",
+    "scripts/"
+  ],
+  "PR_deleted_files": 0,
+  "pre_PR_AGENTS_body_unchanged": true,
+  "premerge_eligibility": {
+    "head": "833fc360316407e943a7b9483e79ddc58fc2cf9e",
+    "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+    "draft": true,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "state": "open",
+    "branch_protected": false,
+    "branch_protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    "check_runs": {
+      "total_count": 0,
+      "check_runs": []
+    },
+    "rulesets": [],
+    "allow_merge_commit": true
+  },
+  "hosted_reviews": [],
+  "hosted_statuses": [],
+  "hosted_PR_triggered_first_page_workflows": [],
+  "hosted_check_runs": [],
+  "hosted_checks_absent_not_PASS": true,
+  "merge_tree_exactly_accepted_head": true,
+  "merge_parents": [
+    "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+    "833fc360316407e943a7b9483e79ddc58fc2cf9e"
+  ],
+  "other_heads_preserved": {
+    "head_names_exact": true,
+    "other_heads_preserved": true,
+    "other_head_count": 69,
+    "main": "a207545f122558f07aa9f6b59181b469cef6a01c"
+  },
+  "issue116_unchanged": true,
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "libmGBA_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "engine_manifest_entries_rehashed": 11734,
+  "opening5_full_offline_tested": "f53fc3a97ad20560ac9a7f9e14c3bb52d8a25128",
+  "opening5_frozen_executed": "55556fc5f352d8fe2f8d17db73123dad9ee09fb8",
+  "cold2_offline_tested": "c997a640c7ee5bc7bd1686dc65b61a70d34e29bb",
+  "cold2_frozen_executed": "db5dc5565291ba8122916ca2275ba9b32a91ef4c",
+  "accepted_scope": "Guard-only ordinary manual Save and explicitly derived native Continue cold2 verification",
+  "opening_claims_processes": [
+    5,
+    5
+  ],
+  "cold_claims_processes": [
+    2,
+    2
+  ],
+  "cold1_STOP96_remains_FAIL": true,
+  "all_older_failures_counts_preserved": true,
+  "private_retention_preservation": {
+    "read_only": true,
+    "new_game_processes": 0,
+    "new_claims": 0,
+    "new_freezes": 0,
+    "new_transfers": 0,
+    "representations_changed": false,
+    "receipts": [
+      {
+        "directory": "c01-conserve-medicine-opening5-r1-20261010",
+        "entries_rehashed": 127,
+        "bytes": 4247172620,
+        "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+        "unchanged": true
+      },
+      {
+        "directory": "c01-cold2-continue-r1-20261010",
+        "entries_rehashed": 41,
+        "bytes": 241387974,
+        "manifest_SHA256": "d7d0812f74d672a50cb6239b660b289ea06deaeee1a54b30b0cfa54206e00aea",
+        "unchanged": true
+      },
+      {
+        "directory": "c01-guard-choice-opening4-r3-20261010",
+        "entries_rehashed": 102,
+        "bytes": 3190319959,
+        "manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30",
+        "unchanged": true
+      },
+      {
+        "directory": "c01-rgb-preservation-r1-20261010",
+        "entries_rehashed": 98,
+        "bytes": 218729208,
+        "manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7",
+        "unchanged": true
+      }
+    ]
+  },
+  "independent_backup_verified": false,
+  "Library_failed_uploads": 5,
+  "Library_failed_existing_backup_downloads": 1,
+  "Library_failure_cause": "unknown",
+  "original_bytes_recovered": 0,
+  "no_new_gameplay_implementation_freeze_claim_build_compression_upload": true,
+  "F1_C01_backlog_summary": "Old live-hint STOP124 summary retained as historical; reconcile in the next reviewed contract, full C01 stays open",
+  "remaining_gates": [
+    "complete patrol",
+    "full C01 uninterrupted prepared/unprepared opening",
+    "original oracle",
+    "legacy Save acceptance",
+    "human comprehension/pacing",
+    "both branch orders",
+    "optional skips",
+    "full floor"
+  ],
+  "next_dependency": "Separately reviewed reconciled full-opening contract; no execution authority in this checkpoint",
+  "unchanged_evidence": [
+    "docs/evidence/floor1/c01/conserve-medicine-opening5-r1-20261010/README.md",
+    "docs/evidence/floor1/c01/cold2-continue-r1-20261010/README.md"
+  ]
+}

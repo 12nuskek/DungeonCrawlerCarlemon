@@ -1,3 +1,27 @@
+## Current scoped merge checkpoint — Guard-only Save and cold2 merged
+
+PR117 merged normally at a207545f122558f07aa9f6b59181b469cef6a01c, with exact
+approved head833fc360316407e943a7b9483e79ddc58fc2cf9e and base
+b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. The accepted merge is limited to the
+Guard-only ordinary manual Save milestone and explicit native Continue cold2
+verification. Opening claims/processes remain5/5; cold2/2. Cold1 STOP96 and every
+older failure remain unchanged; no retroactive PASS or assertion-count completion.
+No new gameplay, implementation, freeze, claim, build, compression or upload in
+this merge/record increment. Engine, ROM/ELF/library and accepted plan unchanged.
+Hosted reviews/check-runs/statuses/returned PR workflows were empty, not PASS.
+Local recordings remain retained; independent backup unverified, Library5+1
+unknown-cause failures/zero original bytes unchanged. Issue116 remains unchanged.
+Merge record: docs/evidence/floor1/c01/cold2-continue-r1-20261010/merge-checkpoint.json.
+
+Complete patrol/C01/full uninterrupted prepared-unprepared opening, original
+oracle/legacy acceptance, human comprehension/pacing, both branch orders/optional
+skips and full-floor gates remain open. F1-C01's earlier live-hint STOP124 summary
+in docs/floor1/backlog.md is historical; reconcile it in the next separately
+reviewed contract. No new execution authority. Stop clean and idle after this
+record. Historical checkpoint bodies below preserve their original scopes.
+
+---
+
 ## Current C01 cold2 checkpoint — explicit native Continue PASS; review only
 
 One Continue-only cold2/PID180192 completed2044nativeframes,511field/1533deferred,

@@ -6,7 +6,7 @@ at clean source `90f6dd0ba755e6cce7fac7155ab8a585349cc6df`, based on merged main
 gameplay processes, freezes, claims, actual Saves or cold processes; no merge,
 engine edit/rebuild, compression, deletion or private transfer.
 
-Read [the proposed contract](../../../../../floor1/c01-howler-continuation-offline-contract.md)
+Read [the proposed contract](../../../../floor1/c01-howler-continuation-offline-contract.md)
 and [the sanitized complete verification](offline-verification.json). This is
 offline source/fixture evidence; all generated snapshots, native-format sector
 fixtures and mock PPMs remain private and are explicitly not gameplay evidence.

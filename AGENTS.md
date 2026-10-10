@@ -1,3 +1,30 @@
+## Current C01 medicine transaction r3 — split PASS; checkpoint/idle
+
+User requested checkpoint after environment recovery. Executor healthy2026-10-10
+15:18:43UTC; extended inert command exit0; no active process. Startdee9076184cedebc72aedc0ae01ac79bd4de0a57, main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae.
+Separate r3 validator/proof/generator/inert fixtures/closed wrapper; historicalr2,
+engine/policy/routes/cadence/recordings unchanged. Latest19700 normal/IRQ checks,
+107446 negatives,32970 snapshot-byte/metadata mutations,26 word prefixes ×6 records,
+both orders/recipients/8UI+2successive uses PASS. Source-bound PC/call stack/task/
+callback/allocation/regs/NZCV/source-buffer/full600bytes; all other snapshot bytes
+exact, ordinary complete-record checks retained. No extra transaction advances.
+Earlier candidate full aggregate PASS; latest expanded aggregate/production
+observer/gate negatives and independent review remain OPEN. Identical-word images
+cannot prove invisible write history; unknown nested IRQ/helper cuts fail closed.
+Preparation CLOSED; r3 has no runtime execution path; no freeze/claim/emulator/
+Save/cold/compression/upload. Current source is candidate, not runtime acceptance.
+Evidence docs/evidence/floor1/c01/medicine-transaction-r3-20261010/README.md.
+Private root/workspace/scratch/c01-medicine-transaction-offline-r3-20261010 preserved,
+128MiB cap. Original RGB manifesta7aef855…e55b7/receipts/31gzip present; independent
+backup unverified, Library5+1 unknowncause/zero originalbytes/no retry unchanged.
+C01 opening3/3,cold0/0 andSTOP82/90/104;V016/4 STOP117 visual8536 beforeB8402,
+later1/1,ordinary5,C01aactual5/3/1/claims6/3/1 unchanged. Main/all69otherheads/
+issue116 preserved;draftPR117/unmerged. Originaloracle/legacy/C01/G02/prepared/
+human/full-floor gates and accepted nine-district plan unchanged. Next only on
+explicit continuation:finish current offline aggregate/gate negatives, verify
+bound artifacts,independent review;no gameplay. Return idle now. Earlier bodies
+below remain historical authorities for their scopes.
+
 ## Current C01 RGB preservation — two full passes; native sampling blocked
 
 Continuation from704e5950760551f53be5453515b39914187def42; sole writer/draftPR117,

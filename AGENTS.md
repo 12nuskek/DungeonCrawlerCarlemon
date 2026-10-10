@@ -1,9 +1,9 @@
-## Current expanded LOCAL preservation — authorized; runtime CLOSED
+## Current expanded LOCAL preservation — scope admission STOP; runtime CLOSED
 
 Kurt approved remaining/future local gameplay recording preservation at2026-10-10
-21:42:24UTC. This focused increment inventories and freezes43 original RGB files,
-then uses unchanged gzip settings and TWO full independent byte/frame/EOF passes
-before replacing only approved redundant raw copies. All non-target evidence
+21:42:24UTC. First new scope admission stopped before machine freeze/compression:
+the explicit42-file list was incorrectly guarded by a43-file assertion. The count
+is corrected for review, without retry; all originals remain retained. All non-target evidence
 remains protected. No emulator/gameplay/runtime freeze/claim/game change/merge/
 private upload. Read [the preservation contract](docs/floor1/rgb-expanded-preservation-r1-contract.md).
 The reviewed Howler correction at6b3dfed4ed32cfed50f624e56e6c5c4a8a2d0e95 stands;

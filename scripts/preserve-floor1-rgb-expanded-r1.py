@@ -80,14 +80,14 @@ def execute():
     m.require(log.stat().st_size<=65536,'independent log bound');budget.check()
     two=json.loads((a.OUT/'verification-pass2-private.json').read_text());m.require(one['pid']!=two['pid'],'independent verifier process required')
     accounting=m.removal_barrier(c,mapping,one,two,base=a.OUT)
-    budget.json(a.OUT/'replacement-admission-private.json',dict(PASS=True,**accounting,contract_SHA256=m.digest(a.OUT/'preservation-contract.json'),mapping_SHA256=m.digest(a.OUT/'representation-mapping-private.json'),pass1_SHA256=m.digest(a.OUT/'verification-pass1-private.json'),pass2_SHA256=m.digest(a.OUT/'verification-pass2-private.json'),all43_originals_still_retained=True))
+    budget.json(a.OUT/'replacement-admission-private.json',dict(PASS=True,**accounting,contract_SHA256=m.digest(a.OUT/'preservation-contract.json'),mapping_SHA256=m.digest(a.OUT/'representation-mapping-private.json'),pass1_SHA256=m.digest(a.OUT/'verification-pass1-private.json'),pass2_SHA256=m.digest(a.OUT/'verification-pass2-private.json'),all42_originals_still_retained=True))
     removed=[]
     for row in mapping['chunks']:
         a.check_identity(row);Path(row['raw_path']).unlink();removed.append(row['raw_path'])
     a.protected_check(c)
     for row in mapping['chunks']:m.require(m.identity(a.OUT/row['compressed_relative_path'])==row['compressed_identity'] and m.digest(a.OUT/row['compressed_relative_path'])==row['compressed_SHA256'],'replacement final readback')
     budget.json(a.OUT/'preservation-result-private.json',dict(PASS=True,replaced_file_count=len(removed),replaced_paths=removed,frames=a.FRAMES,original_bytes=a.BYTES,compressed_bytes=sum(r['compressed_identity']['bytes'] for r in mapping['chunks']),accounting=accounting,available_bytes_after_replacement=shutil.disk_usage(a.OUT).free,runtime_reservation_bytes=m.RESERVATION,full_runtime_storage_capacity_available=shutil.disk_usage(a.OUT).free>=m.RESERVATION,protected_entries_unchanged=len(c['protected_entries']),opening_claims_processes=[5,5],cold_claims_processes=[2,2],Howler_processes=0,gameplay_processes=0,runtime_claims=0,runtime='CLOSED',independent_backup_verified=False))
-    budget.check();print('PASS43 originals replaced after TWO independent complete decoded byte/frame/chunk/EOF passes; runtime CLOSED',flush=True)
+    budget.check();print('PASS42 originals replaced after TWO independent complete decoded byte/frame/chunk/EOF passes; runtime CLOSED',flush=True)
 def verify():
     m.require((a.OUT/'operation-start.json').exists() and (a.OUT/'verification-pass1-private.json').exists(),'independent verifier requires first complete pass')
     m.require(not (a.OUT/'verification-pass2-private.json').exists(),'no verifier repetition')

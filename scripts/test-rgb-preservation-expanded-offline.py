@@ -10,7 +10,7 @@ def main():
     m.require(not out.exists(),'exclusive new scope admission')
     prior=a.prior_admission();cases=[]
     rows=[dict(r,raw_identity=dict(bytes=r['frames']*m.FRAME),raw_SHA256='raw-'+str(i),compressed_SHA256='gzip-'+str(i)) for i,r in enumerate(a.definitions())]
-    a.validate_layout(rows);cases.append('complete43-file82482-frame-layout')
+    a.validate_layout(rows);cases.append('complete42-file82482-frame-layout')
     bads=[rows[:-1],list(reversed(rows)),[rows[1],rows[0],*rows[2:]]]
     for key,value in (('raw_path','/tmp/unapproved.rgb'),('compressed_relative_path','../outside.gz'),('first_frame',0),('last_frame',0),('frames',0),('recording','unapproved')):
         bad=copy.deepcopy(rows);bad[0][key]=value;bads.append(bad)
@@ -22,7 +22,7 @@ def main():
     chunks=[dict(r,exact_frame_bytes=True,exact_EOF=True) for r in rows]
     good=dict(PASS=True,verification='pass1-zlib',chunk_count=a.CHUNKS,frames=a.FRAMES,decoded_bytes=a.BYTES,originals_retained=True,contract_SHA256='contract',mapping_SHA256='mapping',chunks=chunks)
     a.receipt_check(good,'pass1-zlib','contract','mapping',rows);cases.append('complete-new-scope-removal-receipt')
-    bads=[dict(good,**{k:v}) for k,v in (('PASS',False),('verification','pass2-independent-gzip'),('chunk_count',42),('frames',82481),('decoded_bytes',a.BYTES-1),('originals_retained',False),('contract_SHA256','other'),('mapping_SHA256','other'))]
+    bads=[dict(good,**{k:v}) for k,v in (('PASS',False),('verification','pass2-independent-gzip'),('chunk_count',41),('frames',82481),('decoded_bytes',a.BYTES-1),('originals_retained',False),('contract_SHA256','other'),('mapping_SHA256','other'))]
     for key,value in (('exact_frame_bytes',False),('exact_EOF',False),('raw_SHA256','other'),('compressed_SHA256','other'),('frames',0)):
         bad=copy.deepcopy(good);bad['chunks'][0][key]=value;bads.append(bad)
     bads.extend((dict(good,chunks=chunks[:-1]),dict(good,chunks=list(reversed(chunks)))))

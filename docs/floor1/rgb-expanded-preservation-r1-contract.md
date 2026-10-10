@@ -1,5 +1,12 @@
 # Floor1 expanded LOCAL RGB preservation r1
 
+Current status: first new scope admission stopped atb396d4d33256a8549bd01dfae45b69946bd4257f
+with `RuntimeError: source inventory totals`. The explicit list contains42 files;
+the initial fixed assertion incorrectly required43. The count is corrected for
+review, without re-running admission. No machine contract, compression,
+verification or replacement occurred. Originals remain retained. This document
+is the proposed bounded contract, not an executed/frozen preservation receipt.
+
 Kurt explicitly approved remaining/future local gameplay-recording preservation
 at2026-10-10 21:42:24UTC, replying Yes to the18:39:47UTC request. Authority requires
 TWO complete byte verification passes before replacing redundant raw copies;
@@ -12,7 +19,7 @@ the completed STOP90/STOP104 receipts atdee9076184cedebc72aedc0ae01ac79bd4de0a57
 Neither their36 codec/EOF/cap tests nor their31 prior replacements are repeated.
 New adapter checks cover expanded exact-path/layout/count/receipt constraints.
 
-Only the43 explicitly enumerated original gameplay files are eligible:
+Only the42 explicitly enumerated original gameplay files are eligible:
 
 | Recording | Frames/samples | Original files |
 |---|---:|---:|
@@ -57,19 +64,19 @@ Complete unchanged temporary/replacement/audit cap3758096384 bytes includes
 usage are bounded, including ledgers/contracts/logs/receipts/compressed outputs.
 Measure fresh free space before inventory, after freeze and before execution;
 it must cover the entire cap while every original remains. Stream in65536-byte
-blocks; never write a full decoded copy. Forty-three originals require no extra
+blocks; never write a full decoded copy. Forty-two originals require no extra
 source copies. The worst-case cap is included in the prospective savings test;
 actual all-inclusive savings and full10000408128-byte future runtime reservation
 must pass before removal. Do not assume a compression ratio or lower the ledger.
 
-After all43 files compress, pass1 uses the unchanged Python zlib streaming decoder;
+After all42 files compress, pass1 uses the unchanged Python zlib streaming decoder;
 pass2 is a distinct cold Python process using the unchanged GNU gzip streaming
 decoder. Both independently reopen originals and replacements and compare EVERY
 decoded frame byte-for-byte, frozen per-frame hash, chunk hash/count/dimensions/
 order and exact original/decoded EOF. Compressed hashes are checked before and
 after each decode. Two complete receipts must bind the same frozen contract and
 mapping, with distinct PIDs. Recheck every protected file, raw identity, replacement
-hash and capacity before unlinking only the43 exact approved redundant raw paths.
+hash and capacity before unlinking only the42 exact approved redundant raw paths.
 Recheck replacements/protected files and measure actual available space afterward.
 
 Recover any original stream with `gzip -dc -- REPLACEMENT.rgb.gz`; concatenate

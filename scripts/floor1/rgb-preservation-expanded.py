@@ -22,7 +22,7 @@ PLANS=(('opening1-STOP82','c01-uninterrupted-unprepared-r1-20261010','opening',1
        ('ordinary-setup','ordinary-recovery-r6-20261010/runtime-prepare-03','setup',1644,1,'summary.json'),
        ('ordinary-patrol','ordinary-recovery-r6-20261010/runtime-prepare-03','patrol',7770,1,'summary.json'),
        ('ordinary-cold','ordinary-recovery-r6-20261010/runtime-prepare-03','cold',511,1,'summary.json'))
-FRAMES=82482;BYTES=9501926400;CHUNKS=43
+FRAMES=82482;BYTES=9501926400;CHUNKS=42
 def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT,text=True).strip()
 def definitions():
     rows=[]
@@ -39,7 +39,7 @@ def definitions():
     m.require(len(rows)==CHUNKS and sum(r['frames'] for r in rows)==FRAMES,'source inventory totals')
     return rows
 def validate_layout(rows):
-    expected=definitions();m.require(len(rows)==len(expected),'complete43-file layout required')
+    expected=definitions();m.require(len(rows)==len(expected),'complete42-file layout required')
     for row,want in zip(rows,expected):
         m.require(all(row[k]==v for k,v in want.items()),'missing/reordered/unapproved recording/path/range')
         m.require(row['raw_identity']['bytes']==row['frames']*m.FRAME,'original byte/dimension count')

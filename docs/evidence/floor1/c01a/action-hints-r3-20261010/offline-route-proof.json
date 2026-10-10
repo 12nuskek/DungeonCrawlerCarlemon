@@ -1,0 +1,1645 @@
+{
+  "PASS": true,
+  "old_route_SHA256": "7105211cf9560d981f78f630962f49d1a3b5ea599c03784760ece71dfd2ff1c0",
+  "corrected_route_SHA256": "f03cae6c47e866b49209f1a78f6fd2ca34e1653084422b5bab7c3c1e7175b3fa",
+  "commands": 156,
+  "reviewed_changes": {
+    "24": [
+      "ui wait action 0 900",
+      "ui next action 0 900"
+    ],
+    "38": [
+      "step 1 32 -",
+      "step 1 16 -"
+    ],
+    "41": [
+      "step 1 64 -",
+      "step 1 32 -"
+    ],
+    "47": [
+      "step 1 32 -",
+      "step 1 16 -"
+    ],
+    "56": [
+      "step 1 64 -",
+      "step 1 32 -"
+    ],
+    "84": [
+      "step 1 16 -",
+      "step 1 0 -"
+    ],
+    "91": [
+      "step 1 32 -",
+      "step 1 16 -"
+    ],
+    "101": [
+      "step 1 32 -",
+      "step 1 16 -"
+    ],
+    "104": [
+      "step 1 64 -",
+      "step 1 32 -"
+    ],
+    "149": [
+      "step 1 32 -",
+      "step 1 16 -"
+    ]
+  },
+  "preserved_commands": 146,
+  "preserved_assertions_captures_bounds": true,
+  "original_mistakes_rejected": 20,
+  "cases": {
+    "baseline": {
+      "source_SHA256": {
+        "src/battle_controller_player.c": "c4234153a31d54bd97beb6432ee3ff398fa7b3f12ae94a3453e4ef2d662192d9",
+        "src/menu.c": "e6d4bc9cdd3e53526412af03ea83597d7ce542f6c6a8f8c3583b73b27ce5cb41",
+        "src/party_menu.c": "fdced309e37f26639ca8509ed132391880acd48ce091d7ad0dc9642c3541ca8f",
+        "src/data/party_menu.h": "ece2933cd0754e28a31a4850b64ca91832ea563e133a871b0f61204a83c8c620",
+        "src/pokemon_summary_screen.c": "2ef18d056ee497839377d63776930f9a61c1c5ada8a02d3ad3bfc2d3d01a4fe6",
+        "src/item_menu.c": "042dc66ba845b72882b4070f1975247b418fdf66b5213ede74cb165617d59f55",
+        "src/data/battle_moves.h": "1ea146df3b2231c4ae6347087f64dc371a73b7c15d54b12f54cc27a82e9aa97f",
+        "src/text.c": "374b7c682f948a4eb6282010298a363961dba0d3085980e7a7755f76d07555b7",
+        "include/gba/io_reg.h": "a657a53322f354b898eefe85f15a32be5e229cbc335e200958d18b5f7f0da862",
+        "include/battle.h": "8ef0355f2345592094c82cfde6641644a6b7157012104736416f8c05f34f0685",
+        "include/constants/battle.h": "bba2f9d9b3d98fa01b5f0a8f7dede9f2f0be5617c735242b741a7e0c8e4a5d1e",
+        "include/constants/moves.h": "15c464c080f7a9fa7cf9bd268624774b90e25e6b0f89d5666f66d0e979e498e3"
+      },
+      "extracted_handlers_SHA256": "e7aaf6ccbfd07162d6aa188d854a30a2e95ba913ebc96ce97ed7e23654e49504",
+      "native_C_SHA256": "a2b431cce265916e54ef6cdb5c41415b9e1440cd020af21c58ee8d8898476ed4",
+      "native_compilation_PASS": true,
+      "path": {
+        "commands": 156,
+        "modeled_readiness_and_move_assertions": 41,
+        "native_transitions": [
+          {
+            "command": 25,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 30,
+            "key": 1,
+            "before": "move",
+            "after": "target",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 34,
+            "key": 2,
+            "before": "target",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 38,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 41,
+            "key": 32,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 44,
+            "key": 2,
+            "before": "move",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 47,
+            "key": 16,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 49,
+            "key": 1,
+            "before": "action",
+            "after": "bag",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 53,
+            "key": 2,
+            "before": "bag",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 56,
+            "key": 32,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 58,
+            "key": 128,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 60,
+            "key": 1,
+            "before": "action",
+            "after": "party",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 64,
+            "key": 1,
+            "before": "party",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 67,
+            "key": 128,
+            "before": "context",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 69,
+            "key": 1,
+            "before": "context",
+            "after": "summary",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 73,
+            "key": 2,
+            "before": "summary",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 76,
+            "key": 2,
+            "before": "context",
+            "after": "party",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 79,
+            "key": 2,
+            "before": "party",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 82,
+            "key": 64,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 86,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 91,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 93,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 96,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 101,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              1
+            ]
+          },
+          {
+            "command": 104,
+            "key": 32,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 106,
+            "key": 2,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 109,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 114,
+            "key": 1,
+            "before": "move",
+            "after": "round",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 117,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 121,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 124,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 129,
+            "key": 1,
+            "before": "move",
+            "after": "round",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 132,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 136,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 139,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 144,
+            "key": 1,
+            "before": "move",
+            "after": "empty",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 149,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              1
+            ]
+          }
+        ],
+        "cancellation_path": [
+          "Target",
+          "Move0",
+          "Bag",
+          "Summary",
+          "Context",
+          "Party",
+          "Move2"
+        ],
+        "move_assertions": [
+          [
+            28,
+            0,
+            0,
+            8
+          ],
+          [
+            37,
+            0,
+            0,
+            8
+          ],
+          [
+            40,
+            0,
+            1,
+            40
+          ],
+          [
+            43,
+            0,
+            0,
+            8
+          ],
+          [
+            89,
+            0,
+            0,
+            8
+          ],
+          [
+            99,
+            2,
+            0,
+            2
+          ],
+          [
+            103,
+            2,
+            1,
+            40
+          ],
+          [
+            112,
+            2,
+            0,
+            2
+          ],
+          [
+            120,
+            0,
+            1,
+            39
+          ],
+          [
+            127,
+            2,
+            0,
+            1
+          ],
+          [
+            135,
+            0,
+            1,
+            38
+          ],
+          [
+            142,
+            2,
+            0,
+            0
+          ],
+          [
+            147,
+            2,
+            0,
+            0
+          ],
+          [
+            151,
+            2,
+            1,
+            40
+          ]
+        ],
+        "capture_path": {
+          "carl-strike.ppm": {
+            "command": 29,
+            "kind": "move",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "strike-target.ppm": {
+            "command": 33,
+            "kind": "target",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "carl-brace.ppm": {
+            "command": 39,
+            "kind": "move",
+            "actor": 0,
+            "move": 1,
+            "action": 0
+          },
+          "bag.ppm": {
+            "command": 52,
+            "kind": "bag",
+            "actor": 0,
+            "move": 0,
+            "action": 1
+          },
+          "party.ppm": {
+            "command": 63,
+            "kind": "party",
+            "actor": 0,
+            "move": 0,
+            "action": 2
+          },
+          "summary.ppm": {
+            "command": 72,
+            "kind": "summary",
+            "actor": 0,
+            "move": 0,
+            "action": 2
+          },
+          "carl-return.ppm": {
+            "command": 90,
+            "kind": "move",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "donut-spark.ppm": {
+            "command": 100,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "donut-weaken.ppm": {
+            "command": 102,
+            "kind": "move",
+            "actor": 2,
+            "move": 1,
+            "action": 0
+          },
+          "donut-return.ppm": {
+            "command": 113,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-one.ppm": {
+            "command": 128,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-empty.ppm": {
+            "command": 143,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-rejected.ppm": {
+            "command": 145,
+            "kind": "empty",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-empty-return.ppm": {
+            "command": 148,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "weaken-after-empty.ppm": {
+            "command": 150,
+            "kind": "move",
+            "actor": 2,
+            "move": 1,
+            "action": 0
+          }
+        },
+        "expected_rounds": 2,
+        "scope": "Offline exact compiled input handlers plus source-guarded asynchronous return and PP expectations; no timing/RNG/battle-survival/runtime acceptance"
+      },
+      "original_mistakes_rejected": {
+        "24": "command24: ui wait action 0 900: ('readiness', 'intro', 0, 'action', 0)",
+        "38": "command40: ui move 0 1 40: ('cursor/PP', 0, 1, 40, 0, 40)",
+        "41": "command43: ui move 0 0 8: ('cursor/PP', 0, 0, 8, 1, 8)",
+        "47": "command51: ui wait bag 0 900: ('readiness', 'move', 0, 'bag', 0)",
+        "56": "command60: step 1 1 -: ('unexpected action', 3)",
+        "84": "command88: ui wait move 0 900: ('readiness', 'bag', 0, 'move', 0)",
+        "91": "command95: ui wait action 2 900: ('readiness', 'target', 0, 'action', 2)",
+        "101": "command103: ui move 2 1 40: ('cursor/PP', 2, 1, 40, 0, 40)",
+        "104": "command112: ui move 2 0 2: ('cursor/PP', 2, 0, 2, 1, 2)",
+        "149": "command151: ui move 2 1 40: ('cursor/PP', 2, 1, 40, 0, 40)"
+      }
+    },
+    "candidate": {
+      "source_SHA256": {
+        "src/battle_controller_player.c": "c4ef82271675e79c02e29aceab40ee9d8534d29610307b36b22eebaa32604fc0",
+        "src/menu.c": "e6d4bc9cdd3e53526412af03ea83597d7ce542f6c6a8f8c3583b73b27ce5cb41",
+        "src/party_menu.c": "fdced309e37f26639ca8509ed132391880acd48ce091d7ad0dc9642c3541ca8f",
+        "src/data/party_menu.h": "ece2933cd0754e28a31a4850b64ca91832ea563e133a871b0f61204a83c8c620",
+        "src/pokemon_summary_screen.c": "2ef18d056ee497839377d63776930f9a61c1c5ada8a02d3ad3bfc2d3d01a4fe6",
+        "src/item_menu.c": "042dc66ba845b72882b4070f1975247b418fdf66b5213ede74cb165617d59f55",
+        "src/data/battle_moves.h": "1ea146df3b2231c4ae6347087f64dc371a73b7c15d54b12f54cc27a82e9aa97f",
+        "src/text.c": "374b7c682f948a4eb6282010298a363961dba0d3085980e7a7755f76d07555b7",
+        "include/gba/io_reg.h": "a657a53322f354b898eefe85f15a32be5e229cbc335e200958d18b5f7f0da862",
+        "include/battle.h": "8ef0355f2345592094c82cfde6641644a6b7157012104736416f8c05f34f0685",
+        "include/constants/battle.h": "bba2f9d9b3d98fa01b5f0a8f7dede9f2f0be5617c735242b741a7e0c8e4a5d1e",
+        "include/constants/moves.h": "15c464c080f7a9fa7cf9bd268624774b90e25e6b0f89d5666f66d0e979e498e3"
+      },
+      "extracted_handlers_SHA256": "f27ff98b793cf11f9acc9f0c610c7fb5c4b1c9c60710d96396ab871d35e13b31",
+      "native_C_SHA256": "c07c84446255e0dae224a05860e10f4d0bb8f37a402d6c0f13842cf926a29c78",
+      "native_compilation_PASS": true,
+      "path": {
+        "commands": 156,
+        "modeled_readiness_and_move_assertions": 41,
+        "native_transitions": [
+          {
+            "command": 25,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 30,
+            "key": 1,
+            "before": "move",
+            "after": "target",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 34,
+            "key": 2,
+            "before": "target",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 38,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 41,
+            "key": 32,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 44,
+            "key": 2,
+            "before": "move",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 47,
+            "key": 16,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 49,
+            "key": 1,
+            "before": "action",
+            "after": "bag",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 53,
+            "key": 2,
+            "before": "bag",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              1,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 56,
+            "key": 32,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 58,
+            "key": 128,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 60,
+            "key": 1,
+            "before": "action",
+            "after": "party",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 64,
+            "key": 1,
+            "before": "party",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 67,
+            "key": 128,
+            "before": "context",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 69,
+            "key": 1,
+            "before": "context",
+            "after": "summary",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 73,
+            "key": 2,
+            "before": "summary",
+            "after": "context",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 76,
+            "key": 2,
+            "before": "context",
+            "after": "party",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 79,
+            "key": 2,
+            "before": "party",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              2,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 82,
+            "key": 64,
+            "before": "action",
+            "after": "action",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 86,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              0,
+              0
+            ]
+          },
+          {
+            "command": 91,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 93,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 96,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 101,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              1
+            ]
+          },
+          {
+            "command": 104,
+            "key": 32,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 106,
+            "key": 2,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 109,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 114,
+            "key": 1,
+            "before": "move",
+            "after": "round",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 117,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 121,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 124,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 129,
+            "key": 1,
+            "before": "move",
+            "after": "round",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 132,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 0,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 136,
+            "key": 1,
+            "before": "move",
+            "after": "action",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 139,
+            "key": 1,
+            "before": "action",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 144,
+            "key": 1,
+            "before": "move",
+            "after": "empty",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              0
+            ]
+          },
+          {
+            "command": 149,
+            "key": 16,
+            "before": "move",
+            "after": "move",
+            "actor": 2,
+            "action_cursors": [
+              0,
+              0
+            ],
+            "move_cursors": [
+              1,
+              1
+            ]
+          }
+        ],
+        "cancellation_path": [
+          "Target",
+          "Move0",
+          "Bag",
+          "Summary",
+          "Context",
+          "Party",
+          "Move2"
+        ],
+        "move_assertions": [
+          [
+            28,
+            0,
+            0,
+            8
+          ],
+          [
+            37,
+            0,
+            0,
+            8
+          ],
+          [
+            40,
+            0,
+            1,
+            40
+          ],
+          [
+            43,
+            0,
+            0,
+            8
+          ],
+          [
+            89,
+            0,
+            0,
+            8
+          ],
+          [
+            99,
+            2,
+            0,
+            2
+          ],
+          [
+            103,
+            2,
+            1,
+            40
+          ],
+          [
+            112,
+            2,
+            0,
+            2
+          ],
+          [
+            120,
+            0,
+            1,
+            39
+          ],
+          [
+            127,
+            2,
+            0,
+            1
+          ],
+          [
+            135,
+            0,
+            1,
+            38
+          ],
+          [
+            142,
+            2,
+            0,
+            0
+          ],
+          [
+            147,
+            2,
+            0,
+            0
+          ],
+          [
+            151,
+            2,
+            1,
+            40
+          ]
+        ],
+        "capture_path": {
+          "carl-strike.ppm": {
+            "command": 29,
+            "kind": "move",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "strike-target.ppm": {
+            "command": 33,
+            "kind": "target",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "carl-brace.ppm": {
+            "command": 39,
+            "kind": "move",
+            "actor": 0,
+            "move": 1,
+            "action": 0
+          },
+          "bag.ppm": {
+            "command": 52,
+            "kind": "bag",
+            "actor": 0,
+            "move": 0,
+            "action": 1
+          },
+          "party.ppm": {
+            "command": 63,
+            "kind": "party",
+            "actor": 0,
+            "move": 0,
+            "action": 2
+          },
+          "summary.ppm": {
+            "command": 72,
+            "kind": "summary",
+            "actor": 0,
+            "move": 0,
+            "action": 2
+          },
+          "carl-return.ppm": {
+            "command": 90,
+            "kind": "move",
+            "actor": 0,
+            "move": 0,
+            "action": 0
+          },
+          "donut-spark.ppm": {
+            "command": 100,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "donut-weaken.ppm": {
+            "command": 102,
+            "kind": "move",
+            "actor": 2,
+            "move": 1,
+            "action": 0
+          },
+          "donut-return.ppm": {
+            "command": 113,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-one.ppm": {
+            "command": 128,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-empty.ppm": {
+            "command": 143,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-rejected.ppm": {
+            "command": 145,
+            "kind": "empty",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "spark-empty-return.ppm": {
+            "command": 148,
+            "kind": "move",
+            "actor": 2,
+            "move": 0,
+            "action": 0
+          },
+          "weaken-after-empty.ppm": {
+            "command": 150,
+            "kind": "move",
+            "actor": 2,
+            "move": 1,
+            "action": 0
+          }
+        },
+        "expected_rounds": 2,
+        "scope": "Offline exact compiled input handlers plus source-guarded asynchronous return and PP expectations; no timing/RNG/battle-survival/runtime acceptance"
+      },
+      "original_mistakes_rejected": {
+        "24": "command24: ui wait action 0 900: ('readiness', 'intro', 0, 'action', 0)",
+        "38": "command40: ui move 0 1 40: ('cursor/PP', 0, 1, 40, 0, 40)",
+        "41": "command43: ui move 0 0 8: ('cursor/PP', 0, 0, 8, 1, 8)",
+        "47": "command51: ui wait bag 0 900: ('readiness', 'move', 0, 'bag', 0)",
+        "56": "command60: step 1 1 -: ('unexpected action', 3)",
+        "84": "command88: ui wait move 0 900: ('readiness', 'bag', 0, 'move', 0)",
+        "91": "command95: ui wait action 2 900: ('readiness', 'target', 0, 'action', 2)",
+        "101": "command103: ui move 2 1 40: ('cursor/PP', 2, 1, 40, 0, 40)",
+        "104": "command112: ui move 2 0 2: ('cursor/PP', 2, 0, 2, 1, 2)",
+        "149": "command151: ui move 2 1 40: ('cursor/PP', 2, 1, 40, 0, 40)"
+      }
+    }
+  }
+}

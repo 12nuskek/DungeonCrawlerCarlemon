@@ -4,12 +4,12 @@ Importing this module never freezes inputs, consumes claims or initializes a cor
 Historical helpers and their closed offline admission remain unchanged.
 """
 from pathlib import Path
-import hashlib,importlib.util,json,os,re,resource,shutil,signal,stat,struct,subprocess,time
+import hashlib,importlib.util,json,os,re,resource,shutil,signal,stat,struct,subprocess,sys,sysconfig,time
 if not __debug__:raise RuntimeError('supervisor requires enabled checks')
 ROOT=Path(__file__).resolve().parents[2]
 SCRATCH=Path('/workspace/scratch')
 OUT=SCRATCH/'c01-howler-continuation-r1-20261010'
-OFFLINE=SCRATCH/'c01-howler-runtime-wiring-offline-r1-20261010'
+OFFLINE=SCRATCH/'c01-howler-runtime-wiring-offline-r2-20261010'
 AUTHORITY=SCRATCH/'c01-howler-runtime-r1-authority.json'
 ACCEPTED=SCRATCH/'c01-howler-continuation-correction-offline-r3-20261010'
 REGISTRY=ROOT/'docs/evidence/floor1/c01/howler-continuation-offline-r2-20261010/offline-verification.json'
@@ -43,6 +43,27 @@ def read(path):return json.loads(Path(path).read_text())
 def write(path,value):
     with Path(path).open('x') as f:json.dump(value,f,sort_keys=True,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
 def canonical(value):return json.dumps(value,sort_keys=True,separators=(',',':'))
+def validator_tools():
+    # The observer uses system("python3 ..."); bind its interpreter, shell,
+    # standard-library sources and the private screenshot reader as well.
+    import PIL.Image,PIL._imaging
+    interpreter=Path(sys.executable).resolve()
+    require(Path(shutil.which('python3',path=execution_environment()['PATH'])).resolve()==interpreter,'native validator interpreter selection')
+    binaries={interpreter,Path('/bin/sh').resolve(),Path(PIL._imaging.__file__).resolve()}
+    paths=set(binaries);stdlib=Path(sysconfig.get_path('stdlib'))
+    for directory,children,names in os.walk(stdlib):
+        children[:]=[name for name in children if name!='site-packages']
+        paths.update((Path(directory)/name).resolve() for name in names if Path(name).suffix in ('.py','.pyc','.so'))
+    package=Path(PIL.Image.__file__).parent
+    paths.update(p.resolve() for p in package.rglob('*') if p.is_file() and p.suffix in ('.py','.pyc','.so'))
+    paths.update(p.resolve() for p in (ROOT/'scripts').rglob('*.pyc'))
+    binaries.update(p for p in paths if p.suffix=='.so')
+    for binary in sorted(binaries):
+        linked=subprocess.check_output(['ldd',str(binary)],text=True)
+        require('not found' not in linked,'validator native dependency missing')
+        for word in linked.split():
+            if word.startswith('/'):paths.add(Path(word).resolve())
+    return {str(p):sha(p) for p in sorted(paths)}
 def storage():
     old=legacy.storage();return {MODES[0]:old['opening'],MODES[1]:old['cold']}
 def capacity(free):require(free>=10000408128,'full continuation/cold/headroom reservation unavailable')
@@ -67,7 +88,8 @@ def scope(head):
         build=registry['build_identity'],route_SHA256={mode:sha(ROOT/f'scripts/contracts/f1-c01-{mode}.route') for mode in MODES},
         continuation_frames=72000,encounter_frames=36000,cold_frames=6000,wall_seconds=600,
         storage=storage(),reservation_bytes=10000408128,first_failure_terminal=True,retry=False,
-        no_New_Game=True,trainer=857,phases=['howler','howler-repeat','guide-howler','save'])
+        no_New_Game=True,trainer=857,phases=['howler','howler-repeat','guide-howler','save'],
+        validator_tool_manifest_SHA256=hashlib.sha256(canonical(validator_tools()).encode()).hexdigest())
 def verify_scope(record,expected):require(canonical(record)==canonical(expected),'exact Howler scope mismatch')
 def reviewed():
     registry=read(REGISTRY);r=read(ACCEPTED/'offline-receipt.json')
@@ -86,7 +108,7 @@ def reviewed():
     info=(ACCEPTED/'observer').lstat()
     execfile.verify_executable(ACCEPTED/'observer',dict(SHA256=r['observer_SHA256'],owner_uid=info.st_uid,mode=0o700))
     state.old.original(state.IMMUTABLE/'game.sav',state.IMMUTABLE/'phase-09-state.bin')
-    tools=read(SCRATCH/'c01a-journal-admission-r3-20261010/freeze.json')['tool_files']
+    tools=dict(read(SCRATCH/'c01a-journal-admission-r3-20261010/freeze.json')['tool_files']);tools.update(validator_tools())
     for p,h in tools.items():require(sha(p)==h,'accepted compiler/library/tool changed')
     require(sha(legacy.TOOL/'usr/lib/x86_64-linux-gnu/libmgba.so.0.10.5')==registry['build_identity']['libmGBA_0_10_5_SHA256'],'library identity')
     game=legacy.verify_game();require(game==r['build_verification'],'accepted game/source inventory changed')
@@ -241,7 +263,7 @@ def stop_process(process):
     except ProcessLookupError:pass
     process.wait(timeout=5)
 def execution_environment():
-    env=dict(os.environ);env['LD_LIBRARY_PATH']=str(legacy.TOOL/'usr/lib/x86_64-linux-gnu');env['PATH']=str(Path(shutil.which('python3')).resolve().parent)+os.pathsep+os.defpath
+    env=dict(os.environ);env['LD_LIBRARY_PATH']=str(legacy.TOOL/'usr/lib/x86_64-linux-gnu');env['PATH']=str(Path(sys.executable).resolve().parent)+os.pathsep+os.defpath;env['PYTHONNOUSERSITE']='1';env['PYTHONDONTWRITEBYTECODE']='1'
     for name in ('PYTHONOPTIMIZE','PYTHONPATH','PYTHONHOME','LD_PRELOAD'):env.pop(name,None)
     return env
 def execute(mode):

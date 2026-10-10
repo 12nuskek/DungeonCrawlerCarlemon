@@ -1,0 +1,33 @@
+{
+  "C01_cold_processes_claims": [
+    0,
+    0
+  ],
+  "C01_opening_processes_claims": [
+    3,
+    3
+  ],
+  "STOP104_retained_bytes": 3381107256,
+  "available_bytes": 7130599424,
+  "cold_limit": 6000,
+  "conditional_cold_reserved_bytes": 894152512,
+  "encounter_limit": 36000,
+  "gameplay_processes_started": 0,
+  "headroom_bytes": 268435456,
+  "independent_backup_verified": false,
+  "measured_at_UTC": "2026-10-10T13:17:27.473284+00:00",
+  "medicine_limit": 3600,
+  "no_optional_FFV1": true,
+  "no_savings_assumed": true,
+  "opening_limit": 72000,
+  "opening_reserved_bytes": 8837820160,
+  "preservation_option": "Retain all existing evidence and obtain additional free execution storage equal to the measured shortage; no deletion/compression/transfer savings assumed.",
+  "previous_free_before_STOP104_retention_bytes": 10512089088,
+  "private_upload_approved": false,
+  "private_upload_attempted": false,
+  "required_bytes": 10000408128,
+  "runtime_claims_created": 0,
+  "runtime_freeze_created": false,
+  "shortfall_bytes": 2869808704,
+  "storage_admitted": false
+}

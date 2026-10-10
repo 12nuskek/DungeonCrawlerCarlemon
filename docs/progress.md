@@ -1,3 +1,39 @@
+## Current C01 acknowledgement r2 — offline PASS; storage blocked
+
+Review continuation from2e2ed115e737d2556c8802bce90d2afa19e35707; sole writer,
+draftPR117/no merge. New separately named r2 helper/nativeABI/state audit/tests/
+contract; oldr1 helper/freeze/STOP104/raw/captures/MP4 untouched. One freshA only
+at native WAIT with running party callback, close-text+print-wait tasks, no fade,
+exact Donut-owned healed state and keys released. Observe printer completion/
+task destruction, party fade/reorder and full exit/setup/reshow chain before
+existing exact BattleMain return. Latch resets EACH recipient confirmation;
+stateful TWO successive uses/source2→1→0 holes/Scrap positions pass. No policy/
+strategy/inventory normalization/assertion waiver/bound/engine/balance/rebuild.
+Final offlinePASS:74124 policy vectors,8+2 lifecycle uses,65760 snapshot byte
+corruptions,210 readiness/lifecycle negatives,10 premature/10 duplicate no-input,
+11 acknowledgement receipt negatives,49 nativeABI values/90 ELF bindings,
+10 phases/60 endpoint/412 unused-slot/265 walk/10 map/30 rekey/30 Save-cold,
+11 terminal-driver/5 executable negatives;11734 engine entries/exact tools and
+unchanged ROM/ELF checked. Native TextFlags sizeof4/autoScroll04000000 measured.
+Game4a92a9de/engine0fedd142/main-baseb51e27d9 unchanged; recovered compiler differs
+from historical binary. No new runtime acceptance or actual Save/cold/captures.
+Full unchanged reservation10000408128 bytes; measuredfree7130599424, shortage
+2869808704. Prior10512089088 free preceded3381107256 retained bytes.
+No runtime freeze/output/claim/process; C01 opening3/3,cold0/0 unchanged. All222
+indexed retained entries/3381107256 bytes rehashed unchanged locally; independent
+backup unapproved/unverified,no upload. No deletion/compression/transfer savings,
+ceiling reductions, optionalFFV1, Library retry/issue116/extra writer/schedule.
+Next dependency:additional free execution capacity at least measured shortage
+while retaining all files, plus review; freshly admit identities/full storage
+before separately frozen opening+conditionalactualSavecold. Firstfailureterminal.
+Evidence docs/evidence/floor1/c01/guard-choice-ack-r2-20261010/README.md;
+source specification docs/floor1/c01-guard-choice-r2-contract.md is not runtimefreeze.
+V016/4 STOP117 visual8536 beforeB8402, accepted1/1, ordinary5,C01a5/3/1 actual/
+6/3/1 claims, Library5+1 unknowncause/zero originalbytes and old STOPs/archives/
+allbranches preserved. Originaloracle/legacy/C01/G02/prepared/human/full-floor
+remain open; accepted nine-district Floor1 plan unchanged. Earlier bodies
+remain historical authorities for their scope.
+
 ## Current C01 Guard choice r1 — terminal STOP104; cold blocked
 
 Source/offline-tested/pushed-before-runtime4418015741dde07d987cd3216bca961ad4033378,

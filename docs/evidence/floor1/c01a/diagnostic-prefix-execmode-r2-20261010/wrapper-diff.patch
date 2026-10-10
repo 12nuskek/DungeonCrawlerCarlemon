@@ -1,0 +1,48 @@
+--- preserved-original-wrapper
++++ new-execmode-wrapper
+@@ -1,7 +1,9 @@
+ """One baseline prefix, then one conditional candidate; never a full PASS."""
+ from pathlib import Path
+-import argparse,json,subprocess,hashlib,os,resource,time,struct
+-ROOT=Path(__file__).resolve().parents[1];OUT=Path('/workspace/scratch/c01a-diagnostic-prefix-pair-20261010');OLD=Path('/workspace/scratch/c01a-action-hints-r4-20261010');CERTROOT=Path('/workspace/scratch/c01a-retained-baseline-candidate-20261010')
++import argparse,json,subprocess,hashlib,os,resource,time,struct,importlib.util
++ROOT=Path(__file__).resolve().parents[1];OUT=Path('/workspace/scratch/c01a-diagnostic-prefix-execmode-r2-20261010');OLD=Path('/workspace/scratch/c01a-action-hints-r4-20261010');CERTROOT=Path('/workspace/scratch/c01a-retained-baseline-candidate-20261010')
++FAILED=Path('/workspace/scratch/c01a-diagnostic-prefix-pair-20261010')
++spec=importlib.util.spec_from_file_location('execfile',ROOT/'scripts/floor1/c01a-prefix-execfile.py');execfile=importlib.util.module_from_spec(spec);spec.loader.exec_module(execfile)
+ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ def write(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')
+ def eligible(r):return r.get('diagnostic_prefix_only') is True and r.get('prefix_matches_original_reference') is True and r.get('diagnostic_terminal_complete') is True and r.get('exit')==0 and r.get('full_acceptance') is False and r.get('Save_unchanged') is True
+@@ -20,16 +22,20 @@
+     assert not subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip()
+     head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();subprocess.run(['git','merge-base','--is-ancestor',f['helper_commit'],head],cwd=ROOT,check=True)
+     if case=='candidate':
+-        r=json.loads((OUT/'baseline/runtime-result.json').read_text());assert eligible(r) and r['overall_process']==6
++        r=json.loads((OUT/'baseline/runtime-result.json').read_text());assert eligible(r) and r['overall_process']==7
+         assert sha(OUT/'baseline/controller-dma-diagnostic-private.bin')==r['diagnostic_SHA256']
+-    used=sum(p.stat().st_size for root in [OLD,CERTROOT,OUT] for p in root.rglob('*') if p.is_file());st=os.statvfs(OUT);assert st.f_bavail*st.f_frsize>=max(0,f['storage']['pair_total_reserved_bytes']-used)
+-    claim={'case':case,'overall_process':i['overall_process'],'baseline_attempt':5,'candidate_attempt':i['candidate_attempt'],'execution_commit':head,'freeze_SHA256':sha(OUT/'freeze.json'),'limit':1,'diagnostic_prefix_only':True,'first_failure_stop':True,'no_retry':True,'start_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
++    used=sum(p.stat().st_size for root in [OLD,CERTROOT,FAILED,OUT] for p in root.rglob('*') if p.is_file());st=os.statvfs(OUT);assert st.f_bavail*st.f_frsize>=max(0,f['storage']['pair_total_reserved_bytes']-used)
++    assert f['claimed_counts_before']=={'baseline':5,'candidate':1,'total':6} and f['actual_counts_before']=={'baseline':4,'candidate':1,'total':5}
++    assert i['overall_process']==(7 if case=='baseline' else 8) and i['actual_emulator_process_if_launched']==(6 if case=='baseline' else 7)
++    claim={'case':case,'claim_number':i['overall_process'],'overall_process':i['overall_process'],'baseline_attempt':6,'candidate_attempt':i['candidate_attempt'],'execution_commit':head,'freeze_SHA256':sha(OUT/'freeze.json'),'limit':1,'diagnostic_prefix_only':True,'first_failure_stop':True,'no_retry':True,'start_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
++    # Read-only executable admission immediately before create-only claim.
++    executable_check=execfile.verify_executable(OUT/'observer',f['observer_executable']);claim['observer_executable_check']=executable_check
+     with (out/'exclusive-claim.json').open('x') as fp:json.dump(claim,fp,indent=2);fp.write('\n')
+     env=dict(os.environ,LD_LIBRARY_PATH='/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu')
+     try:
+         with (out/'input.route').open('rb') as route,(out/'runtime.log').open('xb') as log:
+             p=subprocess.Popen([str(OUT/'observer'),i['ROM'],str(out/'game.sav'),str(out/'game.sym')],cwd=out,env=env,stdin=route,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,preexec_fn=limits)
+-            write(out/'started-process.json',{'pid':p.pid,'overall_process':i['overall_process'],'execution_commit':head})
++            write(out/'started-process.json',{'pid':p.pid,'overall_process':i['overall_process'],'actual_emulator_process':i['actual_emulator_process_if_launched'],'actual_baseline_run':5,'execution_commit':head})
+             size=0
+             while b:=p.stdout.read(65536):
+                 size+=len(b)
+@@ -43,7 +49,7 @@
+         close=[l for l in text.splitlines() if l.startswith('DIAGNOSTIC_CLOSE ')];assert len(close)==1
+         closefields=dict(x.split('=',1) for x in close[0].split()[1:]);retained=closefields['retention']=='0' and closefields['terminal']=='1' and terminal
+         endpoint='DIAGNOSTIC_PREFIX_END command=27 ' in text
+-        r=dict(case=case,overall_process=i['overall_process'],baseline_attempt=5,candidate_attempt=i['candidate_attempt'],execution_commit=head,exit=exitcode,diagnostic_prefix_only=True,
++        r=dict(case=case,claim_number=i['overall_process'],actual_emulator_process=i['actual_emulator_process_if_launched'],actual_baseline_run=5,overall_process=i['overall_process'],baseline_attempt=6,candidate_attempt=i['candidate_attempt'],execution_commit=head,exit=exitcode,diagnostic_prefix_only=True,
+           prefix_matches_original_reference=exitcode==0 and endpoint,diagnostic_terminal_complete=retained,diagnostic_rows=len(rows),diagnostic_SHA256=sha(out/'controller-dma-diagnostic-private.bin'),
+           Save_unchanged=unchanged,full_acceptance=False,PASS=False,no_retry=True,log_SHA256=sha(out/'runtime.log'),close=closefields,
+           captures=len(list(out.glob('battle-[0-9][0-9][0-9][0-9][0-9].ppm'))),native_reference_full_EOF_not_run=True,supplemental_full_EOF_not_run=True,

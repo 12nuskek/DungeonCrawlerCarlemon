@@ -1,3 +1,22 @@
+## Current C01a reviewed executable-mode correction and gated prefix pair
+
+Review accepts narrow correction from9bcda7fba27a32cfdada3c3bebce44985a5eebd0.
+Use separately named execmode-r2 output/freeze/claims, reuse own-compiled observer
+without compilation/game rebuild, set only newly created observer0700. Bind and
+check exact bytes/non-symlink regular identity/owner/mode/access before freeze
+and immediately before claim. Eleven inert-file negatives plus0700 acceptance
+pass offline. Failed original freeze/claim6/empty log/STOP and all bytes immutable.
+
+New baseline claim7/attempt6 (actual baseline5/emulator6 if launched) once, then
+conditional candidate claim8/attempt2 (actual emulator7 if launched). Current
+claims5/1/6 versus actual4/1/5. Original27 commands,925-frame cap, strict original
+comparators/passive host/full acceptance/storage/first-stop unchanged. No retry,
+move input/past-STOP step/game remedy/merge/backup upload/Library retry/raw public
+payloads. Same increment proceeds after offline/freeze gate; stop review after
+pair or first failure. Paired evidence partial, never full acceptance.
+Contract: docs/evidence/floor1/c01a/diagnostic-prefix-execmode-r2-20261010/contract.md.
+Earlier authority bodies below historical.
+
 ## Current C01a terminal launch checkpoint — baseline claim consumed; no observer start
 
 Reviewed baseline attempt5/process6 claim was consumed at06:07:40 UTC on

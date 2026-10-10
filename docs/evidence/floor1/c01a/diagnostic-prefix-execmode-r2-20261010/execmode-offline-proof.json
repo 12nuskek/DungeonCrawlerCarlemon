@@ -1,0 +1,28 @@
+{
+  "PASS": true,
+  "no_gameplay_no_execution_no_compilation": true,
+  "fixture_results": {
+    "0700_accepted": {
+      "SHA256": "96cc36fe7d81862c78a1a068eff3a2fd94aa4696e5deac46d47d668fdcaa250d",
+      "mode": "0700",
+      "regular_non_symlink": true,
+      "executable_access": true
+    },
+    "wrong_frozen_file_identity": "rejected",
+    "historical0600_rejected": "rejected",
+    "missing": "rejected",
+    "nonregular_directory": "rejected",
+    "nonregular_fifo": "rejected",
+    "symlink": "rejected",
+    "wrong_hash": "rejected",
+    "wrong_owner": "rejected",
+    "non_executable": "rejected",
+    "mode_lost_before_admission": "rejected",
+    "executable_access_denied_with0700": "rejected"
+  },
+  "rejected_cases": 11,
+  "source_SHA256": {
+    "scripts/floor1/c01a-prefix-execfile.py": "6062e8873b2df52a1301a1b47e5c9005dc3c675e18e038cf9b0c45dd4da847d7",
+    "scripts/test-f1-c01a-execmode-offline.py": "f9c03c7c94693e6e61b049fb37eb64f0439352263551f97ce90748a36dcd7254"
+  }
+}

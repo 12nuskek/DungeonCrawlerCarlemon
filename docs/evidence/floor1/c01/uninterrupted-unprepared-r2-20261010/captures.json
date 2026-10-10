@@ -1,0 +1,64 @@
+{
+  "tested_helper": "978cbf03907c38ef24fb4008bfed04e1c69daea5",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "native_dimensions": [
+    240,
+    160
+  ],
+  "native_fps": "16777216/280896",
+  "all12_native_capture_pixels_match_raw_index": true,
+  "raw_native_frames": 31258,
+  "raw_native_bytes": 3600921600,
+  "full_FFV1_roundtrip_verified": false,
+  "FFV1_export_failed_at480MiB_cap_preserved_no_retry": true,
+  "assets": {
+    "note.png": {
+      "bytes": 2191,
+      "SHA256": "3a89c05fa80926ea1d545fceb125490b39726f4ba2dcf21aa6758faf1255eed8",
+      "native_frame": 3496
+    },
+    "supply.png": {
+      "bytes": 2478,
+      "SHA256": "926a70d5d772821158e98e8b4bdd5adccde45c699131125456df85eba9618386",
+      "native_frame": 5004
+    },
+    "battle-start.png": {
+      "bytes": 6733,
+      "SHA256": "a7c910413d279da72ca6b9596fd006ba4025c052b1b4a5e0b2bef59638c71ddd",
+      "native_frame": 10487
+    },
+    "battle-result.png": {
+      "bytes": 3521,
+      "SHA256": "98f4905ac672b248cc49fe4d66c9603dc5278c9d50b5f6c1314af2566833fbd0",
+      "native_frame": 18195
+    },
+    "field-potion.png": {
+      "bytes": 4348,
+      "SHA256": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "native_frame": 19493
+    },
+    "guide-posttrial.png": {
+      "bytes": 2964,
+      "SHA256": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "native_frame": 20480
+    },
+    "guard-start.png": {
+      "bytes": 6745,
+      "SHA256": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a",
+      "native_frame": 22984
+    },
+    "first-failure.png": {
+      "bytes": 7996,
+      "SHA256": "d7e8a906e4ca772dc6235f7e1de36085465fa8015be030a8147274444415a8e9",
+      "native_frame": 31258
+    },
+    "actual-opening-review.mp4": {
+      "bytes": 3707653,
+      "SHA256": "8668bcee235c218f51328050bd8c99064d301454e27e83b323206b14b0fd9b0d",
+      "native_frames": 31258,
+      "duration_seconds": 523.343513,
+      "lossy": true
+    }
+  }
+}

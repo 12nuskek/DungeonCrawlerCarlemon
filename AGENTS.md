@@ -1,3 +1,31 @@
+## Current C01 r2 — terminal Guard STOP90; cold blocked
+
+Source/tested helper978cbf03907c38ef24fb4008bfed04e1c69daea5 was committed/pushed
+before opening2; increment start605f6477, main/baseb51e27d9, game4a92a9de/engine
+0fedd142f43f136ceee189c54101b095fc88f495 unchanged, zero rebuilds. Final aggregate
+PASS and actual source/tool/observer/ABI20/ELF72/routes/storage freeze verified.
+R2 opening1/1 process/claim; cumulative C01 opening2/2; cold0/0, unadmitted.
+STOP90 at absolute31258, Guard856 turn5: native Tackle critical2/damage8 takes
+Carl4→0, Donut16. All6 checksums/reencoding valid, unused400 exact, Pokerus0;
+supported native first-incapacitation, battle unresolved, not corruption/defeat
+resolution or unsupported Pokerus. Eight phases through posttrial guide passed;
+Howler/Warden/stairs/manual Save/disk14-sector/cold not reached. Save allFF.
+Source/strategy/cadence/route/balance unchanged; first failure terminal, no retry.
+Read-only CPU context96B retained (r0–r15/CPSR valid, SPSR unavailable).31258 native
+RGB frames/12 exact PNGs, complete lossy MP4 retained. FFV1 export failed480MiB cap;
+incomplete artifact retained/no retry/no actual full FFV1 roundtrip claim.
+Complete local manifest readback verified;35 r1 private files rehashed unchanged.
+Actual sanitized verdict/captures at
+ docs/evidence/floor1/c01/uninterrupted-unprepared-r2-20261010/README.md.
+Draft PR117 review only, no merge; CI absent. Next dependency is review of actual
+Guard critical/incapacitation and export limitation; another process requires a
+separately authorized reviewed contract. No source correction after failure.
+Old C01a5/3/1=9 and claims6/3/1=10; V016/4 STOP117 visual8536 beforeB8402,
+separate accepted1/1, ordinary5, Library5+1 unknown cause/zero original bytes and
+all old evidence/branches/history preserved. Private backup unapproved/unverified;
+no Library/private upload/issue116/public raw payload. Accepted plan/engine unchanged;
+C01/G02/original oracle/legacy/human/full-floor gates open. Earlier bodies historical.
+
 ## Current C01 r2 — authorized native empty-party repair and one new opening
 
 Independent review authorizes continuation from605f64777807ad8724500470e450d12b5cdab306

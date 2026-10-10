@@ -1,0 +1,11 @@
+{
+  "all_entries_readback_verified": true,
+  "entries": 103,
+  "bytes": 4169008742,
+  "manifest_SHA256": "394b3ebbe4d75160782a9904887528c97062c3bee97f2a1572582c516b074439",
+  "prior_r1_private_files_rehashed_unchanged": 35,
+  "independent_private_backup_verified": false,
+  "private_uploads": 0,
+  "FFV1_incomplete_export_preserved": true,
+  "raw_RGB_complete": true
+}

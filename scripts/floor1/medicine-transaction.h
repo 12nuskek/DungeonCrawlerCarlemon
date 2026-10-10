@@ -123,10 +123,13 @@ static unsigned gt_copy(struct mCore*c,const struct GtContext*x,const unsigned*p
         for(unsigned i=0;i<sizeof gtCopySteps/sizeof *gtCopySteps;i++) {
             const struct GtCopyStep*s=gtCopySteps+i;if(x->pc!=GT_COPY+s->pc||x->flags!=s->flags)continue;
             unsigned sp=x->r[13],parent=sp+12*s->pushed;
+            /* Validate the whole caller frame before reading saved operands.
+             * A context-valid SP alone does not admit SP+4 at the stack top. */
+            if(x->r[14]!=((GT_UPDATE+0x36)|1)||!gt_copy_frame(c,x,parent)
+                ||(s->pushed&&!gt_stack(c,sp+8,(GT_UPDATE+0x36)|1)))continue;
             unsigned rec=s->pushed?c->busRead32(c,sp):x->r[4];
             unsigned buf=s->pushed?c->busRead32(c,sp+4):x->r[5];
-            if(rec>=6||x->r[14]!=((GT_UPDATE+0x36)|1)
-                ||(s->pushed&&!gt_stack(c,sp+8,(GT_UPDATE+0x36)|1))||!gt_copy_frame(c,x,parent)||!gt_live(c,buf,600))continue;
+            if(rec>=6||!gt_live(c,buf,600))continue;
             unsigned dest=co.a.party+100*positions[rec],source=buf+100*rec,valid=1;
             for(unsigned reg=0;reg<7;reg++) {
                 unsigned kind=s->kind[reg];if(!kind)continue;

@@ -71,6 +71,12 @@ static void txRecord(unsigned record,const unsigned*positions){
   txCpuAt(GT_COPY+pc,regs[13]);memcpy(txCpu.gprs,regs,sizeof regs);txCpu.gprs[15]=GT_COPY+pc+2;txCpu.cpsr.packed=flags|0x3f;
   txAcceptBoth();assert(!txCheck());txPositive++;
   txPrefixes[copied/4]++;
+  if(record==0&&pc==2){
+   /* Context admits this aligned SP, but no pushed memcpy caller frame fits.
+    * Fail the fixture on any bus read at/above the declared stack limit. */
+   unsigned saved=txCpu.gprs[13];put32(0x03007e3c,0);txCpu.gprs[13]=0x03007e3c;
+   txForbidStackTop=1;txReject();txForbidStackTop=0;txCpu.gprs[13]=saved;
+  }
   unsigned old=memory[co.a.party+100*positions[record]];memory[co.a.party+100*positions[record]]^=1;txReject();memory[co.a.party+100*positions[record]]=old;
   old=memory[buffer+599];memory[buffer+599]^=1;txReject();memory[buffer+599]=old;
   old=txCpu.gprs[14];txCpu.gprs[14]^=4;txReject();txCpu.gprs[14]=old;

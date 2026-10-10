@@ -1,3 +1,23 @@
+## Current C01a r4 authority — scoped readiness and passive input freeze
+
+Parent review of3f904c65 authorizes all task-menu actual running scoped CB2/exact
+active task/fade-clear correction and bounded passive native input context.
+Separate r4 contract/freeze verifies three mandatory scoped CB2s in both actual
+ELFs, original16 slots unchanged, native ReadKeys/release/zero-extra-frame guards.
+Host compiled once, no game rebuild/reconstruction/V01 replay; r3 route156
+commands/builds/ordinary Save53f62dc2 reused. All57+3472+4788 historical retained
+archive entries verified exact. Storage hardlinks only identical immutable PPMs,
+preserving every path/byte/hash/original archived bytes;20GiB bounds unchanged.
+Two offline post-compile checks corrected and one inefficient archive verification
+interrupted before freeze; no emulator/claim. Read exact contract/freeze in
+ docs/evidence/floor1/c01a/action-hints-r4-20261010/.
+One exclusive baseline process4/attempt4 authorized; candidate process5/attempt1
+only complete strict B/F/E+EOF/full2700 frames+EOF PASS. First unexpected failure
+terminal/no retry/no dependent run. Preserve startup-slot, trainer-dialogue and
+async-menu-readiness prior failures separately; exact old missed-B cause unresolved.
+Publish draftPR115/issue116 review checkpoint only; no merge/main/other heads.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a r3 checkpoint — native route proved; after-Bag STOP122
 
 Parent accepted10 exact input/handoff corrections at d9208aeb. New156-command

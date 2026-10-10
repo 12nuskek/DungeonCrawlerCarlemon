@@ -1,3 +1,21 @@
+## Current C01a reviewed art preparation correction — claim9 gated
+
+Review accepts correction from d8574c72; continue one committed build/regression
+without success-only review pause. New journal-art-r2 output; old failed preparation
+immutable. Existing art manifest217 ordered placements/12 overlaps/205 final cells,
+immutable before-values and native collision/elevation/attributes preserved.
+Whole committed archive product equality/twice regeneration and3 pinned local
+multiboot inputs required. New exact1358-entry layout equivalence permits ONLY
+three manifest-derived maps plus Journal branch projection; historical checker
+unchanged,all other source/geometry checks retained.
+Claim9/candidate3 against certified full baseline4,no baseline replay,full strict
+B/F/E+EOF/2700 and full pixels ZERO masks. Actual5/2/7,claims6/2/8 until claimed/
+launched. First runtime failure terminal. Only complete PASS admits separately
+frozen/count-limited bounded field-only Journal probe; no battle/Save command.
+Issue116 stays unchanged after denial; draftPR115 result review only,no merge/
+backup/Library retry/raw publication. Contract docs/evidence/floor1/c01a/
+journal-art-r2-20261010/contract.md. Earlier bodies historical.
+
 ## Current C01a Journal checkpoint — prebuild STOP, no runtime claim
 
 Source/offline-tested e99f05a03411ed0913230f3f583a759600da1a9f withdraws battle

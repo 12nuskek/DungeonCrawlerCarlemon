@@ -58,7 +58,7 @@ def check(output, build=None):
     for p in ('engine/include/battle_message.h','engine/src/battle_controller_player.c','engine/src/battle_message.c'):
         assert (ROOT/p).read_bytes()==subprocess.check_output(['git','show','bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7:'+p],cwd=ROOT)
     subprocess.run(['git','diff','--exit-code','bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7','--',*[f'engine/data/maps/DCC_{s}/scripts.inc' for s in nav.SOURCES]],cwd=ROOT,check=True)
-    existing=False
+    existing=False;layout_proof=None
     if build:
         # Existing checker is unchanged: project only this explicit new branch
         # from its legacy comparison input; retain every original assertion.
@@ -66,11 +66,18 @@ def check(output, build=None):
         needle="raw=(engine/'data/scripts/dcc_live_navigation.inc').read_text();starts="
         assert source.count(needle)==1
         source=source.replace(needle,"raw=notes.project((engine/'data/scripts/dcc_live_navigation.inc').read_text());starts=")
+        layout_proof=module('layoutEquivalence',ROOT/'scripts/floor1/journal-layout-equivalence.py').verify(ROOT)
+        # Replace only the already verified layout-tree term with its exact,
+        # manifest-derived immutable-base equivalence proof above. Every other
+        # historical source/geometry/font/dispatch/generation assertion remains.
+        assert source.count("'engine/data/layouts',")==1
+        source=source.replace("'engine/data/layouts',",'')
         oldargv=sys.argv;sys.argv=[str(ROOT/'scripts/check-f1-g01e-navigation.py'),'--build',str(build)]
         try:exec(compile(source,str(ROOT/'scripts/check-f1-g01e-navigation.py'),'exec'),{'__file__':str(ROOT/'scripts/check-f1-g01e-navigation.py'),'__name__':'__main__','notes':notes})
         finally:sys.argv=oldargv
         existing=True
     result={'PASS':True,'no_gameplay':True,'old_navigation_checker_unchanged':True,'all_legacy_live_bytes_exact_after_new_branch_projection':True,'existing_checker_original_assertions_passed_with_projection':existing,'Journal_flag_combinations':2**len(flags),'Yes_No_B_source_paths':cases,'all_objective_rules_quest_order_and_closure_preserved':True,'no_state_resource_reward_writes':True,'native_font_lines':physical,'window_pixels':216,'generator_reproducible':True,'three_battle_files_exact_baseline':True,'legacy_scripts_unchanged':True}
+    result['accepted_art_layout_equivalence']=layout_proof
     output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 
 if __name__=='__main__':

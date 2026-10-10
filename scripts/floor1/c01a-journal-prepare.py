@@ -2,7 +2,7 @@
 from pathlib import Path
 import importlib.util,json,os,shutil,subprocess,struct
 ROOT=Path(__file__).resolve().parents[2]
-OUT=Path('/workspace/scratch/c01a-journal-notes-20261010')
+OUT=Path('/workspace/scratch/c01a-journal-art-r2-20261010')
 OLD=Path('/workspace/scratch/c01a-action-hints-r4-20261010')
 CERT=Path('/workspace/scratch/c01a-retained-baseline-candidate-20261010/retained-baseline-acceptance.json')
 TOOL=Path('/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root')

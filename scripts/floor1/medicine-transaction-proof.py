@@ -2,14 +2,14 @@
 from pathlib import Path
 import hashlib,importlib.util,json,re,subprocess
 ROOT=Path(__file__).resolve().parents[2]
-OUT=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010')
+OUT=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010/reviewed-offsets-proof')
 ELF=Path('/workspace/scratch/c01a-journal-art-r2-20261010/candidate-build/source/engine/pokeemerald.elf')
 TOOL=Path('/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root')
 LIB=TOOL/'usr/lib/x86_64-linux-gnu/libmgba.so.0.10.5'
 def module(n,p):
  s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-NAMES={'restored':'Task_DisplayHPRestoredMessage','display':'DisplayPartyMenuMessage','create':'CreateTask','printWait':'Task_PrintAndWaitForText','text':'RunTextPrinters','textRet':'RunTextPrintersRetIsActive','closeText':'Task_ClosePartyMenuAfterText','close':'Task_ClosePartyMenu','fade':'BeginNormalPaletteFade','closeFade':'Task_ClosePartyMenuAndSetCB2','update':'UpdatePartyToFieldOrder','copy':'memcpy','runTasks':'RunTasks','party':'CB2_UpdatePartyMenu','freePointers':'FreePartyPointers','destroy':'DestroyTask','setCB':'SetMainCallback2','free':'Free','getSlot':'GetPartyIdFromBattleSlot','waitVBlank':'WaitForVBlank','main':'AgbMain'}
+NAMES={'restored':'Task_DisplayHPRestoredMessage','display':'DisplayPartyMenuMessage','create':'CreateTask','printWait':'Task_PrintAndWaitForText','text':'RunTextPrinters','textRet':'RunTextPrintersRetIsActive','closeText':'Task_ClosePartyMenuAfterText','close':'Task_ClosePartyMenu','fade':'BeginNormalPaletteFade','closeFade':'Task_ClosePartyMenuAndSetCB2','update':'UpdatePartyToFieldOrder','copy':'memcpy','runTasks':'RunTasks','party':'CB2_UpdatePartyMenu','freePointers':'FreePartyPointers','destroy':'DestroyTask','setCB':'SetMainCallback2','free':'Free','getSlot':'GetPartyIdFromBattleSlot','waitVBlank':'WaitForVBlank','main':'AgbMain','alloc':'Alloc','freeInternal':'FreeInternal'}
 def copy_steps():
  # Symbolic microstates of the exact aligned 100-byte Thumb memcpy. Values:
  # ANY0, DEST1, SOURCE2, WORD3, CONST4, BUFFER5, RECORD6, SOURCE|DEST8.
@@ -58,20 +58,25 @@ def prove(out=OUT):
  startup=subprocess.check_output([str(TOOL/'usr/bin/arm-none-eabi-objdump'),'-d','--start-address='+hex(init[0]['value']),'--stop-address='+hex(irq_sp[0]['value']+4),str(ELF)],text=True)
  (out/'startup.asm').write_text(startup);assert re.search(r'ldr\s+sp,.*<sp_irq>',startup)
  source=(ELF.parent/'src/party_menu.c').read_text();a=source.index('struct PartyMenuInternal\n');b=source.index('\n};',a)+3
- abi='#include "global.h"\n#include "task.h"\n#include "main.h"\n#include "palette.h"\n'+source[a:b]+'\nconst unsigned txInternalABI[]={sizeof(struct PartyMenuInternal),offsetof(struct PartyMenuInternal,exitCallback)};\n'
+ malloc=(ELF.parent/'src/malloc.c').read_text();ma=malloc.index('struct MemBlock {');mb=malloc.index('\n};',ma)+3
+ abi='#include "global.h"\n#include "task.h"\n#include "main.h"\n#include "palette.h"\n'+source[a:b]+'\n'+malloc[ma:mb]+'\nconst unsigned txInternalABI[]={sizeof(struct PartyMenuInternal),offsetof(struct PartyMenuInternal,exitCallback),sizeof(struct MemBlock),offsetof(struct MemBlock,flag),offsetof(struct MemBlock,magic),offsetof(struct MemBlock,size),offsetof(struct MemBlock,prev),offsetof(struct MemBlock,next)};\n'
  (out/'party-internal-ABI.c').write_text(abi)
  pp=subprocess.check_output(['gcc','-E','-iquote','include','-iquote','src','-DMODERN=0','-I','tools/agbcc/include','-I','tools/agbcc','-nostdinc','-undef','-std=gnu89',str(out/'party-internal-ABI.c')],cwd=ELF.parent)
  assembly=subprocess.check_output([str(TOOL/'tools/agbcc/bin/agbcc'),'-mthumb-interwork','-Wimplicit','-Wparentheses','-Werror','-O2','-fhex-asm','-o','-','-'],input=pp,cwd=ELF.parent)
  (out/'party-internal-ABI.s').write_bytes(assembly+b'\n.text\n\t.align\t2, 0\n')
  subprocess.run([str(TOOL/'usr/bin/arm-none-eabi-as'),'-mcpu=arm7tdmi','--defsym','MODERN=0','-o',str(out/'party-internal-ABI.o'),str(out/'party-internal-ABI.s')],check=True)
  abi_data=subprocess.check_output([str(TOOL/'usr/bin/arm-none-eabi-objdump'),'-s','-j','.rodata',str(out/'party-internal-ABI.o')],text=True)
- assert '38020000 04000000' in abi_data,abi_data
+ assert '38020000 04000000 10000000 00000000' in abi_data and '02000000 04000000 08000000 0c000000' in abi_data,abi_data
+ free=(out/'Free.asm').read_text();internal=(out/'FreeInternal.asm').read_text()
+ assert re.search(r'8000b68:.*bl\s+8000a20',free) and re.search(r'8000b6c:.*pop\s+\{r0\}',free) and re.search(r'8000b6e:.*bx\s+r0',free)
+ assert re.search(r'8000a20:.*push\s+\{r4, r5, lr\}',internal) and not re.search(r'\bbl\s+',internal)
+ assert re.search(r'8000a7c:.*pop\s+\{r4, r5\}',internal) and re.search(r'8000a7e:.*pop\s+\{r0\}',internal) and re.search(r'8000a80:.*bx\s+r0',internal)
  # Native source call sites and task stores remain exactly the audited binary.
  expected=json.loads(Path('/workspace/scratch/c01-medicine-sampling-audit-r1-20261010/native-observation-proof-private.json').read_text())
  for alias in ('restored','display','printWait','text','closeText','close','fade','closeFade','update','copy','freePointers','destroy','setCB'):
   assert functions[alias]['compiled_SHA256']==expected['functions'][NAMES[alias]]['compiled_SHA256']
  objects={}
- for alias,name in (('heap','gHeap'),('printers','sTextPrinters')):
+ for alias,name in (('heap','gHeap'),('printers','sTextPrinters'),('party','gPlayerParty')):
   hits=[r for r in rows if r['name']==name and r['type']==1];assert len(hits)==1;objects[alias]={'address':hits[0]['value'],'size':hits[0]['size']}
  layout='''#include <stddef.h>
 #include <stdio.h>
@@ -94,6 +99,6 @@ int main(void){printf("%zu %zu %zu %zu %zu %zu %zu %zu\\n",offsetof(struct mCore
  header+='struct GtCopyStep {unsigned pc,copied,pushed,flags;unsigned kind[7],value[7];};\nstatic const struct GtCopyStep gtCopySteps[]={\n'
  for st in copy_steps():header+='{'+','.join(map(str,(st['pc'],st['copied'],st['pushed'],str(st['flags'])+'u')))+',{'+','.join(str(x[0]) for x in st['registers'])+'},{'+','.join(str(x[1])+'u' for x in st['registers'])+'}},\n'
  header+='};\n';(out/'transaction-bindings.h').write_text(header)
- proof={'PASS':True,'class':'static retained binary/context proof plus symbolic aligned-copy microstates; no gameplay','ELF_SHA256':sha(ELF),'libmgba_SHA256':sha(LIB),'functions':functions,'objects':objects,'CPU_ABI':values,'IRQ_supported':'only fresh ARMRaiseIRQ entry at raw ARM PC0x1c, IRQ mode0x12/ARM, original SPSR system Thumb, untouched r0-r12 and BANK_NONE SP/LR; other interrupt contexts fail closed','IRQ_SP_required':0x03007fa0,'IRQ_interrupted_next_PC':'LR_irq-4','normal_next_PC':'raw Thumb PC-2','compiled_instruction_points':sorted(set(instructions)),'copy_steps':copy_steps(),'native_internal_ABI':[568,4],'native_internal_ABI_SHA256':sha(out/'party-internal-ABI.o'),'startup_SHA256':sha(out/'startup.asm'),'bindings_SHA256':sha(out/'transaction-bindings.h'),'copy_instruction_bytes':bound.rom_bytes(ELF,functions['copy']['address'],functions['copy']['size']).hex(),'runtime_frames':0}
+ proof={'PASS':True,'class':'static retained binary/context proof plus symbolic aligned-copy microstates; no gameplay','ELF_SHA256':sha(ELF),'libmgba_SHA256':sha(LIB),'functions':functions,'objects':objects,'CPU_ABI':values,'IRQ_supported':'only fresh ARMRaiseIRQ entry at raw ARM PC0x1c, IRQ mode0x12/ARM, original SPSR system Thumb, untouched r0-r12 and BANK_NONE SP/LR; other interrupt contexts fail closed','IRQ_SP_required':0x03007fa0,'IRQ_interrupted_next_PC':'LR_irq-4','normal_next_PC':'raw Thumb PC-2','compiled_instruction_points':sorted(set(instructions)),'copy_steps':copy_steps(),'native_internal_ABI':[568,4,16,0,2,4,8,12],'post_Free_return_spills':{'Update_next_offset':70,'SP_minus_4':'Update+0x46|1','SP_minus_8':'Free+0x0c|1','SP_minus_12':'preserved actual buffer','SP_minus_16':'R4=6','R0':'Update+0x46|1','LR':'Free+0x0c|1','payload_read':False},'native_internal_ABI_SHA256':sha(out/'party-internal-ABI.o'),'startup_SHA256':sha(out/'startup.asm'),'bindings_SHA256':sha(out/'transaction-bindings.h'),'update_instruction_bytes':bound.rom_bytes(ELF,functions['update']['address'],functions['update']['size']).hex(),'free_instruction_bytes':bound.rom_bytes(ELF,functions['free']['address'],functions['free']['size']).hex(),'freeInternal_instruction_bytes':bound.rom_bytes(ELF,functions['freeInternal']['address'],functions['freeInternal']['size']).hex(),'copy_instruction_bytes':bound.rom_bytes(ELF,functions['copy']['address'],functions['copy']['size']).hex(),'runtime_frames':0}
  (out/'transaction-proof-private.json').write_text(json.dumps(proof,sort_keys=True,indent=2)+'\n');return proof
 if __name__=='__main__':print(json.dumps({'PASS':prove()['PASS'],'gameplay_processes':0}))

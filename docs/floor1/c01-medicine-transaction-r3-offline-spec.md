@@ -1,3 +1,24 @@
+## Reviewed outer-function amendment — 2026-10-10 checkpoint
+
+Independent compiled outer Update/Free-chain fixtures cover all22 admitted offsets
+and first post-Free completion with no copy observation or one actual prefix.
+Post-Free+0x46 binds the preserved R5 operand to untouched native FreeInternal
+system-stack spills, two return addresses, R0/LR and R4=6/R6=100. Header metadata
+only; no freed payload read or fabricated intermediate observation. All final
+party/snapshot bytes and ordinary6 complete-record checks remain exact. Native
+FreeInternal coalescing and heap-header ABI are bound to retained source/binary.
+Native WAIT uses the actual bounded return word atSP03007e24, without assumed128B
+headroom. Earlier proof/aggregate/split files remain separately retained.
+
+Latest expanded split PASS; latest aggregate, production binary and closed-gate
+negatives remain unfinished at Kurt's requested checkpoint/idle. Preparation stays
+CLOSED and independent review remains open. The current proof directory is
+`reviewed-offsets-proof`; next aggregate directory `aggregate-reviewed-offsets`.
+No runtime or preservation operation is authorized by an offline PASS. See the
+[new checkpoint](../evidence/floor1/c01/medicine-transaction-offsets-r3-20261010/README.md).
+
+The earlier specification follows as historical context.
+
 # C01 medicine transaction r3 — offline source specification
 
 This increment is an offline correction only. No emulator initialization, game

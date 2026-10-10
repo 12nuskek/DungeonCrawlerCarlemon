@@ -2,7 +2,7 @@
 from pathlib import Path
 import importlib.util
 ROOT=Path(__file__).resolve().parents[2]
-OUT=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010')
+OUT=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010/reviewed-offsets-proof')
 NAMES=['boot','note','supply','guide-initial','trial','scrap','guide-posttrial','guard','guide-guard','save']
 KINDS=['BOOT','NOTE','SUPPLY','GUIDE','TRIAL','SCRAP','GUIDE','GUARD','GUIDE','SAVE']
 def module(n,p):

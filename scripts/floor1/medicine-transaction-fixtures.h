@@ -6,7 +6,7 @@ static struct GtTransaction txSavedGt;
 static struct ARMCore txSavedCpu;
 static unsigned txSavedFrame,txPositive,txNegative,txEquivalent,txSnapshotBytes,txPrefixes[26];
 static void txSave(void){memcpy(txSavedMemory,memory,sizeof memory);memcpy(txSavedStack,txStack,sizeof txStack);txSavedGc=gc;txSavedGt=gtx;txSavedCpu=txCpu;txSavedFrame=co.frames;}
-static void txRestore(void){memcpy(memory,txSavedMemory,sizeof memory);memcpy(txStack,txSavedStack,sizeof txStack);gc=txSavedGc;gtx=txSavedGt;txCpu=txSavedCpu;co.frames=txSavedFrame;}
+static void txRestore(void){txDeadSize=0;memcpy(memory,txSavedMemory,sizeof memory);memcpy(txStack,txSavedStack,sizeof txStack);gc=txSavedGc;gtx=txSavedGt;txCpu=txSavedCpu;co.frames=txSavedFrame;}
 static void txTaskFrame(unsigned sp,unsigned bytes,unsigned id){put32(sp,gc.a.tasks+40*id);put32(sp+4,gc.a.tasks);put32(sp+bytes-4,(GT_RUNTASKS+0x1e)|1);put32(sp+bytes+8,(GT_PARTY+6)|1);}
 static void txCpuAt(unsigned pc,unsigned sp){memset(&txCpu,0,sizeof txCpu);txCpu.cpsr.packed=0x3f;txCpu.executionMode=MODE_THUMB;txCpu.privilegeMode=MODE_SYSTEM;txCpu.gprs[15]=pc+2;txCpu.gprs[13]=sp;}
 static unsigned txCheck(void){unsigned positions[6];assert(gc_order(gc.order,positions));return gc_lifecycle(&mock,r32(&mock,co.a.main+4)&~1u,positions);}
@@ -123,4 +123,18 @@ static void txCleanup(void){const unsigned points[]={0x30,0x46,0x4a,0x4e,0x50,0x
  }
  txRestore();nativeMessageSetup();txAcknowledged();medicineTask(gc.a.closeFade);put32(co.a.main+4,gc.a.exitBattle|1);txCpuAt(GT_CLOSEFADE+0x54,0x03006000);txCpu.gprs[5]=gtx.owner;txTaskFrame(0x03006000,12,gtx.owner);txReject(); /* live owner/allocation: premature completion */
 }
-static void transactionCuts(void){unsigned initialAdvances=advances;txSave();txCreation();txPrinting();txFading();unsigned positions[6];assert(gc_order(txSavedGc.order,positions));for(unsigned i=0;i<6;i++)txRecord(i,positions);txCleanup();txRestore();assert(advances==initialAdvances);for(unsigned i=0;i<26;i++)assert(txPrefixes[i]);printf("PASS passive compiled transaction cuts use=%u positive=%u negative=%u snapshot_byte_negatives=%u legal_prefixes=26 unobservable_identical_words=%u\n",gc.uses+1,txPositive,txNegative,txSnapshotBytes,txEquivalent);}
+static void txNativeWait(void){
+ for(unsigned cleanup=0;cleanup<2;cleanup++){
+  txRestore();nativeMessageSetup();txAcknowledged();medicineTask(gc.a.closeFade);
+  if(cleanup){unsigned positions[6];unsigned char party[600];assert(gc_order(gc.order,positions));gc_permute(gc.healed.party,party,positions,1);memcpy(memory+co.a.party,party,600);put32(co.a.main+4,gc.a.exitBattle|1);memory[0x3404]=0;put16(gtx.internal-16,0);}
+  /* Actual retained STOP90/104 WAIT SP/PC/status and compiled AgbMain return.
+   * This is an offline context fixture, not replay of those runtime packets. */
+  txCpuAt(GT_WAITVBLANK+0x1a,0x03007e24);txCpu.cpsr.packed=0x6000003f;put32(0x03007e24,0x080004bf);
+  txAcceptBoth();assert(!txCheck()&&gc.exitSeen==cleanup);
+  unsigned old=txCpu.gprs[13];txCpu.gprs[13]=0x03007e40;txReject();txCpu.gprs[13]=old;
+  txCpu.gprs[13]=old+4;txReject();txCpu.gprs[13]=old;
+  old=r32(&mock,0x03007e24);put32(0x03007e24,old^4);txReject();put32(0x03007e24,old);
+ }
+}
+static void txUpdateAll(void);
+static void transactionCuts(void){unsigned initialAdvances=advances;txSave();txCreation();txPrinting();txFading();unsigned positions[6];assert(gc_order(txSavedGc.order,positions));for(unsigned i=0;i<6;i++)txRecord(i,positions);txUpdateAll();txCleanup();txNativeWait();txRestore();assert(advances==initialAdvances);for(unsigned i=0;i<26;i++)assert(txPrefixes[i]);printf("PASS passive compiled transaction cuts use=%u positive=%u negative=%u snapshot_byte_negatives=%u legal_prefixes=26 unobservable_identical_words=%u\n",gc.uses+1,txPositive,txNegative,txSnapshotBytes,txEquivalent);}

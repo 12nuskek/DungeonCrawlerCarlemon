@@ -1,3 +1,33 @@
+## Current C01 r3 outer-function correction — split PASS; checkpoint/idle
+
+Executor healthy2026-10-10 15:59:38UTC; latest inert command exit0, no activecommand.
+Startfd827ad64309e99c26866ec2e7b9456d25fccd86, main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae.
+Read-only review's missing outer-Update coverage and first post-Free observation
+restriction corrected. Independent pinned Update/memcpy/Free/FreeInternal decoder:
+2140 directchecks/all22offsets,60completions incl40 no-prior/one-actual-prefix samples,
+both unmerged/coalesced headers, both orders/recipients/8UI+2successive uses PASS.
+Current actual R0/LR/preservedregs/four untouched Free stack slots bind freedbuffer;
+header metadata only, poisonedpayload/forbiddenreads0, exact full600+other3324bytes/
+all6 ordinary complete checksum/reencoding checks. No invented observations.
+Retained native WAITSP03007e24 now admitted by individual bounded stack reads,
+wrong SP/top/return rejected. Latest24180 positive/116746 negatives/32970 snapshot
+byte cases PASS. Earlier fd827ad6 fullaggregate+productionbuild PASS retained;
+latest expandedaggregate/production/gatenegatives and independent review OPEN.
+Gatefixtures written/unexecuted; preparation unconditionally CLOSED/no execution
+path. User requested checkpoint/idle; no runtimefreeze/claim/emulator/Save/cold.
+Evidence docs/evidence/floor1/c01/medicine-transaction-offsets-r3-20261010/README.md.
+Oldr2/engine/policy/cadence/routes unchanged; old/revised proofs/diagnostics retained
+separately.98 preserved entries/218729208B incl31gzip/216182152B rehashed exact,
+both original frame-pass receipt hashes valid; no decompression/preservation/
+compression/deletion/upload. Private128MiBcap; independentbackup unverified;
+Library5+1 unknowncause/zerooriginalbytes unchanged. Fullreservation10000408128B.
+C01opening3/3,cold0/0,STOP82/90/104;V016/4 STOP117 visual8536 beforeB8402,later1/1,
+ordinary5,C01aactual5/3/1/claims6/3/1 unchanged. Main/all69otherheads/issue116 remain;
+draftPR117/unmerged. Acceptednine-district plan and oracle/legacy/C01/G02/prepared/
+human/full-floor gates unchanged. Next only on explicit continuation:latest full
+aggregate/productionbuild/gate negatives then independentreview; no gameplay.
+Earlier bodies below remain historical authorities for their scopes.
+
 ## Current C01 medicine transaction r3 — split PASS; checkpoint/idle
 
 User requested checkpoint after environment recovery. Executor healthy2026-10-10

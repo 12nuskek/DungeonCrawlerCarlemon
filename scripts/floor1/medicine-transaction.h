@@ -20,7 +20,9 @@ static unsigned gt_context(struct mCore*c,struct GtContext*out) {
     }else return 0;
     unsigned instruction=0;
     for(unsigned i=0;i<sizeof gtInstructionPoints/sizeof *gtInstructionPoints;i++)if(out->pc==gtInstructionPoints[i])instruction=1;
-    return instruction&&!(out->r[13]&3)&&out->r[13]>=0x03000000&&out->r[13]<=0x03007e40-128;
+    /* Each actual stack access is independently bounded by gt_stack. Native
+     * WaitForVBlank's retained SP0x03007e24 needs only its one return word. */
+    return instruction&&!(out->r[13]&3)&&out->r[13]>=0x03000000&&out->r[13]<=0x03007e40-4;
 }
 static unsigned gt_stack(struct mCore*c,unsigned address,unsigned expected) {
     return !(address&3)&&address>=0x03000000&&address+4<=0x03007e40&&c->busRead32(c,address)==expected;
@@ -44,6 +46,13 @@ static unsigned gt_dead(struct mCore*c,unsigned pointer) {
     if(!gt_heap_range(pointer,8))return 0;
     unsigned magic=c->busRead16(c,pointer-14);
     return !c->busRead16(c,pointer-16)&&(magic==0||magic==0xa3a3);
+}
+static unsigned gt_freed_copy(struct mCore*c,unsigned pointer) {
+    /* FreeInternal preserves this header's size, even when previous/next
+     * blocks coalesce. Read header metadata only; never follow freed data. */
+    if(!gt_heap_range(pointer,600)||!gt_dead(c,pointer))return 0;
+    unsigned size=c->busRead32(c,pointer-12);
+    return size>=600&&!(size&3)&&gt_heap_range(pointer,size);
 }
 static void gt_reset(struct mCore*c) {
     memset(&gtx,0,sizeof gtx);gtx.owner=gtx.wait=UINT_MAX;
@@ -157,7 +166,20 @@ static unsigned gt_copy(struct mCore*c,const struct GtContext*x,const unsigned*p
         if(offset==0x42&&x->r[0]!=buffer)return GT_ERROR;
         afterFree=offset==0x46;
         if(offset>=0x1a&&x->r[6]!=100)return GT_ERROR;
-        if(afterFree){if(record!=6||buffer!=gtx.copyBuffer||gtx.copyProgress!=600||!gt_dead(c,buffer))return GT_ERROR;}
+        /* A complete synchronous copy may occur between frame observations.
+         * +0x46 is exactly Free's return: R4=6/R6=100, the preserved R5 token,
+         * and the Update/owned-task/callback stacks bind this completion.
+         * A previously observed buffer must still match below. No intermediate
+         * observation is required or synthesized; full final bytes are strict. */
+        if(afterFree){
+            unsigned sp=x->r[13];
+            /* Native Free/FreeInternal have just popped these unchanged
+             * system-stack slots. They independently bind the actual buffer
+             * operand even when no copy instruction was previously sampled. */
+            if(record!=6||x->r[0]!=((GT_UPDATE+0x46)|1)||x->r[14]!=((GT_FREE+0xc)|1)
+                ||!gt_stack(c,sp-4,(GT_UPDATE+0x46)|1)||!gt_stack(c,sp-8,(GT_FREE+0xc)|1)
+                ||!gt_stack(c,sp-12,buffer)||!gt_stack(c,sp-16,6)||!gt_freed_copy(c,buffer))return GT_ERROR;
+        }
         else if(!gt_live(c,buffer,600))return GT_ERROR;
     }else return GT_ERROR;
     if(!matched)return GT_ERROR;

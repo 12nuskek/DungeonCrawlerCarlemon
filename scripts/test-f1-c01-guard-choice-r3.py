@@ -3,8 +3,8 @@
 from pathlib import Path
 import argparse,hashlib,importlib.util,json,subprocess
 ROOT=Path(__file__).resolve().parents[1]
-PROOF=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010')
-AGGREGATE=PROOF/'aggregate-final'
+PROOF=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010/reviewed-offsets-proof')
+AGGREGATE=PROOF.parent/'aggregate-reviewed-offsets'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def module(n,p):
  s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m

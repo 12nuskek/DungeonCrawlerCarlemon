@@ -28,7 +28,11 @@ def main():
     actual=json.loads((proof.OUT/'transaction-proof-private.json').read_text())
     assert actual['PASS'] and actual['ELF_SHA256']==runner.ELF_SHA
     raw=bytes.fromhex(actual['copy_instruction_bytes'])
-    (d/'fixtures.h').write_text('static const unsigned txMemcpyOpcodes[]={'+','.join(hex(v) for v in struct.unpack('<47H',raw))+'};\n'+(ROOT/'scripts/floor1/medicine-transaction-fixtures.h').read_text())
+    arrays='static const unsigned txMemcpyOpcodes[]={'+','.join(hex(v) for v in struct.unpack('<47H',raw))+'};\n'
+    for name,key in (('txUpdateOpcodes','update_instruction_bytes'),('txFreeOpcodes','free_instruction_bytes'),('txFreeInternalOpcodes','freeInternal_instruction_bytes')):
+        data=bytes.fromhex(actual[key]);arrays+='static const unsigned '+name+'[]={'+','.join(hex(v) for v in struct.unpack('<'+str(len(data)//2)+'H',data))+'};\n'
+    arrays+='static const unsigned txNativeParty='+hex(actual['objects']['party']['address'])+'u;\n'
+    (d/'fixtures.h').write_text(arrays+(ROOT/'scripts/floor1/medicine-transaction-fixtures.h').read_text()+'\n'+(ROOT/'scripts/floor1/medicine-transaction-update-fixtures.h').read_text())
     adapter=module('gc_tx_inert',ROOT/'scripts/floor1/medicine-transaction-inert.py')
     inert=adapter.generate(d/'inert-observer.c',d/'fixtures.h')
     (d/'inert.c').write_text(inert)
@@ -127,6 +131,10 @@ def main():
     import re
     cuts=re.findall(r'positive=(\d+) negative=(\d+) snapshot_byte_negatives=(\d+) legal_prefixes=26 unobservable_identical_words=(\d+)',(d/'transaction-split.log').read_text());assert len(cuts)==10
     receipt['transaction_offline']={'positive_normal_or_IRQ_checks':int(cuts[-1][0]),'negative_checks':int(cuts[-1][1]),'full_snapshot_physical_byte_negatives':int(cuts[-1][2]),'legal_4byte_prefixes_per_record':26,'medicines_tested':10,'unobservable_identical_word_images':int(cuts[-1][3]),'fresh_Thumb_and_IRQ':True,'passive_advances':0}
+    outer=re.findall(r'direct_checks=(\d+) offsets=22 completion_checks=(\d+) skipped_completion_checks=(\d+)',(d/'transaction-split.log').read_text());assert len(outer)==10
+    receipt['outer_function_offline']={'independent_compiled_Update_and_Free_chain':True,'direct_instruction_checks':int(outer[-1][0]),'direct_offsets_covered':22,'post_Free_completion_checks':int(outer[-1][1]),'skipped_observation_completion_checks':int(outer[-1][2]),'first_no_copy_sample_and_one_actual_prefix':True,'native_prev_next_coalescing_and_unmerged_headers':True,'freed_payload_reads':0,'callback_exit_not_premature':True}
+    receipt['tested_source_commit']=git('rev-parse','HEAD')
+    receipt['source_status_at_receipt']=git('status','--porcelain')
     receipt['native_sampling_admitted']=False
     receipt['review_state']='CLOSED'
     runner.write(d/'admission-receipt.json',receipt);print(json.dumps(receipt,sort_keys=True))

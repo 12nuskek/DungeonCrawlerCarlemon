@@ -1,0 +1,25 @@
+{
+  "case": "baseline",
+  "execution_source": "c4774762db9fdae221f26c9af50b0d8ea08e00e9",
+  "claim_SHA256": "8ef5dbd7d02a477670642d8a8dea8a33dae95b4365e4f18b58ad8b2b6ca489fd",
+  "prepared_identity_SHA256": "c1ee7abeea5ed05f391666ceb202a947459c93bb0608bdf773176f62350e96ce",
+  "capture_source": "Actual native captured PPMs only; no replay/emulator/image generation",
+  "numbered_frames": 3405,
+  "terminal_partial_frame_capture": false,
+  "total_viewing_samples": 3405,
+  "native_fps": "16777216/280896",
+  "ordinary_speed": true,
+  "dimensions": [
+    240,
+    160
+  ],
+  "RGB_SHA256": "df5ebcc08ebf680ded4177006bedd721a344fdb06f33f11833112315b4b9f325",
+  "decoded_RGB_SHA256": "df5ebcc08ebf680ded4177006bedd721a344fdb06f33f11833112315b4b9f325",
+  "every_lossless_pixel_verified": true,
+  "lossless_SHA256": "1c0bf4e6f00650f2cd0bd25ce5c417e104e797ff8afa621f2d5d8d2faed9c0f7",
+  "lossless_bytes": 53143380,
+  "viewing_SHA256": "3f74fba86c3de2995e92941d1a07fd0e110d125437ccdc734e15876106d2ab38",
+  "viewing_bytes": 335846,
+  "private_local_only": true,
+  "independent_backup_verified": false
+}

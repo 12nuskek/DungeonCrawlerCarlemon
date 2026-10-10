@@ -1,0 +1,17 @@
+{
+  "PASS": true,
+  "scope": "Offline proposal/input identity only; no emulator",
+  "changed_commands": [
+    [
+      24,
+      "ui wait action 0 900",
+      "ui next action 0 900"
+    ]
+  ],
+  "all_other_155_commands_unchanged": true,
+  "receiving_callback_and_all_bounds_unchanged": true,
+  "ordinary_A_only_before_readiness": true,
+  "proposed_route_SHA256": "e240e4aaca6c5f988452b2635f6a8765633fa7ebfe5d604bb26781e304508852",
+  "proposal_applied": false,
+  "claim_created": false
+}

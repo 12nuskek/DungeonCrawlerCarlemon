@@ -1,3 +1,38 @@
+## Current C01a r2 checkpoint — slot-count correction passed; dialogue STOP122
+
+Parent accepted two-line16-slot correction at PR115 head554ec015. Applied only
+reviewed declaration/check; both actual sets16 nonzero/nine data/seven scoped
+callbacks,max consumed15,66 missing/zero/extra offline rejections pass. Retained
+old57 entries/STOP1212044/12/zero battle unchanged. Corrected observer9cbe4761/
+binary8589d380, helper477f499f, freeze/executionc4774762db9fdae221f26c9af50b0d8ea08e00e9.
+Reuse verified mainbdff4e1a engine8d8c7761 and compiled source807eeea4 engine3ef0d463,
+ROM3e6fa891/ELFc5f7e264, ordinary Save53f62dc2; no game build/reconstruction/V01 replay.
+
+C01a process2/baseline attempt2 passes startup then first unexpected STOP122:
+14 assertions/5449 absolute/3405 visual/2101 battle frames. First neutral
+ui wait action0 900 leaves native trainer challenge \p prompt awaiting freshA/B;
+scoped opponent text-printer callback/exec0x2/keys1023 and actual image confirm.
+No action/move chosen,candidate0,no retry/Save; original/copies53f unchanged.
+Partial3391B/3405F/14zero/noE is not successful reference. Two baseline processes/
+attempts overall,0 candidates; STOP121 and122 distinct. Actual3405-frame baseline
+intro/STOP clip lossless RGB fully verified and PNGs inspected; no action-pane
+before/after,candidate pixels/motion or full control/purity acceptance. One
+offline font-mask index3 mistake corrected separately via native lookup256/six
+strings; runtime frozen inputs/observer unchanged. All previous failures retained.
+
+Next: review unapplied single-command dialogue handoff to existing ui next
+(action0,bound900); all155 other route commands/native gates/bounds unchanged.
+Then separately name/freeze another baseline/conditional candidate from verified
+builds/Save. No timing/RNG search or blind retry. Scoped draftPR115 only,no merge.
+Private local archive21140478 bytes/3472 entries/ba172a84…cbb47c5 byte-verified,
+separate builds/tools,old archive unchanged; no independent backup/transfer.
+HistoricalV01 6/4/STOP117,new V01 1/1,ordinary5 and Library5+1 zero original
+recovered bytes/unknown cause preserved,no retry. Human pacing/legacy/prepared-
+unprepared/branch-order/optional-skip/full-floor gates remain separate.
+Exact sources,freeze/build/STOP,proofs,actual captures and retention:
+docs/evidence/floor1/c01a/action-hints-r2-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a checkpoint — compiled hints; terminal adapter STOP121
 
 Published implementation/evidence63dea839e48075f0cebe10e52fb09dbfb2e8a0b7 on draft
@@ -377,7 +412,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a source807eeea4 compiled USES/four native-pane hints; offline source/font/purity/ABI pass. New frozen baseline STOP121 at2044/12 before battle:17 required slots/16 assigned. Candidate0/no retry/no menu pixels or motion; runtime acceptance blocked. [Actual STOP and unapplied fix for review](../evidence/floor1/c01a/action-hints-20261010/README.md). Broader C01 prepared/unprepared/human-pacing gates remain pending |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a source807eeea4 compiled hints/offline source/font/purity/ABI pass. Reviewed16-slot correction passes; r2 process2/baseline attempt2 STOP122 at5449/14,3405 visual/2101 battle: first neutral action wait leaves native trainer \p awaitingA/B. Overall2 baselines/0 candidates/0 chosen actions,no retry/Save. [Actual STOP122, intro captures and unapplied one-command handoff](../evidence/floor1/c01a/action-hints-r2-20261010/README.md). Candidate/menu/depletion/purity and broader C01 prepared-unprepared/human pacing remain pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

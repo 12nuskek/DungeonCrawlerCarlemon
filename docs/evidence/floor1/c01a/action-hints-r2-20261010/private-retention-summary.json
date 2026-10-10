@@ -1,0 +1,17 @@
+{
+  "local_archive_path": "/workspace/scratch/c01a-action-hints-r2-20261010/private-evidence.tar.gz",
+  "archive_bytes": 21140478,
+  "archive_SHA256": "ba172a84626a0676e662198a8a63be6c54abc2c59e6df16348a1f2f88cbb47c5",
+  "file_entries": 3472,
+  "all_entries_byte_verified": true,
+  "verified_independent_backup": false,
+  "original_STOP121_archive_unchanged": true,
+  "separate_components": [
+    "verified baseline active engine8d8c build",
+    "candidate source807eeea4/build/ROM/ELF",
+    "recovered tooling-r3 root/manifests"
+  ],
+  "Library_attempts_this_increment": 0,
+  "private_retention": "Verified workspace-local only; independent transfer and destination byte verification have not happened. Local downloads are not automatically independent backup.",
+  "public_scope": "Actual baseline intro/STOP PNG and viewing MP4, safe state/diagnosis/hash summaries; no ROM/ELF/Save/raw traces/full symbols."
+}

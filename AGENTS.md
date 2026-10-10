@@ -1,3 +1,38 @@
+## Current C01a r2 checkpoint — slot-count correction passed; dialogue STOP122
+
+Parent accepted two-line16-slot correction at PR115 head554ec015. Applied only
+reviewed declaration/check; both actual sets16 nonzero/nine data/seven scoped
+callbacks,max consumed15,66 missing/zero/extra offline rejections pass. Retained
+old57 entries/STOP1212044/12/zero battle unchanged. Corrected observer9cbe4761/
+binary8589d380, helper477f499f, freeze/executionc4774762db9fdae221f26c9af50b0d8ea08e00e9.
+Reuse verified mainbdff4e1a engine8d8c7761 and compiled source807eeea4 engine3ef0d463,
+ROM3e6fa891/ELFc5f7e264, ordinary Save53f62dc2; no game build/reconstruction/V01 replay.
+
+C01a process2/baseline attempt2 passes startup then first unexpected STOP122:
+14 assertions/5449 absolute/3405 visual/2101 battle frames. First neutral
+ui wait action0 900 leaves native trainer challenge \p prompt awaiting freshA/B;
+scoped opponent text-printer callback/exec0x2/keys1023 and actual image confirm.
+No action/move chosen,candidate0,no retry/Save; original/copies53f unchanged.
+Partial3391B/3405F/14zero/noE is not successful reference. Two baseline processes/
+attempts overall,0 candidates; STOP121 and122 distinct. Actual3405-frame baseline
+intro/STOP clip lossless RGB fully verified and PNGs inspected; no action-pane
+before/after,candidate pixels/motion or full control/purity acceptance. One
+offline font-mask index3 mistake corrected separately via native lookup256/six
+strings; runtime frozen inputs/observer unchanged. All previous failures retained.
+
+Next: review unapplied single-command dialogue handoff to existing ui next
+(action0,bound900); all155 other route commands/native gates/bounds unchanged.
+Then separately name/freeze another baseline/conditional candidate from verified
+builds/Save. No timing/RNG search or blind retry. Scoped draftPR115 only,no merge.
+Private local archive21140478 bytes/3472 entries/ba172a84…cbb47c5 byte-verified,
+separate builds/tools,old archive unchanged; no independent backup/transfer.
+HistoricalV01 6/4/STOP117,new V01 1/1,ordinary5 and Library5+1 zero original
+recovered bytes/unknown cause preserved,no retry. Human pacing/legacy/prepared-
+unprepared/branch-order/optional-skip/full-floor gates remain separate.
+Exact sources,freeze/build/STOP,proofs,actual captures and retention:
+docs/evidence/floor1/c01a/action-hints-r2-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a checkpoint — compiled hints; terminal adapter STOP121
 
 Published implementation/evidence63dea839e48075f0cebe10e52fb09dbfb2e8a0b7 on draft

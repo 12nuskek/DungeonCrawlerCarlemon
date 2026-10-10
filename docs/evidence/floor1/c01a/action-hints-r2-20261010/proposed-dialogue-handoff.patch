@@ -1,0 +1,11 @@
+--- a/scripts/contracts/f1-c01a-ui.route
++++ b/scripts/contracts/f1-c01a-ui.route
+@@ -21,7 +21,7 @@
+ step 40 0 -
+ engage 3600
+ step 1200 0 battle-start.ppm
+-ui wait action 0 900
++ui next action 0 900
+ step 1 1 -
+ step 24 0 -
+ ui wait move 0 900

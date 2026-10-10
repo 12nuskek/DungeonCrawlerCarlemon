@@ -1,0 +1,6 @@
+{
+  "scope": "Offline native-font mask preparation during unchanged process2; no emulator retry",
+  "error": "AssertionError: source atlas index3 was incorrectly rejected",
+  "cause": "Native font PNG uses white box/background index3; source lookup offsets treat index3 as background",
+  "correction_pending": "Verify native lookup then prepare separate post-capture checker mapping3 to background; retain frozen checker and gameplay identities unchanged"
+}

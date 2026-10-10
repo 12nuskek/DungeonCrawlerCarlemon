@@ -1,3 +1,480 @@
+## Current C01 conservation policy — opening5 explicitly authorized; preparation
+
+Independent review accepts037bc3cbcfaed70fb0979a88dae47c9383c7cf0c. One focused
+separately named opening5 and conditional cold1 after actual manual Save/full14
+sectors/live-disk success authorized. Current actual openingclaims/processes4/4,
+cold0/0; STOP82/90/104/101 preserved. New policy validates/logs both actual foe
+presence bits: Carl21/both,15/Guard,12/Scuttler; Donut12 only with Scuttler; native
+no-foe resolution allowed. Simultaneous-critical risk remains explicit. Carl
+STRIKE/target and Donut SPARK→WEAKEN otherwise unchanged; all state/resource/
+readiness/transaction/ownership/party/checksum/first-incapacity/failure STOPs strict.
+New contract docs/floor1/c01-conserve-medicine-opening5-r1-contract.md. Complete
+fresh full policy/integration/transaction/production/hash-gate checks and publish
+exact tested source before freeze/claim. Output only
+/workspace/scratch/c01-conserve-medicine-opening5-r1-20261010. Re-measure unchanged
+full10000408128B reservation/headroom before preparation and admission; stop if
+it no longer fits. No ceiling reduction/deletion/compression/upload assumption.
+No game ROM/damage/AI/critical/resources/cadence/art changes, Howler/Warden/prep/
+stairs/RNG search/injection/retry/merge. Exactly one ordinary NewGame/note/supply/
+guide/trial/Scrap/guide/Guard/guide/manualSave at QuietLanding35,1(4,5), cold only
+on actual gates. Return clean actual-evidence checkpoint on draftPR117. Main/69
+otherheads/issue116/plan/history preserved; full opening/oracle/legacy/human/full
+floor acceptance remain open. Earlier checkpoint bodies preserve historical scope.
+
+## Current C01 opening4 retained review — one proposal; gameplay CLOSED
+
+Review starts at clean4cff72680be2256fd35531eb4ed2a643fb45da1e. No added game,
+freeze, claim, Save, cold process or ROM change. STOP101 at native27144 remains
+terminal; C01 opening4/4,cold0/0. Retained trace reconstructs four completed Guard
+turns and two full-state/native Potion closures PASS. Both heals restored17 of40
+nominal HP, wasted23 and displaced two WEAKEN turns. Per-frame CPU/callback/task/
+heap cuts were not retained; specific transient validator cuts remain offline-only.
+Terminal source branch: Carl STRIKE minimum5 KOs Guard3; native order23/15/13/12,
+81XP raises Carl9→10, max/currentHP+3 and Defense15→17 before Scuttler. Even both
+critical ceilings yield22−15+3−9=1HP for that one turn; no remaining-fight proof.
+Exactly one later-review proposal: medicine conservation with declared one-critical
+plus ordinary envelope Carl21/both,15/Guard,12/Scuttler; Donut12 with Scuttler.
+Simultaneous-critical risk explicit; no changed-input RNG prediction, resources,
+test-only waiver, new game change or retries. Existing state/resource/incapacity/
+first-failure gates remain strict. No implementation/execution authority added.
+Report/acceptance cases docs/evidence/floor1/c01/opening4-retained-policy-review-r1-20261010/README.md.
+Original manifest102entries/3190319959B freshly rehashed exact; local retention
+verified, independent backup unverified. Library5+1 failure history/zero original
+bytes preserved/no retry. Main/all69 other heads/issue116/engine/acceptedplan/history
+unchanged; draftPR117/unmerged. Oracle/legacy/C01/G02/prepared/human/fullfloor remain
+open. Next independent read-only strategy review before a separately authorized
+contract. Earlier checkpoint bodies below preserve their historical scopes.
+
+## Current C01 opening4 — STOP101 at native27,144; terminal/no retry
+
+Runtime tested/published helperff6f5180fdeca60380b782da61998cb1fe77ff87, wiring tested
+fd24d3e76e370a9ab2c15bab0fbededba0ea2391; reviewed transaction32a25769c5427656a010287bed6cf03c5f62b45c.
+One atomic claim/process consumed; cumulativeopening4/4,cold0/0. Guardturn4: Carl22,
+Donut18, Guard3, Scuttler18, Potion0, CarlSTRIKEPP4. Fixed thresholdCarl27 requires
+Potion with no stock ->101. Both alive, no Guardwin/manualSave/cold; blankflash
+unchanged. STOPterminal, no retry/timing tweak/waiver. Both actual native Potion
+closures pass complete-state/fresh-A/native-return audits: Carl22->33 gain11/waste9,
+Carl27->33 gain6/waste14, stock2->1->0. Boot/note/supply/guide/trial/Scrap/guide pass.
+Exact actual results docs/evidence/floor1/c01/guard-choice-opening4-r3-20261010/README.md.
+All27144 rawframes/14chunks/3126988800B+indices/traces/CPU/snapshot retained;
+17PNGs indexed-pixel exact, all-frame native-fps MP43127031B published. No raw
+private evidence/ROM/Save published, compression/deletion/upload or backup.
+Historical98entry/31gzip preservation hashes/receipts exact, Library5+1 failures
+unknowncause/zerooriginalbytes/no retry, independentbackup unverified. OldSTOP82/90/
+104,V016/4 STOP117visual8536beforeB8402,later1/1,ordinary5,C01aactual5/3/1 claims6/3/1
+preserved. Main/all69otherheads/issue116/engine/plan untouched; draftPR117/unmerged.
+Scoped authority exhausted by terminal opening; cold conditional unadmitted.
+Next read-only review of failed fixed-policy sequence; any later run requires
+separate reviewed contract/explicit continuation. All later gates remain open.
+Earlier bodies below are historical for their scopes.
+
+## Current C01 Guard-choice opening4 — explicitly authorized after review
+
+Independent review accepts tested32a25769c5427656a010287bed6cf03c5f62b45c / published
+fd73289ae75dcbb61b3fb2fbb576cdc605e53361. Exactly one separately frozen Guard-only
+opening4, one cold conditional on actual manual Save/full live-disk/all14sectors.
+New named launcher/contract bind exact reviewed observer/helper/ELF/library/proof/
+routes; old CLOSED gate/37negatives stay unchanged. Output only
+/workspace/scratch/c01-guard-choice-opening4-r3-20261010. Currentopeningclaims/processes
+3/3,cold0/0, STOP82/90/104 preserved; no claim/freeze/runtime yet. Publish and verify
+new wiring negatives and fresh full10000408128B reservation before claim. Same
+72000/36000/medicine3600/cold6000/600seconds/12-frame cadence/thresholds. Ordinary
+NewGame/note/twoPotions/guide/offensiveTrial/earnedScrap/guide/Guard/guide/manualSave
+QuietLanding35,1(4,5); no field demo/Howler/Warden/preparation/stairs. Firstfailure
+terminal/no retry or waiver. No engine/balance/rebuild, compression/deletion/upload,
+privatebackup or merge; main/all69otherheads/issue116/history preserved. Contract
+docs/floor1/c01-guard-choice-opening4-r3-contract.md authoritative for this scope.
+Return clean actual-evidence checkpoint before another increment. Earlier bodies
+below remain historical; earlier CLOSED state superseded only for this named scope.
+
+## Current C01 r3 final offline checks PASS; gameplay CLOSED
+
+Clean source32a25769c5427656a010287bed6cf03c5f62b45c; start3270cdb0819fd29cc06cf9716e027911db75511f;
+main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. Concrete review bounds finding
+corrected: validate whole memcpy caller frame before saved SP/SP+4 reads; old
+validator reproducer fails forbidden-read fixture, corrected10negatives pass.
+Retained WAITSP03007e24 still accepted normal/freshIRQ pre-copy/post-cleanup.
+Fullaggregate+productioncompile and37closed-gate/hash negatives PASS; executable
+never invoked.24180 positives/116756 negatives/32970 transaction-byte cases,
+all22outer offsets/2140checks/60completions incl40skipped observations;74124policy
+vectors/65760HP-WAITbyte cases/inherited phase-resource and30synthetic Save/cold
+fixtures pass. No actual emulator/Save/cold/freeze/claim; preparation CLOSED.
+Independent review PENDING; no runtime acceptance. Exactsource/observer/ELF/library/
+proof/receipt hashes docs/evidence/floor1/c01/medicine-transaction-admission-r3-20261010/results.json.
+98preservedentries/31gzip rehashed exact; original frame-pass receipts valid;
+no representation change/compression/deletion/upload, local128MiBbound retained,
+independentbackup unverified, Library5+1 unknowncause/zerooriginalbytes unchanged.
+C01opening3/3,cold0/0 STOP82/90/104;V016/4 STOP117visual8536beforeB8402,later1/1,
+ordinary5,C01aactual5/3/1 claims6/3/1 unchanged. Main/all69otherheads/issue116,
+acceptednine-district plan and all open later gates preserved; draftPR117/unmerged.
+Next independent read-only review; separately reviewed contract/authorization
+required before any later runtime. Yield cleanly. Earlier bodies below historical.
+
+## Current C01 r3 outer-function correction — split PASS; checkpoint/idle
+
+Executor healthy2026-10-10 15:59:38UTC; latest inert command exit0, no activecommand.
+Startfd827ad64309e99c26866ec2e7b9456d25fccd86, main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae.
+Read-only review's missing outer-Update coverage and first post-Free observation
+restriction corrected. Independent pinned Update/memcpy/Free/FreeInternal decoder:
+2140 directchecks/all22offsets,60completions incl40 no-prior/one-actual-prefix samples,
+both unmerged/coalesced headers, both orders/recipients/8UI+2successive uses PASS.
+Current actual R0/LR/preservedregs/four untouched Free stack slots bind freedbuffer;
+header metadata only, poisonedpayload/forbiddenreads0, exact full600+other3324bytes/
+all6 ordinary complete checksum/reencoding checks. No invented observations.
+Retained native WAITSP03007e24 now admitted by individual bounded stack reads,
+wrong SP/top/return rejected. Latest24180 positive/116746 negatives/32970 snapshot
+byte cases PASS. Earlier fd827ad6 fullaggregate+productionbuild PASS retained;
+latest expandedaggregate/production/gatenegatives and independent review OPEN.
+Gatefixtures written/unexecuted; preparation unconditionally CLOSED/no execution
+path. User requested checkpoint/idle; no runtimefreeze/claim/emulator/Save/cold.
+Evidence docs/evidence/floor1/c01/medicine-transaction-offsets-r3-20261010/README.md.
+Oldr2/engine/policy/cadence/routes unchanged; old/revised proofs/diagnostics retained
+separately.98 preserved entries/218729208B incl31gzip/216182152B rehashed exact,
+both original frame-pass receipt hashes valid; no decompression/preservation/
+compression/deletion/upload. Private128MiBcap; independentbackup unverified;
+Library5+1 unknowncause/zerooriginalbytes unchanged. Fullreservation10000408128B.
+C01opening3/3,cold0/0,STOP82/90/104;V016/4 STOP117 visual8536 beforeB8402,later1/1,
+ordinary5,C01aactual5/3/1/claims6/3/1 unchanged. Main/all69otherheads/issue116 remain;
+draftPR117/unmerged. Acceptednine-district plan and oracle/legacy/C01/G02/prepared/
+human/full-floor gates unchanged. Next only on explicit continuation:latest full
+aggregate/productionbuild/gate negatives then independentreview; no gameplay.
+Earlier bodies below remain historical authorities for their scopes.
+
+## Current C01 medicine transaction r3 — split PASS; checkpoint/idle
+
+User requested checkpoint after environment recovery. Executor healthy2026-10-10
+15:18:43UTC; extended inert command exit0; no active process. Startdee9076184cedebc72aedc0ae01ac79bd4de0a57, main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae.
+Separate r3 validator/proof/generator/inert fixtures/closed wrapper; historicalr2,
+engine/policy/routes/cadence/recordings unchanged. Latest19700 normal/IRQ checks,
+107446 negatives,32970 snapshot-byte/metadata mutations,26 word prefixes ×6 records,
+both orders/recipients/8UI+2successive uses PASS. Source-bound PC/call stack/task/
+callback/allocation/regs/NZCV/source-buffer/full600bytes; all other snapshot bytes
+exact, ordinary complete-record checks retained. No extra transaction advances.
+Earlier candidate full aggregate PASS; latest expanded aggregate/production
+observer/gate negatives and independent review remain OPEN. Identical-word images
+cannot prove invisible write history; unknown nested IRQ/helper cuts fail closed.
+Preparation CLOSED; r3 has no runtime execution path; no freeze/claim/emulator/
+Save/cold/compression/upload. Current source is candidate, not runtime acceptance.
+Evidence docs/evidence/floor1/c01/medicine-transaction-r3-20261010/README.md.
+Private root/workspace/scratch/c01-medicine-transaction-offline-r3-20261010 preserved,
+128MiB cap. Original RGB manifesta7aef855…e55b7/receipts/31gzip present; independent
+backup unverified, Library5+1 unknowncause/zero originalbytes/no retry unchanged.
+C01 opening3/3,cold0/0 andSTOP82/90/104;V016/4 STOP117 visual8536 beforeB8402,
+later1/1,ordinary5,C01aactual5/3/1/claims6/3/1 unchanged. Main/all69otherheads/
+issue116 preserved;draftPR117/unmerged. Originaloracle/legacy/C01/G02/prepared/
+human/full-floor gates and accepted nine-district plan unchanged. Next only on
+explicit continuation:finish current offline aggregate/gate negatives, verify
+bound artifacts,independent review;no gameplay. Return idle now. Earlier bodies
+below remain historical authorities for their scopes.
+
+## Current C01 RGB preservation — two full passes; native sampling blocked
+
+Continuation from704e5950760551f53be5453515b39914187def42; sole writer/draftPR117,
+no merge. Separately frozen local operation under Kurt's2026-10-10 13:28:29UTC
+approval; tested/frozen toolinge5073a511b62041f4356932c7fcc3c355cc3ff76, base/main
+b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. Original STOP90 opening2 andSTOP104
+opening3 reconciled:16+15chunks,31258+28707=59965frames,6907968000 raw bytes;
+all original chunk/index hashes matched historical manifests before execution.
+Contractca0bfd555ee52349c9a470222c62639283dc01af7b34c410902f34fd95f27975.
+Fixed locally availableGNUgzip1.13 -6 -n only;31 compressed chunks216182152 bytes.
+BOTH complete streaming passes (Pythonzlib; separate coldprocess GNUgzip) compare
+EVERY decoded frame to retained originals/frozen frame hashes, check all chunk
+hashes/counts/dimensions/order/exact EOF; no second full decoded copy. Only AFTER
+both complete receipts and cap/protected-identity/savings admission replaced
+exactly31 redundant raw files.139 other evidence files unchanged; native indexes/
+timing/chunk boundaries retained. Old manifests/receipts/failures are untouched;
+separate new mapping supplies equivalent local access to historical raw paths.
+Public docs/evidence/floor1/c01/rgb-preservation-r1-20261010/README.md and source
+contract docs/floor1/c01-rgb-preservation-r1-contract.md. Private outputroot
+/workspace/scratch/c01-rgb-preservation-r1-20261010 includesgzip chunks/frame
+ledgers/mapping/full receipts/DECODING.txt.98 indexed entries218729208B verified;
+manifest a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7.
+Logical output218744315/allocated218992640; inclusive353210368 with128MiB audit
+reserve, below3758096384 cap. Offline36 cases pass; one invalid synthetic
+corruption fixture diagnosed/retained/corrected before freeze. Actualpreservation
+operations1/failures0/retries0. No codec search/install/upload/lossy substitution.
+Measuredfree13808525312 covers full10000408128 reservation (including268435456
+headroom), surplus3808117184; fresh publication readback/measurement required.
+Storage capacity is available, native sampling UNADMITTED: medicine preparation
+remains closed pending reviewed narrow PC/task/full source-byte transaction
+correction OR compiled exclusion proof. No game/observer/policy changes/rebuild/
+emulator/new Save/cold/captures/runtimefreeze/claim/process; opening3/3,cold0/0.
+Local preservation is NOT independently verified backup; Library uploads not
+approved/exhausted5+1 unknowncause/zero originalbytes unchanged. All historical
+STOPs/counts/archives, main/all69 otherheads/issue116 remain; no merge/extra writer/
+schedule. V016/4 STOP117 visual8536 beforeB8402,later accepted1/1,ordinary5,
+C01aactual5/3/1 andclaims6/3/1 unchanged. Originaloracle/legacy/C01/G02/prepared/
+human/full-floor open; accepted nine-district plan unchanged. Earlier bodies
+remain historical evidence; their raw representations are now mapped losslessly.
+
+## Current C01 native sampling audit — offline PASS; runtime unadmitted
+
+Independent offline continuation from66a07ff6ccd77f2f4a4c2889364c657bfae45cd1;
+sole writer/draftPR117/no merge. Retained ELF/libmGBA instructions and measured
+host layout prove frame returns do not enforce game callback completion. Five
+source-native split sequences remain eligible by API; actual frozen-route cuts
+are NOT proven. Printer-created/old-restored func, inactive-printer/live wait-task,
+active-fade/old-close func, wordwise party copies and exit-CB2/before-cleanup
+covered by1280 independent fixtures:628 unchanged byte states accepted;468
+source permutation states rejected106,152 torn actor states rejected82 and32
+other source intermediate states rejected107. Full existing aggregate PASS,
+including one freshA WAIT/per-use reset/ownership/HP/PP/inventory/all negatives
+and limits; original aggregate artifact/dependency hashes verified after isolated
+split fixtures. Native medicine/host/state/ABI/inert/policy/routes unchanged.
+No guard weakening/party masks/checksum bypass/PC-only exception. New wrapper
+preparation gate fails before any freeze: native_sampling_admitted=false.
+Static actual-binary/API proof and synthetic fixtures only; no native runtime
+acceptance, new actual Save/cold/screenshot/motion or game rebuild. Observer
+56c5f719/0a9ed4fb,game4a92a9de/tree0fedd142,ROM79a0ed76/ELF7895d09e and exact
+tools/manifests unchanged; recovered compiler differs from historical originals.
+Base/mainb51e27d9. Full reservation10000408128; measuredfree7119978496,
+shortfall2880429632. No runtime freeze/output/claim/process; opening3/3,cold0/0.
+All old artifacts/STOPs/history/counts preserved. New157 private audit entries/
+9763076 bytes readback verified locally,manifest07c50d58f0fefd8c903ec749b0f9ad5a45d98b2b48892b286bec3270f74a69e4.
+Independent backup remains unverified; Library uploads not approved/exhausted5+1
+unknowncause/zero originalbytes unchanged. Kurt's2026-10-10 13:28:29UTC approval
+is for NEXT separately frozen local lossless preservation of TWO recordings'
+RGB copies, every decoded frame verified before replacement. No compression/
+deletion/consolidation/upload performed here. Finish/review audit first; then
+separately freeze that preservation operation. Gameplay additionally requires
+reviewed narrowly bound PC/task/full source-byte transaction admission OR valid
+observation exclusion proof plus full storage. Capacity alone cannot admit run.
+Evidence docs/evidence/floor1/c01/medicine-sampling-audit-r1-20261010/README.md.
+No issue116/merge/extra writer/schedule. V016/4 STOP117 visual8536 beforeB8402,
+later accepted1/1,ordinary5,C01aactual5/3/1 andclaims6/3/1,STOP82/90/104 and
+all69 otherheads preserved. Originaloracle/legacy/C01/G02/prepared/human/full-floor
+remain open; accepted nine-district plan unchanged. Earlier bodies are preserved
+historical evidence; their grouped offline PASS does not admit native sampling.
+
+## Current C01 acknowledgement r2 — offline PASS; storage blocked
+
+Review continuation from2e2ed115e737d2556c8802bce90d2afa19e35707; sole writer,
+draftPR117/no merge. New separately named r2 helper/nativeABI/state audit/tests/
+contract; oldr1 helper/freeze/STOP104/raw/captures/MP4 untouched. One freshA only
+at native WAIT with running party callback, close-text+print-wait tasks, no fade,
+exact Donut-owned healed state and keys released. Observe printer completion/
+task destruction, party fade/reorder and full exit/setup/reshow chain before
+existing exact BattleMain return. Latch resets EACH recipient confirmation;
+stateful TWO successive uses/source2→1→0 holes/Scrap positions pass. No policy/
+strategy/inventory normalization/assertion waiver/bound/engine/balance/rebuild.
+Final offlinePASS:74124 policy vectors,8+2 lifecycle uses,65760 snapshot byte
+corruptions,210 readiness/lifecycle negatives,10 premature/10 duplicate no-input,
+11 acknowledgement receipt negatives,49 nativeABI values/90 ELF bindings,
+10 phases/60 endpoint/412 unused-slot/265 walk/10 map/30 rekey/30 Save-cold,
+11 terminal-driver/5 executable negatives;11734 engine entries/exact tools and
+unchanged ROM/ELF checked. Native TextFlags sizeof4/autoScroll04000000 measured.
+Game4a92a9de/engine0fedd142/main-baseb51e27d9 unchanged; recovered compiler differs
+from historical binary. No new runtime acceptance or actual Save/cold/captures.
+Full unchanged reservation10000408128 bytes; measuredfree7130599424, shortage
+2869808704. Prior10512089088 free preceded3381107256 retained bytes.
+No runtime freeze/output/claim/process; C01 opening3/3,cold0/0 unchanged. All222
+indexed retained entries/3381107256 bytes rehashed unchanged locally; independent
+backup unapproved/unverified,no upload. No deletion/compression/transfer savings,
+ceiling reductions, optionalFFV1, Library retry/issue116/extra writer/schedule.
+Next dependency:additional free execution capacity at least measured shortage
+while retaining all files, plus review; freshly admit identities/full storage
+before separately frozen opening+conditionalactualSavecold. Firstfailureterminal.
+Evidence docs/evidence/floor1/c01/guard-choice-ack-r2-20261010/README.md;
+source specification docs/floor1/c01-guard-choice-r2-contract.md is not runtimefreeze.
+V016/4 STOP117 visual8536 beforeB8402, accepted1/1, ordinary5,C01a5/3/1 actual/
+6/3/1 claims, Library5+1 unknowncause/zero originalbytes and old STOPs/archives/
+allbranches preserved. Originaloracle/legacy/C01/G02/prepared/human/full-floor
+remain open; accepted nine-district Floor1 plan unchanged. Earlier bodies
+remain historical authorities for their scope.
+
+## Current C01 Guard choice r1 — terminal STOP104; cold blocked
+
+Source/offline-tested/pushed-before-runtime4418015741dde07d987cd3216bca961ad4033378,
+startce7d2c43,main/baseb51e27d9,game4a92a9de/engine0fedd142 unchanged,zero rebuilds.
+Exact final offline/ABI32/ELF82/executable/build/tools/storage admitted and frozen;
+one opening claim/process,cumulative C01 opening3/3,cold0/0. Native28707,Guard
+turn2,STOP104 medicine3600-frame bound. Donut-owned earned Potion onCarl22→33,
+11 restored/9 wasted,2→1; full heal-boundary state/CarlSTRIKE355/noDonutPPcost
+pass. Native restoration text ends PAUSE_UNTIL_PRESS; frozen stage5 sentzero
+keys and offline closure mocks skipped acknowledgement. This is an admission/
+controller gap,not balance defeat/incapacitation. Helper/source unchanged,no retry.
+Guard outcome0 unresolved;seven phases through posttrial guide passed,Guide-after-
+Guard/manualSave/actual14-sector disk/cold not reached; actualflash allFF.
+Terminal9/9 XP495/805 HP33/23 clear,uses6/40/0/40,friendship75/75,counter72,
+money3320,Potion1,Scrap2,map35,0(37,31) facing1. All6 checksum/reencoding/unused400
+valid;full3324 healed/terminal snapshots byte-equal. Read-only CPU96B retained.
+28707 raw frames3307046400B/14 exact native PNGs/complete3189536B lossy MP4,
+no FFV1/second lossless container. Entire local retention readback verified;
+independent backup unapproved/unverified,no upload. Actual evidence at
+ docs/evidence/floor1/c01/guard-choice-r1-20261010/README.md. Observer exited.
+Next dependency:review STOP104 and separately admitted native text acknowledgement
+with printer-task closure mocks before another process;no balance/full-opening
+continuation. DraftPR117 review only,no merge/issue116/Library retry/second writer/
+schedule. Allold STOPs/claims/raw/incomplete FFV1/completeMP4 and69 otherheads
+preserved;V016/4 STOP117 visual8536 beforeB8402,accepted1/1,ordinary5,C01a5/3/1
+processes/6/3/1 claims,Library5+1 unknowncause/zero originalbytes unchanged.
+OriginalCarl-heals proposal superseded body intact;old4HP demonstration preserved.
+Originaloracle/legacy/human/C01/G02/full-floor gates open;accepted plan unchanged.
+Earlier bodies remain historical authorities for their scope.
+
+## Current C01 Guard choice r1 — final source admission PASS; runtime next
+
+Continue from ce7d2c43604488cab3446182a355c5425872cbeb with one revised
+Donut-heals Guard experiment before balance tuning. Distinct helper/model/route/
+contract/output, no engine change or rebuild. Carl retains STRIKE/normal target;
+Donut Bag/Potion targets the single threatened living actor, thresholds Carl27
+while GUARD lives/12 after KO, Donut12. Terminal both-risk/empty/cap-insufficient/
+first-incap/depleted-Carl guards; native medicine owner/callback/fade/order/full
+state/one-heal/one-consumption/PP/return and exact2→1/1→0 holes/compaction required.
+Original Carl-heals proposal is preserved as superseded history. New route omits
+redundant preguide field Potion demo; its old4HP evidence is unchanged.
+NewGame/note/supply/guide/offensive trial/earned Scrap/guide/Guard/guide/manual
+Save at Quiet Landing35,1(4,5) only, then conditional actual-Save-bound cold.
+Final full offline PASS:74124 policy vectors,8 native medicine UI cases/26304
+byte corruptions,10 phases/60 endpoint negatives/412 empty-slot cases/265 walking
+transitions/10 map lifecycles/30 rekeys/30 Save-cold cases,32-value ABI/82 ELF
+bindings/11 terminal-driver mocks/5 executable negatives;11734 retained source
+entries and exact unchanged ROM/ELF/tool files verified. Committed/pushed source
+must precede exactly one claim/process.72,000 global/36,000 each encounter;
+full raw RGB authority, bounded MP4, no FFV1/second lossless container. Exact
+reservation10,000,408,128 bytes including conditional cold/headroom, no savings
+assumption. Before execution opening2/2, cold0/0; count3 only if started. First
+runtime failure terminal/no retry/retime/RNG search/full-opening continuation.
+No merge/issue116/private upload/Library retry/second writer/schedule. DraftPR117
+review only; engine/game4a92a9de and main/baseb51e27d9 unchanged. OriginalV016/4
+STOP117 visual8536 beforeB8402, later accepted1/1, ordinary5, C01a5/3/1 processes
+and6/3/1 claims, both prior C01 STOPs/raw/incomplete FFV1/complete MP4/all branches
+preserved. Backup unapproved/unverified; Library5+1 unknown cause/zero original
+bytes. Original oracle/legacy inputs/C01/G02/human/full-floor gates open;
+accepted nine-district plan unchanged. Contract docs/floor1/c01-guard-choice-r1-contract.md.
+Earlier bodies remain historical authorities for their scope.
+
+## Current C01 r2 — retained Guard analysis only; new evaluation proposed
+
+Read-only continuation from56565c1ffdf24e025fe9d86d51e72fa9306149c4. Runtime
+helper978cbf03/game4a92a9de/engine0fedd142 unchanged, no rebuild or new claim/process.
+15382 TURN_METRIC rows cross-checked against17784 retained battle packets; five
+trial/six Guard turns,40 moves/34 HP-removal events/12 support effects/15 Tackle
+hits within source bounds/two misses/two criticals. Four transient checksum-invalid
+actor reads during native updates excluded from XP reporting, not new corruption
+or weakened assertion. Full pre-Guard recovery confirmed; one Potion unused;
+prior field demonstration consumed one for4HP immediately before free recovery.
+Guard15-damage critical takesCarl22→7; terminal8-damage critical removes remaining4.
+At terminal native stages even ordinary Tackle3–4 could KO Carl4. STOP90 unresolved
+remains terminal. Source supports BRACE/WEAKEN normal mitigation, critical bypass.
+Recommend separately admitted earned-Potion reachable-turn-risk player-choice evaluation
+before balance changes; battle Bag/target/heal readiness not admitted by field demo.
+Proposal docs/floor1/c01-guard-player-choice-proposal.md is review-only, no policy
+execution. Scoped processed findings/turn table/export plan at
+ docs/evidence/floor1/c01/retained-guard-analysis-20261010/README.md.
+FFV1 exact480MiB cap/nonzero exit retained; exact signal/encoded frame unknown. No
+export retry/full lossless clip claim. Proposed sequential1000-frame/256MiB-cap
+slots reserve8858370048 additional bytes for31258 frames, no compression assumption
+or codec completion guarantee; all raw retained. Future100000-frame combined plan
+exceeds current filesystem; capacity/admission must precede any separate operation.
+C01 opening2/2, cold0/0, prepared unlaunched; all historical counts/STOPs/claims/
+contracts/build/raw/partial FFV1/MP4/receipts/other branches preserved. Draft PR117
+review only/no merge/issue116/private upload/Library retry/extra writer/schedule.
+Private backup unapproved/unverified. Accepted plan and C01/G02/legacy/oracle/human/
+full-floor gates unchanged. Earlier bodies remain historical for their scope.
+
+## Current C01 r2 — terminal Guard STOP90; cold blocked
+
+Source/tested helper978cbf03907c38ef24fb4008bfed04e1c69daea5 was committed/pushed
+before opening2; increment start605f6477, main/baseb51e27d9, game4a92a9de/engine
+0fedd142f43f136ceee189c54101b095fc88f495 unchanged, zero rebuilds. Final aggregate
+PASS and actual source/tool/observer/ABI20/ELF72/routes/storage freeze verified.
+R2 opening1/1 process/claim; cumulative C01 opening2/2; cold0/0, unadmitted.
+STOP90 at absolute31258, Guard856 turn5: native Tackle critical2/damage8 takes
+Carl4→0, Donut16. All6 checksums/reencoding valid, unused400 exact, Pokerus0;
+supported native first-incapacitation, battle unresolved, not corruption/defeat
+resolution or unsupported Pokerus. Eight phases through posttrial guide passed;
+Howler/Warden/stairs/manual Save/disk14-sector/cold not reached. Save allFF.
+Source/strategy/cadence/route/balance unchanged; first failure terminal, no retry.
+Read-only CPU context96B retained (r0–r15/CPSR valid, SPSR unavailable).31258 native
+RGB frames/12 exact PNGs, complete lossy MP4 retained. FFV1 export failed480MiB cap;
+incomplete artifact retained/no retry/no actual full FFV1 roundtrip claim.
+Complete local manifest readback verified;35 r1 private files rehashed unchanged.
+Actual sanitized verdict/captures at
+ docs/evidence/floor1/c01/uninterrupted-unprepared-r2-20261010/README.md.
+Draft PR117 review only, no merge; CI absent. Next dependency is review of actual
+Guard critical/incapacitation and export limitation; another process requires a
+separately authorized reviewed contract. No source correction after failure.
+Old C01a5/3/1=9 and claims6/3/1=10; V016/4 STOP117 visual8536 beforeB8402,
+separate accepted1/1, ordinary5, Library5+1 unknown cause/zero original bytes and
+all old evidence/branches/history preserved. Private backup unapproved/unverified;
+no Library/private upload/issue116/public raw payload. Accepted plan/engine unchanged;
+C01/G02/original oracle/legacy/human/full-floor gates open. Earlier bodies historical.
+
+## Current C01 r2 — authorized native empty-party repair and one new opening
+
+Independent review authorizes continuation from605f64777807ad8724500470e450d12b5cdab306
+on draft PR117. Correct both validators to exact100-byte native empty Pokemon:
+only mail85=MAIL_NONE0xFF, bound through compile-only sizeof/offsetof/constant ABI.
+Keep all six checksums/reencoding/unused400 bytes exact and pre-Save count0/zero600
+separate. Full source-derived18-phase, counters/TEMP_1/resources/Save/disk/cold
+admission and retained frame1538 offline checks required; prior24 were battle-only.
+Final aggregate PASS (288 decisions/24 battle checks/18 full phases/412 slot negatives/
+108 endpoint negatives/273 walks/19 map lifecycles/54 rekeys/30 Save-cold cases,20-value
+ABI/72 ELF bindings/11 bounded-driver CPU-context mocks/5 executable negatives).
+Checkpoint publication precedes one r2 opening in separately named
+output; conditional cold1 only after actual complete opening/native Save/14-sector
+full equivalence. No success-only approval pause; diagnosed ordinary offline errors
+may be corrected and retained. First unexpected runtime failure terminal, no retry.
+New wrapper scripts/test-f1-c01-uninterrupted-r2.py; contract
+ docs/floor1/c01-uninterrupted-unprepared-r2-contract.md. No game/rebuild/strategy/
+cadence/route/bounds change. Save intermediate buffer equality is exempt only in
+CO_SAVE; endpoint/disk/cold enforce equality. Callback identity does not prove
+native setter/healing frame atomicity. Retain first-failure state/CPU context;
+Pokerus acquisition/spread/later EV changes stay strictly unsupported native state,
+not corruption/defeat or RNG-search authority. Pickup excluded by ABILITY_NONE.
+R1 opening1 STOP82/freeze/claim/blank Save/captures stay immutable. Opening2 is
+counted only if launched; no r2 claim/process yet at this source preparation.
+Preserve all other histories/counts/branches/private artifacts. No merge, issue116,
+Library/private upload, extra writer/schedule/platform change. Backup unapproved/
+unverified; engine/accepted nine-district plan/C01/G02/legacy/human/full-floor unchanged.
+Earlier bodies below are historical authorities for their scope.
+
+## Current C01 opening — terminal STOP82; cold blocked
+
+Draft PR117 source checkpoint/tested helper c3db41b2c9a3e25220ee13b5531d83f0bf11ef19
+was committed/pushed before the sole native opening. Base/main b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae;
+compiled game4a92a9de, engine0fedd142f43f136ceee189c54101b095fc88f495 reused and
+verified, zero rebuilds. Frozen observer stopped82 at absolute native frame1538,
+BOOT, encounters0. Six decoded checksums/reencoding valid; unused slots contain
+native MAIL_NONE=0xFF at offset85, conflicting with frozen all-zero100-byte unused
+slot assertion. Offline mock empty-slot fixture missed that native representation.
+Read-only diagnosis only: assertion/controller/contract untouched, no retry.
+Opening processes/claims1/1; cold0/0, unadmitted; no encounter/manual Save/disk
+sector validation/cold acceptance. Native Save remains allFF. No observer running.
+Actual1538-frame motion and failure/title/menu PNGs retained; full FFV1 RGB
+roundtrip and complete local manifest readback verified. Selected actual captures
+and sanitized result at docs/evidence/floor1/c01/uninterrupted-unprepared-r1-20261010/.
+Draft PR117 remains for review, no merge. Hosted checks absent, not passing.
+Next dependency is review of this source/native unused-slot mismatch; source
+correction/new contract/another process require separate authorization.
+C01a actual5/3/1=9, consumed6/3/1=10; original V016/4 STOP117 visual8536 beforeB8402,
+later accepted1/1, ordinary5, Library5+1 unknown cause/zero recovered original bytes
+and historical archives unchanged. Independent backup unverified; private upload
+unapproved/unattempted; no issue116 write. Engine/accepted plan/historical contracts
+unchanged. C01/G02/human/legacy/original oracle/full-floor gates stay open.
+Earlier current bodies below are historical authorities for their scope.
+
+## Current C01 uninterrupted unprepared opening — source offline admission PASS
+
+Same-task continuation after responsive09:33:28UTC executor checkpoint authorizes
+final helper/route/contract admission, committed/published source checkpoint before
+runtime, then one continuous native New Game opening and conditional actual-Save
+cold. Base/mainb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae; game4a92a9de/engine
+0fedd142f43f136ceee189c54101b095fc88f495 reused, no rebuild/engine change.
+New contract docs/floor1/c01-uninterrupted-unprepared-contract.md; distinct18-phase
+host replaces staged imports/exits/old patrol wrapper. Source-phase/full-party/
+resource/native friendship and walking/poison variables, Bag/party/YesNo/Save
+readiness, actual ELF callback aliases, first-failure bounds and lossless2000-frame
+RGB chunks are required. Final inert288/24/14/pixel/native ABI and72 bindings pass. Actual freeze/claims/
+gameplay still gated; source checkpoint must precede execution. First unexpected failure terminal; no retry/RNG search.
+No source changes during a run, merge, prepared run, private upload or issue116 write.
+C01a actual5/3/1=9,consumed6/3/1=10 unchanged; opening/cold count separately.
+OriginalV016/4 STOP117 visual8536 beforeB8402,new accepted1/1,ordinary5 and Library
+5+1/unknown cause/zero original bytes/all archives preserved. Independent backup
+unverified. C01/G02/human/legacy/full-floor and accepted nine-district plan remain
+open/unchanged. Earlier current bodies are historical authorities for their scope.
+
 ## Current C01a accepted integration and next contract
 
 Independent source/evidence and native visual reviews accept PR115 at

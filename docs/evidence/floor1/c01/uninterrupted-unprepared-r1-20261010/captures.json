@@ -1,0 +1,36 @@
+{
+  "tested_helper": "c3db41b2c9a3e25220ee13b5531d83f0bf11ef19",
+  "native_dimensions": [
+    240,
+    160
+  ],
+  "absolute_frames": [
+    1000,
+    1400,
+    1538
+  ],
+  "motion_frames": 1538,
+  "motion_duration_seconds": 25.750282,
+  "native_fps": "16777216/280896",
+  "PNG_pixel_exact": true,
+  "MP4_lossy_review_only": true,
+  "private_FFV1_full_RGB_roundtrip_exact": true,
+  "assets": {
+    "actual-frame-1000.png": {
+      "SHA256": "80e8989fc39add43bbd6370b42a4961abce05b27e5422bddfd7318ca9ac355fb",
+      "bytes": 602
+    },
+    "actual-frame-1400.png": {
+      "SHA256": "e14a1501caf995f06e3a78db2495425b37b3d8601de4402898b14aef0e1e22b1",
+      "bytes": 1416
+    },
+    "first-failure.png": {
+      "SHA256": "47fbde60709a27683035d7b385f06dd1447f68c6548272758e15a335cf3bc15e",
+      "bytes": 192
+    },
+    "actual-opening-review.mp4": {
+      "SHA256": "690e70dc003900f881cf3bb5a0d526e17c4958bb21b8541175b32c51c601aae9",
+      "bytes": 260168
+    }
+  }
+}

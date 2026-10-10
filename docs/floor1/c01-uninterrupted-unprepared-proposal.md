@@ -1,3 +1,8 @@
+**Execution authority update:** the same-task continuation authorizes the separately
+named [final contract](c01-uninterrupted-unprepared-contract.md), committed source
+checkpoint and one admitted opening plus conditional cold. The proposal below
+remains the pre-admission design record. No gameplay occurred at that checkpoint.
+
 # Proposed C01 uninterrupted ordinary unprepared opening/resource evaluation
 
 **Review proposal only: not frozen, compiled or executed.** PR115 Journal

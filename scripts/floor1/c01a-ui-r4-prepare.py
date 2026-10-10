@@ -22,12 +22,17 @@ def prepare():
         root=OUT.parent/revision;assert json.loads((root/'STOP.json').read_text())['exit']==exitcode
         assert sha(root/'private-evidence.tar.gz')==archive
         manifest=json.loads((root/'private-retention-manifest.json').read_text())
-        with tarfile.open(root/'private-evidence.tar.gz','r:gz') as tar:
-            for n,r in manifest.items():
+        seen=set()
+        with tarfile.open(root/'private-evidence.tar.gz','r|gz') as tar:
+            for member in tar:
                 # Verify the completed archive independently, including frozen
                 # source entries whose live paths need not still exist.
-                data=tar.extractfile(n).read();assert len(data)==r['size'] and hashlib.sha256(data).hexdigest()==r['SHA256'],n
+                n=member.name
+                if n not in manifest:continue
+                assert n not in seen and member.isfile();seen.add(n);r=manifest[n]
+                data=tar.extractfile(member).read();assert len(data)==r['size'] and hashlib.sha256(data).hexdigest()==r['SHA256'],n
                 if (root/n).is_file():assert sha(root/n)==r['SHA256'] and (root/n).stat().st_size==r['size'],n
+        assert seen==set(manifest)
         preserved[revision]=dict(exit=exitcode,files=len(manifest),archive_SHA256=archive,manifest_SHA256=sha(root/'private-retention-manifest.json'),STOP_SHA256=sha(root/'STOP.json'),freeze_SHA256=sha(root/'freeze.json'))
     for n,h in old['tool_files'].items():assert sha(n)==h,n
     proofs=['readiness-proof.json','native-edge-layout-proof.json','passivity-compile-proof.json','baseline-bindings-proof.json','candidate-bindings-proof.json']

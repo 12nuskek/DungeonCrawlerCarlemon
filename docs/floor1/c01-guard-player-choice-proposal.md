@@ -1,3 +1,9 @@
+# Superseded Carl-heals proposal — historical review record
+
+The separately authorized Donut-heals experiment is specified in
+[c01-guard-choice-r1-contract.md](c01-guard-choice-r1-contract.md).
+The original proposal below remains unchanged as superseded history.
+
 # Proposed C01 Guard player-choice evaluation — review only
 
 Analysis base `56565c1ffdf24e025fe9d86d51e72fa9306149c4`; actual r2 tested helper

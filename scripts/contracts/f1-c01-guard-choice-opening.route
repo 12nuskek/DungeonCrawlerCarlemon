@@ -1,0 +1,212 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+dialog 6000
+ready
+phase end boot
+step 68 64 -
+step 40 0 -
+expect 35 0 8 34 1
+step 20 16 -
+step 40 0 -
+expect 35 0 9 34 1
+step 1 64 -
+step 40 0 -
+phase begin note
+step 1 1 -
+step 400 0 note.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 9 34 3
+flag 33 1
+flag 36 1
+phase end note
+step 84 16 -
+step 40 0 -
+expect 35 0 14 34 3
+step 1 64 -
+step 40 0 -
+phase begin supply
+step 1 1 -
+step 400 0 supply.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+phase end supply
+flag 38 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply-repeat.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+step 148 16 -
+step 40 0 -
+expect 35 0 23 34 3
+step 84 64 -
+step 40 0 -
+expect 35 0 23 29 3
+step 164 16 -
+step 40 0 -
+expect 35 0 33 29 3
+step 52 64 -
+step 40 0 -
+expect 35 0 33 26 3
+step 68 16 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 3
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 3
+step 1 128 -
+step 40 0 -
+phase begin guide-initial
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-initial
+step 100 16 -
+step 40 0 -
+expect 35 1 10 5 7
+step 36 128 -
+step 40 0 -
+expect 35 1 10 7 7
+step 1 128 -
+step 40 0 -
+phase begin trial
+engage 3600
+step 1200 0 battle-start.ppm
+pilot offensive 36000
+step 600 0 battle-result.ppm
+dialog 6000
+ready
+expect 35 1 10 7 7
+flag 2135 1
+flag 37 1
+phase end trial
+step 36 16 -
+step 40 0 -
+expect 35 1 12 7 7
+step 36 128 -
+step 40 0 -
+expect 35 1 12 9 7
+phase begin scrap
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 scrap-box.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 12 9 7
+phase end scrap
+item 378 2
+item 13 2
+flag 39 1
+step 68 64 -
+step 40 0 -
+expect 35 1 12 5 7
+step 132 32 -
+step 40 0 -
+expect 35 1 4 5 7
+phase begin guide-posttrial
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-posttrial.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+phase end guide-posttrial
+duo healthy
+uses 8 40 2 40
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+phase begin guard
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 guard-start.ppm
+pilot donut-heal 36000
+step 600 0 guard-victory.ppm
+dialog 6000
+ready
+expect 35 0 37 31 7
+flag 2136 1
+phase end guard
+flag 2137 0
+item 378 2
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start guard-out
+step 84 64 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+phase begin guide-guard
+step 1 1 -
+step 400 0 guide-1.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-guard
+duo healthy
+uses 8 40 2 40
+expect 35 1 4 5 7
+phase begin save
+step 1 8 -
+step 120 0 -
+co start 0
+step 1 128 -
+step 20 0 -
+co start 1
+step 1 128 -
+step 20 0 -
+co start 2
+step 1 1 -
+co save-ready
+step 1 1 -
+co save-success
+step 1 0 saved-success.ppm
+step 600 0 -
+ready
+phase end save
+step 1 0 saved.ppm
+quit

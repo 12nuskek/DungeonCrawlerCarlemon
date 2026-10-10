@@ -1,3 +1,35 @@
+## Current C01 Guard choice r1 — final source admission PASS; runtime next
+
+Continue from ce7d2c43604488cab3446182a355c5425872cbeb with one revised
+Donut-heals Guard experiment before balance tuning. Distinct helper/model/route/
+contract/output, no engine change or rebuild. Carl retains STRIKE/normal target;
+Donut Bag/Potion targets the single threatened living actor, thresholds Carl27
+while GUARD lives/12 after KO, Donut12. Terminal both-risk/empty/cap-insufficient/
+first-incap/depleted-Carl guards; native medicine owner/callback/fade/order/full
+state/one-heal/one-consumption/PP/return and exact2→1/1→0 holes/compaction required.
+Original Carl-heals proposal is preserved as superseded history. New route omits
+redundant preguide field Potion demo; its old4HP evidence is unchanged.
+NewGame/note/supply/guide/offensive trial/earned Scrap/guide/Guard/guide/manual
+Save at Quiet Landing35,1(4,5) only, then conditional actual-Save-bound cold.
+Final full offline PASS:74124 policy vectors,8 native medicine UI cases/26304
+byte corruptions,10 phases/60 endpoint negatives/412 empty-slot cases/265 walking
+transitions/10 map lifecycles/30 rekeys/30 Save-cold cases,32-value ABI/82 ELF
+bindings/11 terminal-driver mocks/5 executable negatives;11734 retained source
+entries and exact unchanged ROM/ELF/tool files verified. Committed/pushed source
+must precede exactly one claim/process.72,000 global/36,000 each encounter;
+full raw RGB authority, bounded MP4, no FFV1/second lossless container. Exact
+reservation10,000,408,128 bytes including conditional cold/headroom, no savings
+assumption. Before execution opening2/2, cold0/0; count3 only if started. First
+runtime failure terminal/no retry/retime/RNG search/full-opening continuation.
+No merge/issue116/private upload/Library retry/second writer/schedule. DraftPR117
+review only; engine/game4a92a9de and main/baseb51e27d9 unchanged. OriginalV016/4
+STOP117 visual8536 beforeB8402, later accepted1/1, ordinary5, C01a5/3/1 processes
+and6/3/1 claims, both prior C01 STOPs/raw/incomplete FFV1/complete MP4/all branches
+preserved. Backup unapproved/unverified; Library5+1 unknown cause/zero original
+bytes. Original oracle/legacy inputs/C01/G02/human/full-floor gates open;
+accepted nine-district plan unchanged. Contract docs/floor1/c01-guard-choice-r1-contract.md.
+Earlier bodies remain historical authorities for their scope.
+
 ## Current C01 r2 — retained Guard analysis only; new evaluation proposed
 
 Read-only continuation from56565c1ffdf24e025fe9d86d51e72fa9306149c4. Runtime

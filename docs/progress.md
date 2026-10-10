@@ -1,3 +1,27 @@
+## Actual ordinary recovery — fresh Save verified, setup STOP40
+
+Publication base6e4b8d4573c717b12c4da91b17027dec0ec67955;
+preparation sourcefca57ec86ed41122c81dace994201b6dc9fe26bd;
+freeze/execution source9b2cdee62eabb71fe1b82d8975ce009725e004de.
+Parent-approved exact pinned-attribute source correction passes9 cases and11960
+archived engine/helper checks. Observer compiles;51 ELF bindings,22 native ABI
+constants/3 bitfields pass. Reused mainc6d647a8 single verified build; no rebuild.
+Fresh ordinary New Game/trial/manual Save passed54 assertions/19642frames;
+Savef866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281
+passes native checksums/full live-disk persistence. Levels9/9,XP495/805,
+HP17/33,24/28,uses3/40/0/37,two Potions,trial set; patrols pending.
+Setup actual Bag/party/healed readiness passed but item assertion before
+return-field hit field-only STOP40 at3040,13assertions. No setup Save/patrol/
+final full cold/retry. Two ordinary emulator processes,one trial encounter,
+zero patrol/cold, separately counted from historicalsix baseline/four candidate.
+[Exact actual evidence, captures and next review](evidence/floor1/ordinary-recovery-20261009/runtime-r5/README.md).
+Private FFV1 decoding matches RGB exactly; public compressed presentation MP4s
+preserve frame counts/timing. Local81,609,444-byte private archive/63file entries
+verified; no independent backup/transfer. Library5+1 failures unchanged/no retry.
+Review observation ordering after native return-field, retaining all assertions
+and separately claiming setup from the successful fresh Save. No proposal run.
+No Warden/candidate pair/merge/full-floor claim; prior records follow unchanged.
+
 ## Ordinary main build — preparation STOP before gameplay
 
 Publication base5b1c108557ecdb2704dea94c61aff1fb28845acd;

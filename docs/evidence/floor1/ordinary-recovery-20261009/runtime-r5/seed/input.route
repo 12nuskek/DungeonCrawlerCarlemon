@@ -1,0 +1,112 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+ready
+step 36 16 -
+step 40 0 -
+expect 35 1 12 7 7
+step 36 128 -
+step 40 0 -
+expect 35 1 12 9 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 scrap-box.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 12 9 7
+item 378 2
+item 13 2
+flag 39 1
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+wait-task bag 3600
+step 1 1 -
+step 12 0 -
+wait-task field-context 3600
+step 1 1 -
+step 12 0 -
+wait-task party 3600
+step 1 128 -
+step 40 0 -
+step 1 1 -
+wait-task healed 3600
+step 40 0 field-potion.ppm
+item 13 1
+uses 3 40 0 37
+return-field
+ready
+step 68 64 -
+step 40 0 -
+expect 35 1 12 5 7
+step 132 32 -
+step 40 0 -
+expect 35 1 4 5 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+growth 9 495 0 9 805 0
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+step 1 8 -
+step 120 0 -
+step 1 64 -
+step 20 0 -
+step 1 2 -
+step 120 0 -
+step 1 8 -
+step 120 0 -
+step 1 128 -
+step 20 0 -
+step 1 128 -
+step 20 0 -
+step 1 1 -
+step 160 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 -
+step 1 1 -
+step 600 0 -
+step 40 0 saved.ppm
+ready
+expect 35 0 37 31 7
+expect 35 0 37 31 7
+duo healthy
+uses 8 40 2 40
+levels 9 9
+item 13 1
+item 378 2
+flag 2135 1
+flag 2136 0
+flag 2137 0
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+ordinary-checkpoint seed-saved
+quit

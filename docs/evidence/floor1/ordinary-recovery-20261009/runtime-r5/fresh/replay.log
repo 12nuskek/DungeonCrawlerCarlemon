@@ -1,0 +1,54 @@
+PASS dialog frames=842
+PASS ready
+PASS expect 35 0 8 34 1
+PASS expect 35 0 9 34 1
+PASS dialog frames=902
+PASS ready
+PASS expect 35 0 9 34 3
+PASS flag 33 1
+PASS flag 36 1
+PASS expect 35 0 14 34 3
+PASS dialog frames=2
+PASS ready
+PASS expect 35 0 14 34 3
+PASS item 13 2
+PASS flag 38 1
+PASS dialog frames=2
+PASS ready
+PASS expect 35 0 14 34 3
+PASS item 13 2
+PASS expect 35 0 23 34 3
+PASS expect 35 0 23 29 3
+PASS expect 35 0 33 29 3
+PASS expect 35 0 33 26 3
+PASS expect 35 1 4 3 3
+PASS expect 35 1 4 5 3
+PASS dialog frames=1202
+PASS ready
+PASS expect 35 1 4 5 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS expect 35 1 10 5 7
+PASS expect 35 1 10 7 7
+PASS dialog frames=302
+PASS ready
+PASS expect 35 1 10 7 7
+PASS flag 2135 1
+PASS flag 37 1
+PASS ready
+PASS expect 35 1 10 7 7
+PASS levels 9 9
+PASS growth 9 495 0 9 805 0
+PASS uses 3 40 0 37
+PASS item 13 2
+PASS flag 2136 0
+PASS flag 2137 0
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PASS ordinary checkpoint fresh-saved absolute_frame=19642
+PATROL_CLOCK absolute_frames=19642 valid_samples=0 deferred_samples=0 reentries=0 unarmed_frames=19642 mutation_frames=0 checkpoints=0 battle_frames=8308 battle_attempts=0 stage=0
+result=0 assertions=54

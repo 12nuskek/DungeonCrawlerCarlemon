@@ -1,0 +1,70 @@
+{
+  "fresh": {
+    "lossless_FFV1_decoded_RGB_exact": true,
+    "decoded_RGB_SHA256": "ff18ec6b69b7a799526ddbfc15a5ebeea454b8dd43dc772298299c007f7422ad",
+    "samples": 4910,
+    "presentation_export": {
+      "file": "fresh/motion.mp4",
+      "SHA256": "918cd5dd47a98b4f00fe852058d913e256332123fa544cc3c5f0d2201d1770cb",
+      "size": 994846,
+      "encoding": "H264 CRF18 YUV420p; compressed presentation, not pixel-acceptance oracle",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 240,
+            "height": 160,
+            "r_frame_rate": "23891/1600",
+            "nb_read_frames": "4910"
+          }
+        ],
+        "format": {
+          "duration": "328.826755"
+        }
+      }
+    },
+    "screenshots": {
+      "battle-result.png": "98f4905ac672b248cc49fe4d66c9603dc5278c9d50b5f6c1314af2566833fbd0",
+      "note.png": "3a89c05fa80926ea1d545fceb125490b39726f4ba2dcf21aa6758faf1255eed8",
+      "guide-rest.png": "5d41fbdddcddc4546bd14b14d5c2aaeec55dec1e698cbc3077cc3e10b9cdc442",
+      "supply.png": "926a70d5d772821158e98e8b4bdd5adccde45c699131125456df85eba9618386",
+      "supply-repeat.png": "255d3969110f2b5d75c5b2bd10e5192117c447d8262e8f8984e884da4ca0c6b8",
+      "saved.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1",
+      "cold.png": "b4291884b4dca69b65230bb4ad43f6f58e5818136c121a8af9e8dd417566458d",
+      "battle-start.png": "a7c910413d279da72ca6b9596fd006ba4025c052b1b4a5e0b2bef59638c71ddd"
+    }
+  },
+  "seed": {
+    "lossless_FFV1_decoded_RGB_exact": true,
+    "decoded_RGB_SHA256": "eb5b1c6434c7244d03d9990c7b7d5d529c66dd26380bec81ddad4b1b72d55196",
+    "samples": 760,
+    "presentation_export": {
+      "file": "seed/motion.mp4",
+      "SHA256": "dbe6f886dc43d9394f3936f98fd517b27b7284ad855bbcae6fb3cda1db57330d",
+      "size": 227932,
+      "encoding": "H264 CRF18 YUV420p; compressed presentation, not pixel-acceptance oracle",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 240,
+            "height": 160,
+            "r_frame_rate": "23891/1600",
+            "nb_read_frames": "760"
+          }
+        ],
+        "format": {
+          "duration": "50.897828"
+        }
+      }
+    },
+    "screenshots": {
+      "stop.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "field-potion.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "scrap-box.png": "324de4fe2db108107f42bdcade80edbb810d6a8622ec19b2c5819780001ce48c",
+      "cold.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1"
+    }
+  }
+}

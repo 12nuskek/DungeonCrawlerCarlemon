@@ -1,3 +1,28 @@
+## Current ordinary recovery checkpoint — setup STOP40, no retry
+
+Parent accepted the r4 source-verifier diagnosis. Narrow pinned-attribute fix
+passed9 focused offline cases; new prepare/sourcefca57ec86ed41122c81dace994201b6dc9fe26bd
+verified11960 tracked engine/helper files, compiled one observer,51 bindings,
+22 native ABI constants/3 bitfields. Reused the single main build; no rebuild.
+Freeze/execution source9b2cdee62eabb71fe1b82d8975ce009725e004de.
+Fresh ordinary New Game/trial/manual Save passed54 assertions/19642 frames;
+Savef866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281
+has full native live/disk persistence checked. Setup independently loaded it,
+reached actual healed-party readiness, then STOP40 at3040/13 assertions because
+item13=1 was observed before return-field while native party callback remained
+running. No setup Save, patrol, full final cold or retry; first failure terminal.
+Exact safe reports, claims/logs, PNG/motion and private-retention receipt:
+docs/evidence/floor1/ordinary-recovery-20261009/runtime-r5/README.md.
+
+Next review: move zero-frame item/uses observations after existing return-field
+and ready, retaining both assertions and native field-only gate; separately
+freeze a setup claim from the successful fresh Save. No patch/execution of that
+proposal after STOP. Do not rerun trial or use transient STOP RAM as a Save.
+New ordinary processes2/trial encounters1/patrol0/full-cold0; historicalsix/four
+and STOP117 unchanged. Active poses remain offline-only; PR114 draft/unmerged.
+Verified local private archive is not an independent backup. Library5+1 failed
+transfers unchanged/no retry. Older checkpoint bodies below are historical.
+
 ## Current replacement checkpoint — main built, preparation stopped
 
 The sole replacement writer built integrated main c6d647a815ffce44a2419a2cf83b6c2c094359f0

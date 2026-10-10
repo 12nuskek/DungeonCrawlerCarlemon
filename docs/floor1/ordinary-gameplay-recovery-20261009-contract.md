@@ -1,16 +1,17 @@
 # Ordinary gameplay recovery — replacement workspace contract
 
-Status: focused continuation authorized after parent review of checkpoint
-6e4b8d4573c717b12c4da91b17027dec0ec67955. The narrow source fix derives exact
-archive bytes from each path's pinned-commit text/eol attributes; it never
-normalizes actual inputs. Focused offline cases reject corruption, unmarked EOL
-changes, attribute changes and missing/extra tracked inventory. Ordinary
-diagnosed offline preparation bugs may be fixed/retested while retaining their
-claims/failures; unexpected actual gameplay failure remains terminal.
-The previous r4 source STOP and full diagnosis are untouched. Reuse its single
-successful build; no tool reacquisition or rebuild. New exclusive preparation
-root: /workspace/scratch/ordinary-recovery-r5-20261010/prepare-01. This contract
-is prospective until its complete identity.json is verified and frozen. Historical contracts and executions remain
+Status: **first actual setup gameplay STOP40; dependent work stopped**.
+Parent-approved r5 attribute correction and complete source/observer/ABI/route
+freeze passed. Fresh normal trial/manual Save completed and native full
+persistence verified. Setup reached actual healing readiness, then field-only
+gate rejected item observation before return-field atframe3040. No retry,
+setup Save, patrol or final full cold. [Actual evidence and proposed next review](../evidence/floor1/ordinary-recovery-20261009/runtime-r5/README.md).
+The separately frozen r5 root and claims are exhausted. Read-only diagnosis
+proposes item/uses assertions after the existing return-field/ready, preserving
+all buttons/behavior/assertions. No proposed fix was implemented or executed.
+Review and a separately frozen setup claim from the successful fresh Save are
+required before any dependent gameplay. The prospective sequence below records
+the frozen intent, not permission to resume the failed claim. Historical contracts and executions remain
 unchanged. Kurt authorized the replacement on 9 October 2026 at 23:29 UTC;
 accepted tooling-r3 identities permit this explicitly new ordinary recovery.
 First unexpected failure is terminal; checkpoint before dependent gameplay.

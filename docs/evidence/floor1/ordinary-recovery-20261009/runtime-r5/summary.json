@@ -1,0 +1,73 @@
+[
+  {
+    "execution_source": "9b2cdee62eabb71fe1b82d8975ce009725e004de",
+    "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+    "stage": "fresh",
+    "execution_limit": 1,
+    "identity_SHA256": "e2447f13519b6352f907559c3c57556a2f387ceaf765660503cbcb344125ec05",
+    "input_Save_SHA256": null,
+    "route_SHA256": "0ef39a282e7e38620a4ccfbbbda33dfa8f9d1e31b57d885939ada4e7112421d6",
+    "battles": 1,
+    "exit": 0,
+    "errors_bytes": 0,
+    "output_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+    "captures": {
+      "battle-result.png": "98f4905ac672b248cc49fe4d66c9603dc5278c9d50b5f6c1314af2566833fbd0",
+      "battle-start.png": "a7c910413d279da72ca6b9596fd006ba4025c052b1b4a5e0b2bef59638c71ddd",
+      "cold.png": "b4291884b4dca69b65230bb4ad43f6f58e5818136c121a8af9e8dd417566458d",
+      "guide-rest.png": "5d41fbdddcddc4546bd14b14d5c2aaeec55dec1e698cbc3077cc3e10b9cdc442",
+      "note.png": "3a89c05fa80926ea1d545fceb125490b39726f4ba2dcf21aa6758faf1255eed8",
+      "saved.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1",
+      "supply-repeat.png": "255d3969110f2b5d75c5b2bd10e5192117c447d8262e8f8984e884da4ca0c6b8",
+      "supply.png": "926a70d5d772821158e98e8b4bdd5adccde45c699131125456df85eba9618386",
+      "motion": {
+        "samples": 4910,
+        "raw_SHA256": "ff18ec6b69b7a799526ddbfc15a5ebeea454b8dd43dc772298299c007f7422ad",
+        "FFV1_SHA256": "63079f04081242b6e4193252a296abe0ae061e406ec087b442205bbcbcc9bfc5",
+        "native_speed": true
+      }
+    },
+    "assertions": 54,
+    "clock": {
+      "frames": 19642,
+      "valid": 0,
+      "deferred": 0,
+      "reentries": 0,
+      "unarmed": 19642,
+      "mutation": 0,
+      "checkpoints": 0,
+      "battle_frames": 8308,
+      "battle_attempts": 0,
+      "stage": 0
+    },
+    "native_manual_Save_exact": true,
+    "facing": []
+  },
+  {
+    "execution_source": "9b2cdee62eabb71fe1b82d8975ce009725e004de",
+    "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+    "stage": "seed",
+    "execution_limit": 1,
+    "identity_SHA256": "e2447f13519b6352f907559c3c57556a2f387ceaf765660503cbcb344125ec05",
+    "input_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+    "route_SHA256": "53899f27a03c05329a32d7d3ba27ef9f8e577bceef5d9e9daadb412e093479f2",
+    "battles": 0,
+    "exit": 40,
+    "errors_bytes": 81,
+    "output_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+    "captures": {
+      "cold.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1",
+      "field-potion.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "scrap-box.png": "324de4fe2db108107f42bdcade80edbb810d6a8622ec19b2c5819780001ce48c",
+      "stop.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "motion": {
+        "samples": 760,
+        "raw_SHA256": "eb5b1c6434c7244d03d9990c7b7d5d529c66dd26380bec81ddad4b1b72d55196",
+        "FFV1_SHA256": "27a2eb7b440abecc21201936d219a0793562fc11b8b53eb0658defdc3c12844f",
+        "native_speed": true
+      }
+    },
+    "assertions": 13,
+    "validation_failure": "first native failure"
+  }
+]

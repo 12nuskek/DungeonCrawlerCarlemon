@@ -1,3 +1,20 @@
+## Current dependency — setup observation ordering review
+
+r5 source/observer/native ABI/route freeze passed after approved narrow attribute
+fix; successful fresh ordinary trial/manual Save is available and fully native
+live/disk-verified. First actual setup failure STOP40 atframe3040 preserved;
+field-only gate correctly refused resource observations before return-field.
+[Exact claims, Save/capture hashes and diagnosis](evidence/floor1/ordinary-recovery-20261009/runtime-r5/README.md).
+Review zero-frame item/uses observations after the existing return-field/ready,
+with native menu readiness and field gate intact. A separately frozen setup
+claim can use the successful fresh Save; do not repeat trial, weaken assertions,
+replay exhausted outputs or convert stopped RAM into a Save. No further gameplay
+under this failed claim. Patrol-complete Save/final independent full cold remain
+pending, then stop before Warden. New ordinary2 processes/1trial/0patrol/0cold;
+historicalsix/four/STOP117 unchanged, active poses offline-only, PR114 draft.
+Accepted bounded nine-district plan and every deferred dependency stay intact.
+Prior checkpoint bodies follow unchanged.
+
 ## Current dependency — ordinary source verifier review
 
 One integrated main c6d647a815ffce44a2419a2cf83b6c2c094359f0 build succeeded.

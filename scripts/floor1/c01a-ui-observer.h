@@ -1,5 +1,5 @@
 /* Read-only menu observations; native callback identity, no guessed label. */
-struct C01Ui {unsigned a[17],candidate,mainstate,battleCB2,exec;FILE *trace;};
+struct C01Ui {unsigned a[16],candidate,mainstate,battleCB2,exec;FILE *trace;};
 static struct C01Ui ui;
 static unsigned ui_kind(const char *name)
 {const char *names[]={"action","move","target","bag","party","context","summary"};for(unsigned i=0;i<7;i++)if(!strcmp(name,names[i]))return i+1;return 0;}

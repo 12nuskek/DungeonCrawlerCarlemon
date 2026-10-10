@@ -29,7 +29,7 @@ def generate(git):
             unsigned char mode;
             (void)bv_sample;
             if(visual.recording || bv_load("visual-mode.bin",&mode,1) || mode>1){result=121;break;}
-            for(unsigned z=0;z<17;z++)if(!ui.a[z]){result=121;break;}
+            for(unsigned z=0;z<16;z++)if(!ui.a[z]){result=121;break;}
             if(result)break;
             visual.candidate=mode;ui.candidate=mode;
             visual.trace=fopen(mode?"expected-native-boundary-trace.bin":"native-boundary-trace.bin",mode?"rb":"wbx");

@@ -1,3 +1,23 @@
+## Current C01 uninterrupted unprepared opening — source offline admission PASS
+
+Same-task continuation after responsive09:33:28UTC executor checkpoint authorizes
+final helper/route/contract admission, committed/published source checkpoint before
+runtime, then one continuous native New Game opening and conditional actual-Save
+cold. Base/mainb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae; game4a92a9de/engine
+0fedd142f43f136ceee189c54101b095fc88f495 reused, no rebuild/engine change.
+New contract docs/floor1/c01-uninterrupted-unprepared-contract.md; distinct18-phase
+host replaces staged imports/exits/old patrol wrapper. Source-phase/full-party/
+resource/native friendship and walking/poison variables, Bag/party/YesNo/Save
+readiness, actual ELF callback aliases, first-failure bounds and lossless2000-frame
+RGB chunks are required. Final inert288/24/14/pixel/native ABI and72 bindings pass. Actual freeze/claims/
+gameplay still gated; source checkpoint must precede execution. First unexpected failure terminal; no retry/RNG search.
+No source changes during a run, merge, prepared run, private upload or issue116 write.
+C01a actual5/3/1=9,consumed6/3/1=10 unchanged; opening/cold count separately.
+OriginalV016/4 STOP117 visual8536 beforeB8402,new accepted1/1,ordinary5 and Library
+5+1/unknown cause/zero original bytes/all archives preserved. Independent backup
+unverified. C01/G02/human/legacy/full-floor and accepted nine-district plan remain
+open/unchanged. Earlier current bodies are historical authorities for their scope.
+
 ## Current C01a accepted integration and next contract
 
 Independent source/evidence and native visual reviews accept PR115 at

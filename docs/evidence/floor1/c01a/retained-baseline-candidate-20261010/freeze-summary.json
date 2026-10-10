@@ -1,0 +1,78 @@
+{
+  "helper_commit": "1eac08cc637a13e8f22468c744954c52445ac032",
+  "source_checkpoint": "1eac08cc637a13e8f22468c744954c52445ac032",
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "tested": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "candidate_only": true,
+  "retained_baseline_certificate_SHA256": "2f03fb8b091b2a714ada82becf444c7e7219c244d392b9e740bfc063a88bc95c",
+  "retained_baseline_reference_stream_SHA256": {
+    "native-boundary-trace.bin": "aedeac12d3161cd94a137b9a1805bff903616dc055efb5924447e9c9a18f9df9",
+    "ui-frame-trace.bin": "b0c21ea31aa7960431be6157c6b4c38f7ef670f777be2aee54c2c8b73fc57a8b"
+  },
+  "original_r4_artifacts_SHA256": {
+    "STOP.json": "230b71676ee002fa5fe9ec68ae85d9ddc19fffe292ae60f9657ac8bab6288312",
+    "freeze.json": "0c91b4323e5d7f444086b7312d6657c2770b0e8adf21b405eaaae773f772af9d",
+    "baseline/exclusive-claim.json": "9d2094b08c5d4c992cead74e13c1abb57687022653d70a910bad9c1a2e9ad850",
+    "baseline/runtime-result.json": "230b71676ee002fa5fe9ec68ae85d9ddc19fffe292ae60f9657ac8bab6288312",
+    "baseline/native-edge-validation.json": "6b96823e098faa32dce9b671b8ec3f33caf01c90354c995c49f06b850d235cb5"
+  },
+  "cases": {
+    "candidate": "406e470fd6414c0707e325fc42ed82ad29bcf2cf89e2ce7d289883e56a3b5458"
+  },
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "route_SHA256": "f03cae6c47e866b49209f1a78f6fd2ca34e1653084422b5bab7c3c1e7175b3fa",
+  "storage": {
+    "visual_frames": 18000,
+    "battle_frames": 30000,
+    "native_boundaries_per_frame": 4096,
+    "native_timeline_startup_frames": 2046,
+    "native_timeline_active_window": 250,
+    "native_detail_file_max": 1542000000,
+    "each_file_hard_max": 2147483648,
+    "RGB_capture_max_per_case": 2085699200,
+    "native_reference_max_per_case": 2147483648,
+    "supplemental_reference_max_per_case": 48600000,
+    "logs_max_per_case": 33554432,
+    "clips_max_per_case": 2147483648,
+    "pair_total_reserved_bytes": 21474836480,
+    "claim_limit_per_case": 1,
+    "first_failure_stop": true,
+    "no_Save": true,
+    "edge_record_words": 40,
+    "edge_records_max_per_case": 1152469,
+    "edge_bytes_max_per_case": 184395056,
+    "edge_frame_buffer_rows": 64
+  },
+  "remaining_reservation_check": {
+    "original_pair_bytes": 21474836480,
+    "retained_and_current_allocated_bytes": 1231503603,
+    "available_bytes": 20820705280,
+    "required_remaining_bytes": 20243332877
+  },
+  "overall_counts_before": {
+    "baseline_processes": 4,
+    "candidate_processes": 0
+  },
+  "overall_case_counts": {
+    "candidate": [
+      5,
+      4,
+      1
+    ]
+  },
+  "first_failure_stop": true,
+  "scope": "One candidate process5/attempt1 using corrected offline certified original baseline4; unchanged observer/builds/route/Save, no baseline replay/rebuild",
+  "observer_source_SHA256": "564c8b04c4ab6e8ef1efb9a5d846ff1934525f9b64e647b0c0db69b23ecf8732",
+  "observer_binary_SHA256": "39a6ad526bee8c3550ddfe2566bbdcc9c24b1307aedeeaa8c124593c07e79429",
+  "candidate_only_generated_runner_SHA256": "310742409013a54e3a0b9d416e13230888e66e84e752a540c2b11145ffccec49",
+  "freeze_SHA256": "5c8245847052a49f99ee640086071a544b1d6bd7694c745a68313d7f0e1cc8c7",
+  "build": {
+    "source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+    "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+    "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+    "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+    "observer_source_SHA256": "564c8b04c4ab6e8ef1efb9a5d846ff1934525f9b64e647b0c0db69b23ecf8732",
+    "observer_binary_SHA256": "39a6ad526bee8c3550ddfe2566bbdcc9c24b1307aedeeaa8c124593c07e79429",
+    "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6"
+  }
+}

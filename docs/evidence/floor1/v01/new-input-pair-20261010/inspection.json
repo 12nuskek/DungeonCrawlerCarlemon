@@ -1,0 +1,33 @@
+{
+  "tested_execution_source": "021cb729f13161ff1a0cfab2281b8b323fa5d3f5",
+  "actual_static_native_screenshots_inspected": {
+    "baseline": "battle-start and native turn-zero pose00",
+    "candidate_pose_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  "static_findings": "Carl anticipation/contact/recovery and brace silhouettes, Donut casting/release/recovery and Warden idle/windup/held warning/slam/recovery are distinct in actual240x160 captures. Duo/foe HP and levels and dialogue remain readable in reviewed images; stock attack effects are visible. Initial base Warden17 is retained before active poses.",
+  "motion_verification": "Both full ordinary-speed clips encoded from actual15627 native PPMs each; every lossless decoded RGB byte matched. Viewing frame count/duration/cadence probed separately.",
+  "motion_playback_visually_inspected": false,
+  "limitation": "Available inspection tools expose still images, not video playback. Human ordinary-speed playback review of both linked MP4s remains necessary before claiming full visual acceptance. Frame/pose assertions and pixel retention are actual runtime verification, not human playback acceptance.",
+  "runtime_native_pose_palette_warning_faint_exit_budget_assertions": "PASS",
+  "full_visual_acceptance_claimed": false,
+  "PR114_merge_authorized_or_performed": false
+}

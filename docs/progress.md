@@ -1,3 +1,33 @@
+## Current new-input visual checkpoint — native pair PASS, playback review pending
+
+Parent accepted ordinary recovery83ab1c1d and authorized one separate new-input
+baseline/candidate pair. Freeze/execution021cb729f13161ff1a0cfab2281b8b323fa5d3f5
+ran integrated mainc6d647a8 and active-pose source9c83611e/engine8d8c7761 once each.
+Reused main ROMae1e9d36/ELF6e56b321; single candidate build ROM6b7a83f2 matches
+active pin, actual new ELF1bc654d9. Unchanged observer1647352d/shared binarya17ea513,
+main84/candidate85 bindings and full native ABI/source identities verified.
+Both PASS42/17671 absolute/15627 visual; strict full2560 B15379/F15627/E+EOF,
+controls/resources/victory/field/Save equal. Candidate all17 poses,held5016/other
+actor852 warning frames,palettes7,swaps37/19/33,faint/exit clean,budgets equal.
+Original and both copies53f62dc2 unchanged; route never manually Saves.
+
+New generated reference849a1585 matches recorded historical hash, but provenance
+is this new run,not recovered original bytes/oracle or legacy acceptance.
+Historical6 baseline/4candidate/STOP117 unchanged; new1/1 separate,no retry or
+runtime failure. Ordinary5 processes/checkpoint beforeWarden unchanged. Two
+recorded offline import fixes/six focused parser tests; no old test/import replay.
+Actual static screenshots inspected; both ordinary-speed15627-frame clips and
+all lossless RGB bytes verified. Available inspection tools cannot play video;
+human playback review needed before full visual acceptance. Draft PR114 review,
+no merge/further game run/C01/full-floor claim. Exact records/captures/limits:
+docs/evidence/floor1/v01/new-input-pair-20261010/README.md.
+
+Private local archive481626492 bytes/32166 byte-verified entries,f43bdc3b…dbcd3;
+separate build/tooling components,no verified independent backup. Library5+1
+failures/zero original bytes/unknown cause preserved,no retry. Accepted bounded
+nine-district plan and deferred branch/skip/recovery/legacy/full-floor gates
+remain authoritative. Earlier checkpoint bodies below are historical.
+
 ## Ordinary recovery completed to patrol Save/cold review checkpoint
 
 Publication base030e4d19b1bdc928237f3596041379a5f279dacf;

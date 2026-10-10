@@ -1,0 +1,7 @@
+{
+  "source_SHA256": "120c8186949aa40ae96fccf865e88f0029db26bd3b740cb9edfe68d7e2155c85",
+  "emulator_invocations": 0,
+  "input": "existing PPM captures only",
+  "native_fps": "16777216/280896",
+  "combined_lossless_and_viewing_case_bound_bytes": 2147483648
+}

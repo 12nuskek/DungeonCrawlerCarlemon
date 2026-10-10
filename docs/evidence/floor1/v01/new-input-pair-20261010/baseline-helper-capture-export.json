@@ -1,0 +1,6 @@
+{
+  "actual_native_helpers": 120,
+  "upper_bound": 457,
+  "all_lossless_PNG_pixels_verified": true,
+  "source": "Actual existing captured PPMs only"
+}

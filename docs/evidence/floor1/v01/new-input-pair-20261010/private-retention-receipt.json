@@ -1,0 +1,20 @@
+{
+  "archive": "/workspace/scratch/new-input-visual-pair-20261010/new-input-pair-private-evidence.tar.gz",
+  "archive_bytes": 481626492,
+  "archive_SHA256": "f43bdc3b80c55a3b566c1f4058e2ece2844ec6c051164c7605ab73c2843dbcd3",
+  "file_entries": 32166,
+  "every_archive_entry_byte_verified": true,
+  "manifest_SHA256": "2800fe68cd6978934b08f9cec1a7fcd54816d14ec264e52d5aec2779c44dbe76",
+  "private_local_only": true,
+  "independent_backup_verified": false,
+  "excluded_components": [
+    "ROM/ELF/build source outputs remain at separately pinned private main/candidate build paths",
+    "Recovered tooling package remains in separately verified tooling-r3 bundle; dependencies are not a portable OS image"
+  ],
+  "Library_attempts_this_increment": 0,
+  "historical_failed_uploads": 5,
+  "historical_failed_backup_downloads": 1,
+  "original_backup_bytes_recovered": 0,
+  "original_transfer_failure_cause": "unknown",
+  "supported_next_retention": "Export this archive plus required separate build/tooling components to an independent user-controlled private destination and verify destination byte hashes; no independent backup claim before verification"
+}

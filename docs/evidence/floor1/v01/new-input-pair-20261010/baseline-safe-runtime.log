@@ -1,0 +1,88 @@
+BV_PHASE frame=1334 native_ID=1805988224
+BV_PHASE frame=1335 native_ID=1593264619
+BV_PHASE frame=1344 native_ID=1575480183
+BV_PHASE frame=1345 native_ID=1907277023
+BV_PHASE frame=1346 native_ID=1998037596
+BV_PHASE frame=1500 native_ID=3662237044
+BV_PHASE frame=1505 native_ID=1672621914
+BV_PHASE frame=2511 native_ID=350769081
+BV_PHASE frame=2675 native_ID=2253367906
+BV_PHASE frame=2887 native_ID=3931622494
+BV_PHASE frame=2888 native_ID=512211571
+BV_PHASE frame=2959 native_ID=1094586919
+BV_PHASE frame=3155 native_ID=1549553168
+BV_READY frame=3155 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=3155 turn=0 actor=0 pose=0 sprite=9 tile=358 palette=0 x=32 y=80 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=3155 turn=0 actor=1 pose=17 sprite=11 tile=462 palette=1 x=200 y=40 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=3155 turn=0 actor=2 pose=6 sprite=12 tile=590 palette=2 x=90 y=88 x2=0 y2=0 pivot=-32,-32 affine=1 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=3228 native_ID=925149502
+BV_PHASE frame=3229 native_ID=2288791309
+BV_PHASE frame=3230 native_ID=1210621480
+BV_PHASE frame=4941 native_ID=1510729709
+BV_PHASE frame=4942 native_ID=841500469
+BV_PHASE frame=4944 native_ID=1549553168
+BV_PHASE frame=4992 native_ID=925149502
+BV_PHASE frame=4993 native_ID=2288791309
+BV_PHASE frame=4994 native_ID=1210621480
+BV_PHASE frame=6222 native_ID=1510729709
+BV_PHASE frame=6223 native_ID=841500469
+BV_PHASE frame=6225 native_ID=1549553168
+BV_PHASE frame=6276 native_ID=925149502
+BV_PHASE frame=6277 native_ID=2288791309
+BV_PHASE frame=6278 native_ID=1210621480
+BV_PHASE frame=7786 native_ID=1510729709
+BV_PHASE frame=7787 native_ID=841500469
+BV_PHASE frame=7789 native_ID=1549553168
+BV_PHASE frame=7872 native_ID=925149502
+BV_PHASE frame=7873 native_ID=2288791309
+BV_PHASE frame=7874 native_ID=1210621480
+BV_PHASE frame=8529 native_ID=1510729709
+BV_PHASE frame=8530 native_ID=841500469
+BV_PHASE frame=8532 native_ID=1549553168
+BV_PHASE frame=8592 native_ID=925149502
+BV_PHASE frame=8593 native_ID=2288791309
+BV_PHASE frame=8594 native_ID=1210621480
+BV_PHASE frame=9738 native_ID=1510729709
+BV_PHASE frame=9739 native_ID=841500469
+BV_PHASE frame=9741 native_ID=1549553168
+BV_PHASE frame=9816 native_ID=925149502
+BV_PHASE frame=9817 native_ID=2288791309
+BV_PHASE frame=9818 native_ID=1210621480
+BV_PHASE frame=10824 native_ID=1510729709
+BV_PHASE frame=10825 native_ID=841500469
+BV_PHASE frame=10827 native_ID=1549553168
+BV_PHASE frame=10884 native_ID=925149502
+BV_PHASE frame=10885 native_ID=2288791309
+BV_PHASE frame=10886 native_ID=1210621480
+BV_PHASE frame=12345 native_ID=2158885512
+BV_PHASE frame=12617 native_ID=1210621480
+BV_PHASE frame=12618 native_ID=2158885512
+BV_PHASE frame=12624 native_ID=1210621480
+BV_PHASE frame=12627 native_ID=1510729709
+BV_PHASE frame=12628 native_ID=841500469
+BV_PHASE frame=12630 native_ID=1549553168
+BV_PHASE frame=12696 native_ID=925149502
+BV_PHASE frame=12697 native_ID=2288791309
+BV_PHASE frame=12698 native_ID=1210621480
+BV_PHASE frame=13278 native_ID=1510729709
+BV_PHASE frame=13279 native_ID=841500469
+BV_PHASE frame=13281 native_ID=1549553168
+BV_PHASE frame=13344 native_ID=925149502
+BV_PHASE frame=13345 native_ID=2288791309
+BV_PHASE frame=13346 native_ID=1210621480
+BV_PHASE frame=14013 native_ID=2158885512
+BV_PHASE frame=14441 native_ID=1210621480
+BV_PHASE frame=14442 native_ID=2158885512
+BV_PHASE frame=14446 native_ID=1210621480
+BV_PHASE frame=14448 native_ID=3307614300
+BV_PHASE frame=14449 native_ID=559432451
+BV_PHASE frame=14986 native_ID=2594348249
+BV_PHASE frame=15022 native_ID=3886897904
+BV_PHASE frame=15023 native_ID=749920720
+pilot completed policy=fortify frames=12520 outcome=1 incapacitation=0
+VITALS 30 22 0 0 2 37 0 33
+BV_FINISH candidate=0 frames=15627 samples=32671 pose_mask=131137 captures=131137 swaps=1,1,1 faint_mask=2 exit_clean_frames=1 restored_hardware_palette_checks=23552
+BV_PEAK samples=15417 sprites=49 obj_tiles=654 obj_palettes=7 heap_used=91212 heap_free_min=22660
+BV_WARNING held_frames=0 other_actor_animation_frames=0 hardware_palette_mask=7
+WARDEN battle_frames=13721 attempts=1
+result=0 assertions=42

@@ -1,0 +1,120 @@
+{
+  "scope": "Safe offline source identities and synthetic traces only; no ROM, Save, binaries, actual raw/key datasets or Library IDs",
+  "files": [
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/README.md",
+      "bytes": 13965,
+      "SHA256": "f9cdd2793af9d1dfed1d25f3fbd9c58296873447e10cdc056e562c8a98c99765"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/after-mechanism-trace.jsonl",
+      "bytes": 13224,
+      "SHA256": "c9f47df1c6e4eb015685e576c99cb87c1d9ca3e35c671601ad8b0a3c59ef3ece"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/before-mechanism-trace.jsonl",
+      "bytes": 13224,
+      "SHA256": "c9f47df1c6e4eb015685e576c99cb87c1d9ca3e35c671601ad8b0a3c59ef3ece"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/elf-path-identities.json",
+      "bytes": 21746,
+      "SHA256": "01c7e60c66f991b484b9274c0484b938f63f3a44fd34fd66ec3bac6e8a6ab899"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/mechanism-result.json",
+      "bytes": 8474,
+      "SHA256": "b15837de0a4b571969ff2716d6e47ad9ef329ce455b7736092f160235b698c55"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/mgba-ordering-research.md",
+      "bytes": 8041,
+      "SHA256": "5e99e124116b66cf89b90ecba24d1c417e16b591a56e510d17f170262be1f0ff"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-cost-result.json",
+      "bytes": 6959,
+      "SHA256": "38fe568a20e9f7542859ee58ab75b65ea726c5b6222505941e0daae75f22b8ca"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-counterfactual-identity.json",
+      "bytes": 513,
+      "SHA256": "094f2a5c7c7411286d1a0ca5642b69a88d32720ac93447c251a811e637625e0f"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-counterfactual-trace.jsonl",
+      "bytes": 2954,
+      "SHA256": "e3362308254d943e0e12e2dc9cf44c72f3499977b77f17dc9ffb3e1ac820c63d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-native-identity.json",
+      "bytes": 513,
+      "SHA256": "77068f5690bee8a8c738639a0ce539226ef84bdbab185adf28f3573a92d72cc2"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-native-trace.jsonl",
+      "bytes": 2954,
+      "SHA256": "a49449f15239bb7aec29e7e87bcc7995a69c754bcb5db8d0f783ad74babdff39"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-retained-identity.json",
+      "bytes": 513,
+      "SHA256": "f5779ec7223881c7b6515a1fc7dace272bbfa50442c1a7352a77cd97508aa9c8"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/pose-retained-trace.jsonl",
+      "bytes": 2954,
+      "SHA256": "a49449f15239bb7aec29e7e87bcc7995a69c754bcb5db8d0f783ad74babdff39"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/preservation.json",
+      "bytes": 822,
+      "SHA256": "0cf8626ca085f7e7267803713cf8867f59640b31e86be0b388b2e7bf8614ff86"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/reconciliation.json",
+      "bytes": 24230,
+      "SHA256": "5856c49cf30b8878947d2c992dc5cd7eeae12c503ad2b5ea3e880c7c1bd15342"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/scratch-compile-proof.json",
+      "bytes": 5579,
+      "SHA256": "2dfe085c5bb94e38f8b16dae5c9b0e15148998fb2b88de0e7668291a91e814d8"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/timing-audit/tool-identities.json",
+      "bytes": 1083,
+      "SHA256": "3f08588976a79657f1489b00af2d57198125d4de0cb671c75a4e56688a0cbc00"
+    },
+    {
+      "path": "docs/floor1/v01-timing-audit-contract.md",
+      "bytes": 1806,
+      "SHA256": "a51f7958c41045a41b8487ff21e6519f5799e9ce9d2d17419a5cb77df070675e"
+    },
+    {
+      "path": "scripts/floor1/v01-pose-cost-audit.py",
+      "bytes": 8057,
+      "SHA256": "c2abda1931b36d7287e04eca2ef956eb9429c91aa9f6e3bd4de00a4ba17c2785"
+    },
+    {
+      "path": "scripts/floor1/v01-pose-cost-fixture.c",
+      "bytes": 4963,
+      "SHA256": "aea48851a3818b8908db8179c01cd40dd07c1684f115b5c21a6c336a280a0ec8"
+    },
+    {
+      "path": "scripts/floor1/v01-timing-audit-fixture.c",
+      "bytes": 8771,
+      "SHA256": "18382c35c3d4439f842db200a5a90255124baf4d1ad7d558224bc9d9d53c069d"
+    },
+    {
+      "path": "scripts/floor1/v01-timing-audit.py",
+      "bytes": 3808,
+      "SHA256": "445b01e1cfe9f9d140792b496463dea4ce83cbe5e1519a4a09b8b842bbc79477"
+    },
+    {
+      "path": "scripts/floor1/v01-timing-path-audit.py",
+      "bytes": 4196,
+      "SHA256": "945e2a4238e8a75141407f87cc861065c54a551da9d896743225da96f3db3866"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "startup_detail": 1541996576,
+  "active_detail": 188416032,
+  "summaries": 7000312,
+  "reference_copy": 40269443,
+  "capture_files": 36457,
+  "helper_exports": 457,
+  "capture_bytes": 4200393255,
+  "helper_PNG_bytes": 105306510,
+  "textual_logs": 1024051072,
+  "working_files": 13488067,
+  "metadata_files": 262144,
+  "per_frame_text_upper": 24352,
+  "route_command_text_upper": 2033408,
+  "startup_chunks": 2046,
+  "active_chunks": 250,
+  "filesystem_block_bytes": 4096,
+  "required_available_bytes": 7064285184,
+  "detail_retention": "startup prefix then latest accepted native boundary suffix; not full-history detail"
+}

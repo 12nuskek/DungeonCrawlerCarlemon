@@ -1,0 +1,11 @@
+{
+  "base": "268fa9a8e0673824ff47e191e7be5777e8b6489e",
+  "prior_bodies_complete_suffix_verified": true,
+  "prior_SHA256": {
+    "AGENTS.md": "7af3cc8c13d2aad5fb33995eccaf2f182f84a52cd7b9144b1f79beb1d2a6add6",
+    "docs/progress.md": "8770b9263a50ce122dfbb5dbb41d482515cbfb8f291dd1bb5629dc89614e5920",
+    "docs/backlog.md": "310574b610f1f5684be111a38a6cb60a7e4ff1aa66ebf3d33db622e7f9328612",
+    "docs/floor1/v01-entry-plan.md": "7ad641d4a8fdcc7c3782191e19e21f181d5ae41c034fe29dd0fb1626e10ebdee"
+  },
+  "accepted_plan_unchanged": true
+}

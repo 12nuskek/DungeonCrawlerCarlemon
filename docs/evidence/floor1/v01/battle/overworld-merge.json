@@ -1,0 +1,17 @@
+{
+  "PR": 113,
+  "merged": true,
+  "merge": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "reviewed_head": "ac2d87ebf4b29775662883e8454c5ea017464f2c",
+  "exact_reviewed_tree": true,
+  "full_tree": "b2b46382b81c66a01b2586934f53aff94ed600b2",
+  "parents": [
+    "c2f0d74759bb35b2f25e99f104e48f88635f049f",
+    "ac2d87ebf4b29775662883e8454c5ea017464f2c"
+  ],
+  "tested_source": "4938927da512543ca9aeea9527c103c84955e632",
+  "tested_engine": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+  "CI": "absent, not success",
+  "protection": "off; no required checks; no rulesets; no bypass"
+}

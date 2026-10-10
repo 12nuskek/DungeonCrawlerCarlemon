@@ -1,0 +1,902 @@
+{
+  "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "all_preserved_byte_exact": [
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/00-front.txt",
+      "SHA256": "86e5d0d02662a3f2756a0419fa9a500306cc72d3f17b2637ba4e2d62d1eef2b6"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/01-back.txt",
+      "SHA256": "221c1db1d1dc9ab44d8f112e791c3bc002e27554906ceef54c62a3df109f258e"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/02-anim_front.txt",
+      "SHA256": "a8c026d128ebec3a5727c634c0dcc642cc0b03f09e0ad56fa5edba387b01f4f3"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/03-icon.txt",
+      "SHA256": "c44ddcad4c643dc7e589c7d5e7b22ba92b4303bc1ac5499d04cf59a97b69ba79"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/04-overworld.txt",
+      "SHA256": "befdd28c868b6b59480f904c2066e3bca725111e5cc0e6e605b52c04d612ed7e"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/05-spark-anticipation.txt",
+      "SHA256": "b95a2625a53be541bf5744fb41c98776fc46cf47b103bb84febafeae87efa5da"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/06-spark-cast.txt",
+      "SHA256": "5f58028b165052f19e0c9e52c06a0d7eba356ffbeb5637e9fdde72429401d34c"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/07-spark-recovery.txt",
+      "SHA256": "825923384298cd20dde7819a58b12ddab5bb7964e98650398edb4ff02c1bcd48"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/08-weaken-preparation.txt",
+      "SHA256": "27fc77ac64c3cdfa7727c9a4dd7e71ad1a33b97106febdf6bb096ec1951203ba"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/09-weaken-release.txt",
+      "SHA256": "e859a3d444ca50bbfd05c6b0ae0cd21312ddf13035a3463df7a881dd8d681d9e"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/README.md",
+      "SHA256": "11c06885a6641cb585b89dee17c82fabe5b6b9f9057889e26148d6fa5bf34f5a"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/artifact-index.json",
+      "SHA256": "0c36d39d72ee1e37ef5009d1ed002e49c00a58d9644ff18407dc97b724f50c04"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/master.json",
+      "SHA256": "4f1537130084f17558d0f57387a17f5c1b073c6a83ae72a97a487f3e823731ac"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/palette.json",
+      "SHA256": "aa52f2b28ce74e1676019506f8e68dc633eb7b5edcd042f7bdbfa1140ad6d2fa"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/reproducibility.json",
+      "SHA256": "634a89f01bc3e4d760d639ed35f5603de5dd5d24f38c94a2f60cccbf2478305f"
+    },
+    {
+      "path": "docs/art-references/derived-donut-master-20261009/roundtrip.json",
+      "SHA256": "7087125aaad20bf99c26ed9222357304ac43c53c6a1b9097d80c17a018539817"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/README.md",
+      "SHA256": "8831d026cd18e077282491f6bd2e79726656d21b71f368101b9d2c02a90978f0"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/STOP.json",
+      "SHA256": "115e713bd149be3f7fa50c356289d921074a904aa9d901dcbdd13cd93b098227"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/artifact-index.json",
+      "SHA256": "b0c0a3e03c6c4ac30a9c689a8f77117b13e400eaa99518218c8e853a14ab71f2"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/baseline-entry-stop.mp4",
+      "SHA256": "602dfa244899bc5986dcbbe8a3ba0a39a11ccf35228ef69cddc3c4c5ff4f97d0"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/baseline-identity.json",
+      "SHA256": "21a2c0f2942c8e13439872e5fc9e872c68450e167ffd3c56e58e7d41c9ecfdd1"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/baseline-summary.json",
+      "SHA256": "7a2f0389ff2d87f87f35ce38d503ef85517a148e14e201511e35f6a0fee03305"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/boot.png",
+      "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/build-setup.json",
+      "SHA256": "734982f734cd3c1939a8fcb063028efc34308aab46f32ba9a8f5480e818a946a"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/clip-encoding.json",
+      "SHA256": "29dfe12024960f0d78499ff373457c9d92e1cc2183991a54e5ce1655f5b7e78e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/diagnosis.json",
+      "SHA256": "b12e136fadca89e09fa185b1bb6fb8cadd31bca7218f74c61d474d020a067e6d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-first.png",
+      "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/README.md",
+      "SHA256": "46707181cd24f318fc8c8784e8cacef6c8e7e151e20f21329c5431d4f6a0b07d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/STOP.json",
+      "SHA256": "225fb1d939c7b9b2728c7e3d544d64b28c737e529f63ab7859b2ee9b08f82a9d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/artifact-index.json",
+      "SHA256": "b4f55328b558578107b26fc1ff2275a609735b07130453ff4e0198a9f494d728"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/baseline-identity.json",
+      "SHA256": "5b8ed3c78177eaf647fb091b1ee94ce8a8c7fe9cd08f86a3bd590c1f3210a10a"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/baseline-sendout-stop.mp4",
+      "SHA256": "2707a0c58fa68b84a130f2f8196e0cf84b0cb0408e24c71b19f2024805f8f156"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/baseline-summary.json",
+      "SHA256": "1af67d6258702d6dcf4f9a8a89bb3689a91add3fbe302fcbb01a5c061cb3dc5b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/battle-02674.png",
+      "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/battle-02675.png",
+      "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/battle-start.png",
+      "SHA256": "ed2d989e633b99407368462a107582c6e2b4cb3628b3b038a8d54954261852d1"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/boot.png",
+      "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/clip-encoding.json",
+      "SHA256": "3fe7a25e58293afeaa5f8ee530463e9de921dc5da0f01a83e194d14829efe05e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/diagnosis.json",
+      "SHA256": "9bd8c861a608a16b2dcaf73cb992032c87b62037efa9a8260bcd171d927f086b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/private-retention.json",
+      "SHA256": "3c90fff85422c91334e71daac1058197f3c9e316e8ebc4c6b239c48dfea33138"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/unexecuted-candidate-identity.json",
+      "SHA256": "ac2dabdea57bb71ae7dc0d9d19a81e80faf40f9a6a27f4fafdcb494243cf4b82"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-south/visual-stop.png",
+      "SHA256": "260cb4718700e33240e13fa32202ed2542b893c6d197b7a2d011def5d789ea8d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/entry-stop.png",
+      "SHA256": "14caa85fcb7f64dfa6eea04d69a42143649b2e0b3fd76469302dfed95c0be979"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/README.md",
+      "SHA256": "7cdd6cff9d401581aef093de08087bd9928f426d9ec6a7cb702e3ed57a1cf005"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/STOP.json",
+      "SHA256": "51568a97a12f339f8a610f84cad830435f61c45506b463a5444a82cf904da8ab"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/actual-reduction.json",
+      "SHA256": "1735efcf24c5e805361b875ca4d99995129449d98835ec01213a50fb9bc4119b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/after-execution-claim.json",
+      "SHA256": "f35d9388e723d4507e519472d4f6607d0245dc2fb9b641563dc5566ac1c19000"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/after-host-build.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/after-identity.json",
+      "SHA256": "586f0eb06fb29c21e407d713d98dd6d4eeb444f3fdbf1d186f099ca6789fb0f2"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/after-safe-replay.log",
+      "SHA256": "97716d658decc8e0fe7f5e61068122a15ef686bd707903adfd705ad8e12d9249"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/after-summary.json",
+      "SHA256": "42ecba28da501bb50acf18b2d51e578e8ab2019a92fd616a9b00a4ec0f063181"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/artifact-index.json",
+      "SHA256": "421dcaf533255e140490cb70152a24abb3e44826e3658ef327f0d155694b107a"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/baseline-native-complete.mp4",
+      "SHA256": "14079a64871639545011d02917aadb3fffa657f337a8d38340673ba83cad2efe"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-execution-claim.json",
+      "SHA256": "fd922c6485e1c5e1e11c34d9bc88a0fa9c40612d1dc7a16f9a39118915defa8b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-03155.png",
+      "SHA256": "4262d745ab0f93da2642aa1969be946925bb6c9f700f41ef426b267fbd76ca35"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-03972.png",
+      "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-04632.png",
+      "SHA256": "c6efb92a455fa0f8cb2786bc0eff86043f42a35db45cae1587b7239a7afb763c"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-12162.png",
+      "SHA256": "9bffce9b23a028e9df7089b19ff31fd8a2218a4339b0447e59d96f36e4a08848"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-14987.png",
+      "SHA256": "01746b7ea9b53e3f8c4015f1219130414a508707ef61d59294aeb52b7beaf355"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-frame-15626.png",
+      "SHA256": "bfc7fa1a389c03b5f49558fd571f119c5f406fd1819e86eed4a2ab2807cc69ac"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-host-build.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-identity.json",
+      "SHA256": "657d19e74c9ec5e4e27a8d07620e34ad90c1f84978e997f854928dae59f561d2"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-safe-replay.log",
+      "SHA256": "3c6c99670ff3fcee4ec051cc20f9199fae6acd10a9b92ca5ba8508d83c4ad330"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/before-summary.json",
+      "SHA256": "59a4915695ec3559982672b70b47495e0ced01f4c81b784c3ae9b28211fd3ab4"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/candidate-errors.log",
+      "SHA256": "68438e30a33f1ac3986b3f1d6a9e3a2844835223d58e8db5139993519119514a"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/candidate-native-first-stop.mp4",
+      "SHA256": "6e7287976391dace65a1ae07e81f3d4ead743d207f32190dc3e127b73d02bcbf"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/candidate-stop-diagnostic.json",
+      "SHA256": "02da5e2a9052c3a6f425f850e4a8c8c7e1a65134cab678024621e406807af281"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/candidate-visual-stop.png",
+      "SHA256": "47fbde60709a27683035d7b385f06dd1447f68c6548272758e15a335cf3bc15e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/clip-encoding.json",
+      "SHA256": "2ba9c6c41c879ffc96cf2aba4ffcbab866ce2e5a5c9aeda6b43a747f5449c540"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/crypto-case.c",
+      "SHA256": "1a1a5a7e6b3e57ba88534bb5893d9971ce6fe5aa29dcfae58ca45f2bbe783160"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/native-crypto-offline.log",
+      "SHA256": "14fc1433c98e28fb6a64011c363b4f2d85fb25b891930e7367a9dfae97675fdc"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/native-crypto.h",
+      "SHA256": "647b44f8e5fa50240e21015d22d407426f1e218363d25affc5356c5067a5eee0"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/preservation.json",
+      "SHA256": "21c4f383e07b4b8f7ac61d8c0b55c2f371edd73704e2da1d7ca068f45a806dbc"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/lifecycle-validation/private-retention.json",
+      "SHA256": "449f72be49c6920d6a189f6629f61c5ed21a2cecad757468222565df2a72ac3e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/README.md",
+      "SHA256": "0c9caf9da142b0d152a72b9c20c94ce1623e3e9f4c4348b9b9df41f43a5276bb"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/after-boundary.json",
+      "SHA256": "fcfed903cd56a93b2db05d732195bfbc43176b21d48f4634c360daf2b2210cc3"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/artifact-index.json",
+      "SHA256": "d80ab7951999d0c9f282c274d5c56cd9426ebd3c4a5b0197cfa9a100cccffd14"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/before-boundary.json",
+      "SHA256": "397aec36bad5328b589e60e39748713857f75e33f424874d23251fa2e836ff09"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/capability.log",
+      "SHA256": "d78db100eba3426487027ccc984b19dc74278f236a2d6dac08ff96dbd37b5aeb"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/fixtures.log",
+      "SHA256": "e550d786ef61b58dfa09d5ff946f0f48341018449b700ee50044b5bea4235ca7"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/offline-validation-history.json",
+      "SHA256": "d85730f6e2255283e34ac5ca720c1c8de2af00f2d3a38155c8eff5e45d17de30"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/preservation.json",
+      "SHA256": "479ae7072c8da3ef8763c70b0ab07c889a2158b8835dc07a60f122cdaf3a5397"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/publication.json",
+      "SHA256": "a56f31cc7924f425761304fe7a1046dcc12d8916bdffaff9b1962e8c06561692"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-boundary/result.json",
+      "SHA256": "bcc0fa729223db99609ff1164db03c6715a44e6d7de778a6a0b8a690014d42c9"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/README.md",
+      "SHA256": "b3268e0222b35c1596fa2313e050739c981d82bf46f0e3a22d21627030554fd1"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/after-boundary.json",
+      "SHA256": "fcfed903cd56a93b2db05d732195bfbc43176b21d48f4634c360daf2b2210cc3"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/artifact-index.json",
+      "SHA256": "08895308e91a7d42fe71d5ebb07429ad3c0d1a8457f60fc97e08a7fbd5960e64"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/before-boundary.json",
+      "SHA256": "397aec36bad5328b589e60e39748713857f75e33f424874d23251fa2e836ff09"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/complete-reader.log",
+      "SHA256": "49bcaad92d4902110280a4244470fc94f197c9e75f2d1d8ad9fe9e9f37799660"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/development-history.json",
+      "SHA256": "0f47d7ee9d36402c94db2b847cfd0ff48ca0ad658221650179b5a7c2ae1bbe79"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/host-build.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/installed-source-review.json",
+      "SHA256": "9183a701809de41074da249b8172c2561fe7e855e6f79113595798528befe4cd"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/interpreter.log",
+      "SHA256": "98917d66ea4c9ea24d7686e17aa5232640abb020c4dd7dda0142cac77575d5a6"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/observer-regression-native-layout.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/observer-regression-observer-unit.log",
+      "SHA256": "6548fbc4d436a68be8a96f6d5f7a76ba9936dedd40c306214f2799f0c1c39227"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/observer-regression-result.json",
+      "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/preservation.json",
+      "SHA256": "46b97e95a931c554d00e63288485adcea680284896df5da33237963096072332"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/prior-model-regression-capability.log",
+      "SHA256": "d78db100eba3426487027ccc984b19dc74278f236a2d6dac08ff96dbd37b5aeb"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/prior-model-regression-fixtures.log",
+      "SHA256": "e550d786ef61b58dfa09d5ff946f0f48341018449b700ee50044b5bea4235ca7"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/prior-model-regression-result.json",
+      "SHA256": "0c91c047bb237217e3732bb5b75df2554abcd548cfb6ea1165536c7e4558c0bf"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/result.json",
+      "SHA256": "2c6c99bd365ca8e00c17d39de914a4ed17287d6b0c9fc6eaf4dd0a70ad78593a"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/native-runtime/review.json",
+      "SHA256": "fdd2cfdfcfc9b69fecc281febf0e260e509db71f8343c1587a44d0fed6d35590"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/README.md",
+      "SHA256": "9bea5dddba880ef62a27f840391cb0428a15a3b94404e2c4ad7d42576ae90a17"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/artifact-index.json",
+      "SHA256": "b4cbf432c5070640bafab4baff7b376239c828ac2719cfb4738343120b753339"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/compile-identity.json",
+      "SHA256": "113ffcc49aa8f929d4833b2efffd8c4e14c69d51b522db7d20fb15c9b4d0cde9"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/frozen-checkpoint.json",
+      "SHA256": "125999c7533477556a7fa9738a5a6f822d1dabdc4b93d27b410e8b9474dcb4ce"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/host-build.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/lifecycle-functions.json",
+      "SHA256": "e2d1d080ea80bd9ebc9cf20bc6b840d51e6a1a47941811c47e711731bb701a13"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/native-layout.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/native-layout.s",
+      "SHA256": "58766f065e422ec94321adb108c1f3f5a12b78df0d54ecacca4f8a97c457812b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/native-source-review.json",
+      "SHA256": "3d7013377fb9a970875991d9cbe1a958ceb36168b713ec4a2af99ec0de8977f3"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/offline-observer.log",
+      "SHA256": "cd3284ef14171bc22cf0ffb75cd8c8e17d1d5a252a9c2a12c88cca298b896bbf"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/offline-result.json",
+      "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/preservation.json",
+      "SHA256": "11412d9b299b28908d757a8a6a7366b57051869450f3a5b94bc66f69dff2aadf"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-lifecycle/private-retention.json",
+      "SHA256": "d0aeb9fdd76df8a28c8bf0160eeb654344886f66d87dd6b22841c948bfa1fa6c"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/README.md",
+      "SHA256": "65e9c4f3078f7be23d92b1d5cd9a829af45812697bed4c822173efbeeacc3931"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/STOP.json",
+      "SHA256": "6ef99dc10736ac871425f3c8afb932b8d7661faa01c940ebcbbee02f6b06eef1"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/actual-summary.json",
+      "SHA256": "3c0d6ad9432823e9ff8da7740ac06bde7eae8ec8c87f72c5bfa1d5714ac6e8ab"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/artifact-index.json",
+      "SHA256": "dc349a26cc68020efdc8c7a57512989317d5dd0aaff6df846be0a1692ce94fe3"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/baseline-identity.json",
+      "SHA256": "f5f827d9b4ae7d22f6f7a419552c4f3e325116a1fa6dea3d2af6b772845b65ae"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/baseline-native-battle-stop.mp4",
+      "SHA256": "994d80a0959cea3a88260425b927f80df3cb2c74503167d90a8738f48c8e751b"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/baseline-summary.json",
+      "SHA256": "e49b6d17853e7f9cbc185c9fad4f716d552ac5f7540ed5ff715aaed12902e1dd"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/clip-encoding.json",
+      "SHA256": "acb4bc0931916e2210dae3942a1d792d3750c695b8cc8ab0182da3e26252f194"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/diagnosis.json",
+      "SHA256": "55d1de1febdf09111ab51a866cd3d82873cf868d03f580fbb81e079429a4e961"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-03155.png",
+      "SHA256": "4262d745ab0f93da2642aa1969be946925bb6c9f700f41ef426b267fbd76ca35"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-03972.png",
+      "SHA256": "cd2135638e9b8918c3f3e80e2f61da78c96fb2400671271d6329d750466b5f0c"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-04632.png",
+      "SHA256": "c6efb92a455fa0f8cb2786bc0eff86043f42a35db45cae1587b7239a7afb763c"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-12162.png",
+      "SHA256": "9bffce9b23a028e9df7089b19ff31fd8a2218a4339b0447e59d96f36e4a08848"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-14986.png",
+      "SHA256": "5b4d7af6ed429c24005b4fc251648f74173570c164099f34560cf33d1bf6c3c6"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/frame-14987.png",
+      "SHA256": "01746b7ea9b53e3f8c4015f1219130414a508707ef61d59294aeb52b7beaf355"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/native-layout.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/native-stop-diagnostic.json",
+      "SHA256": "9fdfab9104cbd1b5371785ace73c8cc9cce87cfee31a817f0e5b1d9132f3b5a0"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/offline-observer.log",
+      "SHA256": "9ceb78e9e777e787398a95063f0d98e101fa6eb56f8d79f57bd91a90adacdd8e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/offline-result.json",
+      "SHA256": "30514a09653498b27a868efe56ed9a7e59e6a3d27d2ff9ab1e93619cd414be46"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/private-retention.json",
+      "SHA256": "57d545ce29661b6bd02497e3bb19036fb71cf6df75a5dbb6f5f44c22b41eea7f"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/publication.json",
+      "SHA256": "69b63f122b491276990a285b6455178b230e678aea780097022852a44f2e5b59"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/unexecuted-candidate-identity.json",
+      "SHA256": "560b9cc3a0bd64d6ace832dad7f40436da8c00426d2598b41c2e3f09e98d7677"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/observer-phase/visual-stop.png",
+      "SHA256": "01746b7ea9b53e3f8c4015f1219130414a508707ef61d59294aeb52b7beaf355"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/offline-hook-result.json",
+      "SHA256": "51daeeeb26f2ca02ac167802760dd86989d7cf15304d855db152640137f0d949"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/overworld-merge.json",
+      "SHA256": "cd14573a9467f9f7f289b2d5422feb9a84ec1a60bf6a311d5f4f34d2188241dc"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/private-retention.json",
+      "SHA256": "cf8ad5a950312c935871dd73c98f9c0267e8315a51dc96137cd2ff94cd6c8320"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/proposed-entry-direction.patch",
+      "SHA256": "81404a8f39b7858d987e659b0c14e1ac0b604034351aca561d9fe9b1f359cc0d"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/publication.json",
+      "SHA256": "2a793a9f4f22437f5a326ce93de94bf71c83c05b4f4ccbf3578a4559778065e8"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/README.md",
+      "SHA256": "763a55f8e2bd374b2ac32b7a5ccd3f45d02c92290b156839e51272d8d6400bf8"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/artifact-index.json",
+      "SHA256": "7e22afe1f305daa52401b3a80a0d06be074a8831a5deae49fe8993c8f89c8956"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/compile-identity.json",
+      "SHA256": "d1ec1a3f2fc4356617abb806b82665ce4d8daaa0594bdad204eace554381d410"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/historical-preservation.json",
+      "SHA256": "1a28f4d1726e9d32447c70f80a375e1f67eb52d4fb76081240d60ecdef300826"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/host-build.log",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/observer-regression-result.json",
+      "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/observer-regression.log",
+      "SHA256": "6db3a77c9e6fca58f79275a1d3369cafbf2e7f6b8cf1ebd02daa42857ac94047"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/offline-contract-result.json",
+      "SHA256": "daab75f3e72885fa964e7aa6e729f2841f2c9bc64574c3e91f61e0c1200148eb"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/offline-contract.log",
+      "SHA256": "3fb870d934ba90a87db71e8b2715e8e430af97caa5656bb3979b51d96ee946d1"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/offline-validation-history.json",
+      "SHA256": "e3f3e0a184612d2fc2ccc209bc28babcd3078e232960bec0c31e8d96e41f2a3f"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/snapshot-validity/verified-serialization-functions.json",
+      "SHA256": "7c12ac88dbea16ba7ed1f35ccedc0014857222ae5691df6ac27c0880ff555ecb"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/static-review.json",
+      "SHA256": "c40bbfa680016b76acee5ada1c0f7b5e86f18abdbd7daab4f26ea58722ca7d4e"
+    },
+    {
+      "path": "docs/evidence/floor1/v01/battle/unexecuted-candidate-identity.json",
+      "SHA256": "9608e1c4b32b4b9cd089e08609bc16f32c445aa62af754748705a311cb23daa6"
+    },
+    {
+      "path": "docs/floor1/accepted-plan.md",
+      "SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27"
+    },
+    {
+      "path": "scripts/contracts/f1-v01-battle.route",
+      "SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27"
+    },
+    {
+      "path": "scripts/floor1/audit-baseline.py",
+      "SHA256": "c1039ae8538b9bd64ddfea652f37ba87489f8eb6f846b6fa611b16e64598e16a"
+    },
+    {
+      "path": "scripts/floor1/audit-migration-state.py",
+      "SHA256": "0ef6335e06b14c925e7e3d120c3a4cb01503022dbf6593a8c7000050a932283a"
+    },
+    {
+      "path": "scripts/floor1/cold-phase-guard.h",
+      "SHA256": "444d397d3cc6571377e43c194dbf80453509f260c6f6b166a61b64810c2733c3"
+    },
+    {
+      "path": "scripts/floor1/cold-phase-observer.h",
+      "SHA256": "3df0234e4957d4bc57b7510833efbd782d782e3c271bbee7f64003e6d94a3e63"
+    },
+    {
+      "path": "scripts/floor1/committed-snapshot.py",
+      "SHA256": "5372288f8a6c4bd71c02ec0f66c649de6289e5596d73181b5a8745e3e1db89e8"
+    },
+    {
+      "path": "scripts/floor1/coordinated-graybox.py",
+      "SHA256": "e6233a86f9fd936e7edc591bb5cc9e659dff9803a59c5eb8a534f204a6c7974d"
+    },
+    {
+      "path": "scripts/floor1/generate-live-opening.py",
+      "SHA256": "a5e836c4e5e931f6c000b8a154c1cd4aa80f05f9466e995a6831bf1b8d27de60"
+    },
+    {
+      "path": "scripts/floor1/guard-first-host.py",
+      "SHA256": "a1f0582c71f8f244de296b21715a1d73b5865895d06adae0de10c33c1c7d18de"
+    },
+    {
+      "path": "scripts/floor1/guard-first-observer.h",
+      "SHA256": "f603f67e729bf4281cd3fe7d662b855506f4b84509ffdff6278ec8f449966515"
+    },
+    {
+      "path": "scripts/floor1/guard-first-route.py",
+      "SHA256": "f7bcb3e792a06ef917fdffae9bdc64c913f49ed6df7ffa5b127f0ea8a27f74ca"
+    },
+    {
+      "path": "scripts/floor1/guard-first-state.py",
+      "SHA256": "f6a9ad1bfc2df08753b70a49d722e81f73b2d93e7a9bead9f95ac23688eb9428"
+    },
+    {
+      "path": "scripts/floor1/guard-first-tests.py",
+      "SHA256": "982ac8a4ff6b3f0c141afaade5d34de434081ed2fe619e7f43d9586f4f740650"
+    },
+    {
+      "path": "scripts/floor1/live-navigation.py",
+      "SHA256": "35ca4377ffc465ec1ec78070a1980efd95cf8e221da4548569ee4f3fa9682004"
+    },
+    {
+      "path": "scripts/floor1/live-route.py",
+      "SHA256": "46eb7547e839b547446893e7178cdc3774974738a381499b6f471acd2b8c9cb8"
+    },
+    {
+      "path": "scripts/floor1/live-save-observer.py",
+      "SHA256": "450f82a827b1e4c2d9e9ca6cd078756e144f61b72faef1e0698a207f15cb6d9a"
+    },
+    {
+      "path": "scripts/floor1/membership-boundary-fixture.py",
+      "SHA256": "585a3c4f6b6d2274dd42e5d95b0738d6f7a8878a95faa859855d676fed8622f1"
+    },
+    {
+      "path": "scripts/floor1/membership-fixture.py",
+      "SHA256": "1baa5adbaebcc5740968b67ce379d0405e000affba6a6f0c198229877ae63717"
+    },
+    {
+      "path": "scripts/floor1/native-friendship-tests.py",
+      "SHA256": "2d88dba0d27a45ae673fa7f49720d1fe7e24b7e92864a104a3f93d09f44b0422"
+    },
+    {
+      "path": "scripts/floor1/native-friendship.py",
+      "SHA256": "64f25daa19b8e34afc5cc68fddc7a4bbb24876419430817b8958ae903acb75ec"
+    },
+    {
+      "path": "scripts/floor1/native-text-observer.py",
+      "SHA256": "084c29db1e35f794c3ad23ca267d0b202dbd65f63e91236f3f16304759e1c996"
+    },
+    {
+      "path": "scripts/floor1/new-save-potion-state.h",
+      "SHA256": "d8794ac41ec66130696be66c3a6194b5a52edf505892db42056f8a3072816ecb"
+    },
+    {
+      "path": "scripts/floor1/new-save-recovery-host.py",
+      "SHA256": "6d6aa93519cebcef9636bc8a920407672a50ec52a79a64355c519e397367675b"
+    },
+    {
+      "path": "scripts/floor1/opening-graybox.py",
+      "SHA256": "76fc7d5b00094c5e9c2b65401ad5a8893ac5eaaeab7ad490cfc3904399629ab6"
+    },
+    {
+      "path": "scripts/floor1/party-fields.py",
+      "SHA256": "2586f6e920c32beaa8cb8445024ec9785ac5d08d941a49d42a6e53b63082cc42"
+    },
+    {
+      "path": "scripts/floor1/party-preservation-host.py",
+      "SHA256": "1d916b5439c3d22a69e625ae2252bddc1ddbd9f3de7aae6e330b8c0e1e63b899"
+    },
+    {
+      "path": "scripts/floor1/party-preservation-observer.h",
+      "SHA256": "c0b003041be7e6cb46e276246fa99525c2b44761e5992fdd5fef9359d7e5b376"
+    },
+    {
+      "path": "scripts/floor1/party-resource-canonical.h",
+      "SHA256": "31496d39562abb9af1e21d508dbf2f2a0e7bd2c50361acb864a2141aea8f27c1"
+    },
+    {
+      "path": "scripts/floor1/party-resource-host.py",
+      "SHA256": "a4c8d099b59da1c04fb5f32d4697abd6f1385945b0b6fc95520ba8c32f76eb16"
+    },
+    {
+      "path": "scripts/floor1/party-resource-observer.h",
+      "SHA256": "10d3d605f61232d530e49b9f69a83a0873ce312ae80ef7d1ba1e484d2a5d0e78"
+    },
+    {
+      "path": "scripts/floor1/potion-menu-readiness.h",
+      "SHA256": "c5512352a97f61da18d5c07d5f7a8700ec9ce40b0316c62fd6218b46024bf00e"
+    },
+    {
+      "path": "scripts/floor1/prepared-cold-phase-host.py",
+      "SHA256": "349cd4bc748deb6cc282f7ae791281b882ff179ae23fd61ce1ef4fa65d9e202e"
+    },
+    {
+      "path": "scripts/floor1/prepared-persistence-host.py",
+      "SHA256": "ab69cde7525f651516197e6f5702172c70a9fb3d468f83cec28963ccc9882254"
+    },
+    {
+      "path": "scripts/floor1/prepared-preservation-observer.h",
+      "SHA256": "057ad508b4a445210d8bec12201862f2f08fea168b4845880818dbd4ff94443e"
+    },
+    {
+      "path": "scripts/floor1/prepared-save-validation.py",
+      "SHA256": "9a50713b433d05b3bad9636884361b0588da9eaf21145bb40bb3fcecdeaed221"
+    },
+    {
+      "path": "scripts/floor1/recovery-field-readiness.h",
+      "SHA256": "65278e46d9e412527e8b534af2ebd3bdc40719bc9dfa728508e22fd81b6502b1"
+    },
+    {
+      "path": "scripts/floor1/recovery-host.py",
+      "SHA256": "e67a676cbb8f37a40f7027cfaddf2fb9de470777b720c5219aabcfe331006575"
+    },
+    {
+      "path": "scripts/floor1/relocation-graybox.py",
+      "SHA256": "b17e182f32c080de4cd19c278745d18a169ea1022f4426e3bb1238a7c139ec0d"
+    },
+    {
+      "path": "scripts/floor1/save-boundary-input.py",
+      "SHA256": "b814579e5cea9291abaa92ae3c3875c68efd5fe37855b1766783fa7c0b9094d7"
+    },
+    {
+      "path": "scripts/floor1/tag-capacity-fixture.py",
+      "SHA256": "0e87d9088db33ecbc0c1ddb1a4b232bbca54f90bc84f2191c4d903862f20c922"
+    },
+    {
+      "path": "scripts/floor1/travel-measurements.py",
+      "SHA256": "1f821d6f0f02f5e74e2f5a99159c2e4e6f03a79d0ab0d259eec34aa1691ef696"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-host.py",
+      "SHA256": "ffaf90a49201834781a0bfa9f2cea5202ac3ccb9712a9e60f1a97046b318fc40"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-layout.c",
+      "SHA256": "802f39e2bf31f92f733c2efa2c2fd0936985c94960b0dd59147391c70a90e8f5"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-observer.h",
+      "SHA256": "608b487a7cc6fb56853740930f300f95dc49227e54202e706c41e4af54289629"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-snapshot-contract.h",
+      "SHA256": "4c1149a4f1cca03b3bedd53f2f6dc9290a9d49552008d3c34d2d76519994896a"
+    },
+    {
+      "path": "scripts/floor1/v01-battle-symbols.py",
+      "SHA256": "06d284b637353d261149edc0534fc9617b672e24b3de2cada4dd84aac7385c39"
+    },
+    {
+      "path": "scripts/floor1/v01-character-observer.h",
+      "SHA256": "1de04a3117da0185db866137cc4d382016ae0e0856f8a040ad8968448be4e98f"
+    },
+    {
+      "path": "scripts/floor1/v01-environment-host.py",
+      "SHA256": "adcd2402deeaedd325d48559cba7ce8999abc819b4162476e3f1dab5d299e117"
+    },
+    {
+      "path": "scripts/floor1/v01-native-boundary-adapter.h",
+      "SHA256": "a21936b975e32ccd16b115e5b379a852232304527076d3f11dd1b2f0aff6222c"
+    },
+    {
+      "path": "scripts/floor1/v01-native-boundary-capability.c",
+      "SHA256": "4cae546007de55a3b8270801b9de025119259dc02d21357a1da8e1185b27773d"
+    },
+    {
+      "path": "scripts/floor1/v01-native-boundary-interpreter-fixture.c",
+      "SHA256": "e9a10ca8a8ab1414c5af6b8f563dca749fd41e03142a51a95b58d28a3789524f"
+    },
+    {
+      "path": "scripts/floor1/v01-native-boundary-runtime.h",
+      "SHA256": "66b59429f3a4355f6962e628ca49be963c6f631d1f727fadd15d10b79b8232af"
+    },
+    {
+      "path": "scripts/floor1/v01-native-boundary-symbols.py",
+      "SHA256": "c0e55800a6fe1f6ca056d1e51e5cba33e134d8e85b6c5cb6cf7717bcd7d0151a"
+    },
+    {
+      "path": "scripts/floor1/v01-overworld-effective-flip-host.py",
+      "SHA256": "51f84c2f1e95dada1fe737a7f7d7658e726d3794896e1043f5a9dd9c48d59b5d"
+    },
+    {
+      "path": "scripts/floor1/v01-overworld-host.py",
+      "SHA256": "7a4536e4ea221553da65881305cbff291eba0583a2be38cd031b3ede0672e2ac"
+    },
+    {
+      "path": "scripts/floor1/v01-scene-observer.h",
+      "SHA256": "961ed782b02fab5b10ce2895dddc2a5098a80cde9c3dc4993d7ca274654334cb"
+    },
+    {
+      "path": "scripts/floor1/walking-harness.py",
+      "SHA256": "35baab3bbdc9e2e05fb3b7c6d43c7ba4979408c07ca96d3d253a4d0fc0c2ed6a"
+    },
+    {
+      "path": "scripts/floor1/walking-preservation.h",
+      "SHA256": "1440f831f61c25adf3e23935c13b6d277fe523cf1358b1d76e9ccc698bb34172"
+    },
+    {
+      "path": "scripts/floor1/warden-attempt-bound.h",
+      "SHA256": "ca208e9cba2af3217bd4688a9e9ba7c4ee6cd6a68234bddd4f95c0eab52de687"
+    },
+    {
+      "path": "scripts/floor1/warden-fairness-host.py",
+      "SHA256": "b75e074ce429445d6697a1bb3bbabd3e96aa983e97b622ad4b212f1ddbf71160"
+    },
+    {
+      "path": "scripts/floor1/warden-first-clear-host.py",
+      "SHA256": "b86d90ecc56d53d2655aafb2db1bf8026a4a2233d4cad6e5f77f6861269454ce"
+    }
+  ],
+  "runtime_engine_host_route_policy": "unchanged throughout both executions and after STOP; no additional execution/host fix/retry",
+  "Save_SHA256_both": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "historical_exclusive_claims": {
+    "baselines": 4,
+    "candidates": 1
+  },
+  "new_claims": {
+    "baselines": 1,
+    "candidates": 1
+  },
+  "current_totals": {
+    "baselines": 5,
+    "candidates": 2
+  },
+  "historical_STOPs": [
+    "35",
+    "107",
+    "105",
+    "103"
+  ],
+  "new_STOP": "117 atvisual4948, separate",
+  "historical_baseline_PASS42": "unchanged; this is a separately claimed fresh baseline",
+  "original_strategy_and_controller_history": "unchanged; no acceptance transfer",
+  "legacy_inputs": "Original saves/raw diagnostics remain missing; no fresh-input substitution",
+  "next_dependency": "Parent partial visual and STOP117 metadata diagnosis review; no further execution or merge."
+}

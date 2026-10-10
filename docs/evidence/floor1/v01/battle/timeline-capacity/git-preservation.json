@@ -1,0 +1,19 @@
+{
+  "prior_checkpoint": "4c1a28006465be9bdc9a6363a03339dcc8b7a98c",
+  "compiled_source": "6217e6e630f0cd6a23133b9bc762f19ed93ff26a",
+  "engine_game_assets_routes_host_generator_driver_strict_comparator_unchanged": true,
+  "all_historical_status_bodies_preserved": [
+    "AGENTS.md",
+    "docs/progress.md",
+    "docs/backlog.md",
+    "docs/floor1/v01-entry-plan.md"
+  ],
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "no_baseline_or_candidate_execution": true,
+  "counts": {
+    "baseline": 6,
+    "candidate": 3
+  },
+  "source_changes_only_capacity_header_format_offline_tests": true,
+  "all_prior_evidence_unchanged": true
+}

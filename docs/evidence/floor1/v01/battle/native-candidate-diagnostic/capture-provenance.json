@@ -1,0 +1,13 @@
+{
+  "execution_source": "fe6bda55009bb2b21aa4641f988c8a94655a0ebc",
+  "original": "after/visual-stop.ppm",
+  "derived_export": "actual-stop-native.png",
+  "width": 240,
+  "height": 160,
+  "original_PPM_SHA256": "a70edb4f332294094a54f95a39cf4e504e36d516bea82ac13953f71ae5dc9c16",
+  "PNG_SHA256": "30c17eb9537edd47bc9eb90cdd7f918fbcd5bf5f9a17ffcf50544afb53c382f3",
+  "original_RGBA_or_RGB_pixels_verified_exact": true,
+  "RGB_pixel_SHA256": "a0388edeb36fd268e3ff79597bb6e39433a92adb2fbd9c2ae8964785ad8529f2",
+  "kind": "Actual native emergency STOP capture; deterministic lossless PNG export, no concept/generated-art/padding/change",
+  "no_visual_or_timing_cause_waiver": true
+}

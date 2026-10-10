@@ -1,3 +1,247 @@
+## Current technical V01 closure — accepted scoped review; C01a next after normal integration
+
+Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source
+and actual MP4 decoded-frame/time review:6 nearby frames around89 pose events,
+all18 IDs,whole-clip overviews,27 same-frame comparisons,dense faint/exit samples;
+no concrete blocking defect. Warden warning through Carl brace73.986s/Donut
+release85.137s; clean removals205.600/233.259s; matched battle/black/field
+250.806/251.475/251.978s,no retained battle HUD; final261.622s dialogue readable.
+Tested game9c83611e,execution021cb729,engine8d8c7761 unchanged. Native new-input
+pair PASS42 each,fullB/F/E/EOF and all17 poses/warning/palette/budget/cleanup/
+resources/Save gates remain actual evidence. Routine scoped PR114 integration
+is authorized when normal protections permit; no extra mandatory Kurt approval.
+Returned main protection off/required checks empty,rulesets empty;no returned
+reviews/statuses/PR workflow/check runs and no CI pass claimed. Actual merge
+identity is the normal PR114 merge result,never a predicted commit.
+
+Technical V01 scope is accepted; decoded-frame/time review is not direct
+ordinary-speed perceptual playback or proof of no flicker in unsampled frames.
+Human comprehension/pacing,legacy-input/original-provenance and whole-floor
+acceptance remain separate obligations. Historical6/4/STOP117,new1/1,ordinary5,
+all other failures/STOPs,Library5+1 and local-only retention remain unchanged.
+This closure runs no emulator/build/capture/Library retry. Private Save53f62dc2
+and reference849a1585 preserved in place. Exact review/merge-gate/scope records:
+docs/evidence/floor1/v01/new-input-pair-20261010/closure.md.
+
+Next after verified normal integration: separate **C01a action-selection clarity**,
+contextual USES label plus compact target/effect hints in existing move pane;
+preserve balance/controls/Save schema. Not implemented here. No full-floor or
+human-pacing acceptance claim. Earlier checkpoints below are historical.
+
+## Current new-input visual checkpoint — native pair PASS, playback review pending
+
+Parent accepted ordinary recovery83ab1c1d and authorized one separate new-input
+baseline/candidate pair. Freeze/execution021cb729f13161ff1a0cfab2281b8b323fa5d3f5
+ran integrated mainc6d647a8 and active-pose source9c83611e/engine8d8c7761 once each.
+Reused main ROMae1e9d36/ELF6e56b321; single candidate build ROM6b7a83f2 matches
+active pin, actual new ELF1bc654d9. Unchanged observer1647352d/shared binarya17ea513,
+main84/candidate85 bindings and full native ABI/source identities verified.
+Both PASS42/17671 absolute/15627 visual; strict full2560 B15379/F15627/E+EOF,
+controls/resources/victory/field/Save equal. Candidate all17 poses,held5016/other
+actor852 warning frames,palettes7,swaps37/19/33,faint/exit clean,budgets equal.
+Original and both copies53f62dc2 unchanged; route never manually Saves.
+
+New generated reference849a1585 matches recorded historical hash, but provenance
+is this new run,not recovered original bytes/oracle or legacy acceptance.
+Historical6 baseline/4candidate/STOP117 unchanged; new1/1 separate,no retry or
+runtime failure. Ordinary5 processes/checkpoint beforeWarden unchanged. Two
+recorded offline import fixes/six focused parser tests; no old test/import replay.
+Actual static screenshots inspected; both ordinary-speed15627-frame clips and
+all lossless RGB bytes verified. Available inspection tools cannot play video;
+human playback review needed before full visual acceptance. Draft PR114 review,
+no merge/further game run/C01/full-floor claim. Exact records/captures/limits:
+docs/evidence/floor1/v01/new-input-pair-20261010/README.md.
+
+Private local archive481626492 bytes/32166 byte-verified entries,f43bdc3b…dbcd3;
+separate build/tooling components,no verified independent backup. Library5+1
+failures/zero original bytes/unknown cause preserved,no retry. Accepted bounded
+nine-district plan and deferred branch/skip/recovery/legacy/full-floor gates
+remain authoritative. Earlier checkpoint bodies below are historical.
+
+## Ordinary recovery completed to patrol Save/cold review checkpoint
+
+Publication base030e4d19b1bdc928237f3596041379a5f279dacf;
+claim/source279efbfa7a97f7e5380b74dfadedfb3fb0f2408e;
+freeze/executionbfd69de5269740ca6a1680ba7b3b11bef37c8e87;
+tested gameplay integrated mainc6d647a815ffce44a2419a2cf83b6c2c094359f0.
+Reused actual verified ROM/ELF/tool/observer identities,zero rebuild/compile/
+acquisition. Same actual trial Save verified,reused; no New Game/trial replay.
+Only item/uses observations moved after existing return-field/ready; exact zero
+frame/input proof and4 focused cases pass. Two diagnosed offline proof failures
+remain retained; no observer/native assertion was weakened.
+
+Process3 corrected setup attempt2 passed45 assertions/6579frames/full manual
+Save persistence. Process4 reviewed Guard-first patrol passed164/31083,2 wins,
+6 travel checks,full native walking/friendship/rewards/recovery/manual Save.
+Process5 independent cold passed18/2044,full native state exact/Save unchanged.
+Final Save53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6:
+map35,3 at8,7,facing1,levels11/10,XP748/1058,HP38/30,status clear,
+uses8/40/2/40,Potion1,Scrap2,trial/patrol set,preparation/boss/checkpoint/loop/
+Warden unset. [Exact results, captures and retention](evidence/floor1/ordinary-recovery-20261009/runtime-r6/README.md).
+Actual native PNG/motion streams recorded; lossless RGB decode exact,public
+compressed viewing copies preserve counts/timing. Private raw files excluded.
+
+Cumulative ordinary5 processes/2setup attempts/1trial/1Guard/1Howler/1 full final
+cold,zero Warden; r5 STOP40 unchanged. Historicalsix/four/STOP117 unchanged.
+Stopped before Warden for draft PR114 review. Next separate baseline/candidate
+contract needs review and is unexecuted. Active poses remain offline-only; no
+legacy/oracle recovery,merge or full-floor claim. Local verified private archive
+is not an independent backup; Library5+1 failures unchanged,no retry. Prior
+records follow unchanged.
+
+## Actual ordinary recovery — fresh Save verified, setup STOP40
+
+Publication base6e4b8d4573c717b12c4da91b17027dec0ec67955;
+preparation sourcefca57ec86ed41122c81dace994201b6dc9fe26bd;
+freeze/execution source9b2cdee62eabb71fe1b82d8975ce009725e004de.
+Parent-approved exact pinned-attribute source correction passes9 cases and11960
+archived engine/helper checks. Observer compiles;51 ELF bindings,22 native ABI
+constants/3 bitfields pass. Reused mainc6d647a8 single verified build; no rebuild.
+Fresh ordinary New Game/trial/manual Save passed54 assertions/19642frames;
+Savef866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281
+passes native checksums/full live-disk persistence. Levels9/9,XP495/805,
+HP17/33,24/28,uses3/40/0/37,two Potions,trial set; patrols pending.
+Setup actual Bag/party/healed readiness passed but item assertion before
+return-field hit field-only STOP40 at3040,13assertions. No setup Save/patrol/
+final full cold/retry. Two ordinary emulator processes,one trial encounter,
+zero patrol/cold, separately counted from historicalsix baseline/four candidate.
+[Exact actual evidence, captures and next review](evidence/floor1/ordinary-recovery-20261009/runtime-r5/README.md).
+Private FFV1 decoding matches RGB exactly; public compressed presentation MP4s
+preserve frame counts/timing. Local81,609,444-byte private archive/63file entries
+verified; no independent backup/transfer. Library5+1 failures unchanged/no retry.
+Review observation ordering after native return-field, retaining all assertions
+and separately claiming setup from the successful fresh Save. No proposal run.
+No Warden/candidate pair/merge/full-floor claim; prior records follow unchanged.
+
+## Ordinary main build — preparation STOP before gameplay
+
+Publication base5b1c108557ecdb2704dea94c61aff1fb28845acd;
+new runner/preparation source2580b38eeda5c1b56b988ae04bbd24b7ac131006.
+One isolated main c6d647a815ffce44a2419a2cf83b6c2c094359f0 build passed,
+ROM ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461,
+ELF6e56b32192e1a861b39c70e62bb5c43e762b9f5cc8ce0389d3cb494c3ee6dde6.
+New compiler identities retained; no original-tool identity claim.
+Prepare failed raw source equality at engine/asmdiff.ps1 before host compile.
+Read-only diagnosis:9037 exact/2677 explicit CRLF-only files; no non-EOL source
+mismatch. No retry or emulator execution, Save, screenshot or motion.
+[Exact evidence and supported next action](evidence/floor1/ordinary-recovery-20261009/build-r4/README.md).
+New ordinary wrapper/ABI/contract implementation is prospective, not executable
+acceptance. Review a separately claimed attribute-aware source verification,
+then observer/ABI/bindings/routes freeze, then one ordinary reconstruction and
+manual Save/cold; stop before Warden. PR114 remains draft/unmerged; historical
+six baseline/four candidate, STOP117 and missing oracle/legacy state unchanged.
+Existing Library5+1 failed transfers unchanged; no independent private backup.
+Prior records follow unchanged.
+
+## Independent tooling completion — executable, identities qualified
+
+Tooling checks at base `6d05b559e0bfde1044015f7fbbe13ea0e1b172c6`.
+Three parent-supplied official Debian packages and source-resolved libpng headers
+pass exact package/hash/control checks. Existing binutils/epoxy not reacquired.
+Pinned agbcc source built once; three compiler/assembler probes pass. libmGBA
+matches recorded a1d7713c library hash, ldd resolves and native link/version check
+passes without a core/ROM/Save. PNG/zlib prerequisite/link checks complete.
+[Actual identities, preserved diagnostic errors and local bundle](evidence/floor1/ordinary-recovery-20261009/tooling-r3/README.md).
+All new compiler binaries differ from historical/previous rebuild. Installed
+inih 59-1 ownership/current hash/linkage verified, historical exact-byte parity
+unproven. Tools executable; new ordinary freeze must pin actual identities and
+verify isolated game/observer outputs. Original-tool identity not claimed.
+No game build/gameplay/new Save/Warden/Library retry/merge; counts6/4/STOP117
+unchanged. Bundle local only, no verified independent backup. Prior failures,
+wrappers/assertions/plan and earlier bodies preserved. Parent tooling review
+then separately scoped ordinary contract/build/freeze/reconstruction.
+
+## Tooling continuation — partial restoration and access-denial stop
+
+Base `5895f3af34aaddff1c49e2b6d228a2540056a286`; official Debian ARM binutils
+2.44-3+23+b1 and libepoxy 1.5.10-2 downloaded once, manifest/control-verified and
+extracted locally. Empty local APT indexes explain why previous discovery did
+not establish official package unavailability. Incorrect inih pool 404 preserved;
+supplied download-page resolution then failed with tunnel 403 Forbidden.
+[Exact partial tooling/bundle, access denial and next dependency](evidence/floor1/ordinary-recovery-20261009/tooling/README.md).
+Tooling remains incomplete: no agbcc/libmGBA recovery, game build or gameplay.
+No acquisition after denial, no new Save/Warden/Library retry/merge.
+Six baseline/four candidate executions and STOP117 visual 8536/expected B8402
+unchanged. Local partial bundle has no independently verified private backup.
+Parent access-denial review/resolved official URLs or supported access
+resolution precede tooling completion and ordinary contract freeze.
+Earlier checkpoints below preserved.
+
+## Replacement workspace recovery — 2026-10-09, blocked before gameplay
+
+Kurt's 23:29 UTC authorization permits one ordinary reconstruction using main
+`c6d647a815ffce44a2419a2cf83b6c2c094359f0`, then manual Save/independent cold
+and review before Warden. Base is existing draft PR114 head `96f314c8`;
+PR113 is merged, PR114 remains draft/unmerged. Its engine equals active-pose
+source `9c83611e`/tree `8d8c7761`, historically compiled/offline-checked only.
+Source and reviewed route pins were rechecked; first pinned package acquisition
+failed. GCC 14.2.0 is present; ARM/agbcc/libmGBA and emitted outputs are unverified.
+[Separate draft contract and exact tooling stop](evidence/floor1/ordinary-recovery-20261009/README.md).
+No executable freeze, new build/offline replay, gameplay, Save, cold verification
+or actual captures. Screenshots N/A. Six baseline/four candidate executions and
+STOP117 at requested visual 8536 before expected B8402 remain unchanged.
+Original oracle/legacy/historical Save still missing. Five failed Library uploads
+and one failed supported backup download preserved; no retry or new backup claim.
+Next: parent tooling-failure review and one supported acquisition path, then
+verified/frozen ordinary reconstruction. No Warden/candidate pair/merge here.
+Historical checkpoint bodies below are preserved unchanged.
+
+Current single optimized candidate result — 2026-10-09: parent independently acceptsfa8fcf2b/214a10a2 and authorises ONE retained-complete-reference candidate only after fresh integrity/storage; no baseline restart. Frozen executionfa8fcf2b/game2feadf56/ROMa022b2a5/ELFf31a5a8b/host1647352d/binarya17ea513/Save030b/routeafbd80b0/policy/cadence/30k battle/36k visual unchanged. Preparation and immediate execution storage gates passed. ONE candidate FIRST STOP117 at requested visual8536/absolute10581/27 partial assertions: F emitted while B expected ordinal8402, exact ordinary input, no EOF/stream error.8402 full2560 B/8536 F accepted;21 controls exact original prefix.657139 observations/10581 hash-continuous summaries;140-record lossless suffix from accepted8401 atvisual8533; terminal117 frozen, no119/no E/finish/PASS/poststop stepping. Available actual4e295249 baseline reaches Wait917 cycles before common drain; new candidate still RunTextPrinters080047ea. New boundary-timing divergence proven; earlier discarded cause/missing historical timing/remedy not recovered.8536 completed frames/8667 PPMs retained; native lossless clip8536 frames/142.915741s every RGB pixel verified, LOCAL ONLY. Partial actual BRACE/SPARK/STRIKE/readiness/STOP screenshots inspected; no full action/victory/cleanup/reward/resource/Save/equivalence or visual rollout claim. Save unchanged, all9 older claims/archive/raw reference/old failures/controllers/three strategy failures preserved. Totals6 baseline/4 candidates; no retry/source edit/realignment/waiver. Existing draftPR114 unmerged; parent STOP117/retained-causal-window review next, no further emulator execution/correction/merge/expansion. Five failed Library transfers not retried/bypassed; no alternative delivery or durable fresh-backup claim. Original legacy/C01/human pacing/full-floor limits remain. Contract docs/floor1/v01-retained-candidate-validation-contract.md; safe evidence docs/evidence/floor1/v01/battle/retained-candidate/README.md. All prior authority/status bodies below preserved.
+
+Current offline storage/reference checkpoint — 2026-10-09: parent accepts268fa9a8 arithmetic and authorises ONE offline bounded-retention/explicit-original-oracle binding increment only. Source214a10a214bda76422bf59aaa71df9c42766360e; host1647352d92b3fa6f0135cf80f4c48df1c2a8a3818b711fd94651390a6334977f/binarya17ea5134e700efd77552d9a279fd4d6dd94294d443683b8e9fbfe142361ccbd compiled, NEVER invoked. Every observation and strict full2560/typed B/F/E/count/epoch/input comparison retained. Detail rotates only after accepted boundary; startup2046 chunks/1541996576 bytes, active250 chunks/188416032 bytes, full-run184-byte summary/hash chain7000312 bytes. NOT lossless full history; discarded bytes cannot be recovered. Fail closed on window/I/O/bounds/first stop, no CPU-state writes. Combined capture/helper export/reference/log/working/block-rounded preflight7064285184 bytes; final check available7192756224, mandatory fresh recheck. Explicit --retained-reference candidate-only exact originalf3ce/849a1585 complete15379B/15627F/248zero/max consecutive12/realE source/build/Save/route/meta/state/control/typed-finish binding; partial4e295249 never oracle, old fresh-baseline PASS gate retained without opt-in. PASS2968 writer/full-byte/metadata cases,425 format/provenance/preflight cases,352 legacy writer cases; all999932 retained observations frame-hash identical,16001 summaries,18-record suffix exact from last accepted boundary. ZERO CPU/event/ROM/Save loads/gameplay/preparation/claims/new captures/Library attempts. Counts remain6 baseline/3 candidate, all old failures/strategy/controller records/ordinary Save/archive preserved; original legacy inputs still missing. Game2feadf56/ROMa022b2a5/ELFf31a5a8b unchanged. Existing draftPR114 unmerged; parent storage/host/reference review next, no baseline restart/candidate/merge/rollout here. Five failed Library transfers not retried/bypassed; no durable fresh-backup claim. Historical cause/remedy/full candidate action/motion/victory/cleanup/equivalence/reward/Save/legacy/C01/human pacing/full-floor unresolved. Contract docs/floor1/v01-storage-reference-contract.md; safe evidence docs/evidence/floor1/v01/battle/storage-binding/README.md. All prior authority/status bodies below preserved.
+
+Current offline recorder capacity checkpoint — 2026-10-09: parent accepts STOP119 at4c1a2800 and authorises route-derived correction/streaming validation only. Source6217e6e6; host64a924e8/binary6a23c9bf compiled, NEVER invoked. Pinned route2044 boot +36000 visual yields38044 frame calls; limit38044×4096+70+1=155828295, BVTIME02/header/parser paired. Buffer753664 bytes unchanged; worst-case file28672406296 bytes exceeds current free storage, streaming I/O remains fail-closed. PASS352 writer/counter/terminal/short-write/precedence cases including every38044 maximum-size frame flush,216 parser cases; all999932 retained actual records/payload identical after offline rewrite of header only. Zero CPU/events/ROM/Save/gameplay/preparation/claims/Library transfers. Counts remain6 baseline/3 candidate; old failures/history/controllers/strategy records, archive/all14076 capture bytes/Save/game/route/policy/strict comparators preserved. Historical complete PASS reference independently reverified849a1585/40269443 bytes/15379B/15627F/realE; not a new PASS or recovered historical timing. Parent offline review next; proposed later ONE candidate against retained complete reference, failed baseline partial timeline only through13956. No baseline restart/candidate now; existing fresh-baseline PASS runner gate unchanged, retained-reference contract/binding requires separate review. Missing original reference stops dependent work; never reconstruct. No retry/merge/rollout/expansion; legacy/C01/full candidate action/motion/cleanup/equivalence/pacing/full-floor remain. Five failed Library transfers not repeated/bypassed; no durable fresh-backup claim. Evidence docs/evidence/floor1/v01/battle/timeline-capacity/README.md; contract docs/floor1/v01-timeline-capacity-contract.md. All prior authority/status bodies below preserved.
+
+Current fresh instrumented original-baseline result — 2026-10-09: parent accepted4e295249/source2feadf56 and authorised one fresh original baseline then candidate only after full PASS. Frozen source4e295249/game4938927/ROMae1e9d36/ELF2fb481bd/hostee269bb9/binary357a8b9b/Save030b/routeafbd80b0/policy/cadence/bounds unchanged. ONE baseline FIRST STOP119 atvisual13956/27 partial assertions;999932 timeline records leaves68 versus70 required before next instruction at BIOS IRQ0x18. No E/finish/full PASS, candidate UNPREPARED/UNEXECUTED, no retry/poststop/source edit/waiver. Totals6 baseline/3 candidates; all earlier history/controllers/strategy failures retained. Partial13721 complete boundaries/13956 F records/47 controls exact historical original prefix; no old PASS transfer or historical-cause claim. Native clip13956 completed pixels all verified, emergency duplicate kept separate. Save unchanged. Five private Library byte transfers failed/cancelled, no finalized new IDs/durable fresh-retention claim; verified originals local, denied raw datasets/keys/ROM outside uploads. Existing draftPR114/unmerged; parent fixed-capacity/STOP119 review next, no correction/new execution/merge/expansion authorised. Legacy/C01/full candidate actions/cleanup/equivalence/pacing/full-floor remain. Evidence docs/evidence/floor1/v01/battle/passive-validation/README.md; contract docs/floor1/v01-passive-timeline-validation-contract.md. Previous authorities/results below preserved.
+
+Current cached-pose/passive-timeline result — 2026-10-09: source2feadf56764c0d89c3dde9ef4622ea6d43b32f69/enginebaac7fee, ROMa022b2a5/ELFf31a5a8b, hostee269bb9/binary357a8b9b IMPLEMENTED/COMPILED, offline38 timeline+3 native Wait phase+existing193 diagnostic/full2560/interpreter/boundary/pose/observer regressions PASS; no gameplay or fresh pair prepared/claimed/executed. New native object text exactly accepted counterfactualb5383fd3; all11,734 copied source blobs verified, earlier builds unchanged. Passive records observe native points and aggregate video/event drains; no precise internal increment callback replacement or actual historical timing recovery. Optional failure query guards only; strict117 beats trace119; route/all13 setKeys calls/comparators/policy/bounds unchanged. Five baseline/three candidate histories/all failures preserved. Actual cause/remedy/equivalence unproved, legacy/C01/full-actions/victory/cleanup/pacing/full-floor pending. Existing draft PR114/unmerged; parent frozen-candidate/host review is next, no new execution authority. Safe evidence docs/evidence/floor1/v01/battle/passive-timeline/README.md; exact build identities build-identity.json. Previous authority/history below preserved.
+
+Current cached-pose/passive-timeline implementation authority — 2026-10-09: parent accepts ed4039b3 offline audit and authorises exact tested early cached-pose return plus passive source-pinned bounded fail-closed host timeline, offline neutrality/regressions, compilation/review and normal existing draft PR114 publication only. No gameplay, preparation/execution claim, retry, merge or expansion. Actual F-before-B cause remains unresolved; optimisation is not a demonstrated remedy. Strict complete2560/typed B/F/E/input/count acceptance, controller/route/policy/bounds unchanged; all write-time guards/four frame copies retained for changed poses. Timeline119 stops before further work; first strict117 stays first. Five baseline/three candidate histories and all strategy/controller failures preserved; missing historical legacy/timing inputs stay missing. Parent frozen-candidate/host review then separately authorised fresh original baseline, conditional candidate only after complete PASS, is next; pair NOT executed here. Contract docs/floor1/v01-passive-timeline-contract.md. Previous authorities/results below historical.
+
+Current offline timing audit — 2026-10-09: parent accepts actual9a0903ea F-before-B4894 proof and authorises only source/ELF-pinned timing/cost review. Implemented offline tools; PASS14 synthetic native-Wait/video/IRQ cases (both ELFs identical traces),42 native/recompile/counterfactual Apply guard/cost cases. Steady unchanged Apply already copies nothing; scratch early return removes43 interpreter steps/position lookup and retains every tested write-time guard, engine UNCHANGED. Distinct delayed-boundary/preserved-iteration and late-clear/lost-update mechanisms demonstrated synthetically, actual IRQ/controller/flag/baseline-cycle history still missing; actual STOP117 cause/native cadence impact UNPROVED, no demonstrated remedy/waiver/realignment. Last recorded pose transition4516 precedes stop4948 by432 video events; no immediate8KiB-copy attribution. ZERO ROMs/Saves/reset/gameplay/new attempts or host/engine/policy/assertion changes. Five baseline/three candidate histories/all STOPs/strategy/controller records preserved. Current accepted-plan9b3e5d6f/mainc6d647a8 unchanged;68 heads/65 PRs reconciled, PR114 only open/draft/unmerged, checks/statuses/runs0 (definitions not freshly available). Safe source/fixture evidence only, no denied raw/key/ROM/Save/Library IDs uploaded. Parent review then read-only timeline instrumentation review/new explicit fixed bounded execution authority is next; NO engine remedy, continuation, merge or expansion here. Original legacy/C01/full-action/victory/cleanup/human pacing/full-floor limits remain. Contract docs/floor1/v01-timing-audit-contract.md; evidence docs/evidence/floor1/v01/battle/timing-audit/README.md. Prior authorities/results below historical.
+
+Current candidate-only diagnostic — 2026-10-09: parent accepted offlinefe6bda55 and authorised ONE candidate after exact original raw reference verification, with no baseline rerun. Baselinef3ce raw40,269,443 bytes/SHA849a1585, complete published metadata/snapshot/control hashes,15379 boundaries/15627 frames/248 zero frames/typed finish and original build/Save/route/claim verified. New candidatefe6bda55/hostd7bf57ca/binary1efcd983 FIRST STOP117/27 visual4948, captured absolute6993. Exact actualF vs expectedB4894, video4948/input6993/count0 both, absolute6993 vs6992; original29 read at12814058→12814087, first offset0, only offsets0/21 differ, keys equal/no I/O error. CPU next080004d6 callback-wrapper return, cycles0/next6/current1964065838; new typed-order failure proven, underlying timing cause UNPROVED. Old failed metadata remains irrecoverable; no retrospective cause claim/waiver/realignment/frame exception. All255 previous tracked source/art/evidence files and historical five baseline/two candidate histories preserved; ONE genuine new candidate makes totals5/3. Save030b/game/route/policy/cadence/bounds unchanged. Complete4949 pixel-exact native clip/all5042 original PPMs/one Save retained in separate private Library7,573,140-byte/5070 verified entries, SHA6ffe67af. Exact key-bearing diagnostic local0600 only, raw references/denied keys/datasets/ROM/binaries outside uploads; no durable claim for excluded data. Existing draftPR114/unmerged; authority exhausted, parent new metadata diagnosis review next, NO further execution/correction/merge/expansion. Candidate full-actions/victory/cleanup/equivalence and legacy/C01/human pacing/full-floor limits remain. Contract docs/floor1/v01-candidate-diagnostic-contract.md; evidence docs/evidence/floor1/v01/battle/native-candidate-diagnostic/README.md. Prior authorities/results below historical.
+
+Current offline STOP117 diagnostics — 2026-10-09: parent authorised first-failure retention only. Implemented every original117 origin and host frame/finish exit; exact typed29 headers/read length/offset/positions, kind/ordinal/count/video/input, CPU/event timing and relevant keys retained privately, safe JSON redacted, exclusive mode0600/no overwrite. PASS193 offline diagnostics/JSON cases,87 B/F/E byte mutations,29 installed hardware-header mutations,58 EOF/EIO short-read cases; installed synthetic interpreter/full2560 reader regressions and full host compile pass. Hostd7bf57ca/binary1efcd983 compiled NEVER invoked; ZERO ROMs/Saves loaded/gameplay/new claims. Comparisons/driver/cadence/engine/route/policy/art unchanged. Actual f3ce pair and STOP35/107/105/103/117, five baselines/two candidates, historical passes/inputs/strategy/controllers preserved. Actual failed117 header/count still missing; alignment remains inference, no waiver from pixels. Parent accepts partial WEAKEN/warning through BRACE/recovery/HUD; narrower warning silhouette needs later judgment, STRIKE/SPARK/SLAM/victory/cleanup/full candidate equivalence UNVERIFIED. Existing draft PR114/unmerged; parent offline review next, no live execution/merge/expansion. Legacy/C01/human pacing/full-floor limits unchanged. Contract docs/floor1/v01-native-diagnostics-contract.md; evidence docs/evidence/floor1/v01/battle/native-diagnostics/README.md. Previous authorities/results below historical.
+
+Current actual native-boundary validation — 2026-10-09: frozen executionf3ceae89/host1ba0514f/binary41f49c4d, unchanged builds/Save030b/routeafbd80b0/policy/bounds. ONE fresh baseline PASS42/17671 absolute/15627 visual,15379 complete boundaries+248 explicit zero-boundary frames, full field/reward/owned/native-party/Save/typed-end checks. ONE matching candidate FIRST STOP117/27 atvisual4948;4948 numbered captures+actual emergency STOP, absolute6993/4949 completed video events source-derived. Native ready3155;14 actual turn0 WEAKEN/WIND UP/BRACE pose events, reachedturn1; six applied controls match baseline prefix. CPU next080004d6 callback-wrapper return; reference expectsB4894 at4948. Boundary alignment inference only: failed actual metadata/header/count/full snapshot not retained, no fabricated diagnostics/waiver/retry. Candidate victory/retirement/field/reward/full budget/equivalence and STRIKE/SPARK/all-action visual gates UNVERIFIED. Safe private Library19616680-byte/20956 verified entries/20789 original PPMs/two unchanged Saves/full native clips20576 pixel frames, SHAa1fc48683dbe90b38dbfbaa9bdeff740c364c3692c081f727f5384265aedd898. Raw .bin/key-bearing lines/ROM/binaries/keys remain excluded/local, no durable claim. Historical STOP35/107/105/103, baselinePASS42, strategy/controller records preserved; exclusive totals5 baselines/2 candidates include historical4/1 plus this one pair. Existing draft PR114/unmerged; STOP further execution/host fix/merge/expansion pending parent partial visual and metadata diagnosis review. Legacy/C01/human pacing/full-floor limits unchanged. Contract docs/floor1/v01-native-boundary-validation-contract.md; evidence docs/evidence/floor1/v01/battle/native-boundary-validation/README.md. Prior authorities/results below historical.
+
+Current concrete native-boundary runtime binding — 2026-10-09: parent authorised host binding, installed synthetic interpreter/event fixtures, compile/review and safe PR114 publication only. Implemented sole original-batch frame driver, passive exact WaitForVBlank080008ac/callerLR080004bf/opcode/Thumb authority, complete2560 snapshot reader and typed ordinal/video/input/count/key stream; no raw-frame masks/extra steps. Actual installed interpreter parity/IRQ/MSR/mode/due/frame-end/cadence/timeout fixtures and production native-bus snapshot variant PASS; every2560 snapshot byte/all29 metadata bytes/order/count/integrity/stale-checkpoint negatives PASS. Full host compiled, NEVER invoked; ZERO ROM/Save/gameplay/new exclusive claims. Existing engine/route/policy/Saves030b/Donut source and STOP35/107/105/103/history/counts4 baselines+1 candidate unchanged. Game equivalence/candidate visuals/legacy/C01/full-floor gates UNVERIFIED. Existing draft PR114, unmerged; parent binding/evidence review before separately authorised fresh gameplay. Contract docs/floor1/v01-native-boundary-runtime-contract.md; evidence docs/evidence/floor1/v01/battle/native-runtime/README.md. Previous authorities/results below are historical and preserved.
+
+Published offline native-boundary source checkpoint0d9e93f5f6cbe1d3f537e6be16ab0f2b26d90858 through existing branch/draft PR114 — 2026-10-09. Parent clarification restores standing authorisation for routine code/documentation/art Git blobs; the no-public restriction concerns ROMs/playable releases/secrets/private raw diagnostics. Previous local-only hold was instruction interpretation; no publication action was denied. Reviewed diff excludes ROMs/ELFs/executables/Saves/secrets/denied raw buffers. Safe37-entry107704-byte offline archive retained privately in Library, SHA256e77020d62902a1b7b4b3878846964d07ddc08024bc7af36a70096716b7731370; no Library identity or raw material in Git. Prototype/derived-master implementation and offline tests stay pinned0d9e93f5; no runtime binding/gameplay/new claims/merge. Existing STOP35/107/105/103, baseline PASS42/17671, candidate STOP103/22 uncertainty, all strategy/controller records and limits retained. Parent review of pinned native-boundary contract/evidence/Donut source next. Historical local-only authority below describes the initial offline checkpoint and is superseded only for this scoped publication.
+
+Current offline native-boundary prototype — 2026-10-09: both exact ELFs verify AgbMain WaitForVBlank entry080008ac/BL080004ba/LR080004bf after callbacks/play-time/music; source/interrupt review and installed mGBA0.10.5 passive hardware-hook capability pass, complete ARMCore unchanged. Default debugger hit schedules nextEvent=cycles; standard event-first stepping can cross frame end, so neither is used unchanged. Generic original-batch adapter and full2560 boundary/order/count/epoch/checkpoint/mutation fixtures pass offline. Corrected complete boundary sampling contract proposed; frozen gameplay host unmodified, concrete runtime binding/integration/game/frame equivalence UNVERIFIED. ZERO ROM/Save/reset/CPU instructions/gameplay/video frames/new claims. Derived Donut master10 native PNGs/12 reproducible definition files, exact PNG/pixel/palette/transparency/RGBA roundtrips; no integrated asset changes. LOCAL checkpoint only: no public upload/push/PR mutation; remote draft PR114 a86ceca9 unchanged. Preserve STOP35/107/105/103, baseline PASS42/17671, candidate STOP103/22 before readiness/moves/poses/missing failed bytes+CPU, counts4 baselines/1 candidate and all strategy/controller records. No acceptance transfer/retry/reset/merge; legacy/C01/full-floor limits remain. Parent review next. Contract docs/floor1/v01-native-boundary-prototype-contract.md, evidence docs/evidence/floor1/v01/battle/native-boundary/README.md. Historical authorities below retained.
+
+Current offline snapshot-validity checkpoint — 2026-10-09: safe first-mismatch/CPU diagnostics implemented and full host compiled; disconnected read/defer/reentry contract and actual observer/native ABI/symbol/lifecycle diagnostics pass offline. ZERO emulator frames/new claims/saves/captures. Runtime validity correction BLOCKED: no reliable source-pinned CPU classifier across native decrypt/getter helpers/partial XOR/setter/interrupt context; no deferral/mask/frame exception enabled, strict comparisons retained. Other-field audit identifies bytewise BattleMons and SaveBlock relocation/rekey assumptions; no waiver. Historical STOP35/107/105, baseline PASS42/17671 and candidate STOP103/22 before readiness/moves/poses, all four blocked approaches and exclusive counts4 baselines/1 candidate remain unchanged. Candidate actual failed bytes/CPU missing; exact cause/gameplay equivalence unproved. Existing draft PR114; parent offline authority review next before any live execution or merge. Candidate visuals/legacy/C01/full-floor gates unverified. Contract docs/floor1/v01-battle-snapshot-validity-contract.md; safe evidence docs/evidence/floor1/v01/battle/snapshot-validity/README.md. Historical authorities below preserved.
+
+Supported private Library retention for the actual reviewed pair confirmed:10361260-byte/17114-entry byte-verified archive,17063 original PPMs,two unchanged ordinary Save copies, safe logs/claims/source diagnosis/offline crypto proof and complete lossless baseline/candidate clips. SHA256f0de9dc67a0a407b3dd1acb671ad45da3774a0e9bbce0f546d4bd953658536bf. Denied .bin/raw state/key/VRAM/crypto inputs/full symbols/executables/ROM/ELF and key-bearing pilot lines remain local outside uploads, no durable claim for excluded bytes. Existing draft PR114 checkpoint; parent diagnosis/visual review next, no further execution or merge.
+
+Current actual reviewed lifecycle validation result — 2026-10-09: frozen host/route/execution e017e185, reviewed observer a89899c7 unchanged (hostc96c002e/binaryc2629fb9). ONE baseline PASS42/17671 absolute/15627 visual, controller13721 battle frames/1 policy attempt; native ready3155, retirement14987, FIELD15626, complete resources/reward/inventory/Save gates and actual peaks49/654/7/91212/22660. ONE dependent candidate FIRST STOP103/22 at visual1304 (3349 absolute derived;1304 numbered captures plus actual emergency STOP=1305 clip samples), actor2/party byte170 during verified CB2_HandleStartBattle/BeginBattleIntroDummy before readiness/actions/poses. Both Saves030b unchanged. Exact diagnostic retained; candidate failed party value/CPU position were not serialized. Actual baseline1304 Donut is fully in-place-decrypted, adjacent1303/1305 exactly encrypted seed; verbatim native crypto roundtrip proves reference transient representation. Candidate serialization-phase explanation plausible but not conclusively proved. No host/engine/route/policy change, diagnostic battle/retry/search/failure reset after STOP. Original STOP35/107/105/claims/controllers immutable; this new STOP103 separate. Full native lossless clips15627+1305 pixels all16932 verified. Candidate pose/HUD/silhouette/warning/cleanup/complete budgets/matched-control/final-state acceptance remain unverified. Existing draft PR114 scoped evidence then parent diagnosis/visual review; STOP further execution/merge/expansion. Original legacy/C01/full-floor limits remain. See docs/evidence/floor1/v01/battle/lifecycle-validation/README.md. Previous one-pair authority below is historical and exhausted.
+
+Current reviewed lifecycle validation authority — 2026-10-09: parent accepts offline observer a89899c7 and authorises ONE unchanged fixed bounded baseline, followed by ONE matching candidate only after complete baseline PASS. Freeze reviewed hostc96c002e, ordinary Save030b, south routeafbd80b0, existing builds/fortify-offence policy/cadence/assertions/30k battle/36k visual bounds. Preserve STOP35/107/105 and all attempt/control/failure histories; no reset, game/route/policy edit, diagnostic battle, timing/RNG/strategy search, broad replay or blind retry. Stop FIRST divergence, retain exact diagnostics/captures and no dependent execution. Verify complete field/resources/Save and actual candidate action poses/warning/contact/recovery/swaps/HUD/allocations only if permitted by baseline PASS. Supported private Library safe logs/Saves/complete native-speed captures; denied raw datasets/keys/ROM stay outside uploads. Existing draft PR114 scoped checkpoint then parent visual review before merge/expansion. See docs/floor1/v01-battle-lifecycle-validation-contract.md. Historical offline stop below is superseded only for this single pair.
+
+Current scoped checkpoint: offline implementation frozen a89899c7d84d815c7f4ac4b9273c48aceb220c3b; generated hostc96c002e/binaryc2629fb9, final offline/native ABI/scheduler fixtures PASS, no emulator invocation. Supported private Library retained new40400-byte/66-entry offline package SHA2568da33ea672cce3b6e6452238072aaa16ae4cbfe41219376510dbe1d7627a259e; previous actual runtime/ordinary Save archive remains separate. Parent lifecycle review next; no live execution or merge authorised.
+
+Current offline lifecycle authority/result — 2026-10-09: parent paused live execution after three retained blocked approaches and authorised observer-only ACTIVE→RETIRING→FIELD implementation, full native return-path review, offline fixtures, host compile and scoped PR114 checkpoint. Implemented/read-only; strict live owners/pixels, verified cleanup plus cleared graphics/resource registries/candidate pose state/no queued retired-source copies, native field rebuild/readiness and postbattle-only exit proof. Native CB1→CB2 same-iteration trainer return is source-pinned via savedCallback; no invented intermediate frame dwell. Offline/native ABI/symbol/scheduler cases and full host compile pass; ZERO emulator frames/new claims/Save changes. Engine32199a3, routeafbd80b0, policy/cadence/assets/palettes/bounds unchanged. STOP35/22/5685/0 attempts, STOP107/27/4720/1 attempt/0 moves and STOP105/27/17032/1 attempt remain immutable and separate; candidates unexecuted. Parent review decides any next live scope; no retry/failure reset/merge/rollout here. See docs/evidence/floor1/v01/battle/observer-lifecycle/README.md and docs/floor1/v01-battle-observer-lifecycle-contract.md. Original legacy/C01/full-floor limits remain. Historical authorities/results below are preserved; this authority supersedes the previous no-host-fix stop for offline work only.
+
+Supported private Library retention confirmed:5999176-byte solid archive,15174 byte-verified entries, one unchanged ordinary Save, safe logs/offline cases/preparations,15108 original PPMs (14988 full clip+120 helpers), one actual native clip. Archive SHA2568e4653f960e6ed828f01d9d07845315d4c8e9a952c7415df700d358fccdf288e. Denied raw state/key/VRAM .bin and full symbols/executables/ROM/ELF stay local outside uploads.
+
+Current native-ready result: draft PR114; tested host/route source8ee0595461cff3bc5da6b5ea353067308e087076, hostee16cfe1/unchanged routeafbd80b0 and gameengine32199a3. Native readiness passed3155/all4 registered buffers/first copies; fixed ordinary baseline ran turns0–8/all6 moves, foes defeated. FIRST STOP105/27 partial/14988 visual/17032 absolute, actor0 sprite9, verified FreeResetData_ReturnToOvOrDoEvolutions retirement, empty copy queue. Live ownership predicate remains enforced after native graphics retirement; all3 actual VRAM blocks still exact known baseline art. Actual partial peaks49sprites/654tiles/7palettes/91212heap/22660free. Save030b unchanged, candidate prepared only/no execution claim. No further emulator execution/host fix/retry/game change. Retain original STOP35 and cf726350 STOP107 unchanged/distinct. Parent retirement-phase diagnosis review next; candidate poses/HUD/matched controls/complete budget/exit/postreward/save/legacy/C01/full-floor gates pending. Evidence docs/evidence/floor1/v01/battle/observer-phase/README.md. Prior checkpoint below historical.
+
+Current corrected-entry result: draft [PR114](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/114), tested source `cf7263503f74bf70bcad1a9d3212a4ca181b96f4`. Only north64→south128 route correction (generator mirrors it); host and game unchanged. Baseline entered trainer858, then STOP107/27 partial assertions at visual2675, 2676 recorded/4720 absolute frames, one claimed attempt/no executed move. Save030b unchanged. Candidate prepared only, unexecuted. Likely premature intro/send-out sprite/copy-phase pose enforcement; exact offending sprite/VRAM/queue was not retained. Offline audit also finds `.gcc2_compiled.` callback identity ambiguity. No further execution or host fix: parent diagnosis/observer review next. Private Library1 ordinary Save/safe logs/2692 original PPMs/actual2676-frame clip retained, denied .bin/raw traces/keys local only. Original STOP35/22/5685/zero combat/Save/source intact and distinct; all pending runtime/legacy/C01/full-floor gates remain. Evidence: `docs/evidence/floor1/v01/battle/entry-south/README.md`. Prior checkpoint below is historical.
+
+Published blocked battle checkpoint: [draft PR114](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/114), initial head `9db157e7dbd1cf2f7e7386261bd5f7d3b0c38cdf`; base/main `c6d647a815ffce44a2419a2cf83b6c2c094359f0`. Candidate compiled only; first baseline stopped before combat. Original route and STOP remain intact, proposed south-facing correction unapplied/unexecuted. Parent diagnosis review is the next dependency; no further emulator execution or merge authorised here. All 67 previous heads preserved; CI absent. Publication details: `docs/evidence/floor1/v01/battle/publication.json`.
+
+Current V01 battle checkpoint — 2026-10-09: **pose bindings implemented and compiled; entry baseline stopped before combat, candidate unexecuted; unmerged**.
+
+Parent accepted PR113; healthy/clean executor reconciled and ordinary merge `c6d647a815ffce44a2419a2cf83b6c2c094359f0` verified exact reviewed tree/parents,66 non-main heads retained, CI absent. Battle game candidate `dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf`, engine `32199a30f0d7013e64f7ec1e274211ecc45df8ed`, ROM `830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9` compiled after a retained missing-header compile error. Carl/Donut/Warden17 exact native PNGs, no second lift or palette/mechanics/save/environment change; actual-source offline lifecycle negatives pass. Frozen host/route/execution `d1dc479212fbe1421f0b55c38ec374e34f5ed964`.
+
+First actual baseline STOP35/22 partial assertions/5685 absolute frames: route turned north64 at8,7 while authored Warden is south at8,8. Full input/readiness/preboss checks passed;3600-frame engage bound expired, zero battle frames/attempts, unchanged ordinary Save030b. Candidate prepared only, no execution claim. Original route/STOP/source retained; unapplied/unexecuted one-line south128 proposal ready for parent diagnosis review.3672 original captures including3641-frame actual ordinary-speed entry clip plus safe save/logs/preparations/builds retained privately in Library; keys/denied .bin buffers/state traces remain local. Actual battle poses/HUD/allocations/faint/exit remain unverified; no battle-stage acceptance, strategy search or retry. Parent review→separately authorised fresh bounded pair; STOP further execution/merge/rollout/C01/later districts here.
+
+[Exact identities, retained STOP, diagnosis/proposal, actual entry clip and limits](evidence/floor1/v01/battle/README.md).
+
+## Historical overworld checkpoint (now merged PR113)
+
 [Draft PR #113](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/113) / existing [tracking #106](https://github.com/12nuskek/DungeonCrawlerCarlemon/issues/106), open/draft/unmerged. Initial evidence publication `b26c9dee91675d94597635e00c5d3621abf95ad7`; tested game/host/execution remains `4938927da512543ca9aeea9527c103c84955e632`. Environment PR112 merged at `c2f0d74759bb35b2f25e99f104e48f88635f049f`.
 
 Current V01 overworld checkpoint — 2026-10-09: **implemented, compiled and bounded runtime verified; unmerged pending parent visual review**.

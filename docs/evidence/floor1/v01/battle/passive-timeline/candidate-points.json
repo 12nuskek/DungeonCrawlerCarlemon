@@ -1,0 +1,259 @@
+{
+  "ELF_SHA256": "f31a5a8b2cb1602df378a7ca66b3cee8bbcea86de000536ab6f55acd727d0218",
+  "functions": {
+    "G:AgbMain": {
+      "address": 134218660,
+      "token": "fn_f414e559e535c09019c6c90a5b20957a1ac1fd74dbfcfac5e1db6551d8414804",
+      "identity": "G:AgbMain",
+      "aliases": [
+        "G:AgbMain"
+      ],
+      "size": 288,
+      "hash32": 2908291593,
+      "compiled_SHA256": "9cb71da2651509ef9dd65b2832bf1abfa536d6ea0359552871e586a67a79e596"
+    },
+    "L:main.o:ReadKeys": {
+      "address": 134219236,
+      "token": "fn_a22c8c4ede8b99114f23efa6728a5c3b8031e31ea7c34e834da16bbedc876973",
+      "identity": "L:main.o:ReadKeys",
+      "aliases": [
+        "L:main.o:ReadKeys"
+      ],
+      "size": 160,
+      "hash32": 1148530837,
+      "compiled_SHA256": "8e5b4528b8ef69ea1eae8789c90d676bf7cba6ef57ccbd719c986825055f6217"
+    },
+    "L:main.o:CallCallbacks": {
+      "address": 134219036,
+      "token": "fn_6a77bd162865ea69ba1f26402172ac25e4b071751b9bdaef903e2ee51ca0a62d",
+      "identity": "L:main.o:CallCallbacks",
+      "aliases": [
+        "L:main.o:CallCallbacks"
+      ],
+      "size": 36,
+      "hash32": 2777812250,
+      "compiled_SHA256": "7bc6cdd14ed81380249fb35601620c486fc6e6d8ed9d5b0fc47e24e7a7732e08"
+    },
+    "L:main.o:WaitForVBlank": {
+      "address": 134219948,
+      "token": "fn_c5bbc9e98f5af67fd6154db2ce24db54f7407caeb7d50b3aa353649e4a8b8154",
+      "identity": "L:main.o:WaitForVBlank",
+      "aliases": [
+        "L:main.o:WaitForVBlank"
+      ],
+      "size": 48,
+      "hash32": 2019279482,
+      "compiled_SHA256": "6dd32b0546df4097a69177989a0096e2f435738b7d2a2145a036aa18d0371cb4"
+    },
+    "L:main.o:VBlankIntr": {
+      "address": 134219576,
+      "token": "fn_078925e40daff1d0c606e5bc151892d05d0000379c09831f858b095c1f3e5fe0",
+      "identity": "L:main.o:VBlankIntr",
+      "aliases": [
+        "L:main.o:VBlankIntr"
+      ],
+      "size": 200,
+      "hash32": 600211025,
+      "compiled_SHA256": "818a1f01122d04f976653caa20ee5e1613c1035dcd0c7107a80fd400bd0a537f"
+    },
+    "G:ProcessSpriteCopyRequests": {
+      "address": 134247468,
+      "token": "fn_36d8c331a1511e75010d897ced2ce2748821365d3515d7cc3054c636b64eec99",
+      "identity": "G:ProcessSpriteCopyRequests",
+      "aliases": [
+        "G:ProcessSpriteCopyRequests"
+      ],
+      "size": 92,
+      "hash32": 2107259284,
+      "compiled_SHA256": "f497eb9c7d61b3c5734b80ce3eb52c43410ec2a4aa41dba487b68b71188d0339"
+    },
+    "G:VBlankCB_Battle": {
+      "address": 134449604,
+      "token": "fn_a0e567e5dcc4f268e695eafecb72273186d8e5ffcdaa6d48c982dc65043b87d1",
+      "identity": "G:VBlankCB_Battle",
+      "aliases": [
+        "G:VBlankCB_Battle"
+      ],
+      "size": 216,
+      "hash32": 3772866079,
+      "compiled_SHA256": "4e9d6cd0774ec42ae0ca8a8d2b1fb243be2a93733dfa529f42de72e8c389570a"
+    }
+  },
+  "data": {
+    "Main": 50340544,
+    "CopyCount": 33691701,
+    "CopyArmed": 33691700,
+    "Copies": 33691704
+  },
+  "points": [
+    {
+      "index": 0,
+      "name": "ReadKeys-call",
+      "pc": 134218794,
+      "rom": 134218794,
+      "opcode": 61440,
+      "mode": 1
+    },
+    {
+      "index": 1,
+      "name": "ReadKeys-entry",
+      "pc": 134219236,
+      "rom": 134219236,
+      "opcode": 46336,
+      "mode": 1
+    },
+    {
+      "index": 2,
+      "name": "ReadKeys-exit",
+      "pc": 134219384,
+      "rom": 134219384,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 3,
+      "name": "callback-dispatch",
+      "pc": 134219036,
+      "rom": 134219036,
+      "opcode": 46352,
+      "mode": 1
+    },
+    {
+      "index": 4,
+      "name": "CB1-resume",
+      "pc": 134219050,
+      "rom": 134219050,
+      "opcode": 26720,
+      "mode": 1
+    },
+    {
+      "index": 5,
+      "name": "CB2-resume",
+      "pc": 134219060,
+      "rom": 134219060,
+      "opcode": 48144,
+      "mode": 1
+    },
+    {
+      "index": 6,
+      "name": "callback-dispatch-exit",
+      "pc": 134219064,
+      "rom": 134219064,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 7,
+      "name": "Wait-entry",
+      "pc": 134219948,
+      "rom": 134219948,
+      "opcode": 46336,
+      "mode": 1
+    },
+    {
+      "index": 8,
+      "name": "Wait-clear",
+      "pc": 134219960,
+      "rom": 134219960,
+      "opcode": 33680,
+      "mode": 1
+    },
+    {
+      "index": 9,
+      "name": "Wait-exit",
+      "pc": 134219986,
+      "rom": 134219986,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 10,
+      "name": "VBlankIntr-entry",
+      "pc": 134219576,
+      "rom": 134219576,
+      "opcode": 46352,
+      "mode": 1
+    },
+    {
+      "index": 11,
+      "name": "BIOS-flag-set",
+      "pc": 134219722,
+      "rom": 134219722,
+      "opcode": 32784,
+      "mode": 1
+    },
+    {
+      "index": 12,
+      "name": "main-flag-set",
+      "pc": 134219732,
+      "rom": 134219732,
+      "opcode": 33665,
+      "mode": 1
+    },
+    {
+      "index": 13,
+      "name": "VBlankIntr-exit",
+      "pc": 134219738,
+      "rom": 134219738,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 14,
+      "name": "copy-process-entry",
+      "pc": 134247468,
+      "rom": 134247468,
+      "opcode": 46576,
+      "mode": 1
+    },
+    {
+      "index": 15,
+      "name": "copy-process-exit",
+      "pc": 134247544,
+      "rom": 134247544,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 16,
+      "name": "battle-VBlank-entry",
+      "pc": 134449604,
+      "rom": 134449604,
+      "opcode": 46336,
+      "mode": 1
+    },
+    {
+      "index": 17,
+      "name": "battle-VBlank-exit",
+      "pc": 134449760,
+      "rom": 134449760,
+      "opcode": 18176,
+      "mode": 1
+    },
+    {
+      "index": 18,
+      "name": "playtime-call",
+      "pc": 134218930,
+      "rom": 134218930,
+      "opcode": 61571,
+      "mode": 1
+    },
+    {
+      "index": 19,
+      "name": "music-call",
+      "pc": 134218934,
+      "rom": 134218934,
+      "opcode": 61602,
+      "mode": 1
+    },
+    {
+      "index": 20,
+      "name": "native-IRQ-dispatch",
+      "pc": 50341712,
+      "rom": 134218312,
+      "opcode": 3818926849,
+      "mode": 0
+    }
+  ],
+  "observation_scope": "Before/after original instructions and event drains only; video/IRQ observations are aggregate drain observations, not callback replacements; no missing historical state recovered."
+}

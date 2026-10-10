@@ -1,0 +1,27 @@
+{
+  "PR": 114,
+  "url": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/114",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "initial_publication_head": "9db157e7dbd1cf2f7e7386261bd5f7d3b0c38cdf",
+  "compiled_game": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+  "engine": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "actual_baseline_execution_source": "d1dc479212fbe1421f0b55c38ec374e34f5ed964",
+  "actual_STOP": 35,
+  "partial_assertions": 22,
+  "absolute_frames": 5685,
+  "battle_frames": 0,
+  "candidate_executed": false,
+  "entry_proposal_applied": false,
+  "CI": {
+    "check_runs": 0,
+    "statuses": 0,
+    "workflow_runs": 0,
+    "interpretation": "absent; not a passing result"
+  },
+  "remote_branch_count": 68,
+  "history_verification": "Compare retained pre-overworld branch snapshot, accepted overworld head ac2d87eb, and main c6d647a8; only new battle branch added.",
+  "previous_heads_unchanged": 67
+}

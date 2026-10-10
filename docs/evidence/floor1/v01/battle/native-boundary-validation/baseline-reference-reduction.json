@@ -1,0 +1,60 @@
+{
+  "case": "before",
+  "result": "PASS complete native-boundary reference independently parsed",
+  "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "assertions": 42,
+  "absolute_frames": 17671,
+  "video_frames": 15627,
+  "boundary_records": 15379,
+  "boundary_count_histogram": {
+    "1": 15379,
+    "0": 248
+  },
+  "typed_records_complete": true,
+  "boundary_metadata_SHA256": "d3a7b2037d7ea77104a9c9a7b2aa73b846a49ed788e927ffb4488ac3b4baca55",
+  "complete_snapshot_SHA256": "b6d56f9d7fd3441f85f1ae5390ba6684397a26ad74b87ec8262e3c60d8e8fdd9",
+  "snapshot_controls_SHA256": "1b1801a0e9433340b04ffc3dd97067963c1fa26eddd67d16f40890d05d6b3396",
+  "native_boundary_battle_flag_samples": 13489,
+  "controller_battle_frames": 13721,
+  "one_policy_attempt": true,
+  "policy_frames": 12520,
+  "first_snapshot_SHA256": "4dd89a2b6810a523cff6c409cbe481ebfb00c420fa90ec410831058d667ceecd",
+  "last_snapshot_SHA256": "43c0868f6c9564a26febc14a3cf1bd519022bb93a2254b56d75cd0c81c2444c7",
+  "final_party": [
+    {
+      "member": 0,
+      "level": 12,
+      "HP": 30,
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "BadEgg": false
+    },
+    {
+      "member": 1,
+      "level": 10,
+      "HP": 22,
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "BadEgg": false
+    }
+  ],
+  "save_unchanged": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "final_field": "35.3 at8,7; native field controls ready",
+  "reward_delta": 360,
+  "money": 4360,
+  "boss_flag47": 1,
+  "full_owned_inventory": "unchanged",
+  "native_ready_frame": 3155,
+  "retirement_frame": 14987,
+  "native_field_frame": 15626,
+  "new_exclusive_claim_counts_after_baseline": {
+    "baselines": 5,
+    "candidates": 1
+  },
+  "historical_claims_unchanged": {
+    "baselines": 4,
+    "candidates": 1
+  },
+  "old_raw_frame_reference": "historical only; not read or substituted",
+  "no_new_postbattle_manual_Save_or_cold_acceptance": true
+}

@@ -1,0 +1,1 @@
+PASS synthetic encrypted/plain/partial buffers, unread proven-transient pointers, symmetric deferral, exact reentry and persistent mutation, invalid checksum outside transient, missing CPU authority, exact other/control bytes and mandatory complete checkpoints; zero emulator frames; runtime CPU classifier BLOCKED

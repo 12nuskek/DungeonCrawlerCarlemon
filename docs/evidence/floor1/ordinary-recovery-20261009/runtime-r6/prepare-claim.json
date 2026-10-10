@@ -1,0 +1,11 @@
+{
+  "source": "279efbfa7a97f7e5380b74dfadedfb3fb0f2408e",
+  "base": "030e4d19b1bdc928237f3596041379a5f279dacf",
+  "output": "/workspace/scratch/ordinary-recovery-r6-20261010/runtime-prepare-03",
+  "prior": "/workspace/scratch/ordinary-recovery-r5-20261010/prepare-01",
+  "preparation_attempt": 3,
+  "prior_ordinary_processes": 2,
+  "next_ordinary_process": 3,
+  "next_setup_attempt": 2,
+  "execution_limit": 1
+}

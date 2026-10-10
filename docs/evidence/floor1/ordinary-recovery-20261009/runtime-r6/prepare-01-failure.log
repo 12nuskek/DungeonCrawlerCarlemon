@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-setup-corrected.py", line 177, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-setup-corrected.py", line 173, in main
+    if a.stage=='prepare':prepare(a.build.resolve(),a.prior.resolve(),a.output.resolve())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-setup-corrected.py", line 76, in prepare
+    route,proof=corrected_route(before,(prior/'observer.c').read_text())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-setup-corrected.py", line 38, in corrected_route
+    assert all(before.count(x)==after.count(x)==1 for x in observed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

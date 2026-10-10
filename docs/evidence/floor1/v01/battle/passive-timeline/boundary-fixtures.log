@@ -1,0 +1,2 @@
+PASS modeled original/frame adapter neutrality: identical instruction/event/cycle/video/input sequence, due event at entry, batch timeout guard, no extra post-frame instruction, unchanged input cadence, first STOP before another step
+PASS boundary authority/order/full2560-byte negatives: exact entry/caller/mode/hardware identity, missing CPU, pending event, duplicate/missing/reordered boundary, mismatched video/input epoch, missing frame count, stale explicit checkpoint, persistent mutation in EVERY party/BattleMons/flags/resource/control/padding byte; zero gameplay

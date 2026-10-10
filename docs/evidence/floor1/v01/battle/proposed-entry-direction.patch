@@ -1,0 +1,8 @@
+# Review proposal only; not applied or executed. Original d1dc4792 route retained.
+--- a/scripts/contracts/f1-v01-battle.route
++++ b/scripts/contracts/f1-v01-battle.route
+@@ -29,3 +29,3 @@
+ visual start
+-step 1 64 -
++step 1 128 -
+ step 40 0 -

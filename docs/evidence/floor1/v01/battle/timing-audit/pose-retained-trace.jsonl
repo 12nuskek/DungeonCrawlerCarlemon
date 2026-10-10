@@ -1,0 +1,14 @@
+{"samePose":0,"guard":0,"interpreterStepsIncludingStubs":184,"syntheticCyclesExcludingCopyQueueStubs":615,"positionCalls":1,"CpuSetCalls":4,"copiedBytes":8192,"requested2048ByteTransfers":1,"applied":1,"PASS":true}
+{"samePose":0,"guard":1,"interpreterStepsIncludingStubs":27,"syntheticCyclesExcludingCopyQueueStubs":95,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":0,"guard":2,"interpreterStepsIncludingStubs":29,"syntheticCyclesExcludingCopyQueueStubs":99,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":0,"guard":3,"interpreterStepsIncludingStubs":31,"syntheticCyclesExcludingCopyQueueStubs":103,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":0,"guard":4,"interpreterStepsIncludingStubs":58,"syntheticCyclesExcludingCopyQueueStubs":184,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":0,"guard":5,"interpreterStepsIncludingStubs":66,"syntheticCyclesExcludingCopyQueueStubs":214,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":0,"guard":6,"interpreterStepsIncludingStubs":73,"syntheticCyclesExcludingCopyQueueStubs":235,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":0,"PASS":true}
+{"samePose":1,"guard":0,"interpreterStepsIncludingStubs":79,"syntheticCyclesExcludingCopyQueueStubs":251,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":1,"interpreterStepsIncludingStubs":27,"syntheticCyclesExcludingCopyQueueStubs":95,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":2,"interpreterStepsIncludingStubs":29,"syntheticCyclesExcludingCopyQueueStubs":99,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":3,"interpreterStepsIncludingStubs":31,"syntheticCyclesExcludingCopyQueueStubs":103,"positionCalls":0,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":4,"interpreterStepsIncludingStubs":58,"syntheticCyclesExcludingCopyQueueStubs":184,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":5,"interpreterStepsIncludingStubs":66,"syntheticCyclesExcludingCopyQueueStubs":214,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}
+{"samePose":1,"guard":6,"interpreterStepsIncludingStubs":73,"syntheticCyclesExcludingCopyQueueStubs":235,"positionCalls":1,"CpuSetCalls":0,"copiedBytes":0,"requested2048ByteTransfers":0,"applied":1,"PASS":true}

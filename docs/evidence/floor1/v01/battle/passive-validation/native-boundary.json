@@ -1,0 +1,99 @@
+{
+  "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+  "entry": 134219948,
+  "caller_BL": 134218938,
+  "caller_LR": 134218943,
+  "entry_opcode": 46336,
+  "call_sequence_bytes": "83f0a7fba2f09bfa00f0f7f9",
+  "functions": {
+    "G:AgbMain": {
+      "address": 134218660,
+      "token": "fn_f414e559e535c09019c6c90a5b20957a1ac1fd74dbfcfac5e1db6551d8414804",
+      "identity": "G:AgbMain",
+      "aliases": [
+        "G:AgbMain"
+      ],
+      "size": 288,
+      "hash32": 2908291593,
+      "compiled_SHA256": "4c67f4cdf1aea7a200e58a73a0a019d04e790fe4f0dd6460af683e22559ddb2f"
+    },
+    "L:main.o:WaitForVBlank": {
+      "address": 134219948,
+      "token": "fn_c5bbc9e98f5af67fd6154db2ce24db54f7407caeb7d50b3aa353649e4a8b8154",
+      "identity": "L:main.o:WaitForVBlank",
+      "aliases": [
+        "L:main.o:WaitForVBlank"
+      ],
+      "size": 48,
+      "hash32": 2019279482,
+      "compiled_SHA256": "6dd32b0546df4097a69177989a0096e2f435738b7d2a2145a036aa18d0371cb4"
+    },
+    "L:main.o:CallCallbacks": {
+      "address": 134219036,
+      "token": "fn_6a77bd162865ea69ba1f26402172ac25e4b071751b9bdaef903e2ee51ca0a62d",
+      "identity": "L:main.o:CallCallbacks",
+      "aliases": [
+        "L:main.o:CallCallbacks"
+      ],
+      "size": 36,
+      "hash32": 2777812250,
+      "compiled_SHA256": "0b4c54e4c86ebf460a59dc2fdc09d2f9e713dee74a905a99ac93d9d2484b9f17"
+    },
+    "G:PlayTimeCounter_Update": {
+      "address": 134757380,
+      "token": "fn_012d0e918d44a050f13e2eff5ffd22fec6d91226ef98e31b628ec79892bd965c",
+      "identity": "G:PlayTimeCounter_Update",
+      "aliases": [
+        "G:PlayTimeCounter_Update"
+      ],
+      "size": 104,
+      "hash32": 206179748,
+      "compiled_SHA256": "23e211775d39010d7806f2853a36e1ad3da2b4441918c8aaede997166dce8b84"
+    },
+    "G:MapMusicMain": {
+      "address": 134883824,
+      "token": "fn_2f598edfb19e621d3fcb24606b1488950413491ce64f92e8005386b55c5d3673",
+      "identity": "G:MapMusicMain",
+      "aliases": [
+        "G:MapMusicMain"
+      ],
+      "size": 248,
+      "hash32": 2442075909,
+      "compiled_SHA256": "597c2d5f0105c89350f98815bdff599b35e1257332548a2a68b6c880a24c18f9"
+    },
+    "L:main.o:VBlankIntr": {
+      "address": 134219576,
+      "token": "fn_078925e40daff1d0c606e5bc151892d05d0000379c09831f858b095c1f3e5fe0",
+      "identity": "L:main.o:VBlankIntr",
+      "aliases": [
+        "L:main.o:VBlankIntr"
+      ],
+      "size": 200,
+      "hash32": 600211025,
+      "compiled_SHA256": "1d59b5d818a105eda3e30b108bf96506e810daccd7f8ca33fb0114424e3eddbb"
+    },
+    "G:VBlankCB_Battle": {
+      "address": 134449600,
+      "token": "fn_a0e567e5dcc4f268e695eafecb72273186d8e5ffcdaa6d48c982dc65043b87d1",
+      "identity": "G:VBlankCB_Battle",
+      "aliases": [
+        "G:VBlankCB_Battle"
+      ],
+      "size": 216,
+      "hash32": 3772866079,
+      "compiled_SHA256": "cf49c7d1f8544edfe06dc5401b57dcffe36f73ea973628a7d98f665c71a2ea97"
+    },
+    "L:overworld.o:VBlankCB_Field": {
+      "address": 134766300,
+      "token": "fn_1393146cef724ad519226b687e744d773c563d7cdcd6d2ef0287c8e612cd8597",
+      "identity": "L:overworld.o:VBlankCB_Field",
+      "aliases": [
+        "L:overworld.o:VBlankCB_Field"
+      ],
+      "size": 30,
+      "hash32": 2310202585,
+      "compiled_SHA256": "990d6faca3534a82b5ff145b855096eb263ae46c534f3f6b290b0e505d1e0217"
+    }
+  },
+  "scope": "Offline proposed native entry boundary only; no live validation"
+}

@@ -1,0 +1,18 @@
+{
+  "input_checkpoint": "9a0903ea153d00e200725c34a3cf30196e2a9e88",
+  "prior_tracked_Git_content_unchanged_except_status_prefixes": 19046,
+  "prior_tracked_v01_evidence_and_floor1_scripts_byte_identical": 386,
+  "historical_status_bodies_byte_identical": [
+    "AGENTS.md",
+    "docs/progress.md",
+    "docs/backlog.md",
+    "docs/floor1/v01-entry-plan.md"
+  ],
+  "engine_host_route_policy_art_unchanged": true,
+  "checkout_note": "Some engine Windows helpers use attribute-normalized CRLF; canonical Git content unchanged. No rewrite.",
+  "historical_baselines": 5,
+  "historical_candidates": 3,
+  "new_gameplay_executions": 0,
+  "original_legacy_inputs_and_deleted_patrol_save": "missing; no recovery/substitution claim",
+  "actual_failed_IRQ_and_baseline_cycles": "not retained; synthetic traces do not recover them"
+}

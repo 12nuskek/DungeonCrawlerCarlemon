@@ -1,0 +1,28 @@
+{
+  "source": "e017e185c34c53fb969ecdaeb84267c9019376c6",
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "game_build": "dbcc859c0ef15fc6d94b1f43052fb9e7b51803bf",
+  "engine_tree": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "ROM_SHA256": "830fbb45861e2c20c32c2a68862cabc9800972c4243b9f9cf65726fef7e656f9",
+  "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+  "host_SHA256": "c96c002ec12d8105c8da139d2ffdc1063e9b0b3943e0cc6f90ade3629875465b",
+  "binary_SHA256": "c2629fb98bfa463be627c2600c49e003d752157d4b420bb219b9c3944cc60c24",
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "fixture_SHA256": {
+    "expected-context.bin": "e542b7a225fd932095ea0c275bcf35606293e72cc6e4f0e47997e02de77c6f2b",
+    "expected-counter.bin": "ade0274f84b828b0980112609bb51775d0a4e39bf4728f21dcdd04a627abb92a",
+    "expected-flags.bin": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+    "expected-owned.bin": "ee25c5691d4c3ee0a0c6ec02d62abb1209f305e818fbc55f9fd5099fa7a20ec8",
+    "expected-party.bin": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+    "visual-mode.bin": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "visual-palettes.bin": "6e31587a42fa24769d796bd77cb21ce5d3a9255ab472efef34d58e8e81029ca3",
+    "visual-poses.bin": "4074fba020d29f2dbcd609aa182ca3313d661375f371bcc0f98107bebf9ac3f8"
+  },
+  "symbols_SHA256": "d4d492b67d11a963faa102794d713310e6b7bc6d0ba94fda98ffb1c30815f2e1",
+  "verified_functions_SHA256": "a981fb46fbf2d7e18caa4ffc852de852ca5eb0fe5ae1ce687c134118fcdf2e1e",
+  "battle_bound": 30000,
+  "visual_bound": 36000,
+  "execution_limit": 1,
+  "case": "after"
+}

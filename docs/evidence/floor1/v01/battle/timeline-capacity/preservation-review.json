@@ -1,0 +1,27 @@
+{
+  "historical_reference_available": true,
+  "historical_execution": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "reference_bytes": 40269443,
+  "reference_SHA256": "849a1585f27b0de4a0e68e4036d88986847a9ece3f72dc8377dfec4214fae13d",
+  "complete_boundaries": 15379,
+  "frame_records": 15627,
+  "zero_boundary_frames": 248,
+  "real_terminal_E": true,
+  "historical_summary_identical": true,
+  "no_old_PASS_transfer": true,
+  "compiled_previous_fixtures_without_execution": [
+    {
+      "source": "scripts/floor1/v01-native-timeline-fixture.c",
+      "compiled_only": true
+    }
+  ],
+  "counts": {
+    "before": 6,
+    "after": 3
+  },
+  "frozen_prior_host_Save_and_local_archive_unchanged": true,
+  "no_Library_transfer_attempt": true,
+  "no_CPU_execution": true,
+  "offline_reference_probe_note": "Initial scratch check incorrectly expected B absolute counter to equal next input epoch. Diagnosed first B as pre-frame counter2044/epoch2045; verified pinned B/F/E source semantics without reference edits/realignment.",
+  "available_storage_bytes_at_review": 7215865856
+}

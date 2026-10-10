@@ -1,0 +1,1 @@
+PASS verbatim native crypto: actual baseline1304 matches fully in-place-decrypted Donut; encrypt restores all100 seed bytes, zero emulator frames. Candidate failed value/CPU position unavailable; no candidate-state reconstruction or retry.

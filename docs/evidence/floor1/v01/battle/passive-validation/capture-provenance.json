@@ -1,0 +1,36 @@
+[
+  {
+    "source": "visual-stop.ppm",
+    "export": "DungeonCrawlerCarlemon-baseline-STOP119-4e295249-native.png",
+    "source_SHA256": "8c156894b6acc4300da565df8b821de6f5f31de006b28d2a1292430e3a2c51bc",
+    "PNG_SHA256": "696fd22bb4ca9078a162a6aa12f453183a7424bf2fc64a2fcf3ed42556750ec5",
+    "RGB_SHA256": "917ced3d8d0164a53895e5b3208e74099ba705e764422c615e0729461f0e2f32",
+    "pixels_exact": true,
+    "width": 240,
+    "height": 160
+  },
+  {
+    "source": "battle-13955.ppm",
+    "export": "DungeonCrawlerCarlemon-baseline-last-completed-4e295249-native.png",
+    "source_SHA256": "8c156894b6acc4300da565df8b821de6f5f31de006b28d2a1292430e3a2c51bc",
+    "PNG_SHA256": "696fd22bb4ca9078a162a6aa12f453183a7424bf2fc64a2fcf3ed42556750ec5",
+    "RGB_SHA256": "917ced3d8d0164a53895e5b3208e74099ba705e764422c615e0729461f0e2f32",
+    "pixels_exact": true,
+    "width": 240,
+    "height": 160
+  },
+  {
+    "source": "battle-03155.ppm",
+    "export": "DungeonCrawlerCarlemon-baseline-ready-4e295249-native.png",
+    "source_SHA256": "0c02e934c7f70e206e4678e002c4f1bb9cd1dafd50f46794c752dd39493f305d",
+    "PNG_SHA256": "4262d745ab0f93da2642aa1969be946925bb6c9f700f41ef426b267fbd76ca35",
+    "RGB_SHA256": "c9a5b5f4c2aca22c2ab8b06bbedee595491044b5faf6edbef74d4c092521ccf0",
+    "pixels_exact": true,
+    "width": 240,
+    "height": 160
+  },
+  {
+    "STOP_vs_last_completed_pixels_equal": true,
+    "scope": "Actual native screenshots only; no generated frames or edits."
+  }
+]

@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
@@ -173,6 +174,7 @@ void ClearBattleAnimationVars(void)
 
     sAnimFramesToWait = 0;
     gAnimScriptActive = FALSE;
+    DccBattlePoseNotify();
     gAnimVisualTaskCount = 0;
     gAnimSoundTaskCount = 0;
     gAnimDisableStructPtr = NULL;
@@ -194,6 +196,7 @@ void ClearBattleAnimationVars(void)
     sAnimBackgroundFadeState = 0;
     sAnimMoveIndex = 0;
     gBattleAnimAttacker = 0;
+    DccBattlePoseNotify();
     gBattleAnimTarget = 0;
     gAnimCustomPanning = 0;
 }
@@ -201,8 +204,10 @@ void ClearBattleAnimationVars(void)
 void DoMoveAnim(u16 move)
 {
     gBattleAnimAttacker = gBattlerAttacker;
+    DccBattlePoseNotify();
     gBattleAnimTarget = gBattlerTarget;
     LaunchBattleAnimation(gBattleAnims_Moves, move, TRUE);
+    DccBattlePoseStart(move);
 }
 
 void LaunchBattleAnimation(const u8 *const animsTable[], u16 tableId, bool8 isMoveAnim)
@@ -239,6 +244,7 @@ void LaunchBattleAnimation(const u8 *const animsTable[], u16 tableId, bool8 isMo
     sMonAnimTaskIdArray[1] = TASK_NONE;
     sBattleAnimScriptPtr = animsTable[tableId];
     gAnimScriptActive = TRUE;
+    DccBattlePoseNotify();
     sAnimFramesToWait = 0;
     gAnimScriptCallback = RunAnimScriptCommand;
 
@@ -524,6 +530,7 @@ static void Cmd_end(void)
             UpdateOamPriorityInAllHealthboxes(1);
         }
         gAnimScriptActive = FALSE;
+        DccBattlePoseNotify();
     }
 }
 

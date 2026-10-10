@@ -1,0 +1,686 @@
+{
+  "before": {
+    "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+    "selected_functions": [
+      {
+        "address": 134218660,
+        "token": "fn_f414e559e535c09019c6c90a5b20957a1ac1fd74dbfcfac5e1db6551d8414804",
+        "identity": "G:AgbMain",
+        "aliases": [
+          "G:AgbMain"
+        ],
+        "size": 288,
+        "hash32": 2908291593,
+        "compiled_SHA256": "4c67f4cdf1aea7a200e58a73a0a019d04e790fe4f0dd6460af683e22559ddb2f"
+      },
+      {
+        "address": 134218948,
+        "token": "fn_fb5ea30e4f0cf5d913f5597d41102fc6dd23463a6f9b19567fa30bd3630c0742",
+        "identity": "L:main.o:UpdateLinkAndCallCallbacks",
+        "aliases": [
+          "L:main.o:UpdateLinkAndCallCallbacks"
+        ],
+        "size": 20,
+        "hash32": 3994506537,
+        "compiled_SHA256": "ebacd684fe3d7d62a307daaf905aa9173e29710b684a25c3e00820bc5a49e01a"
+      },
+      {
+        "address": 134219236,
+        "token": "fn_a22c8c4ede8b99114f23efa6728a5c3b8031e31ea7c34e834da16bbedc876973",
+        "identity": "L:main.o:ReadKeys",
+        "aliases": [
+          "L:main.o:ReadKeys"
+        ],
+        "size": 160,
+        "hash32": 1148530837,
+        "compiled_SHA256": "8e5b4528b8ef69ea1eae8789c90d676bf7cba6ef57ccbd719c986825055f6217"
+      },
+      {
+        "address": 134219036,
+        "token": "fn_6a77bd162865ea69ba1f26402172ac25e4b071751b9bdaef903e2ee51ca0a62d",
+        "identity": "L:main.o:CallCallbacks",
+        "aliases": [
+          "L:main.o:CallCallbacks"
+        ],
+        "size": 36,
+        "hash32": 2777812250,
+        "compiled_SHA256": "0b4c54e4c86ebf460a59dc2fdc09d2f9e713dee74a905a99ac93d9d2484b9f17"
+      },
+      {
+        "address": 134757380,
+        "token": "fn_012d0e918d44a050f13e2eff5ffd22fec6d91226ef98e31b628ec79892bd965c",
+        "identity": "G:PlayTimeCounter_Update",
+        "aliases": [
+          "G:PlayTimeCounter_Update"
+        ],
+        "size": 104,
+        "hash32": 206179748,
+        "compiled_SHA256": "23e211775d39010d7806f2853a36e1ad3da2b4441918c8aaede997166dce8b84"
+      },
+      {
+        "address": 134883824,
+        "token": "fn_2f598edfb19e621d3fcb24606b1488950413491ce64f92e8005386b55c5d3673",
+        "identity": "G:MapMusicMain",
+        "aliases": [
+          "G:MapMusicMain"
+        ],
+        "size": 248,
+        "hash32": 2442075909,
+        "compiled_SHA256": "597c2d5f0105c89350f98815bdff599b35e1257332548a2a68b6c880a24c18f9"
+      },
+      {
+        "address": 134219948,
+        "token": "fn_c5bbc9e98f5af67fd6154db2ce24db54f7407caeb7d50b3aa353649e4a8b8154",
+        "identity": "L:main.o:WaitForVBlank",
+        "aliases": [
+          "L:main.o:WaitForVBlank"
+        ],
+        "size": 48,
+        "hash32": 2019279482,
+        "compiled_SHA256": "6dd32b0546df4097a69177989a0096e2f435738b7d2a2145a036aa18d0371cb4"
+      },
+      {
+        "address": 134219576,
+        "token": "fn_078925e40daff1d0c606e5bc151892d05d0000379c09831f858b095c1f3e5fe0",
+        "identity": "L:main.o:VBlankIntr",
+        "aliases": [
+          "L:main.o:VBlankIntr"
+        ],
+        "size": 200,
+        "hash32": 600211025,
+        "compiled_SHA256": "1d59b5d818a105eda3e30b108bf96506e810daccd7f8ca33fb0114424e3eddbb"
+      },
+      {
+        "address": 134448056,
+        "token": "fn_9af13c610036b25154af89dff4178e26521ef55d8ccacf27ef8e2ca89f555d94",
+        "identity": "G:BattleMainCB2",
+        "aliases": [
+          "G:BattleMainCB2"
+        ],
+        "size": 124,
+        "hash32": 1060388090,
+        "compiled_SHA256": "35cb8427aa9559ebf20b6bf5a4e9cfc51036ec893b7e5a355c0c05eb4767bde4"
+      },
+      {
+        "address": 134899276,
+        "token": "fn_b5d60322bab934fbae420a78ddcb43ff6f29ea9301e9adebb57225a95f2fe983",
+        "identity": "G:GetBattlerPosition",
+        "aliases": [
+          "G:GetBattlerPosition"
+        ],
+        "size": 16,
+        "hash32": 4192147116,
+        "compiled_SHA256": "d4e4df8bd922f680624fcbad756eee89d59e7c995130022dc415ef9b71e3d306"
+      },
+      {
+        "address": 134899256,
+        "token": "fn_9a01a369b81b976242dc05dcb1bad5269ff673cc8848d98d811450ea957b5f38",
+        "identity": "G:GetBattlerSide",
+        "aliases": [
+          "G:GetBattlerSide"
+        ],
+        "size": 20,
+        "hash32": 212871027,
+        "compiled_SHA256": "d0d1bfba676ce4e76e136fbf476b0c248eb6dae8402b24a6bea6276325fcd8dd"
+      },
+      {
+        "address": 134244800,
+        "token": "fn_380c8a479af936ff24699353ca4178a76054e4ae0b36430cc1153b76c67f694e",
+        "identity": "G:AnimateSprites",
+        "aliases": [
+          "G:AnimateSprites"
+        ],
+        "size": 76,
+        "hash32": 641696700,
+        "compiled_SHA256": "79b2dfd8200bd44198f844e88f88f776650e86f7cb53bb409a409cfb82922915"
+      },
+      {
+        "address": 134248000,
+        "token": "fn_2b91ff1c2513a94249236c31f68fce39ef6170469862c0c0a5709efcc3db6a5b",
+        "identity": "G:AnimateSprite",
+        "aliases": [
+          "G:AnimateSprite"
+        ],
+        "size": 72,
+        "hash32": 2307527676,
+        "compiled_SHA256": "6931acf9f55b90cc98cc6f1d1d9ab7553a6b070151497ec4d128c618f5105cd5"
+      },
+      {
+        "address": 134247660,
+        "token": "fn_41d65c0523872ae18f6e8a561e1bd30939e9d0189c377f6b69d8af527816e36c",
+        "identity": "G:RequestSpriteCopy",
+        "aliases": [
+          "G:RequestSpriteCopy"
+        ],
+        "size": 80,
+        "hash32": 2947041795,
+        "compiled_SHA256": "1bc2614d47ad9edee7c6f54b30f2c505b12825da32014fccf9bb2c93d07834fd"
+      },
+      {
+        "address": 134247468,
+        "token": "fn_36d8c331a1511e75010d897ced2ce2748821365d3515d7cc3054c636b64eec99",
+        "identity": "G:ProcessSpriteCopyRequests",
+        "aliases": [
+          "G:ProcessSpriteCopyRequests"
+        ],
+        "size": 92,
+        "hash32": 2107259284,
+        "compiled_SHA256": "ee1e467dad725bf0ff5e53e02967ce8a1726b3522f3915a91760c2914c2a2f13"
+      },
+      {
+        "address": 134449600,
+        "token": "fn_a0e567e5dcc4f268e695eafecb72273186d8e5ffcdaa6d48c982dc65043b87d1",
+        "identity": "G:VBlankCB_Battle",
+        "aliases": [
+          "G:VBlankCB_Battle"
+        ],
+        "size": 216,
+        "hash32": 3772866079,
+        "compiled_SHA256": "cf49c7d1f8544edfe06dc5401b57dcffe36f73ea973628a7d98f665c71a2ea97"
+      },
+      {
+        "address": 137247064,
+        "token": "fn_1d8cb73106f2cc10cd73b722161b44b4a04d7b8545dfbbf92c2f22e450afeeca",
+        "identity": "G:m4aSoundMain",
+        "aliases": [
+          "G:m4aSoundMain"
+        ],
+        "size": 10,
+        "hash32": 1130803009,
+        "compiled_SHA256": "a3f6b45d049245a13b932b37b283c7ec8791f1afdf67d2a69e2e580ff8c81027"
+      }
+    ],
+    "IntrMain": {
+      "address": 134218312,
+      "native_source": "src/crt0.s",
+      "copied_to_IWRAM": "IntrMain_Buffer; original0x800 InitIntrHandlers transfer",
+      "dispatcher_excerpt_bytes": 348,
+      "compiled_excerpt_SHA256": "49bf55ee55f86c70681c09a8dfa1cd1f45be41d317f6ffb3c20e129c5617ffb4"
+    },
+    "synthetic_data_addresses": [
+      {
+        "name": "gMain",
+        "value": 50340544,
+        "size": 1084,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gSprites",
+        "value": 33687088,
+        "size": 4420,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gMonSpritesGfxPtr",
+        "value": 33703124,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattlerSpriteIds",
+        "value": 33702372,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattlersCount",
+        "value": 33701996,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleMons",
+        "value": 33702020,
+        "size": 352,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleTypeFlags",
+        "value": 33697772,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gTrainerBattleOpponent_A",
+        "value": 33786830,
+        "size": 2,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gIntrTable",
+        "value": 50341648,
+        "size": 56,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gSTWIStatus",
+        "value": 50362472,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattlerPositions",
+        "value": 33702006,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gAbsentBattlerFlags",
+        "value": 33702416,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gAnimScriptActive",
+        "value": 33784833,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleAnimAttacker",
+        "value": 33784890,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "IntrMain_Buffer",
+        "value": 50341712,
+        "size": 2048,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "sSpriteCopyRequests",
+        "value": 33691704,
+        "size": 768,
+        "scope": "sprite.o"
+      },
+      {
+        "name": "sSpriteCopyRequestCount",
+        "value": 33691701,
+        "size": 1,
+        "scope": "sprite.o"
+      },
+      {
+        "name": "sShouldProcessSpriteCopyRequests",
+        "value": 33691700,
+        "size": 1,
+        "scope": "sprite.o"
+      }
+    ],
+    "source_SHA256": {
+      "src/main.c": "c68345c6e35a104662c6982aa35a6aa09688c5886c44e9f27314653b8c8cfc48",
+      "src/crt0.s": "6dc9dfef60aa316388551796cbd812b98726c33c7b8f7cdf42ba20574fec658c",
+      "src/play_time.c": "e257fba648808ce5840d4409fd671ffac80a796fe2a12db50e525b56013e0176",
+      "src/sound.c": "019216d13566c805071255eadc83de2f4d64c458b1e3c9c3af9fa4ae427323a6",
+      "src/battle_main.c": "ee79b86ff0f681ab783b363135fd84d050e7123bea2a77c5530f2c7ddc8b8408",
+      "src/sprite.c": "ad867c471134719a9bd563fcf6ec0b876c4a46d01519fd20967c038a80e4a91f"
+    }
+  },
+  "after": {
+    "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+    "selected_functions": [
+      {
+        "address": 134218660,
+        "token": "fn_f414e559e535c09019c6c90a5b20957a1ac1fd74dbfcfac5e1db6551d8414804",
+        "identity": "G:AgbMain",
+        "aliases": [
+          "G:AgbMain"
+        ],
+        "size": 288,
+        "hash32": 2908291593,
+        "compiled_SHA256": "9cb71da2651509ef9dd65b2832bf1abfa536d6ea0359552871e586a67a79e596"
+      },
+      {
+        "address": 134218948,
+        "token": "fn_fb5ea30e4f0cf5d913f5597d41102fc6dd23463a6f9b19567fa30bd3630c0742",
+        "identity": "L:main.o:UpdateLinkAndCallCallbacks",
+        "aliases": [
+          "L:main.o:UpdateLinkAndCallCallbacks"
+        ],
+        "size": 20,
+        "hash32": 3994506537,
+        "compiled_SHA256": "ebacd684fe3d7d62a307daaf905aa9173e29710b684a25c3e00820bc5a49e01a"
+      },
+      {
+        "address": 134219236,
+        "token": "fn_a22c8c4ede8b99114f23efa6728a5c3b8031e31ea7c34e834da16bbedc876973",
+        "identity": "L:main.o:ReadKeys",
+        "aliases": [
+          "L:main.o:ReadKeys"
+        ],
+        "size": 160,
+        "hash32": 1148530837,
+        "compiled_SHA256": "8e5b4528b8ef69ea1eae8789c90d676bf7cba6ef57ccbd719c986825055f6217"
+      },
+      {
+        "address": 134219036,
+        "token": "fn_6a77bd162865ea69ba1f26402172ac25e4b071751b9bdaef903e2ee51ca0a62d",
+        "identity": "L:main.o:CallCallbacks",
+        "aliases": [
+          "L:main.o:CallCallbacks"
+        ],
+        "size": 36,
+        "hash32": 2777812250,
+        "compiled_SHA256": "7bc6cdd14ed81380249fb35601620c486fc6e6d8ed9d5b0fc47e24e7a7732e08"
+      },
+      {
+        "address": 134757404,
+        "token": "fn_012d0e918d44a050f13e2eff5ffd22fec6d91226ef98e31b628ec79892bd965c",
+        "identity": "G:PlayTimeCounter_Update",
+        "aliases": [
+          "G:PlayTimeCounter_Update"
+        ],
+        "size": 104,
+        "hash32": 206179748,
+        "compiled_SHA256": "23e211775d39010d7806f2853a36e1ad3da2b4441918c8aaede997166dce8b84"
+      },
+      {
+        "address": 134883848,
+        "token": "fn_2f598edfb19e621d3fcb24606b1488950413491ce64f92e8005386b55c5d3673",
+        "identity": "G:MapMusicMain",
+        "aliases": [
+          "G:MapMusicMain"
+        ],
+        "size": 248,
+        "hash32": 2442075909,
+        "compiled_SHA256": "57ac85c78324255aa9b5d13f7f26fa17bd73bfc559ecdb7644117190f8498b72"
+      },
+      {
+        "address": 134219948,
+        "token": "fn_c5bbc9e98f5af67fd6154db2ce24db54f7407caeb7d50b3aa353649e4a8b8154",
+        "identity": "L:main.o:WaitForVBlank",
+        "aliases": [
+          "L:main.o:WaitForVBlank"
+        ],
+        "size": 48,
+        "hash32": 2019279482,
+        "compiled_SHA256": "6dd32b0546df4097a69177989a0096e2f435738b7d2a2145a036aa18d0371cb4"
+      },
+      {
+        "address": 134219576,
+        "token": "fn_078925e40daff1d0c606e5bc151892d05d0000379c09831f858b095c1f3e5fe0",
+        "identity": "L:main.o:VBlankIntr",
+        "aliases": [
+          "L:main.o:VBlankIntr"
+        ],
+        "size": 200,
+        "hash32": 600211025,
+        "compiled_SHA256": "818a1f01122d04f976653caa20ee5e1613c1035dcd0c7107a80fd400bd0a537f"
+      },
+      {
+        "address": 134448056,
+        "token": "fn_9af13c610036b25154af89dff4178e26521ef55d8ccacf27ef8e2ca89f555d94",
+        "identity": "G:BattleMainCB2",
+        "aliases": [
+          "G:BattleMainCB2"
+        ],
+        "size": 128,
+        "hash32": 1060388090,
+        "compiled_SHA256": "0408d102c66a1b583fea3aa9375fa3fe82742014bdeeeab952e7556e43355a80"
+      },
+      {
+        "address": 149151164,
+        "token": "fn_7596f7c484db2a65caa9f8f580c9ad2fb212d42527bf5375d6edd0326a2ae857",
+        "identity": "G:DccBattlePoseUpdate",
+        "aliases": [
+          "G:DccBattlePoseUpdate"
+        ],
+        "size": 440,
+        "hash32": 2275881977,
+        "compiled_SHA256": "0eec857c31ef90b043c0b4d1199273e6378c59df28756495fb0ac78093e250d3"
+      },
+      {
+        "address": 149150436,
+        "token": "fn_24a278d6ad8a93d38dbdb5c45420634a303384482cb42dcd574933e5d028f9f2",
+        "identity": "L:dcc_battle_pose.o:IsPilot",
+        "aliases": [
+          "L:dcc_battle_pose.o:IsPilot"
+        ],
+        "size": 56,
+        "hash32": 157026251,
+        "compiled_SHA256": "4ffd647a6f8f402e78afd77233a7e218d6530bf4aaf32e714be450f95f48a176"
+      },
+      {
+        "address": 149150572,
+        "token": "fn_229cfa998d15252c20a4f572cef18633f996a287f0568ca8af5b33a5706ad26e",
+        "identity": "L:dcc_battle_pose.o:Apply",
+        "aliases": [
+          "L:dcc_battle_pose.o:Apply"
+        ],
+        "size": 244,
+        "hash32": 618521847,
+        "compiled_SHA256": "8b381506befc08db108ca16e4a1d1e2548200a48ed2ba0e7aa3355e9f044ad2b"
+      },
+      {
+        "address": 149150492,
+        "token": "fn_fd26fc25342eb60e1301cd6d5eee645cb40892d0f7f79f9bb6a817141ef913ee",
+        "identity": "L:dcc_battle_pose.o:Character",
+        "aliases": [
+          "L:dcc_battle_pose.o:Character"
+        ],
+        "size": 80,
+        "hash32": 2718917303,
+        "compiled_SHA256": "f82e57313371d69d214d79ec3ca2d0433cfe3a73454058971acc667d649ec3cd"
+      },
+      {
+        "address": 134899312,
+        "token": "fn_b5d60322bab934fbae420a78ddcb43ff6f29ea9301e9adebb57225a95f2fe983",
+        "identity": "G:GetBattlerPosition",
+        "aliases": [
+          "G:GetBattlerPosition"
+        ],
+        "size": 16,
+        "hash32": 4192147116,
+        "compiled_SHA256": "d4e4df8bd922f680624fcbad756eee89d59e7c995130022dc415ef9b71e3d306"
+      },
+      {
+        "address": 134899292,
+        "token": "fn_9a01a369b81b976242dc05dcb1bad5269ff673cc8848d98d811450ea957b5f38",
+        "identity": "G:GetBattlerSide",
+        "aliases": [
+          "G:GetBattlerSide"
+        ],
+        "size": 20,
+        "hash32": 212871027,
+        "compiled_SHA256": "d0d1bfba676ce4e76e136fbf476b0c248eb6dae8402b24a6bea6276325fcd8dd"
+      },
+      {
+        "address": 134244800,
+        "token": "fn_380c8a479af936ff24699353ca4178a76054e4ae0b36430cc1153b76c67f694e",
+        "identity": "G:AnimateSprites",
+        "aliases": [
+          "G:AnimateSprites"
+        ],
+        "size": 76,
+        "hash32": 641696700,
+        "compiled_SHA256": "2418d99664dd731de2f6d58044ba9781827a69ef410d436d0267cd3c1461abbd"
+      },
+      {
+        "address": 134248000,
+        "token": "fn_2b91ff1c2513a94249236c31f68fce39ef6170469862c0c0a5709efcc3db6a5b",
+        "identity": "G:AnimateSprite",
+        "aliases": [
+          "G:AnimateSprite"
+        ],
+        "size": 72,
+        "hash32": 2307527676,
+        "compiled_SHA256": "ebc975d01dcadb4372d0450969bff3ffba679306fc6458ecfb427f3f05dbafce"
+      },
+      {
+        "address": 134247660,
+        "token": "fn_41d65c0523872ae18f6e8a561e1bd30939e9d0189c377f6b69d8af527816e36c",
+        "identity": "G:RequestSpriteCopy",
+        "aliases": [
+          "G:RequestSpriteCopy"
+        ],
+        "size": 80,
+        "hash32": 2947041795,
+        "compiled_SHA256": "1bc2614d47ad9edee7c6f54b30f2c505b12825da32014fccf9bb2c93d07834fd"
+      },
+      {
+        "address": 134247468,
+        "token": "fn_36d8c331a1511e75010d897ced2ce2748821365d3515d7cc3054c636b64eec99",
+        "identity": "G:ProcessSpriteCopyRequests",
+        "aliases": [
+          "G:ProcessSpriteCopyRequests"
+        ],
+        "size": 92,
+        "hash32": 2107259284,
+        "compiled_SHA256": "f497eb9c7d61b3c5734b80ce3eb52c43410ec2a4aa41dba487b68b71188d0339"
+      },
+      {
+        "address": 134449604,
+        "token": "fn_a0e567e5dcc4f268e695eafecb72273186d8e5ffcdaa6d48c982dc65043b87d1",
+        "identity": "G:VBlankCB_Battle",
+        "aliases": [
+          "G:VBlankCB_Battle"
+        ],
+        "size": 216,
+        "hash32": 3772866079,
+        "compiled_SHA256": "4e9d6cd0774ec42ae0ca8a8d2b1fb243be2a93733dfa529f42de72e8c389570a"
+      },
+      {
+        "address": 137247176,
+        "token": "fn_1d8cb73106f2cc10cd73b722161b44b4a04d7b8545dfbbf92c2f22e450afeeca",
+        "identity": "G:m4aSoundMain",
+        "aliases": [
+          "G:m4aSoundMain"
+        ],
+        "size": 10,
+        "hash32": 1130803009,
+        "compiled_SHA256": "a3f6b45d049245a13b932b37b283c7ec8791f1afdf67d2a69e2e580ff8c81027"
+      }
+    ],
+    "IntrMain": {
+      "address": 134218312,
+      "native_source": "src/crt0.s",
+      "copied_to_IWRAM": "IntrMain_Buffer; original0x800 InitIntrHandlers transfer",
+      "dispatcher_excerpt_bytes": 348,
+      "compiled_excerpt_SHA256": "49bf55ee55f86c70681c09a8dfa1cd1f45be41d317f6ffb3c20e129c5617ffb4"
+    },
+    "synthetic_data_addresses": [
+      {
+        "name": "gMain",
+        "value": 50340544,
+        "size": 1084,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gSprites",
+        "value": 33687088,
+        "size": 4420,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gMonSpritesGfxPtr",
+        "value": 33703124,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "sDccBattlePoses",
+        "value": 33804136,
+        "size": 16,
+        "scope": "dcc_battle_pose.o"
+      },
+      {
+        "name": "gBattlerSpriteIds",
+        "value": 33702372,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattlersCount",
+        "value": 33701996,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleMons",
+        "value": 33702020,
+        "size": 352,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleTypeFlags",
+        "value": 33697772,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gTrainerBattleOpponent_A",
+        "value": 33786830,
+        "size": 2,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gIntrTable",
+        "value": 50341648,
+        "size": 56,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gSTWIStatus",
+        "value": 50362472,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattlerPositions",
+        "value": 33702006,
+        "size": 4,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gAbsentBattlerFlags",
+        "value": 33702416,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gAnimScriptActive",
+        "value": 33784833,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "gBattleAnimAttacker",
+        "value": 33784890,
+        "size": 1,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "IntrMain_Buffer",
+        "value": 50341712,
+        "size": 2048,
+        "scope": "mini_printf.o"
+      },
+      {
+        "name": "sSpriteCopyRequests",
+        "value": 33691704,
+        "size": 768,
+        "scope": "sprite.o"
+      },
+      {
+        "name": "sSpriteCopyRequestCount",
+        "value": 33691701,
+        "size": 1,
+        "scope": "sprite.o"
+      },
+      {
+        "name": "sShouldProcessSpriteCopyRequests",
+        "value": 33691700,
+        "size": 1,
+        "scope": "sprite.o"
+      }
+    ],
+    "source_SHA256": {
+      "src/main.c": "c68345c6e35a104662c6982aa35a6aa09688c5886c44e9f27314653b8c8cfc48",
+      "src/crt0.s": "6dc9dfef60aa316388551796cbd812b98726c33c7b8f7cdf42ba20574fec658c",
+      "src/play_time.c": "e257fba648808ce5840d4409fd671ffac80a796fe2a12db50e525b56013e0176",
+      "src/sound.c": "019216d13566c805071255eadc83de2f4d64c458b1e3c9c3af9fa4ae427323a6",
+      "src/battle_main.c": "f8b04aec3a038612c6eaad0fca9d3e7ce37bc750b7106e2fb80673bd80552cd4",
+      "src/sprite.c": "ad867c471134719a9bd563fcf6ec0b876c4a46d01519fd20967c038a80e4a91f"
+    }
+  }
+}

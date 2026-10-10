@@ -1,0 +1,277 @@
+{
+  "scope": "SYNTHETIC offline native events and authored pose pixels; no gameplay or recovered runtime state",
+  "baseline_source_commit": "6d6a80aaea6eb7e6a54e17f6f210c8f87167e1e9",
+  "source_sha256": {
+    "baseline": "06d1ed9de308e617e3756e8e81e39aa997b2bb829f9ded7d0b04060d0be6d1ac",
+    "candidate": "f80a396e4a9828736410e431b5f5676a25022e2f01bdd389c9a44dc7cc2d639a"
+  },
+  "matched_ticks": 11202,
+  "scenarios": 91,
+  "per_tick_pixels_actions_recovery_applied_warning_writes_queues_equal": true,
+  "age_semantics": "Transition/failed-guard ticks advance; successful settled holds freeze unused age, WINDUP at >=18. Sleeping REST age is not compared to the old redundant increments.",
+  "synthetic_all_rest": {
+    "baseline": [
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0",
+      "4 0"
+    ],
+    "candidate": [
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0",
+      "0 0"
+    ]
+  },
+  "native_notified_writers": [
+    {
+      "path": "engine/src/battle_anim.c",
+      "line": 176
+    },
+    {
+      "path": "engine/src/battle_anim.c",
+      "line": 198
+    },
+    {
+      "path": "engine/src/battle_anim.c",
+      "line": 206
+    },
+    {
+      "path": "engine/src/battle_anim.c",
+      "line": 246
+    },
+    {
+      "path": "engine/src/battle_anim.c",
+      "line": 532
+    },
+    {
+      "path": "engine/src/battle_anim_status_effects.c",
+      "line": 548
+    },
+    {
+      "path": "engine/src/battle_anim_throw.c",
+      "line": 2475
+    },
+    {
+      "path": "engine/src/battle_anim_throw.c",
+      "line": 2480
+    },
+    {
+      "path": "engine/src/battle_anim_throw.c",
+      "line": 2507
+    },
+    {
+      "path": "engine/src/battle_anim_utility_funcs.c",
+      "line": 1050
+    },
+    {
+      "path": "engine/src/battle_anim_utility_funcs.c",
+      "line": 1074
+    },
+    {
+      "path": "engine/src/battle_controllers.c",
+      "line": 942
+    },
+    {
+      "path": "engine/src/battle_gfx_sfx_util.c",
+      "line": 483
+    },
+    {
+      "path": "engine/src/battle_gfx_sfx_util.c",
+      "line": 529
+    },
+    {
+      "path": "engine/src/battle_main.c",
+      "line": 3113
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 1913
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 1917
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 1940
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 1947
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 3490
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 3505
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 4713
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 4911
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 4941
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 4964
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 4986
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 5009
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 5073
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 5090
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 5141
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 6443
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 6450
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 6458
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 6460
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 6620
+    },
+    {
+      "path": "engine/src/battle_script_commands.c",
+      "line": 10345
+    },
+    {
+      "path": "engine/src/battle_util.c",
+      "line": 1909
+    },
+    {
+      "path": "engine/src/pokemon.c",
+      "line": 4709
+    },
+    {
+      "path": "engine/src/pokemon.c",
+      "line": 5058
+    },
+    {
+      "path": "engine/src/pokemon.c",
+      "line": 5066
+    },
+    {
+      "path": "engine/src/pokemon.c",
+      "line": 5113
+    }
+  ],
+  "assets": [
+    {
+      "path": "graphics/dcc/battle-poses/carl-rest.png",
+      "tiled_sha256": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-anticipation.png",
+      "tiled_sha256": "4a56806297d5034b4eac81e92b1fcd6c58d8a1b9c3babc9b9f0c0f4768f7ae02"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-contact.png",
+      "tiled_sha256": "9ac754e023690bdbbe3c9a2f906dee5ddf131e8f5c9814a97e2fe66b807164c7"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-recovery.png",
+      "tiled_sha256": "b3ec16a7a406bc662c370885575f310a25128d8f8297be8d6899f37d51482c69"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-brace-set.png",
+      "tiled_sha256": "13b02efc242213f1d892e29df87b6dc8bda480ff094e5b4f514a118c6f4e1a08"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-brace-hold.png",
+      "tiled_sha256": "05181801258066983cfe986f986d4bfbef3fca21f5ee3e2dfb90671ff781d546"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-rest.png",
+      "tiled_sha256": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-anticipation.png",
+      "tiled_sha256": "67f8416659552b2d305078bf2c73edd95036938984879b6e698d3633727a0f25"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-cast.png",
+      "tiled_sha256": "2f81a48538c28548d547cd32100ba964d812421c7a0ec20a3bb0cc9fec145199"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-recovery.png",
+      "tiled_sha256": "bde5e49555320f07ef549024b4373e6f51b89a4b3502a404dac9ff8c33a69e7e"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-weaken-preparation.png",
+      "tiled_sha256": "4821a3223935f523e4ffad5915e556e47a118471949a44c3dedea6a5dc3c56c2"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-weaken-release.png",
+      "tiled_sha256": "7942741503a783889aa1cc7257e9efb32359a82695a982a4949a2072952e6d55"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-idle.png",
+      "tiled_sha256": "fe44f9c2f5de6dc2f6263df0835f460e483e26b628182149c93572a65e40d1f1"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-windup.png",
+      "tiled_sha256": "6f6c5a55a3fc174786005923451a01d9ac37bdfcb6621a6fba84272cba0f9a7f"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-hold.png",
+      "tiled_sha256": "d7ed6925b095dd335dcb69adcacea051c7d9aeb15abe0cf813bc39d1a63771c8"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-slam.png",
+      "tiled_sha256": "9b2a02ca98decbd928e6cc8088493fddd93a487f473b2a0470af3c2c19b945ea"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-recovery.png",
+      "tiled_sha256": "8f84e3a3124413f747cdb9e160b8f6a20a62b844c7af776bd9b29b6de4f42e77"
+    }
+  ],
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "PASS": true
+}

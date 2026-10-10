@@ -1,0 +1,35 @@
+{
+  "result": "Private Library byte transfers failed/cancelled; no finalize and no new Library IDs",
+  "files": [
+    {
+      "name": "DungeonCrawlerCarlemon-baseline-STOP119-4e295249-native.png",
+      "status": "failed",
+      "error_code": "transfer_failed"
+    },
+    {
+      "name": "DungeonCrawlerCarlemon-baseline-last-completed-4e295249-native.png",
+      "status": "failed",
+      "error_code": "transfer_failed"
+    },
+    {
+      "name": "DungeonCrawlerCarlemon-baseline-ready-4e295249-native.png",
+      "status": "failed",
+      "error_code": "transfer_failed"
+    },
+    {
+      "name": "DungeonCrawlerCarlemon-baseline-completed-frames-STOP119-4e295249-native.mp4",
+      "status": "failed",
+      "error_code": "transfer_failed"
+    },
+    {
+      "name": "DungeonCrawlerCarlemon-V01-baseline-STOP119-4e295249-20261009.tar.xz",
+      "status": "failed",
+      "error_code": "transfer_failed"
+    }
+  ],
+  "files_finalized": 0,
+  "new_Library_IDs": [],
+  "local_artifacts_verified": true,
+  "raw_datasets_and_keys_excluded_from_upload_attempt": true,
+  "scope": "Verified native screenshots/completed clip/safe archive remain local. No new durable-retention claim; prior Library archives unchanged. Initial raw helper RPC was blocked before any mutation; current unmodified workflow was supplied native app transport, but byte transfers stalled and were cancelled. No direct-write fallback or manual finalize."
+}

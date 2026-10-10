@@ -1,0 +1,39 @@
+{
+  "result": "FIRST STOP117; no E/full PASS",
+  "accepted_boundaries": 8402,
+  "accepted_frame_metadata_records": 8536,
+  "failed_requested_visual": 8536,
+  "actual_absolute_video": 10581,
+  "summary_chunks": 10581,
+  "observations": 657139,
+  "retained_records": 140,
+  "last_accepted_ordinal": 8401,
+  "last_anchor_input_epoch": 10578,
+  "last_anchor_visual_epoch": 8533,
+  "terminal_primary_reason": 117,
+  "retention119_superseded_first_failure": false,
+  "summary_hash_chain_valid": true,
+  "retained_complete_chunk_hashes_valid": true,
+  "partial_anchor_suffix_records": 16,
+  "complete_postanchor_chunk_records": [
+    48,
+    36,
+    40
+  ],
+  "no_FINISH": true,
+  "ordinary_input_prefix": {
+    "count": 21,
+    "equals_original_prefix": true,
+    "SHA256": "a474f1ab01e8ad456d67caa7f7d09ef207ae59774d1f462e6e53632fea3a2961",
+    "raw_keys_excluded": true
+  },
+  "original_reference_copy_exact": true,
+  "no_poststop_CPU_or_inputs": true,
+  "counts": {
+    "baselines": 6,
+    "candidates": 4
+  },
+  "raw_datasets_keys_excluded": true,
+  "trace_SHA256": "26e46f498407bd92cae2dc17ac78f388788247a665821a55e55de434264cded5",
+  "summary_SHA256": "c8a397c67955104e13b5e9d69057acbd2a6c94db3d1394ba45a98e7a4538bcd3"
+}

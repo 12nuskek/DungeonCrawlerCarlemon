@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dcc_battle_pose.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
@@ -2472,10 +2473,12 @@ void AnimTask_SetAttackerTargetLeftPos(u8 taskId)
     {
     case 0:
         gBattleAnimAttacker = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+        DccBattlePoseNotify();
         gBattleAnimTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         break;
     case 1:
         gBattleAnimAttacker = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+        DccBattlePoseNotify();
         gBattleAnimTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
         break;
     }
@@ -2502,6 +2505,7 @@ void AnimTask_GetTrappedMoveAnimId(u8 taskId)
 void AnimTask_GetBattlersFromArg(u8 taskId)
 {
     gBattleAnimAttacker = gBattleSpritesDataPtr->animationData->animArg;
+    DccBattlePoseNotify();
     gBattleAnimTarget = gBattleSpritesDataPtr->animationData->animArg >> 8;
     DestroyAnimVisualTask(taskId);
 }

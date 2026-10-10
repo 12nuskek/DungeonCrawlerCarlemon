@@ -1,0 +1,113 @@
+{
+  "reason": 105,
+  "visual_frame": 14987,
+  "enforced": 1,
+  "ready_frame": 3155,
+  "failed_actor": 0,
+  "failed_sprite": 9,
+  "stage": 3,
+  "unresolved_callback_address": 0,
+  "native_phase_address": 134471129,
+  "native_phase_ID": 2594348249,
+  "CB2": 134448057,
+  "current_move": 0,
+  "copy_count": 0,
+  "copy_armed": 1,
+  "actors": [
+    {
+      "actor": 0,
+      "sprite": 9,
+      "species": 66,
+      "HP": 30,
+      "position": 0,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 304,
+      "attr1": 49664,
+      "attr2": 2406,
+      "images": 33576640,
+      "flags62": 1,
+      "flags63": 16,
+      "scratch_data0": 0,
+      "scratch_data2": 66,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 1,
+      "sprite": 6,
+      "species": 371,
+      "HP": 0,
+      "position": 1,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 264,
+      "attr1": 49328,
+      "attr2": 26918,
+      "images": 33576672,
+      "flags62": 1,
+      "flags63": 48,
+      "scratch_data0": 65534,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 2,
+      "sprite": 12,
+      "species": 52,
+      "HP": 22,
+      "position": 2,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 312,
+      "attr1": 51258,
+      "attr2": 10830,
+      "images": 33576704,
+      "flags62": 1,
+      "flags63": 48,
+      "scratch_data0": 2,
+      "scratch_data2": 52,
+      "pending_picture_copies": 0
+    },
+    {
+      "actor": 3,
+      "sprite": 13,
+      "species": 370,
+      "HP": 0,
+      "position": 3,
+      "owned": 0,
+      "first_copy_complete": 0,
+      "attr0": 160,
+      "attr1": 304,
+      "attr2": 3072,
+      "images": 0,
+      "flags62": 0,
+      "flags63": 0,
+      "scratch_data0": 0,
+      "scratch_data2": 0,
+      "pending_picture_copies": 0
+    }
+  ],
+  "copy_queue": [],
+  "failed_trace_byte": 2560,
+  "partial_peaks": {
+    "samples": 14788,
+    "sprites": 49,
+    "obj_tiles": 654,
+    "obj_palettes": 7,
+    "heap_used": 91212,
+    "heap_free_min": 22660
+  },
+  "native_phase_functions": [
+    "L:battle_main.o:FreeResetData_ReturnToOvOrDoEvolutions"
+  ],
+  "CB2_functions": [
+    "G:BattleMainCB2"
+  ],
+  "unresolved_callback_functions": [],
+  "private_VRAM_SHA256": {
+    "visual-stop-actor2-vram.bin": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338",
+    "visual-stop-actor1-vram.bin": "6d69ca285f1f1168110c58bc941634b589029748102b861a52d01e4badaaa203",
+    "visual-stop-actor0-vram.bin": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b",
+    "visual-stop-actor3-vram.bin": "f14684f5d0284b84d0a9aa7cce0963840d990ebb47740726182023083434af08"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "baseline_final_party": [
+    {
+      "member": "Carl",
+      "species": 66,
+      "level": 12,
+      "HP": 30,
+      "maxHP": 41,
+      "PP": [
+        2,
+        37,
+        0,
+        0
+      ],
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "native_reencoding_exact": true,
+      "BadEgg": false
+    },
+    {
+      "member": "Donut",
+      "species": 52,
+      "level": 10,
+      "HP": 22,
+      "maxHP": 30,
+      "PP": [
+        0,
+        33,
+        0,
+        0
+      ],
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "native_reencoding_exact": true,
+      "BadEgg": false
+    }
+  ],
+  "last_matching_reference_party_before_candidate_failure": [
+    {
+      "member": "Carl",
+      "species": 66,
+      "level": 11,
+      "HP": 38,
+      "maxHP": 38,
+      "PP": [
+        8,
+        39,
+        0,
+        0
+      ],
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "native_reencoding_exact": true,
+      "BadEgg": false
+    },
+    {
+      "member": "Donut",
+      "species": 52,
+      "level": 10,
+      "HP": 25,
+      "maxHP": 30,
+      "PP": [
+        2,
+        39,
+        0,
+        0
+      ],
+      "status": 0,
+      "native_encrypted_checksum_valid": true,
+      "native_reencoding_exact": true,
+      "BadEgg": false
+    }
+  ],
+  "last_matching_reference_video": 4945,
+  "candidate_failed_party_record": "not captured; reference values are not substituted for failed actual state"
+}

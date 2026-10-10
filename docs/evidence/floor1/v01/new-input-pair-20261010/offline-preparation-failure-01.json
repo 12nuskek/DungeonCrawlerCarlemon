@@ -1,0 +1,6 @@
+{
+  "stage": "new reference focused tests",
+  "failure": "Missing pathlib.Path import in new separate parser; six tests failed with sixteen NameError reports",
+  "emulator_invocations": 0,
+  "fix": "Import Path; strict grammar/checksum/EOF logic unchanged"
+}

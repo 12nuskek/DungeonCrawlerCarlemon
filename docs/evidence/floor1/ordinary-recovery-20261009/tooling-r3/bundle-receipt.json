@@ -1,0 +1,15 @@
+{
+  "path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009-bundle.tar.gz",
+  "bytes": 40878056,
+  "SHA256": "244aff8e919782ad49ebbdfee05711e93ca44994169eafa86e88ebc897dfcc81",
+  "file_entries_byte_verified": 2461,
+  "hardlink_entries": 11,
+  "symlink_targets_verified": 16,
+  "archive_creations": 1,
+  "archive_verifications": 1,
+  "tooling_executable_in_selected_environment": true,
+  "historical_binary_identity": false,
+  "self_contained_OS_image": false,
+  "ROM_Save_game_private_buffers_included": false,
+  "retention": "Workspace-local only; no independent private backup or Library transfer verified."
+}

@@ -1,0 +1,13 @@
+{
+  "result": "PASS new partial baseline typed reference byte-for-byte prefix of historical original f3ce baseline; no acceptance transfer",
+  "new_bytes": 35928393,
+  "historical_full_bytes": 40269443,
+  "new_reference_SHA256": "340a80b3761db46662fb058cb1d0596218aac40b45f674aba271f904380fa207",
+  "historical_prefix_SHA256": "340a80b3761db46662fb058cb1d0596218aac40b45f674aba271f904380fa207",
+  "first_differing_byte": null,
+  "new_control_records": 47,
+  "historical_control_prefix_exact": true,
+  "new_control_records_SHA256": "564a5126134b34bbb4a58e6d2f7e41237f3ec1ae507c838d42051e7391675504",
+  "historical_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "scope": "Private raw references/keys read locally only. Partial prefix proof does not restore baseline finish, permit candidate or diagnose old candidate timing failure."
+}

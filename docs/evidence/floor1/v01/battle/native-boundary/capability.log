@@ -1,0 +1,2 @@
+PASS installed mGBA version=0.10.5 commit=(unknown): custom debugger attach; passive hardware breakpoint add/hit/clear; Thumb rawPC-width2 semantics; complete ARMCore byte-exact/no CPU/memory/timing scheduling/frame change; step API present, never called
+PASS capability probe: no ROM/Save/reset/runFrame/runLoop/CPU instructions/gameplay; zero video frames and execution claims

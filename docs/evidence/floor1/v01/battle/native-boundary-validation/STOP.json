@@ -1,0 +1,26 @@
+{
+  "case": "after",
+  "validation_failure": "",
+  "summary": {
+    "case": "after",
+    "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+    "native_exit": 117,
+    "errors_bytes": 60,
+    "assertions": 27,
+    "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "replay_log_SHA256": "3d11d3eba3003de367b63820dd83f8fa4eac2661bb79f38707544e357923342c",
+    "visual": [],
+    "peaks": [],
+    "warning": [],
+    "battles": [],
+    "vitals": [],
+    "pilot": [],
+    "ordinary_controls_SHA256": "9b0fde912c3a2780a893a122ec24779305b0b457590d007865b9d52eca458800",
+    "pose_events": 14,
+    "native_readiness": [
+      "BV_READY frame=3155 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1"
+    ],
+    "native_phase_events": 19
+  }
+}

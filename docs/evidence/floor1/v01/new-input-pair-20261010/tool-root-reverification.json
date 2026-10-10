@@ -1,0 +1,7 @@
+{
+  "manifest_SHA256": "7893207368f9f3996c3d541735e337dc3f1bdfd131160b9f72f98127196156b5",
+  "actual_manifest_files_unchanged": 345,
+  "ARM_binutils": "2.44-3+23+b1",
+  "GCC": "14.2.0",
+  "no_additional_tool_builds": true
+}

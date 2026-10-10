@@ -1,0 +1,35 @@
+{
+  "verified_against": "3a872a174f4f6fa71c60b614d95bad6605f053a8",
+  "game_engine_unchanged": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "route_unchanged": true,
+  "historical_public_evidence_unchanged": true,
+  "actual_executions": [
+    {
+      "name": "STOP35",
+      "STOP_SHA256": "115e713bd149be3f7fa50c356289d921074a904aa9d901dcbdd13cd93b098227",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    },
+    {
+      "name": "STOP107",
+      "STOP_SHA256": "225fb1d939c7b9b2728c7e3d544d64b28c737e529f63ab7859b2ee9b08f82a9d",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    },
+    {
+      "name": "STOP105",
+      "STOP_SHA256": "6ef99dc10736ac871425f3c8afb932b8d7661faa01c940ebcbbee02f6b06eef1",
+      "claims": 1,
+      "candidate_claims": 0,
+      "Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c"
+    }
+  ],
+  "additional_emulator_frames": 0,
+  "new_execution_claims": 0,
+  "failure_count_reset": false,
+  "original_legacy_inputs": "unavailable; reconstructed ordinary inputs do not substitute",
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "workspace_agent_skill_instructions": "AGENTS.md reconciled; /workspace/.agents and .codex empty; no local .agents/skills provided"
+}

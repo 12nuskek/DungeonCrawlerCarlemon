@@ -1,0 +1,156 @@
+[
+  {
+    "case": "before",
+    "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+    "functions": [
+      {
+        "address": 134652072,
+        "token": "fn_80d8456b62613b6f11192e7614c0dc5e4f00b405ba0c0e979bc0be5291533d37",
+        "identity": "L:pokemon.o:EncryptBoxMon",
+        "aliases": [
+          "L:pokemon.o:EncryptBoxMon"
+        ],
+        "size": 36,
+        "hash32": 3560026637
+      },
+      {
+        "address": 134652108,
+        "token": "fn_57d4d438f5185705ab4df0b62f0072baca1c70638d769bc93f2470e1c6008803",
+        "identity": "L:pokemon.o:DecryptBoxMon",
+        "aliases": [
+          "L:pokemon.o:DecryptBoxMon"
+        ],
+        "size": 36,
+        "hash32": 3188134051
+      },
+      {
+        "address": 134653172,
+        "token": "fn_1ab6735de3e4ed90e4f76387cc71cd73c711174ad9e58462efb41017e1b49fa3",
+        "identity": "G:GetBoxMonData2|G:GetBoxMonData3",
+        "aliases": [
+          "G:GetBoxMonData2",
+          "G:GetBoxMonData3"
+        ],
+        "size": 1590,
+        "hash32": 2003562316
+      },
+      {
+        "address": 134655004,
+        "token": "fn_88d8a5af04e3bf0cd9354237dc5578f67e9f56a03f1342398f69a8a7154f386a",
+        "identity": "G:SetBoxMonData",
+        "aliases": [
+          "G:SetBoxMonData"
+        ],
+        "size": 1644,
+        "hash32": 3139614915
+      },
+      {
+        "address": 134646652,
+        "token": "fn_99c7e7337cd1336165f3e2436e587f76bd26ea455c2606ea99171a60fbdbdcb3",
+        "identity": "L:pokemon.o:CalculateBoxMonChecksum",
+        "aliases": [
+          "L:pokemon.o:CalculateBoxMonChecksum"
+        ],
+        "size": 146,
+        "hash32": 3634416003
+      },
+      {
+        "address": 134702580,
+        "token": "fn_6e66927e14199808d9dbb08d5813ae77926b4a3da948c7a01bb5cf1b29ce4fe4",
+        "identity": "G:MoveSaveBlocks_ResetHeap",
+        "aliases": [
+          "G:MoveSaveBlocks_ResetHeap"
+        ],
+        "size": 248,
+        "hash32": 3855458948
+      },
+      {
+        "address": 134703864,
+        "token": "fn_bac43009c306224cea3c6b5883f424275faa2d2871158e7a417fe3206d49807e",
+        "identity": "L:load_save.o:ApplyNewEncryptionKeyToAllEncryptedData",
+        "aliases": [
+          "L:load_save.o:ApplyNewEncryptionKeyToAllEncryptedData"
+        ],
+        "size": 64,
+        "hash32": 925313715
+      }
+    ]
+  },
+  {
+    "case": "after",
+    "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+    "functions": [
+      {
+        "address": 134652096,
+        "token": "fn_80d8456b62613b6f11192e7614c0dc5e4f00b405ba0c0e979bc0be5291533d37",
+        "identity": "L:pokemon.o:EncryptBoxMon",
+        "aliases": [
+          "L:pokemon.o:EncryptBoxMon"
+        ],
+        "size": 36,
+        "hash32": 3560026637
+      },
+      {
+        "address": 134652132,
+        "token": "fn_57d4d438f5185705ab4df0b62f0072baca1c70638d769bc93f2470e1c6008803",
+        "identity": "L:pokemon.o:DecryptBoxMon",
+        "aliases": [
+          "L:pokemon.o:DecryptBoxMon"
+        ],
+        "size": 36,
+        "hash32": 3188134051
+      },
+      {
+        "address": 134653196,
+        "token": "fn_1ab6735de3e4ed90e4f76387cc71cd73c711174ad9e58462efb41017e1b49fa3",
+        "identity": "G:GetBoxMonData2|G:GetBoxMonData3",
+        "aliases": [
+          "G:GetBoxMonData2",
+          "G:GetBoxMonData3"
+        ],
+        "size": 1590,
+        "hash32": 2003562316
+      },
+      {
+        "address": 134655028,
+        "token": "fn_88d8a5af04e3bf0cd9354237dc5578f67e9f56a03f1342398f69a8a7154f386a",
+        "identity": "G:SetBoxMonData",
+        "aliases": [
+          "G:SetBoxMonData"
+        ],
+        "size": 1644,
+        "hash32": 3139614915
+      },
+      {
+        "address": 134646676,
+        "token": "fn_99c7e7337cd1336165f3e2436e587f76bd26ea455c2606ea99171a60fbdbdcb3",
+        "identity": "L:pokemon.o:CalculateBoxMonChecksum",
+        "aliases": [
+          "L:pokemon.o:CalculateBoxMonChecksum"
+        ],
+        "size": 146,
+        "hash32": 3634416003
+      },
+      {
+        "address": 134702604,
+        "token": "fn_6e66927e14199808d9dbb08d5813ae77926b4a3da948c7a01bb5cf1b29ce4fe4",
+        "identity": "G:MoveSaveBlocks_ResetHeap",
+        "aliases": [
+          "G:MoveSaveBlocks_ResetHeap"
+        ],
+        "size": 248,
+        "hash32": 3855458948
+      },
+      {
+        "address": 134703888,
+        "token": "fn_bac43009c306224cea3c6b5883f424275faa2d2871158e7a417fe3206d49807e",
+        "identity": "L:load_save.o:ApplyNewEncryptionKeyToAllEncryptedData",
+        "aliases": [
+          "L:load_save.o:ApplyNewEncryptionKeyToAllEncryptedData"
+        ],
+        "size": 64,
+        "hash32": 925313715
+      }
+    ]
+  }
+]

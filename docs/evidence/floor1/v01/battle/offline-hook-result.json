@@ -1,0 +1,7 @@
+{
+  "method": "Retained console outcome from completed actual-source offline test; native include correction tested before commit dbcc859c",
+  "tested_command": "python3 scripts/test-f1-v01-battle-hook.py --output artifacts/floor1/v01-battle/hook-unit-headers",
+  "exit": 0,
+  "console": "PASS actual-source lifecycle/negative cases: six action bindings, warning persists across other actors, SLAM real-impact recovery, repeated/interrupted swaps, faint/absence/reset, invalid encounter/species/buffer/sprite; no mechanical writes",
+  "emulator_execution": false
+}

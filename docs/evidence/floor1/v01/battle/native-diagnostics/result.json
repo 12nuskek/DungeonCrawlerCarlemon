@@ -1,0 +1,67 @@
+{
+  "result": "PASS STOP117 all origins, first-failure retention, JSON redaction/privacy, installed synthetic interpreter regressions and host compile only",
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "host_SHA256": "d7bf57cadb8d4a78ac217b62e3c4a6e855424f2cbd6027e0131d5b676e170057",
+  "host_binary_SHA256": "1efcd983ab92e90060ec1135a5a2b977c70d3a9582013896dd2160051a3acc18",
+  "interpreter_fixture_binary_SHA256": "54f6cb338fac93e67d47c924ee1672d168af6678d8c82865aa90492690273971",
+  "complete_reader_fixture_binary_SHA256": "51e2b6255a85dcb339f73ca4297d257f36192cc6572c9c78123dfa048fbb075a",
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_execution_claims": 0,
+  "actual_instruction_fixtures": "Installed ARMRunLoop baseline versus guarded ARMRun binding, actual GBA processEvents/mTiming APIs and hardware breakpoint snapshots; synthetic memory/instructions/events only",
+  "game_equivalence": "UNVERIFIED; parent review before any fresh game execution",
+  "builds": {
+    "before": {
+      "ELF_SHA256": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+      "entry": 134219948,
+      "caller_BL": 134218938,
+      "caller_LR": 134218943,
+      "entry_opcode": 46336
+    },
+    "after": {
+      "ELF_SHA256": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f",
+      "entry": 134219948,
+      "caller_BL": 134218938,
+      "caller_LR": 134218943,
+      "entry_opcode": 46336
+    }
+  },
+  "source_SHA256": {
+    "scripts/floor1/v01-native-boundary-runtime.h": "456a11ed15e5f35c37f9aba0aabeb930c0f15637ef3831b2d88a257b979c281d",
+    "scripts/floor1/v01-native-boundary-interpreter-fixture.c": "e9a10ca8a8ab1414c5af6b8f563dca749fd41e03142a51a95b58d28a3789524f",
+    "scripts/floor1/v01-battle-host.py": "9b5dbe27961e03de4ccad04240b0034b38c8e017f236af46c4856199f356da4a",
+    "scripts/floor1/v01-battle-observer.h": "608b487a7cc6fb56853740930f300f95dc49227e54202e706c41e4af54289629",
+    "scripts/test-f1-v01-native-runtime.py": "e34d74e3a96b7f4bcd06feb1484392608cad9d92e89a0c2e70bd3e2874abcb05",
+    "scripts/test-f1-v01-battle.py": "dffbb3b2e82a5c4985ff997feb57523bf2db5f696d4ad98b51c1825610634039",
+    "scripts/test-f1-v01-battle-observer.py": "1ceecce6670b9bd873c6167fefd8856cf46aee34b32b23f68e170aaa2d362b46",
+    "scripts/floor1/v01-native-boundary-diagnostics.h": "c97e4c51af8bc4ddeafd63480f0028d95050d8d8b05e8595f6ca8fb0cf653202",
+    "scripts/floor1/v01-native-boundary-diagnostic-fixture.c": "17f63ee0bb18190f203207001699d35b4cc4c5e1dacee9088986aa9cdd1b8626",
+    "scripts/test-f1-v01-native-diagnostics.py": "f8250f6e4bad1e2f162704084489ebcb570b48317acb6e45bea24cf4ba825a8d"
+  },
+  "diagnostic_cases": 193,
+  "diagnostic_origins": {
+    "metadata_bytes_differ": 116,
+    "metadata_read_short": 60,
+    "metadata_write_short": 1,
+    "boundary_sequence_compare": 3,
+    "frame_input_keys_changed": 1,
+    "frame_boundary_count": 4,
+    "finish_boundary_sequence": 4,
+    "finish_trailing_byte": 1,
+    "finish_trailing_read_error": 1,
+    "native_fail_fallback": 2
+  },
+  "all_typed_B_F_E_header_byte_mutations": 87,
+  "actual_installed_hardware_header_mutations": 29,
+  "all_short_header_lengths_EOF_and_EIO": 58,
+  "JSON_exact_private_and_safe_projection_cases": 193,
+  "first_failure_immutable_no_stream_CPU_sequence_advancement_cases": 193,
+  "diagnostics_fixture_binary_SHA256": "a09e39e31333e4aa2bc89fc12b5153467169464e5321505e04e6e2bd39673bde",
+  "retention": "Exact headers/key values in mode0600 files, exclusive create; safe projection decoded non-key fields only; synthetic inputs only; private fixtures excluded from Git",
+  "historical_STOP117": "Actual failed header remains missing; offline implementation cannot retrospectively recover it or prove alignment cause",
+  "historical_executions": {
+    "baselines": 5,
+    "candidates": 2
+  }
+}

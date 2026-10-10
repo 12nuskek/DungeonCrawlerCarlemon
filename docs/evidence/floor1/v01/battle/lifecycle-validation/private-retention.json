@@ -1,0 +1,17 @@
+{
+  "archive": "DungeonCrawlerCarlemon-V01-reviewed-lifecycle-baseline-PASS-candidate-STOP103-20261009.tar.xz",
+  "bytes": 10361260,
+  "SHA256": "f0de9dc67a0a407b3dd1acb671ad45da3774a0e9bbce0f546d4bd953658536bf",
+  "entries": 17114,
+  "byte_verified_entries": 17114,
+  "original_PPMs": 17063,
+  "ordinary_Save_copies": 2,
+  "both_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "clips": "One complete baseline15627 and one candidate1305 ending at actual STOP capture; RGB pixels all16932 verified lossless",
+  "source": "e017e185c34c53fb969ecdaeb84267c9019376c6",
+  "exclusions": "All .bin/raw state/key/VRAM/crypto input datasets, key-bearing pilot lines/raw replay.log, complete symbols/executables/ROM/ELF; remain local, no claim of private durable recovery for excluded datasets",
+  "supported_private_Library_confirmed": true,
+  "local_identity_persisted": true,
+  "contains": "Two unchanged ordinary Save copies, safe logs/preparations/exclusive claims/source diagnosis/offline crypto proof,17063 original native PPMs, two complete lossless native clips and safe public evidence",
+  "raw_excluded_datasets_durable": false
+}

@@ -1,0 +1,42 @@
+{
+  "files": 11714,
+  "raw_exact": 9037,
+  "CRLF_attribute_transformations": 2677,
+  "all_mismatches_CRLF_only": true,
+  "all_mismatch_attributes_text_eol_crlf": true,
+  "main_engine_attributes_SHA256": "8e7bf56ce252073f32772ef09e8e562ee28e117f70597c69ddd22d122140dd20",
+  "attribute_source_commit": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "extensions": {
+    ".ps1": 1,
+    ".pal": 2676
+  },
+  "first_mismatch": {
+    "path": "engine/asmdiff.ps1",
+    "git_blob": "9d6657301a221a3cb45dbe33e4f7dcdf8c380e9b",
+    "git_SHA256": "6df73a60d5cbdcf813aeac182a636a2ce13cd6e00315f658836724d9ee82bdfe",
+    "archived_SHA256": "065d5b8fb68f8e60066ff3174405d8b34b24fd8c2cbc2891882134f718e1e320",
+    "git_size": 2942,
+    "archived_size": 3058,
+    "CRLF_only": true,
+    "attributes": "engine/asmdiff.ps1: text: set\nengine/asmdiff.ps1: eol: crlf\nengine/asmdiff.ps1: export-subst: unspecified"
+  },
+  "hydrated_untracked_blobs": {
+    "data/mb_berry_fix.gba": {
+      "git_blob": "0afff07f5d2314e2bd35d99de518cbc114009b5e",
+      "SHA256": "f3d87e14688faf0190b33e071607887c7783462b45f92f1cb7135eec56260740",
+      "size": 15348
+    },
+    "data/mb_colosseum.gba": {
+      "git_blob": "fdeb854a054ba02191f6a209ec5b649f21c4e335",
+      "SHA256": "d133d340ce7507932bcb3a83f9ee1dd9905072763d493b66db20e1bde4304572",
+      "size": 163840
+    },
+    "data/mb_ereader.gba": {
+      "git_blob": "85057cf4e2bd657da5d632ac12d1ea24aeaa4499",
+      "SHA256": "e50d06841b3485282bf772f1cfe2988da2bb476eb26ff5337b467af8a60bdf07",
+      "size": 12512
+    }
+  },
+  "full_private_diagnosis_SHA256": "39396bccee50fddd9eff413ac6c69f9cc2b380e8cdbfbfa37673a528a92779b4",
+  "method": "Read-only diagnosis after terminal preparation failure; no new preparation or emulator attempt"
+}

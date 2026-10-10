@@ -1,0 +1,10 @@
+{
+  "relocated_lines_1_based": [
+    45,
+    46
+  ],
+  "identical_all_other_commands": true,
+  "identical_frame_and_input_commands": true,
+  "both_exact_assertions_retained": true,
+  "compiled_handlers_advance_no_frames_or_inputs": true
+}

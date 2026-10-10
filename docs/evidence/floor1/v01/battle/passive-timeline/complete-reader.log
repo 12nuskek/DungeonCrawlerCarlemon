@@ -1,0 +1,12 @@
+PASS actual installed interpreter/event parity: 12 cases; Thumb arithmetic, ARM/Thumb BX, due event, ARMRaiseIRQ, MSR IRQ-to-SYSTEM, banked registers, CPSR/SPSR/prefetch/cycles/nextEvent/RAM/input/time/event order/lateness/frame exact; no instruction after frame end
+PASS actual due frame-end event: zero instructions after event at entry, exact original CPU/event/frame state
+PASS actual eight-frame fixed input cadence: all original interpreter/video/event/key states exact, no hidden setKeys or post-frame step
+PASS actual original batch timeout: identical long interpreter batch/event/time/CPU state, no frame fabricated, binding stops118
+PASS actual hardware boundary sequence: 4 complete snapshots, exact ordinal/frame/input/key/count/trailer; no CPU writes by observation
+PASS actual hardware stream metadata negatives: 29 independent byte corruptions, no accepted ordinal/instruction advancement
+PASS actual hardware full-record negatives: every 2560 byte position rejected before entry instruction; zero masks
+PASS actual stream ordering/end negatives: missing/duplicate/reordered boundary, missing frame-count record, wrong completed-frame count, trailing finish data
+PASS actual stale-checkpoint rejection after a zero-boundary frame; no stepping to refresh authority
+PASS actual stream/native integrity negatives: BadEgg, equal invalid checksum, truncated full snapshot, actual IRQ-to-SYSTEM foreign caller rejected
+PASS production complete snapshot reader at installed hardware entry: native bus APIs read all 2560 bytes, all domains/padding retained, exact callback identity checks; generated gameplay host compiled/NEVER invoked
+PASS actual interpreter negative cases: zero-count frame/fresh checkpoint rejection, full-record mutation STOP before entry instruction, sticky first STOP/no retry, foreign caller in SYSTEM rejected; no ROMs/Saves/gameplay/new execution claims

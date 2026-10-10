@@ -1,0 +1,258 @@
+PASS verbatim native CallCallbacks/SetMainCallback2: CB1-selected saved trainer CB2 executes in the same iteration, wrapper remains for next iteration; zero emulator frames
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=14987 native_ID=2594348249
+BV_RETIRING frame=14987 native_ID=2594348249 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+PASS actual STOP105 metadata projection with explicitly modeled registry NULL; original runtime remains STOP105, zero emulator frames
+Exact battle-state/control divergence visual_frame=1 byte=170; STOP
+Exact battle-state/control divergence visual_frame=1 byte=1268; STOP
+Exact battle-state/control divergence visual_frame=1 byte=0; STOP
+Exact battle-state/control divergence visual_frame=1 byte=0; STOP
+PASS verbatim native CallCallbacks/SetMainCallback2: CB1-selected saved trainer CB2 executes in the same iteration, wrapper remains for next iteration; zero emulator frames
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=14987 native_ID=2594348249
+BV_RETIRING frame=14987 native_ID=2594348249 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+PASS actual STOP105 metadata projection with explicitly modeled registry NULL; original runtime remains STOP105, zero emulator frames
+PASS actual observer mismatch diagnostics: exact actual/expected party bytes and local full failed records, safe CPU metadata, resource values redacted; no runtime authority inferred
+BV_PHASE frame=1 native_ID=2373077694
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=2373077694
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=3 native_ID=1195748862
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=3 native_ID=865690686
+BV_PHASE frame=3 native_ID=317923838
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_FIELD frame=8 native_return_path=15 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0 field_controls_ready=1
+BV_FINISH candidate=0 frames=8 samples=3 pose_mask=131137 captures=131137 swaps=0,1,1 faint_mask=2 exit_clean_frames=1 restored_hardware_palette_checks=3
+BV_PEAK samples=9 sprites=4 obj_tiles=0 obj_palettes=0 heap_used=0 heap_free_min=114672
+BV_WARNING held_frames=0 other_actor_animation_frames=0 hardware_palette_mask=7
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=865690686
+BV_RETIRING frame=2 native_ID=865690686 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=0 retired_source_copies=0
+BV_PHASE frame=1 native_ID=1195748862
+BV_READY frame=1 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1
+BV_POSE frame=1 turn=0 actor=1 pose=17 sprite=1 tile=64 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_POSE frame=1 turn=0 actor=2 pose=6 sprite=2 tile=128 palette=0 x=0 y=0 x2=0 y2=0 pivot=0,0 affine=0 active=0 animation_actor=0 move=0 hardware_bytes=2048
+BV_PHASE frame=2 native_ID=317923838
+BV_RETIRING frame=2 native_ID=317923838 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=1 retired_source_copies=0
+BV_FIELD frame=8 native_return_path=15 registry_cleared=1 pose_state_cleared=1 pose_state_applicable=1 retired_source_copies=0 field_controls_ready=1
+PASS lifecycle fixtures: strict live cleanup, four owners, registry/pose retirement, all four retired source ranges and boundaries, verified cleanup/return callbacks, native rebuild order/completion, field callbacks/locks/scripts/hooks/fade/task readiness, pre-entry false exit and incomplete field finish; zero emulator frames
+PASS actual observer: send-out/unfilled VRAM, native phase and4 registered owners/first-copy completion, invalid pixels/ownership after readiness, action-before-readiness, unknown phase/controller, label filtering/duplicate identity, exact safe STOP diagnostics; zero emulator frames

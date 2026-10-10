@@ -1,0 +1,63 @@
+{
+  "frozen_source": "8ee0595461cff3bc5da6b5ea353067308e087076",
+  "STOP": 105,
+  "partial_assertions": 27,
+  "zero_based_visual_STOP_frame": 14987,
+  "recorded_visual_frames": 14988,
+  "absolute_frames": 17032,
+  "in_battle_frames": 13684,
+  "native_ready_frame": 3155,
+  "attempts": 1,
+  "observed_turns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "actual_moves_recorded_after_readiness": {
+    "0": 1194,
+    "358": 3897,
+    "359": 1866,
+    "356": 1198,
+    "33": 404,
+    "360": 549,
+    "357": 576,
+    "355": 2149
+  },
+  "minimum_live_duo_HP_after_readiness": [
+    27,
+    22
+  ],
+  "terminal_outcome": 1,
+  "terminal_battler_HP": [
+    30,
+    0,
+    22,
+    0
+  ],
+  "VRAM_fixture_matches_at_STOP": {
+    "0": {
+      "exact_known_pose": 0,
+      "byte_equal": true,
+      "SHA256": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b"
+    },
+    "1": {
+      "exact_known_pose": 17,
+      "byte_equal": true,
+      "SHA256": "6d69ca285f1f1168110c58bc941634b589029748102b861a52d01e4badaaa203"
+    },
+    "2": {
+      "exact_known_pose": 6,
+      "byte_equal": true,
+      "SHA256": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338"
+    }
+  },
+  "Save_unchanged": true,
+  "candidate_executed": false,
+  "method": "Offline reduction of retained actual trace/VRAM; zero additional emulator frames. Raw state/key/VRAM bytes remain local outside uploads."
+}

@@ -1,0 +1,108 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 7695,
+      "SHA256": "ab91664d55b7614ac30a422aa1f01d237a64d0f505d11ddcba5f3a26b839bbc5"
+    },
+    "baseline-points.json": {
+      "bytes": 6310,
+      "SHA256": "54a09dea15166c8df3c3cb6bac8ec05f368b1eb19d214c71944f24a05b20ab5e"
+    },
+    "boundary-fixtures.log": {
+      "bytes": 573,
+      "SHA256": "e550d786ef61b58dfa09d5ff946f0f48341018449b700ee50044b5bea4235ca7"
+    },
+    "boundary-result.json": {
+      "bytes": 810,
+      "SHA256": "dd9a7f9f840f3a5ad567b877c7a8b52d37d6d1a365dcbf84d00392d8dbd3625d"
+    },
+    "build-identity.json": {
+      "bytes": 2148,
+      "SHA256": "e6991446e513cf38be68d1035217bf7459855f3030a575b21ea779561eea3e5f"
+    },
+    "candidate-observer-symbols.json": {
+      "bytes": 581,
+      "SHA256": "038c2fb419cd1805c7b37780b5a696b0464184def12d37f01451af44363b8720"
+    },
+    "candidate-points.json": {
+      "bytes": 6310,
+      "SHA256": "784bc5c67b1bb863ff103a158d73d5bd4a174bea08c49959dce9a471cd7fc218"
+    },
+    "complete-reader.log": {
+      "bytes": 1888,
+      "SHA256": "49bcaad92d4902110280a4244470fc94f197c9e75f2d1d8ad9fe9e9f37799660"
+    },
+    "diagnostics-result.json": {
+      "bytes": 3895,
+      "SHA256": "932bf9e55ee8369eacbd6d6b39f7e4023214111127d0a93aeaac168dce5f3c68"
+    },
+    "diagnostics.log": {
+      "bytes": 1509,
+      "SHA256": "ef44df7269f13e44d10b7304e5c221d586e84557ae9f3529407d02c068894414"
+    },
+    "game-build.log": {
+      "bytes": 1314,
+      "SHA256": "1b9a33b7d3793505e166d5a9af867f986237c8106255f0b6f4409b736321d115"
+    },
+    "interpreter.log": {
+      "bytes": 1672,
+      "SHA256": "98917d66ea4c9ea24d7686e17aa5232640abb020c4dd7dda0142cac77575d5a6"
+    },
+    "native-layout.log": {
+      "bytes": 0,
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "native-phases-result.json": {
+      "bytes": 1917,
+      "SHA256": "b8696f470a3819b363eb1f0e61d1e364061ac9f5566643efb3216d08ad509f21"
+    },
+    "native-phases.log": {
+      "bytes": 133,
+      "SHA256": "a3b849b776b15b3fcc8182b54db9ca8d9888458b40c3c35fd4aaaa7a18c3cf82"
+    },
+    "observer-result.json": {
+      "bytes": 1041,
+      "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07"
+    },
+    "observer-unit.log": {
+      "bytes": 26556,
+      "SHA256": "6548fbc4d436a68be8a96f6d5f7a76ba9936dedd40c306214f2799f0c1c39227"
+    },
+    "original-candidate-points.json": {
+      "bytes": 6310,
+      "SHA256": "3a139ceacae6a233453e5469d8258aa6fb84e73d6b1ba44899e5a147551bcaba"
+    },
+    "pose-hook-result.json": {
+      "bytes": 449,
+      "SHA256": "4700a3710dc21c483c1416f9ae52df814384d5ac83a25ead66d753fc561b8036"
+    },
+    "preservation.json": {
+      "bytes": 1441,
+      "SHA256": "bff89f028fe1bc350eb06fc1ff0513f9d541c11a13572cbee716367c694c1dca"
+    },
+    "reconciliation.json": {
+      "bytes": 24354,
+      "SHA256": "d432ab77db7a445acb594fa2cbfed9ebf3aa0907958f6d116de764d22163a690"
+    },
+    "snapshot-contract-result.json": {
+      "bytes": 181,
+      "SHA256": "daab75f3e72885fa964e7aa6e729f2841f2c9bc64574c3e91f61e0c1200148eb"
+    },
+    "snapshot-contract.log": {
+      "bytes": 315,
+      "SHA256": "3fb870d934ba90a87db71e8b2715e8e430af97caa5656bb3979b51d96ee946d1"
+    },
+    "timeline-fixture.log": {
+      "bytes": 1111,
+      "SHA256": "9c992ddbdff2886772dd0c4ec9c6761b9293777ccbd06310063afbca2f47dec8"
+    },
+    "timeline-result.json": {
+      "bytes": 5836,
+      "SHA256": "fea72b4a600458850ba8a018144bbdfa6c049b652446a901c571cbcf41340ef8"
+    }
+  },
+  "all_inputs": "Safe results/logs/bounded native points only; no binary trace, full symbols, keys, ROMs or Saves",
+  "compiled_source": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69",
+  "all_remote_heads_unchanged_before_publication": 68,
+  "non_target_remote_heads_to_preserve": 67
+}

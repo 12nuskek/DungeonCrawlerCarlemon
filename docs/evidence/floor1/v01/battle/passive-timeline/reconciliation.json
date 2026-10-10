@@ -1,0 +1,805 @@
+{
+  "checkpoint": "ed4039b32c6fd6b04d1bb96475cc8a07081a3e0a",
+  "main": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "heads": [
+    {
+      "ref": "refs/heads/docs/b01-checkpoint",
+      "sha": "86ca854225892d74254d475fa800cc4350963d2c"
+    },
+    {
+      "ref": "refs/heads/docs/final-slice-handoff",
+      "sha": "fa8f309714e0d0ec9c445f1fda93296efe29ced8"
+    },
+    {
+      "ref": "refs/heads/docs/floor1-art-preparation-20261007",
+      "sha": "d78b944724d0dd6a303052fa5de91360cba5205d"
+    },
+    {
+      "ref": "refs/heads/docs/i01-opponent-native-candidates",
+      "sha": "2c9a1b8ec8cde57cb064d12153a2fc438a10b77b"
+    },
+    {
+      "ref": "refs/heads/docs/n01-environment-native-candidates",
+      "sha": "3a1a9c6ce920fd7f6149f2a76d2b64ffd4e9d2e3"
+    },
+    {
+      "ref": "refs/heads/docs/native-battle-animation-candidates-20261007",
+      "sha": "8a007fa3d8f3dee8d82d5f3b5e27cf02f2b7e34d"
+    },
+    {
+      "ref": "refs/heads/docs/s02-protagonist-art-references",
+      "sha": "7c528a35513358dc12caeda50d2c111e052f7141"
+    },
+    {
+      "ref": "refs/heads/docs/stage0-checkpoint",
+      "sha": "1725fb78750ad2a126172ce66143a878e57e4c32"
+    },
+    {
+      "ref": "refs/heads/evidence/s02-wip-5963c8f",
+      "sha": "d33e73f1aeec30fb55056b1efb3eb7c271cafdc9"
+    },
+    {
+      "ref": "refs/heads/main",
+      "sha": "c6d647a815ffce44a2419a2cf83b6c2c094359f0"
+    },
+    {
+      "ref": "refs/heads/task/b01-duo-prototype",
+      "sha": "335c62fbcfbc27b442874d75685e4020c736a5fd"
+    },
+    {
+      "ref": "refs/heads/task/b02-crawler-actions",
+      "sha": "c0cafaa91f67300d7e4b9825a8ee83457520ecb4"
+    },
+    {
+      "ref": "refs/heads/task/b03-no-collection",
+      "sha": "d5a3fe750faf4072b984f833cb042e081e7ab825"
+    },
+    {
+      "ref": "refs/heads/task/d01-trap-secret-quest",
+      "sha": "15703bb7d6d83bde5abf5b7fb3d6a35533179261"
+    },
+    {
+      "ref": "refs/heads/task/d02-explosive-crafting",
+      "sha": "824a6ff1a7f36a008fc340715e42967f38d63a8e"
+    },
+    {
+      "ref": "refs/heads/task/e01-tutorial",
+      "sha": "56a68e95c15fd7638fb06f96e3b625c4fcb18638"
+    },
+    {
+      "ref": "refs/heads/task/e02-guide-recovery",
+      "sha": "f2a9c3574b683af430c8e4440419557bdc63ea59"
+    },
+    {
+      "ref": "refs/heads/task/f01-foundation",
+      "sha": "eb31014d9d4355af3f4d854f71a075443e6d8181"
+    },
+    {
+      "ref": "refs/heads/task/f02-reproducible-environment",
+      "sha": "bdefa2565f74c30853d0ef392feae3ab11e6204a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-a01-membership",
+      "sha": "2415f6519888a605a6f32309b644e9fa8e04f371"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01-opening-graybox",
+      "sha": "96d4e83c19bf40d1cd876ced182d189f6cb14b74"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01a-cache-provenance",
+      "sha": "03b869d7376339797f7667ca9540009eeab3a506"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01b-coordinated-layout",
+      "sha": "fde3bd38daa03fda03cf43b58e8218ae6fb85e96"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01b-recovery-travel",
+      "sha": "d2c6a8545db4175718bfde87a272b515296d81a9"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01c-migration-audit",
+      "sha": "03cd4b3ea2d03c94dcf37f8e2fb185be4e9d7519"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01d-live-contract",
+      "sha": "bd82beed2c1518d7d42339239ff42cb808d46364"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-acceptance-inventory",
+      "sha": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-current-patrol",
+      "sha": "72e08ed17afc69e28ef545bbbff383a434e90df5"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-feedback",
+      "sha": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-guard-first-corrected",
+      "sha": "6c7f2e10f861b0518da3e7841e523433b2a1b451"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-guard-first-current",
+      "sha": "4eb46e72165d2f9c5125f0926c38a301de2184f7"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-live-migration",
+      "sha": "16d7012bcff5de4ce04ad691fa81543bb3047ff7"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-navigation",
+      "sha": "91a4b79bfe7041060de560cd65b037322233047a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-new-save-recovery",
+      "sha": "1263d8b915f37d70bdcb04167c9088cd107666bc"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-optional",
+      "sha": "7866c8730fbef0f6570e269aa247b90a2e9a3c23"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-party-preservation-diagnosis",
+      "sha": "531276ae7ee4e238ed804cff4c5d970d32d63ff0"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-party-resource-correction",
+      "sha": "1e81d1293b53016f40d1a1f59f5f7d564513341a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-potion",
+      "sha": "00a31be5d1622308a6d02c4fcce165e1d581b710"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-potion-ready",
+      "sha": "f8178113b42cdf14f5540ecd50268df5da8a947f"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-prepared-cold-phase",
+      "sha": "1663abb05000374b03d0c0db3c78a974c87b3852"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-prepared-persistence",
+      "sha": "84cbb196b52db3330e39ec793828ee2d06c63f2b"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-recovery",
+      "sha": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-sealed",
+      "sha": "f4e568d582430dc9fc118f0af4afbc26b781e884"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-staircase",
+      "sha": "a9658676a53d519e9769494c52bf57b28d54473a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-warden-fairness",
+      "sha": "61fba93c0485af269944a739953240e1f745466a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-warden-first-clear",
+      "sha": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50"
+    },
+    {
+      "ref": "refs/heads/task/floor1-g01e-warden-threat-audit",
+      "sha": "ed519a05e34f47bf45fa150aa5e456b9e1028926"
+    },
+    {
+      "ref": "refs/heads/task/floor1-p01-baseline",
+      "sha": "ac4e950df7a36bfdeb6cc2cca1bd64d6a23e8b68"
+    },
+    {
+      "ref": "refs/heads/task/floor1-reviewed-integration",
+      "sha": "0a4c4d10ee7242af2f3c3eba9a827bcb66964c7e"
+    },
+    {
+      "ref": "refs/heads/task/floor1-t01-state-text",
+      "sha": "16f61a90d488b36d313b1cc726792d1f16a44abd"
+    },
+    {
+      "ref": "refs/heads/task/floor1-v01-battle",
+      "sha": "ed4039b32c6fd6b04d1bb96475cc8a07081a3e0a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-v01-environment",
+      "sha": "8f6697962aa3eebe1451264f2123a74ea613880a"
+    },
+    {
+      "ref": "refs/heads/task/floor1-v01-overworld",
+      "sha": "ac2d87ebf4b29775662883e8454c5ea017464f2c"
+    },
+    {
+      "ref": "refs/heads/task/i01-opponent-art",
+      "sha": "5635bcc02edf3e110e1dee8cb1b75bae3078cf91"
+    },
+    {
+      "ref": "refs/heads/task/n00-dungeon-guidance",
+      "sha": "fa219b7b1c22f57405c6e91a881a9e7761ca5494"
+    },
+    {
+      "ref": "refs/heads/task/n00b-remaining-objective",
+      "sha": "a21a8d98f6df5e6ce02c9f0250db6f1a0ddf5262"
+    },
+    {
+      "ref": "refs/heads/task/n01-dungeon-materials",
+      "sha": "9374534365ecb8d106cae2693a606cf7289ae73b"
+    },
+    {
+      "ref": "refs/heads/task/n01-room-composition",
+      "sha": "3c77e9176ba40643471222bb881c06f30d9d9e4d"
+    },
+    {
+      "ref": "refs/heads/task/n02-room-outlines",
+      "sha": "1448dd60a2c7b483972bb3b0ac14326092957032"
+    },
+    {
+      "ref": "refs/heads/task/n03-state-feedback",
+      "sha": "e2919e6eaf89146c74f0ceb63f19b32c9e1b35db"
+    },
+    {
+      "ref": "refs/heads/task/n04-recovery-wins",
+      "sha": "e0f690b3f0fe0d3513f1607e102decc7a4c14668"
+    },
+    {
+      "ref": "refs/heads/task/n05-guide-recovery",
+      "sha": "005154eef04e24318d48b6435087e1c6954cff42"
+    },
+    {
+      "ref": "refs/heads/task/n06-review-package",
+      "sha": "c3fc32d3fa506988b058779c6c60c5018ba0d231"
+    },
+    {
+      "ref": "refs/heads/task/r01-xp-equipment",
+      "sha": "b3c26e388bd94cd7bd7197a3190ac0774dcc11af"
+    },
+    {
+      "ref": "refs/heads/task/r02-achievements-loot",
+      "sha": "de8af8914a030bbfb41769de8a74f339f0144e74"
+    },
+    {
+      "ref": "refs/heads/task/s01-connected-slice",
+      "sha": "8e34180de438a291067fdb2ec8d8bb08d3ec316d"
+    },
+    {
+      "ref": "refs/heads/task/s02-original-presentation",
+      "sha": "68d7a570cce1d2bb6fa6476db8fc211c9ebcef72"
+    },
+    {
+      "ref": "refs/heads/task/s03-slice-validation",
+      "sha": "7807a9c286a7fa11fd35cce2065d02e280f78b2a"
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 114,
+      "state": "open",
+      "draft": true,
+      "merged_at": null,
+      "head": "ed4039b32c6fd6b04d1bb96475cc8a07081a3e0a",
+      "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0"
+    },
+    {
+      "number": 113,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T03:51:40Z",
+      "head": "ac2d87ebf4b29775662883e8454c5ea017464f2c",
+      "base": "c2f0d74759bb35b2f25e99f104e48f88635f049f"
+    },
+    {
+      "number": 112,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T02:56:49Z",
+      "head": "8f6697962aa3eebe1451264f2123a74ea613880a",
+      "base": "54526744eb7ed961007ffe6100f976a1e7448e8b"
+    },
+    {
+      "number": 111,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T02:11:07Z",
+      "head": "0a4c4d10ee7242af2f3c3eba9a827bcb66964c7e",
+      "base": "a83777b94684919d121cabf4f6b2d45de23027c7"
+    },
+    {
+      "number": 110,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:53:30Z",
+      "head": "6c7f2e10f861b0518da3e7841e523433b2a1b451",
+      "base": "2016782ea8fbdbf94322630c8157de6851524783"
+    },
+    {
+      "number": 109,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:53:01Z",
+      "head": "4eb46e72165d2f9c5125f0926c38a301de2184f7",
+      "base": "848c79a91857c829e1054db2a19b870b92d3b5d4"
+    },
+    {
+      "number": 108,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:52:25Z",
+      "head": "3e0ace22ce82fcee61a6e945be219dd8849e6ea3",
+      "base": "780ab00cb48e1005136c4e9e095b0b7e3c3ea8ab"
+    },
+    {
+      "number": 107,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:51:45Z",
+      "head": "1663abb05000374b03d0c0db3c78a974c87b3852",
+      "base": "a8e443a633bb361bcf26979dc109b055d503b93f"
+    },
+    {
+      "number": 105,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:51:11Z",
+      "head": "84cbb196b52db3330e39ec793828ee2d06c63f2b",
+      "base": "1c152c90dc74cf75f9238226f41d57eb788bcd17"
+    },
+    {
+      "number": 103,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:50:22Z",
+      "head": "1e81d1293b53016f40d1a1f59f5f7d564513341a",
+      "base": "9783bb110e446271178d63441c754f6037250a3b"
+    },
+    {
+      "number": 101,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:49:44Z",
+      "head": "531276ae7ee4e238ed804cff4c5d970d32d63ff0",
+      "base": "50d02e4e87d2c46e3d3584e5829ab7d9c9acb5cd"
+    },
+    {
+      "number": 99,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:49:15Z",
+      "head": "61fba93c0485af269944a739953240e1f745466a",
+      "base": "fd5579ad1f24e3c877ad7622f2960095c0e745f1"
+    },
+    {
+      "number": 97,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:48:41Z",
+      "head": "ed519a05e34f47bf45fa150aa5e456b9e1028926",
+      "base": "f5e55edd2bc38033d8c178485798c5cfec705e3e"
+    },
+    {
+      "number": 95,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:48:11Z",
+      "head": "e0d75cc339548a9d57a5ecc9b2e80036deda6f50",
+      "base": "0e56c4627e59962bfe816387d63784b9e12e85c6"
+    },
+    {
+      "number": 93,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:47:16Z",
+      "head": "1263d8b915f37d70bdcb04167c9088cd107666bc",
+      "base": "b26865f8127656732dbb01260bb1394ac0bdc211"
+    },
+    {
+      "number": 91,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:46:38Z",
+      "head": "b36f750c689029e4fcc9f0a43b73c0c3dca7dccf",
+      "base": "1df3d18225a22bc7f53d6e44228ac3710b7dbe5e"
+    },
+    {
+      "number": 89,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:46:06Z",
+      "head": "f8178113b42cdf14f5540ecd50268df5da8a947f",
+      "base": "d432899a3c8aea1baf54ec25c3538b9aec58eb83"
+    },
+    {
+      "number": 87,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:45:30Z",
+      "head": "00a31be5d1622308a6d02c4fcce165e1d581b710",
+      "base": "5223b0df7f68a651a9ea963340a56269ac67c312"
+    },
+    {
+      "number": 85,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:44:58Z",
+      "head": "f4e568d582430dc9fc118f0af4afbc26b781e884",
+      "base": "463c3e78f60be67a8a90355b722ae0726bbb9620"
+    },
+    {
+      "number": 83,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:44:23Z",
+      "head": "a9658676a53d519e9769494c52bf57b28d54473a",
+      "base": "5a33575a7c9dacd2b2936ceef4f928b3c6020325"
+    },
+    {
+      "number": 81,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:43:42Z",
+      "head": "7866c8730fbef0f6570e269aa247b90a2e9a3c23",
+      "base": "30080aa6b69393ea3e609448592d8407ad8beb75"
+    },
+    {
+      "number": 79,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:43:02Z",
+      "head": "91a4b79bfe7041060de560cd65b037322233047a",
+      "base": "c7f47475e7db3fe775aebfbaace97bacdd02c00f"
+    },
+    {
+      "number": 77,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:42:13Z",
+      "head": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+      "base": "9557bc0efafda3c9dee1bb1486d04c799dfe01f9"
+    },
+    {
+      "number": 75,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-09T01:41:21Z",
+      "head": "16d7012bcff5de4ce04ad691fa81543bb3047ff7",
+      "base": "b694da17928b93ea579f55d905017aa9f7619422"
+    },
+    {
+      "number": 73,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T09:47:41Z",
+      "head": "bd82beed2c1518d7d42339239ff42cb808d46364",
+      "base": "0cb6674a38f67579d5e7480ef884681a66a8b609"
+    },
+    {
+      "number": 71,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T09:08:02Z",
+      "head": "03cd4b3ea2d03c94dcf37f8e2fb185be4e9d7519",
+      "base": "ef5c012aba10b61cbcdbbc3313d7e25c5f448473"
+    },
+    {
+      "number": 69,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T08:31:39Z",
+      "head": "fde3bd38daa03fda03cf43b58e8218ae6fb85e96",
+      "base": "ed592e7cee7a9976579b040720a6195c54ec2268"
+    },
+    {
+      "number": 68,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T07:39:57Z",
+      "head": "8a007fa3d8f3dee8d82d5f3b5e27cf02f2b7e34d",
+      "base": "e1847cc53d1c49382f8f2e2e99437b2f61e940a8"
+    },
+    {
+      "number": 66,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T07:39:07Z",
+      "head": "d2c6a8545db4175718bfde87a272b515296d81a9",
+      "base": "abb77feb339e67b2ced92531985c49bb4731684d"
+    },
+    {
+      "number": 65,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T06:17:59Z",
+      "head": "03b869d7376339797f7667ca9540009eeab3a506",
+      "base": "535b0809703f53a86dfd9e2cea1f751c4e6585f1"
+    },
+    {
+      "number": 62,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T06:02:15Z",
+      "head": "96d4e83c19bf40d1cd876ced182d189f6cb14b74",
+      "base": "cee81f8f5dd5cce93990007f06491c8d607a7161"
+    },
+    {
+      "number": 60,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T05:31:13Z",
+      "head": "2415f6519888a605a6f32309b644e9fa8e04f371",
+      "base": "168a0dabfe717e1ee29667c5460d45035506d786"
+    },
+    {
+      "number": 58,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T04:28:21Z",
+      "head": "d78b944724d0dd6a303052fa5de91360cba5205d",
+      "base": "50bf6d99fdfc4cb3d1ce6799a327a9974e8b786f"
+    },
+    {
+      "number": 56,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T04:33:24Z",
+      "head": "16f61a90d488b36d313b1cc726792d1f16a44abd",
+      "base": "984f89351fe273f4ba6813aaffd7b0e3f2721504"
+    },
+    {
+      "number": 54,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T03:51:54Z",
+      "head": "ac4e950df7a36bfdeb6cc2cca1bd64d6a23e8b68",
+      "base": "3f1c851cce076b51cf4eb174925d9a2e41777a1f"
+    },
+    {
+      "number": 52,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T17:38:01Z",
+      "head": "c3fc32d3fa506988b058779c6c60c5018ba0d231",
+      "base": "f2edec341fe1a1900f82740cbef25563b08f7532"
+    },
+    {
+      "number": 50,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T17:27:25Z",
+      "head": "005154eef04e24318d48b6435087e1c6954cff42",
+      "base": "413523a0ecb85458f2392620d15456c2bfb845bb"
+    },
+    {
+      "number": 48,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T17:02:53Z",
+      "head": "e0f690b3f0fe0d3513f1607e102decc7a4c14668",
+      "base": "3eba7aded3402bb2c48bcef7dd2311ad313210f9"
+    },
+    {
+      "number": 46,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T16:50:18Z",
+      "head": "e2919e6eaf89146c74f0ceb63f19b32c9e1b35db",
+      "base": "96f651d828dd380eb836c49493417913f390d15e"
+    },
+    {
+      "number": 44,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T16:10:03Z",
+      "head": "1448dd60a2c7b483972bb3b0ac14326092957032",
+      "base": "c71636ac213147181eb28ab968ffd15e718501fc"
+    },
+    {
+      "number": 42,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T15:17:04Z",
+      "head": "3c77e9176ba40643471222bb881c06f30d9d9e4d",
+      "base": "eee114c07792a37e2c281d8807f774be85b5845a"
+    },
+    {
+      "number": 41,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T14:55:08Z",
+      "head": "9374534365ecb8d106cae2693a606cf7289ae73b",
+      "base": "d36f3af20c9b690a6249141fad5e4d3e82f54e98"
+    },
+    {
+      "number": 40,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T14:45:19Z",
+      "head": "3a1a9c6ce920fd7f6149f2a76d2b64ffd4e9d2e3",
+      "base": "24eef764e51d7bd6f70ba99e21744161dd92e302"
+    },
+    {
+      "number": 39,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T13:57:29Z",
+      "head": "a21a8d98f6df5e6ce02c9f0250db6f1a0ddf5262",
+      "base": "a9491f17c82a9da99fdca9acde21be612aac0260"
+    },
+    {
+      "number": 37,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T13:42:33Z",
+      "head": "fa219b7b1c22f57405c6e91a881a9e7761ca5494",
+      "base": "bf27e2692025eb4291ffbf992a3b6412340d32cd"
+    },
+    {
+      "number": 34,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T13:10:33Z",
+      "head": "fa8f309714e0d0ec9c445f1fda93296efe29ced8",
+      "base": "052979d38ff9800780fac66cb052896767c4f1c8"
+    },
+    {
+      "number": 33,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T12:45:38Z",
+      "head": "2c9a1b8ec8cde57cb064d12153a2fc438a10b77b",
+      "base": "c9669a132b03161392ee23ec347541042beb68d1"
+    },
+    {
+      "number": 32,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T13:07:39Z",
+      "head": "5635bcc02edf3e110e1dee8cb1b75bae3078cf91",
+      "base": "eb73f725d0c5c1488386e56f28f8080eb3a6f884"
+    },
+    {
+      "number": 30,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T12:13:35Z",
+      "head": "7807a9c286a7fa11fd35cce2065d02e280f78b2a",
+      "base": "d8f8ae62a3fba0dbe4c2c17fa2a4a1ce193bc530"
+    },
+    {
+      "number": 28,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T10:32:26Z",
+      "head": "7c528a35513358dc12caeda50d2c111e052f7141",
+      "base": "2c082b499b138ec936eab8bc9f51f318faf49be9"
+    },
+    {
+      "number": 27,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T10:56:16Z",
+      "head": "68d7a570cce1d2bb6fa6476db8fc211c9ebcef72",
+      "base": "abf9875af2ffead2a342b8a5835c1e3dff157ec0"
+    },
+    {
+      "number": 25,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T08:28:45Z",
+      "head": "8e34180de438a291067fdb2ec8d8bb08d3ec316d",
+      "base": "369a9ea0dbe8aa61d7f091da533d18c6efafd5fb"
+    },
+    {
+      "number": 23,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T07:24:09Z",
+      "head": "824a6ff1a7f36a008fc340715e42967f38d63a8e",
+      "base": "c42d444b8c2ae1b665105baad133094859bf8fa5"
+    },
+    {
+      "number": 21,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T07:11:52Z",
+      "head": "15703bb7d6d83bde5abf5b7fb3d6a35533179261",
+      "base": "ae4679e2e19a94fd60ac879c9dd18e89f7de2c41"
+    },
+    {
+      "number": 19,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T06:56:10Z",
+      "head": "de8af8914a030bbfb41769de8a74f339f0144e74",
+      "base": "5a0fd8eaef6b4746c745e128bd9923f00afeeee0"
+    },
+    {
+      "number": 17,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T06:23:40Z",
+      "head": "b3c26e388bd94cd7bd7197a3190ac0774dcc11af",
+      "base": "4a27fc4b082b8d8b6dfa1840eb6d5f01ce554363"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T05:58:12Z",
+      "head": "d5a3fe750faf4072b984f833cb042e081e7ab825",
+      "base": "4c76d692b37a2fa934e89e4b057e0b83568e64f0"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T05:33:26Z",
+      "head": "c0cafaa91f67300d7e4b9825a8ee83457520ecb4",
+      "base": "471a9c183752ed27f8bfa51b5a451f6722d1e69b"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T05:03:36Z",
+      "head": "f2a9c3574b683af430c8e4440419557bdc63ea59",
+      "base": "66bcbb3c6b8cc0600a0108b56a882942db12ae24"
+    },
+    {
+      "number": 7,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T04:47:09Z",
+      "head": "86ca854225892d74254d475fa800cc4350963d2c",
+      "base": "86160253801b53dd7b1cc8c6ee417422779a1651"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T04:44:57Z",
+      "head": "335c62fbcfbc27b442874d75685e4020c736a5fd",
+      "base": "91afb3deb6f856b4565e00bb65e81f0f1497a05f"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T04:18:06Z",
+      "head": "56a68e95c15fd7638fb06f96e3b625c4fcb18638",
+      "base": "fbc28d44529347e5f4f24108c1f9b7a518729b6a"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T04:00:58Z",
+      "head": "1725fb78750ad2a126172ce66143a878e57e4c32",
+      "base": "03353fb3f1287074102a5bc98df4f19b0d4c189f"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T03:59:52Z",
+      "head": "bdefa2565f74c30853d0ef392feae3ab11e6204a",
+      "base": "1af617261881fcc26c6bb0fbd924d4c8a3c56d9a"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-06T03:48:59Z",
+      "head": "eb31014d9d4355af3f4d854f71a075443e6d8181",
+      "base": "8ac45a70f39bddf5fd50de7b3a40f436784ee3b8"
+    }
+  ],
+  "checks": 0,
+  "statuses": 0,
+  "workflow_runs": 0,
+  "workflow_definitions": "Not freshly available; absence is not CI PASS",
+  "scope": "Initial read-only reconciliation before implementation; historical branches/PRs preserved."
+}

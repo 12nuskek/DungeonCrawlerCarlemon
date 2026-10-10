@@ -1,0 +1,14 @@
+{
+  "execution_source": "bfd69de5269740ca6a1680ba7b3b11bef37c8e87",
+  "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+  "claim_source": "279efbfa7a97f7e5380b74dfadedfb3fb0f2408e",
+  "stage": "setup",
+  "ordinary_process_ordinal": 3,
+  "setup_attempt_ordinal": 2,
+  "execution_limit": 1,
+  "identity_SHA256": "0754596c912e38bc832961a60dcc47720d148faff9b90caec3ab75075013b350",
+  "input_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+  "route_SHA256": "9e02d93eeadaa176c718209e2aeb0fbef4de6f5b213c34439eeac176f072ec97",
+  "battles": 0,
+  "prior_ordinary_processes": 2
+}

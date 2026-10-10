@@ -1,0 +1,35 @@
+{
+  "reconciled_checkpoint": "ed4039b32c6fd6b04d1bb96475cc8a07081a3e0a",
+  "protected_files_byte_exact": 364,
+  "all_four_historical_documents_preserved_as_suffix": true,
+  "engine_changed_files": [
+    "engine/src/dcc_battle_pose.c"
+  ],
+  "pose_source_SHA256": "06d1ed9de308e617e3756e8e81e39aa997b2bb829f9ded7d0b04060d0be6d1ac",
+  "original_host_source_SHA256": "d7bf57cadb8d4a78ac217b62e3c4a6e855424f2cbd6027e0131d5b676e170057",
+  "new_host_source_SHA256": "ee269bb94ce4ab112f89035ae8e5d2b340972934f1f341e1993eae406376c504",
+  "all_13_controller_setKeys_lines_identical": true,
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "accepted_plan_SHA256": "9b3e5d6f607a5345f73ea06dc38211d1c1a085bcd1d505a5772d4fb88e71ef27",
+  "historical_counts": {
+    "baselines": 5,
+    "candidates": 3
+  },
+  "new_gameplay_executions": 0,
+  "all_prior_canonical_Git_files": 19074,
+  "previous_Git_files_unmodified": 19063,
+  "authorised_modified_prior_files": [
+    ".gitignore",
+    "AGENTS.md",
+    "docs/backlog.md",
+    "docs/floor1/v01-entry-plan.md",
+    "docs/progress.md",
+    "engine/src/dcc_battle_pose.c",
+    "scripts/floor1/v01-battle-host.py",
+    "scripts/floor1/v01-native-boundary-adapter.h",
+    "scripts/floor1/v01-native-boundary-runtime.h",
+    "scripts/test-f1-v01-battle.py",
+    "scripts/test-f1-v01-native-boundary.py"
+  ],
+  "source_checkpoint": "2feadf56764c0d89c3dde9ef4622ea6d43b32f69"
+}

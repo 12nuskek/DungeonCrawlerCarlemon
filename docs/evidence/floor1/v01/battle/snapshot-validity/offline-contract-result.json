@@ -1,0 +1,5 @@
+{
+  "result": "PASS synthetic offline contract only",
+  "runtime_serialization_authority": "BLOCKED; no classifier, no integration, no deferral activated",
+  "emulator_frames": 0
+}

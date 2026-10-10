@@ -1,0 +1,174 @@
+{
+  "result": "PASS installed synthetic timeline parity/neutrality/strict stream/fail-closed cases",
+  "cases": 38,
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_execution_claims": 0,
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "fixture_binary_SHA256": "e8eacb4d0d6da7864cb3d72337587c333644cdf747968a3758dfe277b93994eb",
+  "source_SHA256": {
+    "scripts/floor1/v01-native-timeline.h": "e163c1207ca2bfea9011750feee84077181863a487e2ec2ccb6f0ee69a737d52",
+    "scripts/floor1/v01-native-timeline-fixture.c": "78834f86b7b7615a08281e1c6f98b052d34755575b3ce99888ba3b30f68419c8",
+    "scripts/floor1/v01-native-timeline-symbols.py": "c35e4ea01bd4b04a0cfec6806dd75f4c79b1a46a5b5e776aafdba44eb84e18e8",
+    "scripts/floor1/v01-native-boundary-runtime.h": "5d36615aa2fe512cf82ba102742c17a2d3572fc4e77df878047fb6f3d8ce6fe6",
+    "scripts/floor1/v01-native-boundary-adapter.h": "65b465a2427538deb50f6c67bbfeacad9dd692bccd73f69d5e773d53b7170662"
+  },
+  "synthetic_binary_inventory": [
+    {
+      "file": "bad-prefetch-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "bad-queue-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "capacity-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "case-0-private.bin",
+      "records": 25,
+      "synthetic": true,
+      "SHA256": "d717ebb43e32db5ae0bf374d13b1dd25163925fa93d60c9cc31b28fc7f74a421"
+    },
+    {
+      "file": "case-1-private.bin",
+      "records": 25,
+      "synthetic": true,
+      "SHA256": "f455293653ea924c874c0d5dd8325c98f41e3cfce03d6647498727391c19368a"
+    },
+    {
+      "file": "case-10-private.bin",
+      "records": 13,
+      "synthetic": true,
+      "SHA256": "be933bcfa428f38d73e5ae158792e9444ff83dba689211acb25c106b7293eef5"
+    },
+    {
+      "file": "case-11-private.bin",
+      "records": 19,
+      "synthetic": true,
+      "SHA256": "4f5e2458e90d4b71332820d90dcf9b1fae834c145245522d75e086ead4bbc305"
+    },
+    {
+      "file": "case-2-private.bin",
+      "records": 21,
+      "synthetic": true,
+      "SHA256": "a4b30af3d5fa83f5ffc82f97893eea5fceadea8cfc44a7acffe1e9bfb6e7c8a2"
+    },
+    {
+      "file": "case-3-private.bin",
+      "records": 21,
+      "synthetic": true,
+      "SHA256": "e2bcfc82dcdfe2e7ff3ba682d77cee98a25fa8ffe054d4d58147bd30f62f87dc"
+    },
+    {
+      "file": "case-4-private.bin",
+      "records": 7,
+      "synthetic": true,
+      "SHA256": "3a7996b819676322836a278a2626ca449df7190ff26dd4cc9a3c1a613186ac4f"
+    },
+    {
+      "file": "case-5-private.bin",
+      "records": 11,
+      "synthetic": true,
+      "SHA256": "31ddf6d92c5b11222d319618dd4fb00e7f35acdef05790f0f851630375bcab11"
+    },
+    {
+      "file": "case-6-private.bin",
+      "records": 7,
+      "synthetic": true,
+      "SHA256": "da43e1efccb9768a87b243c35c408c33c59adbd8692b344250d68bab275b72ee"
+    },
+    {
+      "file": "case-7-private.bin",
+      "records": 11,
+      "synthetic": true,
+      "SHA256": "e16dbcfe5120327cccb9dfcbc1b680a10fcc468df77b1afa3aeeca07c679ac8b"
+    },
+    {
+      "file": "case-8-private.bin",
+      "records": 17,
+      "synthetic": true,
+      "SHA256": "1c0ec278de3d8c95698ebb71b0c71724479c35c3f28556fdcede115b091b2bfb"
+    },
+    {
+      "file": "case-9-private.bin",
+      "records": 19,
+      "synthetic": true,
+      "SHA256": "6e79c2cfa8b76ca0bec5830995b5dfa602058f6c557e08a85e5ff58492934f42"
+    },
+    {
+      "file": "due-capacity-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "exclusive-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "first-reason-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "fixed-input-private.bin",
+      "records": 38,
+      "synthetic": true,
+      "SHA256": "5ee91733d01d05b98658fa3f33869239af8320e177c23510a10424566e244d12"
+    },
+    {
+      "file": "io-failure-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "queue-cycle-private.bin",
+      "records": 0,
+      "synthetic": true,
+      "SHA256": "ca48c7710164280773b7c570789305ddccdfb93cfa1f5ebde50a3e960aabc8ea"
+    },
+    {
+      "file": "queue-items-private.bin",
+      "records": 4,
+      "synthetic": true,
+      "SHA256": "9702bb70872e1a5f6fafec304d8c452d843a7f25caba8a29703d6640b22d0c60"
+    },
+    {
+      "file": "strict-stop-private.bin",
+      "records": 4,
+      "synthetic": true,
+      "SHA256": "172cefcfdb68aeae5d6d831bdde9545854c0b2b06a5c678f9a616366e79d2d0a"
+    },
+    {
+      "file": "typed-match-private.bin",
+      "records": 21,
+      "synthetic": true,
+      "SHA256": "d2d4ce1e7a9e03ddfbb0e6ae4b773f98814e5eb1c93b08098b96e892bffc0257"
+    }
+  ],
+  "ELF_pins": {
+    "before": "2fb481bdb041772fef7aa0ed15deb6a30b7a24c54f9f6d487c2b733fe26fb066",
+    "original_candidate": "0bbce8cce6485cf6860ac19ce3b75b580ca8b2d5735909b40906f64c056eb98f"
+  },
+  "limits": {
+    "per_batch_records": 4096,
+    "total_records": 1000000,
+    "event_queue_nodes": 64,
+    "copy_requests": 64
+  },
+  "scope": "Synthetic mechanism/control neutrality only. No actual timing ground truth or gameplay-equivalence claim."
+}

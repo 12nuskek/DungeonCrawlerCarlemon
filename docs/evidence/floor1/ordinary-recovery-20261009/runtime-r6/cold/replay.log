@@ -1,0 +1,23 @@
+PASS ready
+PASS native milestone boot complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=boot facing=1
+PASS checkpoint boot absolute_frame=2044
+PASS expect 35 3 8 7 7
+PASS growth 11 748 0 10 1058 0
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS item 13 1
+PASS item 378 2
+PASS flag 2135 1
+PASS flag 2136 1
+PASS flag 2137 1
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+FIELD_FACING checkpoint=cold facing=1
+PASS checkpoint cold absolute_frame=2044
+PATROL_CLOCK absolute_frames=2044 valid_samples=0 deferred_samples=0 reentries=0 unarmed_frames=2044 mutation_frames=0 checkpoints=2 battle_frames=0 battle_attempts=0 stage=4
+result=0 assertions=18

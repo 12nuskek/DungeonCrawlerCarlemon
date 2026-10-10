@@ -1,0 +1,71 @@
+{
+  "baseline_accepted_prefix_before_failed_video": {
+    "complete_boundaries": 4894,
+    "completed_video_frames": 4948,
+    "typed_prefix_SHA256": "774424549733df3f99f3048f0337577935497f357a02a9cf8a23dad2f75e41ea"
+  },
+  "baseline_next_expected_records": [
+    {
+      "type": "B",
+      "ordinal": 4894,
+      "video": 4948,
+      "input_epoch": 6993,
+      "count": 0,
+      "absolute_frame": 6992,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "type": "F",
+      "ordinal": 4895,
+      "video": 4948,
+      "input_epoch": 6993,
+      "count": 1,
+      "absolute_frame": 6993,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "type": "B",
+      "ordinal": 4895,
+      "video": 4949,
+      "input_epoch": 6994,
+      "count": 0,
+      "absolute_frame": 6993,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "type": "F",
+      "ordinal": 4896,
+      "video": 4949,
+      "input_epoch": 6994,
+      "count": 1,
+      "absolute_frame": 6994,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "type": "B",
+      "ordinal": 4896,
+      "video": 4950,
+      "input_epoch": 6995,
+      "count": 0,
+      "absolute_frame": 6994,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "type": "F",
+      "ordinal": 4897,
+      "video": 4950,
+      "input_epoch": 6995,
+      "count": 1,
+      "absolute_frame": 6995,
+      "input_keys_SHA256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    }
+  ],
+  "candidate_failed_metadata": "not separately retained; actual failed ordinal/count/header cannot be claimed captured",
+  "candidate_failure_CPU": {
+    "raw_PC": "080004d8",
+    "next_Thumb_instruction_address": "080004d6",
+    "native_function": "L:main.o:UpdateLinkAndCallCallbacks",
+    "next_instruction": "BX r0 (native callback wrapper return)"
+  },
+  "diagnosis": "CPU is outside qualified WaitForVBlank hardware entry; source places STOP after original frame loop in input-key/frame-metadata checks. Most plausible F-versus-B boundary alignment at this video epoch, actual failed header missing; no changed gate/retry or claimed game equivalence."
+}

@@ -1,0 +1,24 @@
+{
+  "upper_bytes": 13488067,
+  "pinned_symbol_outputs": [
+    {
+      "build": "original",
+      "function_JSON": 4578009,
+      "symbol_file": 8304555,
+      "boundary_JSON": 3446,
+      "timeline_JSON": 6310
+    },
+    {
+      "build": "optimized",
+      "function_JSON": 4582736,
+      "symbol_file": 8306907,
+      "boundary_JSON": 3446,
+      "timeline_JSON": 6310
+    }
+  ],
+  "fixture_bytes": 39329,
+  "host_source_bytes": 149427,
+  "host_binary_bytes": 137752,
+  "Save_bytes": 131088,
+  "fixed_metadata_envelopes": 131072
+}

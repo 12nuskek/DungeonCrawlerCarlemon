@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-09",
+  "base": "5895f3af34aaddff1c49e2b6d228a2540056a286",
+  "authority": "One focused tooling-only continuation, official pinned Debian pool download/hash/control/extract method; stop actual denial or hash/platform mismatch.",
+  "diagnostics": {
+    "base": "5895f3af34aaddff1c49e2b6d228a2540056a286",
+    "architecture": "amd64",
+    "GCC": "14.2.0",
+    "sources": [
+      {
+        "path": "/etc/apt/sources.list.d/caas-snapshot.list",
+        "readable": true,
+        "sanitized_lines": [
+          "deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg check-valid-until=no] https://snapshot.debian.org/archive/debian/20260828T000000Z/ trixie main",
+          "deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg check-valid-until=no] https://snapshot.debian.org/archive/debian/20260828T000000Z/ trixie-updates main",
+          "deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260828T000000Z/ trixie-security main"
+        ]
+      }
+    ],
+    "indexes": {
+      "path": "/var/lib/apt/lists",
+      "readable": true,
+      "entries": []
+    },
+    "policy_exit": 0,
+    "policy_stdout": "libinih1:\n  Installed: 59-1\n  Candidate: 59-1\n  Version table:\n *** 59-1 100\n        100 /var/lib/dpkg/status\nlibzip5:\n  Installed: 1.11.3-2\n  Candidate: 1.11.3-2\n  Version table:\n *** 1.11.3-2 100\n        100 /var/lib/dpkg/status\nlibepoxy0:\n  Installed: 1.5.10-2\n  Candidate: 1.5.10-2\n  Version table:\n *** 1.5.10-2 100\n        100 /var/lib/dpkg/status\n",
+    "policy_stderr": "W: Unable to read /etc/apt/apt.conf.d/80-applied-apt-retries - open (13: Permission denied)\n",
+    "assessment": "Readable source definition uses the launcher snapshot, but no available package indexes are shown. Policy only reports installed versions from dpkg/status for inih/zip/epoxy, not repository candidates for binutils/mGBA. This local lookup does not establish official Debian package unavailability. The unreadable configuration warning remains unexplained; no restricted configuration was opened or changed.",
+    "prior_acquisition_attempt_preserved": true,
+    "system_changes": false
+  },
+  "acquisition": {
+    "base": "5895f3af34aaddff1c49e2b6d228a2540056a286",
+    "manifest_SHA256": "da9dd34440823ace74c25106d09880ac19e9121b86eab586281e900b11b5f6e0",
+    "method": "Official Debian pool filenames; HTTPS with default verified TLS; one download per pinned package, no retry; hash/control-field checks before local extraction",
+    "prior_failed_APT_attempts": 1,
+    "official_package_attempts": [
+      {
+        "Package": "binutils-arm-none-eabi",
+        "Version": "2.44-3+23+b1",
+        "Architecture": "amd64",
+        "url": "https://deb.debian.org/debian/pool/main/b/binutils-arm-none-eabi/binutils-arm-none-eabi_2.44-3+23+b1_amd64.deb",
+        "expected_SHA256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+        "download_attempts": 1,
+        "hash_verified": true,
+        "extracted": true,
+        "final_url": "https://deb.debian.org/debian/pool/main/b/binutils-arm-none-eabi/binutils-arm-none-eabi_2.44-3+23+b1_amd64.deb",
+        "bytes": 2924248,
+        "actual_SHA256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+        "control": {
+          "Package": "binutils-arm-none-eabi",
+          "Version": "2.44-3+23+b1",
+          "Architecture": "amd64",
+          "Depends": "libc6 (>= 2.38), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)"
+        }
+      },
+      {
+        "Package": "libepoxy0",
+        "Version": "1.5.10-2",
+        "Architecture": "amd64",
+        "url": "https://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy0_1.5.10-2_amd64.deb",
+        "expected_SHA256": "4c4c8024f2175086de65bca9fdc3fbb967f2863ebf249d489c66d0c8103dd3a3",
+        "download_attempts": 1,
+        "hash_verified": true,
+        "extracted": true,
+        "final_url": "https://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy0_1.5.10-2_amd64.deb",
+        "bytes": 192728,
+        "actual_SHA256": "4c4c8024f2175086de65bca9fdc3fbb967f2863ebf249d489c66d0c8103dd3a3",
+        "control": {
+          "Package": "libepoxy0",
+          "Version": "1.5.10-2",
+          "Architecture": "amd64",
+          "Depends": "libc6 (>= 2.34)"
+        }
+      }
+    ],
+    "pool_listings": [
+      {
+        "url": "https://deb.debian.org/debian/pool/main/b/binutils-arm-none-eabi/",
+        "final_url": "https://deb.debian.org/debian/pool/main/b/binutils-arm-none-eabi/",
+        "SHA256": "e0f27e0d3ad4488ff1c5a46837a8382d20c45567b23f2b04e011673c854391e6"
+      },
+      {
+        "url": "https://deb.debian.org/debian/pool/main/libe/libepoxy/",
+        "final_url": "https://deb.debian.org/debian/pool/main/libe/libepoxy/",
+        "SHA256": "6cbadb82965e9f2ed5254365e1bbda2e381ac317ec7908e294251ac23b04bcc4"
+      }
+    ],
+    "complete": false,
+    "system_package_state_changed": false,
+    "STOP": {
+      "type": "HTTPError",
+      "failure": "HTTP Error 404: Not Found",
+      "no_retry": true
+    }
+  },
+  "access_denial": {
+    "url": "https://packages.debian.org/trixie/amd64/libinih1/download",
+    "stage": "read-only source-pool resolution after incorrect i/inih pool returned404",
+    "exception": "URLError",
+    "failure": "Tunnel connection failed: 403 Forbidden",
+    "origin_response_available": false,
+    "TLS_verification_disabled": false,
+    "alternate_route_after_denial": false,
+    "STOP": "Stop all dependent acquisition/compiler restoration; no retry."
+  },
+  "partial_tool_verification": {
+    "versions": [
+      {
+        "name": "arm-none-eabi-as",
+        "SHA256": "26be814ec1d043219a9ce25cff9a3430817d0737b7ab1b21d7e925200e58a6ee",
+        "version": "GNU assembler (2.44-3+23+b1) 2.44",
+        "dependencies_unresolved": [],
+        "resolved_dependency_hashes": [
+          {
+            "path": "/lib/x86_64-linux-gnu/libz.so.1",
+            "SHA256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libzstd.so.1",
+            "SHA256": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libc.so.6",
+            "SHA256": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826"
+          },
+          {
+            "path": "/lib64/ld-linux-x86-64.so.2",
+            "SHA256": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0"
+          }
+        ]
+      },
+      {
+        "name": "arm-none-eabi-nm",
+        "SHA256": "785d3df0631067afa338a4a73bd2cf421e284d6a75e53f50e8b8269917c38c8b",
+        "version": "GNU nm (2.44-3+23+b1) 2.44",
+        "dependencies_unresolved": [],
+        "resolved_dependency_hashes": [
+          {
+            "path": "/lib/x86_64-linux-gnu/libz.so.1",
+            "SHA256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libzstd.so.1",
+            "SHA256": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libc.so.6",
+            "SHA256": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826"
+          },
+          {
+            "path": "/lib64/ld-linux-x86-64.so.2",
+            "SHA256": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0"
+          }
+        ]
+      },
+      {
+        "name": "arm-none-eabi-ld",
+        "SHA256": "0e75ca3d63c5dbce6a2f1c42c1cccd93d7b8d7b0d4c6242ba8e6302c6387ca4d",
+        "version": "GNU ld (2.44-3+23+b1) 2.44",
+        "dependencies_unresolved": [],
+        "resolved_dependency_hashes": [
+          {
+            "path": "/lib/x86_64-linux-gnu/libz.so.1",
+            "SHA256": "85590dd58edf5445e18bc7193e5ebc01ac5841f1ae187e97705a662e90c6421e"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libzstd.so.1",
+            "SHA256": "27f07c9a49c2c956bcfb64cd4712976586a66facbf15fc7f09bc37413b5f2b21"
+          },
+          {
+            "path": "/lib/x86_64-linux-gnu/libc.so.6",
+            "SHA256": "fa430b8f298f817a266046af84a77533185ad6fc4406c7d3787b5a0a0c207826"
+          },
+          {
+            "path": "/lib64/ld-linux-x86-64.so.2",
+            "SHA256": "438c546d8e8cc48496bf3a95f753051afd9db66a629a74e31a9ded71586b56e0"
+          }
+        ]
+      }
+    ],
+    "gcc_version": "gcc (Debian 14.2.0-19) 14.2.0",
+    "agbcc_restored": false,
+    "agbcc_source_clone_attempts": 0,
+    "libmgba_restored": false,
+    "libmgba_expected_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "verified_complete_toolchain": false,
+    "libepoxy": {
+      "path": "/workspace/scratch/ordinary-recovery-tooling-20261010/root/usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0",
+      "SHA256": "508c6214d08b997e0509e74b568f1e66f574951105cb11e59d12ed74a4239f13",
+      "dependencies_unresolved": [],
+      "ldd_output": "\tlinux-vdso.so.1 (0x00007fb0ed370000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fb0ed021000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fb0ed372000)\n"
+    }
+  },
+  "bundle": {
+    "created_UTC_date": "2026-10-09",
+    "path": "/workspace/scratch/ordinary-recovery-tooling-20261010-partial.tar.gz",
+    "bytes": 11702603,
+    "SHA256": "f36780816c6ce343b0ef4ba1432c013c59d86acebd1c4b72c36ad837c2dcaadf",
+    "verified_file_entries": 114,
+    "hardlink_entries_included": 11,
+    "verified_symlink_targets": 1,
+    "archive_vs_local_bytes_exact": true,
+    "archive_creations": 1,
+    "verification_attempts": 2,
+    "first_verifier_failure_preserved": {
+      "verification_attempt": 1,
+      "failure": "AssertionError at root/usr/bin/arm-none-eabi-ld.bfd",
+      "diagnosis": "tar member is a hardlink, not a regular file/directory/symlink. No byte or hash mismatch was observed; archive was fully created.",
+      "archive_recreated": false
+    },
+    "complete_toolchain": false,
+    "description": "Verified partial bundle only: two pinned packages/root/diagnostics; missing libmGBA/agbcc; no game products, Save or raw gameplay evidence.",
+    "retention": "Workspace-local only; no independently verified private backup or Library transfer."
+  },
+  "local_root": "/workspace/scratch/ordinary-recovery-tooling-20261010/root",
+  "local_root_manifest_SHA256": "57b9b69876f842d811e270eb6327bf5fb74e12101d2e290d00811697117560f5",
+  "prior_APT_download_log_SHA256": "1431bfc10cbb88207a72c26e4f301550f283de5b7990970298d30cb11b31ff1d",
+  "ordinary_main": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "active_pose_game": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "active_pose_engine": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "game_builds": 0,
+  "gameplay_executions": 0,
+  "new_Saves": 0,
+  "Warden_attempts": 0,
+  "Library_attempts": 0,
+  "historical_baseline_executions": 6,
+  "historical_candidate_executions": 4,
+  "latest_historical_STOP": {
+    "code": 117,
+    "requested_visual": 8536,
+    "expected_boundary": 8402
+  },
+  "complete_toolchain": false,
+  "game_ROM_ELF_verified": false,
+  "agbcc_historical_binary_identity_claimed": false,
+  "supported_next_action": "Parent review the proxy-tunnel 403 and incorrect inih source-pool mapping. Supply resolved official pool URLs accessible through this environment, with explicit continuation authorization; or resolve packages.debian.org access through the supported platform path. Do not change restricted configuration or retry/route around denial autonomously."
+}

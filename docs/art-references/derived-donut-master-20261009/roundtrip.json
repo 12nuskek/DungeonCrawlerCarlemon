@@ -1,0 +1,109 @@
+{
+  "result": "PASS derived master native pixel/full palette/transparency/RGBA roundtrip",
+  "images": [
+    {
+      "source": "engine/graphics/dcc/donut/front.png",
+      "source_SHA256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+      "reconstructed_png_SHA256": "750a18e604c660b8b67d3d806830968800e0e9e3e9f16aa178b63dd786a5cb48",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "engine/graphics/dcc/donut/back.png",
+      "source_SHA256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+      "reconstructed_png_SHA256": "250037c1730c34ed3a45446566b9e4dabc44d564bcdb28bc047189401f1d6c7d",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "engine/graphics/dcc/donut/anim_front.png",
+      "source_SHA256": "d53075a5ea8d60c2ec4f2e92dedf10ca1cc0c224a42f8e0f86ded426529d11f4",
+      "reconstructed_png_SHA256": "d53075a5ea8d60c2ec4f2e92dedf10ca1cc0c224a42f8e0f86ded426529d11f4",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "engine/graphics/dcc/donut/icon.png",
+      "source_SHA256": "1aa941c663ec52695142ba965585f8da56ccb35ea7d42bd0781bc650670345e6",
+      "reconstructed_png_SHA256": "1aa941c663ec52695142ba965585f8da56ccb35ea7d42bd0781bc650670345e6",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "engine/graphics/dcc/donut/overworld.png",
+      "source_SHA256": "825abec74260047e750ebb202d83a327c10f506b0c706d30c9f639c5eac5881a",
+      "reconstructed_png_SHA256": "825abec74260047e750ebb202d83a327c10f506b0c706d30c9f639c5eac5881a",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-anticipation.png",
+      "source_SHA256": "a61f70c9b54c610fe68d5121076d4f9779c747b476689e003a85e7d81df09840",
+      "reconstructed_png_SHA256": "a61f70c9b54c610fe68d5121076d4f9779c747b476689e003a85e7d81df09840",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-cast.png",
+      "source_SHA256": "b05f3ccfe9de5f134aa765cbd258215f8fa1fd4cc38fdacba377046e015a027b",
+      "reconstructed_png_SHA256": "b05f3ccfe9de5f134aa765cbd258215f8fa1fd4cc38fdacba377046e015a027b",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-recovery.png",
+      "source_SHA256": "2d4af9c6b76adb83b90b7879d6d61e14ef2878c4d277552b6be37cac63c84792",
+      "reconstructed_png_SHA256": "2d4af9c6b76adb83b90b7879d6d61e14ef2878c4d277552b6be37cac63c84792",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-preparation.png",
+      "source_SHA256": "67b798b0019f06a7dcfdd25c5e9ce277097ba3b426ef3b7e0a807a33f4109dce",
+      "reconstructed_png_SHA256": "67b798b0019f06a7dcfdd25c5e9ce277097ba3b426ef3b7e0a807a33f4109dce",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    },
+    {
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-release.png",
+      "source_SHA256": "8c0a40de75298cdac75b0ae852f4bf31f940c6c49ba2d4cc0edf25279cf3c01d",
+      "reconstructed_png_SHA256": "8c0a40de75298cdac75b0ae852f4bf31f940c6c49ba2d4cc0edf25279cf3c01d",
+      "indexed_pixels_exact": true,
+      "full_palette_bytes_exact": true,
+      "transparency_exact": true,
+      "RGBA_pixels_exact": true,
+      "PNG_file_bytes_equal": true
+    }
+  ],
+  "images_count": 10,
+  "emulator_frames": 0,
+  "integrated_assets_changed": false,
+  "PNG_encoding_note": "PNG file compression/metadata may differ; decoded indexed pixels, full48 palette bytes and transparency must be exact."
+}

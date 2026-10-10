@@ -1,0 +1,185 @@
+{
+  "candidate_engine": "32199a30f0d7013e64f7ec1e274211ecc45df8ed",
+  "baseline_engine": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "scope": "native ordinary non-link trainer858; no collection/evolution scene",
+  "references": [
+    {
+      "file": "engine/src/main.c",
+      "start_line": 184,
+      "end_line": 202,
+      "review": "CallCallbacks runs CB1 then current CB2; SetMainCallback2 resets state",
+      "file_SHA256": "c68345c6e35a104662c6982aa35a6aa09688c5886c44e9f27314653b8c8cfc48",
+      "excerpt_SHA256": "11dcf3e25a008b11968e86113c4d0615fbcae4f5d4576815dd01b026a917592f"
+    },
+    {
+      "file": "engine/src/battle_setup.c",
+      "start_line": 1273,
+      "end_line": 1374,
+      "review": "Trainer858 saves EndTrainer; Dcc encounter returns via script/music wrapper",
+      "file_SHA256": "d031fcca8cb48757c374344cd05e12a4cb7cad8346e535bd5afe48ab924ef33a",
+      "excerpt_SHA256": "c1d6e4608df0e3e369d111307fddc3fc6b94e3a6b434d39be11b8f26c6e8a490"
+    },
+    {
+      "file": "engine/src/battle_main.c",
+      "start_line": 1847,
+      "end_line": 1874,
+      "review": "Native prebattle CB1 capture and BattleMainCB2 visuals",
+      "file_SHA256": "f8b04aec3a038612c6eaad0fca9d3e7ce37bc750b7106e2fb80673bd80552cd4",
+      "excerpt_SHA256": "2f4bde595d2f7c5d9ae693ba0994531be3b4174f72e39b412e4c690564450c97"
+    },
+    {
+      "file": "engine/src/battle_main.c",
+      "start_line": 3028,
+      "end_line": 3036,
+      "review": "BattleMainCB1 invokes battle phase and controllers",
+      "file_SHA256": "f8b04aec3a038612c6eaad0fca9d3e7ce37bc750b7106e2fb80673bd80552cd4",
+      "excerpt_SHA256": "1dd636976d84a8a337f4da80a4876b36a29d9ac0ba8d1d9f936631a0e03b4e6e"
+    },
+    {
+      "file": "engine/src/battle_main.c",
+      "start_line": 5147,
+      "end_line": 5250,
+      "review": "Fast fade, graphics/resource retirement, optional level-up loop, native field return",
+      "file_SHA256": "f8b04aec3a038612c6eaad0fca9d3e7ce37bc750b7106e2fb80673bd80552cd4",
+      "excerpt_SHA256": "37ca02ad60fd026a68b03ad0ef8e4439151c699fb2658c04f05ca7ce0d24eaf1"
+    },
+    {
+      "file": "engine/src/battle_gfx_sfx_util.c",
+      "start_line": 97,
+      "end_line": 107,
+      "review": "FreeBattleSpritesData nulls registry",
+      "file_SHA256": "1639f673b6e07cb8600722ea6a204d05ce8056d25700c720c552ce9de93c4be4",
+      "excerpt_SHA256": "566f743d7df33700a66f6ed7fcf76c780af0698006d18eb03e660bdfd6e5f133"
+    },
+    {
+      "file": "engine/src/battle_gfx_sfx_util.c",
+      "start_line": 1314,
+      "end_line": 1334,
+      "review": "Candidate pose reset; all picture memory and registry freed/null",
+      "file_SHA256": "1639f673b6e07cb8600722ea6a204d05ce8056d25700c720c552ce9de93c4be4",
+      "excerpt_SHA256": "8713623b691453559cdcca2e63362ca1c0cd85dc1975e8e7e7eebfdd5fe0ff83"
+    },
+    {
+      "file": "engine/src/battle_util2.c",
+      "start_line": 50,
+      "end_line": 80,
+      "review": "All battle resources and outer globals freed/null",
+      "file_SHA256": "0c2e5a959500571fc6263a5e97db88fc89d8d07ef5273cd8ae502858b34f3c2b",
+      "excerpt_SHA256": "6eda2036db79eb5e5bc902fc863c4c369913221ed27e347f1fe8b81b389f226f"
+    },
+    {
+      "file": "engine/src/dcc_battle_pose.c",
+      "start_line": 55,
+      "end_line": 58,
+      "review": "Candidate 16-byte state memset reset",
+      "file_SHA256": "ac641475290d4814b7b8211bfe7b1eed64dcb24a37af14ae27685e4c18858b12",
+      "excerpt_SHA256": "6c0d455c702fa108ecf1bfb0e9c01fb850e6572e5089e5b0fdffe36cbc722fdb"
+    },
+    {
+      "file": "engine/src/pokemon.c",
+      "start_line": 5516,
+      "end_line": 5531,
+      "review": "Scoped no-collection path returns SPECIES_NONE",
+      "file_SHA256": "df008d2d381b70f30998e476ed1f7183871580ea037d0fc5832bea11beb9c064",
+      "excerpt_SHA256": "a8aa9e9bbbe02df889e96b45e6592b0e592ea190369914e959575cb68daea204"
+    },
+    {
+      "file": "engine/include/crawler.h",
+      "start_line": 1,
+      "end_line": 5,
+      "review": "DCC_ALLOW_COLLECTION FALSE",
+      "file_SHA256": "01dfbf8cbbcf55084d120b7ceacf91b57cd2652de87b8a2f8cd37414f575e351",
+      "excerpt_SHA256": "3c0d50c7c4223d3035a4595da58d67a4bd0069f90c69da1fe38565c1716b907f"
+    },
+    {
+      "file": "engine/src/overworld.c",
+      "start_line": 1455,
+      "end_line": 1520,
+      "review": "CB1 requires native CB2_Overworld; field executes script/tasks/sprites",
+      "file_SHA256": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "excerpt_SHA256": "dbf8290399725dd0763c1c552ab0c923a9f69383dab3155bc5fad5367b085afc"
+    },
+    {
+      "file": "engine/src/overworld.c",
+      "start_line": 1532,
+      "end_line": 1556,
+      "review": "RunFieldCallback clears field hooks after invoking continuation",
+      "file_SHA256": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "excerpt_SHA256": "45ebb98dc1c905c2220558dbc2cdcadb4fb2960c8a7ad8dffbded5abd4f3d4bd"
+    },
+    {
+      "file": "engine/src/overworld.c",
+      "start_line": 1652,
+      "end_line": 1716,
+      "review": "Non-link script/music wrapper selects local field loader",
+      "file_SHA256": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "excerpt_SHA256": "a60c8ee171ae63299117850a8dbfb37003dc9b0818399caf436736b232564cb5"
+    },
+    {
+      "file": "engine/src/overworld.c",
+      "start_line": 2023,
+      "end_line": 2049,
+      "review": "ReturnToFieldLocal states0..3 reset/resume/spawn, graphics, field callback, complete",
+      "file_SHA256": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "excerpt_SHA256": "ee46e5025b3d3cbf97abecb6c41b74999ea5343d4df38a460544cc8f0054f838"
+    },
+    {
+      "file": "engine/src/overworld.c",
+      "start_line": 2133,
+      "end_line": 2209,
+      "review": "Heap/screen/native sprites/tasks/fade reset and field recreation",
+      "file_SHA256": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "excerpt_SHA256": "6193b0440cf00bb71795c7f2d233701457552f90de5366a2ac9567f4286ed57e"
+    },
+    {
+      "file": "engine/src/load_save.c",
+      "start_line": 84,
+      "end_line": 136,
+      "review": "MoveSaveBlocks_ResetHeap relocates/re-encrypts Saves and resets heap",
+      "file_SHA256": "cf176c919a684d0864000551d3fbfbd1d7c52b9911427025906f1105c2d296f4",
+      "excerpt_SHA256": "8c2b98904c5494831ec481c4adc3ac838b86db552deddb84a0613752f54a231c"
+    },
+    {
+      "file": "engine/src/field_screen_effect.c",
+      "start_line": 133,
+      "end_line": 149,
+      "review": "Weather fade task enables continuation, then destroys itself",
+      "file_SHA256": "678d61af4313e036e4b184c885d7b12ecde98e7990538a75a50048044beec44c",
+      "excerpt_SHA256": "162753ce84b9b711bcc179dc868e291cddf7ade0c7068267f99d1ca37f74a0b9"
+    },
+    {
+      "file": "engine/src/script.c",
+      "start_line": 217,
+      "end_line": 259,
+      "review": "Shutdown status2 and unlock only after script completion",
+      "file_SHA256": "2e13b7ef37ba4fc203b5ca491acc3db8556153b4942aad979026a102866be826",
+      "excerpt_SHA256": "2305c1c41377409edc57f15b58b0f1e4ead3d02a170478c699c09bf9f1a08edd"
+    },
+    {
+      "file": "engine/src/sprite.c",
+      "start_line": 294,
+      "end_line": 309,
+      "review": "ResetSpriteData clears sprites and copy requests",
+      "file_SHA256": "ad867c471134719a9bd563fcf6ec0b876c4a46d01519fd20967c038a80e4a91f",
+      "excerpt_SHA256": "0e68e1559b777dfa00d77e0012b73be9f1fd98478cb1999e74f07fdbc006753f"
+    },
+    {
+      "file": "engine/src/sprite.c",
+      "start_line": 646,
+      "end_line": 659,
+      "review": "Native queue count/armed/entries zeroed",
+      "file_SHA256": "ad867c471134719a9bd563fcf6ec0b876c4a46d01519fd20967c038a80e4a91f",
+      "excerpt_SHA256": "bd2b9906a6c42a99fc2d26ba03a4a506fc68ac1737147f2900255a1453119a57"
+    },
+    {
+      "file": "engine/src/sprite.c",
+      "start_line": 785,
+      "end_line": 821,
+      "review": "Copy requests consume source/count; picture requests bounded64",
+      "file_SHA256": "ad867c471134719a9bd563fcf6ec0b876c4a46d01519fd20967c038a80e4a91f",
+      "excerpt_SHA256": "d18c3cb90829070076861cdb1f4e4f467c756d7a424f274c111e5f364eeac93a"
+    }
+  ],
+  "critical_scheduler_fact": "ReturnFromBattleToOverworld is called by CB1; the newly selected saved CB2_EndTrainerBattle can execute in the same CallCallbacks iteration and leave the script/music wrapper visible. Saved callback is pinned at readiness and remains required; observing EndTrainer itself is optional and separately reported.",
+  "claim": "source/offline review only; no complete actual field return executed"
+}

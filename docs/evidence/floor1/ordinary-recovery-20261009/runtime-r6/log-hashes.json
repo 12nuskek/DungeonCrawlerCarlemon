@@ -1,0 +1,23 @@
+{
+  "setup": {
+    "original_private_replay_SHA256": "83742f9a1f4e13ef147d47bb63ba97a91f7f5e6a64a74a8b680b3c9f85b738ce",
+    "public_safe_extract_SHA256": "ce8ad4c40a927eb55b39a650ff020ce0536b2340e6e049e931c9e5a2d8d3c867",
+    "errors_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "input_route_SHA256": "9e02d93eeadaa176c718209e2aeb0fbef4de6f5b213c34439eeac176f072ec97",
+    "method": "Only safe PASS/clock/facing/walking/travel/result lines public; raw telemetry private"
+  },
+  "patrol": {
+    "original_private_replay_SHA256": "7abea7ec071228547f41b04a161ebf1311580db0ac23056500baa435ec270451",
+    "public_safe_extract_SHA256": "fbe40c8f27071b3b70e9ee4f78ccf1fe75fa2a6e2c5d3e3803d38ab89fb44371",
+    "errors_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "input_route_SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+    "method": "Only safe PASS/clock/facing/walking/travel/result lines public; raw telemetry private"
+  },
+  "cold": {
+    "original_private_replay_SHA256": "adb7e139a0b1b5d68aa46c7fd63c2f252bcfcaa82b8633f88d65f874ca4019b8",
+    "public_safe_extract_SHA256": "00ea457af9833ad439e5c05680464d915b688dc5d754c0112d8ad9b7cc639cdc",
+    "errors_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "input_route_SHA256": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67",
+    "method": "Only safe PASS/clock/facing/walking/travel/result lines public; raw telemetry private"
+  }
+}

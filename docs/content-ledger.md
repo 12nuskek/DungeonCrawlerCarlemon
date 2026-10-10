@@ -425,3 +425,178 @@ contract, not an independently verified chapter citation.38control and22unchange
 text blocks reproduce after namespace normalization. No replacement art scheduled
 by this narrow text task; all existing asset placeholders/provenance remain tracked.
 [Test routes, state coverage, native captures and limitations](evidence/floor1/g01e/navigation/README.md).
+
+## F1-D2 Sluice orientation — authored preparation only
+
+[Arrival and revisit scene brief](floor1/d2-sluice-orientation-brief.md), prepared
+on parent checkpoint `01cd2432aaea72f6debca736fa8b02118b2fb1ed`.
+`F1-D2-ORIENT` introduces the wheel landmark and Foundry/Arcade choice;
+`F1-D2-REVISIT` responds to the remaining branch, Commons refuge access and later
+Pumpworks service return. Original dialogue by Codex; Carl and Donut remain the
+permanent duo. Invented geography and connective scene, Book1 opening ceiling,
+no book quotation, verified chapter claim or new party member. District D2 is
+distinct from the historical D02 recipe entry above.
+
+The linked brief records purpose, symbolic prerequisites, once-only introduction,
+state-aware repeats, no proposed scene reward, and future test routes for either
+branch order, early Commons recovery, retreat/depletion/incapacitation and the
+persistent two-way service passage. Numeric flags, save fields, map coordinates,
+encounter/reward budgets, native art/staging and engine integration remain
+unassigned pending F1-C01/G02/S01. Authored documentation only: not implemented,
+compiled or runtime tested; no captures. PR114 gameplay status and historical
+counts six baseline/four candidate are unchanged. No existing scene is replaced.
+
+## F1-D5 branch-to-Commons handoff — authored preparation only
+
+[Foundry/Arcade-to-Commons scene brief](floor1/branches-to-commons-scene-brief.md),
+prepared on accepted documentation checkpoint
+`9ec85c7f94fc7c388b35fdfcfbb616822a5896ac`.
+`F1-D5-HANDOFF` offers a short optional refuge arrival exchange;
+`F1-D5-ROUTE` names the unfinished branch or the legal onward route on revisits.
+Both branch orders reach free Commons recovery/save after either milestone;
+Pumpworks access still requires both. Completed introductions never repeat;
+skipped/interrupted ones stay optional on request and cannot block retreat or
+services. The Sluice brief now states that handling explicitly too.
+
+Original Carl/Donut dialogue by Codex, invented connective geography within the
+Book1 opening ceiling; no quotation, verified chapter claim or new party member.
+The linked brief records symbolic conditions, depletion/incapacitation and
+optional-skip variants, future route checks, and no proposed scene reward.
+Encounter/reward budgets, numeric flags, coordinates, native staging and engine
+binding await F1-C01/G02/S01 and district production. Documentation only: not
+implemented, compiled or runtime tested, no captures. PR114 gameplay/legacy
+limitations and six baseline/four candidate totals remain unchanged.
+
+## F1-D6 Pumpworks drainage/service return — authored preparation only
+
+[Drainage consequence and service-return scene brief](floor1/pumpworks-drainage-scene-brief.md),
+prepared on accepted documentation checkpoint
+`2e4d0ba161b1e28406202d33afcd66ce8afd488c`.
+`F1-D6-DRAINAGE-ORIENT` supplies optional incomplete-state guidance;
+`F1-D6-DRAINAGE-RETURN` responds only to actual reviewed drainage completion.
+The scene reads symbolic progression and never grants it: both branch milestones
+still gate Pumpworks, drainage opens the Causeway route and persistent two-way
+Sluice service return, Commons stays a free refuge, Warrens stays optional and D9
+completion remains separate. Sluice's broken wheel is not repaired by this beat.
+
+Original Carl/Donut dialogue by Codex, invented connective geography within the
+Book1 opening ceiling; no quotation, verified chapter claim or new party member.
+The linked brief covers readiness, state-aware repeats, skipped/interrupted
+presentation, depleted/incapacitated recovery guidance and future routes in both
+branch orders with optional content skipped. No scene reward or paid/consumable
+recovery is proposed. Machinery, costs, encounter/reward budgets, flags/save fields,
+geometry/native staging and runtime/persistence proof await F1-C01/G02/S01 and
+district production. Documentation only: not implemented, compiled or runtime
+tested, no captures. Missing inputs and PR114 gameplay/legacy limitations remain;
+six baseline/four candidate execution totals are unchanged. No old entry is replaced.
+
+## F1-D8 Causeway refuge/final approach — authored preparation only
+
+[Refuge and final-approach scene brief](floor1/causeway-refuge-scene-brief.md),
+prepared on accepted documentation checkpoint
+`022473cf21a56893c4a393abc1ec09071adbfcec`.
+`F1-D8-REFUGE` offers an optional arrival exchange beside the independently usable
+free recovery/manual Save service; `F1-D8-ROUTES` distinguishes onward challenge,
+existing retreat and the optional Warrens return. The far gate opens only through
+the reviewed D8-side interaction and then persists both ways; dialogue grants no
+unlock. Main milestones and drainage remain prerequisites for legal Causeway
+access. D9 victory and descent/full-floor completion retain separate checks;
+arrival, refuge use, preparation and dialogue award none of them.
+
+Original short Carl/Donut dialogue by Codex, invented connective geography within
+the Book1 opening ceiling; no quotation, verified chapter claim or new party
+member. The brief records symbolic readiness, state-aware interruption/revisits,
+depleted/incapacitated service guidance and future routes for both branch orders,
+optional skips, both gate approaches and cold persistence. Recovery has no quest,
+payment or consumable prerequisite; no scene reward or automatic combat is proposed.
+Encounters, rewards, flags/save fields, geometry/native staging and implementation
+await F1-C01/G02/S01 and district production. Documentation only: not implemented,
+compiled or runtime tested, no captures. Missing inputs and PR114 gameplay/legacy
+limitations remain; six baseline/four candidate totals unchanged. No old entry is
+replaced and no district or mandatory objective is added.
+
+## F1-D7 Warrens optional route — authored preparation only
+
+[Optional entry/revisit brief](floor1/warrens-optional-route-brief.md), prepared
+on accepted documentation checkpoint `e3a73c6251f3335d1a5eaf1dfd5df0e1acf7dc5e`.
+`F1-D7-ROUTE` supplies optional original Carl/Donut wording and local guidance
+from Commons: closed Causeway exit before the real D8-side unlock, safe Commons
+return, and changed guidance afterward. It reads the existing proposed symbolic
+`WARRENS_RETURN_OPEN`; dialogue grants no unlock or main milestone. Visit/skip
+remains optional, with no salvage/payment/consumable or dialogue prerequisite for
+retreat/recovery. No new introduction marker, reward, NPC or district is proposed.
+
+Invented connective fiction within the Book1 opening ceiling, not a quotation or
+verified canon claim. Readiness, depleted/incapacitated guidance, interruption and
+state-aware revisits are recorded with concise local future checks; the brief
+links existing Causeway gate/persistence tests instead of duplicating them.
+Salvage, rewards and encounters remain undecided; flags/save fields, geometry,
+native assets and implementation await F1-C01/G02/S01 and district production.
+Documentation only: not implemented, compiled or runtime tested; no captures.
+Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D3 Foundry milestone narrative — authored preparation only
+
+[Provisional local narrative brief](floor1/foundry-milestone-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`d81ede01d9f4e07b51cdc20120e7b747fe078456`. `F1-D3-ARRIVAL` recognises the
+cold furnace/brace assembly; `F1-D3-SUCCESS` acknowledges only actual reviewed
+`FOUNDRY_COMPLETE`; `F1-D3-REVISIT` supplies a short resolved reminder. Dialogue
+grants no state. This local milestone beat is distinct from the existing Commons
+handoff and links its tests instead of repeating branch-order/refuge routes.
+
+Original short Carl/Donut adaptation wording within the Book1 opening ceiling;
+no quotation, verified canon claim or new NPC/party member. Arcade-first and
+ordinary retreat remain legal; Commons free recovery/save is available after
+either actual branch milestone. Readiness, skipped/interrupted presentation,
+depletion/incapacitation and three local future cases remain preparation only.
+No mechanical solution, mandatory fight/item, Charge cost, reward or extra gate
+is prescribed. Encounters/resources, flags/save fields, geometry/native staging
+and implementation await F1-C01/G02/S01 and production. Not implemented, compiled
+or runtime tested; no captures. Missing inputs and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D4 Arcade milestone narrative — authored preparation only
+
+[Provisional local narrative brief](floor1/arcade-milestone-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`2385d5b9b42b4c8ce64e53836e39433d51ba8dcb`. `F1-D4-ARRIVAL` recognises the
+ruined shopfront/sign/shutter identity; `F1-D4-SUCCESS` acknowledges only actual
+reviewed `ARCADE_COMPLETE`; `F1-D4-REVISIT` supplies a resolved reminder. Dialogue
+grants no objective progress. Crawler-clue meaning remains narrative preparation,
+with no prescribed clue text/solution, required NPC encounter, fight, item or cost.
+
+Original short Carl/Donut adaptation within the Book1 opening ceiling; no quotation,
+verified canon claim or new party member. Foundry-first, safe retreat and free
+Commons recovery/save remain legal. Readiness, interrupted/depleted guidance and
+three local future cases link existing Commons route tests without repeating them.
+Clue solutions, encounters, items, costs, rewards, numeric flags/save fields,
+geometry/native assets and implementation await F1-C01/G02/S01 and production.
+Documentation only: not implemented, compiled or runtime tested; no captures.
+Missing inputs, historical failures/controllers and PR114 gameplay/legacy limits
+remain; six baseline/four candidate totals unchanged. No old entry is replaced.
+
+## F1-D9 victory/descent acknowledgement — authored preparation only
+
+[Local ending narrative brief](floor1/d9-victory-descent-narrative-brief.md),
+prepared on accepted documentation checkpoint
+`48249c2bc4ef97fa1efcc9f5f0cf519646ab5c5e`. `F1-D9-INSPECT` explains the unresolved
+challenge without starting combat; `F1-D9-VICTORY-ACK` acknowledges only genuine
+D9 victory without starting descent; `F1-D9-DESCENT-ACK` follows only the actual
+reviewed descent/full-floor outcome. D1 Warden opening completion, D9 victory
+and full-floor completion retain separate meanings. Dialogue grants neither new
+outcome, performs no transaction and gates no outcome, retreat or refuge service.
+
+Original optional Carl/Donut wording within the Book1 opening ceiling; permanent
+duo, no quote, verified canon claim or later-floor scene. Current-state cues,
+interrupted/skipped acknowledgements, stale-text suppression and resolved repeats
+have local future cases; existing Causeway approach/recovery tests are linked.
+Combat, rewards, numeric IDs, completion transactions, geometry/native staging
+and implementation remain pending F1-C01/G02/S01 and production. Documentation
+only: not implemented, compiled or runtime tested; no captures. Missing inputs,
+historical failures/controllers and PR114 limits remain; six baseline/four
+candidate totals unchanged. No old entry is replaced. This completes useful
+independent district narrative coverage in the authorized preparation sequence,
+not playable district or full-floor acceptance; further work needs dependency
+decisions and parent review rather than redundant briefs.

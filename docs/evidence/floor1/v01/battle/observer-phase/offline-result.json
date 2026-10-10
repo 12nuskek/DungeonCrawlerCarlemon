@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "emulator_frames": 0,
+  "native_layout": "Pinned agbcc compile against actual native headers passed",
+  "symbols": [
+    {
+      "case": "before",
+      "functions": 15904,
+      "true_alias_groups": 2
+    },
+    {
+      "case": "after",
+      "functions": 15921,
+      "true_alias_groups": 2
+    }
+  ],
+  "coverage": "send-out/unfilled VRAM, ownership/readiness/copy completion, invalid pixels after readiness, label filtering/alias order/unresolved/ambiguous identities, unknown callbacks, exact actor/sprite/phase/copy diagnostics"
+}

@@ -1,0 +1,104 @@
+{
+  "setup": {
+    "lossless_FFV1_decoded_RGB_exact": true,
+    "decoded_RGB_SHA256": "8f21d4f75a6a433896249961edf06e67908c042f87e80cc7cd3b9193e85dec8e",
+    "samples": 1644,
+    "presentation_export": {
+      "file": "setup/motion.mp4",
+      "SHA256": "bd0ebddf6d1c08d228553f9d182cb9c55b28f2cc507bcecac101403a3daa4083",
+      "size": 342688,
+      "encoding": "H264 CRF18 YUV420p compressed viewing copy, not pixel oracle",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 240,
+            "height": 160,
+            "r_frame_rate": "23891/1600",
+            "nb_read_frames": "1644"
+          }
+        ],
+        "format": {
+          "duration": "110.100038"
+        }
+      }
+    },
+    "screenshots": {
+      "field-potion.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "guide-rest.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "scrap-box.png": "324de4fe2db108107f42bdcade80edbb810d6a8622ec19b2c5819780001ce48c",
+      "saved.png": "2eebda594bf24e0754aef4ae13426cd23352b82f5638179d93569f5fde4eedcf",
+      "cold.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1"
+    }
+  },
+  "patrol": {
+    "lossless_FFV1_decoded_RGB_exact": true,
+    "decoded_RGB_SHA256": "068e19f0bb3d3f92ef5dfc50cba81e9eea73667339ab0c77b951add8b59854fd",
+    "samples": 7770,
+    "presentation_export": {
+      "file": "patrol/motion.mp4",
+      "SHA256": "c0fe65280f1128ed16478a78aba95a6b90f62c0a5d0b26b80c0c9b3a08ebcd8d",
+      "size": 1617250,
+      "encoding": "H264 CRF18 YUV420p compressed viewing copy, not pixel oracle",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 240,
+            "height": 160,
+            "r_frame_rate": "23891/1600",
+            "nb_read_frames": "7770"
+          }
+        ],
+        "format": {
+          "duration": "520.363317"
+        }
+      }
+    },
+    "screenshots": {
+      "guide-1.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "boot.png": "2eebda594bf24e0754aef4ae13426cd23352b82f5638179d93569f5fde4eedcf",
+      "guard-victory.png": "e2a51e8f2aa50279fbdc673e4dcda61ae70395c2392f952e8cd0b4f4a044e9fc",
+      "guard-start.png": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a",
+      "guide-2.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "howler-start.png": "0601ece1ba4306b6921e782e5dde85c3efa290ab5a34dc7dec05d0a59ed8da0f",
+      "saved.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "guard-resolved.png": "e2a51e8f2aa50279fbdc673e4dcda61ae70395c2392f952e8cd0b4f4a044e9fc",
+      "howler-victory.png": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d",
+      "guide-preboss.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "approach.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "howler-resolved.png": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d"
+    }
+  },
+  "cold": {
+    "lossless_FFV1_decoded_RGB_exact": true,
+    "decoded_RGB_SHA256": "edaf0bc4372d0391b0d103a9b1d3c9657ed6dc19b94d4ba67e94be9353b3ac2f",
+    "samples": 511,
+    "presentation_export": {
+      "file": "cold/motion.mp4",
+      "SHA256": "3ce2b762aa40338e6ffff0945c29e293f4449df581511452f7b38ce9537b8fdc",
+      "size": 160132,
+      "encoding": "H264 CRF18 YUV420p compressed viewing copy, not pixel oracle",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 240,
+            "height": 160,
+            "r_frame_rate": "23891/1600",
+            "nb_read_frames": "511"
+          }
+        ],
+        "format": {
+          "duration": "34.222092"
+        }
+      }
+    },
+    "screenshots": {
+      "cold.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+    }
+  }
+}

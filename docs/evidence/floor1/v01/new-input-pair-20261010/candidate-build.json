@@ -1,0 +1,8 @@
+{
+  "exit": 0,
+  "actual_outputs": {
+    "pokeemerald.gba": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+    "pokeemerald.elf": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc"
+  },
+  "build_log_SHA256": "280aad9433ee522401a7885a1e78fb4b838bba195239298ce62cd4f6864143ae"
+}

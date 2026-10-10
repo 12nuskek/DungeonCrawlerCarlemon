@@ -1,0 +1,35 @@
+{
+  "stage": "seed",
+  "exit": 40,
+  "absolute_frame": 3040,
+  "assertions": 13,
+  "last_completed_command": "step 40 0 field-potion.ppm",
+  "rejected_command": "item 13 1",
+  "unreached_commands": [
+    "uses 3 40 0 37",
+    "return-field",
+    "ready"
+  ],
+  "cause": "New initial-stage adapter inherited the patrol field-only telemetry/read gate; native CB2_UpdatePartyMenu is still running at the observation point",
+  "gates_passed": {
+    "bag_ready_frames": 55,
+    "field_context_ready_frames": 0,
+    "party_ready_frames": 50,
+    "healed_ready_frames": 4
+  },
+  "source": {
+    "generated_host_lines": [
+      855,
+      859
+    ],
+    "native_party_callback": "engine/src/party_menu.c CB2_UpdatePartyMenu",
+    "native_healed_task": "engine/src/party_menu.c Task_DisplayHPRestoredMessage",
+    "healed_task_no_field_callback_switch": true
+  },
+  "input_and_output_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+  "setup_Save_completed": false,
+  "patrol_executions": 0,
+  "full_cold_executions": 0,
+  "gameplay_retries": 0,
+  "next": "Review a separately frozen setup observation ordering: return-field; ready; item 13 1; uses 3 40 0 37. The two assertions advance zero frames, so this preserves normal-button cadence and requires native field readiness before reads. Source-review and new claim required; no execution now."
+}

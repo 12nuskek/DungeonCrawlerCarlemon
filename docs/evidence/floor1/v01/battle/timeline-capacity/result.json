@@ -1,0 +1,45 @@
+{
+  "result": "PASS offline derived-capacity/streaming roundtrip/parser/host compilation",
+  "frozen_checkpoint": "4c1a28006465be9bdc9a6363a03339dcc8b7a98c",
+  "writer_stress": {
+    "cases": 352,
+    "frame_calls": 38044,
+    "total_limit": 155828295,
+    "max_file_bytes": 28672406296,
+    "buffer_bytes": 753664,
+    "CPU_instructions": 0
+  },
+  "parser_cases": 216,
+  "retained_trace_SHA256": "aac0963fde9fbd6237f44dd8082ddca59f6b40627a8b6857a017c82673b8669a",
+  "corrected_trace_SHA256": "c7658e69bab567c852a9304569abf2acad7c1431b967c10c64f3efe542026cbd",
+  "decoded_records_identical": 999932,
+  "payload_byte_identical": true,
+  "replay": {
+    "replayed_records": 999932,
+    "frame_flushes": 16000,
+    "max_buffer_records": 104,
+    "CPU_instructions": 0
+  },
+  "host_source_SHA256": "64a924e8ec7130040b822a500f93b4692751b65008e83bb767c2b31a51c841de",
+  "host_binary_SHA256": "6a23c9bf3740f46afb123caf72f8ce588f1fccc13a5c6cfbc42eb913192687ce",
+  "fixture_binary_SHA256": "3577ad7932fbfe54ac5dafa2e660f7027dca0ec7104efa803daf823726072bbf",
+  "reused_stress_log_SHA256": "ff31d2d0506e8846efc555d4fee3dbb0956925bb5de0fe2ad0b85a279de91086",
+  "installed_library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "route_SHA256": "afbd80b02d9d5acb9f63669f967fac3edc8eb00a2d2352e778f4114acb51bc27",
+  "source_SHA256": {
+    "scripts/floor1/v01-native-timeline.h": "3efde8b73c57777e7f0fd031ad8af67aba8734ecd586af9766ff9f91132aefe2",
+    "scripts/floor1/v01-native-timeline-format.py": "7e8be974d659ee8b6de88f89c11b4dd233845bb30bf34c9b8e7f05a3fe744f43",
+    "scripts/floor1/v01-native-timeline-capacity-fixture.c": "b0d5614e15da3765a0b84abedd055daa5a904b3e9c5ae5ef4e05d2f09367e178",
+    "scripts/test-f1-v01-timeline-capacity.py": "1d4d2d05a1188a8d5bdca8b7f1af219538c6a144d2ecb1a65e97774301e3e996"
+  },
+  "CPU_instructions_executed": 0,
+  "gameplay_host_invocations": 0,
+  "ROMs_loaded": 0,
+  "Saves_loaded": 0,
+  "new_execution_claims": 0,
+  "execution_counts": {
+    "baselines": 6,
+    "candidates": 3
+  },
+  "scope": "Offline capacity correction only; no historical cause/remedy or gameplay acceptance."
+}

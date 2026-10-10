@@ -1,0 +1,24 @@
+{
+  "frames": 8536,
+  "native_rate": "262144/4389",
+  "duration_seconds": 142.91574096679688,
+  "native_size": [
+    240,
+    160
+  ],
+  "all_decoded_RGB_pixels_equal_ordered_originals": true,
+  "RGB_sequence_SHA256": "338d4c2e94d3f0718b45fb1d4b4df0b17e0c2dc27ff4eb0783c6f35a18db0845",
+  "movie_SHA256": "319a44580041e4ba2ffe7ecd6c717da03cf9066c6def10bebbe980a0ec739b9b",
+  "movie_bytes": 10514899,
+  "emergency_stop_excluded_from_completed_sequence": true,
+  "no_audio_or_interpolation": true,
+  "delivery": "LOCAL ONLY; no Library transfer or alternative upload",
+  "probe": {
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "avg_frame_rate": "262144/4389",
+    "duration": "142.915741",
+    "nb_frames": "8536"
+  }
+}

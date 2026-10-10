@@ -1,0 +1,85 @@
+{
+  "method": "Read-only safe report from already compared private live/disk snapshots; no emulation or new Save",
+  "Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+  "members": [
+    {
+      "member": "Carl",
+      "level": 9,
+      "XP": 495,
+      "HP": 17,
+      "maxHP": 33,
+      "uses": [
+        3,
+        40,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 75,
+      "checksum_valid": true,
+      "reencoding_exact": true,
+      "egg": false,
+      "bad_egg": false
+    },
+    {
+      "member": "Donut",
+      "level": 9,
+      "XP": 805,
+      "HP": 24,
+      "maxHP": 28,
+      "uses": [
+        0,
+        37,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 75,
+      "checksum_valid": true,
+      "reencoding_exact": true,
+      "egg": false,
+      "bad_egg": false
+    }
+  ],
+  "party_count": 2,
+  "saved_count": 2,
+  "counter": 50,
+  "map": [
+    35,
+    1
+  ],
+  "position": [
+    10,
+    7
+  ],
+  "flags": {
+    "37": true,
+    "39": false,
+    "46": false,
+    "47": false,
+    "48": false,
+    "49": false,
+    "2135": true,
+    "2136": false,
+    "2137": false,
+    "2138": false,
+    "2139": false
+  },
+  "items": {
+    "13": 2
+  },
+  "full_equal": {
+    "party600": true,
+    "flags300": true,
+    "logical_resources1272": true,
+    "counts_counter_map_position": true
+  },
+  "latest14_native_sector_checksums_valid": true,
+  "full_private_payload_hashes": {
+    "party": "0e0b535edabc753c4180eb4f408ba8608cbb374e2884278fbfd460341ec27c16",
+    "flags": "bc4519177f86ade27e717541d4c416ad4d12ddc4937b920be188139ca5198b17",
+    "logical": "9a18fd89567179d490910b572ea603ae203643640ccfdde2f7c41acd4693f052"
+  },
+  "independent_full_cold_verification": false,
+  "patrol_complete": false
+}

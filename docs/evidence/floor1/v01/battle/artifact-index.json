@@ -1,0 +1,92 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 10169,
+    "SHA256": "8831d026cd18e077282491f6bd2e79726656d21b71f368101b9d2c02a90978f0"
+  },
+  {
+    "path": "STOP.json",
+    "bytes": 786,
+    "SHA256": "115e713bd149be3f7fa50c356289d921074a904aa9d901dcbdd13cd93b098227"
+  },
+  {
+    "path": "baseline-entry-stop.mp4",
+    "bytes": 127960,
+    "SHA256": "602dfa244899bc5986dcbbe8a3ba0a39a11ccf35228ef69cddc3c4c5ff4f97d0"
+  },
+  {
+    "path": "baseline-identity.json",
+    "bytes": 1623,
+    "SHA256": "21a2c0f2942c8e13439872e5fc9e872c68450e167ffd3c56e58e7d41c9ecfdd1"
+  },
+  {
+    "path": "baseline-summary.json",
+    "bytes": 683,
+    "SHA256": "7a2f0389ff2d87f87f35ce38d503ef85517a148e14e201511e35f6a0fee03305"
+  },
+  {
+    "path": "boot.png",
+    "bytes": 2802,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  },
+  {
+    "path": "build-setup.json",
+    "bytes": 1317,
+    "SHA256": "734982f734cd3c1939a8fcb063028efc34308aab46f32ba9a8f5480e818a946a"
+  },
+  {
+    "path": "clip-encoding.json",
+    "bytes": 119,
+    "SHA256": "29dfe12024960f0d78499ff373457c9d92e1cc2183991a54e5ce1655f5b7e78e"
+  },
+  {
+    "path": "diagnosis.json",
+    "bytes": 1400,
+    "SHA256": "b12e136fadca89e09fa185b1bb6fb8cadd31bca7218f74c61d474d020a067e6d"
+  },
+  {
+    "path": "entry-first.png",
+    "bytes": 2802,
+    "SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d"
+  },
+  {
+    "path": "entry-stop.png",
+    "bytes": 2726,
+    "SHA256": "14caa85fcb7f64dfa6eea04d69a42143649b2e0b3fd76469302dfed95c0be979"
+  },
+  {
+    "path": "offline-hook-result.json",
+    "bytes": 565,
+    "SHA256": "51daeeeb26f2ca02ac167802760dd86989d7cf15304d855db152640137f0d949"
+  },
+  {
+    "path": "overworld-merge.json",
+    "bytes": 665,
+    "SHA256": "cd14573a9467f9f7f289b2d5422feb9a84ec1a60bf6a311d5f4f34d2188241dc"
+  },
+  {
+    "path": "private-retention.json",
+    "bytes": 466,
+    "SHA256": "cf8ad5a950312c935871dd73c98f9c0267e8315a51dc96137cd2ff94cd6c8320"
+  },
+  {
+    "path": "proposed-entry-direction.patch",
+    "bytes": 243,
+    "SHA256": "81404a8f39b7858d987e659b0c14e1ac0b604034351aca561d9fe9b1f359cc0d"
+  },
+  {
+    "path": "publication.json",
+    "bytes": 991,
+    "SHA256": "2a793a9f4f22437f5a326ce93de94bf71c83c05b4f4ccbf3578a4559778065e8"
+  },
+  {
+    "path": "static-review.json",
+    "bytes": 2634,
+    "SHA256": "c40bbfa680016b76acee5ada1c0f7b5e86f18abdbd7daab4f26ea58722ca7d4e"
+  },
+  {
+    "path": "unexecuted-candidate-identity.json",
+    "bytes": 1622,
+    "SHA256": "9608e1c4b32b4b9cd089e08609bc16f32c445aa62af754748705a311cb23daa6"
+  }
+]

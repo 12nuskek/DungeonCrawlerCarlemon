@@ -1,0 +1,197 @@
+{
+  "execution_source": "f3ceae890dbf9821ffade08c3cba4de40af31aa9",
+  "candidate_native_ready_frame": 3155,
+  "controller_prefix": {
+    "records": 6,
+    "first_record_frame": 5209,
+    "last_record_frame": 5269,
+    "exact_matching_baseline_applied_prefix": true,
+    "SHA256": "9b0fde912c3a2780a893a122ec24779305b0b457590d007865b9d52eca458800",
+    "raw_key_bearing_lines": "remain outside uploads"
+  },
+  "actual_pose_events": [
+    {
+      "frame": 3155,
+      "turn": 0,
+      "actor": 0,
+      "pose": 0,
+      "sprite": 9,
+      "active": 0,
+      "animation_actor": 0,
+      "move": 0
+    },
+    {
+      "frame": 3155,
+      "turn": 0,
+      "actor": 1,
+      "pose": 17,
+      "sprite": 11,
+      "active": 0,
+      "animation_actor": 0,
+      "move": 0
+    },
+    {
+      "frame": 3155,
+      "turn": 0,
+      "actor": 2,
+      "pose": 6,
+      "sprite": 12,
+      "active": 0,
+      "animation_actor": 0,
+      "move": 0
+    },
+    {
+      "frame": 3313,
+      "turn": 0,
+      "actor": 2,
+      "pose": 10,
+      "sprite": 12,
+      "active": 1,
+      "animation_actor": 2,
+      "move": 358
+    },
+    {
+      "frame": 3321,
+      "turn": 0,
+      "actor": 2,
+      "pose": 11,
+      "sprite": 12,
+      "active": 1,
+      "animation_actor": 2,
+      "move": 358
+    },
+    {
+      "frame": 3365,
+      "turn": 0,
+      "actor": 2,
+      "pose": 9,
+      "sprite": 12,
+      "active": 0,
+      "animation_actor": 2,
+      "move": 358
+    },
+    {
+      "frame": 3377,
+      "turn": 0,
+      "actor": 2,
+      "pose": 6,
+      "sprite": 12,
+      "active": 1,
+      "animation_actor": 1,
+      "move": 358
+    },
+    {
+      "frame": 3973,
+      "turn": 0,
+      "actor": 1,
+      "pose": 12,
+      "sprite": 11,
+      "active": 1,
+      "animation_actor": 1,
+      "move": 359
+    },
+    {
+      "frame": 3979,
+      "turn": 0,
+      "actor": 1,
+      "pose": 13,
+      "sprite": 11,
+      "active": 1,
+      "animation_actor": 1,
+      "move": 359
+    },
+    {
+      "frame": 3989,
+      "turn": 0,
+      "actor": 1,
+      "pose": 14,
+      "sprite": 11,
+      "active": 1,
+      "animation_actor": 1,
+      "move": 359
+    },
+    {
+      "frame": 4409,
+      "turn": 0,
+      "actor": 0,
+      "pose": 4,
+      "sprite": 9,
+      "active": 1,
+      "animation_actor": 0,
+      "move": 356
+    },
+    {
+      "frame": 4419,
+      "turn": 0,
+      "actor": 0,
+      "pose": 5,
+      "sprite": 9,
+      "active": 1,
+      "animation_actor": 0,
+      "move": 356
+    },
+    {
+      "frame": 4510,
+      "turn": 0,
+      "actor": 0,
+      "pose": 4,
+      "sprite": 9,
+      "active": 0,
+      "animation_actor": 0,
+      "move": 356
+    },
+    {
+      "frame": 4516,
+      "turn": 0,
+      "actor": 0,
+      "pose": 0,
+      "sprite": 9,
+      "active": 1,
+      "animation_actor": 0,
+      "move": 356
+    }
+  ],
+  "distinct_actual_poses": [
+    0,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17
+  ],
+  "actual_pose_event_count": 14,
+  "partial_motion_observed": [
+    "Donut WEAKEN",
+    "Warden WIND UP",
+    "Carl BRACE"
+  ],
+  "unreached_visual_gates": [
+    "Carl STRIKE",
+    "Donut SPARK",
+    "all Warden actions",
+    "candidate faint/retirement/field return",
+    "complete resource/exit budgets",
+    "final-state/reward/Save comparison"
+  ],
+  "exclusive_claim_totals": {
+    "baselines": 5,
+    "candidates": 2
+  },
+  "historical_claims_unchanged": {
+    "baselines": 4,
+    "candidates": 1
+  },
+  "all_historical_STOPs_retained": [
+    "35",
+    "107",
+    "105",
+    "103"
+  ],
+  "new_STOP": 117,
+  "no_retry_or_additional_execution": true
+}

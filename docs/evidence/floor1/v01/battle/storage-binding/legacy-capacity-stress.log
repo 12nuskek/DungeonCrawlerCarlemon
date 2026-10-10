@@ -1,0 +1,6 @@
+PASS all38044 maximum4096-record frame flushes + separate FINISH; byte-checked streaming sink; fixed754KB buffer; zero CPU/event execution
+PASS exact999932/70 reserve fault only under old limit; every counter999930..1000001 accepted under derived limit
+PASS derived total-ceiling neighborhood, UINT_MAX and unchanged per-frame overflow fail closed before append
+PASS separate STOP/FINISH retained at exact global limit; all184 short record writes and16 short header writes rejected
+PASS original strict117 first despite retention119; idempotent stopped flush; total352 offline capacity cases
+{"cases":352,"frame_calls":38044,"total_limit":155828295,"max_file_bytes":28672406296,"buffer_bytes":753664,"CPU_instructions":0}

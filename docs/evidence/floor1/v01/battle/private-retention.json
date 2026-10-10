@@ -1,0 +1,12 @@
+{
+  "filename": "DungeonCrawlerCarlemon-V01-battle-entry-stop-20261009.zip",
+  "bytes": 7758512,
+  "SHA256": "5505e10eeebeadba51a6252f3c9c008847c88030c946d5fd20415ca6403da482",
+  "files": 3749,
+  "original_PPM_captures": 3672,
+  "ordinary_saves": 1,
+  "actual_mp4_clips": 1,
+  "excluded": ".bin diagnostics/state traces, symbols/executables, ROM/ELF/build products; retained locally only",
+  "Library_status": "succeeded",
+  "local_identity_xattrs_verified": true
+}

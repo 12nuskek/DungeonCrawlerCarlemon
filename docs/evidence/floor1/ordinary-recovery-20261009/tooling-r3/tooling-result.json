@@ -1,0 +1,502 @@
+{
+  "readiness": {
+    "base": "6d05b559e0bfde1044015f7fbbe13ea0e1b172c6",
+    "source_commit": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "tracked_agbcc_source_unchanged_after_build": true,
+    "GCC": "14.2.0",
+    "ARM_binutils": "2.44-3+23+b1",
+    "libmgba_library_manifest_match": true,
+    "compiler_builds": 1,
+    "compiler_source_syntax_checks": 3,
+    "native_library_link_checks": {
+      "mgba": "0.10.5; no emulator core",
+      "png": "1.6.48; no image decoded"
+    },
+    "tools_executable": true,
+    "missing_dynamic_dependencies": [],
+    "historical_tool_identity_established": false,
+    "identity_gaps": [
+      "All three compiler binary hashes differ from historical and previously rebuilt binaries; no cause or emitted-game-output parity established.",
+      "Installed libinih1 59-1/amd64 ownership, current library SHA256 and actual linkage verified; no historical extracted-library hash found and its .deb bytes were not acquired or verified.",
+      "Existing native PNG/zlib and transitive system dependencies are identified locally, not claimed as original package-byte restorations."
+    ],
+    "installed_inih_SHA256": "24ac7fa9821b61a4ef2e628cefcd2c7dcf2acccad88b8e7e95fa2d33bfc5eb6b",
+    "new_ordinary_contract": "Executable tooling is available for an explicitly new freeze using actual recorded identities. This does not satisfy assertions of historical tool byte identity. Next increment must review/pin these identities, build the isolated main game and verify outputs/observer before gameplay. Behavioral assertions remain unchanged.",
+    "old_ordinary_contract_modified": false,
+    "game_builds": 0,
+    "gameplay_executions": 0,
+    "new_Saves": 0,
+    "Warden_attempts": 0,
+    "historical_baseline_executions": 6,
+    "historical_candidate_executions": 4,
+    "latest_historical_STOP": {
+      "code": 117,
+      "requested_visual": 8536,
+      "expected_boundary": 8402
+    },
+    "archive_portability": "Workspace-specific tool root and source; relies on identified system GCC/runtime libraries, not a self-contained OS image."
+  },
+  "acquisition": {
+    "base": "6d05b559e0bfde1044015f7fbbe13ea0e1b172c6",
+    "method": "Parent independently verified exact official resource URLs; verified TLS; at most one download each; manifest/package/control checks before local extraction. No metadata-host retry or inih acquisition.",
+    "manifest_SHA256": "da9dd34440823ace74c25106d09880ac19e9121b86eab586281e900b11b5f6e0",
+    "prior_APT_lookup_failures": 1,
+    "prior_wrong_pool_404": 1,
+    "prior_metadata_host_tunnel403": 1,
+    "packages": [
+      {
+        "Package": "libmgba-dev",
+        "Version": "0.10.5+dfsg-1",
+        "Architecture": "amd64",
+        "url": "https://deb.debian.org/debian/pool/main/m/mgba/libmgba-dev_0.10.5+dfsg-1_amd64.deb",
+        "expected_SHA256": "35366aa94d519b34dbfd68cd58f252d775be992a4f1a0edefdd5317efb10c467",
+        "download_attempts": 1,
+        "verified": true,
+        "extracted": true,
+        "final_url": "https://deb.debian.org/debian/pool/main/m/mgba/libmgba-dev_0.10.5+dfsg-1_amd64.deb",
+        "bytes": 112304,
+        "SHA256": "35366aa94d519b34dbfd68cd58f252d775be992a4f1a0edefdd5317efb10c467",
+        "control": {
+          "Package": "libmgba-dev",
+          "Version": "0.10.5+dfsg-1",
+          "Architecture": "amd64",
+          "Depends": "libmgba0.10t64 (= 0.10.5+dfsg-1)"
+        }
+      },
+      {
+        "Package": "libmgba0.10t64",
+        "Version": "0.10.5+dfsg-1",
+        "Architecture": "amd64",
+        "url": "https://deb.debian.org/debian/pool/main/m/mgba/libmgba0.10t64_0.10.5+dfsg-1_amd64.deb",
+        "expected_SHA256": "d7a5f25a9d14a70ef90c2be6422d024fd351c696404dc534133b8c339098a1ba",
+        "download_attempts": 1,
+        "verified": true,
+        "extracted": true,
+        "final_url": "https://deb.debian.org/debian/pool/main/m/mgba/libmgba0.10t64_0.10.5+dfsg-1_amd64.deb",
+        "bytes": 539936,
+        "SHA256": "d7a5f25a9d14a70ef90c2be6422d024fd351c696404dc534133b8c339098a1ba",
+        "control": {
+          "Package": "libmgba0.10t64",
+          "Version": "0.10.5+dfsg-1",
+          "Architecture": "amd64",
+          "Depends": "libavcodec61 (>= 7:7.1), libavfilter10 (>= 7:7.0), libavformat61 (>= 7:7.0), libavutil59 (>= 7:7.0), libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libelf1t64 (>= 0.131), libgl1, libinih1 (>= 40), liblua5.4-0 (>= 5.4.6), libpng16-16t64 (>= 1.6.46), libsqlite3-0 (>= 3.5.9), libswresample5 (>= 7:7.0), libswscale8 (>= 7:7.0), libzip5 (>= 0.11.2), zlib1g (>= 1:1.2.0)"
+        }
+      },
+      {
+        "Package": "libzip5",
+        "Version": "1.11.3-2",
+        "Architecture": "amd64",
+        "url": "https://deb.debian.org/debian/pool/main/libz/libzip/libzip5_1.11.3-2_amd64.deb",
+        "expected_SHA256": "efaa26f7a0fd7575427f44cd97d8b72eadd7e0852f0621e29a22685da487c204",
+        "download_attempts": 1,
+        "verified": true,
+        "extracted": true,
+        "final_url": "https://deb.debian.org/debian/pool/main/libz/libzip/libzip5_1.11.3-2_amd64.deb",
+        "bytes": 62612,
+        "SHA256": "efaa26f7a0fd7575427f44cd97d8b72eadd7e0852f0621e29a22685da487c204",
+        "control": {
+          "Package": "libzip5",
+          "Version": "1.11.3-2",
+          "Architecture": "amd64",
+          "Depends": "libbz2-1.0, libc6 (>= 2.36), liblzma5 (>= 5.1.1alpha+20120614), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)"
+        }
+      }
+    ],
+    "complete": true
+  },
+  "reused_packages": [
+    {
+      "Package": "binutils-arm-none-eabi",
+      "source": "/workspace/scratch/ordinary-recovery-tooling-20261010/packages/binutils-arm-none-eabi_2.44-3+23+b1_amd64.deb",
+      "SHA256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+      "download_attempts_this_increment": 0,
+      "rehashed_and_reextracted": true
+    },
+    {
+      "Package": "libepoxy0",
+      "source": "/workspace/scratch/ordinary-recovery-tooling-20261010/packages/libepoxy0_1.5.10-2_amd64.deb",
+      "SHA256": "4c4c8024f2175086de65bca9fdc3fbb967f2863ebf249d489c66d0c8103dd3a3",
+      "download_attempts_this_increment": 0,
+      "rehashed_and_reextracted": true
+    }
+  ],
+  "source": {
+    "official_origin": "https://github.com/pret/agbcc.git",
+    "pin": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "source_path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc-source",
+    "fetch_attempts": 1,
+    "verified": true,
+    "head": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "tree": "dd8b159e245cc1e01b98a42581101e473ba0743d",
+    "build_script_SHA256": "291e5da21e1eccf79fe85d7d038a4fe19926959728e0af9efc44b4b7f02d5f54",
+    "install_script_SHA256": "36e510ccea46791f5ea4cc8e34a751d529b50576e718b4c2673c1928e7f50863"
+  },
+  "agbcc_build": {
+    "command": [
+      "bash",
+      "./build.sh"
+    ],
+    "build_attempts": 1,
+    "source": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "CC": "/usr/bin/gcc",
+    "CXX": "/usr/bin/g++",
+    "GCC_version": "14.2.0",
+    "ARM_binutils": "2.44-3+23+b1",
+    "game_build": false,
+    "compiler_variants_searched": false,
+    "exit": 0,
+    "log_SHA256": "47af3b034afb8cd8a0893d5e7bae15c90fca6c0fd397c07919019cbf4341ac4f"
+  },
+  "agbcc_identities": {
+    "source_commit": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "build_attempts": 1,
+    "install_to_workspace_tool_root": true,
+    "compilers": [
+      {
+        "name": "agbcc",
+        "path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/agbcc",
+        "SHA256": "0eb17d598f1e7318a1ad7aa9864480fcc8d30d29c3a855d7f43c01909277158f",
+        "recorded_previously_rebuilt_SHA256": "58078c3fe54c564bf23496d355f498a394fd5bb2b3a933e35cc835cc9bb14e0e",
+        "matches_previous_rebuilt_binary": false,
+        "historical_SHA256": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+        "matches_historical_binary": false,
+        "ldd_exit": 0,
+        "unresolved_dependencies": []
+      },
+      {
+        "name": "old_agbcc",
+        "path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/old_agbcc",
+        "SHA256": "e3dc2daec27cf4bd23172905631c3937e0eba0c7cb2bcfdce2264559e7535f24",
+        "recorded_previously_rebuilt_SHA256": "11950fef1d8af0192e91a0dea634d9d7421e2a4a2bcd8a64ec8ed0e9e4f38060",
+        "matches_previous_rebuilt_binary": false,
+        "historical_SHA256": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f",
+        "matches_historical_binary": false,
+        "ldd_exit": 0,
+        "unresolved_dependencies": []
+      },
+      {
+        "name": "agbcc_arm",
+        "path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/agbcc_arm",
+        "SHA256": "20c9d2f83f43a67c44eb6b16240a1702d5eb6d8fe1d1feebc3e04373b7d32f19",
+        "recorded_previously_rebuilt_SHA256": "390164b62ba47d58d5cdc0e362d5c429c391d98e682a91be04ccb03003696862",
+        "matches_previous_rebuilt_binary": false,
+        "historical_SHA256": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+        "matches_historical_binary": false,
+        "ldd_exit": 0,
+        "unresolved_dependencies": []
+      }
+    ],
+    "support_libraries": [
+      {
+        "name": "libgcc.a",
+        "SHA256": "2d1bcc5b3ef3126daf1ebec81ca5b080029cc535503b9b5be04337799233fecf"
+      },
+      {
+        "name": "libc.a",
+        "SHA256": "7ab67cf0cc39cc7708d47c4e430c0f64dbc69570b86da4bd09074b593bc56b09"
+      }
+    ],
+    "GCC_path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+    "GCC_SHA256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f",
+    "GCC_version": "14.2.0",
+    "original_tool_identity_claimed": false
+  },
+  "installed_dependencies": [
+    {
+      "Package": "libinih1",
+      "Version": "59-1",
+      "Architecture": "amd64",
+      "path": "/usr/lib/x86_64-linux-gnu/libinih.so.1",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libinih.so.58",
+      "ownership": "libinih1:amd64: /usr/lib/x86_64-linux-gnu/libinih.so.58",
+      "library_SHA256": "24ac7fa9821b61a4ef2e628cefcd2c7dcf2acccad88b8e7e95fa2d33bfc5eb6b",
+      "ldd_exit": 0,
+      "unresolved_dependencies": [],
+      "package_bytes_verified": false
+    },
+    {
+      "Package": "libzip5",
+      "Version": "1.11.3-2",
+      "Architecture": "amd64",
+      "path": "/usr/lib/x86_64-linux-gnu/libzip.so.5",
+      "resolved_path": "/usr/lib/x86_64-linux-gnu/libzip.so.5.5",
+      "ownership": "libzip5:amd64: /usr/lib/x86_64-linux-gnu/libzip.so.5.5",
+      "library_SHA256": "4ee5948285da4e408b9809a8ee29fe625d3360c9c6830f966faa47ee0eac28ed",
+      "ldd_exit": 0,
+      "unresolved_dependencies": [],
+      "package_bytes_verified": false
+    }
+  ],
+  "libmgba": {
+    "path": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu/libmgba.so.0.10.5",
+    "SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "manifest_match": true,
+    "ldd_exit": 0,
+    "unresolved_dependencies": [],
+    "system_inih_exact_historical_byte_pin": "not found in committed documentation/scripts; installed version/ownership/current library hash only",
+    "resolved_dependency_count": 178,
+    "full_dependency_record_SHA256": "a50f5873ed8ffc813c95b01e2286c61f7947b03c507b648a7a99663e75309ad6"
+  },
+  "zip_parity": {
+    "extracted_library": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu/libzip.so.5.5",
+    "SHA256": "4ee5948285da4e408b9809a8ee29fe625d3360c9c6830f966faa47ee0eac28ed",
+    "equals_installed_library_bytes": true,
+    "official_deb_hash_verified_separately": true
+  },
+  "png_header": {
+    "Package": "libpng-dev",
+    "Version": "1.6.48-1+deb13u5",
+    "expected_SHA256": "9027d5ace59ce266124c87054302805f49f9cb1ec4a6c8264a64596c7916fbff",
+    "source_package_from_installed_metadata": "libpng1.6",
+    "official_directory_navigation": [
+      {
+        "url": "https://deb.debian.org/debian/pool/main/",
+        "SHA256": "952ba3c04f6a1c758fbd0543193d07fdb4aa645f95204382ed524af04d60dc2c",
+        "selected_link": "libp/"
+      },
+      {
+        "url": "https://deb.debian.org/debian/pool/main/libp/",
+        "SHA256": "7bac786a077a07c8d86ba3ecf72efd92abdc08ea80830516456079fbf1d15b8b",
+        "selected_link": "libpng1.6/"
+      },
+      {
+        "url": "https://deb.debian.org/debian/pool/main/libp/libpng1.6/",
+        "SHA256": "dd608e6d84b1b5741164e280ad6d48e76ed2925abe59bcba0bc1176ad153a0de",
+        "selected_link": "libpng-dev_1.6.48-1+deb13u5_amd64.deb"
+      }
+    ],
+    "download_attempts": 1,
+    "verified": true,
+    "url": "https://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng-dev_1.6.48-1+deb13u5_amd64.deb",
+    "bytes": 367368,
+    "SHA256": "9027d5ace59ce266124c87054302805f49f9cb1ec4a6c8264a64596c7916fbff",
+    "control": {
+      "Package": "libpng-dev",
+      "Version": "1.6.48-1+deb13u5",
+      "Architecture": "amd64",
+      "Source": "libpng1.6",
+      "Depends": "libpng16-16t64 (= 1.6.48-1+deb13u5), zlib1g-dev"
+    },
+    "extracted": true
+  },
+  "png_runtime": {
+    "Package": "libpng16-16t64",
+    "Version": "1.6.48-1+deb13u5",
+    "Architecture": "amd64",
+    "source_package": "libpng1.6",
+    "ownership": "libpng16-16t64:amd64: /usr/lib/x86_64-linux-gnu/libpng16.so.16.48.0",
+    "installed_path": "/usr/lib/x86_64-linux-gnu/libpng16.so.16.48.0",
+    "copied_to_local_root": "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu/libpng16.so.16.48.0",
+    "library_SHA256": "56485ea502d222fa8b0d99f899470c1bacdca815a958d83c1b349d4e8f605255",
+    "copy_bytes_exact": true,
+    "package_deb_bytes_verified": false,
+    "reason": "Existing exact-version runtime required by the verified libpng-dev headers; local byte copy only, no acquisition/system change."
+  },
+  "installed_zlib": {
+    "Package": "zlib1g-dev",
+    "Version": "1:1.3.dfsg+really1.3.1-1+b1",
+    "Architecture": "amd64",
+    "pcfile": "/usr/lib/x86_64-linux-gnu/pkgconfig/zlib.pc",
+    "ownership": "zlib1g-dev:amd64: /usr/lib/x86_64-linux-gnu/pkgconfig/zlib.pc",
+    "pcfile_SHA256": "4bd54096d6c5f7f370956ab5df18b250f226d0ee6200bbeb86087e15887f8fb7",
+    "header_hashes": [
+      {
+        "path": "/usr/include/zlib.h",
+        "SHA256": "8a5579af72ea4f427ff00a4150f0ccb3fc5c1e4379f726e101133b1ab9fc600c"
+      },
+      {
+        "path": "/usr/include/zconf.h",
+        "SHA256": "44e543ff4514c7a9a01d648019c2c9a81d1105cbfa3c77f1faf6cd86eafa8abd"
+      }
+    ],
+    "additional_network_acquisitions": 0,
+    "system_files_changed": false,
+    "package_deb_bytes_verified": false
+  },
+  "compiler_checks": {
+    "source_SHA256": "f6ffd40e906a66b96437b268e76d930215d57e045b0ab340b57138a25e3ac225",
+    "documented_syntax_source": [
+      "agbcc-source/libgcc/Makefile:58",
+      "agbcc-source/libc/Makefile:108"
+    ],
+    "prior_invalid_option_check_preserved": true,
+    "game_source_compiled": false,
+    "ROM_created_or_executed": false,
+    "rows": [
+      {
+        "compiler": "agbcc",
+        "command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/agbcc",
+          "-O2",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/compiler-probe.c",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc-source-syntax.s"
+        ],
+        "compile_attempts": 1,
+        "compile_exit": 0,
+        "assemble_command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/bin/arm-none-eabi-as",
+          "-mcpu=arm7tdmi",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc-source-syntax.o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc-source-syntax.s"
+        ],
+        "assemble_exit": 0,
+        "assembly_SHA256": "72056f151437a3714e7be4b537c3da442d01e0cf92cb4fd13b381a9057f1a1f7",
+        "object_SHA256": "9470b8a041a4a61b9ceb26b805ac02351240dc76dded129dd8d50380554663f3",
+        "ARM_ELF32_object_verified": true
+      },
+      {
+        "compiler": "old_agbcc",
+        "command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/old_agbcc",
+          "-O2",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/compiler-probe.c",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/old_agbcc-source-syntax.s"
+        ],
+        "compile_attempts": 1,
+        "compile_exit": 0,
+        "assemble_command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/bin/arm-none-eabi-as",
+          "-mcpu=arm7tdmi",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/old_agbcc-source-syntax.o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/old_agbcc-source-syntax.s"
+        ],
+        "assemble_exit": 0,
+        "assembly_SHA256": "72056f151437a3714e7be4b537c3da442d01e0cf92cb4fd13b381a9057f1a1f7",
+        "object_SHA256": "9470b8a041a4a61b9ceb26b805ac02351240dc76dded129dd8d50380554663f3",
+        "ARM_ELF32_object_verified": true
+      },
+      {
+        "compiler": "agbcc_arm",
+        "command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/agbcc_arm",
+          "-O2",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/compiler-probe.c",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc_arm-source-syntax.s"
+        ],
+        "compile_attempts": 1,
+        "compile_exit": 0,
+        "assemble_command": [
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/bin/arm-none-eabi-as",
+          "-mcpu=arm7tdmi",
+          "-o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc_arm-source-syntax.o",
+          "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc_arm-source-syntax.s"
+        ],
+        "assemble_exit": 0,
+        "assembly_SHA256": "c5f81a63134428ce69fb8f5383d2acd766790583a93399f86f70fad6f9987750",
+        "object_SHA256": "93cd92071bbf30b31778457543cdd3805fe190763552517488d626025f6c5201",
+        "ARM_ELF32_object_verified": true
+      }
+    ]
+  },
+  "mgba_link_check": {
+    "compile_command": [
+      "/usr/bin/gcc",
+      "-std=gnu11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/include",
+      "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/mgba-link-check.c",
+      "-L/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu",
+      "-lmgba",
+      "-o",
+      "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/mgba-link-check"
+    ],
+    "compile_exit": 0,
+    "compile_attempts": 1,
+    "source_SHA256": "e8258fba8e4d6b4bfe31636b01a259ea4606d088093c0563b32f50c69ae62aeb",
+    "ROM_Save_core_instance_created": false,
+    "CPU_emulation_invoked": false,
+    "execution_attempts": 1,
+    "execution_exit": 0,
+    "output": "libmGBA=0.10.5 core_header_size=5424; no core instantiated\n",
+    "errors": "",
+    "binary_SHA256": "9a7634fd30fac8b2351ece4f4365813da24c1e2c9ba0ad7caf1384022575d4c4"
+  },
+  "png_link_check": {
+    "compile_command": [
+      "/usr/bin/gcc",
+      "-std=gnu11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/png-link-check.c",
+      "-o",
+      "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/png-link-check",
+      "-I/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/include/libpng16",
+      "-I/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/include",
+      "-L/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/usr/lib/x86_64-linux-gnu",
+      "-lpng16"
+    ],
+    "compile_exit": 0,
+    "compile_attempts": 1,
+    "source_SHA256": "d5beea543d695eaf86b43e1eb33ab88e012f2920936915cf9a7cec5ccb8b60d8",
+    "no_game_assets_or_images_loaded": true,
+    "metadata_search_includes_verified_installed_zlib": "/usr/lib/x86_64-linux-gnu/pkgconfig",
+    "execution_exit": 0,
+    "execution_attempts": 1,
+    "stdout": "libpng=1.6.48; no image decoded\n",
+    "stderr": "",
+    "binary_SHA256": "44c4e60aaaceb1044747be283ab10aa339edc861f46f8d5cc92a61c9277a3f20"
+  },
+  "preserved_caller_errors": {
+    "compiler_invalid_option": {
+      "source_SHA256": "f6ffd40e906a66b96437b268e76d930215d57e045b0ab340b57138a25e3ac225",
+      "rows": [
+        {
+          "compiler": "agbcc",
+          "command": [
+            "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root/tools/agbcc/bin/agbcc",
+            "-quiet",
+            "-O2",
+            "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/compiler-probe.c",
+            "-o",
+            "/workspace/scratch/ordinary-recovery-tooling-r3-20261009/agbcc-probe.s"
+          ],
+          "compile_exit": 1,
+          "compile_attempts": 1
+        }
+      ],
+      "game_source_compiled": false,
+      "ROM_created_or_executed": false,
+      "diagnosis": "-quiet is present only in the MODERN engine compiler branch. Pinned libgcc/libc Makefiles use agbcc -O2 input [-o output]; no quiet option."
+    },
+    "png_metadata_discovery": {
+      "command": "pkg-config --cflags --libs libpng",
+      "environment": "PKG_CONFIG_LIBDIR=<local-root>/usr/lib/x86_64-linux-gnu/pkgconfig only",
+      "exit": 1,
+      "failure": "Package 'zlib', required by 'libpng', not found",
+      "compile_executions": 0,
+      "cause": "The explicitly isolated metadata search omitted installed zlib metadata; no package or tool-byte mismatch was observed."
+    }
+  },
+  "prior_history": {
+    "APT_failure": {
+      "attempts": 1,
+      "log_SHA256": "1431bfc10cbb88207a72c26e4f301550f283de5b7990970298d30cb11b31ff1d"
+    },
+    "incorrect_pool_404": {
+      "attempts": 1,
+      "record_SHA256": "30d1ac35397dd1ca31bb505533b49ec61381f43bf99f89ffbe6c3df00969f840"
+    },
+    "metadata_host_tunnel_403": {
+      "attempts": 1,
+      "record_SHA256": "4fbfad3510462cda4bfd680cc8f83a7e908f229efd90a0b33c5a620147b96e32",
+      "retried_this_increment": false
+    },
+    "new_inih_download_attempts": 0,
+    "already_verified_binutils_epoxy_network_reacquisitions": 0,
+    "Library_upload_failures": 5,
+    "supported_existing_backup_download_failures": 1,
+    "Library_attempts_this_increment": 0
+  },
+  "tool_root_manifest_SHA256": "7893207368f9f3996c3d541735e337dc3f1bdfd131160b9f72f98127196156b5",
+  "tooling_environment_SHA256": "10f783fcd3621867f8230e9357ad1a8a97908ccda2ce5744d29d679b76c8b13f",
+  "raw_build_runtime_records_retention": "Local workspace/bundle only, no independently verified backup. No game raw data or ROM/Save in bundle."
+}

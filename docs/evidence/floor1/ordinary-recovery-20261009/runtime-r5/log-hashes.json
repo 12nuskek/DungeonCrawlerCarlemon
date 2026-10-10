@@ -1,0 +1,16 @@
+{
+  "fresh": {
+    "original_private_replay_SHA256": "ec040d5dffb6a94a7e87021e10ea0ad02add3313444379e3d21eca8dc42c67bc",
+    "public_safe_extract_SHA256": "d6404cd757c0e5fba932e5dfa15ffdf34627118df3e9d1c36073492977902546",
+    "errors_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "input_route_SHA256": "0ef39a282e7e38620a4ccfbbbda33dfa8f9d1e31b57d885939ada4e7112421d6",
+    "method": "Public PASS/clock/result lines only; complete raw telemetry retained solely in verified private archive"
+  },
+  "seed": {
+    "original_private_replay_SHA256": "fb2dd0d81f7414255b0e1394fce25f40cda54177fc85ffd343c77a59a97d33be",
+    "public_safe_extract_SHA256": "8b1df3b67e401afe7fa50c6152b887ca2e6e8c0f1c3515019f67c9027127b2bc",
+    "errors_SHA256": "2f0c5e9d6cff77a9e2532373a5ebcf6d9acccd5d3fa166eb3ea4e585a0bb5a1d",
+    "input_route_SHA256": "53899f27a03c05329a32d7d3ba27ef9f8e577bceef5d9e9daadb412e093479f2",
+    "method": "Public PASS/clock/result lines only; complete raw telemetry retained solely in verified private archive"
+  }
+}

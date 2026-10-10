@@ -1,0 +1,6 @@
+{
+  "raw_replay_log_SHA256": "3d11d3eba3003de367b63820dd83f8fa4eac2661bb79f38707544e357923342c",
+  "retained_safe_log_SHA256": "7f5928b5fbe265cee7491fb2aed1ad895c6083b55a33468b6139f29910c3931c",
+  "removed_key_bearing_lines": 6,
+  "raw_log_and_denied_key_lines": "local only outside uploads; no durable retention claim for excluded bytes"
+}

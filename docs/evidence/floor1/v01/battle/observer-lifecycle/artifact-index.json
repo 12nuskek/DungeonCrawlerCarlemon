@@ -1,0 +1,66 @@
+{
+  "frozen_implementation_source": "a89899c7d84d815c7f4ac4b9273c48aceb220c3b",
+  "emulator_frames": 0,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 5117,
+      "SHA256": "9bea5dddba880ef62a27f840391cb0428a15a3b94404e2c4ad7d42576ae90a17"
+    },
+    {
+      "file": "compile-identity.json",
+      "bytes": 2085,
+      "SHA256": "113ffcc49aa8f929d4833b2efffd8c4e14c69d51b522db7d20fb15c9b4d0cde9"
+    },
+    {
+      "file": "frozen-checkpoint.json",
+      "bytes": 495,
+      "SHA256": "125999c7533477556a7fa9738a5a6f822d1dabdc4b93d27b410e8b9474dcb4ce"
+    },
+    {
+      "file": "host-build.log",
+      "bytes": 0,
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "lifecycle-functions.json",
+      "bytes": 7058,
+      "SHA256": "e2d1d080ea80bd9ebc9cf20bc6b840d51e6a1a47941811c47e711731bb701a13"
+    },
+    {
+      "file": "native-layout.log",
+      "bytes": 0,
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "native-layout.s",
+      "bytes": 347,
+      "SHA256": "58766f065e422ec94321adb108c1f3f5a12b78df0d54ecacca4f8a97c457812b"
+    },
+    {
+      "file": "native-source-review.json",
+      "bytes": 8586,
+      "SHA256": "3d7013377fb9a970875991d9cbe1a958ceb36168b713ec4a2af99ec0de8977f3"
+    },
+    {
+      "file": "offline-observer.log",
+      "bytes": 26373,
+      "SHA256": "cd3284ef14171bc22cf0ffb75cd8c8e17d1d5a252a9c2a12c88cca298b896bbf"
+    },
+    {
+      "file": "offline-result.json",
+      "bytes": 1041,
+      "SHA256": "f204963f84294a57a909f100d5f18b8a95001b63c62d983735fef0df29079b07"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 1449,
+      "SHA256": "11412d9b299b28908d757a8a6a7366b57051869450f3a5b94bc66f69dff2aadf"
+    },
+    {
+      "file": "private-retention.json",
+      "bytes": 979,
+      "SHA256": "d0aeb9fdd76df8a28c8bf0160eeb654344886f66d87dd6b22841c948bfa1fa6c"
+    }
+  ]
+}

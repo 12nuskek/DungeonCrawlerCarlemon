@@ -1,0 +1,213 @@
+{
+  "scope": "Compiled offline only; no ROM execution, Save, gameplay capture or runtime acceptance",
+  "game_source_commit": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "parent": "6d6a80aaea6eb7e6a54e17f6f210c8f87167e1e9",
+  "ROM_sha256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+  "ROM_bytes": 16777216,
+  "ELF_sha256": "98fc1accd7516fb54baf15ba76cb954ca24a30051dfea63704a0efcf2882c53d",
+  "ELF_bytes": 56960272,
+  "compiler_source_commit": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "gcc_version": "14.2.0",
+  "binutils_version": "GNU assembler (2.44-3+23+b1) 2.44",
+  "agbcc": {
+    "agbcc": {
+      "rebuilt_sha256": "58078c3fe54c564bf23496d355f498a394fd5bb2b3a933e35cc835cc9bb14e0e",
+      "historical_sha256": "6347d07ec65fb1a5df58f4fa79a807db11ac7bef32ffb6162ffb79bc68512684",
+      "matches_historical_binary": false
+    },
+    "old_agbcc": {
+      "rebuilt_sha256": "11950fef1d8af0192e91a0dea634d9d7421e2a4a2bcd8a64ec8ed0e9e4f38060",
+      "historical_sha256": "50c96db486db6326105351ce08c04941de701e4e654047000d63ec0c0185a24f",
+      "matches_historical_binary": false
+    },
+    "agbcc_arm": {
+      "rebuilt_sha256": "390164b62ba47d58d5cdc0e362d5c429c391d98e682a91be04ccb03003696862",
+      "historical_sha256": "2465e6cee6aedf129c75a91ca776e9914d702c19c19e3892127213b31c317982",
+      "matches_historical_binary": false
+    }
+  },
+  "libmgba_sha256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "source_file_sha256": {
+    "engine/include/dcc_battle_pose.h": "a01c953cab183bf4b118fd8dd82c2c29ee0f54388865c1bdae7c2090a35e3503",
+    "engine/src/battle_anim.c": "9a28dc65b4bac5f2854c45a268cf2c424909c78f648721964d80ac71884e38b1",
+    "engine/src/battle_anim_status_effects.c": "15df88b5f2a4ade4b53a00ab7d7766a3c5ed4340b031f5570d75fba4888eb17c",
+    "engine/src/battle_anim_throw.c": "aea6c706f7910609eda77148c0a47da9ee20d240a1a1b4498f040c8db9472b95",
+    "engine/src/battle_anim_utility_funcs.c": "8e9fce98926a57cf27515f85b996d7ae098083aee2038de0d5d6dae6a94a5207",
+    "engine/src/battle_controllers.c": "5d93ada432b1cdbf02af189d120be69d39168cce66bbaca8ecd2a3ad092e561e",
+    "engine/src/battle_gfx_sfx_util.c": "140a0b3456bbb082bdd08b7076b38c39abf57e1bf2a3e18352fe7816ed3a6b70",
+    "engine/src/battle_main.c": "e28ea1bdfafe63eb188d034c311faff155604a7399ec6d9b37194a55c10dc9f3",
+    "engine/src/battle_script_commands.c": "af47683feb2d04c54a92ac0550d219dacc09e011fe1a554aaaab6bcd82b27cff",
+    "engine/src/battle_util.c": "8b101966a51cb2f936f215d5aaeffb5665ffbbff275cffc365a696793d068ee0",
+    "engine/src/dcc_battle_pose.c": "f80a396e4a9828736410e431b5f5676a25022e2f01bdd389c9a44dc7cc2d639a",
+    "engine/src/pokemon.c": "b7ff983d5b356d017e1e8e150d27183226df6a51f2dc0a480191f06c0e9628c0",
+    "scripts/floor1/v01-active-pose-cost.c": "0abf00bb0de7dcb4146559d72d61dd794af863ab3d23ce48052446134ce29b87",
+    "scripts/floor1/v01-active-pose-cost.py": "a4f9064a239313006bd68758a5f43bcc3374b25b59b8ee58517788754447f60e",
+    "scripts/floor1/v01-active-pose-equivalence.c": "05af27218100dc40c78fbfb08b61cdf7548165234318acdca4b6e127c3b8c343",
+    "scripts/test-f1-v01-active-pose.py": "071249a94623c09073021c2e27b8c52542bef9e56402ca95b77a4898c4f09046",
+    "scripts/test-f1-v01-battle-hook.py": "f87c32ed9d7a3d777c0eb988ec84a6fac3b6781f2761f99b2f09c52b84049c78"
+  },
+  "original_equivalence_result_sha256": "f536007e6be848e340f362b3e64055a588f061e0a791f202fa4625b685961f8e",
+  "original_cost_result_sha256": "87393c0337784a546b30ba46ca7e2c1d3e2fc5f9972574324172e912abe167de",
+  "build_log_sha256": "c60bdf0305077d84f78c2b98be991e5d2616bedfc77aeb85ced714a6ff40cf16",
+  "rebuild_log_sha256": "52d7bd6a80e684cfb2b10e1687009327b41fb869a6679a02689836c828b66638",
+  "compiled_pose_pixels": [
+    {
+      "pose": 0,
+      "compiled_sha256": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 1,
+      "compiled_sha256": "4a56806297d5034b4eac81e92b1fcd6c58d8a1b9c3babc9b9f0c0f4768f7ae02",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 2,
+      "compiled_sha256": "9ac754e023690bdbbe3c9a2f906dee5ddf131e8f5c9814a97e2fe66b807164c7",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 3,
+      "compiled_sha256": "b3ec16a7a406bc662c370885575f310a25128d8f8297be8d6899f37d51482c69",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 4,
+      "compiled_sha256": "13b02efc242213f1d892e29df87b6dc8bda480ff094e5b4f514a118c6f4e1a08",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 5,
+      "compiled_sha256": "05181801258066983cfe986f986d4bfbef3fca21f5ee3e2dfb90671ff781d546",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 6,
+      "compiled_sha256": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 7,
+      "compiled_sha256": "67f8416659552b2d305078bf2c73edd95036938984879b6e698d3633727a0f25",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 8,
+      "compiled_sha256": "2f81a48538c28548d547cd32100ba964d812421c7a0ec20a3bb0cc9fec145199",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 9,
+      "compiled_sha256": "bde5e49555320f07ef549024b4373e6f51b89a4b3502a404dac9ff8c33a69e7e",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 10,
+      "compiled_sha256": "4821a3223935f523e4ffad5915e556e47a118471949a44c3dedea6a5dc3c56c2",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 11,
+      "compiled_sha256": "7942741503a783889aa1cc7257e9efb32359a82695a982a4949a2072952e6d55",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 12,
+      "compiled_sha256": "fe44f9c2f5de6dc2f6263df0835f460e483e26b628182149c93572a65e40d1f1",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 13,
+      "compiled_sha256": "6f6c5a55a3fc174786005923451a01d9ac37bdfcb6621a6fba84272cba0f9a7f",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 14,
+      "compiled_sha256": "d7ed6925b095dd335dcb69adcacea051c7d9aeb15abe0cf813bc39d1a63771c8",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 15,
+      "compiled_sha256": "9b2a02ca98decbd928e6cc8088493fddd93a487f473b2a0470af3c2c19b945ea",
+      "matches_authored_pixels": true
+    },
+    {
+      "pose": 16,
+      "compiled_sha256": "8f84e3a3124413f747cdb9e160b8f6a20a62b844c7af776bd9b29b6de4f42e77",
+      "matches_authored_pixels": true
+    }
+  ],
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "runtime_validation": "BLOCKED on unavailable original private reference/inputs and separate parent review",
+  "verified_upstream_blobs": [
+    {
+      "path": "data/mb_berry_fix.gba",
+      "git_blob": "0afff07f5d2314e2bd35d99de518cbc114009b5e"
+    },
+    {
+      "path": "data/mb_colosseum.gba",
+      "git_blob": "fdeb854a054ba02191f6a209ec5b649f21c4e335"
+    },
+    {
+      "path": "data/mb_ereader.gba",
+      "git_blob": "85057cf4e2bd657da5d632ac12d1ea24aeaa4499"
+    }
+  ],
+  "upstream_source_commit": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+  "extracted_tool_packages": [
+    {
+      "Package": "binutils-arm-none-eabi",
+      "Version": "2.44-3+23+b1",
+      "SHA256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+      "Depends": "libc6 (>= 2.38), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)"
+    },
+    {
+      "Package": "libepoxy0",
+      "Version": "1.5.10-2",
+      "SHA256": "4c4c8024f2175086de65bca9fdc3fbb967f2863ebf249d489c66d0c8103dd3a3",
+      "Depends": "libc6 (>= 2.34)"
+    },
+    {
+      "Package": "libinih1",
+      "Version": "59-1",
+      "SHA256": "22e51939acb45906a57851508290782a2a704fce5208e213e951268b3c799c4a",
+      "Depends": "libc6 (>= 2.4)"
+    },
+    {
+      "Package": "libpng-dev",
+      "Version": "1.6.48-1+deb13u5",
+      "SHA256": "9027d5ace59ce266124c87054302805f49f9cb1ec4a6c8264a64596c7916fbff",
+      "Depends": "libpng16-16t64 (= 1.6.48-1+deb13u5), zlib1g-dev"
+    },
+    {
+      "Package": "libpng16-16t64",
+      "Version": "1.6.48-1+deb13u5",
+      "SHA256": "2465b4e9fa85cff54dc10a6da3e64074d8d9292c86e4a8f989b809d6b158e97e",
+      "Depends": "libc6 (>= 2.29), zlib1g (>= 1:1.2.3.4)"
+    },
+    {
+      "Package": "libzip5",
+      "Version": "1.11.3-2",
+      "SHA256": "efaa26f7a0fd7575427f44cd97d8b72eadd7e0852f0621e29a22685da487c204",
+      "Depends": "libbz2-1.0, libc6 (>= 2.36), liblzma5 (>= 5.1.1alpha+20120614), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)"
+    },
+    {
+      "Package": "libmgba-dev",
+      "Version": "0.10.5+dfsg-1",
+      "SHA256": "35366aa94d519b34dbfd68cd58f252d775be992a4f1a0edefdd5317efb10c467",
+      "Depends": "libmgba0.10t64 (= 0.10.5+dfsg-1)"
+    },
+    {
+      "Package": "zlib1g-dev",
+      "Version": "1:1.3.dfsg+really1.3.1-1+b1",
+      "SHA256": "76ed5c858e1aef38b7be93acce5910e457e77bd6271471b9d05fb42e78826224",
+      "Depends": "zlib1g (= 1:1.3.dfsg+really1.3.1-1+b1), libc6-dev | libc-dev"
+    }
+  ],
+  "libmgba_package": {
+    "version": "0.10.5+dfsg-1",
+    "deb_sha256": "d7a5f25a9d14a70ef90c2be6422d024fd351c696404dc534133b8c339098a1ba"
+  }
+}

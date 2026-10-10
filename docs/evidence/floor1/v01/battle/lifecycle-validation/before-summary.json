@@ -1,0 +1,34 @@
+{
+  "case": "before",
+  "execution_source": "e017e185c34c53fb969ecdaeb84267c9019376c6",
+  "native_exit": 0,
+  "errors_bytes": 0,
+  "assertions": 42,
+  "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+  "replay_log_SHA256": "9c3e825dc49457366a5e3b7bc48414842c2fa4ae1626ae842054b224ef53fe75",
+  "visual": [
+    "BV_FINISH candidate=0 frames=15627 samples=32671 pose_mask=131137 captures=131137 swaps=1,1,1 faint_mask=2 exit_clean_frames=1 restored_hardware_palette_checks=23552"
+  ],
+  "peaks": [
+    "BV_PEAK samples=15417 sprites=49 obj_tiles=654 obj_palettes=7 heap_used=91212 heap_free_min=22660"
+  ],
+  "warning": [
+    "BV_WARNING held_frames=0 other_actor_animation_frames=0 hardware_palette_mask=7"
+  ],
+  "battles": [
+    "WARDEN battle_frames=13721 attempts=1"
+  ],
+  "vitals": [
+    "VITALS 30 22 0 0 2 37 0 33"
+  ],
+  "pilot": [
+    "pilot completed policy=fortify frames=12520 outcome=1 incapacitation=0"
+  ],
+  "ordinary_controls_SHA256": "564a5126134b34bbb4a58e6d2f7e41237f3ec1ae507c838d42051e7391675504",
+  "pose_events": 3,
+  "native_readiness": [
+    "BV_READY frame=3155 phase=HandleTurnActionSelectionState turn=0 all4_native_owned_first_pictures_copied=1"
+  ],
+  "native_phase_events": 77
+}

@@ -1,0 +1,24 @@
+{
+  "boot_steps": [
+    720,
+    1,
+    360,
+    1,
+    180,
+    1,
+    180,
+    1,
+    600
+  ],
+  "previsual_frame_calls": 2044,
+  "visual_guard": 36000,
+  "maximum_frame_calls": 38044,
+  "per_frame_buffer_records": 4096,
+  "instruction_reservation": 70,
+  "terminal_overhead": 1,
+  "total_record_ceiling": 155828295,
+  "record_bytes": 184,
+  "maximum_file_bytes": 28672406296,
+  "allocated_buffer_bytes": 753664,
+  "scope": "Pinned route only; per-frame overflow/I/O remain fatal. No observed-density assumption."
+}

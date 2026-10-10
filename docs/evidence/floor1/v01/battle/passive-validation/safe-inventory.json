@@ -1,0 +1,89 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 8169,
+      "SHA256": "150f3f62d465242fdeef8339c109032a96b352994b2bb01fc6bbf2b69cf92695"
+    },
+    "actual-baseline-ready-native.png": {
+      "bytes": 10926,
+      "SHA256": "4262d745ab0f93da2642aa1969be946925bb6c9f700f41ef426b267fbd76ca35"
+    },
+    "actual-baseline-stop-native.png": {
+      "bytes": 5452,
+      "SHA256": "696fd22bb4ca9078a162a6aa12f453183a7424bf2fc64a2fcf3ed42556750ec5"
+    },
+    "archive-proof.json": {
+      "bytes": 565,
+      "SHA256": "964adca4893b457f4368d316dbe717ef85999ebbe3f2448dbffa6c7f9d0170b1"
+    },
+    "capture-provenance.json": {
+      "bytes": 1471,
+      "SHA256": "f8ce87fcd953ce8492b1dad92adcc594e0fb9ba0eab61061fa699de3765d4332"
+    },
+    "clip-proof.json": {
+      "bytes": 1036,
+      "SHA256": "1947703dd8cc4c26c3cd6933cd5828f489e237363bd2371fa8309993649fa4bf"
+    },
+    "diagnosis.json": {
+      "bytes": 10227,
+      "SHA256": "35669c18ba5a55a86479efe88b9f3409c93e90ab1f8c0f084a7c97640fcdde25"
+    },
+    "errors.log": {
+      "bytes": 61,
+      "SHA256": "45e51e88ef17601f9bfbf54a9a12c37ac77d666414174bfc62d954878ca1e5cd"
+    },
+    "execution-claim.json": {
+      "bytes": 2003,
+      "SHA256": "aa3041d80861dba72fbe636fe0e546bbb7af49afec9900d99d2be351b0b74d58"
+    },
+    "historical-prefix-check.json": {
+      "bytes": 842,
+      "SHA256": "3fc286e12d8f00bcdadf2a0b8cd2cfbebe7926013c8fdf64bd7554c0a194f638"
+    },
+    "identity.json": {
+      "bytes": 2004,
+      "SHA256": "25152ebee69f9cbd1d66cf8d4806c2372c2c2c29eeb8a57a7f60a367f51b1295"
+    },
+    "native-boundary.json": {
+      "bytes": 3446,
+      "SHA256": "397aec36bad5328b589e60e39748713857f75e33f424874d23251fa2e836ff09"
+    },
+    "native-timeline-points.json": {
+      "bytes": 6310,
+      "SHA256": "54a09dea15166c8df3c3cb6bac8ec05f368b1eb19d214c71944f24a05b20ab5e"
+    },
+    "original-frame-pixels.json": {
+      "bytes": 312,
+      "SHA256": "ebd05b351b8253b6f634bf600a0e550d7fff87daed5cd3f50c41952b549ebaef"
+    },
+    "preflight.json": {
+      "bytes": 912,
+      "SHA256": "834cb1ba268765d826a58d263c75d351080a2b2fd0a5c384a6afcf847d977dbc"
+    },
+    "preservation.json": {
+      "bytes": 756,
+      "SHA256": "96fa7fb5b44bb5585b643c3309e6f44c2ca9403090ee5fdcccf1c4fca8e4c247"
+    },
+    "reconciliation.json": {
+      "bytes": 24259,
+      "SHA256": "3ac4d58c4236a905edeeb435db882257ef3d528303001878417b0aa425be241e"
+    },
+    "replay-safe.log": {
+      "bytes": 3469,
+      "SHA256": "9ffd325e212f0658c472e5743600e9c8a0d97aaa110499cde01b7252665f3403"
+    },
+    "retention-result.json": {
+      "bytes": 1428,
+      "SHA256": "1f5586633217651115f6252172d2bb91ed84bf10702caaa52abc08176439222c"
+    },
+    "summary.json": {
+      "bytes": 811,
+      "SHA256": "99f70baa754144cf86ac626cb1ce1affcfdb9ead98c3601df60310e959ad6e77"
+    },
+    "visual-stop.json": {
+      "bytes": 3923,
+      "SHA256": "3a7e0533a6d9eefe58cbbcfa3e2606fdc712c1441a871f91d3be57fb23719936"
+    }
+  },
+  "scope": "Safe reductions/source identities/native screenshots only; all raw datasets/keys/ROMs/Saves/Library IDs excluded"
+}

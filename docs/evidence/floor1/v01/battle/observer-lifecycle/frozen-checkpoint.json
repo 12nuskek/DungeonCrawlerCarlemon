@@ -1,0 +1,9 @@
+{
+  "frozen_implementation_source": "a89899c7d84d815c7f4ac4b9273c48aceb220c3b",
+  "parent_checkpoint": "3a872a174f4f6fa71c60b614d95bad6605f053a8",
+  "host_SHA256": "c96c002ec12d8105c8da139d2ffdc1063e9b0b3943e0cc6f90ade3629875465b",
+  "binary_SHA256": "c2629fb98bfa463be627c2600c49e003d752157d4b420bb219b9c3944cc60c24",
+  "emulator_frames": 0,
+  "execution_claims": 0,
+  "method": "Content hashes verified against frozen Git blobs; offline fixtures and compile only, no host binary invocation"
+}

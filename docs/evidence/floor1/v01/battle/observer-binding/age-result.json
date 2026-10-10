@@ -1,0 +1,102 @@
+{
+  "scope": "SYNTHETIC host C integration of current pose source and unchanged observer, not recovered state",
+  "ELF_SHA256": "98fc1accd7516fb54baf15ba76cb954ca24a30051dfea63704a0efcf2882c53d",
+  "pose_source_SHA256": "f80a396e4a9828736410e431b5f5676a25022e2f01bdd389c9a44dc7cc2d639a",
+  "observer_source_SHA256": "608b487a7cc6fb56853740930f300f95dc49227e54202e706c41e4af54289629",
+  "fixture_source_SHA256": "f2a6691b7731ad9c0b127249088ba9582f5a70618545e0ec92238bf81e14db75",
+  "fixture_binary_SHA256": "2f4d24075bdd45b4f8cc19594656a149e26cd84f5610ae0fcccf090c1ba7ebf7",
+  "fixture_log_SHA256": "9c6e03da84aaa9b80837220611b0ad4aaee1d29434a0ddbf55936ad503ed8873",
+  "cases": 14,
+  "coverage": [
+    "Both trainer IDs 858/859: native WINDUP reaches >=18 before sleep",
+    "Successful settled warning age freezes; native notification wakes and preserves warning",
+    "Unchanged observer accepts held warning during another actor's animation",
+    "Unchanged observer STOP108 on wrong warning pixels at >=18",
+    "Successful REST settles and freezes unused age without warning eligibility",
+    "Unchanged observer STOP105 on stale retirement age; actual reset then permits retirement/field"
+  ],
+  "emulator_executions": 0,
+  "generated_host_invocations": 0,
+  "Save_accesses": 0,
+  "new_runtime_expected_streams": 0,
+  "actual_captures": 0,
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "assets": [
+    {
+      "path": "graphics/dcc/battle-poses/carl-rest.png",
+      "compiled_pixels_sha256": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-anticipation.png",
+      "compiled_pixels_sha256": "4a56806297d5034b4eac81e92b1fcd6c58d8a1b9c3babc9b9f0c0f4768f7ae02"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-contact.png",
+      "compiled_pixels_sha256": "9ac754e023690bdbbe3c9a2f906dee5ddf131e8f5c9814a97e2fe66b807164c7"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-strike-recovery.png",
+      "compiled_pixels_sha256": "b3ec16a7a406bc662c370885575f310a25128d8f8297be8d6899f37d51482c69"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-brace-set.png",
+      "compiled_pixels_sha256": "13b02efc242213f1d892e29df87b6dc8bda480ff094e5b4f514a118c6f4e1a08"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/carl-brace-hold.png",
+      "compiled_pixels_sha256": "05181801258066983cfe986f986d4bfbef3fca21f5ee3e2dfb90671ff781d546"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-rest.png",
+      "compiled_pixels_sha256": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-anticipation.png",
+      "compiled_pixels_sha256": "67f8416659552b2d305078bf2c73edd95036938984879b6e698d3633727a0f25"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-cast.png",
+      "compiled_pixels_sha256": "2f81a48538c28548d547cd32100ba964d812421c7a0ec20a3bb0cc9fec145199"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-spark-recovery.png",
+      "compiled_pixels_sha256": "bde5e49555320f07ef549024b4373e6f51b89a4b3502a404dac9ff8c33a69e7e"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-weaken-preparation.png",
+      "compiled_pixels_sha256": "4821a3223935f523e4ffad5915e556e47a118471949a44c3dedea6a5dc3c56c2"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/donut-weaken-release.png",
+      "compiled_pixels_sha256": "7942741503a783889aa1cc7257e9efb32359a82695a982a4949a2072952e6d55"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-idle.png",
+      "compiled_pixels_sha256": "fe44f9c2f5de6dc2f6263df0835f460e483e26b628182149c93572a65e40d1f1"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-windup.png",
+      "compiled_pixels_sha256": "6f6c5a55a3fc174786005923451a01d9ac37bdfcb6621a6fba84272cba0f9a7f"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-hold.png",
+      "compiled_pixels_sha256": "d7ed6925b095dd335dcb69adcacea051c7d9aeb15abe0cf813bc39d1a63771c8"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-slam.png",
+      "compiled_pixels_sha256": "9b2a02ca98decbd928e6cc8088493fddd93a487f473b2a0470af3c2c19b945ea"
+    },
+    {
+      "path": "graphics/dcc/battle-poses/warden-recovery.png",
+      "compiled_pixels_sha256": "8f84e3a3124413f747cdb9e160b8f6a20a62b844c7af776bd9b29b6de4f42e77"
+    }
+  ],
+  "PASS": true,
+  "unit_fixture_executions": 1,
+  "fixture_compile_attempts": 3,
+  "fixture_compile_successes": 1,
+  "tooling_notes": [
+    "Two compile attempts diagnosed include-search conflicts; final -idirafter keeps unit stubs and standard headers ahead of native fallback headers. Assertions remained enabled."
+  ]
+}

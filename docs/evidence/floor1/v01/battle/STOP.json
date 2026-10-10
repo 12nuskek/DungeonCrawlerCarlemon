@@ -1,0 +1,24 @@
+{
+  "case": "before",
+  "validation_failure": "",
+  "summary": {
+    "case": "before",
+    "execution_source": "d1dc479212fbe1421f0b55c38ec374e34f5ed964",
+    "native_exit": 35,
+    "errors_bytes": 29,
+    "assertions": 22,
+    "input_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "output_Save_SHA256": "030b12fd3516351b0935b9298f24d0a2078fb33afecbccb6ba3a9b4c2db6b73c",
+    "replay_log_SHA256": "25d5ff7c6338451cbc633b5b947c9030643cbf679367fb2ba3fba3c8776559b9",
+    "visual": [],
+    "peaks": [],
+    "warning": [],
+    "battles": [
+      "WARDEN battle_frames=0 attempts=0"
+    ],
+    "vitals": [],
+    "pilot": [],
+    "ordinary_controls_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pose_events": 0
+  }
+}

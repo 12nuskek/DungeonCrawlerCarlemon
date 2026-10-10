@@ -1,0 +1,22 @@
+{
+  "reviewed_head": "38468a31f39f2bb14cd6cebe7c15578363307c1d",
+  "base": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "complete_changed_file_count": 626,
+  "additions": 48325,
+  "deletions": 1,
+  "roots": {
+    ".gitignore": 1,
+    "AGENTS.md": 1,
+    "docs": 532,
+    "engine": 30,
+    "scripts": 62
+  },
+  "engine_diff_to_tested_candidate_empty": true,
+  "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "private_or_playable_binary_extensions_in_diff": [],
+  "unexpected_path_roots": [],
+  "whitespace_diff_check": "PASS",
+  "scope": "17 authored pose PNGs, pose header/data/implementation and visual hooks in10 existing engine files;62 Floor1 production/observer/contract/test helpers;532 source-backed art/evidence/contract/governance docs;AGENTS and5 private-file ignore lines. Existing single backlog-table-row replacement is state reconciliation; historical checkpoints/STOP evidence remain present. No unrelated engine/maps/balance/controls/save changes.",
+  "file_list_SHA256": "9fca9b371538f51ce8a239b8ac53154d3d6649104486bd9cd087472f8454d79f",
+  "stat_list_SHA256": "b072207ce99623967860f27a99f5b8b0900ad0f6705574103eb7b26e71c60e9f"
+}

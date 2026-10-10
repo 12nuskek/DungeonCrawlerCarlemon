@@ -20,6 +20,7 @@ def main():
     route=module('howler_route',ROOT/'scripts/floor1/howler-continuation-route.py')
     state=module('howler_state',ROOT/'scripts/floor1/howler-continuation-state.py')
     audit=module('howler_audit',ROOT/'scripts/floor1/howler-continuation-audit.py')
+    events=module('howler_events',ROOT/'scripts/floor1/howler-continuation-events.py')
     extra=module('howler_pack',ROOT/'scripts/floor1/guard-choice-offline.py')
     source_status=git('status','--porcelain');tested=git('rev-parse','HEAD')
     assert git('merge-base',BASE,tested)==BASE
@@ -107,6 +108,27 @@ def main():
     s=fixture
     for pos,mapnum,facing in [([4,4],1,2),([37,26],0,2)]+[([x,26],0,4) for x in range(38,52)]+[([51,27],0,1)]:s=walk(s,mapnum,pos,facing)
     assert s['counter']==95
+    # Independent exact source-event early win and intermediate earned growth.
+    # No emulator state, RNG search or critical-dependent conservative plan.
+    mixed,early,event_proof=events.fixture(state,s);mixed=sync(mixed);early=sync(early)
+    state.validate('howler',s,early);native_transition(s,early,9)
+    event_negatives=0
+    for i,offset,value in ((0,52,8),(0,52,0),(0,53,39),(0,54,1),
+                           (1,52,1),(1,53,41),(1,54,1),(0,80,1),(0,36,0),(1,84,9)):
+        bad=copy.deepcopy(early);mutate_member(bad,i,lambda c:c.__setitem__(offset,value))
+        reject(lambda:state.validate('howler',s,sync(bad)));event_negatives+=1
+    for key in ('saved','flags','logical','vars'):
+        bad=copy.deepcopy(early);raw=bytearray(bad[key]);raw[0]^=1;bad[key]=bytes(raw)
+        reject(lambda:state.validate('howler',s,sync(bad)));event_negatives+=1
+    (d/'source-event-proof.json').write_text(json.dumps(event_proof,indent=2,sort_keys=True)+'\n')
+    (d/'mixed-growth-state.bin').write_bytes(extra.pack(mixed))
+    (d/'early-victory-state.bin').write_bytes(extra.pack(early))
+    (d/'fixture.bin').write_bytes(extra.pack(mixed))
+    for option,name in (('--mixed-growth','mixed-growth-reader'),('--medicine','medicine-mixed')):
+        with (d/(name+'.log')).open('w') as log:
+            subprocess.run([str(d/'inert'),option],cwd=d,env=runner.ENV,stdout=log,stderr=subprocess.STDOUT,check=True)
+    (d/'fixture.bin').write_bytes(extra.pack(fixture))
+    print('PASS independent source-event early victory CarlPP7; mixed Carl36/Donut30 native reader/medicine',flush=True)
     phase_pairs=[];before=s;after=copy.deepcopy(before)
     for i in range(2):
         def earned(c):
@@ -207,7 +229,8 @@ def main():
         generated_C_SHA256=sha(d/'observer.c'),observer_SHA256=sha(d/'observer'),inherited_generated_source_SHA256=inherited,
         Guard_Save_SHA256=state.old.SAVE_SHA,original_operands_unchanged=True,verified_copy_SHA256=sha(d/'howler-input-verified-copy.sav'),
         native_ABI=abi,binding_count=len(binding),build_verification=game,tool_pin_count=len(tool_pins),source_audit=source_audit,
-        policy_vectors=len(vectors),stateful_flow=counts,native_foes_and_Save_log_SHA256=sha(d/'foes.log'),native_transaction_log_SHA256=sha(d/'medicine.log'),native_grown_transaction_log_SHA256=sha(d/'medicine-grown.log'),native_single_stock_medicine_cases=8,
+        policy_vectors=len(vectors),stateful_flow=counts,source_event_fixture=event_proof,source_event_negative_cases=event_negatives,native_mixed_growth_reader_cases=6,
+        native_foes_and_Save_log_SHA256=sha(d/'foes.log'),native_transaction_log_SHA256=sha(d/'medicine.log'),native_grown_transaction_log_SHA256=sha(d/'medicine-grown.log'),native_mixed_transaction_log_SHA256=sha(d/'medicine-mixed.log'),native_single_stock_medicine_cases=12,
         production_preinit_negatives=production_negatives,executable_hash_gate_negatives=5,dependency_hash_gate_negatives=len(dependency_paths)+2,dependency_pins=dependency_pins,runtime_actions_rejected=6,whole_route_budget=final_budget,capture_ledger=captures,
         storage=storage,reservation_bytes=reservation,available_bytes=free,runtime_storage_admitted=free>=reservation,shortfall_bytes=max(0,reservation-free),
         offline_output_bytes=used,independent_private_backup='unapproved/unverified',

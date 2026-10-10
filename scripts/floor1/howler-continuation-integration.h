@@ -65,6 +65,23 @@ static void howlerSaveIntegration(void) {
  for(unsigned i=0;i<9;i++){memory[0x600+i]^=1;assert(!hc_text_exact(&mock,0x600,0x700));memory[0x600+i]^=1;checks++;}
  closeFiles();printf("PASS native same-file Save stateful readiness/edge handoffs checks=%u two confirmations plus menu entry\n",checks);
 }
+static void howlerMixedGrowthIntegration(void) {
+ howlerSetup(0,1,32,30,1);unsigned h,s;struct CoSnapshot observed;
+ assert(!gc_read(&mock,&observed));
+ assert(walk_u16(observed.party+88)==36&&walk_u16(observed.party+188)==30);
+ unsigned char carl[100],donut[100];co_canonical(observed.party,carl);co_canonical(observed.party+100,donut);
+ assert(resource_word(carl+36)==691&&resource_word(donut+36)==1001);
+ assert(observed.party[84]==10&&observed.party[184]==10);
+ assert(!memcmp(observed.saved,co.last.saved,600)&&observed.savedCount==2);
+ memory[co.a.mons+36]=carl[52];memory[co.a.mons+37]=carl[53];
+ put16(co.a.mons+2*88+44,30);assert(!gc_decision(&mock,&h,&s)&&!h&&s);
+ put16(co.a.mons+40,9);assert(gc_decision(&mock,&h,&s)==1);
+ put16(co.a.mons+40,32);put16(co.a.mons+2*88+40,12);assert(gc_decision(&mock,&h,&s)==2);
+ put16(co.a.mons+2*88+40,30);
+ for(unsigned bad=29;bad<=31;bad+=2){put16(co.a.mons+2*88+44,bad);assert(gc_decision(&mock,&h,&s)==103);}
+ put16(co.a.mons+2*88+44,30);put16(co.a.mons+44,37);assert(gc_decision(&mock,&h,&s)==103);
+ closeFiles();puts("PASS mixed earned growth native party/foe reader cases=6 Carl36/Donut30 exact stats; saved party unchanged");
+}
 static void howlerTerminalIntegration(void) {
  const unsigned reasons[]={87,87,88,89,89,89,89,89,87};
  const unsigned expectedAdvances[]={0,0,0,1,1,0,1,1,0};

@@ -50,26 +50,44 @@ def audit():
                 if i-1==nature%5:stats[i]=stats[i]*90//100
         foes.append(dict(species=species,personality=personality,nature=nature,stats=stats))
     assert [f['stats'][:4] for f in foes]==[[30,14,9,9],[25,9,12,16]],foes
-    # All ordinary outgoing rolls are bounded below by 85. Four traces cover a
-    # single Potion replacing either early SPARK, or either later support turn.
+    growth=(ROOT/'engine/src/data/pokemon/experience_tables.h').read_text()
+    assert '#define EXP_MEDIUM_FAST(n) (CUBE(n))' in growth
+    assert '#define EXP_MEDIUM_SLOW(n) ((6 * CUBE(n)) / 5 - (15 * SQUARE(n)) + (100 * n) - 140)' in growth
+    assert '.growthRate = GROWTH_MEDIUM_SLOW,' in re.search(r'\[SPECIES_MACHOP\]\s*=\s*\{(.*?)\n    \}',info,re.S)[1]
+    assert '.growthRate = GROWTH_MEDIUM_FAST,' in re.search(r'\[SPECIES_MEOWTH\]\s*=\s*\{(.*?)\n    \}',info,re.S)[1]
+    exp=[]
+    for f in foes:
+        block=re.search(r'\[SPECIES_'+f['species']+r'\]\s*=\s*\{(.*?)\n    \}',info,re.S)[1]
+        exp.append((int(re.search(r'\.expYield\s*=\s*(\d+)',block)[1])*9//7//2)*150//100)
+    assert exp==[64,57]
+    def threshold(i,l):return max(0,6*l**3//5-15*l*l+100*l-140) if i==0 else l**3
+    assert threshold(0,11)==742 and threshold(1,10)==1000
+    # All ordinary outgoing rolls are bounded below by 85. Eight traces cover
+    # no Potion or one replacing either early SPARK/later support turn.
     # This is a monotone integer bound, never enumeration of RNG states/seeds.
     strike_bounds=[]
     for potion_turn in (None,0,1,2,3,4,5,6):
-        hp=[30,25];stage=0;strikes=0;trace=[]
+        hp=[30,25];stage=0;strikes=0;trace=[];xp=[627,937];levels=[10,9];given=set()
         for turn in range(7):
             before=hp.copy()
             if turn<2 and turn!=potion_turn:
                 both=all(hp)
                 for i,defense in enumerate((foes[0]['stats'][5],foes[1]['stats'][5])):
-                    if hp[i]:hp[i]=max(0,hp[i]-damage(14,defense,9,50,spread=both))
+                    if hp[i]:hp[i]=max(0,hp[i]-damage(14 if levels[1]==9 else 15,defense,levels[1],50,spread=both))
             target=0 if hp[0] else 1
             if hp[target]:
-                attack=25 if hp[0] else 27
-                hp[target]=max(0,hp[target]-damage(attack,(9,12)[target],10 if target==0 else 11,40,stage));strikes+=1
+                assert xp[0]<742 and levels[0]==10 # final foe's XP is not yet earned
+                hp[target]=max(0,hp[target]-damage(25,(9,12)[target],levels[0],40,stage));strikes+=1
+            earned=[]
+            for i in range(2):
+                if not hp[i] and i not in given:
+                    given.add(i);earned.append(exp[i]);xp=[v+exp[i] for v in xp]
+            for i in range(2):
+                while xp[i]>=threshold(i,levels[i]+1):levels[i]+=1
             if hp[0] and turn%3==0:stage=max(-6,stage-1)
-            trace.append(dict(turn=turn,before=before,after=hp.copy(),Carl_attack_stage=stage))
+            trace.append(dict(turn=turn,before=before,after=hp.copy(),Carl_attack_stage=stage,earned_XP=earned,party_XP=xp.copy(),party_levels=levels.copy()))
             if not any(hp):break
-        assert not any(hp) and strikes<=7,(potion_turn,hp,trace)
+        assert not any(hp) and strikes<=7 and xp==[748,1058] and levels==[11,10],(potion_turn,hp,trace)
         strike_bounds.append(dict(Potion_turn=potion_turn,strikes=strikes,trace=trace))
     both=max(damage(14,17,9,35,critical=True,stab=True,roll=100)+damage(9,17,9,35,stab=True,roll=100),
              damage(14,17,9,35,stab=True,roll=100)+damage(9,17,9,35,critical=True,stab=True,roll=100))

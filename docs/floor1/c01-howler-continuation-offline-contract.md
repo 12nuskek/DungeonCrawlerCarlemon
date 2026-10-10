@@ -36,8 +36,17 @@ WEAKEN on turns0/3/6 and Tackle otherwise. Exact staged integer divisions,
 critical multiplication, STAB, spread and85–100% damage rounding yield the
 16/12/9/12 one-critical-plus-ordinary envelopes. Repeated WEAKEN has integer
 plateaus. Neither simultaneous critical survival nor favorable outgoing criticals
-is assumed. Conservative85% outgoing traces use6 STRIKEs without an early
-Potion, at most7 if either early SPARK is replaced; no RNG state enumeration.
+is assumed. Conservative85% outgoing traces require a seven-STRIKE bound,
+including the no-Potion case and either replaced early SPARK. Howler's64XP takes
+Carl627→691, below the742XP level11 threshold: Carl remains level10/attack25
+against surviving Scuttler. Scuttler's57XP then takes Carl to748/level11. Donut
+937→1001 reaches level10 after Howler falls, producing the legal mixed maxHP
+36/30 before Carl grows. No RNG state enumeration or critical-dependent planning.
+The exact terminal range is Carl STRIKE1–7PP, with all other move/PP/full-state
+constraints unchanged. A separate source-event critical-win fixture demonstrates
+T0 spread SPARK10/8 plus one Carl STRIKE fainting Howler, then T1 single-target
+SPARK18 fainting Scuttler17HP before Carl acts; Carl retains7PP. It establishes
+validator coverage, not a favorable-critical runtime requirement.
 
 Only earned Howler2137 is newly set. The expected recovered endpoint is
 map35,1 `(4,5)`, section214, facing1; Carl/Donut levels11/10, XP748/1058,
@@ -98,8 +107,14 @@ engine rebuild or edit. New observer identities belong to this offline proposal.
 Opening claims/processes5/5 and cold2/2 remain unchanged; opening STOP82/90/104/101
 and cold1 STOP96 remain failures. Historical V01 six baseline/four candidate and
 STOP117 before expectedB8402, later separate1/1 pair, ordinary recovery5 and C01a
-actual5/3/1 versus claims6/3/1 remain separate. Active-pose remains compiled/offline
-checked without runtime acceptance. PR114/PR115 heads and issue116 remain untouched.
+actual5/3/1 versus claims6/3/1 remain separate. The later scoped V011/1 runtime
+pair and PR114's merged accepted active poses retain their [technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md).
+PR114 merged atbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7; this accepted scope does
+not recover the original six/four oracle or imply broader human motion/full-floor
+acceptance. Withdrawn live hints/STOP124 remain failed, separately from accepted
+PR115 optional Journal notes: [battle regression](../evidence/floor1/c01a/journal-admission-r3-20261010/README.md)
+and [field probe](../evidence/floor1/c01a/journal-field-r1-20261010/README.md), merged
+atb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. PR114/PR115 heads and issue116 remain untouched.
 The original runtime oracle/legacy inputs remain missing. FullC01/patrol/opening,
 both orders/optional skips/human/full-floor gates remain open; G02 is not ready.
 The accepted nine-district Floor1 plan remains authoritative and unchanged.

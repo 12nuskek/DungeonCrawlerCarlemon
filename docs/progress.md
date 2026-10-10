@@ -1,8 +1,9 @@
 ## Current C01 Howler continuation — offline only; runtime CLOSED
 
 Merged-main base65bc4073d140b9d58bf1b83bd33235e28c972b23. One separately named
-Howler continuation proposal/observer/aggregate passed offline at clean tested
-source90f6dd0ba755e6cce7fac7155ab8a585349cc6df; new draft review only. Read [the contract](floor1/c01-howler-continuation-offline-contract.md).
+Grouped offline corrections gate Carl growth on earned XP, require seven STRIKEs,
+and accept the source-supported terminal7PP/mixed36/30 case. The prior aggregate
+source90f6dd0ba755e6cce7fac7155ab8a585349cc6df is superseded; clean correction verification pending. Read [the contract](floor1/c01-howler-continuation-offline-contract.md).
 No runtime freeze/claim/emulator/gameplay/Save/cold/merge/compression/deletion or
 backup transfer is authorized in this increment. Review and verified storage are
 next dependencies. Guard-only PR117 acceptance stands; fullC01/patrol/opening/

@@ -36,7 +36,7 @@ def validate(name,before,after,positions=()):
         base.validate(name,dict(before,logical=logical),after)
         assert before['map']==[35,0] and before['position']==[51,27]
         pp=[fields.decode(after['party'][100*i:100*(i+1)])['fields']['PP'] for i in range(2)]
-        assert 1<=pp[0][0]<=6 and pp[0][1:]==[40,0,0]
+        assert 1<=pp[0][0]<=7 and pp[0][1:]==[40,0,0]
         assert pp[1][0] in ((0,1) if positions else (0,)) and 35<=pp[1][1]<=40 and pp[1][2:]==[0,0]
     else:base.validate(name,before,after)
     assert after['section']==before['section'] and after['facing']==before['facing']

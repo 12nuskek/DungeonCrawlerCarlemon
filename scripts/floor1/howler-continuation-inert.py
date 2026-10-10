@@ -23,4 +23,6 @@ def generate(observer,fixture):
          'medicineUse(swapped,recipient,quantity);gc.stage=1;assert(gc_observe(&mock,mockPixels,240,160)==104);gc.stage=0;closeFiles();')
     once('twoSuccessive();puts("PASS medicine native UI/animation/WAIT lifecycle mocks: 8 cases + 2 successive uses, all stages observed");',
          '(void)twoSuccessive;puts("PASS Howler medicine native UI/animation/WAIT lifecycle: 4 single-stock cases; duplicate/exhausted use forbidden");')
+    once('int main(int argc,char**argv){',
+         'int main(int argc,char**argv){\n if(argc==2&&!strcmp(argv[1],"--mixed-growth")){howlerMixedGrowthIntegration();return 0;}')
     return code

@@ -1,5 +1,10 @@
 # Howler continuation offline review
 
+The receipt below is the preserved prior aggregate at90f6dd0b. Its premature
+Carl growth/six-STRIKE calculation and upper6PP terminal assertion were
+superseded by the [grouped offline correction](../howler-continuation-offline-r2-20261010/README.md).
+The original JSON stays unchanged as historical evidence, not current admission.
+
 The separately named proposal and observer passed the complete offline aggregate
 at clean source `90f6dd0ba755e6cce7fac7155ab8a585349cc6df`, based on merged main
 `65bc4073d140b9d58bf1b83bd33235e28c972b23`. Runtime remains CLOSED: zero new
@@ -50,8 +55,12 @@ not actual output; no freeze/claim is admitted.
 [Fresh retained-evidence readback](retained-evidence-verification.json) verified
 368 existing manifest entries/7897609761 bytes unchanged. Guard input/copy hash
 remains `b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf`.
-Opening5/5 and cold2/2 remain unchanged; all historical STOPs, original missing
-oracle/legacy inputs and active-pose runtime gap remain unchanged. PR114/115/117
+Opening5/5 and cold2/2 remain unchanged; historical V01 six/four and STOP117
+remain failed, while the later [scoped runtime pair1/1 and PR114 technical closure](../../v01/new-input-pair-20261010/closure.md)
+remain accepted. [PR115 Journal battle notes](../../c01a/journal-admission-r3-20261010/README.md)
+and its [field probe](../../c01a/journal-field-r1-20261010/README.md) remain accepted;
+withdrawn live hints/STOP124 remain distinct failures. Original missing oracle/
+legacy inputs and broader motion/full-floor gates remain open. PR114/115/117
 were already merged under earlier scoped authorities; their branches and issue116
 are untouched. FullC01/patrol/opening/both-orders/skips/human/full-floor gates remain
 open; G02 is not ready. The accepted Floor1 plan remains byte-identical.

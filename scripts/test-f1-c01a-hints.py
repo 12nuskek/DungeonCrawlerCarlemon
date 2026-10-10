@@ -42,7 +42,7 @@ def check():
     helper=controller[controller.index('static const u8 *MoveSelectionGetHint(u16 move)\n{'):]
     helper=helper[:helper.index('\n}')]
     assert set(re.findall(r'case (MOVE_\w+):',helper))=={'MOVE_DCC_STRIKE','MOVE_DCC_BRACE','MOVE_DCC_SPARK','MOVE_DCC_WEAKEN'}
-    assert 'default:\n        return NULL;' in helper and not re.search(r'(?<![=!<>])=(?!=)',helper)
+    assert 'default: return NULL;' in helper and not re.search(r'(?<![=!<>])=(?!=)',helper)
     refresh=r'            // Refresh only when crossing authored/native label contexts.\n            if \(\(MoveSelectionGetHint\(moveInfo->moves\[previousCursor\]\) != NULL\)\n             != \(MoveSelectionGetHint\(moveInfo->moves\[gMoveSelectionCursor\[gActiveBattler\]\]\) != NULL\)\)\n                MoveSelectionDisplayPPString\(\);\n'
     normalized,n=re.subn(refresh,'',controller);assert n==4
     normalized=normalized.replace('    u8 previousCursor = gMoveSelectionCursor[gActiveBattler];\n','')

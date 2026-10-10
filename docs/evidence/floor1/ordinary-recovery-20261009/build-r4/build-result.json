@@ -1,0 +1,17 @@
+{
+  "source": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "engine_tree": "76001ee128785714b7c15aef6d9c95630587d0a9",
+  "ROM_SHA256": "ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461",
+  "ELF_SHA256": "6e56b32192e1a861b39c70e62bb5c43e762b9f5cc8ce0389d3cb494c3ee6dde6",
+  "ROM_size": 16777216,
+  "ELF_size": 56822428,
+  "build_log_SHA256": "08092d8f4152f8cb601e378f252b75b9ab8cd3b224b214837b8c3d515b8cd377",
+  "compilers": {
+    "agbcc": "0eb17d598f1e7318a1ad7aa9864480fcc8d30d29c3a855d7f43c01909277158f",
+    "old_agbcc": "e3dc2daec27cf4bd23172905631c3937e0eba0c7cb2bcfdce2264559e7535f24",
+    "agbcc_arm": "20c9d2f83f43a67c44eb6b16240a1702d5eb6d8fe1d1feebc3e04373b7d32f19"
+  },
+  "original_tool_identity": false,
+  "build_attempts": 1,
+  "build_exit": 0
+}

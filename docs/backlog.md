@@ -1,3 +1,21 @@
+## Current C01a Journal checkpoint — prebuild STOP, no runtime claim
+
+Source/offline-tested e99f05a03411ed0913230f3f583a759600da1a9f withdraws battle
+hints and adds optional native Journal notes.768 source paths/font widths pass;
+no compiled/runtime notes acceptance. Isolated preparation stops before make:
+geometry generation replaces205 accepted art cells in3 maps because new build
+helper omitted reviewed art overlay. No ROM/ELF/freeze/claim9/emulator/retry.
+Exact archive comparison separates unrelated archive EOL export conversions.
+Unapplied art-overlay proposal handles217 placements/12 overlaps against immutable
+base cells; not executed. Complete original build-dependent checks not run.
+Actual counts5/2/7,consumed6/2/8,Journal probes0 unchanged. All old claims/STOPs/
+Saves preserved. Next: review/verify complete generation with accepted art and
+pinned private build inputs in separate preparation; then new build/freeze/claim9
+full baseline4 regression,conditional separate field probe. No strict waivers.
+Evidence docs/evidence/floor1/c01a/journal-notes-20261010/README.md.
+Publish scoped draftPR115/open issue116 checkpoint and stop review,no merge/
+backup/Library retry/private raw publication. Earlier bodies historical.
+
 ## Current C01a Journal increment — source proof; one full regression authorized
 
 Review from9ff9426b accepts three-file withdrawal and optional field Journal notes.

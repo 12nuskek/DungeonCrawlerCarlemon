@@ -71,7 +71,14 @@ def prepare():
     dependencies={p.relative_to(ROOT).as_posix():sha(p) for p in (ROOT/'scripts').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
     tool_records=Path('/workspace/scratch/ordinary-recovery-tooling-r3-20261009')
     tooling={n:sha(tool_records/n) for n in ['agbcc-identity.json','libmgba-identity.json','readiness.json']}
-    write(OUTPUT/'freeze.json',dict(contract='NEW INPUT visual pair, not historical oracle/legacy acceptance',preparation_source=git('rev-parse','HEAD'),cases=cases,dependencies_SHA256=dependencies,tool_records_SHA256=tooling,original_Save= str(SEED),original_Save_SHA256=SAVE_SHA,policy='fortify',output=str(OUTPUT),pair_storage_required_bytes=pair_budget,available_at_freeze_bytes=available,first_failure_terminal=True,historical_executions=[6,4],ordinary_recovery_processes=5,new_execution_limits=[1,1],private_retention='Local only; no verified independent backup; no Library attempt'))
+    agbcc=json.loads((tool_records/'agbcc-identity.json').read_text());lib=json.loads((tool_records/'libmgba-identity.json').read_text())
+    tool_files={r['path']:r['SHA256'] for r in agbcc['compilers']}
+    tool_files[agbcc['GCC_path']]=agbcc['GCC_SHA256']
+    tool_files.update({r['resolved_path']:r['SHA256'] for r in lib['resolved_dependency_hashes']})
+    tool_files[lib['path']]=lib['SHA256']
+    for path,digest in tool_files.items():assert sha(path)==digest,path
+    assert agbcc['source_commit']=='da598c1d918402c42c0c0d7128ba14567f3175e9' and not agbcc['original_tool_identity_claimed']
+    write(OUTPUT/'freeze.json',dict(contract='NEW INPUT visual pair, not historical oracle/legacy acceptance',preparation_source=git('rev-parse','HEAD'),cases=cases,dependencies_SHA256=dependencies,tool_records_SHA256=tooling,tool_files_SHA256=tool_files,original_Save= str(SEED),original_Save_SHA256=SAVE_SHA,policy='fortify',output=str(OUTPUT),pair_storage_required_bytes=pair_budget,available_at_freeze_bytes=available,first_failure_terminal=True,historical_executions=[6,4],ordinary_recovery_processes=5,new_execution_limits=[1,1],private_retention='Local only; no verified independent backup; no Library attempt'))
     print('PASS new-input pair frozen; zero emulator invocations')
 
 def execute(case):
@@ -79,6 +86,7 @@ def execute(case):
     freeze=json.loads((OUTPUT/'freeze.json').read_text());out=prepared(case)
     assert sha(out/'identity.json')==freeze['cases'][case]
     for name,digest in freeze['dependencies_SHA256'].items():assert sha(ROOT/name)==digest,name
+    for name,digest in freeze['tool_files_SHA256'].items():assert sha(name)==digest,name
     identity=json.loads((out/'identity.json').read_text())
     for name,digest in identity['files_SHA256'].items():assert sha(out/name)==digest,name
     build=MAIN_BUILD if case=='baseline' else OUTPUT/'candidate-build';engine=build/'source/engine'

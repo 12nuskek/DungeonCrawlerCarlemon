@@ -1,0 +1,109 @@
+{
+  "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+  "all_17_compiled_graphics_exact": true,
+  "exact_pointer_table": true,
+  "records": [
+    {
+      "index": 0,
+      "source": "engine/graphics/dcc/carl/back.png",
+      "native_address": 149153060,
+      "packed_actual_SHA256": "35400a0f2b2657e33ee7d9cb964bec35fc7ffa7243f5ee396a4aec13379bee4b"
+    },
+    {
+      "index": 1,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-anticipation.png",
+      "native_address": 149155108,
+      "packed_actual_SHA256": "4a56806297d5034b4eac81e92b1fcd6c58d8a1b9c3babc9b9f0c0f4768f7ae02"
+    },
+    {
+      "index": 2,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-contact.png",
+      "native_address": 149157156,
+      "packed_actual_SHA256": "9ac754e023690bdbbe3c9a2f906dee5ddf131e8f5c9814a97e2fe66b807164c7"
+    },
+    {
+      "index": 3,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/carl/strike-recovery.png",
+      "native_address": 149159204,
+      "packed_actual_SHA256": "b3ec16a7a406bc662c370885575f310a25128d8f8297be8d6899f37d51482c69"
+    },
+    {
+      "index": 4,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/carl/brace-set.png",
+      "native_address": 149161252,
+      "packed_actual_SHA256": "13b02efc242213f1d892e29df87b6dc8bda480ff094e5b4f514a118c6f4e1a08"
+    },
+    {
+      "index": 5,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/carl/brace-hold.png",
+      "native_address": 149163300,
+      "packed_actual_SHA256": "05181801258066983cfe986f986d4bfbef3fca21f5ee3e2dfb90671ff781d546"
+    },
+    {
+      "index": 6,
+      "source": "engine/graphics/dcc/donut/back.png",
+      "native_address": 149165348,
+      "packed_actual_SHA256": "36c86e485be2df66f6fde757c10b2a73ee5e25f0408c0f00437b97956b26d338"
+    },
+    {
+      "index": 7,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-anticipation.png",
+      "native_address": 149167396,
+      "packed_actual_SHA256": "67f8416659552b2d305078bf2c73edd95036938984879b6e698d3633727a0f25"
+    },
+    {
+      "index": 8,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-cast.png",
+      "native_address": 149169444,
+      "packed_actual_SHA256": "2f81a48538c28548d547cd32100ba964d812421c7a0ec20a3bb0cc9fec145199"
+    },
+    {
+      "index": 9,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/spark-recovery.png",
+      "native_address": 149171492,
+      "packed_actual_SHA256": "bde5e49555320f07ef549024b4373e6f51b89a4b3502a404dac9ff8c33a69e7e"
+    },
+    {
+      "index": 10,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-preparation.png",
+      "native_address": 149173540,
+      "packed_actual_SHA256": "4821a3223935f523e4ffad5915e556e47a118471949a44c3dedea6a5dc3c56c2"
+    },
+    {
+      "index": 11,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/donut/weaken-release.png",
+      "native_address": 149175588,
+      "packed_actual_SHA256": "7942741503a783889aa1cc7257e9efb32359a82695a982a4949a2072952e6d55"
+    },
+    {
+      "index": 12,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/warden/idle-runtime-lift8.png",
+      "native_address": 149177636,
+      "packed_actual_SHA256": "fe44f9c2f5de6dc2f6263df0835f460e483e26b628182149c93572a65e40d1f1"
+    },
+    {
+      "index": 13,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/warden/windup-runtime-lift8.png",
+      "native_address": 149179684,
+      "packed_actual_SHA256": "6f6c5a55a3fc174786005923451a01d9ac37bdfcb6621a6fba84272cba0f9a7f"
+    },
+    {
+      "index": 14,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/warden/hold-runtime-lift8.png",
+      "native_address": 149181732,
+      "packed_actual_SHA256": "d7ed6925b095dd335dcb69adcacea051c7d9aeb15abe0cf813bc39d1a63771c8"
+    },
+    {
+      "index": 15,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/warden/slam-runtime-lift8.png",
+      "native_address": 149183780,
+      "packed_actual_SHA256": "9b2a02ca98decbd928e6cc8088493fddd93a487f473b2a0470af3c2c19b945ea"
+    },
+    {
+      "index": 16,
+      "source": "docs/art-references/native-battle-animation-20261007/frames/warden/recovery-runtime-lift8.png",
+      "native_address": 149185828,
+      "packed_actual_SHA256": "8f84e3a3124413f747cdb9e160b8f6a20a62b844c7af776bd9b29b6de4f42e77"
+    }
+  ]
+}

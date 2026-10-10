@@ -1,0 +1,179 @@
+{
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "actual_endpoint": {
+    "Potion": 1,
+    "Scrap": 2,
+    "count": 2,
+    "counter": 78,
+    "facing": 1,
+    "map": [
+      35,
+      1
+    ],
+    "money": 3640,
+    "party": [
+      {
+        "PP": [
+          8,
+          40,
+          0,
+          0
+        ],
+        "experience": 627,
+        "friendship": 81,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          36,
+          36,
+          25,
+          17,
+          14,
+          12,
+          14
+        ],
+        "level": 10,
+        "moves": [
+          355,
+          356,
+          0,
+          0
+        ],
+        "species": 66,
+        "status": 0
+      },
+      {
+        "PP": [
+          2,
+          40,
+          0,
+          0
+        ],
+        "experience": 937,
+        "friendship": 75,
+        "held_item": 0,
+        "hp_maxhp_attack_defense_speed_spatk_spdef": [
+          28,
+          28,
+          14,
+          13,
+          23,
+          14,
+          14
+        ],
+        "level": 9,
+        "moves": [
+          357,
+          358,
+          0,
+          0
+        ],
+        "species": 52,
+        "status": 0
+      }
+    ],
+    "position": [
+      4,
+      5
+    ],
+    "saved_count": 2,
+    "section": 214
+  },
+  "actual_verdict": {
+    "PASS": true,
+    "PID": 180192,
+    "Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+    "all_raw_native_frames": true,
+    "battle_attempts": 0,
+    "battle_frames": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "deferred_frames": 1533,
+    "field_frames": 511,
+    "frames": 2044,
+    "helper": "db5dc5565291ba8122916ca2275ba9b32a91ef4c",
+    "independent_backup_verified": false,
+    "mode": "cold",
+    "ordinal": 2,
+    "runtime_log_SHA256": "b7e3d8a70626ef2372d77488910e1d6744b1a7a1ce9faf6c950a55a32d5cf4a4",
+    "state_verification": {
+      "PASS": true,
+      "Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+      "TV_START": false,
+      "TV_WATCH": true,
+      "all300_flags_source_derived": true,
+      "all_decoded_fields_exact": true,
+      "disk_checked_against_original_saved_snapshot": {
+        "PASS": true,
+        "all14_sector_checksums": true,
+        "full_live_disk_party_count_counter_flags_vars_resources_legalfield": true
+      },
+      "native_canonical_resources_exact": true,
+      "operands_unchanged": true,
+      "original_snapshot_SHA256": "1d05b2037b0c226b70d27223d8cc63fae96cc49c74ab9ab878f8d5d2e3489b32",
+      "section_and_facing_exact": true
+    },
+    "wall_seconds": 5.476908643991919
+  },
+  "all14_sector_checksums_PASS": true,
+  "all_flags": {
+    "actual_RAM_flags_SHA256": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "actual_TV_START": false,
+    "actual_TV_WATCH": true,
+    "all300_bytes_compared": true,
+    "bit": 2,
+    "byte": 274,
+    "derived_RAM_flags_SHA256": "501d500e847afac65274496ae69280d7cf02948d57fb7cda6a8cff2aa75f9d29",
+    "only_changed_flag": 2193,
+    "original_TV_START": false,
+    "original_TV_WATCH": false,
+    "original_disk_flags_SHA256": "b6ea71c0f813fe5214a27eb9447a58fc2923fb9940e23d93e1af3a9a168703b5",
+    "original_disk_unchanged": true
+  },
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "claim_SHA256": "d81bba49ae670d7e7117230e4c6087e7595116ea8dc3da573082f714ac8ca92b",
+  "cold1_retroactive_PASS": false,
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "engine_changed": false,
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "freeze_SHA256": "4e9c74c128ba5d5276c1234f86b7edf2587fd85bde6503288327d4bcb30430a3",
+  "full_flag_operands_retained": true,
+  "full_patrol_C01_opening_oracle_legacy_human_full_floor_acceptance": false,
+  "libmGBA_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "movement_battle_healing_Save": false,
+  "no_new_execution_authority": true,
+  "observer_C_SHA256": "fc1921fbc412271d83c9b5c79ca24f39516c2a3f6a3e683d780b0cfb6b25a7b9",
+  "observer_binary_SHA256": "6a7f40fb2fa055eb8be957e7a2a59a0aecadda9ce09f88b43239fff56b98bedf",
+  "offline_tested_commit": "c997a640c7ee5bc7bd1686dc65b61a70d34e29bb",
+  "opening_replay": false,
+  "original_Save_bytes_unchanged": true,
+  "original_snapshot_bytes_unchanged": true,
+  "preservation": {
+    "Library_failed_backup_downloads": 1,
+    "Library_failed_uploads": 5,
+    "all127_entries_rehashed": true,
+    "bytes": 4247172620,
+    "cold1_STOP96_SHA256": "82ce9db25cbed4fe9ab25343e898fa82700fdd06abb19ecd4e74de848d94fe47",
+    "cold1_claim_and_process_original": true,
+    "cold1_original_failure_remains": true,
+    "cold_claims_processes_now": [
+      2,
+      2
+    ],
+    "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+    "new_transfers": 0,
+    "opening_remains": [
+      5,
+      5
+    ],
+    "original_bytes_recovered": 0
+  },
+  "private_sector_ledger_SHA256": "1f86f59aa5c25b76fc7bf8a89b746fc6873b2f375376413b3290d46d224bce2f",
+  "published_frozen_executed_helper": "db5dc5565291ba8122916ca2275ba9b32a91ef4c",
+  "retry": false,
+  "reviewed_opening5_publication": "fb259f2addc71598e1fafffcf2d95d39b5d848ce",
+  "route_SHA256": "d75f3b8943f7a4b1fddb7c363750fffcb32e94fd1a1823391f558d98f1f00b72"
+}

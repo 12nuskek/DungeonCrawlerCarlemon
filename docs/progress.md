@@ -1,3 +1,26 @@
+## Current C01 cold2 checkpoint — explicit native Continue PASS; review only
+
+One Continue-only cold2/PID180192 completed2044nativeframes,511field/1533deferred,
+zero encounters/result0. Full14-sector original-disk verification and all decoded
+RAM fields PASS under explicit TV_WATCH2193 set expectation, including all flags/
+party/count/checksum/vars/canonical resources/counter/map/position/section/facing.
+Original Saveb88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf
+and snapshot remain unchanged. Cold1 STOP96 is unchanged FAIL, not retroactive
+PASS. No opening replay/movement/battle/healing/Save/game rebuild/retry/merge.
+Opening5/5,cold2/2 actual claims/processes. Offline9490negatives at clean
+c997a640c7ee5bc7bd1686dc65b61a70d34e29bb; published/frozen/executed helper
+db5dc5565291ba8122916ca2275ba9b32a91ef4c. Actual evidence
+ docs/evidence/floor1/c01/cold2-continue-r1-20261010/README.md.
+All2044 raw frames/indexed PNG/native motion/flag-sector-Save evidence retained;
+full894152512B allocation+256MiB headroom verified. Prior opening5/cold1 127-entry
+manifest rehashed unchanged. Local retention verified, independent backup still
+unverified, Library5+1 failure history untouched. Stop clean/draftPR117 for review;
+no next execution. Main/all69otherheads/issue116/acceptedplan/history preserved.
+Complete patrol/C01/full opening/oracle/legacy/human/branch-order/optional/fullfloor
+acceptance remains open. Earlier preparation/results below are historical.
+
+---
+
 ## Current C01 cold2 — explicitly authorized; preparation only
 
 Independent review accepts publishedfb259f2addc71598e1fafffcf2d95d39b5d848ce as

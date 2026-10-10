@@ -1,0 +1,35 @@
+{
+  "all2044_raw_frames_rehashed": true,
+  "all_entries_readback_verified": true,
+  "available_bytes_after_exports": 6017024000,
+  "available_bytes_at_freeze": 6255329280,
+  "bytes": 241387974,
+  "cold_allocation_bytes": 894152512,
+  "cold_directory_bytes": 237821167,
+  "entries": 41,
+  "full_allocation_plus_headroom_bytes": 1162587968,
+  "independent_backup_verified": false,
+  "local_only": true,
+  "manifest_SHA256": "d7d0812f74d672a50cb6239b660b289ea06deaeee1a54b30b0cfa54206e00aea",
+  "preservation": {
+    "Library_failed_backup_downloads": 1,
+    "Library_failed_uploads": 5,
+    "all127_entries_rehashed": true,
+    "bytes": 4247172620,
+    "cold1_STOP96_SHA256": "82ce9db25cbed4fe9ab25343e898fa82700fdd06abb19ecd4e74de848d94fe47",
+    "cold1_claim_and_process_original": true,
+    "cold1_original_failure_remains": true,
+    "cold_claims_processes_now": [
+      2,
+      2
+    ],
+    "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+    "new_transfers": 0,
+    "opening_remains": [
+      5,
+      5
+    ],
+    "original_bytes_recovered": 0
+  },
+  "private_retention_option": "Separately authorized private object-store transfer or user-controlled download, followed by verified readback; neither performed or guaranteed."
+}

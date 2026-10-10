@@ -1,0 +1,10 @@
+{
+  "PASS": true,
+  "archive_bytes": 30256565,
+  "verified_entries": 19,
+  "build_and_failed_check_receipts_included": true,
+  "ROM_ELF_retained_privately_only": true,
+  "full_snapshot_retained_separately": true,
+  "independent_backup": false,
+  "upload_attempted": false
+}

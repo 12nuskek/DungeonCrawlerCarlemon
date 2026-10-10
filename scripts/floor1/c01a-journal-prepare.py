@@ -13,8 +13,10 @@ def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT,text=True).strip(
 def write(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
 def prepare():
     assert not git('status','--porcelain') and not (OUT/'freeze.json').exists() and not (OUT/'STOP.json').exists()
-    revision=git('rev-parse','HEAD');engine=OUT/'candidate-build/source/engine';elf=engine/'pokeemerald.elf'
-    assert (OUT/'candidate-build/tested-commit.txt').read_text().strip()==revision
+    helper_revision=git('rev-parse','HEAD');engine=OUT/'candidate-build/source/engine';elf=engine/'pokeemerald.elf'
+    revision=(OUT/'candidate-build/tested-commit.txt').read_text().strip()
+    assert git('rev-parse',revision+':engine')==git('rev-parse',helper_revision+':engine')
+    subprocess.run(['git','diff','--quiet',revision,helper_revision,'--','scripts/floor1/generate-live-opening.py','scripts/floor1/live-navigation.py','scripts/floor1/journal-combat-notes.py'],cwd=ROOT,check=True)
     assert json.loads((OUT/'candidate-build/result.json').read_text())['exit']==0
     old=json.loads((OLD/'freeze.json').read_text());cert=json.loads(CERT.read_text())
     assert cert['PASS'] and sha(CERT)=='2f03fb8b091b2a714ada82becf444c7e7219c244d392b9e740bfc063a88bc95c'
@@ -63,8 +65,17 @@ def prepare():
     for n,h in cert['reference_stream_SHA256'].items():assert sha(OLD/'baseline'/n)==h;shutil.copyfile(OLD/'baseline'/n,out/('expected-'+n))
     ident['files_SHA256']={p.name:sha(p) for p in out.iterdir() if p.is_file() and p.name!='identity.json'};write(out/'identity.json',ident)
     dependencies={p.relative_to(ROOT).as_posix():sha(p) for p in (ROOT/'scripts').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
-    storage=dict(old['storage']);st=os.statvfs(OUT);assert st.f_bavail*st.f_frsize>=storage['pair_total_reserved_bytes']
+    storage=dict(old['storage']);st=os.statvfs(OUT)
+    # The original20GiB pair envelope remains. No new baseline will execute:
+    # retain that fixed existing case, reserve a complete10GiB candidate case.
+    # All original per-file/frame/log/capture bounds remain unchanged.
+    retained_bytes=sum(p.stat().st_size for p in OLD.rglob('*') if p.is_file())
+    candidate_reserved=storage['pair_total_reserved_bytes']//2
+    assert retained_bytes+candidate_reserved<=storage['pair_total_reserved_bytes']
+    assert st.f_bavail*st.f_frsize>=candidate_reserved
     freeze=dict(helper_commit=revision,source_checkpoint=revision,base=old['base'],tested=revision,cases={'candidate':sha(out/'identity.json')},Save_path=str(seed),Save_SHA256=sha(seed),route_SHA256=sha(out/'input.route'),dependencies=dependencies,tool_files=old['tool_files'],storage=storage,retained_baseline_certificate_SHA256=sha(CERT),observer_admission=admission,observer_source_SHA256=sha(OUT/'observer.c'),observer_binary_SHA256=sha(OUT/'observer'),counts_before={'actual_baseline':5,'actual_candidate':2,'actual_total':7,'consumed_baseline':6,'consumed_candidate':2,'consumed_total':8},claim9={'case':'candidate','attempt':3,'process_if_launched':8},full_pixels_without_masks=True,first_failure_stop=True,no_Save=True,conditional_field_probe_separate=True)
+    freeze['helper_commit']=helper_revision
+    freeze['remaining_reservation_check']={'original_pair_envelope_bytes':storage['pair_total_reserved_bytes'],'retained_baseline_fixed_bytes':retained_bytes,'new_candidate_reserved_bytes':candidate_reserved,'available_bytes':st.f_bavail*st.f_frsize,'no_new_baseline_allocation':True,'all_original_per_file_and_frame_bounds_unchanged':True}
     freeze['observer_admission_expected']=admission_expected
     write(OUT/'freeze.json',freeze);print('PASS: actual committed build/ELF/Save/scoped callbacks/full references and executable verified; claim9 frozen; no emulator')
 if __name__=='__main__':prepare()

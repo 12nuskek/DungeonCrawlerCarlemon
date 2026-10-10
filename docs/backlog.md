@@ -1,3 +1,23 @@
+## Current C01a Journal art correction — built, source-reference gate blocked
+
+One committed build at4a92a9de70848b9d7275f9f255bb0d2f53232ab8 succeeds. Reviewed
+art217/12/205 exact immutable projection/full1358 entries/twice committed generation
+and3 local pinned multiboot inputs pass. All11734 tracked files exact after build;
+native ELF Journal literals/source768 paths/fonts pass. ROM79a0ed76...1c29246,
+ELF7895d09e...222536d; recovered compiler identity is not historical original.
+Historical checker unchanged. Build-dependent old source diff rejects only two
+previously accepted main Warden text blocks at DCC_Boss/scripts.inc (e5032830).
+That reference mismatch exceeds reviewed art/Journal exceptions; no waiver.
+Exact two-block/main immutable projection proposal UNAPPLIED, decision requested.
+All other legacy paths/files/blocks/control flow and crawler sources exact.
+No freeze/claim9/emulator/baseline replay/field probe/rebuild. Counts actual5/2/7,
+consumed6/2/8,Journal0 unchanged; source build success is not runtime acceptance.
+Next: reconcile exact two accepted narrative blocks, complete original checks,
+reuse compiled build then separately named freeze/claim9 full strict regression.
+Evidence docs/evidence/floor1/c01a/journal-art-r2-20261010/README.md.
+Issue116 unchanged after denial; publish draftPR115 review only,no merge/backup/
+Library retry/private raw payload. Earlier bodies historical.
+
 ## Current C01a reviewed art preparation correction — claim9 gated
 
 Review accepts correction from d8574c72; continue one committed build/regression

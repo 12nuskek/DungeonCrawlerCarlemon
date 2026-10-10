@@ -1,0 +1,20 @@
+{
+  "PASS": false,
+  "phase": "Build-dependent historical navigation source gate",
+  "original_checker_unchanged": true,
+  "compiled_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "old_reference": "ce43420b1c76210f0fa4aaee18c0e195b9354b2d",
+  "integrated_main": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "changed_file": "engine/data/maps/DCC_Boss/scripts.inc",
+  "exact_changed_blocks": [
+    "DCC_Boss_Text_Intro",
+    "DCC_Boss_Text_Prepared"
+  ],
+  "all_other_blocks_and_control_flow_identical": true,
+  "current_file_exact_integrated_main": true,
+  "accepted_change_origin": "e5032830",
+  "approved_art_and_Journal_projections_do_not_cover_this_difference": true,
+  "no_projection_applied": true,
+  "no_freeze_or_claim_or_emulator": true,
+  "no_game_build_retry": true
+}

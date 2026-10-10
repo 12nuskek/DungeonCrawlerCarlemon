@@ -1,0 +1,14 @@
+{
+  "exit": 0,
+  "tested_commit": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "original_tool_identity_claimed": false,
+  "build_log_SHA256": "71d08ecfbfabb6b08a67928f1758fee23c2ca99ac905993cd3e45c55ff2c418f",
+  "actual_outputs": {
+    "pokeemerald.gba": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+    "pokeemerald.elf": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d"
+  },
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "game_build_attempts": 1,
+  "runtime_attempts": 0,
+  "full_navigation_gate_passed": false
+}

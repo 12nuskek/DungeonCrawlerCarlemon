@@ -1,0 +1,19 @@
+{
+  "PASS": true,
+  "actual_ELF_literals": [
+    {
+      "label": "DCC_Live_Journal_Text_CombatPrompt",
+      "source_text": "Read combat notes?$",
+      "compiled_SHA256": "6a489fc180fb18a212108b1ee10b19f030015c6a666fa2f9c5840b84e9b663ce",
+      "byte_count": 19,
+      "actual_ELF_literal_exact": true
+    },
+    {
+      "label": "DCC_Live_Journal_Text_CombatNotes",
+      "source_text": "STRIKE: Select a target.\\nPP means uses remaining.\\pBRACE raises the user's Defense.\\nIt only boosts the user.\\pSPARK hits both foes.\\nIt normally has two uses.\\pWEAKEN lowers both foes' Attack.\\nThe guide restores CARL and DONUT.$",
+      "compiled_SHA256": "f9f75471781c03989d3ed0110a13c7ac73204bb23de720b82e2984652a1766ef",
+      "byte_count": 224,
+      "actual_ELF_literal_exact": true
+    }
+  ]
+}

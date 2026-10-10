@@ -1,0 +1,44 @@
+--- /dev/null
++++ b/scripts/floor1/journal-legacy-reference-equivalence.py
+@@ -0,0 +1,28 @@
++"""Proposed exact projection of two previously accepted native narrative blocks."""
++from pathlib import Path
++import hashlib,re,subprocess
++BASE='ce43420b1c76210f0fa4aaee18c0e195b9354b2d'
++MAIN='bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7'
++FILE='engine/data/maps/DCC_Boss/scripts.inc'
++LABELS=('DCC_Boss_Text_Intro','DCC_Boss_Text_Prepared')
++def git(root,*args):return subprocess.check_output(['git',*args],cwd=root)
++def verify(root):
++    names=['engine/data/maps/DCC_'+s for s in ('Entrance','Vestibule','Service','Corridor','Boss','Exit')]
++    def tree(rev):
++        return dict((line.split('\t')[1],line.split('\t')[0]) for line in git(root,'ls-tree','-r',rev,'--',*names).decode().splitlines())
++    old,current=tree(BASE),tree('HEAD');assert old.keys()==current.keys()
++    assert [n for n in old if old[n]!=current[n]]==[FILE]
++    before=git(root,'show',BASE+':'+FILE).decode();actual=(root/FILE).read_text()
++    assert actual==git(root,'show',MAIN+':'+FILE).decode()==git(root,'show','HEAD:'+FILE).decode()
++    def blocks(raw):
++        starts=list(re.finditer(r'^(\w+)::?\s*$',raw,re.M))
++        return {m[1]:raw[m.start():starts[i+1].start() if i+1<len(starts) else len(raw)] for i,m in enumerate(starts)}
++    a,b=blocks(before),blocks(actual);assert a.keys()==b.keys()
++    assert tuple(n for n in a if a[n]!=b[n])==LABELS
++    projected=actual
++    for name in LABELS:
++        assert all(line.lstrip().startswith('.string') for line in b[name].splitlines()[1:] if line.strip())
++        assert projected.count(b[name])==1
++        projected=projected.replace(b[name],a[name])
++    assert projected==before
++    return {'PASS':True,'exact_main_narrative_labels':LABELS,'complete_other_legacy_files_and_blocks_exact':True,'whole_file_immutable_base_projection_exact':True,'current_file_SHA256':hashlib.sha256(actual.encode()).hexdigest()}
+--- a/scripts/check-f1-c01a-journal-notes.py
++++ b/scripts/check-f1-c01a-journal-notes.py
+@@ -72,6 +72,10 @@
+         # historical source/geometry/font/dispatch/generation assertion remains.
+         assert source.count("'engine/data/layouts',")==1
+         source=source.replace("'engine/data/layouts',",'')
++        legacy_proof=module('legacyNarrativeEquivalence',ROOT/'scripts/floor1/journal-legacy-reference-equivalence.py').verify(ROOT)
++        assert source.count("['engine/data/maps/DCC_'+s for s in nav.SOURCES]")==1
++        source=source.replace("['engine/data/maps/DCC_'+s for s in nav.SOURCES]","['engine/data/maps/DCC_'+s for s in nav.SOURCES if s!='Boss']")
++
+         oldargv=sys.argv;sys.argv=[str(ROOT/'scripts/check-f1-g01e-navigation.py'),'--build',str(build)]
+         try:exec(compile(source,str(ROOT/'scripts/check-f1-g01e-navigation.py'),'exec'),{'__file__':str(ROOT/'scripts/check-f1-g01e-navigation.py'),'__name__':'__main__','notes':notes})
+         finally:sys.argv=oldargv

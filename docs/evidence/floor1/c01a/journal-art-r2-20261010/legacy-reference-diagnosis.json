@@ -1,0 +1,13 @@
+{
+  "PASS": true,
+  "scope": "Independent diagnosis only; no historical source gate waiver or runtime admission",
+  "identical_legacy_paths_no_deletions": true,
+  "only_remaining_legacy_file_difference": "engine/data/maps/DCC_Boss/scripts.inc",
+  "two_text_blocks": [
+    "DCC_Boss_Text_Intro",
+    "DCC_Boss_Text_Prepared"
+  ],
+  "current_file_exact_accepted_main": true,
+  "all_other_legacy_source_files_exact_ce43420b": true,
+  "accepted_text_origin": "e5032830315e162d65dbe66cf698153333b60618"
+}

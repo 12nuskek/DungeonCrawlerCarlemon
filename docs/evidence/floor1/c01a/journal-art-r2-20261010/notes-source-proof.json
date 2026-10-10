@@ -1,0 +1,54 @@
+{
+  "PASS": true,
+  "no_gameplay": true,
+  "old_navigation_checker_unchanged": true,
+  "all_legacy_live_bytes_exact_after_new_branch_projection": true,
+  "existing_checker_original_assertions_passed_with_projection": false,
+  "Journal_flag_combinations": 256,
+  "Yes_No_B_source_paths": 768,
+  "all_objective_rules_quest_order_and_closure_preserved": true,
+  "no_state_resource_reward_writes": true,
+  "native_font_lines": [
+    {
+      "text": "Read combat notes?",
+      "native_font_width": 102
+    },
+    {
+      "text": "STRIKE: Select a target.",
+      "native_font_width": 126
+    },
+    {
+      "text": "PP means uses remaining.",
+      "native_font_width": 127
+    },
+    {
+      "text": "BRACE raises the user's Defense.",
+      "native_font_width": 170
+    },
+    {
+      "text": "It only boosts the user.",
+      "native_font_width": 126
+    },
+    {
+      "text": "SPARK hits both foes.",
+      "native_font_width": 112
+    },
+    {
+      "text": "It normally has two uses.",
+      "native_font_width": 130
+    },
+    {
+      "text": "WEAKEN lowers both foes' Attack.",
+      "native_font_width": 171
+    },
+    {
+      "text": "The guide restores CARL and DONUT.",
+      "native_font_width": 182
+    }
+  ],
+  "window_pixels": 216,
+  "generator_reproducible": true,
+  "three_battle_files_exact_baseline": true,
+  "legacy_scripts_unchanged": true,
+  "accepted_art_layout_equivalence": null
+}

@@ -1,3 +1,28 @@
+## Current C01 opening — terminal STOP82; cold blocked
+
+Draft PR117 source checkpoint/tested helper c3db41b2c9a3e25220ee13b5531d83f0bf11ef19
+was committed/pushed before the sole native opening. Base/main b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae;
+compiled game4a92a9de, engine0fedd142f43f136ceee189c54101b095fc88f495 reused and
+verified, zero rebuilds. Frozen observer stopped82 at absolute native frame1538,
+BOOT, encounters0. Six decoded checksums/reencoding valid; unused slots contain
+native MAIL_NONE=0xFF at offset85, conflicting with frozen all-zero100-byte unused
+slot assertion. Offline mock empty-slot fixture missed that native representation.
+Read-only diagnosis only: assertion/controller/contract untouched, no retry.
+Opening processes/claims1/1; cold0/0, unadmitted; no encounter/manual Save/disk
+sector validation/cold acceptance. Native Save remains allFF. No observer running.
+Actual1538-frame motion and failure/title/menu PNGs retained; full FFV1 RGB
+roundtrip and complete local manifest readback verified. Selected actual captures
+and sanitized result at docs/evidence/floor1/c01/uninterrupted-unprepared-r1-20261010/.
+Draft PR117 remains for review, no merge. Hosted checks absent, not passing.
+Next dependency is review of this source/native unused-slot mismatch; source
+correction/new contract/another process require separate authorization.
+C01a actual5/3/1=9, consumed6/3/1=10; original V016/4 STOP117 visual8536 beforeB8402,
+later accepted1/1, ordinary5, Library5+1 unknown cause/zero recovered original bytes
+and historical archives unchanged. Independent backup unverified; private upload
+unapproved/unattempted; no issue116 write. Engine/accepted plan/historical contracts
+unchanged. C01/G02/human/legacy/original oracle/full-floor gates stay open.
+Earlier current bodies below are historical authorities for their scope.
+
 ## Current C01 uninterrupted unprepared opening — source offline admission PASS
 
 Same-task continuation after responsive09:33:28UTC executor checkpoint authorizes

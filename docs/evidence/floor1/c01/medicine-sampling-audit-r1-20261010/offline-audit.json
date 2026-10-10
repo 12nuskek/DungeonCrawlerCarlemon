@@ -1,0 +1,183 @@
+{
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "actual_frozen_route_cut_occurrence_proven": false,
+  "aggregate_artifact_hashes_verified_after_split_fixtures": true,
+  "blocked_next_runtime_reason": "The frame API does not provide callback atomicity; source-correct split states fail current strict guard. Keep runtime blocked until reviewed narrow PC/task/source-byte transaction admission or a valid observation exclusion proof.",
+  "cold_claims_processes": [
+    0,
+    0
+  ],
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "early_prepare_gate_negative_cases": 2,
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "exclusive_claims": 0,
+  "final_aggregate_receipt_SHA256": "0dea4362d99a2dc9da119155e827eef9bbd04ee2391608b8ef5741937d61bcfc",
+  "full_aggregate": {
+    "PASS": true,
+    "acknowledgement_audit_negatives": 11,
+    "available_bytes": 7121137664,
+    "binding_count": 90,
+    "duplicate_ack_no_input_cases": 10,
+    "executable_negatives": 5,
+    "full_aggregate": true,
+    "gameplay_processes": 0,
+    "generated_host_SHA256": "56c5f71914f2ecccb96d56eae2da0ae2e54b2769a80383a26bbd4dcbe897b153",
+    "inherited_generated_base_SHA256": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+    "medicine_UI_animation_mock_cases": 8,
+    "medicine_full_snapshot_byte_corruptions": 65760,
+    "medicine_policy_vectors": 74124,
+    "medicine_snapshot_corruptions_by_stage": {
+      "native_HP_animation": 32880,
+      "native_WAIT": 32880
+    },
+    "native_acknowledgement_lifecycle": true,
+    "native_complete_state": {
+      "gameplay_processes": 0,
+      "key_independent_resource_cases": 30,
+      "map_temp_lifecycle": 10,
+      "old_runtime_success": false,
+      "phase_chain_both_validators": 10,
+      "phase_corruptions": 60,
+      "retained_STOP82_SHA256": "bb19567c351ad53172065082d3c1e1617e428d852a4452e563d18372cc3159ef",
+      "retained_snapshot_both_validators": 1,
+      "save_disk_cold_cases": 30,
+      "source_rewards": {
+        "boss": {
+          "EV": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "XP": 226,
+          "money": 360
+        },
+        "guard": {
+          "EV": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "XP": 132,
+          "money": 320
+        },
+        "howler": {
+          "EV": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "XP": 121,
+          "money": 360
+        },
+        "trial": {
+          "EV": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "XP": 96,
+          "money": 320
+        }
+      },
+      "unsupported_Pokerus_strict_rejections": 4,
+      "unused_slot_mutation_cases_both_validators": 412,
+      "walking_native_transitions": 265
+    },
+    "native_removal_compaction_cases": 4,
+    "observer_executable_SHA256": "0a9ed4fba40cd7978667be792faa5ae20cc7e1c02687931454f9a2828d604429",
+    "premature_printing_no_input_cases": 10,
+    "readiness_or_lifecycle_negative_cases": 210,
+    "reservation_bytes": 10000408128,
+    "retained_STOP104_read_only": {
+      "full_3324_bytes_equal": true,
+      "healed_snapshot_SHA256": "7791205600e745fb27138ccf66d8171cbf9c4bda48acfd172640b4b97976ec3f",
+      "terminal_snapshot_SHA256": "7791205600e745fb27138ccf66d8171cbf9c4bda48acfd172640b4b97976ec3f"
+    },
+    "runtime_storage_admitted": false,
+    "source_verification": {
+      "engine_manifest_entries_rehashed": 11734,
+      "new_game_builds": 0,
+      "retained_manifest_SHA256": "c4ee6f12491985cc4009ed7999356e22f6971231107251c69e6f1e33a748c3b4"
+    },
+    "stateful_successive_Potion_uses": 2,
+    "storage_shortfall_bytes": 2879270464
+  },
+  "gameplay_processes": 0,
+  "generated_observer_SHA256": "56c5f71914f2ecccb96d56eae2da0ae2e54b2769a80383a26bbd4dcbe897b153",
+  "libmgba_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "main_base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "native_sampling_admitted": false,
+  "observer_executable_SHA256": "0a9ed4fba40cd7978667be792faa5ae20cc7e1c02687931454f9a2828d604429",
+  "offline_audit_PASS": true,
+  "opening_claims_processes": [
+    3,
+    3
+  ],
+  "private_audit_receipt_SHA256": "5c1f7ef7ff62948f21446bef97829d72711d51273018011e16b21a88c407cdb3",
+  "private_binary_proof_SHA256": "f091267711fc95a189bad6b35a50e49c9a1e1793dec6b57c945b2a647531f2df",
+  "proof_class": "static actual-binary/API reasoning; no gameplay or cycle-phase execution proof",
+  "runtime_freeze": false,
+  "source_files_SHA256": {
+    "scripts/floor1/medicine-sampling-inert.h": "3ee748cd6102b096e148c406b5939cca4424454b507efe6e520397568a28080e",
+    "scripts/floor1/medicine-sampling-proof.py": "88acbae86249323adbe067c428cd7dafe7542d119e697a1df8298987ffc1d37e",
+    "scripts/test-f1-c01-guard-choice-r2.py": "bd0af5a1fd1a53da9bdb9bb8b5c99c0365f7a50ca2f5e64669cfb162a31f6441",
+    "scripts/test-guard-choice-sampling-offline.py": "a89b21073cf5b2ba83f3ef1a1ed66d2dd7d0705679017996fb7416bdc1d7d8d9"
+  },
+  "source_start_commit": "66a07ff6ccd77f2f4a4c2889364c657bfae45cd1",
+  "split_boundary_fixtures": 1280,
+  "stable_full_aggregate_PASS": true,
+  "summary": {
+    "exit-published-before-cleanup": {
+      "fixtures": 8,
+      "guard_reasons": {
+        "107": 8
+      }
+    },
+    "fade-active-before-close-func": {
+      "fixtures": 8,
+      "guard_reasons": {
+        "107": 8
+      }
+    },
+    "party-copy-before-CB2": {
+      "fixtures": 1248,
+      "guard_reasons": {
+        "0": 628,
+        "106": 468,
+        "82": 152
+      }
+    },
+    "printer-created-before-restored-func": {
+      "fixtures": 8,
+      "guard_reasons": {
+        "107": 8
+      }
+    },
+    "printer-inactive-before-task-destroy": {
+      "fixtures": 8,
+      "guard_reasons": {
+        "107": 8
+      }
+    }
+  },
+  "unchanged_controller_files_SHA256": {
+    "scripts/floor1/guard-choice-r2-host.py": "5e71f460420eef5f4734c90883db679b2a7e1e808720ee31e3d49d1cc2cbb4f2",
+    "scripts/floor1/guard-choice-r2-inert.c": "4947e26743acd0a1a8a2f40f414bfc0017dddc5a9fca077451df52a87bdc1171",
+    "scripts/floor1/guard-choice-r2-medicine.h": "636141f640eeb14f83e235fbcae3863c82c078cffd0ed5156ac2868421744af6",
+    "scripts/floor1/guard-choice-r2-state.py": "bd96208c62f574fccd52030ef00ac65e8d8a6b59fc8e3718ad7144f15eb15283",
+    "scripts/floor1/guard-choice-route.py": "0c7bfd1b9952f048d6e059e45fc036f4af87a8c8af5b79fcccba32bc42c5cc82"
+  }
+}

@@ -1,3 +1,42 @@
+## Current C01 native sampling audit — offline PASS; runtime unadmitted
+
+Independent offline continuation from66a07ff6ccd77f2f4a4c2889364c657bfae45cd1;
+sole writer/draftPR117/no merge. Retained ELF/libmGBA instructions and measured
+host layout prove frame returns do not enforce game callback completion. Five
+source-native split sequences remain eligible by API; actual frozen-route cuts
+are NOT proven. Printer-created/old-restored func, inactive-printer/live wait-task,
+active-fade/old-close func, wordwise party copies and exit-CB2/before-cleanup
+covered by1280 independent fixtures:628 unchanged byte states accepted;468
+source permutation states rejected106,152 torn actor states rejected82 and32
+other source intermediate states rejected107. Full existing aggregate PASS,
+including one freshA WAIT/per-use reset/ownership/HP/PP/inventory/all negatives
+and limits; original aggregate artifact/dependency hashes verified after isolated
+split fixtures. Native medicine/host/state/ABI/inert/policy/routes unchanged.
+No guard weakening/party masks/checksum bypass/PC-only exception. New wrapper
+preparation gate fails before any freeze: native_sampling_admitted=false.
+Static actual-binary/API proof and synthetic fixtures only; no native runtime
+acceptance, new actual Save/cold/screenshot/motion or game rebuild. Observer
+56c5f719/0a9ed4fb,game4a92a9de/tree0fedd142,ROM79a0ed76/ELF7895d09e and exact
+tools/manifests unchanged; recovered compiler differs from historical originals.
+Base/mainb51e27d9. Full reservation10000408128; measuredfree7119978496,
+shortfall2880429632. No runtime freeze/output/claim/process; opening3/3,cold0/0.
+All old artifacts/STOPs/history/counts preserved. New157 private audit entries/
+9763076 bytes readback verified locally,manifest07c50d58f0fefd8c903ec749b0f9ad5a45d98b2b48892b286bec3270f74a69e4.
+Independent backup remains unverified; Library uploads not approved/exhausted5+1
+unknowncause/zero originalbytes unchanged. Kurt's2026-10-10 13:28:29UTC approval
+is for NEXT separately frozen local lossless preservation of TWO recordings'
+RGB copies, every decoded frame verified before replacement. No compression/
+deletion/consolidation/upload performed here. Finish/review audit first; then
+separately freeze that preservation operation. Gameplay additionally requires
+reviewed narrowly bound PC/task/full source-byte transaction admission OR valid
+observation exclusion proof plus full storage. Capacity alone cannot admit run.
+Evidence docs/evidence/floor1/c01/medicine-sampling-audit-r1-20261010/README.md.
+No issue116/merge/extra writer/schedule. V016/4 STOP117 visual8536 beforeB8402,
+later accepted1/1,ordinary5,C01aactual5/3/1 andclaims6/3/1,STOP82/90/104 and
+all69 otherheads preserved. Originaloracle/legacy/C01/G02/prepared/human/full-floor
+remain open; accepted nine-district plan unchanged. Earlier bodies are preserved
+historical evidence; their grouped offline PASS does not admit native sampling.
+
 ## Current C01 acknowledgement r2 — offline PASS; storage blocked
 
 Review continuation from2e2ed115e737d2556c8802bce90d2afa19e35707; sole writer,

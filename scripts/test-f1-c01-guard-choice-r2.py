@@ -13,6 +13,7 @@ ROM_SHA='79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246'
 ELF_SHA='7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d'
 DEFAULT=Path('/workspace/scratch/c01-guard-choice-r2-20261010')
 SOURCE_ADMISSION=Path('/workspace/scratch/c01-guard-choice-source-admission-r2-20261010')
+SAMPLING_ADMISSION=Path('/workspace/scratch/c01-medicine-sampling-audit-r1-20261010/sampling-admission.json')
 GiB=1024**3;MiB=1024**2
 ENV=dict(os.environ,LD_LIBRARY_PATH=str(TOOL/'usr/lib/x86_64-linux-gnu'))
 def module(n,p):
@@ -121,6 +122,7 @@ def dependencies():
  return {str(p.relative_to(ROOT)):sha(p) for p in sorted(paths)}
 
 def prepare(out):
+ assert SAMPLING_ADMISSION.exists() and json.loads(SAMPLING_ADMISSION.read_text())['native_sampling_admitted'], 'native frame sampling unadmitted: review instruction-cut PC/task/full-byte transaction evidence before any freeze'
  assert not git('status','--porcelain'),'commit reviewed source/contract before preparing'
  assert not out.exists(),'new separately named preparation only'
  assert shutil.disk_usage(out.parent).free>=reservation(),'full unchanged reservation required before freeze directory or claim'

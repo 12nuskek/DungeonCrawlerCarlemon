@@ -1,3 +1,47 @@
+# C01a diagnostic prefix blocked at baseline launch
+
+The reviewed baseline attempt5 consumed the exclusive claim numbered process6
+at06:07:40 UTC, executionee59501ed95b5d040d80a217aa7b4658273eb727. Launch then
+failed with OS PermissionError13 before the observer started. The empty runtime
+log has no frames/comparisons; no start receipt/diagnostic file/runtime result.
+First-failure STOP is retained. Candidate process7/attempt2 remains unclaimed,
+unstarted and forbidden by the baseline gate. No permission change or retry.
+
+The frozen observer has mode0600; the offline-compiled source binary has0700.
+Both bytes still hashfd4062351cb34c25f4af00a4137d9de935a7a534625ed95ac1d66db35a2c6d34.
+Freeze helper[copyfile](../../../../../scripts/floor1/c01a-prefix-prepare.py)
+copies bytes without retaining executable permissions. Offline host compile/
+fixtures and579 resumed hashes passed, but executable-mode validation was absent.
+This proves a launch-preparation defect. It adds no rendering/controller/IRQ/DMA
+chronology, timing cause, candidate acceptance or game remedy. The original
+candidate STOP124 and all historical evidence remain untouched.
+
+[Sanitized launch proof](launch-stop-proof.json) separates claimed attempts from
+actual emulator processes: claims5 baseline/1 candidate/6 total; actual emulator
+runs4 baseline/1 candidate/5 total. Process6 is the consumed claim number, not a
+new successfully started emulator. Counts must not advance to planned5/2/7.
+Both real Save copies, original Save, retained builds/reference inputs/tools and
+old failure archives were rechecked byte-exact. No game change/rebuild/full menu
+replay/stepping/input search/strict waiver/Save/merge occurred.
+
+Private launch failure, claims, raw preparation outputs and archive remain local.
+No backup upload is authorized or attempted. No private recovery metadata, Save,
+ROM/ELF/raw streams/full symbols are added to public Git. Existing pre-execution
+archive remains verified. Library five upload and one supported download failure
+history remain unchanged; no independently verified backup. HistoricalV016/4/
+STOP117,new accepted1/1,ordinary recovery5 remain separate.
+
+Next supported action is review of a separately named preparation correction
+that retains executable mode and checks executable permission read-only before
+claim admission, followed by a separate freeze/claim only when authorized.
+Current freeze/consumed claim/STOP must remain immutable. No current claim reuse.
+The paired chronology is blocked because the baseline never ran. Full original
+B/F/E+EOF/2700 acceptance and all broader bounded Floor1 gates are unchanged.
+Publish draftPR115/open issue116 checkpoint and stop for review; writer idle on
+turn end. Previous pre-execution checkpoint below is historical.
+
+---
+
 # C01a safe checkpoint before diagnostic execution
 
 The selected workspace is usable at the06:02 UTC inspection after the reported

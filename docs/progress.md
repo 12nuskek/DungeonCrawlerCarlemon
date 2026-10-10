@@ -1,3 +1,20 @@
+## Current C01a terminal launch checkpoint — baseline claim consumed; no observer start
+
+Reviewed baseline attempt5/process6 claim was consumed at06:07:40 UTC on
+ee59501ed95b5d040d80a217aa7b4658273eb727, then OS PermissionError13 stopped
+launch. Frozen observer0600 versus offline source0700: copyfile preserved bytes
+but lost executable mode. No gameplay/strict runtime comparisons/diagnostic rows.
+Candidate7/attempt2 unclaimed and blocked. No permission change/retry/new freeze.
+Actual emulator counts remain4 baseline/1 candidate/5 total; claimed attempts
+are5/1/6. Preserve distinction and all old STOPs/claims/builds/Saves/Library5+1.
+Paired chronology unavailable; no timing/game remedy or runtime acceptance.
+Next: review separately named executable-mode preparation correction before any
+new freeze/claim; existing consumed claim/STOP immutable. Private evidence stays
+local; backup upload not authorized; no new public private recovery metadata.
+Publish draftPR115/open issue116 and stop idle for review,no merge.
+Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/README.md.
+Earlier authority bodies below are historical.
+
 ## Current C01a safe checkpoint — environment returned; pair unstarted
 
 Status-only steering pauses before execution. Workspace read/hash checks succeed;

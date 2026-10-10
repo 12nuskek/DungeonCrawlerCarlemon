@@ -1,0 +1,726 @@
+{
+  "Library_failures": {
+    "cause": "unknown",
+    "original_bytes_recovered": 0,
+    "supported_existing_backup_downloads": 1,
+    "uploads": 5
+  },
+  "PASS": true,
+  "accounting": {
+    "conservative_net_savings_bytes": 6555025919,
+    "external_audit_reserve_bytes": 134217728,
+    "output_usage_before_removal": {
+      "allocated_bytes": 218963968,
+      "logical_bytes": 218724353
+    },
+    "projected_available_bytes": 13808611328,
+    "raw_allocated_bytes": 6908080128,
+    "raw_logical_bytes": 6907968000
+  },
+  "actual_preservation_failures": 0,
+  "actual_preservation_operation_count": 1,
+  "all_inclusive_cap_bytes": 3758096384,
+  "all_protected_evidence_unchanged": true,
+  "audit_start_commit": "704e5950760551f53be5453515b39914187def42",
+  "automatic_retries": 0,
+  "available_bytes_after_replacement": 13808607232,
+  "both_verification_passes_completed_before_any_removal": true,
+  "codec_settings_searches": 0,
+  "cold_claims_processes": [
+    0,
+    0
+  ],
+  "compress_command": [
+    "/usr/bin/gzip",
+    "-6",
+    "-n",
+    "-c",
+    "--",
+    "ORIGINAL"
+  ],
+  "compressed_bytes": 216182152,
+  "evidence_class": "Actual local lossless reconstruction verification of retained recordings, not new gameplay or independent backup.",
+  "frames": 59965,
+  "full_runtime_storage_capacity_available": true,
+  "gameplay_processes": 0,
+  "gzip_executable_SHA256": "1fdd057912e3808c8cb8fa939bb94fcb27ae9d2961e6b8abbbe7888e63fbc9cc",
+  "gzip_version": "gzip 1.13",
+  "independent_backup_verified": false,
+  "main_base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "medicine_preparation_gate": "closed",
+  "offline_preparation_failure": "Initial middle-bit fixture was decoder-valid and reconstructed identical bytes; retained and corrected to CRC corruption before freezing.",
+  "offline_preparation_failures": 1,
+  "offline_tests": {
+    "PASS": true,
+    "case_count": 36,
+    "cases": [
+      "positive-zlib_blocks",
+      "zlib_blocks-corrupt",
+      "zlib_blocks-truncated",
+      "zlib_blocks-trailing",
+      "zlib_blocks-reordered",
+      "zlib_blocks-missing-frame",
+      "zlib_blocks-extra-frame",
+      "zlib_blocks-missing-file",
+      "positive-gzip_blocks",
+      "gzip_blocks-corrupt",
+      "gzip_blocks-truncated",
+      "gzip_blocks-trailing",
+      "gzip_blocks-reordered",
+      "gzip_blocks-missing-frame",
+      "gzip_blocks-extra-frame",
+      "gzip_blocks-missing-file",
+      "compression-cap-first-failure",
+      "reordered-native-index",
+      "31-chunk-layout-positive",
+      "missing-chunk",
+      "reordered-chunks",
+      "incorrect-dimensions",
+      "complete-removal-receipt-positive",
+      "removal-gate-negative-0",
+      "removal-gate-negative-1",
+      "removal-gate-negative-2",
+      "removal-gate-negative-3",
+      "removal-gate-negative-4",
+      "removal-gate-negative-5",
+      "removal-gate-negative-6",
+      "removal-gate-negative-7",
+      "removal-gate-negative-8",
+      "removal-gate-negative-9",
+      "removal-gate-negative-10",
+      "removal-gate-negative-11",
+      "removal-gate-negative-12"
+    ],
+    "gameplay_processes": 0,
+    "runtime_claims": 0,
+    "standard_codec": "GNU gzip fixed -6 -n",
+    "synthetic_original_retained": true
+  },
+  "opening_claims_processes": [
+    3,
+    3
+  ],
+  "original_bytes": 6907968000,
+  "original_runtime_oracle_and_legacy_inputs": "still missing",
+  "pass1": {
+    "PASS": true,
+    "chunk_count": 31,
+    "chunks": [
+      {
+        "chunk": 0,
+        "compressed_SHA256": "ddbddba160f794f9965302bc86b9a618ca7db92f4c2b671f2eb5a8a134bce30e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "965c6758dd00e22fb74f124712fc6d9c7e424b8b790f0b613f33e888aaa47ce2",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 1,
+        "compressed_SHA256": "a5aa7426d30b1f8c6fe337aa15550aafbf1e7924dca22150ed4793e697f3ff4b",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "1a3a47c8769ed6a4a756bf71125652eb4fe0d05feea4aa7bd3dfa4650e31542a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 2,
+        "compressed_SHA256": "7632f746ecf07b2d7ae24313262014bdabddcce92f96749270fad49b88f09a02",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "229ffe19ac7ada216d8d225e06fd78dac12ec0773b180dfdc30f322d97c6124c",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 3,
+        "compressed_SHA256": "ab254bdd4e892bf0eefacd7f963db71893069de35dca148419589cdc116a9484",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "fa47f096730eb50d7560c999ae87c43c150f9462573bb2eeb7638fed378ed08a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 4,
+        "compressed_SHA256": "210a9f9c2f983dbd2bc78d474b99b1d38afbfecfcf616d3ebfa8df01734c2369",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3952652d0dc963f5f3ea73b7cca0c48210f1e9f85031f5505d646bf08ac4e49d",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 5,
+        "compressed_SHA256": "55a154bf9f780a312bcf0157ca8205d9af60f911777a36eabb4cf1d8c90dabdc",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "f8a0cbc3670b3bbb6e23476f19ffcbf11ff332d0ca7a692f3ad45fed791e04c2",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 6,
+        "compressed_SHA256": "4cbe014d024826098ce0135255b793e31b4d372afde5d9085263dad0f7af5ead",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "36505356be49dd140cede73332fb7e56aee8f96e14baf119a85659046aee2899",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 7,
+        "compressed_SHA256": "29b10125b22c0bb4ab34f95f98b8d634f1757584fd2f8e72c4018caa2d26d694",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "aa536afe159f68a86bc3824765e04e37479c2c46685673134f6f531c499c24ea",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 8,
+        "compressed_SHA256": "4f671b631d843020b55f7d1285e99721969f3ac289570b0c9e0144f0a577f5cd",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "767b6504a1a286db87bc081f206aa3795d84c5e6bc05bcf7ca4fa03fa1796f99",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 9,
+        "compressed_SHA256": "89c42f5531d72f3c32d4697cab586326e838d032dcc01b09401946366503f2c3",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "34b9fe3566f93985115e83b0252760fdf143a12d4854245a2849ffe29c758846",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 10,
+        "compressed_SHA256": "4e573157f6747178c7949a5b343185a75ccc8df127d6ca8ef6213ec40d4d5185",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "5da3109ec98a1a8135c918b291247e6e71a0e5d426beeb5ee99b142869fd3fa3",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 11,
+        "compressed_SHA256": "3fe9e90fc3fa11d3f25e4b613eddbf8e95662b61ee0e2f2a7be5676f618eee03",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "2f06d175dca0da980408ed973c1d2c728301c8e919c9b1e844122ed7bd7aeb84",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 12,
+        "compressed_SHA256": "c41ff55d51ae9a431b5d64bdb8ee870c24c5678f0e74a59707d4b046cae6b0c1",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "c04b4af9ea00414ef58bae060876366770db840fa2e23d006039bcb604ba2371",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 13,
+        "compressed_SHA256": "c9b34eee8777e3aa8aa388eb21792994e090198ccbd88a032e35df86a20dce57",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "83bc98b9d972cdf0ad5af5ad229bd501e18d489784bae798e0196747c03aa46d",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 14,
+        "compressed_SHA256": "7c5867636dc844af87e244bb18274b6a69a0af09fcdf2543583552a77a0b9639",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "77aff19f4bdefce56ce1e6087a2f9f35d5e0f9c75992a204019941f4ff3a325c",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 15,
+        "compressed_SHA256": "12d31c0870a1b3d69361591ad63852d881bd9ff72616617bb2c0bb15c6d832a2",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 1258,
+        "raw_SHA256": "109eec3c9a2a26d3d42a59dec1c7996edc3f9031622de7c0e9a61437a68ed55a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 0,
+        "compressed_SHA256": "ddbddba160f794f9965302bc86b9a618ca7db92f4c2b671f2eb5a8a134bce30e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "965c6758dd00e22fb74f124712fc6d9c7e424b8b790f0b613f33e888aaa47ce2",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 1,
+        "compressed_SHA256": "a5aa7426d30b1f8c6fe337aa15550aafbf1e7924dca22150ed4793e697f3ff4b",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "1a3a47c8769ed6a4a756bf71125652eb4fe0d05feea4aa7bd3dfa4650e31542a",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 2,
+        "compressed_SHA256": "7632f746ecf07b2d7ae24313262014bdabddcce92f96749270fad49b88f09a02",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "229ffe19ac7ada216d8d225e06fd78dac12ec0773b180dfdc30f322d97c6124c",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 3,
+        "compressed_SHA256": "ab254bdd4e892bf0eefacd7f963db71893069de35dca148419589cdc116a9484",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "fa47f096730eb50d7560c999ae87c43c150f9462573bb2eeb7638fed378ed08a",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 4,
+        "compressed_SHA256": "210a9f9c2f983dbd2bc78d474b99b1d38afbfecfcf616d3ebfa8df01734c2369",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3952652d0dc963f5f3ea73b7cca0c48210f1e9f85031f5505d646bf08ac4e49d",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 5,
+        "compressed_SHA256": "55a154bf9f780a312bcf0157ca8205d9af60f911777a36eabb4cf1d8c90dabdc",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "f8a0cbc3670b3bbb6e23476f19ffcbf11ff332d0ca7a692f3ad45fed791e04c2",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 6,
+        "compressed_SHA256": "4cbe014d024826098ce0135255b793e31b4d372afde5d9085263dad0f7af5ead",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "36505356be49dd140cede73332fb7e56aee8f96e14baf119a85659046aee2899",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 7,
+        "compressed_SHA256": "29b10125b22c0bb4ab34f95f98b8d634f1757584fd2f8e72c4018caa2d26d694",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "aa536afe159f68a86bc3824765e04e37479c2c46685673134f6f531c499c24ea",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 8,
+        "compressed_SHA256": "4f671b631d843020b55f7d1285e99721969f3ac289570b0c9e0144f0a577f5cd",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "767b6504a1a286db87bc081f206aa3795d84c5e6bc05bcf7ca4fa03fa1796f99",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 9,
+        "compressed_SHA256": "2cd1dbacbb8b53b18bccc2b32eeb4bd4e2651495dace1ad9aaf039f17a8e7c9e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "d4f1f3a1996d2dd7afd3b4e0ec9bb27687aabc012265f00b30fc323823c21362",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 10,
+        "compressed_SHA256": "e713f81f45955d4cd358104d63e3513a8a3b890d3601d102973e4d9978830660",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3077f957465adb98f8fed8e2d73653ed3e7d29f0de5f08fc13f3a494ee782388",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 11,
+        "compressed_SHA256": "c1d8f7cc77997eed5c8593c15befc19e3aa7c866c387876bcf6b200f27bac69a",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "96270f56e121be0ad46c911d9c47eaf3dc7b4a12e7a65855ed7b0f474a995a4f",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 12,
+        "compressed_SHA256": "11143b0ca198472c868f9c7b67763af6f0f8c7759430b50cc80734a3eebcab1d",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "07ecacf16410729df0adfea7937705c32d2b2b61fe45870fc96588d94ce92842",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 13,
+        "compressed_SHA256": "1794b7d8521594c6cec5aacd987b25b767e89af98d76fdff97718c4fb1d8324e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "927acddf65a7a21208f57f6bc95a64cb9141f5d4d5d9a1be6533c31aaf98d6ab",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 14,
+        "compressed_SHA256": "c7bd6da782cacde9a68217ba6ee74b6f2293de31dacadeb7c07e23f46c960635",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 707,
+        "raw_SHA256": "076a920e337206e2797f57fc1be172437ab8bca30563ee4cdbfc443c57f1985b",
+        "recording": "STOP104"
+      }
+    ],
+    "contract_SHA256": "ca0bfd555ee52349c9a470222c62639283dc01af7b34c410902f34fd95f27975",
+    "decoded_bytes": 6907968000,
+    "decoder": "Python zlib gzip stream",
+    "frame_buffer_bound_bytes": 180736,
+    "frame_comparison_buffer_bound_bytes": 591872,
+    "frames": 59965,
+    "gameplay_processes": 0,
+    "mapping_SHA256": "3fbe0ccd8834c96c992a393b57fca85156b6d7007b6ecfa049d954749b3c9aee",
+    "no_second_full_decoded_copy": true,
+    "originals_retained": true,
+    "runtime_claims": 0,
+    "verification": "pass1-zlib"
+  },
+  "pass2": {
+    "PASS": true,
+    "chunk_count": 31,
+    "chunks": [
+      {
+        "chunk": 0,
+        "compressed_SHA256": "ddbddba160f794f9965302bc86b9a618ca7db92f4c2b671f2eb5a8a134bce30e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "965c6758dd00e22fb74f124712fc6d9c7e424b8b790f0b613f33e888aaa47ce2",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 1,
+        "compressed_SHA256": "a5aa7426d30b1f8c6fe337aa15550aafbf1e7924dca22150ed4793e697f3ff4b",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "1a3a47c8769ed6a4a756bf71125652eb4fe0d05feea4aa7bd3dfa4650e31542a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 2,
+        "compressed_SHA256": "7632f746ecf07b2d7ae24313262014bdabddcce92f96749270fad49b88f09a02",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "229ffe19ac7ada216d8d225e06fd78dac12ec0773b180dfdc30f322d97c6124c",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 3,
+        "compressed_SHA256": "ab254bdd4e892bf0eefacd7f963db71893069de35dca148419589cdc116a9484",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "fa47f096730eb50d7560c999ae87c43c150f9462573bb2eeb7638fed378ed08a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 4,
+        "compressed_SHA256": "210a9f9c2f983dbd2bc78d474b99b1d38afbfecfcf616d3ebfa8df01734c2369",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3952652d0dc963f5f3ea73b7cca0c48210f1e9f85031f5505d646bf08ac4e49d",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 5,
+        "compressed_SHA256": "55a154bf9f780a312bcf0157ca8205d9af60f911777a36eabb4cf1d8c90dabdc",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "f8a0cbc3670b3bbb6e23476f19ffcbf11ff332d0ca7a692f3ad45fed791e04c2",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 6,
+        "compressed_SHA256": "4cbe014d024826098ce0135255b793e31b4d372afde5d9085263dad0f7af5ead",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "36505356be49dd140cede73332fb7e56aee8f96e14baf119a85659046aee2899",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 7,
+        "compressed_SHA256": "29b10125b22c0bb4ab34f95f98b8d634f1757584fd2f8e72c4018caa2d26d694",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "aa536afe159f68a86bc3824765e04e37479c2c46685673134f6f531c499c24ea",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 8,
+        "compressed_SHA256": "4f671b631d843020b55f7d1285e99721969f3ac289570b0c9e0144f0a577f5cd",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "767b6504a1a286db87bc081f206aa3795d84c5e6bc05bcf7ca4fa03fa1796f99",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 9,
+        "compressed_SHA256": "89c42f5531d72f3c32d4697cab586326e838d032dcc01b09401946366503f2c3",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "34b9fe3566f93985115e83b0252760fdf143a12d4854245a2849ffe29c758846",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 10,
+        "compressed_SHA256": "4e573157f6747178c7949a5b343185a75ccc8df127d6ca8ef6213ec40d4d5185",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "5da3109ec98a1a8135c918b291247e6e71a0e5d426beeb5ee99b142869fd3fa3",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 11,
+        "compressed_SHA256": "3fe9e90fc3fa11d3f25e4b613eddbf8e95662b61ee0e2f2a7be5676f618eee03",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "2f06d175dca0da980408ed973c1d2c728301c8e919c9b1e844122ed7bd7aeb84",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 12,
+        "compressed_SHA256": "c41ff55d51ae9a431b5d64bdb8ee870c24c5678f0e74a59707d4b046cae6b0c1",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "c04b4af9ea00414ef58bae060876366770db840fa2e23d006039bcb604ba2371",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 13,
+        "compressed_SHA256": "c9b34eee8777e3aa8aa388eb21792994e090198ccbd88a032e35df86a20dce57",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "83bc98b9d972cdf0ad5af5ad229bd501e18d489784bae798e0196747c03aa46d",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 14,
+        "compressed_SHA256": "7c5867636dc844af87e244bb18274b6a69a0af09fcdf2543583552a77a0b9639",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "77aff19f4bdefce56ce1e6087a2f9f35d5e0f9c75992a204019941f4ff3a325c",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 15,
+        "compressed_SHA256": "12d31c0870a1b3d69361591ad63852d881bd9ff72616617bb2c0bb15c6d832a2",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 1258,
+        "raw_SHA256": "109eec3c9a2a26d3d42a59dec1c7996edc3f9031622de7c0e9a61437a68ed55a",
+        "recording": "STOP90"
+      },
+      {
+        "chunk": 0,
+        "compressed_SHA256": "ddbddba160f794f9965302bc86b9a618ca7db92f4c2b671f2eb5a8a134bce30e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "965c6758dd00e22fb74f124712fc6d9c7e424b8b790f0b613f33e888aaa47ce2",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 1,
+        "compressed_SHA256": "a5aa7426d30b1f8c6fe337aa15550aafbf1e7924dca22150ed4793e697f3ff4b",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "1a3a47c8769ed6a4a756bf71125652eb4fe0d05feea4aa7bd3dfa4650e31542a",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 2,
+        "compressed_SHA256": "7632f746ecf07b2d7ae24313262014bdabddcce92f96749270fad49b88f09a02",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "229ffe19ac7ada216d8d225e06fd78dac12ec0773b180dfdc30f322d97c6124c",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 3,
+        "compressed_SHA256": "ab254bdd4e892bf0eefacd7f963db71893069de35dca148419589cdc116a9484",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "fa47f096730eb50d7560c999ae87c43c150f9462573bb2eeb7638fed378ed08a",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 4,
+        "compressed_SHA256": "210a9f9c2f983dbd2bc78d474b99b1d38afbfecfcf616d3ebfa8df01734c2369",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3952652d0dc963f5f3ea73b7cca0c48210f1e9f85031f5505d646bf08ac4e49d",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 5,
+        "compressed_SHA256": "55a154bf9f780a312bcf0157ca8205d9af60f911777a36eabb4cf1d8c90dabdc",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "f8a0cbc3670b3bbb6e23476f19ffcbf11ff332d0ca7a692f3ad45fed791e04c2",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 6,
+        "compressed_SHA256": "4cbe014d024826098ce0135255b793e31b4d372afde5d9085263dad0f7af5ead",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "36505356be49dd140cede73332fb7e56aee8f96e14baf119a85659046aee2899",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 7,
+        "compressed_SHA256": "29b10125b22c0bb4ab34f95f98b8d634f1757584fd2f8e72c4018caa2d26d694",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "aa536afe159f68a86bc3824765e04e37479c2c46685673134f6f531c499c24ea",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 8,
+        "compressed_SHA256": "4f671b631d843020b55f7d1285e99721969f3ac289570b0c9e0144f0a577f5cd",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "767b6504a1a286db87bc081f206aa3795d84c5e6bc05bcf7ca4fa03fa1796f99",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 9,
+        "compressed_SHA256": "2cd1dbacbb8b53b18bccc2b32eeb4bd4e2651495dace1ad9aaf039f17a8e7c9e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "d4f1f3a1996d2dd7afd3b4e0ec9bb27687aabc012265f00b30fc323823c21362",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 10,
+        "compressed_SHA256": "e713f81f45955d4cd358104d63e3513a8a3b890d3601d102973e4d9978830660",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "3077f957465adb98f8fed8e2d73653ed3e7d29f0de5f08fc13f3a494ee782388",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 11,
+        "compressed_SHA256": "c1d8f7cc77997eed5c8593c15befc19e3aa7c866c387876bcf6b200f27bac69a",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "96270f56e121be0ad46c911d9c47eaf3dc7b4a12e7a65855ed7b0f474a995a4f",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 12,
+        "compressed_SHA256": "11143b0ca198472c868f9c7b67763af6f0f8c7759430b50cc80734a3eebcab1d",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "07ecacf16410729df0adfea7937705c32d2b2b61fe45870fc96588d94ce92842",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 13,
+        "compressed_SHA256": "1794b7d8521594c6cec5aacd987b25b767e89af98d76fdff97718c4fb1d8324e",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 2000,
+        "raw_SHA256": "927acddf65a7a21208f57f6bc95a64cb9141f5d4d5d9a1be6533c31aaf98d6ab",
+        "recording": "STOP104"
+      },
+      {
+        "chunk": 14,
+        "compressed_SHA256": "c7bd6da782cacde9a68217ba6ee74b6f2293de31dacadeb7c07e23f46c960635",
+        "exact_EOF": true,
+        "exact_frame_bytes": true,
+        "frames": 707,
+        "raw_SHA256": "076a920e337206e2797f57fc1be172437ab8bca30563ee4cdbfc443c57f1985b",
+        "recording": "STOP104"
+      }
+    ],
+    "contract_SHA256": "ca0bfd555ee52349c9a470222c62639283dc01af7b34c410902f34fd95f27975",
+    "decoded_bytes": 6907968000,
+    "decoder": "GNU gzip -dc separate process",
+    "frame_buffer_bound_bytes": 180736,
+    "frame_comparison_buffer_bound_bytes": 591872,
+    "frames": 59965,
+    "gameplay_processes": 0,
+    "mapping_SHA256": "3fbe0ccd8834c96c992a393b57fca85156b6d7007b6ecfa049d954749b3c9aee",
+    "no_second_full_decoded_copy": true,
+    "originals_retained": true,
+    "runtime_claims": 0,
+    "verification": "pass2-independent-gzip"
+  },
+  "private_receipts_SHA256": {
+    "offline-tests.json": "5b0d6b9c771037843cb7f16d62f7d5f337449f1788d17a264db1fb8463bf5196",
+    "preservation-contract.json": "ca0bfd555ee52349c9a470222c62639283dc01af7b34c410902f34fd95f27975",
+    "preservation-result-private.json": "652a2ac2638791b9d55ef686260047f23334994e7d65626637592cae011d12ed",
+    "removal-admission-private.json": "eea535b95ab51dd875032fe60a2aba5d5fae4e65abcb2a1d339f0a4b94dfb097",
+    "representation-mapping-private.json": "3fbe0ccd8834c96c992a393b57fca85156b6d7007b6ecfa049d954749b3c9aee",
+    "verification-pass1-private.json": "0e790913662af9ed24a1e816b522a1124f745b45bb6f062c76accbf803a2bf8a",
+    "verification-pass2-private.json": "91fc5b58a31c8e746c3a1ea0767a67ad05da46ed948a982236afb41b4292616d"
+  },
+  "protected_non_RGB_file_count": 139,
+  "python_executable_SHA256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "replaced_file_count": 31,
+  "runtime_claims": 0,
+  "runtime_reservation_bytes": 10000408128,
+  "runtime_sampling_admitted": false,
+  "source_files_SHA256": {
+    "docs/floor1/c01-rgb-preservation-r1-contract.md": "a99c5a4b3e605143cadf483aeb03e983644978b9464bf3f45eb11ca46cfa930a",
+    "scripts/floor1/rgb-preservation.py": "f943f0c1212014b9743da345c42db74b65256ab29e03851f72245524856b7d71",
+    "scripts/preserve-c01-rgb-r1.py": "90e21a1ae181f66a654b2dc68c455dde92fbc898e8c33dea6d33d92fe4ca1461",
+    "scripts/test-rgb-preservation-offline.py": "bc187ab1e4f9ce07e5032bc3c587a1e1cf7d6bb9fa33497523d7c040490d24a7",
+    "scripts/verify-c01-rgb-r1.py": "00e601a175ddff9d9cbc43cdff84f48d64ddd9e6a7a4e33b3715cf534f5a8374"
+  },
+  "source_tested_frozen_commit": "e5073a511b62041f4356932c7fcc3c355cc3ff76",
+  "standard_format": "single-member RFC1952 gzip containing exact original RGB bytes",
+  "uploads": 0,
+  "zlib_version": "1.3.2"
+}

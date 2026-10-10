@@ -1,3 +1,43 @@
+## Current C01 RGB preservation — two full passes; native sampling blocked
+
+Continuation from704e5950760551f53be5453515b39914187def42; sole writer/draftPR117,
+no merge. Separately frozen local operation under Kurt's2026-10-10 13:28:29UTC
+approval; tested/frozen toolinge5073a511b62041f4356932c7fcc3c355cc3ff76, base/main
+b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. Original STOP90 opening2 andSTOP104
+opening3 reconciled:16+15chunks,31258+28707=59965frames,6907968000 raw bytes;
+all original chunk/index hashes matched historical manifests before execution.
+Contractca0bfd555ee52349c9a470222c62639283dc01af7b34c410902f34fd95f27975.
+Fixed locally availableGNUgzip1.13 -6 -n only;31 compressed chunks216182152 bytes.
+BOTH complete streaming passes (Pythonzlib; separate coldprocess GNUgzip) compare
+EVERY decoded frame to retained originals/frozen frame hashes, check all chunk
+hashes/counts/dimensions/order/exact EOF; no second full decoded copy. Only AFTER
+both complete receipts and cap/protected-identity/savings admission replaced
+exactly31 redundant raw files.139 other evidence files unchanged; native indexes/
+timing/chunk boundaries retained. Old manifests/receipts/failures are untouched;
+separate new mapping supplies equivalent local access to historical raw paths.
+Public docs/evidence/floor1/c01/rgb-preservation-r1-20261010/README.md and source
+contract docs/floor1/c01-rgb-preservation-r1-contract.md. Private outputroot
+/workspace/scratch/c01-rgb-preservation-r1-20261010 includesgzip chunks/frame
+ledgers/mapping/full receipts/DECODING.txt.98 indexed entries218729208B verified;
+manifest a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7.
+Logical output218744315/allocated218992640; inclusive353210368 with128MiB audit
+reserve, below3758096384 cap. Offline36 cases pass; one invalid synthetic
+corruption fixture diagnosed/retained/corrected before freeze. Actualpreservation
+operations1/failures0/retries0. No codec search/install/upload/lossy substitution.
+Measuredfree13808525312 covers full10000408128 reservation (including268435456
+headroom), surplus3808117184; fresh publication readback/measurement required.
+Storage capacity is available, native sampling UNADMITTED: medicine preparation
+remains closed pending reviewed narrow PC/task/full source-byte transaction
+correction OR compiled exclusion proof. No game/observer/policy changes/rebuild/
+emulator/new Save/cold/captures/runtimefreeze/claim/process; opening3/3,cold0/0.
+Local preservation is NOT independently verified backup; Library uploads not
+approved/exhausted5+1 unknowncause/zero originalbytes unchanged. All historical
+STOPs/counts/archives, main/all69 otherheads/issue116 remain; no merge/extra writer/
+schedule. V016/4 STOP117 visual8536 beforeB8402,later accepted1/1,ordinary5,
+C01aactual5/3/1 andclaims6/3/1 unchanged. Originaloracle/legacy/C01/G02/prepared/
+human/full-floor open; accepted nine-district plan unchanged. Earlier bodies
+remain historical evidence; their raw representations are now mapped losslessly.
+
 ## Current C01 native sampling audit — offline PASS; runtime unadmitted
 
 Independent offline continuation from66a07ff6ccd77f2f4a4c2889364c657bfae45cd1;

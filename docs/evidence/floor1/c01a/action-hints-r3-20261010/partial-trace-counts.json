@@ -1,0 +1,9 @@
+{
+  "scope": "Read-only structural counts of actual terminal partial stream, not complete EOF/PASS validation",
+  "B": 4337,
+  "F": 4371,
+  "E": 0,
+  "zero_boundary_frames": 34,
+  "typed_finish_missing": true,
+  "candidate_expected_stream_never_created": true
+}

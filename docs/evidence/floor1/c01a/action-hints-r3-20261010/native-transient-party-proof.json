@@ -1,0 +1,9 @@
+{
+  "scope": "Read-only source/actual bytes proof after STOP, not a runtime assertion exemption",
+  "one_physical_frame": 3166,
+  "only_first_mon_secure_region_changed": true,
+  "exact_native_decrypted48_bytes_match_cold_ciphertext": true,
+  "all_other_frames_note": "All other4370 physical frames contain exact cold600 party bytes; final all6 checksum/reencryption valid. Full2700 strict candidate comparisons remain unchanged.",
+  "source": "engine/src/pokemon.c:DecryptBoxMon/EncryptBoxMon/GetMonData",
+  "no_private_keys_or_bytes_published": true
+}

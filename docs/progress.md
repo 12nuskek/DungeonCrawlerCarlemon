@@ -1,3 +1,41 @@
+## Current C01a r3 checkpoint — native route proved; after-Bag STOP122
+
+Parent accepted10 exact input/handoff corrections at d9208aeb. New156-command
+routef03cae6c preserves146 other commands/all assertions/captures/bounds. Actual
+native baseline/candidate handlers compiled offline, full menu path expectations
+pass; each old mistake rejected twice20 cases. Two offline harness bugs preserved.
+Helperd8a40d5144c79d0dcab6c08c240d72cff35e13a3; freeze/execution
+2bc54d5d2c5b961f8fd4cccf313ff02f4a10a89e. Corrected16-slot observer9cbe4761/
+8589d380 unchanged; builds807eeea4/mainbdff4e1a and normal Save53f62dc2 reused,
+all prior57+3472 retained entries exact; no compile/rebuild/reconstruction/V01 replay.
+
+C01a process3/baseline attempt3:24 assertions/6415 absolute/4371 visual/3067 battle;
+first unexpected after-Bag command55 ui wait action0 900 STOP122. Startup/dialogue/
+CarlSTRIKE/target+move cancel/BRACE/Fight→Bag pass; four Carl UI_MOVE assertions,
+zero committed moves/rounds, candidate0. Actual B supplied but Bag persists;
+Bag readiness returned while mainCB2_Bag setup rather than CB2_BagMenuRun. Task
+created before native fade/run setup completes: demonstrated readiness false-
+positive. Exact missed-B cause unresolved; actual newKeys/fade/link-wait edge
+state missing. No retry/Save. Existing guards/strict full2700 unchanged. Next
+review: unapplied stronger verified Bag-run callback plus existing task/fade guard,
+then separately frozen observer/edge-evidence/claims; no route retiming/wait/RNG search.
+
+Actual4371-frame menu/STOP clip, every lossless RGB byte verified; baseline PP/TYPE
+static images inspected, no candidate/glyph/purity/Donut/Summary/depletion runtime
+acceptance. Final600 party/allflags/count2/counter47 exact; one transient physical
+frame is native48-byte decryption, source/bytes proved, no runtime waiver. Post-
+STOP canonical resource context missing; original/copies53f unchanged. Partial
+4337B/4371F/34zero/E0 cannot authorize candidate. Timeline6416 chain/STOP verified.
+Private local archive52869754 bytes/4788 verified entries/d2061de7…59de551;
+separate builds/tools and later metadata; no verified independent backup/transfer.
+Library5+1 failures/unknown cause/zero original bytes unchanged. Counts C01a3
+baselines/0 candidates; oldSTOP121/r2 dialogue122/r3 after-Bag122 distinct.
+HistoricalV01 6/4/STOP117,new1/1,ordinary5 and broader human/legacy/full-floor
+obligations unchanged. Scoped draftPR115 review only,no merge/main/other-head changes.
+Exact identities, native proof, actual captures, blocker and unapplied proposal:
+docs/evidence/floor1/c01a/action-hints-r3-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a r2 checkpoint — slot-count correction passed; dialogue STOP122
 
 Parent accepted two-line16-slot correction at PR115 head554ec015. Applied only

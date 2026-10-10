@@ -1,3 +1,41 @@
+## Current C01a r3 checkpoint — native route proved; after-Bag STOP122
+
+Parent accepted10 exact input/handoff corrections at d9208aeb. New156-command
+routef03cae6c preserves146 other commands/all assertions/captures/bounds. Actual
+native baseline/candidate handlers compiled offline, full menu path expectations
+pass; each old mistake rejected twice20 cases. Two offline harness bugs preserved.
+Helperd8a40d5144c79d0dcab6c08c240d72cff35e13a3; freeze/execution
+2bc54d5d2c5b961f8fd4cccf313ff02f4a10a89e. Corrected16-slot observer9cbe4761/
+8589d380 unchanged; builds807eeea4/mainbdff4e1a and normal Save53f62dc2 reused,
+all prior57+3472 retained entries exact; no compile/rebuild/reconstruction/V01 replay.
+
+C01a process3/baseline attempt3:24 assertions/6415 absolute/4371 visual/3067 battle;
+first unexpected after-Bag command55 ui wait action0 900 STOP122. Startup/dialogue/
+CarlSTRIKE/target+move cancel/BRACE/Fight→Bag pass; four Carl UI_MOVE assertions,
+zero committed moves/rounds, candidate0. Actual B supplied but Bag persists;
+Bag readiness returned while mainCB2_Bag setup rather than CB2_BagMenuRun. Task
+created before native fade/run setup completes: demonstrated readiness false-
+positive. Exact missed-B cause unresolved; actual newKeys/fade/link-wait edge
+state missing. No retry/Save. Existing guards/strict full2700 unchanged. Next
+review: unapplied stronger verified Bag-run callback plus existing task/fade guard,
+then separately frozen observer/edge-evidence/claims; no route retiming/wait/RNG search.
+
+Actual4371-frame menu/STOP clip, every lossless RGB byte verified; baseline PP/TYPE
+static images inspected, no candidate/glyph/purity/Donut/Summary/depletion runtime
+acceptance. Final600 party/allflags/count2/counter47 exact; one transient physical
+frame is native48-byte decryption, source/bytes proved, no runtime waiver. Post-
+STOP canonical resource context missing; original/copies53f unchanged. Partial
+4337B/4371F/34zero/E0 cannot authorize candidate. Timeline6416 chain/STOP verified.
+Private local archive52869754 bytes/4788 verified entries/d2061de7…59de551;
+separate builds/tools and later metadata; no verified independent backup/transfer.
+Library5+1 failures/unknown cause/zero original bytes unchanged. Counts C01a3
+baselines/0 candidates; oldSTOP121/r2 dialogue122/r3 after-Bag122 distinct.
+HistoricalV01 6/4/STOP117,new1/1,ordinary5 and broader human/legacy/full-floor
+obligations unchanged. Scoped draftPR115 review only,no merge/main/other-head changes.
+Exact identities, native proof, actual captures, blocker and unapplied proposal:
+docs/evidence/floor1/c01a/action-hints-r3-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a r2 checkpoint — slot-count correction passed; dialogue STOP122
 
 Parent accepted two-line16-slot correction at PR115 head554ec015. Applied only
@@ -412,7 +450,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a source807eeea4 compiled hints/offline source/font/purity/ABI pass. Reviewed16-slot correction passes; r2 process2/baseline attempt2 STOP122 at5449/14,3405 visual/2101 battle: first neutral action wait leaves native trainer \p awaitingA/B. Overall2 baselines/0 candidates/0 chosen actions,no retry/Save. [Actual STOP122, intro captures and unapplied one-command handoff](../evidence/floor1/c01a/action-hints-r2-20261010/README.md). Candidate/menu/depletion/purity and broader C01 prepared-unprepared/human pacing remain pending |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a hints compiled source807eeea4; parent-reviewed route corrections proved against native handlers20 negative cases. r3 baseline3 STOP122 after Bag cancellation at6415/4371 visual/3067 battle,24 assertions; Carl cursors/cancels/Bag pass, no committed moves/candidate. [Actual menu captures, readiness gap and unapplied proposal](../evidence/floor1/c01a/action-hints-r3-20261010/README.md). Receiving callback/timing/full candidate/pixel/depletion and broader human pacing remain unverified |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

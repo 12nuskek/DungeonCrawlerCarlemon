@@ -4,12 +4,12 @@ Importing this module never freezes inputs, consumes claims or initializes a cor
 Historical helpers and their closed offline admission remain unchanged.
 """
 from pathlib import Path
-import hashlib,importlib.util,json,os,re,resource,shutil,signal,stat,struct,subprocess,sys,sysconfig,time
+import hashlib,importlib.util,json,os,re,resource,shutil,signal,stat,struct,subprocess,sys,time
 if not __debug__:raise RuntimeError('supervisor requires enabled checks')
 ROOT=Path(__file__).resolve().parents[2]
 SCRATCH=Path('/workspace/scratch')
 OUT=SCRATCH/'c01-howler-continuation-r1-20261010'
-OFFLINE=SCRATCH/'c01-howler-runtime-wiring-offline-r2-20261010'
+OFFLINE=SCRATCH/'c01-howler-runtime-wiring-offline-r3-20261010'
 AUTHORITY=SCRATCH/'c01-howler-runtime-r1-authority.json'
 ACCEPTED=SCRATCH/'c01-howler-continuation-correction-offline-r3-20261010'
 REGISTRY=ROOT/'docs/evidence/floor1/c01/howler-continuation-offline-r2-20261010/offline-verification.json'
@@ -19,7 +19,7 @@ PUBLICATION='6b3dfed4ed32cfed50f624e56e6c5c4a8a2d0e95'
 BASE='65bc4073d140b9d58bf1b83bd33235e28c972b23'
 BRANCH='task/floor1-c01-howler-continuation-offline'
 MODES=('howler-continuation','howler-new-save-cold')
-WIRING=('scripts/floor1/howler-runtime-supervisor.py','scripts/run-f1-c01-howler-r1.py','scripts/test-howler-runtime-wiring-offline.py')
+WIRING=('scripts/floor1/howler-runtime-supervisor.py','scripts/run-f1-c01-howler-r1.py','scripts/test-howler-runtime-wiring-offline.py','scripts/floor1/howler-validator-closure.py')
 COPY_FILES=('observer.c','observer','game.sym','actual-ELF-bindings-private.json','native-ABI.s','native-ABI.o')
 PROOF=SCRATCH/'c01-medicine-transaction-offline-r3-20261010/reviewed-offsets-proof'
 PROOFS={'transaction-proof-private.json':'7cbaee646dfc10b741a0b262b190f120d0284a2980c1ef872fa7784452aeb4f1','transaction-bindings.h':'623e3b3c6a1f478151e995a093dd3048a7b326d6e6d86be377e8ac927b7a0fa4'}
@@ -29,6 +29,7 @@ def module(name,path):
 legacy=module('howler_supervisor_common',ROOT/'scripts/test-f1-c01-guard-choice-r2.py')
 state=module('howler_supervisor_state',ROOT/'scripts/floor1/howler-continuation-state.py')
 execfile=module('howler_supervisor_execfile',ROOT/'scripts/floor1/c01a-prefix-execfile.py')
+validator=module('howler_supervisor_closure',ROOT/'scripts/floor1/howler-validator-closure.py')
 git=legacy.git
 def require(value,reason):
     if not value:raise AssertionError(reason)
@@ -44,26 +45,10 @@ def write(path,value):
     with Path(path).open('x') as f:json.dump(value,f,sort_keys=True,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
 def canonical(value):return json.dumps(value,sort_keys=True,separators=(',',':'))
 def validator_tools():
-    # The observer uses system("python3 ..."); bind its interpreter, shell,
-    # standard-library sources and the private screenshot reader as well.
-    import PIL.Image,PIL._imaging
     interpreter=Path(sys.executable).resolve()
-    require(Path(shutil.which('python3',path=execution_environment()['PATH'])).resolve()==interpreter,'native validator interpreter selection')
-    binaries={interpreter,Path('/bin/sh').resolve(),Path(PIL._imaging.__file__).resolve()}
-    paths=set(binaries);stdlib=Path(sysconfig.get_path('stdlib'))
-    for directory,children,names in os.walk(stdlib):
-        children[:]=[name for name in children if name!='site-packages']
-        paths.update((Path(directory)/name).resolve() for name in names if Path(name).suffix in ('.py','.pyc','.so'))
-    package=Path(PIL.Image.__file__).parent
-    paths.update(p.resolve() for p in package.rglob('*') if p.is_file() and p.suffix in ('.py','.pyc','.so'))
-    paths.update(p.resolve() for p in (ROOT/'scripts').rglob('*.pyc'))
-    binaries.update(p for p in paths if p.suffix=='.so')
-    for binary in sorted(binaries):
-        linked=subprocess.check_output(['ldd',str(binary)],text=True)
-        require('not found' not in linked,'validator native dependency missing')
-        for word in linked.split():
-            if word.startswith('/'):paths.add(Path(word).resolve())
-    return {str(p):sha(p) for p in sorted(paths)}
+    selected=shutil.which('python3',path=execution_environment()['PATH']);require(selected,'native validator interpreter missing from PATH')
+    require(Path(selected).resolve()==interpreter,'native validator interpreter selection')
+    return validator.derive(execution_environment())['files']
 def storage():
     old=legacy.storage();return {MODES[0]:old['opening'],MODES[1]:old['cold']}
 def capacity(free):require(free>=10000408128,'full continuation/cold/headroom reservation unavailable')
@@ -140,6 +125,7 @@ def wiring_receipt():
     require(r['PASS'] and r['tested_source_commit']==head and r['runtime_actions_executed']==0,'exact offline wiring receipt required')
     require(set(r['wiring_files'])==set(WIRING),'complete wiring inventory')
     for name,pin in r['wiring_files'].items():require(sha(ROOT/name)==pin,'tested wiring source changed')
+    validator.verify_manifest(validator_tools(),r['validator_tool_files'])
     verify_scope(r['scope'],scope(head));return r
 def runtime_authority():
     require(AUTHORITY.is_file(),'CLOSED: separate runtime admission required before any mutation')
@@ -244,11 +230,13 @@ def verify_captures(d,footer,mode,uses):
     log=(d/'runtime.log').read_text();captures=re.findall(r'^CAPTURE name=(\S+) absolute=(\d+) width=240 height=160$',log,re.M)
     names=[x[0] for x in captures];required=read(REGISTRY)['capture_ledger'][mode]+([f'medicine-01-{part}.ppm' for part in ('bag','recipient','healed')] if uses else [])
     require(set(names)==set(required) and len(names)==len(set(names)) and set(names)=={p.name for p in d.glob('*.ppm')},'exact named successful capture ledger')
-    from PIL import Image
+    from PIL import Image,PpmImagePlugin
+    require(Image.OPEN['PPM'][0] is PpmImagePlugin.PpmImageFile,'exact PPM decoder registration')
     for name,ordinal in captures:
         ordinal=int(ordinal);require(1<=ordinal<=frames,'capture frame range')
         with chunks[(ordinal-1)//2000].open('rb') as f:f.seek(((ordinal-1)%2000)*115200);rgb=f.read(115200)
-        with Image.open(d/name) as image:require(image.size==(240,160) and image.convert('RGB').tobytes()==rgb,'named screenshot/native RGB equality')
+        require((d/name).read_bytes()[:15]==b'P6\n240 160\n255\n','exact native P6 capture header')
+        with Image.open(d/name,formats=['PPM']) as image:require(image.mode=='RGB' and image.size==(240,160) and image.convert('RGB').tobytes()==rgb,'named screenshot/native RGB equality')
     require((d/'complete-field-trace-private.bin').stat().st_size==footer['valid']*3340 and (d/'complete-battle-trace-private.bin').stat().st_size==sum(footer['battle_frames'])*1040,'complete trace record counts')
     return dict(native_frames=frames,RGB_bytes=frames*115200,index_SHA256=sha(d/'frame-index.bin'),motion_SHA256={p.name:sha(p) for p in chunks},named_captures={name:sha(d/name) for name in names})
 def process_limits():

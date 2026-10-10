@@ -79,6 +79,7 @@ def main():
         index=(d/'frame-index.bin').read_bytes();(d/'frame-index.bin').write_bytes(struct.pack('<I',0)+index[4:]);reject('capture-index-order-negative',lambda:w.verify_captures(d,ft,c,0));(d/'frame-index.bin').write_bytes(index)
         (d/'complete-field-trace-private.bin').write_bytes(bytes(frames*3340-1));reject('capture-trace-count-negative',lambda:w.verify_captures(d,ft,c,0));(d/'complete-field-trace-private.bin').write_bytes(bytes(frames*3340))
         (d/'cold.ppm').write_bytes(b'P6\n240 160\n255\n'+bytes(len(rgb)));reject('capture-pixel-negative',lambda:w.verify_captures(d,ft,c,0))
+        (d/'cold.ppm').write_bytes(b'P3\n240 160\n255\n'+rgb);reject('capture-unreviewed-decoder-header-negative',lambda:w.verify_captures(d,ft,c,0))
         with patch.object(w,'OUT',d):
             w.check_root_usage();cases.append('inert-root-headroom-accounting')
             with (d/'headroom.bin').open('wb') as f:f.truncate(256*1024**2+1)
@@ -90,6 +91,32 @@ def main():
         cases.append('inert-parent-and-validator-group-cleanup')
     env=w.execution_environment();require(all(x not in env for x in ('PYTHONOPTIMIZE','PYTHONPATH','PYTHONHOME','LD_PRELOAD')) and env['PYTHONNOUSERSITE']==env['PYTHONDONTWRITEBYTECODE']=='1','assertion/loader environment');cases.append('native-validator-assertions-and-library-environment')
     native_tools=w.validator_tools();require(str(Path(sys.executable).resolve()) in native_tools and str(Path('/bin/sh').resolve()) in native_tools,'interpreter/shell pins');cases.append('exact-native-validator-tool-manifest')
+    closure=w.validator.derive(env)
+    require(not closure['Tk_imported'] and not any('_tkinter' in p for p in native_tools),'unrelated Tk extension excluded')
+    require(any(name=='PIL.PpmImagePlugin' for name in closure['modules']) and any('PIL/_imaging.' in p for p in closure['native_extensions']),'actual PPM decoder/native provider closure')
+    require(str(Path(w.shutil.which('git',path=env['PATH'])).resolve()) in native_tools,'state model git identity')
+    w.validator.verify_manifest(native_tools,dict(native_tools));cases.append('complete-source-derived-provider-inventory')
+    required=next(p for p in closure['native_extensions'] if 'PIL/_imaging.' in p)
+    missing=dict(native_tools);del missing[required]
+    reject('missing-genuine-provider-inventory',lambda:w.validator.verify_manifest(missing,native_tools))
+    changed=dict(native_tools);changed[required]='0'*64
+    reject('changed-genuine-provider-identity',lambda:w.validator.verify_manifest(changed,native_tools))
+    reject('incomplete-provider-inventory',lambda:w.validator.verify_manifest({},native_tools))
+    reject('extra-provider-inventory',lambda:w.validator.verify_manifest(dict(native_tools,unreviewed='0'*64),native_tools))
+    reject('missing-genuine-linked-library',lambda:w.validator.linked_paths(required,'librequired.so => not found\n'))
+    reject('empty-genuine-linked-library-closure',lambda:w.validator.linked_paths(required,'linux-vdso.so.1 (0x0)\n'))
+    with patch.object(w.shutil,'which',return_value='/unreviewed-python3'):
+        reject('observer-PATH-interpreter-mismatch',w.validator_tools)
+    with patch.object(w,'execution_environment',return_value=dict(env,PATH='/no-validator-interpreter')):
+        reject('observer-PATH-interpreter-missing',w.validator_tools)
+    with tempfile.TemporaryDirectory(prefix='howler-unrelated-extension-inert-') as temporary:
+        unrelated=Path(temporary)/'unrelated-unavailable-extension.so';unrelated.write_bytes(b'not a loadable extension; synthetic fixture only')
+        def fixture_links(argv,**kwargs):
+            p=argv[1];require(p!=str(unrelated),'unrelated unavailable extension was enumerated')
+            return ''.join('required => '+path+' (0x0)\n' for path in closure['native_link_closure'][p])
+        with patch.object(w.validator.subprocess,'check_output',side_effect=fixture_links):
+            derived=w.validator.derive(env)
+        w.validator.verify_manifest(derived['files'],native_tools);cases.append('unrelated-unavailable-extension-does-not-invalidate-required-closure')
     source=(ROOT/w.WIRING[0]).read_text();tree=ast.parse(source);execute=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='execute')
     require(ast.unparse(execute.body[0]).startswith('head, _ = runtime_authority()'),'authority before mutation')
     require('state.old.original' in source and "'phase-03-state.bin'" in source and 'state.cold_equivalence' in source,'actual original/new Save handoffs')
@@ -97,6 +124,6 @@ def main():
     require('source=OUT/\'guard-input-verified-copy.sav\'' in source and "b'\\xff'" not in source,'no blank Save or replay')
     require(not w.OUT.exists() and not w.AUTHORITY.exists() and not w.git('status','--porcelain'),'no runtime output/authority/source mutation')
     w.OFFLINE.mkdir(mode=0o700)
-    receipt=dict(PASS=True,tested_source_commit=head,base_commit=w.BASE,scope=expected,wiring_files={name:w.sha(ROOT/name) for name in w.WIRING},cases=cases,case_count=len(cases),accepted_helper_receipt_SHA256=w.sha(w.ACCEPTED/'offline-receipt.json'),accepted_helpers_retested=False,accepted_helper_count=13,accepted_artifact_count=len(accepted['artifacts']),tool_count=len(tools),validator_tool_files=native_tools,build_verification=game,actual_prior_claims=history,available_bytes=w.shutil.disk_usage(w.SCRATCH).free,runtime_actions_executed=0,runtime_freezes=0,runtime_claims=0,emulators=0,synthetic_fixture_is_gameplay=False,missing_launch_condition='separate runtime authority after independent wiring review')
+    receipt=dict(PASS=True,tested_source_commit=head,base_commit=w.BASE,scope=expected,wiring_files={name:w.sha(ROOT/name) for name in w.WIRING},cases=cases,case_count=len(cases),accepted_helper_receipt_SHA256=w.sha(w.ACCEPTED/'offline-receipt.json'),accepted_helpers_retested=False,accepted_helper_count=13,accepted_artifact_count=len(accepted['artifacts']),tool_count=len(tools),validator_tool_files=native_tools,validator_source_derivation=closure,source_import_only_probes=1,build_verification=game,actual_prior_claims=history,available_bytes=w.shutil.disk_usage(w.SCRATCH).free,runtime_actions_executed=0,runtime_freezes=0,runtime_claims=0,emulators=0,synthetic_fixture_is_gameplay=False,missing_launch_condition='separate runtime authority after independent wiring review')
     w.write(w.OFFLINE/'offline-admission-private.json',receipt);print('PASS inert Howler supervisor wiring '+str(len(cases))+' cases; runtime CLOSED')
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 ## Current C01 Howler continuation — offline only; runtime CLOSED
 
-Merged-main base65bc4073d140b9d58bf1b83bd33235e28c972b23. One separately named
+Merged-main base65bc4073d140b9d58bf1b83bd33235e28c972b23.
 Grouped offline corrections gate Carl growth on earned XP, require seven STRIKEs,
 and accept the source-supported terminal7PP/mixed36/30 case. The prior aggregate
 source90f6dd0ba755e6cce7fac7155ab8a585349cc6df is superseded. The corrected clean

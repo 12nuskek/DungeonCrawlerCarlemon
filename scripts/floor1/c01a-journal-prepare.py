@@ -2,7 +2,8 @@
 from pathlib import Path
 import importlib.util,json,os,shutil,subprocess,struct
 ROOT=Path(__file__).resolve().parents[2]
-OUT=Path('/workspace/scratch/c01a-journal-art-r2-20261010')
+OUT=Path('/workspace/scratch/c01a-journal-admission-r3-20261010')
+BUILD=Path('/workspace/scratch/c01a-journal-art-r2-20261010/candidate-build')
 OLD=Path('/workspace/scratch/c01a-action-hints-r4-20261010')
 CERT=Path('/workspace/scratch/c01a-retained-baseline-candidate-20261010/retained-baseline-acceptance.json')
 TOOL=Path('/workspace/scratch/ordinary-recovery-tooling-r3-20261009/root')
@@ -13,11 +14,18 @@ def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT,text=True).strip(
 def write(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
 def prepare():
     assert not git('status','--porcelain') and not (OUT/'freeze.json').exists() and not (OUT/'STOP.json').exists()
-    helper_revision=git('rev-parse','HEAD');engine=OUT/'candidate-build/source/engine';elf=engine/'pokeemerald.elf'
-    revision=(OUT/'candidate-build/tested-commit.txt').read_text().strip()
+    OUT.mkdir(exist_ok=True)
+    os.environ['PATH']=str(TOOL/'usr/bin')+':'+os.environ['PATH']
+    helper_revision=git('rev-parse','HEAD');engine=BUILD/'source/engine';elf=engine/'pokeemerald.elf'
+    revision=(BUILD/'tested-commit.txt').read_text().strip()
+    assert revision=='4a92a9de70848b9d7275f9f255bb0d2f53232ab8'
     assert git('rev-parse',revision+':engine')==git('rev-parse',helper_revision+':engine')
     subprocess.run(['git','diff','--quiet',revision,helper_revision,'--','scripts/floor1/generate-live-opening.py','scripts/floor1/live-navigation.py','scripts/floor1/journal-combat-notes.py'],cwd=ROOT,check=True)
-    assert json.loads((OUT/'candidate-build/result.json').read_text())['exit']==0
+    assert json.loads((BUILD/'result.json').read_text())['exit']==0
+    assert sha(engine/'pokeemerald.gba')=='79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246'
+    assert sha(elf)=='7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d'
+    for n,h in json.loads((BUILD/'source-inventory.json').read_text()).items():assert sha(BUILD/'source'/n)==h,n
+    checks=json.loads((OUT/'notes-complete-offline-proof.json').read_text());assert checks['PASS'] and checks['existing_checker_original_assertions_passed_with_projection'] and checks['accepted_main_legacy_equivalence']['PASS'] and checks['accepted_art_layout_equivalence']['PASS']
     old=json.loads((OLD/'freeze.json').read_text());cert=json.loads(CERT.read_text())
     assert cert['PASS'] and sha(CERT)=='2f03fb8b091b2a714ada82becf444c7e7219c244d392b9e740bfc063a88bc95c'
     for n,h in cert['original_r4_artifacts_SHA256'].items():assert sha(OLD/n)==h,n
@@ -36,7 +44,7 @@ def prepare():
     admission=module('journalExecutable',ROOT/'scripts/floor1/c01a-prefix-execfile.py').verify_executable(OUT/'observer',admission_expected)
     admission_expected.update(device=admission['device'],inode=admission['inode'])
     out=OUT/'candidate';out.mkdir();prior=json.loads((OLD/'candidate/identity.json').read_text())
-    excluded={'game.sym','verified-functions.json','native-boundary.json','native-timeline-points.json'}
+    excluded={'game.sym','verified-functions.json','native-boundary.json','native-timeline-points.json','edge-profile.json'}
     for n,h in prior['files_SHA256'].items():
         assert sha(OLD/'candidate'/n)==h
         if n not in excluded:shutil.copyfile(OLD/'candidate'/n,out/n)
@@ -57,7 +65,13 @@ def prepare():
     ident=dict(prior,source=revision,engine_tree=git('rev-parse',revision+':engine'),ROM=str(engine/'pokeemerald.gba'),ROM_SHA256=sha(engine/'pokeemerald.gba'),ELF_SHA256=sha(elf),native_bindings=names,observer_source_SHA256=sha(OUT/'observer.c'),observer_binary_SHA256=sha(OUT/'observer'),overall_process=8,overall_candidate_attempt=3,consumed_claim=9,files_SHA256={})
     write(out/'identity.json',ident)
     profile=module('journalBindings',ROOT/'scripts/floor1/c01a-ui-bindings-r4.py');profile.OLD=OUT
-    text,proof=profile.profile('candidate');(out/'game.sym').write_text(text);write(out/'bindings-proof.json',proof)
+    text,proof=profile.profile('candidate');(out/'game.sym').write_text(text);write(out/'bindings-proof.json',proof);write(out/'edge-profile.json',proof)
+    assert proof['ELF_SHA256']==sha(elf) and len(proof['points'])==proof['passive_profile_count']==12
+    assert json.loads((out/'edge-profile.json').read_text())==json.loads((out/'bindings-proof.json').read_text())
+    exported={n:int(a,16) for a,k,n in (line.split() for line in text.splitlines()) if n.startswith('ce_')}
+    for i,p in enumerate(proof['points']):
+        for key,value in [('pc',p['address']),('op',p['opcode']),('fn',p['function']),('role',p['role']),('kind',p['kind']),('scope',1)]:assert exported[f'ce_{key}{i}']==value
+    write(OUT/'fresh-edge-profile-admission.json',{'PASS':True,'actual_ELF_SHA256':sha(elf),'points':12,'both_profile_records_identical':True,'all_exported_symbols_exact':True,'old_profile_excluded':True})
     ident['native_bindings'].update(profile.CB2)
     required=set(__import__('re').findall(r'strcmp\(symbol,\s*"([^"]+)"\)',code));raw=[x.split() for x in text.splitlines()]
     for n in required-{'gDccCollectionProbe','gDccEquipmentProbe','gDccMembershipProbe','gDccRewardProbe'}:

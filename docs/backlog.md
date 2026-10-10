@@ -1,3 +1,21 @@
+## Current C01a reviewed narrative/profile admission — full checks pass
+
+Review25e42473 accepts exact two-text/main reconciliation and fresh actual-ELF
+edge-profile correction. New admission-r3 output; all prior STOPs/archives untouched.
+Historical checker unchanged; Journal/art/source/font/regeneration/65536 dispatch
+chain passes. Six legacy inventories exact paths/modes/types; ONLY two literal
+Warden blocks equal accepted e503/main and project to ce43420b,remaining bytes exact.
+12 inert negatives pass. Reuse compiled4a92a9de/ROM79a0ed76/ELF7895d09e; no rebuild.
+Fresh12-point actual-ELF proof must populate both edge-profile and bindings-proof;
+identical/export agreement/scoped callbacks/executable admission required.
+Claim9/candidate3 against certified full baseline4,no replay,full strict B/F/E+EOF/
+2700/control/resource/passive/pixel equality ZERO masks. Before actual5/2/7,claims
+6/2/8. First runtime failure terminal. Only full PASS admits separate frozen
+bounded field-only Journal probe. No success-only review checkpoint.
+Issue116 unchanged,no metadata-comment retry/Library upload/private raw payload.
+Publish draftPR115 result review,no merge. Contract docs/evidence/floor1/c01a/
+journal-admission-r3-20261010/contract.md. Earlier bodies historical.
+
 ## Current C01a Journal art correction — built, source-reference gate blocked
 
 One committed build at4a92a9de70848b9d7275f9f255bb0d2f53232ab8 succeeds. Reviewed

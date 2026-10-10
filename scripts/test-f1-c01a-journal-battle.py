@@ -2,7 +2,7 @@
 from pathlib import Path
 import importlib.util,json,subprocess
 ROOT=Path(__file__).resolve().parents[1]
-OUT=Path('/workspace/scratch/c01a-journal-art-r2-20261010')
+OUT=Path('/workspace/scratch/c01a-journal-admission-r3-20261010')
 def module(n,p):
     s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 def run():

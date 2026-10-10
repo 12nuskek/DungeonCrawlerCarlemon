@@ -1,3 +1,19 @@
+Current independent tooling continuation — 9–10 October 2026: base 6d05b559. Parent
+supplied three verified official resource URLs; mgba dev/runtime and zip exact
+manifest packages restored once; source-resolved pinned png headers restored.
+Pinned agbcc da598c1d built once with GCC 14.2/ARM 2.44; all three compilers emit
+ARM-assemblable tooling probes. mGBA library hash exactly a1d7713c…328be63;
+link/version/PNG checks pass, no emulation. Tools executable, new compiler hashes
+differ from historical/previous rebuild; installed inih 59-1/current 24ac7fa9 hash
+verified but historical inih byte pin unavailable. No original-tool identity.
+New contract must freeze actual identities/build outputs before gameplay.
+Preserve APT/inih-pool404/tunnel403, both caller-check mistakes and all old pins/
+assertions/counts six baseline/four candidate/STOP117. No game build/Save/Warden/Library/
+merge. Local verified bundle only, no independent backup. Parent tooling review
+then separate ordinary freeze/build/reconstruction. Evidence:
+docs/evidence/floor1/ordinary-recovery-20261009/tooling-r3/README.md.
+Earlier bodies below preserved unchanged.
+
 Current tooling-only continuation — 2026-10-09: base 5895f3af; local APT indexes
 are empty, so previous lookup does not prove official package unavailability.
 Exact official Debian ARM binutils 2.44-3+23+b1 and libepoxy 1.5.10-2 downloaded,

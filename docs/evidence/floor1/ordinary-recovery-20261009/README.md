@@ -1,3 +1,9 @@
+Latest independent continuation: [executable tooling and qualified new
+identities](tooling-r3/README.md). Exact supplied resources and compiler source
+restored; old APT/404/403 failures preserved, no denied-host retry. Historical
+compiler/inih byte parity is unproven; ordinary contract/build/observer freeze
+and game-output verification remain next, with zero gameplay/new Saves here.
+
 Latest tooling-only continuation: [partial official-package restoration and
 access-denial stop](tooling/README.md). Two packages now verified/extracted;
 full toolchain remains incomplete. The original first-acquisition checkpoint

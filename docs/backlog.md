@@ -1,3 +1,16 @@
+## Active dependency — ordinary recovery freeze after tooling review
+
+Independent tooling increment from 6d05b559 completed executable ARM/agbcc/mGBA/
+PNG tooling checks with exact approved package/source pins. [Actual identities
+and limitations](evidence/floor1/ordinary-recovery-20261009/tooling-r3/README.md).
+New compiler binaries differ from historical/previous rebuild; installed inih
+version/ownership/current hash verified, historical byte parity unavailable.
+Next: parent review→freeze actual new tooling/source/observer/route/storage
+identities→isolated main build/output verification→authorized ordinary
+reconstruction/manual Save/independent cold→STOP before Warden.
+No game build/gameplay/Saves/Library retry/merge here; six/four/STOP117 and all
+historical failures/wrappers/assertions retained. Earlier bodies preserved.
+
 ## Active tooling dependency — access denied, 2026-10-09
 
 The authorized tooling-only continuation from 5895f3af restored exact

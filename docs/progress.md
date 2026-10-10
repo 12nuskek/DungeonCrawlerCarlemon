@@ -1,3 +1,21 @@
+## Independent tooling completion — executable, identities qualified
+
+Tooling checks at base `6d05b559e0bfde1044015f7fbbe13ea0e1b172c6`.
+Three parent-supplied official Debian packages and source-resolved libpng headers
+pass exact package/hash/control checks. Existing binutils/epoxy not reacquired.
+Pinned agbcc source built once; three compiler/assembler probes pass. libmGBA
+matches recorded a1d7713c library hash, ldd resolves and native link/version check
+passes without a core/ROM/Save. PNG/zlib prerequisite/link checks complete.
+[Actual identities, preserved diagnostic errors and local bundle](evidence/floor1/ordinary-recovery-20261009/tooling-r3/README.md).
+All new compiler binaries differ from historical/previous rebuild. Installed
+inih 59-1 ownership/current hash/linkage verified, historical exact-byte parity
+unproven. Tools executable; new ordinary freeze must pin actual identities and
+verify isolated game/observer outputs. Original-tool identity not claimed.
+No game build/gameplay/new Save/Warden/Library retry/merge; counts6/4/STOP117
+unchanged. Bundle local only, no verified independent backup. Prior failures,
+wrappers/assertions/plan and earlier bodies preserved. Parent tooling review
+then separately scoped ordinary contract/build/freeze/reconstruction.
+
 ## Tooling continuation — partial restoration and access-denial stop
 
 Base `5895f3af34aaddff1c49e2b6d228a2540056a286`; official Debian ARM binutils

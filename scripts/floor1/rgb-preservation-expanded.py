@@ -4,7 +4,9 @@ import importlib.util,json,os,subprocess
 ROOT=Path(__file__).resolve().parents[2]
 OLD_SOURCE='e5073a511b62041f4356932c7fcc3c355cc3ff76'
 OLD_RECEIPTS='dee9076184cedebc72aedc0ae01ac79bd4de0a57'
-OUT=Path('/workspace/scratch/floor1-rgb-expanded-preservation-r1-20261010')
+FAILED=Path('/workspace/scratch/floor1-rgb-expanded-preservation-r1-20261010')
+OUT=Path('/workspace/scratch/floor1-rgb-expanded-preservation-r2-20261010')
+ADMISSION=Path('/workspace/scratch/floor1-rgb-expanded-offline-admission-r2-20261010.json')
 PRIOR=Path('/workspace/scratch/c01-rgb-preservation-r1-20261010')
 SCRATCH=Path('/workspace/scratch')
 spec=importlib.util.spec_from_file_location('unchanged_rgb_engine',ROOT/'scripts/floor1/rgb-preservation.py')
@@ -79,12 +81,35 @@ def expected_hash(plan,raw):
     m.require(key in rows and rows[key]['bytes']==raw.stat().st_size,'historical raw inventory identity')
     return rows[key]['SHA256']
 def protected_paths(targets):
-    roots={SCRATCH/p[1] for p in PLANS}|{PRIOR}
+    roots={SCRATCH/p[1] for p in PLANS}|{PRIOR,FAILED}
     files={p for root in roots for p in root.rglob('*') if p.is_file()}
     files|={p for p in SCRATCH.rglob('*.rgb') if not p.is_relative_to(OUT)}
+    for name in ('floor1-rgb-expanded-scope-first-STOP-20261010.json','floor1-rgb-expanded-freeze-launch-STOP-r2-20261010.json','floor1-rgb-expanded-offline-admission-r1-20261010.json'):
+        files.add(SCRATCH/name)
     return sorted(files-{Path(p) for p in targets})
+def zlib_provider(module,python):
+    origin=getattr(getattr(module,'__spec__',None),'origin',None)
+    file=getattr(module,'__file__',None)
+    if origin=='built-in':
+        m.require(file is None,'built-in zlib must not claim an extension file');provider=python
+    else:
+        m.require(origin and file,'zlib must have a verified built-in or extension identity');provider=Path(file).resolve()
+    m.require(provider.is_file(),'zlib provider binary missing')
+    return provider,origin
+def decoder_dependencies():
+    python=Path(m.sys.executable).resolve();provider,origin=zlib_provider(m.zlib,python)
+    binaries={python,provider,m.GZIP.resolve()};dependencies=set(binaries)
+    for binary in sorted(binaries):
+        linked=subprocess.check_output(['ldd',str(binary)],text=True)
+        m.require('not found' not in linked,'decoder runtime dependency missing')
+        for line in linked.splitlines():
+            for word in line.split():
+                if word.startswith('/'):
+                    path=Path(word).resolve();m.require(path.is_file(),'decoder library path missing');dependencies.add(path)
+    return origin,{str(p):m.digest(p) for p in sorted(dependencies)}
 def ensure_source(c):
     m.code_check(c)
+    m.require(c['zlib_module_origin']==m.zlib.__spec__.origin,'zlib module origin changed')
     for p,h in c['tool_dependencies_SHA256'].items():m.require(m.digest(Path(p))==h,'preservation decoder dependency changed')
     m.require(git('rev-parse','HEAD')==c['source_commit'] and not git('status','--porcelain'),'exact frozen clean source required')
 def verify(c,mapping,decoder,label):

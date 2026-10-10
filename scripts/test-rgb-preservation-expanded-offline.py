@@ -1,14 +1,24 @@
 #!/usr/bin/env python3
 """New scope/layout/receipt tests; never repeat the completed codec admission."""
 from pathlib import Path
-import copy,importlib.util,json
+import copy,importlib.util,json,types,sys
 p=Path(__file__).resolve().parent/'floor1/rgb-preservation-expanded.py'
 s=importlib.util.spec_from_file_location('expanded_scope_test',p);a=importlib.util.module_from_spec(s);s.loader.exec_module(a);m=a.m
 def main():
     m.require(not a.git('status','--porcelain'),'clean committed scope source')
-    out=Path('/workspace/scratch/floor1-rgb-expanded-offline-admission-r1-20261010.json')
+    out=a.ADMISSION
     m.require(not out.exists(),'exclusive new scope admission')
     prior=a.prior_admission();cases=[]
+    python=Path(sys.executable).resolve()
+    builtin=types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='built-in'))
+    assert a.zlib_provider(builtin,python)==(python,'built-in');cases.append('built-in-zlib-provider-without-file')
+    extension=types.SimpleNamespace(__spec__=types.SimpleNamespace(origin=str(m.GZIP)),__file__=str(m.GZIP))
+    assert a.zlib_provider(extension,python)==(m.GZIP.resolve(),str(m.GZIP));cases.append('extension-provider-file-identity-fixture')
+    for i,module in enumerate((types.SimpleNamespace(),types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='built-in'),__file__=str(m.GZIP)),types.SimpleNamespace(__spec__=types.SimpleNamespace(origin='extension'),__file__='/absent/zlib.so'))):
+        try:a.zlib_provider(module,python)
+        except RuntimeError:cases.append('provider-identity-negative-'+str(i))
+        else:raise AssertionError('unverifiable zlib provider accepted')
+    origin,pins=a.decoder_dependencies();assert origin==m.zlib.__spec__.origin and pins[str(python)]==m.digest(python);cases.append('actual-runtime-provider-and-linked-dependency-pins')
     rows=[dict(r,raw_identity=dict(bytes=r['frames']*m.FRAME),raw_SHA256='raw-'+str(i),compressed_SHA256='gzip-'+str(i)) for i,r in enumerate(a.definitions())]
     a.validate_layout(rows);cases.append('complete42-file82482-frame-layout')
     bads=[rows[:-1],list(reversed(rows)),[rows[1],rows[0],*rows[2:]]]

@@ -9,7 +9,7 @@ def freeze():
     m.require(not a.git('status','--porcelain'),'commit admitted preservation source')
     prior=a.prior_admission();free=shutil.disk_usage(a.SCRATCH).free
     m.require(free>=m.CAP,'fresh full temporary/replacement capacity unavailable')
-    admission=json.loads(Path('/workspace/scratch/floor1-rgb-expanded-offline-admission-r1-20261010.json').read_text())
+    admission=json.loads(a.ADMISSION.read_text())
     m.require(admission['PASS'] and admission['source_commit']==a.git('rev-parse','HEAD'),'new scope adapter admission')
     a.OUT.mkdir(mode=0o700);budget=m.Budget(a.OUT);rows=[];recordings=[]
     definitions=a.definitions()
@@ -48,19 +48,14 @@ def freeze():
         m.require('offline' in p or 'source-admission' in p or 'medicine-sampling' in p or 'medicine-transaction' in p or 'howler-continuation' in p or 'rgb-preservation-r1' in p or p.endswith('/review-export/decoded-roundtrip.rgb'),'unclassified remaining raw recording')
     budget.write(a.OUT/'heads-before.tsv',subprocess.check_output(['git','ls-remote','--heads','origin'],cwd=a.ROOT))
     old=json.loads((a.PRIOR/'preservation-contract.json').read_text())
-    zlib_extension=Path(m.zlib.__file__).resolve()
-    linked=subprocess.check_output(['ldd',str(zlib_extension),str(m.GZIP),str(Path(sys.executable).resolve())],text=True)
-    dependencies={zlib_extension,Path(sys.executable).resolve(),m.GZIP.resolve()}
-    for line in linked.splitlines():
-        for word in line.split():
-            if word.startswith('/') and Path(word).is_file():dependencies.add(Path(word).resolve())
+    zlib_origin,dependencies=a.decoder_dependencies()
     c=dict(name='Floor1 expanded local RGB preservation r1',source_commit=a.git('rev-parse','HEAD'),main_base='65bc4073d140b9d58bf1b83bd33235e28c972b23',output_root=str(a.OUT),authorization_UTC='2026-10-10T21:42:24Z',authorization='Kurt authenticated Yes to remaining/future local gameplay recordings after TWO complete byte verification passes; local only.',prior_admission=prior,
         width=240,height=160,pixel_format='RGB24',bytes_per_frame=m.FRAME,frames=a.FRAMES,original_bytes=a.BYTES,chunk_count=a.CHUNKS,chunks=rows,recordings=recordings,protected_entries=protected,excluded_raw_paths=exclusions,
         format=old['format'],compress_command=old['compress_command'],decoder_pass1=old['decoder_pass1'],decoder_pass2=old['decoder_pass2'],gzip_version=old['gzip_version'],gzip_executable_SHA256=old['gzip_executable_SHA256'],python_version=sys.version,python_executable_SHA256=old['python_executable_SHA256'],zlib_version=old['zlib_version'],
-        source_files_SHA256={p:m.digest(a.ROOT/p) for p in (*a.OLD_FILES,*a.NEW_FILES)},scope_adapter_admission_SHA256=m.digest(Path('/workspace/scratch/floor1-rgb-expanded-offline-admission-r1-20261010.json')),
-        tool_dependencies_SHA256={str(p):m.digest(p) for p in sorted(dependencies)},
+        source_files_SHA256={p:m.digest(a.ROOT/p) for p in (*a.OLD_FILES,*a.NEW_FILES)},scope_adapter_admission_SHA256=m.digest(a.ADMISSION),
+        zlib_module_origin=zlib_origin,tool_dependencies_SHA256=dependencies,
         all_inclusive_cap_bytes=m.CAP,external_code_docs_Git_audit_reserve_bytes=m.EXTERNAL_RESERVE,initial_available_bytes=free,fresh_available_bytes_after_inventory=shutil.disk_usage(a.OUT).free,minimum_net_savings_bytes=max(0,m.RESERVATION-free),future_runtime_reservation_bytes=m.RESERVATION,
-        protected_scope='Every non-target regular file in the six recording parent roots and previous preservation root; every other existing scratch RGB file.',first_failure_terminal=True,no_alternative_settings_or_retry=True,all_originals_retained_until_both_complete_passes=True,preservation_only=True,runtime_freeze=False,gameplay_processes=0,runtime_claims=0,opening_claims_processes=[5,5],cold_claims_processes=[2,2],Howler_processes=0,independent_backup_verified=False)
+        protected_scope='Every non-target regular file in the six recording parent roots, previous preservation root and failed partial r1 root; all separate admission/failure receipts; every other existing scratch RGB file.',first_failure_terminal=True,no_alternative_settings_or_retry=True,all_originals_retained_until_both_complete_passes=True,preservation_only=True,runtime_freeze=False,gameplay_processes=0,runtime_claims=0,opening_claims_processes=[5,5],cold_claims_processes=[2,2],Howler_processes=0,independent_backup_verified=False)
     m.require(sum(r['raw_identity']['bytes'] for r in rows)==a.BYTES,'exact original byte total')
     m.require(shutil.disk_usage(a.OUT).free>=m.CAP,'fresh full cap after inventory')
     budget.json(a.OUT/'preservation-contract.json',c);print('FROZEN preservation-only contract '+m.digest(a.OUT/'preservation-contract.json'),flush=True)

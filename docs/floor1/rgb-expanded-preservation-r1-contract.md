@@ -1,11 +1,15 @@
-# Floor1 expanded LOCAL RGB preservation r1
+# Floor1 expanded LOCAL RGB preservation — r2 proposal, review only
 
-Current status: first new scope admission stopped atb396d4d33256a8549bd01dfae45b69946bd4257f
-with `RuntimeError: source inventory totals`. The explicit list contains42 files;
-the initial fixed assertion incorrectly required43. The count is corrected for
-review, without re-running admission. No machine contract, compression,
-verification or replacement occurred. Originals remain retained. This document
-is the proposed bounded contract, not an executed/frozen preservation receipt.
+Current status: corrected scope admission passed27 cases atf72fb97a537c69e0b68923579c87864b764dc7e0.
+After the separately rejected transport launch, one admitted freeze process
+reconciled all42 original hashes/82482 frame ledger entries, then stopped with
+`AttributeError: module 'zlib' has no attribute '__file__'`. This Python provides
+zlib as built-in. Partial r1 output/terminal STOP and all originals stay retained.
+No machine contract/compression/decoded verification/replacement occurred.
+The built-in/extension provider correction and fresh r2 paths are proposed,
+untested and require review before any new scope admission/freeze. This document
+is not an executed/frozen preservation receipt. The original43-to42 scope failure
+atb396d4d33256a8549bd01dfae45b69946bd4257f remains separately preserved.
 
 Kurt explicitly approved remaining/future local gameplay-recording preservation
 at2026-10-10 21:42:24UTC, replying Yes to the18:39:47UTC request. Authority requires
@@ -42,11 +46,15 @@ no interpolation, synthetic index or new native capture. Timing is source-bound
 per-frame ledgers, chunk hashes, whole-stream hashes and historical manifests/
 summaries identify every original. Opening4's existing frame ledger must agree.
 
-Private exclusive output `/workspace/scratch/floor1-rgb-expanded-preservation-r1-20261010`.
+Proposed private exclusive output `/workspace/scratch/floor1-rgb-expanded-preservation-r2-20261010`.
+New scope admission uses a separately named r2 receipt. Failed r1 output/ledgers/
+STOP, old r1 admission and separate count/transport failures become protected
+non-target files. No r1 overwrite, resume or automatic retry.
 Freeze its machine-readable preservation contract at clean admitted source before
 compression. It records all paths/lstat identities/hashes/ranges, protected files,
 current capacity, exact source/tool hashes and two-verifier identities. Every
-non-target file in the six recording parent roots and previous preservation root
+non-target file in the six recording parent roots, previous preservation root
+and failed r1 root
 is protected; every other scratch RGB file is inventoried and protected as a
 synthetic offline fixture or existing decoded review derivative. Existing Saves,
 logs, screenshots, review/FFV1 clips, failure/claim records, old compressed chunks
@@ -56,6 +64,10 @@ outside the mutation allowlist. Every raw target must have exactly one hardlink.
 Use precisely the tested single-member RFC1952 gzip settings:
 `/usr/bin/gzip -6 -n -c -- ORIGINAL`, one compressed file per original file.
 GNU gzip1.13, Python executable and zlib1.3.2 must match prior pinned identities.
+For built-in zlib, pin the actual Python provider executable and its linked
+libraries; for an extension, also pin its regular binary. Record and recheck
+the module origin. Unknown/missing/contradictory provider identities fail. The
+codec/decoder algorithms and two complete byte/EOF passes remain unchanged.
 No codec search/settings retry/package install/upload. First inventory/capacity/
 compression/verification failure is terminal; originals and partial outputs stay.
 

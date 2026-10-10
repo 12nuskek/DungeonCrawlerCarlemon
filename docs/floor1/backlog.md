@@ -1,3 +1,30 @@
+## Current C01a offline timing / terminal-retention checkpoint
+
+Continued from92d6f40fde2b7b5f9944d286a42ad2a6e897af4b. Retained ELF/source/tool
+and boundary3149/frame3169–3171 audit passes offline. Candidate remains in CB1
+invocation3665 after Carl init/opponent1 completion; exec XOR2 is opponent bit1.
+No observed current battler/command/stack above GetSubstruct or baseline detailed
+interval. Same pane windows/speed0/printing-call/copy shapes; different glyph/font
+work does not establish CPU timing or DMA defect. No justified game remedy.
+
+Separately named terminal host writes pending edge rows/footer before active error
+exits; preserves STOP and success stepping/inputs/strict streams. Eight host-only
+error/success cases, original success bytes, complete generated-C reversal and
+pinned full host compile/link pass; compiled host never launched. Original missing
+tag11/unflushed STOP124/receipts untouched; no lost observations recovered.
+
+No gameplay process/game rebuild/replay/rendering or DMA change/stream waiver/
+claim/merge. Counts C01a4 baseline/1 candidate/5 processes, historicalV016/4/
+STOP117,new1/1,ordinary5 unchanged. Engine3ef0d463/source807eeea4 remains actual
+STOP124 with no runtime acceptance. Exact proofs/tools/retention/ordinary offline
+attempt history: docs/evidence/floor1/c01a/offline-timing-20261010/README.md.
+Next: review precise missing evidence/minimum passive sidecar proposal; any later
+instrumentation/freeze/exclusive first-stop execution claim separate. DraftPR115/
+issue116 stop at review. Main/other heads/accepted nine-district plan unchanged.
+Private local retention only,no independently verified backup; Library5+1 failures
+unknown cause/zero original bytes retained/no retry. No ROM/ELF/Save/raw/full symbols
+published. Earlier checkpoint/authority bodies below are historical.
+
 ## Current C01a candidate-only checkpoint — certified baseline4; candidate STOP124
 
 Corrected offline certificate verifies all original r4 bytes/source/build/tools,
@@ -568,7 +595,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Corrected retained baseline4 certificate/full native+supplemental EOF/coverage/complete passive gates PASS, old r4 STOP/PASS=false untouched. Candidate process5/attempt1 first STOP124 atvisual3171/15 assertions: five-byte controller/exec phase divergence. No visible USES/hints/full candidate/pixel acceptance or retry. [Exact source, retained records and actual STOP motion](../evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md). Review native rendering/DMA timing before remedy; broader human/full-floor gates remain separate |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Corrected retained baseline4 certificate/full native+supplemental EOF/coverage/complete passive gates PASS, old r4 STOP/PASS=false untouched. Candidate process5/attempt1 first STOP124 atvisual3171/15 assertions: five-byte controller/exec phase divergence. No visible USES/hints/full candidate/pixel acceptance or retry. [Exact source, retained records and actual STOP motion](../evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md). Offline retained timing audit complete; no justified game remedy. Terminal host retention tests pass; review passive diagnostic proposal before any new claim. Broader human/full-floor gates remain separate |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

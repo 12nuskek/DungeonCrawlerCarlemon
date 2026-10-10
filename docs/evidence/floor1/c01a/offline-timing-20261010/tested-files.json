@@ -1,0 +1,10 @@
+{
+  "starting_checkpoint": "92d6f40fde2b7b5f9944d286a42ad2a6e897af4b",
+  "tested_source_files_SHA256": {
+    "scripts/floor1/c01a-ui-host-terminal.py": "d3fd619c72e92b03b77e7ca0755794e29a578f2d070fe2b10e98be8d825753d8",
+    "scripts/test-f1-c01a-terminal-retention.py": "02b373844efe48150eca2c15298014b6903ec4ff3630006b09c678b2d1ef2610",
+    "scripts/test-f1-c01a-offline-timing.py": "ce34a7f21c4200d5af6fee481b393b68333eedcf05d423e8f187329ebecfd8f0"
+  },
+  "game_engine_unchanged": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+  "no_gameplay_process": true
+}

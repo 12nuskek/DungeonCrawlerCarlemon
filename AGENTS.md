@@ -1,3 +1,30 @@
+## Current C01a offline timing / terminal-retention checkpoint
+
+Continued from92d6f40fde2b7b5f9944d286a42ad2a6e897af4b. Retained ELF/source/tool
+and boundary3149/frame3169–3171 audit passes offline. Candidate remains in CB1
+invocation3665 after Carl init/opponent1 completion; exec XOR2 is opponent bit1.
+No observed current battler/command/stack above GetSubstruct or baseline detailed
+interval. Same pane windows/speed0/printing-call/copy shapes; different glyph/font
+work does not establish CPU timing or DMA defect. No justified game remedy.
+
+Separately named terminal host writes pending edge rows/footer before active error
+exits; preserves STOP and success stepping/inputs/strict streams. Eight host-only
+error/success cases, original success bytes, complete generated-C reversal and
+pinned full host compile/link pass; compiled host never launched. Original missing
+tag11/unflushed STOP124/receipts untouched; no lost observations recovered.
+
+No gameplay process/game rebuild/replay/rendering or DMA change/stream waiver/
+claim/merge. Counts C01a4 baseline/1 candidate/5 processes, historicalV016/4/
+STOP117,new1/1,ordinary5 unchanged. Engine3ef0d463/source807eeea4 remains actual
+STOP124 with no runtime acceptance. Exact proofs/tools/retention/ordinary offline
+attempt history: docs/evidence/floor1/c01a/offline-timing-20261010/README.md.
+Next: review precise missing evidence/minimum passive sidecar proposal; any later
+instrumentation/freeze/exclusive first-stop execution claim separate. DraftPR115/
+issue116 stop at review. Main/other heads/accepted nine-district plan unchanged.
+Private local retention only,no independently verified backup; Library5+1 failures
+unknown cause/zero original bytes retained/no retry. No ROM/ELF/Save/raw/full symbols
+published. Earlier checkpoint/authority bodies below are historical.
+
 ## Current C01a candidate-only checkpoint — certified baseline4; candidate STOP124
 
 Corrected offline certificate verifies all original r4 bytes/source/build/tools,

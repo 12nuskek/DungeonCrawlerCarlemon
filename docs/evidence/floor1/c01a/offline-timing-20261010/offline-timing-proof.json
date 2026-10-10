@@ -1,0 +1,1456 @@
+{
+  "PASS": true,
+  "scope": "Retained source/ELF/timeline audit and host-native source-bound operation-count fixture; no game rebuild, emulator or recovered timing",
+  "checkpoint": "92d6f40fde2b7b5f9944d286a42ad2a6e897af4b",
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "builds": {
+    "baseline": {
+      "source": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+      "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+      "ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+      "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+      "compiled_paths": {
+        "BattleMainCB1": {
+          "identity": "L:battle_main.o:BattleMainCB1",
+          "address": 134454932,
+          "size": 80,
+          "bytes_SHA256": "a127d4ef292b12312fccbc7f629c6ea04840b1c58189c48bb377cfb55db8d068",
+          "direct_BL": [
+            {
+              "offset": 6,
+              "target": "G:_call_via_r0"
+            },
+            {
+              "offset": 36,
+              "target": "G:_call_via_r0"
+            }
+          ]
+        },
+        "BattleMainCB2": {
+          "identity": "G:BattleMainCB2",
+          "address": 134448064,
+          "size": 128,
+          "bytes_SHA256": "7f228841a8a48a33391456f97c49f1c5a03f9d74f712a7710404bd60fea36e61"
+        },
+        "HandleInputChooseAction": {
+          "identity": "L:battle_controller_player.o:HandleInputChooseAction",
+          "address": 134574912,
+          "size": 614,
+          "bytes_SHA256": "20e2f0f3d23416ba578edfe6870612c2f0d46028751e476b2d15e698bf26b2c3"
+        },
+        "HandleTurnActionSelectionState": {
+          "identity": "L:battle_main.o:HandleTurnActionSelectionState",
+          "address": 134463008,
+          "size": 3908,
+          "bytes_SHA256": "d92c8ab1a3f4b5d5158397f8ea30ec0bf665fd10ba52f5caedea70cc668247a3"
+        },
+        "PlayerBufferRunCommand": {
+          "identity": "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "address": 134574780,
+          "size": 80,
+          "bytes_SHA256": "1dab965989368e3f3dd664a92d91c04cb23bbe9e13e6f25e620f17824322bda7"
+        },
+        "PlayerHandleChooseMove": {
+          "identity": "L:battle_controller_player.o:PlayerHandleChooseMove",
+          "address": 134594400,
+          "size": 104,
+          "bytes_SHA256": "89f5b7446b92f83f4ff4cdd751cf34e1fc54a1ac882d2a65d5ddbc06c1aff3d9",
+          "direct_BL": [
+            {
+              "offset": 68,
+              "target": "G:InitMoveSelectionsVarsAndStrings"
+            }
+          ]
+        },
+        "InitMoveSelectionsVarsAndStrings": {
+          "identity": "G:InitMoveSelectionsVarsAndStrings",
+          "address": 134594504,
+          "size": 56,
+          "bytes_SHA256": "d8a8d72db85c6586e5999de045539a8c97b1c66ee3d793148cd86f07525fbb3f",
+          "direct_BL": [
+            {
+              "offset": 2,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayMoveNames"
+            },
+            {
+              "offset": 24,
+              "target": "L:battle_controller_player.o:MoveSelectionCreateCursorAt"
+            },
+            {
+              "offset": 28,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayPPString"
+            },
+            {
+              "offset": 32,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayPPNumber"
+            },
+            {
+              "offset": 36,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayMoveType"
+            }
+          ]
+        },
+        "MoveSelectionDisplayMoveNames": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayMoveNames",
+          "address": 134584420,
+          "size": 108,
+          "bytes_SHA256": "6aeedec88a82e0ea88179149042b571bb94991efc45ef44ea0e8ad1791f8651c"
+        },
+        "MoveSelectionCreateCursorAt": {
+          "identity": "L:battle_controller_player.o:MoveSelectionCreateCursorAt",
+          "address": 134584800,
+          "size": 72,
+          "bytes_SHA256": "b10b5042f3108311b23dcb9ada3377cece53417bf671d50c2e30f72cfb1b7d1d"
+        },
+        "MoveSelectionDisplayPPString": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "address": 134584528,
+          "size": 36,
+          "bytes_SHA256": "42319d0476eaa17edc17014ef6baa3e52d64c5398fe5d86a552f7a628baaffc1",
+          "direct_BL": [
+            {
+              "offset": 8,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 16,
+              "target": "G:BattlePutTextOnWindow"
+            }
+          ]
+        },
+        "MoveSelectionDisplayPPNumber": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayPPNumber",
+          "address": 134584564,
+          "size": 116,
+          "bytes_SHA256": "d2822dad66d6026652d6f7489166c3a69eda885373612f73d5abd8c8ad1dbf65"
+        },
+        "MoveSelectionDisplayMoveType": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "address": 134584680,
+          "size": 120,
+          "bytes_SHA256": "f0cdb2626c31a700b9aa796b251589dfe07c980ab125f6f86517901345d854e5",
+          "direct_BL": [
+            {
+              "offset": 18,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 74,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 82,
+              "target": "G:BattlePutTextOnWindow"
+            }
+          ]
+        },
+        "HandleChooseMoveAfterDma3": {
+          "identity": "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "address": 134594252,
+          "size": 68,
+          "bytes_SHA256": "38fbaad562620fa48c5749fa8132fd31e47ff37694d3ffba0a1ad4926a1fa82e",
+          "direct_BL": [
+            {
+              "offset": 2,
+              "target": "G:IsDma3ManagerBusyWithBgCopy"
+            }
+          ]
+        },
+        "HandleInputChooseMove": {
+          "identity": "L:battle_controller_player.o:HandleInputChooseMove",
+          "address": 134576564,
+          "size": 960,
+          "bytes_SHA256": "1968c8861fd17d9b6df6770d409af089b4c88d43e4669a93b6684f313d2afdf8"
+        },
+        "BattlePutTextOnWindow": {
+          "identity": "G:BattlePutTextOnWindow",
+          "address": 135591584,
+          "size": 446,
+          "bytes_SHA256": "2417c49417161041567c1c866efefe66b9c97b2a8e702847428343af266dbbe4",
+          "direct_BL": [
+            {
+              "offset": 68,
+              "target": "G:FillWindowPixelBuffer"
+            },
+            {
+              "offset": 190,
+              "target": "G:GetBattleWindowTemplatePixelWidth"
+            },
+            {
+              "offset": 206,
+              "target": "G:GetStringCenterAlignXOffsetWithLetterSpacing"
+            },
+            {
+              "offset": 340,
+              "target": "G:GetTextSpeedInRecordedBattle"
+            },
+            {
+              "offset": 360,
+              "target": "G:GetPlayerTextSpeedDelay"
+            },
+            {
+              "offset": 408,
+              "target": "G:AddTextPrinter"
+            },
+            {
+              "offset": 420,
+              "target": "G:PutWindowTilemap"
+            },
+            {
+              "offset": 428,
+              "target": "G:CopyWindowToVram"
+            }
+          ]
+        },
+        "AddTextPrinter": {
+          "identity": "G:AddTextPrinter",
+          "address": 134235772,
+          "size": 252,
+          "bytes_SHA256": "e760b5954ecdede04a003f7ce4593d72022c621e7f742842757b587f28058354",
+          "direct_BL": [
+            {
+              "offset": 100,
+              "target": "G:GenerateFontHalfRowLookupTable"
+            },
+            {
+              "offset": 188,
+              "target": "L:text.o:RenderFont"
+            },
+            {
+              "offset": 206,
+              "target": "G:CopyWindowToVram"
+            }
+          ]
+        },
+        "RenderFont": {
+          "identity": "L:text.o:RenderFont",
+          "address": 134236184,
+          "size": 44,
+          "bytes_SHA256": "dd0296fa99a838f9ab877a72d70c87dc524083aae57903f988bf633209f820e0"
+        },
+        "RenderText": {
+          "identity": "L:text.o:RenderText",
+          "address": 134240180,
+          "size": 1472,
+          "bytes_SHA256": "f19f05b104e1d2165ccd8861ee784ac213d57b5618f96239fab6894ca22b9b9c"
+        },
+        "FontFunc_Narrow": {
+          "identity": "L:text.o:FontFunc_Narrow",
+          "address": 134239368,
+          "size": 54,
+          "bytes_SHA256": "d46f8c720c4858c196ae63a5e972a11e82d78a243119a35b0a7ea7562a203180"
+        },
+        "FontFunc_Normal": {
+          "identity": "L:text.o:FontFunc_Normal",
+          "address": 134239088,
+          "size": 54,
+          "bytes_SHA256": "92e57ce2bcfb9df2869455b8e89a69538dbd81d620c78b48ff731505301861be"
+        },
+        "DecompressGlyph_Narrow": {
+          "identity": "L:text.o:DecompressGlyph_Narrow",
+          "address": 134243680,
+          "size": 200,
+          "bytes_SHA256": "b985f1df5c96d7ff935129df5c28c902bc9eeccfc5620064aa8892e4a128a9a3"
+        },
+        "DecompressGlyph_Normal": {
+          "identity": "L:text.o:DecompressGlyph_Normal",
+          "address": 134244416,
+          "size": 200,
+          "bytes_SHA256": "d029890e892ed73b0e07eb6e41a87c7cb1880d904d512e66a440ce2ef91378d2"
+        },
+        "CopyGlyphToWindow": {
+          "identity": "G:CopyGlyphToWindow",
+          "address": 134237600,
+          "size": 1320,
+          "bytes_SHA256": "19c46bf2a580248d0dce1661560d8f18fd6bb5e35f50d7664e063cbda8be093c"
+        },
+        "CopyWindowToVram": {
+          "identity": "G:CopyWindowToVram",
+          "address": 134231640,
+          "size": 126,
+          "bytes_SHA256": "fdfd89267803826565e17853ae45ef60bf99eb3e23d8c329547e310820249c2d",
+          "direct_BL": [
+            {
+              "offset": 70,
+              "target": "G:CopyBgTilemapBufferToVram"
+            },
+            {
+              "offset": 88,
+              "target": "G:LoadBgTiles"
+            },
+            {
+              "offset": 106,
+              "target": "G:LoadBgTiles"
+            },
+            {
+              "offset": 114,
+              "target": "G:CopyBgTilemapBufferToVram"
+            }
+          ]
+        },
+        "LoadBgTiles": {
+          "identity": "G:LoadBgTiles",
+          "address": 134224196,
+          "size": 184,
+          "bytes_SHA256": "20d8f08d4bbc87be8664c1c885afd4e819b5e7e8911170c5b6fbdad269b5bddc"
+        },
+        "LoadBgVram": {
+          "identity": "G:LoadBgVram",
+          "address": 134223200,
+          "size": 136,
+          "bytes_SHA256": "5a1bc46023fd1824f20665dc90f07ccd2b8608c3702bb3e7d22ee0e35e06dd96"
+        },
+        "CopyBgTilemapBufferToVram": {
+          "identity": "G:CopyBgTilemapBufferToVram",
+          "address": 134226796,
+          "size": 104,
+          "bytes_SHA256": "75d89745b3a1c21d76c1f030b03c606b2d6e4a965745a68fea4d762d67ae7f77"
+        },
+        "RequestDma3Copy": {
+          "identity": "G:RequestDma3Copy",
+          "address": 134221416,
+          "size": 150,
+          "bytes_SHA256": "f3c1a06bc60f883fc556a88e0237cb29887d5ab5af4ee113a5d9bb6d662b2a98"
+        },
+        "ProcessDma3Requests": {
+          "identity": "G:ProcessDma3Requests",
+          "address": 134220784,
+          "size": 632,
+          "bytes_SHA256": "10840d2b59ef8f3ce4872153a15d35cf54939cb73f01f27a652c61aa6b7e1cd5"
+        },
+        "CheckForSpaceForDma3Request": {
+          "identity": "G:CheckForSpaceForDma3Request",
+          "address": 134221732,
+          "size": 64,
+          "bytes_SHA256": "6ba5a4c68d363e5dd660cdc4b284512cd35d858bab8b93a41342ee551a4bcb55"
+        },
+        "IsDma3ManagerBusyWithBgCopy": {
+          "identity": "G:IsDma3ManagerBusyWithBgCopy",
+          "address": 134224596,
+          "size": 92,
+          "bytes_SHA256": "70f7315304a3b1774a66e8dab91a4589decfd8047baf15df53ecc548607492e7"
+        },
+        "VBlankIntr": {
+          "identity": "L:main.o:VBlankIntr",
+          "address": 134219576,
+          "size": 200,
+          "bytes_SHA256": "2a4af5b4abacf957fd49940f7905f0d3b994c1789de3cf2745aef15cd1ac8053"
+        },
+        "OpponentBufferRunCommand": {
+          "identity": "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "address": 134606672,
+          "size": 80,
+          "bytes_SHA256": "6f50da6e4c39442d2f8200ce8829bcb22030a290b1ea7917bc0515296abf3e39",
+          "direct_BL": [
+            {
+              "offset": 46,
+              "target": "G:_call_via_r0"
+            },
+            {
+              "offset": 72,
+              "target": "L:battle_controller_opponent.o:OpponentBufferExecCompleted"
+            }
+          ]
+        },
+        "OpponentHandleChooseAction": {
+          "identity": "L:battle_controller_opponent.o:OpponentHandleChooseAction",
+          "address": 134618476,
+          "size": 14,
+          "bytes_SHA256": "b5ee9844d55927653036b604b14c2e2026f7962a09626d323a20876232f1f754"
+        },
+        "OpponentHandleChooseMove": {
+          "identity": "L:battle_controller_opponent.o:OpponentHandleChooseMove",
+          "address": 134618504,
+          "size": 900,
+          "bytes_SHA256": "adbc96399029d822fa54ef8f7d9539d63b08e6da8e721487725bb159aa739085"
+        },
+        "OpponentBufferExecCompleted": {
+          "identity": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "address": 134610152,
+          "size": 120,
+          "bytes_SHA256": "55dff99c38f263c9268c794b9a3b6b797c7000105500649973708e8779ab75f0",
+          "direct_BL": [
+            {
+              "offset": 30,
+              "target": "G:GetMultiplayerId"
+            },
+            {
+              "offset": 44,
+              "target": "G:PrepareBufferDataTransferLink"
+            }
+          ]
+        },
+        "AI_TrySwitchOrUseItem": {
+          "identity": "G:AI_TrySwitchOrUseItem",
+          "address": 134625328,
+          "size": 392,
+          "bytes_SHA256": "09bbf601650b127bd323fde00fe86f03542fff0a516c95b311e02d61bcdb22e3"
+        },
+        "GetMonData2": {
+          "identity": "G:GetMonData2|G:GetMonData3",
+          "address": 134652996,
+          "size": 348,
+          "bytes_SHA256": "2fa766aab4b762a7c9d3b4bfde7e3310748c9d987c78e4c1e6fe6f4cd1421b8d",
+          "direct_BL": [
+            {
+              "offset": 200,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 218,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 236,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 254,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 272,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 338,
+              "target": "G:GetBoxMonData2|G:GetBoxMonData3"
+            }
+          ]
+        },
+        "GetBoxMonData2": {
+          "identity": "G:GetBoxMonData2|G:GetBoxMonData3",
+          "address": 134653344,
+          "size": 1590,
+          "bytes_SHA256": "10dfdeca9875102b44c7ee99b72e8c1f103097f55c3922ff05956771853f1dd6",
+          "direct_BL": [
+            {
+              "offset": 36,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 48,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 62,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 74,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 82,
+              "target": "L:pokemon.o:DecryptBoxMon"
+            },
+            {
+              "offset": 88,
+              "target": "L:pokemon.o:CalculateBoxMonChecksum"
+            },
+            {
+              "offset": 564,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 570,
+              "target": "G:StringLength"
+            },
+            {
+              "offset": 1568,
+              "target": "L:pokemon.o:EncryptBoxMon"
+            }
+          ]
+        },
+        "GetSubstruct": {
+          "identity": "L:pokemon.o:GetSubstruct",
+          "address": 134652316,
+          "size": 680,
+          "bytes_SHA256": "e8ac25e7280e0b90468af36b3eaf9d7c432c3cbe4238cd99ac068f6140e863cf",
+          "direct_BL": [
+            {
+              "offset": 14,
+              "target": "G:__umodsi3"
+            }
+          ]
+        },
+        "__umodsi3": {
+          "identity": "G:__umodsi3",
+          "address": 137278800,
+          "size": 192,
+          "bytes_SHA256": "dddbf9d8f5abc4af089a4c4397384388199f4fd8b3a85f849d491390975547dd"
+        }
+      },
+      "source_files_SHA256": {
+        "battle_controller_player.c": "c4234153a31d54bd97beb6432ee3ff398fa7b3f12ae94a3453e4ef2d662192d9",
+        "battle_controller_opponent.c": "db5adda29b3f132585f2f6fc765ccc65b4084c06145b47529c6f714b380d60fa",
+        "battle_main.c": "e28ea1bdfafe63eb188d034c311faff155604a7399ec6d9b37194a55c10dc9f3",
+        "battle_message.c": "a6923146e4cad63dfab5af6ac1fedfcadd769b4c3fc10ee715268605bdebf404",
+        "battle_bg.c": "6585a71579c7e288d8bcc91bd88febcb6847e14264e7be6b4b85e382c5ad6cd4",
+        "text.c": "374b7c682f948a4eb6282010298a363961dba0d3085980e7a7755f76d07555b7",
+        "window.c": "37952b954732c54509dcd114731bbfaa4d200d37f6cbbfd84c55e4d2ec8aee08",
+        "bg.c": "1d4014fb80ae0f67ac1e1f810413f858df89430efddcb84054dd897e76bafea6",
+        "dma3_manager.c": "817a066fce3dbd8d6d5cac891f4988c0de0c9ada28d0776198a8248b3db33a6c",
+        "main.c": "c68345c6e35a104662c6982aa35a6aa09688c5886c44e9f27314653b8c8cfc48",
+        "pokemon.c": "b7ff983d5b356d017e1e8e150d27183226df6a51f2dc0a480191f06c0e9628c0",
+        "battle_ai_switch_items.c": "4dca4671aebc2eac82792279a49a0913613145b4f94cee852964665e5b70039f"
+      }
+    },
+    "candidate": {
+      "source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+      "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+      "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+      "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+      "compiled_paths": {
+        "BattleMainCB1": {
+          "identity": "L:battle_main.o:BattleMainCB1",
+          "address": 134454932,
+          "size": 80,
+          "bytes_SHA256": "b1523f21c953973309c0e00152ebb19a7981b5160f58e8233d63287c603114c3",
+          "direct_BL": [
+            {
+              "offset": 6,
+              "target": "G:_call_via_r0"
+            },
+            {
+              "offset": 36,
+              "target": "G:_call_via_r0"
+            }
+          ]
+        },
+        "BattleMainCB2": {
+          "identity": "G:BattleMainCB2",
+          "address": 134448064,
+          "size": 128,
+          "bytes_SHA256": "c5106fe70aa9cee76611e907daee2194442c42e6463de0bbc677e919d1a58747"
+        },
+        "HandleInputChooseAction": {
+          "identity": "L:battle_controller_player.o:HandleInputChooseAction",
+          "address": 134574912,
+          "size": 614,
+          "bytes_SHA256": "15d005e07abd6375fdb65d389161d3bba29d94f8d9ec733a699ecd01cb25e3ec"
+        },
+        "HandleTurnActionSelectionState": {
+          "identity": "L:battle_main.o:HandleTurnActionSelectionState",
+          "address": 134463008,
+          "size": 3908,
+          "bytes_SHA256": "0bd0f5ff0f5ae1d2ecf3b56f60a4a2f3399cc5270436ee51b0e1fbf9c0ff2b21"
+        },
+        "PlayerBufferRunCommand": {
+          "identity": "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "address": 134574780,
+          "size": 80,
+          "bytes_SHA256": "28b6d59b0b4fbb8dae64e094853533bb4db7612e956060a063842fd14e58788d"
+        },
+        "PlayerHandleChooseMove": {
+          "identity": "L:battle_controller_player.o:PlayerHandleChooseMove",
+          "address": 134594640,
+          "size": 104,
+          "bytes_SHA256": "074455983d23458b717ec6c9717a2bfd885f1bd8f8ba7733149e3f83971195b0",
+          "direct_BL": [
+            {
+              "offset": 68,
+              "target": "G:InitMoveSelectionsVarsAndStrings"
+            }
+          ]
+        },
+        "InitMoveSelectionsVarsAndStrings": {
+          "identity": "G:InitMoveSelectionsVarsAndStrings",
+          "address": 134594744,
+          "size": 56,
+          "bytes_SHA256": "6142ceac83ea88730d749d2ed19d202eb490357d14903b60367db779519a3ad8",
+          "direct_BL": [
+            {
+              "offset": 2,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayMoveNames"
+            },
+            {
+              "offset": 24,
+              "target": "L:battle_controller_player.o:MoveSelectionCreateCursorAt"
+            },
+            {
+              "offset": 28,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayPPString"
+            },
+            {
+              "offset": 32,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayPPNumber"
+            },
+            {
+              "offset": 36,
+              "target": "L:battle_controller_player.o:MoveSelectionDisplayMoveType"
+            }
+          ]
+        },
+        "MoveSelectionDisplayMoveNames": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayMoveNames",
+          "address": 134584480,
+          "size": 108,
+          "bytes_SHA256": "d68fbad7afdd0e1d0d784075f96588131a5095c18e3f8a7175e8b62c1d5c326d"
+        },
+        "MoveSelectionCreateCursorAt": {
+          "identity": "L:battle_controller_player.o:MoveSelectionCreateCursorAt",
+          "address": 134585040,
+          "size": 72,
+          "bytes_SHA256": "ebcdcc3a0ce55e6433313eee3e423729f772ddf17c42df7b16bde731b0de6b29"
+        },
+        "MoveSelectionDisplayPPString": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "address": 134584676,
+          "size": 84,
+          "bytes_SHA256": "86b02c9a8a1e6aed4be5faf1acd76f77297b77bcc8e396684b6c7da89b518ef8",
+          "direct_BL": [
+            {
+              "offset": 24,
+              "target": "L:battle_controller_player.o:MoveSelectionGetHint"
+            },
+            {
+              "offset": 40,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 48,
+              "target": "G:BattlePutTextOnWindow"
+            }
+          ]
+        },
+        "MoveSelectionDisplayPPNumber": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayPPNumber",
+          "address": 134584760,
+          "size": 116,
+          "bytes_SHA256": "643c720d7e92eb3efe26c5e38f7a6d612dfdf3d65e9f474dde76575d693c8d1e"
+        },
+        "MoveSelectionDisplayMoveType": {
+          "identity": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "address": 134584876,
+          "size": 164,
+          "bytes_SHA256": "d1ab2b84d7cb9fa3365231d678bcff4e01c81747c0e4c1624ba0ca47306531bb",
+          "direct_BL": [
+            {
+              "offset": 24,
+              "target": "L:battle_controller_player.o:MoveSelectionGetHint"
+            },
+            {
+              "offset": 38,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 46,
+              "target": "G:BattlePutTextOnWindow"
+            },
+            {
+              "offset": 74,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 128,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 136,
+              "target": "G:BattlePutTextOnWindow"
+            }
+          ]
+        },
+        "HandleChooseMoveAfterDma3": {
+          "identity": "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "address": 134594492,
+          "size": 68,
+          "bytes_SHA256": "7d9aa348cb9ffa6264d05256c31e26f2c1735096f81b2f91d9488cddba55f07c",
+          "direct_BL": [
+            {
+              "offset": 2,
+              "target": "G:IsDma3ManagerBusyWithBgCopy"
+            }
+          ]
+        },
+        "HandleInputChooseMove": {
+          "identity": "L:battle_controller_player.o:HandleInputChooseMove",
+          "address": 134576564,
+          "size": 1020,
+          "bytes_SHA256": "7c0f198344c8024eedd81ebb9cb54e696fb209bf41c28c7d33bee31c4f2a5577"
+        },
+        "BattlePutTextOnWindow": {
+          "identity": "G:BattlePutTextOnWindow",
+          "address": 135591824,
+          "size": 446,
+          "bytes_SHA256": "cb3428391980e0e15eb73200023b60283e8df9a37a69dac3c6216ad6fd40df30",
+          "direct_BL": [
+            {
+              "offset": 68,
+              "target": "G:FillWindowPixelBuffer"
+            },
+            {
+              "offset": 190,
+              "target": "G:GetBattleWindowTemplatePixelWidth"
+            },
+            {
+              "offset": 206,
+              "target": "G:GetStringCenterAlignXOffsetWithLetterSpacing"
+            },
+            {
+              "offset": 340,
+              "target": "G:GetTextSpeedInRecordedBattle"
+            },
+            {
+              "offset": 360,
+              "target": "G:GetPlayerTextSpeedDelay"
+            },
+            {
+              "offset": 408,
+              "target": "G:AddTextPrinter"
+            },
+            {
+              "offset": 420,
+              "target": "G:PutWindowTilemap"
+            },
+            {
+              "offset": 428,
+              "target": "G:CopyWindowToVram"
+            }
+          ]
+        },
+        "AddTextPrinter": {
+          "identity": "G:AddTextPrinter",
+          "address": 134235772,
+          "size": 252,
+          "bytes_SHA256": "e760b5954ecdede04a003f7ce4593d72022c621e7f742842757b587f28058354",
+          "direct_BL": [
+            {
+              "offset": 100,
+              "target": "G:GenerateFontHalfRowLookupTable"
+            },
+            {
+              "offset": 188,
+              "target": "L:text.o:RenderFont"
+            },
+            {
+              "offset": 206,
+              "target": "G:CopyWindowToVram"
+            }
+          ]
+        },
+        "RenderFont": {
+          "identity": "L:text.o:RenderFont",
+          "address": 134236184,
+          "size": 44,
+          "bytes_SHA256": "dd44d095e0fde0f0cd7e56f1eb383ca3e15d845a77f3ce6af8268502856c0644"
+        },
+        "RenderText": {
+          "identity": "L:text.o:RenderText",
+          "address": 134240180,
+          "size": 1472,
+          "bytes_SHA256": "d6ee073305854e658437a12837e538a260c888f786f12060df6790995d856200"
+        },
+        "FontFunc_Narrow": {
+          "identity": "L:text.o:FontFunc_Narrow",
+          "address": 134239368,
+          "size": 54,
+          "bytes_SHA256": "d46f8c720c4858c196ae63a5e972a11e82d78a243119a35b0a7ea7562a203180"
+        },
+        "FontFunc_Normal": {
+          "identity": "L:text.o:FontFunc_Normal",
+          "address": 134239088,
+          "size": 54,
+          "bytes_SHA256": "92e57ce2bcfb9df2869455b8e89a69538dbd81d620c78b48ff731505301861be"
+        },
+        "DecompressGlyph_Narrow": {
+          "identity": "L:text.o:DecompressGlyph_Narrow",
+          "address": 134243680,
+          "size": 200,
+          "bytes_SHA256": "35eca97c179351e4050407c29664ea967d60bd16a065e4c0ba9a73f503dee80c"
+        },
+        "DecompressGlyph_Normal": {
+          "identity": "L:text.o:DecompressGlyph_Normal",
+          "address": 134244416,
+          "size": 200,
+          "bytes_SHA256": "6437cc66099608da35e405dd104ae9b88d919930eec39279dd3bb85b232db21c"
+        },
+        "CopyGlyphToWindow": {
+          "identity": "G:CopyGlyphToWindow",
+          "address": 134237600,
+          "size": 1320,
+          "bytes_SHA256": "19c46bf2a580248d0dce1661560d8f18fd6bb5e35f50d7664e063cbda8be093c"
+        },
+        "CopyWindowToVram": {
+          "identity": "G:CopyWindowToVram",
+          "address": 134231640,
+          "size": 126,
+          "bytes_SHA256": "fdfd89267803826565e17853ae45ef60bf99eb3e23d8c329547e310820249c2d",
+          "direct_BL": [
+            {
+              "offset": 70,
+              "target": "G:CopyBgTilemapBufferToVram"
+            },
+            {
+              "offset": 88,
+              "target": "G:LoadBgTiles"
+            },
+            {
+              "offset": 106,
+              "target": "G:LoadBgTiles"
+            },
+            {
+              "offset": 114,
+              "target": "G:CopyBgTilemapBufferToVram"
+            }
+          ]
+        },
+        "LoadBgTiles": {
+          "identity": "G:LoadBgTiles",
+          "address": 134224196,
+          "size": 184,
+          "bytes_SHA256": "20d8f08d4bbc87be8664c1c885afd4e819b5e7e8911170c5b6fbdad269b5bddc"
+        },
+        "LoadBgVram": {
+          "identity": "G:LoadBgVram",
+          "address": 134223200,
+          "size": 136,
+          "bytes_SHA256": "5a1bc46023fd1824f20665dc90f07ccd2b8608c3702bb3e7d22ee0e35e06dd96"
+        },
+        "CopyBgTilemapBufferToVram": {
+          "identity": "G:CopyBgTilemapBufferToVram",
+          "address": 134226796,
+          "size": 104,
+          "bytes_SHA256": "75d89745b3a1c21d76c1f030b03c606b2d6e4a965745a68fea4d762d67ae7f77"
+        },
+        "RequestDma3Copy": {
+          "identity": "G:RequestDma3Copy",
+          "address": 134221416,
+          "size": 150,
+          "bytes_SHA256": "f3c1a06bc60f883fc556a88e0237cb29887d5ab5af4ee113a5d9bb6d662b2a98"
+        },
+        "ProcessDma3Requests": {
+          "identity": "G:ProcessDma3Requests",
+          "address": 134220784,
+          "size": 632,
+          "bytes_SHA256": "10840d2b59ef8f3ce4872153a15d35cf54939cb73f01f27a652c61aa6b7e1cd5"
+        },
+        "CheckForSpaceForDma3Request": {
+          "identity": "G:CheckForSpaceForDma3Request",
+          "address": 134221732,
+          "size": 64,
+          "bytes_SHA256": "6ba5a4c68d363e5dd660cdc4b284512cd35d858bab8b93a41342ee551a4bcb55"
+        },
+        "IsDma3ManagerBusyWithBgCopy": {
+          "identity": "G:IsDma3ManagerBusyWithBgCopy",
+          "address": 134224596,
+          "size": 92,
+          "bytes_SHA256": "70f7315304a3b1774a66e8dab91a4589decfd8047baf15df53ecc548607492e7"
+        },
+        "VBlankIntr": {
+          "identity": "L:main.o:VBlankIntr",
+          "address": 134219576,
+          "size": 200,
+          "bytes_SHA256": "8e70d029a657c992a6ff0f44cdd82ea4e2508dd2625644e875e32454c6f329ac"
+        },
+        "OpponentBufferRunCommand": {
+          "identity": "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "address": 134606912,
+          "size": 80,
+          "bytes_SHA256": "322482c0cfb5e931fcf338395373731646e068d1625b0a7e166df7cc53b4faa4",
+          "direct_BL": [
+            {
+              "offset": 46,
+              "target": "G:_call_via_r0"
+            },
+            {
+              "offset": 72,
+              "target": "L:battle_controller_opponent.o:OpponentBufferExecCompleted"
+            }
+          ]
+        },
+        "OpponentHandleChooseAction": {
+          "identity": "L:battle_controller_opponent.o:OpponentHandleChooseAction",
+          "address": 134618716,
+          "size": 14,
+          "bytes_SHA256": "b5ee9844d55927653036b604b14c2e2026f7962a09626d323a20876232f1f754"
+        },
+        "OpponentHandleChooseMove": {
+          "identity": "L:battle_controller_opponent.o:OpponentHandleChooseMove",
+          "address": 134618744,
+          "size": 900,
+          "bytes_SHA256": "ad222b4eb857e187faff697c4cdd6eff014583340531b10ee0c07cd7c06bc589"
+        },
+        "OpponentBufferExecCompleted": {
+          "identity": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "address": 134610392,
+          "size": 120,
+          "bytes_SHA256": "ab83e17465c0b765520501b48b2c1feb784a8855741abd4cfe0e7a95daab7192",
+          "direct_BL": [
+            {
+              "offset": 30,
+              "target": "G:GetMultiplayerId"
+            },
+            {
+              "offset": 44,
+              "target": "G:PrepareBufferDataTransferLink"
+            }
+          ]
+        },
+        "AI_TrySwitchOrUseItem": {
+          "identity": "G:AI_TrySwitchOrUseItem",
+          "address": 134625568,
+          "size": 392,
+          "bytes_SHA256": "c5c3ca592e0e6a2d5ba529d0c44d460be20c0865458770fdf8b603b95e6dde18"
+        },
+        "GetMonData2": {
+          "identity": "G:GetMonData2|G:GetMonData3",
+          "address": 134653236,
+          "size": 348,
+          "bytes_SHA256": "51a37845a004a5dc742aaaf16ab0f4a5ae87cc35f5d86b03765feaa2cdbe3983",
+          "direct_BL": [
+            {
+              "offset": 200,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 218,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 236,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 254,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 272,
+              "target": "L:pokemon.o:GetDeoxysStat"
+            },
+            {
+              "offset": 338,
+              "target": "G:GetBoxMonData2|G:GetBoxMonData3"
+            }
+          ]
+        },
+        "GetBoxMonData2": {
+          "identity": "G:GetBoxMonData2|G:GetBoxMonData3",
+          "address": 134653584,
+          "size": 1590,
+          "bytes_SHA256": "34c040ccfdf36f5c0e27078ec072cb149584d1e8018069604ca929347ce25d88",
+          "direct_BL": [
+            {
+              "offset": 36,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 48,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 62,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 74,
+              "target": "L:pokemon.o:GetSubstruct"
+            },
+            {
+              "offset": 82,
+              "target": "L:pokemon.o:DecryptBoxMon"
+            },
+            {
+              "offset": 88,
+              "target": "L:pokemon.o:CalculateBoxMonChecksum"
+            },
+            {
+              "offset": 564,
+              "target": "G:StringCopy"
+            },
+            {
+              "offset": 570,
+              "target": "G:StringLength"
+            },
+            {
+              "offset": 1568,
+              "target": "L:pokemon.o:EncryptBoxMon"
+            }
+          ]
+        },
+        "GetSubstruct": {
+          "identity": "L:pokemon.o:GetSubstruct",
+          "address": 134652556,
+          "size": 680,
+          "bytes_SHA256": "ad802393bf6b4fb382380ffb2c9ccd806132aff7273a57d1e1bc4863b9c6c89c",
+          "direct_BL": [
+            {
+              "offset": 14,
+              "target": "G:__umodsi3"
+            }
+          ]
+        },
+        "__umodsi3": {
+          "identity": "G:__umodsi3",
+          "address": 137279040,
+          "size": 192,
+          "bytes_SHA256": "dddbf9d8f5abc4af089a4c4397384388199f4fd8b3a85f849d491390975547dd"
+        }
+      },
+      "source_files_SHA256": {
+        "battle_controller_player.c": "c4ef82271675e79c02e29aceab40ee9d8534d29610307b36b22eebaa32604fc0",
+        "battle_controller_opponent.c": "db5adda29b3f132585f2f6fc765ccc65b4084c06145b47529c6f714b380d60fa",
+        "battle_main.c": "e28ea1bdfafe63eb188d034c311faff155604a7399ec6d9b37194a55c10dc9f3",
+        "battle_message.c": "6402480b61722032cfea9db794bbe718492562f7903de9d5c05ba8897cc45883",
+        "battle_bg.c": "6585a71579c7e288d8bcc91bd88febcb6847e14264e7be6b4b85e382c5ad6cd4",
+        "text.c": "374b7c682f948a4eb6282010298a363961dba0d3085980e7a7755f76d07555b7",
+        "window.c": "37952b954732c54509dcd114731bbfaa4d200d37f6cbbfd84c55e4d2ec8aee08",
+        "bg.c": "1d4014fb80ae0f67ac1e1f810413f858df89430efddcb84054dd897e76bafea6",
+        "dma3_manager.c": "817a066fce3dbd8d6d5cac891f4988c0de0c9ada28d0776198a8248b3db33a6c",
+        "main.c": "c68345c6e35a104662c6982aa35a6aa09688c5886c44e9f27314653b8c8cfc48",
+        "pokemon.c": "b7ff983d5b356d017e1e8e150d27183226df6a51f2dc0a480191f06c0e9628c0",
+        "battle_ai_switch_items.c": "4dca4671aebc2eac82792279a49a0913613145b4f94cee852964665e5b70039f"
+      }
+    }
+  },
+  "tool_versions": {
+    "gcc": "14.2.0",
+    "agbcc_source": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "libmGBA": "0.10.5",
+    "libmGBA_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "recovered_compiler_binaries_are_not_historical": true,
+    "ARM_binutils_package": "2.44-3+23+b1",
+    "objdump_SHA256": "bcf47eb777c4ac452c765af3e61b4e7b19ad62060a226b74eb189fd9547910e0",
+    "binutils_package_SHA256": "c9c4944e54de852536b4f6a238a682c38a6243cdc2843dd1c4f587e046c0615b",
+    "objdump": "GNU objdump (2.44-3+23+b1) 2.44"
+  },
+  "frozen_tool_file_count": 183,
+  "original_observer_source_SHA256": "564c8b04c4ab6e8ef1efb9a5d846ff1934525f9b64e647b0c0db69b23ecf8732",
+  "original_observer_binary_SHA256": "39a6ad526bee8c3550ddfe2566bbdcc9c24b1307aedeeaa8c124593c07e79429",
+  "last_equal_native_boundary": {
+    "ordinal": 3149,
+    "video": 3169,
+    "input_epoch": 5214,
+    "frame_count": 0,
+    "emulator_frame": 5213,
+    "keys": 1,
+    "snapshot_SHA256": "07ccf4b3b0e0ab4ba0d6401faee51d3297003e3049555f8e4007f7b4135a4880"
+  },
+  "detail_availability": {
+    "baseline": {
+      "SHA256": "31ad3f6e8235b25d57936d1c2156f6bc7cd3e142fd769df751a1475d57695211",
+      "visual_range": [
+        7050,
+        7050
+      ],
+      "records": 17
+    },
+    "candidate": {
+      "SHA256": "c6476804dc3d1b1adb4e697fd85a2858831b909c33b6cfa9092426de47782372",
+      "visual_range": [
+        3169,
+        3171
+      ],
+      "records": 101
+    }
+  },
+  "candidate_frame_context": [
+    {
+      "event": 6,
+      "visual": 3169,
+      "input": 5214,
+      "location": {
+        "raw_PC": 134219982,
+        "instruction_PC": 134219980,
+        "CPSR": 1073741887,
+        "identity": "L:main.o:WaitForVBlank",
+        "offset": 32
+      },
+      "read_iteration": 5043,
+      "dispatch_iteration": 5043,
+      "CB1_iteration": 3664,
+      "CB2_iteration": 5043,
+      "video_counter": 5214,
+      "IE": 197,
+      "IF": 1,
+      "IME": 1,
+      "main_intr_flags": 4,
+      "BIOS_intr_flags": 5,
+      "pending_IRQ": 1,
+      "event_root_id": 1,
+      "copy_buffer_count": 0,
+      "copy_buffer_armed": 1,
+      "copy_buffer_bytes": 0
+    },
+    {
+      "event": 6,
+      "visual": 3170,
+      "input": 5215,
+      "location": {
+        "raw_PC": 134221462,
+        "instruction_PC": 134221460,
+        "CPSR": 2147483711,
+        "identity": "G:RequestDma3Copy",
+        "offset": 44
+      },
+      "read_iteration": 5044,
+      "dispatch_iteration": 5044,
+      "CB1_iteration": 3665,
+      "CB2_iteration": 5043,
+      "video_counter": 5215,
+      "IE": 197,
+      "IF": 1,
+      "IME": 1,
+      "main_intr_flags": 5,
+      "BIOS_intr_flags": 5,
+      "pending_IRQ": 1,
+      "event_root_id": 1,
+      "copy_buffer_count": 0,
+      "copy_buffer_armed": 0,
+      "copy_buffer_bytes": 0
+    },
+    {
+      "event": 6,
+      "visual": 3171,
+      "input": 5216,
+      "location": {
+        "raw_PC": 137279090,
+        "instruction_PC": 137279088,
+        "CPSR": 63,
+        "identity": "G:__umodsi3",
+        "offset": 48
+      },
+      "read_iteration": 5044,
+      "dispatch_iteration": 5044,
+      "CB1_iteration": 3665,
+      "CB2_iteration": 5043,
+      "video_counter": 5216,
+      "IE": 197,
+      "IF": 1,
+      "IME": 1,
+      "main_intr_flags": 5,
+      "BIOS_intr_flags": 5,
+      "pending_IRQ": 1,
+      "event_root_id": 1,
+      "copy_buffer_count": 0,
+      "copy_buffer_armed": 0,
+      "copy_buffer_bytes": 0
+    },
+    {
+      "event": 8,
+      "visual": 3171,
+      "input": 5216,
+      "location": {
+        "raw_PC": 137279090,
+        "instruction_PC": 137279088,
+        "CPSR": 63,
+        "identity": "G:__umodsi3",
+        "offset": 48
+      },
+      "read_iteration": 5044,
+      "dispatch_iteration": 5044,
+      "CB1_iteration": 3665,
+      "CB2_iteration": 5043,
+      "video_counter": 5216,
+      "IE": 197,
+      "IF": 1,
+      "IME": 1,
+      "main_intr_flags": 5,
+      "BIOS_intr_flags": 5,
+      "pending_IRQ": 1,
+      "event_root_id": 1,
+      "copy_buffer_count": 0,
+      "copy_buffer_armed": 0,
+      "copy_buffer_bytes": 0
+    }
+  ],
+  "printer_operation_fixture": [
+    {
+      "case": "baseline",
+      "move_index": 0,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 3,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 0,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 5,
+      "normal_glyphs": 6,
+      "font_controls": 1,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 1,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 3,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 1,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 5,
+      "normal_glyphs": 6,
+      "font_controls": 1,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 2,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 3,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 2,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 5,
+      "normal_glyphs": 6,
+      "font_controls": 1,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 3,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 3,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "baseline",
+      "move_index": 3,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 5,
+      "normal_glyphs": 6,
+      "font_controls": 1,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 0,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 4,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 0,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 7,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 1,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 4,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 1,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 9,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 2,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 4,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 2,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 9,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 3,
+      "window": 0,
+      "printing_calls": 1,
+      "narrow_glyphs": 4,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 512,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    },
+    {
+      "case": "candidate",
+      "move_index": 3,
+      "window": 1,
+      "printing_calls": 1,
+      "narrow_glyphs": 13,
+      "normal_glyphs": 0,
+      "font_controls": 0,
+      "GFX_submissions": 2,
+      "MAP_submissions": 1,
+      "GFX_bytes": 1024,
+      "MAP_bytes_if_BG0_visible_normal_screen2": 4096
+    }
+  ],
+  "candidate_actual_native_B_trace_absent": true,
+  "copied_expected_trace_is_not_actual": true,
+  "passive_frame_hashes_are_not_normalized_state_comparisons": true,
+  "opponent_execution_bit1_difference": true,
+  "cursor_refresh_input_branches_not_run": true,
+  "increased_print_or_DMA_submission_count_not_supported": true,
+  "not_observed": [
+    "baseline detailed interval/iteration/stack",
+    "gActiveBattler or controller command byte at STOP",
+    "candidate stack/caller chain above GetSubstruct",
+    "sDma3Requests/lock/cursor/busy mask/VCOUNT at mismatch",
+    "unflushed candidate edge buffer"
+  ],
+  "recommended_game_remedy": null,
+  "next": "Review minimal passive diagnostic proposal before any separately frozen bounded gameplay claim; keep original strict streams and STOP124",
+  "join": [
+    {
+      "visual": 3169,
+      "baseline_location": {
+        "raw_PC": 134219982,
+        "instruction_PC": 134219980,
+        "CPSR": 1073741887,
+        "identity": "L:main.o:WaitForVBlank",
+        "offset": 32
+      },
+      "candidate_location": {
+        "raw_PC": 134219982,
+        "instruction_PC": 134219980,
+        "CPSR": 1073741887,
+        "identity": "L:main.o:WaitForVBlank",
+        "offset": 32
+      },
+      "complete_frame_record_digest_equal": false,
+      "input_epoch": 5214,
+      "records_per_frame": 64,
+      "boundary_count": 1,
+      "latest_boundary": 3149,
+      "latest_boundary_input": 5214
+    },
+    {
+      "visual": 3170,
+      "baseline_location": {
+        "raw_PC": 135591680,
+        "instruction_PC": 135591678,
+        "CPSR": 63,
+        "identity": "G:BattlePutTextOnWindow",
+        "offset": 94
+      },
+      "candidate_location": {
+        "raw_PC": 134221462,
+        "instruction_PC": 134221460,
+        "CPSR": 2147483711,
+        "identity": "G:RequestDma3Copy",
+        "offset": 44
+      },
+      "complete_frame_record_digest_equal": false,
+      "input_epoch": 5215,
+      "records_per_frame": 48,
+      "boundary_count": 0,
+      "latest_boundary": 3149,
+      "latest_boundary_input": 5214
+    },
+    {
+      "visual": 3171,
+      "baseline_location": {
+        "raw_PC": 28,
+        "instruction_PC": 24,
+        "CPSR": 146,
+        "identity": "no unique ELF STT_FUNC (e.g. BIOS IRQ/vector)",
+        "offset": null
+      },
+      "candidate_location": {
+        "raw_PC": 137279090,
+        "instruction_PC": 137279088,
+        "CPSR": 63,
+        "identity": "G:__umodsi3",
+        "offset": 48
+      },
+      "complete_frame_record_digest_equal": false,
+      "input_epoch": 5216,
+      "records_per_frame": 36,
+      "boundary_count": 0,
+      "latest_boundary": 3149,
+      "latest_boundary_input": 5214
+    }
+  ],
+  "other_direct_call_lists_and_all_disassembly": "Private full audit artifact; selected compiled fingerprints published, no full symbol table"
+}

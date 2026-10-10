@@ -1,0 +1,25 @@
+{
+  "timing_attempts": {
+    "01": "ambiguous unscoped HandleInputChooseAction; fixed scoped player identity",
+    "02": "requested non-ELF GetMonData macro name; fixed emitted GetMonData2/GetMonData3 aliases",
+    "03": "already-started same unsupported macro lookup; retained, emitted alias fix followed",
+    "04": "incorrect equality assumption for raw passive detail hashes; these include build-dependent addresses/paths and are not strict normalized state",
+    "05": "PASS initial offline investigation",
+    "06": "PASS extended GetBoxMonData/source/tool/native-boundary/Save and independent printer count guards",
+    "07": "PASS final audit including exact ARM objdump and2.44-3+23+b1 package manifest bytes"
+  },
+  "full_host_compile_attempts": {
+    "01": "missing USE_DEBUGGERS compile flag",
+    "02": "ENABLE_DEBUGGERS wrong flag, same missing struct field",
+    "03": "PASS exact previous USE_DEBUGGERS flags"
+  },
+  "terminal_fixture_attempts": {
+    "01": "PASS six host-only cases",
+    "02": "PASS eight cases including51/109 exits",
+    "03": "PASS eight cases + whole generated C reversal + exact host compile/link; never launched"
+  },
+  "no_gameplay_retry": true,
+  "atomic_patch_context_mismatch": "One unapplied test-count hunk corrected; no partial mutation or dependent execution",
+  "ordinary_read_errors": "Missing .agents and guessed file/case paths corrected using source/tree inventory; no repository-local .agents skills available",
+  "tool_wrapper_error": "One JS closing-parenthesis parse failure before execution; corrected, no command or artifact mutation"
+}

@@ -1,0 +1,1739 @@
+{
+  "Guard_Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+  "PASS": true,
+  "available_bytes": 5978701824,
+  "base_commit": "65bc4073d140b9d58bf1b83bd33235e28c972b23",
+  "binding_count": 95,
+  "build_identity": {
+    "ARM_binutils": "2.44-3+23+b1",
+    "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+    "GCC": "14.2.0-19",
+    "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+    "agbcc_source": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+    "game_commit": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+    "game_rebuilt": false,
+    "libmGBA_0_10_5_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "recovered_compilers_are_historical_originals": false
+  },
+  "build_verification": {
+    "engine_manifest_entries_rehashed": 11734,
+    "new_game_builds": 0,
+    "retained_manifest_SHA256": "c4ee6f12491985cc4009ed7999356e22f6971231107251c69e6f1e33a748c3b4"
+  },
+  "capture_ledger": {
+    "howler-continuation": [
+      "cold.ppm",
+      "howler-start.ppm",
+      "howler-victory.ppm",
+      "howler-resolved.ppm",
+      "guide-howler.ppm",
+      "saved-success.ppm",
+      "saved.ppm"
+    ],
+    "howler-new-save-cold": [
+      "cold.ppm"
+    ]
+  },
+  "dependency_Git_paths_SHA256": {
+    "docs/floor1/c01-howler-continuation-offline-contract.md": "159f1602fe075dcbd48b1832f2fc76fd3acb2f1f387f375f4791acb2c029591c",
+    "scripts/contracts/f1-c01-howler-continuation.route": "fe366b7446e1f9e071aad41df1fff95b758b8ad2d671ccc6685be688d0222fee",
+    "scripts/contracts/f1-c01-howler-new-save-cold.route": "d75f3b8943f7a4b1fddb7c363750fffcb32e94fd1a1823391f558d98f1f00b72",
+    "scripts/floor1/howler-continuation-admission.py": "61d83424cc93a10c41896abe24a623c41ab6b66cf0fdbfd72ab97ed7bf86a44d",
+    "scripts/floor1/howler-continuation-audit.py": "6d635e3cdb78703915ccd99886938ab7ea23d6e2cdd0752a7a0b6a294d554c2c",
+    "scripts/floor1/howler-continuation-events.py": "e7cbf20c9ba870bd7fcc79e27c5720e5c0359841a051ade8b18193afb586cc26",
+    "scripts/floor1/howler-continuation-host.py": "e26fec85cb8070c5373640f7b2467688841dc8dd53e1181eff958dbe66d2b5ca",
+    "scripts/floor1/howler-continuation-inert.py": "2ae572dda3700add27810b7ed5ab233a04c5fe2ec0bf52cab17186d1dec68370",
+    "scripts/floor1/howler-continuation-integration.h": "c02e2d4c95e273a498020584302bb2654cb3a510a82834d914fe3b107e7e5100",
+    "scripts/floor1/howler-continuation-route.py": "180c990601c698dc10946f7388ca5fcaef72b2f553be275acd841f818ec552ea",
+    "scripts/floor1/howler-continuation-save.h": "b005cdcac1a3003e738bc5d2007a3ca742289f2a6b39d788e6d70608504aa245",
+    "scripts/floor1/howler-continuation-state.py": "796792cf45170977b7f1aae7c934094ca7339eb4ab23ef1e8e28bd065d65213b",
+    "scripts/test-howler-continuation-offline.py": "c6d85767aa51bc4d94e91ca39c55bd294700ce065e31bd4d0ef8aaedf9bd1883"
+  },
+  "dependency_hash_gate_negatives": 15,
+  "development_history": {
+    "grouped_correction_aggregate_failures": 0,
+    "grouped_correction_clean_aggregate_passes": 1,
+    "grouped_correction_focused_source_event_check": 1,
+    "prior_receipt_record": {
+      "clean_start_aggregate_invalidated_during_source_review": 1,
+      "dirty_development_aggregate_passes": 2,
+      "eligible_clean_corrected_aggregate_passes": 1,
+      "initial_Werror_unused_binding_compile_failure_corrected": 1,
+      "runtime_failures_or_retries": 0
+    },
+    "runtime_failures_or_retries": 0
+  },
+  "executable_hash_gate_negatives": 5,
+  "gameplay_processes": 0,
+  "generated_C_SHA256": "859c201b55db4ac5d8b6b7bea38b481bd2f5b15df060937d011ccd733c1fa949",
+  "independent_private_backup": "unapproved/unverified",
+  "inherited_generated_source_SHA256": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "native_ABI": {
+    "assembly_SHA256": "427a20d9e189dab5dfd801e267504dfd414d80b026b1a4d70d579cb1be76a192",
+    "compile_only": true,
+    "object_SHA256": "8c91ac04126f977a7d9205f3b7b03c6f084ae001543ddddf5e76da218d085183",
+    "party_type_layout_byte": 17,
+    "text_flags_auto_scroll_bytes": "04000000",
+    "values": [
+      12,
+      0,
+      4,
+      8,
+      28,
+      4,
+      5,
+      8,
+      18,
+      20,
+      9,
+      88,
+      42,
+      40,
+      19,
+      40,
+      8,
+      100,
+      85,
+      255,
+      11,
+      4,
+      3,
+      8,
+      3,
+      8,
+      4,
+      4,
+      1,
+      1,
+      3,
+      1,
+      36,
+      16,
+      0,
+      4,
+      5,
+      16,
+      27,
+      28,
+      0,
+      1,
+      32,
+      6,
+      1,
+      9,
+      1000,
+      4,
+      1
+    ]
+  },
+  "native_Save_handoff_cases": 36,
+  "native_first_failure_terminal_cases": 9,
+  "native_foe_reader_cases": 34,
+  "native_foes_and_Save_log_SHA256": "0e383db904ecf5fdc1a3d7da3133aa9b789eb274f0d2757cb16b573e3f1d7de4",
+  "native_grown_transaction_log_SHA256": "42341add1c2ed98d2ee4d5bd3cde6922e47346160a74a1e045eabc29dfdd0467",
+  "native_instruction_IRQ_transaction_total": {
+    "negative": 140196,
+    "positive": 29016,
+    "snapshot_byte_negatives": 39564,
+    "unobservable_identical_word_images": 2616
+  },
+  "native_mixed_growth_reader_cases": 6,
+  "native_mixed_transaction_log_SHA256": "e8f5bf39da3a85193236e5899124dbe3c2587694c96fa54755aa90caa8133415",
+  "native_single_stock_medicine_cases": 12,
+  "native_transaction_log_SHA256": "95a318f9fa0707c0dab361d57fe43eb950889dde58aa47c7e963d53d8a404b8a",
+  "observer_SHA256": "c9839f6df13d3127f21b9f10f496d1d87699114f411312b4dbb987870e5b8c33",
+  "offline_only": true,
+  "offline_output_bytes": 7135865,
+  "old_counts": {
+    "C01a_actual_baseline_candidate_field": [
+      5,
+      3,
+      1
+    ],
+    "C01a_claimed_baseline_candidate_field": [
+      6,
+      3,
+      1
+    ],
+    "Library_failed_uploads_download": [
+      5,
+      1
+    ],
+    "cold_claims_processes": [
+      2,
+      2
+    ],
+    "historical_V01_baseline_candidate": [
+      6,
+      4
+    ],
+    "later_separate_pair": [
+      1,
+      1
+    ],
+    "opening_claims_processes": [
+      5,
+      5
+    ],
+    "ordinary_recovery": 5
+  },
+  "original_operands_unchanged": true,
+  "policy_vectors": 232128,
+  "prior_superseded_receipt_SHA256": "fc08bb1f8783cc44bc575caead5b323a662a9b0ddead1e0c5b4a660be05de671",
+  "private_receipt_SHA256": "a8bc08c9e52a73de404fbcd43754257192074a1a3be4a1c9946cd5377ff12825",
+  "production_observer_identical_to_prior": true,
+  "production_preinit_negatives": 4,
+  "provenance": {
+    "PR114_merge": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+    "PR115_merge": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+    "broader_human_motion_or_full_floor_accepted": false,
+    "historical_STOP117": {
+      "expected_B": 8402,
+      "preserved": true,
+      "requested_visual": 8536
+    },
+    "historical_V01_baseline_candidate": [
+      6,
+      4
+    ],
+    "later_V01_pair": [
+      1,
+      1
+    ],
+    "scoped_PR114_runtime_accepted": true,
+    "scoped_PR115_Journal_notes_accepted": true,
+    "withdrawn_live_hints_accepted": false
+  },
+  "reservation_bytes": 10000408128,
+  "runtime_actions_rejected": 6,
+  "runtime_review": "CLOSED",
+  "runtime_storage_admitted": false,
+  "shortfall_bytes": 4021706304,
+  "source_audit": {
+    "PASS": true,
+    "WEAKEN_integer_plateaus": [
+      [
+        0,
+        4
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        -2,
+        4
+      ],
+      [
+        -3,
+        4
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -5,
+        4
+      ],
+      [
+        -6,
+        4
+      ]
+    ],
+    "fixed_frames_each_leg": 704,
+    "foes": [
+      {
+        "nature": 17,
+        "personality": 612992,
+        "species": "WHISMUR",
+        "stats": [
+          30,
+          14,
+          9,
+          9,
+          15,
+          9
+        ]
+      },
+      {
+        "nature": 10,
+        "personality": 1330560,
+        "species": "ZIGZAGOON",
+        "stats": [
+          25,
+          9,
+          12,
+          16,
+          10,
+          12
+        ]
+      }
+    ],
+    "one_critical_plus_ordinary_envelopes": [
+      16,
+      12,
+      9,
+      12
+    ],
+    "order": [
+      23,
+      16,
+      14,
+      9
+    ],
+    "physical_steps_each_leg": 17,
+    "route": {
+      "field": {
+        "layout_SHA256": "fb90623b218e9947f351cc87639f6b348345c7c15708158eeb2b35e37329b996",
+        "native_warps": [
+          {
+            "dest_map": "MAP_DCC_F1D1QUIET",
+            "dest_warp_id": "0",
+            "elevation": 3,
+            "x": 37,
+            "y": 26
+          },
+          {
+            "dest_map": "MAP_DCC_F1D1WARDEN",
+            "dest_warp_id": "0",
+            "elevation": 3,
+            "x": 45,
+            "y": 17
+          },
+          {
+            "dest_map": "MAP_DCC_F1D1WORKSHOP",
+            "dest_warp_id": "0",
+            "elevation": 3,
+            "x": 42,
+            "y": 40
+          }
+        ],
+        "path": [
+          [
+            37,
+            26
+          ],
+          [
+            38,
+            26
+          ],
+          [
+            39,
+            26
+          ],
+          [
+            40,
+            26
+          ],
+          [
+            41,
+            26
+          ],
+          [
+            42,
+            26
+          ],
+          [
+            43,
+            26
+          ],
+          [
+            44,
+            26
+          ],
+          [
+            45,
+            26
+          ],
+          [
+            46,
+            26
+          ],
+          [
+            47,
+            26
+          ],
+          [
+            48,
+            26
+          ],
+          [
+            49,
+            26
+          ],
+          [
+            50,
+            26
+          ],
+          [
+            51,
+            26
+          ],
+          [
+            51,
+            27
+          ]
+        ]
+      },
+      "quiet": {
+        "layout_SHA256": "084c94389966310a3e4e5f88568d830d56aa78ef2eda7e7a20b45715e5068a74",
+        "native_warps": [
+          {
+            "dest_map": "MAP_DCC_F1D1FIELD",
+            "dest_warp_id": "0",
+            "elevation": 3,
+            "x": 4,
+            "y": 3
+          }
+        ],
+        "path": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    "seven_STRIKE_without_favorable_criticals": [
+      {
+        "Potion_turn": null,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 0,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              18,
+              25
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              6,
+              22
+            ],
+            "before": [
+              18,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              22
+            ],
+            "before": [
+              6,
+              22
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              16
+            ],
+            "before": [
+              0,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              10
+            ],
+            "before": [
+              0,
+              16
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              4
+            ],
+            "before": [
+              0,
+              10
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              4
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 1,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              6,
+              22
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              22
+            ],
+            "before": [
+              6,
+              22
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              16
+            ],
+            "before": [
+              0,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              10
+            ],
+            "before": [
+              0,
+              16
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              4
+            ],
+            "before": [
+              0,
+              10
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              4
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 2,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 3,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 4,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 5,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      },
+      {
+        "Potion_turn": 6,
+        "strikes": 7,
+        "trace": [
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              14,
+              22
+            ],
+            "before": [
+              30,
+              25
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 0
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              2,
+              19
+            ],
+            "before": [
+              14,
+              22
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              627,
+              937
+            ],
+            "party_levels": [
+              10,
+              9
+            ],
+            "turn": 1
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              19
+            ],
+            "before": [
+              2,
+              19
+            ],
+            "earned_XP": [
+              64
+            ],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 2
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              13
+            ],
+            "before": [
+              0,
+              19
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 3
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              7
+            ],
+            "before": [
+              0,
+              13
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 4
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              1
+            ],
+            "before": [
+              0,
+              7
+            ],
+            "earned_XP": [],
+            "party_XP": [
+              691,
+              1001
+            ],
+            "party_levels": [
+              10,
+              10
+            ],
+            "turn": 5
+          },
+          {
+            "Carl_attack_stage": -1,
+            "after": [
+              0,
+              0
+            ],
+            "before": [
+              0,
+              1
+            ],
+            "earned_XP": [
+              57
+            ],
+            "party_XP": [
+              748,
+              1058
+            ],
+            "party_levels": [
+              11,
+              10
+            ],
+            "turn": 6
+          }
+        ]
+      }
+    ],
+    "simultaneous_criticals_guaranteed": false
+  },
+  "source_event_fixture": {
+    "Carl_PP": 7,
+    "Carl_STRIKE_uses": 1,
+    "Carl_turn1_action": false,
+    "PASS": true,
+    "mixed_maxHP": [
+      36,
+      30
+    ],
+    "negative_cases": 14,
+    "proof_SHA256": "5f2a0964f4f93b1ef3acf994f8845215b065469f1bb7553db7ec6e8a5ff38810",
+    "synthetic_offline_only": true
+  },
+  "source_event_negative_cases": 14,
+  "source_status_at_start": "",
+  "stateful_flow": {
+    "cold_byte_negatives": 3324,
+    "complete_stationary_handoffs": 4,
+    "disk_sector_negatives": 14,
+    "phase_negative_cases": 13152,
+    "physical_walk_steps": 34
+  },
+  "storage": {
+    "cold": {
+      "components": {
+        "256_PPM_and_PNG_captures": 59136000,
+        "bounded_review_MP4": 16777216,
+        "complete_battle_trace": 6240000,
+        "complete_field_trace": 20040000,
+        "index": 96000,
+        "medicine_full_state_audits": 0,
+        "native_RGB_all_frames": 691200000,
+        "source_Save_manifest_receipts": 33554432,
+        "two_logs": 67108864
+      },
+      "limit_bytes": 894152512,
+      "per_file_limit_bytes": 2147483648,
+      "per_log_limit_bytes": 33554432,
+      "worst_case_bytes": 894152512
+    },
+    "opening": {
+      "components": {
+        "256_PPM_and_PNG_captures": 59136000,
+        "bounded_review_MP4": 33554432,
+        "complete_battle_trace": 74880000,
+        "complete_field_trace": 240480000,
+        "index": 1152000,
+        "medicine_full_state_audits": 33554432,
+        "native_RGB_all_frames": 8294400000,
+        "source_Save_manifest_receipts": 33554432,
+        "two_logs": 67108864
+      },
+      "limit_bytes": 8837820160,
+      "per_file_limit_bytes": 2147483648,
+      "per_log_limit_bytes": 33554432,
+      "worst_case_bytes": 8837820160
+    }
+  },
+  "synthetic_fixture_is_gameplay_Save": false,
+  "tested_source_commit": "7c2623ceddddd4fa5595293f4f61a8087bbe8587",
+  "tool_pin_count": 183,
+  "verified_copy_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+  "whole_route_budget": {
+    "components": {
+      "dialogue": 13200,
+      "encounter": 36000,
+      "engage": 3600,
+      "fixed_steps": 7025,
+      "three_native_Save_waits": 10800
+    },
+    "total": 70625
+  }
+}

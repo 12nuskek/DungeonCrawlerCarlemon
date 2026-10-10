@@ -1,0 +1,14 @@
+{
+  "stage": "prepare",
+  "tested_game": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "host_source": "2580b38eeda5c1b56b988ae04bbd24b7ac131006",
+  "exit": 1,
+  "failure": "source byte comparison: engine/asmdiff.ps1",
+  "host_compilation_attempts": 0,
+  "emulator_executions": 0,
+  "game_build_attempts": 1,
+  "game_build_exit": 0,
+  "prepare_log_SHA256": "daa2436c401d1327d792c7476066a0f4ed8835b9f157b4b9af2e8b376a9d6b9b",
+  "diagnosis_SHA256": "39396bccee50fddd9eff413ac6c69f9cc2b380e8cdbfbfa37673a528a92779b4",
+  "next": "Review a separately scoped archive-attribute-aware source check; no retry under this claim"
+}

@@ -1,3 +1,23 @@
+## Ordinary main build — preparation STOP before gameplay
+
+Publication base5b1c108557ecdb2704dea94c61aff1fb28845acd;
+new runner/preparation source2580b38eeda5c1b56b988ae04bbd24b7ac131006.
+One isolated main c6d647a815ffce44a2419a2cf83b6c2c094359f0 build passed,
+ROM ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461,
+ELF6e56b32192e1a861b39c70e62bb5c43e762b9f5cc8ce0389d3cb494c3ee6dde6.
+New compiler identities retained; no original-tool identity claim.
+Prepare failed raw source equality at engine/asmdiff.ps1 before host compile.
+Read-only diagnosis:9037 exact/2677 explicit CRLF-only files; no non-EOL source
+mismatch. No retry or emulator execution, Save, screenshot or motion.
+[Exact evidence and supported next action](evidence/floor1/ordinary-recovery-20261009/build-r4/README.md).
+New ordinary wrapper/ABI/contract implementation is prospective, not executable
+acceptance. Review a separately claimed attribute-aware source verification,
+then observer/ABI/bindings/routes freeze, then one ordinary reconstruction and
+manual Save/cold; stop before Warden. PR114 remains draft/unmerged; historical
+six baseline/four candidate, STOP117 and missing oracle/legacy state unchanged.
+Existing Library5+1 failed transfers unchanged; no independent private backup.
+Prior records follow unchanged.
+
 ## Independent tooling completion — executable, identities qualified
 
 Tooling checks at base `6d05b559e0bfde1044015f7fbbe13ea0e1b172c6`.

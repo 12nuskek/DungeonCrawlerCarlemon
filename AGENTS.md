@@ -1,3 +1,23 @@
+## Current replacement checkpoint — main built, preparation stopped
+
+The sole replacement writer built integrated main c6d647a815ffce44a2419a2cf83b6c2c094359f0
+once with verified tooling-r3. Actual ROM ae1e9d36a94ed2eaa9d8fc79d790a2dc47173b932551891d889c657e12ca8461
+matches recorded gameplay output; actual ELF 6e56b32192e1a861b39c70e62bb5c43e762b9f5cc8ce0389d3cb494c3ee6dde6
+is new. New runner/preparation source2580b38eeda5c1b56b988ae04bbd24b7ac131006
+stopped before host generation/compilation/binding/gameplay: raw Git byte gate
+rejected engine/asmdiff.ps1. Read-only complete diagnosis found9037 exact files,
+2677 exclusively pinned CRLF transformations; no tracked non-EOL discrepancy.
+Do not retry the stopped prepare or run any dependent gameplay. Review an exact
+archive-attribute-aware source check and separate prepare claim, reusing this
+build and preserving native gates. New wrappers/contract are prospective and
+unverified. Exact evidence: docs/evidence/floor1/ordinary-recovery-20261009/build-r4/README.md.
+
+No new Save/capture/Warden/candidate pair/merge/Library transfer. Draft PR114
+keeps active-pose engine8d8c7761 and offline-only source9c83611e; historical
+six baseline/four candidate and STOP117 visual8536/expectedB8402 unchanged.
+Original oracle/legacy/Save remain missing; local evidence has no verified
+independent backup. Prior checkpoint records below remain historical.
+
 Current independent tooling continuation — 9–10 October 2026: base 6d05b559. Parent
 supplied three verified official resource URLs; mgba dev/runtime and zip exact
 manifest packages restored once; source-resolved pinned png headers restored.

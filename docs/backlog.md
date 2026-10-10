@@ -1,3 +1,19 @@
+## Current dependency — ordinary source verifier review
+
+One integrated main c6d647a815ffce44a2419a2cf83b6c2c094359f0 build succeeded.
+Separate new ordinary runner/preparation2580b38eeda5c1b56b988ae04bbd24b7ac131006
+stopped at raw Git/archive equality before host compilation or gameplay.
+Read-only diagnosis confirms explicitly pinned CRLF representation differences
+only. [Build, exact STOP and next dependency](evidence/floor1/ordinary-recovery-20261009/build-r4/README.md).
+Review a scoped attribute-aware source gate and separately named prepare claim;
+reuse actual verified main outputs/tools. Then freeze observer/native ABI/
+bindings/routes before the one authorized New Game-to-patrol manual Save and
+independent cold reconstruction. Do not retry this stopped output, weaken native
+assertions, replay old wrappers, run Warden/candidate pair or merge PR114.
+No reconstructed Save/captures yet; historical six/four and STOP117 remain.
+Accepted nine-district Floor1 plan and all deferred work remain authoritative.
+Prior checkpoint bodies follow unchanged.
+
 ## Active dependency — ordinary recovery freeze after tooling review
 
 Independent tooling increment from 6d05b559 completed executable ARM/agbcc/mGBA/

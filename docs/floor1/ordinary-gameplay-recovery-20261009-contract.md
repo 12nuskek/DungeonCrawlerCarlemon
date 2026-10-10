@@ -1,8 +1,13 @@
 # Ordinary gameplay recovery — replacement workspace contract
 
-Status: new ordinary recovery source freeze, pending observer compilation and
-binding against the one completed isolated main build. This contract replaces
-only its previously blocked draft. Historical contracts and executions remain
+Status: **terminal preparation STOP before host compilation/gameplay**. The new
+source verifier failed at engine/asmdiff.ps1 because it compared raw Git bytes
+with the pinned CRLF archive representation. Read-only diagnosis found only
+explicit attribute-driven CRLF transformations. No retry or executable freeze.
+[Exact build/stop/diagnosis](../evidence/floor1/ordinary-recovery-20261009/build-r4/README.md).
+A separately reviewed archive-attribute-aware source check and new prepare claim
+are the next dependency; the successful single game build should be reused.
+This prospective contract replaces only its previously blocked draft. Historical contracts and executions remain
 unchanged. Kurt authorized the replacement on 9 October 2026 at 23:29 UTC;
 accepted tooling-r3 identities permit this explicitly new ordinary recovery.
 First unexpected failure is terminal; checkpoint before dependent gameplay.

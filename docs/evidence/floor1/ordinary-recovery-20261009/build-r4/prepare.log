@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-recovery.py", line 267, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-recovery.py", line 263, in main
+    if args.stage=='prepare': prepare(args.build.resolve(),args.output.resolve())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/DungeonCrawlerCarlemon/scripts/test-f1-ordinary-recovery.py", line 165, in prepare
+    assert local.read_bytes() == expected, ('main source bytes', path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('main source bytes', 'engine/asmdiff.ps1')

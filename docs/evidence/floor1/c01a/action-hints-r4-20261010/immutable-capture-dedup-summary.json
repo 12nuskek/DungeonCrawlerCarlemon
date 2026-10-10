@@ -1,0 +1,7 @@
+{
+  "PASS": true,
+  "scope": "Completed immutable numbered PPM captures only; identical bytes retained at every historical path. No Save/log/claim/contract/source/tool/ROM/ELF mutation; original archive timestamps intact.",
+  "replaced_paths": 6773,
+  "estimated_allocated_bytes_reclaimed": 804524032,
+  "original_archive_bytes_unchanged": true
+}

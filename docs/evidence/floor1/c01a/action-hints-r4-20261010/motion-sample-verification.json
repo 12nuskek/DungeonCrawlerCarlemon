@@ -1,0 +1,30 @@
+{
+  "scope": "Actual retained native frame samples; no direct human whole-video playback claim",
+  "sampled_frames": [
+    0,
+    1180,
+    1199,
+    3220,
+    3430,
+    3471,
+    3490,
+    3730,
+    4000,
+    4200,
+    4900,
+    5600,
+    6200,
+    6800,
+    7000,
+    7050
+  ],
+  "viewing_frame_count": 7051,
+  "dimensions": [
+    240,
+    160
+  ],
+  "native_FPS": "16777216/280896",
+  "duration": "118.052823",
+  "viewing_fps": "23891/400",
+  "all_lossless_RGB_verified": true
+}

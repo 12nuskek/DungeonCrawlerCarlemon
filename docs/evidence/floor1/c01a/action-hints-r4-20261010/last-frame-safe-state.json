@@ -1,0 +1,70 @@
+{
+  "scope": "Actual final supplemental physical frame; battle remains active after two turns, no victory or Save",
+  "party_checksums_all6_valid": true,
+  "duo": [
+    {
+      "species": 66,
+      "level": 11,
+      "experience": 748,
+      "status": 0,
+      "PP": [
+        8,
+        38,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        28,
+        38,
+        26,
+        18,
+        14,
+        12,
+        14
+      ],
+      "friendship": 89
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1058,
+      "status": 0,
+      "PP": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        24,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ],
+      "friendship": 81
+    }
+  ],
+  "party_count": 2,
+  "friendship_counter": 47,
+  "all300_flags_exact_in_all_frames": true,
+  "preparation_boss_checkpoint_loop": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "Warden_flags": [
+    false,
+    false
+  ],
+  "items_native_assertions": {
+    "Potion": 1,
+    "Scrap": 2
+  },
+  "full_post_run_canonical_resources_unverified": true,
+  "resource_note": "Cold full canonical-resource input gate passes. Final actual native Potion/Scrap assertions pass. Post-run encryption context not retained, so full canonical resource equality is not claimed. Strict candidate full state/RNG/purity comparisons not reached.",
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6"
+}

@@ -1,0 +1,28 @@
+{
+  "PASS": true,
+  "complete": false,
+  "rows": 13292,
+  "bytes": 2126736,
+  "SHA256": "cf3d5085315dfee6982ae48632c3c669182d0184ae3361245af28705f3b0fbc9",
+  "tags": {
+    "1": 138,
+    "2": 4648,
+    "8": 7051,
+    "9": 27,
+    "3": 1025,
+    "4": 329,
+    "5": 25,
+    "6": 25,
+    "7": 23,
+    "11": 1
+  },
+  "frame_end_rows": 7051,
+  "ListMenu_native_B_consumed_events": [
+    {
+      "command": 53,
+      "visual": 3472,
+      "epoch": 5517
+    }
+  ],
+  "scope": "Passive native instruction/command/input/frame records; raw hardware and actual gMain fields, scoped callbacks/tasks, fade, source queue operands and actual native link/ListMenu returns"
+}

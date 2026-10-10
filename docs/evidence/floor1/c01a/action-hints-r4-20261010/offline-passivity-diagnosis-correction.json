@@ -1,0 +1,13 @@
+{
+  "scope": "Read-only correction to preserved offline passivity failure diagnosis, after archive; no observer/game/runtime changes",
+  "actual_failure01": "Assignment detector matched read-only cpu->executionMode== comparison at the first passivity assert; CPU-memcmp spelling assert was not reached",
+  "actual_failure02": "Same assignment-detector false positive on ==; corrected with a negative lookahead excluding equality",
+  "preserved_failure01_receipt_misdiagnosed_cause": true,
+  "unreached_test_comparison_spelling_corrected": true,
+  "native_cpu_comparator_unchanged": true,
+  "observer_compile_attempts": 1,
+  "observer_compile_exit": 0,
+  "post_compile_assertion_failures": 2,
+  "runtime_retries": 0,
+  "corrected_regex": "cpu->\\w+\\s*=(?!=)"
+}

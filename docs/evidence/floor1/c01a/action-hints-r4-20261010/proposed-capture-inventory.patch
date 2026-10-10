@@ -1,0 +1,13 @@
+--- a/scripts/test-f1-c01a-ui.py
++++ b/scripts/test-f1-c01a-ui.py
+@@ -53,7 +53,9 @@
+         reference=module('c01ref',ROOT/'scripts/floor1/v01-new-input-reference.py').scan(path)
+         assert path.stat().st_size<=freeze['storage']['native_reference_max_per_case']
+         extra=out/('expected-ui-frame-trace.bin' if case=='candidate' else 'ui-frame-trace.bin');assert extra.stat().st_size==frames*2700
+-        captures=list(out.glob('battle-*.ppm'));assert len(captures)==frames
++        captures=sorted(out.glob('battle-[0-9][0-9][0-9][0-9][0-9].ppm'))
++        assert [int(p.stem[7:]) for p in captures]==list(range(frames))
++        assert (out/'battle-start.ppm').is_file()
+         shots=['carl-strike','carl-brace','strike-target','bag','party','summary','carl-return','donut-spark','donut-weaken','donut-return','spark-one','spark-empty','spark-rejected','spark-empty-return','weaken-after-empty']
+         assert all((out/(s+'.ppm')).is_file() for s in shots)
+         assert any(l.startswith('UI_MOVE actor=2 cursor=0 pp=0 ') for l in lines)

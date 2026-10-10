@@ -1,0 +1,27 @@
+{
+  "case": "baseline",
+  "execution_source": "b222d75708e3eb3e48bd42e2318befce82e762f0",
+  "claim_SHA256": "9d2094b08c5d4c992cead74e13c1abb57687022653d70a910bad9c1a2e9ad850",
+  "prepared_identity_SHA256": "40a3297daf60477e61232bfd3018666205d6113ee136d4363c1cb1d0483803a6",
+  "capture_source": "Actual native captured PPMs only; no replay/emulator/image generation",
+  "numbered_frames": 7051,
+  "terminal_partial_frame_capture": false,
+  "total_viewing_samples": 7051,
+  "native_fps": "16777216/280896",
+  "ordinary_speed": true,
+  "dimensions": [
+    240,
+    160
+  ],
+  "RGB_SHA256": "c37a4b7139e30365dfe4c10ea40a57a6f388ff4c0bd5c7b3dde9cf4df6b69789",
+  "decoded_RGB_SHA256": "c37a4b7139e30365dfe4c10ea40a57a6f388ff4c0bd5c7b3dde9cf4df6b69789",
+  "every_lossless_pixel_verified": true,
+  "lossless_SHA256": "f5c8612218b3c89428e462e603a2ebd1672da1efa28cc25539837e5b1d8e3b2b",
+  "lossless_bytes": 161346189,
+  "viewing_SHA256": "374a4bf9b74c2727aca4ac60651034893ba4604b525f9b8390b510e30a08ac12",
+  "viewing_bytes": 1191041,
+  "private_local_only": true,
+  "independent_backup_verified": false,
+  "safe_viewing_copy_public": true,
+  "private_local_only_scope": "Original raw frames/lossless clip/private receipt. Selected actual PNGs and viewing MP4 copies are public review artifacts."
+}

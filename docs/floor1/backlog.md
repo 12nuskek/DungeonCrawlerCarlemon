@@ -1,3 +1,45 @@
+## Current C01a r4 checkpoint — native route complete; capture-inventory STOP
+
+Baseline process4/attempt4 executionb222d75708e3eb3e48bd42e2318befce82e762f0
+finishes native route/emulator0 with59 assertions/9095 absolute/7051 visual/5747
+battle frames. Frozen independent runner then fails broad battle-*.ppm inventory:
+mandatory named battle-start.ppm plus7051 exact numbered frames counted7052.
+Original overall STOP/PASS=false retained; candidate0/no claim/retry/Save. This
+post-process phase is distinct from earlier startup-slot121/trainer-dialogue122/
+async-menu-readiness122. Do not run candidate or mutate assertions/STOP.
+
+Read-only independent retained checks confirm6883 nativeB/7051F/E+EOF and full
+7051x2700 supplemental+EOF, all16 named captures, both actors/all4 moves, target/
+move/Bag cancel, Party-context-Summary returns, two SPARK uses/depleted rejection/
+WEAKEN return. Exact scoped running CB2/task/fade-clear guard applied for all
+menus;27 readiness/14 move assertions. Passive13292 records include actual fresh
+B/ListMenu-2/closing tasks/fade/link returns; historical missed-B cause unresolved.
+Normal Save53f62dc2 original/copies unchanged. Final count2/counter47/flags exact,
+HP28/24 clear/uses8/38/0/40/friendship89/81/boss unset/Potion1/Scrap2. Full post-
+run canonical resource context/candidate state-RNG-pixel purity unverified.
+
+Same mainbdff4e1a/active9c83611e and compiled candidate807eeea4/engine3ef0d463,
+new r4 observer564c8b04/binary39a6ad52/helper36059733; one host compile/native ABI
+probe, no game rebuild/reconstruction/V01 replay. Two offline test regex failures
+and inaccurate first diagnosis corrected with original receipts retained; one
+pre-freeze archive-read interruption. All57+3472+4788 prior archive entries exact;
+immutable PPM hardlinks preserve every historical path/byte/hash,20GiB bounds.
+
+Actual7051-frame118.052823s clip/all lossless RGB verified; actual baseline
+PP/TYPE Party/Summary/depletion/return/native transition samples inspected,
+no candidate USES/hints or human whole-video/pacing claim. Private local archive
+114086650 bytes/7520 byte-verified entries/ff751f54…9676269, builds/tools/later
+metadata separate; no independent backup/transfer. Library5+1 unknown-cause/zero
+original-byte failures untouched. Counts C01a4 baselines/0 candidates; V01old6/4/
+STOP117,new1/1,ordinary5 and broader gates remain separate.
+
+Next review: unapplied exact numbered-capture classification and mandatory named
+start check (eight offline negative guards). Retained completed data permit review
+without replay; any later acceptance/authorization/freeze/claim separate. Publish
+scoped draftPR115/issue116 checkpoint and stop; no merge/main/other-head changes.
+Evidence: docs/evidence/floor1/c01a/action-hints-r4-20261010/README.md.
+Earlier checkpoint/authority bodies below are historical.
+
 ## Current C01a r4 authority — scoped readiness and passive input freeze
 
 Parent review of3f904c65 authorizes all task-menu actual running scoped CB2/exact
@@ -470,7 +512,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a hints compiled source807eeea4; parent-reviewed route corrections proved against native handlers20 negative cases. r3 baseline3 STOP122 after Bag cancellation at6415/4371 visual/3067 battle,24 assertions; Carl cursors/cancels/Bag pass, no committed moves/candidate. [Actual menu captures, readiness gap and unapplied proposal](../evidence/floor1/c01a/action-hints-r3-20261010/README.md). Receiving callback/timing/full candidate/pixel/depletion and broader human pacing remain unverified |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a hints source807eeea4 compiled/offline only. r4 baseline4 native route completes59 assertions/7051 frames/fullBFE+2700EOF; independent runner stops on broad capture glob including required named battle-start.ppm. Overall STOP retained/candidate0. Actual all4 moves/both actors/Bag-Party-Summary/depletion verified; unapplied inventory correction ready. [Exact source/STOP, passive B edge and actual motion](../evidence/floor1/c01a/action-hints-r4-20261010/README.md). Candidate equivalence/pixels and broader human/whole-floor gates remain unverified |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

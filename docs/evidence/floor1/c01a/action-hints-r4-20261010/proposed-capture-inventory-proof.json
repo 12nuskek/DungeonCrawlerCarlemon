@@ -1,0 +1,20 @@
+{
+  "PASS": true,
+  "scope": "Unapplied offline proposed capture classification only; original runner/STOP/contract unchanged, no emulator or candidate",
+  "old_broad_glob_reproduces_failure": true,
+  "actual_numbered_sequence_exact": 7051,
+  "mandatory_named_start_separately_preserved": true,
+  "negative_cases_rejected": [
+    "missing-first",
+    "missing-middle",
+    "missing-last",
+    "extra-numbered",
+    "declared-count-low",
+    "declared-count-high",
+    "missing-required-named-start",
+    "malformed-numbered-replacement"
+  ],
+  "original_runner_SHA256": "ad8f5bdd2c28ac9706429c2679776d51f81d91ec30d6662587cbbe1453e7d545",
+  "proposed_patch_SHA256": "c16332975203bb4dd54cbbc812615255ef50e69aaef24b081ed3eb1e5f7045e3",
+  "no_runtime_assertions_waived": true
+}

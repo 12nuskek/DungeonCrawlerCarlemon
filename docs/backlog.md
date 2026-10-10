@@ -1,3 +1,45 @@
+## Current C01a r4 checkpoint — native route complete; capture-inventory STOP
+
+Baseline process4/attempt4 executionb222d75708e3eb3e48bd42e2318befce82e762f0
+finishes native route/emulator0 with59 assertions/9095 absolute/7051 visual/5747
+battle frames. Frozen independent runner then fails broad battle-*.ppm inventory:
+mandatory named battle-start.ppm plus7051 exact numbered frames counted7052.
+Original overall STOP/PASS=false retained; candidate0/no claim/retry/Save. This
+post-process phase is distinct from earlier startup-slot121/trainer-dialogue122/
+async-menu-readiness122. Do not run candidate or mutate assertions/STOP.
+
+Read-only independent retained checks confirm6883 nativeB/7051F/E+EOF and full
+7051x2700 supplemental+EOF, all16 named captures, both actors/all4 moves, target/
+move/Bag cancel, Party-context-Summary returns, two SPARK uses/depleted rejection/
+WEAKEN return. Exact scoped running CB2/task/fade-clear guard applied for all
+menus;27 readiness/14 move assertions. Passive13292 records include actual fresh
+B/ListMenu-2/closing tasks/fade/link returns; historical missed-B cause unresolved.
+Normal Save53f62dc2 original/copies unchanged. Final count2/counter47/flags exact,
+HP28/24 clear/uses8/38/0/40/friendship89/81/boss unset/Potion1/Scrap2. Full post-
+run canonical resource context/candidate state-RNG-pixel purity unverified.
+
+Same mainbdff4e1a/active9c83611e and compiled candidate807eeea4/engine3ef0d463,
+new r4 observer564c8b04/binary39a6ad52/helper36059733; one host compile/native ABI
+probe, no game rebuild/reconstruction/V01 replay. Two offline test regex failures
+and inaccurate first diagnosis corrected with original receipts retained; one
+pre-freeze archive-read interruption. All57+3472+4788 prior archive entries exact;
+immutable PPM hardlinks preserve every historical path/byte/hash,20GiB bounds.
+
+Actual7051-frame118.052823s clip/all lossless RGB verified; actual baseline
+PP/TYPE Party/Summary/depletion/return/native transition samples inspected,
+no candidate USES/hints or human whole-video/pacing claim. Private local archive
+114086650 bytes/7520 byte-verified entries/ff751f54…9676269, builds/tools/later
+metadata separate; no independent backup/transfer. Library5+1 unknown-cause/zero
+original-byte failures untouched. Counts C01a4 baselines/0 candidates; V01old6/4/
+STOP117,new1/1,ordinary5 and broader gates remain separate.
+
+Next review: unapplied exact numbered-capture classification and mandatory named
+start check (eight offline negative guards). Retained completed data permit review
+without replay; any later acceptance/authorization/freeze/claim separate. Publish
+scoped draftPR115/issue116 checkpoint and stop; no merge/main/other-head changes.
+Evidence: docs/evidence/floor1/c01a/action-hints-r4-20261010/README.md.
+Earlier checkpoint/authority bodies below are historical.
+
 ## Current C01a r4 authority — scoped readiness and passive input freeze
 
 Parent review of3f904c65 authorizes all task-menu actual running scoped CB2/exact

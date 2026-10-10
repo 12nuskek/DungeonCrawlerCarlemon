@@ -1,0 +1,6930 @@
+{
+  "analysis_base": "56565c1ffdf24e025fe9d86d51e72fa9306149c4",
+  "runtime_helper": "978cbf03907c38ef24fb4008bfed04e1c69daea5",
+  "game_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "input_files_verified_against_existing_private_manifest": true,
+  "battle_packets": 17784,
+  "TURN_METRIC_crosschecks": 15382,
+  "transient_checksum_invalid_actor_samples_excluded": 4,
+  "CPU": {
+    "first_failure_frame": 31258,
+    "reason": 90,
+    "GPRs_valid": 16,
+    "CPSR_valid": true,
+    "SPSR_valid": false,
+    "full_banked_context": false
+  },
+  "phases": {
+    "trial": [
+      {
+        "turn": 0,
+        "first_metric_frame": 10487,
+        "last_sample_frame": 12125,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              20,
+              14,
+              12,
+              10,
+              12
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              8,
+              40,
+              0,
+              0
+            ],
+            "HP": 30,
+            "level": 8,
+            "maxHP": 30,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              35,
+              0,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              13,
+              12,
+              21,
+              13,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              2,
+              40,
+              0,
+              0
+            ],
+            "HP": 26,
+            "level": 8,
+            "maxHP": 26,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              35,
+              0,
+              0,
+              0
+            ],
+            "HP": 25,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              20,
+              14,
+              12,
+              10,
+              12
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              7,
+              40,
+              0,
+              0
+            ],
+            "HP": 26,
+            "level": 8,
+            "maxHP": 30,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 12,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              13,
+              12,
+              21,
+              13,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              1,
+              40,
+              0,
+              0
+            ],
+            "HP": 26,
+            "level": 8,
+            "maxHP": 26,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 11075,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 11087,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 11099,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 11111,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 11123,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 2,
+          "Scrap": 0
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 11198,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "SPARK",
+            "PP_before": 2,
+            "PP_after": 1,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 11336,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "SPARK",
+            "HP_before": 24,
+            "HP_after": 20,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 11407,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "SPARK",
+            "HP_before": 25,
+            "HP_after": 21,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 11522,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 35,
+            "PP_after": 34,
+            "observed_initial_target": "Carl",
+            "missed": true
+          },
+          {
+            "frame": 11810,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 8,
+            "PP_after": 7,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 11915,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 20,
+            "HP_after": 12,
+            "HP_removed": 8,
+            "native_damage": 8,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 12014,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 35,
+            "PP_after": 34,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 12110,
+            "phase": "trial",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 30,
+            "HP_after": 26,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 1,
+        "first_metric_frame": 12126,
+        "last_sample_frame": 13070,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              20,
+              14,
+              12,
+              10,
+              12
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              7,
+              40,
+              0,
+              0
+            ],
+            "HP": 26,
+            "level": 8,
+            "maxHP": 30,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 12,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              13,
+              12,
+              21,
+              13,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              1,
+              40,
+              0,
+              0
+            ],
+            "HP": 26,
+            "level": 8,
+            "maxHP": 26,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              20,
+              14,
+              12,
+              10,
+              12
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              6,
+              40,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 30,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 1,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              13,
+              12,
+              21,
+              13,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              40,
+              0,
+              0
+            ],
+            "HP": 22,
+            "level": 8,
+            "maxHP": 26,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 12131,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 12143,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 12155,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 12167,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 12179,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 2,
+          "Scrap": 0
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 12254,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "SPARK",
+            "PP_before": 1,
+            "PP_after": 0,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 12392,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "SPARK",
+            "HP_before": 12,
+            "HP_after": 8,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 12463,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "SPARK",
+            "HP_before": 21,
+            "HP_after": 17,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 12578,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 34,
+            "PP_after": 33,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 12675,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "enemy1",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 26,
+            "HP_after": 21,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              5,
+              6
+            ]
+          },
+          {
+            "frame": 12758,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 7,
+            "PP_after": 6,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 12861,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 8,
+            "HP_after": 1,
+            "HP_removed": 7,
+            "native_damage": 7,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 12958,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 34,
+            "PP_after": 33,
+            "observed_initial_target": "Donut",
+            "missed": false,
+            "observed_targets": [
+              "Donut"
+            ]
+          },
+          {
+            "frame": 13055,
+            "phase": "trial",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Donut",
+            "move": "TACKLE",
+            "HP_before": 26,
+            "HP_after": 22,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "first_metric_frame": 13071,
+        "last_sample_frame": 15137,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              20,
+              14,
+              12,
+              10,
+              12
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              6,
+              40,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 30,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 1,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              13,
+              12,
+              21,
+              13,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              40,
+              0,
+              0
+            ],
+            "HP": 22,
+            "level": 8,
+            "maxHP": 26,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              5,
+              40,
+              0,
+              0
+            ],
+            "HP": 19,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              39,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 22,
+            "one_critical_rest_normal_max": 17,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  4,
+                  5
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 13079,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 13091,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 13103,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 13115,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 13127,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 16
+          },
+          {
+            "frame": 13139,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 2,
+          "Scrap": 0
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 13222,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 40,
+            "PP_after": 39,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 13223,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 13545,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 13886,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 33,
+            "PP_after": 32,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 13980,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "enemy1",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 21,
+            "HP_after": 18,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              3,
+              4
+            ]
+          },
+          {
+            "frame": 14062,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 6,
+            "PP_after": 5,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 14153,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 1,
+            "HP_after": 0,
+            "HP_removed": 1,
+            "native_damage": 7,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 14466,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "XP_level",
+            "actor": "Carl",
+            "before": {
+              "experience": 399,
+              "level": 8
+            },
+            "after": {
+              "experience": 419,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 14491,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "level_HP_update",
+            "actor": "Carl",
+            "HP_before": 18,
+            "HP_after": 21,
+            "maxHP_before": 30,
+            "maxHP_after": 33
+          },
+          {
+            "frame": 14635,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "XP_level",
+            "actor": "Carl",
+            "before": {
+              "experience": 419,
+              "level": 9
+            },
+            "after": {
+              "experience": 450,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 14754,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "XP_level",
+            "actor": "Donut",
+            "before": {
+              "experience": 709,
+              "level": 8
+            },
+            "after": {
+              "experience": 729,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 14779,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "level_HP_update",
+            "actor": "Donut",
+            "HP_before": 22,
+            "HP_after": 24,
+            "maxHP_before": 26,
+            "maxHP_after": 28
+          },
+          {
+            "frame": 14923,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "XP_level",
+            "actor": "Donut",
+            "before": {
+              "experience": 729,
+              "level": 9
+            },
+            "after": {
+              "experience": 760,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 15030,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 33,
+            "PP_after": 32,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 15122,
+            "phase": "trial",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 21,
+            "HP_after": 19,
+            "HP_removed": 2,
+            "native_damage": 2,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "first_metric_frame": 15138,
+        "last_sample_frame": 15957,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              5,
+              40,
+              0,
+              0
+            ],
+            "HP": 19,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              39,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              4,
+              40,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              38,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              31,
+              0,
+              0,
+              0
+            ],
+            "HP": 6,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 8,
+            "all_critical_round_max": 8,
+            "one_critical_rest_normal_max": 8,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  2,
+                  3
+                ],
+                "critical_matchup_bounds": [
+                  6,
+                  8
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 10,
+            "all_critical_round_max": 10,
+            "one_critical_rest_normal_max": 10,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 15143,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 15155,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 15167,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 3,
+            "key": 1
+          },
+          {
+            "frame": 15179,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 15191,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 2,
+          "Scrap": 0
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 15274,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 39,
+            "PP_after": 38,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 15275,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 15642,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 5,
+            "PP_after": 4,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 15753,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy3",
+            "move": "STRIKE",
+            "HP_before": 17,
+            "HP_after": 6,
+            "HP_removed": 11,
+            "native_damage": 11,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 15850,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 32,
+            "PP_after": 31,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 15942,
+            "phase": "trial",
+            "turn": 3,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 19,
+            "HP_after": 17,
+            "HP_removed": 2,
+            "native_damage": 2,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "first_metric_frame": 15958,
+        "last_sample_frame": 17595,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              4,
+              40,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              38,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 19,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              31,
+              0,
+              0,
+              0
+            ],
+            "HP": 6,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              3,
+              40,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              14,
+              9,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              13
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              37,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 290,
+            "stats": [
+              12,
+              9,
+              8,
+              8,
+              9
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              6,
+              6
+            ],
+            "PP": [
+              31,
+              0,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 8,
+            "maxHP": 25,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 8,
+            "all_critical_round_max": 8,
+            "one_critical_rest_normal_max": 8,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  2,
+                  3
+                ],
+                "critical_matchup_bounds": [
+                  6,
+                  8
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 10,
+            "all_critical_round_max": 10,
+            "one_critical_rest_normal_max": 10,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  2,
+                  3
+                ],
+                "critical_matchup_bounds": [
+                  8,
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 15971,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 15983,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 15995,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 3,
+            "key": 1
+          },
+          {
+            "frame": 16007,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 16019,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 2,
+          "Scrap": 0
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 16102,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 38,
+            "PP_after": 37,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 16103,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 16470,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 4,
+            "PP_after": 3,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 16571,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy3",
+            "move": "STRIKE",
+            "HP_before": 6,
+            "HP_after": 0,
+            "HP_removed": 6,
+            "native_damage": 11,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 16878,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "XP_level",
+            "actor": "Carl",
+            "before": {
+              "experience": 450,
+              "level": 9
+            },
+            "after": {
+              "experience": 495,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 16998,
+            "phase": "trial",
+            "turn": 4,
+            "kind": "XP_level",
+            "actor": "Donut",
+            "before": {
+              "experience": 760,
+              "level": 9
+            },
+            "after": {
+              "experience": 805,
+              "level": 9
+            },
+            "checksum_valid": true
+          }
+        ]
+      }
+    ],
+    "guard": [
+      {
+        "turn": 0,
+        "first_metric_frame": 22984,
+        "last_sample_frame": 24724,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              8,
+              40,
+              0,
+              0
+            ],
+            "HP": 33,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              35,
+              40,
+              0,
+              0
+            ],
+            "HP": 29,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              2,
+              40,
+              0,
+              0
+            ],
+            "HP": 28,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              35,
+              0,
+              0,
+              0
+            ],
+            "HP": 24,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              7,
+              40,
+              0,
+              0
+            ],
+            "HP": 33,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              35,
+              39,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              1,
+              40,
+              0,
+              0
+            ],
+            "HP": 23,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  5,
+                  7
+                ],
+                "critical_matchup_bounds": [
+                  12,
+                  15
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  7,
+                  9
+                ],
+                "critical_matchup_bounds": [
+                  15,
+                  18
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 23548,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 23560,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 23572,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 23584,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 23596,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 23671,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "SPARK",
+            "PP_before": 2,
+            "PP_after": 1,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 23806,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "SPARK",
+            "HP_before": 29,
+            "HP_after": 26,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 23875,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "SPARK",
+            "HP_before": 24,
+            "HP_after": 21,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 23975,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "BRACE",
+            "PP_before": 40,
+            "PP_after": 39,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 23976,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "support",
+            "actor": "enemy1",
+            "target": "enemy1",
+            "move": "BRACE",
+            "stages_before": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 24399,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 8,
+            "PP_after": 7,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 24497,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 26,
+            "HP_after": 21,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 24611,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 35,
+            "PP_after": 34,
+            "observed_initial_target": "Donut",
+            "missed": false,
+            "observed_targets": [
+              "Donut"
+            ]
+          },
+          {
+            "frame": 24709,
+            "phase": "guard",
+            "turn": 0,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Donut",
+            "move": "TACKLE",
+            "HP_before": 28,
+            "HP_after": 23,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 1,
+        "first_metric_frame": 24725,
+        "last_sample_frame": 25671,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              7,
+              40,
+              0,
+              0
+            ],
+            "HP": 33,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              35,
+              39,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              1,
+              40,
+              0,
+              0
+            ],
+            "HP": 23,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              0,
+              0,
+              0
+            ],
+            "HP": 21,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              6,
+              40,
+              0,
+              0
+            ],
+            "HP": 22,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              39,
+              0,
+              0
+            ],
+            "HP": 13,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              40,
+              0,
+              0
+            ],
+            "HP": 23,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 15,
+            "all_critical_round_max": 27,
+            "one_critical_rest_normal_max": 21,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  7
+                ],
+                "critical_matchup_bounds": [
+                  12,
+                  15
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  7,
+                  9
+                ],
+                "critical_matchup_bounds": [
+                  15,
+                  18
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 24736,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 24748,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 24760,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 24772,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 24784,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 24859,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "SPARK",
+            "PP_before": 1,
+            "PP_after": 0,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 24994,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "SPARK",
+            "HP_before": 21,
+            "HP_after": 18,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 25065,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "SPARK",
+            "HP_before": 21,
+            "HP_after": 17,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 25167,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 35,
+            "PP_after": 34,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 25265,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "enemy1",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 33,
+            "HP_after": 27,
+            "HP_removed": 6,
+            "native_damage": 6,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              5,
+              7
+            ]
+          },
+          {
+            "frame": 25347,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 7,
+            "PP_after": 6,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 25445,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 18,
+            "HP_after": 13,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 25559,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 34,
+            "PP_after": 33,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 25656,
+            "phase": "guard",
+            "turn": 1,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 27,
+            "HP_after": 22,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "first_metric_frame": 25672,
+        "last_sample_frame": 27121,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              6,
+              40,
+              0,
+              0
+            ],
+            "HP": 22,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              34,
+              39,
+              0,
+              0
+            ],
+            "HP": 13,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              40,
+              0,
+              0
+            ],
+            "HP": 23,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              5,
+              40,
+              0,
+              0
+            ],
+            "HP": 7,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              39,
+              0,
+              0
+            ],
+            "HP": 8,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              39,
+              0,
+              0
+            ],
+            "HP": 20,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 15,
+            "all_critical_round_max": 27,
+            "one_critical_rest_normal_max": 21,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  7
+                ],
+                "critical_matchup_bounds": [
+                  12,
+                  15
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  7,
+                  9
+                ],
+                "critical_matchup_bounds": [
+                  15,
+                  18
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 25684,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 25696,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 25708,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 25720,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 25732,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 16
+          },
+          {
+            "frame": 25744,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 25827,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 40,
+            "PP_after": 39,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 25828,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              5,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 26138,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 26483,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 34,
+            "PP_after": 33,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 26594,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "enemy1",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 22,
+            "HP_after": 7,
+            "HP_removed": 15,
+            "native_damage": 15,
+            "critical_multiplier": 2,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              12,
+              15
+            ]
+          },
+          {
+            "frame": 26799,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 6,
+            "PP_after": 5,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 26897,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 13,
+            "HP_after": 8,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 27011,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 33,
+            "PP_after": 32,
+            "observed_initial_target": "Donut",
+            "missed": false,
+            "observed_targets": [
+              "Donut"
+            ]
+          },
+          {
+            "frame": 27106,
+            "phase": "guard",
+            "turn": 2,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Donut",
+            "move": "TACKLE",
+            "HP_before": 23,
+            "HP_after": 20,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "first_metric_frame": 27122,
+        "last_sample_frame": 28422,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              5,
+              40,
+              0,
+              0
+            ],
+            "HP": 7,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              33,
+              39,
+              0,
+              0
+            ],
+            "HP": 8,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              39,
+              0,
+              0
+            ],
+            "HP": 20,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              4,
+              40,
+              0,
+              0
+            ],
+            "HP": 4,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              39,
+              0,
+              0
+            ],
+            "HP": 3,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              38,
+              0,
+              0
+            ],
+            "HP": 16,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              31,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 15,
+            "all_critical_round_max": 27,
+            "one_critical_rest_normal_max": 19,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  12,
+                  15
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  5,
+                  6
+                ],
+                "critical_matchup_bounds": [
+                  15,
+                  18
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 27136,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 27148,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 27160,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 27172,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 27184,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 27267,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 39,
+            "PP_after": 38,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 27268,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              5,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              4,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 27578,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 27923,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 33,
+            "PP_after": 32,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 28017,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "hit",
+            "actor": "enemy1",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 7,
+            "HP_after": 4,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              3,
+              4
+            ]
+          },
+          {
+            "frame": 28099,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 5,
+            "PP_after": 4,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 28197,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 8,
+            "HP_after": 3,
+            "HP_removed": 5,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 28311,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 32,
+            "PP_after": 31,
+            "observed_initial_target": "Donut",
+            "missed": false,
+            "observed_targets": [
+              "Donut"
+            ]
+          },
+          {
+            "frame": 28407,
+            "phase": "guard",
+            "turn": 3,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Donut",
+            "move": "TACKLE",
+            "HP_before": 20,
+            "HP_after": 16,
+            "HP_removed": 4,
+            "native_damage": 4,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "first_metric_frame": 28423,
+        "last_sample_frame": 30411,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              23,
+              15,
+              13,
+              11,
+              13
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              4,
+              40,
+              0,
+              0
+            ],
+            "HP": 4,
+            "level": 9,
+            "maxHP": 33,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 20,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              32,
+              39,
+              0,
+              0
+            ],
+            "HP": 3,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              38,
+              0,
+              0
+            ],
+            "HP": 16,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              31,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              25,
+              17,
+              14,
+              12,
+              14
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              3,
+              40,
+              0,
+              0
+            ],
+            "HP": 4,
+            "level": 10,
+            "maxHP": 36,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              31,
+              39,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              37,
+              0,
+              0
+            ],
+            "HP": 16,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              30,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 15,
+            "all_critical_round_max": 27,
+            "one_critical_rest_normal_max": 19,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  12,
+                  15
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy1": {
+                "reachable_incoming_TACKLE": false,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  15,
+                  18
+                ]
+              },
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 28432,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 28444,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 28456,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 1,
+            "key": 1
+          },
+          {
+            "frame": 28468,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 28480,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 28563,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 38,
+            "PP_after": 37,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1",
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 28564,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy1",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              4,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              3,
+              7,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 28874,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              4,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 29219,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "move",
+            "actor": "enemy1",
+            "move": "TACKLE",
+            "PP_before": 32,
+            "PP_after": 31,
+            "observed_initial_target": "Carl",
+            "missed": true
+          },
+          {
+            "frame": 29495,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 4,
+            "PP_after": 3,
+            "observed_initial_target": "enemy1",
+            "missed": false,
+            "observed_targets": [
+              "enemy1"
+            ]
+          },
+          {
+            "frame": 29589,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy1",
+            "move": "STRIKE",
+            "HP_before": 3,
+            "HP_after": 0,
+            "HP_removed": 3,
+            "native_damage": 5,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 29891,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "XP_level",
+            "actor": "Carl",
+            "before": {
+              "experience": 495,
+              "level": 9
+            },
+            "after": {
+              "experience": 560,
+              "level": 10
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 29916,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "level_HP_update",
+            "actor": "Carl",
+            "HP_before": 4,
+            "HP_after": 7,
+            "maxHP_before": 33,
+            "maxHP_after": 36
+          },
+          {
+            "frame": 30060,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "XP_level",
+            "actor": "Carl",
+            "before": {
+              "experience": 560,
+              "level": 10
+            },
+            "after": {
+              "experience": 576,
+              "level": 10
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 30179,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "XP_level",
+            "actor": "Donut",
+            "before": {
+              "experience": 805,
+              "level": 9
+            },
+            "after": {
+              "experience": 886,
+              "level": 9
+            },
+            "checksum_valid": true
+          },
+          {
+            "frame": 30303,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 31,
+            "PP_after": 30,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 30396,
+            "phase": "guard",
+            "turn": 4,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 7,
+            "HP_after": 4,
+            "HP_removed": 3,
+            "native_damage": 3,
+            "critical_multiplier": 1,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "first_metric_frame": 30412,
+        "last_sample_frame": 31258,
+        "before": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              25,
+              17,
+              14,
+              12,
+              14
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              3,
+              40,
+              0,
+              0
+            ],
+            "HP": 4,
+            "level": 10,
+            "maxHP": 36,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              31,
+              39,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              37,
+              0,
+              0
+            ],
+            "HP": 16,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              30,
+              0,
+              0,
+              0
+            ],
+            "HP": 17,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "after": {
+          "Carl": {
+            "species": 66,
+            "stats": [
+              25,
+              17,
+              14,
+              12,
+              14
+            ],
+            "moves": [
+              355,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 62,
+            "types": [
+              1,
+              1
+            ],
+            "PP": [
+              2,
+              40,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 10,
+            "maxHP": 36,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy1": {
+            "species": 308,
+            "stats": [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            "moves": [
+              33,
+              356,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              31,
+              39,
+              0,
+              0
+            ],
+            "HP": 0,
+            "level": 9,
+            "maxHP": 29,
+            "held_item": 0,
+            "status1": 0
+          },
+          "Donut": {
+            "species": 52,
+            "stats": [
+              14,
+              13,
+              23,
+              14,
+              14
+            ],
+            "moves": [
+              357,
+              358,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 0,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              0,
+              36,
+              0,
+              0
+            ],
+            "HP": 16,
+            "level": 9,
+            "maxHP": 28,
+            "held_item": 0,
+            "status1": 0
+          },
+          "enemy3": {
+            "species": 288,
+            "stats": [
+              9,
+              11,
+              12,
+              9,
+              12
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "stages": [
+              6,
+              2,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "ability": 53,
+            "types": [
+              0,
+              0
+            ],
+            "PP": [
+              29,
+              0,
+              0,
+              0
+            ],
+            "HP": 7,
+            "level": 8,
+            "maxHP": 24,
+            "held_item": 0,
+            "status1": 0
+          }
+        },
+        "source_risk_before": {
+          "Carl": {
+            "single_critical_max": 9,
+            "all_critical_round_max": 9,
+            "one_critical_rest_normal_max": 9,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  7,
+                  9
+                ]
+              }
+            }
+          },
+          "Donut": {
+            "single_critical_max": 12,
+            "all_critical_round_max": 12,
+            "one_critical_rest_normal_max": 12,
+            "per_enemy": {
+              "enemy3": {
+                "reachable_incoming_TACKLE": true,
+                "normal_matchup_bounds": [
+                  3,
+                  4
+                ],
+                "critical_matchup_bounds": [
+                  10,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "inputs": [
+          {
+            "frame": 30424,
+            "actor": "Carl",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 30436,
+            "actor": "Carl",
+            "menu": 2,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 30448,
+            "actor": "Carl",
+            "menu": 3,
+            "selected": 3,
+            "key": 1
+          },
+          {
+            "frame": 30460,
+            "actor": "Donut",
+            "menu": 1,
+            "selected": 0,
+            "key": 1
+          },
+          {
+            "frame": 30472,
+            "actor": "Donut",
+            "menu": 2,
+            "selected": 1,
+            "key": 1
+          }
+        ],
+        "available_inventory": {
+          "Potion": 1,
+          "Scrap": 2
+        },
+        "inventory_basis": "accepted field endpoint plus no Bag actions in retained pilot",
+        "events": [
+          {
+            "frame": 30555,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "move",
+            "actor": "Donut",
+            "move": "WEAKEN",
+            "PP_before": 37,
+            "PP_after": 36,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 30556,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "support",
+            "actor": "Donut",
+            "target": "enemy3",
+            "move": "WEAKEN",
+            "stages_before": [
+              6,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "stages_after": [
+              6,
+              2,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "frame": 30939,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "move",
+            "actor": "Carl",
+            "move": "STRIKE",
+            "PP_before": 3,
+            "PP_after": 2,
+            "observed_initial_target": "enemy3",
+            "missed": false,
+            "observed_targets": [
+              "enemy3"
+            ]
+          },
+          {
+            "frame": 31048,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "hit",
+            "actor": "Carl",
+            "target": "enemy3",
+            "move": "STRIKE",
+            "HP_before": 17,
+            "HP_after": 7,
+            "HP_removed": 10,
+            "native_damage": 10,
+            "critical_multiplier": 1,
+            "result_flags": 0
+          },
+          {
+            "frame": 31163,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "move",
+            "actor": "enemy3",
+            "move": "TACKLE",
+            "PP_before": 30,
+            "PP_after": 29,
+            "observed_initial_target": "Carl",
+            "missed": false,
+            "observed_targets": [
+              "Carl"
+            ]
+          },
+          {
+            "frame": 31258,
+            "phase": "guard",
+            "turn": 5,
+            "kind": "hit",
+            "actor": "enemy3",
+            "target": "Carl",
+            "move": "TACKLE",
+            "HP_before": 4,
+            "HP_after": 0,
+            "HP_removed": 4,
+            "native_damage": 8,
+            "critical_multiplier": 2,
+            "result_flags": 0,
+            "source_damage_bounds": [
+              7,
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "field_endpoints": [
+    {
+      "phase_index": 0,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 8,
+          "XP": 399,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 8,
+          "XP": 709,
+          "HP": 26,
+          "maxHP": 26,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 0,
+      "Scrap": 0,
+      "money": 3000
+    },
+    {
+      "phase_index": 1,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 8,
+          "XP": 399,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 8,
+          "XP": 709,
+          "HP": 26,
+          "maxHP": 26,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 0,
+      "Scrap": 0,
+      "money": 3000
+    },
+    {
+      "phase_index": 2,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 8,
+          "XP": 399,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 8,
+          "XP": 709,
+          "HP": 26,
+          "maxHP": 26,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 2,
+      "Scrap": 0,
+      "money": 3000
+    },
+    {
+      "phase_index": 3,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 8,
+          "XP": 399,
+          "HP": 30,
+          "maxHP": 30,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 8,
+          "XP": 709,
+          "HP": 26,
+          "maxHP": 26,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 2,
+      "Scrap": 0,
+      "money": 3000
+    },
+    {
+      "phase_index": 4,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 9,
+          "XP": 495,
+          "HP": 17,
+          "maxHP": 33,
+          "PP": [
+            3,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 9,
+          "XP": 805,
+          "HP": 24,
+          "maxHP": 28,
+          "PP": [
+            0,
+            37,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 2,
+      "Scrap": 0,
+      "money": 3320
+    },
+    {
+      "phase_index": 5,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 9,
+          "XP": 495,
+          "HP": 17,
+          "maxHP": 33,
+          "PP": [
+            3,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 9,
+          "XP": 805,
+          "HP": 24,
+          "maxHP": 28,
+          "PP": [
+            0,
+            37,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 2,
+      "Scrap": 2,
+      "money": 3320
+    },
+    {
+      "phase_index": 6,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 9,
+          "XP": 495,
+          "HP": 17,
+          "maxHP": 33,
+          "PP": [
+            3,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 9,
+          "XP": 805,
+          "HP": 28,
+          "maxHP": 28,
+          "PP": [
+            0,
+            37,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 1,
+      "Scrap": 2,
+      "money": 3320
+    },
+    {
+      "phase_index": 7,
+      "actors": [
+        {
+          "actor": "Carl",
+          "level": 9,
+          "XP": 495,
+          "HP": 33,
+          "maxHP": 33,
+          "PP": [
+            8,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        },
+        {
+          "actor": "Donut",
+          "level": 9,
+          "XP": 805,
+          "HP": 28,
+          "maxHP": 28,
+          "PP": [
+            2,
+            40,
+            0,
+            0
+          ],
+          "status": 0
+        }
+      ],
+      "Potion": 1,
+      "Scrap": 2,
+      "money": 3320
+    }
+  ],
+  "terminal": {
+    "frame": 31258,
+    "Carl_HP": 0,
+    "Donut_HP": 16,
+    "outcome": 0,
+    "resolved_defeat": false,
+    "gameplay_attempts_added": 0
+  },
+  "export_capacity": {
+    "frames": 31258,
+    "RGB_bytes": 3600921600,
+    "chunk_frames": 1000,
+    "chunk_count": 32,
+    "last_chunk_frames": 258,
+    "per_file_cap_bytes": 268435456,
+    "other_reserved_bytes": 268435456,
+    "additional_export_reservation_bytes": 8858370048,
+    "compression_ratio_assumed": false,
+    "codec_completion_guaranteed": false
+  },
+  "future_100000_capacity": {
+    "frames": 100000,
+    "RGB_bytes": 11520000000,
+    "chunk_frames": 1000,
+    "chunk_count": 100,
+    "last_chunk_frames": 1000,
+    "per_file_cap_bytes": 268435456,
+    "other_reserved_bytes": 268435456,
+    "additional_export_reservation_bytes": 27111981056,
+    "compression_ratio_assumed": false,
+    "codec_completion_guaranteed": false
+  }
+}

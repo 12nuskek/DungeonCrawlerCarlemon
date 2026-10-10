@@ -1,3 +1,32 @@
+## Current C01 r2 — retained Guard analysis only; new evaluation proposed
+
+Read-only continuation from56565c1ffdf24e025fe9d86d51e72fa9306149c4. Runtime
+helper978cbf03/game4a92a9de/engine0fedd142 unchanged, no rebuild or new claim/process.
+15382 TURN_METRIC rows cross-checked against17784 retained battle packets; five
+trial/six Guard turns,40 moves/34 HP-removal events/12 support effects/15 Tackle
+hits within source bounds/two misses/two criticals. Four transient checksum-invalid
+actor reads during native updates excluded from XP reporting, not new corruption
+or weakened assertion. Full pre-Guard recovery confirmed; one Potion unused;
+prior field demonstration consumed one for4HP immediately before free recovery.
+Guard15-damage critical takesCarl22→7; terminal8-damage critical removes remaining4.
+At terminal native stages even ordinary Tackle3–4 could KO Carl4. STOP90 unresolved
+remains terminal. Source supports BRACE/WEAKEN normal mitigation, critical bypass.
+Recommend separately admitted earned-Potion reachable-turn-risk player-choice evaluation
+before balance changes; battle Bag/target/heal readiness not admitted by field demo.
+Proposal docs/floor1/c01-guard-player-choice-proposal.md is review-only, no policy
+execution. Scoped processed findings/turn table/export plan at
+ docs/evidence/floor1/c01/retained-guard-analysis-20261010/README.md.
+FFV1 exact480MiB cap/nonzero exit retained; exact signal/encoded frame unknown. No
+export retry/full lossless clip claim. Proposed sequential1000-frame/256MiB-cap
+slots reserve8858370048 additional bytes for31258 frames, no compression assumption
+or codec completion guarantee; all raw retained. Future100000-frame combined plan
+exceeds current filesystem; capacity/admission must precede any separate operation.
+C01 opening2/2, cold0/0, prepared unlaunched; all historical counts/STOPs/claims/
+contracts/build/raw/partial FFV1/MP4/receipts/other branches preserved. Draft PR117
+review only/no merge/issue116/private upload/Library retry/extra writer/schedule.
+Private backup unapproved/unverified. Accepted plan and C01/G02/legacy/oracle/human/
+full-floor gates unchanged. Earlier bodies remain historical for their scope.
+
 ## Current C01 r2 — terminal Guard STOP90; cold blocked
 
 Source/tested helper978cbf03907c38ef24fb4008bfed04e1c69daea5 was committed/pushed

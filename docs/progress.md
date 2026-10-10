@@ -1,3 +1,26 @@
+## Current C01 conservation policy — opening5 explicitly authorized; preparation
+
+Independent review accepts037bc3cbcfaed70fb0979a88dae47c9383c7cf0c. One focused
+separately named opening5 and conditional cold1 after actual manual Save/full14
+sectors/live-disk success authorized. Current actual openingclaims/processes4/4,
+cold0/0; STOP82/90/104/101 preserved. New policy validates/logs both actual foe
+presence bits: Carl21/both,15/Guard,12/Scuttler; Donut12 only with Scuttler; native
+no-foe resolution allowed. Simultaneous-critical risk remains explicit. Carl
+STRIKE/target and Donut SPARK→WEAKEN otherwise unchanged; all state/resource/
+readiness/transaction/ownership/party/checksum/first-incapacity/failure STOPs strict.
+New contract docs/floor1/c01-conserve-medicine-opening5-r1-contract.md. Complete
+fresh full policy/integration/transaction/production/hash-gate checks and publish
+exact tested source before freeze/claim. Output only
+/workspace/scratch/c01-conserve-medicine-opening5-r1-20261010. Re-measure unchanged
+full10000408128B reservation/headroom before preparation and admission; stop if
+it no longer fits. No ceiling reduction/deletion/compression/upload assumption.
+No game ROM/damage/AI/critical/resources/cadence/art changes, Howler/Warden/prep/
+stairs/RNG search/injection/retry/merge. Exactly one ordinary NewGame/note/supply/
+guide/trial/Scrap/guide/Guard/guide/manualSave at QuietLanding35,1(4,5), cold only
+on actual gates. Return clean actual-evidence checkpoint on draftPR117. Main/69
+otherheads/issue116/plan/history preserved; full opening/oracle/legacy/human/full
+floor acceptance remain open. Earlier checkpoint bodies preserve historical scope.
+
 ## Current C01 opening4 retained review — one proposal; gameplay CLOSED
 
 Review starts at clean4cff72680be2256fd35531eb4ed2a643fb45da1e. No added game,

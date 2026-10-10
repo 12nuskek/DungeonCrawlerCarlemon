@@ -1,0 +1,9 @@
+{
+  "PASS": true,
+  "scope": "Offline extracted native function execution with synthetic inputs; not gameplay",
+  "helper_inputs": 65536,
+  "actor_cursor_zero_cases": 32,
+  "authored_and_native_panes": 64,
+  "input_buffer_cursor_actor_mutations": 0,
+  "no_extra_draw_calls": true
+}

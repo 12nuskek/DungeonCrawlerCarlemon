@@ -1,3 +1,35 @@
+## Current C01a checkpoint — compiled hints; terminal adapter STOP121
+
+PR114 is actually merged at mainbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7,
+engine8d8c7761 unchanged from accepted V01. C01a tested source807eeea457c973b097be9eab9e1556e20d0204aa,
+engine3ef0d46368e45c3e4a5b8084eeec2a81b50a688b; one successful build ROM3e6fa891/ELFc5f7e264.
+USES plus ONE FOE/SELF DEF+/BOTH FOES/ALL FOES ATK- fit existing windows;
+offline font/compiled-string/native pane-purity/input/fallback/ABI checks pass.
+Balance8/40/2/40, descriptions, controls, resources, native friendship/recovery
+and Save schema unchanged. No candidate pixel/timing/runtime acceptance.
+
+Separately frozen executiond87f024fd5ae7640ded47c6e93fe835cbdc354e3 ran one
+baseline cold boot:12 assertions/2044 frames, full party/count/flags/resources/
+counter/field checks; STOP121 at ui start before Warden,zero battle/action/visual
+frames. New adapter checks17 addresses but only16 assigned; unused slot16 zero.
+Candidate0/retries0, no Save/UI streams/menu screenshots/motion. Actual field
+boot PNG only. Original/copies Save53f62dc2 unchanged. Failed source/contract/
+freeze/claim/STOP preserved; two-line correction is unapplied with four offline
+cardinality/missing/zero guards. Next: review proposal, then separately named
+corrected observer/freeze/exclusive claim; reuse verified builds/Save, no replay.
+
+New scoped draft review only, no merge. Five offline preparation failures and
+one read-only post-STOP diagnosis flag mistake retained. Private local archive
+7448751 bytes/57 entries/3fc4ed0f…59754861 byte-verified; separate builds/tools,
+no verified independent backup/transfer. Library5+1 unknown-cause failures/zero
+original recovered bytes unchanged,no retry. Historical V01 6/4/STOP117,
+completed new V01 1/1 and ordinary5 remain separate; C01a adds one stopped
+cold-boot process/zero candidates. Human pacing/legacy/prepared-unprepared/
+branch-order/optional-skip/full-floor gates and accepted bounded plan remain.
+Exact contract, identities, STOP/proofs/actual field PNG and retention:
+docs/evidence/floor1/c01a/action-hints-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current technical V01 closure — accepted scoped review; C01a next after normal integration
 
 Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source

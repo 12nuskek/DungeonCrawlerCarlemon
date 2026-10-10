@@ -1,0 +1,22 @@
+{
+  "gText_MoveInterfaceUses": {
+    "text": "USES",
+    "compiled_bytes": "cfcdbfcdff"
+  },
+  "gText_DccStrikeHint": {
+    "text": "ONE FOE",
+    "compiled_bytes": "c9c8bf00c0c9bfff"
+  },
+  "gText_DccBraceHint": {
+    "text": "SELF DEF+",
+    "compiled_bytes": "cdbfc6c000bebfc02eff"
+  },
+  "gText_DccSparkHint": {
+    "text": "BOTH FOES",
+    "compiled_bytes": "bcc9cec200c0c9bfcdff"
+  },
+  "gText_DccWeakenHint": {
+    "text": "ALL FOES ATK-",
+    "compiled_bytes": "bbc6c600c0c9bfcd00bbcec5aeff"
+  }
+}

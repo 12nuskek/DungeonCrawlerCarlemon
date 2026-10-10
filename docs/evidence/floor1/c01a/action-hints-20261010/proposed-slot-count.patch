@@ -1,0 +1,20 @@
+--- a/scripts/floor1/c01a-ui-observer.h
++++ b/scripts/floor1/c01a-ui-observer.h
+@@ -1,5 +1,5 @@
+ /* Read-only menu observations; native callback identity, no guessed label. */
+-struct C01Ui {unsigned a[17],candidate,mainstate,battleCB2,exec;FILE *trace;};
++struct C01Ui {unsigned a[16],candidate,mainstate,battleCB2,exec;FILE *trace;};
+ static struct C01Ui ui;
+ static unsigned ui_kind(const char *name)
+ {const char *names[]={"action","move","target","bag","party","context","summary"};for(unsigned i=0;i<7;i++)if(!strcmp(name,names[i]))return i+1;return 0;}
+--- a/scripts/floor1/c01a-ui-host.py
++++ b/scripts/floor1/c01a-ui-host.py
+@@ -29,7 +29,7 @@
+             unsigned char mode;
+             (void)bv_sample;
+             if(visual.recording || bv_load("visual-mode.bin",&mode,1) || mode>1){result=121;break;}
+-            for(unsigned z=0;z<17;z++)if(!ui.a[z]){result=121;break;}
++            for(unsigned z=0;z<16;z++)if(!ui.a[z]){result=121;break;}
+             if(result)break;
+             visual.candidate=mode;ui.candidate=mode;
+             visual.trace=fopen(mode?"expected-native-boundary-trace.bin":"native-boundary-trace.bin",mode?"rb":"wbx");

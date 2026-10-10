@@ -1,3 +1,35 @@
+## Current C01a checkpoint — compiled hints; terminal adapter STOP121
+
+PR114 is actually merged at mainbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7,
+engine8d8c7761 unchanged from accepted V01. C01a tested source807eeea457c973b097be9eab9e1556e20d0204aa,
+engine3ef0d46368e45c3e4a5b8084eeec2a81b50a688b; one successful build ROM3e6fa891/ELFc5f7e264.
+USES plus ONE FOE/SELF DEF+/BOTH FOES/ALL FOES ATK- fit existing windows;
+offline font/compiled-string/native pane-purity/input/fallback/ABI checks pass.
+Balance8/40/2/40, descriptions, controls, resources, native friendship/recovery
+and Save schema unchanged. No candidate pixel/timing/runtime acceptance.
+
+Separately frozen executiond87f024fd5ae7640ded47c6e93fe835cbdc354e3 ran one
+baseline cold boot:12 assertions/2044 frames, full party/count/flags/resources/
+counter/field checks; STOP121 at ui start before Warden,zero battle/action/visual
+frames. New adapter checks17 addresses but only16 assigned; unused slot16 zero.
+Candidate0/retries0, no Save/UI streams/menu screenshots/motion. Actual field
+boot PNG only. Original/copies Save53f62dc2 unchanged. Failed source/contract/
+freeze/claim/STOP preserved; two-line correction is unapplied with four offline
+cardinality/missing/zero guards. Next: review proposal, then separately named
+corrected observer/freeze/exclusive claim; reuse verified builds/Save, no replay.
+
+New scoped draft review only, no merge. Five offline preparation failures and
+one read-only post-STOP diagnosis flag mistake retained. Private local archive
+7448751 bytes/57 entries/3fc4ed0f…59754861 byte-verified; separate builds/tools,
+no verified independent backup/transfer. Library5+1 unknown-cause failures/zero
+original recovered bytes unchanged,no retry. Historical V01 6/4/STOP117,
+completed new V01 1/1 and ordinary5 remain separate; C01a adds one stopped
+cold-boot process/zero candidates. Human pacing/legacy/prepared-unprepared/
+branch-order/optional-skip/full-floor gates and accepted bounded plan remain.
+Exact contract, identities, STOP/proofs/actual field PNG and retention:
+docs/evidence/floor1/c01a/action-hints-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current technical V01 closure — accepted scoped review; C01a next after normal integration
 
 Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source
@@ -339,7 +371,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Next after normal V01 integration: C01a contextual USES label and compact target/effect hints in existing move pane; preserve balance/controls/Save schema. C01a not implemented; broader C01 prepared/unprepared/human-pacing gates remain pending |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | C01a source807eeea4 compiled USES/four native-pane hints; offline source/font/purity/ABI pass. New frozen baseline STOP121 at2044/12 before battle:17 required slots/16 assigned. Candidate0/no retry/no menu pixels or motion; runtime acceptance blocked. [Actual STOP and unapplied fix for review](../evidence/floor1/c01a/action-hints-20261010/README.md). Broader C01 prepared/unprepared/human-pacing gates remain pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

@@ -1,0 +1,18 @@
+{
+  "PASS": true,
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "tested": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "execution": "d87f024fd5ae7640ded47c6e93fe835cbdc354e3",
+  "exact_tested_engine": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+  "engine_files": [
+    "engine/include/battle_message.h",
+    "engine/src/battle_controller_player.c",
+    "engine/src/battle_message.c"
+  ],
+  "frozen_dependencies_and_identities_unchanged": true,
+  "old_observers_route_and_accepted_plan_unchanged": true,
+  "no_public_private_raw_or_playable_files": true,
+  "candidate_never_claimed": true,
+  "proposal_unapplied": true,
+  "STOP_preserved": true
+}

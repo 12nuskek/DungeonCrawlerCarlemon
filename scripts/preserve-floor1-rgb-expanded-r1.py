@@ -49,7 +49,7 @@ def freeze():
     budget.write(a.OUT/'heads-before.tsv',subprocess.check_output(['git','ls-remote','--heads','origin'],cwd=a.ROOT))
     old=json.loads((a.PRIOR/'preservation-contract.json').read_text())
     zlib_origin,dependencies=a.decoder_dependencies()
-    c=dict(name='Floor1 expanded local RGB preservation r1',source_commit=a.git('rev-parse','HEAD'),main_base='65bc4073d140b9d58bf1b83bd33235e28c972b23',output_root=str(a.OUT),authorization_UTC='2026-10-10T21:42:24Z',authorization='Kurt authenticated Yes to remaining/future local gameplay recordings after TWO complete byte verification passes; local only.',prior_admission=prior,
+    c=dict(name='Floor1 expanded local RGB preservation r2',source_commit=a.git('rev-parse','HEAD'),main_base='65bc4073d140b9d58bf1b83bd33235e28c972b23',output_root=str(a.OUT),authorization_UTC='2026-10-10T21:42:24Z',authorization='Kurt authenticated Yes to remaining/future local gameplay recordings after TWO complete byte verification passes; local only.',prior_admission=prior,
         width=240,height=160,pixel_format='RGB24',bytes_per_frame=m.FRAME,frames=a.FRAMES,original_bytes=a.BYTES,chunk_count=a.CHUNKS,chunks=rows,recordings=recordings,protected_entries=protected,excluded_raw_paths=exclusions,
         format=old['format'],compress_command=old['compress_command'],decoder_pass1=old['decoder_pass1'],decoder_pass2=old['decoder_pass2'],gzip_version=old['gzip_version'],gzip_executable_SHA256=old['gzip_executable_SHA256'],python_version=sys.version,python_executable_SHA256=old['python_executable_SHA256'],zlib_version=old['zlib_version'],
         source_files_SHA256={p:m.digest(a.ROOT/p) for p in (*a.OLD_FILES,*a.NEW_FILES)},scope_adapter_admission_SHA256=m.digest(a.ADMISSION),

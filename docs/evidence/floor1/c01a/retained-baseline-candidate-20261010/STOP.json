@@ -1,0 +1,10 @@
+{
+  "exit": 124,
+  "case": "candidate",
+  "execution_commit": "b0102d46b80e0b476057b1490aa41e7a8811b422",
+  "Save_unchanged": true,
+  "log_SHA256": "095e1e7a313c5c0935bf31a0541913a484bfd3d0965cbbf430fdefafbcb81522",
+  "PASS": false,
+  "failure": "AssertionError()",
+  "no_retry": true
+}

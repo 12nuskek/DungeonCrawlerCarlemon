@@ -1,0 +1,27 @@
+{
+  "case": "candidate",
+  "execution_source": "b0102d46b80e0b476057b1490aa41e7a8811b422",
+  "claim_SHA256": "b90bc01002eaf40880912ce12cd7dbd1975221a11098f86eabbca3027c3a5496",
+  "prepared_identity_SHA256": "406e470fd6414c0707e325fc42ed82ad29bcf2cf89e2ce7d289883e56a3b5458",
+  "capture_source": "Actual native captured PPMs only; no replay/emulator/image generation",
+  "numbered_frames": 3171,
+  "terminal_partial_frame_capture": true,
+  "total_viewing_samples": 3172,
+  "native_fps": "16777216/280896",
+  "ordinary_speed": true,
+  "dimensions": [
+    240,
+    160
+  ],
+  "RGB_SHA256": "25f7e02c98e54c3d0a75a2172195728721d60925391313f793673a5411e6db43",
+  "decoded_RGB_SHA256": "25f7e02c98e54c3d0a75a2172195728721d60925391313f793673a5411e6db43",
+  "every_lossless_pixel_verified": true,
+  "lossless_SHA256": "19fbbc9be1a2c4f90a3a7914b0b0a626889a60146d110590f0df93ee84e8da74",
+  "lossless_bytes": 50549719,
+  "viewing_SHA256": "aa7257a0a0378aabd92514dbe7789ff961f64ea88062bd043fb31fcb5c9c152e",
+  "viewing_bytes": 504005,
+  "private_local_only": true,
+  "independent_backup_verified": false,
+  "safe_viewing_copy_public": true,
+  "private_local_only_scope": "Original raw frames/lossless/private receipt, selected actual PNG and viewing copies public for review"
+}

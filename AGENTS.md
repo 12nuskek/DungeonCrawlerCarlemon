@@ -1,3 +1,44 @@
+## Current C01a candidate-only checkpoint — certified baseline4; candidate STOP124
+
+Corrected offline certificate verifies all original r4 bytes/source/build/tools,
+6883B/7051F/E+EOF/full19037700 supplemental bytes and all post-inventory gates.
+New complete passive mode passes tag11/result0/command156/7051 ordered frame ends;
+old STOP/PASS=false/complete=false/freeze/claim remain exact. Classifier strict
+7051 numeric frames/all27 named captures,13 negatives including malformed-extra;
+same classifier and separate named-start comparison frozen in new pixel wrapper.
+Helper1eac08cc637a13e8f22468c744954c52445ac032; executionb0102d46b80e0b476057b1490aa41e7a8811b422.
+
+Exactly one candidate process5/attempt1: first strict supplemental STOP124 at
+visual3171/epoch5216/route26/15 assertions.3171 successful numbered captures plus
+terminal frame. Five bytes differ: scoped Carl callback HandleChooseMoveAfterDma3
+versus PlayerBufferRunCommand at2533..2536; execflags9 versus11 at2560. Other2695
+bytes/party600/flags300/raw resources/RNG exact. Callback/command phase divergence
+observed; precise rendering CPU/DMA timing cause unproven. No Move-ready/UI_MOVE,
+committed move/cancel/Bag/Summary/depletion/visible USES-hints/full EOF/candidate
+pixel acceptance. Full pixel wrapper not run; no retry/waiver/Save/merge.
+
+Actual3172-sample53.107865s prefix/STOP motion, lossless RGB all verified. All
+prefix/terminal pixels match same baseline; visible action scene still PP/TYPE,
+not new hints. Timeline5217/end124/hash chain verified. Passive5116 records/
+3171 frames/one ready lack terminal tag11 because native failure exits before
+edge-close and failing-frame flush; preserved diagnostic limitation. Normal
+Save/original/both r4 copies/new copy53f62dc2 unchanged. Finalduo11/10HP38/30
+clearuses8/40/2/40friendship89/81count2counter47flags unchanged; full post-STOP
+canonical resource context absent. No game/observer rebuild/baseline/V01 replay.
+
+Private local archive35083643 bytes/3590 byte-verified entries/b6717232…f047e01;
+original r4 archive/Saves intact, builds/tools/later metadata separate,no independent
+backup/transfer. Library5+1 unknown-cause/zero-byte failures untouched. Counts
+C01a4 baselines/1 candidate, historicalV01 6/4/STOP117,new1/1,ordinary5 preserved.
+Current and all four earlier failure phases distinct. Accepted plan unchanged.
+
+Next dependency: review exact controller/command-phase rendering/DMA handoff
+and compiled timing audit before prescribing remedy. Strict assertions/certified
+baseline/STOP retained; any game change/build/new claim separate review. Publish
+scoped draftPR115/issue116 and stop,no merge/main/other-head changes.
+Evidence: docs/evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md.
+Earlier bodies below historical.
+
 ## Current C01a candidate-only authority — certify retained baseline4 first
 
 Parent review accepts precise inventory correction atccc196473be4615d52d455c7a48afe2f5a208bec.

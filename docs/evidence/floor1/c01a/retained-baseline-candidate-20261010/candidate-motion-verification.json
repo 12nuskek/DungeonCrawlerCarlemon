@@ -1,0 +1,25 @@
+{
+  "scope": "Actual STOP prefix, no full candidate/perceptual playback acceptance",
+  "numbered_frames": 3171,
+  "terminal_capture": true,
+  "total_viewing_samples": 3172,
+  "native_fps": "16777216/280896",
+  "dimensions": [
+    240,
+    160
+  ],
+  "duration": "53.107865",
+  "samples": [
+    0,
+    1180,
+    1199,
+    2505,
+    3000,
+    3168,
+    3169,
+    3170,
+    3171
+  ],
+  "every_lossless_RGB_byte_verified": true,
+  "no_full_human_playback_claim": true
+}

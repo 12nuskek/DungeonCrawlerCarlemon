@@ -1,0 +1,21 @@
+{
+  "archive_bytes": 35083643,
+  "archive_SHA256": "b6717232003a23e8991040c1b6467274acbd8c2ca69e6928d99a13189f047e01",
+  "file_entries": 3590,
+  "all_entries_byte_verified": true,
+  "manifest_SHA256": "66ecd90f6e5deb97f5ad202beae0d5fab904ac522f28c245ae81a04f4732d160",
+  "private_local_only": true,
+  "verified_independent_backup": false,
+  "separate_components": [
+    "Verified baseline active engine8d8c build",
+    "Candidate source807eeea4/build/ROM/ELF",
+    "Recovered tooling-r3 root/manifests"
+  ],
+  "Library_attempts_this_increment": 0,
+  "historical_failed_uploads": 5,
+  "historical_failed_backup_downloads": 1,
+  "original_backup_bytes_recovered": 0,
+  "original_transfer_failure_cause": "unknown",
+  "supported_next_retention": "Export this archive plus separate build/tooling components to a user-controlled independent private destination and verify destination byte hashes. Workspace download availability is not independent backup verification.",
+  "later_metadata_separate": true
+}

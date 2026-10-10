@@ -1,3 +1,18 @@
+## Current C01a safe checkpoint — environment returned; pair unstarted
+
+Status-only steering pauses before execution. Workspace read/hash checks succeed;
+freeze completed05:55:23 UTC. No active emulator or claim/start/result for
+process6/baseline5 or process7/candidate2. C01a actual counts remain4/1/5.
+Offline helper2cea8d0955938b88f6d4e3de8825f8318104193c and frozen inputs are
+preserved;579 hash checks passed. No test replay/game change/rebuild/new runtime.
+Local private pre-execution archive114 verified entries/6504952 bytes,
+cc55738a3164309185e6cc8e42cf7894875088bb21a50b6db2fe631965c31e12; no verified
+independent backup. All old STOPs/Saves/counts/Library5+1 failures unchanged.
+Publish safe checkpoint to draftPR115/open issue116; writer idle on turn end.
+Next remains reviewed one-shot baseline prefix, candidate gated; no start in
+this status turn. Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/README.md.
+Earlier authority bodies below remain historical.
+
 ## Current C01a diagnostic prefix authority — one baseline then gated candidate
 
 Review accepts a diagnostic-only pair fromf5c56a4a9a7f2ce51b087668bd8c58c2efb2c02b.

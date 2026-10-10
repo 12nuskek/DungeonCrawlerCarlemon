@@ -1,0 +1,123 @@
+{
+  "PASS": true,
+  "full_aggregate": true,
+  "gameplay_processes": 0,
+  "tested_source_commit": "f53fc3a97ad20560ac9a7f9e14c3bb52d8a25128",
+  "source_status_at_receipt": "",
+  "generated_host_SHA256": "a5c38fcc695c53127d9f9593f9fb47a801912b97702c77d1b7b7ebe83353c1e7",
+  "observer_executable_SHA256": "5223546d319a68907e22a867c81220f547a098928cef8b5cc59f3eb4196303b5",
+  "native_complete_state": {
+    "gameplay_processes": 0,
+    "key_independent_resource_cases": 30,
+    "map_temp_lifecycle": 10,
+    "old_runtime_success": false,
+    "phase_chain_both_validators": 10,
+    "phase_corruptions": 60,
+    "retained_STOP82_SHA256": "bb19567c351ad53172065082d3c1e1617e428d852a4452e563d18372cc3159ef",
+    "retained_snapshot_both_validators": 1,
+    "save_disk_cold_cases": 30,
+    "source_rewards": {
+      "boss": {
+        "EV": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "XP": 226,
+        "money": 360
+      },
+      "guard": {
+        "EV": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "XP": 132,
+        "money": 320
+      },
+      "howler": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 121,
+        "money": 360
+      },
+      "trial": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 96,
+        "money": 320
+      }
+    },
+    "unsupported_Pokerus_strict_rejections": 4,
+    "unused_slot_mutation_cases_both_validators": 412,
+    "walking_native_transitions": 265
+  },
+  "transaction_offline": {
+    "fresh_Thumb_and_IRQ": true,
+    "full_snapshot_physical_byte_negatives": 32970,
+    "legal_4byte_prefixes_per_record": 26,
+    "medicines_tested": 10,
+    "negative_checks": 116756,
+    "passive_advances": 0,
+    "positive_normal_or_IRQ_checks": 24180,
+    "unobservable_identical_word_images": 2254
+  },
+  "outer_function_offline": {
+    "callback_exit_not_premature": true,
+    "direct_instruction_checks": 2140,
+    "direct_offsets_covered": 22,
+    "first_no_copy_sample_and_one_actual_prefix": true,
+    "freed_payload_reads": 0,
+    "independent_compiled_Update_and_Free_chain": true,
+    "native_prev_next_coalescing_and_unmerged_headers": true,
+    "post_Free_completion_checks": 60,
+    "skipped_observation_completion_checks": 40
+  },
+  "medicine_policy_vectors": 148248,
+  "two_foe_native_integration_checks": 33,
+  "four_foe_presence_combinations": true,
+  "simultaneous_critical_risk_retained": true,
+  "native_removal_compaction_cases": 4,
+  "medicine_UI_animation_mock_cases": 8,
+  "stateful_successive_Potion_uses": 2,
+  "medicine_full_snapshot_byte_corruptions": 65760,
+  "executable_negatives": 5,
+  "acknowledgement_audit_negatives": 11,
+  "reservation_bytes": 10000408128,
+  "available_bytes": 10515877888,
+  "storage_shortfall_bytes": 0,
+  "source_verification": {
+    "engine_manifest_entries_rehashed": 11734,
+    "new_game_builds": 0,
+    "retained_manifest_SHA256": "c4ee6f12491985cc4009ed7999356e22f6971231107251c69e6f1e33a748c3b4"
+  },
+  "binding_count": 92,
+  "full_receipt_SHA256": "9d3599532a3d7fdd5bb0fdde3242c6cd28994e647c247b4ca54fff80b6f4e411",
+  "source_diff_review": {
+    "old_generated_SHA256": "a5d0fd49bb8a3cdff3653b7505d0e8d303716d4a1a4e7064dca8377ea68d2938",
+    "new_generated_SHA256": "a5c38fcc695c53127d9f9593f9fb47a801912b97702c77d1b7b7ebe83353c1e7",
+    "key_assignment_and_setKeys_lines_exact": true,
+    "co_run_function_capture_trace_bounds_exact": true,
+    "initial_comparison_failure": "The slice included the newly inserted adjacent comment; actual co_run function is byte-exact. No gameplay.",
+    "engine_and_plan_unchanged": true,
+    "reviewed_source": "f53fc3a97ad20560ac9a7f9e14c3bb52d8a25128"
+  }
+}

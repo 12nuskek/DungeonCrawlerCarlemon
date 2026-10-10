@@ -1,0 +1,20 @@
+{
+  "aggregate_tested_source_commit": "f53fc3a97ad20560ac9a7f9e14c3bb52d8a25128",
+  "accepted_retained_review_commit": "037bc3cbcfaed70fb0979a88dae47c9383c7cf0c",
+  "identities": {
+    "validator": "89501c5e2090a44d59ab880e5b1e36be5b47264cbdf3ce6389faee53a2790a78",
+    "generator": "277259266417784026c44928d8a0d7fc85ddbb2bf5b51618c7804d86091a70a9",
+    "proof_script": "0021349e5e5f8ed1bf76709799eb28d49d612c3f165307a3261d7eecc6ada436",
+    "generated_observer": "a5c38fcc695c53127d9f9593f9fb47a801912b97702c77d1b7b7ebe83353c1e7",
+    "compiled_observer": "5223546d319a68907e22a867c81220f547a098928cef8b5cc59f3eb4196303b5",
+    "ELF": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+    "library": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "compiled_context_proof": "7cbaee646dfc10b741a0b262b190f120d0284a2980c1ef872fa7784452aeb4f1",
+    "compiled_bindings": "623e3b3c6a1f478151e995a093dd3048a7b326d6e6d86be377e8ac927b7a0fa4",
+    "aggregate_receipt": "9d3599532a3d7fdd5bb0fdde3242c6cd28994e647c247b4ca54fff80b6f4e411",
+    "policy": "bad8af5db981a0e153be9280f87cc21445e8e2d83640ebb073cc3c0cfa6a828f",
+    "model": "6e7c0bff87c36406e9c1c64751862240ca8654c6d18fd890a2019cb37acfabeb",
+    "integration": "2ea45c7eedbd76cce01f16a95e593e95e14723f4e35e5546b06c3d77bb4a88f2",
+    "inert_adapter": "62db9a2cd2fa8e52c2da901d2c64eda1167a2aa98dac566371230404caa58574"
+  }
+}

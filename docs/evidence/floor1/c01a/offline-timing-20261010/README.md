@@ -120,6 +120,12 @@ retroactively changed.
 
 ## Exact identities and retention
 
+Offline-tested source/evidence publication06b78fd6df2cbec0d86dd9df578ebab544f70b11;
+tested file hashes match that commit exactly. [Returned publication/CI state](publication-receipt.json):
+PR115 open/draft/unmerged, status/workflow/check/review lists empty; no CI pass.
+Final metadata-only head is reported by the PR and handoff. All69 remote names
+and68 other heads, main and game engine preserved.
+
 - Starting checkpoint92d6f40fde2b7b5f9944d286a42ad2a6e897af4b; base mainbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7.
 - Retained baseline source9c83611e8e9b61d55388c18496c361d3362e462e/engine8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a,
   ROM6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459,

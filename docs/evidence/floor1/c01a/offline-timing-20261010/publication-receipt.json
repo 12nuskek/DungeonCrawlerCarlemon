@@ -1,0 +1,32 @@
+{
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "starting_checkpoint": "92d6f40fde2b7b5f9944d286a42ad2a6e897af4b",
+  "offline_tested_source_and_evidence_commit": "06b78fd6df2cbec0d86dd9df578ebab544f70b11",
+  "offline_tested_file_bytes_verified_against_commit": true,
+  "game_candidate_source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+  "PR": {
+    "number": 115,
+    "draft": true,
+    "state": "open",
+    "merged": false,
+    "head": "06b78fd6df2cbec0d86dd9df578ebab544f70b11"
+  },
+  "issue": 116,
+  "statuses": [],
+  "workflow_runs": [],
+  "check_runs": [],
+  "reviews": [],
+  "CI_pass_claimed": false,
+  "all69_remote_branch_names_and68_other_heads_preserved": true,
+  "no_gameplay_process_or_game_rebuild_or_replay": true,
+  "C01a_counts": {
+    "baselines": 4,
+    "candidates": 1,
+    "processes": 5
+  },
+  "next": "Review missing-evidence/minimal passive diagnostic proposal before any later separately frozen claim. No justified game remedy or execution authority here.",
+  "recovered_agbcc_actual_source_HEAD": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+  "recovered_agbcc_actual_source_tree": "dd8b159e245cc1e01b98a42581101e473ba0743d",
+  "actual_build_install_script_hashes_match_manifest": true
+}

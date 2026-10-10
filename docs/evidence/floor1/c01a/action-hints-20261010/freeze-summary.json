@@ -1,0 +1,52 @@
+{
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "tested": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "helper_commit": "a9d2ee60819f0905534c74a2d23b08140991acda",
+  "route_SHA256": "7105211cf9560d981f78f630962f49d1a3b5ea599c03784760ece71dfd2ff1c0",
+  "private_freeze_SHA256": "25a8338556365f40e7f60656caf919b4e2eabc9fc5847c66f0b5978bc06fcdca",
+  "storage": {
+    "visual_frames": 18000,
+    "battle_frames": 30000,
+    "native_boundaries_per_frame": 4096,
+    "native_timeline_startup_frames": 2046,
+    "native_timeline_active_window": 250,
+    "native_detail_file_max": 1542000000,
+    "each_file_hard_max": 2147483648,
+    "RGB_capture_max_per_case": 2085699200,
+    "native_reference_max_per_case": 2147483648,
+    "supplemental_reference_max_per_case": 48600000,
+    "logs_max_per_case": 33554432,
+    "clips_max_per_case": 2147483648,
+    "pair_total_reserved_bytes": 21474836480,
+    "claim_limit_per_case": 1,
+    "first_failure_stop": true,
+    "no_Save": true
+  },
+  "proofs": {
+    "offline-proof.json": "46162954efebce16a148790ec39ece04e1d3c2feb92c66d50fc72746aa7488bd",
+    "offline-purity.json": "322339efa4b730aaf8a0bd365227e44d5c4f7d06895359a8c69abcde4cd698ac",
+    "offline-readiness.json": "a6a6208e9c16480bf133e9338bd89bfffccdac2a8b20265385a5c67020e3dbc9",
+    "ui-abi.json": "5411ef9e524e0deb8dc6eacc110d501a3b70c9d93dac29f5f32630169d4384d3",
+    "compiled-strings.json": "4abdbbe4b67a22aec998fd41478b6ac7781568aa8f1a61a661adb1b65b8ca6a6"
+  },
+  "cases": {
+    "baseline": {
+      "source": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+      "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+      "ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+      "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+      "observer_source_SHA256": "974059b873d72c8f87ae7c3504d82294cf6294675c46337cadb0c736c1a0a636",
+      "observer_binary_SHA256": "12a4b0d4a5ddc520ea71e27d539d1a235542a3ab31ba2f4e9e89f7d746c5e3fc",
+      "full_2560_snapshot_preserved": true
+    },
+    "candidate": {
+      "source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+      "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+      "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+      "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+      "observer_source_SHA256": "974059b873d72c8f87ae7c3504d82294cf6294675c46337cadb0c736c1a0a636",
+      "observer_binary_SHA256": "12a4b0d4a5ddc520ea71e27d539d1a235542a3ab31ba2f4e9e89f7d746c5e3fc",
+      "full_2560_snapshot_preserved": true
+    }
+  }
+}

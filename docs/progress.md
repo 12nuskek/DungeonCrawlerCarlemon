@@ -1,3 +1,18 @@
+## Current C01a candidate-only authority — certify retained baseline4 first
+
+Parent review accepts precise inventory correction atccc196473be4615d52d455c7a48afe2f5a208bec.
+Separately named corrected offline certificate must verify original bytes/provenance,
+all post-processing gates and complete passive mode (old complete=false untouched).
+Original r4 STOP/PASS=false/freeze/claim/evidence immutable. Exact numbered sequence,
+all named captures and malformed-extra rejection required; same strict classifier
+in pixel wrapper with named-start comparison separate. Only certificate PASS plus
+new frozen identities/exclusive claim permits process5/candidate attempt1 once.
+No baseline replay/game or observer rebuild. First unexpected failure terminal;
+no automatic replay/timing or RNG search/waivers. Counts four baselines/zero
+candidates until claim. Publish scoped draftPR115/issue116,stop review,no merge.
+Contract: docs/evidence/floor1/c01a/retained-baseline-candidate-20261010/contract.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current C01a r4 checkpoint — native route complete; capture-inventory STOP
 
 Baseline process4/attempt4 executionb222d75708e3eb3e48bd42e2318befce82e762f0

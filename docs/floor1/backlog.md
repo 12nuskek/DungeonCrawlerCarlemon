@@ -1,3 +1,28 @@
+## Current C01a diagnostic prefix authority — one baseline then gated candidate
+
+Review accepts a diagnostic-only pair fromf5c56a4a9a7f2ce51b087668bd8c58c2efb2c02b.
+Use retained builds/real Save/full certified C01a baseline4 references; no game
+change/rebuild/remedy/stream weakening/merge. Original commands1–27 exactly,
+detailed recorder active before25 Fight A;925-frame maximum and first Move-ready
+endpoint. Process6/baseline5 once; only strict original-prefix match and correct
+recorder close admit process7/candidate2 once. First mismatch/failure terminal;
+no instruction past failure, replay or continuation beyond Move-ready.
+
+Reviewed terminal generator plus46 scoped ELF points/11 RAM bindings per build;
+source-bound ARM ABI and14 wrong-binding/14 host error-success/passivity fixtures
+pass offline. Original CPU driver/events/input expressions and strict native/UI
+functions unchanged.4096-row buffers include command/key/queue rows and reserve
+frame marker; separate terminal row.970103304 bytes/case/1940206608 combined fits
+larger20GiB original storage envelope. Full B/F/E+EOF/2700 acceptance requirements
+remain unchanged; diagnostic endpoints explicitly partial. Original archives,
+STOP124/unflushed history/Saves and Library5+1 failures preserved. No new runtime
+process yet at this authority checkpoint: C01a4/1/5; planned pair5/2/7 only after
+both actually start. No second writer/schedule/Library retry/public raw artifacts.
+Contract: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/contract.md.
+Freeze/claims/actual evidence separately recorded. Publish draftPR115 and stop
+review after pair; accepted nine-district plan/broader gates unchanged.
+Earlier checkpoint/authority bodies below are historical.
+
 ## Current C01a offline timing / terminal-retention checkpoint
 
 Continued from92d6f40fde2b7b5f9944d286a42ad2a6e897af4b. Retained ELF/source/tool

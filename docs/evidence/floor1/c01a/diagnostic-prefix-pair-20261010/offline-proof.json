@@ -1,0 +1,141 @@
+{
+  "PASS": true,
+  "wrong_actual_ELF_binding_rejections": 14,
+  "fixture_cases": {
+    "0": {
+      "exit": 0,
+      "log": "DIAGNOSTIC_CLOSE result=0 retention=0 rows=132 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "1": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=4096 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "2": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=3788801 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "3": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=16 frames=0 terminal=0 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "4": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=1 frames=0 terminal=0 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "5": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=0 rows=4097 frames=1 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "6": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=132 frames=925 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "7": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=126 rows=132 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "8": {
+      "exit": 0,
+      "log": "",
+      "CPU_board_RAM_unchanged": true
+    },
+    "9": {
+      "exit": 0,
+      "log": "",
+      "CPU_board_RAM_unchanged": true
+    },
+    "10": {
+      "exit": 0,
+      "log": "",
+      "CPU_board_RAM_unchanged": true
+    },
+    "11": {
+      "exit": 124,
+      "log": "DIAGNOSTIC_CLOSE result=124 retention=0 rows=132 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "12": {
+      "exit": 51,
+      "log": "DIAGNOSTIC_CLOSE result=51 retention=0 rows=132 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    },
+    "13": {
+      "exit": 109,
+      "log": "DIAGNOSTIC_CLOSE result=109 retention=0 rows=132 frames=0 terminal=1 native_read=-1 ui_read=-1 full_acceptance=0\n",
+      "CPU_board_RAM_unchanged": true
+    }
+  },
+  "unchanged_original_functions": [
+    "bv_native_step",
+    "bv_native_events",
+    "bv_native_due",
+    "bv_boundary_drive_frame",
+    "bv_native_metadata",
+    "bv_native_compare",
+    "bv_native_sample",
+    "bv_native_finish",
+    "ui_sample",
+    "ui_ready"
+  ],
+  "all15_original_key_expressions_unchanged": true,
+  "no_IO_in_interpreter": "dg_observe/collect/record/add perform direct reads and host buffer/cache writes only; flush/open/close outside dispatch",
+  "source_SHA256": {
+    "scripts/floor1/c01a-prefix-host.py": "cea758d3cf9d531fdb50ce3a7a9c18f2716676b5c9c0ad664fa2549dadfb3ffe",
+    "scripts/floor1/c01a-prefix-diagnostic.h": "40db68f0be5e73d52c6c4df86935700aa99307d4994b2e6001d851fec9248397",
+    "scripts/floor1/c01a-prefix-bindings.py": "ece8d896afdd1aa86f9cf42db2684772b6f497ad6eb51f52da75427f80fd9283",
+    "scripts/test-f1-c01a-prefix-offline.py": "c9186c4c9959ab91cdd6a0498c3b3074ce34e485df768c2e163c44972542a9c7"
+  },
+  "observer_source_SHA256": "08083b64755df760070a7f8b650001e960c21497d090c8992d88305770e364b9",
+  "observer_binary_SHA256": "fd4062351cb34c25f4af00a4137d9de935a7a534625ed95ac1d66db35a2c6d34",
+  "data_max_bytes": 969933072,
+  "reviewed_reserved_per_case": 970103304,
+  "reviewed_reserved_pair": 1940206608,
+  "full_acceptance_not_claimed": true,
+  "compiled_gameplay_host_not_launched_in_offline_tests": true,
+  "candidate_gate_positive_and6_negatives": true,
+  "prefix_exact_original_commands_1_to_27_SHA256": "2f69b67342729fd209bb1ac1bd5950614dea324bea12fc30d7d0464df80b329c",
+  "no_diagnostic_full_finish_or_oracle_replacement": true,
+  "both_source_bound_ARM_ABI_values": [
+    [
+      16,
+      0,
+      4,
+      5,
+      1084,
+      0,
+      4,
+      512,
+      16,
+      0,
+      4,
+      8,
+      10,
+      12
+    ],
+    [
+      16,
+      0,
+      4,
+      5,
+      1084,
+      0,
+      4,
+      512,
+      16,
+      0,
+      4,
+      8,
+      10,
+      12
+    ]
+  ],
+  "ABI_fixture_only_not_game_build": true
+}

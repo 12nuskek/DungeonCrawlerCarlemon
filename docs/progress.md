@@ -1,3 +1,27 @@
+## Current C01 opening4 retained review — one proposal; gameplay CLOSED
+
+Review starts at clean4cff72680be2256fd35531eb4ed2a643fb45da1e. No added game,
+freeze, claim, Save, cold process or ROM change. STOP101 at native27144 remains
+terminal; C01 opening4/4,cold0/0. Retained trace reconstructs four completed Guard
+turns and two full-state/native Potion closures PASS. Both heals restored17 of40
+nominal HP, wasted23 and displaced two WEAKEN turns. Per-frame CPU/callback/task/
+heap cuts were not retained; specific transient validator cuts remain offline-only.
+Terminal source branch: Carl STRIKE minimum5 KOs Guard3; native order23/15/13/12,
+81XP raises Carl9→10, max/currentHP+3 and Defense15→17 before Scuttler. Even both
+critical ceilings yield22−15+3−9=1HP for that one turn; no remaining-fight proof.
+Exactly one later-review proposal: medicine conservation with declared one-critical
+plus ordinary envelope Carl21/both,15/Guard,12/Scuttler; Donut12 with Scuttler.
+Simultaneous-critical risk explicit; no changed-input RNG prediction, resources,
+test-only waiver, new game change or retries. Existing state/resource/incapacity/
+first-failure gates remain strict. No implementation/execution authority added.
+Report/acceptance cases docs/evidence/floor1/c01/opening4-retained-policy-review-r1-20261010/README.md.
+Original manifest102entries/3190319959B freshly rehashed exact; local retention
+verified, independent backup unverified. Library5+1 failure history/zero original
+bytes preserved/no retry. Main/all69 other heads/issue116/engine/acceptedplan/history
+unchanged; draftPR117/unmerged. Oracle/legacy/C01/G02/prepared/human/fullfloor remain
+open. Next independent read-only strategy review before a separately authorized
+contract. Earlier checkpoint bodies below preserve their historical scopes.
+
 ## Current C01 opening4 — STOP101 at native27,144; terminal/no retry
 
 Runtime tested/published helperff6f5180fdeca60380b782da61998cb1fe77ff87, wiring tested

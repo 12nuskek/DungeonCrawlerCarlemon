@@ -1,3 +1,26 @@
+## Current C01 r3 final offline checks PASS; gameplay CLOSED
+
+Clean source32a25769c5427656a010287bed6cf03c5f62b45c; start3270cdb0819fd29cc06cf9716e027911db75511f;
+main/baseb51e27d96f7ea43667ed20c4ce7bc7ca113d1eae. Concrete review bounds finding
+corrected: validate whole memcpy caller frame before saved SP/SP+4 reads; old
+validator reproducer fails forbidden-read fixture, corrected10negatives pass.
+Retained WAITSP03007e24 still accepted normal/freshIRQ pre-copy/post-cleanup.
+Fullaggregate+productioncompile and37closed-gate/hash negatives PASS; executable
+never invoked.24180 positives/116756 negatives/32970 transaction-byte cases,
+all22outer offsets/2140checks/60completions incl40skipped observations;74124policy
+vectors/65760HP-WAITbyte cases/inherited phase-resource and30synthetic Save/cold
+fixtures pass. No actual emulator/Save/cold/freeze/claim; preparation CLOSED.
+Independent review PENDING; no runtime acceptance. Exactsource/observer/ELF/library/
+proof/receipt hashes docs/evidence/floor1/c01/medicine-transaction-admission-r3-20261010/results.json.
+98preservedentries/31gzip rehashed exact; original frame-pass receipts valid;
+no representation change/compression/deletion/upload, local128MiBbound retained,
+independentbackup unverified, Library5+1 unknowncause/zerooriginalbytes unchanged.
+C01opening3/3,cold0/0 STOP82/90/104;V016/4 STOP117visual8536beforeB8402,later1/1,
+ordinary5,C01aactual5/3/1 claims6/3/1 unchanged. Main/all69otherheads/issue116,
+acceptednine-district plan and all open later gates preserved; draftPR117/unmerged.
+Next independent read-only review; separately reviewed contract/authorization
+required before any later runtime. Yield cleanly. Earlier bodies below historical.
+
 ## Current C01 r3 outer-function correction — split PASS; checkpoint/idle
 
 Executor healthy2026-10-10 15:59:38UTC; latest inert command exit0, no activecommand.

@@ -1,0 +1,199 @@
+{
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "PASS": true,
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "acknowledgement_audit_negatives": 11,
+  "available_bytes": 7130763264,
+  "binding_count": 90,
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "duplicate_ack_no_input_cases": 10,
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "evidence_class": "synthetic source-bound offline comparisons only; zero emulator initializations; no new runtime acceptance",
+  "executable_negatives": 5,
+  "full_aggregate": true,
+  "gameplay_processes": 0,
+  "generated_host_SHA256": "56c5f71914f2ecccb96d56eae2da0ae2e54b2769a80383a26bbd4dcbe897b153",
+  "inherited_generated_base_SHA256": "897d1d698ea33aee7d7bcf6cd77475dc1a8b6ae562c92376103fdef6ef7c5e1c",
+  "medicine_UI_animation_mock_cases": 8,
+  "medicine_full_snapshot_byte_corruptions": 65760,
+  "medicine_policy_vectors": 74124,
+  "medicine_snapshot_corruptions_by_stage": {
+    "native_HP_animation": 32880,
+    "native_WAIT": 32880
+  },
+  "native_ABI": {
+    "assembly_SHA256": "427a20d9e189dab5dfd801e267504dfd414d80b026b1a4d70d579cb1be76a192",
+    "compile_only": true,
+    "object_SHA256": "8c91ac04126f977a7d9205f3b7b03c6f084ae001543ddddf5e76da218d085183",
+    "party_type_layout_byte": 17,
+    "text_flags_auto_scroll_bytes": "04000000",
+    "values": [
+      12,
+      0,
+      4,
+      8,
+      28,
+      4,
+      5,
+      8,
+      18,
+      20,
+      9,
+      88,
+      42,
+      40,
+      19,
+      40,
+      8,
+      100,
+      85,
+      255,
+      11,
+      4,
+      3,
+      8,
+      3,
+      8,
+      4,
+      4,
+      1,
+      1,
+      3,
+      1,
+      36,
+      16,
+      0,
+      4,
+      5,
+      16,
+      27,
+      28,
+      0,
+      1,
+      32,
+      6,
+      1,
+      9,
+      1000,
+      4,
+      1
+    ]
+  },
+  "native_acknowledgement_lifecycle": true,
+  "native_complete_state": {
+    "gameplay_processes": 0,
+    "key_independent_resource_cases": 30,
+    "map_temp_lifecycle": 10,
+    "old_runtime_success": false,
+    "phase_chain_both_validators": 10,
+    "phase_corruptions": 60,
+    "retained_snapshot_both_validators": 1,
+    "save_disk_cold_cases": 30,
+    "source_rewards": {
+      "boss": {
+        "EV": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "XP": 226,
+        "money": 360
+      },
+      "guard": {
+        "EV": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "XP": 132,
+        "money": 320
+      },
+      "howler": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 121,
+        "money": 360
+      },
+      "trial": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 96,
+        "money": 320
+      }
+    },
+    "unsupported_Pokerus_strict_rejections": 4,
+    "unused_slot_mutation_cases_both_validators": 412,
+    "walking_native_transitions": 265
+  },
+  "native_removal_compaction_cases": 4,
+  "new_actual_Save": false,
+  "observer_executable_SHA256": "0a9ed4fba40cd7978667be792faa5ae20cc7e1c02687931454f9a2828d604429",
+  "premature_printing_no_input_cases": 10,
+  "readiness_or_lifecycle_negative_cases": 210,
+  "reservation_bytes": 10000408128,
+  "retained_STOP104_full_3324_bytes_equal": true,
+  "runtime_storage_admitted": false,
+  "source_dependency_manifest_SHA256": "fde743ec6f0f9b3558e33e133a2edb8b5da4554fef7b60e440df429cfc8d0fbf",
+  "source_start_commit": "2e2ed115e737d2556c8802bce90d2afa19e35707",
+  "source_verification": {
+    "engine_manifest_entries_rehashed": 11734,
+    "new_game_builds": 0,
+    "retained_manifest_SHA256": "c4ee6f12491985cc4009ed7999356e22f6971231107251c69e6f1e33a748c3b4"
+  },
+  "stateful_successive_Potion_uses": 2,
+  "storage": {
+    "cold": {
+      "components": {
+        "256_PPM_and_PNG_captures": 59136000,
+        "bounded_review_MP4": 16777216,
+        "complete_battle_trace": 6240000,
+        "complete_field_trace": 20040000,
+        "index": 96000,
+        "medicine_full_state_audits": 0,
+        "native_RGB_all_frames": 691200000,
+        "source_Save_manifest_receipts": 33554432,
+        "two_logs": 67108864
+      },
+      "limit_bytes": 894152512,
+      "per_file_limit_bytes": 2147483648,
+      "per_log_limit_bytes": 33554432,
+      "worst_case_bytes": 894152512
+    },
+    "opening": {
+      "components": {
+        "256_PPM_and_PNG_captures": 59136000,
+        "bounded_review_MP4": 33554432,
+        "complete_battle_trace": 74880000,
+        "complete_field_trace": 240480000,
+        "index": 1152000,
+        "medicine_full_state_audits": 33554432,
+        "native_RGB_all_frames": 8294400000,
+        "source_Save_manifest_receipts": 33554432,
+        "two_logs": 67108864
+      },
+      "limit_bytes": 8837820160,
+      "per_file_limit_bytes": 2147483648,
+      "per_log_limit_bytes": 33554432,
+      "worst_case_bytes": 8837820160
+    }
+  },
+  "storage_shortfall_bytes": 2869644864
+}

@@ -1,0 +1,49 @@
+{
+  "UI_cases": 8,
+  "active_commands": 0,
+  "actual_new_Save_or_cold": 0,
+  "actual_new_emulator_processes": 0,
+  "actual_new_runtime_claims": 0,
+  "base_main": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "checkpoint_class": "OFFLINE SOURCE CANDIDATE; CLOSED; user-requested yield before latest aggregate",
+  "cold_claims_processes": [
+    0,
+    0
+  ],
+  "compiled_bindings_SHA256": "9fbaa53885737fa061bc62821b975e11be5230f6cf0d675686bb1e33229d4b49",
+  "compiled_context_proof_SHA256": "06875ba1c24c405f92fc09be906d072510aeaf169bddbaaace2d6e8b1926ff29",
+  "earlier_aggregate_PASS": true,
+  "earlier_aggregate_generated_observer_SHA256": "2232c148c458492dd4c897f53dde5c320e3f19bcc341a23d2c6b48a079853251",
+  "gate_negative_fixtures_completed": false,
+  "independent_backup_verified": false,
+  "latest_full_aggregate_PASS": false,
+  "latest_generated_observer_SHA256": "51da4501858f13b5db4e9c5393e93801bd6b40e358d1b5097222439f3f171488",
+  "latest_inert_executable_SHA256": "734b041a9fc432e2b7afd1bdea3999825c94a2399a2feec151682b050535b72c",
+  "latest_production_observer_built": false,
+  "latest_split_PASS": true,
+  "latest_split_log_SHA256": "11dce7b567b012dd3ff931960d86791a78b96be5203889dfd84f79ef8c56c559",
+  "legal_prefixes_per_record": 26,
+  "offline_cap_bytes": 134217728,
+  "opening_claims_processes": [
+    3,
+    3
+  ],
+  "preserved_manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7",
+  "reservation_bytes": 10000408128,
+  "review_state": "CLOSED_PENDING_INDEPENDENT_REVIEW",
+  "snapshot_byte_negatives": 32970,
+  "source_files": {
+    "scripts/floor1/guard-choice-r3-host.py": "8ebf9c53f8d066866b9a3840ea19b2df65c30804920c9f71bac961021d1e1fcc",
+    "scripts/floor1/medicine-transaction-fixtures.h": "4f0f95e6bcc651862d39ca7ffcc753056b330c33fa7d82371c3d669a38bdff24",
+    "scripts/floor1/medicine-transaction-inert.py": "8bb2c0942c5e81311ddd406e2967961e4759ffc303a08ae701af5748ddadd8cf",
+    "scripts/floor1/medicine-transaction-proof.py": "1d7efa205f2ee15c2ca9eae54f81c7ac2dd5e91bef2c05c5b3bf85bae956b3e6",
+    "scripts/floor1/medicine-transaction.h": "bb8557a3cc6d49ba27961e2be5a4ad43ea3f94fdd2ee00994945444fe3163323",
+    "scripts/test-f1-c01-guard-choice-r3.py": "f80ee502a66f9ca8ba930c0d39d77311a444ac68d69a68baf5d9ebc4f3e7a636",
+    "scripts/test-guard-choice-r3-offline.py": "bda8ebe112d929580f76444c2fda4abcae0a49405d46b53ccef45952fe702b66"
+  },
+  "split_negative_checks": 107446,
+  "split_normal_or_IRQ_checks": 19700,
+  "start_commit": "dee9076184cedebc72aedc0ae01ac79bd4de0a57",
+  "successive_medicine_uses": 2,
+  "unobservable_identical_word_images": 2254
+}

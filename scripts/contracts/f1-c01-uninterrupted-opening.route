@@ -1,0 +1,469 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+dialog 6000
+ready
+phase end boot
+step 68 64 -
+step 40 0 -
+expect 35 0 8 34 1
+step 20 16 -
+step 40 0 -
+expect 35 0 9 34 1
+step 1 64 -
+step 40 0 -
+phase begin note
+step 1 1 -
+step 400 0 note.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 9 34 3
+flag 33 1
+flag 36 1
+phase end note
+step 84 16 -
+step 40 0 -
+expect 35 0 14 34 3
+step 1 64 -
+step 40 0 -
+phase begin supply
+step 1 1 -
+step 400 0 supply.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+phase end supply
+flag 38 1
+step 1 64 -
+step 40 0 -
+step 1 1 -
+step 400 0 supply-repeat.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 0 14 34 3
+item 13 2
+step 148 16 -
+step 40 0 -
+expect 35 0 23 34 3
+step 84 64 -
+step 40 0 -
+expect 35 0 23 29 3
+step 164 16 -
+step 40 0 -
+expect 35 0 33 29 3
+step 52 64 -
+step 40 0 -
+expect 35 0 33 26 3
+step 68 16 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 3
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 3
+step 1 128 -
+step 40 0 -
+phase begin guide-initial
+step 1 1 -
+step 400 0 guide-rest.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-initial
+step 100 16 -
+step 40 0 -
+expect 35 1 10 5 7
+step 36 128 -
+step 40 0 -
+expect 35 1 10 7 7
+step 1 128 -
+step 40 0 -
+phase begin trial
+engage 3600
+step 1200 0 battle-start.ppm
+pilot offensive 36000
+step 600 0 battle-result.ppm
+dialog 6000
+ready
+expect 35 1 10 7 7
+flag 2135 1
+flag 37 1
+phase end trial
+step 36 16 -
+step 40 0 -
+expect 35 1 12 7 7
+step 36 128 -
+step 40 0 -
+expect 35 1 12 9 7
+phase begin scrap
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 scrap-box.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 12 9 7
+phase end scrap
+item 378 2
+item 13 2
+flag 39 1
+phase begin potion
+step 1 8 -
+step 120 0 -
+co start 0
+step 1 128 -
+step 20 0 -
+co start 1
+step 1 1 -
+wait-task bag 3600
+co bag-item
+step 1 1 -
+step 12 0 -
+wait-task field-context 3600
+co potion-use
+step 1 1 -
+step 12 0 -
+wait-task party 3600
+step 1 128 -
+step 40 0 -
+co potion-recipient
+step 1 1 -
+wait-task healed 3600
+co potion-healed
+step 40 0 field-potion.ppm
+return-field
+ready
+phase end potion
+item 13 1
+step 68 64 -
+step 40 0 -
+expect 35 1 12 5 7
+step 132 32 -
+step 40 0 -
+expect 35 1 4 5 7
+phase begin guide-posttrial
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-posttrial.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+phase end guide-posttrial
+duo healthy
+uses 8 40 2 40
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+phase begin guard
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 guard-start.ppm
+pilot offensive 36000
+step 600 0 guard-victory.ppm
+dialog 6000
+ready
+expect 35 0 37 31 7
+flag 2136 1
+phase end guard
+flag 2137 0
+item 13 1
+item 378 2
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start guard-out
+step 84 64 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+phase begin guide-guard
+step 1 1 -
+step 400 0 guide-1.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-guard
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start guard-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 84 128 -
+step 40 0 -
+expect 35 0 37 31 7
+measure stop
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guard-resolved.ppm
+dialog 3600
+ready
+step 40 0 -
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+step 68 64 -
+step 40 0 -
+expect 35 0 37 27 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 27 7
+phase begin howler
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 howler-start.ppm
+pilot offensive 36000
+step 600 0 howler-victory.ppm
+dialog 6000
+ready
+expect 35 0 51 27 7
+flag 2137 1
+phase end howler
+flag 2136 1
+item 13 1
+item 378 2
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start howler-out
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+phase begin guide-howler
+step 1 1 -
+step 400 0 guide-2.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-howler
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+measure start howler-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 26 7
+step 20 128 -
+step 40 0 -
+expect 35 0 51 27 7
+measure stop
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 howler-resolved.ppm
+dialog 3600
+ready
+step 40 0 -
+flag 46 0
+flag 47 0
+flag 48 0
+flag 49 0
+flag 2138 0
+flag 2139 0
+flag 2136 1
+flag 2137 1
+flag 49 0
+measure start preboss-out
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+measure stop
+step 1 128 -
+step 40 0 -
+phase begin guide-preboss
+step 1 1 -
+step 400 0 guide-preboss.ppm
+dialog 3600
+ready
+step 40 0 -
+expect 35 1 4 5 7
+duo healthy
+uses 8 40 2 40
+phase end guide-preboss
+measure start preboss-back
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 116 16 -
+step 40 0 -
+expect 35 0 44 26 7
+step 148 64 -
+step 40 0 -
+expect 35 0 44 17 7
+step 20 16 -
+step 40 0 -
+step 300 0 -
+expect 35 3 4 3 7
+step 64 16 -
+step 40 0 -
+expect 35 3 8 3 7
+step 68 128 -
+step 40 0 -
+expect 35 3 8 7 7
+measure stop
+step 40 0 approach.ppm
+ready
+phase begin boss
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 warden-start.ppm
+co boss-start
+pilot fortify 30000
+step 600 0 warden-result.ppm
+dialog 6000
+ready
+phase end boss
+phase begin boss-repeat
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+pages warden-resolved DCC_Live_Boss_Text_Won
+dialog 3600
+ready
+phase end boss-repeat
+step 68 16 -
+step 40 0 -
+expect 35 3 12 7 7
+step 52 128 -
+step 40 0 -
+expect 35 3 12 10 7
+phase begin stairs-no
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+pages stairs-no DCC_F1D1Warden_StairsText
+co yesno
+step 40 0 stairs-no-choice.ppm
+step 1 128 -
+step 20 0 -
+co choice 1
+step 1 1 -
+step 400 0 -
+pages stairs-cancelled DCC_Boss_Text_StairsCancel
+dialog 3600
+ready
+co answer 0
+expect 35 3 12 10 7
+phase end stairs-no
+phase begin stairs-yes
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+pages stairs-yes DCC_F1D1Warden_StairsText
+co yesno
+step 40 0 stairs-yes-choice.ppm
+co choice 0
+step 1 1 -
+step 400 0 -
+ready
+co answer 1
+expect 35 4 4 4 7
+phase end stairs-yes
+step 68 16 -
+step 40 0 -
+expect 35 4 8 4 7
+step 36 128 -
+step 40 0 -
+expect 35 4 8 6 7
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 -
+pages opening-checkpoint DCC_F1D1Checkpoint_ReviewText
+dialog 3600
+ready
+phase begin save
+step 1 8 -
+step 120 0 -
+co start 1
+step 1 128 -
+step 20 0 -
+co start 2
+step 1 1 -
+co save-ready
+step 1 1 -
+co save-success
+step 1 0 saved-success.ppm
+step 600 0 -
+ready
+phase end save
+step 1 0 saved.ppm
+quit

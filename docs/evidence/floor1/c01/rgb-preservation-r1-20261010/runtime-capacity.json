@@ -1,0 +1,44 @@
+{
+  "all_inclusive_cap_bytes": 3758096384,
+  "available_bytes": 13808525312,
+  "cold_claims_processes": [
+    0,
+    0
+  ],
+  "conservative_all_inclusive_footprint_bytes": 353210368,
+  "external_audit_reserve_bytes": 134217728,
+  "external_charge_breakdown_bytes": {
+    "all_changed_code_docs": 684032,
+    "all_script_pycache": 1253376,
+    "entire_Git": 112308224
+  },
+  "external_charge_within_128MiB_reserve": true,
+  "external_conservative_charge_verified_bytes": 114245632,
+  "full_runtime_reservation_bytes": 10000408128,
+  "gameplay_processes": 0,
+  "independent_backup_verified": false,
+  "indexed_private_bytes": 218729208,
+  "local_preservation_only": true,
+  "measurement_stage": "After private mapping/receipts/retention index, before code/docs publication.",
+  "medicine_preparation_gate": "closed",
+  "opening_claims_processes": [
+    3,
+    3
+  ],
+  "output_usage": {
+    "allocated_bytes": 218992640,
+    "logical_bytes": 218744315
+  },
+  "private_retention_manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7",
+  "reservation_components_bytes": {
+    "conditional_cold": 894152512,
+    "headroom": 268435456,
+    "opening": 8837820160
+  },
+  "retained_private_entries": 98,
+  "runtime_claims": 0,
+  "runtime_freeze": false,
+  "runtime_sampling_admitted": false,
+  "runtime_storage_capacity_available": true,
+  "surplus_after_full_reservation_bytes": 3808117184
+}

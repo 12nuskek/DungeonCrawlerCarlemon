@@ -1,0 +1,30 @@
+{
+  "Library_failures": {
+    "cause": "unknown",
+    "original_bytes_recovered": 0,
+    "supported_existing_backup_downloads": 1,
+    "uploads": 5
+  },
+  "Library_uploads_approved": false,
+  "approved_condition": "Two recordings: verify every decoded frame before replacing uncompressed RGB copies; next separately frozen increment only.",
+  "available_bytes": 7119978496,
+  "cold_claims_processes": [
+    0,
+    0
+  ],
+  "compression_deletion_uploads_this_increment": 0,
+  "exclusive_claims": 0,
+  "gameplay_processes": 0,
+  "independent_private_backup_verified": false,
+  "local_lossless_preservation_approved_UTC": "2026-10-10 13:28:29",
+  "opening_claims_processes": [
+    3,
+    3
+  ],
+  "preservation_executed": false,
+  "reservation_bytes": 10000408128,
+  "runtime_freeze": false,
+  "runtime_sampling_admitted": false,
+  "runtime_storage_admitted": false,
+  "shortfall_bytes": 2880429632
+}

@@ -1,0 +1,92 @@
+{
+  "runtime_PASS": false,
+  "terminal_no_retry": true,
+  "tested_helper": "c3db41b2c9a3e25220ee13b5531d83f0bf11ef19",
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "freeze_SHA256": "1b3c98db8a5fe2d6759792c417243aaa48dbba5f9b8fd20365c34c36f4ea9b6e",
+  "observer_SHA256": "0a4ac06b82c8e1141b14c5c0bfe803a77784e95d32dc5081ac883aa02ba498af",
+  "generated_host_SHA256": "fb0ec51fcb40f19aab69a0322928e572134f3b1d8df4f53e6091a6e6ed77c213",
+  "opening_processes": 1,
+  "opening_claims": 1,
+  "cold_processes": 0,
+  "cold_claims": 0,
+  "cold_admitted": false,
+  "STOP": 82,
+  "absolute_native_frame": 1538,
+  "phase": "BOOT",
+  "encounters": 0,
+  "accepted_field_snapshots": 0,
+  "accepted_battle_snapshots": 0,
+  "manual_Save_completed": false,
+  "native_save_file_unwritten_all_FF": true,
+  "party_count": 2,
+  "saved_party_count": 0,
+  "field": {
+    "group": 35,
+    "map": 0,
+    "section": 213,
+    "x": 8,
+    "y": 38,
+    "facing": 1,
+    "walking_friendship_counter": 0
+  },
+  "decoded_party_checksums_valid": 6,
+  "decoded_party_reencoding_exact": 6,
+  "active_members": [
+    {
+      "member": "Carl",
+      "level": 8,
+      "XP": 399,
+      "HP": 30,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "status": 0
+    },
+    {
+      "member": "Donut",
+      "level": 8,
+      "XP": 709,
+      "HP": 26,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "status": 0
+    }
+  ],
+  "unused_slot_indices": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "unused_slots_species": 0,
+  "unused_slots_only_nonzero_byte": {
+    "offset": 85,
+    "value": 255,
+    "source_field": "MON_DATA_MAIL",
+    "source_constant": "MAIL_NONE"
+  },
+  "failure_predicate": "continuous-opening-guard.h co_read line42 requires all unused100-byte records to equal zero; native ZeroMonData writes MAIL_NONE=0xFF at offset85",
+  "diagnosis_scope": "read-only retained snapshot and identical compiled engine source; no assertion changed and no rerun",
+  "native_RGB_frames": 1538,
+  "native_RGB_bytes": 177177600,
+  "native_fps": "16777216/280896",
+  "FFV1_full_decoded_RGB_byte_exact": true,
+  "failure_PNG_PPM_and_final_RGB_byte_exact": true,
+  "review_MP4_is_lossy": true,
+  "recovered_compiler_is_historical_binary": false,
+  "private_uploads_this_increment": 0,
+  "independent_backup_verified": false,
+  "next_dependency": "Review the native empty-party representation mismatch; a separately authorized source correction and new execution contract are required before another process."
+}

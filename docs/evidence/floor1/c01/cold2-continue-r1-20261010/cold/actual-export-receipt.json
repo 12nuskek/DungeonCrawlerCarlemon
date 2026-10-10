@@ -1,0 +1,30 @@
+{
+  "actual_native_frames": 2044,
+  "raw_RGB_bytes": 235468800,
+  "review_MP4": {
+    "SHA256": "8088bb3609b48dda7eb431326fa2c939d663671c8e40ed07611f9d13d4aba72c",
+    "bytes": 288642,
+    "all_frames": true,
+    "lossy": true,
+    "probe": {
+      "width": 240,
+      "height": 160,
+      "r_frame_rate": "262144/4389",
+      "duration": "34.222092",
+      "nb_read_frames": "2044"
+    }
+  },
+  "screenshots": {
+    "cold.png": {
+      "absolute_native_frame": 2044,
+      "SHA256": "d110124e1bc41dd60925b459261de2d2e6a37c04977c5ec3aa58808921cffc80",
+      "indexed_RGB_exact": true
+    }
+  },
+  "second_lossless_container": false,
+  "tested_source_commit": "db5dc5565291ba8122916ca2275ba9b32a91ef4c",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "independent_backup_verified": false
+}

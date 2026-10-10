@@ -1,0 +1,171 @@
+{
+  "runtime_PASS": false,
+  "terminal_no_retry": true,
+  "source_start_commit": "605f64777807ad8724500470e450d12b5cdab306",
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "tested_helper": "978cbf03907c38ef24fb4008bfed04e1c69daea5",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "freeze_SHA256": "aa0787949c09d60b887e4dcc74352887fea4212730386f041729f49b8c8470a8",
+  "observer_SHA256": "f77473d393b10e89354c1ad10dba38584b0bd635f25b98fd54547cee35eae1c3",
+  "generated_host_SHA256": "77c49580d1323e12073b4e742eb6f6e09435401ad2a47383e84b1f53a48da9d0",
+  "r2_opening_processes": 1,
+  "r2_opening_claims": 1,
+  "cumulative_C01_opening_processes": 2,
+  "cumulative_C01_opening_claims": 2,
+  "cold_processes": 0,
+  "cold_claims": 0,
+  "cold_admitted": false,
+  "STOP": 90,
+  "absolute_native_frame": 31258,
+  "phase": "Guard",
+  "trainer": 856,
+  "encounters_started": 2,
+  "completed_phases": [
+    {
+      "name": "boot",
+      "frame": 2886
+    },
+    {
+      "name": "note",
+      "frame": 4438
+    },
+    {
+      "name": "supply",
+      "frame": 5046
+    },
+    {
+      "name": "guide-initial",
+      "frame": 8306
+    },
+    {
+      "name": "trial",
+      "frame": 18497
+    },
+    {
+      "name": "scrap",
+      "frame": 19133
+    },
+    {
+      "name": "potion",
+      "frame": 19758
+    },
+    {
+      "name": "guide-posttrial",
+      "frame": 20522
+    }
+  ],
+  "classification": "first native Carl incapacitation in Guard; battle still unresolved, not party corruption or unsupported Pokerus",
+  "final_battle": {
+    "turn": 5,
+    "move": 33,
+    "power": 35,
+    "critical_multiplier": 2,
+    "attacker": 3,
+    "target": 0,
+    "outcome": 0,
+    "damage": 8,
+    "preceding_Carl_HP": 4,
+    "battle_HP": [
+      0,
+      0,
+      16,
+      7
+    ]
+  },
+  "decoded_live_party_at_battle_stop": [
+    {
+      "member": "Carl",
+      "level": 10,
+      "XP": 576,
+      "HP": 0,
+      "maxHP": 36,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 81,
+      "Pokerus": 0
+    },
+    {
+      "member": "Donut",
+      "level": 9,
+      "XP": 886,
+      "HP": 16,
+      "maxHP": 28,
+      "PP": [
+        0,
+        36,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 75,
+      "Pokerus": 0
+    }
+  ],
+  "all_six_checksums_and_reencoding_valid": true,
+  "unused400_bytes_exact_native_empty_and_preserved": true,
+  "CPU_context": {
+    "retained_bytes": 96,
+    "r0_r15_validity_mask": 65535,
+    "CPSR_valid": true,
+    "SPSR_valid": false,
+    "read_only_no_advance": true,
+    "raw_register_values_private": true
+  },
+  "last_accepted_field": {
+    "map": [
+      35,
+      0
+    ],
+    "position": [
+      37,
+      31
+    ],
+    "facing": 1,
+    "walking_counter": 72,
+    "count": 2,
+    "saved_count": 0,
+    "money": 3320,
+    "Potion": 1,
+    "Scrap": 2,
+    "trial_win": true,
+    "Guard_Howler_Warden_wins": false,
+    "preparation_boss_checkpoint_loop": false
+  },
+  "actual_Potion_demonstration": {
+    "spent": 1,
+    "Donut_missingHP": 4,
+    "native_capped_gain": 4,
+    "guide_recovery_followed": true,
+    "whole_opening_survival_cost_not_established": true
+  },
+  "field_snapshots": 11187,
+  "battle_snapshots": 17784,
+  "native_frames": 31258,
+  "raw_native_RGB_bytes": 3600921600,
+  "all12_capture_pixels_match_indexed_RGB": true,
+  "whole_review_MP4_frames": 31258,
+  "review_MP4_duration_seconds": 523.343513,
+  "review_MP4_lossy": true,
+  "full_FFV1_export_PASS": false,
+  "full_FFV1_roundtrip_verified": false,
+  "FFV1_export_failure": "480MiB cap; incomplete artifact retained; exact encoder signal not recorded",
+  "export_retries": 0,
+  "manual_Save_completed": false,
+  "native_Save_all131072_bytes_FF": true,
+  "disk14_sector_verification_performed": false,
+  "cold_verification_performed": false,
+  "gameplay_retries": 0,
+  "game_builds": 0,
+  "private_uploads": 0,
+  "independent_private_backup_verified": false,
+  "prior_r1_STOP82_unchanged": true,
+  "next_dependency": "Review the supported native Guard critical/incapacitation and bounded export limitation on draft PR117; further gameplay requires a separately authorized reviewed contract."
+}

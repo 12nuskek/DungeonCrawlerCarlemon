@@ -1,0 +1,27 @@
+{
+  "analysis_base": "4cff72680be2256fd35531eb4ed2a643fb45da1e",
+  "main": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "analysis_failure": {
+    "initial_assertion": "expected level10 Defense16; actual source-derived17",
+    "initial_output_bytes": 0,
+    "game_process_started": false,
+    "source_expectation_corrected": true
+  },
+  "PASS_read_only_analysis": true,
+  "Guard_metric_crosschecks": 4785,
+  "original_opening4_manifest_entries_rehashed": 102,
+  "original_opening4_manifest_bytes_rehashed": 3190319959,
+  "original_opening4_manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30",
+  "retained_analysis_directory_cap_bytes": 524288,
+  "local_retention_verified": true,
+  "independent_backup_verified": false,
+  "Library_failed_uploads": 5,
+  "Library_supported_failed_downloads": 1,
+  "ROM_or_engine_changed": false,
+  "gameplay_processes_added": 0,
+  "cold_processes_added": 0,
+  "freeze_or_claim_added": false,
+  "compression_deletion_upload_performed": false,
+  "analyzer_SHA256": "5385bf086b5b6d7462fe6ac4e6c8a167ff6a6becbbe4e63ec9c9620dac581c85",
+  "analysis_SHA256": "1834869ce0df626c6aac53c3100f420dd8eeeb2d30914a6687d0a772dcb61587"
+}

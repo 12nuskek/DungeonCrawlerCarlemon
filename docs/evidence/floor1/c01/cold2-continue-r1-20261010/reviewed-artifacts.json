@@ -1,0 +1,55 @@
+{
+  "artifacts": {
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observer": "6a7f40fb2fa055eb8be957e7a2a59a0aecadda9ce09f88b43239fff56b98bedf",
+    "observer.c": "fc1921fbc412271d83c9b5c79ca24f39516c2a3f6a3e683d780b0cfb6b25a7b9"
+  },
+  "receipt_SHA256": "d2df4a920a01bd45581319079b5dc04c47fcef2e63cf642997c297ce27d18c6b",
+  "scope": {
+    "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+    "RAM_derivation": {
+      "TV_START_initially_clear": true,
+      "bit": 2,
+      "byte": 274,
+      "flag": 2193
+    },
+    "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+    "Save_SHA256": "b88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf",
+    "allocation_bytes": 894152512,
+    "allowed_modes": [
+      "cold"
+    ],
+    "chunk_frames": 2000,
+    "claims_allowed": 1,
+    "cold_ordinal": 2,
+    "contract_SHA256": "1692407a5e8ab6f900b6b961852220d32eaa1c6f065acf951a57d9ba29f58151",
+    "disk_operand": "original saved snapshot",
+    "first_failure_stop": true,
+    "frame_limit": 6000,
+    "library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "native_fps": "262144/4389",
+    "opening_claims_processes": [
+      5,
+      5
+    ],
+    "original_snapshot_SHA256": "1d05b2037b0c226b70d27223d8cc63fae96cc49c74ab9ab878f8d5d2e3489b32",
+    "output_directory": "/workspace/scratch/c01-cold2-continue-r1-20261010",
+    "prior_cold_claims_processes": [
+      1,
+      1
+    ],
+    "reservation_bytes": 1162587968,
+    "retry": false,
+    "reviewed_publication": "fb259f2addc71598e1fafffcf2d95d39b5d848ce",
+    "route_SHA256": "d75f3b8943f7a4b1fddb7c363750fffcb32e94fd1a1823391f558d98f1f00b72",
+    "schema": "c01-cold2-native-Continue/v1",
+    "source_pins": {
+      "include/constants/flags.h": "76df30b41e0072f9b6cae8b7fd7cc6251c51cf4d2aa03006f3282f185cc18654",
+      "src/fieldmap.c": "4ea8660fe30317c60d399b0ed03ada44f36b55cf05d2ba48b97992bb9d9753c5",
+      "src/overworld.c": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "src/tv.c": "a03c9b32feaa3bdb71da35e9aa69fe0acb9df27923d6cb24ab98bd028eb01efd"
+    },
+    "wall_seconds": 600
+  },
+  "tested_commit": "c997a640c7ee5bc7bd1686dc65b61a70d34e29bb"
+}

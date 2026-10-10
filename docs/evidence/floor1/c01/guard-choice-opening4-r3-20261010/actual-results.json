@@ -1,0 +1,317 @@
+{
+  "Guard_victory": false,
+  "STOP_SHA256": "62d41a487682dcc134a7bf3223e61ae9cfa3c0027c4bcb410d5822642ff9db20",
+  "actual_cold_verification": false,
+  "actual_manual_Save": false,
+  "actual_process_exited": true,
+  "automatic_retry": false,
+  "base_main": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "build": {
+    "ARM_binutils": "2.44-3+23+b1",
+    "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+    "GCC": "14.2.0",
+    "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+    "agbcc_source": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+    "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+    "game_rebuilt": false,
+    "historical_compiler_binary_identity": false,
+    "libmGBA_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "libmGBA_version": "0.10.5"
+  },
+  "cold_admitted": false,
+  "cold_claims_processes_added": [
+    0,
+    0
+  ],
+  "completed_source_phases": [
+    "boot",
+    "note",
+    "supply",
+    "guide-initial",
+    "trial",
+    "scrap",
+    "guide-posttrial"
+  ],
+  "cumulative_C01_cold_claims_processes": [
+    0,
+    0
+  ],
+  "cumulative_C01_opening_claims_processes": [
+    4,
+    4
+  ],
+  "evidence": {
+    "all_native_frames": 27144,
+    "battle_trace_records": 14295,
+    "complete_sequential_index": true,
+    "field_deferred_frames": 16151,
+    "field_trace_records": 10993,
+    "frame_index_SHA256": "656926cbbc2f2e83ce7c96b5eab25e1925a66486c54b4b536afe8deb2e862656",
+    "indexed_PNG_captures": 17,
+    "native_RGB24_bytes": 3126988800,
+    "native_timing_review_MP4": {
+      "SHA256": "528bcdab2822d45b6aa79161bd084487b4a9d370cef78b2e5893542ff5904f80",
+      "all_frames": true,
+      "bytes": 3127031,
+      "lossy": true,
+      "probe": {
+        "duration": "454.464020",
+        "height": 160,
+        "nb_read_frames": "27144",
+        "r_frame_rate": "262144/4389",
+        "width": 240
+      }
+    },
+    "per_frame_SHA256_ledger_SHA256": "0dfddf4d8abb253c0d93e7ddc713a7ad996b771636d5dd237015528d90ef8765",
+    "public_export_receipt_SHA256": "25741396eb07605e69ba9f7d7cda16055f7bb49244d9cf6d2218ef1d684c7284",
+    "raw_RGB_chunks": 14,
+    "raw_chunk_hashes": [
+      {
+        "SHA256": "965c6758dd00e22fb74f124712fc6d9c7e424b8b790f0b613f33e888aaa47ce2",
+        "bytes": 230400000,
+        "file": "opening/motion-000.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "1a3a47c8769ed6a4a756bf71125652eb4fe0d05feea4aa7bd3dfa4650e31542a",
+        "bytes": 230400000,
+        "file": "opening/motion-001.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "229ffe19ac7ada216d8d225e06fd78dac12ec0773b180dfdc30f322d97c6124c",
+        "bytes": 230400000,
+        "file": "opening/motion-002.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "fa47f096730eb50d7560c999ae87c43c150f9462573bb2eeb7638fed378ed08a",
+        "bytes": 230400000,
+        "file": "opening/motion-003.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "3952652d0dc963f5f3ea73b7cca0c48210f1e9f85031f5505d646bf08ac4e49d",
+        "bytes": 230400000,
+        "file": "opening/motion-004.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "f8a0cbc3670b3bbb6e23476f19ffcbf11ff332d0ca7a692f3ad45fed791e04c2",
+        "bytes": 230400000,
+        "file": "opening/motion-005.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "36505356be49dd140cede73332fb7e56aee8f96e14baf119a85659046aee2899",
+        "bytes": 230400000,
+        "file": "opening/motion-006.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "aa536afe159f68a86bc3824765e04e37479c2c46685673134f6f531c499c24ea",
+        "bytes": 230400000,
+        "file": "opening/motion-007.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "767b6504a1a286db87bc081f206aa3795d84c5e6bc05bcf7ca4fa03fa1796f99",
+        "bytes": 230400000,
+        "file": "opening/motion-008.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "d4f1f3a1996d2dd7afd3b4e0ec9bb27687aabc012265f00b30fc323823c21362",
+        "bytes": 230400000,
+        "file": "opening/motion-009.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "3077f957465adb98f8fed8e2d73653ed3e7d29f0de5f08fc13f3a494ee782388",
+        "bytes": 230400000,
+        "file": "opening/motion-010.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "96270f56e121be0ad46c911d9c47eaf3dc7b4a12e7a65855ed7b0f474a995a4f",
+        "bytes": 230400000,
+        "file": "opening/motion-011.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "13e73fae163ad289566c0b13072df337ad229a3d46cf7ab1e86c692b2cfd3d54",
+        "bytes": 230400000,
+        "file": "opening/motion-012.rgb",
+        "frames": 2000
+      },
+      {
+        "SHA256": "8cd29cc2b1408700c93a6557cd9b392c8a67ab1b2728be27c25ec74072e7b6ba",
+        "bytes": 131788800,
+        "file": "opening/motion-013.rgb",
+        "frames": 1144
+      }
+    ],
+    "raw_private_evidence_published": false,
+    "trial_Guard_battle_frames": [
+      8309,
+      5986
+    ]
+  },
+  "exclusive_claim_SHA256": "0f49162fc55f438cb18cf4974ee529009397413d6f70ac83fa457b82841e02e6",
+  "first_failure_snapshot_SHA256": "c196ce7c72bcb7b70b20eab3e5e4ef4bd848ce382aef8e4d307f507e07f4d57d",
+  "freeze_SHA256": "f0ea1dce5b56cca50a7645f1dee75ef18ab62fde0f64147091daf48c2dabcf9a",
+  "native_CPU_context_SHA256": "88de63eab1f32af571a265e45da61fb905cc15e3b5ba37e369edb8253174f094",
+  "native_Potion_events": [
+    {
+      "HP_after": 33,
+      "HP_before": 22,
+      "Potion_after": 1,
+      "Potion_before": 2,
+      "ack_frame": 25419,
+      "confirm_frame": 25251,
+      "heal_frame": 25264,
+      "recipient": "Carl",
+      "restored": 11,
+      "return_frame": 25502,
+      "use": 1,
+      "wasted": 9
+    },
+    {
+      "HP_after": 33,
+      "HP_before": 27,
+      "Potion_after": 0,
+      "Potion_before": 1,
+      "ack_frame": 26451,
+      "confirm_frame": 26295,
+      "heal_frame": 26303,
+      "recipient": "Carl",
+      "restored": 6,
+      "return_frame": 26534,
+      "use": 2,
+      "wasted": 14
+    }
+  ],
+  "native_medicine_full_state_and_acknowledgement_audit_PASS": true,
+  "native_medicine_uses": 2,
+  "next_dependency": "Read-only review of this exact failed fixed-policy sequence. No more runtime authority; any later run needs a separate reviewed contract and explicit continuation.",
+  "opening_PASS": false,
+  "opening_claims_processes_added": [
+    1,
+    1
+  ],
+  "original_blank_flash_unchanged": true,
+  "preserved_failure_history": {
+    "C01_previous_STOPs": [
+      82,
+      90,
+      104
+    ],
+    "C01a_actual": [
+      5,
+      3,
+      1
+    ],
+    "C01a_claims": [
+      6,
+      3,
+      1
+    ],
+    "Library_cause": "unknown",
+    "Library_failed_backup_downloads": 1,
+    "Library_failed_uploads": 5,
+    "Library_original_recovered_bytes": 0,
+    "Library_retry": false,
+    "V01_STOP117_expected_B": 8402,
+    "V01_STOP117_visual": 8536,
+    "V01_baseline_candidate_executions": [
+      6,
+      4
+    ],
+    "later_accepted_baseline_candidate": [
+      1,
+      1
+    ],
+    "ordinary_recovery": 5
+  },
+  "process_start_SHA256": "c3e10de8420af06b0edd76e093f05b8dc13ea8a1396763affad630140f8ee7ec",
+  "retention": {
+    "compression_deletion_upload": false,
+    "free_bytes_after_evidence": 10525208576,
+    "full_original_reservation_bytes": 10000408128,
+    "historical_98_entry_preservation_rehash_PASS": true,
+    "historical_preservation_readcheck_SHA256": "a505fec9a19658fa48768690527d8948da741511364980da76df1c2d6ce7ac74",
+    "independent_backup_verified": false,
+    "manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30",
+    "manifest_bytes": 3190319959,
+    "manifest_entry_count": 102,
+    "opening_limit_bytes": 8837820160,
+    "private_output_directory": "/workspace/scratch/c01-guard-choice-opening4-r3-20261010",
+    "raw_frames_retained_unmodified": true,
+    "surplus_bytes": 524800448
+  },
+  "reviewed_identities": {
+    "ELF": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+    "aggregate_receipt": "494cffaacee62baad875bf3956d66cf73bdfc7d9c7b0d816cdbf4ee3cdc218ee",
+    "compiled_bindings": "623e3b3c6a1f478151e995a093dd3048a7b326d6e6d86be377e8ac927b7a0fa4",
+    "compiled_context_proof": "7cbaee646dfc10b741a0b262b190f120d0284a2980c1ef872fa7784452aeb4f1",
+    "compiled_observer": "8a7c91422d418d6b5e5b54938c0a4e0a4daa24f0110c55643ffa8b83832449ea",
+    "generated_observer": "a5d0fd49bb8a3cdff3653b7505d0e8d303716d4a1a4e7064dca8377ea68d2938",
+    "generator": "bcfc14f9879693db0183c005e35891beb4cf4ece2f69dd05fb0059d885268bbb",
+    "library": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+    "proof_script": "0021349e5e5f8ed1bf76709799eb28d49d612c3f165307a3261d7eecc6ada436",
+    "validator": "89501c5e2090a44d59ab880e5b1e36be5b47264cbdf3ce6389faee53a2790a78"
+  },
+  "reviewed_offline_publication": "fd73289ae75dcbb61b3fb2fbb576cdc605e53361",
+  "reviewed_transaction_source": "32a25769c5427656a010287bed6cf03c5f62b45c",
+  "runtime_helper_published_before_claim": true,
+  "runtime_log_SHA256": "b87d49941ee97b4de23d0b3314279b69ab33132cc9d9c5da622e4728ae42c9ff",
+  "runtime_result": "STOP101",
+  "schema": "c01-opening4-terminal-runtime-evidence/v1",
+  "terminal_Carl_STRIKE_PP": 4,
+  "terminal_audit_SHA256": "36b1fd69c86e8b3492538bd85c161560b90d0ad614a108a3bb6de2373e2f9cc7",
+  "terminal_battle_HP": {
+    "Carl": 22,
+    "Donut": 18,
+    "Guard": 3,
+    "Scuttler": 18
+  },
+  "terminal_field_snapshot": {
+    "Guard_win": false,
+    "Howler_Warden_preparation_stairs_checkpoint_loop": false,
+    "Potion": 0,
+    "Scrap": 2,
+    "XP": [
+      495,
+      805
+    ],
+    "count": 2,
+    "counter": 72,
+    "facing": 1,
+    "levels": [
+      9,
+      9
+    ],
+    "map": [
+      35,
+      0
+    ],
+    "money": 3320,
+    "position": [
+      37,
+      31
+    ],
+    "saved_count": 0,
+    "status": [
+      0,
+      0
+    ],
+    "trial_win": true
+  },
+  "terminal_native_frame": 27144,
+  "terminal_reason": "Fixed policy requires Potion: Carl22<=27 while Guard alive, Donut18>12, stock0. Terminal; no fallback/retry.",
+  "terminal_turn": 4,
+  "tested_runtime_helper_source": "ff6f5180fdeca60380b782da61998cb1fe77ff87",
+  "wiring_receipt_SHA256": "efdaaf1a21e357562a80b5045444e94dc606c5c254c1e246d7f807e7969f8e70",
+  "wiring_tested_source": "fd24d3e76e370a9ab2c15bab0fbededba0ea2391"
+}

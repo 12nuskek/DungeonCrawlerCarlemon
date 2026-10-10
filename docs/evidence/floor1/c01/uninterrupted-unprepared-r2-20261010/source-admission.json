@@ -1,0 +1,123 @@
+{
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "PASS": true,
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "battle_decision_vectors": 288,
+  "binding_count": 72,
+  "cold_claims": 0,
+  "cold_processes": 0,
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "compiled_game_builds": 0,
+  "complete_transition_positive_negative_checks": 24,
+  "development_history": {
+    "aggregate01": "full aggregate PASS; review identified low-byte disk-count check, strengthened to full native u32",
+    "batch01": "test incorrectly demanded rejection of intentionally exempt CO_SAVE intermediate saved buffer; corrected test, endpoint still strict",
+    "batch02": "partial-heal negative restored Donut HP already full after Potion, so fixture was unchanged; changed fixture to the genuinely wounded member",
+    "batch03": "affected r2 batch PASS; full inert driver intentionally skipped, not final admission",
+    "final": "complete aggregate PASS after full-u32 count negatives; all development logs retained"
+  },
+  "engine_tree": "0fedd142f43f136ceee189c54101b095fc88f495",
+  "executable_admission_negative_cases": 5,
+  "full_aggregate": true,
+  "gameplay_processes": 0,
+  "generated_host_SHA256": "77c49580d1323e12073b4e742eb6f6e09435401ad2a47383e84b1f53a48da9d0",
+  "lossless_native_timing_roundtrip_frames": 3,
+  "native_ABI": {
+    "assembly_SHA256": "aa0b8767897a143951ce3efb9bb80ba72fd1753d0d92c4b9695281d443ef8d53",
+    "compile_only": true,
+    "object_SHA256": "7c97f4d77111c8ec0e7e30c2f454c4393be90b5fa7b2d62ded2eec4a137a7649",
+    "values": [
+      12,
+      0,
+      4,
+      8,
+      28,
+      4,
+      5,
+      8,
+      18,
+      20,
+      9,
+      88,
+      42,
+      40,
+      19,
+      40,
+      8,
+      100,
+      85,
+      255
+    ]
+  },
+  "native_sector_corruption_negatives": 14,
+  "offline_log_SHA256": "b019d8427156b16d32f85e11d7cb908361ade382f758190994312a8cca76d25a",
+  "opening_claims": 0,
+  "opening_processes": 0,
+  "r2_comprehensive": {
+    "gameplay_processes": 0,
+    "key_independent_resource_cases": 54,
+    "map_temp_lifecycle": 19,
+    "old_runtime_success": false,
+    "phase_chain_both_validators": 18,
+    "phase_corruptions": 108,
+    "retained_STOP82_SHA256": "bb19567c351ad53172065082d3c1e1617e428d852a4452e563d18372cc3159ef",
+    "retained_snapshot_both_validators": 1,
+    "save_disk_cold_cases": 30,
+    "source_rewards": {
+      "boss": {
+        "EV": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "XP": 226,
+        "money": 360
+      },
+      "guard": {
+        "EV": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "XP": 132,
+        "money": 320
+      },
+      "howler": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 121,
+        "money": 360
+      },
+      "trial": {
+        "EV": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "XP": 96,
+        "money": 320
+      }
+    },
+    "unsupported_Pokerus_strict_rejections": 8,
+    "unused_slot_mutation_cases_both_validators": 412,
+    "walking_native_transitions": 273
+  },
+  "route_phases": 18,
+  "source_start_commit": "605f64777807ad8724500470e450d12b5cdab306"
+}

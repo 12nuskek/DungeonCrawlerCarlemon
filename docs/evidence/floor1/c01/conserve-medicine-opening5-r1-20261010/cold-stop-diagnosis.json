@@ -1,0 +1,32 @@
+{
+  "STOP": 96,
+  "Save_bytes_unchanged": true,
+  "absolute_native_frame": 2044,
+  "all_other_decoded_fields_exact": true,
+  "assertion_unchanged": true,
+  "cold_acceptance": false,
+  "flag_byte_after": 2,
+  "flag_byte_before": 0,
+  "flag_byte_offset": 874,
+  "flag_hex": "0x891",
+  "flag_id": 2193,
+  "flag_name": "FLAG_SYS_TV_WATCH",
+  "flag_transition": "false -> true",
+  "inference_from_source_not_per_instruction_trace": true,
+  "physical_byte_differences": 383,
+  "physical_owned_resources_and_context_differ": "Native resource encryption context changes on Continue; unchanged source model canonical resources exactly match. This is separate from the strict flag mismatch.",
+  "retained_analysis_correction": "Initial post-run raw comparison assertion incorrectly expected only one physical byte difference. It failed before creating output; read-only decoded comparison established the separate native encryption-context differences. No game retry or validator change.",
+  "snapshot_bytes": 3324,
+  "source_SHA256": {
+    "include/constants/flags.h": "76df30b41e0072f9b6cae8b7fd7cc6251c51cf4d2aa03006f3282f185cc18654",
+    "src/fieldmap.c": "4ea8660fe30317c60d399b0ed03ada44f36b55cf05d2ba48b97992bb9d9753c5",
+    "src/overworld.c": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+    "src/tv.c": "a03c9b32feaa3bdb71da35e9aa69fe0acb9df27923d6cb24ab98bd028eb01efd"
+  },
+  "source_path": [
+    "CB2_ContinueSavedGame -> InitMapFromSavedGame",
+    "InitMapFromSavedGame -> UpdateTVScreensOnMap",
+    "UpdateTVScreensOnMap starts FlagSet(FLAG_SYS_TV_WATCH)"
+  ],
+  "terminal_no_retry": true
+}

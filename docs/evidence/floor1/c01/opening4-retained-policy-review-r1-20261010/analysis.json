@@ -1,0 +1,1348 @@
+{
+  "Guard_TURN_METRIC_crosschecks": 4785,
+  "Guard_packets": 5986,
+  "Save_or_cold_added": false,
+  "analysis_base": "4cff72680be2256fd35531eb4ed2a643fb45da1e",
+  "battle_packets": 14295,
+  "changed_input_RNG_predicted": false,
+  "choices": [
+    {
+      "Carl_PP": [
+        8,
+        40
+      ],
+      "Donut_PP": [
+        2,
+        40
+      ],
+      "Guard_defense_stage": 6,
+      "HP": [
+        33,
+        29,
+        28,
+        24
+      ],
+      "Potion": 2,
+      "choice": 0,
+      "frame": 22919,
+      "turn": 0
+    },
+    {
+      "Carl_PP": [
+        7,
+        40
+      ],
+      "Donut_PP": [
+        1,
+        40
+      ],
+      "Guard_defense_stage": 7,
+      "HP": [
+        33,
+        21,
+        23,
+        21
+      ],
+      "Potion": 2,
+      "choice": 0,
+      "frame": 24105,
+      "turn": 1
+    },
+    {
+      "Carl_PP": [
+        6,
+        40
+      ],
+      "Donut_PP": [
+        0,
+        40
+      ],
+      "Guard_defense_stage": 7,
+      "HP": [
+        22,
+        13,
+        23,
+        18
+      ],
+      "Potion": 2,
+      "choice": 1,
+      "frame": 25052,
+      "turn": 2
+    },
+    {
+      "Carl_PP": [
+        5,
+        40
+      ],
+      "Donut_PP": [
+        0,
+        40
+      ],
+      "Guard_defense_stage": 7,
+      "HP": [
+        27,
+        8,
+        18,
+        18
+      ],
+      "Potion": 1,
+      "choice": 1,
+      "frame": 26113,
+      "turn": 3
+    },
+    {
+      "Carl_PP": [
+        4,
+        40
+      ],
+      "Donut_PP": [
+        0,
+        40
+      ],
+      "Guard_defense_stage": 7,
+      "HP": [
+        22,
+        3,
+        18,
+        18
+      ],
+      "Potion": 0,
+      "choice": 101,
+      "frame": 27144,
+      "turn": 4
+    }
+  ],
+  "freeze_or_claim_added": false,
+  "gameplay_processes_added": 0,
+  "input_files_verified": [
+    {
+      "SHA256": "2ef73fe1f1f538a990a04c348c03aa43034afdc35ca4078652912c5eabebfb6b",
+      "bytes": 14866800,
+      "file": "opening/complete-battle-trace-private.bin"
+    },
+    {
+      "SHA256": "b87d49941ee97b4de23d0b3314279b69ab33132cc9d9c5da622e4728ae42c9ff",
+      "bytes": 1603742,
+      "file": "opening/runtime.log"
+    },
+    {
+      "SHA256": "62d41a487682dcc134a7bf3223e61ae9cfa3c0027c4bcb410d5822642ff9db20",
+      "bytes": 328,
+      "file": "STOP.json"
+    },
+    {
+      "SHA256": "ceb04df6ba7bff4fe80a8d413c6692c5c19b6ba6f4a1b84891b364d49c44393f",
+      "bytes": 3324,
+      "file": "opening/medicine-01-field-state.bin"
+    },
+    {
+      "SHA256": "ceb04df6ba7bff4fe80a8d413c6692c5c19b6ba6f4a1b84891b364d49c44393f",
+      "bytes": 3324,
+      "file": "opening/medicine-01-bag-state.bin"
+    },
+    {
+      "SHA256": "ceb04df6ba7bff4fe80a8d413c6692c5c19b6ba6f4a1b84891b364d49c44393f",
+      "bytes": 3324,
+      "file": "opening/medicine-01-before-state.bin"
+    },
+    {
+      "SHA256": "7791205600e745fb27138ccf66d8171cbf9c4bda48acfd172640b4b97976ec3f",
+      "bytes": 3324,
+      "file": "opening/medicine-01-healed-state.bin"
+    },
+    {
+      "SHA256": "7791205600e745fb27138ccf66d8171cbf9c4bda48acfd172640b4b97976ec3f",
+      "bytes": 3324,
+      "file": "opening/medicine-01-return-state.bin"
+    },
+    {
+      "SHA256": "3ed64a0a9ba8b5b3eae5d396d66e354779334be3391f79b5ca358c6145b525b8",
+      "bytes": 3,
+      "file": "opening/medicine-01-order.bin"
+    },
+    {
+      "SHA256": "5affaa8aabf2d2cc8ec7e59ad5ec5037022ef8e6984341ef0e15272c9196a222",
+      "bytes": 3324,
+      "file": "opening/medicine-02-field-state.bin"
+    },
+    {
+      "SHA256": "5affaa8aabf2d2cc8ec7e59ad5ec5037022ef8e6984341ef0e15272c9196a222",
+      "bytes": 3324,
+      "file": "opening/medicine-02-bag-state.bin"
+    },
+    {
+      "SHA256": "5affaa8aabf2d2cc8ec7e59ad5ec5037022ef8e6984341ef0e15272c9196a222",
+      "bytes": 3324,
+      "file": "opening/medicine-02-before-state.bin"
+    },
+    {
+      "SHA256": "9dd079c5d295b8a6f48f3a6c7004e807e7ae4b77be57211403c217f012fa88fd",
+      "bytes": 3324,
+      "file": "opening/medicine-02-healed-state.bin"
+    },
+    {
+      "SHA256": "9dd079c5d295b8a6f48f3a6c7004e807e7ae4b77be57211403c217f012fa88fd",
+      "bytes": 3324,
+      "file": "opening/medicine-02-return-state.bin"
+    },
+    {
+      "SHA256": "3ed64a0a9ba8b5b3eae5d396d66e354779334be3391f79b5ca358c6145b525b8",
+      "bytes": 3,
+      "file": "opening/medicine-02-order.bin"
+    },
+    {
+      "SHA256": "c196ce7c72bcb7b70b20eab3e5e4ef4bd848ce382aef8e4d307f507e07f4d57d",
+      "bytes": 3324,
+      "file": "opening/first-invalid-or-partial-medicine-state.bin"
+    }
+  ],
+  "medicine": {
+    "checksum_invalid_ack_to_return_samples": [],
+    "checksum_invalid_guard_actor_samples": [
+      {
+        "actor": "Carl",
+        "frame": 22917
+      },
+      {
+        "actor": "Carl",
+        "frame": 24099
+      },
+      {
+        "actor": "Carl",
+        "frame": 25046
+      },
+      {
+        "actor": "Carl",
+        "frame": 26251
+      }
+    ],
+    "complete_snapshot_and_acknowledgement_recheck": "PASS",
+    "instruction_path_coverage": "not recorded per frame; specific gt_transition cuts remain offline-only",
+    "inventory_positions": [
+      0,
+      0
+    ],
+    "uses": 2
+  },
+  "observed_events": [
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          17,
+          33
+        ],
+        "PP": [
+          [
+            3,
+            40,
+            0,
+            0
+          ],
+          [
+            8,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 21200,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          0,
+          29
+        ],
+        "PP": [
+          [
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            35,
+            40,
+            0,
+            0
+          ]
+        ],
+        "level": [
+          8,
+          9
+        ],
+        "maxHP": [
+          24,
+          29
+        ]
+      },
+      "frame": 21200,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Donut",
+      "delta": {
+        "HP": [
+          24,
+          28
+        ],
+        "PP": [
+          [
+            0,
+            37,
+            0,
+            0
+          ],
+          [
+            2,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 21200,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "HP": [
+          0,
+          24
+        ],
+        "PP": [
+          [
+            31,
+            0,
+            0,
+            0
+          ],
+          [
+            35,
+            0,
+            0,
+            0
+          ]
+        ],
+        "maxHP": [
+          25,
+          24
+        ]
+      },
+      "frame": 21200,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Donut",
+      "delta": {
+        "PP": [
+          [
+            2,
+            40,
+            0,
+            0
+          ],
+          [
+            1,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 23046,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 6,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          29,
+          26
+        ]
+      },
+      "frame": 23181,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 3,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "HP": [
+          24,
+          21
+        ]
+      },
+      "frame": 23250,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 3,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Scuttler"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "PP": [
+          [
+            35,
+            40,
+            0,
+            0
+          ],
+          [
+            35,
+            39,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 23350,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "BRACE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "stages": [
+          [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            7,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        ]
+      },
+      "frame": 23351,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "BRACE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "PP": [
+          [
+            8,
+            40,
+            0,
+            0
+          ],
+          [
+            7,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 23774,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          26,
+          21
+        ]
+      },
+      "frame": 23872,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "PP": [
+          [
+            35,
+            0,
+            0,
+            0
+          ],
+          [
+            34,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 23986,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Donut"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Donut",
+      "delta": {
+        "HP": [
+          28,
+          23
+        ]
+      },
+      "frame": 24084,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Donut"
+      },
+      "turn": 0
+    },
+    {
+      "actor": "Donut",
+      "delta": {
+        "PP": [
+          [
+            1,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 24234,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 4,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          21,
+          18
+        ]
+      },
+      "frame": 24369,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 3,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "HP": [
+          21,
+          18
+        ]
+      },
+      "frame": 24438,
+      "metadata": {
+        "attacker": "Donut",
+        "critical_multiplier": 1,
+        "damage": 3,
+        "move": "SPARK",
+        "result_flags": 0,
+        "target": "Scuttler"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "PP": [
+          [
+            35,
+            39,
+            0,
+            0
+          ],
+          [
+            34,
+            39,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 24542,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          33,
+          27
+        ]
+      },
+      "frame": 24640,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 6,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "PP": [
+          [
+            7,
+            40,
+            0,
+            0
+          ],
+          [
+            6,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 24722,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          18,
+          13
+        ]
+      },
+      "frame": 24820,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "PP": [
+          [
+            34,
+            0,
+            0,
+            0
+          ],
+          [
+            33,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 24934,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          27,
+          22
+        ]
+      },
+      "frame": 25031,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 1
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          22,
+          33
+        ]
+      },
+      "frame": 25252,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 4,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Donut"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "PP": [
+          [
+            34,
+            39,
+            0,
+            0
+          ],
+          [
+            33,
+            39,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 25602,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          33,
+          27
+        ]
+      },
+      "frame": 25700,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 6,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "PP": [
+          [
+            6,
+            40,
+            0,
+            0
+          ],
+          [
+            5,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 25782,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          13,
+          8
+        ]
+      },
+      "frame": 25880,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "PP": [
+          [
+            33,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 25994,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Donut"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Donut",
+      "delta": {
+        "HP": [
+          23,
+          18
+        ]
+      },
+      "frame": 26092,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Donut"
+      },
+      "turn": 2
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          27,
+          33
+        ]
+      },
+      "frame": 26296,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 4,
+        "move": "0",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "PP": [
+          [
+            33,
+            39,
+            0,
+            0
+          ],
+          [
+            32,
+            39,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 26634,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          33,
+          27
+        ]
+      },
+      "frame": 26732,
+      "metadata": {
+        "attacker": "Guard",
+        "critical_multiplier": 1,
+        "damage": 6,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "PP": [
+          [
+            5,
+            40,
+            0,
+            0
+          ],
+          [
+            4,
+            40,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 26814,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Guard",
+      "delta": {
+        "HP": [
+          8,
+          3
+        ]
+      },
+      "frame": 26912,
+      "metadata": {
+        "attacker": "Carl",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "STRIKE",
+        "result_flags": 0,
+        "target": "Guard"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Scuttler",
+      "delta": {
+        "PP": [
+          [
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            31,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "frame": 27026,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 0,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 3
+    },
+    {
+      "actor": "Carl",
+      "delta": {
+        "HP": [
+          27,
+          22
+        ]
+      },
+      "frame": 27123,
+      "metadata": {
+        "attacker": "Scuttler",
+        "critical_multiplier": 1,
+        "damage": 5,
+        "move": "TACKLE",
+        "result_flags": 0,
+        "target": "Carl"
+      },
+      "turn": 3
+    }
+  ],
+  "source_bounds": {
+    "Carl_XP_after_Guard_KO": 576,
+    "Carl_level10_stats": [
+      36,
+      25,
+      17,
+      14,
+      12,
+      14
+    ],
+    "Guard_KO_XP": 81,
+    "Guard_to_Carl_critical": [
+      12,
+      15
+    ],
+    "Guard_to_Carl_normal": [
+      5,
+      7
+    ],
+    "Scuttler_to_Carl_critical": [
+      10,
+      12
+    ],
+    "Scuttler_to_Carl_level10_critical": [
+      7,
+      9
+    ],
+    "Scuttler_to_Carl_normal": [
+      5,
+      6
+    ],
+    "one_critical_plus_ordinary": 21,
+    "simultaneous_critical": 27,
+    "terminal_STRIKE_normal": [
+      5,
+      6
+    ],
+    "terminal_turn_Carl_minimum_HP": 1
+  },
+  "terminal_battle_mons": [
+    {
+      "HP": 22,
+      "PP": [
+        4,
+        40,
+        0,
+        0
+      ],
+      "ability": 62,
+      "held_item": 0,
+      "level": 9,
+      "maxHP": 33,
+      "moves": [
+        355,
+        356,
+        0,
+        0
+      ],
+      "species": 66,
+      "stages": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "stats": [
+        23,
+        15,
+        13,
+        11,
+        13
+      ],
+      "status1": 0,
+      "types": [
+        1,
+        1
+      ]
+    },
+    {
+      "HP": 3,
+      "PP": [
+        32,
+        39,
+        0,
+        0
+      ],
+      "ability": 20,
+      "held_item": 0,
+      "level": 9,
+      "maxHP": 29,
+      "moves": [
+        33,
+        356,
+        0,
+        0
+      ],
+      "species": 308,
+      "stages": [
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "stats": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "status1": 0,
+      "types": [
+        0,
+        0
+      ]
+    },
+    {
+      "HP": 18,
+      "PP": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "ability": 0,
+      "held_item": 0,
+      "level": 9,
+      "maxHP": 28,
+      "moves": [
+        357,
+        358,
+        0,
+        0
+      ],
+      "species": 52,
+      "stages": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "stats": [
+        14,
+        13,
+        23,
+        14,
+        14
+      ],
+      "status1": 0,
+      "types": [
+        0,
+        0
+      ]
+    },
+    {
+      "HP": 18,
+      "PP": [
+        31,
+        0,
+        0,
+        0
+      ],
+      "ability": 53,
+      "held_item": 0,
+      "level": 8,
+      "maxHP": 24,
+      "moves": [
+        33,
+        0,
+        0,
+        0
+      ],
+      "species": 288,
+      "stages": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "stats": [
+        9,
+        11,
+        12,
+        9,
+        12
+      ],
+      "status1": 0,
+      "types": [
+        0,
+        0
+      ]
+    }
+  ]
+}

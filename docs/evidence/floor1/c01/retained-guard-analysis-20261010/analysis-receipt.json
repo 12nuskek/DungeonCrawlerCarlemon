@@ -1,0 +1,19 @@
+{
+  "r2_entries_unchanged": 103,
+  "r2_bytes_unchanged": 4169008742,
+  "r1_pins_unchanged": 35,
+  "new_gameplay_processes": 0,
+  "new_claims": 0,
+  "new_cold_processes": 0,
+  "new_export_processes": 0,
+  "independent_private_backup_verified": false,
+  "battle_packets": 17784,
+  "TURN_METRIC_crosschecks": 15382,
+  "native_input_confirmations": 57,
+  "Tackle_hits_in_source_bounds": 15,
+  "source_damage_and_target_vectors_PASS": true,
+  "six_capacity_geometries_PASS": true,
+  "complete_actual_FFV1_verified": false,
+  "analysis_only": true,
+  "new_publication_raw_identities": false
+}

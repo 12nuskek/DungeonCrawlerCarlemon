@@ -1,3 +1,10 @@
+Current technical closure: parent accepted scoped source/native and independent
+actual decoded-frame/time review at38468a31. [Closure scope and normal integration](closure.md).
+Routine merge is authorized when protections permit; direct perceptual playback,
+human comprehension/pacing,legacy and full-floor acceptance remain separate.
+Next after normal verified integration is separate C01a; not implemented here.
+The following original new-input checkpoint remains as its recorded evidence.
+
 # Separate new-input visual pair — native PASS, playback review pending
 
 One baseline and one conditional candidate ran at frozen execution source

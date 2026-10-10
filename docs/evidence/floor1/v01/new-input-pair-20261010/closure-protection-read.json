@@ -1,0 +1,33 @@
+{
+  "branch": "main",
+  "sha": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "protected": false,
+  "protection": {
+    "enabled": false,
+    "required_status_checks": {
+      "enforcement_level": "off",
+      "contexts": [],
+      "checks": []
+    }
+  },
+  "rulesets": [],
+  "reviews": {
+    "reviews": []
+  },
+  "CI_statuses": {
+    "statuses": []
+  },
+  "CI_PR_runs": {
+    "workflow_runs": []
+  },
+  "repository_merge_settings": {
+    "allow_merge_commit": true,
+    "delete_branch_on_merge": false
+  },
+  "check_runs": {
+    "total_count": 0,
+    "check_runs": []
+  },
+  "normal_merge_permitted_by_returned_configuration": true,
+  "no_CI_pass_claimed": true
+}

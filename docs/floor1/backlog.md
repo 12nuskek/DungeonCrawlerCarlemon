@@ -1,3 +1,33 @@
+## Current technical V01 closure — accepted scoped review; C01a next after normal integration
+
+Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source
+and actual MP4 decoded-frame/time review:6 nearby frames around89 pose events,
+all18 IDs,whole-clip overviews,27 same-frame comparisons,dense faint/exit samples;
+no concrete blocking defect. Warden warning through Carl brace73.986s/Donut
+release85.137s; clean removals205.600/233.259s; matched battle/black/field
+250.806/251.475/251.978s,no retained battle HUD; final261.622s dialogue readable.
+Tested game9c83611e,execution021cb729,engine8d8c7761 unchanged. Native new-input
+pair PASS42 each,fullB/F/E/EOF and all17 poses/warning/palette/budget/cleanup/
+resources/Save gates remain actual evidence. Routine scoped PR114 integration
+is authorized when normal protections permit; no extra mandatory Kurt approval.
+Returned main protection off/required checks empty,rulesets empty;no returned
+reviews/statuses/PR workflow/check runs and no CI pass claimed. Actual merge
+identity is the normal PR114 merge result,never a predicted commit.
+
+Technical V01 scope is accepted; decoded-frame/time review is not direct
+ordinary-speed perceptual playback or proof of no flicker in unsampled frames.
+Human comprehension/pacing,legacy-input/original-provenance and whole-floor
+acceptance remain separate obligations. Historical6/4/STOP117,new1/1,ordinary5,
+all other failures/STOPs,Library5+1 and local-only retention remain unchanged.
+This closure runs no emulator/build/capture/Library retry. Private Save53f62dc2
+and reference849a1585 preserved in place. Exact review/merge-gate/scope records:
+docs/evidence/floor1/v01/new-input-pair-20261010/closure.md.
+
+Next after verified normal integration: separate **C01a action-selection clarity**,
+contextual USES label plus compact target/effect hints in existing move pane;
+preserve balance/controls/Save schema. Not implemented here. No full-floor or
+human-pacing acceptance claim. Earlier checkpoints below are historical.
+
 Current actual native-boundary validation — 2026-10-09: frozen executionf3ceae89/host1ba0514f/binary41f49c4d, unchanged builds/Save030b/routeafbd80b0/policy/bounds. ONE fresh baseline PASS42/17671 absolute/15627 visual,15379 complete boundaries+248 explicit zero-boundary frames, full field/reward/owned/native-party/Save/typed-end checks. ONE matching candidate FIRST STOP117/27 atvisual4948;4948 numbered captures+actual emergency STOP, absolute6993/4949 completed video events source-derived. Native ready3155;14 actual turn0 WEAKEN/WIND UP/BRACE pose events, reachedturn1; six applied controls match baseline prefix. CPU next080004d6 callback-wrapper return; reference expectsB4894 at4948. Boundary alignment inference only: failed actual metadata/header/count/full snapshot not retained, no fabricated diagnostics/waiver/retry. Candidate victory/retirement/field/reward/full budget/equivalence and STRIKE/SPARK/all-action visual gates UNVERIFIED. Safe private Library19616680-byte/20956 verified entries/20789 original PPMs/two unchanged Saves/full native clips20576 pixel frames, SHAa1fc48683dbe90b38dbfbaa9bdeff740c364c3692c081f727f5384265aedd898. Raw .bin/key-bearing lines/ROM/binaries/keys remain excluded/local, no durable claim. Historical STOP35/107/105/103, baselinePASS42, strategy/controller records preserved; exclusive totals5 baselines/2 candidates include historical4/1 plus this one pair. Existing draft PR114/unmerged; STOP further execution/host fix/merge/expansion pending parent partial visual and metadata diagnosis review. Legacy/C01/human pacing/full-floor limits unchanged. Contract docs/floor1/v01-native-boundary-validation-contract.md; evidence docs/evidence/floor1/v01/battle/native-boundary-validation/README.md. Prior authorities/results below historical.
 
 Current concrete native-boundary runtime binding — 2026-10-09: parent authorised host binding, installed synthetic interpreter/event fixtures, compile/review and safe PR114 publication only. Implemented sole original-batch frame driver, passive exact WaitForVBlank080008ac/callerLR080004bf/opcode/Thumb authority, complete2560 snapshot reader and typed ordinal/video/input/count/key stream; no raw-frame masks/extra steps. Actual installed interpreter parity/IRQ/MSR/mode/due/frame-end/cadence/timeout fixtures and production native-bus snapshot variant PASS; every2560 snapshot byte/all29 metadata bytes/order/count/integrity/stale-checkpoint negatives PASS. Full host compiled, NEVER invoked; ZERO ROM/Save/gameplay/new exclusive claims. Existing engine/route/policy/Saves030b/Donut source and STOP35/107/105/103/history/counts4 baselines+1 candidate unchanged. Game equivalence/candidate visuals/legacy/C01/full-floor gates UNVERIFIED. Existing draft PR114, unmerged; parent binding/evidence review before separately authorised fresh gameplay. Contract docs/floor1/v01-native-boundary-runtime-contract.md; evidence docs/evidence/floor1/v01/battle/native-runtime/README.md. Previous authorities/results below are historical and preserved.
@@ -308,8 +338,8 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PT | Retained exact diagnosis | One owned Potion at Carl turn4/3HP on exact historical ROM/save; heal/consume/Guard-after-Howler/XP/Save/cold | Failure record integrated by PR87: exit32 premature Bag A, exact prefix/state passed; this execution's heal/victory/XP/Save/cold remain unverified. Separate PR89 closure does not rewrite the failed controller record |
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
-| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Environment PR112/c2f and overworld PR113/c6d merged after bounded parent review. Candidate battle game dbcc859c/830f compiled. Reviewed lifecycle observer unchanged; new baseline PASS42/17671/15627/1 policy attempt with actual retirement/field/resources/Save; dependent candidate FIRST STOP103/22/3349 during raw party byte170 startup, no readiness/moves/poses. Exact diagnosis retained; baseline transient in-place decryption proved offline, candidate failing value/CPU unavailable. Original STOP35/107/105 intact; no fix/retry/reset. Native lossless clips and safe private retention, existing draft PR114 unmerged; parent diagnosis/visual review next. Actual candidate HUD/poses/budgets/cleanup/matched controls, C01/human pacing pending. [Reviewed-pair actual checkpoint](../evidence/floor1/v01/battle/lifecycle-validation/README.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Pending |
+| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Next after normal V01 integration: C01a contextual USES label and compact target/effect hints in existing move pane; preserve balance/controls/Save schema. C01a not implemented; broader C01 prepared/unprepared/human-pacing gates remain pending |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |
@@ -332,3 +362,10 @@ engine/art/map/save edits. F1-T01 limits engine edits to the two map scripts and
 focused runtime routes; UI paging redesign is separate. Every subsequent PR states
 its own file/system boundary. Preserve failed traces; max3 different approaches per
 blocker, then stop its dependents and take another ready task.
+
+## Historical V01 matrix checkpoint preserved at technical closure
+
+The prior row below is historical; its failed execution and provenance remain
+valid records, superseded only by the separately named accepted new-input pair.
+
+| F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Environment PR112/c2f and overworld PR113/c6d merged after bounded parent review. Candidate battle game dbcc859c/830f compiled. Reviewed lifecycle observer unchanged; new baseline PASS42/17671/15627/1 policy attempt with actual retirement/field/resources/Save; dependent candidate FIRST STOP103/22/3349 during raw party byte170 startup, no readiness/moves/poses. Exact diagnosis retained; baseline transient in-place decryption proved offline, candidate failing value/CPU unavailable. Original STOP35/107/105 intact; no fix/retry/reset. Native lossless clips and safe private retention, existing draft PR114 unmerged; parent diagnosis/visual review next. Actual candidate HUD/poses/budgets/cleanup/matched controls, C01/human pacing pending. [Reviewed-pair actual checkpoint](../evidence/floor1/v01/battle/lifecycle-validation/README.md) |

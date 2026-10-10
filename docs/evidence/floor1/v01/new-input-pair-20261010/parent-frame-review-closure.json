@@ -1,0 +1,84 @@
+{
+  "review_source": "Parent delegation in source thread01a10e89-0c59-737a-8ede-620d02be2034; scope and findings supplied by parent, no new decoding/gameplay/screenshots performed in closure",
+  "accepted_reviewed_published_commit": "38468a31f39f2bb14cd6cebe7c15578363307c1d",
+  "base_commit": "c6d647a815ffce44a2419a2cf83b6c2c094359f0",
+  "tested_game_source": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "tested_execution_source": "021cb729f13161ff1a0cfab2281b8b323fa5d3f5",
+  "tested_engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "actual_candidate_ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+  "actual_candidate_ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+  "review_scope": {
+    "nearby_decoded_frames_per_pose_event": 6,
+    "pose_events": 89,
+    "all_pose_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "whole_clip_overviews": true,
+    "same_frame_baseline_candidate_comparisons": 27,
+    "dense_faint_exit_samples": true
+  },
+  "observed_findings": {
+    "concrete_blocking_defect_found": false,
+    "Warden_warning_during_Carl_brace_seconds": 73.986,
+    "Warden_warning_during_Donut_release_seconds": 85.137,
+    "clean_removals_by_seconds": [
+      205.6,
+      233.259
+    ],
+    "matched_battle_black_field_transition_seconds": [
+      250.806,
+      251.475,
+      251.978
+    ],
+    "battle_HUD_retained_in_field": false,
+    "final_readable_dialogue_seconds": 261.622
+  },
+  "technical_V01_scope_accepted": true,
+  "direct_ordinary_speed_perceptual_playback": false,
+  "unsampled_frame_no_flicker_proof": false,
+  "remaining_obligations": [
+    "Human comprehension and pacing/perceptual playback",
+    "Legacy input acceptance; original input/oracle provenance missing",
+    "Whole-floor acceptance and bounded nine-district branch/skip/recovery obligations"
+  ],
+  "routine_scoped_integration_authorized_when_protections_permit": true,
+  "new_emulator_runs": 0,
+  "new_builds": 0,
+  "new_screenshots": 0,
+  "new_Library_attempts": 0,
+  "separate_execution_counts": {
+    "historical_baseline": 6,
+    "historical_candidate": 4,
+    "new_input_baseline": 1,
+    "new_input_candidate": 1,
+    "ordinary_recovery_processes": 5
+  },
+  "failures_provenance_and_private_retention_unchanged": true,
+  "next_dependency_ready_increment": {
+    "id": "C01a",
+    "scope": "Action-selection clarity: contextual USES label and compact target/effect hints in existing move pane",
+    "preserve": [
+      "balance",
+      "controls",
+      "Save schema"
+    ],
+    "implemented_in_closure": false
+  }
+}

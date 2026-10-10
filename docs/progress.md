@@ -1,3 +1,33 @@
+## Current technical V01 closure — accepted scoped review; C01a next after normal integration
+
+Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source
+and actual MP4 decoded-frame/time review:6 nearby frames around89 pose events,
+all18 IDs,whole-clip overviews,27 same-frame comparisons,dense faint/exit samples;
+no concrete blocking defect. Warden warning through Carl brace73.986s/Donut
+release85.137s; clean removals205.600/233.259s; matched battle/black/field
+250.806/251.475/251.978s,no retained battle HUD; final261.622s dialogue readable.
+Tested game9c83611e,execution021cb729,engine8d8c7761 unchanged. Native new-input
+pair PASS42 each,fullB/F/E/EOF and all17 poses/warning/palette/budget/cleanup/
+resources/Save gates remain actual evidence. Routine scoped PR114 integration
+is authorized when normal protections permit; no extra mandatory Kurt approval.
+Returned main protection off/required checks empty,rulesets empty;no returned
+reviews/statuses/PR workflow/check runs and no CI pass claimed. Actual merge
+identity is the normal PR114 merge result,never a predicted commit.
+
+Technical V01 scope is accepted; decoded-frame/time review is not direct
+ordinary-speed perceptual playback or proof of no flicker in unsampled frames.
+Human comprehension/pacing,legacy-input/original-provenance and whole-floor
+acceptance remain separate obligations. Historical6/4/STOP117,new1/1,ordinary5,
+all other failures/STOPs,Library5+1 and local-only retention remain unchanged.
+This closure runs no emulator/build/capture/Library retry. Private Save53f62dc2
+and reference849a1585 preserved in place. Exact review/merge-gate/scope records:
+docs/evidence/floor1/v01/new-input-pair-20261010/closure.md.
+
+Next after verified normal integration: separate **C01a action-selection clarity**,
+contextual USES label plus compact target/effect hints in existing move pane;
+preserve balance/controls/Save schema. Not implemented here. No full-floor or
+human-pacing acceptance claim. Earlier checkpoints below are historical.
+
 ## Current new-input visual checkpoint — native pair PASS, playback review pending
 
 Parent accepted ordinary recovery83ab1c1d and authorized one separate new-input

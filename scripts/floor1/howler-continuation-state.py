@@ -13,6 +13,40 @@ IMMUTABLE=Path('/workspace/scratch/c01-conserve-medicine-opening5-r1-20261010/op
 NAMES=['howler','howler-repeat','guide-howler','save']
 FORBIDDEN=(35,40,41,42,43,44,45,46,47,48,49,2138,2139)
 KEYS=('party','flags','logical','vars','saved','count','saved_count','counter','map','position','section','facing')
+def step_counters(counter,poison,transition):
+    """Stock field order: physical stat first; successful ladder skips step scripts.
+
+    The walking friendship event is reported, never randomized or applied here.
+    No general warp allowance: route_step admits only the two reviewed ladders.
+    """
+    assert 0<=counter<128 and 0<=poison<4
+    assert transition in ('ordinary','ladder')
+    ordinary=transition=='ordinary'
+    next_counter=(counter+1)%128 if ordinary else counter
+    return dict(counter=next_counter,poison=(poison+1)%4 if ordinary else poison,
+                GAME_STAT_STEPS_delta=1,step_script_updates=int(ordinary),
+                walking_friendship_event=ordinary and next_counter==0)
+def route_step(before_map,before_pos,after_map,after_pos):
+    assert all(len(v)==2 for v in (before_map,before_pos,after_map,after_pos))
+    assert before_map in ([35,0],[35,1]) and after_map in ([35,0],[35,1])
+    before=(tuple(before_map),tuple(before_pos));after=(tuple(after_map),tuple(after_pos))
+    ladders=((((35,1),(4,4)),((35,0),(37,26))),
+             (((35,0),(38,26)),((35,1),(4,3))))
+    if before[0]!=after[0]:
+        assert (before,after) in ladders,'unsupported route warp'
+        return 'ladder'
+    assert sum(abs(a-b) for a,b in zip(before[1],after[1]))==1,'one physical ordinary step'
+    return 'ordinary'
+LEG_TRANSITIONS=(('ordinary','ladder')+('ordinary',)*15,
+                 ('ordinary',)*14+('ladder','ordinary','ordinary'))
+def endpoint_counters():
+    # Guard Save poison is two; battle resets it before the return leg.
+    counter=78;poison=2
+    for leg,transitions in enumerate(LEG_TRANSITIONS):
+        for transition in transitions:
+            step=step_counters(counter,poison,transition);counter=step['counter'];poison=step['poison']
+        if leg==0:poison=0
+    return counter,poison
 def snapshot(path):
     d=base.snapshot(path);assert d['map'] in ([35,0],[35,1])
     assert d['facing'] in (1,2,3,4)
@@ -42,7 +76,9 @@ def validate(name,before,after,positions=()):
     assert after['section']==before['section'] and after['facing']==before['facing']
     if name in ('guide-howler','save'):
         assert (after['map'],after['position'],after['section'],after['facing'])==([35,1],[4,5],214,1)
-        assert after['counter']==112
+        counter,poison=endpoint_counters()
+        assert after['counter']==counter==110,'exact source-derived friendship counter'
+        assert struct.unpack_from('<H',after['vars'],0x56)[0]==poison==0,'exact poison counter'
         members=[fields.decode(after['party'][100*i:100*(i+1)])['fields'] for i in range(2)]
         assert [m['level'] for m in members]==[11,10]
         assert [m['experience'] for m in members]==[748,1058]

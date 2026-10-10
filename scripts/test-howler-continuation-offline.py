@@ -95,10 +95,13 @@ def main():
         raw=s['party'][100*i:100*(i+1)];c=bytearray(state.fields.decode(raw)['canonical']);fn(c)
         p=bytearray(s['party']);p[100*i:100*(i+1)]=state.prior.encode(c,raw);s['party']=bytes(p)
     def walk(s,mapnum,pos,facing):
-        t=copy.deepcopy(s);t['counter']+=1;t['map']=[35,mapnum];t['position']=pos;t['facing']=facing
+        t=copy.deepcopy(s);t['map']=[35,mapnum];t['position']=pos;t['facing']=facing
+        transition=state.route_step(s['map'],s['position'],t['map'],pos)
+        step=state.step_counters(s['counter'],struct.unpack_from('<H',s['vars'],0x56)[0],transition)
+        t['counter']=step['counter']
         sections=json.loads((ROOT/'engine/src/data/region_map/region_map_sections.json').read_text())['map_sections'];model=json.loads((ROOT/f'engine/data/maps/DCC_F1D1{("Field" if mapnum==0 else "Quiet")}/map.json').read_text())
         t['section']=next(i for i,x in enumerate(sections) if x['id']==model['region_map_section'])
-        variables=bytearray(t['vars']);struct.pack_into('<H',variables,0x54,t['counter']);struct.pack_into('<H',variables,0x56,(struct.unpack_from('<H',variables,0x56)[0]+1)%4)
+        variables=bytearray(t['vars']);struct.pack_into('<H',variables,0x54,t['counter']);struct.pack_into('<H',variables,0x56,step['poison'])
         if s['map']!=t['map']:struct.pack_into('<H',variables,2,0)
         t['vars']=bytes(variables);t=sync(t);native_transition(s,t,1)
         if mapnum==0 and struct.unpack_from('<H',t['vars'],2)[0]==0:
@@ -107,7 +110,7 @@ def main():
     state.continue_equivalence(fixture,d/'howler-input-verified-copy.sav')
     s=fixture
     for pos,mapnum,facing in [([4,4],1,2),([37,26],0,2)]+[([x,26],0,4) for x in range(38,52)]+[([51,27],0,1)]:s=walk(s,mapnum,pos,facing)
-    assert s['counter']==95
+    assert s['counter']==94
     # Independent exact source-event early win and intermediate earned growth.
     # No emulator state, RNG search or critical-dependent conservative plan.
     mixed,early,event_proof=events.fixture(state,s);mixed=sync(mixed);early=sync(early)
@@ -152,7 +155,7 @@ def main():
     # Immediate repeat: full state exact, including once-only XP/money/flags.
     state.validate('howler-repeat',s,s);native_transition(s,s,1);phase_pairs.append(('howler-repeat',s,s,1))
     for pos,mapnum,facing in [([51,26],0,2)]+[([x,26],0,3) for x in range(50,37,-1)]+[([4,3],1,3),([4,4],1,1),([4,5],1,1)]:s=walk(s,mapnum,pos,facing)
-    assert s['counter']==112 and counts['physical_walk_steps']==34
+    assert s['counter']==110 and struct.unpack_from('<H',s['vars'],0x56)[0]==0 and counts['physical_walk_steps']==34
     before=s;after=copy.deepcopy(s)
     for i in range(2):
         def healed(c):c[52:56]=bytes((8 if i==0 else 2,40,0,0));struct.pack_into('<I',c,80,0);c[86:88]=c[88:90]

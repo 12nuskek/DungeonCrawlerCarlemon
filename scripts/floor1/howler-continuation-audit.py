@@ -2,6 +2,47 @@
 from pathlib import Path
 import re,json,struct,hashlib
 ROOT=Path(__file__).resolve().parents[2]
+def step_proof(engine=None):
+    """Read the actual retained map words and stock step ordering; no game execution."""
+    engine=Path(engine) if engine is not None else ROOT/'engine'
+    avatar=(engine/'src/field_control_avatar.c').read_text()
+    body=avatar.split('int ProcessPlayerFieldInput(struct FieldInput *input)\n{',1)[1]
+    assert body.index('IncrementGameStat(GAME_STAT_STEPS);')<body.index('TryStartStepBasedScript(&position, metatileBehavior, playerDirection)')
+    body=avatar.split('static bool8 TryStartStepBasedScript(struct MapPosition *position, u16 metatileBehavior, u16 direction)\n{',1)[1].split('\n}',1)[0]
+    assert 'if (TryStartWarpEventScript(position, metatileBehavior) == TRUE)\n        return TRUE;' in body
+    assert body.index('TryStartWarpEventScript')<body.index('TryStartStepCountScript')
+    for token in ('UpdateFriendshipStepCounter();','UpdatePoisonStepCounter()','(*ptr) %= 128;','(*ptr) %= 4;',
+                  'AdjustFriendship(mon, FRIENDSHIP_EVENT_WALKING);','VarSet(VAR_POISON_STEP_COUNTER, 0);',
+                  'MetatileBehavior_IsLadder(metatileBehavior) != TRUE','DoWarp();\n        return TRUE;'):
+        assert token in avatar
+    assert 'ClearPoisonStepCounter();' in (engine/'src/battle_setup.c').read_text()
+    enum=(engine/'include/constants/metatile_behaviors.h').read_text().split('enum {',1)[1].split('}',1)[0]
+    assert re.findall(r'\bMB_\w+',re.sub(r'//[^\n]*','',enum)).index('MB_LADDER')==97
+    assert 'if (metatileBehavior == MB_LADDER)' in (engine/'src/metatile_behavior.c').read_text()
+    layouts=json.loads((engine/'data/layouts/layouts.json').read_text())['layouts']
+    attrs_path=engine/'data/tilesets/secondary/dcc/metatile_attributes.bin';attrs=attrs_path.read_bytes()
+    contract=json.loads((ROOT/'scripts/contracts/f1-g01d-relocation.json').read_text())
+    result={}
+    for key,word,dest in (('quiet',0x326b,'MAP_DCC_F1D1FIELD'),('field',0x3245,'MAP_DCC_F1D1QUIET')):
+        warp=contract['maps'][key]['warps'][0];x,y=warp['at']
+        model_path=engine/f'data/maps/DCC_F1D1{key.title()}/map.json';model=json.loads(model_path.read_text())
+        layout=next(v for v in layouts if v['id']==model['layout']);path=engine/layout['blockdata_filepath'];raw=path.read_bytes()
+        actual=struct.unpack_from('<H',raw,2*(x+y*layout['width']))[0]
+        original=next(v for v in layouts if v['name']==warp['source_map']+'_Layout');oldpath=engine/original['blockdata_filepath'];sx,sy=warp['source_at']
+        assert actual==word==struct.unpack_from('<H',oldpath.read_bytes(),2*(sx+sy*original['width']))[0]
+        attribute=struct.unpack_from('<H',attrs,2*((word&0x3ff)-512))[0]
+        assert attribute==97 and word&0xfc00==0x3000
+        assert model['warp_events'][0]==dict(x=x,y=y,elevation=3,dest_map=dest,dest_warp_id='0')
+        result[key]=dict(position=[x,y],map_word=word,attribute=attribute,behavior='MB_LADDER',
+                         layout_SHA256=hashlib.sha256(raw).hexdigest(),map_JSON_SHA256=hashlib.sha256(model_path.read_bytes()).hexdigest(),
+                         copied_from=dict(map=warp['source_map'],position=[sx,sy],layout_SHA256=hashlib.sha256(oldpath.read_bytes()).hexdigest()))
+    sources=('src/field_control_avatar.c','src/battle_setup.c','src/metatile_behavior.c','include/constants/metatile_behaviors.h')
+    return dict(ladders=result,attributes_SHA256=hashlib.sha256(attrs).hexdigest(),
+                stock_source_SHA256={p:hashlib.sha256((engine/p).read_bytes()).hexdigest() for p in sources},
+                contract_SHA256=hashlib.sha256((ROOT/'scripts/contracts/f1-g01d-relocation.json').read_bytes()).hexdigest(),
+                generation_source_SHA256=hashlib.sha256((ROOT/'scripts/floor1/generate-live-opening.py').read_bytes()).hexdigest(),
+                physical_steps_each_leg=17,step_script_updates_each_leg=16,GAME_STAT_STEPS_delta=34,
+                friendship_counter_anchors=[78,94,110],poison_counters=[2,2,0,0],battle_poison_reset=True)
 def choice(c,cm,d,dm,h,s,n,strike,brace):
     if c<0 or d<0 or c>cm or d>dm or cm not in (36,38) or dm not in (28,30) or not 0<=n<=1 or not 0<=strike<=8 or not 0<=brace<=40 or h not in (0,1) or s not in (0,1):return 103
     if not c or not d:return 90
@@ -108,6 +149,6 @@ def audit():
         for x,y in path:assert (x,y) not in actors and not(words[x+layout['width']*y]&0xc00),(key,x,y)
         identities[key]={'path':path,'layout_SHA256':hashlib.sha256(raw).hexdigest(),'native_warps':model['warp_events']}
     assert len(paths['quiet'])-1+len(paths['field'])-1==17
-    return dict(PASS=True,foes=foes,order=[23,16,14,9],seven_STRIKE_without_favorable_criticals=strike_bounds,
+    return dict(PASS=True,step_proof=step_proof(),foes=foes,order=[23,16,14,9],seven_STRIKE_without_favorable_criticals=strike_bounds,
                 one_critical_plus_ordinary_envelopes=[16,12,9,12],simultaneous_criticals_guaranteed=False,
                 WEAKEN_integer_plateaus=plateaus,route=identities,physical_steps_each_leg=17,fixed_frames_each_leg=704)

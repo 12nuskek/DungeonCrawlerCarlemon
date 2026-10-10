@@ -8,12 +8,17 @@ def verify(root):
     head=git(root,'rev-parse','HEAD').decode().strip()
     def tree(rev):
         result={}
-        for line in git(root,'ls-tree','-r',rev,'--','engine/data/layouts').decode().splitlines():
-            metadata,path=line.split('\t');mode,kind,oid=metadata.split();assert kind=='blob';result[path]=(mode,oid)
+        for line in git(root,'ls-tree','-r','-t',rev,'--','engine/data/layouts').decode().splitlines():
+            metadata,path=line.split('\t');mode,kind,oid=metadata.split()
+            if path in ('engine','engine/data','engine/data/layouts'):continue
+            assert kind in ('blob','tree');result[path]=(mode,kind,oid)
         return result
     old,new=tree(BASE),tree(head);assert len(old)==len(new)==1358 and old.keys()==new.keys()
     paths={k:'engine/data/layouts/'+n+'/map.bin' for k,n in MAPS.items()}
-    differences={p for p in old if old[p]!=new[p]};assert differences==set(paths.values())
+    assert all(old[p][:2]==new[p][:2] for p in old)
+    differences={p for p in old if old[p][1]=='blob' and old[p]!=new[p]};assert differences==set(paths.values())
+    directory_differences={p for p in old if old[p][1]=='tree' and old[p]!=new[p]}
+    assert directory_differences=={str(Path(p).parent) for p in paths.values()}
     manifest=json.loads((root/'scripts/contracts/f1-v01-environment-assets.json').read_text())
     spec=json.loads((root/'scripts/contracts/f1-g01d-relocation.json').read_text())
     attrs=(root/'engine/data/tilesets/secondary/dcc/metatile_attributes.bin').read_bytes()

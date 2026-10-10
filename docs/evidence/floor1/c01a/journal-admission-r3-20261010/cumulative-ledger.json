@@ -1,0 +1,36 @@
+{
+  "actual_emulator_processes": {
+    "battle_baseline": 5,
+    "battle_candidate": 3,
+    "Journal_field": 1,
+    "total": 9
+  },
+  "consumed_execution_claims": {
+    "battle_baseline": 6,
+    "battle_candidate": 3,
+    "Journal_field": 1,
+    "total": 10
+  },
+  "this_increment": {
+    "claim9": "battle candidate3, actual process8, PASS",
+    "claim10": "Journal field1, actual process9, PASS",
+    "retries": 0,
+    "new_baseline_processes": 0,
+    "new_game_builds": 0,
+    "new_manual_Saves": 0
+  },
+  "historical_counts_preserved": {
+    "original_V01_baseline": 6,
+    "original_V01_candidate": 4,
+    "original_latest_STOP": "STOP117 requested visual8536 before expected B8402",
+    "later_separate_accepted_pair_baseline": 1,
+    "later_separate_accepted_pair_candidate": 1,
+    "ordinary_recovery": 5,
+    "Library_failed_uploads": 5,
+    "Library_failed_existing_backup_download": 1
+  },
+  "Library_original_recovered_bytes": 0,
+  "prior_failures_and_STOPs_unchanged": true,
+  "original_runtime_oracle_and_legacy_inputs": "remain missing",
+  "full_floor_completion": false
+}

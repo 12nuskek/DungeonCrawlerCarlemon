@@ -1,0 +1,31 @@
+{
+  "PASS": true,
+  "new_private_archives": {
+    "battle": {
+      "archive_bytes": 165394300,
+      "source_entry_count": 7116,
+      "archive_regular_entries": 7118,
+      "source_bytes": 1032506357,
+      "all_entries_read_back_hash_verified": true,
+      "source_files_unchanged_after_archive": true
+    },
+    "field": {
+      "archive_bytes": 139403125,
+      "source_entry_count": 16005,
+      "archive_regular_entries": 16007,
+      "source_bytes": 2006589590,
+      "all_entries_read_back_hash_verified": true,
+      "source_files_unchanged_after_archive": true
+    }
+  },
+  "prior_failed_preparation_archives_verified_unchanged": true,
+  "retention": "Verified workspace-local private copies only; no independent backup verified",
+  "remote_upload_attempted": false,
+  "private_upload_approval": "pending",
+  "Library_failed_uploads": 5,
+  "Library_failed_supported_existing_backup_downloads": 1,
+  "Library_failure_cause": "unknown",
+  "Library_original_recovered_bytes": 0,
+  "Library_retry": false,
+  "public_artifacts": "Selected actual game PNG/MP4 and scoped proof summaries only; no ROM/ELF/Save/raw streams/decoded identities"
+}

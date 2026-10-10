@@ -1,3 +1,35 @@
+## Current C01a optional Journal notes — battle and native field PASS
+
+Compiled game4a92a9de70848b9d7275f9f255bb0d2f53232ab8; main/basebdff4e1a unchanged.
+Full battle helper36cfd1e35451cdd9ba8a7c3bf6398fb595d6611f, claim9/candidate3/
+actual emulator8 PASS: 6883B/7051F/typedE+EOF/all2700 snapshots/59 assertions,
+complete passive diagnostics and fresh actual-ELF12-point profile. All7051 numeric/
+27 named/separate start RGB byte-exact to certified full baseline4, ZERO masks.
+No rebuild/baseline replay/assertion waiver/runtime retry. Complete original
+source/font/window/generation/65536 dispatch assertions pass through reviewed
+exact Journal/art/two-text projections; historical checker/inventories unchanged.
+Field helper2faeaffeac45bf6e9f2253e381f24f97c995c811, separate claim10/field1/
+actual emulator9 PASS:15949 native frames/38 assertions, Yes/No/B/reopen/reread/
+closures/native controls; all3469 packet bytes and original Save unchanged.
+All6 party checksums/reencoding valid; duo11/10 XP748/1058 HP38/30 clear,
+uses8/40/2/40 friendship89/81, Potion1/Scrap2; workshop35,3(8,7) facing7.
+No field battle/walking/Save/grants/injection. Recovered tooling verified, no
+historical compiler binary identity. Both private FFV1 exports decoded every
+frame exactly; native PNGs visually inspected, lossy review MP4s native timing.
+Actual counts baseline5/candidate3/field1/total9; consumed6/3/1/total10.
+All old failures/STOPs preserved: originalV016/4 STOP117 visual8536 before B8402,
+separate new accepted pair1/1, ordinary recovery5, Library5+1 unknown cause/zero
+original recovered bytes/no retry. New private archives all-entry read-back hash
+verified locally, old failed archives unchanged; independent backup unverified,
+private upload approval pending. No ROM/ELF/Save/raw stream/private identity public.
+DraftPR115 result review only,no merge; issue116/main/all other heads/accepted
+nine-district plan unchanged. Runtime oracle/legacy inputs/human pacing/
+uninterrupted prepared-unprepared/resource planning/broader Floor1/G02 remain open.
+Evidence docs/evidence/floor1/c01a/journal-admission-r3-20261010/README.md and
+journal-field-r1-20261010/README.md. Next dependency: scoped review of this
+checkpoint; any further gameplay requires its separately reviewed contract.
+Earlier bodies historical.
+
 ## Current C01a reviewed narrative/profile admission — full checks pass
 
 Review25e42473 accepts exact two-text/main reconciliation and fresh actual-ELF

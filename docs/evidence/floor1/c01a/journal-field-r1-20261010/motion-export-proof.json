@@ -1,0 +1,28 @@
+{
+  "PASS": true,
+  "game_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "execution_helper": "2faeaffeac45bf6e9f2253e381f24f97c995c811",
+  "native_width": 240,
+  "native_height": 160,
+  "native_frame_rate": "16777216/280896",
+  "all_lossless_decoded_RGB_frames_exact": 15949,
+  "all_RGB_SHA256": "1e4c153be4a4e6fad0a39c4f61271f6007d4c5a48dfdd2205976b94996aec58c",
+  "private_FFV1_bytes": 154650891,
+  "private_FFV1_SHA256": "0b4297964515a566932da29fda68117771dfa3c81fab64583c53399748d832eb",
+  "review_filename": "actual-field-review.mp4",
+  "review_bytes": 731468,
+  "review_SHA256": "746c4292a59d75417510f8a5702ab2cd2dee8d4cdc41a4afe720dfb9136b89a2",
+  "review_start_native_frame": 2044,
+  "review_frames": 13905,
+  "review_probe": {
+    "codec_name": "h264",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "avg_frame_rate": "262144/4389",
+    "duration": "232.807331",
+    "nb_read_frames": "13905"
+  },
+  "review_encoding": "Lossy H.264 display export; exact native PNG and private PPM/FFV1 provide pixel evidence. No audio, overlays, interpolation or synthetic frames.",
+  "viewing_scope": "Selected PNGs inspected; no claim of human-paced full motion review."
+}

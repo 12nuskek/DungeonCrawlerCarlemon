@@ -1,0 +1,45 @@
+{
+  "game_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "execution_helper": "36cfd1e35451cdd9ba8a7c3bf6398fb595d6611f",
+  "actual_native_captures": true,
+  "PNG_selected_pages_visually_inspected": true,
+  "format_conversion": "Lossless RGB conversion from native PPM, no overlays or edits",
+  "captures": {
+    "carl-strike.png": {
+      "original_PPM_SHA256": "4bde47411034c66049c952f31000f80449adf1775759edb329238713cb1c647b",
+      "PNG_SHA256": "a4dbfa1d255b3dfd061d0a6d84b0447054688c7f3f679d1bc5eabfc6528dfd6e",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "donut-spark.png": {
+      "original_PPM_SHA256": "3742d4bb624185192c906b225666c5d0c585dd4daad3d05de040922f80f6916e",
+      "PNG_SHA256": "6d850918af3d56eab5bd4e1f2fb7faef1db0358f5859b86765554b41e2519398",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "summary.png": {
+      "original_PPM_SHA256": "5196305497ff8099c3064b25da9ff97a56ee55e6d6c615717d856ed035814937",
+      "PNG_SHA256": "e70aa103e6f2556e33cf4428821f1156b9744544e4074a1222c38ac125212f50",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "spark-rejected.png": {
+      "original_PPM_SHA256": "6cd99474efdcaa2fdb3a95383323ce3840d3828a5dc3db6ce96b0b638844859f",
+      "PNG_SHA256": "cd7a716245e00a98acc8698b74222a9b8d92890f14ad7127e007eb5684cc1256",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    }
+  }
+}

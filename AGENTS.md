@@ -1,3 +1,34 @@
+## Current ordinary recovery checkpoint — patrol Save/cold passed, review before Warden
+
+Parent accepted the narrow setup observation relocation. Same workspace and
+actual successful trial Savef866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281
+were verified; no New Game/trial replay or stopped-RAM Save. r5 fresh success and
+setup STOP40 at3040 stay immutable. r6 source279efbfa7a97f7e5380b74dfadedfb3fb0f2408e,
+freeze/executionbfd69de5269740ca6a1680ba7b3b11bef37c8e87 reused mainc6d647a8
+build and observerfca57ec8 identities; no build/compile/tool acquisition. Four
+focused offline relocation cases and actual zero-frame/input proof pass; two
+ordinary diagnosed offline proof failures remain recorded.
+
+Ordinary process3/setup attempt2:45 assertions/6579 frames, real manual Save
+67ae1cdc9f81586c947b25f8783cf7c63e2929cf64d55f277dd756082ad8e7cd.
+Process4 Guard-first patrol:164 assertions/31083 frames,2 wins,6 travel checks,
+real final manual Save53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6.
+Process5 independent cold:18 assertions/2044 frames, complete native state
+matched and Save unchanged. Map35,3 at8,7,facing1,Carl/Donut11/10,XP748/1058,
+HP38/30,status clear,uses8/40/2/40,Potion1,Scrap2,trial/patrol wins set,
+preparation/boss/checkpoint/loop/Warden unset. Full native integrity/persistence/
+walking/friendship/reward/recovery/legal-field checks pass. Stop before Warden.
+Exact safe evidence/captures/identities and local-only retention:
+docs/evidence/floor1/ordinary-recovery-20261009/runtime-r6/README.md.
+
+Cumulative ordinary5 processes/2 setup attempts/1trial/1Guard/1Howler/1 final
+full cold,zero Warden. Historicalsix baseline/four candidate and STOP117 remain
+unchanged. Active poses still offline-only; old oracle/legacy/lost Save missing.
+Next review: actual patrol Save/cold, then separate new baseline/candidate
+contract; do not execute pair/merge/full-floor claim under recovery. Raw files
+stay private; local byte-verified archive is not an independent backup. Library
+5+1 failures unchanged/no retry. Prior checkpoint bodies remain historical.
+
 ## Current ordinary recovery checkpoint — setup STOP40, no retry
 
 Parent accepted the r4 source-verifier diagnosis. Narrow pinned-attribute fix

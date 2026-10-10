@@ -1,0 +1,47 @@
+PASS ready
+PASS expect 35 1 12 7 7
+PASS expect 35 1 12 9 7
+PASS dialog frames=2
+PASS ready
+PASS expect 35 1 12 9 7
+PASS item 378 2
+PASS item 13 2
+PASS flag 39 1
+PASS task ready bag frames=55
+PASS task ready field-context frames=0
+PASS task ready party frames=50
+PASS task ready healed frames=4
+PASS field menu return frames=265
+PASS ready
+PASS item 13 1
+PASS uses 3 40 0 37
+PASS expect 35 1 12 5 7
+PASS expect 35 1 4 5 7
+PASS dialog frames=2
+PASS ready
+PASS expect 35 1 4 5 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS growth 9 495 0 9 805 0
+PASS expect 35 0 37 26 7
+PASS expect 35 0 37 31 7
+PASS ready
+PASS expect 35 0 37 31 7
+PASS expect 35 0 37 31 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS levels 9 9
+PASS item 13 1
+PASS item 378 2
+PASS flag 2135 1
+PASS flag 2136 0
+PASS flag 2137 0
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PASS ordinary checkpoint seed-saved absolute_frame=6579
+PATROL_CLOCK absolute_frames=6579 valid_samples=0 deferred_samples=0 reentries=0 unarmed_frames=6579 mutation_frames=0 checkpoints=0 battle_frames=0 battle_attempts=0 stage=0
+result=0 assertions=45

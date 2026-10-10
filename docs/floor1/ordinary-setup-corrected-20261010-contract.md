@@ -1,3 +1,13 @@
+Status: **completed to actual patrol Save/independent cold; stopped before Warden**.
+Corrected setup process3/overall attempt2,patrol process4 and cold process5
+passed45/164/18 assertions. Final actual Save
+53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6
+was independently cold-verified with full state exact and no Save modification.
+[Exact result, captures and preserved failures](../evidence/floor1/ordinary-recovery-20261009/runtime-r6/README.md).
+All three claims are exhausted; no further gameplay,Warden or candidate pair
+under this contract. Review checkpoint on draft PR114,then separately review
+any new baseline/candidate contract. The frozen prospective contract follows.
+
 # Corrected ordinary setup — separate reviewed claim
 
 Parent reviewed checkpoint030e4d19b1bdc928237f3596041379a5f279dacf and accepted

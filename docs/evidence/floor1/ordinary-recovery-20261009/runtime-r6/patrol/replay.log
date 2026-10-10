@@ -1,0 +1,294 @@
+PASS ready
+PASS native milestone boot complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=boot facing=1
+PASS checkpoint boot absolute_frame=2044
+PASS flag 2135 1
+PASS growth 9 495 0 9 805 0
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS item 13 1
+PASS item 378 2
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PASS flag 2136 0
+PASS flag 2137 0
+PASS expect 35 0 37 31 7
+PASS dialog frames=2
+PASS ready
+PASS expect 35 0 37 31 7
+PASS flag 2136 1
+PASS native milestone guard-win complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=guard-win facing=1
+PASS checkpoint guard-win absolute_frame=14680
+PASS flag 2137 0
+PASS growth 10 627 0 9 937 0
+PASS money reward delta=320 actual=3640
+PASS item 13 1
+PASS item 378 2
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+WALK_STEP absolute_frame=14705 counter=72->73 friendship=81,75
+WALK_STEP absolute_frame=14721 counter=73->74 friendship=81,75
+WALK_STEP absolute_frame=14737 counter=74->75 friendship=81,75
+WALK_STEP absolute_frame=14753 counter=75->76 friendship=81,75
+PASS native reentry absolute_frame=14802 last_accepted=14791 complete_state=1
+PASS expect 35 1 4 3 7
+WALK_STEP absolute_frame=15129 counter=76->77 friendship=81,75
+WALK_STEP absolute_frame=15145 counter=77->78 friendship=81,75
+PASS expect 35 1 4 5 7
+MEASURE name=guard-out frames=500 walking=112 tiles=7 warps=1
+PASS dialog frames=2
+PASS ready
+PASS expect 35 1 4 5 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS native milestone guide-guard complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=guide-guard facing=1
+PASS checkpoint guide-guard absolute_frame=15664
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+WALK_STEP absolute_frame=15689 counter=78->79 friendship=81,75
+PASS native reentry absolute_frame=15738 last_accepted=15727 complete_state=1
+PASS expect 35 0 37 26 7
+WALK_STEP absolute_frame=16065 counter=79->80 friendship=81,75
+WALK_STEP absolute_frame=16081 counter=80->81 friendship=81,75
+WALK_STEP absolute_frame=16097 counter=81->82 friendship=81,75
+WALK_STEP absolute_frame=16113 counter=82->83 friendship=81,75
+WALK_STEP absolute_frame=16129 counter=83->84 friendship=81,75
+PASS expect 35 0 37 31 7
+MEASURE name=guard-back frames=500 walking=112 tiles=7 warps=1
+PASS dialog frames=2
+PASS ready
+PASS unchanged XP level equipment
+PASS money reward delta=0 actual=3640
+PASS repeat encounter no battle
+FIELD_FACING checkpoint=guard-repeat facing=1
+PASS checkpoint guard-repeat absolute_frame=16648
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+WALK_STEP absolute_frame=16673 counter=84->85 friendship=81,75
+WALK_STEP absolute_frame=16689 counter=85->86 friendship=81,75
+WALK_STEP absolute_frame=16705 counter=86->87 friendship=81,75
+WALK_STEP absolute_frame=16721 counter=87->88 friendship=81,75
+PASS expect 35 0 37 27 7
+WALK_STEP absolute_frame=16781 counter=88->89 friendship=81,75
+WALK_STEP absolute_frame=16797 counter=89->90 friendship=81,75
+WALK_STEP absolute_frame=16813 counter=90->91 friendship=81,75
+WALK_STEP absolute_frame=16829 counter=91->92 friendship=81,75
+WALK_STEP absolute_frame=16845 counter=92->93 friendship=81,75
+WALK_STEP absolute_frame=16861 counter=93->94 friendship=81,75
+WALK_STEP absolute_frame=16877 counter=94->95 friendship=81,75
+WALK_STEP absolute_frame=16893 counter=95->96 friendship=81,75
+WALK_STEP absolute_frame=16909 counter=96->97 friendship=81,75
+WALK_STEP absolute_frame=16925 counter=97->98 friendship=81,75
+WALK_STEP absolute_frame=16941 counter=98->99 friendship=81,75
+WALK_STEP absolute_frame=16957 counter=99->100 friendship=81,75
+WALK_STEP absolute_frame=16973 counter=100->101 friendship=81,75
+WALK_STEP absolute_frame=16989 counter=101->102 friendship=81,75
+PASS expect 35 0 51 27 7
+PASS dialog frames=2
+PASS ready
+PASS expect 35 0 51 27 7
+PASS flag 2137 1
+PASS native milestone howler-win complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=howler-win facing=1
+PASS checkpoint howler-win absolute_frame=24440
+PASS flag 2136 1
+PASS growth 11 748 0 10 1058 0
+PASS money reward delta=360 actual=4000
+PASS item 13 1
+PASS item 378 2
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+WALK_STEP absolute_frame=24465 counter=102->103 friendship=87,81
+PASS expect 35 0 51 26 7
+WALK_STEP absolute_frame=24525 counter=103->104 friendship=87,81
+WALK_STEP absolute_frame=24541 counter=104->105 friendship=87,81
+WALK_STEP absolute_frame=24557 counter=105->106 friendship=87,81
+WALK_STEP absolute_frame=24573 counter=106->107 friendship=87,81
+WALK_STEP absolute_frame=24589 counter=107->108 friendship=87,81
+WALK_STEP absolute_frame=24605 counter=108->109 friendship=87,81
+WALK_STEP absolute_frame=24621 counter=109->110 friendship=87,81
+WALK_STEP absolute_frame=24637 counter=110->111 friendship=87,81
+WALK_STEP absolute_frame=24653 counter=111->112 friendship=87,81
+WALK_STEP absolute_frame=24669 counter=112->113 friendship=87,81
+WALK_STEP absolute_frame=24685 counter=113->114 friendship=87,81
+WALK_STEP absolute_frame=24701 counter=114->115 friendship=87,81
+WALK_STEP absolute_frame=24717 counter=115->116 friendship=87,81
+PASS native reentry absolute_frame=24767 last_accepted=24755 complete_state=1
+PASS expect 35 1 4 3 7
+WALK_STEP absolute_frame=25093 counter=116->117 friendship=87,81
+WALK_STEP absolute_frame=25109 counter=117->118 friendship=87,81
+PASS expect 35 1 4 5 7
+MEASURE name=howler-out frames=704 walking=272 tiles=17 warps=1
+PASS dialog frames=2
+PASS ready
+PASS expect 35 1 4 5 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS native milestone guide-howler complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=guide-howler facing=1
+PASS checkpoint guide-howler absolute_frame=25628
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+WALK_STEP absolute_frame=25653 counter=118->119 friendship=87,81
+PASS native reentry absolute_frame=25702 last_accepted=25691 complete_state=1
+PASS expect 35 0 37 26 7
+WALK_STEP absolute_frame=26029 counter=119->120 friendship=87,81
+WALK_STEP absolute_frame=26045 counter=120->121 friendship=87,81
+WALK_STEP absolute_frame=26061 counter=121->122 friendship=87,81
+WALK_STEP absolute_frame=26077 counter=122->123 friendship=87,81
+WALK_STEP absolute_frame=26093 counter=123->124 friendship=87,81
+WALK_STEP absolute_frame=26109 counter=124->125 friendship=87,81
+WALK_STEP absolute_frame=26125 counter=125->126 friendship=87,81
+WALK_STEP absolute_frame=26141 counter=126->127 friendship=87,81
+WALK_STEP absolute_frame=26157 counter=127->0 friendship=89,81
+WALK_STEP absolute_frame=26173 counter=0->1 friendship=89,81
+WALK_STEP absolute_frame=26189 counter=1->2 friendship=89,81
+WALK_STEP absolute_frame=26205 counter=2->3 friendship=89,81
+WALK_STEP absolute_frame=26221 counter=3->4 friendship=89,81
+WALK_STEP absolute_frame=26237 counter=4->5 friendship=89,81
+PASS expect 35 0 51 26 7
+WALK_STEP absolute_frame=26297 counter=5->6 friendship=89,81
+PASS expect 35 0 51 27 7
+MEASURE name=howler-back frames=704 walking=272 tiles=17 warps=1
+PASS dialog frames=2
+PASS ready
+PASS unchanged XP level equipment
+PASS money reward delta=0 actual=4000
+PASS repeat encounter no battle
+FIELD_FACING checkpoint=howler-repeat facing=1
+PASS checkpoint howler-repeat absolute_frame=26816
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PASS flag 2136 1
+PASS flag 2137 1
+PASS flag 49 0
+WALK_STEP absolute_frame=26841 counter=6->7 friendship=89,81
+PASS expect 35 0 51 26 7
+WALK_STEP absolute_frame=26901 counter=7->8 friendship=89,81
+WALK_STEP absolute_frame=26917 counter=8->9 friendship=89,81
+WALK_STEP absolute_frame=26933 counter=9->10 friendship=89,81
+WALK_STEP absolute_frame=26949 counter=10->11 friendship=89,81
+WALK_STEP absolute_frame=26965 counter=11->12 friendship=89,81
+WALK_STEP absolute_frame=26981 counter=12->13 friendship=89,81
+WALK_STEP absolute_frame=26997 counter=13->14 friendship=89,81
+WALK_STEP absolute_frame=27013 counter=14->15 friendship=89,81
+WALK_STEP absolute_frame=27029 counter=15->16 friendship=89,81
+WALK_STEP absolute_frame=27045 counter=16->17 friendship=89,81
+WALK_STEP absolute_frame=27061 counter=17->18 friendship=89,81
+WALK_STEP absolute_frame=27077 counter=18->19 friendship=89,81
+WALK_STEP absolute_frame=27093 counter=19->20 friendship=89,81
+PASS native reentry absolute_frame=27143 last_accepted=27131 complete_state=1
+PASS expect 35 1 4 3 7
+WALK_STEP absolute_frame=27469 counter=20->21 friendship=89,81
+WALK_STEP absolute_frame=27485 counter=21->22 friendship=89,81
+PASS expect 35 1 4 5 7
+MEASURE name=preboss-out frames=704 walking=272 tiles=17 warps=1
+PASS dialog frames=2
+PASS ready
+PASS expect 35 1 4 5 7
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS native milestone guide-preboss complete party/count/counter/flags/logical resources; identities private
+FIELD_FACING checkpoint=guide-preboss facing=1
+PASS checkpoint guide-preboss absolute_frame=28004
+WALK_STEP absolute_frame=28029 counter=22->23 friendship=89,81
+PASS native reentry absolute_frame=28078 last_accepted=28067 complete_state=1
+PASS expect 35 0 37 26 7
+WALK_STEP absolute_frame=28405 counter=23->24 friendship=89,81
+WALK_STEP absolute_frame=28421 counter=24->25 friendship=89,81
+WALK_STEP absolute_frame=28437 counter=25->26 friendship=89,81
+WALK_STEP absolute_frame=28453 counter=26->27 friendship=89,81
+WALK_STEP absolute_frame=28469 counter=27->28 friendship=89,81
+WALK_STEP absolute_frame=28485 counter=28->29 friendship=89,81
+WALK_STEP absolute_frame=28501 counter=29->30 friendship=89,81
+PASS expect 35 0 44 26 7
+WALK_STEP absolute_frame=28561 counter=30->31 friendship=89,81
+WALK_STEP absolute_frame=28577 counter=31->32 friendship=89,81
+WALK_STEP absolute_frame=28593 counter=32->33 friendship=89,81
+WALK_STEP absolute_frame=28609 counter=33->34 friendship=89,81
+WALK_STEP absolute_frame=28625 counter=34->35 friendship=89,81
+WALK_STEP absolute_frame=28641 counter=35->36 friendship=89,81
+WALK_STEP absolute_frame=28657 counter=36->37 friendship=89,81
+WALK_STEP absolute_frame=28673 counter=37->38 friendship=89,81
+WALK_STEP absolute_frame=28689 counter=38->39 friendship=89,81
+PASS expect 35 0 44 17 7
+PASS native reentry absolute_frame=28782 last_accepted=28771 complete_state=1
+PASS expect 35 3 4 3 7
+WALK_STEP absolute_frame=29101 counter=39->40 friendship=89,81
+WALK_STEP absolute_frame=29117 counter=40->41 friendship=89,81
+WALK_STEP absolute_frame=29133 counter=41->42 friendship=89,81
+WALK_STEP absolute_frame=29149 counter=42->43 friendship=89,81
+PASS expect 35 3 8 3 7
+WALK_STEP absolute_frame=29213 counter=43->44 friendship=89,81
+WALK_STEP absolute_frame=29229 counter=44->45 friendship=89,81
+WALK_STEP absolute_frame=29245 counter=45->46 friendship=89,81
+WALK_STEP absolute_frame=29261 counter=46->47 friendship=89,81
+PASS expect 35 3 8 7 7
+MEASURE name=preboss-back frames=1292 walking=431 tiles=27 warps=2
+FIELD_FACING checkpoint=final facing=1
+PASS checkpoint final absolute_frame=29336
+PASS growth 11 748 0 10 1058 0
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS item 13 1
+PASS item 378 2
+PASS flag 2135 1
+PASS flag 2136 1
+PASS flag 2137 1
+PASS unchanged XP level equipment
+PASS money reward delta=0 actual=4000
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PASS ready
+PASS expect 35 3 8 7 7
+FIELD_FACING checkpoint=saved facing=1
+PASS checkpoint saved absolute_frame=31083
+PASS growth 11 748 0 10 1058 0
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS item 13 1
+PASS item 378 2
+PASS unchanged XP level equipment
+PASS money reward delta=0 actual=4000
+PASS flag 46 0
+PASS flag 47 0
+PASS flag 48 0
+PASS flag 49 0
+PASS flag 2138 0
+PASS flag 2139 0
+PATROL_CLOCK absolute_frames=31083 valid_samples=7463 deferred_samples=72 reentries=7 unarmed_frames=2044 mutation_frames=21504 checkpoints=10 battle_frames=17336 battle_attempts=2 stage=4
+result=0 assertions=164

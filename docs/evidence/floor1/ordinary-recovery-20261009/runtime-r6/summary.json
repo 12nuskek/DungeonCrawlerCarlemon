@@ -1,0 +1,234 @@
+[
+  {
+    "execution_source": "bfd69de5269740ca6a1680ba7b3b11bef37c8e87",
+    "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+    "claim_source": "279efbfa7a97f7e5380b74dfadedfb3fb0f2408e",
+    "stage": "setup",
+    "ordinary_process_ordinal": 3,
+    "setup_attempt_ordinal": 2,
+    "execution_limit": 1,
+    "identity_SHA256": "0754596c912e38bc832961a60dcc47720d148faff9b90caec3ab75075013b350",
+    "input_Save_SHA256": "f866e7c61a7bb91333822d435a3ad9f395ec62839bf5c4dc7c939b15b48c8281",
+    "route_SHA256": "9e02d93eeadaa176c718209e2aeb0fbef4de6f5b213c34439eeac176f072ec97",
+    "battles": 0,
+    "prior_ordinary_processes": 2,
+    "exit": 0,
+    "errors_bytes": 0,
+    "output_Save_SHA256": "67ae1cdc9f81586c947b25f8783cf7c63e2929cf64d55f277dd756082ad8e7cd",
+    "captures": {
+      "cold.png": "25dbc60c8d0adfb6f32d0a63282e1792fd5b7bab68a395a00f847cde8a1076c1",
+      "field-potion.png": "ab58c3937e14929d998bd4542e9376d0dddba0748ce727f5d7780f44950c8454",
+      "guide-rest.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "saved.png": "2eebda594bf24e0754aef4ae13426cd23352b82f5638179d93569f5fde4eedcf",
+      "scrap-box.png": "324de4fe2db108107f42bdcade80edbb810d6a8622ec19b2c5819780001ce48c",
+      "motion": {
+        "samples": 1644,
+        "raw_SHA256": "8f21d4f75a6a433896249961edf06e67908c042f87e80cc7cd3b9193e85dec8e",
+        "FFV1_SHA256": "af0964cc68eb2c28e4c17e3b17d47e0bb448e5d8f9a968f23981f3fd269dce7c",
+        "native_speed": true
+      }
+    },
+    "assertions": 45,
+    "clock": {
+      "frames": 6579,
+      "valid": 0,
+      "deferred": 0,
+      "reentries": 0,
+      "unarmed": 6579,
+      "mutation": 0,
+      "checkpoints": 0,
+      "battle_frames": 0,
+      "battle_attempts": 0,
+      "stage": 0
+    },
+    "native_manual_Save_exact": true,
+    "facing": []
+  },
+  {
+    "execution_source": "bfd69de5269740ca6a1680ba7b3b11bef37c8e87",
+    "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+    "claim_source": "279efbfa7a97f7e5380b74dfadedfb3fb0f2408e",
+    "stage": "patrol",
+    "ordinary_process_ordinal": 4,
+    "setup_attempt_ordinal": null,
+    "execution_limit": 1,
+    "identity_SHA256": "0754596c912e38bc832961a60dcc47720d148faff9b90caec3ab75075013b350",
+    "input_Save_SHA256": "67ae1cdc9f81586c947b25f8783cf7c63e2929cf64d55f277dd756082ad8e7cd",
+    "route_SHA256": "8de593f9f8c95fb52a1a63e4b104ee75d627670c2568a1dd6c41213c1ad175b5",
+    "battles": 2,
+    "prior_ordinary_processes": 2,
+    "exit": 0,
+    "errors_bytes": 0,
+    "output_Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+    "captures": {
+      "approach.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "boot.png": "2eebda594bf24e0754aef4ae13426cd23352b82f5638179d93569f5fde4eedcf",
+      "guard-resolved.png": "e2a51e8f2aa50279fbdc673e4dcda61ae70395c2392f952e8cd0b4f4a044e9fc",
+      "guard-start.png": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a",
+      "guard-victory.png": "e2a51e8f2aa50279fbdc673e4dcda61ae70395c2392f952e8cd0b4f4a044e9fc",
+      "guide-1.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "guide-2.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "guide-preboss.png": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "howler-resolved.png": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d",
+      "howler-start.png": "0601ece1ba4306b6921e782e5dde85c3efa290ab5a34dc7dec05d0a59ed8da0f",
+      "howler-victory.png": "0e37fe1c3fd156ae4cc3f10fd8efe3c1de03017a108e6a012000beeea7045c8d",
+      "saved.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "motion": {
+        "samples": 7770,
+        "raw_SHA256": "068e19f0bb3d3f92ef5dfc50cba81e9eea73667339ab0c77b951add8b59854fd",
+        "FFV1_SHA256": "cf6868fe6311041e9a2e8913bb9234146bafedf7c0d5220853bf4aebfc7880ed",
+        "native_speed": true
+      }
+    },
+    "assertions": 164,
+    "clock": {
+      "frames": 31083,
+      "valid": 7463,
+      "deferred": 72,
+      "reentries": 7,
+      "unarmed": 2044,
+      "mutation": 21504,
+      "checkpoints": 10,
+      "battle_frames": 17336,
+      "battle_attempts": 2,
+      "stage": 4
+    },
+    "native_manual_Save_exact": true,
+    "travel": [
+      {
+        "name": "guard-out",
+        "frames": 500,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "guard-back",
+        "frames": 500,
+        "walking_frames": 112,
+        "steps": 7,
+        "warps": 1
+      },
+      {
+        "name": "howler-out",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "howler-back",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-out",
+        "frames": 704,
+        "walking_frames": 272,
+        "steps": 17,
+        "warps": 1
+      },
+      {
+        "name": "preboss-back",
+        "frames": 1292,
+        "walking_frames": 431,
+        "steps": 27,
+        "warps": 2
+      }
+    ],
+    "facing": [
+      [
+        "boot",
+        "1"
+      ],
+      [
+        "guard-win",
+        "1"
+      ],
+      [
+        "guide-guard",
+        "1"
+      ],
+      [
+        "guard-repeat",
+        "1"
+      ],
+      [
+        "howler-win",
+        "1"
+      ],
+      [
+        "guide-howler",
+        "1"
+      ],
+      [
+        "howler-repeat",
+        "1"
+      ],
+      [
+        "guide-preboss",
+        "1"
+      ],
+      [
+        "final",
+        "1"
+      ],
+      [
+        "saved",
+        "1"
+      ]
+    ]
+  },
+  {
+    "execution_source": "bfd69de5269740ca6a1680ba7b3b11bef37c8e87",
+    "host_source": "fca57ec86ed41122c81dace994201b6dc9fe26bd",
+    "claim_source": "279efbfa7a97f7e5380b74dfadedfb3fb0f2408e",
+    "stage": "cold",
+    "ordinary_process_ordinal": 5,
+    "setup_attempt_ordinal": null,
+    "execution_limit": 1,
+    "identity_SHA256": "0754596c912e38bc832961a60dcc47720d148faff9b90caec3ab75075013b350",
+    "input_Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+    "route_SHA256": "b042379c0f70dbba87e3f25f5fe66ce6384752ac9cafdea07d73d9de2823aa67",
+    "battles": 0,
+    "prior_ordinary_processes": 2,
+    "exit": 0,
+    "errors_bytes": 0,
+    "output_Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+    "captures": {
+      "cold.png": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "motion": {
+        "samples": 511,
+        "raw_SHA256": "edaf0bc4372d0391b0d103a9b1d3c9657ed6dc19b94d4ba67e94be9353b3ac2f",
+        "FFV1_SHA256": "f5fa59f9d17c4a807e5df3b9432dc42250d1c66aef8061a09469a3a467672e2e",
+        "native_speed": true
+      }
+    },
+    "assertions": 18,
+    "clock": {
+      "frames": 2044,
+      "valid": 0,
+      "deferred": 0,
+      "reentries": 0,
+      "unarmed": 2044,
+      "mutation": 0,
+      "checkpoints": 2,
+      "battle_frames": 0,
+      "battle_attempts": 0,
+      "stage": 4
+    },
+    "native_cold_exact": true,
+    "facing": [
+      [
+        "boot",
+        "1"
+      ],
+      [
+        "cold",
+        "1"
+      ]
+    ]
+  }
+]

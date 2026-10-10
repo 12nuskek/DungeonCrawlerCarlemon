@@ -1,3 +1,34 @@
+## Ordinary recovery completed to patrol Save/cold review checkpoint
+
+Publication base030e4d19b1bdc928237f3596041379a5f279dacf;
+claim/source279efbfa7a97f7e5380b74dfadedfb3fb0f2408e;
+freeze/executionbfd69de5269740ca6a1680ba7b3b11bef37c8e87;
+tested gameplay integrated mainc6d647a815ffce44a2419a2cf83b6c2c094359f0.
+Reused actual verified ROM/ELF/tool/observer identities,zero rebuild/compile/
+acquisition. Same actual trial Save verified,reused; no New Game/trial replay.
+Only item/uses observations moved after existing return-field/ready; exact zero
+frame/input proof and4 focused cases pass. Two diagnosed offline proof failures
+remain retained; no observer/native assertion was weakened.
+
+Process3 corrected setup attempt2 passed45 assertions/6579frames/full manual
+Save persistence. Process4 reviewed Guard-first patrol passed164/31083,2 wins,
+6 travel checks,full native walking/friendship/rewards/recovery/manual Save.
+Process5 independent cold passed18/2044,full native state exact/Save unchanged.
+Final Save53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6:
+map35,3 at8,7,facing1,levels11/10,XP748/1058,HP38/30,status clear,
+uses8/40/2/40,Potion1,Scrap2,trial/patrol set,preparation/boss/checkpoint/loop/
+Warden unset. [Exact results, captures and retention](evidence/floor1/ordinary-recovery-20261009/runtime-r6/README.md).
+Actual native PNG/motion streams recorded; lossless RGB decode exact,public
+compressed viewing copies preserve counts/timing. Private raw files excluded.
+
+Cumulative ordinary5 processes/2setup attempts/1trial/1Guard/1Howler/1 full final
+cold,zero Warden; r5 STOP40 unchanged. Historicalsix/four/STOP117 unchanged.
+Stopped before Warden for draft PR114 review. Next separate baseline/candidate
+contract needs review and is unexecuted. Active poses remain offline-only; no
+legacy/oracle recovery,merge or full-floor claim. Local verified private archive
+is not an independent backup; Library5+1 failures unchanged,no retry. Prior
+records follow unchanged.
+
 ## Actual ordinary recovery — fresh Save verified, setup STOP40
 
 Publication base6e4b8d4573c717b12c4da91b17027dec0ec67955;

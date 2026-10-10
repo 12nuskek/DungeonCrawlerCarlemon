@@ -1,0 +1,179 @@
+{
+  "method": "Safe derived report from actual native live/disk/cold snapshots; full raw identities/context remain private",
+  "setup": {
+    "members": [
+      {
+        "member": "Carl",
+        "level": 9,
+        "XP": 495,
+        "HP": 33,
+        "maxHP": 33,
+        "uses": [
+          8,
+          40,
+          0,
+          0
+        ],
+        "status": 0,
+        "friendship": 75,
+        "checksum_valid": true,
+        "reencoding_exact": true,
+        "egg": false,
+        "bad_egg": false
+      },
+      {
+        "member": "Donut",
+        "level": 9,
+        "XP": 805,
+        "HP": 28,
+        "maxHP": 28,
+        "uses": [
+          2,
+          40,
+          0,
+          0
+        ],
+        "status": 0,
+        "friendship": 75,
+        "checksum_valid": true,
+        "reencoding_exact": true,
+        "egg": false,
+        "bad_egg": false
+      }
+    ],
+    "party_count": 2,
+    "saved_count": 2,
+    "counter": 72,
+    "map": [
+      35,
+      0
+    ],
+    "position": [
+      37,
+      31
+    ],
+    "items": {
+      "13": 1,
+      "378": 2
+    },
+    "money": 3320,
+    "flags": {
+      "46": false,
+      "47": false,
+      "48": false,
+      "49": false,
+      "2135": true,
+      "2136": false,
+      "2137": false,
+      "2138": false,
+      "2139": false
+    },
+    "private_payload_hashes": {
+      "party": "daf4126a1b465a3f21588520f69e1cf881484a9a03db8418fa1a42ca660ad00c",
+      "flags": "9908e94dfd21e2689f27561698fc1900a72f49b018e060b00ae2d09600f1b8ae",
+      "logical": "20768b31205e8ba9d3d83f0928a7d9f0eceab484bfb5e9f0a091cde8c17434bd"
+    }
+  },
+  "final": {
+    "members": [
+      {
+        "member": "Carl",
+        "level": 11,
+        "XP": 748,
+        "HP": 38,
+        "maxHP": 38,
+        "uses": [
+          8,
+          40,
+          0,
+          0
+        ],
+        "status": 0,
+        "friendship": 89,
+        "checksum_valid": true,
+        "reencoding_exact": true,
+        "egg": false,
+        "bad_egg": false
+      },
+      {
+        "member": "Donut",
+        "level": 10,
+        "XP": 1058,
+        "HP": 30,
+        "maxHP": 30,
+        "uses": [
+          2,
+          40,
+          0,
+          0
+        ],
+        "status": 0,
+        "friendship": 81,
+        "checksum_valid": true,
+        "reencoding_exact": true,
+        "egg": false,
+        "bad_egg": false
+      }
+    ],
+    "party_count": 2,
+    "saved_count": 2,
+    "counter": 47,
+    "map": [
+      35,
+      3
+    ],
+    "position": [
+      8,
+      7
+    ],
+    "items": {
+      "13": 1,
+      "378": 2
+    },
+    "money": 4000,
+    "flags": {
+      "46": false,
+      "47": false,
+      "48": false,
+      "49": false,
+      "2135": true,
+      "2136": true,
+      "2137": true,
+      "2138": false,
+      "2139": false
+    },
+    "private_payload_hashes": {
+      "party": "7cb2ae2203e48267a710c8d1b180f6289671ff9a995a79b1aa2e39327ffda000",
+      "flags": "a3fef50103105541edadab9c077c2f5bbf62152c7e5956883b5e1f0d0700d0d7",
+      "logical": "ed9c66d66f8b7af0565f36b8d95a70cbecacad4be79a23c407e1c83738856f21"
+    }
+  },
+  "cold_identical": true,
+  "final_Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "setup_Save_SHA256": "67ae1cdc9f81586c947b25f8783cf7c63e2929cf64d55f277dd756082ad8e7cd",
+  "latest14_native_sector_checksums_valid": true,
+  "full600party_counts_300flags_1272canonical_resources_counter_map_position_live_disk_cold_exact": true,
+  "legal_field_gate_and_collision_checks": true,
+  "actual_saved_facing": 1,
+  "actual_cold_facing": 1,
+  "cold_Save_unchanged": true,
+  "stopped_before_Warden": true,
+  "new_ordinary_process_ordinals": [
+    3,
+    4,
+    5
+  ],
+  "cumulative_ordinary_processes": 5,
+  "cumulative_setup_attempts": 2,
+  "cumulative_ordinary_encounters": {
+    "trial": 1,
+    "guard": 1,
+    "howler": 1,
+    "warden": 0
+  },
+  "historical_baseline_candidate_counts": [
+    6,
+    4
+  ],
+  "historical_latest_STOP": 117
+}

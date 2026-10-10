@@ -1,3 +1,24 @@
+## Current dependency — review verified patrol Save/cold, then separate runtime contract
+
+The new ordinary reconstruction reached its patrol-complete/manual Save and
+independent full cold checkpoint before Warden. Save
+53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6 meets
+required map/position/facing/party/XP/HP/uses/resources/flags,full native integrity/
+persistence/cold and6 reviewed travel checks. [Exact evidence and limits](evidence/floor1/ordinary-recovery-20261009/runtime-r6/README.md).
+Parent-reviewed zero-frame setup observation order retained all gates/assertions;
+actual original successful trial Save was reused,not replayed. r5 STOP40 and
+r6 two diagnosed offline preparation failures remain immutable. New ordinary
+processes3/4/5 passed45/164/18 assertions; cumulative5 processes,2setup attempts,
+1trial/1Guard/1Howler/1full cold,zero Warden. Historicalsix/four/STOP117 unchanged.
+
+Stop for review on draft PR114. A separately named new baseline/candidate
+contract can depend on this actual reconstructed Save; do not execute it under
+recovery or substitute for missing historical oracle/legacy inputs. Active
+poses remain offline-only,PR114 unmerged,no full-floor claim. Accepted bounded
+nine-district plan,branch-order/skip/recovery obligations and deferred work remain
+authoritative. Raw evidence/private Save stays local,no independent backup;
+Library5+1 failures unchanged,no retry. Prior bodies follow unchanged.
+
 ## Current dependency — setup observation ordering review
 
 r5 source/observer/native ABI/route freeze passed after approved narrow attribute

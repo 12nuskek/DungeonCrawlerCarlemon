@@ -1,0 +1,13 @@
+{
+  "path": "/workspace/scratch/ordinary-recovery-r6-20261010/ordinary-recovery-r6-private-evidence.tar.gz",
+  "size": 158126496,
+  "SHA256": "972601330dd631cb417ceace935e22b211069d12c3c3d11a4afb06a5b3492658",
+  "entries": 194,
+  "all_file_bytes_verified": true,
+  "contains_ROM_or_ELF": false,
+  "includes_private_normal_Saves_full_snapshots_context_raw_RGB_and_lossless_motion": true,
+  "independent_backup_verified": false,
+  "Library_transfer_attempts": 0,
+  "requires_separate_main_build_and_tooling_r3": true,
+  "prior_r5_archive_and_failed_claims_preserved": true
+}

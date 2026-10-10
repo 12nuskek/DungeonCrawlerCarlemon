@@ -1,3 +1,17 @@
+## Current expanded LOCAL preservation — authorized; runtime CLOSED
+
+Kurt approved remaining/future local gameplay recording preservation at2026-10-10
+21:42:24UTC. This focused increment inventories and freezes43 original RGB files,
+then uses unchanged gzip settings and TWO full independent byte/frame/EOF passes
+before replacing only approved redundant raw copies. All non-target evidence
+remains protected. No emulator/gameplay/runtime freeze/claim/game change/merge/
+private upload. Read [the preservation contract](floor1/rgb-expanded-preservation-r1-contract.md).
+The reviewed Howler correction at6b3dfed4ed32cfed50f624e56e6c5c4a8a2d0e95 stands;
+full runtime capacity and preservation need fresh verification and review.
+Older bodies below preserve their original scopes.
+
+---
+
 ## Current C01 Howler continuation — offline only; runtime CLOSED
 
 Merged-main base65bc4073d140b9d58bf1b83bd33235e28c972b23.

@@ -1,0 +1,22 @@
+{
+  "PASS": true,
+  "scope": "Offline actual frozen ELF binding cardinality/negative proof; no emulator",
+  "reviewed_patch_only": true,
+  "declared": 16,
+  "checked": 16,
+  "data_addresses": 9,
+  "callbacks": 7,
+  "max_ui_ready_slot": 15,
+  "actual_cases": {
+    "baseline": {
+      "nonzero_bindings": 16,
+      "mandatory_scoped_callbacks": 7
+    },
+    "candidate": {
+      "nonzero_bindings": 16,
+      "mandatory_scoped_callbacks": 7
+    }
+  },
+  "missing_zero_and_extra_rejected": 66,
+  "old_generated_adapter_unchanged": true
+}

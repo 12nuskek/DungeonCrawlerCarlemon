@@ -1,0 +1,141 @@
+{
+  "PASS": false,
+  "terminal_STOP": 104,
+  "absolute_native_frame": 28707,
+  "Guard_turn": 2,
+  "encounters_started": 2,
+  "Guard_outcome": 0,
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "tested_source_commit": "4418015741dde07d987cd3216bca961ad4033378",
+  "base": "b51e27d96f7ea43667ed20c4ce7bc7ca113d1eae",
+  "opening_processes": 1,
+  "opening_claims": 1,
+  "cumulative_C01_opening_processes": 3,
+  "cumulative_C01_opening_claims": 3,
+  "cold_processes": 0,
+  "cold_claims": 0,
+  "completed_phases": [
+    "boot",
+    "note",
+    "supply",
+    "guide-initial",
+    "trial",
+    "scrap",
+    "guide-posttrial"
+  ],
+  "native_medicine": {
+    "owner_battler": 2,
+    "recipient": "Carl",
+    "actual_UI_slot": 0,
+    "confirmed_frame": 25251,
+    "audited_heal_frame": 25264,
+    "HP_before": 22,
+    "HP_after": 33,
+    "restored": 11,
+    "wasted": 9,
+    "Potion_before": 2,
+    "Potion_after": 1,
+    "Carl_chosen_move": 355,
+    "Donut_PP_cost": 0,
+    "complete_heal_boundary_state_PASS": true,
+    "confirmed_return_to_battle": false,
+    "medicine_bound": 3600
+  },
+  "at_STOP_party": [
+    {
+      "level": 9,
+      "experience": 495,
+      "PP": [
+        6,
+        40,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 75,
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        33,
+        33,
+        23,
+        15,
+        13,
+        11,
+        13
+      ]
+    },
+    {
+      "level": 9,
+      "experience": 805,
+      "PP": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "status": 0,
+      "friendship": 75,
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        23,
+        28,
+        14,
+        13,
+        23,
+        14,
+        14
+      ]
+    }
+  ],
+  "money": 3320,
+  "Potion": 1,
+  "Scrap": 2,
+  "friendship_counter": 72,
+  "map": [
+    35,
+    0
+  ],
+  "position": [
+    37,
+    31
+  ],
+  "facing": 1,
+  "flags": {
+    "trial_win": 1,
+    "Guard_win": 0,
+    "Howler_win": 0,
+    "boss": 0,
+    "checkpoint": 0,
+    "preparation": 0,
+    "loop": 0
+  },
+  "saved_count": 0,
+  "saved_party_zero": true,
+  "blank_Save_unchanged": true,
+  "manual_Save_reached": false,
+  "independent_cold_admitted": false,
+  "all_six_checksums_reencoding_valid": true,
+  "unused400_exact": true,
+  "read_only_CPU_context_bytes": 96,
+  "CPU_r0_r15_valid_mask": 65535,
+  "CPSR_read_valid": true,
+  "SPSR_read_valid": false,
+  "diagnosis": "Native HP-restoration string PAUSE_UNTIL_PRESS requires acknowledgement; stage5 sent zero keys, and offline mocks skipped native printer acknowledgement. Frozen helper unchanged; no retry.",
+  "raw_RGB_frames": 28707,
+  "raw_RGB_bytes": 3307046400,
+  "first_failure_stop": true,
+  "runtime_observer_exited": true,
+  "rebuilds": 0,
+  "second_lossless_container": false,
+  "independent_backup_verified": false,
+  "private_upload_approved": false,
+  "private_upload_attempted": false,
+  "Library_retries": 0,
+  "all_prior_histories_preserved": true,
+  "party_count": 2,
+  "Guard_enemy_HP": [
+    13,
+    18
+  ],
+  "complete_field_trace_entries": 10993,
+  "complete_battle_trace_entries": 15858,
+  "full3324_healed_terminal_snapshots_byte_equal": true
+}

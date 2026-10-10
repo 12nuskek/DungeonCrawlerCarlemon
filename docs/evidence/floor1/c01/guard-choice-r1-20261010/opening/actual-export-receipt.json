@@ -1,0 +1,95 @@
+{
+  "actual_native_frames": 28707,
+  "raw_RGB_bytes": 3307046400,
+  "review_MP4": {
+    "SHA256": "b87832caf1e545230312227e80aead77aac89311126d77212caaa5e91e4fb58d",
+    "bytes": 3189536,
+    "all_frames": true,
+    "lossy": true,
+    "probe": {
+      "width": 240,
+      "height": 160,
+      "r_frame_rate": "262144/4389",
+      "duration": "480.632870",
+      "nb_read_frames": "28707"
+    }
+  },
+  "screenshots": {
+    "battle-result.png": {
+      "absolute_native_frame": 18195,
+      "SHA256": "98f4905ac672b248cc49fe4d66c9603dc5278c9d50b5f6c1314af2566833fbd0",
+      "indexed_RGB_exact": true
+    },
+    "battle-start.png": {
+      "absolute_native_frame": 10487,
+      "SHA256": "a7c910413d279da72ca6b9596fd006ba4025c052b1b4a5e0b2bef59638c71ddd",
+      "indexed_RGB_exact": true
+    },
+    "cold.png": {
+      "absolute_native_frame": 2044,
+      "SHA256": "b4291884b4dca69b65230bb4ad43f6f58e5818136c121a8af9e8dd417566458d",
+      "indexed_RGB_exact": true
+    },
+    "first-failure.png": {
+      "absolute_native_frame": 28707,
+      "SHA256": "02663b4ac24a2a07c68311e5aac2e9b766e8ec9816edb149ce69a4b256a065b4",
+      "indexed_RGB_exact": true
+    },
+    "guard-start.png": {
+      "absolute_native_frame": 22359,
+      "SHA256": "50e9a73cefbc96f2c0e91ba6123fdd636350adc581925a663b9a3f210db0ed3a",
+      "indexed_RGB_exact": true
+    },
+    "guide-posttrial.png": {
+      "absolute_native_frame": 19855,
+      "SHA256": "193a0583d6bc84e2cce81635d939137acdf2b52a7111a09ba6266bf5084415b5",
+      "indexed_RGB_exact": true
+    },
+    "guide-rest.png": {
+      "absolute_native_frame": 7064,
+      "SHA256": "5d41fbdddcddc4546bd14b14d5c2aaeec55dec1e698cbc3077cc3e10b9cdc442",
+      "indexed_RGB_exact": true
+    },
+    "medicine-01-bag.png": {
+      "absolute_native_frame": 25167,
+      "SHA256": "576144ae13d760c1e7402b9b131a2deb9b9b2954ae274435ac87ad846bf8ce22",
+      "indexed_RGB_exact": true
+    },
+    "medicine-01-healed.png": {
+      "absolute_native_frame": 25264,
+      "SHA256": "97eed21f6cc60ff44e1940c419e18b1b8cb4fd4ede05e01e5a8080f3f1848fc6",
+      "indexed_RGB_exact": true
+    },
+    "medicine-01-recipient.png": {
+      "absolute_native_frame": 25251,
+      "SHA256": "590ea2d04b28f9a50334eecbb45e67da7f1cdb414fb90fb67b3e5fa8d812c6a3",
+      "indexed_RGB_exact": true
+    },
+    "note.png": {
+      "absolute_native_frame": 3496,
+      "SHA256": "3a89c05fa80926ea1d545fceb125490b39726f4ba2dcf21aa6758faf1255eed8",
+      "indexed_RGB_exact": true
+    },
+    "scrap-box.png": {
+      "absolute_native_frame": 19091,
+      "SHA256": "324de4fe2db108107f42bdcade80edbb810d6a8622ec19b2c5819780001ce48c",
+      "indexed_RGB_exact": true
+    },
+    "supply-repeat.png": {
+      "absolute_native_frame": 5488,
+      "SHA256": "255d3969110f2b5d75c5b2bd10e5192117c447d8262e8f8984e884da4ca0c6b8",
+      "indexed_RGB_exact": true
+    },
+    "supply.png": {
+      "absolute_native_frame": 5004,
+      "SHA256": "926a70d5d772821158e98e8b4bdd5adccde45c699131125456df85eba9618386",
+      "indexed_RGB_exact": true
+    }
+  },
+  "second_lossless_container": false,
+  "tested_source_commit": "4418015741dde07d987cd3216bca961ad4033378",
+  "compiled_game": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "independent_backup_verified": false
+}

@@ -1,0 +1,9 @@
+{
+  "PASS": true,
+  "indexed_retained_entries": 222,
+  "indexed_retained_bytes": 3381107256,
+  "every_indexed_entry_readback_SHA256_verified": true,
+  "independent_backup_verified": false,
+  "private_upload_approved": false,
+  "private_upload_attempted": false
+}

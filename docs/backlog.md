@@ -1,3 +1,33 @@
+## Current C01 Guard choice r1 — terminal STOP104; cold blocked
+
+Source/offline-tested/pushed-before-runtime4418015741dde07d987cd3216bca961ad4033378,
+startce7d2c43,main/baseb51e27d9,game4a92a9de/engine0fedd142 unchanged,zero rebuilds.
+Exact final offline/ABI32/ELF82/executable/build/tools/storage admitted and frozen;
+one opening claim/process,cumulative C01 opening3/3,cold0/0. Native28707,Guard
+turn2,STOP104 medicine3600-frame bound. Donut-owned earned Potion onCarl22→33,
+11 restored/9 wasted,2→1; full heal-boundary state/CarlSTRIKE355/noDonutPPcost
+pass. Native restoration text ends PAUSE_UNTIL_PRESS; frozen stage5 sentzero
+keys and offline closure mocks skipped acknowledgement. This is an admission/
+controller gap,not balance defeat/incapacitation. Helper/source unchanged,no retry.
+Guard outcome0 unresolved;seven phases through posttrial guide passed,Guide-after-
+Guard/manualSave/actual14-sector disk/cold not reached; actualflash allFF.
+Terminal9/9 XP495/805 HP33/23 clear,uses6/40/0/40,friendship75/75,counter72,
+money3320,Potion1,Scrap2,map35,0(37,31) facing1. All6 checksum/reencoding/unused400
+valid;full3324 healed/terminal snapshots byte-equal. Read-only CPU96B retained.
+28707 raw frames3307046400B/14 exact native PNGs/complete3189536B lossy MP4,
+no FFV1/second lossless container. Entire local retention readback verified;
+independent backup unapproved/unverified,no upload. Actual evidence at
+ docs/evidence/floor1/c01/guard-choice-r1-20261010/README.md. Observer exited.
+Next dependency:review STOP104 and separately admitted native text acknowledgement
+with printer-task closure mocks before another process;no balance/full-opening
+continuation. DraftPR117 review only,no merge/issue116/Library retry/second writer/
+schedule. Allold STOPs/claims/raw/incomplete FFV1/completeMP4 and69 otherheads
+preserved;V016/4 STOP117 visual8536 beforeB8402,accepted1/1,ordinary5,C01a5/3/1
+processes/6/3/1 claims,Library5+1 unknowncause/zero originalbytes unchanged.
+OriginalCarl-heals proposal superseded body intact;old4HP demonstration preserved.
+Originaloracle/legacy/human/C01/G02/full-floor gates open;accepted plan unchanged.
+Earlier bodies remain historical authorities for their scope.
+
 ## Current C01 Guard choice r1 — final source admission PASS; runtime next
 
 Continue from ce7d2c43604488cab3446182a355c5425872cbeb with one revised

@@ -15,7 +15,7 @@ fresh success and setup STOP40 atframe3040, claims, logs, buffers and local
 archive remain immutable. These are two prior ordinary emulator processes.
 
 Use separately named test-f1-ordinary-setup-corrected.py and exclusive empty
-output /workspace/scratch/ordinary-recovery-r6-20261010/runtime. Copy only the
+output /workspace/scratch/ordinary-recovery-r6-20261010/runtime-prepare-03. Copy only the
 actual successful normal trial Save. Reuse r5 generated C/binary/symbols/source
 manifest and full native identities, verified byte-for-byte. Preparation records
 compiled sourcefca57ec86ed41122c81dace994201b6dc9fe26bd separately from the new

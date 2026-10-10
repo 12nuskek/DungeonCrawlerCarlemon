@@ -5,7 +5,7 @@ import unittest
 
 spec=importlib.util.spec_from_file_location('corrected',Path(__file__).parent/'test-f1-ordinary-setup-corrected.py')
 runner=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner)
-CODE='if (!strncmp(line,"item ",5)) { check(); } if (!strncmp(line,"uses ",5)) { check(); }'
+CODE='if (!strncmp(line,"item ",5)) { int is_item=!strncmp(line,"item ",5); check(); }\nif (!strncmp(line,"uses ",5)) { check(); }'
 ROUTE='step 40 0 -\nitem 13 1\nuses 3 40 0 37\nreturn-field\nready\nstep 68 64 -\nitem 13 1\nquit\n'
 
 

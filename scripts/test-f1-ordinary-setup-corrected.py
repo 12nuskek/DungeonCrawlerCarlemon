@@ -38,13 +38,14 @@ def corrected_route(text,code):
     assert [x for x in before if x not in observed]==[x for x in after if x not in observed]
     assert all(before.count(x)==after.count(x)>=1 for x in observed)
     # Inspect each actual compiled host command block; neither advances a frame/input.
-    for anchor in ['!strncmp(line,"item ",5)','!strncmp(line,"uses ",5)']:
-        assert code.count(anchor)==1,anchor
-        start=code.index('{',code.index(anchor));depth=1;end=start+1
+    for command in ['item','uses']:
+        handlers=list(re.finditer(r'(?m)^\s*if\s*\(!strncmp\(line,"'+command+r' ",5\)[^\n]*\{',code))
+        assert len(handlers)==1,('actual command handler',command)
+        start=handlers[0].end()-1;depth=1;end=start+1
         while depth:
             depth+=(code[end]=='{')-(code[end]=='}');end+=1
         block=code[start:end]
-        assert 'runFrame' not in block and 'setKeys' not in block,anchor
+        assert 'runFrame' not in block and 'setKeys' not in block,command
     return '\n'.join(after)+'\n',dict(relocated_lines_1_based=[index+1,index+2],
         identical_all_other_commands=True,identical_frame_and_input_commands=True,
         both_exact_assertions_retained=True,compiled_handlers_advance_no_frames_or_inputs=True)
@@ -69,7 +70,7 @@ def prepare(build,prior,out):
     out.mkdir(parents=True)
     with (out/'prepare-claim.json').open('x') as f:
         json.dump(dict(source=git('rev-parse','HEAD'),base=BASE,output=str(out),prior=str(prior),
-                       preparation_attempt=2,prior_ordinary_processes=2,next_ordinary_process=3,
+                       preparation_attempt=3,prior_ordinary_processes=2,next_ordinary_process=3,
                        next_setup_attempt=2,execution_limit=1),f,indent=2)
     assert sha(prior/'fresh.sav')==TRIAL and sha(prior/'identity.json')==PRIOR_ID
     history=json.loads((prior/'summary.json').read_text());failure=json.loads((prior/'STOP.json').read_text())

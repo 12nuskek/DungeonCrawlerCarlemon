@@ -1,0 +1,94 @@
+{
+  "PASS": true,
+  "artifacts": {
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observer": "6a7f40fb2fa055eb8be957e7a2a59a0aecadda9ce09f88b43239fff56b98bedf",
+    "observer.c": "fc1921fbc412271d83c9b5c79ca24f39516c2a3f6a3e683d780b0cfb6b25a7b9"
+  },
+  "available_bytes": 6258868224,
+  "canonical_rekey_positives": 4,
+  "clean_status": "",
+  "cold1_runtime_retroactive_PASS": false,
+  "compiled_function_hashes": {
+    "CB2_ContinueSavedGame": {
+      "SHA256": "8922c3014948979fba5a923765f9142d438cfc06830b2a343980f1fce0e4f842",
+      "size": 432
+    },
+    "FlagGet": {
+      "SHA256": "451fb845bd1a3dec755004c8e2c79c3c182f7c64e9d4a2f70f1ebd218a979747",
+      "size": 44
+    },
+    "FlagSet": {
+      "SHA256": "339258a96a17ea6e1b9bb0785e6b30d6df4be08ba0be5de4c8c88cc97ff2378b",
+      "size": 40
+    },
+    "InitMapFromSavedGame": {
+      "SHA256": "a37e398f0b3cbe0f37d6b162c049b4b10ccafdb823017b0f7cd8ca4b5e289172",
+      "size": 56
+    },
+    "UpdateTVScreensOnMap": {
+      "SHA256": "32e7ee6ca02b1e56f0a726fb50c32623ee429c1edf16ffe0134c15b385d50273",
+      "size": 136
+    }
+  },
+  "full_unchanged_reservation_bytes": 1162587968,
+  "gameplay_processes": 0,
+  "generated_C_diff": "only pre-init cold-only mode guard and cold-validator command",
+  "negative_checks": {
+    "CLI_mode_rejection": 3,
+    "all_decoded_byte_fields": 2984,
+    "all_flag_bits": 2400,
+    "all_frozen_file_hashes": 12,
+    "all_scalar_fields": 9,
+    "compiled_pre_init_mode_rejection": 4,
+    "consumed_claim_STOP_head": 5,
+    "decoded_inventory": 19,
+    "endpoint_vectors": 4,
+    "executable_identity": 5,
+    "executable_mode": 1,
+    "execution_mode": 5,
+    "frozen_identity_bounds": 12,
+    "frozen_inventory": 19,
+    "immutable_saved_snapshot_bytes": 3324,
+    "initial_TV_precondition": 2,
+    "malformed_snapshot_size": 3,
+    "operand_mutated_during_validation": 3,
+    "optimized_check_rejection": 2,
+    "output_identity": 1,
+    "physical_party_checksum_bytes": 600,
+    "scope_inventory_and_identity": 55,
+    "storage_boundary": 1,
+    "wrong_Save_each_sector": 14,
+    "wrong_Save_shape_identity": 3
+  },
+  "negative_checks_total": 9490,
+  "original14_sector_disk_PASS": {
+    "PASS": true,
+    "all14_sector_checksums": true,
+    "full_live_disk_party_count_counter_flags_vars_resources_legalfield": true
+  },
+  "original_operands_unchanged": true,
+  "preservation": {
+    "bytes": 4247172620,
+    "cold1_STOP96_unchanged": true,
+    "entries": 127,
+    "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15"
+  },
+  "production_compile_PASS": true,
+  "receipt_SHA256": "d2df4a920a01bd45581319079b5dc04c47fcef2e63cf642997c297ce27d18c6b",
+  "retained_transition_offline_PASS": true,
+  "source_identity": {
+    "compiled_chain_and_flag_literals_verified": true,
+    "engine_manifest_entries_rehashed": 11734,
+    "new_game_builds": 0,
+    "retained_manifest_SHA256": "c4ee6f12491985cc4009ed7999356e22f6971231107251c69e6f1e33a748c3b4",
+    "source_SHA256": {
+      "include/constants/flags.h": "76df30b41e0072f9b6cae8b7fd7cc6251c51cf4d2aa03006f3282f185cc18654",
+      "src/fieldmap.c": "4ea8660fe30317c60d399b0ed03ada44f36b55cf05d2ba48b97992bb9d9753c5",
+      "src/overworld.c": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "src/tv.c": "a03c9b32feaa3bdb71da35e9aa69fe0acb9df27923d6cb24ab98bd028eb01efd"
+    }
+  },
+  "tested_commit": "c997a640c7ee5bc7bd1686dc65b61a70d34e29bb",
+  "tools_rehashed": 186
+}

@@ -1,3 +1,26 @@
+## Current C01 opening4 — STOP101 at native27,144; terminal/no retry
+
+Runtime tested/published helperff6f5180fdeca60380b782da61998cb1fe77ff87, wiring tested
+fd24d3e76e370a9ab2c15bab0fbededba0ea2391; reviewed transaction32a25769c5427656a010287bed6cf03c5f62b45c.
+One atomic claim/process consumed; cumulativeopening4/4,cold0/0. Guardturn4: Carl22,
+Donut18, Guard3, Scuttler18, Potion0, CarlSTRIKEPP4. Fixed thresholdCarl27 requires
+Potion with no stock ->101. Both alive, no Guardwin/manualSave/cold; blankflash
+unchanged. STOPterminal, no retry/timing tweak/waiver. Both actual native Potion
+closures pass complete-state/fresh-A/native-return audits: Carl22->33 gain11/waste9,
+Carl27->33 gain6/waste14, stock2->1->0. Boot/note/supply/guide/trial/Scrap/guide pass.
+Exact actual results docs/evidence/floor1/c01/guard-choice-opening4-r3-20261010/README.md.
+All27144 rawframes/14chunks/3126988800B+indices/traces/CPU/snapshot retained;
+17PNGs indexed-pixel exact, all-frame native-fps MP43127031B published. No raw
+private evidence/ROM/Save published, compression/deletion/upload or backup.
+Historical98entry/31gzip preservation hashes/receipts exact, Library5+1 failures
+unknowncause/zerooriginalbytes/no retry, independentbackup unverified. OldSTOP82/90/
+104,V016/4 STOP117visual8536beforeB8402,later1/1,ordinary5,C01aactual5/3/1 claims6/3/1
+preserved. Main/all69otherheads/issue116/engine/plan untouched; draftPR117/unmerged.
+Scoped authority exhausted by terminal opening; cold conditional unadmitted.
+Next read-only review of failed fixed-policy sequence; any later run requires
+separate reviewed contract/explicit continuation. All later gates remain open.
+Earlier bodies below are historical for their scopes.
+
 ## Current C01 Guard-choice opening4 — explicitly authorized after review
 
 Independent review accepts tested32a25769c5427656a010287bed6cf03c5f62b45c / published

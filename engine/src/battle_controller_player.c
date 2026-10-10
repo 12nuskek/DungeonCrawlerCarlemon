@@ -99,7 +99,6 @@ static void HandleInputChooseMove(void);
 static void MoveSelectionCreateCursorAt(u8, u8);
 static void MoveSelectionDestroyCursorAt(u8);
 static void MoveSelectionDisplayPPNumber(void);
-static const u8 *MoveSelectionGetHint(u16 move);
 static void MoveSelectionDisplayPPString(void);
 static void MoveSelectionDisplayMoveType(void);
 static void MoveSelectionDisplayMoveNames(void);
@@ -473,7 +472,6 @@ static void HandleInputChooseMove(void)
 {
     bool32 canSelectTarget = FALSE;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
-    u8 previousCursor = gMoveSelectionCursor[gActiveBattler];
 
     if (JOY_HELD(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
         gPlayerDpadHoldFrames++;
@@ -556,10 +554,6 @@ static void HandleInputChooseMove(void)
             gMoveSelectionCursor[gActiveBattler] ^= 1;
             PlaySE(SE_SELECT);
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
-            // Refresh only when crossing authored/native label contexts.
-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
-                MoveSelectionDisplayPPString();
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
         }
@@ -573,10 +567,6 @@ static void HandleInputChooseMove(void)
             gMoveSelectionCursor[gActiveBattler] ^= 1;
             PlaySE(SE_SELECT);
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
-            // Refresh only when crossing authored/native label contexts.
-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
-                MoveSelectionDisplayPPString();
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
         }
@@ -589,10 +579,6 @@ static void HandleInputChooseMove(void)
             gMoveSelectionCursor[gActiveBattler] ^= 2;
             PlaySE(SE_SELECT);
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
-            // Refresh only when crossing authored/native label contexts.
-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
-                MoveSelectionDisplayPPString();
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
         }
@@ -606,10 +592,6 @@ static void HandleInputChooseMove(void)
             gMoveSelectionCursor[gActiveBattler] ^= 2;
             PlaySE(SE_SELECT);
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
-            // Refresh only when crossing authored/native label contexts.
-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
-                MoveSelectionDisplayPPString();
             MoveSelectionDisplayPPNumber();
             MoveSelectionDisplayMoveType();
         }
@@ -1488,25 +1470,9 @@ static void MoveSelectionDisplayMoveNames(void)
     }
 }
 
-static const u8 *MoveSelectionGetHint(u16 move)
-{
-    switch (move)
-    {
-    case MOVE_DCC_STRIKE: return gText_DccStrikeHint;
-    case MOVE_DCC_BRACE: return gText_DccBraceHint;
-    case MOVE_DCC_SPARK: return gText_DccSparkHint;
-    case MOVE_DCC_WEAKEN: return gText_DccWeakenHint;
-    default: return NULL;
-    }
-}
-
 static void MoveSelectionDisplayPPString(void)
 {
-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
-    const u8 *label = MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]])
-        ? gText_MoveInterfaceUses : gText_MoveInterfacePP;
-
-    StringCopy(gDisplayedStringBattle, label);
+    StringCopy(gDisplayedStringBattle, gText_MoveInterfacePP);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP);
 }
 
@@ -1531,15 +1497,6 @@ static void MoveSelectionDisplayMoveType(void)
 {
     u8 *txtPtr;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
-
-    const u8 *hint = MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]);
-
-    if (hint != NULL)
-    {
-        StringCopy(gDisplayedStringBattle, hint);
-        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
-        return;
-    }
 
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
     *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;

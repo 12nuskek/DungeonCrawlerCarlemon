@@ -1,0 +1,10 @@
+{
+  "scope": "Separate correction receipt; historical evidence unchanged",
+  "historical_file": "docs/evidence/floor1/c01a/diagnostic-prefix-execmode-r2-20261010/paired-chronology.json",
+  "historical_SHA256": "48a10938bc60977a7cc17f4e5145e7bd64847c5715d724c1d7c6b5e9fb96bb9c",
+  "candidate_ProcessDma3Requests_return_cycle": 569594,
+  "candidate_enclosing_RequestDma3Copy_return_cycle": 620618,
+  "baseline_ProcessDma3Requests_return_cycle": 655913,
+  "distinct_native_functions": true,
+  "no_runtime_replay": true
+}

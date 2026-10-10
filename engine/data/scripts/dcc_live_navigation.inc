@@ -156,6 +156,14 @@ DCC_Live_Journal_QuestReturn:
 	msgbox DCC_Live_Journal_Text_QuestReturn, MSGBOX_DEFAULT
 
 DCC_Live_Journal_Close:
+	msgbox DCC_Live_Journal_Text_CombatPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, DCC_Live_Journal_CombatNotes
+	goto DCC_Live_Journal_Exit
+
+DCC_Live_Journal_CombatNotes:
+	msgbox DCC_Live_Journal_Text_CombatNotes, MSGBOX_DEFAULT
+
+DCC_Live_Journal_Exit:
 	releaseall
 	end
 
@@ -398,3 +406,12 @@ DCC_Live_Boss_Text_Won:
 
 DCC_Live_Boss_Text_Locked:
 	.string "AI: Clear the landing trial and both\npatrols outside before this fight.$"
+
+DCC_Live_Journal_Text_CombatPrompt:
+	.string "Read combat notes?$"
+
+DCC_Live_Journal_Text_CombatNotes:
+	.string "STRIKE: Select a target.\nPP means uses remaining.\p"
+	.string "BRACE raises the user's Defense.\nIt only boosts the user.\p"
+	.string "SPARK hits both foes.\nIt normally has two uses.\p"
+	.string "WEAKEN lowers both foes' Attack.\nThe guide restores CARL and DONUT.$"

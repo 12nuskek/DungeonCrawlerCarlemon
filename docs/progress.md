@@ -1,3 +1,19 @@
+## Current C01a Journal increment — source proof; one full regression authorized
+
+Review from9ff9426b accepts three-file withdrawal and optional field Journal notes.
+All original objective/rules/quest pages remain; native Yes reads concise combat
+notes,No/B closes. Source proof768 paths/native widths PASS; battle files baseline.
+One isolated committed build and separately frozen claim9/candidate3 authorized;
+reuse certified full baseline4 without replay. Actual counts5/2/7,consumed6/2/8
+before execution. Full strict B/F/E+EOF/2700/native controls/resources/full pixels
+without masks. First failure terminal,no retry. Only complete battle PASS admits
+separately counted/frozen bounded field-only Journal probe; no battle/Save there.
+Exact contract docs/evidence/floor1/c01a/journal-notes-20261010/contract.md.
+Old USES/hints unaccepted/withdrawn; all prior STOPs/evidence preserved. Separate
+chronology receipt distinguishes candidate DMA return569594/copy return620618.
+No merge/backup upload/Library retry/private raw publication; stop PR115 review.
+Broader floor/human/legacy/G02 gates unchanged. Earlier bodies historical.
+
 ## Current C01a actual diagnostic pair — baseline prefix matched; candidate STOP124
 
 Narrow mode correction admitted separate claim7/baseline attempt6 (actual run5/

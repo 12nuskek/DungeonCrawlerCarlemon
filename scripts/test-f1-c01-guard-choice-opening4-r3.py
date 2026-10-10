@@ -9,6 +9,7 @@ OUT=Path('/workspace/scratch/c01-guard-choice-opening4-r3-20261010')
 CONTRACT=ROOT/'docs/floor1/c01-guard-choice-opening4-r3-contract.md'
 AGGREGATE=Path('/workspace/scratch/c01-medicine-transaction-offline-r3-20261010/aggregate-reviewed-offsets')
 PROOF=AGGREGATE.parent/'reviewed-offsets-proof'
+WIRING=Path('/workspace/scratch/c01-opening4-wiring-offline-r3-final-20261010/receipt.json')
 REVIEWED_SOURCE='32a25769c5427656a010287bed6cf03c5f62b45c'
 REVIEWED_PUBLICATION='fd73289ae75dcbb61b3fb2fbb576cdc605e53361'
 PINS={
@@ -35,13 +36,22 @@ def canonical(value):return json.dumps(value,sort_keys=True,separators=(',',':')
 def require(value,reason):
     if not value:raise AssertionError(reason)
 def capacity(available,reservation):require(available>=reservation,'full unchanged storage reservation/headroom unavailable')
+def verify_wiring():
+    v=json.loads(WIRING.read_text());required={str(p.relative_to(ROOT)) for p in (Path(__file__),ROOT/'scripts/test-guard-choice-opening4-wiring-offline.py',CONTRACT)}
+    require(v['PASS'] and v['named_scope_NEGATIVES']==70 and v['new_output_freeze_claim_or_emulator']==0,'final scoped wiring checks missing')
+    require(v['reviewed_identities']==PINS and v['generated_C_unchanged'] and v['compiled_observer_reused_exact'],'wiring tested a different observer')
+    require(set(v['source_files'])==required,'wiring test source identity removed or added')
+    for rel,h in v['source_files'].items():
+        require(sha(ROOT/rel)==h,'tested wiring source changed: '+rel)
+        require(hashlib.sha256(subprocess.check_output(['git','show',v['tested_wiring_source_commit']+':'+rel],cwd=ROOT)).hexdigest()==h,'wiring receipt commit/source mismatch')
+    return v
 def verify_files(f,a):
     copied=('observer.c','observer','game.sym','actual-ELF-bindings-private.json','native-ABI.s','native-ABI.o')
-    names=set(copied)|{'opening.route','cold.route','transaction-proof-private.json','transaction-bindings.h','execution-contract.md','source-checkpoint.tar','reviewed-execution-binding.json'}
+    names=set(copied)|{'opening.route','cold.route','transaction-proof-private.json','transaction-bindings.h','execution-contract.md','source-checkpoint.tar','reviewed-execution-binding.json','opening4-wiring-offline-receipt.json'}
     require(set(f['files'])=={str(OUT/name) for name in names},'frozen file identity removed or added')
     for name in copied:require(f['files'][str(OUT/name)]==a['artifacts'][name],'reviewed copied artifact identity waived')
     for mode,h in scope()['route_SHA256'].items():require(f['files'][str(OUT/(mode+'.route'))]==h,'reviewed route identity waived')
-    for name,h in [('transaction-proof-private.json',PINS['compiled_context_proof']),('transaction-bindings.h',PINS['compiled_bindings']),('execution-contract.md',sha(CONTRACT))]:
+    for name,h in [('transaction-proof-private.json',PINS['compiled_context_proof']),('transaction-bindings.h',PINS['compiled_bindings']),('execution-contract.md',sha(CONTRACT)),('opening4-wiring-offline-receipt.json',sha(WIRING))]:
         require(f['files'][str(OUT/name)]==h,'reviewed proof/contract identity waived')
 def scope():
     return {'schema':'c01-guard-choice-opening4/reviewed-hashes/v1',
@@ -71,7 +81,7 @@ def reviewed():
 def prepare():
     require(not OUT.exists(),'one separately named preparation; existing output is terminal')
     require(not git('status','--porcelain'),'publish clean wiring before preparation')
-    a=reviewed();capacity(shutil.disk_usage(OUT.parent).free,runner.reservation());game=runner.verify_game()
+    a=reviewed();wiring=verify_wiring();capacity(shutil.disk_usage(OUT.parent).free,runner.reservation());game=runner.verify_game()
     tools=dict(json.loads(Path('/workspace/scratch/c01a-journal-admission-r3-20261010/freeze.json').read_text())['tool_files'])
     for name in ('ffmpeg','ffprobe','python3'):tools[str(Path(shutil.which(name)).resolve())]=sha(shutil.which(name))
     for p,h in tools.items():require(sha(p)==h,'retained tool changed: '+p)
@@ -88,13 +98,14 @@ def prepare():
         (OUT/(mode+'.route')).write_text(text)
     for name in ('transaction-proof-private.json','transaction-bindings.h'):shutil.copyfile(PROOF/name,OUT/name)
     shutil.copyfile(CONTRACT,OUT/'execution-contract.md')
+    shutil.copyfile(WIRING,OUT/'opening4-wiring-offline-receipt.json')
     with (OUT/'source-checkpoint.tar').open('wb') as f:subprocess.run(['git','archive','HEAD','scripts','AGENTS.md',str(CONTRACT.relative_to(ROOT))],cwd=ROOT,stdout=f,check=True)
     require((OUT/'source-checkpoint.tar').stat().st_size<32*runner.MiB,'source checkpoint exceeds budget')
     capacity(shutil.disk_usage(OUT).free,runner.reservation())
     dependencies=runner.dependencies();dependencies[str(CONTRACT.relative_to(ROOT))]=sha(CONTRACT)
     f={'helper_commit':git('rev-parse','HEAD'),'base':runner.BASE,'compiled_game':runner.GAME,'engine_tree':runner.TREE,
       'ROM_SHA256':runner.ROM_SHA,'ELF_SHA256':runner.ELF_SHA,'output_directory':str(OUT),'reviewed_scope':binding,
-      'reviewed_identities':PINS,'source_verification':game,'native_ABI':a['native_ABI'],'binding_count':a['binding_count'],
+      'reviewed_identities':PINS,'wiring_tested_source':wiring['tested_wiring_source_commit'],'wiring_receipt_SHA256':sha(WIRING),'source_verification':game,'native_ABI':a['native_ABI'],'binding_count':a['binding_count'],
       'files':{str(p):sha(p) for p in OUT.iterdir() if p.is_file()},'dependencies':dependencies,'tool_files':tools,
       'executable':executable,'executable_admission':exec_check,'storage':runner.storage(),'reservation_bytes':runner.reservation(),
       'available_bytes_at_freeze':shutil.disk_usage(OUT).free,'opening_ordinal':4,'opening_claims_allowed':1,'conditional_cold_claims_allowed':1,
@@ -109,7 +120,8 @@ def admission(out,mode):
     f=json.loads((OUT/'freeze.json').read_text());verify_scope(f['reviewed_scope'])
     require(f['output_directory']==str(OUT) and f['helper_commit']==git('rev-parse','HEAD') and not git('status','--porcelain'),'frozen published helper changed')
     require(f['reviewed_identities']==PINS and f['storage']==runner.storage() and f['reservation_bytes']==runner.reservation(),'frozen identities/bounds changed')
-    verify_scope(json.loads((OUT/'reviewed-execution-binding.json').read_text()));a=reviewed();runner.verify_game();verify_files(f,a)
+    verify_scope(json.loads((OUT/'reviewed-execution-binding.json').read_text()));a=reviewed();verify_wiring();runner.verify_game();verify_files(f,a)
+    require(f['wiring_receipt_SHA256']==sha(WIRING),'frozen scoped wiring receipt changed')
     current=runner.dependencies();current[str(CONTRACT.relative_to(ROOT))]=sha(CONTRACT)
     require(f['dependencies']==current,'frozen source dependency identity removed or changed')
     for rel,h in f['dependencies'].items():require(sha(ROOT/rel)==h,'frozen source dependency changed: '+rel)

@@ -25,10 +25,11 @@ def main():
     for key in record:
         bad=copy.deepcopy(record);bad.pop(key);reject('removed '+key,lambda b=bad:w.verify_scope(b))
     reserve=w.runner.reservation();w.capacity(reserve,reserve);reject('short full reservation',lambda:w.capacity(reserve-1,reserve))
+    w.WIRING=d/'file-binding-only-fixture.json';w.WIRING.write_text('{"fixture_only":"never execution admission"}\n')
     copied=('observer.c','observer','game.sym','actual-ELF-bindings-private.json','native-ABI.s','native-ABI.o')
     identities={str(w.OUT/name):a['artifacts'][name] for name in copied}
     for mode,h in record['route_SHA256'].items():identities[str(w.OUT/(mode+'.route'))]=h
-    for name,h in [('transaction-proof-private.json',w.PINS['compiled_context_proof']),('transaction-bindings.h',w.PINS['compiled_bindings']),('execution-contract.md',w.sha(w.CONTRACT)),('source-checkpoint.tar','1'*64),('reviewed-execution-binding.json','2'*64)]:identities[str(w.OUT/name)]=h
+    for name,h in [('transaction-proof-private.json',w.PINS['compiled_context_proof']),('transaction-bindings.h',w.PINS['compiled_bindings']),('execution-contract.md',w.sha(w.CONTRACT)),('source-checkpoint.tar','1'*64),('reviewed-execution-binding.json','2'*64),('opening4-wiring-offline-receipt.json',w.sha(w.WIRING))]:identities[str(w.OUT/name)]=h
     w.verify_files({'files':identities},a)
     for path in identities:
         bad=dict(identities);bad.pop(path);reject('removed frozen '+Path(path).name,lambda b=bad:w.verify_files({'files':b},a))

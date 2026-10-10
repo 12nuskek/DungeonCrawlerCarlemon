@@ -1,3 +1,24 @@
+## Current C01 cold2 — explicitly authorized; preparation only
+
+Independent review accepts publishedfb259f2addc71598e1fafffcf2d95d39b5d848ce as
+Guard-only Save milestone and cold1 STOP96 lifecycle diagnosis. One separately
+named cold2-only process authorized after focused correction/source/compiled/
+offline/hash/capacity gates and published tested helper/contract. No opening
+replay. New contract docs/floor1/c01-cold2-continue-r1-contract.md; output only
+/workspace/scratch/c01-cold2-continue-r1-20261010. Bind actual Saveb88862308be4a5b58c7da79803106a29e9201d093d6e3be5307e226c556f63cf.
+Original disk validated against original saved snapshot/all14 sectors; both TV
+flags initially clear. Expected RAM sets only TV_WATCH2193 byte274 bit2; all
+other decoded fields including section/facing/canonical resources exact. No
+masking/operand mutation/Save write/cold1 retroactive PASS. Cold1 STOP96 immutable.
+Full cold894152512B plus256MiB headroom1162587968B required. Exactly one Continue-
+only cold2/6000frames/600seconds/first-failure terminal; no retry/movement/battle/
+heal/Save/game rebuild/deletion/compression/upload/merge. Currentopening5/5,cold1/1;
+only count new claim/process when actual. DraftPR117 review; main69otherheads/
+issue116/plan/history/private-local retention preserved. Full patrol/C01/full
+opening/oracle/legacy/human/floor gates remain open. Earlier bodies historical.
+
+---
+
 ## Current C01 opening5 checkpoint — Guard Save PASS; cold1 STOP96
 
 One authorized opening5 process completed normal NewGame/trial/Guard/guide/manual

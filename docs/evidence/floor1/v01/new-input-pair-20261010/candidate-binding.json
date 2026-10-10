@@ -1,0 +1,69 @@
+{
+  "scope": "Offline host compile and exact active ELF bindings; no generated-host invocation or emulator execution",
+  "source_checkpoint": "96482baf165a9e104cfbb4893eb4ba3435f75216",
+  "active_game_source": "9c83611e8e9b61d55388c18496c361d3362e462e",
+  "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+  "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+  "host_source_SHA256": "1647352d92b3fa6f0135cf80f4c48df1c2a8a3818b711fd94651390a6334977f",
+  "host_binary_SHA256": "a17ea5134e700efd77552d9a279fd4d6dd94294d443683b8e9fbfe142361ccbd",
+  "library_SHA256": "a1d7713cc89e3a4e4eeaf2bc7a523115356ebe14e057805c06f5e9d4a328be63",
+  "symbols_SHA256": "91034ec5f80eb97d64a7325d0a5bcd4ef1593c3942f9a435059ef9843de5d069",
+  "verified_functions_SHA256": "3de3c2104a008aa43cb7ae7f4f88fc54cc9ef18db55be0a825e08e6eaf1ed588",
+  "native_boundary_SHA256": "48864a7989994be1b26d936d4174fcd7b65ef9d4bfbbcd8924bd44b5ff2a902a",
+  "native_timeline_SHA256": "efd423c01879f38cbf524f3b7e949bda7c526f5e1f78bced9b9ee5ebc00d1e7a",
+  "native_ABI_source_SHA256": "fbaac99351931ddf3e55edaf70a2f8c6c2fa3206550ce0474ba0d3ba872c2329",
+  "native_ABI_object_SHA256": "80f77410cb4290b9ed613b1d7a9ae0862a7394ccd90bdded5cd942b3b98c5885",
+  "observer_binding_count": 85,
+  "inherited_parser_limits": {
+    "Task_DisplayHPRestoredMessage": {
+      "raw_addresses": [
+        135664500,
+        136012780
+      ],
+      "effective_address": 136012780,
+      "effective_identity": "L:party_menu.o:Task_DisplayHPRestoredMessage",
+      "globally_unique": false
+    },
+    "gDccCollectionProbe": {
+      "present": false,
+      "route_uses_policy_command": false
+    },
+    "gDccEquipmentProbe": {
+      "present": false,
+      "route_uses_policy_command": false
+    },
+    "gDccMembershipProbe": {
+      "present": false,
+      "route_uses_policy_command": false
+    },
+    "gDccRewardProbe": {
+      "present": false,
+      "route_uses_policy_command": false
+    }
+  },
+  "canonical_function_count": 15923,
+  "unique_lifecycle_functions": 11,
+  "missing_lifecycle_rejections": 11,
+  "native_timeline_points": 21,
+  "native_layout_assertions": 13,
+  "compiled_ABI_constants": 18,
+  "compiled_bitfields": 6,
+  "generated_host_invocations": 0,
+  "emulator_executions": 0,
+  "Save_accesses": 0,
+  "new_runtime_expected_streams": 0,
+  "baseline_executions": 6,
+  "candidate_executions": 4,
+  "gameplay_prepared": false,
+  "runtime_verified": false,
+  "merged": false,
+  "new_pair_baseline_executions": 0,
+  "new_pair_candidate_executions": 0,
+  "limitations": [
+    "Ordinary Save bytes unavailable after one failed supported download; no retry.",
+    "Complete original raw reference/expected-boundary stream unavailable.",
+    "Original legacy inputs unavailable; no replacement acceptance.",
+    "Offline binding cannot prove game cadence, visual acceptance, cleanup, rewards or Save persistence."
+  ],
+  "PASS": true
+}

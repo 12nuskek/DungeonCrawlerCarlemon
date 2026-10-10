@@ -1,0 +1,6 @@
+{
+  "stage": "safe metadata export helper",
+  "failure": "Missing json import in temporary export helper after runner source update; exports not written, product preparation subsequently passed",
+  "emulator_invocations": 0,
+  "fix": "Correct temporary helper import; no observer/runner change or preparation replay"
+}

@@ -1,0 +1,217 @@
+{
+  "PASS": false,
+  "phase": "Isolated regeneration before make",
+  "tested_commit": "e99f05a03411ed0913230f3f583a759600da1a9f",
+  "archive_bytes_comparison_distinct_from_Git_blob_EOL_export_changes": true,
+  "compilation_started": false,
+  "emulator_started": false,
+  "claim9_consumed": false,
+  "actual_generation_changes": [
+    {
+      "file": "engine/data/layouts/DCC_F1D1Field/map.bin",
+      "archived_before_generation_SHA256": "fb90623b218e9947f351cc87639f6b348345c7c15708158eeb2b35e37329b996",
+      "regenerated_SHA256": "53c2432d017ce9217f33a6bde7e6cb8b50985faaf96dd1a483e22187dfc573a9",
+      "changed_words": 71,
+      "sample": [
+        {
+          "word_index": 1306,
+          "before": "0x32b4",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1307,
+          "before": "0x32b5",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1308,
+          "before": "0x32b4",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1309,
+          "before": "0x32b5",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1310,
+          "before": "0x32b4",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1311,
+          "before": "0x32b5",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1312,
+          "before": "0x32b4",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1313,
+          "before": "0x32b5",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1314,
+          "before": "0x32b4",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1370,
+          "before": "0x32b6",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1371,
+          "before": "0x32b7",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 1372,
+          "before": "0x32b6",
+          "after": "0x323b"
+        }
+      ]
+    },
+    {
+      "file": "engine/data/layouts/DCC_F1D1Quiet/map.bin",
+      "archived_before_generation_SHA256": "084c94389966310a3e4e5f88568d830d56aa78ef2eda7e7a20b45715e5068a74",
+      "regenerated_SHA256": "ffc5becf08756ae8327e69b2d785a2588c1073b302792f7f3aa0d5c2696193c8",
+      "changed_words": 17,
+      "sample": [
+        {
+          "word_index": 20,
+          "before": "0x3ebb",
+          "after": "0x3e61"
+        },
+        {
+          "word_index": 27,
+          "before": "0x3ebb",
+          "after": "0x3e61"
+        },
+        {
+          "word_index": 83,
+          "before": "0x32c0",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 84,
+          "before": "0x32c1",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 85,
+          "before": "0x32c2",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 87,
+          "before": "0x32c9",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 99,
+          "before": "0x32c3",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 101,
+          "before": "0x32c4",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 104,
+          "before": "0x32c9",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 115,
+          "before": "0x32c3",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 116,
+          "before": "0x32c5",
+          "after": "0x3263"
+        },
+        {
+          "word_index": 117,
+          "before": "0x32c4",
+          "after": "0x3263"
+        }
+      ]
+    },
+    {
+      "file": "engine/data/layouts/DCC_F1D1Workshop/map.bin",
+      "archived_before_generation_SHA256": "7f046cd0fa7b0fefd75a79f96bf904a231460d31f3e66733c297834d7702ef44",
+      "regenerated_SHA256": "f317fa78af64bcd5c2342dbde5cae30eec2d915152840f2953b8a217eca4e4cd",
+      "changed_words": 117,
+      "sample": [
+        {
+          "word_index": 20,
+          "before": "0x3ebd",
+          "after": "0x3e33"
+        },
+        {
+          "word_index": 26,
+          "before": "0x3ebd",
+          "after": "0x3e33"
+        },
+        {
+          "word_index": 34,
+          "before": "0x32ca",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 35,
+          "before": "0x32cb",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 36,
+          "before": "0x32ca",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 37,
+          "before": "0x32cb",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 38,
+          "before": "0x32ca",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 39,
+          "before": "0x32cb",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 40,
+          "before": "0x32ca",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 41,
+          "before": "0x32cb",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 42,
+          "before": "0x32ca",
+          "after": "0x323b"
+        },
+        {
+          "word_index": 43,
+          "before": "0x32cb",
+          "after": "0x323b"
+        }
+      ]
+    }
+  ],
+  "first_failure_stop": true,
+  "no_retry": true
+}

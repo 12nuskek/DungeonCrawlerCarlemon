@@ -1,0 +1,36 @@
+{
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "compiled_game_source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "exact_engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+  "freeze_execution": "d87f024fd5ae7640ded47c6e93fe835cbdc354e3",
+  "published_implementation_evidence": "63dea839e48075f0cebe10e52fb09dbfb2e8a0b7",
+  "PR": 115,
+  "URL": "https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/115",
+  "draft": true,
+  "merged": false,
+  "preserved_existing_remote_heads": 68,
+  "main_unchanged": true,
+  "returned_statuses": 0,
+  "returned_PR_workflow_runs_first_page": 0,
+  "returned_check_runs": 0,
+  "returned_reviews": 0,
+  "CI_pass_claimed": false,
+  "next": "Review unapplied slot-count correction; separately named corrected observer/freeze/claim before further emulator.",
+  "historical_counts": {
+    "V01_baseline": 6,
+    "V01_candidate": 4,
+    "V01_last_STOP": 117,
+    "new_completed_V01_pair": [
+      1,
+      1
+    ],
+    "ordinary_reconstruction_processes": 5
+  },
+  "C01a_counts": {
+    "baseline_cold_boot_processes": 1,
+    "candidate": 0,
+    "actual_actions": 0,
+    "STOP": 121,
+    "retries": 0
+  }
+}

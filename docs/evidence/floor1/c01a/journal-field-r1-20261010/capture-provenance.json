@@ -1,0 +1,81 @@
+{
+  "game_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "execution_helper": "2faeaffeac45bf6e9f2253e381f24f97c995c811",
+  "actual_native_captures": true,
+  "PNG_selected_pages_visually_inspected": true,
+  "format_conversion": "Lossless RGB conversion from native PPM, no overlays or edits",
+  "captures": {
+    "yes-objective-03-05.png": {
+      "original_PPM_SHA256": "d9191192d48b501dbf8333f206062baf8b8c7ad0a1b7b04d940e1872cf8bad3e",
+      "PNG_SHA256": "bb1e4988602cfaf6546b7085639a071eada497cf148d9162b668e06cae0c2466",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "yes-notes-00-00.png": {
+      "original_PPM_SHA256": "31f08cf61fd760bf83b0d8647ac14959c91020676b23d9cdbff84dfdaf6f05eb",
+      "PNG_SHA256": "a8ef981ef8bd307eeac3250adf0a796864ca31963b9b57012ec2c6d3ca5c6f1e",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "yes-notes-00-01.png": {
+      "original_PPM_SHA256": "dee566b23968bc91e886369f7728b5b8b78cf0e8e0526cedf468f97e3c666d9d",
+      "PNG_SHA256": "bdaf772037b8262e1523192ed92dd3e671dc50471416f683a8530403464fa4c6",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "yes-notes-00-02.png": {
+      "original_PPM_SHA256": "dba2ec53336793e65d8c1f13d9a93b5e73de60269679f9fc215f1df0d8af28e0",
+      "PNG_SHA256": "3b653744ae40eeaff8b6f4ec2766fe90f8fccdc9eabf4f83adb28c668a69dc35",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "yes-notes-00-03.png": {
+      "original_PPM_SHA256": "bcc883cfa6580874c03072f059cc88a66b2efdfa66ae1657c740cf187f7a2150",
+      "PNG_SHA256": "ed054c8dd9366c58208424d48c09c4dc9bd0a8c66e6654fa6f536557c41df353",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "after-no.png": {
+      "original_PPM_SHA256": "f514d4afca39e4c7a86ec6b800eb9ada2197bc399cbe00bc2561c9243ef70135",
+      "PNG_SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "after-b.png": {
+      "original_PPM_SHA256": "f514d4afca39e4c7a86ec6b800eb9ada2197bc399cbe00bc2561c9243ef70135",
+      "PNG_SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    },
+    "after-repeat.png": {
+      "original_PPM_SHA256": "f514d4afca39e4c7a86ec6b800eb9ada2197bc399cbe00bc2561c9243ef70135",
+      "PNG_SHA256": "b3da3a734632fb268fbc0719e121dccaeadaa312bd6142c22693731d083f786d",
+      "native_dimensions": [
+        240,
+        160
+      ],
+      "exact_RGB_bytes_preserved": true
+    }
+  }
+}

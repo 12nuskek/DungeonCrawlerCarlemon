@@ -1,0 +1,7 @@
+{
+  "scope": "Offline immutable archive verification",
+  "reason": "Stopped compressed random-access member verification before freeze; switch to single sequential traversal",
+  "emulator_started": false,
+  "claims": 0,
+  "source_or_evidence_changed": false
+}

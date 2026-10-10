@@ -1,0 +1,40 @@
+{
+  "offline-failure-01.json": {
+    "scope": "Offline preparation only; no gameplay",
+    "error": "ValueError: substring not found",
+    "cause": "Proof assumed StringCopy without existing txtPtr assignment",
+    "correction": "Use verbatim native fallback and match function definition rather than prototype"
+  },
+  "offline-failure-02.json": {
+    "scope": "Offline preparation only; no gameplay",
+    "error": "AssertionError",
+    "cause": "Proof assumed line-broken default return; source uses inline default return",
+    "correction": "Match actual pure switch default"
+  },
+  "offline-failure-03.json": {
+    "scope": "Offline ABI preparation only; no gameplay",
+    "error": "agbcc -Werror: struct DisableStruct declared inside parameter list",
+    "cause": "ABI fixture omitted battle.h before battle_controllers.h",
+    "correction": "Include native battle.h; resume only failed ABI/freeze, reuse verified host/bindings/Save fixtures"
+  },
+  "offline-failure-04.json": {
+    "scope": "Offline final tooling pin check; no gameplay",
+    "error": "AssertionError",
+    "cause": "New helper mistyped verified agbcc source pin by omitting c0",
+    "actual": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "correction": "Use exact manifest/user pin; resume only final freeze, preserve compiled ABI/string checks"
+  },
+  "offline-failure-05.json": {
+    "scope": "Optional synthetic readiness fixture compile only; no gameplay",
+    "error": "CalledProcessError: cc -Werror exit 1; stderr was not retained by temporary prototype",
+    "cause_inferred": "Included unrelated static menu_ready/acknowledged_stage helpers were unreferenced under -Wunused-function",
+    "correction": "Retain fixture as script, reference unrelated helpers without invoking them, retain diagnostics on failure; 28 actual guards then passed"
+  },
+  "post-stop-diagnosis-failure-01.json": {
+    "scope": "Read-only post-STOP timeline diagnosis; no emulator",
+    "error": "AssertionError",
+    "cause": "Initial diagnosis tested terminal flag bit1, which means finish; source uses bit2 for STOP",
+    "actual_stop_flags": 2,
+    "correction": "Require source-defined STOP bit2 and reason121; full summary chain parsed successfully"
+  }
+}

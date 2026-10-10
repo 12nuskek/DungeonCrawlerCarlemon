@@ -1,6 +1,6 @@
 """Generate live copy from immutable legacy control flow, with text substitutions."""
 from pathlib import Path
-import re
+import re, importlib.util
 
 ROOTS = ('DCC_Vestibule_Guide', 'DCC_Vestibule_Trial', 'DCC_Service_Mara',
          'DCC_Service_Lev', 'DCC_Service_Tag', 'DCC_Boss_Encounter', 'DCC_Journal')
@@ -86,5 +86,9 @@ def generate(engine):
         output.append(replacement + '\n')
     path = engine / 'data/scripts/dcc_live_navigation.inc'
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(''.join(output).rstrip() + '\n')
+    # The legacy control-flow assertions above remain unchanged. The reviewed
+    # optional Journal extension is checked separately through its projection.
+    spec = importlib.util.spec_from_file_location('journal_notes', Path(__file__).with_name('journal-combat-notes.py'))
+    notes = importlib.util.module_from_spec(spec); spec.loader.exec_module(notes)
+    path.write_text(notes.extend(''.join(output).rstrip() + '\n'))
     return {name: renames[name] for name in ROOTS}

@@ -1,0 +1,65 @@
+{
+  "exact2700_mismatch_offsets": [
+    2533,
+    2534,
+    2535,
+    2536,
+    2560
+  ],
+  "all_other2695_bytes_exact": true,
+  "exact_prior_STOP_bytes_reproduced": true,
+  "all600_party_bytes_equal_to_ordinary_input": true,
+  "all6_party_checksums_valid": true,
+  "party_count": 2,
+  "friendship_counter": 47,
+  "duo": [
+    {
+      "species": 66,
+      "level": 11,
+      "experience": 748,
+      "status": 0,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        38,
+        38,
+        26,
+        18,
+        14,
+        12,
+        14
+      ],
+      "friendship": 89
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1058,
+      "status": 0,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        30,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ],
+      "friendship": 81
+    }
+  ],
+  "raw_resources_flags_RNG_equal_to_strict_expected_frame": true,
+  "canonical_post_STOP_resource_context_not_captured": true,
+  "no_Save": true,
+  "no_cold_emulator_relaunch": true
+}

@@ -1,0 +1,17 @@
+{
+  "new_offline_archive_SHA256": "52df61254c63f7a23fd67a983471ebbc2978eeb35e057c9dee98b5e65c80c210",
+  "bytes": 2567260,
+  "byte_verified_entries": 139,
+  "all_entry_bytes_verified": true,
+  "offline_directory_file_bytes": 12204668,
+  "offline_directory_limit_bytes": 67108864,
+  "scope": "New offline artifacts only; later publication metadata separate; original archives/builds/tools/Saves remain separately local",
+  "independently_verified_backup_or_transfer": false,
+  "Library_failures_unchanged": {
+    "uploads": 5,
+    "supported_download": 1,
+    "original_recovered_bytes": 0,
+    "cause": "unknown",
+    "attempts_this_increment": 0
+  }
+}

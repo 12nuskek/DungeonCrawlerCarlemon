@@ -1,0 +1,79 @@
+{
+  "PASS": true,
+  "exit": 0,
+  "actual_emulator_process": 9,
+  "field_attempt": 1,
+  "consumed_claim": 10,
+  "source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "helper_commit": "2faeaffeac45bf6e9f2253e381f24f97c995c811",
+  "ROM_SHA256": "79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246",
+  "ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "Save_unchanged": true,
+  "full_private_state_packet_unchanged": true,
+  "packet_bytes": 3469,
+  "packet_regions": [
+    "party600",
+    "count1",
+    "counter2",
+    "flags300",
+    "vars512",
+    "resources1440",
+    "key4",
+    "savedparty600",
+    "savedcount4",
+    "position/map6"
+  ],
+  "visual_frames": 15949,
+  "native_pages": {
+    "yes-objective": [
+      "yes-objective-00-00.ppm",
+      "yes-objective-00-01.ppm",
+      "yes-objective-01-02.ppm",
+      "yes-objective-01-03.ppm",
+      "yes-objective-02-04.ppm",
+      "yes-objective-03-05.ppm"
+    ],
+    "no-objective": [
+      "no-objective-00-00.ppm",
+      "no-objective-00-01.ppm",
+      "no-objective-01-02.ppm",
+      "no-objective-01-03.ppm",
+      "no-objective-02-04.ppm",
+      "no-objective-03-05.ppm"
+    ],
+    "b-objective": [
+      "b-objective-00-00.ppm",
+      "b-objective-00-01.ppm",
+      "b-objective-01-02.ppm",
+      "b-objective-01-03.ppm",
+      "b-objective-02-04.ppm",
+      "b-objective-03-05.ppm"
+    ],
+    "repeat-objective": [
+      "repeat-objective-00-00.ppm",
+      "repeat-objective-00-01.ppm",
+      "repeat-objective-01-02.ppm",
+      "repeat-objective-01-03.ppm",
+      "repeat-objective-02-04.ppm",
+      "repeat-objective-03-05.ppm"
+    ],
+    "yes-notes": [
+      "yes-notes-00-00.ppm",
+      "yes-notes-00-01.ppm",
+      "yes-notes-00-02.ppm",
+      "yes-notes-00-03.ppm"
+    ],
+    "repeat-notes": [
+      "repeat-notes-00-00.ppm",
+      "repeat-notes-00-01.ppm",
+      "repeat-notes-00-02.ppm",
+      "repeat-notes-00-03.ppm"
+    ]
+  },
+  "native_controls_returned_after_each": true,
+  "Yes_No_B_reopen_reread_passed": true,
+  "no_battle_or_Save_command": true,
+  "first_failure_stop": true,
+  "assertions": 38,
+  "runtime_log_SHA256": "95d6f35995fa1948a930b9d900352fa23a76454885b3452b884d71c2e361d783"
+}

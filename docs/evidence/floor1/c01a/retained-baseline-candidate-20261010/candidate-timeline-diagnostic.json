@@ -1,0 +1,7 @@
+{
+  "scope": "Actual candidate terminal hash-chain validation, no complete stream acceptance",
+  "records": 5217,
+  "terminal_result": 124,
+  "final_chain_SHA256": "467bffa0f62c53b8da89ea2ada29421ec165476aabc982bd6754286c9ecd8e83",
+  "SHA256": "a59dc139c5bf82151b996f2cce7463b65199c94c99e1ac5fc25f4ca136a33fd5"
+}

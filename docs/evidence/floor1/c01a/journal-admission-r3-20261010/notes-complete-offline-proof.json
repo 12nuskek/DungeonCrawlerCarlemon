@@ -1,0 +1,92 @@
+{
+  "PASS": true,
+  "no_gameplay": true,
+  "old_navigation_checker_unchanged": true,
+  "all_legacy_live_bytes_exact_after_new_branch_projection": true,
+  "existing_checker_original_assertions_passed_with_projection": true,
+  "Journal_flag_combinations": 256,
+  "Yes_No_B_source_paths": 768,
+  "all_objective_rules_quest_order_and_closure_preserved": true,
+  "no_state_resource_reward_writes": true,
+  "native_font_lines": [
+    {
+      "text": "Read combat notes?",
+      "native_font_width": 102
+    },
+    {
+      "text": "STRIKE: Select a target.",
+      "native_font_width": 126
+    },
+    {
+      "text": "PP means uses remaining.",
+      "native_font_width": 127
+    },
+    {
+      "text": "BRACE raises the user's Defense.",
+      "native_font_width": 170
+    },
+    {
+      "text": "It only boosts the user.",
+      "native_font_width": 126
+    },
+    {
+      "text": "SPARK hits both foes.",
+      "native_font_width": 112
+    },
+    {
+      "text": "It normally has two uses.",
+      "native_font_width": 130
+    },
+    {
+      "text": "WEAKEN lowers both foes' Attack.",
+      "native_font_width": 171
+    },
+    {
+      "text": "The guide restores CARL and DONUT.",
+      "native_font_width": 182
+    }
+  ],
+  "window_pixels": 216,
+  "generator_reproducible": true,
+  "three_battle_files_exact_baseline": true,
+  "legacy_scripts_unchanged": true,
+  "accepted_art_layout_equivalence": {
+    "PASS": true,
+    "historical_and_current_entries": 1358,
+    "identical_paths_no_deletions": true,
+    "only_three_exact_manifest_differences": [
+      {
+        "path": "engine/data/layouts/DCC_F1D1Field/map.bin",
+        "final_cells": 71,
+        "manifest_final_SHA256": "fb90623b218e9947f351cc87639f6b348345c7c15708158eeb2b35e37329b996",
+        "immutable_base_projection_exact": true
+      },
+      {
+        "path": "engine/data/layouts/DCC_F1D1Quiet/map.bin",
+        "final_cells": 17,
+        "manifest_final_SHA256": "084c94389966310a3e4e5f88568d830d56aa78ef2eda7e7a20b45715e5068a74",
+        "immutable_base_projection_exact": true
+      },
+      {
+        "path": "engine/data/layouts/DCC_F1D1Workshop/map.bin",
+        "final_cells": 117,
+        "manifest_final_SHA256": "7f046cd0fa7b0fefd75a79f96bf904a231460d31f3e66733c297834d7702ef44",
+        "immutable_base_projection_exact": true
+      }
+    ],
+    "placements": 217,
+    "final_cells": 205,
+    "intentional_overlaps": 12,
+    "all_other_layout_and_crawler_source_bytes_identical": true
+  },
+  "accepted_main_legacy_equivalence": {
+    "PASS": true,
+    "exact_main_narrative_labels": [
+      "DCC_Boss_Text_Intro",
+      "DCC_Boss_Text_Prepared"
+    ],
+    "complete_other_legacy_files_and_blocks_exact": true,
+    "whole_file_immutable_base_projection_exact": true,
+    "current_file_SHA256": "82237149b1ea9b560aa87aa792361dde831fe12a77d69816ab02e407607f51e2"
+  }
+}

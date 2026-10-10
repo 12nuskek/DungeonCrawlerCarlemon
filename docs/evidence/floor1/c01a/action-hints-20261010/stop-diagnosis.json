@@ -1,0 +1,30 @@
+{
+  "scope": "Offline diagnosis of frozen adapter after terminal runtime STOP; no further emulator instructions",
+  "STOP": 121,
+  "absolute_frame": 2044,
+  "assertions": 12,
+  "battle_frames": 0,
+  "visual_frames": 0,
+  "root_cause": "C01Ui has a[17] and ui start checks 17 slots; exporter/parser assigns only 16 (0..15); untouched slot16 is zero and deterministically trips mandatory-binding gate.",
+  "assigned_slots": 16,
+  "mandatory_slots": 17,
+  "unassigned_zero_slot": 16,
+  "all_actual_assigned_bindings_nonzero": true,
+  "gameplay_attempts": 0,
+  "candidate_processes": 0,
+  "retries": 0,
+  "Save_unchanged": true,
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "baseline_claim_SHA256": "1126238fe4f4a4f74d4954b608021d5fd5fa04ff1f24740eb149c72c8aecc030",
+  "runtime_log_SHA256": "d0b35e89c43eb8fbed812cab92b3e243101e5ded2064ee8fc683b00a169ce110",
+  "generated_observer_SHA256": "974059b873d72c8f87ae7c3504d82294cf6294675c46337cadb0c736c1a0a636",
+  "native_timeline_summary_records": 2045,
+  "native_timeline_stop_retained": true,
+  "native_BFE_stream_created": false,
+  "supplemental_stream_created": false,
+  "actual_captures": [
+    "boot.ppm"
+  ],
+  "candidate_menu_pixels_or_motion": "Not reached; unavailable; not claimed",
+  "supported_next_action": "Review a separately named source-only adapter fix aligning declared/checked slots with 16 actual bindings and adding cardinality/missing-slot offline guards; then separately freeze a fresh exclusive contract before any further emulator. Preserve this failed source/freeze/claim/STOP unchanged."
+}

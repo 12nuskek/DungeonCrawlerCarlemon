@@ -1,0 +1,51 @@
+{
+  "helper_commit": "656fc902ac6d0a1583e3396372b9da1f126e3844",
+  "starting_checkpoint": "9bcda7fba27a32cfdada3c3bebce44985a5eebd0",
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "prefix_commands": 27,
+  "prefix_route_SHA256": "2f69b67342729fd209bb1ac1bd5950614dea324bea12fc30d7d0464df80b329c",
+  "full_route_SHA256": "f03cae6c47e866b49209f1a78f6fd2ca34e1653084422b5bab7c3c1e7175b3fa",
+  "first_failure_stop": true,
+  "no_automatic_retry": true,
+  "no_Save": true,
+  "claimed_counts_before": {
+    "baseline": 5,
+    "candidate": 1,
+    "total": 6
+  },
+  "actual_counts_before": {
+    "baseline": 4,
+    "candidate": 1,
+    "total": 5
+  },
+  "freeze_SHA256": "844cba8bd9829e0a06a42774f8b3e059708d1d2177cfb6aaea1c77c0dab09e0d",
+  "builds": {
+    "baseline": {
+      "source": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+      "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+      "ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+      "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+      "observer_source_SHA256": "08083b64755df760070a7f8b650001e960c21497d090c8992d88305770e364b9",
+      "observer_binary_SHA256": "fd4062351cb34c25f4af00a4137d9de935a7a534625ed95ac1d66db35a2c6d34",
+      "overall_process": 7,
+      "baseline_attempt": 6,
+      "candidate_attempt": 1,
+      "actual_emulator_process_if_launched": 6
+    },
+    "candidate": {
+      "source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+      "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+      "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+      "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+      "observer_source_SHA256": "08083b64755df760070a7f8b650001e960c21497d090c8992d88305770e364b9",
+      "observer_binary_SHA256": "fd4062351cb34c25f4af00a4137d9de935a7a534625ed95ac1d66db35a2c6d34",
+      "overall_process": 8,
+      "baseline_attempt": 6,
+      "candidate_attempt": 2,
+      "actual_emulator_process_if_launched": 7
+    }
+  },
+  "expected_observer_mode": "0700",
+  "regular_non_symlink_owner_identity_access_bound_privately": true,
+  "private_file_owner_paths_and_recovery_inputs_omitted": true
+}

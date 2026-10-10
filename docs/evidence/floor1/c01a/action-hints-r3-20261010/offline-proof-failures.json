@@ -1,0 +1,16 @@
+[
+  {
+    "attempt": 1,
+    "source_SHA256": "d16385e0e72c363e0a5916f5e40b3476b8ba4f5f9c5cd590332d2689b884b8fd",
+    "log_SHA256": "77760c2dced9a77fb5d2b06c1015636c34f1ae7d4e6af9a22fbefe868dabae7a",
+    "phase": "Offline native proof only; no emulator",
+    "diagnosis": "Missing BATTLE_TYPE_LINK/render-only symbols and unused baseline rendering stubs; supplied source-defined constant/stubs, retained -Werror."
+  },
+  {
+    "attempt": 2,
+    "source_SHA256": "e922a48e6889ce149b8665a7667bf799ca4be4e1e05ba2ee8838801c777f2c74",
+    "log_SHA256": "4264506dbaeca4be051c6119356fca01019698d7a7bd6661438219cd6825c60e",
+    "phase": "Offline native proof only; no emulator",
+    "diagnosis": "Offline finish model wrongly required empty pending choices; native route stops before Donut commits WEAKEN, so Carl BRACE remains pending. Expected pending{0:1}; actual runtime unchanged."
+  }
+]

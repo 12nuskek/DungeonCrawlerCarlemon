@@ -1,0 +1,11 @@
+{
+  "scope": "Read-only actual pre-hint image prefix after terminal STOP; not full candidate pixel/glyph acceptance",
+  "numbered_frames": 3171,
+  "terminal_native_frame": 3171,
+  "actual_samples": 3172,
+  "all_pre_hint_RGB_equal_to_same_baseline_frames": true,
+  "actual_RGB_SHA256": "25f7e02c98e54c3d0a75a2172195728721d60925391313f793673a5411e6db43",
+  "baseline_same_prefix_RGB_SHA256": "25f7e02c98e54c3d0a75a2172195728721d60925391313f793673a5411e6db43",
+  "USES_and_four_hints_not_visibly_reached": true,
+  "full_pixel_wrapper_not_run": true
+}

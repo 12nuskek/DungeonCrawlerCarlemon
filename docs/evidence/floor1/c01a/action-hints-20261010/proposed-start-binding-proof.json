@@ -1,0 +1,8 @@
+{
+  "PASS": true,
+  "scope": "Offline source-only proposal guards; frozen failed adapter remains unapplied and no emulator invoked",
+  "cases": 4,
+  "frozen_defect_detected": true,
+  "proposal_cardinality": 16,
+  "missing_and_zero_required_callbacks_rejected": true
+}

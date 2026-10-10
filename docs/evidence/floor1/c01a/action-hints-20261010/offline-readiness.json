@@ -1,0 +1,6 @@
+{
+  "PASS": true,
+  "scope": "Synthetic/offline receiving callback/fade/exec guard tests; not emulator",
+  "cases": 28,
+  "unknown_kind_rejected": true
+}

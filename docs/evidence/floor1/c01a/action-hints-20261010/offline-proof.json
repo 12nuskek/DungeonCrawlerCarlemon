@@ -1,0 +1,90 @@
+{
+  "PASS": true,
+  "scope": "Offline glyph geometry/source guards; not emulator pixels or runtime acceptance",
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "fit": {
+    "gText_MoveInterfaceUses": {
+      "text": "USES",
+      "advance": 20,
+      "window": [
+        32,
+        16
+      ],
+      "ink_bounds": [
+        0,
+        4,
+        19,
+        13
+      ]
+    },
+    "gText_DccStrikeHint": {
+      "text": "ONE FOE",
+      "advance": 33,
+      "window": [
+        64,
+        16
+      ],
+      "ink_bounds": [
+        0,
+        4,
+        32,
+        13
+      ]
+    },
+    "gText_DccBraceHint": {
+      "text": "SELF DEF+",
+      "advance": 44,
+      "window": [
+        64,
+        16
+      ],
+      "ink_bounds": [
+        0,
+        4,
+        43,
+        13
+      ]
+    },
+    "gText_DccSparkHint": {
+      "text": "BOTH FOES",
+      "advance": 43,
+      "window": [
+        64,
+        16
+      ],
+      "ink_bounds": [
+        0,
+        4,
+        42,
+        13
+      ]
+    },
+    "gText_DccWeakenHint": {
+      "text": "ALL FOES ATK-",
+      "advance": 61,
+      "window": [
+        64,
+        16
+      ],
+      "ink_bounds": [
+        0,
+        4,
+        60,
+        13
+      ]
+    }
+  },
+  "unchanged_native_files": [
+    "src/data/battle_moves.h",
+    "src/data/text/move_descriptions.h",
+    "src/battle_bg.c",
+    "src/text.c",
+    "src/party_menu.c",
+    "src/item_menu.c",
+    "src/pokemon.c",
+    "include/constants/moves.h"
+  ],
+  "unchanged_number_format": true,
+  "unchanged_input_except_context_label_draw": true,
+  "native_fallback_verbatim": true
+}

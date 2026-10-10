@@ -1,0 +1,67 @@
+{
+  "scope": "Actual last retained baseline3 state at after-Bag STOP122; no completed reference/candidate",
+  "party_checksums_all6_valid": true,
+  "last600_party_bytes_exact_to_cold_input": true,
+  "full_frame_party_raw_transient_difference_frames": 1,
+  "all300_flags_exact_in_all4371_frames": true,
+  "party_count": 2,
+  "friendship_counter": 47,
+  "duo": [
+    {
+      "species": 66,
+      "level": 11,
+      "experience": 748,
+      "status": 0,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        38,
+        38,
+        26,
+        18,
+        14,
+        12,
+        14
+      ],
+      "friendship": 89
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1058,
+      "status": 0,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        30,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ],
+      "friendship": 81
+    }
+  ],
+  "preparation_boss_checkpoint_loop": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "Warden_flags": [
+    false,
+    false
+  ],
+  "owned_resources_raw_changes": 1,
+  "owned_note": "Complete cold logical-resource gate passed using actual encryption context. Native key rotation during battle init changes raw ciphertext once. Post-STOP encryption context was not captured; full post-STOP canonical resource equality is not claimed. Actual Bag shows Potion1/Scrap2; normal Save and independent copies unchanged."
+}

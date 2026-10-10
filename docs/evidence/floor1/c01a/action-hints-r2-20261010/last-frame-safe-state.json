@@ -1,0 +1,75 @@
+{
+  "scope": "Actual last retained frame at STOP122; partial trainer intro, no action selection",
+  "party_checksums_all6_valid": true,
+  "party_byte_identical_to_cold_expected": true,
+  "flags_byte_identical_to_cold_expected": true,
+  "owned_resources_byte_identical_to_cold_expected": false,
+  "party_count": 2,
+  "friendship_counter": 47,
+  "duo": [
+    {
+      "species": 66,
+      "level": 11,
+      "experience": 748,
+      "status": 0,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        38,
+        38,
+        26,
+        18,
+        14,
+        12,
+        14
+      ],
+      "friendship": 89
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1058,
+      "status": 0,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        30,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ],
+      "friendship": 81
+    }
+  ],
+  "preparation_boss_checkpoint_loop": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "Warden_flags": [
+    false,
+    false
+  ],
+  "recorded_frames_differing_from_first": {
+    "party": 0,
+    "flags": 0,
+    "owned_resources": 2111
+  },
+  "owned_note": "Cold native logical-resource equality passed with actual context. CB2_InitBattle invokes MoveSaveBlocks_ResetHeap, which chooses a new native encryption key and re-encrypts money/coins/Bag. Retained raw resources change once at visual1294; no post-STOP actual context was captured, so full post-STOP canonical resource equality is not claimed.",
+  "native_key_rotation_source": [
+    "engine/src/battle_main.c:CB2_InitBattle",
+    "engine/src/load_save.c:MoveSaveBlocks_ResetHeap,ApplyNewEncryptionKeyToAllEncryptedData"
+  ]
+}

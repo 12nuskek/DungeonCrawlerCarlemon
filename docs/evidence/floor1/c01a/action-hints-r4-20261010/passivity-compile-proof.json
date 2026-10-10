@@ -1,0 +1,12 @@
+{
+  "PASS": true,
+  "compile_exit": 0,
+  "observer_source_SHA256": "564c8b04c4ab6e8ef1efb9a5d846ff1934525f9b64e647b0c0db69b23ecf8732",
+  "observer_binary_SHA256": "39a6ad526bee8c3550ddfe2566bbdcc9c24b1307aedeeaa8c124593c07e79429",
+  "cpu_original_memcmp_preserved": true,
+  "edge_direct_reads_only": true,
+  "game_key_calls_unchanged": 15,
+  "native_stepping_call_unchanged": 1,
+  "independent_mandatory_CB2_slots": 3,
+  "original_array_slots": 16
+}

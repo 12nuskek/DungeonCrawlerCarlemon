@@ -1,0 +1,32 @@
+{
+  "execution_commit": "ee59501ed95b5d040d80a217aa7b4658273eb727",
+  "claimed_process_number": 6,
+  "baseline_attempt": 5,
+  "claim_consumed": true,
+  "observer_started": false,
+  "gameplay_frames": 0,
+  "strict_runtime_comparisons": 0,
+  "diagnostic_records": 0,
+  "failure": "PermissionError: [Errno13] Permission denied launching observer",
+  "frozen_observer_mode": "0600",
+  "offline_compiled_observer_mode": "0700",
+  "binary_SHA256": "fd4062351cb34c25f4af00a4137d9de935a7a534625ed95ac1d66db35a2c6d34",
+  "root_cause": "freeze helper shutil.copyfile copies bytes without preserving executable mode; executable mode was not checked",
+  "candidate_admitted": false,
+  "candidate_attempt2_started": false,
+  "actual_emulator_process_counts": {
+    "baselines": 4,
+    "candidates": 1,
+    "total": 5
+  },
+  "claimed_attempt_counts": {
+    "baseline": 5,
+    "candidate": 1,
+    "total": 6
+  },
+  "no_retry": true,
+  "permission_change_applied": false,
+  "full_acceptance": false,
+  "paired_chronology_available": false,
+  "private_upload_performed": false
+}

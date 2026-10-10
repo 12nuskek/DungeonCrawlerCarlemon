@@ -1,0 +1,27 @@
+--- a/scripts/floor1/generate-live-opening.py
++++ b/scripts/floor1/generate-live-opening.py
+@@ -118,6 +118,24 @@
+         +'    { MAP_DCC_F1D1FIELD, 55, 42, FLAG_DCC_SECRET_TAKEN, 0x3248, 0x3243 },\n};\n')
+     (engine/'src/data/dcc_map_counts.h').write_text('// Generated full map-group bounds; not crawler membership.\n'
+         +'static const u8 sDccMapCounts[] = {'+', '.join(str(len(groups[n])) for n in groups['group_order'])+'};\n')
++    # Reapply the existing reviewed art placements after geometry regeneration.
++    # Manifest before-values refer to immutable base cells, including overlaps.
++    art_path=root/'scripts/contracts/f1-v01-environment-assets.json'
++    art=json.loads(art_path.read_text())
++    attrs=(engine/'data/tilesets/secondary/dcc/metatile_attributes.bin').read_bytes()
++    for key in ('field','quiet','workshop'):
++        path=engine/'data/layouts'/identity[key]['name']/'map.bin'
++        base=path.read_bytes();edited=bytearray(base);width=spec['maps'][key]['width']
++        for change in art['changes']:
++            if change['map']!=key:continue
++            offset=2*(change['y']*width+change['x'])
++            assert struct.unpack_from('<H',base,offset)[0]==change['before']
++            assert change['before']&0xfc00==change['after']&0xfc00
++            attribute=lambda word:struct.unpack_from('<H',attrs,2*((word&0x3ff)-512))[0]
++            assert attribute(change['before'])==attribute(change['after'])
++            struct.pack_into('<H',edited,offset,change['after'])
++        path.write_bytes(edited)
++
+ 
+ if __name__=='__main__':
+     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=ROOT);a=p.parse_args();generate(a.root)

@@ -1,0 +1,32 @@
+{
+  "scope": "First unexpected independent post-process validation failure; no emulator retry/candidate",
+  "STOP_phase": "capture inventory after complete native and supplemental streams",
+  "emulator_exit": 0,
+  "runner_exit": 1,
+  "assertions": 59,
+  "absolute_frames": 9095,
+  "visual_frames": 7051,
+  "battle_frames": 5747,
+  "overall_process": 4,
+  "baseline_attempt": 4,
+  "candidates": 0,
+  "actual_glob_count": 7052,
+  "actual_numbered_frames": 7051,
+  "extra_named_capture": [
+    "battle-start.ppm"
+  ],
+  "route_command_named_capture": 23,
+  "failed_source": "scripts/test-f1-c01a-ui.py:captures=list(out.glob(\"battle-*.ppm\"));assert len(captures)==frames",
+  "proved": "Broad glob includes mandatory route command23 battle-start.ppm alongside all7051 exact numbered captures. No missing/extra numbered native frame. Frozen runner stops before later coverage checks; those were verified separately read-only and are not a contract PASS.",
+  "native_menu_route_complete": true,
+  "full_BFE_EOF_independently_verified": true,
+  "supplemental_frame_EOF_independently_verified": true,
+  "actual_cancellation_context_retained": true,
+  "exact_historical_missed_B_cause_unresolved": true,
+  "candidate_never_claimed": true,
+  "no_retry": true,
+  "no_Save": true,
+  "Save_unchanged": true,
+  "original_STOP_SHA256": "230b71676ee002fa5fe9ec68ae85d9ddc19fffe292ae60f9657ac8bab6288312",
+  "supported_next": "Review unapplied precise numbered-capture inventory correction with mandatory named captures preserved. Retained complete baseline data permit review without replay; any later authorization/freeze/candidate contract is separate. No automatic candidate or run."
+}

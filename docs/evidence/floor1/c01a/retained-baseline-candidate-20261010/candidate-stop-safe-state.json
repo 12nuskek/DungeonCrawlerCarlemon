@@ -1,0 +1,58 @@
+{
+  "scope": "Actual mismatching physical-frame snapshot; not completed candidate equivalence",
+  "all600_party_bytes_exact_to_normal_cold_input": true,
+  "all6_party_checksums_valid": true,
+  "duo": [
+    {
+      "species": 66,
+      "level": 11,
+      "experience": 748,
+      "status": 0,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        38,
+        38,
+        26,
+        18,
+        14,
+        12,
+        14
+      ],
+      "friendship": 89
+    },
+    {
+      "species": 52,
+      "level": 10,
+      "experience": 1058,
+      "status": 0,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "hp_maxhp_attack_defense_speed_spatk_spdef": [
+        30,
+        30,
+        16,
+        14,
+        25,
+        15,
+        15
+      ],
+      "friendship": 81
+    }
+  ],
+  "party_count": 2,
+  "friendship_counter": 47,
+  "all300_flags_exact_to_input": true,
+  "raw_resource_bytes_exact_to_expected_baseline_frame": true,
+  "RNG_and_other_captured_state_bytes_exact": true,
+  "full_post_stop_canonical_resource_context_unverified": true,
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6"
+}

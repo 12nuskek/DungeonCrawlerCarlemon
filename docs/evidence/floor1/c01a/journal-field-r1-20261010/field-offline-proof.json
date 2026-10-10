@@ -1,0 +1,64 @@
+{
+  "PASS": true,
+  "no_ROM_Save_mGBA_or_gameplay": true,
+  "route_commands": 86,
+  "four_native_YesNo_tasks_and_reopens": true,
+  "single_guarded_frame_driver": true,
+  "inert_cases": {
+    "0": {
+      "exit": 0,
+      "stdout": "steps=1 captures=1",
+      "stderr": ""
+    },
+    "1": {
+      "exit": 61,
+      "stdout": "steps=0 captures=1",
+      "stderr": "Field-only frame admission failed at0"
+    },
+    "2": {
+      "exit": 61,
+      "stdout": "steps=1 captures=2",
+      "stderr": "Field-only frame failed at1"
+    },
+    "3": {
+      "exit": 61,
+      "stdout": "steps=0 captures=1",
+      "stderr": "Field-only frame admission failed at0"
+    },
+    "4": {
+      "exit": 61,
+      "stdout": "steps=0 captures=1",
+      "stderr": "Field-only frame admission failed at18000"
+    },
+    "5": {
+      "exit": 61,
+      "stdout": "steps=1 captures=2",
+      "stderr": "Field-only frame failed at1"
+    },
+    "6": {
+      "exit": 0,
+      "stdout": "ready=1\nsteps=0 captures=0",
+      "stderr": ""
+    },
+    "7": {
+      "exit": 0,
+      "stdout": "ready=0\nsteps=0 captures=0",
+      "stderr": ""
+    },
+    "8": {
+      "exit": 0,
+      "stdout": "ready=0\nsteps=0 captures=0",
+      "stderr": ""
+    },
+    "9": {
+      "exit": 0,
+      "stdout": "ready=0\nsteps=0 captures=0",
+      "stderr": ""
+    },
+    "10": {
+      "exit": 0,
+      "stdout": "ready=0\nsteps=0 captures=0",
+      "stderr": ""
+    }
+  }
+}

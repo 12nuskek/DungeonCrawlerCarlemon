@@ -1,0 +1,21 @@
+{
+  "archive": "/workspace/scratch/c01a-action-hints-r3-20261010/private-evidence.tar.gz",
+  "archive_bytes": 52869754,
+  "archive_SHA256": "d2061de7c4816de637eb490111191da30cb4adcb933cb739ae5b8469059de551",
+  "file_entries": 4788,
+  "all_entries_byte_verified": true,
+  "manifest_SHA256": "63c4f53cfc46c8b1a378650c2c51903e6ea667d66fa9a6a515be5c4cd1b42926",
+  "private_local_only": true,
+  "verified_independent_backup": false,
+  "separate_components": [
+    "Verified baseline active engine8d8c build",
+    "Candidate source807eeea4/build/ROM/ELF",
+    "Recovered tooling-r3 root/manifests"
+  ],
+  "Library_attempts_this_increment": 0,
+  "historical_failed_uploads": 5,
+  "historical_failed_backup_downloads": 1,
+  "original_backup_bytes_recovered": 0,
+  "original_transfer_failure_cause": "unknown",
+  "supported_next_retention": "Export this archive plus separate build/tooling components to a user-controlled independent private destination and verify destination byte hashes. Workspace download availability is not independent backup verification."
+}

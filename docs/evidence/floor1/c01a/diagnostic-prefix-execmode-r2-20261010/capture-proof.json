@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "actual_captured_samples": 3194,
+    "terminal_included": false,
+    "duration_seconds_exact": 53.47620391845703,
+    "native_fps": "262144/4389",
+    "all_lossless_decoded_RGB_bytes_equal": true,
+    "public_MP4_is_lossy_viewing_copy": true,
+    "public_MP4_bytes": 575127,
+    "public_MP4_SHA256": "c1bfa5a105a77bd82c87a1245b246d6e866c70c700bf7f4ab29bad4ab8710a2a",
+    "retained_source": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+    "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+    "ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+    "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+    "execution_commit": "656fc902ac6d0a1583e3396372b9da1f126e3844",
+    "selected_png": "baseline-last-capture-before-move-ready.png",
+    "selected_png_SHA256": "95fb18f8bd4732949451658410972a7295355fbedb868a05ec675fa435301c31"
+  },
+  "candidate": {
+    "actual_captured_samples": 3172,
+    "terminal_included": true,
+    "duration_seconds_exact": 53.10786437988281,
+    "native_fps": "262144/4389",
+    "all_lossless_decoded_RGB_bytes_equal": true,
+    "public_MP4_is_lossy_viewing_copy": true,
+    "public_MP4_bytes": 572176,
+    "public_MP4_SHA256": "861a05d469222f5514af8104e18198e5280fe44a46477240ad4693258e08b14c",
+    "retained_source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+    "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+    "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+    "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+    "execution_commit": "656fc902ac6d0a1583e3396372b9da1f126e3844",
+    "selected_png": "candidate-first-stop124.png",
+    "selected_png_SHA256": "90ffe2b355b3f256a976bbc70b550889ca297568f02483a99df7b8d398471489"
+  }
+}

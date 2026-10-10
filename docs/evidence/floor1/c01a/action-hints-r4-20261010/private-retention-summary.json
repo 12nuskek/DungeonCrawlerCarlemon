@@ -1,0 +1,27 @@
+{
+  "archive_bytes": 114086650,
+  "archive_SHA256": "ff751f540a7e38023c0afd39261e602bf3625ef0e6d08da090e4c44889676269",
+  "file_entries": 7520,
+  "all_entries_byte_verified": true,
+  "manifest_SHA256": "8d59a5ee4bd01b7f3507309c9ca7b41e8605a22229da85a9826ff4a075e4494f",
+  "private_local_only": true,
+  "verified_independent_backup": false,
+  "separate_components": [
+    "Verified baseline active engine8d8c build",
+    "Candidate source807eeea4/build/ROM/ELF",
+    "Recovered tooling-r3 root/manifests"
+  ],
+  "Library_attempts_this_increment": 0,
+  "historical_failed_uploads": 5,
+  "historical_failed_backup_downloads": 1,
+  "original_backup_bytes_recovered": 0,
+  "original_transfer_failure_cause": "unknown",
+  "supported_next_retention": "Export this archive plus separate build/tooling components to a user-controlled independent private destination and verify destination byte hashes. Workspace download availability is not independent backup verification.",
+  "local_path": "scratch/c01a-action-hints-r4-20261010/private-evidence.tar.gz",
+  "later_metadata_separate": [
+    "private-retention-receipt.json",
+    "post-archive-verification-stdout.log",
+    "post-archive-stdout-retention.json",
+    "publication metadata"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "PASS": true,
+  "actual_ELF_SHA256": "7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d",
+  "points": 12,
+  "both_profile_records_identical": true,
+  "all_exported_symbols_exact": true,
+  "old_profile_excluded": true
+}

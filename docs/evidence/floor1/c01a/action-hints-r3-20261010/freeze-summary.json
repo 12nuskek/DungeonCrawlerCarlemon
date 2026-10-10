@@ -1,0 +1,92 @@
+{
+  "source_checkpoint": "d8a40d5144c79d0dcab6c08c240d72cff35e13a3",
+  "helper_commit": "d8a40d5144c79d0dcab6c08c240d72cff35e13a3",
+  "base": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+  "tested": "807eeea457c973b097be9eab9e1556e20d0204aa",
+  "cases": {
+    "baseline": "b920c9094fe390608c3b7116eb8244cfbbe2b180638f1100a2b1dd739b0df07c",
+    "candidate": "be359fdf1af6a5e69abddb9241bf3fd8d7b8dc4426cdd739f29601d8839abb55"
+  },
+  "route_SHA256": "f03cae6c47e866b49209f1a78f6fd2ca34e1653084422b5bab7c3c1e7175b3fa",
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "storage": {
+    "visual_frames": 18000,
+    "battle_frames": 30000,
+    "native_boundaries_per_frame": 4096,
+    "native_timeline_startup_frames": 2046,
+    "native_timeline_active_window": 250,
+    "native_detail_file_max": 1542000000,
+    "each_file_hard_max": 2147483648,
+    "RGB_capture_max_per_case": 2085699200,
+    "native_reference_max_per_case": 2147483648,
+    "supplemental_reference_max_per_case": 48600000,
+    "logs_max_per_case": 33554432,
+    "clips_max_per_case": 2147483648,
+    "pair_total_reserved_bytes": 21474836480,
+    "claim_limit_per_case": 1,
+    "first_failure_stop": true,
+    "no_Save": true
+  },
+  "scope": "Reviewed ten command/input corrections only; reuse unchanged16-slot observer, game builds and ordinary Save; no rebuild/reconstruction/V01 replay",
+  "prior_STOPs_preserved": {
+    "121": {
+      "files": 57,
+      "manifest_SHA256": "e5ee1ad73d2f79a4f58985b47dfc624d1db1ab279b21ed03e4e202e571e4fe46",
+      "archive_SHA256": "3fc4ed0f7381e9c7e4a4a72c948dfa81df03f53508e2fe3e4668d33f59754861",
+      "STOP_SHA256": "18ff505c7900ddc0ca54fb6ee5561893f0c7e1ebc4bcaa264313ccbf1d1cd62d",
+      "freeze_SHA256": "25a8338556365f40e7f60656caf919b4e2eabc9fc5847c66f0b5978bc06fcdca"
+    },
+    "122": {
+      "files": 3472,
+      "manifest_SHA256": "01697d792f993e65bdbe0592bc17d9d9048486b9d24e9623e94427d62f8455d3",
+      "archive_SHA256": "ba172a84626a0676e662198a8a63be6c54abc2c59e6df16348a1f2f88cbb47c5",
+      "STOP_SHA256": "1546eb057fbbd21c9542af0f5fa71cd4b72bcbb05e52582c09a3bbe854818775",
+      "freeze_SHA256": "df2f541c222111e4048211ff759f7a886634074d0dd3e24a17aa912c5f65f012"
+    }
+  },
+  "offline_route_proof_SHA256": "8197e8de3f1d467cf3a41c2e831ea38e0e1b05db172b5910bf25a0cb1ab73170",
+  "overall_counts_before": {
+    "processes": 2,
+    "baseline_attempts": 2,
+    "candidates": 0
+  },
+  "overall_case_counts": {
+    "baseline": [
+      3,
+      3,
+      0
+    ],
+    "candidate": [
+      4,
+      3,
+      1
+    ]
+  },
+  "first_failure_stop": true,
+  "candidate_requires_complete_baseline_PASS": true,
+  "freeze_SHA256": "9656b85ebb8bc5c20842483dbabc96750782af36b33a1ce01c1a07c1c69d510b",
+  "observer_source_SHA256": "9cbe47619817803bb075f8b59470b24b45deccb172e87e7a0859fa2c71d76c18",
+  "observer_binary_SHA256": "8589d38042ea026d8a7a8b936ae98dad79b90dfc806e9f3a997b2f97c185964c",
+  "builds": {
+    "baseline": {
+      "source": "bdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7",
+      "engine_tree": "8d8c7761f4878bb9a8d7e2bffe36ed38da08aa6a",
+      "ROM_SHA256": "6b7a83f27ede2dac9a124c0e267f34c9d0747db4a68cff05425fb9966f5b2459",
+      "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+      "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+      "overall_process": 3,
+      "overall_baseline_attempt": 3,
+      "overall_candidate_attempt": 0
+    },
+    "candidate": {
+      "source": "807eeea457c973b097be9eab9e1556e20d0204aa",
+      "engine_tree": "3ef0d46368e45c3e4a5b8084eeec2a81b50a688b",
+      "ROM_SHA256": "3e6fa891385e38a900fa307660bc8916f8f0b9776098a76378f27e238d962248",
+      "ELF_SHA256": "c5f7e26472f61831bf0166086ef86f42ccdedb615044b3a8e7e7bc9bc939d653",
+      "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+      "overall_process": 4,
+      "overall_baseline_attempt": 3,
+      "overall_candidate_attempt": 1
+    }
+  }
+}

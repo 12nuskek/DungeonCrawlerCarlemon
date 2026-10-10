@@ -1,0 +1,1114 @@
+{
+  "scope": "Actual paired partial diagnostic chronology; no full acceptance",
+  "execution_commit": "656fc902ac6d0a1583e3396372b9da1f126e3844",
+  "first_observed_cycle_text_split": {
+    "scoped_function": "G:BattlePutTextOnWindow",
+    "within_caller": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+    "baseline_relative_cycles": 527489,
+    "candidate_relative_cycles": 527651,
+    "delta_cycles": 162,
+    "preceding117_point_cycles_match": true,
+    "global_origin_equal": true,
+    "not_claimed_as_first_different_instruction": true
+  },
+  "same_PP_printer_entry_cycles": 527315,
+  "synchronous_font_window_speed": {
+    "window": 7,
+    "font": 7,
+    "speed": 0
+  },
+  "first_PP_DMA_request_entry_cycles": {
+    "baseline": 551435,
+    "candidate": 561086
+  },
+  "same_VBlank_entry_cycles": 561896,
+  "baseline_DMA_service": {
+    "entry_cycles": 569543,
+    "return_cycles": 655913,
+    "lock": 0,
+    "before_requests": 20,
+    "before_bytes": 45568,
+    "after_requests": 3,
+    "after_bytes": 4608,
+    "processed_bytes": 40960,
+    "next_native_budget_exceeds40KiB": true
+  },
+  "candidate_DMA_service": {
+    "entry_cycles": 569543,
+    "return_cycles": 620618,
+    "lock": 1,
+    "requests_before_and_after": 17,
+    "bytes_before_and_after": 40960,
+    "native_locked_early_return": true,
+    "enclosing_RequestDma3Copy_entry_cycles": 561086
+  },
+  "move_init_return_cycles": {
+    "baseline": 945025,
+    "candidate": 747303,
+    "candidate_earlier_cycles": 197722
+  },
+  "opponent1_command": {
+    "byte": 53,
+    "native_name": "CONTROLLER_LINKSTANDBYMSG",
+    "baseline_clear_cycles": 945417,
+    "candidate_clear_cycles": 747695,
+    "exec_before": 11,
+    "exec_after": 9
+  },
+  "candidate_terminal": {
+    "visual": 3171,
+    "epoch": 5216,
+    "command": 26,
+    "cycles": 842692,
+    "actor": 3,
+    "command_byte": 18,
+    "native_command": "CONTROLLER_CHOOSEACTION",
+    "enclosing_handler": "L:battle_controller_opponent.o:OpponentHandleChooseAction",
+    "PC_function": "G:__umodsi3",
+    "instruction_offset": 48,
+    "LR_function": "L:pokemon.o:GetSubstruct",
+    "LR_offset": 18,
+    "validated_stack_words": 8,
+    "observed_return_location": "L:pokemon.o:CalculateBoxMonChecksum+42",
+    "no_later_CPU_step": true
+  },
+  "terminal_strict_diff_offsets": [
+    2533,
+    2534,
+    2535,
+    2536,
+    2560
+  ],
+  "all_other2695_bytes_exact": true,
+  "candidate_callback": "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+  "baseline_callback_at_failed_frame": "L:battle_controller_player.o:PlayerBufferRunCommand",
+  "exec_difference_opponent1": true,
+  "timeline": {
+    "baseline": [
+      {
+        "event": "PP-USES-printer-entry",
+        "command": 26,
+        "epoch": 5215,
+        "visual": 3170,
+        "relative_cycles": 527315,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "offset": 0
+        },
+        "LR": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 32
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 132,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+        "point_offset": 0
+      },
+      {
+        "event": "PP-USES-printer-return",
+        "command": 26,
+        "epoch": 5215,
+        "visual": 3170,
+        "relative_cycles": 558879,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "offset": 24
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 157,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 20,
+        "DMA_bytes": 45568,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+        "point_offset": 24
+      },
+      {
+        "event": "VBlank-IRQ-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 561896,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 0
+        },
+        "LR": {
+          "region": "RAM/non-function"
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 160,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 20,
+        "DMA_bytes": 45568,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 569543,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 0
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x6000003f",
+        "VCOUNT": 166,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 20,
+        "DMA_bytes": 45568,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 655913,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 612
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x2000003f",
+        "VCOUNT": 8,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 15,
+        "DMA_count": 3,
+        "DMA_bytes": 4608,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 612
+      },
+      {
+        "event": "VBlank-IRQ-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 706781,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 162
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 138
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 49,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 15,
+        "DMA_count": 3,
+        "DMA_bytes": 4608,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 162
+      },
+      {
+        "event": "TYPE-hint-printer-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 757477,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "offset": 0
+        },
+        "LR": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 40
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 90,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 15,
+        "DMA_count": 6,
+        "DMA_bytes": 9216,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+        "point_offset": 0
+      },
+      {
+        "event": "VBlank-IRQ-entry",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 842792,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 0
+        },
+        "LR": {
+          "region": "RAM/non-function"
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 160,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 15,
+        "DMA_count": 6,
+        "DMA_bytes": 9216,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-entry",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 850439,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 0
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x6000003f",
+        "VCOUNT": 166,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 15,
+        "DMA_count": 6,
+        "DMA_bytes": 9216,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-return",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 870499,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 612
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x6000003f",
+        "VCOUNT": 182,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 0,
+        "DMA_bytes": 0,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 612
+      },
+      {
+        "event": "VBlank-IRQ-return",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 929717,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 162
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 138
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 2,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 0,
+        "DMA_bytes": 0,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 162
+      },
+      {
+        "event": "TYPE-hint-printer-return",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 945015,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "offset": 90
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 15,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 3,
+        "DMA_bytes": 5120,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+        "point_offset": 90
+      },
+      {
+        "event": "move-init-return",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 945025,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 42
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 15,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 3,
+        "DMA_bytes": 5120,
+        "point_function": "G:InitMoveSelectionsVarsAndStrings",
+        "point_offset": 42
+      },
+      {
+        "event": "player-choose-move-return",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 945076,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:PlayerHandleChooseMove",
+          "offset": 88
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 15,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 3,
+        "DMA_bytes": 5120,
+        "point_function": "L:battle_controller_player.o:PlayerHandleChooseMove",
+        "point_offset": 88
+      },
+      {
+        "event": "opponent-bit-clear-before",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 945415,
+        "actor": 1,
+        "command_byte": 53,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "offset": 100
+        },
+        "LR": {
+          "function": "L:battle_controller_opponent.o:OpponentHandleLinkStandbyMsg",
+          "offset": 6
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 15,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 3,
+        "DMA_bytes": 5120,
+        "point_function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+        "point_offset": 100
+      },
+      {
+        "event": "opponent-bit-clear-after",
+        "command": 26,
+        "epoch": 5217,
+        "visual": 3172,
+        "relative_cycles": 945417,
+        "actor": 1,
+        "command_byte": 53,
+        "exec": 9,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "offset": 102
+        },
+        "LR": {
+          "function": "L:battle_controller_opponent.o:OpponentHandleLinkStandbyMsg",
+          "offset": 6
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 15,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 21,
+        "DMA_count": 3,
+        "DMA_bytes": 5120,
+        "point_function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+        "point_offset": 102
+      }
+    ],
+    "candidate": [
+      {
+        "event": "PP-USES-printer-entry",
+        "command": 26,
+        "epoch": 5215,
+        "visual": 3170,
+        "relative_cycles": 527315,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "offset": 0
+        },
+        "LR": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 32
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 132,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+        "point_offset": 0
+      },
+      {
+        "event": "VBlank-IRQ-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 561896,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 0
+        },
+        "LR": {
+          "region": "RAM/non-function"
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 160,
+        "IRQ_pending": 0,
+        "DMA_lock": 1,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 569543,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 0
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x6000003f",
+        "VCOUNT": 166,
+        "IRQ_pending": 0,
+        "DMA_lock": 1,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 0
+      },
+      {
+        "event": "DMA-process-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 569594,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:ProcessDma3Requests",
+          "offset": 612
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 88
+        },
+        "CPSR": "0x2000003f",
+        "VCOUNT": 166,
+        "IRQ_pending": 0,
+        "DMA_lock": 1,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "G:ProcessDma3Requests",
+        "point_offset": 612
+      },
+      {
+        "event": "VBlank-IRQ-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 620462,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 162
+        },
+        "LR": {
+          "function": "L:main.o:VBlankIntr",
+          "offset": 138
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 207,
+        "IRQ_pending": 0,
+        "DMA_lock": 1,
+        "DMA_cursor": 126,
+        "DMA_count": 17,
+        "DMA_bytes": 40960,
+        "point_function": "L:main.o:VBlankIntr",
+        "point_offset": 162
+      },
+      {
+        "event": "PP-USES-printer-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 627218,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+          "offset": 56
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 213,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 20,
+        "DMA_bytes": 45568,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayPPString",
+        "point_offset": 56
+      },
+      {
+        "event": "TYPE-hint-printer-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 682825,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "offset": 0
+        },
+        "LR": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 40
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 30,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 23,
+        "DMA_bytes": 50176,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+        "point_offset": 0
+      },
+      {
+        "event": "TYPE-hint-printer-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 747293,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+          "offset": 144
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 82,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "L:battle_controller_player.o:MoveSelectionDisplayMoveType",
+        "point_offset": 144
+      },
+      {
+        "event": "move-init-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 747303,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:InitMoveSelectionsVarsAndStrings",
+          "offset": 42
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 82,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "G:InitMoveSelectionsVarsAndStrings",
+        "point_offset": 42
+      },
+      {
+        "event": "player-choose-move-return",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 747354,
+        "actor": 0,
+        "command_byte": 20,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_player.o:PlayerHandleChooseMove",
+          "offset": 88
+        },
+        "LR": {
+          "function": "G:LoadBgVram",
+          "offset": 106
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 82,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "L:battle_controller_player.o:PlayerHandleChooseMove",
+        "point_offset": 88
+      },
+      {
+        "event": "opponent-bit-clear-before",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 747693,
+        "actor": 1,
+        "command_byte": 53,
+        "exec": 11,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "offset": 100
+        },
+        "LR": {
+          "function": "L:battle_controller_opponent.o:OpponentHandleLinkStandbyMsg",
+          "offset": 6
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 82,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+        "point_offset": 100
+      },
+      {
+        "event": "opponent-bit-clear-after",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 747695,
+        "actor": 1,
+        "command_byte": 53,
+        "exec": 9,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+          "offset": 102
+        },
+        "LR": {
+          "function": "L:battle_controller_opponent.o:OpponentHandleLinkStandbyMsg",
+          "offset": 6
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 82,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "L:battle_controller_opponent.o:OpponentBufferExecCompleted",
+        "point_offset": 102
+      },
+      {
+        "event": "opponent-action-entry",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 748058,
+        "actor": 3,
+        "command_byte": 18,
+        "exec": 9,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "L:battle_controller_opponent.o:OpponentHandleChooseAction",
+          "offset": 0
+        },
+        "LR": {
+          "function": "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "offset": 50
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 83,
+        "IRQ_pending": 0,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296,
+        "point_function": "L:battle_controller_opponent.o:OpponentHandleChooseAction",
+        "point_offset": 0
+      },
+      {
+        "event": "terminal",
+        "command": 26,
+        "epoch": 5216,
+        "visual": 3171,
+        "relative_cycles": 842692,
+        "actor": 3,
+        "command_byte": 18,
+        "exec": 9,
+        "callbacks": [
+          "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+          "L:battle_controller_player.o:PlayerBufferRunCommand",
+          "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+        ],
+        "state_function": "L:battle_main.o:HandleTurnActionSelectionState",
+        "PC": {
+          "function": "G:__umodsi3",
+          "offset": 48
+        },
+        "LR": {
+          "function": "L:pokemon.o:GetSubstruct",
+          "offset": 18
+        },
+        "CPSR": "0x3f",
+        "VCOUNT": 160,
+        "IRQ_pending": 1,
+        "DMA_lock": 0,
+        "DMA_cursor": 126,
+        "DMA_count": 26,
+        "DMA_bytes": 55296
+      }
+    ]
+  },
+  "supported_causality": "Changed live printer work crosses the VBlank DMA lock window and changes native controller progress before the same strict physical-frame boundary. Source locked early return and exact queue deltas support this handoff mechanism; no DMA corruption/defect is established.",
+  "limits": [
+    "First split is earliest recorded scoped point, not a continuous instruction trace.",
+    "No counterfactual game change was run; no optimized replacement or padding amount is justified.",
+    "Candidate did not reach Move-ready or visible USES/hints; full B/F/E+EOF/2700 gates remain unmet.",
+    "32-byte stack slice provides bounded return locations, not a complete symbolic call stack."
+  ]
+}

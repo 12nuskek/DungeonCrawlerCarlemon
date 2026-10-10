@@ -1,0 +1,45 @@
+{
+  "scope": "Source/retained-state diagnosis only after terminal process2 STOP; no additional emulator",
+  "STOP": 122,
+  "absolute_frame": 5449,
+  "visual_frames": 3405,
+  "battle_frames": 2101,
+  "assertions": 14,
+  "C01a_overall_processes": 2,
+  "C01a_overall_baseline_attempts": 2,
+  "C01a_overall_candidates": 0,
+  "corrected_startup_gate_passed": true,
+  "failed_gate": "ui wait action 0 900",
+  "native_exec_flags": 2,
+  "hardware_keys_active_low": 1023,
+  "controller_identities": [
+    "L:battle_controller_player.o:PlayerBufferRunCommand",
+    "L:battle_controller_opponent.o:CompleteOnInactiveTextPrinter",
+    "L:battle_controller_player.o:PlayerBufferRunCommand",
+    "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+  ],
+  "main_callback_identities": [
+    "L:battle_main.o:BattleMainCB1",
+    "G:BattleMainCB2"
+  ],
+  "root_cause": "First action wait sends neutral input only. Native trainer challenge string ends CHAR_PROMPT_CLEAR (\\p); opponent CompleteOnInactiveTextPrinter waits for text printer, TextPrinterWaitWithDownArrow needs fresh A/B when autoScroll off. Captured challenge/down-arrow, native controller identity and keys1023 confirm undispatched prompt. Carl action callback is not active.",
+  "source_references": [
+    "engine/src/battle_message.c:sText_Trainer1WantsToBattle",
+    "engine/src/battle_controller_opponent.c:CompleteOnInactiveTextPrinter",
+    "engine/src/text.c:CHAR_PROMPT_CLEAR,TextPrinterWaitWithDownArrow",
+    "scripts/floor1/c01a-ui-host.py:ui wait/ui next receiving callback loop"
+  ],
+  "Save_unchanged": true,
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "candidate_never_claimed": true,
+  "actual_move_selections": 0,
+  "menu_pair_or_depletion_acceptance": false,
+  "typed_native_finish_not_reached": true,
+  "first_failure_preserved": true,
+  "supported_next": "Review changing only the first neutral ui wait action 0 900 to existing ui next action 0 900, which uses ordinary A every60 frames only until actual action readiness; preserve all real gates/bounds and STOP121/122. Separately named source/freeze/claim needed before another baseline; no timing/RNG search or blind retry.",
+  "observer_SHA256": "9cbe47619817803bb075f8b59470b24b45deccb172e87e7a0859fa2c71d76c18",
+  "freeze_SHA256": "df2f541c222111e4048211ff759f7a886634074d0dd3e24a17aa912c5f65f012",
+  "log_SHA256": "f8adc465c19476ece8c6010aa57ca35d3768e7f2191153b4c3d16528d19711a6",
+  "timeline_summary_records": 5450,
+  "timeline_STOP122_preserved": true
+}

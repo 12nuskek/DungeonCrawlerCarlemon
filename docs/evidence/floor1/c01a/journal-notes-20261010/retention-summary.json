@@ -1,0 +1,11 @@
+{
+  "PASS": true,
+  "archive_SHA256": "fabb51d7aab52b648cb6cb4f98812bb4248dc47138129a003068039baf186d0d",
+  "archive_bytes": 891084,
+  "verified_entries": 10,
+  "post_stop_snapshot_source_files": 12164,
+  "snapshot_retained_separately": true,
+  "independent_backup": false,
+  "upload_attempted": false,
+  "no_ROM_ELF_Save_in_new_directory": true
+}

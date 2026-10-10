@@ -1,0 +1,11 @@
+PASS ready
+PASS retained ordinary input exact600 party/count300 flags1272 logical resources/counter; native field ready
+PASS expect 35 3 8 7 7
+PASS levels 11 10
+PASS duo healthy
+PASS uses 8 40 2 40
+PASS item 13 1
+PASS item 378 2
+PASS flag 47 0
+WARDEN battle_frames=0 attempts=0
+result=121 assertions=12

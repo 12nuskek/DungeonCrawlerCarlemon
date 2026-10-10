@@ -1,0 +1,36 @@
+--- a/scripts/floor1/c01a-ui-observer.h
++++ b/scripts/floor1/c01a-ui-observer.h
+@@ -1,5 +1,5 @@
+ /* Read-only menu observations; native callback identity, no guessed label. */
+-struct C01Ui {unsigned a[16],candidate,mainstate,battleCB2,exec;FILE *trace;};
++struct C01Ui {unsigned a[16],candidate,mainstate,battleCB2,exec,bagCB2;FILE *trace;};
+ static struct C01Ui ui;
+ static unsigned ui_kind(const char *name)
+ {const char *names[]={"action","move","target","bag","party","context","summary"};for(unsigned i=0;i<7;i++)if(!strcmp(name,names[i]))return i+1;return 0;}
+@@ -10,6 +10,7 @@
+         && (core->busRead32(core,u->mainstate+4)&~1u)==(u->battleCB2&~1u)
+         && (core->busRead32(core,u->exec)&(1u<<actor))
+         && (core->busRead32(core,controls+4*actor)&~1u)==(u->a[8+kind]&~1u);
++    if(kind==4 && (!u->bagCB2 || (core->busRead32(core,u->mainstate+4)&~1u)!=(u->bagCB2&~1u)))return 0;
+     return active_task(core,tasks,u->a[8+kind]);
+ }
+ static unsigned ui_sample(struct mCore *core,struct C01Ui *u,struct BvSnapshotContext *c,unsigned mainstate,unsigned tasks,unsigned pixels[],unsigned width,unsigned height)
+--- a/scripts/floor1/c01a-ui-host.py
++++ b/scripts/floor1/c01a-ui-host.py
+@@ -18,7 +18,7 @@
+     addition=(ROOT/'scripts/floor1/c01a-ui-observer.h').read_text()
+     replace('int main(int argc, char **argv)',addition+'\nint main(int argc, char **argv)')
+     anchor='        bv_tl_symbol(&timelineConfig,addr,symbol);'
+-    replace(anchor,anchor+'\n        if(!strcmp(symbol,"gMain"))ui.mainstate=addr;\n        if(!strcmp(symbol,"bv_battleCB2"))ui.battleCB2=addr;\n        if(!strcmp(symbol,"gBattleControllerExecFlags"))ui.exec=addr;')
++    replace(anchor,anchor+'\n        if(!strcmp(symbol,"gMain"))ui.mainstate=addr;\n        if(!strcmp(symbol,"bv_battleCB2"))ui.battleCB2=addr;\n        if(!strcmp(symbol,"gBattleControllerExecFlags"))ui.exec=addr;\n        if(!strcmp(symbol,"CB2_BagMenuRun"))ui.bagCB2=addr;')
+     fields=['gRngValue','gRng2Value','gMoveSelectionCursor','gActionSelectionCursor','gMultiUsePlayerCursor','gBattlerTarget','gActiveBattler','gBattlerInMenuId','gBattleBufferA','uiAction','uiMove','uiTarget','uiBag','uiParty','uiContext','uiSummary']
+     replace(anchor,anchor+'\n'+''.join(f'        if(!strcmp(symbol,"{n}"))ui.a[{i}]=addr;\n' for i,n in enumerate(fields)))
+     replace('if(!vr)vr=bv_sample(core,&visual,mainstate,mons,results,animationActive,animationActor,currentMove,pixels,width,height);','if(!vr)vr=ui_sample(core,&ui,&snapshot,mainstate,tasks,pixels,width,height);')
+@@ -30,6 +30,7 @@
+             (void)bv_sample;
+             if(visual.recording || bv_load("visual-mode.bin",&mode,1) || mode>1){result=121;break;}
+             for(unsigned z=0;z<16;z++)if(!ui.a[z]){result=121;break;}
++            if(!ui.bagCB2){result=121;break;}
+             if(result)break;
+             visual.candidate=mode;ui.candidate=mode;
+             visual.trace=fopen(mode?"expected-native-boundary-trace.bin":"native-boundary-trace.bin",mode?"rb":"wbx");

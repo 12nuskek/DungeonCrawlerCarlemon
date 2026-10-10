@@ -1,0 +1,16 @@
+{
+  "archive_SHA256": "cc55738a3164309185e6cc8e42cf7894875088bb21a50b6db2fe631965c31e12",
+  "archive_bytes": 6504952,
+  "entries": 114,
+  "every_entry_byte_verified": true,
+  "local_retention_only": true,
+  "independently_verified_backup": false,
+  "manifest_SHA256": "1a29ffa19bb9e84c363b914ac45adb03ea98c60f9470ee462829697a405d8632",
+  "safe_checkpoint_SHA256": "32063651859737ebf8c1537a848bb9c459ba89d2aa17ac00d9e7c9e4e8a77160",
+  "archive_limit_bytes": 2147483648,
+  "builds_tools_existing_archives_retained_separately": true,
+  "later_publication_metadata_separate": true,
+  "Library_failed_uploads": 5,
+  "Library_failed_supported_downloads": 1,
+  "no_Library_retry": true
+}

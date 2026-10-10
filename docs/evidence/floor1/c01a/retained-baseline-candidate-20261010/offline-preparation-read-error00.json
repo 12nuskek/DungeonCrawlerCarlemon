@@ -1,0 +1,6 @@
+{
+  "scope": "Read-only branch reconciliation",
+  "reason": "First git ls-remote ran from workspace parent with no origin; corrected repository cwd",
+  "emulator_processes": 0,
+  "original_files_unchanged": true
+}

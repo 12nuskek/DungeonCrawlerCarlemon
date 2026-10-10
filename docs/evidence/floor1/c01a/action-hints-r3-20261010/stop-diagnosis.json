@@ -1,0 +1,165 @@
+{
+  "scope": "Retained-frame/native-source diagnosis only; no execution after terminal baseline3 STOP122",
+  "STOP": 122,
+  "failed_route_command": 55,
+  "failed_gate": "ui wait action 0 900 after Bag B cancellation",
+  "absolute_frames": 6415,
+  "visual_frames": 4371,
+  "battle_frames": 3067,
+  "assertions": 24,
+  "baseline_overall_process": 3,
+  "baseline_overall_attempt": 3,
+  "candidate_overall_attempts": 0,
+  "no_committed_moves_or_rounds": true,
+  "actual_ui_move_assertions": 4,
+  "actual_ui_move_actors": [
+    0
+  ],
+  "actual_receiving_callback_checks": [
+    "UI_READY action actor=0 visual=3169 waited=664",
+    "UI_READY move actor=0 visual=3194 waited=0",
+    "UI_MOVE actor=0 cursor=0 pp=8 frame=3194",
+    "UI_READY target actor=0 visual=3243 waited=0",
+    "UI_READY move actor=0 visual=3292 waited=0",
+    "UI_MOVE actor=0 cursor=0 pp=8 frame=3292",
+    "UI_MOVE actor=0 cursor=1 pp=40 frame=3317",
+    "UI_MOVE actor=0 cursor=0 pp=8 frame=3342",
+    "UI_READY action actor=0 visual=3367 waited=0",
+    "UI_READY bag actor=0 visual=3422 waited=5"
+  ],
+  "retained_Bag_window": [
+    {
+      "visual_frame": 3421,
+      "absolute_frame": 5466,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "L:item_menu.o:CB2_Bag"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask"
+      ]
+    },
+    {
+      "visual_frame": 3422,
+      "absolute_frame": 5467,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "L:item_menu.o:CB2_Bag"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask"
+      ]
+    },
+    {
+      "visual_frame": 3445,
+      "absolute_frame": 5490,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "G:CB2_BagMenuRun"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair"
+      ]
+    },
+    {
+      "visual_frame": 3446,
+      "absolute_frame": 5491,
+      "hardware_keys_active_low": 1021,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "G:CB2_BagMenuRun"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair"
+      ]
+    },
+    {
+      "visual_frame": 3447,
+      "absolute_frame": 5492,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "G:CB2_BagMenuRun"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair"
+      ]
+    },
+    {
+      "visual_frame": 3470,
+      "absolute_frame": 5515,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "G:CB2_BagMenuRun"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair"
+      ]
+    },
+    {
+      "visual_frame": 4370,
+      "absolute_frame": 6415,
+      "hardware_keys_active_low": 1023,
+      "exec_flags": 1,
+      "main_callback_identities": [
+        "L:battle_main.o:BattleMainCB1",
+        "G:CB2_BagMenuRun"
+      ],
+      "active_task_identities": [
+        "L:item_menu.o:Task_BagMenu_HandleInput",
+        "L:list_menu.o:ListMenuDummyTask",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair",
+        "L:list_menu.o:Task_ScrollIndicatorArrowPair"
+      ]
+    }
+  ],
+  "last_controller_identities": [
+    "L:battle_controller_player.o:CompleteWhenChoseItem",
+    "L:battle_controller_opponent.o:OpponentBufferRunCommand",
+    "L:battle_controller_player.o:PlayerBufferRunCommand",
+    "L:battle_controller_opponent.o:OpponentBufferRunCommand"
+  ],
+  "Bag_STOP_pixels_exact": true,
+  "proved": "B input is present for one actual frame, but Bag never transitions to its closing task; main remains CB2_BagMenuRun and Task_BagMenu_HandleInput remains active through900 neutral frames. Startup/dialogue/STRIKE target+move cancel/BRACE cursor/Fight\u2192Bag passed.",
+  "source_gap": "ui_ready bag accepts an active task plus fade-off without requiring CB2_BagMenuRun. Actual readiness returned while main was CB2_Bag setup. SetupBagMenu creates input task atcase14 before case20 begins fade-in and before installing RunTasks callback. This is a concrete readiness false-positive; retained data do not include gMain.newKeys, fade-active or link-wait values at the B frame, so the precise reason B was not consumed is not proven.",
+  "source_references": [
+    "engine/src/item_menu.c:SetupBagMenu,CB2_BagMenuRun,Task_BagMenu_HandleInput",
+    "engine/src/list_menu.c:ListMenu_ProcessInput",
+    "engine/src/main.c:ReadKeys",
+    "scripts/floor1/c01a-ui-observer.h:ui_ready"
+  ],
+  "supported_next": "Review strengthening actual menu readiness to require its executing main callback and fade clear, with offline pre-RunTasks rejection tests. For a separately frozen future claim retain actual newKeys/fade/link-wait state around the cancel edge to determine whether B is consumed; preserve bounds and native assertions. No patch applied or further claim created.",
+  "exact_cause_of_missed_B_unresolved": true,
+  "Save_unchanged": true,
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "candidate_never_claimed": true,
+  "no_retry": true,
+  "timeline_hash_chain_all6416_records_verified": true,
+  "timeline_final_chain_SHA256": "c8924a377bc5fac7d9da5891f44b3319b5bb6e7c68496d301547710d57dc2bd7",
+  "timeline_STOP122_preserved": true,
+  "log_SHA256": "8bb787398dc2a55aa1b9b6cbf7b7b47f3b46c333bd6c4ee00243dcd01c7a4f3a"
+}

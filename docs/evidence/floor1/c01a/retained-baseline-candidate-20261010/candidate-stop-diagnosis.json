@@ -1,0 +1,66 @@
+{
+  "scope": "Read-only source/retained-byte diagnosis of first actual candidate STOP124; no retry/normalization/waiver",
+  "STOP": 124,
+  "failed_route_command": 26,
+  "failed_gate": "Strict every-frame2700-byte comparison during first step24 neutral after native Fight A",
+  "candidate_overall_process": 5,
+  "candidate_attempt": 1,
+  "baseline_processes": 4,
+  "candidate_processes": 1,
+  "execution": "b0102d46b80e0b476057b1490aa41e7a8811b422",
+  "assertions": 15,
+  "completed_numbered_visual_frames": 3171,
+  "terminal_visual_frame": 3171,
+  "actual_terminal_input_epoch": 5216,
+  "exact_mismatch_offsets": [
+    2533,
+    2534,
+    2535,
+    2536,
+    2560
+  ],
+  "actual_player_controller_identity": "L:battle_controller_player.o:HandleChooseMoveAfterDma3",
+  "expected_player_controller_identity": "L:battle_controller_player.o:PlayerBufferRunCommand",
+  "actual_exec_flags": 9,
+  "expected_exec_flags": 11,
+  "exec_difference_bit": 1,
+  "all_other2695_bytes_equal": true,
+  "controller_identity_scope_proven": true,
+  "CPU_native_location": {
+    "CPU_PC_raw": {
+      "identity": "G:__umodsi3",
+      "offset": 50
+    },
+    "CPU_LR": {
+      "identity": "L:pokemon.o:GetSubstruct",
+      "offset": 18
+    },
+    "native_phase_address": {
+      "identity": "L:battle_main.o:HandleTurnActionSelectionState",
+      "offset": 0
+    },
+    "CB2": {
+      "identity": "G:BattleMainCB2",
+      "offset": 0
+    }
+  },
+  "actual_pixels_at_STOP_equal_to_baseline": true,
+  "no_move_readiness_or_UI_MOVE_reached": true,
+  "no_move_committed": true,
+  "full_native_BFE_EOF_not_reached": true,
+  "full_supplemental_EOF_not_reached": true,
+  "complete_candidate_edge_mode_not_reached": true,
+  "compiled_HINT_strings_remain_offline_only": true,
+  "inference": "Candidate and baseline occupy different transient controller/command phases at the physical video-frame snapshot. Changed move-pane rendering can alter CPU work before DMA handoff, but exact cycle/path causality is not established by this retained snapshot.",
+  "source_references": [
+    "engine/src/battle_controller_player.c:MoveSelectionDisplayPPString,MoveSelectionDisplayMoveType,InitMoveSelectionsVarsAndStrings,PlayerHandleChooseMove,HandleChooseMoveAfterDma3",
+    "scripts/floor1/c01a-ui-observer-r4.h:ui_sample",
+    "scripts/floor1/c01a-ui-host.py:WARDEN_FRAME"
+  ],
+  "supported_next": "Review controller/command phase divergence at the rendering/DMA handoff and audit exact compiled rendering/handler timing before prescribing any remedy. Keep strict assertions, certified original baseline and first STOP. Any game change/build/new execution contract requires the next separate review; no automatic retry or ignoring frame fields.",
+  "Save_unchanged": true,
+  "original_r4_artifacts_unchanged": true,
+  "retained_baseline_certificate_valid": true,
+  "original_STOP_SHA256": "e41318b1ceebdef86d3daee74fe50e4d8193bfebf8fefa017a24013d841cc2f3",
+  "no_retry": true
+}

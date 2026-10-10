@@ -1,0 +1,156 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 boot.ppm
+ready
+visual input-exact
+expect 35 3 8 7 7
+levels 11 10
+duo healthy
+uses 8 40 2 40
+item 13 1
+item 378 2
+flag 47 0
+ui start
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 battle-start.ppm
+ui wait action 0 900
+step 1 1 -
+step 24 0 -
+ui wait move 0 900
+ui move 0 0 8
+step 24 0 carl-strike.ppm
+step 1 1 -
+step 24 0 -
+ui wait target 0 900
+step 24 0 strike-target.ppm
+step 1 2 -
+step 24 0 -
+ui wait move 0 900
+ui move 0 0 8
+step 1 32 -
+step 24 0 carl-brace.ppm
+ui move 0 1 40
+step 1 64 -
+step 24 0 -
+ui move 0 0 8
+step 1 2 -
+step 24 0 -
+ui wait action 0 900
+step 1 32 -
+step 24 0 -
+step 1 1 -
+step 24 0 -
+ui wait bag 0 900
+step 24 0 bag.ppm
+step 1 2 -
+step 24 0 -
+ui wait action 0 900
+step 1 64 -
+step 24 0 -
+step 1 128 -
+step 24 0 -
+step 1 1 -
+step 24 0 -
+ui wait party 0 900
+step 24 0 party.ppm
+step 1 1 -
+step 24 0 -
+ui wait context 0 900
+step 1 128 -
+step 24 0 -
+step 1 1 -
+step 24 0 -
+ui wait summary 0 900
+step 24 0 summary.ppm
+step 1 2 -
+step 24 0 -
+ui wait context 0 900
+step 1 2 -
+step 24 0 -
+ui wait party 0 900
+step 1 2 -
+step 24 0 -
+ui wait action 0 900
+step 1 64 -
+step 24 0 -
+step 1 16 -
+step 24 0 -
+step 1 1 -
+step 24 0 -
+ui wait move 0 900
+ui move 0 0 8
+step 24 0 carl-return.ppm
+step 1 32 -
+step 24 0 -
+step 1 1 -
+step 24 0 -
+ui wait action 2 900
+step 1 1 -
+step 24 0 -
+ui wait move 2 900
+ui move 2 0 2
+step 24 0 donut-spark.ppm
+step 1 32 -
+step 24 0 donut-weaken.ppm
+ui move 2 1 40
+step 1 64 -
+step 24 0 -
+step 1 2 -
+step 24 0 -
+ui wait action 2 900
+step 1 1 -
+step 24 0 -
+ui wait move 2 900
+ui move 2 0 2
+step 24 0 donut-return.ppm
+step 1 1 -
+step 24 0 -
+ui next action 0 6000
+step 1 1 -
+step 24 0 -
+ui wait move 0 900
+ui move 0 1 39
+step 1 1 -
+step 24 0 -
+ui wait action 2 900
+step 1 1 -
+step 24 0 -
+ui wait move 2 900
+ui move 2 0 1
+step 24 0 spark-one.ppm
+step 1 1 -
+step 24 0 -
+ui next action 0 6000
+step 1 1 -
+step 24 0 -
+ui wait move 0 900
+ui move 0 1 38
+step 1 1 -
+step 24 0 -
+ui wait action 2 900
+step 1 1 -
+step 24 0 -
+ui wait move 2 900
+ui move 2 0 0
+step 24 0 spark-empty.ppm
+step 1 1 -
+step 90 0 spark-rejected.ppm
+ui next move 2 1200
+ui move 2 0 0
+step 24 0 spark-empty-return.ppm
+step 1 32 -
+step 24 0 weaken-after-empty.ppm
+ui move 2 1 40
+flag 47 0
+item 13 1
+item 378 2
+ui finish
+quit

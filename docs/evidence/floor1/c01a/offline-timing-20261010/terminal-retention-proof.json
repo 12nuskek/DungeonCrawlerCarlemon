@@ -1,0 +1,100 @@
+{
+  "PASS": true,
+  "scope": "Host-only fake-memory error/success fixtures; no gameplay process, ROM load, CPU step, frame, input or game call",
+  "fixtures": {
+    "0": {
+      "exit": 124,
+      "tags": [
+        3,
+        4,
+        11
+      ],
+      "bytes": 480,
+      "stderr": ""
+    },
+    "1": {
+      "exit": 0,
+      "tags": [
+        3,
+        4,
+        11
+      ],
+      "bytes": 480,
+      "stderr": ""
+    },
+    "2": {
+      "exit": 124,
+      "tags": [
+        3,
+        4,
+        11
+      ],
+      "bytes": 480,
+      "stderr": "Terminal edge retention failed=125; original STOP=124 preserved\n"
+    },
+    "3": {
+      "exit": 124,
+      "tags": [],
+      "bytes": 0,
+      "stderr": "Terminal edge retention failed=125; original STOP=124 preserved\n"
+    },
+    "4": {
+      "exit": 124,
+      "tags": [],
+      "bytes": 0,
+      "stderr": "Terminal edge retention failed=125; original STOP=124 preserved\n"
+    },
+    "5": {
+      "exit": 124,
+      "tags": [
+        3,
+        4
+      ],
+      "bytes": 320,
+      "stderr": "Terminal edge retention failed=125; original STOP=124 preserved\n"
+    },
+    "6": {
+      "exit": 51,
+      "tags": [
+        3,
+        4,
+        11
+      ],
+      "bytes": 480,
+      "stderr": ""
+    },
+    "7": {
+      "exit": 109,
+      "tags": [
+        3,
+        4,
+        11
+      ],
+      "bytes": 480,
+      "stderr": ""
+    }
+  },
+  "success_footer_bytes_identical_to_old": true,
+  "original_STOP_preserved_on_IO_and_capacity_error": true,
+  "historical_unflushed_observations_not_recovered": true,
+  "source_SHA256": "d3fd619c72e92b03b77e7ca0755794e29a578f2d070fe2b10e98be8d825753d8",
+  "exact_generated_historical_C_restored_by_reversing_scoped_edits": true,
+  "all15_original_key_expressions_identical": true,
+  "compiled_host_never_launched": true,
+  "new_generated_source_SHA256": "1bb218dce0a73cc6d16e2afc0d959104cab0a173495e056e24afb4820ff761ab",
+  "new_host_binary_SHA256": "3f529aa4fe917f151bd3822e034e6471f03baea6dee72075ef702d4bab221516",
+  "host_compile_command": [
+    "cc",
+    "-DUSE_DEBUGGERS",
+    "-std=gnu11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I<pinned-tool-root>/usr/include",
+    "observer-terminal.c",
+    "-L<pinned-tool-root>/usr/lib/x86_64-linux-gnu",
+    "-lmgba",
+    "-o",
+    "observer-terminal"
+  ]
+}

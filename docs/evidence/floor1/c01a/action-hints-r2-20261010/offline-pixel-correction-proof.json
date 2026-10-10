@@ -1,0 +1,9 @@
+{
+  "PASS": true,
+  "scope": "Offline native font mapping correction; no emulator or input/observer change",
+  "lookup_byte_cases": 256,
+  "atlas_strings": 6,
+  "box3_maps_to_background0": true,
+  "frozen_checker_preserved": true,
+  "corrected_checker_SHA256": "d2999405aec0dac44fabb2f56b5c3b627e1d31fd3647824ffa8070477db590ca"
+}

@@ -1,0 +1,5 @@
+{
+  "phase": "Read-only post-STOP analysis, no emulator",
+  "failure": "Incorrectly asserted every physical-frame party capture equals cold bytes; final party is exact, transient mid-native-read frames exist. Full2700 runtime stream and its future strict candidate equality remain unchanged.",
+  "failed_source_SHA256": "563454af6eaaee91cf085c80a74291b0d8a99602bfa919bf175775c588fe4bf5"
+}

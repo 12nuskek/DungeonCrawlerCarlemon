@@ -1,3 +1,362 @@
+## Current C01a actual diagnostic pair — baseline prefix matched; candidate STOP124
+
+Narrow mode correction admitted separate claim7/baseline attempt6 (actual run5/
+emulator6), then gated claim8/candidate attempt2 (actual emulator7). Tested/frozen/
+executed656fc902ac6d0a1583e3396372b9da1f126e3844; no recompile/game change/rebuild.
+Read-only mode/identity/owner/hash/access checks passed before freeze/each claim;
+11 inert negatives passed. Old failed claim6/0600/empty log/STOP/all bytes immutable.
+Baseline3172B/3194F/3194x2700 matched original strict reference through command27/
+Move-ready;25 diagnostic frames/1132 rows/footer0. Candidate firstSTOP124 visual3171/
+epoch5216/command26;2 complete frames+failing context/557 rows/footer124; no later
+step/retry/Move-ready. Both partial,no full E+EOF/acceptance. Actual runs5/2/7,
+consumed claims6/2/8; preserve distinction and historicalV016/4/STOP117,new1/1/
+ordinary5/Library5+1/all prior C01a failures.
+
+Earliest recorded PP/USES cycle split+162; sameVBlank hits candidate locked inside
+RequestDma3Copy, native DMA early-return versus baseline40KiB service. Candidate
+init completes197722 cycles earlier, opponent1 command53 exec11->9, then actual
+battler3 command18 handler/__umodsi3+48 atSTOP. Other2695 bytes/600 party/count2/
+counter47/flags/raw resources/RNG exact; no DMA defect or optimized/padding remedy
+proved. All3171 candidate frames+terminal match original baseline. Actual paired
+motion/pixels and closed queues retained; no visible new hints/candidate acceptance.
+Next: review unapplied withdrawal patch restoring baseline menu render path; apply
+nothing in this increment. Local verified private retention only,no backup upload/
+Library retry/raw recovery metadata publication. Publish draftPR115/open issue116
+and stop idle,no merge. Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-execmode-r2-20261010/README.md.
+Earlier authority bodies below historical.
+
+## Current C01a reviewed executable-mode correction and gated prefix pair
+
+Review accepts narrow correction from9bcda7fba27a32cfdada3c3bebce44985a5eebd0.
+Use separately named execmode-r2 output/freeze/claims, reuse own-compiled observer
+without compilation/game rebuild, set only newly created observer0700. Bind and
+check exact bytes/non-symlink regular identity/owner/mode/access before freeze
+and immediately before claim. Eleven inert-file negatives plus0700 acceptance
+pass offline. Failed original freeze/claim6/empty log/STOP and all bytes immutable.
+
+New baseline claim7/attempt6 (actual baseline5/emulator6 if launched) once, then
+conditional candidate claim8/attempt2 (actual emulator7 if launched). Current
+claims5/1/6 versus actual4/1/5. Original27 commands,925-frame cap, strict original
+comparators/passive host/full acceptance/storage/first-stop unchanged. No retry,
+move input/past-STOP step/game remedy/merge/backup upload/Library retry/raw public
+payloads. Same increment proceeds after offline/freeze gate; stop review after
+pair or first failure. Paired evidence partial, never full acceptance.
+Contract: docs/evidence/floor1/c01a/diagnostic-prefix-execmode-r2-20261010/contract.md.
+Earlier authority bodies below historical.
+
+## Current C01a terminal launch checkpoint — baseline claim consumed; no observer start
+
+Reviewed baseline attempt5/process6 claim was consumed at06:07:40 UTC on
+ee59501ed95b5d040d80a217aa7b4658273eb727, then OS PermissionError13 stopped
+launch. Frozen observer0600 versus offline source0700: copyfile preserved bytes
+but lost executable mode. No gameplay/strict runtime comparisons/diagnostic rows.
+Candidate7/attempt2 unclaimed and blocked. No permission change/retry/new freeze.
+Actual emulator counts remain4 baseline/1 candidate/5 total; claimed attempts
+are5/1/6. Preserve distinction and all old STOPs/claims/builds/Saves/Library5+1.
+Paired chronology unavailable; no timing/game remedy or runtime acceptance.
+Next: review separately named executable-mode preparation correction before any
+new freeze/claim; existing consumed claim/STOP immutable. Private evidence stays
+local; backup upload not authorized; no new public private recovery metadata.
+Publish draftPR115/open issue116 and stop idle for review,no merge.
+Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/README.md.
+Earlier authority bodies below are historical.
+
+## Current C01a safe checkpoint — environment returned; pair unstarted
+
+Status-only steering pauses before execution. Workspace read/hash checks succeed;
+freeze completed05:55:23 UTC. No active emulator or claim/start/result for
+process6/baseline5 or process7/candidate2. C01a actual counts remain4/1/5.
+Offline helper2cea8d0955938b88f6d4e3de8825f8318104193c and frozen inputs are
+preserved;579 hash checks passed. No test replay/game change/rebuild/new runtime.
+Local private pre-execution archive114 verified entries/6504952 bytes,
+cc55738a3164309185e6cc8e42cf7894875088bb21a50b6db2fe631965c31e12; no verified
+independent backup. All old STOPs/Saves/counts/Library5+1 failures unchanged.
+Publish safe checkpoint to draftPR115/open issue116; writer idle on turn end.
+Next remains reviewed one-shot baseline prefix, candidate gated; no start in
+this status turn. Evidence: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/README.md.
+Earlier authority bodies below remain historical.
+
+## Current C01a diagnostic prefix authority — one baseline then gated candidate
+
+Review accepts a diagnostic-only pair fromf5c56a4a9a7f2ce51b087668bd8c58c2efb2c02b.
+Use retained builds/real Save/full certified C01a baseline4 references; no game
+change/rebuild/remedy/stream weakening/merge. Original commands1–27 exactly,
+detailed recorder active before25 Fight A;925-frame maximum and first Move-ready
+endpoint. Process6/baseline5 once; only strict original-prefix match and correct
+recorder close admit process7/candidate2 once. First mismatch/failure terminal;
+no instruction past failure, replay or continuation beyond Move-ready.
+
+Reviewed terminal generator plus46 scoped ELF points/11 RAM bindings per build;
+source-bound ARM ABI and14 wrong-binding/14 host error-success/passivity fixtures
+pass offline. Original CPU driver/events/input expressions and strict native/UI
+functions unchanged.4096-row buffers include command/key/queue rows and reserve
+frame marker; separate terminal row.970103304 bytes/case/1940206608 combined fits
+larger20GiB original storage envelope. Full B/F/E+EOF/2700 acceptance requirements
+remain unchanged; diagnostic endpoints explicitly partial. Original archives,
+STOP124/unflushed history/Saves and Library5+1 failures preserved. No new runtime
+process yet at this authority checkpoint: C01a4/1/5; planned pair5/2/7 only after
+both actually start. No second writer/schedule/Library retry/public raw artifacts.
+Contract: docs/evidence/floor1/c01a/diagnostic-prefix-pair-20261010/contract.md.
+Freeze/claims/actual evidence separately recorded. Publish draftPR115 and stop
+review after pair; accepted nine-district plan/broader gates unchanged.
+Earlier checkpoint/authority bodies below are historical.
+
+## Current C01a offline timing / terminal-retention checkpoint
+
+Continued from92d6f40fde2b7b5f9944d286a42ad2a6e897af4b. Retained ELF/source/tool
+and boundary3149/frame3169–3171 audit passes offline. Candidate remains in CB1
+invocation3665 after Carl init/opponent1 completion; exec XOR2 is opponent bit1.
+No observed current battler/command/stack above GetSubstruct or baseline detailed
+interval. Same pane windows/speed0/printing-call/copy shapes; different glyph/font
+work does not establish CPU timing or DMA defect. No justified game remedy.
+
+Separately named terminal host writes pending edge rows/footer before active error
+exits; preserves STOP and success stepping/inputs/strict streams. Eight host-only
+error/success cases, original success bytes, complete generated-C reversal and
+pinned full host compile/link pass; compiled host never launched. Original missing
+tag11/unflushed STOP124/receipts untouched; no lost observations recovered.
+
+No gameplay process/game rebuild/replay/rendering or DMA change/stream waiver/
+claim/merge. Counts C01a4 baseline/1 candidate/5 processes, historicalV016/4/
+STOP117,new1/1,ordinary5 unchanged. Engine3ef0d463/source807eeea4 remains actual
+STOP124 with no runtime acceptance. Exact proofs/tools/retention/ordinary offline
+attempt history: docs/evidence/floor1/c01a/offline-timing-20261010/README.md.
+Next: review precise missing evidence/minimum passive sidecar proposal; any later
+instrumentation/freeze/exclusive first-stop execution claim separate. DraftPR115/
+issue116 stop at review. Main/other heads/accepted nine-district plan unchanged.
+Private local retention only,no independently verified backup; Library5+1 failures
+unknown cause/zero original bytes retained/no retry. No ROM/ELF/Save/raw/full symbols
+published. Earlier checkpoint/authority bodies below are historical.
+
+## Current C01a candidate-only checkpoint — certified baseline4; candidate STOP124
+
+Corrected offline certificate verifies all original r4 bytes/source/build/tools,
+6883B/7051F/E+EOF/full19037700 supplemental bytes and all post-inventory gates.
+New complete passive mode passes tag11/result0/command156/7051 ordered frame ends;
+old STOP/PASS=false/complete=false/freeze/claim remain exact. Classifier strict
+7051 numeric frames/all27 named captures,13 negatives including malformed-extra;
+same classifier and separate named-start comparison frozen in new pixel wrapper.
+Helper1eac08cc637a13e8f22468c744954c52445ac032; executionb0102d46b80e0b476057b1490aa41e7a8811b422.
+
+Exactly one candidate process5/attempt1: first strict supplemental STOP124 at
+visual3171/epoch5216/route26/15 assertions.3171 successful numbered captures plus
+terminal frame. Five bytes differ: scoped Carl callback HandleChooseMoveAfterDma3
+versus PlayerBufferRunCommand at2533..2536; execflags9 versus11 at2560. Other2695
+bytes/party600/flags300/raw resources/RNG exact. Callback/command phase divergence
+observed; precise rendering CPU/DMA timing cause unproven. No Move-ready/UI_MOVE,
+committed move/cancel/Bag/Summary/depletion/visible USES-hints/full EOF/candidate
+pixel acceptance. Full pixel wrapper not run; no retry/waiver/Save/merge.
+
+Actual3172-sample53.107865s prefix/STOP motion, lossless RGB all verified. All
+prefix/terminal pixels match same baseline; visible action scene still PP/TYPE,
+not new hints. Timeline5217/end124/hash chain verified. Passive5116 records/
+3171 frames/one ready lack terminal tag11 because native failure exits before
+edge-close and failing-frame flush; preserved diagnostic limitation. Normal
+Save/original/both r4 copies/new copy53f62dc2 unchanged. Finalduo11/10HP38/30
+clearuses8/40/2/40friendship89/81count2counter47flags unchanged; full post-STOP
+canonical resource context absent. No game/observer rebuild/baseline/V01 replay.
+
+Private local archive35083643 bytes/3590 byte-verified entries/b6717232…f047e01;
+original r4 archive/Saves intact, builds/tools/later metadata separate,no independent
+backup/transfer. Library5+1 unknown-cause/zero-byte failures untouched. Counts
+C01a4 baselines/1 candidate, historicalV01 6/4/STOP117,new1/1,ordinary5 preserved.
+Current and all four earlier failure phases distinct. Accepted plan unchanged.
+
+Next dependency: review exact controller/command-phase rendering/DMA handoff
+and compiled timing audit before prescribing remedy. Strict assertions/certified
+baseline/STOP retained; any game change/build/new claim separate review. Publish
+scoped draftPR115/issue116 and stop,no merge/main/other-head changes.
+Evidence: docs/evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md.
+Earlier bodies below historical.
+
+## Current C01a candidate-only authority — certify retained baseline4 first
+
+Parent review accepts precise inventory correction atccc196473be4615d52d455c7a48afe2f5a208bec.
+Separately named corrected offline certificate must verify original bytes/provenance,
+all post-processing gates and complete passive mode (old complete=false untouched).
+Original r4 STOP/PASS=false/freeze/claim/evidence immutable. Exact numbered sequence,
+all named captures and malformed-extra rejection required; same strict classifier
+in pixel wrapper with named-start comparison separate. Only certificate PASS plus
+new frozen identities/exclusive claim permits process5/candidate attempt1 once.
+No baseline replay/game or observer rebuild. First unexpected failure terminal;
+no automatic replay/timing or RNG search/waivers. Counts four baselines/zero
+candidates until claim. Publish scoped draftPR115/issue116,stop review,no merge.
+Contract: docs/evidence/floor1/c01a/retained-baseline-candidate-20261010/contract.md.
+Earlier checkpoint bodies below are historical.
+
+## Current C01a r4 checkpoint — native route complete; capture-inventory STOP
+
+Baseline process4/attempt4 executionb222d75708e3eb3e48bd42e2318befce82e762f0
+finishes native route/emulator0 with59 assertions/9095 absolute/7051 visual/5747
+battle frames. Frozen independent runner then fails broad battle-*.ppm inventory:
+mandatory named battle-start.ppm plus7051 exact numbered frames counted7052.
+Original overall STOP/PASS=false retained; candidate0/no claim/retry/Save. This
+post-process phase is distinct from earlier startup-slot121/trainer-dialogue122/
+async-menu-readiness122. Do not run candidate or mutate assertions/STOP.
+
+Read-only independent retained checks confirm6883 nativeB/7051F/E+EOF and full
+7051x2700 supplemental+EOF, all16 named captures, both actors/all4 moves, target/
+move/Bag cancel, Party-context-Summary returns, two SPARK uses/depleted rejection/
+WEAKEN return. Exact scoped running CB2/task/fade-clear guard applied for all
+menus;27 readiness/14 move assertions. Passive13292 records include actual fresh
+B/ListMenu-2/closing tasks/fade/link returns; historical missed-B cause unresolved.
+Normal Save53f62dc2 original/copies unchanged. Final count2/counter47/flags exact,
+HP28/24 clear/uses8/38/0/40/friendship89/81/boss unset/Potion1/Scrap2. Full post-
+run canonical resource context/candidate state-RNG-pixel purity unverified.
+
+Same mainbdff4e1a/active9c83611e and compiled candidate807eeea4/engine3ef0d463,
+new r4 observer564c8b04/binary39a6ad52/helper36059733; one host compile/native ABI
+probe, no game rebuild/reconstruction/V01 replay. Two offline test regex failures
+and inaccurate first diagnosis corrected with original receipts retained; one
+pre-freeze archive-read interruption. All57+3472+4788 prior archive entries exact;
+immutable PPM hardlinks preserve every historical path/byte/hash,20GiB bounds.
+
+Actual7051-frame118.052823s clip/all lossless RGB verified; actual baseline
+PP/TYPE Party/Summary/depletion/return/native transition samples inspected,
+no candidate USES/hints or human whole-video/pacing claim. Private local archive
+114086650 bytes/7520 byte-verified entries/ff751f54…9676269, builds/tools/later
+metadata separate; no independent backup/transfer. Library5+1 unknown-cause/zero
+original-byte failures untouched. Counts C01a4 baselines/0 candidates; V01old6/4/
+STOP117,new1/1,ordinary5 and broader gates remain separate.
+
+Next review: unapplied exact numbered-capture classification and mandatory named
+start check (eight offline negative guards). Retained completed data permit review
+without replay; any later acceptance/authorization/freeze/claim separate. Publish
+scoped draftPR115/issue116 checkpoint and stop; no merge/main/other-head changes.
+Evidence: docs/evidence/floor1/c01a/action-hints-r4-20261010/README.md.
+Earlier checkpoint/authority bodies below are historical.
+
+## Current C01a r4 authority — scoped readiness and passive input freeze
+
+Parent review of3f904c65 authorizes all task-menu actual running scoped CB2/exact
+active task/fade-clear correction and bounded passive native input context.
+Separate r4 contract/freeze verifies three mandatory scoped CB2s in both actual
+ELFs, original16 slots unchanged, native ReadKeys/release/zero-extra-frame guards.
+Host compiled once, no game rebuild/reconstruction/V01 replay; r3 route156
+commands/builds/ordinary Save53f62dc2 reused. All57+3472+4788 historical retained
+archive entries verified exact. Storage hardlinks only identical immutable PPMs,
+preserving every path/byte/hash/original archived bytes;20GiB bounds unchanged.
+Two offline post-compile checks corrected and one inefficient archive verification
+interrupted before freeze; no emulator/claim. Read exact contract/freeze in
+ docs/evidence/floor1/c01a/action-hints-r4-20261010/.
+One exclusive baseline process4/attempt4 authorized; candidate process5/attempt1
+only complete strict B/F/E+EOF/full2700 frames+EOF PASS. First unexpected failure
+terminal/no retry/no dependent run. Preserve startup-slot, trainer-dialogue and
+async-menu-readiness prior failures separately; exact old missed-B cause unresolved.
+Publish draftPR115/issue116 review checkpoint only; no merge/main/other heads.
+Earlier checkpoint bodies below are historical.
+
+## Current C01a r3 checkpoint — native route proved; after-Bag STOP122
+
+Parent accepted10 exact input/handoff corrections at d9208aeb. New156-command
+routef03cae6c preserves146 other commands/all assertions/captures/bounds. Actual
+native baseline/candidate handlers compiled offline, full menu path expectations
+pass; each old mistake rejected twice20 cases. Two offline harness bugs preserved.
+Helperd8a40d5144c79d0dcab6c08c240d72cff35e13a3; freeze/execution
+2bc54d5d2c5b961f8fd4cccf313ff02f4a10a89e. Corrected16-slot observer9cbe4761/
+8589d380 unchanged; builds807eeea4/mainbdff4e1a and normal Save53f62dc2 reused,
+all prior57+3472 retained entries exact; no compile/rebuild/reconstruction/V01 replay.
+
+C01a process3/baseline attempt3:24 assertions/6415 absolute/4371 visual/3067 battle;
+first unexpected after-Bag command55 ui wait action0 900 STOP122. Startup/dialogue/
+CarlSTRIKE/target+move cancel/BRACE/Fight→Bag pass; four Carl UI_MOVE assertions,
+zero committed moves/rounds, candidate0. Actual B supplied but Bag persists;
+Bag readiness returned while mainCB2_Bag setup rather than CB2_BagMenuRun. Task
+created before native fade/run setup completes: demonstrated readiness false-
+positive. Exact missed-B cause unresolved; actual newKeys/fade/link-wait edge
+state missing. No retry/Save. Existing guards/strict full2700 unchanged. Next
+review: unapplied stronger verified Bag-run callback plus existing task/fade guard,
+then separately frozen observer/edge-evidence/claims; no route retiming/wait/RNG search.
+
+Actual4371-frame menu/STOP clip, every lossless RGB byte verified; baseline PP/TYPE
+static images inspected, no candidate/glyph/purity/Donut/Summary/depletion runtime
+acceptance. Final600 party/allflags/count2/counter47 exact; one transient physical
+frame is native48-byte decryption, source/bytes proved, no runtime waiver. Post-
+STOP canonical resource context missing; original/copies53f unchanged. Partial
+4337B/4371F/34zero/E0 cannot authorize candidate. Timeline6416 chain/STOP verified.
+Private local archive52869754 bytes/4788 verified entries/d2061de7…59de551;
+separate builds/tools and later metadata; no verified independent backup/transfer.
+Library5+1 failures/unknown cause/zero original bytes unchanged. Counts C01a3
+baselines/0 candidates; oldSTOP121/r2 dialogue122/r3 after-Bag122 distinct.
+HistoricalV01 6/4/STOP117,new1/1,ordinary5 and broader human/legacy/full-floor
+obligations unchanged. Scoped draftPR115 review only,no merge/main/other-head changes.
+Exact identities, native proof, actual captures, blocker and unapplied proposal:
+docs/evidence/floor1/c01a/action-hints-r3-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
+## Current C01a r2 checkpoint — slot-count correction passed; dialogue STOP122
+
+Parent accepted two-line16-slot correction at PR115 head554ec015. Applied only
+reviewed declaration/check; both actual sets16 nonzero/nine data/seven scoped
+callbacks,max consumed15,66 missing/zero/extra offline rejections pass. Retained
+old57 entries/STOP1212044/12/zero battle unchanged. Corrected observer9cbe4761/
+binary8589d380, helper477f499f, freeze/executionc4774762db9fdae221f26c9af50b0d8ea08e00e9.
+Reuse verified mainbdff4e1a engine8d8c7761 and compiled source807eeea4 engine3ef0d463,
+ROM3e6fa891/ELFc5f7e264, ordinary Save53f62dc2; no game build/reconstruction/V01 replay.
+
+C01a process2/baseline attempt2 passes startup then first unexpected STOP122:
+14 assertions/5449 absolute/3405 visual/2101 battle frames. First neutral
+ui wait action0 900 leaves native trainer challenge \p prompt awaiting freshA/B;
+scoped opponent text-printer callback/exec0x2/keys1023 and actual image confirm.
+No action/move chosen,candidate0,no retry/Save; original/copies53f unchanged.
+Partial3391B/3405F/14zero/noE is not successful reference. Two baseline processes/
+attempts overall,0 candidates; STOP121 and122 distinct. Actual3405-frame baseline
+intro/STOP clip lossless RGB fully verified and PNGs inspected; no action-pane
+before/after,candidate pixels/motion or full control/purity acceptance. One
+offline font-mask index3 mistake corrected separately via native lookup256/six
+strings; runtime frozen inputs/observer unchanged. All previous failures retained.
+
+Next: review unapplied single-command dialogue handoff to existing ui next
+(action0,bound900); all155 other route commands/native gates/bounds unchanged.
+Then separately name/freeze another baseline/conditional candidate from verified
+builds/Save. No timing/RNG search or blind retry. Scoped draftPR115 only,no merge.
+Private local archive21140478 bytes/3472 entries/ba172a84…cbb47c5 byte-verified,
+separate builds/tools,old archive unchanged; no independent backup/transfer.
+HistoricalV01 6/4/STOP117,new V01 1/1,ordinary5 and Library5+1 zero original
+recovered bytes/unknown cause preserved,no retry. Human pacing/legacy/prepared-
+unprepared/branch-order/optional-skip/full-floor gates remain separate.
+Exact sources,freeze/build/STOP,proofs,actual captures and retention:
+docs/evidence/floor1/c01a/action-hints-r2-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
+## Current C01a checkpoint — compiled hints; terminal adapter STOP121
+
+Published implementation/evidence63dea839e48075f0cebe10e52fb09dbfb2e8a0b7 on draft
+PR115 (https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/115), unmerged.
+Returned statuses/PR workflow first page/check-runs/reviews empty; no CI pass
+claimed. All68 existing remote heads unchanged; only the new C01a branch added.
+Exact base/tested/execution/publication: linked publication-receipt.json.
+
+PR114 is actually merged at mainbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7,
+engine8d8c7761 unchanged from accepted V01. C01a tested source807eeea457c973b097be9eab9e1556e20d0204aa,
+engine3ef0d46368e45c3e4a5b8084eeec2a81b50a688b; one successful build ROM3e6fa891/ELFc5f7e264.
+USES plus ONE FOE/SELF DEF+/BOTH FOES/ALL FOES ATK- fit existing windows;
+offline font/compiled-string/native pane-purity/input/fallback/ABI checks pass.
+Balance8/40/2/40, descriptions, controls, resources, native friendship/recovery
+and Save schema unchanged. No candidate pixel/timing/runtime acceptance.
+
+Separately frozen executiond87f024fd5ae7640ded47c6e93fe835cbdc354e3 ran one
+baseline cold boot:12 assertions/2044 frames, full party/count/flags/resources/
+counter/field checks; STOP121 at ui start before Warden,zero battle/action/visual
+frames. New adapter checks17 addresses but only16 assigned; unused slot16 zero.
+Candidate0/retries0, no Save/UI streams/menu screenshots/motion. Actual field
+boot PNG only. Original/copies Save53f62dc2 unchanged. Failed source/contract/
+freeze/claim/STOP preserved; two-line correction is unapplied with four offline
+cardinality/missing/zero guards. Next: review proposal, then separately named
+corrected observer/freeze/exclusive claim; reuse verified builds/Save, no replay.
+
+New scoped draft review only, no merge. Five offline preparation failures and
+one read-only post-STOP diagnosis flag mistake retained. Private local archive
+7448751 bytes/57 entries/3fc4ed0f…59754861 byte-verified; separate builds/tools,
+no verified independent backup/transfer. Library5+1 unknown-cause failures/zero
+original recovered bytes unchanged,no retry. Historical V01 6/4/STOP117,
+completed new V01 1/1 and ordinary5 remain separate; C01a adds one stopped
+cold-boot process/zero candidates. Human pacing/legacy/prepared-unprepared/
+branch-order/optional-skip/full-floor gates and accepted bounded plan remain.
+Exact contract, identities, STOP/proofs/actual field PNG and retention:
+docs/evidence/floor1/c01a/action-hints-20261010/README.md.
+Earlier checkpoint bodies below are historical.
+
 ## Current technical V01 closure — accepted scoped review; C01a next after normal integration
 
 Parent accepted38468a31f39f2bb14cd6cebe7c15578363307c1d after independent source
@@ -339,7 +698,7 @@ and motion where affected, rollback commit, blocker attempts and next action.
 | F1-G01e-PR | PT controller diagnosis | Correct actual fade/task readiness, observe context/recipient acknowledgements; negative tests then ONE exact historical Potion replay | PR89 merged: separately verified historical intervention, 29 host checks, 2 sessions/80 assertions, 20HP heal/1Potion, Howler→Guard, XP/rewards/Save/cold. Historical input identity retained; no transfer to reconstructed inputs |
 | F1-G01e-CP | PR89 bounded historical review | Currentc643/b025, ordinary Howler→guide→Guard with supported Potion; exact state/readiness/rewards/repeat/Save/cold | CP72e integrated through PR91's reviewed bridge: c643/b025, 29 host checks, 2 sessions/81 assertions, real Potion/Howler→Guard/rewards/repeat/Save/cold. Original private inputs remain unavailable; no full-opening or V01 acceptance claim |
 | F1-V01 | G01, readable art | Staged native junction/workshop/safe doorway; Carl gait, Donut reaction; action-bound Warden warning/SLAM, pose/budget/clips | Technical scoped closure accepted at38468a31: active engine8d8c7761/tested game9c83611e; new-input1 baseline/1 candidate PASS42 each/fullB15379/F15627/E+EOF,all17 poses/held warning/palettes/budgets/faint-exit/controls/resources/unchanged Saves. Parent actual decoded-frame/time review found no concrete blocking defect; normal PR114 integration authorized when protections permit. No extra Kurt merge gate. Direct perceptual playback/human comprehension-pacing,legacy and full-floor gates remain separate. Next separate C01a; no implementation here. Historical6/4/STOP117 and all earlier failures/provenance preserved. [Technical closure](../evidence/floor1/v01/new-input-pair-20261010/closure.md) |
-| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Next after normal V01 integration: C01a contextual USES label and compact target/effect hints in existing move pane; preserve balance/controls/Save schema. C01a not implemented; broader C01 prepared/unprepared/human-pacing gates remain pending |
+| F1-C01 | V01 | Useful duo decisions, resource model; uninterrupted prepared/unprepared opening, multiple timings, no health inflation | Corrected retained baseline4 certificate/full native+supplemental EOF/coverage/complete passive gates PASS, old r4 STOP/PASS=false untouched. Candidate process5/attempt1 first STOP124 atvisual3171/15 assertions: five-byte controller/exec phase divergence. No visible USES/hints/full candidate/pixel acceptance or retry. [Exact source, retained records and actual STOP motion](../evidence/floor1/c01a/retained-baseline-candidate-20261010/README.md). Offline retained timing audit complete; no justified game remedy. Terminal host retention tests pass; review passive diagnostic proposal before any new claim. Broader human/full-floor gates remain separate |
 | F1-G02 | C01 | Nine-district graph; both branch orders; D7 optional; both service loops; three refuges;8–12T measured; exact ports/widths/headroom | Pending |
 | F1-S01 | G02,C01 | Bounded ledger/content/resources; audited distinct flags, active refuge, D1 versus D9 ending, full legacy migration matrix | Pending |
 | F1-D02 | S01,V01 | Sluice native production and matching D1 seam, readable hub and branch exits | Pending |

@@ -1,0 +1,139 @@
+diff --git a/engine/include/battle_message.h b/engine/include/battle_message.h
+index 37edd8db..61c0f64d 100644
+--- a/engine/include/battle_message.h
++++ b/engine/include/battle_message.h
+@@ -240,11 +240,6 @@ extern const u8 gText_LinkStandby[];
+ extern const u8 gText_BattleMenu[];
+ extern const u8 gText_SafariZoneMenu[];
+ extern const u8 gText_MoveInterfacePP[];
+-extern const u8 gText_MoveInterfaceUses[];
+-extern const u8 gText_DccStrikeHint[];
+-extern const u8 gText_DccBraceHint[];
+-extern const u8 gText_DccSparkHint[];
+-extern const u8 gText_DccWeakenHint[];
+ extern const u8 gText_MoveInterfaceType[];
+ extern const u8 gText_MoveInterfacePPType[];
+ extern const u8 gText_MoveInterfaceDynamicColors[];
+diff --git a/engine/src/battle_controller_player.c b/engine/src/battle_controller_player.c
+index d2435ba4..45bf1a17 100644
+--- a/engine/src/battle_controller_player.c
++++ b/engine/src/battle_controller_player.c
+@@ -99,7 +99,6 @@ static void HandleInputChooseMove(void);
+ static void MoveSelectionCreateCursorAt(u8, u8);
+ static void MoveSelectionDestroyCursorAt(u8);
+ static void MoveSelectionDisplayPPNumber(void);
+-static const u8 *MoveSelectionGetHint(u16 move);
+ static void MoveSelectionDisplayPPString(void);
+ static void MoveSelectionDisplayMoveType(void);
+ static void MoveSelectionDisplayMoveNames(void);
+@@ -473,7 +472,6 @@ static void HandleInputChooseMove(void)
+ {
+     bool32 canSelectTarget = FALSE;
+     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+-    u8 previousCursor = gMoveSelectionCursor[gActiveBattler];
+ 
+     if (JOY_HELD(DPAD_ANY) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
+         gPlayerDpadHoldFrames++;
+@@ -556,10 +554,6 @@ static void HandleInputChooseMove(void)
+             gMoveSelectionCursor[gActiveBattler] ^= 1;
+             PlaySE(SE_SELECT);
+             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
+-            // Refresh only when crossing authored/native label contexts.
+-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
+-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
+-                MoveSelectionDisplayPPString();
+             MoveSelectionDisplayPPNumber();
+             MoveSelectionDisplayMoveType();
+         }
+@@ -573,10 +567,6 @@ static void HandleInputChooseMove(void)
+             gMoveSelectionCursor[gActiveBattler] ^= 1;
+             PlaySE(SE_SELECT);
+             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
+-            // Refresh only when crossing authored/native label contexts.
+-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
+-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
+-                MoveSelectionDisplayPPString();
+             MoveSelectionDisplayPPNumber();
+             MoveSelectionDisplayMoveType();
+         }
+@@ -589,10 +579,6 @@ static void HandleInputChooseMove(void)
+             gMoveSelectionCursor[gActiveBattler] ^= 2;
+             PlaySE(SE_SELECT);
+             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
+-            // Refresh only when crossing authored/native label contexts.
+-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
+-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
+-                MoveSelectionDisplayPPString();
+             MoveSelectionDisplayPPNumber();
+             MoveSelectionDisplayMoveType();
+         }
+@@ -606,10 +592,6 @@ static void HandleInputChooseMove(void)
+             gMoveSelectionCursor[gActiveBattler] ^= 2;
+             PlaySE(SE_SELECT);
+             MoveSelectionCreateCursorAt(gMoveSelectionCursor[gActiveBattler], 0);
+-            // Refresh only when crossing authored/native label contexts.
+-            if ((MoveSelectionGetHint(moveInfo->moves[previousCursor]) != NULL)
+-             != (MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]) != NULL))
+-                MoveSelectionDisplayPPString();
+             MoveSelectionDisplayPPNumber();
+             MoveSelectionDisplayMoveType();
+         }
+@@ -1488,25 +1470,9 @@ static void MoveSelectionDisplayMoveNames(void)
+     }
+ }
+ 
+-static const u8 *MoveSelectionGetHint(u16 move)
+-{
+-    switch (move)
+-    {
+-    case MOVE_DCC_STRIKE: return gText_DccStrikeHint;
+-    case MOVE_DCC_BRACE: return gText_DccBraceHint;
+-    case MOVE_DCC_SPARK: return gText_DccSparkHint;
+-    case MOVE_DCC_WEAKEN: return gText_DccWeakenHint;
+-    default: return NULL;
+-    }
+-}
+-
+ static void MoveSelectionDisplayPPString(void)
+ {
+-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+-    const u8 *label = MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]])
+-        ? gText_MoveInterfaceUses : gText_MoveInterfacePP;
+-
+-    StringCopy(gDisplayedStringBattle, label);
++    StringCopy(gDisplayedStringBattle, gText_MoveInterfacePP);
+     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP);
+ }
+ 
+@@ -1532,15 +1498,6 @@ static void MoveSelectionDisplayMoveType(void)
+     u8 *txtPtr;
+     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
+ 
+-    const u8 *hint = MoveSelectionGetHint(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]);
+-
+-    if (hint != NULL)
+-    {
+-        StringCopy(gDisplayedStringBattle, hint);
+-        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
+-        return;
+-    }
+-
+     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+     *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;
+     *(txtPtr)++ = EXT_CTRL_CODE_FONT;
+diff --git a/engine/src/battle_message.c b/engine/src/battle_message.c
+index e68c4ddf..1c1053c3 100644
+--- a/engine/src/battle_message.c
++++ b/engine/src/battle_message.c
+@@ -1277,11 +1277,6 @@ const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
+ const u8 gText_BattleMenu[] = _("ACT{CLEAR_TO 56}ITEMS\nCRAWLERS{CLEAR_TO 56}RETREAT");
+ const u8 gText_SafariZoneMenu[] = _("BALL{CLEAR_TO 56}{POKEBLOCK}\nGO NEAR{CLEAR_TO 56}RUN");
+ const u8 gText_MoveInterfacePP[] = _("PP ");
+-const u8 gText_MoveInterfaceUses[] = _("USES");
+-const u8 gText_DccStrikeHint[] = _("ONE FOE");
+-const u8 gText_DccBraceHint[] = _("SELF DEF+");
+-const u8 gText_DccSparkHint[] = _("BOTH FOES");
+-const u8 gText_DccWeakenHint[] = _("ALL FOES ATK-");
+ const u8 gText_MoveInterfaceType[] = _("TYPE/");
+ const u8 gText_MoveInterfacePPType[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}PP\nTYPE/");
+ const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}");

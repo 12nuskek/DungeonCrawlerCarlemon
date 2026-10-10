@@ -1,0 +1,28 @@
+{
+  "PASS": true,
+  "game_source": "4a92a9de70848b9d7275f9f255bb0d2f53232ab8",
+  "execution_helper": "36cfd1e35451cdd9ba8a7c3bf6398fb595d6611f",
+  "native_width": 240,
+  "native_height": 160,
+  "native_frame_rate": "16777216/280896",
+  "all_lossless_decoded_RGB_frames_exact": 7051,
+  "all_RGB_SHA256": "c37a4b7139e30365dfe4c10ea40a57a6f388ff4c0bd5c7b3dde9cf4df6b69789",
+  "private_FFV1_bytes": 161346189,
+  "private_FFV1_SHA256": "ef70c470bdcd3afaa1d627022b30dfaaf441010472820bbca397268c57eec64e",
+  "review_filename": "actual-battle-review.mp4",
+  "review_bytes": 1353530,
+  "review_SHA256": "e5dad8dccce7b5ba4a4ab400de11fa125a0df74b160b98ace66dc55aced0da93",
+  "review_start_native_frame": 0,
+  "review_frames": 7051,
+  "review_probe": {
+    "codec_name": "h264",
+    "width": 240,
+    "height": 160,
+    "r_frame_rate": "262144/4389",
+    "avg_frame_rate": "262144/4389",
+    "duration": "118.052822",
+    "nb_read_frames": "7051"
+  },
+  "review_encoding": "Lossy H.264 display export; exact native PNG and private PPM/FFV1 provide pixel evidence. No audio, overlays, interpolation or synthetic frames.",
+  "viewing_scope": "Selected PNGs inspected; no claim of human-paced full motion review."
+}

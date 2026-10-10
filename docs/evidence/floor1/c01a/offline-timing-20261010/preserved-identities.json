@@ -1,0 +1,22 @@
+{
+  "original_c01a_candidate_STOP_SHA256": "e41318b1ceebdef86d3daee74fe50e4d8193bfebf8fefa017a24013d841cc2f3",
+  "original_r4_STOP_SHA256": "230b71676ee002fa5fe9ec68ae85d9ddc19fffe292ae60f9657ac8bab6288312",
+  "original_candidate_archive_SHA256": "b6717232003a23e8991040c1b6467274acbd8c2ca69e6928d99a13189f047e01",
+  "original_r4_archive_SHA256": "ff751f540a7e38023c0afd39261e602bf3625ef0e6d08da090e4c44889676269",
+  "Save_SHA256": "53f62dc2e283d89236d5572f47c3e7449c0bc1c06de738b1427fc9664ae67eb6",
+  "original_unflushed_candidate_edge_SHA256": "d6e8b0ccb03e4fcf02c91dfe7f1e78fefddac280853f26f9f1f23beff0142aff",
+  "new_gameplay_processes": 0,
+  "counts": {
+    "C01a_baseline": 4,
+    "C01a_candidate": 1,
+    "C01a_total": 5,
+    "historical_V01_baseline": 6,
+    "historical_V01_candidate": 4,
+    "historical_STOP": 117,
+    "completed_new_V01_pair": [
+      1,
+      1
+    ],
+    "ordinary_recovery": 5
+  }
+}

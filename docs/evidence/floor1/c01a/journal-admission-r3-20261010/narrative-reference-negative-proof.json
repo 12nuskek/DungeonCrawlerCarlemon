@@ -1,0 +1,29 @@
+{
+  "PASS": true,
+  "no_emulator": true,
+  "actual_source_equivalence": {
+    "PASS": true,
+    "exact_main_narrative_labels": [
+      "DCC_Boss_Text_Intro",
+      "DCC_Boss_Text_Prepared"
+    ],
+    "complete_other_legacy_files_and_blocks_exact": true,
+    "whole_file_immutable_base_projection_exact": true,
+    "current_file_SHA256": "82237149b1ea9b560aa87aa792361dde831fe12a77d69816ab02e407607f51e2"
+  },
+  "negative_cases_rejected": [
+    "extra_literal_block",
+    "changed_instruction",
+    "added_block",
+    "deleted_block",
+    "instruction_in_reviewed_literal",
+    "main_mismatch",
+    "accepted_origin_mismatch",
+    "changed_mode",
+    "changed_type",
+    "added_entry",
+    "deleted_entry",
+    "other_entry_changed"
+  ],
+  "historical_checker_unchanged": true
+}

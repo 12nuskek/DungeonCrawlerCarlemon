@@ -1,0 +1,25 @@
+{
+  "PASS": true,
+  "scope": "Offline native guard counterexample and unapplied stronger Bag callback proposal; no emulator or runtime fix",
+  "current_guard_accepts_pre_running_callback": true,
+  "proposed_guard_rejects_pre_running_callback": true,
+  "run_callback_plus_active_task_and_fade_clear_accepts": true,
+  "fade_inactive_task_missing_binding_rejected": true,
+  "bindings": {
+    "baseline": {
+      "symbol": "G:CB2_BagMenuRun",
+      "address_nonzero": true,
+      "verified_STT_FUNC_identity": true
+    },
+    "candidate": {
+      "symbol": "G:CB2_BagMenuRun",
+      "address_nonzero": true,
+      "verified_STT_FUNC_identity": true
+    }
+  },
+  "patch_SHA256": "b36be10262a40c3a75a9df61a6edcf1dcab4cf591571cd80e86989bb6f904c02",
+  "observer_current_source_unchanged": true,
+  "route_change": false,
+  "exact_missed_B_cause_still_unresolved": true,
+  "required_future_evidence": "Actual newKeys/fade/link-wait context at Bag cancel edge; separately named source/freeze/claims after parent review."
+}

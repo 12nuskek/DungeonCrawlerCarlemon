@@ -1,0 +1,5 @@
+{
+  "scope": "Offline post-compile regex only, no emulator",
+  "reason": "Assignment detector also matched read-only == comparison; use negative lookahead",
+  "source_changed": false
+}

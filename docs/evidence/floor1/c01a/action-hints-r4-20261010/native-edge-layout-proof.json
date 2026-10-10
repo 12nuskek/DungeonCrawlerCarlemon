@@ -1,0 +1,37 @@
+{
+  "PASS": true,
+  "scope": "Native recovered agbcc/ARM ABI probe only; no game rebuild/emulator",
+  "values": {
+    "edgeLayout": [
+      1084,
+      4,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      1080,
+      12,
+      40,
+      4,
+      8,
+      4029,
+      2534,
+      3,
+      4294967294
+    ],
+    "edgeFadeActive": "000000000000008000000000",
+    "edgeFadeFinishing": "000000000000000000000200",
+    "edgeFadeCounter": "000000000000000000400000"
+  },
+  "identical_headers_both_builds": {
+    "main.h": "84e94a71c2216295e66d7f4b1f14127bc676f03956a20f087a5dc3703ef065a1",
+    "palette.h": "68d848e53bb883826fd84f35fbd657ff9ba31c9a0ec481dc6e903d6d1f875fdc",
+    "task.h": "ffa5c17d23b35ec324ad3986bc5f3bfc14f51b51617782a7f6f4cf56d28f3a7a",
+    "link.h": "aac4268e7577e96cc7e65e2cd300f69fa55c0e543fc45d131c19bc7bb4b83cdc",
+    "link_rfu.h": "3cc7bc608fb757f4758323a53a2e38ee92730bc1ff35bcf40041a144dc10dfbf",
+    "list_menu.h": "b6bd45a86e27ca8c738594ff96c21f56a9e81154c978461e3fb48de573a908e8"
+  },
+  "object_SHA256": "df00c445c3e60f7efc1f008401f9ec2a7a20e09786fb1e729c844bb251516bb8"
+}

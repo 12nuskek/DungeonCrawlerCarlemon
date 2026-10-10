@@ -1,0 +1,49 @@
+{
+  "PASS": true,
+  "scope": "Source-bound offline guards/native ReadKeys/generated release loop; no emulator",
+  "guard_summary": "guard_cases=2112 generated_wait_release_cases=3",
+  "task_based_kinds": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "transition_path": [
+    "Bag",
+    "battle",
+    "Party",
+    "context",
+    "Summary",
+    "context",
+    "Party",
+    "battle"
+  ],
+  "native_key_edges_and_L_remapping": true,
+  "ready_without_extra_frame": true,
+  "all_ten_route_corrections_and156_commands_unchanged": true,
+  "source_hashes": {
+    "baseline": {
+      "src/item_menu.c": "042dc66ba845b72882b4070f1975247b418fdf66b5213ede74cb165617d59f55",
+      "src/party_menu.c": "fdced309e37f26639ca8509ed132391880acd48ce091d7ad0dc9642c3541ca8f",
+      "src/pokemon_summary_screen.c": "2ef18d056ee497839377d63776930f9a61c1c5ada8a02d3ad3bfc2d3d01a4fe6",
+      "src/menu_helpers.c": "1d3b34f174cdb3ba5fb63b8c67b3a4e3e6b3e4bfd5ebf397c3948d479aca1e58",
+      "src/link.c": "5d823291dfdca0f2921bcaf5659c0404b0077b62162a00d3aba467a325173433",
+      "src/link_rfu_2.c": "a02404324d823438466a47c6304c21f308479adee73d8aef05862ad58381a95a",
+      "src/overworld.c": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "src/palette.c": "3767afaa0298d037b5c59817dd76aa9d5af576f97433eee70f878bfe5c476951"
+    },
+    "candidate": {
+      "src/item_menu.c": "042dc66ba845b72882b4070f1975247b418fdf66b5213ede74cb165617d59f55",
+      "src/party_menu.c": "fdced309e37f26639ca8509ed132391880acd48ce091d7ad0dc9642c3541ca8f",
+      "src/pokemon_summary_screen.c": "2ef18d056ee497839377d63776930f9a61c1c5ada8a02d3ad3bfc2d3d01a4fe6",
+      "src/menu_helpers.c": "1d3b34f174cdb3ba5fb63b8c67b3a4e3e6b3e4bfd5ebf397c3948d479aca1e58",
+      "src/link.c": "5d823291dfdca0f2921bcaf5659c0404b0077b62162a00d3aba467a325173433",
+      "src/link_rfu_2.c": "a02404324d823438466a47c6304c21f308479adee73d8aef05862ad58381a95a",
+      "src/overworld.c": "f4517f3a29a42888529467bc623d63d2c264610bc75175f89d363700fe385864",
+      "src/palette.c": "3767afaa0298d037b5c59817dd76aa9d5af576f97433eee70f878bfe5c476951"
+    }
+  },
+  "ABI_proof_SHA256": "d519ec70fbb4362c54095123b2f17e6aa7b78c060fc6ab3abe7af800596b17d2",
+  "observer_array_slots": 16,
+  "separately_mandatory_running_CB2_bindings": 3
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "Offline post-compile assertion only, no emulator",
+  "reason": "Test expected memcmp(&original,cpu,..); actual unchanged memcmp(cpu,&original,..)",
+  "compile_exit": 0,
+  "source_changed": false
+}

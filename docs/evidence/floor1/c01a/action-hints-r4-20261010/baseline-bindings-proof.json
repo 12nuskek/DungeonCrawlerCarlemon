@@ -1,0 +1,170 @@
+{
+  "PASS": true,
+  "case": "baseline",
+  "ELF_SHA256": "1bc654d935e262489c3e073225394ebf99732b0452eb311025b9e5fee0059cdc",
+  "scoped_bindings": {
+    "uiAction": {
+      "identity": "L:battle_controller_player.o:HandleInputChooseAction",
+      "address": 134574912,
+      "compiled_SHA256": "20e2f0f3d23416ba578edfe6870612c2f0d46028751e476b2d15e698bf26b2c3"
+    },
+    "uiMove": {
+      "identity": "L:battle_controller_player.o:HandleInputChooseMove",
+      "address": 134576564,
+      "compiled_SHA256": "1968c8861fd17d9b6df6770d409af089b4c88d43e4669a93b6684f313d2afdf8"
+    },
+    "uiTarget": {
+      "identity": "L:battle_controller_player.o:HandleInputChooseTarget",
+      "address": 134575580,
+      "compiled_SHA256": "3f220091c35c1929b057b7f7a001a393742febe072d91d17e6c7c2ef75f92f66"
+    },
+    "uiBag": {
+      "identity": "L:item_menu.o:Task_BagMenu_HandleInput",
+      "address": 135969276,
+      "compiled_SHA256": "75cb7df8ec6628976e7515635b3ba44f50ce2b048c6f52ed16abe028487be86c"
+    },
+    "uiParty": {
+      "identity": "G:Task_HandleChooseMonInput",
+      "address": 135991376,
+      "compiled_SHA256": "5d51fb4ef9f74619753a7f3b5858f93cefc771efebcc253d05ba8ab6422d9401"
+    },
+    "uiContext": {
+      "identity": "L:party_menu.o:Task_HandleSelectionMenuInput",
+      "address": 136000496,
+      "compiled_SHA256": "a655e1b76f352373e446ffc2950c4d478c5b7a9a4514a63eb3ed5e321c031740"
+    },
+    "uiSummary": {
+      "identity": "L:pokemon_summary_screen.o:Task_HandleInput",
+      "address": 136053204,
+      "compiled_SHA256": "87c9b2da1957ae6431311f4e26bd0db36528db592f46e82fa59244855463628b"
+    },
+    "uiBagCB2": {
+      "identity": "G:CB2_BagMenuRun",
+      "address": 135965232,
+      "compiled_SHA256": "7143a697ec683ad6392cca9ad3b41deac53ab6d18dd23835dd11074c6fdf32a1"
+    },
+    "uiPartyCB2": {
+      "identity": "L:party_menu.o:CB2_UpdatePartyMenu",
+      "address": 135986832,
+      "compiled_SHA256": "66b82086bdde2487657ec1d903b5a454753cbe5aa44c15cad4d49103eec74770"
+    },
+    "uiSummaryCB2": {
+      "identity": "L:pokemon_summary_screen.o:MainCB2",
+      "address": 136050552,
+      "compiled_SHA256": "5b6a991eeb352a493c6a56be684c04feec90eb1343133a3b7b6c122780329c48"
+    }
+  },
+  "negative_cases_rejected": 30,
+  "points": [
+    {
+      "identity": "L:battle_controller_player.o:HandleInputChooseAction",
+      "address": 134574912,
+      "opcode": 46576,
+      "function": 134574912,
+      "role": 1,
+      "kind": 1,
+      "compiled_function_SHA256": "20e2f0f3d23416ba578edfe6870612c2f0d46028751e476b2d15e698bf26b2c3"
+    },
+    {
+      "identity": "L:battle_controller_player.o:HandleInputChooseMove",
+      "address": 134576564,
+      "opcode": 46576,
+      "function": 134576564,
+      "role": 1,
+      "kind": 2,
+      "compiled_function_SHA256": "1968c8861fd17d9b6df6770d409af089b4c88d43e4669a93b6684f313d2afdf8"
+    },
+    {
+      "identity": "L:battle_controller_player.o:HandleInputChooseTarget",
+      "address": 134575580,
+      "opcode": 46384,
+      "function": 134575580,
+      "role": 1,
+      "kind": 3,
+      "compiled_function_SHA256": "3f220091c35c1929b057b7f7a001a393742febe072d91d17e6c7c2ef75f92f66"
+    },
+    {
+      "identity": "L:item_menu.o:Task_BagMenu_HandleInput",
+      "address": 135969276,
+      "opcode": 46576,
+      "function": 135969276,
+      "role": 1,
+      "kind": 4,
+      "compiled_function_SHA256": "75cb7df8ec6628976e7515635b3ba44f50ce2b048c6f52ed16abe028487be86c"
+    },
+    {
+      "identity": "G:Task_HandleChooseMonInput",
+      "address": 135991376,
+      "opcode": 46448,
+      "function": 135991376,
+      "role": 1,
+      "kind": 5,
+      "compiled_function_SHA256": "5d51fb4ef9f74619753a7f3b5858f93cefc771efebcc253d05ba8ab6422d9401"
+    },
+    {
+      "identity": "L:party_menu.o:Task_HandleSelectionMenuInput",
+      "address": 136000496,
+      "opcode": 46448,
+      "function": 136000496,
+      "role": 1,
+      "kind": 6,
+      "compiled_function_SHA256": "a655e1b76f352373e446ffc2950c4d478c5b7a9a4514a63eb3ed5e321c031740"
+    },
+    {
+      "identity": "L:pokemon_summary_screen.o:Task_HandleInput",
+      "address": 136053204,
+      "opcode": 46384,
+      "function": 136053204,
+      "role": 1,
+      "kind": 7,
+      "compiled_function_SHA256": "87c9b2da1957ae6431311f4e26bd0db36528db592f46e82fa59244855463628b"
+    },
+    {
+      "identity": "G:MenuHelpers_ShouldWaitForLinkRecv",
+      "address": 135405242,
+      "opcode": 18184,
+      "function": 135405212,
+      "role": 2,
+      "kind": 0,
+      "compiled_function_SHA256": "a2d4883d5fe3b069097b5937173e387229bd389e841601dc959e22f4f1051308"
+    },
+    {
+      "identity": "G:ListMenu_ProcessInput",
+      "address": 135979748,
+      "opcode": 46336,
+      "function": 135979748,
+      "role": 3,
+      "kind": 0,
+      "compiled_function_SHA256": "31adca56db64130057c353f74d30917ab7f37050d5c49c0b85c4bdc7981f8b52"
+    },
+    {
+      "identity": "G:ListMenu_ProcessInput",
+      "address": 135979940,
+      "opcode": 18184,
+      "function": 135979748,
+      "role": 4,
+      "kind": 0,
+      "compiled_function_SHA256": "31adca56db64130057c353f74d30917ab7f37050d5c49c0b85c4bdc7981f8b52"
+    },
+    {
+      "identity": "G:Task_FadeAndCloseBagMenu",
+      "address": 135968204,
+      "opcode": 46352,
+      "function": 135968204,
+      "role": 5,
+      "kind": 4,
+      "compiled_function_SHA256": "bed1c55169a2b8059ff6aeb173d14a51811518f30db53a268ab3de59d8bd91cb"
+    },
+    {
+      "identity": "L:item_menu.o:Task_CloseBagMenu",
+      "address": 135968260,
+      "opcode": 46384,
+      "function": 135968260,
+      "role": 6,
+      "kind": 4,
+      "compiled_function_SHA256": "f8c8a2040df6da7bb2df0a2ea246ada459b283daeb3c544b5e6d0a0441167870"
+    }
+  ],
+  "passive_profile_count": 12,
+  "native_return_register": "r0 at unique compiled bx r1"
+}

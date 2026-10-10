@@ -1,5 +1,11 @@
 ## Current C01a checkpoint — compiled hints; terminal adapter STOP121
 
+Published implementation/evidence63dea839e48075f0cebe10e52fb09dbfb2e8a0b7 on draft
+PR115 (https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/115), unmerged.
+Returned statuses/PR workflow first page/check-runs/reviews empty; no CI pass
+claimed. All68 existing remote heads unchanged; only the new C01a branch added.
+Exact base/tested/execution/publication: linked publication-receipt.json.
+
 PR114 is actually merged at mainbdff4e1acd117dc92aa6aa66bb687dc52cdfcbb7,
 engine8d8c7761 unchanged from accepted V01. C01a tested source807eeea457c973b097be9eab9e1556e20d0204aa,
 engine3ef0d46368e45c3e4a5b8084eeec2a81b50a688b; one successful build ROM3e6fa891/ELFc5f7e264.

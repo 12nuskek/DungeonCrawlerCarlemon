@@ -78,3 +78,11 @@ pacing, uninterrupted prepared/unprepared opening, both branch orders/optional
 skips and full-floor gates remain separate. Bounded nine-district accepted plan
 remains authoritative; no later-floor/book scope. CI and exact publication
 receipt will be reported from returned GitHub data, never assumed passed.
+
+Published implementation/evidence `63dea839e48075f0cebe10e52fb09dbfb2e8a0b7`,
+[draft PR115](https://github.com/12nuskek/DungeonCrawlerCarlemon/pull/115), unmerged.
+[Actual publication/check receipt](publication-receipt.json): returned statuses,
+PR workflow first page, check-runs and reviews empty; no CI pass claimed. All68
+existing remote heads unchanged, one new C01a branch added. Any later
+documentation-only publication keeps the exact tested engine and failed contract;
+its actual head is reported by PR115 and the final private receipt.

@@ -1,0 +1,43 @@
+{
+  "compressed_deleted_transferred": false,
+  "entries_rehashed": 368,
+  "independent_backup_verified": false,
+  "read_only": true,
+  "receipts": [
+    {
+      "bytes": 4247172620,
+      "directory": "c01-conserve-medicine-opening5-r1-20261010",
+      "entries_rehashed": 127,
+      "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+      "readback_verified": true,
+      "unchanged": true
+    },
+    {
+      "bytes": 241387974,
+      "directory": "c01-cold2-continue-r1-20261010",
+      "entries_rehashed": 41,
+      "manifest_SHA256": "d7d0812f74d672a50cb6239b660b289ea06deaeee1a54b30b0cfa54206e00aea",
+      "readback_verified": true,
+      "unchanged": true
+    },
+    {
+      "bytes": 3190319959,
+      "directory": "c01-guard-choice-opening4-r3-20261010",
+      "entries_rehashed": 102,
+      "manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30",
+      "readback_verified": true,
+      "unchanged": true
+    },
+    {
+      "bytes": 218729208,
+      "directory": "c01-rgb-preservation-r1-20261010",
+      "entries_rehashed": 98,
+      "manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7",
+      "readback_verified": true,
+      "unchanged": true
+    }
+  ],
+  "representations_changed": false,
+  "total_bytes": 7897609761,
+  "transfers": 0
+}

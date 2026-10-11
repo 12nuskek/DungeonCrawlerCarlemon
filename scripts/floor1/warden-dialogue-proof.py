@@ -107,8 +107,9 @@ def proof(config,out):
             symbol=row(name);assert symbol['type']==2 and symbol['size'];a=symbol['value']&~1;data=boundary.rom_bytes(elf,a,symbol['size'])
             targets=[boundary.thumb_bl(a+i,data[i:i+4]) for i in range(0,len(data)-3,2)]
             functions[name]=dict(address=a,size=len(data),SHA256=hashlib.sha256(data).hexdigest(),direct_calls=[n for n in names if (address(n)&~1) in targets])
+        tool_env=dict(os.environ,LD_LIBRARY_PATH=str(Path(config['tool_root'])/'usr/lib/x86_64-linux-gnu'))
         with (out/'native-disassembly.txt').open('w') as log:
-            for name in names:subprocess.run([config['objdump'],'-d','--disassemble='+name,str(elf)],stdout=log,stderr=subprocess.STDOUT,check=True,timeout=20)
+            for name in names:subprocess.run([config['objdump'],'-d','--disassemble='+name,str(elf)],stdout=log,stderr=subprocess.STDOUT,check=True,timeout=20,env=tool_env)
         # Store literal native source used by fixtures. Hardware/fonts/task
         # scheduling are deliberately mocked, never asserted as native timing.
         header=(ROOT/'engine/include/text.h').read_text();text=(ROOT/'engine/src/text.c').read_text();main=(ROOT/'engine/src/main.c').read_text()

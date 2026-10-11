@@ -1,0 +1,86 @@
+step 720 0 -
+step 1 8 -
+step 360 0 -
+step 1 8 -
+step 180 0 -
+step 1 1 -
+step 180 0 -
+step 1 1 -
+step 600 0 cold.ppm
+ready
+expect 35 1 4 5 7
+co continue-verify
+step 36 64 -
+step 40 0 -
+step 300 0 -
+expect 35 0 37 26 7
+step 228 16 -
+step 40 0 -
+expect 35 0 51 26 7
+step 20 128 -
+step 40 0 -
+expect 35 0 51 27 7
+phase begin howler
+step 1 128 -
+step 40 0 -
+engage 3600
+step 1200 0 howler-start.ppm
+pilot donut-heal 36000
+step 600 0 howler-victory.ppm
+dialog 6000
+ready
+phase end howler
+phase begin howler-repeat
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 howler-resolved.ppm
+co howler-resolved
+dialog 3600
+ready
+step 40 0 -
+phase end howler-repeat
+step 20 64 -
+step 40 0 -
+expect 35 0 51 26 7
+step 228 32 -
+step 40 0 -
+step 300 0 -
+expect 35 1 4 3 7
+step 36 128 -
+step 40 0 -
+expect 35 1 4 5 7
+phase begin guide-howler
+step 1 128 -
+step 40 0 -
+step 1 1 -
+step 400 0 guide-howler.ppm
+dialog 3600
+ready
+step 40 0 -
+phase end guide-howler
+duo healthy
+uses 8 40 2 40
+expect 35 1 4 5 7
+phase begin save
+step 1 8 -
+step 120 0 -
+co start 0
+step 1 128 -
+step 20 0 -
+co start 1
+step 1 128 -
+step 20 0 -
+co start 2
+step 1 1 -
+co save-ready
+step 1 1 -
+co overwrite-ready
+step 1 1 -
+co save-success
+step 1 0 saved-success.ppm
+step 600 0 -
+ready
+phase end save
+step 1 0 saved.ppm
+quit

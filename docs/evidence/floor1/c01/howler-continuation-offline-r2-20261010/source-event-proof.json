@@ -1,0 +1,229 @@
+{
+  "Carl_PP": 7,
+  "Carl_STRIKE_uses": 1,
+  "Carl_turn1_action": false,
+  "Donut_SPARK_uses": 2,
+  "PASS": true,
+  "RNG_search": false,
+  "conservative_planning_uses_criticals": false,
+  "events": [
+    {
+      "damage": [
+        10,
+        8
+      ],
+      "event": "critical spread SPARK",
+      "foe_HP": [
+        20,
+        17
+      ],
+      "turn": 0
+    },
+    {
+      "damage": 4,
+      "event": "ordinary Scuttler Tackle to Carl",
+      "turn": 0
+    },
+    {
+      "damage": 30,
+      "event": "critical STRIKE faints Howler",
+      "foe_HP": [
+        0,
+        17
+      ],
+      "turn": 0
+    },
+    {
+      "XP_each": 64,
+      "event": "earned XP after faint",
+      "foe": 0,
+      "party": [
+        {
+          "HP": 32,
+          "PP": [
+            7,
+            40,
+            0,
+            0
+          ],
+          "XP": 691,
+          "attack": 25,
+          "friendship": 81,
+          "level": 10,
+          "maxHP": 36,
+          "spatk": 12
+        },
+        {
+          "HP": 30,
+          "PP": [
+            1,
+            40,
+            0,
+            0
+          ],
+          "XP": 1001,
+          "attack": 16,
+          "friendship": 81,
+          "level": 10,
+          "maxHP": 30,
+          "spatk": 15
+        }
+      ]
+    },
+    {
+      "damage": 18,
+      "event": "critical single-target SPARK faints Scuttler",
+      "foe_HP": [
+        0,
+        0
+      ],
+      "turn": 1
+    },
+    {
+      "XP_each": 57,
+      "event": "earned XP after faint",
+      "foe": 1,
+      "party": [
+        {
+          "HP": 34,
+          "PP": [
+            7,
+            40,
+            0,
+            0
+          ],
+          "XP": 748,
+          "attack": 26,
+          "friendship": 87,
+          "level": 11,
+          "maxHP": 38,
+          "spatk": 12
+        },
+        {
+          "HP": 30,
+          "PP": [
+            0,
+            40,
+            0,
+            0
+          ],
+          "XP": 1058,
+          "attack": 16,
+          "friendship": 81,
+          "level": 10,
+          "maxHP": 30,
+          "spatk": 15
+        }
+      ]
+    }
+  ],
+  "initial": [
+    {
+      "HP": 36,
+      "PP": [
+        8,
+        40,
+        0,
+        0
+      ],
+      "XP": 627,
+      "attack": 25,
+      "friendship": 81,
+      "level": 10,
+      "maxHP": 36,
+      "spatk": 12
+    },
+    {
+      "HP": 28,
+      "PP": [
+        2,
+        40,
+        0,
+        0
+      ],
+      "XP": 937,
+      "attack": 14,
+      "friendship": 75,
+      "level": 9,
+      "maxHP": 28,
+      "spatk": 14
+    }
+  ],
+  "mixed": [
+    {
+      "HP": 32,
+      "PP": [
+        7,
+        40,
+        0,
+        0
+      ],
+      "XP": 691,
+      "attack": 25,
+      "friendship": 81,
+      "level": 10,
+      "maxHP": 36,
+      "spatk": 12
+    },
+    {
+      "HP": 30,
+      "PP": [
+        1,
+        40,
+        0,
+        0
+      ],
+      "XP": 1001,
+      "attack": 16,
+      "friendship": 81,
+      "level": 10,
+      "maxHP": 30,
+      "spatk": 15
+    }
+  ],
+  "source_SHA256": {
+    "engine/data/battle_scripts_1.s": "06030c542bfbc38e69ed1bc15ca1fdbee440c021a3fb7462313689e4d3123118",
+    "engine/src/battle_controller_player.c": "c4234153a31d54bd97beb6432ee3ff398fa7b3f12ae94a3453e4ef2d662192d9",
+    "engine/src/battle_main.c": "e28ea1bdfafe63eb188d034c311faff155604a7399ec6d9b37194a55c10dc9f3",
+    "engine/src/battle_script_commands.c": "af47683feb2d04c54a92ac0550d219dacc09e011fe1a554aaaab6bcd82b27cff",
+    "engine/src/battle_util.c": "8b101966a51cb2f936f215d5aaeffb5665ffbbff275cffc365a696793d068ee0",
+    "engine/src/data/battle_moves.h": "1ea146df3b2231c4ae6347087f64dc371a73b7c15d54b12f54cc27a82e9aa97f",
+    "engine/src/data/pokemon/experience_tables.h": "52bb33d1139d2b05af6d66fe622b09cf913540d43e9eabc48b8e6c97dd20dae0",
+    "engine/src/data/pokemon/species_info.h": "1aac881bb02361339dc4dd33c7a5804a7127c0367426b77b982ee213a713e0af",
+    "engine/src/pokemon.c": "b7ff983d5b356d017e1e8e150d27183226df6a51f2dc0a480191f06c0e9628c0"
+  },
+  "synthetic_offline_only": true,
+  "terminal": [
+    {
+      "HP": 34,
+      "PP": [
+        7,
+        40,
+        0,
+        0
+      ],
+      "XP": 748,
+      "attack": 26,
+      "friendship": 87,
+      "level": 11,
+      "maxHP": 38,
+      "spatk": 12
+    },
+    {
+      "HP": 30,
+      "PP": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "XP": 1058,
+      "attack": 16,
+      "friendship": 81,
+      "level": 10,
+      "maxHP": 30,
+      "spatk": 15
+    }
+  ],
+  "turn_termination": "Cmd_end -> TRY_FINISH -> HandleFaintedMonActions -> checkteamslost WON -> RunTurnActionsFunctions FINISHED"
+}

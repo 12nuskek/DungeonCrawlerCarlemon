@@ -1,0 +1,27 @@
+{
+  "entries_rehashed_now": 0,
+  "manifests": [
+    {
+      "directory": "c01-conserve-medicine-opening5-r1-20261010",
+      "manifest_SHA256": "723046a77f8f5987b3935cbec9a59549a3449e762122027c58b3851c84682c15",
+      "unchanged": true
+    },
+    {
+      "directory": "c01-cold2-continue-r1-20261010",
+      "manifest_SHA256": "d7d0812f74d672a50cb6239b660b289ea06deaeee1a54b30b0cfa54206e00aea",
+      "unchanged": true
+    },
+    {
+      "directory": "c01-guard-choice-opening4-r3-20261010",
+      "manifest_SHA256": "bef0eb27e3f90ca500fe33d908b6b17c79de4a7168d3391dbd909c9da322fd30",
+      "unchanged": true
+    },
+    {
+      "directory": "c01-rgb-preservation-r1-20261010",
+      "manifest_SHA256": "a7aef855c4e60a5ea861d93a8c7e029bf4fae97d9eb8a1f9e6f64ec32b0e55b7",
+      "unchanged": true
+    }
+  ],
+  "prior_full_readback_SHA256": "f0657df86544a20c46077b3a78da9bbcd567f7dbe218d3f023ec5fc9b18bee8c",
+  "read_only": true
+}

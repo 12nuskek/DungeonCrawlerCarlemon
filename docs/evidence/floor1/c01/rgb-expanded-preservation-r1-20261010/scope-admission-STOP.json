@@ -1,0 +1,103 @@
+{
+  "Howler_processes": 0,
+  "PASS": false,
+  "UTC": "2026-10-10T21:50:55.578730+00:00",
+  "actual_target_files": 42,
+  "all_originals_retained": true,
+  "asserted_target_files": 43,
+  "automatic_retry": false,
+  "available_bytes": 5977477120,
+  "cause": "Enumerated42 files, fixed CHUNKS assertion incorrectly43; frames82482 and bytes9501926400 unchanged.",
+  "cold_claims_processes": [
+    2,
+    2
+  ],
+  "compression_started": false,
+  "corrected_scope_retested": false,
+  "error": "RuntimeError: source inventory totals",
+  "failed_source_commit": "b396d4d33256a8549bd01dfae45b69946bd4257f",
+  "frames": 82482,
+  "gameplay_processes": 0,
+  "machine_contract_exists": false,
+  "old31_replacements_repeated": false,
+  "old36_tests_repeated": false,
+  "opening_claims_processes": [
+    5,
+    5
+  ],
+  "original_bytes": 9501926400,
+  "original_hashes_or_frames_reverified_now": false,
+  "output_directory_exists": false,
+  "preservation_contract_frozen": false,
+  "private_STOP_SHA256": "31446a863895e6862223fdc41f74968ad51375aeea3f1bf5fe6a1d5d18bdd170",
+  "recordings_presence_readback": [
+    {
+      "all_original_paths_present": true,
+      "bytes": 177177600,
+      "files": 1,
+      "recording": "opening1-STOP82"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 3126988800,
+      "files": 14,
+      "recording": "opening4-STOP101"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 3930278400,
+      "files": 18,
+      "recording": "opening5-PASS"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 235468800,
+      "files": 2,
+      "recording": "cold1-STOP96"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 235468800,
+      "files": 2,
+      "recording": "cold2-PASS"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 565632000,
+      "files": 1,
+      "recording": "ordinary-fresh"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 87552000,
+      "files": 1,
+      "recording": "ordinary-seed-STOP40"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 189388800,
+      "files": 1,
+      "recording": "ordinary-setup"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 895104000,
+      "files": 1,
+      "recording": "ordinary-patrol"
+    },
+    {
+      "all_original_paths_present": true,
+      "bytes": 58867200,
+      "files": 1,
+      "recording": "ordinary-cold"
+    }
+  ],
+  "replaced_files": 0,
+  "reservation_bytes": 10000408128,
+  "runtime_claims": 0,
+  "scope_admission_receipt_exists": false,
+  "shortfall_bytes": 4022931008,
+  "source_count_correction_required": true,
+  "stage": "new scope offline admission, before inventory freeze/compression",
+  "verification_passes": 0
+}

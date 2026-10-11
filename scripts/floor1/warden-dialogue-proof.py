@@ -13,6 +13,50 @@ def definition(source,anchor):
     while depth:
         depth+=(source[i]=='{')-(source[i]=='}');i+=1
     return source[start:i]
+def native_text_encoder(config,out):
+    """Reuse the retained game's charmap/string parser; no replacement grammar."""
+    compiler=Path(config['text_preproc']);charmap=ROOT/'engine/charmap.txt'
+    def encode(directives,tag,mapping=charmap,error=None):
+        assert len(directives.encode())<16384 and '\0' not in directives and '\r' not in directives
+        assert all(re.fullmatch(r'\s*\.string\s+"(?:[^"\\\n]|\\[^\n])*"\s*',line) for line in directives.splitlines()),'only complete native string directives'
+        source=out/(tag+'.s');source.write_text(directives)
+        process=subprocess.run([str(compiler),str(source),str(mapping)],capture_output=True,text=True,timeout=10)
+        (out/(tag+'.asm')).write_text(process.stdout);(out/(tag+'.log')).write_text(process.stderr)
+        if error is not None:
+            assert process.returncode!=0 and error in process.stderr,(tag,'native rejection',process.returncode,process.stderr)
+            return None
+        assert process.returncode==0,(tag,'native encoding failed',process.stderr)
+        result=b''
+        for line in process.stdout.splitlines():
+            if line.startswith('# ') or not line.strip():continue
+            match=re.fullmatch(r'\s*\.byte\s+(0x[0-9A-F]{2}(?:, 0x[0-9A-F]{2})*)\s*',line)
+            assert match,('unsupported/ambiguous native output',line)
+            result+=bytes(int(v,16) for v in match[1].split(', '))
+        assert result;return result
+    positive=[('apostrophe',".string \"'$\"\n",bytes.fromhex('b4ff')),
+              ('layout-escapes',r'.string "\n\p\l$"'+'\n',bytes.fromhex('fefbfaff')),
+              ('placeholder-control',r'.string "{STRING 2}{PAUSE 1}$"'+'\n',bytes.fromhex('fd02fc0801ff'))]
+    for tag,source,expected in positive:assert encode(source,'parser-positive-'+tag)==expected
+    negatives=[('unknown-escape',r'.string "\q$"'+'\n',None,'unknown escape'),
+               ('unknown-character','.string "☃$"\n',None,'unknown character'),
+               ('unknown-constant','.string "{PROOF_UNKNOWN}$"\n',None,'unknown constant'),
+               ('non-ascii-source-escape',r'.string "\é$"'+'\n',None,'escapes using non-ASCII'),
+               ('unmapped-quote',r'.string "\"$"'+'\n',None,'no mapping exists for double quote'),
+               ('unmapped-backslash',r'.string "\\$"'+'\n',None,'no mapping exists for backslash'),
+               ('duplicate-character','.string "A$"\n',"'A' = BB\n",'redefining char'),
+               ('duplicate-escape','.string "A$"\n',r"'\n' = FE"+'\n','redefining escape'),
+               ('duplicate-constant','.string "A$"\n','STRING = FD\n','redefining constant'),
+               ('multiple-character-entry','.string "A$"\n',"'ab' = 00\n",'unterminated character literal'),
+               ('non-ascii-entry-escape','.string "A$"\n',r"'\é' = 01"+'\n','escapes using non-ASCII'),
+               ('escaped-quote-entry','.string "A$"\n',r"'\"' = 01"+'\n','cannot escape double quote'),
+               ('odd-byte-entry','.string "A$"\n','PROOF_BYTE = 0\n','each byte must have 2 hex digits'),
+               ('junk-entry','.string "A$"\n','PROOF_BYTE = 00 junk\n','junk at end of line')]
+    for tag,source,entry,error in negatives:
+        mapping=charmap
+        if entry is not None:
+            mapping=out/('parser-negative-'+tag+'.charmap');mapping.write_bytes(charmap.read_bytes()+entry.encode())
+        encode(source,'parser-negative-'+tag,mapping,error)
+    return encode,dict(compiler_path=str(compiler),compiler_SHA256=sha(compiler),native_charmap_SHA256=sha(charmap),positive_cases=len(positive),negative_cases=len(negatives),production_charmap_unchanged=True)
 def proof(config,out):
     assert __debug__ and not out.exists();out.mkdir()
     receipt=dict(PASS=False,scope='OFFLINE dialogue proof only',emulator_processes=0,runtime_admission=False)
@@ -46,12 +90,12 @@ def proof(config,out):
             assert (ROOT/'engine'/rel).read_bytes()==(elf.parent/rel).read_bytes(),'exact compiled source'
             matches=list(re.finditer(r'^(\w+)::?\s*$',text,re.M))
             for n,m in enumerate(matches):sources[m[1]]=(rel,text[m.end():matches[n+1].start() if n+1<len(matches) else len(text)])
-        chars={m[1]:bytes.fromhex(m[2]) for m in re.finditer(r"^'([^']+)'\s*=\s*([0-9A-F]{2}(?: [0-9A-F]{2})*)",(ROOT/'engine/charmap.txt').read_text(),re.M)}
+        encode_text,parser_receipt=native_text_encoder(config,out)
+        rom=Path(config['ROM']).read_bytes();source_escapes=set()
         def text_bytes(name):
-            raw=''.join(re.findall(r'\.string\s+"([^\"]*)"',sources[name][1]));assert raw
-            result=b'';i=0
-            while i<len(raw):
-                token=raw[i:i+2] if raw[i]=='\\' else raw[i];result+=chars[token];i+=len(token)
+            directives='\n'.join(line for line in sources[name][1].splitlines() if line.strip())+'\n'
+            source_escapes.update(re.findall(r'\\([^\n])',directives))
+            result=encode_text(directives,'native-text-'+name)
             assert result[-1]==255 and 255 not in result[:-1];return result
         text_proofs={}
         # Verify all text targets in the compiled branch graph, not just counts.
@@ -61,8 +105,10 @@ def proof(config,out):
             text_names.update(re.findall(r'\b(?:DCC_\w+_Text_\w+|DCC_F1D1\w+Text)\b',sources[node][1]))
         for name in sorted(text_names):
             data=text_bytes(name);assert boundary.rom_bytes(elf,address(name),len(data))==data,name
+            offset=address(name)-0x08000000;assert offset>=0 and rom[offset:offset+len(data)]==data,('exact compiled ROM text',name)
             text_proofs[name]=dict(address=address(name),source=sources[name][0],bytes=data.hex(),SHA256=hashlib.sha256(data).hexdigest(),length=len(data),paragraphs=data.count(251),scrolls=data.count(250),extended_controls=data.count(252),placeholders=data.count(253))
         assert [text_proofs[n]['paragraphs'] for n in labels]==[0,0,0,0,1]
+        assert source_escapes=={'n','p'},('reachable escape audit',source_escapes)
         assert all(text_proofs[n]['scrolls']==text_proofs[n]['extended_controls']==text_proofs[n]['placeholders']==0 for n in labels)
         table=(ROOT/'engine/data/script_cmd_table.inc').read_text()
         ops={n:(int(v,16),fn) for n,fn,v in re.findall(r'script_cmd_table_entry\s+(SCR_OP_\w+)\s+(\w+)\s+@ (0x[0-9a-f]+)',table)}
@@ -170,7 +216,7 @@ def proof(config,out):
         for section in ('files','protected_history'):
             for p,h in config[section].items():assert sha(p)==h,(section,p)
         total=sum(p.stat().st_size for p in out.rglob('*') if p.is_file());assert total<64*1024**2
-        receipt.update(PASS=True,source_commit=head,ELF_SHA256=sha(elf),ROM_SHA256=sha(config['ROM']),observer_source_SHA256=sha(config['observer_source']),route_SHA256=hashlib.sha256(route.encode()).hexdigest(),text_proofs=text_proofs,compiled_script_graph=graph,native_functions=functions,
+        receipt.update(PASS=True,source_commit=head,ELF_SHA256=sha(elf),ROM_SHA256=sha(config['ROM']),observer_source_SHA256=sha(config['observer_source']),route_SHA256=hashlib.sha256(route.encode()).hexdigest(),text_proofs=text_proofs,compiled_script_graph=graph,native_functions=functions,native_text_parser=parser_receipt,reachable_source_escapes=sorted(source_escapes),all_text_bytes_exact_in_ELF_and_ROM=True,
                        native_reachability='Resolved call: boss flag47 already set ->Already. Stairs: flag47 set ->YesNo; result0 ->Cancel, result1 ->checkpoint warp. Missing boss flag ->Locked and a mismatched-text STOP. Checkpoint Review ->Default. Both standard scripts/dispatcher bytes checked; prepared/locked/trainer/result alternatives retained in full graph.',
                        unresolved_native_tighter_bound='gStringVar4 equality plus active/state2/3 does not bind currentChar, callback, owning Task_DrawFieldMessage, disable flag or per-host-frame printer dispatch. RunTextPrinters can skip rendering when disabled. Inert inhibited cases show this admission gap, not native route reachability or gameplay timing. No paragraph-count-only/native timing bound claimed.',
                        guard_proof=dict(single_success=success,single_failure=failure,five_success=5*success,five_first_failure=five,first_failure_terminal=True,all_32_attempts_retained=True,fixture_cases=41,full_synthetic_frame_coverage=True,terminal_RGB_frame_included=True,timeout_page_captures=32,last_page_capture_frame=12431,timeout_frame=12832,terminal_context_capture='Existing pages exhaustion returns41 without co_stop; complete frame recording remains. Future supervisor terminal context/capture remains a runtime gate.16 fixed/terminal PPM slots retained.'),

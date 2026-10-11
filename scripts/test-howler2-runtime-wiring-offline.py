@@ -16,6 +16,12 @@ def main():
     require(not w.OUT.exists() and not w.AUTHORITY.exists(),'offline boundary: Howler2 runtime/authority absent')
     require(not w.OFFLINE.exists(),'exclusive offline output')
     w.no_active_process();w.OFFLINE.mkdir(mode=0o700);owned=True
+    previous=w.SCRATCH/'c01-howler2-offline-terminal-checkpoint-r1-20261011.json'
+    require(w.sha(previous)=='4c332cb2d7d55566a5e08cbbcfa5c81282eea19c825ce37f55729b4380b08b51','prior424-versus425 checkpoint')
+    prior_stop=w.read(previous)
+    for path,pin in prior_stop['offline_files'].items():require(w.sha(path)==pin,'prior dependency STOP preserved')
+    require(w.sha(w.SCRATCH/'c01-howler2-runtime-wiring-offline-r1-20261011.log')==prior_stop['offline_log_SHA256'],'prior failed log preserved')
+    require(w.git('merge-base','0748d38aff5eeedb1d8484cf667737757aae8184',head)=='0748d38aff5eeedb1d8484cf667737757aae8184','preserved prior local commit')
     accepted,tools,game=w.reviewed();history=w.claims();expected=w.scope(head)
     require(history['counts']==history['process_counts']==dict(opening=5,cold=2,howler1=1),'actual opening/cold/Howler1 counts')
     require(history['Howler1_native_STOP']==dict(reason=94,frame=12520),'consumed Howler1 native STOP')
@@ -24,6 +30,20 @@ def main():
         try:fn()
         except (AssertionError,RuntimeError):cases.append(label)
         else:raise AssertionError('invalid offline fixture accepted: '+label)
+    inventory=w.dependencies();prior_inventory=w.read(w.CORRECTION)['complete_current_source_dependencies']
+    require(set(inventory)==set(prior_inventory)|w.NEW_SOURCE,'full accepted inventory set, not count only')
+    historical=str(w.HISTORICAL_CONTRACT.relative_to(ROOT));new_contract=str(w.CONTRACT.relative_to(ROOT))
+    require(historical in inventory and new_contract in inventory and inventory[historical]==prior_inventory[historical],'both source contracts retained')
+    w.verify_dependency_inventory(inventory,prior_inventory);cases.append('complete-historical-and-new-contract-inventory')
+    missing_contract=dict(inventory);del missing_contract[historical]
+    reject('historical-contract-missing',lambda:w.verify_dependency_inventory(missing_contract,prior_inventory))
+    wrong_contract=dict(inventory);wrong_contract[historical]='0'*64
+    reject('historical-contract-wrong-content',lambda:w.verify_dependency_inventory(wrong_contract,prior_inventory))
+    extra_contract=dict(inventory,unreviewed_contract='0'*64)
+    reject('inventory-extra-path',lambda:w.verify_dependency_inventory(extra_contract,prior_inventory))
+    same_count=dict(missing_contract,unreviewed_contract='0'*64)
+    require(len(same_count)==len(inventory),'same-count inventory fixture')
+    reject('inventory-same-count-wrong-path',lambda:w.verify_dependency_inventory(same_count,prior_inventory))
     # Carry over the already-tested bounded execution functions verbatim.
     def functions(path):return {n.name:n for n in ast.parse(path.read_text()).body if isinstance(n,ast.FunctionDef)}
     old=functions(ROOT/'scripts/floor1/howler-runtime-supervisor.py');new=functions(ROOT/w.WIRING[0])
@@ -164,6 +184,8 @@ def main():
     receipt=dict(schema='c01-Howler2-offline-admission/v1',PASS=True,tested_source_commit=head,base_commit=w.BASE,accepted_correction_source=w.TESTED,
         scope=expected,wiring_files={name:w.sha(ROOT/name) for name in w.WIRING},contract_SHA256=w.sha(w.CONTRACT),correction_receipt_SHA256=w.CORRECTION_SHA,
         current_helper_pins=w.read(w.CORRECTION)['current_helper_pins'],native_proof_pins=w.PROOFS,complete_source_dependencies=deps,
+        historical_contract=dict(path=historical,SHA256=inventory[historical]),new_contract=dict(path=new_contract,SHA256=inventory[new_contract]),
+        full_inventory_missing=[],full_inventory_extra=[],prior_inventory_STOP_checkpoint_SHA256=w.sha(previous),
         complete_tool_files=tools,validator_tool_files=native,validator_source_derivation=closure,
         accepted_artifacts_rehashed=len(accepted['artifacts']),accepted_helpers_retested=False,prior_bounded_functions_reused=unchanged,
         cases=cases,case_count=len(cases),build_verification=game,actual_prior_claims=history,runtime_actions_executed=0,

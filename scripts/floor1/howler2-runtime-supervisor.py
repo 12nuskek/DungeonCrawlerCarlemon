@@ -9,11 +9,12 @@ if not __debug__:raise RuntimeError('supervisor requires enabled checks')
 ROOT=Path(__file__).resolve().parents[2]
 SCRATCH=Path('/workspace/scratch')
 OUT=SCRATCH/'c01-howler2-continuation-r1-20261011'
-OFFLINE=SCRATCH/'c01-howler2-runtime-wiring-offline-r1-20261011'
+OFFLINE=SCRATCH/'c01-howler2-runtime-wiring-offline-r2-20261011'
 AUTHORITY=SCRATCH/'c01-howler2-runtime-r1-authority.json'
 ACCEPTED=SCRATCH/'c01-howler-continuation-correction-offline-r3-20261010'
 REGISTRY=ROOT/'docs/evidence/floor1/c01/howler-continuation-offline-r2-20261010/offline-verification.json'
 CONTRACT=ROOT/'scripts/contracts/f1-c01-howler2-contract.json'
+HISTORICAL_CONTRACT=ROOT/'docs/floor1/c01-howler-continuation-offline-contract.md'
 TESTED='86f6d88ed78700e4d21ac08690f87c0f3989b1d1'
 PUBLICATION=TESTED
 BASE='65bc4073d140b9d58bf1b83bd33235e28c972b23'
@@ -73,9 +74,12 @@ def current_source(published=False):
     return head
 def dependencies():
     pins=legacy.dependencies()
-    for p in (CONTRACT,REGISTRY,ROOT/'docs/floor1/accepted-plan.md'):
+    for p in (CONTRACT,HISTORICAL_CONTRACT,REGISTRY,ROOT/'docs/floor1/accepted-plan.md'):
         pins[str(p.relative_to(ROOT))]=sha(p)
     return pins
+def verify_dependency_inventory(actual,prior):
+    require(set(actual)==set(prior)|NEW_SOURCE,'complete current dependency inventory')
+    for rel,pin in prior.items():require(actual[rel]==pin,'accepted source dependency changed: '+rel)
 def contract():
     value=read(CONTRACT)
     expected=dict(schema='c01-Howler2-source-contract/v1',native_modes=list(MODES),
@@ -126,8 +130,7 @@ def reviewed():
         require(sha(ROOT/rel)==pin,'corrected helper changed')
         require(hashlib.sha256(subprocess.check_output(['git','show',TESTED+':'+rel],cwd=ROOT)).hexdigest()==pin,'accepted correction source mismatch')
     prior=c['complete_current_source_dependencies'];actual=dependencies()
-    require(set(actual)==set(prior)|NEW_SOURCE,'complete current dependency inventory')
-    for rel,pin in prior.items():require(sha(ROOT/rel)==pin,'accepted source dependency changed')
+    verify_dependency_inventory(actual,prior)
     require(set(git('diff','--name-only',TESTED,current_source()).splitlines())==NEW_SOURCE,'separate Howler2 wiring only')
     require(sha(ACCEPTED/'offline-receipt.json')==registry['private_receipt_SHA256'],'historical aggregate receipt identity')
     require(r['PASS'] and r['offline_only'] and r['tested_source_commit']=='7c2623ceddddd4fa5595293f4f61a8087bbe8587','inherited aggregate identity')

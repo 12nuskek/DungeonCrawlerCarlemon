@@ -17,6 +17,31 @@ def sha(path):
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,text=True).strip()
 def write(path,data):Path(path).write_text(json.dumps(data,indent=2,sort_keys=True)+'\n')
 def pack(d):return d['party']+d['flags']+d['owned']+d['vars']+d['saved']+struct.pack('<10I',d['context'],d['counter'],d['count'],d['saved_count'],*d['map'],d['section'],*d['position'],d['facing'])
+def inert_sources(code,observer_path):
+    """Adapt only the inert entry definition; production observer stays exact."""
+    entry='int main(int argc, char **argv)'
+    assert code.count(entry)==1 and code.count('main(')==1
+    assert 'closed_observer_main' not in code
+    observer=code.replace(entry,'int closed_observer_main(int argc, char **argv)',1)
+    assert observer.replace('int closed_observer_main(int argc, char **argv)',entry,1)==code
+    common=(ROOT/'scripts/floor1/continuous-opening-inert.c').read_text()
+    def once(old,new):
+        nonlocal common
+        assert common.count(old)==1,(old,common.count(old));common=common.replace(old,new,1)
+    once('"OBSERVER"','"'+str(observer_path)+'"')
+    once('int main(int argc,char**argv)','int historical_inert_main(int argc,char**argv)')
+    once('static void setup(void){','static void installSnapshot(const struct CoSnapshot*s);\nstatic void setup(void){')
+    once(' co.trace=tmpfile();',' installSnapshot(&co.last);\n co.trace=tmpfile();')
+    for mode,old in ((5,'co.attempts=3;event=1;put16(0x92,859);'),
+                     (6,'co.attempts=4;event=1;'),
+                     (10,'co.attempts=3;co.encounterFrames[3]=29999;')):
+        target=1 if mode==6 else 0
+        once('if(mode=='+str(mode)+'){co.kind=CO_BOSS;'+old,
+             'if(mode=='+str(mode)+'){co.kind=CO_BOSS;'+old.replace(old.split(';')[0],'co.attempts='+str(target),1))
+    inert=common+'\n'+(ROOT/'scripts/floor1/warden-continuation-inert.h').read_text()
+    assert '#define main' not in inert and '#undef main' not in inert
+    assert inert.count('int main(int argc,char**argv)')==1
+    return observer,inert
 def run(config,out):
     assert __debug__ and not out.exists();out.mkdir()
     receipt=dict(PASS=False,scope='OFFLINE ONLY',emulator_processes=0,runtime_claims=0,runtime_authority=False)
@@ -164,15 +189,9 @@ int main(void){unsigned checks=0;
         with (out/'policy-check.log').open('w') as log:subprocess.run([str(out/'inert-policy')],cwd=out,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=20)
         # Exact generated production readers on a synthetic memory bus. No core
         # initialization, ROM load, Save load, reset, game execution or injection.
-        common=(ROOT/'scripts/floor1/continuous-opening-inert.c').read_text()
-        common=common.replace('"OBSERVER"','"'+str(out/'observer.c')+'"').replace('int main(int argc,char**argv)','int historical_inert_main(int argc,char**argv)')
-        common=common.replace('co.attempts=3','co.attempts=0')
-        old='if(mode==6){co.kind=CO_BOSS;co.attempts=4;event=1;}'
-        assert common.count(old)==1
-        common=common.replace(old,'if(mode==6){co.kind=CO_BOSS;co.attempts=1;event=1;}')
-        inert='#define main closed_observer_main\n'+common.replace('/* Offline mock','/* Offline mock',1)
-        point='#include <assert.h>';inert=inert.replace(point,'#undef main\n'+point,1)
-        inert+='\n'+(ROOT/'scripts/floor1/warden-continuation-inert.h').read_text()
+        inert_observer,inert=inert_sources(code,out/'inert-observer.c')
+        (out/'inert-observer.c').write_text(inert_observer)
+        assert (out/'observer.c').read_text()==code,'production generated observer unchanged'
         (out/'inert.c').write_text(inert)
         compile_inert=command.copy();compile_inert[compile_inert.index(str(out/'observer.c'))]=str(out/'inert.c');compile_inert[-1]=str(out/'inert')
         with (out/'inert-compile.log').open('w') as log:subprocess.run(compile_inert,stdout=log,stderr=subprocess.STDOUT,check=True,env=env,timeout=60)
@@ -210,7 +229,7 @@ int main(void){unsigned checks=0;
         # Four legitimate walking outcomes are alternatives for verification,
         # not predictions, policies, RNG probes or selectable runtime operands.
         for mask in range(4):
-            state=copy.deepcopy(initial);state.update(map=[35,3],position=[8,7],section=boss_section,facing=1,counter=7)
+            state=copy.deepcopy(initial);state.update(map=[35,3],position=[8,7],group=35,mapnum=3,x=8,y=7,section=boss_section,facing=1,counter=7)
             variables=bytearray(state['vars']);struct.pack_into('<H',variables,0,0);struct.pack_into('<H',variables,2,0);struct.pack_into('<H',variables,0x54,7);struct.pack_into('<H',variables,0x56,1);state['vars']=bytes(variables)
             members=bytearray(state['party'])
             for i in range(2):
@@ -239,13 +258,13 @@ int main(void){unsigned checks=0;
                 assert native_check(state,bad,10)!=0;checks+=1
             repeat=copy.deepcopy(won);model.validate('boss-repeat',won,repeat);checks+=1
             route_anchor_cases('boss-repeat',repeat)
-            stairs=copy.deepcopy(won);stairs.update(position=[12,10],counter=14)
+            stairs=copy.deepcopy(won);stairs.update(position=[12,10],x=12,y=10,counter=14)
             variables=bytearray(stairs['vars']);struct.pack_into('<H',variables,0x54,14);struct.pack_into('<H',variables,0x56,3);stairs['vars']=bytes(variables)
-            model.validate('stairs-no',stairs,stairs);yes=copy.deepcopy(stairs);yes.update(map=[35,4],position=[4,4],section=checkpoint_section)
+            model.validate('stairs-no',stairs,stairs);yes=copy.deepcopy(stairs);yes.update(map=[35,4],position=[4,4],mapnum=4,x=4,y=4,section=checkpoint_section)
             flags=bytearray(yes['flags']);flags[48//8]|=1<<(48%8);yes['flags']=bytes(flags)
             model.validate('stairs-yes',stairs,yes);assert native_check(stairs,yes,11)==0;checks+=3
             route_anchor_cases('stairs-no',stairs);route_anchor_cases('stairs-yes',stairs);route_anchor_cases('stairs-yes',yes,False)
-            checkpoint=copy.deepcopy(yes);checkpoint.update(position=[8,6],counter=20)
+            checkpoint=copy.deepcopy(yes);checkpoint.update(position=[8,6],x=8,y=6,counter=20)
             variables=bytearray(checkpoint['vars']);struct.pack_into('<H',variables,0x54,20);struct.pack_into('<H',variables,0x56,1);checkpoint['vars']=bytes(variables)
             model.validate('checkpoint',checkpoint,checkpoint);saved=copy.deepcopy(checkpoint);saved['saved']=saved['party']
             model.validate('save',checkpoint,saved);assert native_check(checkpoint,saved,12)==0;checks+=3

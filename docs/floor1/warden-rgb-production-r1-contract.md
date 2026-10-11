@@ -1,4 +1,25 @@
-# Warden13 production wiring, offline review r1
+# Warden13 production wiring, offline revision r2
+
+Revision base31a5f0f2952b18dbfcc8e4fb891e989317891c72; accepted preparation base
+remains faa22cb1. Preserve r1 STOP2aa10ac5/handoff13913253 and all r1 artifact
+bytes/identities. This is one separately admitted correction and one fresh r2
+suite under `warden-rgb-production-wiring-offline-r2-20261011`, not an r1 retry.
+The cumulative five-file allowlist is compared from preparation base; the narrow
+revision delta is checked separately. No actual operation or authority is admitted.
+
+Assert the full eight-member inherited facade, including FRAME115200, and all28
+production/barrier IO methods. Run and validate the complete positive modeled
+controller/two-workers/durable-barrier/removal/result lifecycle before negatives.
+Bind its private proof to the admission and synchronize it before future removal.
+Missing/wrong interface members must reject explicitly; AttributeError is always
+an unexpected terminal suite failure, never an accepted negative outcome.
+
+Count retained r1 and new r2 metadata together. The seventh directory's4096-byte
+block is debited inside the same16MiB metadata allowance. Preserve all13 ordered
+per-original progress records in one append journal, fsynced after every record,
+instead of13 files; bind its SHA/count in the result. This keeps future complete
+execution, retained evidence and two failure slots within the same64-file bound.
+The same2941345792 total cap and8192-byte/two-file failure reserve remain unchanged.
 
 Base faa22cb13587d3204e3c39fd596fa0b30a9c098a is accepted preparation only.
 This increment adds one Warden-specific launcher/controller and one newly named
@@ -32,7 +53,7 @@ Do not replace that with pointer verification or mock permission. Recheck before
 and after verification and immediately before unlink. New Save, native screenshots,
 index/trace/snapshots, old STOPs and completed preservation archives stay retained.
 
-Aggregate all four existing/new visual/preparation/test roots, future execution
+Aggregate all five visual/preparation/test roots including retained r1 and new r2, future execution
 metadata and authority in the same16MiB/64-file allowance. Stream outputs alone
 are excluded; reserve8192 bytes/two files for failure evidence within that allowance.
 All-inclusive accounting includes aggregate external metadata, output, directory

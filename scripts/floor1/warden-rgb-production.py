@@ -13,10 +13,15 @@ BASE = 'faa22cb13587d3204e3c39fd596fa0b30a9c098a'
 PREP_SHA = '42a774091b4a1926b0bed17cefe83846dce57591c8aef0ce3795d84bcb1d5983'
 PREP_HANDOFF_SHA = 'd4e58aa62bbb645dabce94777bf3452364f0a3e8cced1d055bfaaa8d40fa2e82'
 PREP_SUITE_SHA = '3213f0cf01def696222b5765f557ba5c5ce1672b1b4f6af8771d1255c4c51211'
-OFFLINE = s.SCRATCH/'warden-rgb-production-wiring-offline-r1-20261011'
+REVISION_BASE = '31a5f0f2952b18dbfcc8e4fb891e989317891c72'
+R1 = s.SCRATCH/'warden-rgb-production-wiring-offline-r1-20261011'
+R1_STOP_SHA = '2aa10ac591c7686515f3753326b3d5e26992287ad5bf7cb83c4297e54219ad82'
+R1_HANDOFF_SHA = '139132532fd3f25857e63dcaff502efccba0cb74653bee76ec0fe1a7ffadad4b'
+OFFLINE = s.SCRATCH/'warden-rgb-production-wiring-offline-r2-20261011'
 PRODUCTION = OFFLINE/'production-proposal-private.json'
 ADMISSION = OFFLINE/'production-admission-private.json'
 AUDIT = OFFLINE/'actual-protection-readback-private.json'
+POSITIVE = OFFLINE/'positive-modeled-lifecycle-private.json'
 OUT, AUTHORITY, CAP = s.PROPOSED_OUTPUT, s.AUTHORITY, s.CAP
 FILES = ('scripts/floor1/warden-rgb-production.py', 'scripts/preserve-warden-rgb-r1.py',
          'scripts/test-warden-rgb-production-offline.py',
@@ -25,7 +30,11 @@ FILES = ('scripts/floor1/warden-rgb-production.py', 'scripts/preserve-warden-rgb
 CLAIM = 'preservation-exclusive-claim-private.json'
 STOP = 'preservation-STOP-private.json'
 STOP_BYTES, STOP_FILES = 8192, 2
-ROOTS = (s.VISUAL, s.PREPARATION, s.OFFLINE, OFFLINE, OUT)
+ROOTS = (s.VISUAL, s.PREPARATION, s.OFFLINE, R1, OFFLINE, OUT)
+# The retained r1 root adds a seventh directory to the six-directory original
+# formula. Debit its block inside the same metadata allowance, never raise CAP.
+DIRECTORY_DEBIT = 4096
+PROGRESS = 'replacement-progress-private.jsonl'
 CODEC_KEYS = ('format','compress_command','decoder_pass1','decoder_pass2','gzip_version',
     'gzip_executable_SHA256','python_executable_SHA256','zlib_version',
     'zlib_module_origin','tool_dependencies_SHA256')
@@ -44,7 +53,26 @@ def check_historical_record(row):
     require(before==row['identity'] and b.retention.sha(p)==row['SHA256'] and
             b.retention.identity(p)==before, 'historical protected file changed: '+str(p))
 
+def verify_r1():
+    hand=R1/'failure-review-handoff-private.json'; stop=R1/'offline-wiring-STOP-private.json'
+    require(e.digest(hand)==R1_HANDOFF_SHA and e.digest(stop)==R1_STOP_SHA,'immutable terminal r1 STOP/handoff')
+    old=read(hand); require(old['tested_commit']==REVISION_BASE and old['PASS'] is False,'r1 is failure, never admission')
+    rows=dict(old['private_artifacts']); rows[str(hand)]=dict(identity=e.identity(hand),SHA256=R1_HANDOFF_SHA)
+    require({str(p) for p in R1.rglob('*') if p.is_file() or p.is_symlink()}==set(rows),'exact retained r1 artifact namespace')
+    for path,entry in rows.items(): check_entry(path,entry)
+    return rows
+
+def reference_scope_check(contract):
+    inventory=str(b.retention.PREP/'protected-inventory-private.jsonl')
+    howler=str(s.SCRATCH/'howler-rgb-preservation-r1-20261011/execution-final-handoff-private.json')
+    refs=contract['historical_protection_refs']
+    require(set(refs)=={inventory,howler} and refs[inventory]['SHA256']==
+        '175ce1506bae8d9dfb3e954fbe64f412bf929e8425d91bd92c5ad4fdae226620' and
+        refs[howler]['SHA256']=='78e19cda733e7310a0dde92c0fa731ba0395d0443d38e97c3e80979f5fc6e0d0',
+        'complete exact historical protection references')
+
 def referenced_protection(contract):
+    reference_scope_check(contract)
     refs=contract['historical_protection_refs']
     for path,entry in refs.items(): check_entry(path,entry)
     inventory=b.retention.PREP/'protected-inventory-private.jsonl'
@@ -62,6 +90,13 @@ def referenced_protection(contract):
     for path,entry in refs.items(): check_entry(path,entry)
     return len(seen)
 
+def metadata_limits(tally,extra_bytes=0,extra_files=0,failure=False):
+    require(tally['files']+extra_files<=s.METADATA_FILES-(0 if failure else STOP_FILES) and
+            tally['logical_bytes']+extra_bytes+DIRECTORY_DEBIT<=s.METADATA_CAP-(0 if failure else STOP_BYTES),
+            'aggregate visual/preparation/r1/r2/execution/failure metadata exceeded')
+    require(tally['allocated_bytes']<=s.METADATA_CAP+64*s.BLOCK+6*s.BLOCK,'aggregate metadata allocated bound')
+    return tally
+
 def metadata_usage(extra_bytes=0,extra_files=0,failure=False):
     streams={str(OUT/row[k]) for row in s.definitions()
              for k in ('compressed_relative_path','frame_hashes_relative_path')}
@@ -71,13 +106,10 @@ def metadata_usage(extra_bytes=0,extra_files=0,failure=False):
     files=[p for p in paths if p.is_file() and str(p) not in streams]
     logical=sum(p.stat().st_size for p in files)
     allocated=sum(p.stat().st_blocks*512 for p in paths if p.is_dir() or str(p) not in streams)
-    require(len(files)+extra_files<=s.METADATA_FILES-(0 if failure else STOP_FILES) and
-            logical+extra_bytes<=s.METADATA_CAP-(0 if failure else STOP_BYTES),
-            'aggregate visual/preparation/test/execution/failure metadata exceeded')
-    require(allocated<=s.METADATA_CAP+64*s.BLOCK+6*s.BLOCK,'aggregate metadata allocated bound')
-    return dict(files=len(files),logical_bytes=logical,allocated_bytes=allocated)
+    return metadata_limits(dict(files=len(files),logical_bytes=logical,allocated_bytes=allocated),extra_bytes,extra_files,failure)
 
 def accepted_inputs():
+    verify_r1()
     p=s.PREPARATION/'proposal-contract-private.json'; h=s.PREPARATION/'final-review-handoff-private.json'
     old_suite=s.OFFLINE/'scope-suite-private.json'
     require(e.digest(p)==PREP_SHA and e.digest(h)==PREP_HANDOFF_SHA and
@@ -108,12 +140,15 @@ def accepted_inputs():
 
 def build_proposal(preparation):
     head=b.git('rev-parse','HEAD'); require(not b.git('status','--porcelain'),'clean production source')
-    require(b.git('merge-base',BASE,head)==BASE and
-            set(b.git('diff','--name-only',BASE,head).splitlines())==set(FILES), 'focused five-file production delta')
+    require(b.git('merge-base',BASE,head)==BASE and b.git('merge-base',REVISION_BASE,head)==REVISION_BASE and
+            set(b.git('diff','--name-only',BASE,head).splitlines())==set(FILES), 'cumulative five-file production allowlist')
+    correction=b.git('diff','--name-only',REVISION_BASE,head).splitlines()
+    require(bool(correction) and set(correction)<=set(FILES),'focused correction delta within cumulative allowlist')
     sources=dict(preparation['source_files_SHA256'])
     for rel in set(s.FILES)|set(FILES): sources[rel]=e.digest(ROOT/rel)
     env=b.environment(Path(b.read(b.CONFIG)['tool_root']))
-    return dict(schema='Warden13-production-proposal/v1',source_commit=head,source_base=BASE,
+    return dict(schema='Warden13-production-proposal/v2',source_commit=head,source_base=BASE,
+        revision_base=REVISION_BASE,correction_delta=correction,r1_STOP_SHA256=R1_STOP_SHA,r1_handoff_SHA256=R1_HANDOFF_SHA,
         preparation_proposal_SHA256=PREP_SHA,preparation_handoff_SHA256=PREP_HANDOFF_SHA,
         preparation_admission_SHA256=PREP_SUITE_SHA,actual_runtime_handoff_SHA256=s.HANDOFF_SHA,
         direct_preparation_files=list(s.FILES),inherited_source_files=[p for p in preparation['source_files_SHA256'] if p not in s.FILES],
@@ -124,6 +159,7 @@ def build_proposal(preparation):
         chunk_count=13,frames=24207,raw_bytes=2788646400,cap_bytes=CAP,
         metadata_roots=[str(p) for p in ROOTS],metadata_cap_bytes=s.METADATA_CAP,
         metadata_file_limit=64,STOP_reserved_bytes=STOP_BYTES,STOP_reserved_files=STOP_FILES,
+        retained_r1_counted=True,extra_directory_debit_bytes=DIRECTORY_DEBIT,progress_format=PROGRESS,
         controller_limit=1,verifier_children=2,controller_wall_seconds=7200,child_wall_seconds=1800,
         execution_permitted=False,runtime='CLOSED',first_failure_terminal=True,retry=False)
 
@@ -157,7 +193,9 @@ def validate_production(prod,preparation):
     require(all(prod['source_files_SHA256'][p]==pin for p,pin in preparation['source_files_SHA256'].items()
                 if p not in FILES) and all(prod['source_files_SHA256'][p]==pin for p,pin in prod['direct_production_files_SHA256'].items()),
             'immutable inherited source and admitted direct overlaps')
-    require(prod['schema']=='Warden13-production-proposal/v1' and prod['source_base']==BASE and
+    require(prod['schema']=='Warden13-production-proposal/v2' and prod['source_base']==BASE and
+            prod['revision_base']==REVISION_BASE and bool(prod['correction_delta']) and set(prod['correction_delta'])<=set(FILES) and
+            prod['r1_STOP_SHA256']==R1_STOP_SHA and prod['r1_handoff_SHA256']==R1_HANDOFF_SHA and
             prod['first_failure_terminal'] is True and
             prod['codec']=={k:preparation[k] for k in CODEC_KEYS} and
             (prod['chunk_count'],prod['frames'],prod['raw_bytes'],prod['cap_bytes'])==(13,24207,2788646400,CAP) and
@@ -167,6 +205,7 @@ def validate_production(prod,preparation):
             prod['metadata_roots']==[str(p) for p in ROOTS] and prod['metadata_cap_bytes']==s.METADATA_CAP and
             prod['metadata_file_limit']==64 and prod['STOP_reserved_bytes']==STOP_BYTES and
             prod['STOP_reserved_files']==STOP_FILES and prod['controller_limit']==1 and prod['verifier_children']==2 and
+            prod['retained_r1_counted'] is True and prod['extra_directory_debit_bytes']==DIRECTORY_DEBIT and prod['progress_format']==PROGRESS and
             prod['controller_wall_seconds']==7200 and prod['child_wall_seconds']==1800 and
             prod['execution_permitted'] is False and prod['runtime']=='CLOSED' and prod['retry'] is False,
             'immutable production scope/providers/paths/bounds/permission')
@@ -177,11 +216,25 @@ def validate_production(prod,preparation):
 c=module('warden_durable_barrier','scripts/floor1/howler-rgb-preservation-controller.py')
 PRIMITIVES=c.LocalIO
 c.OUT,c.CAP,c.PROPOSAL_SHA,c.FILES=OUT,CAP,PREP_SHA,FILES
-c.scope=types.SimpleNamespace(pair_check=s.pair_check,validate_scope=s.validate_scope,
+c.scope=types.SimpleNamespace(FRAME=115200,pair_check=s.pair_check,validate_scope=s.validate_scope,
     gzip_bound=s.gzip_bound,METADATA_CAP=s.METADATA_CAP,METADATA_FILES=64,BLOCK=s.BLOCK,AUDIT_RESERVE=s.AUDIT_RESERVE)
+FACADE_INTERFACE=dict(FRAME=115200,validate_scope=s.validate_scope,gzip_bound=s.gzip_bound,pair_check=s.pair_check,
+    METADATA_CAP=16*1024**2,METADATA_FILES=64,BLOCK=4096,AUDIT_RESERVE=128*1024**2)
+IO_INTERFACE=('identity','digest','read','source_check','check_raw','protected_check','usage','available',
+    'sync_file','sync_dir','json','unlink_raw','load','exists','preparation_proposal','permission_check',
+    'source_check_proposal','provider_check','metadata_check','claim','attach','ledger','compress',
+    'verify_chunk','run_verifier','pid','ppid','raw_exists')
+def assert_interface(io):
+    actual=vars(c.scope)
+    require(set(actual)==set(FACADE_INTERFACE),'complete exact inherited facade interface')
+    for name,want in FACADE_INTERFACE.items():
+        value=actual[name]
+        require(value is want if callable(want) else type(value) is int and value==want,
+                'wrong inherited facade member: '+name)
+    require(all(callable(getattr(io,name,None)) for name in IO_INTERFACE),'complete callable production/barrier IO interface')
 inherited_paths=c.synchronized_paths
 def synchronized_paths(mapping):
-    return inherited_paths(mapping)+[OUT/CLAIM,PRODUCTION,ADMISSION,AUTHORITY,AUDIT]
+    return inherited_paths(mapping)+[OUT/CLAIM,PRODUCTION,ADMISSION,AUTHORITY,AUDIT,POSITIVE]
 c.synchronized_paths=synchronized_paths
 
 def validate_contract(contract,preparation):
@@ -216,6 +269,12 @@ def admission(io,action):
     validate_production(prod,preparation)
     ph,ah=io.digest(PRODUCTION),io.digest(ADMISSION)
     audit=io.load(AUDIT)
+    positive=io.load(POSITIVE)
+    require(checked['positive_lifecycle_SHA256']==io.digest(POSITIVE) and positive['PASS'] is True and
+            positive['model_only'] is True and positive['source_commit']==prod['source_commit'] and
+            positive['production_proposal_SHA256']==ph and
+            (positive['chunks'],positive['frames'],positive['raw_bytes'],positive['cap_bytes'])==(13,24207,2788646400,CAP),
+            'complete positive modeled lifecycle/admission/source relationship')
     require(checked['actual_protection_readback_SHA256']==io.digest(AUDIT) and
             audit['PASS'] is True and audit['source_commit']==prod['source_commit'] and
             (audit['historical_files'],audit['new_protected_entries'],audit['raw_chunks'],audit['raw_frames'],audit['raw_bytes'])==
@@ -282,9 +341,11 @@ class LocalIO:
                 'immutable authority/admission/production/terminal state')
         require(self.load(AUTHORITY)==authority_template(prod,self.digest(PRODUCTION),self.digest(ADMISSION)), 'unchanged authority')
         require(self.load(ADMISSION)['actual_protection_readback_SHA256']==self.digest(AUDIT), 'unchanged actual protection audit')
+        require(self.load(ADMISSION)['positive_lifecycle_SHA256']==self.digest(POSITIVE), 'unchanged positive modeled lifecycle proof')
         claim=self.read(CLAIM)
         validate_claim(claim,prod,self.digest(PRODUCTION),self.digest(ADMISSION),self.digest(AUTHORITY),claim['pid'])
     def protected_check(self,contract):
+        verify_r1()
         for path,entry in contract['protected_entries'].items(): check_entry(path,entry)
         for row in contract['recordings']: e.index_check(Path(row['index_path']),row['frames'])
         referenced_protection(contract)
@@ -293,6 +354,22 @@ class LocalIO:
     sync_file=PRIMITIVES.sync_file
     sync_dir=PRIMITIVES.sync_dir
     def json(self,name,value,failure=False):
+        if name.startswith('replacement-progress-') and name.endswith('-private.json'):
+            # Preserve every accepted barrier progress record durably, in one
+            # bounded journal, to retain r1+r2 under the same64-file allowance.
+            index=value['completed_removals']
+            require(name==f'replacement-progress-{index-1:02}-private.json' and 1<=index<=13 and
+                    value['removed_path']==s.definitions()[index-1]['raw_path'],'exact ordered progress journal')
+            path=OUT/PROGRESS; prior=path.read_bytes() if path.exists() else b''
+            require(len(prior.splitlines())==index-1,'one progress row per exact original')
+            rows=self.read(c.MAPPING_NAME)['chunks']
+            expected=[dict(removed_path=row['raw_path'],compressed_SHA256=row['compressed_SHA256'],
+                raw_SHA256=row['raw_SHA256'],completed_removals=n+1) for n,row in enumerate(rows[:index])]
+            require([json.loads(line) for line in prior.splitlines()]+[value]==expected,'exact journal/mapping receipt relationships')
+            data=encoded(value); metadata_usage(len(data),0 if path.exists() else 1)
+            with path.open('ab' if prior else 'xb') as file:
+                os.fchmod(file.fileno(),0o600); file.write(data); file.flush(); os.fsync(file.fileno())
+            self.sync_dir(OUT); metadata_usage(); return
         data=encoded(value); metadata_usage(len(data),1,failure)
         require(len(data)<=4*1024**2,'bounded production receipt')
         if failure: require(len(data)<=STOP_BYTES,'reserved bounded terminal failure evidence')
@@ -398,12 +475,14 @@ def preserve(io,preparation,prod,ph,ah):
     io.json('preservation-result-private.json',dict(PASS=True,source_commit=prod['source_commit'],
         production_proposal_SHA256=ph,contract_SHA256=io.digest(OUT/c.CONTRACT_NAME),mapping_SHA256=io.digest(OUT/c.MAPPING_NAME),
         verifier_receipt_SHA256=[io.digest(OUT/n) for n in c.RECEIPT_NAMES],verifier_PIDs=[one['pid'],two['pid']],
+        progress_journal_SHA256=io.digest(OUT/PROGRESS),progress_records=13,
         replaced_files=13,replaced_paths=io.removed,raw_bytes=2788646400,frames=24207,cap_bytes=CAP,
         accounting=accounting,measured_available_bytes_increase=delta,runtime='CLOSED',runtime_capacity_admitted=False))
 
 def dispatch(action,io=None):
     io=LocalIO() if io is None else io
     try:
+        assert_interface(io)
         preparation,prod,ph,ah=admission(io,action)
         if action=='preserve': preserve(io,preparation,prod,ph,ah)
         else: worker(io,action,preparation,prod)

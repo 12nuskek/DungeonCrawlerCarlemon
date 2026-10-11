@@ -3,6 +3,8 @@ from pathlib import Path
 import json
 import math
 import os
+import hashlib
+import stat
 
 FILE_CAP = 8 * 1024**2
 TOTAL_CAP = 64 * 1024**2
@@ -81,6 +83,16 @@ def prepare_bundle(payloads, *, path_key_maps=(), path_value_fields=(), validate
 def write_bundle(destination, payloads, *, path_key_maps=(), path_value_fields=(), validate):
     prepared = prepare_bundle(payloads, path_key_maps=path_key_maps,
                               path_value_fields=path_value_fields, validate=validate)
+    return write_prepared_bundle(destination, prepared, validate=validate)
+
+
+def write_prepared_bundle(destination, prepared, *, validate):
+    require(type(prepared) is dict and 0 < len(prepared) <= 16, 'complete prepared bundle')
+    for name, data in prepared.items():
+        require(type(name) is str and Path(name).name == name and name.endswith('.json') and
+                type(data) is bytes and len(data) <= FILE_CAP, 'typed bounded prepared JSON payload')
+        validate(json.loads(data))
+    require(sum(len(data)+4096 for data in prepared.values()) <= TOTAL_CAP, 'prepared bundle bound')
     destination = Path(destination)
     require(destination.is_absolute() and not os.path.lexists(destination), 'fresh receipt destination')
     require(destination.parent.is_dir() and not destination.parent.is_symlink(), 'existing real parent')
@@ -98,3 +110,32 @@ def write_bundle(destination, payloads, *, path_key_maps=(), path_value_fields=(
         finally:
             os.close(fd)
     return prepared
+
+
+def readback_prepared(destination, prepared, *, validate):
+    result = {}
+    for name, expected in prepared.items():
+        require(type(name) is str and Path(name).name == name and name.endswith('.json') and
+                type(expected) is bytes and len(expected) <= FILE_CAP, 'declared persisted receipt bytes')
+        path = Path(destination)/name
+        before = path.lstat()
+        require(stat.S_ISREG(before.st_mode) and before.st_size == len(expected), 'exact-size real persisted receipt')
+        fd = os.open(path, os.O_RDONLY|os.O_NOFOLLOW)
+        stable = lambda s: (s.st_dev,s.st_ino,s.st_mode,s.st_uid,s.st_gid,s.st_size,s.st_mtime_ns,s.st_ctime_ns,s.st_nlink)
+        try:
+            require(stable(os.fstat(fd)) == stable(before), 'opened receipt identity')
+            chunks, total = [], 0
+            while total < len(expected):
+                block = os.read(fd, min(65536, len(expected)-total))
+                require(block, 'short persisted receipt')
+                chunks.append(block); total += len(block)
+            require(os.read(fd, 1) == b'' and stable(os.fstat(fd)) == stable(before), 'receipt exact EOF and stable metadata')
+        finally:
+            os.close(fd)
+        actual = b''.join(chunks)
+        require(stable(path.lstat()) == stable(before) and actual == expected and
+                hashlib.sha256(actual).digest() == hashlib.sha256(expected).digest(), 'persisted receipt complete byte/hash identity')
+        validate(json.loads(actual))
+        result[name] = dict(bytes=total, SHA256=hashlib.sha256(actual).hexdigest(),
+                            complete_schema_validated=True, exact_bytes=True, exact_EOF=True)
+    return result

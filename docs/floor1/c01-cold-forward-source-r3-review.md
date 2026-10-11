@@ -1,5 +1,69 @@
 # Cold forward correspondence r3: source-only review
 
+## Current r5 correction: SOURCE ONLY
+
+Start c777d649bb5715be1caf66d006188e36a8152a74. No checker, preflight, fixture
+or suite is authorized in this increment. The older r4 execution wording below
+describes its completed failed attempt and provides no new execution permission.
+Source-preflight failures remain two, with no retry or counter reset.
+
+Every shared operand hash, including interpreter startup and both before/after
+maps, now uses declared path/role/type/exact-size/hash descriptors and64KiB
+streaming reads. Require regular non-symlink identity, matching opened descriptor,
+exact byte count/EOF/hash and unchanged dev/inode/mode/uid/gid/size/mtime/ctime/
+link count. Compare identity maps across the whole comparison too. Interpreter
+size remains exactly30,894,944 bytes and its existing hash is unchanged; it is
+never retained as a whole-file byte string.8MiB per receipt and64MiB metadata
+remain unchanged. Source/cache/helper retention is limited to1MiB, JSON/config/
+inventory retention to8MiB, and every retained read still has an exact declared
+size/hash. There is no blanket increase of record limits.
+
+An independently reviewed private operand manifest is an explicit CLI input:
+schema/source_commit/direct_operands/auxiliary_operands. Each descriptor has
+exactly path,role,type,bytes,SHA256. Preserve all18 earlier direct operands and
+add the r4 STOP and handoff, yielding20. Four current reviewed sources are bound
+to the reviewed Git commit; the16 immutable descriptors are fixed explicitly.
+The six accepted helper/config/provider operands are separate. Their helpers are
+unchanged; GCC/ldd remain declared unused providers, Git is used, and interpreter
+identity shared with the accepted helper is already in the direct partition.
+The manifest itself is size/hash pinned and checked before and after use.
+No import discovery or typed-union admission populates any of these sets.
+
+The actual sealed r2 interpreter object already contains path and all seven
+fields. Preserve it exactly, rather than add/replace path. Preserve the complete
+actual_metadata object too; it records an observed code label, not authenticated
+distributor provenance. Both r4 STOP2784a906…b9424 and handofffd4534ac…c4be0 are
+required in construction and validation. Failure history distinguishes filename
+assumption1, operand-size rejection1, earlier closure suite1, missing-summary
+serialization1 and earlier auxiliary metadata-query1. Older files remain exact.
+
+Both payloads are pre-serialized and validated before either output exists.
+Write/fsync those exact bytes; then open/read both with exact size, EOF and stable
+identity, revalidate full schemas, and compare all bytes and SHA256 before PASS.
+The proposed outer wrapper independently repeats complete persisted schema and
+byte/hash readback before the conditional fixture invocation. Exclusive logs,
+90-second limits/kill-reap reserve/terminal STOP and fresh r5 names remain required.
+No entrypoint itself supplies the outer execution records.
+
+The accepted fresh-invocation ownership fixture remains unchanged. Prepared
+additional tests cover interpreter streaming above the receipt cap, declared
+size/hash/role/type failures, short/extra streams, changed metadata, complete
+sealed interpreter/diagnostic schemas, both persisted payloads and same-size
+corruption. Tests and all corrected production paths remain UNEXECUTED.
+
+Exact final manifest path/bytes/hash, private wrapper identity and proposed outer
+command are in the private source-review handoff. These commands require a new
+independent review and explicit execution scope:
+
+```text
+python3.12 -B /workspace/scratch/c01-warden-cold-forward-wrapper-r5-20261011.py --source <reviewed-commit> --inventory <reviewed-manifest> --inventory-bytes <exact-bytes> --inventory-sha256 <exact-hash>
+```
+
+All source/preflight/summary/fixture/outer r5 roots must be new. No source-consistency
+success, provider addition admission or runtime readiness is claimed here.
+
+## Historical r4 preparation and execution scope
+
 R4 narrow fixture correction starts at daee549dc78eace8859dba95f249f11ba6377e43.
 The second modeled invocation has fresh LocalIO process ownership and shares
 only retained lifecycle/STOP state and the total event ledger. Keep the first

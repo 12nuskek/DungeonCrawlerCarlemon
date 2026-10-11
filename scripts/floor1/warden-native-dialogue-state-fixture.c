@@ -149,7 +149,10 @@ static bool readRegister(const struct mCore*c,const char*n,void*out){
 static struct mCore mock={.busRead8=read8,.setKeys=setKeys,.readRegister=readRegister};
 static void co_run(struct mCore*c,const color_t*p,unsigned w,unsigned h){
     (void)c;(void)p;assert(w==240&&h==160);advances++;co.frames++;co_capture_absolute=co.frames;
-    for(unsigned i=0;i<w*h;i++)pixels[i]=(color_t)(co.frames&0xFFFFFFu);
+    pixels[0]=(color_t)(co.frames&0xFFFFFFu);
+    /* Tag every synthetic frame; refresh its full flat image at each exact
+     * command-cycle boundary, including the final failing frame. */
+    if(co.frames%401==0){for(unsigned i=0;i<w*h;i++)pixels[i]=pixels[0];}
     /* Complete synthetic frame/index admission coverage, including final frame. */
     unsigned row[2]={co.frames,(unsigned)pixels[0]};assert(fwrite(row,1,sizeof row,co.index)==sizeof row);
 }

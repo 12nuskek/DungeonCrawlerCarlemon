@@ -5,7 +5,7 @@ All Save/build paths and pins are supplied by a private reviewed input receipt.
 A failure writes a terminal receipt; the output directory is never reused.
 """
 from pathlib import Path
-import argparse,copy,hashlib,importlib.util,json,os,resource,signal,struct,subprocess,traceback
+import argparse,copy,hashlib,importlib.util,json,os,resource,shlex,signal,struct,subprocess,traceback
 ROOT=Path(__file__).resolve().parents[1]
 def module(name,path):
     s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
@@ -145,7 +145,22 @@ int main(void){unsigned checks=0;
  printf("PASS exact original fortify/native Warden support checks=%u guards=4\\n",checks);return 0;}
 '''
         (out/'inert-policy.c').write_text(test)
-        with (out/'policy-compile.log').open('w') as log:subprocess.run(['cc','-std=gnu11','-Wall','-Wextra','-Werror','-I'+str(ROOT/'engine/include'),str(out/'inert-policy.c'),'-o',str(out/'inert-policy')],stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
+        # Engine names are quoted includes. Keep them out of the angle-bracket
+        # system search, where the project strings.h would shadow libc's file.
+        policy_flags=['cc','-std=gnu11','-Wall','-Wextra','-Werror','-iquote',str(ROOT/'engine/include')]
+        dependency_file=out/'policy-preprocessing-dependencies.mk'
+        with (out/'policy-preprocessing.log').open('w') as log:
+            subprocess.run([*policy_flags,'-M','-MF',str(dependency_file),'-MT','inert-policy',str(out/'inert-policy.c')],
+                           cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
+        dependencies={str(Path(p).resolve()) for p in shlex.split(dependency_file.read_text().replace('\\\n',' ').split(':',1)[1])}
+        engine_headers={p for p in dependencies if Path(p).is_relative_to(ROOT/'engine/include')}
+        assert engine_headers==set(config['policy_engine_headers']),'exact intended quoted engine dependency closure'
+        assert set(config['policy_libc_headers'])<=dependencies,'both libc string headers resolve through the system search'
+        assert str(ROOT/'engine/include/strings.h') not in dependencies,'project strings.h never shadows libc'
+        for p in engine_headers|set(config['policy_libc_headers']):assert sha(p)==config['files'][p],'exact pinned policy header bytes'
+        policy_dependencies={p:sha(p) for p in sorted(dependencies)}
+        write(out/'policy-header-resolution-private.json',dict(engine_headers=sorted(engine_headers),libc_headers=config['policy_libc_headers'],dependencies_SHA256=policy_dependencies,quote_only_engine_search=True))
+        with (out/'policy-compile.log').open('w') as log:subprocess.run([*policy_flags,str(out/'inert-policy.c'),'-o',str(out/'inert-policy')],stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
         with (out/'policy-check.log').open('w') as log:subprocess.run([str(out/'inert-policy')],cwd=out,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=20)
         # Exact generated production readers on a synthetic memory bus. No core
         # initialization, ROM load, Save load, reset, game execution or injection.
@@ -255,6 +270,7 @@ int main(void){unsigned checks=0;
                        protected_history_SHA256=config['protected_history'],
                        offline_bounds=dict(wall_seconds=240,per_file_bytes=8*1024**2,complete_output_bytes=64*1024**2),
                        actual_ELF_binding_count=len(elf_proof),native_policy_cases=280,native_policy_scope_guards=4,
+                       policy_preprocessing_dependencies_SHA256=policy_dependencies,policy_header_search='-iquote',
                        source_reward_proof=rewards,counters=dict(approach=before,postbattle=after),compiler=subprocess.check_output(['cc','-dumpfullversion'],text=True).strip(),
                        retention='Verified local files only; no independent backup or Library transfer',runtime_next_gate='Independent offline review, complete runtime supervisor implementation, full reservation and separate authority')
         write(out/'offline-receipt-private.json',receipt)

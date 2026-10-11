@@ -46,7 +46,9 @@ the old STOP. Visual inspection is sampled, without full human pacing acceptance
 Preserve V01 six baseline/four candidate executions and STOP117 at visual8536
 before expected B8402; Howler1 STOP94; previous preservation STOPs; the read-only
 KeyError and corrected completion; transport failure; and the new capacity refusal.
-Original oracle/legacy inputs remain missing; active-pose runtime acceptance and
-full-floor acceptance remain open. Private retention is local only; Library five
+Original oracle/legacy inputs remain missing. The scoped reconstructed V01
+pair1/1 and merged PR114 active-pose technical closure are accepted; broader
+C01/human/legacy/full-floor gates remain open. No replay or broader acceptance.
+Private retention is local only; Library five
 upload failures plus one backup-download failure remain unknown-cause, with no
 verified independent backup. No upload, game rebuild, merge or dashboard edits.

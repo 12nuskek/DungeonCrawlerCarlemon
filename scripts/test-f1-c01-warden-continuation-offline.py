@@ -17,6 +17,32 @@ def sha(path):
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,text=True).strip()
 def write(path,data):Path(path).write_text(json.dumps(data,indent=2,sort_keys=True)+'\n')
 def pack(d):return d['party']+d['flags']+d['owned']+d['vars']+d['saved']+struct.pack('<10I',d['context'],d['counter'],d['count'],d['saved_count'],*d['map'],d['section'],*d['position'],d['facing'])
+def rehash_final_inputs(patrol_save_path,patrol_state_path,config,original_pins,hasher=sha):
+    """Validate both identities before opening either original operand."""
+    paths=(patrol_save_path,patrol_state_path)
+    for path,key in zip(paths,('patrol_save','patrol_state')):
+        assert isinstance(path,Path),'final operand must be a Path'
+        assert str(path)==config[key],'exact original configured path'
+        assert str(path) in config['files'] and str(path) in original_pins,'original manifest pin required'
+        assert config['files'][str(path)]==original_pins[str(path)],'original hash pin unchanged'
+    hashes={str(path):hasher(path) for path in paths}
+    assert hashes==original_pins,'final original Save/state hashes unchanged'
+    return hashes
+def final_input_negatives(patrol_save_path,patrol_state_path,config,original_pins,pilot_source_text,copied_save,copied_state):
+    checks=0;file_accesses=[]
+    def forbidden_read(path):
+        file_accesses.append(str(path));raise AssertionError('identity rejection must precede file access')
+    for index,path,key,copy_path in ((0,patrol_save_path,'patrol_save',copied_save),(1,patrol_state_path,'patrol_state',copied_state)):
+        for label,value in (('source-text',pilot_source_text),('swapped-path',(patrol_state_path,patrol_save_path)[index]),('identical-byte-other-path',copy_path),('missing-pin',None),('wrong-hash-pin','0'*64)):
+            paths=[patrol_save_path,patrol_state_path];bad=copy.deepcopy(config)
+            if label=='missing-pin':del bad['files'][str(path)]
+            elif label=='wrong-hash-pin':bad['files'][str(path)]=value
+            else:paths[index]=value
+            try:rehash_final_inputs(*paths,bad,original_pins,hasher=forbidden_read)
+            except AssertionError:checks+=1
+            else:raise AssertionError(('final input identity accepted',key,label))
+            assert not file_accesses,(key,label,'opened before identity rejection')
+    return dict(negative_cases=checks,file_accesses_before_rejection=len(file_accesses),same_bytes_other_paths_rejected=True)
 def inert_sources(code,observer_path):
     """Adapt only the inert entry definition; production observer stays exact."""
     entry='int main(int argc, char **argv)'
@@ -52,9 +78,10 @@ def run(config,out):
         for path,pin in config['files'].items():assert sha(path)==pin,('reviewed input identity',path)
         for path,pin in config['protected_history'].items():assert sha(path)==pin,('immutable prior evidence',path)
         # Inputs copied under a separate ordinary name; hashes stay immutable.
-        original=Path(config['patrol_save']);input_state=Path(config['patrol_state'])
-        copied=out/'patrol-input-verified-copy.sav';copied.write_bytes(original.read_bytes())
-        assert sha(copied)==config['files'][str(original)]
+        patrol_save_path=Path(config['patrol_save']);input_state=Path(config['patrol_state'])
+        original_pins={config[key]:config['files'][config[key]] for key in ('patrol_save','patrol_state')}
+        copied=out/'patrol-input-verified-copy.sav';copied.write_bytes(patrol_save_path.read_bytes())
+        assert sha(copied)==config['files'][str(patrol_save_path)]
         route=module('wc_offline_route',ROOT/'scripts/floor1/warden-continuation-route.py')
         model=module('wc_offline_state',ROOT/'scripts/floor1/warden-continuation-state.py')
         admission=module('wc_offline_admission',ROOT/'scripts/floor1/warden-continuation-admission.py')
@@ -142,8 +169,8 @@ def run(config,out):
         with (out/'compile.log').open('w') as log:subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,check=True,env=env,timeout=60)
         # Independent executable policy check uses the exact original move
         # selection block on a tiny read-only bus, not a copied Howler policy.
-        original=(ROOT/'scripts/playtest.c').read_text();a=original.index('                            unsigned desired=0;');b=original.index('                            unsigned cursor=',a)
-        policy=original[a:b]
+        pilot_source_text=(ROOT/'scripts/playtest.c').read_text();a=pilot_source_text.index('                            unsigned desired=0;');b=pilot_source_text.index('                            unsigned cursor=',a)
+        policy=pilot_source_text[a:b]
         test='''#include <assert.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -275,7 +302,9 @@ int main(void){unsigned checks=0;
         route_anchor_cases('cold',saved)
         cold_state=model.snapshot(out/'SYNTHETIC-OFFLINE-cold-validator/current-state.bin')
         assert native_check(saved,cold_state,13)==0;checks+=1
-        assert sha(original)==config['files'][str(original)] and sha(input_state)==config['files'][str(input_state)]
+        assert sha(out/'fixture.bin')==original_pins[str(input_state)],'negative alternative state has identical bytes'
+        final_identity_negatives=final_input_negatives(patrol_save_path,input_state,config,original_pins,pilot_source_text,copied,out/'fixture.bin')
+        final_input_hashes=rehash_final_inputs(patrol_save_path,input_state,config,original_pins)
         for path,pin in config['protected_history'].items():assert sha(path)==pin,('immutable prior evidence after checks',path)
         assert sum(p.stat().st_size for p in out.rglob('*') if p.is_file())<64*1024**2,'bounded offline evidence output'
         source={str(p.relative_to(ROOT)):sha(p) for p in ROOT.joinpath('scripts').glob('**/*') if p.is_file() and p.suffix in ('.py','.c','.h','.json','.route')}
@@ -287,6 +316,7 @@ int main(void){unsigned checks=0;
                        exact_anchor_cases=anchor_cases,walking_event_row=event_row,ladder_proof=ladders,cold_validator_fixtures=cold_receipt,
                        generated_Save_hooks_release_two_Yes_completion=True,second_encounter_fixture_prior_attempts=1,
                        protected_history_SHA256=config['protected_history'],
+                       final_original_input_hashes=final_input_hashes,final_input_identity_negatives=final_identity_negatives,
                        offline_bounds=dict(wall_seconds=240,per_file_bytes=8*1024**2,complete_output_bytes=64*1024**2),
                        actual_ELF_binding_count=len(elf_proof),native_policy_cases=280,native_policy_scope_guards=4,
                        policy_preprocessing_dependencies_SHA256=policy_dependencies,policy_header_search='-iquote',

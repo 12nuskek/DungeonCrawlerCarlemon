@@ -5,10 +5,14 @@ ROOT=Path(__file__).resolve().parents[2]
 def module(name,path):
     s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 base=module('wc_state_base',ROOT/'scripts/floor1/continuous-opening-state.py')
+route=module('wc_state_route',ROOT/'scripts/floor1/warden-continuation-route.py')
+SECTIONS={n:m['section'] for n,m in route.native_maps().items()}
 fields=base.fields;prior=base.prior;friendship=base.friendship
 NAMES=('boss','boss-repeat','stairs-no','stairs-yes','checkpoint','save')
 def snapshot(path):
     d=base.snapshot(path);assert d['saved_count']==2 and d['facing'] in (1,2,3,4)
+    assert d['section']==SECTIONS[d['map'][1]],'exact source map section'
+    assert struct.unpack_from('<H',d['vars'],0x54)[0]==d['counter'],'native counter/var identity'
     for f in (32,33,34,36,37,38,39,2135,2136,2137,2193):assert d['flags'][f//8]&(1<<(f%8))
     assert not(d['flags'][2194//8]&(1<<(2194%8)))
     return d
@@ -16,6 +20,22 @@ def same(a,b):
     assert set(a)==set(b)
     for key in a:
         if key not in ('context','owned'):assert a[key]==b[key],('full native state',key)
+def anchor(d,number,position,counter,poison):
+    assert d['map']==[35,number] and d['position']==list(position)
+    assert d['section']==SECTIONS[number],'exact source map section'
+    assert d['counter']==struct.unpack_from('<H',d['vars'],0x54)[0]==counter,'exact route counter'
+    assert struct.unpack_from('<H',d['vars'],0x56)[0]==poison,'exact route poison counter'
+    assert d['facing']==1,'source route south-facing stationary anchor'
+def phase_anchor(name,d,before):
+    if name in ('boss','boss-repeat'):anchor(d,3,(8,7),7,1 if name=='boss' and before else 0)
+    elif name in ('stairs-no','stairs-yes'):
+        if name=='stairs-yes' and not before:anchor(d,4,(4,4),14,3)
+        else:anchor(d,3,(12,10),14,3)
+    else:anchor(d,4,(8,6),20,1)
+def continue_equivalence(expected,current,save):
+    anchor(expected,1,(4,5),110,0);anchor(current,1,(4,5),110,0)
+    same(expected,current)
+    return disk_equivalence(save,current,([35,1],[4,5]))
 def disk_equivalence(save,live,endpoint):
     decoded=fields.saved_party(save) # Native checksums for all fourteen sectors.
     raw=Path(save).read_bytes();assert len(raw) in (131072,131088)
@@ -37,6 +57,7 @@ def disk_equivalence(save,live,endpoint):
     return True
 def validate(name,before,after):
     assert name in NAMES
+    phase_anchor(name,before,True);phase_anchor(name,after,False)
     base.validate(name,before,after)
     if name=='stairs-yes':
         assert after['facing']==1 # Plain checkpoint floor defaults south.
@@ -52,15 +73,16 @@ def validate(name,before,after):
     if name=='save':
         assert (after['map'],after['position'],after['facing'])==([35,4],[8,6],1)
 def cold_equivalence(before,after,save):
+    anchor(before,4,(8,6),20,1);anchor(after,4,(8,6),20,1)
     same(before,after)
     return disk_equivalence(save,after,([35,4],[8,6]))
 if __name__=='__main__':
     mode=sys.argv[1];current=snapshot('current-state.bin')
     if mode=='continue':
-        expected=snapshot('expected-input-state.bin');same(expected,current)
+        expected=snapshot('expected-input-state.bin')
         # Read-only native fourteen-sector decoding separately verifies the input
         # checkpoint's Quiet endpoint; no checkpoint-floor acceptance is reused.
-        disk_equivalence('game.sav',current,([35,1],[4,5]))
+        continue_equivalence(expected,current,'game.sav')
     elif mode=='cold':cold_equivalence(snapshot('expected-final-state.bin'),current,'game.sav')
     else:
         validate(mode,snapshot('before-state.bin'),current)

@@ -20,12 +20,15 @@ unchanged bound, including entry and exit.
 Route generation must prove physical steps separately from successful ladder
 warps and the scripted staircase warp. Native walking friendship can apply or
 skip its source-defined adjustment; actual results must be retained and checked.
+Each stationary endpoint requires its exact source section, friendship counter
+and poison counter. The walking event uses the section of its actual walk row.
 Rewards, growth, friendship, full party and saved-party records, counts, flags,
 variables, resources and legal field state must be checked together. Same-file
 manual Save requires both native Yes confirmations and a successful callback.
 
 The offline reservation includes complete motion, field and battle observations,
-captures, logs, working files, allocation rounding and headroom. A later admitted
+captures, logs, working files, individual file allocation rounding and headroom.
+It includes explicit PNG and later review allowances. A later admitted
 process must freshly reserve the full continuation and cold amounts before each
 launch. It may not shrink capture or reuse preparation credit to fit free space.
 An exclusive claim and conditional cold gate require separate reviewed runtime

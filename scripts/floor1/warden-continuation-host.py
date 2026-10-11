@@ -16,7 +16,13 @@ def generate(git):
     def once(old,new):
         nonlocal code
         assert code.count(old)==1,(old[:90],code.count(old));code=code.replace(old,new)
-    once('int main(int argc, char **argv)',(ROOT/'scripts/floor1/howler-continuation-save.h').read_text()+'\nint main(int argc, char **argv)')
+    save_header=(ROOT/'scripts/floor1/howler-continuation-save.h').read_text()
+    start=save_header.index('static unsigned hc_text_exact(')
+    end=save_header.index('static unsigned hc_save_key(',start)
+    # Only the Howler-specific text helper is omitted in this generated host.
+    # The immutable shared header and native Save helpers remain byte-for-byte.
+    save_header=save_header[:start]+save_header[end:]
+    once('int main(int argc, char **argv)',(ROOT/'scripts/floor1/warden-continuation-anchors.h').read_text()+'\n'+save_header+'\nint main(int argc, char **argv)')
     once('    if(argc!=5||(strcmp(argv[4],"opening")&&strcmp(argv[4],"cold")))return 2;',
          '    return 101; /* CLOSED: offline-only; no core, ROM, Save, reset or frames. */\n'
          '    if(argc!=5||(strcmp(argv[4],"warden-continuation")&&strcmp(argv[4],"warden-new-save-cold")))return 2;')
@@ -47,6 +53,12 @@ def generate(git):
          str(ROOT/'scripts/floor1/howler-continuation-state.py'),str(ROOT/'scripts/floor1/warden-continuation-state.py'))
     a=code.index('        if(!strcmp(line,"co save-ready\\n")');b=code.index('        if(!strcmp(line,"co potion-recipient\\n")',a)
     code=code[:a]+save+code[b:]
+    once('co_read(core,&current);if(result)break;\n            if(begin)',
+         'co_read(core,&current);if(result)break;\n            result=wc_phase_anchor(&current,phaseSeq,begin);if(result)break;\n            if(begin)')
+    once('if(system("python3 '+str(ROOT/'scripts/floor1/warden-continuation-state.py')+' continue"))',
+         'if(wc_continue_anchor(&current)){result=96;break;}\n            if(system("python3 '+str(ROOT/'scripts/floor1/warden-continuation-state.py')+' continue"))')
+    once('if(system("python3 '+str(ROOT/'scripts/floor1/continuous-opening-state.py')+' cold"))',
+         'if(wc_cold_anchor(&current)){result=96;break;}\n            if(system("python3 '+str(ROOT/'scripts/floor1/continuous-opening-state.py')+' cold"))')
     code=code.replace(str(ROOT/'scripts/floor1/continuous-opening-state.py'),str(ROOT/'scripts/floor1/warden-continuation-state.py'))
     assert code.index('return 101;')<code.index('mCoreFind')
     assert code.count('->runFrame(')==code.count('core->reset(')==1

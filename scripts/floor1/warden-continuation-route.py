@@ -8,11 +8,20 @@ def module(name, path):
     result = importlib.util.module_from_spec(spec); spec.loader.exec_module(result)
     return result
 
+def native_maps():
+    """Production map numbers and sections, independently of graybox names."""
+    names={0:'DCC_F1D1Field',1:'DCC_F1D1Quiet',3:'DCC_F1D1Warden',4:'DCC_F1D1Checkpoint'}
+    sections=json.loads((ROOT/'engine/src/data/region_map/region_map_sections.json').read_text())['map_sections']
+    ids={s['id']:i for i,s in enumerate(sections)}
+    return {number:dict(json.loads((ROOT/f'engine/data/maps/{name}/map.json').read_text()),
+                        native_name=name,section=ids[json.loads((ROOT/f'engine/data/maps/{name}/map.json').read_text())['region_map_section']])
+            for number,name in names.items()}
+
 def routes():
     live = module('wc_live', ROOT/'scripts/floor1/live-route.py')
     geo = module('wc_geo', ROOT/'scripts/floor1/relocation-graybox.py')
     spec = json.loads((ROOT/'scripts/contracts/f1-g01d-relocation.json').read_text())
-    walks = []
+    walks = [];native=native_maps()
     class Traced(live.Route):
         def follow(self, end):
             end = tuple(end); old_key = self.key
@@ -21,7 +30,8 @@ def routes():
             path = self.g.path(self.maps[self.key], self.opened, self.pos, end)
             warp = next((w for w in self.maps[self.key]['warps'] if tuple(w['at']) == end), None)
             for a, b in zip(path, path[1:]):
-                walks.append(dict(map=self.ids[old_key]['map_num'], before=list(a), after=list(b),
+                number=self.ids[old_key]['map_num']
+                walks.append(dict(map=number,section=native[number]['section'],before=list(a),after=list(b),
                                   kind='ladder' if warp and b == end else 'ordinary'))
             super().follow(end)
             if warp:

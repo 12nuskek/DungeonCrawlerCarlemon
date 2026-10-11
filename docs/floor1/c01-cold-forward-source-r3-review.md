@@ -1,5 +1,26 @@
 # Cold forward correspondence r3: source-only review
 
+R4 narrow fixture correction starts at daee549dc78eace8859dba95f249f11ba6377e43.
+The second modeled invocation has fresh LocalIO process ownership and shares
+only retained lifecycle/STOP state and the total event ledger. Keep the first
+process reference; require one creation, that process stopped/reaped once,
+actual_processes=1, no verdict, unchanged first failure and no second creation
+or stop of the prior process. Production failure handling is unchanged.
+
+Independent review now admits one r3 source preflight and, only after complete
+success/readback, one r3 fixture invocation. The private outer wrapper has a new
+r4 root: /workspace/scratch/c01-warden-cold-forward-outer-r4-20261011. Before launch
+it must serialize its complete command/bounds/source/input contract and record
+its own exact source hash. Each command gets exclusive stdout/stderr logs and
+creation/PID/exit clock records, a90-second creation-through-reap limit,8MiB log
+limits and64MiB total outer metadata. The parent entrypoints retain60-second
+internal limits. A failure kills/reaps the owned child/process group, records a
+terminal STOP with exact logs/partial outputs and skips the conditional command.
+No automatic retry. Complete receipt bytes/hashes are independently read back
+before success is reported. If setup cannot meet these bounds, stop before launch.
+These are source-check/fixture children, never runtime/emulator processes.
+Actual results belong in the private outer handoff, not in older STOPs below.
+
 Base c7a30533b26f4ef8955f55d32a3907853ad29da1. No checker, correspondence
 comparison, fixture or suite was executed in this preparation. Screenshots N/A.
 Historical r1 admission counts and old runtime/source STOPs remain unchanged.

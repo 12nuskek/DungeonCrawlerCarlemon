@@ -80,20 +80,32 @@ def process_ownership_case():
     w.require(io.failure['actual_processes'] == 1 and io.result is None and
               'verdict-private.json' not in io.present and 'complete-result' not in io.events,
               'created process counted; no success verdict')
+    first_process = io.created_process
     original_failure = dict(io.failure)
+    # LocalIO ownership is per invocation. Only durable lifecycle/STOP state and
+    # the global event ledger survive; never carry created_process into a new IO.
+    second = previous.ModelIO(proposal, {})
+    second.present, second.failure = io.present, io.failure
+    second.events = io.events
+    second_stopped = []
+    second.stop = lambda process: second_stopped.append(process)
+    w.require(second.created_process is None, 'fresh second-invocation process ownership')
     try:
-        w.execute(io)
+        w.execute(second)
     except AssertionError:
         pass
     else:
         raise AssertionError('terminal ownership failure permitted second launch')
     w.require(io.events.count('one-native-creation') == 1 and
-              [process for process in stopped if process is not None] == [io.created_process] and
-              io.failure == original_failure and io.result is None,
-              'no second launch or replacement of first failure')
+              stopped == [first_process] and second_stopped == [None] and
+              second.created_process is None and second.failure is io.failure and
+              io.failure == original_failure and io.failure['actual_processes'] == 1 and
+              io.result is None and second.result is None and 'verdict-private.json' not in second.present,
+              'no second creation/reaping of prior process, verdict or replacement of first failure')
     return dict(case='process-start-record failure owns exactly one inert process',
                 synthetic_creations=1, owned_process_passed_to_stop=True,
-                modeled_actual_processes=1, success_verdicts=0, second_launches=0)
+                modeled_actual_processes=1, success_verdicts=0, second_launches=0,
+                second_ownership_fresh=True, prior_process_stopped_by_second_invocation=False)
 
 
 def main():

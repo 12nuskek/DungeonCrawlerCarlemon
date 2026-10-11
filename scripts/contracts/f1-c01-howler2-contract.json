@@ -1,0 +1,41 @@
+{
+  "claims_per_mode": 1,
+  "cold_frames": 6000,
+  "conditional_cold_requires_actual_verified_manual_Save": true,
+  "continuation_frames": 72000,
+  "counted_step_updates": 32,
+  "encounter_frames": 36000,
+  "final_poison_counter": 0,
+  "first_failure_terminal": true,
+  "friendship_counter_anchors": [
+    78,
+    94,
+    110
+  ],
+  "ladder_transitions": 2,
+  "maximum_earned_Potion_consumptions": 1,
+  "native_modes": [
+    "howler-continuation",
+    "howler-new-save-cold"
+  ],
+  "no_New_Game": true,
+  "original_Guard_Save_only": true,
+  "phases": [
+    "howler",
+    "howler-repeat",
+    "guide-howler",
+    "save"
+  ],
+  "physical_moves": 34,
+  "policy_source": "scripts/floor1/howler-continuation-integration.h",
+  "reservation_bytes": 10000408128,
+  "retry": false,
+  "route_budget_frames": 70625,
+  "route_sources": {
+    "howler-continuation": "scripts/contracts/f1-c01-howler-continuation.route",
+    "howler-new-save-cold": "scripts/contracts/f1-c01-howler-new-save-cold.route"
+  },
+  "schema": "c01-Howler2-source-contract/v1",
+  "trainer": 857,
+  "wall_seconds": 600
+}

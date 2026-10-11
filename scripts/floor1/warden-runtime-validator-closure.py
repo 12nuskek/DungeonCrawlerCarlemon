@@ -2,6 +2,8 @@
 from pathlib import Path
 import ast,hashlib,importlib,importlib.util,json,os,stat,subprocess,sys
 ROOT=Path(__file__).resolve().parents[2]
+_bindings_spec=importlib.util.spec_from_file_location('warden_probe_bindings',ROOT/'scripts/floor1/warden-runtime-bindings.py')
+bindings=importlib.util.module_from_spec(_bindings_spec);_bindings_spec.loader.exec_module(bindings)
 ENTRY_FILES=('scripts/run-f1-c01-warden-r1.py','scripts/floor1/warden-runtime-supervisor.py','scripts/floor1/warden-continuation-state.py')
 EXTRACTED_FILES={'scripts/floor1/native-friendship.py':('target','level_ups'),'scripts/floor1/guard-first-state.py':('encode','level_stats')}
 _probe=None
@@ -87,8 +89,9 @@ def probe():
     print(json.dumps(dict(schema='warden-source-import-closure/v1',entry_files=list(ENTRY_FILES),project_sources={str(p.relative_to(ROOT)):sha(p) for p in sources},extracted_definitions=EXTRACTED_FILES,project_import_statements=imports,modules=modules,paths=sorted(map(str,paths)),native_extensions=sorted({str(Path(origin)) for origin in modules.values() if origin and str(origin).endswith('.so')}),mapped_libraries=sorted(map(str,mapped)),Tk_imported=any(n=='_tkinter' or n=='tkinter' or n.startswith('tkinter.') for n in modules),entry_points_executed=0,emulators=0,synthetic_decoder_discovery=True),sort_keys=True))
 def derive(environment):
     global _probe
+    alias=bindings.python_alias(environment)
     if _probe is None:
-        p=subprocess.run([str(Path(sys.executable).resolve()),'-B',str(Path(__file__).resolve()),'--probe'],env=environment,cwd=ROOT,text=True,capture_output=True,timeout=30)
+        p=subprocess.run([bindings.provider('python3'),'-B',str(Path(__file__).resolve()),'--probe'],env=environment,cwd=ROOT,text=True,capture_output=True,timeout=30)
         require(p.returncode==0 and not p.stderr,'source import derivation failed: '+p.stderr[-2000:])
         require(len(p.stdout)<8*1024**2,'source import derivation output bound');_probe=json.loads(p.stdout)
         require(_probe['entry_points_executed']==_probe['emulators']==0,'import-only derivation required')
@@ -97,13 +100,13 @@ def derive(environment):
     native={Path(sys.executable).resolve(),Path('/bin/sh').resolve(),Path('/bin/bash').resolve()}
     for command in ('git','ldd'):
         import shutil
-        p=shutil.which(command,path=environment['PATH']);require(p,'missing validator command: '+command);paths.add(Path(p).resolve())
+        p=bindings.provider(command);paths.add(Path(p))
         if command=='git':native.add(Path(p).resolve())
     native.update(Path(p) for p in record['native_extensions']);paths.update(native);links={}
     for p in sorted(native):
-        text=subprocess.check_output(['ldd',str(p)],env=environment,text=True,timeout=10)
+        text=subprocess.check_output([bindings.provider('ldd'),str(p)],env=environment,text=True,timeout=10)
         linked=linked_paths(p,text);paths.update(linked);links[str(p)]=sorted(map(str,linked))
-    record.update(native_link_closure=links,files={str(p):sha(p) for p in sorted(paths)})
+    record.update(runtime_python3_alias=alias,native_link_closure=links,files={str(p):sha(p) for p in sorted(paths)})
     return record
 if __name__=='__main__':
     require(sys.argv[1:]==['--probe'],'only inert import discovery is supported');probe()

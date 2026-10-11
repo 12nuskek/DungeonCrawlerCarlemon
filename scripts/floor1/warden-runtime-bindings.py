@@ -19,11 +19,19 @@ MAIN='2574e5751767a6f32859bbe8852e0acd0722cf8d'
 LOCAL_MAIN='65bc4073d140b9d58bf1b83bd33235e28c972b23'
 ROM_SHA='79a0ed7621399bab8aa38ca00fbc3515fb69c4d84ade798a370bcc08d1c29246'
 ELF_SHA='7895d09e2d2f94e699ccd4f0d19e302e21d3d9d8991709abbfd4ba82e222536d'
+# Actual providers rehashed in the accepted b503 admission. Resolution of an
+# inherited PATH never selects an executable for these tooling invocations.
+PROVIDERS={
+    'git':('/usr/bin/git','356db14e102d68a1a37d8a1ac577dfd678d45d46e92f468bef8b7154e7bfdc60'),
+    'cc':('/usr/bin/x86_64-linux-gnu-gcc-14','a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f'),
+    'ldd':('/usr/bin/ldd','000d7da9106552c273ce983e21c6b0a742037d0b2a7e3aad264881de746862bf'),
+    'python3':('/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12','fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7')}
 WIRING=('scripts/floor1/warden-runtime-supervisor.py','scripts/floor1/warden-runtime-bindings.py',
         'scripts/floor1/warden-runtime-retention.py','scripts/floor1/warden-runtime-validator-closure.py',
         'scripts/run-f1-c01-warden-r1.py','scripts/test-warden-runtime-wiring-offline.py',
         'scripts/contracts/f1-c01-warden-supervisor-r1.json','docs/floor1/c01-warden-supervisor-r1-contract.md',
-        'AGENTS.md','docs/backlog.md','docs/progress.md','docs/floor1/backlog.md','docs/floor1/accepted-plan.md')
+        'AGENTS.md','docs/backlog.md','docs/progress.md','docs/floor1/backlog.md','docs/floor1/accepted-plan.md',
+        'scripts/test-warden-runtime-wiring-offline-r2.py','docs/floor1/c01-warden-supervisor-r2-corrections.md')
 
 def module(name,path):
     s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
@@ -31,12 +39,42 @@ def module(name,path):
 retention=module('warden_retention',ROOT/'scripts/floor1/warden-runtime-retention.py')
 require,sha,read=retention.require,retention.sha,retention.read
 
-def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,text=True).strip()
+def provider(name):
+    path,pin=PROVIDERS[name]
+    require(sha(path)==pin,'exact explicit provider: '+name)
+    return path
+
+def python_alias(env):
+    expected=provider('python3');found=shutil.which('python3',path=env.get('PATH',''))
+    require(found is not None,'runtime python3 alias missing')
+    require(str(Path(found).resolve())==expected,'runtime python3 alias differs from pinned interpreter')
+    require(sha(Path(found).resolve())==PROVIDERS['python3'][1],'runtime python3 alias bytes changed')
+    return dict(alias=found,interpreter=expected,SHA256=PROVIDERS['python3'][1])
 
 def environment(tool):
-    env=dict(os.environ,LD_LIBRARY_PATH=str(tool/'usr/lib/x86_64-linux-gnu'),PATH=str(Path(sys.executable).resolve().parent)+os.pathsep+os.defpath,PYTHONDONTWRITEBYTECODE='1',PYTHONNOUSERSITE='1')
-    for key in ('PYTHONOPTIMIZE','PYTHONPATH','PYTHONHOME','LD_PRELOAD'):env.pop(key,None)
+    # Build an allowlisted environment. Inherited Git config/executable hooks,
+    # PATH, preload and compiler/Python search overrides are not carried through.
+    env=dict(LD_LIBRARY_PATH=str(tool/'usr/lib/x86_64-linux-gnu'),PATH=str(Path(PROVIDERS['python3'][0]).parent)+os.pathsep+os.defpath,
+        PYTHONDONTWRITEBYTECODE='1',PYTHONNOUSERSITE='1',LC_ALL='C',GIT_CONFIG_NOSYSTEM='1',
+        GIT_CONFIG_GLOBAL='/dev/null',GIT_CONFIG_SYSTEM='/dev/null',GIT_TERMINAL_PROMPT='0')
+    # The selected environment routes network traffic through its proxy. Carry
+    # only transport fields; freeze their exact values in the private receipt.
+    for key in ('http_proxy','https_proxy','no_proxy','HTTP_PROXY','HTTPS_PROXY','NO_PROXY','CODEX_PROXY_CERT','SSL_CERT_FILE','SSL_CERT_DIR'):
+        if key in os.environ:env[key]=os.environ[key]
+    require(str(Path(sys.executable).resolve())==provider('python3'),'host/probe pinned interpreter identity')
+    python_alias(env)
     return env
+
+def git_environment():
+    require(sha(CONFIG)==CONFIG_SHA,'sealed Git runtime environment input')
+    return environment(Path(read(CONFIG)['tool_root']))
+def git_bytes(*args):return subprocess.check_output([provider('git'),*args],cwd=ROOT,env=git_environment(),timeout=30)
+def git(*args):return git_bytes(*args).decode().strip()
+def compiler_version(env):
+    require(env==git_environment(),'exact recorded compiler/provider environment')
+    return subprocess.check_output([provider('cc'),'-dumpfullversion'],env=env,text=True,timeout=10).strip()
+def git_archive(head,output):
+    subprocess.run([provider('git'),'archive',head,'scripts','docs/floor1/c01-warden-supervisor-r1-contract.md','docs/floor1/c01-warden-supervisor-r2-corrections.md'],cwd=ROOT,env=git_environment(),stdout=output,check=True,timeout=30)
 
 def merge_exact(*manifests):
     result={}
@@ -72,7 +110,7 @@ def sources(config,r):
     return result
 
 def linked(binary,env):
-    text=subprocess.check_output(['ldd',str(binary)],env=env,text=True,timeout=10)
+    text=subprocess.check_output([provider('ldd'),str(binary)],env=env,text=True,timeout=10)
     require('not found' not in text and 'not a dynamic executable' not in text,'complete native linkage')
     return {str(Path(word).resolve()):sha(Path(word).resolve()) for word in text.split() if word.startswith('/')}
 
@@ -80,23 +118,26 @@ def tools(config,observer,closure):
     tool=Path(config['tool_root']);env=environment(tool)
     result={p:pin for p,pin in config['files'].items() if not Path(p).is_relative_to(ROOT)}
     result=merge_exact(result,closure['files'],linked(observer,env),{str(Path(sys.executable).resolve()):sha(Path(sys.executable).resolve())})
-    for name in ('cc','git','ldd'):
-        binary=Path(shutil.which(name,path=env['PATH'])).resolve();result[str(binary)]=sha(binary)
+    for name in ('cc','git','ldd','python3'):
+        binary=Path(provider(name));result[str(binary)]=sha(binary)
         if name!='ldd':result=merge_exact(result,linked(binary,env))
         else:
             require(binary.read_bytes().startswith(b'#!/bin/bash\n'),'exact ldd script interpreter')
             shell=Path('/bin/bash').resolve();result=merge_exact(result,{str(shell):sha(shell)},linked(shell,env))
     for name in ('cc1','as','ld'):
-        binary=Path(subprocess.check_output(['cc','-print-prog-name='+name],env=env,text=True).strip())
+        binary=Path(subprocess.check_output([provider('cc'),'-print-prog-name='+name],env=env,text=True).strip())
         if not binary.is_absolute():binary=Path(shutil.which(str(binary),path=env['PATH']))
         binary=binary.resolve();result[str(binary)]=sha(binary);result=merge_exact(result,linked(binary,env))
     # Derive the actual compile-header graph rather than assuming the older
     # accepted header inventory covers this recovered compiler's system headers.
-    deps=subprocess.check_output(['cc','-std=gnu11','-I'+str(tool/'usr/include'),'-M',str(observer.parent/'observer.c')],cwd=ROOT,env=env,text=True,timeout=30)
+    deps=subprocess.check_output([provider('cc'),'-std=gnu11','-I'+str(tool/'usr/include'),'-M',str(observer.parent/'observer.c')],cwd=ROOT,env=env,text=True,timeout=30)
     require(len(deps)<1024**2 and ': ' in deps,'bounded actual compiler dependency graph')
     headers={Path(p).resolve() for p in shlex.split(deps.split(': ',1)[1].replace('\\\n',' '))}
     require(observer.parent/'observer.c' in headers and any(p.suffix=='.h' for p in headers),'actual observer/header operands')
     result=merge_exact(result,{str(p):sha(p) for p in headers})
+    for key in ('CODEX_PROXY_CERT','SSL_CERT_FILE'):
+        if env.get(key) and Path(env[key]).is_file():
+            path=Path(env[key]).resolve();result=merge_exact(result,{str(path):sha(path)})
     for path,pin in result.items():require(sha(path)==pin,'exact actual tooling closure')
     return result
 

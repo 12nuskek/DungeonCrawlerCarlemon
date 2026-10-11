@@ -17,9 +17,9 @@ execfile=module('warden_executable',ROOT/'scripts/floor1/c01a-prefix-execfile.py
 validator=module('warden_validator_closure',ROOT/'scripts/floor1/warden-runtime-validator-closure.py')
 require,sha,read,git=b.require,b.sha,b.read,b.git
 SCRATCH=b.SCRATCH
-OUT=SCRATCH/'c01-warden-continuation-runtime-r1-20261011'
-OFFLINE=SCRATCH/'c01-warden-supervisor-offline-r1-20261011'
-AUTHORITY=SCRATCH/'c01-warden-runtime-r1-authority.json'
+OUT=SCRATCH/'c01-warden-continuation-runtime-r2-20261011'
+OFFLINE=SCRATCH/'c01-warden-supervisor-offline-r2-20261011'
+AUTHORITY=SCRATCH/'c01-warden-runtime-r2-authority.json'
 CONTRACT=ROOT/'scripts/contracts/f1-c01-warden-supervisor-r1.json'
 BRANCH='task/floor1-c01-warden-continuation-offline'
 MODES=('warden-continuation','warden-new-save-cold')
@@ -61,7 +61,9 @@ def scope(head,receipt):
         tool_manifest_SHA256=digest(receipt['tool_files']),observer_SHA256=receipt['candidate_artifacts']['observer'],
         observer_source_SHA256=receipt['candidate_artifacts']['observer.c'],route_SHA256=receipt['route_SHA256'],
         input_Save_SHA256=receipt['input_Save_SHA256'],input_state_SHA256=receipt['input_state_SHA256'],
-        archive_representation=receipt['archive_representation'],storage=storage(),runtime_authority=False)
+        archive_representation=receipt['archive_representation'],storage=storage(),runtime_authority=False,
+        provider_environment_SHA256=digest(receipt['provider_environment']),python3_alias=receipt['python3_alias'],
+        execution_clock='immediately before process creation through post-wait termination;600 seconds')
 
 def authority_template(receipt):
     return dict(status='APPROVED_ONE_WARDEN_AND_CONDITIONAL_INDEPENDENT_COLD',source_commit=receipt['tested_source_commit'],
@@ -101,7 +103,9 @@ def verify_frozen(f,receipt):
 
 def refresh(receipt):
     config,accepted=b.reviewed();b.verify_manifest(b.sources(config,accepted),receipt['source_files'])
-    closure=validator.derive(b.environment(Path(config['tool_root'])))
+    env=b.environment(Path(config['tool_root']))
+    require(env==receipt['provider_environment'] and b.python_alias(env)==receipt['python3_alias'],'exact runtime provider environment/interpreter alias')
+    closure=validator.derive(env)
     b.verify_manifest(closure['files'],receipt['validator_tool_files'])
     b.verify_manifest(b.tools(config,OFFLINE/'observer',closure),receipt['tool_files'])
     require(b.retention.verify_protected()==receipt['archive_representation'],'approved archive representation unchanged; no loose-frame restoration')
@@ -124,7 +128,7 @@ def prepare():
                 shutil.copyfile(path,OUT/name);os.chmod(OUT/name,0o700 if name=='observer' else 0o600)
                 with (OUT/name).open('rb') as f:os.fsync(f.fileno())
             with (OUT/'source-checkpoint.tar').open('xb') as f:
-                subprocess.run(['git','archive',head,'scripts','docs/floor1/c01-warden-supervisor-r1-contract.md'],cwd=ROOT,stdout=f,check=True,timeout=30);f.flush();os.fsync(f.fileno())
+                b.git_archive(head,f);f.flush();os.fsync(f.fileno())
             require((OUT/'source-checkpoint.tar').stat().st_size<32*1024**2,'source checkpoint bound')
             info=(OUT/'observer').lstat();executable=dict(SHA256=receipt['candidate_artifacts']['observer'],owner_uid=info.st_uid,mode=0o700,device=info.st_dev,inode=info.st_ino)
             execfile.verify_executable(OUT/'observer',executable)
@@ -138,11 +142,13 @@ def prepare():
 def verify_continuation_handoff(f):
     mode=MODES[0];directory=OUT/mode;v=read(OUT/(mode+'-verdict-private.json'))
     require(v['PASS'] and v['source_commit']==f['source_commit'] and v['mode']==mode and v['battle_attempts']==1 and v['full_14_sector_live_disk_verified'] is True,'actual complete native continuation/Save success required')
+    require(v['wall_seconds']==execution_elapsed(v['process_clock']),'actual creation/termination interval bound')
     require(set(v['handoff_files'])=={'game.sav','runtime.log','errors.log','phase-05-state.bin'},'complete actual manual-Save handoff')
     for name,pin in v['handoff_files'].items():require(sha(directory/name)==pin,'actual Save/state/log changed')
     claim_path=OUT/(mode+'-exclusive-claim.json');claim=read(claim_path);started=read(directory/'process-started.json')
     require(claim==dict(source_commit=f['source_commit'],mode=mode,freeze_SHA256=sha(OUT/'freeze.json'),binding_SHA256=sha(directory/'input-binding-private.json'),route_SHA256=f['scope']['route_SHA256'][mode],limit=1,terminal_on_failure=True),'actual exact one-use claim')
     require(started['pid']==v['PID'] and started['exclusive_claim_SHA256']==sha(claim_path) and started['source_commit']==f['source_commit'] and started['mode']==mode,'actual native process/claim/source binding')
+    require(started['creation_monotonic']==v['process_clock']['creation_monotonic'] and started['wall_limit_seconds']==600,'actual process creation clock/ceiling binding')
     require(read(directory/'input-binding-private.json')==dict(input_Save_SHA256=f['scope']['input_Save_SHA256'],source_Save_SHA256=f['scope']['input_Save_SHA256'],actual_new_Save=False,
             source_state_SHA256=f['scope']['input_state_SHA256'],expected_state_SHA256=f['scope']['input_state_SHA256']),'original patrol Save/state input only')
     require(sha(directory/'game.sav')!=f['scope']['input_Save_SHA256'] and 'PASS CONTINUOUS phase=save' in (directory/'runtime.log').read_text() and not (directory/'errors.log').stat().st_size,'actual changed manual Save and successful callback')
@@ -215,6 +221,8 @@ def process_limits():
 
 def stop_process(process):
     if process is None:return
+    if process.poll() is not None:
+        process.wait(timeout=5);return # Reap an exited child; do not signal its old group.
     try:os.killpg(process.pid,signal.SIGTERM)
     except ProcessLookupError:pass
     try:process.wait(timeout=5)
@@ -235,8 +243,27 @@ def capacity_before_creation(path,mode,source_commit,process_factory,argv,**kwar
     sync(Path(path).parent)
     return process_factory(argv,**kwargs)
 
+def create_process(argv,*,lifecycle_clock,process_factory=subprocess.Popen,**kwargs):
+    # Admission, copying, claims and the fresh capacity record precede this.
+    lifecycle_clock['creation_monotonic']=time.monotonic()
+    return process_factory(argv,**kwargs)
+
+def execution_elapsed(clock):
+    elapsed=clock['termination_monotonic']-clock['creation_monotonic']
+    require(0<=elapsed<=600,'unchanged600-second process creation/termination ceiling')
+    return elapsed
+
+def wait_process(process,clock):
+    while process.poll() is None:
+        require(0<=time.monotonic()-clock['creation_monotonic']<=600,'unchanged600-second process creation/termination ceiling')
+        check_root_usage();time.sleep(.05)
+    result=process.wait()
+    clock['termination_monotonic']=time.monotonic()
+    execution_elapsed(clock) # Completion between polls cannot waive the ceiling.
+    return result
+
 def execute(mode):
-    head,_=runtime_authority();process=None;owned=False;started=time.monotonic()
+    head,_=runtime_authority();process=None;owned=False;clock={}
     with (OUT/'exclusive.lock').open('r+') as lock:
         fcntl.flock(lock.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB);owned=True
         try:
@@ -252,13 +279,11 @@ def execute(mode):
             config=read(b.CONFIG);rom=next(Path(p) for p in config['files'] if p.endswith('pokeemerald.gba'))
             with (OUT/(mode+'.route')).open('rb') as route,(directory/'runtime.log').open('xb') as log,(directory/'errors.log').open('xb') as error:
                 execfile.verify_executable(OUT/'observer',frozen['executable'])
-                process=capacity_before_creation(directory/'capacity-before-process-private.json',mode,head,subprocess.Popen,
+                process=capacity_before_creation(directory/'capacity-before-process-private.json',mode,head,create_process,
                     [str(OUT/'observer'),str(rom),str(directory/'game.sav'),str(OUT/'game.sym'),mode],cwd=directory,stdin=route,stdout=log,stderr=error,
-                    env=b.environment(Path(config['tool_root'])),preexec_fn=process_limits,start_new_session=True)
-                write(directory/'process-started.json',dict(pid=process.pid,mode=mode,source_commit=head,exclusive_claim_SHA256=sha(claim),capacity_record_SHA256=sha(directory/'capacity-before-process-private.json')))
-                while process.poll() is None:
-                    require(time.monotonic()-started<=600,'unchanged600-second first-failure wall');check_root_usage();time.sleep(.05)
-                require(process.wait()==0 and not (directory/'errors.log').stat().st_size,'native first failure terminal')
+                    env=b.environment(Path(config['tool_root'])),preexec_fn=process_limits,start_new_session=True,lifecycle_clock=clock)
+                write(directory/'process-started.json',dict(pid=process.pid,mode=mode,source_commit=head,exclusive_claim_SHA256=sha(claim),capacity_record_SHA256=sha(directory/'capacity-before-process-private.json'),creation_monotonic=clock['creation_monotonic'],wall_limit_seconds=600))
+                require(wait_process(process,clock)==0 and not (directory/'errors.log').stat().st_size,'native first failure terminal')
             log=(directory/'runtime.log').read_text();footer=parse_footer(log,mode)
             if mode==MODES[0]:
                 require(re.findall(r'^PASS CONTINUOUS phase=(\S+) ',log,re.M)==PHASES,'all six exact native phases')
@@ -270,8 +295,9 @@ def execute(mode):
             captures=verify_captures(directory,footer,mode);check_root_usage()
             require(sha(config['patrol_save'])==receipt['input_Save_SHA256'] and sha(config['patrol_state'])==receipt['input_state_SHA256'],'original patrol Save/state retained')
             names=['game.sav','runtime.log','errors.log']+(['phase-05-state.bin'] if mode==MODES[0] else ['expected-final-state.bin','current-state.bin'])
-            write(OUT/(mode+'-verdict-private.json'),dict(PASS=True,source_commit=head,mode=mode,PID=process.pid,**footer,full_14_sector_live_disk_verified=True,captures=captures,handoff_files={name:sha(directory/name) for name in names},wall_seconds=time.monotonic()-started,independent_backup_verified=False))
+            write(OUT/(mode+'-verdict-private.json'),dict(PASS=True,source_commit=head,mode=mode,PID=process.pid,**footer,full_14_sector_live_disk_verified=True,captures=captures,handoff_files={name:sha(directory/name) for name in names},wall_seconds=execution_elapsed(clock),process_clock=clock,independent_backup_verified=False))
         except BaseException as error:
             stop_process(process)
-            if owned and not (OUT/'STOP.json').exists():write(OUT/'STOP.json',dict(mode=mode,source_commit=head,reason=str(error),PID=process.pid if process else None,actual_processes_started=int(process is not None),terminal_no_retry=True,cold_admitted=False))
+            if process is not None and 'termination_monotonic' not in clock:clock['termination_monotonic']=time.monotonic()
+            if owned and not (OUT/'STOP.json').exists():write(OUT/'STOP.json',dict(mode=mode,source_commit=head,reason=str(error),PID=process.pid if process else None,actual_processes_started=int(process is not None),process_clock=clock,terminal_no_retry=True,cold_admitted=False))
             raise
